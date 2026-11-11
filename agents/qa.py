@@ -95,6 +95,8 @@ US viewers. You see one frame from each scene, in order, with what the narrator 
 Fail the video if ANY of these is true:
 - a frame clearly contradicts or is unrelated to what is being said (a loose but sensible visual
   analogy is fine)
+(The small square mark in the top-left corner - a yellow question mark with an orbit - is THIS
+channel's own logo on every frame. It is correct; never flag it.)
 - anything inappropriate for all ages, gory, frightening, sexual, political, or a real brand/logo
   shown prominently
 - burned-in captions are cut off, overlap badly, misspelled, or unreadable (captions show only

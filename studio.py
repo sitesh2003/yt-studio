@@ -63,6 +63,26 @@ def build(script):
         desc = script["description"] + (("\n\n" + chapters) if chapters else "") + \
             ("\n\n" + "\n".join(credits) if credits else "")
         meta["description"] = desc
+    q = meta.get("qa") or {}
+    weak = [i for i, sc in enumerate(visuals.last_scores) if sc < 3]
+    only_footage = q.get("footage") and not any(q.get(k) for k in ("facts", "technical", "sync", "review"))
+    if not q.get("pass") and only_footage and 0 < len(weak) <= 2 and 0 not in weak:
+        # LAST RESORT: after every search, a scene still has nothing that fits. Hold the shot before
+        # it a little longer (a different moment of the strongest neighbouring clip) rather than lose
+        # the whole video to one gap.
+        import shutil
+        for i in weak:
+            nb = max((j for j in (i - 1, i + 1) if 0 <= j < len(visuals.last_scores) and j not in weak),
+                     key=lambda j: visuals.last_scores[j], default=None)
+            if nb is not None and visuals.last_scores[nb] >= 7 and (job / f"raw_{nb:02d}.mp4").exists():
+                shutil.copy(job / f"raw_{nb:02d}.mp4", job / f"raw_{i:02d}.mp4")
+                visuals.last_scores[i] = 5
+                log(f"repair: scene {i + 1} holds scene {nb + 1}'s shot (nothing on stock sites fits)")
+        editor.render(clips, times, words, job, editor.predict_overlays(script, times, words))
+        try:
+            meta["qa"] = qa.check(job, script, times, words, visuals.last_scores)
+        except Exception as e:
+            meta["qa"] = {"pass": False, "error": str(e)[:200]}
     meta["repairs"] = attempt
     for raw in job.glob("raw_*.mp4"):
         raw.unlink(missing_ok=True)
