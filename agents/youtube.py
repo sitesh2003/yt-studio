@@ -90,6 +90,9 @@ def recent_comments(limit=50):
     out = []
     for t in res.get("items", []):
         top = t["snippet"]["topLevelComment"]
+        author = (top["snippet"].get("authorChannelId") or {}).get("value")
+        if author == me:
+            continue  # our own answer comments
         if t["snippet"].get("totalReplyCount", 0) == 0 and top["id"] not in replied:
             out.append({"id": top["id"], "text": top["snippet"]["textDisplay"][:500]})
     return out
@@ -213,3 +216,45 @@ def channel_stats():
                            sort="-views", maxResults=200).execute()
     cols = [c["name"] for c in r.get("columnHeaders", [])]
     return [dict(zip(cols, row)) for row in r.get("rows", [])]
+
+
+SERIES = ["Food Whys", "Ocean Whys", "Animal Whys", "Body Whys", "Everyday Whys"]
+
+
+def add_to_series(video_id, series):
+    """Every video joins a themed playlist, so a viewer who finishes one is offered the next."""
+    series = series if series in SERIES else "Everyday Whys"
+    path = DATA / "playlists.json"
+    ids = read_json(path, {}) or {}
+    y = yt()
+    if series not in ids:
+        found = None
+        for pl in y.playlists().list(part="snippet", mine=True, maxResults=50).execute().get("items", []):
+            if pl["snippet"]["title"] == series:
+                found = pl["id"]
+        if not found:
+            found = y.playlists().insert(part="snippet,status", body={
+                "snippet": {"title": series, "description": f"Ever Thought Why? - {series}: the surprising science, one short why at a time."},
+                "status": {"privacyStatus": "public"}}).execute()["id"]
+        ids[series] = found
+        write_json(path, ids)
+    import time
+    for attempt in range(4):  # a just-created playlist can refuse items for a few seconds
+        try:
+            y.playlistItems().insert(part="snippet", body={"snippet": {
+                "playlistId": ids[series], "resourceId": {"kind": "youtube#video", "videoId": video_id}}}).execute()
+            break
+        except Exception:
+            if attempt == 3:
+                raise
+            time.sleep(8 * (attempt + 1))
+    log(f"youtube: added to playlist {series}")
+
+
+def views(video_ids):
+    out = {}
+    ids = [v for v in video_ids if v]
+    for i in range(0, len(ids), 50):
+        for v in yt().videos().list(part="statistics", id=",".join(ids[i:i + 50])).execute().get("items", []):
+            out[v["id"]] = int(v["statistics"].get("viewCount", 0))
+    return out

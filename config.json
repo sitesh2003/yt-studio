@@ -66,8 +66,8 @@
     "contains_synthetic_media": false
   },
   "community": {
-    "mode": "draft",
-    "max_replies_per_run": 20
+    "mode": "auto",
+    "max_replies_per_run": 15
   },
   "report": {
     "email": "",

@@ -28,6 +28,18 @@ def _outliers():
     return "; ".join(f'"{r["title"]}" ({r["views"] // 1000}k views)' for r in rows[:8]) or "none"
 
 
+def sequel_topic(title, topic):
+    """A follow-up to a video that took off: same hook shape, new true subject (or a deeper Part 2)."""
+    out = llm_json(f"""A YouTube Short of ours did about three times better than our average.
+Title: "{title}"  Topic: "{topic}"
+Suggest ONE follow-up topic that keeps what made it work (the same format: contrast, hidden process,
+stakes, or debate) on a closely related subject viewers will also wonder about - or a genuine
+"Part 2" that answers the obvious next question. Scientifically TRUE, filmable with real stock
+footage, never a repeat. Return JSON: {{"topic": "...", "why": "..."}}""")
+    log(f"writer: sequel to {title!r} -> {out.get('topic')}")
+    return out
+
+
 def pick_topics(n=3):
     cfg = config()["channel"]
     trends, learn, done = _context()
@@ -133,6 +145,7 @@ Return JSON exactly in this shape:
    "highlight": "the one word or number to colour yellow"
  }},
  "thumbnail_text": "max 4 words",
+ "series": "exactly one of: Food Whys, Ocean Whys, Animal Whys, Body Whys, Everyday Whys",
  "question": "the enquiry question exactly as spoken in the last scene",
  "answer_comment": "the answer, posted as the channel's first comment once the video is public: start with 'The answer:', explain it in 2-4 friendly sentences a 12-year-old can follow, connect it back to the video, end by inviting a follow-up question. No links.",
  "fact_check": ["each factual claim made, including the answer, so a human can verify it"]

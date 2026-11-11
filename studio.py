@@ -182,6 +182,11 @@ def publish(job):
     vid, when = youtube.upload(job, meta)
     meta.update(status="scheduled", video_id=vid, publish_at=when)
     write_json(job / "meta.json", meta)
+    try:
+        script = read_json(job / "script.json", {}) or {}
+        youtube.add_to_series(vid, script.get("series") or meta.get("series"))
+    except Exception as e:
+        log(f"playlist skipped: {str(e)[:100]}")
     hist = read_json(DATA / "history.json", []) or []
     for h in hist:
         if h.get("job") == job.name:
@@ -212,6 +217,27 @@ def comments(post=False):
         it["comment"] = texts.get(it["id"], "")
     write_json(drafts_path, items)
     log(f"comments: {sum(i['action'] == 'reply' for i in items)} reply drafts in data/reply_drafts.json")
+
+
+def _sequel():
+    """If a video from the last 10 days has 3x the channel's median views (and 1,000+), make a
+    follow-up today - doubling down on what works, like the channels that grow fastest."""
+    from agents import youtube
+    import statistics
+    hist = [h for h in (read_json(DATA / "history.json", []) or []) if h.get("video_id")]
+    if len(hist) < 4:
+        return None
+    v = youtube.views([h["video_id"] for h in hist])
+    med = statistics.median(v.values()) if v else 0
+    done = set(read_json(DATA / "sequels.json", []) or [])
+    since = (dt.datetime.now(dt.timezone.utc) - dt.timedelta(days=10)).isoformat()
+    best = max((h for h in hist if h["video_id"] not in done and (h.get("publish_at") or "") >= since[:10]),
+               key=lambda h: v.get(h["video_id"], 0), default=None)
+    if not best or v.get(best["video_id"], 0) < max(1000, 3 * med):
+        return None
+    write_json(DATA / "sequels.json", sorted(done | {best["video_id"]}))
+    out = writer.sequel_topic(best.get("title", ""), best.get("topic", ""))
+    return {"topic": out["topic"], "pattern": "sequel"} if out.get("topic") else None
 
 
 def _today_ist():
@@ -245,7 +271,14 @@ def daily():
     # spare topics: a busy AI model or a held-back fact-check no longer means a missing video
     started = time.time()
     budget = float(os.environ.get("DAILY_BUDGET_MIN", "95")) * 60
-    for t in writer.pick_topics(want + 2):
+    topics = writer.pick_topics(want + 2)
+    try:
+        seq = _sequel()
+        if seq:
+            topics = [seq] + topics
+    except Exception as e:
+        log(f"sequel check skipped: {str(e)[:100]}")
+    for t in topics:
         if good >= want:
             break
         if time.time() - started > budget:
@@ -342,7 +375,9 @@ def hourly():
     except Exception as e:
         log(f"answers skipped: {e}")
     try:
-        comments(post=config()["community"]["mode"] == "auto")
+        comments(post=False)                       # draft replies to new comments
+        if config()["community"]["mode"] == "auto":
+            comments(post=True)                    # and post them (early replies lift reach)
     except Exception as e:
         log(f"comments skipped: {e}")
 
