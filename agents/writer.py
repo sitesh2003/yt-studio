@@ -238,7 +238,8 @@ Return JSON:
 def verify(script, rounds=2):
     """Fact-checker agent: a second, sceptical pass over every claim and the answer.
     If anything is wrong or doubtful it sends exact fixes back and the script is corrected."""
-    for r in range(rounds):
+    last_bad = []
+    for r in range(rounds + 1):  # check, fix, ... and always re-check the final fix
         text = " ".join(sc["narration"] for sc in script["scenes"])
         check = llm_json(f"""You are a strict science fact-checker for a YouTube channel. Be sceptical.
 Check every factual claim in this narration, the enquiry question, and the posted answer.
@@ -260,9 +261,12 @@ Return JSON: {{"verdict": "pass" or "fix",
  "fixes": ["exact change to make, quoting the sentence"]}}""")
         script["fact_check_result"] = check
         bad = [c for c in check.get("claims", []) if c.get("status") != "correct"]
-        if not bad and (check.get("verdict") == "pass" or not check.get("fixes")):
+        if not bad:  # every claim correct: remaining "fixes" are only style, not facts
             log(f"checker: passed ({len(check.get('claims', []))} claims verified)")
             return script
+        last_bad = bad
+        if r == rounds:
+            break
         log(f"checker: {len(bad)} problem(s) found, rewriting (round {r + 1})")
         fixed = llm_json(f"""Apply these fact-check corrections to the YouTube Short script below. Change only what
 is needed to make it correct; keep the hook strong, the length, scenes, structure and JSON shape the same.
@@ -274,7 +278,7 @@ Return the corrected script as JSON in exactly the same shape.""")
         script = fixed
     # last resort before giving up the topic: CUT whatever cannot be confirmed (a shorter true video
     # beats no video), then one final check
-    bad = [c for c in (script.get("fact_check_result") or {}).get("claims", []) if c.get("status") != "correct"]
+    bad = last_bad
     if bad:
         log("checker: removing the claims that could not be confirmed")
         cut = llm_json(f"""These claims in a YouTube Short script could not be confirmed: {bad}
@@ -289,7 +293,7 @@ Return the corrected script as JSON in exactly the same shape.""")
 Narration: {" ".join(sc["narration"] for sc in cut.get("scenes", []))}
 Question: {cut.get('question', '')}  Answer: {cut.get('answer_comment', '')}
 Return JSON: {{"claims": [{{"claim": "...", "status": "correct|wrong|doubtful"}}]}}""")
-        if cut.get("scenes") and all(c.get("status") == "correct" for c in final.get("claims", [])):
+        if cut.get("scenes") and final.get("claims") and all(c.get("status") == "correct" for c in final["claims"]):
             cut["fact_check_result"] = {"verdict": "pass", "claims": final.get("claims", []), "cut": True}
             log(f"checker: passed after cutting ({len(final.get('claims', []))} claims verified)")
             return cut
