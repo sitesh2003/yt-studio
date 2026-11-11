@@ -88,6 +88,7 @@ def audit_bank():
     y = yt()
     now = dt.datetime.now(dt.timezone.utc)
     actions = []
+    pulled = False
     for vid, h in hist.items():
         if vid in done:
             continue
@@ -111,12 +112,23 @@ Return JSON: {{"title_ok": true or false, "description_ok": true or false,
  "fixed_title": "accurate title, same curiosity, max 70 chars, Title Case, ends with 2 fitting emojis",
  "fixed_description": "accurate 1-2 lines, no hashtags",
  "narration_false": true only if the narration states something actually FALSE or clearly misleading,
+ "false_sentence": "if narration_false: the exact sentence from the narration that is wrong",
+ "correct_version": "if narration_false: what is actually true, in one or two plain sentences",
  "why": "one line"}}""")
         if out.get("narration_false"):
             st = {"privacyStatus": "private",
                   "selfDeclaredMadeForKids": v["status"].get("selfDeclaredMadeForKids", False)}
             y.videos().update(part="status", body={"id": vid, "status": st}).execute()
-            actions.append(f"Taken off the schedule before going public: '{sn['title']}' ({out.get('why', '')})")
+            actions.append(f"Taken off the schedule before going public: '{sn['title']}'. Wrong line: "
+                           f"\"{out.get('false_sentence', '?')}\". Correct: {out.get('correct_version', out.get('why', ''))} "
+                           "A corrected remake is queued for the next production run.")
+            remakes = read_json(DATA / "remakes.json", []) or []
+            remakes.append({"topic": h.get("topic") or sn["title"], "pulled": vid, "title": sn["title"],
+                            "false_sentence": out.get("false_sentence", ""),
+                            "correct_version": out.get("correct_version", ""), "why": out.get("why", ""),
+                            "tries": 0})
+            write_json(DATA / "remakes.json", remakes)
+            pulled = True
         elif not (out.get("title_ok", True) and out.get("description_ok", True)):
             body = {"title": sn["title"], "description": sn["description"],
                     "categoryId": sn.get("categoryId", "28"), "tags": sn.get("tags", [])}
@@ -133,6 +145,7 @@ Return JSON: {{"title_ok": true or false, "description_ok": true or false,
     write_json(DATA / "audited.json", sorted(done))
     for a in actions:
         log("health: " + a)
+    audit_bank.pulled = pulled
     return actions
 
 
@@ -170,7 +183,7 @@ def check(heal=True):
             if r["url"] not in reported:
                 lines.append(f"The production run at {_fmt(r['at'])} ended as '{r['result']}'.")
                 reported.append(r["url"])
-        problem = rc["skipped"] or rc["failed"]
+        problem = rc["skipped"] or rc["failed"] or getattr(audit_bank, "pulled", False)
         if heal and problem and len(bank) < target and not rc["running"] and os.environ.get("GITHUB_TOKEN"):
             last = notes.get("catch_up")
             if not last or dt.datetime.fromisoformat(last) < dt.datetime.now(dt.timezone.utc) - dt.timedelta(hours=3):

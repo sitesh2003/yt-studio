@@ -74,7 +74,19 @@ Return JSON: {{"topics": [{{"topic": "...", "why_it_will_work": "...", "pattern"
     return topics
 
 
-def write_script(topic, recap=None):
+def _fix_rule(fix):
+    if not fix:
+        return ""
+    return f"""- THIS IS A CORRECTED REMAKE. An earlier version of this video was pulled before going public
+  because it said: "{fix.get('false_sentence', '')}"
+  That is wrong: {fix.get('why', '')}
+  What is actually true: {fix.get('correct_version', '')}
+  Build the new script around the TRUE version. Never repeat the wrong claim, not even as the hook;
+  a hook that exaggerates is what caused this. The truth is surprising enough on its own.
+"""
+
+
+def write_script(topic, recap=None, fix=None):
     c = config()
     ch, fmt = c["channel"], c["format"]
     learn = read_json(DATA / "learnings.json", {}) or {}
@@ -151,7 +163,7 @@ Return JSON exactly in this shape:
  "fact_check": ["each factual claim made, including the answer, so a human can verify it"]
 }}
 The first scene's narration must be hook_options[0]."""
-    s = llm_json(prompt.replace("{recap_rule}", _recap_rule(recap)))
+    s = llm_json(prompt.replace("{recap_rule}", _recap_rule(recap) + _fix_rule(fix)))
     s["topic"] = topic
     if recap:
         s["recap_source"] = recap.get("video_id")

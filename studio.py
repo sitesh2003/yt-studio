@@ -284,6 +284,10 @@ def daily():
     started = time.time()
     budget = float(os.environ.get("DAILY_BUDGET_MIN", "95")) * 60
     topics = writer.pick_topics(want + 2)
+    remakes = read_json(DATA / "remakes.json", []) or []
+    for r in remakes:   # corrected remakes of pulled videos go first (max 2 tries each)
+        if r.get("tries", 0) < 2:
+            topics = [{"topic": r["topic"], "pattern": "remake", "fix": r}] + topics
     try:
         seq = _sequel()
         if seq:
@@ -298,7 +302,11 @@ def daily():
             break
         use_recap = recap if good == 0 else None
         try:
-            job, meta = build(writer.write_script(t["topic"], use_recap))
+            if t.get("fix"):
+                t["fix"]["tries"] = t["fix"].get("tries", 0) + 1
+                write_json(DATA / "remakes.json", remakes)
+                log(f"remake: rebuilding '{t['fix'].get('title')}' with the correction")
+            job, meta = build(writer.write_script(t["topic"], use_recap, fix=t.get("fix")))
         except Exception as e:
             log(f"video failed, trying a spare topic: {e}")
             results.append({"topic": t["topic"], "reason": f"could not be made: {str(e)[:120]}"})
@@ -318,6 +326,11 @@ def daily():
             results.append({"title": meta["title"], "reason": "quality check: " + (why or "not approved")[:300]})
             continue
         good += 1
+        if t.get("fix"):  # remake done: off the queue
+            remakes = [r for r in remakes if r is not t["fix"]]
+            write_json(DATA / "remakes.json", remakes)
+            results.append({"title": meta["title"] + " (corrected remake)", "reason": "", "remake": True})
+            results.pop()
         if p["mode"] == "auto":
             publish(job)
             meta = read_json(job / "meta.json")
