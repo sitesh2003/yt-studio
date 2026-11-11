@@ -424,7 +424,7 @@
       "shorts"
     ],
     "hook": "Drinking cold water makes spicy food burn worse.",
-    "status": "scheduled",
+    "status": "missing",
     "question": "Ever thought why fatty foods like peanut butter help put out a chili fire better than soda?",
     "answer_comment": "The answer: Capsaicin is an oil-based chemical, so water just moves it around your mouth instead of washing it away. Peanut butter contains fats that can help trap the capsaicin oil and remove it from your tongue, similar to how milk works. Soda is mostly water and carbonation, which spreads the oil around even more. Got another spicy food myth you want tested?",
     "fact_ok": true,
@@ -580,5 +580,110 @@
       "duration": 52.2
     },
     "repairs": 0
+  },
+  {
+    "job": "20261111-1633-why-drinking-cold-water-doesn-t-stop-the",
+    "topic": "Why drinking cold water doesn't stop the burn of spicy food, and what does",
+    "title": "Why Cold Water Fails Against Spicy Food 🌶️🥛",
+    "description": "Discover why drinking ice water doesn't wash away spicy food heat, and learn what actually puts out the fire in your mouth! #shorts #science #food\n\nPhoto by huyenxu94 on Pixabay\nPhoto by kisyov on Pixabay\nPhoto by offthelefteye on Pixabay\nPhoto: Shixart1985, CC BY 2.0, via Wikimedia Commons\nVideo by Afzaal0001 on Pixabay\nVideo by AlekseiyPovar on Pixabay\nVideo by Engin_Akyurt on Pixabay\nVideo by bottlein on Pixabay\nVideo by choxyltd on Pixabay",
+    "tags": [
+      "spicy food",
+      "capsaicin",
+      "science facts",
+      "food science",
+      "ever thought why"
+    ],
+    "hook": "Gulping ice water after a hot pepper feels like relief, but the real fire stays untouched.",
+    "status": "scheduled",
+    "narration": "Gulping ice water after a hot pepper feels like relief, but the real fire stays untouched. Spicy peppers contain an oily chemical called capsaicin. It tricks your tongue's heat sensors into telling your brain your mouth is burning. Naturally, we reach for cold water. But here is where things get weird. Think about what cold water does to grease on a dirty plate. Pause and guess... three, two, one. Here's why: capsaicin is fat-soluble, and water cannot dissolve fats. The cold water temporarily numbs your tongue, but it mostly just pushes the spicy oil around. Milk works because its fats and proteins trap the capsaicin oil and wash it away. Ever thought why drinking an ice-cold fruit juice won't stop spicy food burn either? Drop your guess below.",
+    "series": "Food Whys",
+    "question": "Ever thought why drinking an ice-cold fruit juice won't stop spicy food burn either? Drop your guess below.",
+    "answer_comment": "The answer: Fruit juice is almost entirely water and sugar with zero fat! Just like plain cold water, juice cannot dissolve the hydrophobic capsaicin oil on your tongue, so it cannot wash the burn away. Have you ever tried drinking milk or eating ice cream after eating hot peppers?",
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "footage": [],
+      "review": [],
+      "pass": true,
+      "duration": 47.0
+    },
+    "repairs": 0,
+    "video_id": "yF1Dj5F1icM",
+    "publish_at": "2026-11-11T15:00:00-05:00"
+  },
+  {
+    "job": "20261111-1701-how-authentic-maple-syrup-is-boiled-down",
+    "topic": "How Authentic Maple Syrup Is Boiled Down From Tree Sap",
+    "title": "Why Maple Syrup Takes 40 Gallons 🍁🍯",
+    "description": "Ever wonder how watery tree sap turns into thick maple syrup? The answer might surprise you.\n\n#maplesyrup #science #shorts\n\nPhoto by Three-shots on Pixabay\nPhoto by blandinejoannic on Pixabay\nPhoto by congerdesign on Pixabay\nPhoto by pen_ash on Pixabay\nPhoto: A.R. Tolman, Public domain, via Wikimedia Commons\nPhoto: NPS, Public domain, via Wikimedia Commons\nVideo by Coverr-Free-Footage on Pixabay\nVideo by adege on Pixabay\nVideo by drvivasayam on Pixabay",
+    "tags": [
+      "maple syrup",
+      "food science",
+      "how it's made",
+      "tree sap",
+      "shorts"
+    ],
+    "hook": "That sweet maple syrup on your pancakes? It started out as practically water.",
+    "status": "scheduled",
+    "narration": "That sweet maple syrup on your pancakes? It started out as practically water. When maple trees wake up in spring, they pump out sap that is about ninety-eight percent water. To turn that watery sap into thick syrup, you have to boil off almost all of it. Think about how much liquid has to vanish to leave behind the sticky stuff. Pause and guess... about how many gallons of sap does it take to make just one single gallon of syrup? Pause and guess... three, two, one. It takes about forty gallons of thin sap to make just one gallon of syrup. And here's the wild part: all that boiling does more than just remove water. The heat causes chemical reactions in the sugars that build that rich, deep flavor you know. Ever thought how sap manages to rush up those tall trees in spring without a pump? Drop your guess below.",
+    "series": "Food Whys",
+    "question": "Ever thought how sap manages to rush up those tall trees in spring without a pump?",
+    "answer_comment": "The answer: Freezing nights and warm days create pressure inside the tree. This cycle pushes water and nutrients up from the roots, making the sap flow before the leaves grow back. Got another food question? Drop it below!",
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "footage": [],
+      "review": [],
+      "pass": true,
+      "duration": 47.8
+    },
+    "repairs": 0,
+    "video_id": "_EnG9sUTAUY",
+    "publish_at": "2026-11-11T19:00:00-05:00"
+  },
+  {
+    "job": "20261111-1722-why-real-honey-never-spoils-even-after-t",
+    "topic": "Why Real Honey Never Spoils Even After Thousands of Years",
+    "title": "The Only Food That Lasts Forever 🐝✨",
+    "description": "Ever wondered why honey never spoils? We break down the chemistry of why bacteria can't survive in your honey jar. #shorts #science #food\n\nPhoto by flo222 on Pixabay\nPhoto by monicore on Pixabay\nVideo by Engin_Akyurt on Pixabay\nVideo by Josh_Malic on Pixabay\nVideo by Kaffeesüchtig on Pixabay\nVideo by Roque_dg on Pixabay",
+    "tags": [
+      "honey",
+      "food science",
+      "bacteria",
+      "nature",
+      "chemistry"
+    ],
+    "hook": "Honey is famous for being one of the only natural foods that never truly spoils.",
+    "status": "scheduled",
+    "narration": "Honey is famous for being one of the only natural foods that never truly spoils. It stays shelf-stable because of its unique chemistry, not just because it’s sealed tight. Honey is incredibly low in water, which makes it a nightmare for bacteria to survive. Think about what happens to fruit when it dries out in the sun. Pause and guess... three, two, one. Here’s why: honey pulls moisture out of anything that tries to grow inside it. Bacteria literally dehydrate and die before they can spoil your snack. Add in its natural acidity, and it becomes a fortress. Ever thought why honey turns into hard, sugar crystals? Drop your guess below.",
+    "series": "Food Whys",
+    "question": "Ever thought why honey turns into hard, sugar crystals? Drop your guess below.",
+    "answer_comment": "The answer: Crystallization occurs because honey is a supersaturated sugar solution. At cooler temperatures, the honey becomes even more supersaturated, forcing glucose to precipitate out as crystals. While refrigeration slows down the process, you can easily liquefy it again with gentle heat. Ever thought why some honey is darker than others?",
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "footage": [],
+      "review": [],
+      "notes": [
+        "scene 3 footage is a loose match (score 4.0), accepted"
+      ],
+      "pass": true,
+      "duration": 41.3
+    },
+    "repairs": 0,
+    "video_id": "EfZ-P6him7k",
+    "publish_at": "2026-11-12T12:00:00-05:00"
   }
 ]
