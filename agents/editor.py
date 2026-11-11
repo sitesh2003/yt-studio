@@ -72,14 +72,14 @@ def predict_overlays(script, times, words):
 
 
 def _dims(path):
-    import json as _j
+    """Width and height from ffmpeg's own stream line, so only ffmpeg is needed (no ffprobe)."""
+    import re
     import subprocess
     try:
-        out = subprocess.run(["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries",
-                              "stream=width,height", "-of", "json", str(path)],
-                             capture_output=True, text=True, timeout=30).stdout
-        st = _j.loads(out)["streams"][0]
-        return int(st["width"]), int(st["height"])
+        err = subprocess.run(["ffmpeg", "-hide_banner", "-i", str(path)], capture_output=True, text=True,
+                             encoding="utf-8", errors="replace", timeout=30).stderr
+        m = re.search(r"Video:.*?(\d{2,5})x(\d{2,5})", err)
+        return (int(m[1]), int(m[2])) if m else (0, 0)
     except Exception:
         return 0, 0
 

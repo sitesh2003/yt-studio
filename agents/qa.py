@@ -24,12 +24,10 @@ def _ff(args):
 
 
 def _duration(path):
-    r = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of",
-                        "csv=p=0", str(path)], capture_output=True, text=True)
-    try:
-        return float(r.stdout.strip())
-    except ValueError:
-        return 0.0
+    """Read from ffmpeg's own header line, so only ffmpeg is needed (no ffprobe)."""
+    import re
+    m = re.search(r"Duration:\s*(\d+):(\d+):([\d.]+)", _ff(["-i", str(path)]))
+    return int(m[1]) * 3600 + int(m[2]) * 60 + float(m[3]) if m else 0.0
 
 
 def technical(job):

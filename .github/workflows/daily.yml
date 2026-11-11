@@ -33,14 +33,19 @@ jobs:
       - name: Install FFmpeg
         timeout-minutes: 10
         run: |
-          # GitHub's Ubuntu mirror hung 30+ minutes on 11 Nov: give it 3 minutes, then retry from
-          # Ubuntu's main official archive instead of the mirror.
-          if ! timeout 180 bash -c 'sudo apt-get update -q -o Acquire::Retries=2 && sudo apt-get install -y -q ffmpeg'; then
-            echo "mirror stuck, switching to archive.ubuntu.com"
-            sudo sed -i 's/azure\.archive\.ubuntu\.com/archive.ubuntu.com/g' /etc/apt/sources.list /etc/apt/sources.list.d/* 2>/dev/null || true
-            timeout 300 bash -c 'sudo apt-get update -q -o Acquire::Retries=3 && sudo apt-get install -y -q ffmpeg'
+          # From PyPI (the same source as our other packages): a full static FFmpeg with captions
+          # (libass), x264 and fonts. Ubuntu's apt mirrors hung for over an hour on 11 Nov, so apt
+          # is only the back-up now.
+          if pip install -q imageio-ffmpeg==0.7.0; then
+            sudo cp "$(python -c 'import imageio_ffmpeg; print(imageio_ffmpeg.get_ffmpeg_exe())')" /usr/local/bin/ffmpeg
+            sudo chmod +x /usr/local/bin/ffmpeg
+          fi
+          if ! ffmpeg -hide_banner -filters 2>/dev/null | grep -q " ass "; then
+            echo "PyPI FFmpeg unavailable, trying apt"
+            timeout 300 bash -c 'sudo apt-get update -q -o Acquire::Retries=2 && sudo apt-get install -y -q ffmpeg'
           fi
           ffmpeg -version | head -1
+          ffmpeg -hide_banner -filters | grep " ass "
 
       - name: Install Python packages
         run: pip install -q -r requirements.txt
