@@ -31,7 +31,16 @@ jobs:
           cache: pip
 
       - name: Install FFmpeg
-        run: sudo apt-get update -q && sudo apt-get install -y -q ffmpeg
+        timeout-minutes: 10
+        run: |
+          # GitHub's Ubuntu mirror hung 30+ minutes on 11 Nov: give it 3 minutes, then retry from
+          # Ubuntu's main official archive instead of the mirror.
+          if ! timeout 180 bash -c 'sudo apt-get update -q -o Acquire::Retries=2 && sudo apt-get install -y -q ffmpeg'; then
+            echo "mirror stuck, switching to archive.ubuntu.com"
+            sudo sed -i 's/azure\.archive\.ubuntu\.com/archive.ubuntu.com/g' /etc/apt/sources.list /etc/apt/sources.list.d/* 2>/dev/null || true
+            timeout 300 bash -c 'sudo apt-get update -q -o Acquire::Retries=3 && sudo apt-get install -y -q ffmpeg'
+          fi
+          ffmpeg -version | head -1
 
       - name: Install Python packages
         run: pip install -q -r requirements.txt
