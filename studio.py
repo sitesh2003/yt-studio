@@ -34,6 +34,8 @@ def build(script):
     desc += ("\n\n" + "\n".join(credits) if credits else "")
     meta = {"topic": script["topic"], "title": script["title_options"][0], "description": desc,
             "tags": script.get("tags", []), "hook": script["scenes"][0]["narration"], "status": "review",
+            "narration": " ".join(sc["narration"] for sc in script["scenes"]),
+            "series": script.get("series", ""),
             "question": script.get("question", ""), "answer_comment": script.get("answer_comment", ""),
             "fact_ok": not (script.get("fact_check_result") or {}).get("unresolved", False),
             "weekly": bool(script.get("weekly")), "recap_source": script.get("recap_source")}
@@ -324,9 +326,7 @@ def daily():
     log(f"daily: {good} of {want} videos ready")
     if good:
         write_json(mark, {"date": _today_ist(), "videos": good})
-    waiting, _ = youtube.bank()
-    results.append({"bank": waiting})
-    hourly()
+    results.append({"health": hourly()})
     try:
         from agents import report
         stats = None
@@ -392,6 +392,12 @@ def hourly():
             comments(post=True)                    # and post them (early replies lift reach)
     except Exception as e:
         log(f"comments skipped: {e}")
+    try:  # roll call of production runs, catch-up if one was skipped, last accuracy audit, STATUS.md
+        from agents import health
+        return health.check()
+    except Exception as e:
+        log(f"health check skipped: {e}")
+        return []
 
 
 DEMO = {
