@@ -1,11 +1,9 @@
 # Ever Thought Why? - status
 
-Updated Wed 11 Nov, 11:09 PM IST by the health agent (every 2 hours, and after every production run).
+Updated Thu 12 Nov, 01:23 AM IST by the health agent (every 2 hours, and after every production run).
 
 - Video bank: 3 of 6 videos ready, covers until Thu 12 Nov, 10:30 PM IST.
-- Next production run: Thu 12 Nov, 03:13 AM IST (one is running now).
-- Corrected before going public: 'Why Cold Water Fails Against Spicy Food 🌶️🥛' -> 'Why Cold Water Fails Against Spicy Food 🌶️🥛' (The narration is scientifically accurate, but the description needed hashtags removed to meet the strict format requirements.)
-- Corrected before going public: 'The Only Food That Lasts Forever 🐝✨' -> 'Why Honey Actually Never Spoils 🍯✨' (The title is technically an overstatement since other foods like salt and white rice also last forever, but the narration is scientifically sound.)
+- Next production run: Thu 12 Nov, 03:13 AM IST.
 
 ## Videos waiting to go public
 
