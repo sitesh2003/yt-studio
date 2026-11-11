@@ -83,6 +83,8 @@ def flagged_scenes(q, n):
             if k.strip().isdigit():
                 notes[int(k) - 1] = "no strong footage was found; find a clear literal match"
     for line in q.get("review", []):
+        if re.search(r"caption|text|subtitle", line, re.I) and not re.search(r"footage|shows|image|clip|picture", line, re.I):
+            continue  # a caption remark is not a footage problem: re-picking clips cannot fix it
         for k in re.findall(r"[Ff]rame\s*(\d+)", line):
             notes[int(k) - 1] = line[:220]
     return {i: r for i, r in notes.items() if 0 <= i < n}

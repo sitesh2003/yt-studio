@@ -104,8 +104,15 @@ this moment, so a viewer instantly connects picture and words. Be strict:
 unrelated people or animals, abstract shapes, text overlays, watermarks, anything misleading
 or scientifically wrong for the narration.
 Return JSON: {{"scores": [numbers, one per image], "best": index starting at 1}}""", images=imgs)
-        scores = out.get("scores") or []
-        best = int(out.get("best", 0)) - 1
+        scores = [float(x) if isinstance(x, (int, float, str)) and str(x).replace(".", "", 1).isdigit() else 0.0
+                  for x in (out.get("scores") or [])]
+        b = out.get("best")
+        if isinstance(b, list):
+            b = b[0] if b else None
+        try:
+            best = int(b) - 1
+        except (TypeError, ValueError):
+            best = max(range(len(scores)), key=scores.__getitem__) if scores else -1
         if 0 <= best < len(keep):
             return keep[best], float(scores[best]) if best < len(scores) else 5.0
     except Exception as e:

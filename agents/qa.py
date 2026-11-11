@@ -99,7 +99,9 @@ Fail the video if ANY of these is true:
   analogy is fine)
 - anything inappropriate for all ages, gory, frightening, sexual, political, or a real brand/logo
   shown prominently
-- burned-in captions are cut off, overlap badly, misspelled, or unreadable
+- burned-in captions are cut off, overlap badly, misspelled, or unreadable (captions show only
+  1-2 words at a time, karaoke style, so a caption being a fragment of the sentence is NORMAL -
+  never fail a frame because its caption words are out of context)
 - watermarks, green screen, glitches, or stretched/blurry footage
 Return JSON: {{"pass": true or false, "issues": ["specific problem with frame number"],
 "frame_scores": [0-10 per frame]}}""", images=frames)
