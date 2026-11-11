@@ -64,7 +64,34 @@ def _photo_candidates(query):
             for h in r.json().get("hits", []) if _ok(h) and h.get("largeImageURL")]
 
 
-def _shortlist(cands, query, n=6):
+UA = {"User-Agent": "yt-studio/1.0 (https://github.com/sitesh2003/yt-studio)"}
+# Only licences that allow commercial use with at most a credit. Never share-alike (SA),
+# non-commercial (NC) or no-derivatives (ND): a video is a derivative work.
+_OK_LICENCES = ("public domain", "cc0", "cc by 2.0", "cc by 2.5", "cc by 3.0", "cc by 4.0", "pdm")
+
+
+def _commons_candidates(query):
+    """Wikimedia Commons photos: the specific plants, animals and foods stock sites lack."""
+    import re
+    r = _get("https://commons.wikimedia.org/w/api.php", params={
+        "action": "query", "format": "json", "generator": "search", "gsrnamespace": 6,
+        "gsrsearch": f"{query[:80]} filetype:bitmap", "gsrlimit": 15, "prop": "imageinfo",
+        "iiprop": "url|extmetadata|size", "iiurlwidth": 1280})
+    out = []
+    for p in (r.json().get("query") or {}).get("pages", {}).values():
+        ii = (p.get("imageinfo") or [{}])[0]
+        m = ii.get("extmetadata", {})
+        lic = (m.get("LicenseShortName", {}).get("value") or "").strip()
+        if not lic.lower().startswith(_OK_LICENCES) or ii.get("width", 0) < 1000 or not ii.get("thumburl"):
+            continue
+        artist = re.sub(r"<[^>]+>|\s+", " ", m.get("Artist", {}).get("value", "")).strip()[:60] or "unknown"
+        out.append({"kind": "photo", "id": ("c", p.get("pageid")), "url": ii["thumburl"], "thumb": ii["thumburl"],
+                    "user": artist, "tags": p.get("title", "").lower(), "fit": True,
+                    "credit": f"Photo: {artist}, {lic}, via Wikimedia Commons"})
+    return out
+
+
+def _shortlist(cands, query, n=8):
     words = {w for w in query.lower().split() if len(w) > 2}
     def score(c):
         tagwords = set(c["tags"].lower().replace(",", " ").split())
@@ -76,7 +103,7 @@ def _get(url, **kw):
     """requests.get that waits out Pixabay's rate limit (HTTP 429) instead of failing the video."""
     import time
     for attempt in range(6):
-        r = requests.get(url, timeout=kw.pop("timeout", 30), **kw)
+        r = requests.get(url, timeout=kw.pop("timeout", 30), headers=UA, **kw)
         if r.status_code != 429:
             r.raise_for_status()
             return r
@@ -138,7 +165,7 @@ Return JSON: {{"scores": [numbers, one per image], "best": index starting at 1}}
 def _download(url, path):
     import time
     for attempt in range(5):
-        r = requests.get(url, stream=True, timeout=120)
+        r = requests.get(url, stream=True, timeout=120, headers=UA)
         if r.status_code != 429:
             break
         r.close()
@@ -153,12 +180,19 @@ def _download(url, path):
 def _photo_clip(img_path, out_path, seconds, idx):
     """Slow Ken Burns zoom on a still photo so it reads as motion."""
     f = config()["format"]
+    W, H = f["width"], f["height"]
+    try:  # a landscape photo stays landscape; the editor blur-fills it like a landscape clip
+        with Image.open(img_path) as im:
+            if H > W and im.width / im.height > 0.9:
+                W, H = 1920, 1080
+    except Exception:
+        pass
     frames = max(int(seconds * f["fps"]) + 15, 30)
     zoom = "min(zoom+0.0009,1.18)" if idx % 2 == 0 else "if(eq(on,1),1.18,max(zoom-0.0009,1.0))"
     run(["ffmpeg", "-y", "-loop", "1", "-i", str(img_path), "-vf",
-         f"scale={f['width']*2}:{f['height']*2}:force_original_aspect_ratio=increase,"
-         f"crop={f['width']*2}:{f['height']*2},"
-         f"zoompan=z='{zoom}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d={frames}:s={f['width']}x{f['height']}:fps={f['fps']}",
+         f"scale={W*2}:{H*2}:force_original_aspect_ratio=increase,"
+         f"crop={W*2}:{H*2},"
+         f"zoompan=z='{zoom}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d={frames}:s={W}x{H}:fps={f['fps']}",
          "-frames:v", str(frames), "-c:v", "libx264", "-pix_fmt", "yuv420p", str(out_path)])
 
 
@@ -187,6 +221,10 @@ def pick_scene(i, scene, a, b, job_dir, used, note="", extra_queries=()):
                 cands += [c for c in _photo_candidates(q) if c["id"] not in used]
             except Exception as e:
                 log(f"visuals: photo search error {e}")
+            try:
+                cands += [c for c in _commons_candidates(q) if c["id"] not in used]
+            except Exception as e:
+                log(f"visuals: commons search error {str(e)[:60]}")
         seen, uniq = set(), []
         for c in cands:
             if c["id"] not in seen:
@@ -207,7 +245,7 @@ def pick_scene(i, scene, a, b, job_dir, used, note="", extra_queries=()):
                 _download(pick["url"], img)
                 _photo_clip(img, out, b - a + 0.5, i)
                 img.unlink(missing_ok=True)
-                credit = f"Photo by {pick['user']} on Pixabay"
+                credit = pick.get("credit") or f"Photo by {pick['user']} on Pixabay"
         except Exception as e:  # one failed download must not sink the whole video; QA flags the scene
             log(f"visuals: download failed for scene {i + 1} ({str(e)[:60]}), placeholder for now")
             _fallback(out, b - a + 0.5, i)

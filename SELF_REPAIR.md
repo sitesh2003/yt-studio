@@ -17,6 +17,7 @@ made once at most.
 | A claim cannot be confirmed | Fact-checker (2 rounds of fixes) | Cuts or replaces the unconfirmed claims and checks again; only if that fails is the topic skipped, **before** any voice or footage is made |
 | Title or first line overstates | Fact-checker checks the title and hook hardest | Rewrites them true before anything is built |
 | Footage does not match the words | Footage judge scores every clip; quality reviewer looks at a frame of each scene | Re-picks those scenes up to 2 times, and thinks of **new search words** for scenes with no good match |
+| Pixabay has nothing for a specific plant, animal or food (krill, wasabi, salmon fry) | Footage search | Also searches Wikimedia Commons photos, keeping only public-domain, CC0 and CC BY (credited in the description; never share-alike, non-commercial or no-derivatives) |
 | One or two scenes still have nothing after every search | Footage scores after the 2 repairs | Holds the strongest neighbouring shot a little longer instead of losing the whole video, then re-checks |
 | The reviewer mistakes our own corner logo for a brand | Reviewer prompt | The reviewer is told the corner mark is the channel's logo |
 | A false line is found after upload | Last accuracy audit of every waiting video, before it goes public | Deletes the never-public video, saves the exact wrong line and the truth, and remakes it first in the next run (max 2 tries) |
