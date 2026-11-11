@@ -306,7 +306,13 @@ def daily():
                 t["fix"]["tries"] = t["fix"].get("tries", 0) + 1
                 write_json(DATA / "remakes.json", remakes)
                 log(f"remake: rebuilding '{t['fix'].get('title')}' with the correction")
-            job, meta = build(writer.write_script(t["topic"], use_recap, fix=t.get("fix")))
+            script = writer.write_script(t["topic"], use_recap, fix=t.get("fix"))
+            if (script.get("fact_check_result") or {}).get("unresolved"):
+                # it could never be uploaded: skip the 10+ minutes of voice, footage and render
+                log("not building: fact-check unresolved; trying a spare topic")
+                results.append({"title": script["title_options"][0], "reason": "fact-check could not confirm every claim"})
+                continue
+            job, meta = build(script)
         except Exception as e:
             log(f"video failed, trying a spare topic: {e}")
             results.append({"topic": t["topic"], "reason": f"could not be made: {str(e)[:120]}"})
