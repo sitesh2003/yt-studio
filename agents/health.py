@@ -7,7 +7,7 @@ Runs every 2 hours (with the answers job) and at the end of every production run
   2. AUDIT       every video waiting in the bank gets a last accuracy check BEFORE it goes public:
                  title, description and narration against the facts. An overstated title or
                  description is rewritten in place; a false spoken claim (audio cannot be edited)
-                 takes the video off the schedule, kept private, and the bank refills.
+                 deletes the never-public video and queues a corrected remake; the bank refills.
   3. STATUS      writes STATUS.md (in the repo, readable any time) and the block for the daily
                  email: what ran, what was skipped, what was done about it, how far ahead the bank
                  covers, and when the next production run is due.
@@ -116,10 +116,10 @@ Return JSON: {{"title_ok": true or false, "description_ok": true or false,
  "correct_version": "if narration_false: what is actually true, in one or two plain sentences",
  "why": "one line"}}""")
         if out.get("narration_false"):
-            st = {"privacyStatus": "private",
-                  "selfDeclaredMadeForKids": v["status"].get("selfDeclaredMadeForKids", False)}
-            y.videos().update(part="status", body={"id": vid, "status": st}).execute()
-            actions.append(f"Taken off the schedule before going public: '{sn['title']}'. Wrong line: "
+            # it was never public, so nothing is lost: delete it rather than leave private clutter
+            # on the channel; the corrected remake takes its place
+            y.videos().delete(id=vid).execute()
+            actions.append(f"Deleted before going public: '{sn['title']}'. Wrong line: "
                            f"\"{out.get('false_sentence', '?')}\". Correct: {out.get('correct_version', out.get('why', ''))} "
                            "A corrected remake is queued for the next production run.")
             remakes = read_json(DATA / "remakes.json", []) or []
