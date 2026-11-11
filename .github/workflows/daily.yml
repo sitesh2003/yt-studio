@@ -1,0 +1,78 @@
+name: Daily videos
+
+on:
+  schedule:
+    # GitHub often skips a scheduled run at busy times (it skipped 11 Nov), so there are
+    # back-ups; studio.py daily does nothing once today's videos are made.
+    - cron: "17 7 * * *"       # 12:47 PM IST
+    - cron: "43 8 * * *"       # 2:13 PM IST back-up
+    - cron: "29 10 * * *"      # 3:59 PM IST back-up
+  workflow_dispatch: {}         # "Run workflow" button for a manual run
+
+permissions:
+  contents: write
+
+concurrency:
+  group: studio-state
+  cancel-in-progress: false
+
+jobs:
+  make:
+    runs-on: ubuntu-latest
+    timeout-minutes: 125
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install FFmpeg
+        run: sudo apt-get update -q && sudo apt-get install -y -q ffmpeg
+
+      - name: Install Python packages
+        run: pip install -q -r requirements.txt
+
+      - name: Write sign-in files from secrets
+        env:
+          CLIENT_SECRET_JSON: ${{ secrets.CLIENT_SECRET_JSON }}
+          TOKEN_JSON: ${{ secrets.TOKEN_JSON }}
+        run: |
+          printf '%s' "$CLIENT_SECRET_JSON" > client_secret.json
+          printf '%s' "$TOKEN_JSON" > token.json
+
+      - name: Make, fact-check, upload (private + scheduled)
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          REPORT_EMAIL: ${{ secrets.REPORT_EMAIL }}
+          PUBLISH_MODE: auto
+          DAILY_BUDGET_MIN: "95"   # stop starting new videos after this, so the report always goes out
+          PYTHONUNBUFFERED: "1"
+        run: |
+          python studio.py daily
+          python studio.py learn || true
+
+      - name: Keep the videos for 7 days (download from this run's page)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: videos
+          path: |
+            jobs/*/final.mp4
+            jobs/*/thumbnail*.jpg
+            jobs/*/review.html
+          retention-days: 7
+          if-no-files-found: ignore
+
+      - name: Save what the agents learned
+        if: always()
+        run: |
+          git config user.name "yt-studio-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -f data/*.json 2>/dev/null || true
+          git diff --cached --quiet || git commit -m "state: daily run $(date -u +%F)"
+          git pull --rebase -q || true
+          git push -q || true

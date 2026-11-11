@@ -1,0 +1,16 @@
+.env
+client_secret.json
+token.json
+token*.json
+*secret*.json
+.venv/
+jobs/
+__pycache__/
+data/*
+!data/history.json
+!data/scheduled.json
+!data/replied.json
+!data/learnings.json
+!data/performance.json
+!data/trends.json
+!data/reply_drafts.json

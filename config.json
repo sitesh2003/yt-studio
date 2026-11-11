@@ -1,0 +1,76 @@
+{
+  "channel": {
+    "niche": "the surprising science behind food, animals, the ocean and your own body: why and how things really work, explained accurately",
+    "audience": "US viewers aged 16-40, curious, scroll fast, no science background needed",
+    "voice_tone": "friendly, confident, a little playful, never clickbait-false",
+    "language": "en-US",
+    "seed_keywords": [
+      "food science",
+      "why does",
+      "animal facts",
+      "ocean facts",
+      "human body facts",
+      "how it's made",
+      "weird science"
+    ],
+    "name": "Ever Thought Why?"
+  },
+  "format": {
+    "type": "short",
+    "target_seconds": 55,
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "llm": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash",
+    "fallback_models": [
+      "gemini-3.7-flash",
+      "gemini-3.5-flash",
+      "gemini-3.6-flash",
+      "gemini-3.5-flash-lite",
+      "gemini-3.1-flash-lite"
+    ]
+  },
+  "voice": {
+    "engine": "edge-tts",
+    "name": "en-US-AndrewMultilingualNeural",
+    "rate": "+8%"
+  },
+  "captions": {
+    "words_per_line": 2,
+    "font": "Archivo Black",
+    "size": 112,
+    "color": "&H00FFFFFF",
+    "highlight": "&H0000E5FF",
+    "outline": 6,
+    "position_y": 1180
+  },
+  "music": {
+    "folder": "assets/music",
+    "volume": 0.12
+  },
+  "publish": {
+    "mode": "review",
+    "privacy": "public",
+    "category_id": "28",
+    "timezone_note": "US Eastern. 12:00 ET = 22:30 IST, 15:00 ET = 01:30 IST",
+    "slots_et": [
+      "12:00",
+      "15:00",
+      "19:00"
+    ],
+    "videos_per_day": 3,
+    "made_for_kids": false,
+    "contains_synthetic_media": false
+  },
+  "community": {
+    "mode": "draft",
+    "max_replies_per_run": 20
+  },
+  "report": {
+    "email": "",
+    "_note": "the address comes from the REPORT_EMAIL secret (cloud) or .env (PC); never written here, the repo is public"
+  }
+}
