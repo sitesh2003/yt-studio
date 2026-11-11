@@ -9,7 +9,7 @@ made once at most.
 |---|---|---|
 | GitHub skips a planned production run | Health agent compares the planned times in `daily.yml` with GitHub's run list, every 2 hours | Notes it in the email and STATUS.md, and starts a catch-up run if the bank is short |
 | A production run fails or runs out of time | Same run list (failure / cancelled / timed out) | Catch-up run; 95-minute budget so the report always goes out |
-| Not enough videos ready ahead | Video bank counted from YouTube itself | Each run tops the bank up to 2 days (6 videos), within about 5 uploads a day of free quota |
+| Not enough videos ready ahead | Video bank counted from YouTube itself | Each run tops the bank up to 2 days (6 videos), within about 5 uploads a day of free quota; if it holds less than a day, the health agent starts a production run straight away (at most every 3 hours) |
 | Ubuntu's download server hangs (FFmpeg) | Install step | FFmpeg comes from PyPI; apt is only the back-up, both with time limits |
 | Pixabay says "too many requests" | HTTP 429 | Waits and retries; one failed download only affects that scene |
 | Free AI model busy or retired | 503 / 429 / 404 | Rotates through the model list with patient retries |

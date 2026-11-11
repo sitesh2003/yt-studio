@@ -185,7 +185,10 @@ def check(heal=True):
             if r["url"] not in reported:
                 lines.append(f"The production run at {_fmt(r['at'])} ended as '{r['result']}'.")
                 reported.append(r["url"])
-        problem = rc["skipped"] or rc["failed"] or getattr(audit_bank, "pulled", False)
+        low = len(bank) < p["videos_per_day"]   # less than one day of videos ready: never wait for the clock
+        problem = rc["skipped"] or rc["failed"] or getattr(audit_bank, "pulled", False) or low
+        if low and not (rc["skipped"] or rc["failed"]):
+            lines.append(f"The bank holds less than a day of videos ({len(bank)}).")
         if heal and problem and len(bank) < target and not rc["running"] and os.environ.get("GITHUB_TOKEN"):
             last = notes.get("catch_up")
             if not last or dt.datetime.fromisoformat(last) < dt.datetime.now(dt.timezone.utc) - dt.timedelta(hours=3):
