@@ -105,6 +105,7 @@ def audit_bank():
         first = sn["description"].split("\n\n")[0]
         out = llm_json(f"""You are the last accuracy check before a science Short goes public. Be strict but fair:
 popular simplifications are fine; overstatements, myths and false claims are not.
+Only judge FACTS: hashtags, emojis and formatting are fine and never a reason to mark something not ok.
 TITLE: {sn['title']}
 DESCRIPTION: {first}
 NARRATION (spoken, cannot be edited): {spoken}
