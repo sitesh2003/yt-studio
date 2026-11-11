@@ -138,7 +138,8 @@
     "fact_ok": true,
     "video_id": "4LJjIxeP_dY",
     "note": "set private 11 Nov: old mismatched footage",
-    "answered": true
+    "answered": true,
+    "recapped": true
   },
   {
     "job": "20261110-2344-why-does-ice-float-when-almost-every-oth",
@@ -441,5 +442,143 @@
     "repairs": 0,
     "video_id": "mQCY1l14KaY",
     "publish_at": "2026-11-11T12:00:00-05:00"
+  },
+  {
+    "job": "20261111-1446-why-drinking-cold-water-doesn-t-stop-the",
+    "topic": "Why drinking cold water doesn't stop the burn of spicy food, and what does",
+    "title": "Why Water Doesn't Stop Spicy Food 🌶️💧",
+    "description": "Drinking water after eating spicy food usually fails. Find out why oil makes all the difference and how to actually stop the burn.\n\n#shorts #science #food\n\nPhoto by RitaE on Pixabay\nPhoto by marmixer on Pixabay\nPhoto by zjazjazoie on Pixabay\nVideo by AlekseiyPovar on Pixabay\nVideo by Lademenorca on Pixabay\nVideo by Mario_Krimer on Pixabay\nVideo by XiaosKitchen on Pixabay\nVideo by bottlein on Pixabay",
+    "tags": [
+      "spicy food",
+      "capsaicin",
+      "science experiments",
+      "food science",
+      "how things work"
+    ],
+    "hook": "Why does drinking a glass of cold water do almost nothing to stop mouth burn?",
+    "status": "review",
+    "narration": "Why does drinking a glass of cold water do almost nothing to stop mouth burn? That burning sensation comes from a chemical called capsaicin. Here's the weird part: capsaicin is a chemical that behaves like an oil, and oil never mixes with water. When you drink water, it just slides right past the oil without washing it away. So if water fails, think about what kind of liquid actually binds to oil. Pause and guess... three, two, one. Fat does the trick, which is why milk or yogurt helps because the fats and proteins inside can bind to the capsaicin and pull it away from the pain receptors in your mouth. Nobody guessed yesterday's puzzle about your eye plumbing, so today's is your chance. Ever thought why a slick of greasy oil on a frying pan won't rinse off with just plain tap water? Drop your guess below.",
+    "series": "Food Whys",
+    "question": "Ever thought why a slick of greasy oil on a frying pan won't rinse off with just plain tap water? Drop your guess below.",
+    "answer_comment": "The answer: Oil and water do not mix because of their chemical structures, meaning water molecules cannot grab onto grease or oil molecules to wash them away. Just like in your mouth with capsaicin, you need soap—which acts as an emulsifier—to bind to the oil and lift it off the surface. Did you guess how oil resists water? Let me know what you want to explore next!",
+    "fact_ok": false,
+    "weekly": false,
+    "recap_source": "4LJjIxeP_dY",
+    "qa": {
+      "facts": [
+        "fact-check not fully resolved"
+      ],
+      "technical": [],
+      "sync": [],
+      "footage": [],
+      "review": [],
+      "pass": false,
+      "duration": 48.3
+    },
+    "repairs": 0
+  },
+  {
+    "job": "20261111-1507-why-farmed-salmon-is-naturally-gray-whil",
+    "topic": "Why Farmed Salmon Is Naturally Gray While Wild Salmon Is Bright Pink",
+    "title": "Why Farmed Salmon Is Naturally Gray 🐟🤔",
+    "description": "Ever wonder why store-bought salmon is always bright pink, even though the fish starts out gray? We dive into the science of pigments and farm-raised diets. #shorts #foodscience #salmon\n\nVideo by Eaktas06 on Pixabay\nVideo by GreenCardShow on Pixabay\nVideo by JayShawflybydrones on Pixabay\nVideo by Kaffeesüchtig on Pixabay\nVideo by LisaOlivia on Pixabay\nVideo by XiaosKitchen on Pixabay\nVideo by dslr99 on Pixabay",
+    "tags": [
+      "salmon",
+      "food science",
+      "aquaculture"
+    ],
+    "hook": "Your salmon dinner would actually be much paler without its diet.",
+    "status": "review",
+    "narration": "Your salmon dinner would actually be much paler without its diet. In the wild, salmon get their signature pink color from eating tiny crustaceans like krill and shrimp. These creatures are packed with a natural red pigment called astaxanthin. But farmed salmon eat a diet of fish pellets without those red pigments. Think about what happens if you feed a bird colored dye; what do you think fish farmers do to get that pink color back? Pause and guess... three, two, one. Here’s why: farmers add the exact same pigment—astaxanthin—to the feed to match the consumer's expectation of pink salmon. It’s not just fish; flamingos get their color from the same source. Ever thought why a bright pink egg yolk is sometimes considered a sign of a healthier chicken? Drop your guess below.",
+    "series": "Food Whys",
+    "question": "Ever thought why a bright pink egg yolk is sometimes considered a sign of a healthier chicken?",
+    "answer_comment": "The answer: Just like salmon, chickens get their egg yolk color from the pigments in their diet! If a chicken eats plenty of plants rich in carotenoids—like corn, marigolds, or alfalfa—their yolks turn a deep, vibrant orange. If they eat a plain diet like wheat or barley, the yolks stay pale yellow. It shows that the 'health' of the egg is tied to the variety of the chicken's diet. Ever thought how your own skin might change color if you ate only carrots for a month?",
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "footage": [
+        "scene(s) [4] have weak or placeholder footage"
+      ],
+      "review": [],
+      "pass": false,
+      "duration": 46.6
+    },
+    "repairs": 2
+  },
+  {
+    "job": "20261111-1535-why-99-of-the-wasabi-you-eat-is-just-dye",
+    "topic": "Why 99% of the 'Wasabi' You Eat Is Just Dyed Horseradish",
+    "title": "Why Your Sushi Wasabi Is A Lie 🍣🧪",
+    "description": "Think that green paste at your favorite sushi spot is the real deal? Think again. We explore why authentic wasabi is rarely what you're actually eating.\n\n#foodscience #sushi #learnontiktok\n\nPhoto by emilyralston on Pixabay\nVideo by Kanenori on Pixabay\nVideo by XiaosKitchen on Pixabay\nVideo by klimkin on Pixabay",
+    "tags": [
+      "food science",
+      "wasabi",
+      "sushi",
+      "cooking",
+      "science facts"
+    ],
+    "hook": "That green paste on your sushi plate is almost certainly a lie.",
+    "status": "review",
+    "narration": "That green paste on your sushi plate is almost certainly a lie. Authentic wasabi is a finicky root that grows in cold, running mountain water. It’s so expensive and hard to farm that it rarely leaves Japan. Most 'wasabi' is actually just horseradish mixed with mustard and green dye. Now, why does the fake stuff hit your nose so hard compared to the real thing? Think about how flavor compounds evaporate. Pause and guess... three, two, one. Here's why: real wasabi's heat is subtle and fades in minutes. Horseradish chemicals are much more stable and aggressive, so they linger. Ever thought why a raw onion makes your eyes sting, even though it's not even in your mouth? Drop your guess below.",
+    "series": "Food Whys",
+    "question": "Ever thought why a raw onion makes your eyes sting, even though it's not even in your mouth?",
+    "answer_comment": "The answer: Both onions and horseradish/wasabi use volatile chemical compounds to defend themselves from being eaten. When you cut an onion, you break its cells, releasing enzymes that create a gas. This gas drifts through the air, hits the moisture in your eyes, and creates a mild acid that causes that stinging sensation! It's a natural chemical defense system. Any other foods that make you cry?",
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "footage": [
+        "scene(s) [3, 5, 7] have weak or placeholder footage"
+      ],
+      "review": [
+        "Frame 4: The jar shows a prominent brand name logo ('Ball' and 'MASON') embossed on the glass, which violates the strict rule against real brands/logos shown prominently."
+      ],
+      "pass": false,
+      "duration": 42.5
+    },
+    "repairs": 2
+  },
+  {
+    "job": "20261111-1610-sea-otters-have-1-million-hairs-per-squa",
+    "topic": "Sea Otters Have 1 Million Hairs Per Square Inch (Why They Never Get Wet)",
+    "title": "Why Sea Otters Never Get Wet 🦦❄️",
+    "description": "Sea otters don't have blubber like whales, so they rely on the densest fur in the animal kingdom to survive. See how they trap air to stay warm in the freezing ocean. #shorts #science #animals\n\nPhoto by Janvanbizar on Pixabay\nPhoto by Sunriseforever on Pixabay\nPhoto by ambquinn on Pixabay\nVideo by GreenCardShow on Pixabay\nVideo by estivejovem on Pixabay\nVideo by stefaniejockschat on Pixabay",
+    "tags": [
+      "sea otter",
+      "ocean",
+      "science"
+    ],
+    "hook": "Sea otters have one million hairs per square inch, and it is one of the main reasons they stay warm, alongside their incredibly high metabolism.",
+    "status": "review",
+    "narration": "Sea otters have one million hairs per square inch, and it is one of the main reasons they stay warm, alongside their incredibly high metabolism. That is roughly five hundred times denser than the hair on your own head. Their fur is so incredibly packed that water rarely reaches their skin, keeping their undercoat mostly dry. But here is the weird part: if they stay dry, why do they spend hours every single day aggressively rubbing and blowing air into their coat? Think about what happens to your clothes when you trap air inside the fibers. Pause and guess... three, two, one. Here's why: that trapped air is an insulator that prevents the freezing ocean water from drawing heat away from their body. Without those air pockets, they would lose body heat very rapidly. Ever thought how a thick wool sweater keeps you warm, even if it gets slightly damp? Drop your guess below.",
+    "series": "Ocean Whys",
+    "question": "Ever thought how a thick wool sweater keeps you warm, even if it gets slightly damp? Drop your guess below.",
+    "answer_comment": "The answer: Wool fibers are naturally crimped, which traps tiny pockets of air to insulate you. Even when damp, wool keeps you warm because the fibers absorb moisture, releasing a small amount of heat in the process, and their structure keeps them from matting down and losing their loft.",
+    "fact_ok": false,
+    "weekly": false,
+    "recap_source": null,
+    "qa": {
+      "facts": [
+        "fact-check not fully resolved"
+      ],
+      "technical": [],
+      "sync": [],
+      "footage": [
+        "scene(s) [4, 8] have weak or placeholder footage"
+      ],
+      "review": [
+        "Frame 1 contains a visible logo/watermark in the top left corner (question mark icon)."
+      ],
+      "pass": false,
+      "duration": 52.2
+    },
+    "repairs": 0
   }
 ]

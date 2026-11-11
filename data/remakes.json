@@ -1,11 +1,11 @@
 [
- {
-  "topic": "Why drinking cold water doesn't stop the burn of spicy food, and what does",
-  "pulled": "mQCY1l14KaY",
-  "title": "Why Ice Water Won't Stop the Spicy Burn (But Milk Will)",
-  "false_sentence": "Drinking cold water makes spicy food burn worse.",
-  "correct_version": "Capsaicin, the chemical behind the burn, dissolves in fat and oil, not water. Cold water only cools the mouth for a moment and can spread the capsaicin around; milk, yogurt or other fatty foods actually pick it up and carry it away.",
-  "why": "Water does not make the burn chemically worse; it just fails to wash the oily capsaicin away.",
-  "tries": 0
- }
+  {
+    "topic": "Why drinking cold water doesn't stop the burn of spicy food, and what does",
+    "pulled": "mQCY1l14KaY",
+    "title": "Why Ice Water Won't Stop the Spicy Burn (But Milk Will)",
+    "false_sentence": "Drinking cold water makes spicy food burn worse.",
+    "correct_version": "Capsaicin, the chemical behind the burn, dissolves in fat and oil, not water. Cold water only cools the mouth for a moment and can spread the capsaicin around; milk, yogurt or other fatty foods actually pick it up and carry it away.",
+    "why": "Water does not make the burn chemically worse; it just fails to wash the oily capsaicin away.",
+    "tries": 1
+  }
 ]
