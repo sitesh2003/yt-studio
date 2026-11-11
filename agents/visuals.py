@@ -33,7 +33,7 @@ def _ok(h):
 
 
 def _video_candidates(query):
-    r = requests.get("https://pixabay.com/api/videos/",
+    r = _get("https://pixabay.com/api/videos/",
                      params={"key": key("PIXABAY_API_KEY"), "q": query[:100], "per_page": 20,
                              "safesearch": "true", "video_type": "film"}, timeout=30)
     r.raise_for_status()
@@ -53,7 +53,7 @@ def _video_candidates(query):
 
 
 def _photo_candidates(query):
-    r = requests.get("https://pixabay.com/api/",
+    r = _get("https://pixabay.com/api/",
                      params={"key": key("PIXABAY_API_KEY"), "q": query[:100], "image_type": "photo",
                              "orientation": "vertical" if _vertical() else "horizontal",
                              "min_height": 1600 if _vertical() else 1000, "safesearch": "true",
@@ -72,8 +72,23 @@ def _shortlist(cands, query, n=6):
     return sorted(cands, key=score, reverse=True)[:n]
 
 
+def _get(url, **kw):
+    """requests.get that waits out Pixabay's rate limit (HTTP 429) instead of failing the video."""
+    import time
+    for attempt in range(6):
+        r = requests.get(url, timeout=kw.pop("timeout", 30), **kw)
+        if r.status_code != 429:
+            r.raise_for_status()
+            return r
+        wait = int(r.headers.get("Retry-After") or 0) or 15 * (attempt + 1)
+        log(f"visuals: Pixabay busy, waiting {wait}s")
+        time.sleep(min(wait, 90))
+    r.raise_for_status()
+    return r
+
+
 def _thumb_bytes(url):
-    im = Image.open(io.BytesIO(requests.get(url, timeout=30).content)).convert("RGB")
+    im = Image.open(io.BytesIO(_get(url).content)).convert("RGB")
     im.thumbnail((320, 320))
     buf = io.BytesIO()
     im.save(buf, "JPEG", quality=80)
@@ -121,7 +136,14 @@ Return JSON: {{"scores": [numbers, one per image], "best": index starting at 1}}
 
 
 def _download(url, path):
-    with requests.get(url, stream=True, timeout=120) as r:
+    import time
+    for attempt in range(5):
+        r = requests.get(url, stream=True, timeout=120)
+        if r.status_code != 429:
+            break
+        r.close()
+        time.sleep(15 * (attempt + 1))
+    with r:
         r.raise_for_status()
         with open(path, "wb") as fh:
             for chunk in r.iter_content(1 << 16):
