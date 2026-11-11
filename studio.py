@@ -248,14 +248,22 @@ def _today_ist():
 
 
 def daily():
-    # GitHub drops scheduled runs at busy times, so the workflow has back-up triggers;
-    # this guard makes a later trigger a no-op once today's videos are made.
+    # VIDEO BANK: several production runs a day, at GitHub's quiet hours. Each run tops the bank up
+    # to bank_days of finished, scheduled videos, within the daily upload quota. A skipped or failed
+    # run never leaves the channel empty: the bank covers it, and the next run refills it.
     import os
-    mark = DATA / "last_daily.json"
-    if not os.environ.get("FORCE_DAILY") and (read_json(mark, {}) or {}).get("date") == _today_ist():
-        log("daily: today's videos are already made, nothing to do")
-        return
     p = config()["publish"]
+    from agents import youtube as _yt
+    waiting, quota_left = _yt.bank()
+    target = p.get("bank_days", 2) * p["videos_per_day"]
+    need = min(p["videos_per_day"], target - waiting, quota_left)
+    if os.environ.get("FORCE_DAILY"):
+        need = max(need, 1)
+    log(f"bank: {waiting} videos waiting to go public (target {target}), {quota_left} uploads left today -> making {max(need, 0)}")
+    if need <= 0:
+        hourly()
+        return
+    mark = DATA / "last_daily.json"
     try:
         trends.scan()
     except Exception as e:
@@ -267,7 +275,7 @@ def daily():
     except Exception as e:
         log(f"recap skipped: {e}")
     import time
-    want = p["videos_per_day"]
+    want = need
     good = 0
     results = []
     # spare topics: a busy AI model or a held-back fact-check no longer means a missing video
@@ -316,6 +324,8 @@ def daily():
     log(f"daily: {good} of {want} videos ready")
     if good:
         write_json(mark, {"date": _today_ist(), "videos": good})
+    waiting, _ = youtube.bank()
+    results.append({"bank": waiting})
     hourly()
     try:
         from agents import report

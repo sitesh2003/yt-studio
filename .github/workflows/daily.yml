@@ -2,11 +2,12 @@ name: Daily videos
 
 on:
   schedule:
-    # GitHub often skips a scheduled run at busy times (it skipped 11 Nov), so there are
-    # back-ups; studio.py daily does nothing once today's videos are made.
+    # VIDEO BANK: three production runs a day at GitHub's quiet hours (US night, odd minutes).
+    # Each run tops the bank up to 2 days of scheduled videos and does nothing if it is full,
+    # so a skipped or failed run never leaves the channel without its 3 videos.
+    - cron: "43 21 * * *"      # 3:13 AM IST
+    - cron: "47 3 * * *"       # 9:17 AM IST
     - cron: "17 7 * * *"       # 12:47 PM IST
-    - cron: "43 8 * * *"       # 2:13 PM IST back-up
-    - cron: "29 10 * * *"      # 3:59 PM IST back-up
   workflow_dispatch: {}         # "Run workflow" button for a manual run
 
 permissions:

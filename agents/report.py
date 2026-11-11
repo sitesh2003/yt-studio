@@ -23,6 +23,8 @@ def _when(iso):
 
 def build(results, stats=None):
     e = html.escape
+    bank = next((r["bank"] for r in results if "bank" in r), None)
+    results = [r for r in results if "bank" not in r]
     pub = [r for r in results if r.get("video_id")]
     held = [r for r in results if not r.get("video_id")]
     rows = "".join(
@@ -47,6 +49,7 @@ def build(results, stats=None):
 <tr><td style="padding:20px 24px">
 <p style="margin:0 0 6px;font-size:15px;color:#0b1630"><b>{len(pub)} published</b> · {len(held)} held back</p>
 <p style="margin:0 0 16px;font-size:13px;color:#5a6577">{e(stat_line)}</p>
+{f'<p style="margin:0 0 16px;font-size:13px;color:#0b1630">Video bank: <b>{bank}</b> videos ready and scheduled ahead (3 go public each day).</p>' if bank is not None else ''}
 <p style="margin:16px 0 4px;font-size:13px;letter-spacing:.06em;color:#00a896"><b>PUBLISHED / SCHEDULED</b></p>
 <table width="100%" cellpadding="0" cellspacing="0">{rows}</table>
 {f'<p style="margin:20px 0 4px;font-size:13px;letter-spacing:.06em;color:#b00020"><b>HELD BACK (not uploaded)</b></p><table width="100%" cellpadding="0" cellspacing="0">{held_rows}</table>' if held else ''}

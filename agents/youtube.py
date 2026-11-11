@@ -40,6 +40,11 @@ def next_slot():
     p = config()["publish"]
     used = set(read_json(DATA / "scheduled.json", []) or [])
     et = ZoneInfo("America/New_York")
+    try:  # slots already taken on YouTube, whichever machine uploaded them
+        used |= {dt.datetime.fromisoformat(t.replace("Z", "+00:00")).astimezone(et).isoformat()
+                 for t in _scheduled_times()}
+    except Exception:
+        pass
     now = dt.datetime.now(et)
     for day in range(0, 30):
         d = (now + dt.timedelta(days=day)).date()
@@ -55,6 +60,8 @@ def upload(job_dir, meta, when=None):
     from googleapiclient.http import MediaFileUpload
     p = config()["publish"]
     when = when or next_slot()
+    if isinstance(when, str):
+        when = dt.datetime.fromisoformat(when)
     body = {
         "snippet": {"title": meta["title"][:100], "description": meta["description"][:4900],
                     "tags": meta.get("tags", [])[:30], "categoryId": p["category_id"],
@@ -258,3 +265,36 @@ def views(video_ids):
         for v in yt().videos().list(part="statistics", id=",".join(ids[i:i + 50])).execute().get("items", []):
             out[v["id"]] = int(v["statistics"].get("viewCount", 0))
     return out
+
+
+def _scheduled_times():
+    y = yt()
+    up = y.channels().list(part="contentDetails", mine=True).execute()["items"][0]["contentDetails"]["relatedPlaylists"]["uploads"]
+    ids = [i["contentDetails"]["videoId"] for i in
+           y.playlistItems().list(part="contentDetails", playlistId=up, maxResults=50).execute().get("items", [])]
+    return [v["status"]["publishAt"] for v in
+            (y.videos().list(part="status", id=",".join(ids)).execute().get("items", []) if ids else [])
+            if v["status"].get("publishAt")]
+
+
+def bank():
+    """The video bank, read from YouTube itself (the truth, whichever machine uploaded):
+    how many uploads are still private and scheduled to go public, and how many uploads today's
+    free quota still allows (resets midnight Pacific; an upload costs 1,600 of 10,000 units)."""
+    y = yt()
+    up = y.channels().list(part="contentDetails", mine=True).execute()["items"][0]["contentDetails"]["relatedPlaylists"]["uploads"]
+    ids = [i["contentDetails"]["videoId"] for i in
+           y.playlistItems().list(part="contentDetails", playlistId=up, maxResults=50).execute().get("items", [])]
+    now = dt.datetime.now(dt.timezone.utc)
+    pt = ZoneInfo("America/Los_Angeles")
+    waiting = done = 0
+    for i in range(0, len(ids), 50):
+        for v in y.videos().list(part="status,snippet", id=",".join(ids[i:i + 50])).execute().get("items", []):
+            pa = v["status"].get("publishAt")
+            if pa and dt.datetime.fromisoformat(pa.replace("Z", "+00:00")) > now:
+                waiting += 1
+            pub = dt.datetime.fromisoformat(v["snippet"]["publishedAt"].replace("Z", "+00:00"))
+            if pub.astimezone(pt).date() == now.astimezone(pt).date():
+                done += 1
+    cap = config()["publish"].get("max_uploads_per_day", 5)
+    return waiting, max(0, cap - done)

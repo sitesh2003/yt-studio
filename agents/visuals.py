@@ -198,15 +198,20 @@ def pick_scene(i, scene, a, b, job_dir, used, note="", extra_queries=()):
     credit = None
     if pick and score >= 5:
         used.add(pick["id"])
-        if pick["kind"] == "video":
-            _download(pick["url"], out)
-            credit = f"Video by {pick['user']} on Pixabay"
-        else:
-            img = job_dir / f"img_{i:02d}.jpg"
-            _download(pick["url"], img)
-            _photo_clip(img, out, b - a + 0.5, i)
-            img.unlink(missing_ok=True)
-            credit = f"Photo by {pick['user']} on Pixabay"
+        try:
+            if pick["kind"] == "video":
+                _download(pick["url"], out)
+                credit = f"Video by {pick['user']} on Pixabay"
+            else:
+                img = job_dir / f"img_{i:02d}.jpg"
+                _download(pick["url"], img)
+                _photo_clip(img, out, b - a + 0.5, i)
+                img.unlink(missing_ok=True)
+                credit = f"Photo by {pick['user']} on Pixabay"
+        except Exception as e:  # one failed download must not sink the whole video; QA flags the scene
+            log(f"visuals: download failed for scene {i + 1} ({str(e)[:60]}), placeholder for now")
+            _fallback(out, b - a + 0.5, i)
+            score, pick, credit = 0, None, None
     else:
         _fallback(out, b - a + 0.5, i)
         pick = None
