@@ -329,8 +329,7 @@ def daily():
         if t.get("fix"):  # remake done: off the queue
             remakes = [r for r in remakes if r is not t["fix"]]
             write_json(DATA / "remakes.json", remakes)
-            results.append({"title": meta["title"] + " (corrected remake)", "reason": "", "remake": True})
-            results.pop()
+            log(f"remake: corrected version of '{t['fix'].get('title')}' passed")
         if p["mode"] == "auto":
             publish(job)
             meta = read_json(job / "meta.json")
