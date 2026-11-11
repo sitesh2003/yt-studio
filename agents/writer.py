@@ -4,7 +4,7 @@ Learns from three places: what is trending (trends.json), what worked on
 YOUR channel (learnings.json, written by the analytics agent), and what you
 already made (history.json) so it never repeats a topic.
 """
-from .core import DATA, config, llm_json, log, read_json
+from .core import DATA, add_lesson, config, llm_json, log, read_json
 
 
 def _context():
@@ -95,6 +95,7 @@ def write_script(topic, recap=None, fix=None):
 Channel: {ch['niche']}. Tone: {ch['voice_tone']}. American English spelling.
 Topic: {topic}
 What has worked on this channel: {learn.get('summary', 'no data yet')}
+Mistakes this channel's checkers already caught (never repeat these): {[l['text'] for l in (read_json(DATA / 'lessons.json', []) or [])][-15:] or 'none yet'}
 
 Rules:
 - About {words} words of narration in total ({fmt['target_seconds']} seconds when spoken).
@@ -244,9 +245,12 @@ Check every factual claim in this narration, the enquiry question, and the poste
 Flag anything false, exaggerated, outdated, a common myth, or stated with more certainty than the
 evidence allows. Honest simplification for a general audience is FINE ("almost entirely empty",
 rounded numbers with "about"): only flag it if a viewer would come away believing something wrong.
+Check the TITLE and the first line (the hook) hardest: a hook or title that overstates ("makes it
+worse" when it only fails to help, "always", "never", "100%") is WRONG, even if the rest is right.
 Every fix must keep plain, spoken English: no long digit strings, no jargon. Also flag if the question does not have one clear correct answer, or if the answer
 cannot be reasoned out from what the video showed.
 
+Title: {(script.get('title_options') or [''])[0]}
 Narration: {text}
 Question: {script.get('question', '')}
 Answer comment: {script.get('answer_comment', '')}
@@ -268,8 +272,31 @@ Script JSON: {script}
 Return the corrected script as JSON in exactly the same shape.""")
         fixed["topic"] = script["topic"]
         script = fixed
+    # last resort before giving up the topic: CUT whatever cannot be confirmed (a shorter true video
+    # beats no video), then one final check
+    bad = [c for c in (script.get("fact_check_result") or {}).get("claims", []) if c.get("status") != "correct"]
+    if bad:
+        log("checker: removing the claims that could not be confirmed")
+        cut = llm_json(f"""These claims in a YouTube Short script could not be confirmed: {bad}
+Rewrite the script so it no longer makes them: replace each with something that is definitely true
+and well established, or drop that sentence. If the title or hook relied on one, write a new true
+hook and title. Keep the enquiry arc (hook, explain, pause-and-predict with 3-2-1, answer,
+Ever-thought-why question), the JSON shape and roughly the length.
+Script JSON: {script}
+Return the corrected script as JSON in exactly the same shape.""")
+        cut["topic"] = script["topic"]
+        final = llm_json(f"""Strict science fact-check. Title: {(cut.get('title_options') or [''])[0]}
+Narration: {" ".join(sc["narration"] for sc in cut.get("scenes", []))}
+Question: {cut.get('question', '')}  Answer: {cut.get('answer_comment', '')}
+Return JSON: {{"claims": [{{"claim": "...", "status": "correct|wrong|doubtful"}}]}}""")
+        if cut.get("scenes") and all(c.get("status") == "correct" for c in final.get("claims", [])):
+            cut["fact_check_result"] = {"verdict": "pass", "claims": final.get("claims", []), "cut": True}
+            log(f"checker: passed after cutting ({len(final.get('claims', []))} claims verified)")
+            return cut
+    for c in bad:
+        add_lesson("unconfirmed", f"{c.get('claim', '')} -> {c.get('note', 'could not be confirmed')}")
     script.setdefault("fact_check_result", {})["unresolved"] = True
-    log("checker: could not fully resolve, flagged for your review")
+    log("checker: could not fully resolve; this topic is skipped")
     return script
 
 

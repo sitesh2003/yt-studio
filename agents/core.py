@@ -115,3 +115,12 @@ def llm_json(prompt, retries=3, images=None):
                     time.sleep(10)                # per-minute free quota: short pause, next model
         time.sleep(20 * (round_ + 1))             # everything busy: wait, then try the list again
     raise RuntimeError(f"LLM call failed on every model: {last}")
+
+
+def add_lesson(kind, text):
+    """Every fault the system catches becomes a lesson the writer reads next time (data/lessons.json)."""
+    path = DATA / "lessons.json"
+    les = read_json(path, []) or []
+    if text and all(l.get("text") != text for l in les):
+        les.append({"kind": kind, "text": text[:300]})
+        write_json(path, les[-40:])

@@ -243,8 +243,24 @@ def repick(script, times, job_dir, scene_notes):
         if bad:
             last_used.add(bad["id"])
         a, b = times[i]
-        score, pick, credit = pick_scene(i, script["scenes"][i], a, b, job_dir, last_used, note,
-                                         extra_queries=script["scenes"][i].get("alt_queries", [])[::-1])
+        sc = script["scenes"][i]
+        extra = []
+        if last_scores[i] < 5:  # the old search words found nothing good: think of new ones
+            try:
+                out = llm_json(f"""Stock footage search for one scene of a science Short found nothing that fits.
+Narration: "{sc['narration']}"
+Searches already tried: {[sc.get('visual_query')] + list(sc.get('alt_queries', []))}
+Give 4 NEW searches that a stock site like Pixabay really has clips for: 1-2 plain concrete nouns
+each, things a camera can film (an animal, a food, a place, a person doing an action). If the exact
+thing is rare on stock sites, pick the closest common thing that still honestly fits the words
+(e.g. "krill" -> "shrimp", "salmon fry" -> "fish eggs"). Never abstract words.
+Return JSON: {{"queries": ["...", "...", "...", "..."]}}""")
+                extra = [q for q in out.get("queries", []) if isinstance(q, str)][:4]
+                log(f"visuals: scene {i + 1} new searches {extra}")
+            except Exception as e:
+                log(f"visuals: no new searches ({str(e)[:60]})")
+        score, pick, credit = pick_scene(i, sc, a, b, job_dir, last_used, note,
+                                         extra_queries=extra or sc.get("alt_queries", [])[::-1])
         last_scores[i], last_picks[i], last_credits[i] = score, pick, credit
         log(f"visuals: scene {i + 1} re-picked (score {round(score)})")
     return sorted({c for c in last_credits if c})

@@ -19,7 +19,7 @@ from zoneinfo import ZoneInfo
 
 import requests
 
-from .core import DATA, ROOT, config, llm_json, log, read_json, write_json
+from .core import DATA, ROOT, add_lesson, config, llm_json, log, read_json, write_json
 
 IST, ET = ZoneInfo("Asia/Kolkata"), ZoneInfo("America/New_York")
 REPO = os.environ.get("GITHUB_REPOSITORY", "sitesh2003/yt-studio")
@@ -128,6 +128,7 @@ Return JSON: {{"title_ok": true or false, "description_ok": true or false,
                             "correct_version": out.get("correct_version", ""), "why": out.get("why", ""),
                             "tries": 0})
             write_json(DATA / "remakes.json", remakes)
+            add_lesson("false_line", f"said \"{out.get('false_sentence', '')}\" but {out.get('correct_version', '')}")
             pulled = True
         elif not (out.get("title_ok", True) and out.get("description_ok", True)):
             body = {"title": sn["title"], "description": sn["description"],
@@ -140,6 +141,7 @@ Return JSON: {{"title_ok": true or false, "description_ok": true or false,
                 body["description"] = (out["fixed_description"] + (" " + tags if tags else "")
                                        + ("\n\n" + parts[1] if len(parts) > 1 else ""))
             y.videos().update(part="snippet", body={"id": vid, "snippet": body}).execute()
+            add_lesson("title", f"title '{sn['title']}' overstated: {out.get('why', '')}")
             actions.append(f"Corrected before going public: '{sn['title']}' -> '{body['title']}' ({out.get('why', '')})")
         done.add(vid)
     write_json(DATA / "audited.json", sorted(done))
