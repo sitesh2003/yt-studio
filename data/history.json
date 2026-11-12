@@ -1077,5 +1077,83 @@
       "duration": 65.7
     },
     "repairs": 0
+  },
+  {
+    "job": "20261112-1504-why-starfish-have-zero-brains-yet-solve-",
+    "topic": "Why Starfish Have Zero Brains Yet Solve Complex Mazes",
+    "title": "How Do Starfish Navigate Without A Central Brain? 🌊⭐",
+    "description": "Starfish do not have a central brain, yet they navigate environments. Discover the decentralized nervous system that makes it possible. #shorts #science #ocean\n\nPhoto by 1103489 on Pixabay\nPhoto by Celtenator on Pixabay\nPhoto by lpittman on Pixabay\nVideo by 3593622 on Pixabay\nVideo by Coverr-Free-Footage on Pixabay\nVideo by Simplyart4794 on Pixabay",
+    "tags": [
+      "starfish",
+      "marine biology",
+      "animal behavior",
+      "ocean science",
+      "shorts"
+    ],
+    "hook": "Why do starfish navigate without a central brain? They do not have one single brain. Instead, they rely on a decentralized nervous system where the arms share sensory information to coordinate movement.",
+    "status": "banked",
+    "narration": "Why do starfish navigate without a central brain? They do not have one single brain. Instead, they rely on a decentralized nervous system where the arms share sensory information to coordinate movement. They do not have a central brain at all. Wait, really? So how do they figure out turns? Each arm has its own nervous system that works together through a central nerve ring. Think about how separate parts communicate to choose which way to pull next. Pause and guess... three, two, one. Here is why: navigation is a result of integrated sensory feedback across the entire nerve ring. Ever wondered what other animals can do without a brain?",
+    "voice_engine": "kokoro",
+    "voices": "male host, female explainer",
+    "diagrams": 0,
+    "series": "Animal Whys",
+    "question": "Ever wondered what other animals can do without a brain?",
+    "answer_comment": "Starfish rely on a decentralized nervous system. They coordinate movement by integrating sensory signals across their arms, showing that complex navigation doesn't always require a central brain. Ever wondered what other animals can do without a brain?",
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "footage": [],
+      "review": [],
+      "notes": [
+        "scene 3 footage is a loose match (score 3.0), accepted"
+      ],
+      "pass": true,
+      "duration": 48.5
+    },
+    "repairs": 1,
+    "audited": true
+  },
+  {
+    "job": "20261112-1613-why-gecko-feet-can-walk-on-glass-while-f",
+    "topic": "Why Gecko Feet Can Walk on Glass While Frogs Slide Right Off",
+    "title": "Why Gecko Feet Beat Glass While Frogs Slide 🦎🪟 #shorts",
+    "description": "Ever wonder why some animals walk on walls while others slip? Discover the surprising physics behind gecko feet and tree frogs. #AnimalWhys #Science #shorts\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nPhoto by MariaIsabelPita on Pixabay\nVideo by NickyPe on Pixabay\nVideo by RoyBuri on Pixabay\nVideo by Tolmachev_Alexander on Pixabay\nVideo by conghuynh8 on Pixabay",
+    "tags": [
+      "gecko feet",
+      "tree frog",
+      "animal biomechanics",
+      "physics",
+      "science shorts"
+    ],
+    "hook": "Why can a gecko climb straight up a polished glass window while a tree frog slides right off?",
+    "status": "banked",
+    "narration": "Why can a gecko climb straight up a polished glass window while a tree frog slides right off? It all comes down to how their toes touch the surface. Wait, don't they both have sticky pads? Not quite. Frogs use wet friction and liquid mucus to grip smooth leaves. Which sounds great until you put them on vertical glass. On glass, that liquid layer acts like a slip-and-slide. Think about what happens when you press wet tape onto a wet bowl. Pause and guess... three, two, one. Geckos bypass liquid entirely by using billions of microscopic hairs called setae. They lock onto molecules without any glue at all. So if dry microscopic hairs win on glass, why do geckos struggle to climb wet glass?",
+    "voice_engine": "kokoro",
+    "voices": "male host, female explainer",
+    "diagrams": 2,
+    "series": "Animal Whys",
+    "question": "Ever thought why a gecko cannot stick to wet glass either?",
+    "answer_comment": "The answer: A layer of water can make it harder for the gecko to maintain the intimate contact required for their grip to work properly. Even the world's best climbers often struggle when surfaces are too wet! Drop any questions below.",
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "footage": [],
+      "review": [],
+      "notes": [
+        "scene 7 footage is a loose match (score 3.0), accepted"
+      ],
+      "pass": true,
+      "duration": 53.6
+    },
+    "repairs": 0,
+    "audited": true
   }
 ]
