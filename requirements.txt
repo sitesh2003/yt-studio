@@ -8,3 +8,4 @@ python-dotenv==1.2.4
 numpy
 tzdata
 resvg-py==0.5.0
+cryptography

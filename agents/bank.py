@@ -1,7 +1,10 @@
 """The video bank: finished, checked videos wait HERE - not on YouTube.
 
 A video reaches the bank only after every check (facts, footage, quality review, last accuracy
-audit). It is kept as files on the repo's "video-bank" GitHub Release (free storage). The publisher
+audit). It is kept as files on the repo's "video-bank" GitHub Release (free storage), LOCKED:
+every file is encrypted before upload, so the public repo only shows scrambled data nobody can
+play or reuse. The key is derived from a secret that already lives in GitHub's secret store and
+never appears in the repo or the logs. The publisher
 uploads from the bank to YouTube only close to each public slot - three a day - so a wrong video
 never touches the channel and nothing ever has to be deleted there.
 
@@ -20,7 +23,30 @@ PATH = DATA / "bank.json"
 
 
 def available():
-    return bool(os.environ.get("GITHUB_TOKEN"))
+    return bool(os.environ.get("GITHUB_TOKEN")) and _secret() is not None
+
+
+def _secret():
+    """Key material: the OAuth client secret file the workflow writes from GitHub's secret store."""
+    from .core import ROOT
+    f = ROOT / "client_secret.json"
+    return f.read_bytes() if f.exists() else None
+
+
+def _box():
+    import base64
+    import hashlib
+    from cryptography.fernet import Fernet
+    key = hashlib.sha256(b"yt-studio video bank v1|" + _secret()).digest()
+    return Fernet(base64.urlsafe_b64encode(key))
+
+
+def _lock(data):
+    return _box().encrypt(data)
+
+
+def _unlock(data):
+    return _box().decrypt(data)
 
 
 def _h(extra=None):
@@ -54,13 +80,13 @@ def store(job, meta):
     for ext, path, ctype in files:
         if not path.exists():
             continue
-        with open(path, "rb") as fh:
-            r = requests.post(up, params={"name": f"{job.name}.{ext}"}, data=fh,
-                              headers=_h({"Content-Type": ctype}), timeout=300)
+        locked = _lock(path.read_bytes())          # scrambled for everyone but our own runs
+        r = requests.post(up, params={"name": f"{job.name}.{ext}.locked"}, data=locked,
+                          headers=_h({"Content-Type": "application/octet-stream"}), timeout=300)
         r.raise_for_status()
         assets[ext] = r.json()["id"]
     bank = items()
-    bank.append({"job": job.name, "title": meta.get("title", ""), "assets": assets,
+    bank.append({"job": job.name, "title": meta.get("title", ""), "assets": assets, "locked": True,
                  "series": meta.get("series", ""), "stored": dt.datetime.now(dt.timezone.utc).isoformat()})
     write_json(PATH, bank)
     log(f"bank: stored '{meta.get('title', job.name)}' ({len(bank)} waiting)")
@@ -72,11 +98,9 @@ def fetch(item, into):
     names = {"mp4": "final.mp4", "jpg": "thumbnail.jpg", "json": "meta.json"}
     for ext, aid in item["assets"].items():
         r = requests.get(f"https://api.github.com/repos/{REPO}/releases/assets/{aid}", timeout=300,
-                         headers=_h({"Accept": "application/octet-stream"}), stream=True)
+                         headers=_h({"Accept": "application/octet-stream"}))
         r.raise_for_status()
-        with open(into / names[ext], "wb") as fh:
-            for chunk in r.iter_content(1 << 16):
-                fh.write(chunk)
+        (into / names[ext]).write_bytes(_unlock(r.content) if item.get("locked") else r.content)
     return into
 
 
