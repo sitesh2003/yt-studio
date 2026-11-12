@@ -219,10 +219,48 @@ def publish(job):
     write_json(DATA / "history.json", hist)
 
 
+def pull_requested():
+    """data/pull.json lists banked videos a review found wrong after they were banked (a person or a
+    later check). Each is deleted from the bank before it can reach YouTube, and a corrected remake
+    is queued. Runs in the cloud, where the bank's key lives."""
+    from agents import audit, bank
+    asks = read_json(DATA / "pull.json", []) or []
+    if not asks or not bank.available():
+        return 0
+    done, left = 0, []
+    items = {b["job"]: b for b in bank.items()}
+    hist = read_json(DATA / "history.json", []) or []
+    for a in asks:
+        item = items.get(a["job"])
+        if not item:
+            log(f"pull: {a['job']} is not in the bank (already gone)")
+            continue
+        try:
+            bank.remove(item)
+        except Exception as e:
+            log(f"pull: could not remove {a['job']} ({str(e)[:100]}); will retry")
+            left.append(a)
+            continue
+        h = next((h for h in hist if h.get("job") == a["job"]), {})
+        h.update(status="pulled", pulled_why=a.get("why", ""))
+        audit.queue_remake(h.get("topic"), item.get("title", ""),
+                           {"status": a.get("status", "false"), "false_sentence": a.get("false_sentence", ""),
+                            "correct_version": a.get("correct_version", ""), "why": a.get("why", "")})
+        done += 1
+        log(f"pull: '{item.get('title', '')}' removed from the bank ({a.get('why', '')}); remake queued")
+    write_json(DATA / "history.json", hist)
+    write_json(DATA / "pull.json", left)
+    return done
+
+
 def publish_due(hours=30):
     """Fill YouTube's public slots for the next `hours` from the bank - three a day, oldest first.
     Each video was audited before it was banked, so nothing uploaded here is ever deleted."""
     from agents import bank, youtube
+    try:
+        pull_requested()
+    except Exception as e:
+        log(f"pull skipped: {str(e)[:120]}")
     if not bank.available() or not bank.items():
         return 0
     horizon = dt.datetime.now(dt.timezone.utc) + dt.timedelta(hours=hours)

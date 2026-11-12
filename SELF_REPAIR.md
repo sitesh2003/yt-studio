@@ -29,6 +29,9 @@ made once at most.
 | "Pause and guess" said twice (maple syrup, 12 Nov) | Every script, before the voice | Kept once, straight before "three, two, one"; extra countdowns removed |
 | The market moves | Weekly study of the top 20 science Shorts + our own numbers | data/playbook.json rewritten: formats, hooks, length (30-50 s); the writer follows it |
 | A drawn explainer is wrong or unreadable | A separate picture check on every diagram and board | Redrawn up to twice, else real footage is used |
+| A script repeats itself, runs long, or gives the answer before the countdown | A lint pass on every script | Rewritten once before the fact-check |
+| A video's premise or contrast is false ("X sticks, Y slides off") | The last audit checks the premise first | Not banked; a corrected remake is queued |
+| A banked video is found wrong later | data/pull.json, read before every publish | Deleted from the bank, remake queued |
 | New comments | Every 2 hours | Short, warm replies; the answer to each closing question is posted when the video goes public |
 
 What still needs a person: creating accounts (Instagram, Facebook), signing in, and anything that

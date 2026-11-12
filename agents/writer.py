@@ -4,6 +4,8 @@ Learns from three places: what is trending (trends.json), what worked on
 YOUR channel (learnings.json, written by the analytics agent), and what you
 already made (history.json) so it never repeats a topic.
 """
+import re
+
 from .core import DATA, add_lesson, config, llm_json, log, read_json
 from . import playbook
 
@@ -118,12 +120,45 @@ def _fix_rule(fix):
 """
 
 
+def _content_words(sentence):
+    return {w for w in re.findall(r"[a-z']+", sentence.lower()) if len(w) > 3}
+
+
+def lint(s, words):
+    """Problems a reader would notice that the fact-checker does not look for."""
+    issues = []
+    scenes = s.get("scenes") or []
+    text = " ".join(x.get("narration", "") for x in scenes)
+    sents = [x for x in re.split(r"(?<=[.?!])\s+", text) if len(_content_words(x)) >= 3]
+    for i, a in enumerate(sents):
+        for b in sents[i + 1:]:
+            A, B = _content_words(a), _content_words(b)
+            if len(A & B) / max(1, min(len(A), len(B))) >= 0.7:
+                issues.append(f"says the same thing twice: \"{a}\" / \"{b}\"")
+    n = len(text.split())
+    if n > words * 1.2:
+        issues.append(f"{n} words, aim for about {words}: cut the weakest lines")
+    pre = [x.get("narration", "") for x in scenes]
+    k = next((i for i, x in enumerate(scenes) if x.get("predict") or "three, two, one" in x.get("narration", "").lower()), None)
+    if k:
+        after = " ".join(pre[k + 1:k + 2])
+        leak = llm_json(f"""A science Short builds to a reveal. Lines BEFORE the "pause and guess" countdown:
+{pre[:k + 1]}
+The reveal line AFTER the countdown: "{after}"
+Does any line before the countdown already give the same explanation as the reveal, in any words
+(so a viewer who heard it learns nothing new after the countdown)? Naming the mechanism counts as giving
+it away; a hint that leaves the viewer still guessing does not. Return JSON: {{"leaks": true or false, "line": "the leaking line or empty"}}""")
+        if leak.get("leaks"):
+            issues.append(f"gives the answer away before the countdown: \"{leak.get('line', '')}\" - keep it as a clue only")
+    return issues[:5]
+
+
 def write_script(topic, recap=None, fix=None):
     c = config()
     ch, fmt = c["channel"], c["format"]
     learn = read_json(DATA / "learnings.json", {}) or {}
     secs = playbook.target_seconds(fmt["target_seconds"])
-    words = int(secs * 2.6)
+    words = int(secs * 2.3)          # measured: Kokoro + the countdown pauses run ~2.3 words a second
     prompt = f"""Write a YouTube Short script for US viewers.
 Channel: {ch['niche']}. Tone: {ch['voice_tone']}. American English spelling.
 Topic: {topic}
@@ -137,6 +172,11 @@ Rules:
 - The first line is the hook and must land in under 2 seconds: a surprising claim, a question, or a
   pattern interrupt. No "Did you know", no "In this video", no greeting.
 - Open a curiosity loop early and close it near the end, so people watch to the end.
+- NEVER GIVE THE ANSWER AWAY BEFORE THE COUNTDOWN. The hook only asks or surprises; the middle gives
+  clues; the actual answer is said for the first time right after "three, two, one".
+- Never say the same thing twice, even in different words.
+- Any contrast between two things ("X sticks while Y slides off") must be TRUE for BOTH sides. If one
+  side is a myth, pick a different contrast or drop it.
 - One idea per sentence. Short words. Cut every word that does not earn its place.
 - 100% factually correct. If a number is uncertain, round it and say "about". Never state a myth,
   an exaggeration or a disputed claim as fact.
@@ -208,6 +248,16 @@ Return JSON exactly in this shape:
 }}
 The first scene's narration must be hook_options[0]."""
     s = llm_json(prompt.replace("{recap_rule}", _recap_rule(recap) + _fix_rule(fix)))
+    issues = lint(s, words)
+    if issues:
+        log(f"writer: script lint - {' | '.join(issues)}; rewriting once")
+        again = llm_json(f"""Rewrite this YouTube Short script to fix ONLY these problems, keeping every true fact,
+the speakers, the scene count and the JSON shape exactly:
+{issues}
+Script: {s}
+Return the whole script JSON.""")
+        if again.get("scenes") and len(lint(again, words)) < len(issues):
+            s = again
     s["topic"] = topic
     if recap:
         s["recap_source"] = recap.get("video_id")

@@ -18,6 +18,9 @@ def judge(title, description, spoken):
     out = llm_json(f"""You are the last accuracy check before a science Short goes public. Be strict but fair:
 popular simplifications are fine; overstatements, myths and false claims are not.
 Only judge FACTS: hashtags, emojis and formatting are fine and never a reason to mark something not ok.
+Check the PREMISE first: the question the video is built on, and every contrast between two things
+("X sticks while Y slides off", "A has none while B has many"). If either side of a contrast is false
+(e.g. an animal said to fail at something it actually does well), that is narration_false.
 TITLE: {title}
 DESCRIPTION: {first}
 NARRATION (spoken, cannot be edited): {spoken}
