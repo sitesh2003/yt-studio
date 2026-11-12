@@ -151,23 +151,28 @@ def _get(url, **kw):
     wait = _last_call.get(host, 0) + gap - time.time()
     if wait > 0:
         time.sleep(wait)
-    timeout = kw.pop("timeout", 30)
-    for attempt in range(3):
+    timeout = kw.pop("timeout", 30 if "pixabay" in host else 15)
+    for attempt in range(2):
         _last_call[host] = time.time()
-        r = requests.get(url, timeout=timeout, headers=UA, **kw)
+        try:
+            r = requests.get(url, timeout=timeout, headers=UA, **kw)
+        except requests.RequestException:
+            _busy_until[host] = time.time() + 600   # not answering: leave it out for 10 minutes
+            log(f"visuals: {host} not answering, leaving it out for 10 min")
+            raise
         if r.status_code not in (429, 502, 503, 504):
             r.raise_for_status()
             if key[1] or "api" in host:
                 _cache[key] = r
             return r
-        if attempt == 2:
-            break
-        pause = min(int(r.headers.get("Retry-After") or 0) or 10 * (attempt + 1), 30)
-        log(f"visuals: {host} busy ({r.status_code}), waiting {pause}s")
-        time.sleep(pause)
-    if r.status_code == 429:
-        _busy_until[host] = time.time() + 90   # give it a rest; other sources fill in meanwhile
-        log(f"visuals: {host} rate-limited, resting it for 90s")
+        if attempt == 0:
+            pause = min(int(r.headers.get("Retry-After") or 0) or 5, 30)
+            time.sleep(pause)
+    # still refusing: rate limit -> rest 90 s; server down -> leave it out for 10 minutes.
+    # The other picture sources carry on meanwhile, so the video never waits on one site.
+    rest = 90 if r.status_code == 429 else 600
+    _busy_until[host] = time.time() + rest
+    log(f"visuals: {host} unavailable ({r.status_code}), leaving it out for {rest // 60 or 1} min")
     r.raise_for_status()
     return r
 
