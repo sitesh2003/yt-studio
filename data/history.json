@@ -971,5 +971,39 @@
     "repairs": 1,
     "video_id": "S3s-iGcOMVY",
     "publish_at": "2026-11-13T19:00:00-05:00"
+  },
+  {
+    "job": "20261112-1118-why-garlic-doesn-t-make-you-cry",
+    "topic": "Why Garlic Doesn't Make You Cry",
+    "title": "Why Garlic Doesn't Make You Cry Like Onions Do 🧄😭",
+    "description": "You know onions make you cry, but raw garlic is a completely different story. Discover the cellular trick behind your dry eyes while chopping.\n\n#foodscience #garlic #shorts\n\nPhoto by Shutterbug26 on Pixabay\nPhoto: John Brian Eatmon, CC BY 4.0, via Wikimedia Commons\nVideo by 4AVPLAYER on Pixabay\nVideo by XiaosKitchen on Pixabay\nVideo by adege on Pixabay\nVideo by klimkin on Pixabay",
+    "tags": [
+      "garlic",
+      "food science",
+      "kitchen hacks",
+      "cooking",
+      "science facts"
+    ],
+    "hook": "Garlic usually doesn't make you cry when you chop it, because its defense chemicals work differently than the ones in onions.",
+    "status": "scheduled",
+    "narration": "Garlic usually doesn't make you cry when you chop it, because its defense chemicals work differently than the ones in onions. Onions launch a chemical cloud that hits your eyes and triggers waterworks. But raw garlic uses a completely different defense system. It stores its flavor compounds and enzymes in totally separate rooms inside each cell. Think about what happens when you smash a clove versus slicing it softly. Pause and guess... three, two, one. Here's why it stays tear-free. Those compounds never mix enough to make an airborne gas that reaches your face. Ever thought why a smashed garlic clove smells way stronger than a whole one if it still doesn't make you cry?",
+    "series": "Food Whys",
+    "question": "Ever thought why a smashed garlic clove smells way stronger than a whole one if it still doesn't make you cry?",
+    "answer_comment": "The answer: Crushing a garlic clove breaks open many more cell walls, mixing the enzymes and flavor precursors together to release that strong aroma into the air. However, the specific sulfur gas created doesn't target the eye irritant receptors the way onion gas does, which is why your eyes stay completely dry. Got another kitchen science question?",
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "footage": [],
+      "review": [],
+      "pass": true,
+      "duration": 45.2
+    },
+    "repairs": 1,
+    "video_id": "fXKlhAXJSTc",
+    "publish_at": "2026-11-14T12:00:00-05:00"
   }
 ]
