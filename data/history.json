@@ -1005,5 +1005,77 @@
     "repairs": 1,
     "video_id": "fXKlhAXJSTc",
     "publish_at": "2026-11-14T12:00:00-05:00"
+  },
+  {
+    "job": "20261112-1229-why-apples-float-in-water-while-pears-im",
+    "topic": "Why Apples Float in Water While Pears Immediately Sink",
+    "title": "Why Fruits Float In Water 🍎🍐",
+    "description": "Ever wonder why some fruits bob on the surface while others drop to the bottom? We're diving into the hidden density differences inside your favorite snacks. #science #foodscience #shorts\n\nPhoto by PublicDomainPictures on Pixabay\nPhoto by congerdesign on Pixabay\nPhoto: Berries.com, BY 2.0, via Openverse (flickr)\nPhoto: farrokhi, BY 2.0, via Openverse (flickr)\nPhoto: frankieleon, BY 2.0, via Openverse (flickr)\nPhoto: thegetty, CC0 1.0, via Openverse (rawpixel)\nVideo by NickyPe on Pixabay",
+    "tags": [
+      "science",
+      "food",
+      "physics"
+    ],
+    "hook": "Drop an apple or a pear in a bowl of water and they both float.",
+    "status": "banked",
+    "narration": "Drop an apple or a pear in a bowl of water and they both float. Wait, really? They look like similar fruits. They are, and both hide a secret inside their flesh. About one quarter of an apple’s volume is made up of intracellular gas spaces within its cellular structure. Okay, so the trapped gas keeps it buoyant. But what happens if we compare those air pockets to a peach? Think about if that air makes it sink or float. Pause and guess... three, two, one. Here’s why: a peach also has internal gas spaces, so it floats just like an apple. Ever thought why a watermelon, which is way bigger and heavier, still floats on the surface? Drop your guess below.",
+    "voice_engine": "kokoro",
+    "diagrams": 0,
+    "series": "Food Whys",
+    "question": "Ever thought why a watermelon, which is way bigger and heavier, still floats on the surface?",
+    "answer_comment": "The answer: Watermelons float because their overall average density is lower than the density of water, largely due to their high water content and internal structure. Even though a watermelon is much heavier than an apple, its overall density is still lower than water. It is all about density: the watermelon is less dense than water, so it floats. Ever thought why a rock sinks even if it's smaller than a watermelon?",
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "footage": [],
+      "review": [],
+      "notes": [
+        "scene 8 footage is a loose match (score 3.0), accepted"
+      ],
+      "pass": true,
+      "duration": 48.4
+    },
+    "repairs": 0,
+    "audited": true
+  },
+  {
+    "job": "20261112-1308-why-sharks-have-zero-bones-in-their-enti",
+    "topic": "Why Sharks Have Zero Bones in Their Entire Bodies While Every Fish Around Them Is Full of Hard Skeletons",
+    "title": "Why Sharks Have Cartilage Skeletons 🦈🦴",
+    "description": "Ever wondered why sharks have skeletons made of cartilage? It’s not just for show—it’s a massive survival advantage. Find out how this makes them the kings of the ocean. #sharks #marinelife #shorts\n\nPhoto by PublicDomainPictures on Pixabay\nPhoto by SichiRi on Pixabay\nPhoto by Taokinesis on Pixabay\nPhoto by flutie8211 on Pixabay\nPhoto: crudmucosa, BY 2.0, via Openverse (flickr)\nPhoto: libraryofcongress, CC0 1.0, via Openverse (rawpixel)\nVideo by Kanenori on Pixabay\nVideo by oadtz on Pixabay",
+    "tags": [
+      "sharks",
+      "marine biology",
+      "shorts"
+    ],
+    "hook": "Sharks are the ocean's top predators, yet they have skeletons made primarily of cartilage, not bone.",
+    "status": "review",
+    "narration": "Sharks are the ocean's top predators, yet they have skeletons made primarily of cartilage, not bone. Instead of a fully bony skeleton, they have a framework made of tough, flexible cartilage and calcified tissue. Wait, really? Isn't that like what's in our ears and noses? Exactly, it is tough, flexible, and much lighter than bone. Think about why a predator would choose to be lighter and more flexible. Pause and guess... three, two, one. Here is why: this lighter, flexible structure helps them remain agile and energy-efficient. That makes sense, but what happens if a shark stops moving? Because they lack a gas-filled swim bladder, many sharks rely on their massive, oil-rich livers to help them maintain buoyancy. Ever thought about how some sharks use movement to breathe? While some sharks must swim constantly to move water over their gills, many other species can rest on the ocean floor and pump water themselves.",
+    "voice_engine": "kokoro",
+    "diagrams": 0,
+    "series": "Animal Whys",
+    "question": "Ever thought about how some sharks use movement to breathe?",
+    "answer_comment": "While some sharks must swim constantly to move water over their gills, many other species can rest on the ocean floor and pump water themselves. Because sharks lack a swim bladder, they tend to sink, but their cartilaginous skeletons provide the agility needed to thrive!",
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "qa": {
+      "facts": [],
+      "technical": [
+        "length 65.7s is outside 15-60 s for a Short"
+      ],
+      "sync": [],
+      "footage": [
+        "scene(s) [3] have weak or placeholder footage"
+      ],
+      "review": [],
+      "pass": false,
+      "duration": 65.7
+    },
+    "repairs": 0
   }
 ]
