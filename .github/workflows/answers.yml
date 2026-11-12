@@ -2,6 +2,7 @@ name: Answers and comments
 
 on:
   schedule:
+    - cron: "13 1-23/2 * * *"  # second clock, offset an hour: GitHub skips many scheduled runs, two clocks catch more
     - cron: "41 */2 * * *"     # every 2 hours (odd minute: GitHub skips busy top-of-hour runs): post the enquiry answer once a video is public
   workflow_dispatch: {}
 
