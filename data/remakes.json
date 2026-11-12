@@ -1,1 +1,11 @@
-[]
+[
+  {
+    "topic": "Why Apples Float in Water While Pears Immediately Sink",
+    "pulled": "PEfJCe6uIOQ",
+    "title": "Why Apples Float While Many Pears Sink 🍎🍐",
+    "false_sentence": "Freezing nights and warm days create pressure that pushes tree sap up.",
+    "correct_version": "Root pressure and capillary action, combined with transpiration pull, are the primary mechanisms that move water and sap up through a tree.",
+    "why": "The sentence about tree sap and pressure is scientifically inaccurate and irrelevant to why apples float and pears sink.",
+    "tries": 0
+  }
+]

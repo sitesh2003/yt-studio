@@ -649,6 +649,7 @@
     "repairs": 0,
     "video_id": "_EnG9sUTAUY",
     "publish_at": "2026-11-11T19:00:00-05:00",
+    "recapped": true,
     "answered": true
   },
   {
@@ -687,5 +688,148 @@
     "repairs": 0,
     "video_id": "EfZ-P6him7k",
     "publish_at": "2026-11-12T12:00:00-05:00"
+  },
+  {
+    "job": "20261112-0207-why-apples-float-in-water-while-pears-im",
+    "topic": "Why Apples Float in Water While Pears Immediately Sink",
+    "title": "Why Apples Float While Many Pears Sink 🍎🍐",
+    "description": "Ever wondered why an apple bobs happily on top of water while a pear drops like a stone? The secret lies in something hidden deep inside the fruit tissue.\n#shorts #sciencefacts #foodscience\n\nPhoto by Anestiev on Pixabay\nPhoto by DorianKrauss on Pixabay\nPhoto by Kapa65 on Pixabay\nPhoto by Vierschilling on Pixabay\nPhoto: Pierre Nicolas Huilliot, Public domain, via Wikimedia Commons\nPhoto: Shixart1985, CC BY 2.0, via Wikimedia Commons\nVideo by Kmeel_com on Pixabay\nVideo by NickyPe on Pixabay",
+    "tags": [
+      "apple",
+      "pear",
+      "floating apple",
+      "why do apples float",
+      "density science",
+      "food facts",
+      "science shorts",
+      "ever thought why"
+    ],
+    "hook": "Drop an apple in water, and it floats like a tiny raft.",
+    "status": "scheduled",
+    "narration": "Drop an apple in water, and it floats like a tiny raft. But drop a same-sized pear, and it often sinks. They seem so similar, so why the total opposite? It all comes down to invisible air. About one-fourth of an apple's volume is trapped air. If you peel an apple, will it finally sink? Think about where that air lives. Pause and guess... three, two, one. It still floats! Here's why: air pockets are scattered right through the flesh, keeping it light. Pears have less air inside, making them denser than water. Freezing nights and warm days create pressure that pushes tree sap up. Nobody cracked that yesterday, so today is your chance! Ever thought why a fresh egg sinks in water, but an old egg floats? Drop your guess below.",
+    "series": "Food Whys",
+    "question": "Ever thought why a fresh egg sinks in water, but an old egg floats? Drop your guess below.",
+    "answer_comment": "The answer: As an egg gets older, water inside slowly evaporates through tiny pores in the shell, expanding the air pocket inside. That extra air lowers the egg's overall density until it becomes lighter than water and floats! Did you guess right? What food mystery should we test next?",
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": "_EnG9sUTAUY",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "footage": [],
+      "review": [],
+      "notes": [
+        "scene 10 footage is a loose match (score 3.0), accepted"
+      ],
+      "pass": true,
+      "duration": 47.2
+    },
+    "repairs": 2,
+    "video_id": "PEfJCe6uIOQ",
+    "publish_at": "2026-11-12T15:00:00-05:00"
+  },
+  {
+    "job": "20261112-0232-why-raw-cashews-are-toxic-until-they-go-",
+    "topic": "Why Raw Cashews Are Toxic Until They Go Through a Secret Heating Process",
+    "title": "Why 'Raw' Store-Bought Cashews Are Usually Processed 🥜🔥",
+    "description": "Those store-bought raw cashews aren't actually raw. Here is the intense heating process that makes them safe to eat.\n\n#foodscience #cashews #shorts\n\nPhoto by PublicDomainPictures on Pixabay\nPhoto by RichardMc on Pixabay\nPhoto by u_nmxn9usqkx on Pixabay\nPhoto: Magpieturtle, CC BY 4.0, via Wikimedia Commons\nVideo by Digital_Expert on Pixabay\nVideo by Life-Of-Vids on Pixabay\nVideo by fabriciosena2020 on Pixabay",
+    "tags": [
+      "food science",
+      "cashews",
+      "how it's made",
+      "toxic plants",
+      "kitchen science"
+    ],
+    "hook": "It is very rare to find a truly raw cashew in stores because they are dangerous to handle.",
+    "status": "review",
+    "narration": "It is very rare to find a truly raw cashew in stores because they are dangerous to handle. True raw cashews carry a nasty natural toxin. It belongs to the same chemical family as poison ivy. Eat one fresh from the shell and you'll get a severe allergic reaction. So how do they end up safe in your pantry? Think about what high heat usually does to unstable chemical compounds. Pause and guess... three, two, one. Commercial cashews are processed with heat, usually steam, to remove the shell and neutralize the toxin before it ever touches shelves. Ever wondered which part of a mango can give you that same poison ivy rash? Drop your guess below.",
+    "series": "Food Whys",
+    "question": "Ever wondered which part of a mango can give you that same poison ivy rash? Drop your guess below.",
+    "answer_comment": "The answer: The skin and sap of a mango contain urushiol, the exact same oily resin found in poison ivy and cashew shells. When you handle or eat the skin of a mango, you can sometimes get that familiar itchy rash for the very same reason! Drop a reply if you've ever reacted to a mango.",
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "footage": [],
+      "review": [
+        "Frame 3 shows leaves of a guava or similar plant instead of poison ivy, which is misleading for a science video."
+      ],
+      "notes": [
+        "scene 4 footage is a loose match (score 3.0), accepted"
+      ],
+      "pass": false,
+      "duration": 40.3
+    },
+    "repairs": 2
+  },
+  {
+    "job": "20261112-0253-this-2-inch-pistol-shrimp-shoots-bubbles",
+    "topic": "This 2-Inch Pistol Shrimp Shoots Bubbles Hotter Than 8,000 Degrees Fahrenheit",
+    "title": "This Shrimp Creates Bubbles as Hot as the Sun's Surface 🦐🔥",
+    "description": "This two-inch ocean creature snaps its claw to create a bubble as hot as the sun's surface. Find out how physics makes it possible.\n\n#science #ocean #shorts\n\nPhoto by Couleur on Pixabay\nPhoto by TabbyCatXIII on Pixabay\nPhoto: All rights reserved, Philippa Walton, 2017-04-03 09:47:03, CC BY 2.0, via Wikimedia Commons\nPhoto: q phia, CC BY 2.0, via Wikimedia Commons\nVideo by Mario_Krimer on Pixabay\nVideo by NickyPe on Pixabay\nVideo by anncapictures on Pixabay\nVideo by asabovebelowloa on Pixabay",
+    "tags": [
+      "pistol shrimp",
+      "ocean facts",
+      "animal science",
+      "marine biology",
+      "physics"
+    ],
+    "hook": "This tiny shrimp snaps its claw so fast it creates a tiny bubble in the water.",
+    "status": "review",
+    "narration": "This tiny shrimp snaps its claw so fast it creates a tiny bubble in the water. That snap closes so violently that it creates a tiny bubble. And here's the weird part. That bubble collapses inward with such force that it reaches about eight thousand degrees Fahrenheit, which is as hot as the surface of the sun. Think about how much energy a tiny muscle has to pack into a split second to make that happen. Pause and guess... three, two, one. The claw is built like a loaded spring that locks into place before snapping shut. That extreme speed pushes the water away so fast it tears a vacuum right behind it. Ever thought how a small creature uses that shockwave to stun its dinner without ever touching it? Drop your guess below.",
+    "series": "Ocean Whys",
+    "question": "Ever thought how a small creature uses that shockwave to stun its dinner without ever touching it?",
+    "answer_comment": "The answer: The collapsing bubble creates a powerful shockwave and a flash of light that instantly stuns nearby prey. The shrimp doesn't need to touch its dinner because the pressure wave does the work. Ever thought what would happen if a human hand was right next to that snap?",
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "footage": [
+        "scene(s) [1] have weak or placeholder footage"
+      ],
+      "review": [],
+      "pass": false,
+      "duration": 41.4
+    },
+    "repairs": 2
+  },
+  {
+    "job": "20261112-0316-why-your-fingers-prune-in-water-it-is-no",
+    "topic": "Why Your Fingers Prune in Water (It Is Not Absorption)",
+    "title": "Why Fingers Prune In Water 💧🧽",
+    "description": "Discover why your fingers prune in water. It is not what you think. #BodyWhys #Science #Shorts\n\nPhoto by congerdesign on Pixabay\nPhoto by educadormarcossv on Pixabay\nPhoto: Sebastian Wallroth, CC BY 3.0, via Wikimedia Commons\nPhoto: Unknown author Unknown author  or not provided, Public domain, via Wikimedia Commons\nPhoto: Unknown author Unknown author, Public domain, via Wikimedia Commons\nVideo by allinonemovie on Pixabay\nVideo by asabovebelowloa on Pixabay\nVideo by jLasWilson on Pixabay",
+    "tags": [
+      "skin wrinkles",
+      "pruned fingers",
+      "human body science"
+    ],
+    "hook": "Your fingers prune in water, but it is not because you are absorbing it like a sponge.",
+    "status": "scheduled",
+    "narration": "Your fingers prune in water, but it is not because you are absorbing it like a sponge. In fact, dead skin cells would actually swell up and smooth out if they just soaked up water. Instead, your nervous system actively shrinks your blood vessels underneath. Now think about what happens when you lose that underlying volume inside a rigid shell. Pause and guess... three, two, one. The skin collapses inward into neat folds because it loses support from below. And get this: if nerve damage blocks those signals, your fingers stay completely smooth in the tub. Some researchers think pruned fingers help us grip wet objects better, acting like tire treads on a road—but scientists are still debating if this is actually true. Drop your guess below.",
+    "series": "Body Whys",
+    "question": "Some researchers think pruned fingers help us grip wet objects better, acting like tire treads on a road—but scientists are still debating if this is actually true. Drop your guess below.",
+    "answer_comment": "One theory is that pruned fingers act like tire treads on a wet road to improve traction, though experimental evidence for this remains mixed and inconclusive. This active nervous system response likely evolved to help our ancestors gather food in wet environments. Have you ever noticed how much easier it is to hold wet objects with pruned hands?",
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "footage": [],
+      "review": [],
+      "pass": true,
+      "duration": 44.3
+    },
+    "repairs": 2,
+    "video_id": "Bxp7r8IzbiY",
+    "publish_at": "2026-11-12T19:00:00-05:00"
   }
 ]
