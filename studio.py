@@ -219,6 +219,41 @@ def publish(job):
     write_json(DATA / "history.json", hist)
 
 
+def publish_due(hours=30):
+    """Fill YouTube's public slots for the next `hours` from the bank - three a day, oldest first.
+    Each video was audited before it was banked, so nothing uploaded here is ever deleted."""
+    from agents import bank, youtube
+    if not bank.available() or not bank.items():
+        return 0
+    horizon = dt.datetime.now(dt.timezone.utc) + dt.timedelta(hours=hours)
+    done = 0
+    for item in list(bank.items()):
+        slot = youtube.next_slot()
+        if slot.astimezone(dt.timezone.utc) > horizon:
+            break
+        job = JOBS / item["job"]
+        try:
+            bank.fetch(item, job)
+            meta = read_json(job / "meta.json")
+            vid, when = youtube.upload(job, meta, slot)
+            try:
+                youtube.add_to_series(vid, meta.get("series") or item.get("series"))
+            except Exception as e:
+                log(f"playlist skipped: {str(e)[:80]}")
+            hist = read_json(DATA / "history.json", []) or []
+            for h in hist:
+                if h.get("job") == item["job"]:
+                    h.update(video_id=vid, status="scheduled", publish_at=when)
+            write_json(DATA / "history.json", hist)
+            bank.remove(item)
+            done += 1
+            log(f"publisher: '{meta['title']}' from the bank -> goes public {slot:%a %d %b %H:%M} ET")
+        except Exception as e:
+            log(f"publisher: could not publish {item['job']} ({str(e)[:120]}); it stays in the bank")
+            break
+    return done
+
+
 def comments(post=False):
     from agents import youtube
     drafts_path = DATA / "reply_drafts.json"
@@ -278,6 +313,10 @@ def daily():
     p = config()["publish"]
     from agents import youtube as _yt
     waiting, quota_left = _yt.bank()
+    from agents import bank as _vault
+    if _vault.available():
+        waiting += len(_vault.items())   # videos in the bank count; uploads happen only at publish time
+        quota_left = p["videos_per_day"]
     target = p.get("bank_days", 2) * p["videos_per_day"]
     need = min(p["videos_per_day"], target - waiting, quota_left)
     if os.environ.get("FORCE_DAILY"):
@@ -366,8 +405,22 @@ def daily():
             write_json(DATA / "remakes.json", remakes)
             log(f"remake: corrected version of '{t['fix'].get('title')}' passed")
         if p["mode"] == "auto":
-            publish(job)
-            meta = read_json(job / "meta.json")
+            from agents import audit, bank
+            if not audit.before_bank(meta):          # wrong spoken line: never banked, remake queued
+                results.append({"title": meta["title"], "reason": "last accuracy audit found a wrong line; a corrected remake is queued"})
+                good -= 1
+                continue
+            write_json(job / "meta.json", meta)
+            if bank.available():
+                bank.store(job, meta)                # waits in the bank; published close to its slot
+                hist = read_json(DATA / "history.json", []) or []
+                for h in hist:
+                    if h.get("job") == job.name:
+                        h.update(status="banked", title=meta["title"], description=meta["description"], audited=True)
+                write_json(DATA / "history.json", hist)
+            else:
+                publish(job)                         # on a PC without the bank: upload directly
+                meta = read_json(job / "meta.json")
         results.append({"title": meta["title"], "video_id": meta.get("video_id"),
                         "publish_at": meta.get("publish_at"), "question": meta.get("question", "")})
     log(f"daily: {good} of {want} videos ready")
@@ -439,6 +492,10 @@ def hourly():
             comments(post=True)                    # and post them (early replies lift reach)
     except Exception as e:
         log(f"comments skipped: {e}")
+    try:
+        publish_due()                                 # bank -> YouTube for the next day's slots
+    except Exception as e:
+        log(f"publisher skipped: {e}")
     try:  # roll call of production runs, catch-up if one was skipped, last accuracy audit, STATUS.md
         from agents import health
         return health.check()

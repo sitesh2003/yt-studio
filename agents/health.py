@@ -81,100 +81,11 @@ def coverage():
 
 
 def audit_bank():
-    """Last accuracy check on every waiting video, before the public sees it."""
-    from .youtube import yt
-    done = set(read_json(DATA / "audited.json", []) or [])
-    hist = {h["video_id"]: h for h in (read_json(DATA / "history.json", []) or []) if h.get("video_id")}
-    y = yt()
-    now = dt.datetime.now(dt.timezone.utc)
-    actions = []
-    pulled = False
-    for vid, h in hist.items():
-        if vid in done:
-            continue
-        items = y.videos().list(part="snippet,status", id=vid).execute().get("items", [])
-        if not items:
-            continue
-        v = items[0]
-        pa = v["status"].get("publishAt")
-        if not pa or dt.datetime.fromisoformat(pa.replace("Z", "+00:00")) <= now:
-            done.add(vid)  # already public (or not scheduled): nothing left to protect
-            continue
-        sn = v["snippet"]
-        spoken = h.get("narration") or h.get("hook", "")
-        first = sn["description"].split("\n\n")[0]
-        out = llm_json(f"""You are the last accuracy check before a science Short goes public. Be strict but fair:
-popular simplifications are fine; overstatements, myths and false claims are not.
-Only judge FACTS: hashtags, emojis and formatting are fine and never a reason to mark something not ok.
-TITLE: {sn['title']}
-DESCRIPTION: {first}
-NARRATION (spoken, cannot be edited): {spoken}
-Return JSON: {{"title_ok": true or false, "description_ok": true or false,
- "fixed_title": "accurate title, same curiosity, max 70 chars, Title Case, ends with 2 fitting emojis",
- "fixed_description": "accurate 1-2 lines, no hashtags",
- "narration_false": true only if the narration states something actually FALSE or clearly misleading,
- "false_sentence": "if narration_false: the exact sentence from the narration that is wrong",
- "correct_version": "if narration_false: what is actually true, in one or two plain sentences",
- "why": "one line"}}""")
-        if out.get("narration_false"):
-            # SECOND OPINION before anything irreversible: an auditor can be wrong too (12 Nov it
-            # "corrected" a true line about maple sap). A separate check must agree the line is a
-            # problem, and must confirm the correction itself before it becomes a lesson.
-            second = llm_json(f"""Independent science check. Video title: "{sn['title']}".
-A reviewer says this spoken line is false or misleading: "{out.get('false_sentence', '')}"
-Reviewer's proposed truth: "{out.get('correct_version', '')}"
-Judge carefully and on your own:
-- "line_problem": "false" if the line is scientifically false, "off_topic" if it is true but does
-  not belong in a video with this title, "fine" if it is true and on topic.
-- "correction_accurate": true only if the reviewer's proposed truth is itself accurate.
-- "truth": one or two plain sentences that are definitely accurate about this line.
-Return JSON: {{"line_problem": "false|off_topic|fine", "correction_accurate": true or false, "truth": "..."}}""")
-            verdict = second.get("line_problem", "fine")
-            if verdict == "fine":
-                actions.append(f"Audit query on '{sn['title']}' overruled by a second check (line is accurate); left scheduled.")
-                done.add(vid)
-                continue
-            out["correct_version"] = (out.get("correct_version") if second.get("correction_accurate")
-                                      else second.get("truth", ""))
-            if verdict == "off_topic":
-                out["why"] = "the line is true but has nothing to do with this video's subject"
-                out["correct_version"] = "Keep every line about this video's own subject. " + (second.get("truth") or "")
-            # it was never public, so nothing is lost: delete it rather than leave private clutter
-            # on the channel; the corrected remake takes its place
-            y.videos().delete(id=vid).execute()
-            actions.append(f"Deleted before going public: '{sn['title']}'. Wrong line: "
-                           f"\"{out.get('false_sentence', '?')}\". Correct: {out.get('correct_version', out.get('why', ''))} "
-                           "A corrected remake is queued for the next production run.")
-            remakes = read_json(DATA / "remakes.json", []) or []
-            remakes.append({"topic": h.get("topic") or sn["title"], "pulled": vid, "title": sn["title"],
-                            "false_sentence": out.get("false_sentence", ""),
-                            "correct_version": out.get("correct_version", ""), "why": out.get("why", ""),
-                            "tries": 0})
-            write_json(DATA / "remakes.json", remakes)
-            if verdict == "false":  # only a confirmed falsehood becomes a lesson
-                add_lesson("false_line", f"said \"{out.get('false_sentence', '')}\" but {out.get('correct_version', '')}")
-            else:
-                add_lesson("off_topic", f"a video about '{sn['title']}' drifted into an unrelated line: \"{out.get('false_sentence', '')}\"")
-            pulled = True
-        elif not (out.get("title_ok", True) and out.get("description_ok", True)):
-            body = {"title": sn["title"], "description": sn["description"],
-                    "categoryId": sn.get("categoryId", "28"), "tags": sn.get("tags", [])}
-            if not out.get("title_ok", True) and out.get("fixed_title"):
-                body["title"] = out["fixed_title"][:100]
-            if not out.get("description_ok", True) and out.get("fixed_description"):
-                parts = sn["description"].split("\n\n", 1)
-                tags = " ".join(w for w in parts[0].split() if w.startswith("#"))
-                body["description"] = (out["fixed_description"] + (" " + tags if tags else "")
-                                       + ("\n\n" + parts[1] if len(parts) > 1 else ""))
-            y.videos().update(part="snippet", body={"id": vid, "snippet": body}).execute()
-            add_lesson("title", f"title '{sn['title']}' overstated: {out.get('why', '')}")
-            actions.append(f"Corrected before going public: '{sn['title']}' -> '{body['title']}' ({out.get('why', '')})")
-        done.add(vid)
-    write_json(DATA / "audited.json", sorted(done))
-    for a in actions:
-        log("health: " + a)
-    audit_bank.pulled = pulled
-    return actions
+    """Safety net for anything already scheduled on YouTube (the bank audits before storing)."""
+    from .audit import audit_scheduled
+    out = audit_scheduled()
+    audit_bank.pulled = getattr(audit_scheduled, "pulled", False)
+    return out
 
 
 def _fmt(t):
@@ -211,11 +122,11 @@ def check(heal=True):
             if r["url"] not in reported:
                 lines.append(f"The production run at {_fmt(r['at'])} ended as '{r['result']}'.")
                 reported.append(r["url"])
-        low = len(bank) < p["videos_per_day"]   # less than one day of videos ready: never wait for the clock
+        low = len(bank) + len(__import__("agents.bank", fromlist=["items"]).items()) < p["videos_per_day"]   # less than one day of videos ready: never wait for the clock
         problem = rc["skipped"] or rc["failed"] or getattr(audit_bank, "pulled", False) or low
         if low and not (rc["skipped"] or rc["failed"]):
             lines.append(f"The bank holds less than a day of videos ({len(bank)}).")
-        if heal and problem and len(bank) < target and not rc["running"] and os.environ.get("GITHUB_TOKEN"):
+        if heal and problem and len(bank) + len(__import__("agents.bank", fromlist=["items"]).items()) < target and not rc["running"] and os.environ.get("GITHUB_TOKEN"):
             last = notes.get("catch_up")
             if not last or dt.datetime.fromisoformat(last) < dt.datetime.now(dt.timezone.utc) - dt.timedelta(hours=3):
                 try:
@@ -226,8 +137,11 @@ def check(heal=True):
                     lines.append(f"Could not start a catch-up run ({str(e)[:80]}).")
     notes["reported"] = reported[-60:]
     write_json(DATA / "health.json", notes)
-    cover = f"covers until {_fmt(bank[-1])}" if bank else "is EMPTY: nothing scheduled"
-    summary = [f"Video bank: {len(bank)} of {target} videos ready, {cover}."]
+    from . import bank as vault
+    stored = len(vault.items())
+    cover = f"YouTube schedule covers until {_fmt(bank[-1])}" if bank else "nothing scheduled on YouTube yet"
+    summary = [f"Video bank: {len(bank) + stored} of {target} videos ready "
+               f"({stored} waiting in the bank, {len(bank)} scheduled on YouTube); {cover}."]
     if rc and rc["next"]:
         summary.append(f"Next production run: {_fmt(rc['next'])}"
                        + (" (one is running now)" if rc["running"] else "") + ".")

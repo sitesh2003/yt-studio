@@ -76,9 +76,9 @@
     "videos_per_day": 3,
     "made_for_kids": false,
     "contains_synthetic_media": false,
-    "bank_days": 2,
+    "bank_days": 3,
     "max_uploads_per_day": 5,
-    "bank_note": "production runs top up bank_days x videos_per_day scheduled videos; only videos_per_day go public each day, at slots_et"
+    "bank_note": "finished, audited videos wait in the GitHub 'video-bank' release; the publisher uploads only the next day's 3 slots, so nothing on YouTube is ever deleted"
   },
   "community": {
     "mode": "auto",
