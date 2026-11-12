@@ -19,6 +19,10 @@ jobs:
     timeout-minutes: 90
     steps:
       - uses: actions/checkout@v4
+        with:
+          # The LATEST main, not the commit from when this run was queued: a run queued behind
+          # another (studio-state) started from stale state on 12 Nov and its save erased two videos.
+          ref: main
 
       - uses: actions/setup-python@v5
         with:
