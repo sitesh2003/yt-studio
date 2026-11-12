@@ -666,7 +666,7 @@
       "chemistry"
     ],
     "hook": "Honey is famous for being one of the only natural foods that never truly spoils.",
-    "status": "scheduled",
+    "status": "public",
     "narration": "Honey is famous for being one of the only natural foods that never truly spoils. It stays shelf-stable because of its unique chemistry, not just because it’s sealed tight. Honey is incredibly low in water, which makes it a nightmare for bacteria to survive. Think about what happens to fruit when it dries out in the sun. Pause and guess... three, two, one. Here’s why: honey pulls moisture out of anything that tries to grow inside it. Bacteria literally dehydrate and die before they can spoil your snack. Add in its natural acidity, and it becomes a fortress. Ever thought why honey turns into hard, sugar crystals? Drop your guess below.",
     "series": "Food Whys",
     "question": "Ever thought why honey turns into hard, sugar crystals? Drop your guess below.",
@@ -688,7 +688,8 @@
     },
     "repairs": 0,
     "video_id": "EfZ-P6him7k",
-    "publish_at": "2026-11-12T12:00:00-05:00"
+    "publish_at": "2026-11-12T12:00:00-05:00",
+    "answered": true
   },
   {
     "job": "20261112-0207-why-apples-float-in-water-while-pears-im",
@@ -1079,65 +1080,26 @@
     "repairs": 0
   },
   {
-    "job": "20261112-1504-why-starfish-have-zero-brains-yet-solve-",
-    "topic": "Why Starfish Have Zero Brains Yet Solve Complex Mazes",
-    "title": "How Do Starfish Navigate Without A Central Brain? 🌊⭐",
-    "description": "Starfish do not have a central brain, yet they navigate environments. Discover the decentralized nervous system that makes it possible. #shorts #science #ocean\n\nPhoto by 1103489 on Pixabay\nPhoto by Celtenator on Pixabay\nPhoto by lpittman on Pixabay\nVideo by 3593622 on Pixabay\nVideo by Coverr-Free-Footage on Pixabay\nVideo by Simplyart4794 on Pixabay",
+    "job": "20261112-1657-why-do-zebras-have-stripes-while-horses-",
+    "topic": "Why do zebras have stripes while horses are solid-colored?",
+    "title": "Why Do Zebras Need Stripes But Horses Don't? 🦓🐎",
+    "description": "Discover why zebras evolved striking black and white patterns while horses stayed solid-colored. Explore the surprising science of animal coats and insect vision. #AnimalWhys #Science #Shorts\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nPhoto by kasjanf on Pixabay\nVideo by InspiredImages on Pixabay\nVideo by Joshua_Willson on Pixabay\nVideo by adege on Pixabay",
     "tags": [
-      "starfish",
-      "marine biology",
+      "zebras",
+      "horses",
       "animal behavior",
-      "ocean science",
-      "shorts"
+      "science",
+      "biology"
     ],
-    "hook": "Why do starfish navigate without a central brain? They do not have one single brain. Instead, they rely on a decentralized nervous system where the arms share sensory information to coordinate movement.",
-    "status": "banked",
-    "narration": "Why do starfish navigate without a central brain? They do not have one single brain. Instead, they rely on a decentralized nervous system where the arms share sensory information to coordinate movement. They do not have a central brain at all. Wait, really? So how do they figure out turns? Each arm has its own nervous system that works together through a central nerve ring. Think about how separate parts communicate to choose which way to pull next. Pause and guess... three, two, one. Here is why: navigation is a result of integrated sensory feedback across the entire nerve ring. Ever wondered what other animals can do without a brain?",
-    "voice_engine": "kokoro",
-    "voices": "male host, female explainer",
-    "diagrams": 0,
-    "series": "Animal Whys",
-    "question": "Ever wondered what other animals can do without a brain?",
-    "answer_comment": "Starfish rely on a decentralized nervous system. They coordinate movement by integrating sensory signals across their arms, showing that complex navigation doesn't always require a central brain. Ever wondered what other animals can do without a brain?",
-    "fact_ok": true,
-    "weekly": false,
-    "recap_source": null,
-    "qa": {
-      "facts": [],
-      "technical": [],
-      "sync": [],
-      "footage": [],
-      "review": [],
-      "notes": [
-        "scene 3 footage is a loose match (score 3.0), accepted"
-      ],
-      "pass": true,
-      "duration": 48.5
-    },
-    "repairs": 1,
-    "audited": true
-  },
-  {
-    "job": "20261112-1613-why-gecko-feet-can-walk-on-glass-while-f",
-    "topic": "Why Gecko Feet Can Walk on Glass While Frogs Slide Right Off",
-    "title": "Why Gecko Feet Beat Glass While Frogs Slide 🦎🪟 #shorts",
-    "description": "Ever wonder why some animals walk on walls while others slip? Discover the surprising physics behind gecko feet and tree frogs. #AnimalWhys #Science #shorts\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nPhoto by MariaIsabelPita on Pixabay\nVideo by NickyPe on Pixabay\nVideo by RoyBuri on Pixabay\nVideo by Tolmachev_Alexander on Pixabay\nVideo by conghuynh8 on Pixabay",
-    "tags": [
-      "gecko feet",
-      "tree frog",
-      "animal biomechanics",
-      "physics",
-      "science shorts"
-    ],
-    "hook": "Why can a gecko climb straight up a polished glass window while a tree frog slides right off?",
-    "status": "banked",
-    "narration": "Why can a gecko climb straight up a polished glass window while a tree frog slides right off? It all comes down to how their toes touch the surface. Wait, don't they both have sticky pads? Not quite. Frogs use wet friction and liquid mucus to grip smooth leaves. Which sounds great until you put them on vertical glass. On glass, that liquid layer acts like a slip-and-slide. Think about what happens when you press wet tape onto a wet bowl. Pause and guess... three, two, one. Geckos bypass liquid entirely by using billions of microscopic hairs called setae. They lock onto molecules without any glue at all. So if dry microscopic hairs win on glass, why do geckos struggle to climb wet glass?",
+    "hook": "Why do zebras wear high-contrast suits while horses stay solid-colored?",
+    "status": "review",
+    "narration": "Why do zebras wear high-contrast suits while horses stay solid-colored? It turns out horses never faced a bloodthirsty insect problem quite like the one on the open savanna. Wait, what do biting flies have to do with stripes? Horse flies rely on polarized light reflecting off solid coats to land, but stripes scramble those visual waves completely. Think about how overlapping lines confuse a camera lens. Pause and guess... three, two, one. Flies just crash right into them instead of landing, which saved early zebras from deadly tropical diseases. What main visual clue do stripes disrupt to stop flies from landing? Drop your guess below.",
     "voice_engine": "kokoro",
     "voices": "male host, female explainer",
     "diagrams": 2,
     "series": "Animal Whys",
-    "question": "Ever thought why a gecko cannot stick to wet glass either?",
-    "answer_comment": "The answer: A layer of water can make it harder for the gecko to maintain the intimate contact required for their grip to work properly. Even the world's best climbers often struggle when surfaces are too wet! Drop any questions below.",
+    "question": "What main visual clue do stripes disrupt to stop flies from landing? Drop your guess below.",
+    "answer_comment": "The answer: Stripes disrupt polarized light reflections. Horse flies use this polarized light to locate solid-colored hosts, so the stripes scramble the signal and prevent the flies from landing successfully.",
     "fact_ok": true,
     "weekly": false,
     "recap_source": null,
@@ -1147,13 +1109,81 @@
       "sync": [],
       "footage": [],
       "review": [],
-      "notes": [
-        "scene 7 footage is a loose match (score 3.0), accepted"
-      ],
       "pass": true,
-      "duration": 53.6
+      "duration": 49.1
+    },
+    "repairs": 1
+  },
+  {
+    "job": "20261112-1724-how-the-eyes-on-a-potato-actually-work-t",
+    "topic": "How the 'eyes' on a potato actually work to grow new plants",
+    "title": "Why Do Potatoes Sprout From Dents? 🥔🌱",
+    "description": "Discover how potato eyes grow new plants using stored energy. #science #plants #shorts\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nPhoto by fabersam on Pixabay\nVideo by NickyPe on Pixabay\nVideo by RoyBuri on Pixabay",
+    "tags": [
+      "potato",
+      "plants",
+      "science",
+      "gardening",
+      "biology",
+      "shorts"
+    ],
+    "hook": "Why do potatoes sprout shoots from those tiny dents instead of anywhere else?",
+    "status": "banked",
+    "narration": "Why do potatoes sprout shoots from those tiny dents instead of anywhere else? Those little dents are actually called nodes, and each one holds tiny backup buds waiting for the right signal. Wait, so the whole potato is basically a living survival pod? Spot on. It packs stored starch to feed those baby shoots until they can reach the sunlight. Think about what happens if you plant just one small piece with a single dent. Pause and guess... three, two, one. That single eye awakens, drinks the stored starch, and grows an entirely new plant. Ever thought how a grocery potato knows it is time to grow those shoots when spring hits? Drop your guess below.",
+    "voice_engine": "kokoro",
+    "voices": "male host, female explainer",
+    "diagrams": 1,
+    "series": "Everyday Whys",
+    "question": "Ever thought how a grocery potato knows it is time to grow those shoots when spring hits?",
+    "answer_comment": "The answer: Potatoes respond to changes in temperature and humidity, sensing that winter is over and spring has arrived. This triggers the dormant buds inside the nodes to wake up and start using the stored starch to grow new stems. Got another vegetable question? Ask below!",
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "footage": [],
+      "review": [],
+      "pass": true,
+      "duration": 47.7
     },
     "repairs": 0,
     "audited": true
+  },
+  {
+    "job": "20261112-1741-why-chameleons-change-color-it-is-not-ju",
+    "topic": "Why chameleons change color (it is not just for camouflage)",
+    "title": "The Science of Chameleon Color Change",
+    "description": "Think chameleons change color to hide? You've been misled! Discover the real reason these lizards shift their hues and how they do it. #shorts #science #chameleon\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nPhoto: Filip Mishevski, CC BY 3.0, via Wikimedia Commons\nPhoto: NIAID, CC BY 2.0, via Wikimedia Commons\nVideo by Engin_Akyurt on Pixabay\nVideo by asabovebelowloa on Pixabay\nVideo by xBriantcx on Pixabay",
+    "tags": [
+      "science",
+      "chameleon",
+      "nature"
+    ],
+    "hook": "Most people think chameleons change color to hide. Science tells a different story.",
+    "status": "review",
+    "narration": "Most people think chameleons change color to hide. Science tells a different story. Actually, that's just a common myth. They actually shift colors primarily to regulate body temperature and communicate emotions like aggression or mating readiness. Wait, so they aren't even trying to hide? Think about how crystals align to reflect light differently. Pause and guess... three, two, one. Here's why: they tune nanocrystals in their skin to reflect different wavelengths of light. Ever thought how a chameleon might look on a bright neon sign? Drop your guess below.",
+    "voice_engine": "kokoro",
+    "voices": "male host, female explainer",
+    "diagrams": 1,
+    "series": "Animal Whys",
+    "question": "Ever thought how a chameleon might look on a bright neon sign? Drop your guess below.",
+    "answer_comment": "The answer: Chameleons don't have a specific setting for neon lights. Their skin color changes are driven by social interactions and temperature needs, not by trying to mimic artificial light sources in their environment.",
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "qa": {
+      "facts": [],
+      "technical": [
+        "video frozen for more than 2.5 s"
+      ],
+      "sync": [],
+      "footage": [],
+      "review": [],
+      "pass": false,
+      "duration": 41.1
+    },
+    "repairs": 1
   }
 ]

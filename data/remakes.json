@@ -1,1 +1,11 @@
-[]
+[
+  {
+    "topic": "Why do zebras have stripes while horses are solid-colored?",
+    "pulled": "",
+    "title": "Why Do Zebras Need Stripes But Horses Don't? 🦓🐎",
+    "false_sentence": "which saved early zebras from deadly tropical diseases.",
+    "correct_version": "While zebras are susceptible to diseases, the primary evolutionary advantage of stripes is preventing fly landings, which reduces energy expenditure and stress rather than directly preventing the transmission of specific fatal tropical diseases.",
+    "why": "The claim implies a direct causative link between stripes and immunity or disease prevention, whereas the primary scientific consensus focuses on the disruption of host-seeking behavior in biting flies.",
+    "tries": 0
+  }
+]
