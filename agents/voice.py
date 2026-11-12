@@ -4,6 +4,7 @@ Word timings come straight from the voice engine, so captions are exact
 without running a speech-to-text model.
 """
 import asyncio
+import re
 import time
 
 import edge_tts
@@ -35,25 +36,75 @@ def clean(text):
     return re.sub(r"\s{2,}", " ", text).strip()
 
 
-def narrate(script, job_dir):
-    v = config()["voice"]
-    text = clean(" ".join(s["narration"].strip() for s in script["scenes"]))
-    words, last = None, None
-    # keep the channel's voice: retry it patiently, only switch voice as a last resort
+def _pause_after(text, nxt):
+    """A human narrator breathes: a beat between scenes, longer after a question or before an answer."""
+    t, n = text.strip(), (nxt or "").strip().lower()
+    if re.search(r"(?i)three\.?\s*two\.?\s*one\.?$", t):
+        return 0.55                                  # let the countdown land before the reveal
+    if t.endswith("?"):
+        return 0.4
+    if n.startswith(("here's why", "here is why", "but ", "and that", "so ", "turns out", "the answer")):
+        return 0.3                                   # a held beat before the turn
+    return 0.1   # the voice engine already ends each part with ~0.5 s of natural silence
+
+
+def _rate_for(text, base):
+    """Small changes of pace so it doesn't drone: slower for the countdown and the closing question."""
+    b = int(re.sub(r"[^-\d]", "", base) or 0)
+    if "pause and guess" in text.lower() or text.strip().endswith("?"):
+        b -= 6
+    return f"{b:+d}%"
+
+
+def _speak_retry(text, v, rate, path):
+    last = None
     for attempt, name in enumerate([v["name"]] * 5 + ["en-US-AndrewNeural", "en-US-BrianNeural"]):
         try:
-            words = asyncio.run(_speak(text, name, v["rate"], str(job_dir / "voice.mp3")))
+            words = asyncio.run(_speak(text, name, rate, str(path)))
             if words:
-                break
+                return words
         except Exception as e:  # the free voice service drops a request now and then
             last = e
             log(f"voice: attempt {attempt + 1} failed ({type(e).__name__}), retrying")
             time.sleep(4 * (attempt + 1))
-    if not words:
-        raise RuntimeError(f"voice: no audio after retries: {last}")
-    if not words:
-        raise RuntimeError("voice: no word timings returned")
-    log(f"voice: {len(words)} words, {words[-1]['end']:.1f}s")
+    raise RuntimeError(f"voice: no audio after retries: {last}")
+
+
+def _dur(path):
+    import subprocess
+    err = subprocess.run(["ffmpeg", "-hide_banner", "-i", str(path)], capture_output=True, text=True,
+                         encoding="utf-8", errors="replace").stderr
+    m = re.search(r"Duration:\s*(\d+):(\d+):([\d.]+)", err)
+    return int(m[1]) * 3600 + int(m[2]) * 60 + float(m[3]) if m else 0.0
+
+
+def narrate(script, job_dir):
+    """One scene at a time, joined with natural pauses, so it sounds like a person telling a story
+    rather than one long breathless read. Word timings are shifted onto the joined timeline."""
+    import subprocess
+    v = config()["voice"]
+    scenes = [clean(s["narration"].strip()) for s in script["scenes"]]
+    words, parts, t = [], [], 0.0
+    for k, text in enumerate(scenes):
+        part = job_dir / f"vo_{k:02d}.mp3"
+        w = _speak_retry(text, v, _rate_for(text, v["rate"]), part)
+        for x in w:
+            words.append({"start": x["start"] + t, "end": x["end"] + t, "text": x["text"]})
+        gap = _pause_after(text, scenes[k + 1] if k + 1 < len(scenes) else "") if k + 1 < len(scenes) else 0.0
+        parts.append((part, gap))
+        t += _dur(part) + gap
+    # join: each part followed by its silence, re-encoded to one clean track
+    inputs, chain = [], []
+    for k, (part, gap) in enumerate(parts):
+        inputs += ["-i", str(part)]
+        chain.append(f"[{k}:a]aresample=24000,apad=pad_dur={gap:.2f}[a{k}]")
+    cat = "".join(f"[a{k}]" for k in range(len(parts))) + f"concat=n={len(parts)}:v=0:a=1[out]"
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error"] + inputs +
+                   ["-filter_complex", ";".join(chain) + ";" + cat, "-map", "[out]",
+                    "-c:a", "libmp3lame", "-b:a", "128k", str(job_dir / "voice.mp3")], check=True)
+    for part, _ in parts:
+        part.unlink(missing_ok=True)
+    log(f"voice: {len(words)} words, {words[-1]['end']:.1f}s, {len(parts)} scenes with natural pauses")
     return words
 
 

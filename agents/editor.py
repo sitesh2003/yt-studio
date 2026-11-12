@@ -33,10 +33,24 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
     lines, n = [], c["words_per_line"]
     quiet = [(a, b) for (a, b, _, st) in (overlays or []) if st == "Count"]  # big 3-2-1 replaces captions
     y = c["position_y"]
-    for i in range(0, len(words), n):
-        group = words[i:i + n]
+    # PHRASES, not fixed chunks: a line ends at punctuation (or n words), and it leaves the screen
+    # when the voice pauses, so captions breathe with the narrator instead of rolling non-stop
+    groups, cur = [], []
+    for idx, w in enumerate(words):
+        cur.append(w)
+        gap = (words[idx + 1]["start"] - w["end"]) if idx + 1 < len(words) else 9
+        if len(cur) >= n or gap > 0.15 or w["text"].rstrip().endswith((".", ",", "?", "!", ";", ":")):
+            groups.append(cur)
+            cur = []
+    if cur:
+        groups.append(cur)
+    flat = 0
+    for gi, group in enumerate(groups):
+        i = flat
+        flat += len(group)
         start = group[0]["start"]
-        end = words[i + n]["start"] if i + n < len(words) else group[-1]["end"] + 0.4
+        nxt = groups[gi + 1][0]["start"] if gi + 1 < len(groups) else group[-1]["end"] + 0.4
+        end = nxt if nxt - group[-1]["end"] < 0.25 else group[-1]["end"] + 0.15
         for j, w in enumerate(group):
             ws = w["start"] if j else start
             we = group[j + 1]["start"] if j + 1 < len(group) else end
