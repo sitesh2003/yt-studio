@@ -7,3 +7,4 @@ requests==2.34.2
 python-dotenv==1.2.4
 numpy
 tzdata
+resvg-py==0.5.0

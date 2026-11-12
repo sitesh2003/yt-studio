@@ -126,6 +126,9 @@ Rules:
   part...", "And that's not even the strangest bit."). Never pad; each turn must lead to a new fact.
 - COMMENTS: one moment that invites people to share their own experience (a habit, a food, a pet),
   without asking for comments directly until the closing question.
+- LOOP: Shorts replay automatically, and a replay counts. Make the very last words of the closing
+  question lead naturally back into the first line, so the video feels like one circle (e.g. the
+  question ends on the same object the hook opens with). End right after the question - no outro.
 - NO "subscribe", "like", "share" or "follow" anywhere in the narration. The content earns it.
 - SOUND LIKE A CURIOUS HUMAN, not a fact list: talk to one person ("you"), use contractions, let real
   wonder show ("Here's what got me...", "Wait, it gets stranger."), react to the surprising bit,

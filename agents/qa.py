@@ -96,7 +96,9 @@ Fail the video if ANY of these is true:
 - a frame clearly contradicts or is unrelated to what is being said (a loose but sensible visual
   analogy is fine)
 (The small square mark in the top-left corner - a yellow question mark with an orbit - is THIS
-channel's own logo on every frame. It is correct; never flag it.)
+channel's own logo on every frame. It is correct; never flag it. Some scenes are deliberately drawn
+explainer diagrams on a navy background with short labels: that is intended - judge them only on
+whether they are accurate and readable.)
 - anything inappropriate for all ages, gory, frightening, sexual, political, or a real brand/logo
   shown prominently
 - burned-in captions are cut off, overlap badly, misspelled, or unreadable (captions show only

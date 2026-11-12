@@ -251,13 +251,31 @@ def pick_scene(i, scene, a, b, job_dir, used, note="", extra_queries=()):
             _fallback(out, b - a + 0.5, i)
             score, pick, credit = 0, None, None
     else:
-        _fallback(out, b - a + 0.5, i)
-        pick = None
+        # nothing on stock sites shows it: draw an explainer diagram (free, checked for accuracy)
+        drawn = False
+        global _diagrams
+        if _diagrams < 3:
+            try:
+                from . import diagram
+                png = job_dir / f"dia_{i:02d}.png"
+                if diagram.make(scene["narration"], _topic, png):
+                    _photo_clip(png, out, b - a + 0.5, i)
+                    _diagrams += 1
+                    drawn, score, pick = True, 7.0, {"kind": "diagram", "id": ("d", i)}
+            except Exception as e:
+                log(f"visuals: diagram skipped ({str(e)[:60]})")
+        if not drawn:
+            _fallback(out, b - a + 0.5, i)
+            pick = None
     return score, pick, credit
 
 
+_topic, _diagrams = "", 0
+
+
 def gather(script, times, job_dir):
-    global last_scores, last_picks, last_credits, last_used
+    global last_scores, last_picks, last_credits, last_used, _topic, _diagrams
+    _topic, _diagrams = script.get("topic", ""), 0
     if not key("PIXABAY_API_KEY"):
         log("visuals: no PIXABAY_API_KEY, using gradient backgrounds")
     used, scores, picks, credits = set(), [], [], []

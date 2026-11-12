@@ -56,13 +56,46 @@ def _rate_for(text, base):
     return f"{b:+d}%"
 
 
+_KOKORO = None
+
+
+def _kokoro_speak(text, v, rate, path):
+    """Kokoro (open source, Apache 2.0, runs right here on the CPU): a warmer, more human voice.
+    Returns word timings like the Edge voice does."""
+    global _KOKORO
+    import numpy as np
+    import soundfile as sf
+    if _KOKORO is None:
+        from kokoro import KPipeline
+        _KOKORO = KPipeline(lang_code="a", repo_id="hexgrad/Kokoro-82M")
+    speed = 1.0 + int(re.sub(r"[^-\d]", "", rate) or 0) / 100
+    audio, words, offset = [], [], 0.0
+    for r in _KOKORO(text, voice=v.get("kokoro_voice", "af_heart"), speed=speed):
+        a = r.audio.numpy() if hasattr(r.audio, "numpy") else np.asarray(r.audio)
+        for tk in (r.tokens or []):
+            if tk.start_ts is not None and tk.end_ts is not None and re.search(r"\w", tk.text):
+                words.append({"start": tk.start_ts + offset, "end": tk.end_ts + offset, "text": tk.text})
+        audio.append(a)
+        offset += len(a) / 24000
+    if not audio or not words:
+        raise RuntimeError("kokoro returned no audio")
+    sf.write(str(path), np.concatenate(audio), 24000)
+    return words
+
+
 def _speak_retry(text, v, rate, path):
+    if v.get("engine") == "kokoro":
+        try:
+            return _kokoro_speak(text, v, rate, path.with_suffix(".wav")), path.with_suffix(".wav")
+        except Exception as e:
+            log(f"voice: Kokoro unavailable ({str(e)[:80]}), using the Edge voice")
+            v["engine"] = "edge-tts"   # stay on one voice for the rest of this video
     last = None
     for attempt, name in enumerate([v["name"]] * 5 + ["en-US-AndrewNeural", "en-US-BrianNeural"]):
         try:
             words = asyncio.run(_speak(text, name, rate, str(path)))
             if words:
-                return words
+                return words, path
         except Exception as e:  # the free voice service drops a request now and then
             last = e
             log(f"voice: attempt {attempt + 1} failed ({type(e).__name__}), retrying")
@@ -82,12 +115,11 @@ def narrate(script, job_dir):
     """One scene at a time, joined with natural pauses, so it sounds like a person telling a story
     rather than one long breathless read. Word timings are shifted onto the joined timeline."""
     import subprocess
-    v = config()["voice"]
+    v = dict(config()["voice"])
     scenes = [clean(s["narration"].strip()) for s in script["scenes"]]
     words, parts, t = [], [], 0.0
     for k, text in enumerate(scenes):
-        part = job_dir / f"vo_{k:02d}.mp3"
-        w = _speak_retry(text, v, _rate_for(text, v["rate"]), part)
+        w, part = _speak_retry(text, v, _rate_for(text, v["rate"]), job_dir / f"vo_{k:02d}.mp3")
         for x in w:
             words.append({"start": x["start"] + t, "end": x["end"] + t, "text": x["text"]})
         gap = _pause_after(text, scenes[k + 1] if k + 1 < len(scenes) else "") if k + 1 < len(scenes) else 0.0
@@ -104,7 +136,7 @@ def narrate(script, job_dir):
                     "-c:a", "libmp3lame", "-b:a", "128k", str(job_dir / "voice.mp3")], check=True)
     for part, _ in parts:
         part.unlink(missing_ok=True)
-    log(f"voice: {len(words)} words, {words[-1]['end']:.1f}s, {len(parts)} scenes with natural pauses")
+    log(f"voice: {len(words)} words, {words[-1]['end']:.1f}s, {len(parts)} scenes with natural pauses ({v['engine']})")
     return words
 
 

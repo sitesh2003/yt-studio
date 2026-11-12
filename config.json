@@ -34,9 +34,11 @@
     ]
   },
   "voice": {
-    "engine": "edge-tts",
+    "engine": "kokoro",
     "name": "en-US-AndrewMultilingualNeural",
-    "rate": "+0%"
+    "rate": "+0%",
+    "kokoro_voice": "af_heart",
+    "_note": "kokoro = open-source voice run in the cloud; the Edge voice (name) is the automatic fallback"
   },
   "captions": {
     "words_per_line": 3,
