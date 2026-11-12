@@ -35,7 +35,7 @@ def build(script):
     meta = {"topic": script["topic"], "title": script["title_options"][0], "description": desc,
             "tags": script.get("tags", []), "hook": script["scenes"][0]["narration"], "status": "review",
             "narration": " ".join(sc["narration"] for sc in script["scenes"]),
-            "voice_engine": voice.last_engine, "diagrams": visuals._diagrams,
+            "voice_engine": voice.last_engine, "voices": voice.last_cast, "diagrams": visuals._diagrams,
             "series": script.get("series", ""),
             "question": script.get("question", ""), "answer_comment": script.get("answer_comment", ""),
             "fact_ok": not (script.get("fact_check_result") or {}).get("unresolved", False),

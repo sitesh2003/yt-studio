@@ -58,6 +58,7 @@ def _rate_for(text, base):
 
 _KOKORO = None
 last_engine = ""
+last_cast = ""
 
 
 def _kokoro_speak(text, v, rate, path):
@@ -119,9 +120,20 @@ def narrate(script, job_dir):
     v = dict(config()["voice"])
     scenes = [clean(s["narration"].strip()) for s in script["scenes"]]
     words, parts, t = [], [], 0.0
+    # Change the voices from video to video: in about half the videos the host is male and the
+    # explainer female. Picked from the title, so a re-narration of the same video keeps its voices.
+    global last_cast
+    import hashlib
+    cast_map = dict(v.get("narrators") or {})
+    if cast_map.get("host") and cast_map.get("explainer") and             hashlib.sha256(script.get("title", "").encode()).digest()[0] % 2:
+        cast_map["host"], cast_map["explainer"] = cast_map["explainer"], cast_map["host"]
+        last_cast = "male host, female explainer"
+    else:
+        last_cast = "female host, male explainer"
+    log(f"voice: {last_cast}")
     for k, text in enumerate(scenes):
         who = script["scenes"][k].get("speaker") or ("host" if k == 0 or k == len(scenes) - 1 else "explainer")
-        cast = (v.get("narrators") or {}).get(who, {})
+        cast = cast_map.get(who, {})
         sv = dict(v, kokoro_voice=cast.get("kokoro") or v.get("kokoro_voice"), edge_voice=cast.get("edge"))
         w, part = _speak_retry(text, sv, _rate_for(text, v["rate"]), job_dir / f"vo_{k:02d}.mp3")
         v["engine"] = sv["engine"]   # if Kokoro failed for one scene, stay on Edge for both narrators
