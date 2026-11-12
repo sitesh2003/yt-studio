@@ -689,7 +689,8 @@
     "repairs": 0,
     "video_id": "EfZ-P6him7k",
     "publish_at": "2026-11-12T12:00:00-05:00",
-    "answered": true
+    "answered": true,
+    "recapped": true
   },
   {
     "job": "20261112-0207-why-apples-float-in-water-while-pears-im",
@@ -1265,5 +1266,111 @@
       "duration": 41.1
     },
     "repairs": 1
+  },
+  {
+    "job": "20261112-1841-why-do-zebras-have-stripes-while-horses-",
+    "topic": "Why do zebras have stripes while horses are solid-colored?",
+    "title": "Why Are Horses Solid But Zebras Striped? 🐎🦓 #shorts",
+    "description": "Ever wondered why zebras rock black-and-white stripes while horses stay solid? The real biological purpose has to do with tiny annoying pests! #shorts #science #animals\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nPhoto by Pexels on Pixabay\nPhoto by kuba1003wojtysiak on Pixabay\nVideo by Thamnguyen_TBVN on Pixabay\nVideo by adege on Pixabay",
+    "tags": [
+      "zebras",
+      "horses",
+      "animal science",
+      "biology",
+      "science facts"
+    ],
+    "hook": "Why is a zebra's coat boldly striped while a horse is solid?",
+    "status": "banked",
+    "narration": "Why is a zebra's coat boldly striped while a horse is solid? Both animals are close cousins, but zebras face a constant bug problem on savannas. Think about tiny pests attacking farm animals. Pause and guess... three, two, one. Here's why! High-contrast stripes disrupt insect vision, making biting flies miss their target. Fewer landings mean zebras save vital energy instead of swatting pests all day. Yesterday's answer: honey crystallizes because it's a supersaturated sugar solution! Nobody cracked it, so try today's. Ever thought why farmers put striped blankets on horses to mimic a zebra's coat?",
+    "voice_engine": "kokoro",
+    "voices": "male host, female explainer",
+    "diagrams": 1,
+    "series": "Animal Whys",
+    "question": "Ever thought why farmers put striped blankets on horses to mimic a zebra's coat?",
+    "answer_comment": "The answer: High-contrast black and white stripes create an optical illusion that confuses biting flies as they approach, preventing them from landing properly. Placing a zebra-striped sheet on a horse applies this exact trick to keep annoying flies away naturally! Have you ever seen horses wearing striped coats?",
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": "EfZ-P6him7k",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "footage": [],
+      "review": [],
+      "pass": true,
+      "duration": 45.8
+    },
+    "repairs": 0,
+    "audited": true
+  },
+  {
+    "job": "20261112-1858-why-woodpeckers-slam-their-heads-into-tr",
+    "topic": "Why Woodpeckers Slam Their Heads Into Trees 12,000 Times a Day Without Getting Brain Damage",
+    "title": "Why Woodpeckers Don't Get Concussions 🐦🧠",
+    "description": "Woodpeckers undergo extreme forces daily, yet their brains stay protected. See the scientific reality behind their anatomy and why small scale makes all the difference. #shorts #science #animals\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nPhoto by KeithJJ on Pixabay\nPhoto: Lyman, Henry M. (Henry Munson), 1835-1904; West, James J; Ya, Public domain, via Wikimedia Commons\nVideo by TRAPHITHO on Pixabay\nVideo by pen_ash on Pixabay",
+    "tags": [
+      "woodpecker",
+      "science",
+      "biology",
+      "biomechanics"
+    ],
+    "hook": "How can a woodpecker slam its head into a tree hundreds of times daily without suffering brain injury?",
+    "status": "review",
+    "narration": "How can a woodpecker slam its head into a tree hundreds of times daily without suffering brain injury? They hit wood at speeds that would instantly cause severe trauma in a human. For years, people thought their skulls acted like shock-absorbing helmets, but recent research suggests that might not be the case. Think about why their size might actually be their biggest advantage. Pause and guess... three, two, one. Their long tongue bone anchors the tongue, but scientists now think the secret is simply their tiny brain size, which allows them to withstand impacts that would injure a larger animal. Because their brains are so small, they experience much lower G-forces than a larger brain would during a sudden stop. Ever thought why this same strategy isn't used in football helmets to keep players safer?",
+    "voice_engine": "kokoro",
+    "voices": "male host, female explainer",
+    "diagrams": 1,
+    "series": "Animal Whys",
+    "question": "Ever thought why this same strategy isn't used in football helmets to keep players safer?",
+    "answer_comment": "The answer: While it was long believed that woodpeckers had shock-absorbing skulls, new research suggests their brains don't actually absorb much energy at all. They survive because their tiny brains have less mass to shift around, which doesn't scale up to the size of a human head. Got another question about animal adaptations?",
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "qa": {
+      "facts": [],
+      "technical": [
+        "video frozen for more than 2.5 s"
+      ],
+      "sync": [],
+      "footage": [],
+      "review": [],
+      "pass": false,
+      "duration": 56.5
+    },
+    "repairs": 0
+  },
+  {
+    "job": "20261112-1914-why-popcorn-kernels-explode-into-fluffy-",
+    "topic": "Why Popcorn Kernels Explode Into Fluffy Foam While Regular Corn Just Burns",
+    "title": "Why Does Popcorn Pop And Other Corn Doesn't? 🍿🔥",
+    "description": "Ever wondered why some corn kernels transform into fluffy foam while others just toast and harden in the heat? We break down the engineering behind the pop. #shorts #science #food\n\nPhoto by 41330 on Pixabay\nPhoto by 422737 on Pixabay\nPhoto: jurvetson, CC BY 2.0, via Wikimedia Commons\nVideo by Kmeel_com on Pixabay\nVideo by Pixabay on Pixabay\nVideo by groovelanddesigns on Pixabay\nVideo by jLasWilson on Pixabay",
+    "tags": [
+      "popcorn",
+      "science",
+      "food science"
+    ],
+    "hook": "Why does a popcorn kernel turn into a fluffy cloud while other types of corn just toast and harden?",
+    "status": "banked",
+    "narration": "Why does a popcorn kernel turn into a fluffy cloud while other types of corn just toast and harden? It all comes down to the hull's architecture and the water trapped deep inside that tiny seed. Think about what happens to that trapped water as the temperature climbs rapidly inside the shell. predict: true. Pause and guess... three, two, one. The water turns to high-pressure steam, turning the starch into a gel that finally ruptures the hull. That foam solidifies instantly as it hits the air, which regular corn simply cannot do. Ever thought how a tiny kernel that size manages to expand over ten times its original volume?",
+    "voice_engine": "kokoro",
+    "voices": "male host, female explainer",
+    "diagrams": 0,
+    "series": "Food Whys",
+    "question": "Ever thought how a tiny kernel that size manages to expand over ten times its original volume?",
+    "answer_comment": "The answer: The kernel expands so much because the internal starch turns into a liquid gel under intense pressure. When the hull finally fails, that gel instantly expands into the air and cools into a solid foam structure. The starch essentially 'freezes' into a solid state as it cools rapidly. Any other questions about how food changes shape?",
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "footage": [],
+      "review": [],
+      "pass": true,
+      "duration": 45.7
+    },
+    "repairs": 0,
+    "audited": true
   }
 ]
