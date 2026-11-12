@@ -61,6 +61,12 @@ last_engine = ""
 last_cast = ""
 
 
+def _cast_key(script):
+    """What picks the voices: the script's first title (scripts carry title_options, not title; an
+    empty key gave every video the same pair until 13 Nov), else the topic."""
+    return (script.get("title") or (script.get("title_options") or [""])[0] or script.get("topic") or "").strip()
+
+
 def _kokoro_speak(text, v, rate, path):
     """Kokoro (open source, Apache 2.0, runs right here on the CPU): a warmer, more human voice.
     Returns word timings like the Edge voice does."""
@@ -127,7 +133,7 @@ def narrate(script, job_dir):
     global last_cast
     import hashlib
     cast_map = dict(v.get("narrators") or {})
-    if cast_map.get("host") and cast_map.get("explainer") and             hashlib.sha256(script.get("title", "").encode()).digest()[0] % 2:
+    if cast_map.get("host") and cast_map.get("explainer") and             hashlib.sha256(_cast_key(script).encode()).digest()[0] % 2:
         cast_map["host"], cast_map["explainer"] = cast_map["explainer"], cast_map["host"]
         last_cast = "male host, female explainer"
     else:

@@ -291,6 +291,15 @@ Return JSON: {{"steps": [{{"scene": index, "label": "...", "emoji": ["...", "...
     return {}
 
 
+def _drift(f, seconds):
+    """A slow push-in on the board (about 6%), so a board scene is never a frozen frame: the QA
+    freeze check rejected the chameleon Short on 12 Nov for an 8-second still board."""
+    W, H, fps = f["width"], f["height"], f["fps"]
+    n = max(1, int(seconds * fps))
+    return (f"scale={W * 2}:{H * 2},zoompan=z='1+0.06*on/{n}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)'"
+            f":d=1:s={W}x{H}:fps={fps}")
+
+
 def board_clip(prev_png, png, out_mp4, seconds, job_dir, i):
     """One scene of the board: the board so far, with this scene's new part fading in."""
     from .core import config, run
@@ -299,12 +308,12 @@ def board_clip(prev_png, png, out_mp4, seconds, job_dir, i):
     cur.write_bytes(png)
     if prev_png is None:
         run(["ffmpeg", "-y", "-loop", "1", "-t", f"{seconds:.2f}", "-i", str(cur), "-vf",
-             f"scale={f['width']}:{f['height']},fps={f['fps']},fade=t=in:st=0:d=0.4", "-c:v", "libx264",
+             f"fps={f['fps']},fade=t=in:st=0:d=0.4," + _drift(f, seconds), "-c:v", "libx264",
              "-pix_fmt", "yuv420p", str(out_mp4)])
         return
     old = job_dir / f"board_{i:02d}_prev.png"
     old.write_bytes(prev_png)
     run(["ffmpeg", "-y", "-loop", "1", "-t", "0.8", "-i", str(old), "-loop", "1", "-t", f"{seconds + 0.5:.2f}",
          "-i", str(cur), "-filter_complex",
-         f"[0:v][1:v]xfade=transition=fade:duration=0.6:offset=0.15,scale={f['width']}:{f['height']},fps={f['fps']}[v]",
+         f"[0:v][1:v]xfade=transition=fade:duration=0.6:offset=0.15,fps={f['fps']}," + _drift(f, seconds + 0.5) + "[v]",
          "-map", "[v]", "-t", f"{seconds:.2f}", "-c:v", "libx264", "-pix_fmt", "yuv420p", str(out_mp4)])
