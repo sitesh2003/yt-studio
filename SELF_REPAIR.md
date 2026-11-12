@@ -20,8 +20,9 @@ made once at most.
 | Pixabay has nothing for a specific plant, animal or food (krill, wasabi, salmon fry) | Footage search | Also searches Wikimedia Commons photos, keeping only public-domain, CC0 and CC BY (credited in the description; never share-alike, non-commercial or no-derivatives) |
 | One or two scenes still have nothing after every search | Footage scores after the 2 repairs | Holds the strongest neighbouring shot a little longer instead of losing the whole video, then re-checks |
 | The reviewer mistakes our own corner logo for a brand | Reviewer prompt | The reviewer is told the corner mark is the channel's logo |
-| A false line is found after upload | Last accuracy audit of every waiting video, before it goes public | Deletes the never-public video, saves the exact wrong line and the truth, and remakes it first in the next run (max 2 tries) |
+| A false line is found after upload | Last accuracy audit of every waiting video, before it goes public, then a SECOND independent check that must agree (and must confirm the correction) before anything is deleted or learned | Deletes the never-public video, saves the exact wrong line and the truth, and remakes it first in the next run (max 2 tries) |
 | A title or description is overstated after upload | Same audit | Rewrites them in place on YouTube |
+| The free AI answers in an unexpected shape (a list instead of an object) | Every AI answer passes one shape check | Read either way; topic picking retries instead of ending the run |
 | A video takes off | Views 3x the channel median (1,000+) | Makes a sequel the next day |
 | New comments | Every 2 hours | Short, warm replies; the answer to each closing question is posted when the video goes public |
 

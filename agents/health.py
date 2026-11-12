@@ -117,6 +117,28 @@ Return JSON: {{"title_ok": true or false, "description_ok": true or false,
  "correct_version": "if narration_false: what is actually true, in one or two plain sentences",
  "why": "one line"}}""")
         if out.get("narration_false"):
+            # SECOND OPINION before anything irreversible: an auditor can be wrong too (12 Nov it
+            # "corrected" a true line about maple sap). A separate check must agree the line is a
+            # problem, and must confirm the correction itself before it becomes a lesson.
+            second = llm_json(f"""Independent science check. Video title: "{sn['title']}".
+A reviewer says this spoken line is false or misleading: "{out.get('false_sentence', '')}"
+Reviewer's proposed truth: "{out.get('correct_version', '')}"
+Judge carefully and on your own:
+- "line_problem": "false" if the line is scientifically false, "off_topic" if it is true but does
+  not belong in a video with this title, "fine" if it is true and on topic.
+- "correction_accurate": true only if the reviewer's proposed truth is itself accurate.
+- "truth": one or two plain sentences that are definitely accurate about this line.
+Return JSON: {{"line_problem": "false|off_topic|fine", "correction_accurate": true or false, "truth": "..."}}""")
+            verdict = second.get("line_problem", "fine")
+            if verdict == "fine":
+                actions.append(f"Audit query on '{sn['title']}' overruled by a second check (line is accurate); left scheduled.")
+                done.add(vid)
+                continue
+            out["correct_version"] = (out.get("correct_version") if second.get("correction_accurate")
+                                      else second.get("truth", ""))
+            if verdict == "off_topic":
+                out["why"] = "the line is true but has nothing to do with this video's subject"
+                out["correct_version"] = "Keep every line about this video's own subject. " + (second.get("truth") or "")
             # it was never public, so nothing is lost: delete it rather than leave private clutter
             # on the channel; the corrected remake takes its place
             y.videos().delete(id=vid).execute()
@@ -129,7 +151,10 @@ Return JSON: {{"title_ok": true or false, "description_ok": true or false,
                             "correct_version": out.get("correct_version", ""), "why": out.get("why", ""),
                             "tries": 0})
             write_json(DATA / "remakes.json", remakes)
-            add_lesson("false_line", f"said \"{out.get('false_sentence', '')}\" but {out.get('correct_version', '')}")
+            if verdict == "false":  # only a confirmed falsehood becomes a lesson
+                add_lesson("false_line", f"said \"{out.get('false_sentence', '')}\" but {out.get('correct_version', '')}")
+            else:
+                add_lesson("off_topic", f"a video about '{sn['title']}' drifted into an unrelated line: \"{out.get('false_sentence', '')}\"")
             pulled = True
         elif not (out.get("title_ok", True) and out.get("description_ok", True)):
             body = {"title": sn["title"], "description": sn["description"],

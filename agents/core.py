@@ -84,6 +84,25 @@ def _contents(prompt, images):
     return [types.Part.from_bytes(data=b, mime_type="image/jpeg") for b in images] + [prompt]
 
 
+class _ListResult(dict):
+    """The model sometimes answers with a bare list where we asked for {"key": [...]}.
+    Any .get("topics" / "items" / "claims" ...) on it returns that list instead of crashing."""
+    def __init__(self, items):
+        super().__init__()
+        self.items_list = items
+
+    def get(self, k, default=None):
+        return self.items_list if k not in ("verdict", "best", "pass", "why") else default
+
+
+def _shape(out):
+    if isinstance(out, list):
+        if len(out) == 1 and isinstance(out[0], dict):
+            return out[0]
+        return _ListResult(out)
+    return out if isinstance(out, dict) else {}
+
+
 def llm_json(prompt, retries=3, images=None):
     """Ask the configured LLM for JSON. Gemini free tier by default."""
     cfg = config()["llm"]
@@ -106,7 +125,7 @@ def llm_json(prompt, retries=3, images=None):
                     config={"response_mime_type": "application/json",
                             "temperature": 0.2 if images else 0.9},
                 )
-                return json.loads(resp.text)
+                return _shape(json.loads(resp.text))
             except Exception as e:
                 last, msg = e, str(e)
                 if "404" in msg or "NOT_FOUND" in msg:

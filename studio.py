@@ -303,7 +303,15 @@ def daily():
     # spare topics: a busy AI model or a held-back fact-check no longer means a missing video
     started = time.time()
     budget = float(os.environ.get("DAILY_BUDGET_MIN", "95")) * 60
-    topics = writer.pick_topics(want + 2)
+    topics = []
+    for attempt in range(2):  # a bad answer from the free model must not end the whole run
+        try:
+            topics = writer.pick_topics(want + 2)
+            if topics:
+                break
+        except Exception as e:
+            log(f"topic picking failed ({str(e)[:80]}), retrying")
+        time.sleep(30)
     remakes = read_json(DATA / "remakes.json", []) or []
     for r in remakes:   # corrected remakes of pulled videos go first (max 2 tries each)
         if r.get("tries", 0) < 2:
