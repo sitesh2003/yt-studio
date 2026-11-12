@@ -1,12 +1,13 @@
 # Ever Thought Why? - status
 
-Updated Thu 12 Nov, 04:30 PM IST by the health agent (every 2 hours, and after every production run).
+Updated Thu 12 Nov, 04:31 PM IST by the health agent (every 2 hours, and after every production run).
 
 - Video bank: 5 of 6 videos ready, covers until Sat 14 Nov, 05:30 AM IST.
-- Next production run: Fri 13 Nov, 03:13 AM IST (one is running now).
+- Next production run: Fri 13 Nov, 03:13 AM IST.
 - GitHub skipped the production run planned for Thu 12 Nov, 09:17 AM IST.
 - GitHub skipped the production run planned for Thu 12 Nov, 12:47 PM IST.
 - The production run at Thu 12 Nov, 08:02 AM IST ended as 'failure'.
+- A catch-up production run was started automatically.
 
 ## Videos waiting to go public
 
