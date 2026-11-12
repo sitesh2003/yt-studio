@@ -57,6 +57,7 @@ def _rate_for(text, base):
 
 
 _KOKORO = None
+last_engine = ""
 
 
 def _kokoro_speak(text, v, rate, path):
@@ -142,6 +143,8 @@ def narrate(script, job_dir):
                     "-c:a", "libmp3lame", "-b:a", "128k", str(job_dir / "voice.mp3")], check=True)
     for part, _ in parts:
         part.unlink(missing_ok=True)
+    global last_engine
+    last_engine = v["engine"]
     log(f"voice: {len(words)} words, {words[-1]['end']:.1f}s, {len(parts)} scenes with natural pauses ({v['engine']})")
     return words
 
