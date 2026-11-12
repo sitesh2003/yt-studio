@@ -26,6 +26,9 @@ made once at most.
 | A title or description is overstated after upload | Same audit | Rewrites them in place on YouTube |
 | The free AI answers in an unexpected shape (a list instead of an object) | Every AI answer passes one shape check | Read either way; topic picking retries instead of ending the run |
 | A video takes off | Views 3x the channel median (1,000+) | Makes a sequel the next day |
+| "Pause and guess" said twice (maple syrup, 12 Nov) | Every script, before the voice | Kept once, straight before "three, two, one"; extra countdowns removed |
+| The market moves | Weekly study of the top 20 science Shorts + our own numbers | data/playbook.json rewritten: formats, hooks, length (30-50 s); the writer follows it |
+| A drawn explainer is wrong or unreadable | A separate picture check on every diagram and board | Redrawn up to twice, else real footage is used |
 | New comments | Every 2 hours | Short, warm replies; the answer to each closing question is posted when the video goes public |
 
 What still needs a person: creating accounts (Instagram, Facebook), signing in, and anything that

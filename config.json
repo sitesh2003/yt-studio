@@ -17,10 +17,11 @@
   },
   "format": {
     "type": "short",
-    "target_seconds": 55,
+    "target_seconds": 40,
     "width": 1080,
     "height": 1920,
-    "fps": 30
+    "fps": 30,
+    "upload_short_side": 1440
   },
   "llm": {
     "provider": "gemini",

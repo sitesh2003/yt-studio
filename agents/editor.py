@@ -68,9 +68,30 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
     path.write_text(head + "\n".join(lines) + "\n", encoding="utf-8")
 
 
+def hook_title(title, max_chars=20, max_lines=3):
+    """The title as a short on-screen hook for the first seconds (no emojis or hashtags), split
+    into lines that fit a phone screen; '' if it would not fit."""
+    words = [w for w in "".join(ch for ch in (title or "") if ord(ch) < 0x2000).split() if not w.startswith("#")]
+    lines, cur = [], ""
+    for w in words:
+        if cur and len(cur) + 1 + len(w) > max_chars:
+            lines.append(cur)
+            cur = w
+        else:
+            cur = (cur + " " + w).strip()
+    if cur:
+        lines.append(cur)
+    return "\\N".join(lines) if 0 < len(lines) <= max_lines else ""
+
+
 def predict_overlays(script, times, words):
-    """PAUSE & GUESS banner over the predict scene, and a big 3-2-1 timed to the spoken words."""
+    """The hook title over the opening seconds (many people start a Short muted, and the first frame
+    is what the feed and the channel grid show), the PAUSE & GUESS banner over the predict scene,
+    and a big 3-2-1 timed to the spoken words."""
     out = []
+    hook = hook_title(script.get("title", ""))
+    if hook and times:
+        out.append((0.0, min(times[0][1], 3.0), "{\\fs76}" + hook, "Banner"))
     nums = {"three": "3", "two": "2", "one": "1"}
     for sc, (a, b) in zip(script["scenes"], times):
         if not (sc.get("predict") or "pause and guess" in sc.get("narration", "").lower()):
@@ -136,13 +157,19 @@ def render(clips, times, words, job_dir, overlays=None):
     # card (a logo intro in the first 2 seconds makes people swipe away)
     logo = ASSETS / "brand" / "logo-800.png"
     f = config()["format"]
-    vchain = "[0:v]ass=captions.ass:fontsdir=fonts[c]"
+    # Upload in 2K (1440 x 2560): YouTube gives 1440p+ uploads its better encoder, so the same
+    # footage looks sharper on phones. The picture is scaled up BEFORE the captions and logo are
+    # drawn, so the text is rendered crisp at full size (libass scales the caption layout itself).
+    k = max(1.0, float(f.get("upload_short_side", min(f["width"], f["height"]))) / min(f["width"], f["height"]))
+    W, H = int(f["width"] * k) // 2 * 2, int(f["height"] * k) // 2 * 2
+    up = f"scale={W}:{H}:flags=lanczos," if k > 1 else ""
+    vchain = f"[0:v]{up}ass=captions.ass:fontsdir=fonts[c]"
     if logo.exists():
         cmd += ["-i", str(logo)]
         li = 2
-        size, pad = int(f["width"] * 0.11), int(f["width"] * 0.045)
+        size, pad = int(W * 0.11), int(W * 0.045)
         vchain += (f";[{li}:v]scale={size}:-1,format=rgba,colorchannelmixer=aa=0.85[lg]"
-                   f";[c][lg]overlay={pad}:{int(f['height'] * 0.06)}[v]")
+                   f";[c][lg]overlay={pad}:{int(H * 0.06)}[v]")
     else:
         vchain = vchain.replace("[c]", "[v]")
     if music:
@@ -153,7 +180,7 @@ def render(clips, times, words, job_dir, overlays=None):
         cmd += ["-filter_complex", f"{vchain};{audio}", "-map", "[v]", "-map", "[a]"]
     else:
         cmd += ["-filter_complex", vchain, "-map", "[v]", "-map", "1:a"]
-    cmd += ["-c:v", "libx264", "-preset", "medium", "-crf", "19", "-pix_fmt", "yuv420p",
+    cmd += ["-c:v", "libx264", "-preset", "medium", "-crf", "18", "-pix_fmt", "yuv420p",
             "-c:a", "aac", "-b:a", "160k", "-shortest", "-movflags", "+faststart", "final.mp4"]
     run(cmd, cwd=job_dir)
     # one clean frame (no captions) from the middle of every scene, for the thumbnail designer

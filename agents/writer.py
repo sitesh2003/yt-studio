@@ -5,6 +5,7 @@ YOUR channel (learnings.json, written by the analytics agent), and what you
 already made (history.json) so it never repeats a topic.
 """
 from .core import DATA, add_lesson, config, llm_json, log, read_json
+from . import playbook
 
 
 def _context():
@@ -53,6 +54,8 @@ What has worked on THIS channel so far: {learn.get('summary', 'no data yet')}
 
 Topics already made (never repeat these): {done or 'none'}
 
+{playbook.brief()}
+
 PROVEN FORMATS (from a study of the biggest explainer Shorts, Nov 2026; a contrast video about two
 fish hit 5 million views and 1,800 comments in two days). Use these shapes, never copy a title or idea:
 - CONTRAST: "Why X has almost none of Y while Z is full of it" - two familiar things, one surprising
@@ -74,6 +77,35 @@ Return JSON: {{"topics": [{{"topic": "...", "why_it_will_work": "...", "pattern"
     return topics
 
 
+def tidy_countdown(script):
+    """"Pause and guess" is said ONCE, straight before "three, two, one" (the maple-syrup Short said
+    it twice: once before the question and again before the count). Any extra "Pause and guess" and
+    any extra countdown are removed from the spoken lines, whatever the writer produced."""
+    import re
+    pg = re.compile(r"\s*pause and guess[.…!,:]*\s*", re.I)
+    count = re.compile(r"three[,.…]*\s*two[,.…]*\s*one[.…!]*", re.I)
+    scenes = script.get("scenes", [])
+    hits = [(k, m) for k, sc in enumerate(scenes) for m in count.finditer(sc.get("narration", ""))]
+    keep_scene = hits[-1][0] if hits else None
+    for k, sc in enumerate(scenes):
+        text = sc.get("narration", "")
+        if k == keep_scene:
+            spans = list(count.finditer(text))
+            last = spans[-1]
+            before, after = text[:last.start()], text[last.end():]
+            before = count.sub("", before)            # a second countdown earlier in the scene
+            before = pg.sub(" ", before).rstrip()      # every "pause and guess" ...
+            text = f"{before} Pause and guess... three, two, one.{after}".strip()   # ... once, here
+        elif keep_scene is not None:
+            text = count.sub("", pg.sub(" ", text))
+        text = re.sub(r"\s{2,}", " ", text).strip()
+        if text != sc.get("narration", ""):   # a removed phrase can leave a sentence starting small
+            text = re.sub(r"(^|(?<!\.\.)[.?!]\s+)([a-z])", lambda m: m[1] + m[2].upper(), text)
+            log(f"writer: tidied the countdown in scene {k + 1}")
+        sc["narration"] = text
+    return script
+
+
 def _fix_rule(fix):
     if not fix:
         return ""
@@ -90,15 +122,18 @@ def write_script(topic, recap=None, fix=None):
     c = config()
     ch, fmt = c["channel"], c["format"]
     learn = read_json(DATA / "learnings.json", {}) or {}
-    words = int(fmt["target_seconds"] * 2.6)
+    secs = playbook.target_seconds(fmt["target_seconds"])
+    words = int(secs * 2.6)
     prompt = f"""Write a YouTube Short script for US viewers.
 Channel: {ch['niche']}. Tone: {ch['voice_tone']}. American English spelling.
 Topic: {topic}
 What has worked on this channel: {learn.get('summary', 'no data yet')}
 Mistakes this channel's checkers already caught (never repeat these): {[l['text'] for l in (read_json(DATA / 'lessons.json', []) or [])][-15:] or 'none yet'}
+{playbook.brief()}
 
 Rules:
-- About {words} words of narration in total ({fmt['target_seconds']} seconds when spoken).
+- About {words} words of narration in total ({secs} seconds when spoken). Short is strong:
+  the biggest science Shorts run about 40 seconds, and a Short people finish gets shown to more people.
 - The first line is the hook and must land in under 2 seconds: a surprising claim, a question, or a
   pattern interrupt. No "Did you know", no "In this video", no greeting.
 - Open a curiosity loop early and close it near the end, so people watch to the end.
@@ -118,7 +153,8 @@ Rules:
   the video showed plus everyday experience. Never ask something whose answer needs advanced theory
   (no quantum mechanics, no equations) that the video did not explain.
 - PAUSE AND PREDICT: around the middle, include ONE scene that sets up a prediction about what
-  happens next and ends with exactly: "Pause and guess... three, two, one." Mark that scene with
+  happens next and ends with exactly: "Pause and guess... three, two, one." Say "Pause and
+  guess" only ONCE in the whole video, right before the count - never before the question as well. Mark that scene with
   "predict": true. The very next scene reveals the answer with a satisfying "here's why".
   (This is a different question from the closing enquiry.)
 {{recap_rule}}
@@ -126,7 +162,7 @@ Rules:
   part...", "And that's not even the strangest bit."). Never pad; each turn must lead to a new fact.
 - COMMENTS: one moment that invites people to share their own experience (a habit, a food, a pet),
   without asking for comments directly until the closing question.
-- TWO NARRATORS, a natural conversation between friends: the HOST is curious - she opens with the
+- TWO NARRATORS, a natural conversation between friends: the HOST is curious - opens with the
   hook, wonders aloud, reacts ("Wait, really?"), runs the PAUSE AND PREDICT with the 3-2-1, and asks
   the closing "Ever thought why" question; the EXPLAINER answers warmly and clearly. Mark every scene
   "speaker": "host" or "explainer". Never have them introduce themselves or use names.

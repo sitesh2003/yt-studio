@@ -4,6 +4,7 @@ Uses the free YouTube Data API key. search.list costs 100 quota units of the
 10,000 free per day, so this runs a handful of searches, not hundreds.
 """
 import datetime as dt
+import re
 
 import requests
 
@@ -43,10 +44,12 @@ def scan(days=30, per_keyword=15):
             pub = dt.datetime.fromisoformat(v["snippet"]["publishedAt"].replace("Z", "+00:00"))
             age = max((dt.datetime.now(dt.timezone.utc) - pub).days, 1)
             views = int(st.get("viewCount", 0))
+            m = re.match(r"PT(?:(\d+)M)?(?:(\d+)S)?", v.get("contentDetails", {}).get("duration", ""))
+            secs = int(m[1] or 0) * 60 + int(m[2] or 0) if m else 0
             rows.append({
                 "id": v["id"], "title": v["snippet"]["title"], "channel": v["snippet"]["channelTitle"],
                 "views": views, "likes": int(st.get("likeCount", 0)), "comments": int(st.get("commentCount", 0)),
-                "views_per_day": round(views / age), "age_days": age, "keyword": ids[v["id"]],
+                "views_per_day": round(views / age), "age_days": age, "secs": secs, "keyword": ids[v["id"]],
             })
     rows.sort(key=lambda r: r["views_per_day"], reverse=True)
     write_json(DATA / "trends.json", {"scanned": dt.datetime.now().isoformat(), "videos": rows})

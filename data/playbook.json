@@ -1,0 +1,61 @@
+{
+  "rules": [
+    "Strictly limit total word count to between 90 and 105 words to hit the 42-second runtime sweet spot.",
+    "Assign the hook, 3-2-1 pause prompt, and closing question to Narrator 1, while Narrator 2 handles the core explanation.",
+    "Keep titles under 65 characters and lead with strong curiosity triggers like 'Why' or 'How'.",
+    "Use exclusively high-definition real footage or clean animated vector diagrams, completely avoiding AI-generated imagery.",
+    "Position the 'pause and predict' banner strictly between seconds 20 and 25 with a clear 3-2-1 countdown.",
+    "Never include subscribe/like CTAs, sensationalized fear, health advice, or misleading clickbait."
+  ],
+  "formats_now": [
+    "Everyday hidden engineering breakdowns because viewers are fascinated by the unseen mechanics of common objects.",
+    "Counter-intuitive physics explanations because they immediately challenge baseline assumptions and drive engagement.",
+    "Extreme animal biomechanics because unique natural adaptations consistently pull high daily view velocities."
+  ],
+  "hook_shapes": [
+    "Why does X actually do Y when you touch/use it?",
+    "What happens if you remove X from Y completely?",
+    "Why is X secretly built completely differently from Y?"
+  ],
+  "title_shapes": [
+    "Why Do X Need Y So Badly? 🏀 #shorts",
+    "How X Is Secretly Built to Stop Y 🌊 #shorts",
+    "Why Are We Totally Wrong About X? 🧠 #shorts"
+  ],
+  "topic_areas": [
+    "Everyday sports equipment physics and hidden design mechanics",
+    "Extreme architectural and civil engineering survival features",
+    "Bizarre animal locomotion and physiological defense adaptations",
+    "Unseen material science inside common household manufactured goods",
+    "Counter-intuitive fluid dynamics in natural water bodies"
+  ],
+  "stop_doing": [
+    "Dropping long-form structural pacing, as top performers heavily cluster under 50 seconds.",
+    "Using non-question formats for titles since the top data shows high retention with direct question phrasing."
+  ],
+  "target_seconds": 42,
+  "experiment": "Test starting the hook directly with a physical sound effect instead of speech in 3 out of 10 videos this week, and we will know it worked if the 5-second viewer retention rate increases by at least 4% compared to our baseline.",
+  "facts": {
+    "median_seconds_top20": 47.0,
+    "median_seconds_rest": 65.5,
+    "question_titles_top20": 6,
+    "why_how_what_titles_top20": 5,
+    "median_title_chars_top20": 64.0
+  },
+  "studied": "2026-11-12T19:53:34",
+  "history": [
+    {
+      "studied": "2026-11-12T19:41:36",
+      "rules": [
+        "Keep total word count between 95 and 110 words to strictly hit the ~44-second target.",
+        "Assign the hook and closing question to Narrator 1, and the 'pause and predict' prompt to Narrator 2.",
+        "Place the 'pause and predict' question exactly between seconds 20 and 25 with a visual on-screen prompt.",
+        "Focus topics on counter-intuitive physics, everyday hidden engineering, or extreme animal mechanics.",
+        "Keep titles under 65 characters and format them as 'Why', 'How', or direct question prompts.",
+        "Use only high-definition real footage or clean animated vector diagrams; never use photo-real AI visuals.",
+        "Never include generic subscribe calls, health advice, or sensationalized clickbait."
+      ],
+      "target_seconds": 44
+    }
+  ]
+}

@@ -271,6 +271,15 @@ def pick_scene(i, scene, a, b, job_dir, used, note="", extra_queries=()):
     """Choose and prepare footage for one scene. Returns (score, pick-or-None, credit)."""
     out = job_dir / f"raw_{i:02d}.mp4"
     pick, score = None, 0
+    if i in _board and not note:   # this scene is a step on the explainer board
+        try:
+            from . import diagram
+            steps = sorted(_board)
+            k = steps.index(i)
+            diagram.board_clip(_board[steps[k - 1]] if k else None, _board[i], out, b - a + 0.5, job_dir, i)
+            return 8.0, {"kind": "board", "id": ("b", i)}, diagram.CREDIT
+        except Exception as e:
+            log(f"visuals: board scene {i + 1} skipped ({str(e)[:60]})")
     if key("PIXABAY_API_KEY"):
         queries = list(extra_queries)[:3] + [scene["visual_query"]] + list(scene.get("alt_queries", []))[:1]
         cands = []
@@ -332,12 +341,19 @@ def pick_scene(i, scene, a, b, job_dir, used, note="", extra_queries=()):
     return score, pick, credit
 
 
-_topic, _diagrams = "", 0
+_topic, _diagrams, _board = "", 0, {}
 
 
 def gather(script, times, job_dir):
-    global last_scores, last_picks, last_credits, last_used, _topic, _diagrams
-    _topic, _diagrams = script.get("topic", ""), 0
+    global last_scores, last_picks, last_credits, last_used, _topic, _diagrams, _board
+    _topic, _diagrams, _board = script.get("topic", ""), 0, {}
+    if config().get("visuals", {}).get("board", True):
+        try:
+            from . import diagram
+            _board = diagram.make_board(script, _topic)
+            _diagrams = 1 if _board else 0   # the board counts toward the 3-diagram limit
+        except Exception as e:
+            log(f"visuals: no explainer board ({str(e)[:60]})")
     if not key("PIXABAY_API_KEY"):
         log("visuals: no PIXABAY_API_KEY, using gradient backgrounds")
     used, scores, picks, credits = set(), [], [], []

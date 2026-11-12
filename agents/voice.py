@@ -117,6 +117,8 @@ def narrate(script, job_dir):
     """One scene at a time, joined with natural pauses, so it sounds like a person telling a story
     rather than one long breathless read. Word timings are shifted onto the joined timeline."""
     import subprocess
+    from .writer import tidy_countdown
+    tidy_countdown(script)   # "Pause and guess" exactly once, right before the 3-2-1
     v = dict(config()["voice"])
     scenes = [clean(s["narration"].strip()) for s in script["scenes"]]
     words, parts, t = [], [], 0.0

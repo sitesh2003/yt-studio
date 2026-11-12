@@ -165,3 +165,146 @@ def make_clip(narration, topic, job_dir, i, out_mp4, seconds):
                "-pix_fmt", "yuv420p", str(out_mp4)])
     log(f"diagram: built up on screen in {n} stages")
     return True
+
+
+# ---------------------------------------------------------------------------------------------
+# The EXPLAINER BOARD (12 Nov 2026, after studying the most detailed explainer Shorts): instead of
+# separate one-off pictures, ONE diagram for the whole explanation that GROWS scene by scene - the
+# first scene draws the main object, the next adds what happens to it, the answer adds the result -
+# so the viewer always sees how each new fact connects to the last one, like a teacher at a board.
+# ---------------------------------------------------------------------------------------------
+# The pictures on the board are Twemoji illustrations (CC BY 4.0, credited in the description): a
+# large, consistent, colourful set of recognisable things - animals, foods, plants, body parts,
+# weather, tools - so every step shows a real object, never an abstract shape the AI made up.
+TWEMOJI = "https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/{}.svg"
+CREDIT = "Board icons: Twemoji by Twitter and contributors, CC BY 4.0"
+_icons = {}
+
+
+def _icon(emoji):
+    """The Twemoji drawing for one emoji: (inner svg, viewBox), or None if there is no such icon."""
+    code = "-".join(f"{ord(c):x}" for c in emoji if ord(c) != 0xFE0F)
+    if code not in _icons:
+        import requests
+        try:
+            r = requests.get(TWEMOJI.format(code), timeout=15)
+            svg = r.text if r.ok and "<svg" in r.text else ""
+        except Exception:
+            svg = ""
+        m = re.search(r"<svg\b[^>]*>([\s\S]*)</svg>", svg)
+        vb = re.search(r'viewBox="([^"]+)"', svg)
+        _icons[code] = (m[1], vb[1] if vb else "0 0 36 36") if m else None
+    return _icons[code]
+
+
+def _esc(t):
+    return t.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+
+
+def _board_svg(steps, upto):
+    """Steps as a top-to-bottom flow in the free band (y 230-1050): the step's pictures on the left
+    (joined by small arrows when a step shows one thing turning into another), its label on the right,
+    an arrow down to the next step. Only the first `upto` steps are drawn."""
+    n = len(steps)
+    row = 820 / n
+    area = 470                                     # width for the pictures, from x=130
+    out = ['<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" width="1080" height="1920">',
+           '<rect width="1080" height="1920" fill="#0b1630"/>']
+    for k, st in enumerate(steps[:upto]):
+        top = 230 + k * row
+        cy = top + row / 2
+        out.append(f'<rect x="90" y="{top + 10:.0f}" width="900" height="{row - 20:.0f}" rx="36" '
+                   f'fill="#13234a" stroke="{"#ffd60a" if k == upto - 1 else "#2b3f6e"}" stroke-width="6"/>')
+        pics = st["icons"]
+        gap = 50 if len(pics) > 1 else 0
+        size = min(row - 70, (area - gap * (len(pics) - 1)) / len(pics), 240)
+        x = 130 + (area - size * len(pics) - gap * (len(pics) - 1)) / 2
+        for j, (inner, vb) in enumerate(pics):
+            out.append(f'<svg x="{x:.0f}" y="{cy - size / 2:.0f}" width="{size:.0f}" height="{size:.0f}" viewBox="{vb}">{inner}</svg>')
+            x += size
+            if j + 1 < len(pics):
+                out.append(f'<path d="M{x + 10:.0f} {cy - 16:.0f} L{x + 40:.0f} {cy:.0f} L{x + 10:.0f} {cy + 16:.0f} Z" fill="#ffd60a"/>')
+                x += gap
+        label = _esc(st["label"][:14].upper())
+        fs = 64 if len(label) <= 8 else 54 if len(label) <= 11 else 46
+        out.append(f'<text x="{130 + area + (990 - 130 - area) / 2:.0f}" y="{cy + fs * 0.35:.0f}" text-anchor="middle" '
+                   f'font-family="Archivo Black" font-size="{fs}" fill="#ffffff">{label}</text>')
+        out.append(f'<circle cx="90" cy="{top + 10:.0f}" r="34" fill="#ffd60a"/><text x="90" y="{top + 26:.0f}" '
+                   f'text-anchor="middle" font-family="Archivo Black" font-size="44" fill="#0b1630">{k + 1}</text>')
+        if k + 1 < n and k + 1 < upto:
+            y0 = top + row - 14
+            out.append(f'<path d="M540 {y0 - 6:.0f} L540 {y0 + 22:.0f}" stroke="#ffd60a" stroke-width="12"/>'
+                       f'<path d="M515 {y0 + 14:.0f} L540 {y0 + 40:.0f} L565 {y0 + 14:.0f} Z" fill="#ffd60a"/>')
+    out.append("</svg>")
+    return "".join(out)
+
+
+def make_board(script, topic):
+    """One growing explainer board. Returns {scene_index: png bytes of the board up to and including
+    that scene's step} for the scenes it covers, or {} if no accurate, readable board was made."""
+    scenes = script.get("scenes", [])
+    if len(scenes) < 5:
+        return {}
+    lines = "\n".join(f"{k}: {s.get('narration', '')}" for k, s in enumerate(scenes))
+    note = ""
+    for attempt in range(2):
+        try:
+            out = llm_json(f"""A science YouTube Short about: {topic}
+The narration, scene by scene (index: words):
+{lines}
+Build an EXPLAINER BOARD that grows as the explanation goes: pick 2-4 scenes in the MIDDLE that are
+the steps of the explanation, in order (never scene 0, the hook, never the last scene, the closing
+question). For each step give a short label (1-2 words, max 11 letters, spelled correctly) and
+1-3 standard emoji whose PICTURES show exactly that step - real objects (🦐 🐟 🍁 🪣 🔥 🍯 🧅 👅 💧 🌡️),
+in order, so "krill turns salmon pink" is ["🦐", "🐟"]. Each emoji must be a single standard emoji
+that clearly is the thing named; never a symbol, letter, flag or face used to stand for an idea,
+and never a heart, coloured circle or square used to stand for a colour or a chemical (use the
+real object that carries it instead: 🦐 for the pigment in shrimp, 🍣 for pink salmon meat).
+The board must follow the narration's cause and effect exactly.
+{("The previous board was rejected because: " + note + " Fix that.") if note else ""}
+Return JSON: {{"steps": [{{"scene": index, "label": "...", "emoji": ["...", "..."]}}]}}""")
+            steps = []
+            for st in out.get("steps") or []:
+                if not (isinstance(st, dict) and str(st.get("label", "")).strip() and isinstance(st.get("scene"), int)
+                        and 0 < st["scene"] < len(scenes) - 1):
+                    continue
+                icons = [_icon(str(e)) for e in (st.get("emoji") or [])[:3]]
+                if icons and all(icons):
+                    steps.append(dict(st, icons=icons))
+            steps = sorted({st["scene"]: st for st in steps}.values(), key=lambda st: st["scene"])[:4]
+            if len(steps) < 2:
+                note = "it needs 2-4 middle steps, each with a label and 1-3 standard emoji that exist"
+                continue
+            full = _render(_board_svg(steps, len(steps)))
+            said = " ".join(scenes[st["scene"]].get("narration", "") for st in steps)
+            verdict = _check(full, said)
+            if not (verdict.get("accurate") and float(verdict.get("score", 0) or 0) >= 7):
+                note = verdict.get("problems") or f"score {verdict.get('score')}"
+                log(f"diagram: board attempt {attempt + 1} rejected ({note[:80]})")
+                continue
+            log(f"diagram: explainer board for scenes {[st['scene'] + 1 for st in steps]} "
+                f"({' > '.join(st['label'] + ' ' + ''.join(st['emoji']) for st in steps)}, score {verdict.get('score')})")
+            return {st["scene"]: _render(_board_svg(steps, k + 1)) for k, st in enumerate(steps)}
+        except Exception as e:
+            note = str(e)[:120]
+            log(f"diagram: board attempt {attempt + 1} failed ({note[:80]})")
+    return {}
+
+
+def board_clip(prev_png, png, out_mp4, seconds, job_dir, i):
+    """One scene of the board: the board so far, with this scene's new part fading in."""
+    from .core import config, run
+    f = config()["format"]
+    cur = job_dir / f"board_{i:02d}.png"
+    cur.write_bytes(png)
+    if prev_png is None:
+        run(["ffmpeg", "-y", "-loop", "1", "-t", f"{seconds:.2f}", "-i", str(cur), "-vf",
+             f"scale={f['width']}:{f['height']},fps={f['fps']},fade=t=in:st=0:d=0.4", "-c:v", "libx264",
+             "-pix_fmt", "yuv420p", str(out_mp4)])
+        return
+    old = job_dir / f"board_{i:02d}_prev.png"
+    old.write_bytes(prev_png)
+    run(["ffmpeg", "-y", "-loop", "1", "-t", "0.8", "-i", str(old), "-loop", "1", "-t", f"{seconds + 0.5:.2f}",
+         "-i", str(cur), "-filter_complex",
+         f"[0:v][1:v]xfade=transition=fade:duration=0.6:offset=0.15,scale={f['width']}:{f['height']},fps={f['fps']}[v]",
+         "-map", "[v]", "-t", f"{seconds:.2f}", "-c:v", "libx264", "-pix_fmt", "yuv420p", str(out_mp4)])

@@ -552,8 +552,11 @@ if __name__ == "__main__":
     elif cmd == "comments":
         comments(post="--post" in sys.argv)
     elif cmd == "learn":
-        from agents import analyst
-        analyst.learn()
+        from agents import analyst, playbook
+        try:
+            analyst.learn()
+        finally:
+            playbook.study(force="--force" in sys.argv)
     elif cmd == "demo":
         build(dict(DEMO))
     else:
