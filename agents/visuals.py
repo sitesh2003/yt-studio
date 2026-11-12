@@ -131,17 +131,43 @@ def _shortlist(cands, query, n=10):
     return sorted(cands, key=score, reverse=True)[:n]
 
 
+_last_call, _cache, _busy_until = {}, {}, {}
+
+
 def _get(url, **kw):
-    """requests.get that waits out Pixabay's rate limit (HTTP 429) instead of failing the video."""
+    """requests.get that is polite to each picture site: spaced-out calls (Pixabay allows about 100
+    a minute), search results remembered for the whole video, and if a site keeps saying "too many
+    requests" it is skipped for a while - the other sources carry on - instead of stalling the run."""
     import time
-    for attempt in range(6):
-        r = requests.get(url, timeout=kw.pop("timeout", 30), headers=UA, **kw)
-        if r.status_code not in (429, 502, 503, 504) or (r.status_code != 429 and attempt >= 2):
+    from urllib.parse import urlparse
+    host = urlparse(url).netloc
+    key = (url, tuple(sorted((kw.get("params") or {}).items())))
+    if "api" in host or "/api/" in url:
+        if key in _cache:
+            return _cache[key]
+    if time.time() < _busy_until.get(host, 0):
+        raise RuntimeError(f"{host} is resting after rate limits")
+    gap = 0.75 if "pixabay" in host else 0.2
+    wait = _last_call.get(host, 0) + gap - time.time()
+    if wait > 0:
+        time.sleep(wait)
+    timeout = kw.pop("timeout", 30)
+    for attempt in range(3):
+        _last_call[host] = time.time()
+        r = requests.get(url, timeout=timeout, headers=UA, **kw)
+        if r.status_code not in (429, 502, 503, 504):
             r.raise_for_status()
+            if key[1] or "api" in host:
+                _cache[key] = r
             return r
-        wait = int(r.headers.get("Retry-After") or 0) or 15 * (attempt + 1)
-        log(f"visuals: Pixabay busy, waiting {wait}s")
-        time.sleep(min(wait, 90))
+        if attempt == 2:
+            break
+        pause = min(int(r.headers.get("Retry-After") or 0) or 10 * (attempt + 1), 30)
+        log(f"visuals: {host} busy ({r.status_code}), waiting {pause}s")
+        time.sleep(pause)
+    if r.status_code == 429:
+        _busy_until[host] = time.time() + 90   # give it a rest; other sources fill in meanwhile
+        log(f"visuals: {host} rate-limited, resting it for 90s")
     r.raise_for_status()
     return r
 
@@ -241,7 +267,7 @@ def pick_scene(i, scene, a, b, job_dir, used, note="", extra_queries=()):
     out = job_dir / f"raw_{i:02d}.mp4"
     pick, score = None, 0
     if key("PIXABAY_API_KEY"):
-        queries = list(extra_queries) + [scene["visual_query"]] + list(scene.get("alt_queries", []))[:2]
+        queries = list(extra_queries)[:3] + [scene["visual_query"]] + list(scene.get("alt_queries", []))[:1]
         cands = []
         for q in queries:
             try:
