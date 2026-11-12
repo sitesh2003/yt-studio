@@ -126,6 +126,10 @@ Rules:
   part...", "And that's not even the strangest bit."). Never pad; each turn must lead to a new fact.
 - COMMENTS: one moment that invites people to share their own experience (a habit, a food, a pet),
   without asking for comments directly until the closing question.
+- TWO NARRATORS, a natural conversation between friends: the HOST is curious - she opens with the
+  hook, wonders aloud, reacts ("Wait, really?"), runs the PAUSE AND PREDICT with the 3-2-1, and asks
+  the closing "Ever thought why" question; the EXPLAINER answers warmly and clearly. Mark every scene
+  "speaker": "host" or "explainer". Never have them introduce themselves or use names.
 - LOOP: Shorts replay automatically, and a replay counts. Make the very last words of the closing
   question lead naturally back into the first line, so the video feels like one circle (e.g. the
   question ends on the same object the hook opens with). End right after the question - no outro.
@@ -146,7 +150,7 @@ Rules:
 Return JSON exactly in this shape:
 {{
  "hook_options": ["...", "...", "..."],
- "scenes": [{{"narration": "...", "visual_query": "...", "alt_queries": ["...", "..."]}}],
+ "scenes": [{{"speaker": "host or explainer", "narration": "...", "visual_query": "...", "alt_queries": ["...", "..."]}}],
  "title_options": ["max 70 characters, true, a curiosity gap that names BOTH sides for a contrast or a concrete number for stakes, Title Case, ending with exactly 2 emojis that fit the subject (e.g. fish+shocked)", "...", "..."],
  "description": "2-3 lines for US viewers that tease the answer without giving it, then 3 relevant hashtags including #shorts",
  "tags": ["...", "..."],

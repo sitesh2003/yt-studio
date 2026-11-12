@@ -38,7 +38,17 @@
     "name": "en-US-AndrewMultilingualNeural",
     "rate": "+0%",
     "kokoro_voice": "af_heart",
-    "_note": "kokoro = open-source voice run in the cloud; the Edge voice (name) is the automatic fallback"
+    "_note": "two narrators: a curious host (hook, wondering aloud, pause-and-guess, closing question) and an explainer; Kokoro first, the Edge voices are the fallback",
+    "narrators": {
+      "host": {
+        "kokoro": "af_heart",
+        "edge": "en-US-AvaMultilingualNeural"
+      },
+      "explainer": {
+        "kokoro": "am_michael",
+        "edge": "en-US-AndrewMultilingualNeural"
+      }
+    }
   },
   "captions": {
     "words_per_line": 3,

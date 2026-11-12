@@ -70,7 +70,7 @@ def _kokoro_speak(text, v, rate, path):
         _KOKORO = KPipeline(lang_code="a", repo_id="hexgrad/Kokoro-82M")
     speed = 1.0 + int(re.sub(r"[^-\d]", "", rate) or 0) / 100
     audio, words, offset = [], [], 0.0
-    for r in _KOKORO(text, voice=v.get("kokoro_voice", "af_heart"), speed=speed):
+    for r in _KOKORO(text, voice=v.get("kokoro_voice") or "af_heart", speed=speed):
         a = r.audio.numpy() if hasattr(r.audio, "numpy") else np.asarray(r.audio)
         for tk in (r.tokens or []):
             if tk.start_ts is not None and tk.end_ts is not None and re.search(r"\w", tk.text):
@@ -91,7 +91,7 @@ def _speak_retry(text, v, rate, path):
             log(f"voice: Kokoro unavailable ({str(e)[:80]}), using the Edge voice")
             v["engine"] = "edge-tts"   # stay on one voice for the rest of this video
     last = None
-    for attempt, name in enumerate([v["name"]] * 5 + ["en-US-AndrewNeural", "en-US-BrianNeural"]):
+    for attempt, name in enumerate([v.get("edge_voice") or v["name"]] * 5 + ["en-US-AndrewNeural", "en-US-BrianNeural"]):
         try:
             words = asyncio.run(_speak(text, name, rate, str(path)))
             if words:
@@ -119,10 +119,16 @@ def narrate(script, job_dir):
     scenes = [clean(s["narration"].strip()) for s in script["scenes"]]
     words, parts, t = [], [], 0.0
     for k, text in enumerate(scenes):
-        w, part = _speak_retry(text, v, _rate_for(text, v["rate"]), job_dir / f"vo_{k:02d}.mp3")
+        who = script["scenes"][k].get("speaker") or ("host" if k == 0 or k == len(scenes) - 1 else "explainer")
+        cast = (v.get("narrators") or {}).get(who, {})
+        sv = dict(v, kokoro_voice=cast.get("kokoro") or v.get("kokoro_voice"), edge_voice=cast.get("edge"))
+        w, part = _speak_retry(text, sv, _rate_for(text, v["rate"]), job_dir / f"vo_{k:02d}.mp3")
+        v["engine"] = sv["engine"]   # if Kokoro failed for one scene, stay on Edge for both narrators
         for x in w:
             words.append({"start": x["start"] + t, "end": x["end"] + t, "text": x["text"]})
         gap = _pause_after(text, scenes[k + 1] if k + 1 < len(scenes) else "") if k + 1 < len(scenes) else 0.0
+        if k + 1 < len(scenes) and (script["scenes"][k + 1].get("speaker") or who) != who:
+            gap += 0.15   # a natural hand-over between the two narrators
         parts.append((part, gap))
         t += _dur(part) + gap
     # join: each part followed by its silence, re-encoded to one clean track

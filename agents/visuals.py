@@ -91,7 +91,39 @@ def _commons_candidates(query):
     return out
 
 
-def _shortlist(cands, query, n=8):
+def _openverse_candidates(query):
+    """Openverse: millions of openly licensed photos (Flickr, museums, Wikimedia) - free, no key.
+    Only CC BY, CC0 and public-domain-mark: never share-alike, non-commercial or no-derivatives."""
+    r = _get("https://api.openverse.org/v1/images/", params={
+        "q": query[:80], "license": "by,cc0,pdm", "page_size": 12, "mature": "false"})
+    out = []
+    for x in r.json().get("results", []):
+        if (x.get("width") or 0) < 1000 or not x.get("url"):
+            continue
+        lic = f"{(x.get('license') or '').upper()} {x.get('license_version') or ''}".strip()
+        who = (x.get("creator") or "unknown")[:60]
+        out.append({"kind": "photo", "id": ("o", x.get("id")), "url": x["url"],
+                    "thumb": x.get("thumbnail") or x["url"], "user": who,
+                    "tags": " ".join(t.get("name", "") for t in (x.get("tags") or [])[:12]) + " " + (x.get("title") or ""),
+                    "fit": True, "credit": f"Photo: {who}, {lic}, via Openverse ({x.get('source', '')})"})
+    return out
+
+
+def _nasa_candidates(query):
+    """NASA Image Library: public-domain photos of space, Earth and oceans - free, no key."""
+    r = _get("https://images-api.nasa.gov/search", params={"q": query[:80], "media_type": "image"})
+    out = []
+    for it in r.json().get("collection", {}).get("items", [])[:10]:
+        d, href = it["data"][0], (it.get("links") or [{}])[0].get("href", "")
+        if not href:
+            continue
+        out.append({"kind": "photo", "id": ("n", d.get("nasa_id")), "url": href.replace("~thumb", "~large"),
+                    "thumb": href, "user": "NASA", "tags": (d.get("title") or "") + " " + " ".join(d.get("keywords") or []),
+                    "fit": True, "credit": "Image: NASA (public domain)"})
+    return out
+
+
+def _shortlist(cands, query, n=10):
     words = {w for w in query.lower().split() if len(w) > 2}
     def score(c):
         tagwords = set(c["tags"].lower().replace(",", " ").split())
@@ -104,7 +136,7 @@ def _get(url, **kw):
     import time
     for attempt in range(6):
         r = requests.get(url, timeout=kw.pop("timeout", 30), headers=UA, **kw)
-        if r.status_code != 429:
+        if r.status_code not in (429, 502, 503, 504) or (r.status_code != 429 and attempt >= 2):
             r.raise_for_status()
             return r
         wait = int(r.headers.get("Retry-After") or 0) or 15 * (attempt + 1)
@@ -166,7 +198,7 @@ def _download(url, path):
     import time
     for attempt in range(5):
         r = requests.get(url, stream=True, timeout=120, headers=UA)
-        if r.status_code != 429:
+        if r.status_code not in (429, 502, 503, 504) or (r.status_code != 429 and attempt >= 2):
             break
         r.close()
         time.sleep(15 * (attempt + 1))
@@ -221,10 +253,11 @@ def pick_scene(i, scene, a, b, job_dir, used, note="", extra_queries=()):
                 cands += [c for c in _photo_candidates(q) if c["id"] not in used]
             except Exception as e:
                 log(f"visuals: photo search error {e}")
-            try:
-                cands += [c for c in _commons_candidates(q) if c["id"] not in used]
-            except Exception as e:
-                log(f"visuals: commons search error {str(e)[:60]}")
+            for src in (_commons_candidates, _openverse_candidates, _nasa_candidates):
+                try:
+                    cands += [c for c in src(q) if c["id"] not in used]
+                except Exception as e:
+                    log(f"visuals: {src.__name__[1:-11]} search error {str(e)[:60]}")
         seen, uniq = set(), []
         for c in cands:
             if c["id"] not in seen:
@@ -257,9 +290,7 @@ def pick_scene(i, scene, a, b, job_dir, used, note="", extra_queries=()):
         if _diagrams < 3:
             try:
                 from . import diagram
-                png = job_dir / f"dia_{i:02d}.png"
-                if diagram.make(scene["narration"], _topic, png):
-                    _photo_clip(png, out, b - a + 0.5, i)
+                if diagram.make_clip(scene["narration"], _topic, job_dir, i, out, b - a + 0.5):
                     _diagrams += 1
                     drawn, score, pick = True, 7.0, {"kind": "diagram", "id": ("d", i)}
             except Exception as e:
