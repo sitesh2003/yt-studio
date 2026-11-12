@@ -614,7 +614,8 @@
     "repairs": 0,
     "video_id": "yF1Dj5F1icM",
     "publish_at": "2026-11-11T15:00:00-05:00",
-    "answered": true
+    "answered": true,
+    "recapped": true
   },
   {
     "job": "20261111-1701-how-authentic-maple-syrup-is-boiled-down",
@@ -831,5 +832,144 @@
     "repairs": 2,
     "video_id": "Bxp7r8IzbiY",
     "publish_at": "2026-11-12T19:00:00-05:00"
+  },
+  {
+    "job": "20261112-0926-why-apples-float-in-water-while-pears-im",
+    "topic": "Why Apples Float in Water While Pears Immediately Sink",
+    "title": "Why Apples Float But Pears Sink 🍎🍐",
+    "description": "Apples and pears might seem similar, but drop them in water and they act completely differently! Discover the hidden science behind floating fruit. #shorts #science #foodscience\n\nPhoto by 422737 on Pixabay\nPhoto by PublicDomainPictures on Pixabay\nPhoto: Alexkom000, CC BY 4.0, via Wikimedia Commons\nVideo by Josh_Malic on Pixabay\nVideo by NickyPe on Pixabay",
+    "tags": [
+      "apple",
+      "pear",
+      "buoyancy",
+      "density",
+      "food science",
+      "ever thought why"
+    ],
+    "hook": "Drop a fresh apple into water, and it floats like a tiny buoy.",
+    "status": "review",
+    "narration": "Drop a fresh apple into water, and it floats like a tiny buoy. Drop a pear in, and it plummets straight to the bottom. They look almost identical in size and weight, so what gives? Here's the secret: cut open an apple, and about one quarter of its total volume is actually empty air pockets. That trapped air makes the apple less dense than water. Now, think about what happens inside a pear as it ripens, and ask yourself which one has more air space inside. Pause and guess... three, two, one. Here's why: pears have far tighter, denser cell structures with hardly any air pockets at all. Yesterday's answer: fruit juice has no fat, so it can't wash away spicy capsaicin oil! Nobody cracked it yet, so today is your chance. Ever thought why a whole unpeeled orange floats in water, but a peeled orange sinks right to the bottom? Drop your guess below.",
+    "series": "Food Whys",
+    "question": "Ever thought why a whole unpeeled orange floats in water, but a peeled orange sinks right to the bottom? Drop your guess below.",
+    "answer_comment": "The answer: An orange peel is packed with tiny air pockets, working just like a lifejacket! When you remove the peel, you remove all that trapped air, leaving behind dense fruit flesh that sinks right to the bottom. Did you guess it correctly?",
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": "yF1Dj5F1icM",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "footage": [
+        "scene(s) [2] have weak or placeholder footage"
+      ],
+      "review": [
+        "Frame 2: Displays a plain blue gradient screen without visual content or footage showing a pear sinking into water."
+      ],
+      "pass": false,
+      "duration": 53.1
+    },
+    "repairs": 2
+  },
+  {
+    "job": "20261112-0959-why-bluefin-tuna-meat-is-dark-red-while-",
+    "topic": "Why Bluefin Tuna Meat Is Dark Red While Whitefish Meat Is Almost Pure White",
+    "title": "Why Tuna Meat Is Red Meat While Cod Is Pure White 🐟🥩",
+    "description": "Ever noticed how a tuna steak looks like beef while cod is totally white? Here is the hidden biology behind fish muscle color and swimming habits.\n\n#shorts #science #foodscience\n\nPhoto by Barthwo on Pixabay\nPhoto by guvo59 on Pixabay\nPhoto: unknown, CC BY 4.0, via Wikimedia Commons\nVideo by DavidClode on Pixabay\nVideo by Engin_Akyurt on Pixabay\nVideo by Jackdrafahl on Pixabay\nVideo by Pixabay on Pixabay\nVideo by masbebet on Pixabay",
+    "tags": [
+      "tuna vs whitefish",
+      "why is tuna red",
+      "fish muscle science",
+      "myoglobin explained",
+      "food science facts"
+    ],
+    "hook": "A bluefin tuna and a cod are both fish, but their meat looks like two completely different animals.",
+    "status": "scheduled",
+    "narration": "A bluefin tuna and a cod are both fish, but their meat looks like two completely different animals. Slice a tuna steak and it looks like deep red beef, while a cod fillet is bright white. The secret comes down to how they move. Whitefish hang out near the seafloor, moving mostly in short, fast bursts to snatch food. Now think about a tuna swimming thousands of miles across oceans without stopping. Think about what endless exercise needs. Pause and guess... three, two, one. Here's why: continuous swimming needs constant oxygen, so tuna pack their muscles with an oxygen-storing protein called myoglobin, turning the meat deep red. Whitefish use fast-twitch burst muscles instead, which do not store oxygen or need that red protein. Ever thought why a chicken breast is pale white, but a duck breast is dark red meat? Drop your guess below.",
+    "series": "Food Whys",
+    "question": "Ever thought why a chicken breast is pale white, but a duck breast is dark red meat? Drop your guess below.",
+    "answer_comment": "The answer: Ducks fly long distances during migration, so their breast muscles need continuous oxygen and are packed with dark red myoglobin! Chickens mostly walk and only fly in short, rapid bursts, so their breast muscle uses white, fast-twitch fibers instead. What animal muscle surprise should we cover next?",
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "footage": [],
+      "review": [],
+      "pass": true,
+      "duration": 51.8
+    },
+    "repairs": 2,
+    "video_id": "u_qOehVEHQI",
+    "publish_at": "2026-11-13T12:00:00-05:00"
+  },
+  {
+    "job": "20261112-1022-why-fresh-pineapples-burn-your-tongue-wh",
+    "topic": "Why Fresh Pineapples Burn Your Tongue When You Eat Them",
+    "title": "Why Fresh Pineapples Eat You Back 🍍👅",
+    "description": "Fresh pineapple contains a powerful enzyme that actually digests your tongue when you eat it raw. Here is the surprising science behind why your favorite tropical fruit fights back.\n\n#pineapples #foodscience #shorts\n\nPhoto by Hans on Pixabay\nPhoto by aha_studio on Pixabay\nPhoto by offthelefteye on Pixabay\nVideo by Bichhong on Pixabay\nVideo by F1Digitals on Pixabay\nVideo by XiaosKitchen on Pixabay\nVideo by asabovebelowloa on Pixabay\nVideo by fififum on Pixabay",
+    "tags": [
+      "pineapple science",
+      "why pineapple burns",
+      "bromelain enzyme",
+      "food facts",
+      "shorts"
+    ],
+    "hook": "Fresh pineapple is literally eating you back.",
+    "status": "scheduled",
+    "narration": "Fresh pineapple is literally eating you back. Every time you bite into a fresh slice, it stings because of a clever defense weapon. The fruit contains a potent protein-melting enzyme called bromelain. Since your tongue is made of protein, the pineapple starts dissolving your taste buds the moment you chew. Think about what happens to meat when you marinate it in fresh pineapple juice before cooking. Pause and guess... three, two, one. Here's why it stops: your stomach acid instantly destroys the enzyme the second you swallow it. Ever thought why cooking a pineapple stops the stinging completely? Drop your guess below.",
+    "series": "Food Whys",
+    "question": "Ever thought why cooking a pineapple stops the stinging completely? Drop your guess below.",
+    "answer_comment": "The answer: Heat destroys enzymes. Cooking a pineapple breaks down the heat-sensitive bromelain, so it can no longer melt protein or sting your tongue. Just like cooking an egg changes its proteins forever! Got another fruit you are curious about?",
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "footage": [],
+      "review": [],
+      "pass": true,
+      "duration": 37.9
+    },
+    "repairs": 2,
+    "video_id": "80jyJN1A1y8",
+    "publish_at": "2026-11-13T15:00:00-05:00"
+  },
+  {
+    "job": "20261112-1040-this-24-foot-ocean-monster-can-live-for-",
+    "topic": "This 24-Foot Ocean Monster Can Live for Over 400 Years in Arctic Cold",
+    "title": "This Shark Can Live For Centuries! 🦈❄️",
+    "description": "Meet the Greenland shark, a mysterious giant that lives for centuries in the freezing Arctic. How does such extreme cold keep it alive for so long? \n\n#shorts #science #ocean\n\nPhoto by 12019 on Pixabay\nPhoto by 422737 on Pixabay\nPhoto: unknown, CC BY 4.0, via Wikimedia Commons\nVideo by BlenderTimer on Pixabay\nVideo by Cristian-Manieri on Pixabay\nVideo by asabovebelowloa on Pixabay\nVideo by oadtz on Pixabay\nVideo by u_qxb1q6wjyl on Pixabay\nVideo by wastedgeneration on Pixabay",
+    "tags": [
+      "greenland shark",
+      "marine biology",
+      "longevity",
+      "arctic ocean",
+      "science facts"
+    ],
+    "hook": "This shark is older than the United States.",
+    "status": "scheduled",
+    "narration": "This shark is older than the United States. The Greenland shark roams the freezing Arctic depths, growing only about an inch every few years. It takes over a century just to reach maturity. But here is the weird part: how does it survive so long in water that should freeze its blood? Think about how extreme cold affects the speed of chemical reactions in your own cells. Pause and guess... three, two, one. Here is why: the intense cold forces its metabolism to crawl at an incredibly slow, energy-saving pace. This icy, slow-motion lifestyle keeps its cells from wearing out for over four hundred years. Ever thought why this same deep-freeze strategy would be impossible for a warm-blooded animal like you? Drop your guess below.",
+    "series": "Ocean Whys",
+    "question": "Ever thought why this same deep-freeze strategy would be impossible for a warm-blooded animal like you?",
+    "answer_comment": "The answer: Warm-blooded animals like us use massive amounts of energy to keep our internal temperature steady, which is the exact opposite of the 'slow-down' strategy the shark uses. If we dropped our body temperature to match the Arctic, our critical systems like our heart and brain wouldn't have the energy to function. The shark’s body is built to thrive at that low, slow speed, but ours is built for a high-speed, warm-temperature lifestyle! Ever thought how other animals in the cold stay warm without fire?",
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "footage": [],
+      "review": [],
+      "pass": true,
+      "duration": 47.3
+    },
+    "repairs": 1,
+    "video_id": "S3s-iGcOMVY",
+    "publish_at": "2026-11-13T19:00:00-05:00"
   }
 ]

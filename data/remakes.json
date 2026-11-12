@@ -1,11 +1,11 @@
 [
- {
-  "topic": "Why Apples Float in Water While Pears Immediately Sink",
-  "pulled": "PEfJCe6uIOQ",
-  "title": "Why Apples Float While Many Pears Sink 🍎🍐",
-  "false_sentence": "Freezing nights and warm days create pressure that pushes tree sap up.",
-  "correct_version": "Keep every line about apples and pears. Apples float because about a quarter of an apple's volume is air, which makes it less dense than water; most pears are denser and sink. (Freeze-thaw pressure pushing maple sap is real, but it belongs in a maple video.)",
-  "why": "the line about maple sap is true, but it has nothing to do with apples and pears",
-  "tries": 0
- }
+  {
+    "topic": "Why Apples Float in Water While Pears Immediately Sink",
+    "pulled": "PEfJCe6uIOQ",
+    "title": "Why Apples Float While Many Pears Sink 🍎🍐",
+    "false_sentence": "Freezing nights and warm days create pressure that pushes tree sap up.",
+    "correct_version": "Keep every line about apples and pears. Apples float because about a quarter of an apple's volume is air, which makes it less dense than water; most pears are denser and sink. (Freeze-thaw pressure pushing maple sap is real, but it belongs in a maple video.)",
+    "why": "the line about maple sap is true, but it has nothing to do with apples and pears",
+    "tries": 1
+  }
 ]
