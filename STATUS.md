@@ -1,11 +1,10 @@
 # Ever Thought Why? - status
 
-Updated Thu 12 Nov, 11:43 PM IST by the health agent (every 2 hours, and after every production run).
+Updated Fri 13 Nov, 12:07 AM IST by the health agent (every 2 hours, and after every production run).
 
 - Video bank: 7 of 9 videos ready (2 waiting in the bank, 5 scheduled on YouTube); YouTube schedule covers until Sat 14 Nov, 10:30 PM IST.
-- Next production run: Fri 13 Nov, 03:13 AM IST (one is running now).
-- The production run at Thu 12 Nov, 05:52 PM IST ended as 'cancelled'.
-- The production run at Thu 12 Nov, 05:24 PM IST ended as 'cancelled'.
+- Next production run: Fri 13 Nov, 03:13 AM IST.
+- A catch-up production run was started automatically.
 
 ## Videos waiting to go public
 

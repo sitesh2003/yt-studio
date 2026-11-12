@@ -1,10 +1,1 @@
-[
- {"job": "20261112-1613-why-gecko-feet-can-walk-on-glass-while-f", "status": "false",
-  "false_sentence": "Why can a gecko climb straight up a polished glass window while a tree frog slides right off?",
-  "correct_version": "Tree frogs cling to smooth glass very well: their toe pads use a thin film of mucus (wet adhesion) plus friction, which is why they are often seen on windows. Geckos use dry adhesion instead: millions of tiny hairs (setae) that split into billions of tips attracted to the surface by van der Waals forces. Both stick; they stick in different ways.",
-  "why": "the video's contrast is false - tree frogs grip glass well"},
- {"job": "20261112-1504-why-starfish-have-zero-brains-yet-solve-", "status": "off_topic",
-  "false_sentence": "They do not have one single brain. Instead, they rely on a decentralized nervous system where the arms share sensory information to coordinate movement.",
-  "correct_version": "Keep the answer for after the countdown: the hook only asks the question, the middle gives clues (a nerve ring, a nerve cord in every arm, an eyespot at each arm tip), and the reveal comes after 'three, two, one'. Never say the same line twice.",
-  "why": "the answer was given away in the first line and a sentence was repeated"}
-]
+[]
