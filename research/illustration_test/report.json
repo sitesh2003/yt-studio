@@ -1,23 +1,23 @@
 [
   {
     "line": "An owl's wing feathers have a soft, comb-like front edge that breaks up rushing air.",
-    "prompt": "A stylised 3D cartoon illustration with simplified rounded shapes and matte clay-like materials, like a frame from an animated science explainer. An extreme close-up view of the leading edge of a single owl primary flight feather, positioned vertically in a tall frame. Fine, soft, comb-like serrations extend along the front edge of the brown and white feather vane. Smooth incoming air streams on one side break into small, dispersed micro-turbulences as they pass through the comb teeth. Bright clean colours, soft even lighting, plain soft-gradient background, one clear subject large in the frame. No text, no letters, no numbers, no labels, no logos, no watermark. Not a photograph, not photorealistic.",
+    "prompt": "A stylised 3D cartoon illustration with simplified rounded shapes and matte clay-like materials, like a frame from an animated science explainer. An extreme close-up view fills a vertical frame with the leading edge of an owl's primary wing feather. Soft, tooth-like serrations form a distinct comb-like fringe projecting along the front margin of the brown and cream feather vane. Bright clean colours, soft even lighting, plain soft-gradient background, one clear subject large in the frame. No text, no letters, no numbers, no labels, no logos, no watermark. Not a photograph, not photorealistic.",
     "score": 0.0,
-    "problem": "The image shows a stylized clay model of a feather without displaying comb-like serrations on the leading edge or air streams breaking up.",
+    "problem": "failed: Is the comb-like serrated fringe along the front edge of the feather clearly visible and large in the frame? -> The edges of the clay feather are broad and smooth without any fine, comb-like serrated fringe.; Are all the tooth-like ",
     "passes": false
   },
   {
     "line": "A plane window has rounded corners, because square corners crack under pressure.",
-    "prompt": "A stylised 3D cartoon illustration with simplified rounded shapes and matte clay-like materials, like a frame from an animated science explainer. A vertical close-up of a modern airplane window set into the cabin wall fuselage. Structural stress lines flow smoothly around the gently curved corner of the window frame, demonstrating how pressure is distributed evenly across the smooth curve without concentrating at a sharp point. Bright clean colours, soft even lighting, plain soft-gradient background, one clear subject large in the frame. No text, no letters, no numbers, no labels, no logos, no watermark. Not a photograph, not photorealistic.",
+    "prompt": "A stylised 3D cartoon illustration with simplified rounded shapes and matte clay-like materials, like a frame from an animated science explainer. A close-up vertical cutaway of a thick airplane cabin wall, featuring a single rectangular window opening with sharp 90-degree square corners. Dark stress lines and a bright red visual fracture crack radiate outward directly from the bottom corners into the surrounding metal frame. The entire composition is framed vertically for a tall screen. Bright clean colours, soft even lighting, plain soft-gradient background, one clear subject large in the frame. No text, no letters, no numbers, no labels, no logos, no watermark. Not a photograph, not photorealistic.",
     "score": 0.0,
-    "problem": "The image shows a plane window, but it does not show any visual representation of pressure forces flowing around its rounded corners.",
+    "problem": "failed: Are the corners of the airplane window strictly square at 90-degree angles? -> The corners of the window opening are smoothly rounded rather than sharp 90-degree angles.; Is a prominent structural crack clearly visible radiating dir",
     "passes": false
   },
   {
     "line": "Inside a fridge, a liquid boils in thin pipes and carries the heat out of the box.",
-    "prompt": "A stylised 3D cartoon illustration with simplified rounded shapes and matte clay-like materials, like a frame from an animated science explainer. A close-up vertical cutaway of the inside wall of a refrigerator showing thin copper evaporator pipes. Clear liquid is visible entering the pipes at the bottom and boiling into a gaseous state as it ascends, absorbing heat from the insulated interior. Bright clean colours, soft even lighting, plain soft-gradient background, one clear subject large in the frame. No text, no letters, no numbers, no labels, no logos, no watermark. Not a photograph, not photorealistic.",
-    "score": 8.0,
-    "problem": "",
-    "passes": true
+    "prompt": "A stylised 3D cartoon illustration with simplified rounded shapes and matte clay-like materials, like a frame from an animated science explainer. A vertical 9:16 cutaway view of a refrigerator interior showing thin copper pipes running along the back wall. Inside the transparent section of the pipes, a boiling liquid is visible, transitioning from clear liquid to vapor as it absorbs thermal energy. Bright clean colours, soft even lighting, plain soft-gradient background, one clear subject large in the frame. No text, no letters, no numbers, no labels, no logos, no watermark. Not a photograph, not photorealistic.",
+    "score": 0.0,
+    "problem": "failed: Is all of the boiling liquid entirely contained inside the pipes, with none spilling out? -> The blue liquid and translucent vapor column are positioned in the middle, spilling out into a puddle on the floor outside the pipes.",
+    "passes": false
   }
 ]
