@@ -887,7 +887,7 @@
       "food science facts"
     ],
     "hook": "A bluefin tuna and a cod are both fish, but their meat looks like two completely different animals.",
-    "status": "scheduled",
+    "status": "public",
     "narration": "A bluefin tuna and a cod are both fish, but their meat looks like two completely different animals. Slice a tuna steak and it looks like deep red beef, while a cod fillet is bright white. The secret comes down to how they move. Whitefish hang out near the seafloor, moving mostly in short, fast bursts to snatch food. Now think about a tuna swimming thousands of miles across oceans without stopping. Think about what endless exercise needs. Pause and guess... three, two, one. Here's why: continuous swimming needs constant oxygen, so tuna pack their muscles with an oxygen-storing protein called myoglobin, turning the meat deep red. Whitefish use fast-twitch burst muscles instead, which do not store oxygen or need that red protein. Ever thought why a chicken breast is pale white, but a duck breast is dark red meat? Drop your guess below.",
     "series": "Food Whys",
     "question": "Ever thought why a chicken breast is pale white, but a duck breast is dark red meat? Drop your guess below.",
@@ -906,7 +906,8 @@
     },
     "repairs": 2,
     "video_id": "u_qOehVEHQI",
-    "publish_at": "2026-11-13T12:00:00-05:00"
+    "publish_at": "2026-11-13T12:00:00-05:00",
+    "answered": true
   },
   {
     "job": "20261112-1022-why-fresh-pineapples-burn-your-tongue-wh",
