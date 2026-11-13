@@ -922,7 +922,7 @@
       "shorts"
     ],
     "hook": "Fresh pineapple is literally eating you back.",
-    "status": "scheduled",
+    "status": "public",
     "narration": "Fresh pineapple is literally eating you back. Every time you bite into a fresh slice, it stings because of a clever defense weapon. The fruit contains a potent protein-melting enzyme called bromelain. Since your tongue is made of protein, the pineapple starts dissolving your taste buds the moment you chew. Think about what happens to meat when you marinate it in fresh pineapple juice before cooking. Pause and guess... three, two, one. Here's why it stops: your stomach acid instantly destroys the enzyme the second you swallow it. Ever thought why cooking a pineapple stops the stinging completely? Drop your guess below.",
     "series": "Food Whys",
     "question": "Ever thought why cooking a pineapple stops the stinging completely? Drop your guess below.",
@@ -941,7 +941,8 @@
     },
     "repairs": 2,
     "video_id": "80jyJN1A1y8",
-    "publish_at": "2026-11-13T15:00:00-05:00"
+    "publish_at": "2026-11-13T15:00:00-05:00",
+    "answered": true
   },
   {
     "job": "20261112-1040-this-24-foot-ocean-monster-can-live-for-",
@@ -1022,7 +1023,7 @@
       "physics"
     ],
     "hook": "Drop an apple or a pear in a bowl of water and they both float.",
-    "status": "banked",
+    "status": "scheduled",
     "narration": "Drop an apple or a pear in a bowl of water and they both float. Wait, really? They look like similar fruits. They are, and both hide a secret inside their flesh. About one quarter of an apple’s volume is made up of intracellular gas spaces within its cellular structure. Okay, so the trapped gas keeps it buoyant. But what happens if we compare those air pockets to a peach? Think about if that air makes it sink or float. Pause and guess... three, two, one. Here’s why: a peach also has internal gas spaces, so it floats just like an apple. Ever thought why a watermelon, which is way bigger and heavier, still floats on the surface? Drop your guess below.",
     "voice_engine": "kokoro",
     "diagrams": 0,
@@ -1045,7 +1046,9 @@
       "duration": 48.4
     },
     "repairs": 0,
-    "audited": true
+    "audited": true,
+    "video_id": "19fmphmc7A8",
+    "publish_at": "2026-11-14T19:00:00-05:00"
   },
   {
     "job": "20261112-1308-why-sharks-have-zero-bones-in-their-enti",
