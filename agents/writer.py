@@ -64,13 +64,18 @@ fish hit 5 million views and 1,800 comments in two days). Use these shapes, neve
   difference, one clear scientific reason. The strongest format; aim for at least one per batch.
 - HIDDEN PROCESS: "How X is really made / what happens to X before it reaches you".
 - STAKES + NUMBER: a concrete, true number that sounds impossible (weight, price, speed, age).
+- HIDDEN ENGINEERING: the clever design inside an everyday object or place people never notice
+  (why a road has a groove, what the yellow box on a guardrail does, why a plane window is round).
+  In the Nov 2026 study this was the fastest-growing format in our genre.
+- HOW A MACHINE WORKS: what really happens inside something people use every day (a fridge, a lock,
+  a microwave, an elevator), shown step by step.
 - EVERYDAY DEBATE: food, pets, kitchen and body habits people have opinions on (sushi, eggs, coffee,
   dogs, sleep), so viewers want to comment their own experience. Never health advice, never fear.
 Proven outlier titles in this space (patterns only): {_outliers()}
 
 Suggest {n} NEW topics. Every topic must be scientifically TRUE, explainable in about a minute, and
 FILMABLE WITH REAL STOCK FOOTAGE: the things named must be easy to film (animals, food, cooking,
-nature, ocean, people doing everyday things). Avoid topics that would need diagrams of invisible
+nature, ocean, people doing everyday things, machines, roads, vehicles, buildings, everyday objects). Avoid topics that would need diagrams of invisible
 things (electrons, sound waves, quantum, signals) - those cannot get matching footage.
 Return JSON: {{"topics": [{{"topic": "...", "why_it_will_work": "...", "pattern": "..."}}]}}"""
     out = llm_json(prompt)
@@ -87,6 +92,13 @@ def tidy_countdown(script):
     pg = re.compile(r"\s*pause and guess[.…!,:]*\s*", re.I)
     count = re.compile(r"three[,.…]*\s*two[,.…]*\s*one[.…!]*", re.I)
     scenes = script.get("scenes", [])
+    if script.get("countdown") is False:          # the no-countdown arm: no count, no "pause and guess"
+        for k, sc in enumerate(scenes):
+            t = re.sub(r"\s{2,}", " ", count.sub("", pg.sub(" ", sc.get("narration", "")))).strip()
+            if t != sc.get("narration", ""):
+                log(f"writer: removed a countdown from scene {k + 1} (no-countdown video)")
+                sc["narration"] = t
+        return script
     hits = [(k, m) for k, sc in enumerate(scenes) for m in count.finditer(sc.get("narration", ""))]
     keep_scene = hits[-1][0] if hits else None
     for k, sc in enumerate(scenes):
@@ -139,7 +151,7 @@ def lint(s, words):
     if n > words * 1.2:
         issues.append(f"{n} words, aim for about {words}: cut the weakest lines")
     pre = [x.get("narration", "") for x in scenes]
-    k = next((i for i, x in enumerate(scenes) if x.get("predict") or "three, two, one" in x.get("narration", "").lower()), None)
+    k = next((i for i, x in enumerate(scenes) if x.get("predict") or x.get("turn") or "three, two, one" in x.get("narration", "").lower()), None)
     if k:
         after = " ".join(pre[k + 1:k + 2])
         leak = llm_json(f"""A science Short builds to a reveal. Lines BEFORE the "pause and guess" countdown:
@@ -153,8 +165,50 @@ it away; a hint that leaves the viewer still guessing does not. Return JSON: {{"
     return issues[:5]
 
 
+def countdown_arm(topic):
+    """THE COUNTDOWN EXPERIMENT (approved 13 Nov 2026). None of the fastest-growing channels in our
+    genre uses a countdown, so half the Shorts keep "Pause and guess... three, two, one" and half ask
+    the same question plainly with no count (a "turn"). The topic decides the arm, so a remake keeps
+    its arm. Once analyst.experiment() names a winner (data/experiments.json), every video uses it."""
+    import hashlib
+    win = ((read_json(DATA / "experiments.json", {}) or {}).get("countdown") or {}).get("winner")
+    if win in ("countdown", "turn"):
+        return win == "countdown"
+    return int(hashlib.md5(topic.lower().strip().encode()).hexdigest(), 16) % 2 == 0
+
+
+ARM = {
+    True: {
+        "giveaway": """- NEVER GIVE THE ANSWER AWAY BEFORE THE COUNTDOWN. The hook only asks or surprises; the middle gives
+  clues; the actual answer is said for the first time right after "three, two, one".""",
+        "middle": """- PAUSE AND PREDICT: around the middle, include ONE scene that sets up a prediction about what
+  happens next and ends with exactly: "Pause and guess... three, two, one." Say "Pause and
+  guess" only ONCE in the whole video, right before the count - never before the question as well. Mark that scene with
+  "predict": true. The very next scene reveals the answer with a satisfying "here's why".
+  (This is a different question from the closing enquiry.)""",
+        "host": "runs the PAUSE AND PREDICT with the 3-2-1",
+        "arc": """(3) PAUSE AND PREDICT with the
+  3-2-1 countdown, first nudging which DIRECTION to think ("think about what the cold does to...");""",
+    },
+    False: {
+        "giveaway": """- NEVER GIVE THE ANSWER AWAY BEFORE THE TURN. The hook only asks or surprises; the middle gives
+  clues; the actual answer is said for the first time right after the turn question.""",
+        "middle": """- THE TURN: around the middle, include ONE scene where the host asks, plainly and briefly, the
+  question the whole video has been building to (e.g. "So what is the shell actually doing?"). NO
+  countdown: never say "pause and guess", "guess", "three, two, one" or ask the viewer to stop the video.
+  Mark that scene with "turn": true. The very next scene reveals the answer with a satisfying "here's why".
+  (This is a different question from the closing enquiry.)""",
+        "host": "asks the turn question in the middle",
+        "arc": """(3) THE TURN: the plain question
+  that everything so far has built to, first nudging which DIRECTION to think, with no countdown;""",
+    },
+}
+
+
 def write_script(topic, recap=None, fix=None):
     c = config()
+    cd = countdown_arm(topic)
+    arm = ARM[cd]
     ch, fmt = c["channel"], c["format"]
     learn = read_json(DATA / "learnings.json", {}) or {}
     secs = playbook.target_seconds(fmt["target_seconds"])
@@ -172,8 +226,7 @@ Rules:
 - The first line is the hook and must land in under 2 seconds: a surprising claim, a question, or a
   pattern interrupt. No "Did you know", no "In this video", no greeting.
 - Open a curiosity loop early and close it near the end, so people watch to the end.
-- NEVER GIVE THE ANSWER AWAY BEFORE THE COUNTDOWN. The hook only asks or surprises; the middle gives
-  clues; the actual answer is said for the first time right after "three, two, one".
+{{giveaway_rule}}
 - Never say the same thing twice, even in different words.
 - Any contrast between two things ("X sticks while Y slides off") must be TRUE for BOTH sides. If one
   side is a myth, pick a different contrast or drop it.
@@ -192,18 +245,14 @@ Rules:
   The question must have ONE clear, correct answer that a curious 12-year-old can work out from what
   the video showed plus everyday experience. Never ask something whose answer needs advanced theory
   (no quantum mechanics, no equations) that the video did not explain.
-- PAUSE AND PREDICT: around the middle, include ONE scene that sets up a prediction about what
-  happens next and ends with exactly: "Pause and guess... three, two, one." Say "Pause and
-  guess" only ONCE in the whole video, right before the count - never before the question as well. Mark that scene with
-  "predict": true. The very next scene reveals the answer with a satisfying "here's why".
-  (This is a different question from the closing enquiry.)
+{{middle_rule}}
 {{recap_rule}}
 - RETENTION: every 2-3 sentences, a small turn that keeps people watching ("But here's the weird
   part...", "And that's not even the strangest bit."). Never pad; each turn must lead to a new fact.
 - COMMENTS: one moment that invites people to share their own experience (a habit, a food, a pet),
   without asking for comments directly until the closing question.
 - TWO NARRATORS, a natural conversation between friends: the HOST is curious - opens with the
-  hook, wonders aloud, reacts ("Wait, really?"), runs the PAUSE AND PREDICT with the 3-2-1, and asks
+  hook, wonders aloud, reacts ("Wait, really?"), {{host_rule}}, and asks
   the closing "Ever thought why" question; the EXPLAINER answers warmly and clearly. Mark every scene
   "speaker": "host" or "explainer". Never have them introduce themselves or use names.
 - LOOP: Shorts replay automatically, and a replay counts. Make the very last words of the closing
@@ -213,8 +262,7 @@ Rules:
 - SOUND LIKE A CURIOUS HUMAN, not a fact list: talk to one person ("you"), use contractions, let real
   wonder show ("Here's what got me...", "Wait, it gets stranger."), react to the surprising bit,
   vary sentence length. Never robotic lists, never "Fact one, fact two".
-- THE ENQUIRY ARC, always in this order: (1) hook; (2) explain; (3) PAUSE AND PREDICT with the
-  3-2-1 countdown, first nudging which DIRECTION to think ("think about what the cold does to...");
+- THE ENQUIRY ARC, always in this order: (1) hook; (2) explain; {{arc_rule}}
   (4) reveal the answer with the why; (5) close with the "Ever thought why/how" tinkering question
   that applies the idea to something new.
 - Split into 8 to 11 scenes. For each scene give a stock-footage search query of 1-3 plain, concrete
@@ -222,12 +270,15 @@ Rules:
   is spoken (for example "eye closeup", "tear drop", "elephant herd", "cumulus cloud"), plus 2
   alternative queries that would also show it. Avoid adjectives ("fluffy", "amazing") and abstract
   words ("secret", "hidden", "constantly") that stock sites can't film.
+- MAPS: if a line is about WHERE something is on Earth, add "map": ["Country or continent name as
+  written on a world map", ...] to that scene (e.g. "map": ["Japan"]); it is drawn from real map
+  data. Only countries and continents, at most 2 map scenes, and only where the place truly matters.
 
 Return JSON exactly in this shape:
 {{
  "hook_options": ["...", "...", "..."],
  "scenes": [{{"speaker": "host or explainer", "narration": "...", "visual_query": "...", "alt_queries": ["...", "..."]}}],
- "title_options": ["max 70 characters, true, a curiosity gap that names BOTH sides for a contrast or a concrete number for stakes, Title Case, ending with exactly 2 emojis that fit the subject (e.g. fish+shocked)", "...", "..."],
+ "title_options": ["4 to 8 words, max 60 characters, Title Case, NO emojis, NO hashtags: one concrete object, place or moment and a curiosity gap that is TRUE (e.g. 'Why Plane Windows Are Never Square', 'What This Yellow Box on Highways Does'); never the answer", "...", "..."],
  "description": "2-3 lines for US viewers that tease the answer without giving it, then 3 relevant hashtags including #shorts",
  "tags": ["...", "..."],
  "thumbnail": {{
@@ -241,13 +292,17 @@ Return JSON exactly in this shape:
    "highlight": "the one word or number to colour yellow"
  }},
  "thumbnail_text": "max 4 words",
- "series": "exactly one of: Food Whys, Ocean Whys, Animal Whys, Body Whys, Everyday Whys",
+ "series": "exactly one of: Food Whys, Ocean Whys, Animal Whys, Body Whys, Everyday Whys, How Things Work",
  "question": "the enquiry question exactly as spoken in the last scene",
  "answer_comment": "the answer, posted as the channel's first comment once the video is public: start with 'The answer:', explain it in 2-4 friendly sentences a 12-year-old can follow, connect it back to the video, end by inviting a follow-up question. No links.",
  "fact_check": ["each factual claim made, including the answer, so a human can verify it"]
 }}
 The first scene's narration must be hook_options[0]."""
-    s = llm_json(prompt.replace("{recap_rule}", _recap_rule(recap) + _fix_rule(fix)))
+    for k, v in (("{giveaway_rule}", arm["giveaway"]), ("{middle_rule}", arm["middle"]),
+                 ("{host_rule}", arm["host"]), ("{arc_rule}", arm["arc"]),
+                 ("{recap_rule}", _recap_rule(recap) + _fix_rule(fix))):
+        prompt = prompt.replace(k, v)
+    s = llm_json(prompt)
     issues = lint(s, words)
     if issues:
         log(f"writer: script lint - {' | '.join(issues)}; rewriting once")
@@ -259,6 +314,7 @@ Return the whole script JSON.""")
         if again.get("scenes") and len(lint(again, words)) < len(issues):
             s = again
     s["topic"] = topic
+    s["countdown"] = cd
     if recap:
         s["recap_source"] = recap.get("video_id")
     log(f"writer: script ready, {sum(len(x['narration'].split()) for x in s['scenes'])} words, title {s['title_options'][0]!r}")
@@ -314,7 +370,7 @@ Rules:
 - Scenes of 2-4 sentences, each with a concrete 1-3 word stock-footage query and 2 alternatives.
 
 Return JSON:
-{{"topic": "weekly episode", "title_options": ["max 70 characters", "...", "..."],
+{{"topic": "weekly episode", "title_options": ["max 70 characters, Title Case, no emojis, concrete and true", "...", "..."],
  "hook_options": ["the cold open line"],
  "scenes": [{{"narration": "...", "visual_query": "...", "alt_queries": ["...", "..."], "chapter": "chapter title or empty"}}],
  "description": "3-4 lines, then a blank line (chapter timestamps are added automatically), then hashtags",

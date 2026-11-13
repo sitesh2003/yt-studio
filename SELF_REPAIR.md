@@ -33,6 +33,10 @@ made once at most.
 | A video's premise or contrast is false ("X sticks, Y slides off") | The last audit checks the premise first | Not banked; a corrected remake is queued |
 | A banked video is found wrong later | data/pull.json, read before every publish | Deleted from the bank, remake queued |
 | A run queued behind another starts from old state and its save erases newer work | Every workflow checks out the latest main when it starts, not the queued commit | Nothing to repair: the stale copy never exists |
+| No real footage shows a line exactly (score under 8) | Once Cloudflare keys exist, an illustration is drawn and a separate vision check scores it (0 for anything scientifically wrong, any lettering, or a photo look) | Used only if it passes (7+) AND beats the footage; daily cap of 60 keeps it free, 25 of them at most for the weekly video |
+| A line is about where something is on Earth | The writer marks it "map" | Drawn from Natural Earth data (exact shapes); a place not in the data falls back to footage |
+| Is the countdown helping or hurting? | Half the Shorts have it, half ask the question plainly (data/experiments.json) | After 8+ of each, public 2+ days, the arm with the higher average view percentage (5+ points ahead, or the leader at 15 each) becomes the rule |
+| Viewers outside the US see an English title | Every upload | Title and teaser translated into Spanish, Portuguese, German, French and Hindi (credits stay as written) |
 | New comments | Every 2 hours | Short, warm replies; the answer to each closing question is posted when the video goes public |
 
 What still needs a person: creating accounts (Instagram, Facebook), signing in, and anything that

@@ -37,6 +37,11 @@ def build(results, stats=None):
         f'<tr><td style="padding:8px 0;border-bottom:1px solid #f0e3e3"><b>{e(r.get("title") or r.get("topic", ""))}</b>'
         f'<br><span style="color:#8a3b3b;font-size:13px">{e(r.get("reason", ""))}</span></td></tr>'
         for r in held)
+    try:
+        from .analyst import experiment_line
+        health = list(health) + [experiment_line()]
+    except Exception:
+        pass
     st = stats or {}
     stat_line = (f'{st.get("subscribers", "–")} subscribers · {st.get("views", "–")} total views · '
                  f'{st.get("videos", "–")} public videos') if st else ""

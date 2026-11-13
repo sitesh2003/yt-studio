@@ -43,7 +43,7 @@ Hits are lopsided. The Why Side's median video gets 103k views, but its best got
 - **By country:** US CPM about $14.67 against India about $0.74. Spanish and German pay more than Hindi.
 - **Conclusion:** Shorts bring reach, and long-form brings watch hours and money.
 
-## 5. Plan
+## 5. Plan (status updated 13 Nov 2026, evening: the user said yes to every step)
 1. **Done (13 Nov):**
    - full-screen crop around the subject
    - real NASA and Commons footage
@@ -51,12 +51,12 @@ Hits are lopsided. The Why Side's median video gets 103k views, but its best got
    - premise audit and script lint
    - a voice swap that actually swaps
    - board drift
-2. **Illustrated scenes (needs the user):** create a free Cloudflare account and save its account ID and API token as GitHub secrets (CLOUDFLARE_ACCOUNT_ID, CLOUDFLARE_API_TOKEN). The free tier makes about 100–230 FLUX schnell images a day, and FLUX schnell is Apache 2.0. Every scene would be drawn in one consistent stylised style, never photo-real, and the picture judge would check each image for accuracy.
-3. **A weekly long-form video** (8–10 min, 16:9) on the same researched topics. This builds watch hours toward YPP and earns the high long-form RPM.
-4. **Fewer, better Shorts** once illustration works: 1–2 a day.
-5. **Experiment:** drop the countdown in half the videos for a week and compare average view percentage. This is waiting for the user's yes, because the countdown is their idea.
-6. **Second channel, geography and maps:** Natural Earth data is public domain, so maps drawn by code are 100% accurate. The niche's median is 3.6M views, and World Ji Ke has 88k subscribers after 6 months.
-7. **Spanish:** turn on YouTube auto-dubbing (27 languages, a Studio setting), or later a dubbed Spanish twin channel using Kokoro's Spanish voices.
+2. **Illustrated scenes: BUILT (agents/illustrate.py), switches on with the keys.** Model: FLUX.2 [klein] 4B, Apache 2.0, at 864x1536 (about 140 neurons each, so about 60 a day free; 25 at most for the weekly video). Still needed from the user: create a free Cloudflare account and save its account ID and API token as GitHub secrets (CLOUDFLARE_ACCOUNT_ID, CLOUDFLARE_API_TOKEN). The free tier makes about 100–230 FLUX schnell images a day, and FLUX schnell is Apache 2.0. Every scene would be drawn in one consistent stylised style, never photo-real, and the picture judge would check each image for accuracy.
+3. **A weekly long-form video: already built (studio.py weekly, Saturdays 10 AM ET); first run 14 Nov 2026.** (8–10 min, 16:9) on the same researched topics. This builds watch hours toward YPP and earns the high long-form RPM.
+4. **Fewer, better Shorts: DONE.** 2 a day (12:00 and 19:00 ET) from 13 Nov. Titles now 4–8 concrete words, no emojis; topics widened to hidden engineering and how machines work (new series "How Things Work").
+5. **Countdown experiment: RUNNING.** Half the Shorts keep "Pause and guess... 3-2-1", half ask the question plainly. analyst.experiment() names the winner automatically (data/experiments.json); the daily report shows the score.
+6. **Second channel, geography and maps: the map engine is BUILT (agents/maps.py) and already used in the main channel for "where on Earth" lines.** The channel itself needs the user to create it (a Brand Account channel) and sign it in. Background: Natural Earth data is public domain, so maps drawn by code are 100% accurate. The niche's median is 3.6M views, and World Ji Ke has 88k subscribers after 6 months.
+7. **Spanish: titles and teasers are now translated on every upload (es, pt, de, fr, hi).** The user should also turn on YouTube auto-dubbing (27 languages, a Studio setting), or later a dubbed Spanish twin channel using Kokoro's Spanish voices.
 8. **Off-YouTube income:** free PDF diagram packs; sponsors such as Brilliant or CuriosityStream after about 10k subscribers. Facebook and Snapchat payouts in India are invite-only or unclear, and TikTok is banned in India.
 
 ## 6. What we will not do
@@ -65,3 +65,13 @@ Hits are lopsided. The Why Side's median video gets 103k views, but its best got
 - several near-identical channels
 - automated comments on other channels
 - kids content (lowest RPM, and the main crackdown target)
+
+## 7. What only the user can do (accounts and settings)
+1. **Cloudflare (for illustrations), about 5 minutes:**
+   - Sign up free at dash.cloudflare.com.
+   - Copy the Account ID (shown on the Workers AI page).
+   - Create an API token with the "Workers AI" template (read and edit).
+   - In GitHub, go to sitesh2003/yt-studio → Settings → Secrets and variables → Actions → New repository secret, and add CLOUDFLARE_ACCOUNT_ID and CLOUDFLARE_API_TOKEN.
+   - The next production run uses them by itself.
+2. **Auto-dubbing:** in YouTube Studio, go to Settings → Upload defaults → Advanced settings and make sure automatic dubbing is allowed.
+3. **Geography channel (when ready):** create a second channel on the same Google account (a Brand Account). The code side then needs its own sign-in token secret.

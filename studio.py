@@ -36,7 +36,7 @@ def build(script):
             "tags": script.get("tags", []), "hook": script["scenes"][0]["narration"], "status": "review",
             "narration": " ".join(sc["narration"] for sc in script["scenes"]),
             "voice_engine": voice.last_engine, "voices": voice.last_cast, "diagrams": visuals._diagrams,
-            "series": script.get("series", ""),
+            "series": script.get("series", ""), "countdown": script.get("countdown"),
             "question": script.get("question", ""), "answer_comment": script.get("answer_comment", ""),
             "fact_ok": not (script.get("fact_check_result") or {}).get("unresolved", False),
             "weekly": bool(script.get("weekly")), "recap_source": script.get("recap_source")}

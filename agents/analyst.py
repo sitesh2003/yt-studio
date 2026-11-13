@@ -12,8 +12,13 @@ def learn():
     for s in stats:
         h = history.get(s["video"])
         if h:
-            rows.append({"topic": h["topic"], "title": h["title"], "hook": h["hook"], **s})
+            rows.append({"topic": h["topic"], "title": h["title"], "hook": h["hook"],
+                         "countdown": h.get("countdown"), "publish_at": h.get("publish_at"), **s})
     write_json(DATA / "performance.json", rows)
+    try:
+        experiment(rows)
+    except Exception as e:
+        log(f"analyst: experiment scoring skipped: {e}")
     if len(rows) < 5:
         log(f"analyst: {len(rows)} videos with data, need 5+ before drawing conclusions")
         return None
@@ -26,3 +31,53 @@ Return JSON: {{"summary": "5 bullet-style sentences the scriptwriter must follow
     write_json(DATA / "learnings.json", out)
     log("analyst: learnings updated")
     return out
+
+
+def experiment(rows, min_each=8, clear_gap=5.0, max_each=15):
+    """Scores the countdown experiment (writer.countdown_arm) on average view percentage, the number
+    YouTube uses to decide whether to show a Short to more people. Only videos made for the test count
+    (they carry a countdown field), and only once they have been public for 2 days and have 100+ views,
+    so a fresh video's early numbers can't decide it. A winner is named when both arms have 8+ videos
+    and one leads by 5+ points, or at 15+ each, whichever leads. writer.countdown_arm then uses it."""
+    import datetime as dt
+    now = dt.datetime.now(dt.timezone.utc)
+    arms = {"countdown": [], "turn": []}
+    for r in rows:
+        if r.get("countdown") is None or (r.get("views") or 0) < 100 or not r.get("publish_at"):
+            continue
+        try:
+            if now - dt.datetime.fromisoformat(r["publish_at"]).astimezone(dt.timezone.utc) < dt.timedelta(days=2):
+                continue
+        except ValueError:
+            continue
+        arms["countdown" if r["countdown"] else "turn"].append(r)
+    old = read_json(DATA / "experiments.json", {}) or {}
+    exp = dict(old.get("countdown") or {})
+    stat = {}
+    for k, v in arms.items():
+        stat[k] = {"videos": len(v),
+                   "avg_view_pct": round(sum(r["averageViewPercentage"] for r in v) / len(v), 1) if v else None,
+                   "avg_views": round(sum(r["views"] for r in v) / len(v)) if v else None}
+    exp.update(started="2026-11-13", measure="average view percentage", arms=stat)
+    a, b = stat["countdown"], stat["turn"]
+    if not exp.get("winner") and min(a["videos"], b["videos"]) >= min_each:
+        gap = a["avg_view_pct"] - b["avg_view_pct"]
+        if abs(gap) >= clear_gap or min(a["videos"], b["videos"]) >= max_each:
+            exp["winner"] = "countdown" if gap >= 0 else "turn"
+            exp["decided"] = now.date().isoformat()
+            log(f"analyst: countdown experiment decided -> {exp['winner']} ({a['avg_view_pct']}% vs {b['avg_view_pct']}% watched)")
+    write_json(DATA / "experiments.json", {**old, "countdown": exp})
+    return exp
+
+
+def experiment_line():
+    """One plain sentence for the daily report."""
+    e = (read_json(DATA / "experiments.json", {}) or {}).get("countdown") or {}
+    a, b = (e.get("arms") or {}).get("countdown") or {}, (e.get("arms") or {}).get("turn") or {}
+    if e.get("winner"):
+        return (f"Countdown test decided on {e.get('decided')}: "
+                f"{'keeping the countdown' if e['winner'] == 'countdown' else 'no countdown from now on'} "
+                f"({a.get('avg_view_pct')}% vs {b.get('avg_view_pct')}% watched).")
+    return (f"Countdown test running: {a.get('videos', 0)} with the countdown "
+            f"({a.get('avg_view_pct') or '-'}% watched) vs {b.get('videos', 0)} without "
+            f"({b.get('avg_view_pct') or '-'}%); needs 8 of each, public 2+ days.")

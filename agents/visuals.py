@@ -333,6 +333,17 @@ def pick_scene(i, scene, a, b, job_dir, used, note="", extra_queries=()):
             return 8.0, {"kind": "board", "id": ("b", i)}, diagram.CREDIT
         except Exception as e:
             log(f"visuals: board scene {i + 1} skipped ({str(e)[:60]})")
+    if scene.get("map") and not note:   # a "where on Earth" line: an exact map from Natural Earth data
+        try:
+            from . import illustrate, maps
+            img = job_dir / f"map_{i:02d}.png"
+            places = [str(p) for p in scene["map"]][:3] if isinstance(scene["map"], list) else [str(scene["map"])]
+            if maps.render(places, img, label=places[0] if len(places) == 1 else None):
+                illustrate.clip(img, out, b - a + 0.5, i)
+                img.unlink(missing_ok=True)
+                return 9.0, {"kind": "map", "id": ("m", i)}, maps.CREDIT
+        except Exception as e:
+            log(f"visuals: map scene {i + 1} skipped ({str(e)[:60]})")
     if key("PIXABAY_API_KEY"):
         queries = list(extra_queries)[:3] + [scene["visual_query"]] + list(scene.get("alt_queries", []))[:1]
         cands = []
@@ -365,6 +376,21 @@ def pick_scene(i, scene, a, b, job_dir, used, note="", extra_queries=()):
         if uniq:
             pick, score = _judge(scene["narration"], scene["visual_query"],
                                  _shortlist(uniq, scene["visual_query"]), note)
+    # ILLUSTRATION: when no real footage shows the line exactly, draw it (agents/illustrate.py). Used
+    # only if the drawing passes its own accuracy check AND scores higher than the best footage.
+    below = config().get("visuals", {}).get("illustrate_below", 8)
+    if score < below:
+        try:
+            from . import illustrate
+            if illustrate.available():
+                img = job_dir / f"ill_{i:02d}.jpg"
+                s2 = illustrate.scene(scene["narration"], _topic, scene["visual_query"], img, note)
+                if s2 > score and img.exists():
+                    illustrate.clip(img, out, b - a + 0.5, i)
+                    img.unlink(missing_ok=True)
+                    return s2, {"kind": "illustration", "id": ("i", i, note[:20])}, illustrate.CREDIT
+        except Exception as e:
+            log(f"visuals: illustration skipped for scene {i + 1} ({str(e)[:60]})")
     credit = None
     if pick and score >= 5:
         used.add(pick["id"])

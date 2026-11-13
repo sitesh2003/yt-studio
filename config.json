@@ -1,6 +1,6 @@
 {
   "channel": {
-    "niche": "the surprising science behind food, animals, the ocean and your own body: why and how things really work, explained accurately",
+    "niche": "the surprising science and hidden engineering behind everyday things: food, animals, the ocean, your own body, and the machines, roads and objects around you; why and how things really work, explained accurately",
     "audience": "US viewers aged 16-40, curious, scroll fast, no science background needed",
     "voice_tone": "friendly, confident, a little playful, never clickbait-false",
     "language": "en-US",
@@ -10,6 +10,9 @@
       "animal facts",
       "ocean facts",
       "human body facts",
+      "how it works",
+      "hidden engineering",
+      "everyday engineering",
       "how it's made",
       "weird science"
     ],
@@ -68,18 +71,18 @@
     "mode": "review",
     "privacy": "public",
     "category_id": "28",
-    "timezone_note": "US Eastern. 12:00 ET = 22:30 IST, 15:00 ET = 01:30 IST",
+    "timezone_note": "US Eastern. 12:00 ET = 22:30 IST, 19:00 ET = 05:30 IST",
     "slots_et": [
       "12:00",
-      "15:00",
       "19:00"
     ],
-    "videos_per_day": 3,
+    "videos_per_day": 2,
     "made_for_kids": false,
     "contains_synthetic_media": false,
     "bank_days": 3,
     "max_uploads_per_day": 5,
-    "bank_note": "finished, audited videos wait in the GitHub 'video-bank' release; the publisher uploads only the next day's 3 slots, so nothing on YouTube is ever deleted"
+    "bank_note": "finished, audited videos wait in the GitHub 'video-bank' release; the publisher uploads only the next day's 3 slots, so nothing on YouTube is ever deleted",
+    "_quality_note": "2 a day since 13 Nov 2026: the fastest-growing channels in our genre post 2-6 strong videos a week; a weak video to fill a slot costs more than it earns"
   },
   "community": {
     "mode": "auto",

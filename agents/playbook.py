@@ -70,9 +70,11 @@ OUR channel's videos with real numbers (may be few): {ours[-20:] or 'none yet'}
 Last week's playbook (keep what still holds, change what the data now contradicts): {old.get('rules') or 'none'}
 
 ALREADY BUILT IN (fixed - never write rules or experiments about these): the enquiry arc and who
-speaks each part (the host gives the hook, the PAUSE AND GUESS with the 3-2-1, and the closing
-question; the explainer explains); an on-screen hook title in the first seconds; a PAUSE & GUESS
-banner with a big animated 3-2-1; phrase captions; the loop ending; the small corner logo.
+speaks each part (the host gives the hook, the mid-video question, and the closing question; the
+explainer explains); the COUNTDOWN EXPERIMENT (half the videos say "Pause and guess... 3-2-1", half
+ask the question plainly; the data decides, never suggest changing it); an on-screen hook title in
+the first seconds; phrase captions; the loop ending; the small corner logo; illustrated scenes and
+maps where footage cannot show a line.
 Rules for you: concrete and testable, never generic advice. Patterns only - never copy a title, idea
 or anyone's footage. Never suggest anything inaccurate, sensational fear, health advice, photo-real
 AI imagery, re-cut TV footage, or asking viewers to subscribe/like. Ignore kids-song, prank, comedy

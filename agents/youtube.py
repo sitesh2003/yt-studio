@@ -56,6 +56,32 @@ def next_slot():
     return now + dt.timedelta(hours=1)
 
 
+LANGS = {"es": "Spanish (Latin American)", "pt": "Portuguese (Brazilian)", "de": "German",
+         "fr": "French", "hi": "Hindi"}
+
+
+def localizations(meta):
+    """The title and the teaser line in five more languages. YouTube shows a viewer the version in
+    their own language (search and the feed too), which auto-dubbing alone does not translate. Only
+    the first paragraph is translated: the credits and licence lines stay exactly as written."""
+    from .core import llm_json
+    head, _, rest = meta["description"].partition("\n\n")
+    out = llm_json(f"""Translate this YouTube Short's title and teaser for viewers in each language.
+Natural, as a native speaker would write it, same curiosity, never more dramatic than the English,
+no emojis added. Keep hashtags exactly as they are (#shorts stays #shorts). Title max 90 characters.
+Title: {meta["title"]}
+Teaser: {head}
+Languages: {LANGS}
+Return JSON: {{"es": {{"title": "...", "teaser": "..."}}, "pt": {{...}}, "de": {{...}}, "fr": {{...}}, "hi": {{...}}}}""")
+    loc = {}
+    for code in LANGS:
+        t = out.get(code) or {}
+        if t.get("title") and t.get("teaser"):
+            loc[code] = {"title": t["title"][:100],
+                         "description": (t["teaser"] + ("\n\n" + rest if rest else ""))[:4900]}
+    return loc
+
+
 def upload(job_dir, meta, when=None):
     from googleapiclient.http import MediaFileUpload
     p = config()["publish"]
@@ -70,7 +96,15 @@ def upload(job_dir, meta, when=None):
                    "selfDeclaredMadeForKids": p["made_for_kids"],
                    "containsSyntheticMedia": p["contains_synthetic_media"]},
     }
-    req = yt().videos().insert(part="snippet,status", body=body,
+    part = "snippet,status"
+    try:
+        loc = localizations(meta)
+        if loc:
+            body["localizations"] = loc
+            part += ",localizations"
+    except Exception as e:
+        log(f"youtube: translations skipped ({str(e)[:80]})")
+    req = yt().videos().insert(part=part, body=body,
                                media_body=MediaFileUpload(str(job_dir / "final.mp4"), resumable=True))
     resp = None
     while resp is None:
@@ -225,7 +259,7 @@ def channel_stats():
     return [dict(zip(cols, row)) for row in r.get("rows", [])]
 
 
-SERIES = ["Food Whys", "Ocean Whys", "Animal Whys", "Body Whys", "Everyday Whys"]
+SERIES = ["Food Whys", "Ocean Whys", "Animal Whys", "Body Whys", "Everyday Whys", "How Things Work"]
 
 
 def add_to_series(video_id, series):
