@@ -53,7 +53,7 @@ Hits are lopsided. The Why Side's median video gets 103k views, but its best got
    - board drift
 2. **Illustrated scenes: BUILT (agents/illustrate.py), switches on with the keys.** Model: FLUX.2 [klein] 4B, Apache 2.0, at 864x1536 (about 140 neurons each, so about 60 a day free; 25 at most for the weekly video). Still needed from the user: create a free Cloudflare account and save its account ID and API token as GitHub secrets (CLOUDFLARE_ACCOUNT_ID, CLOUDFLARE_API_TOKEN). The free tier makes about 100–230 FLUX schnell images a day, and FLUX schnell is Apache 2.0. Every scene would be drawn in one consistent stylised style, never photo-real, and the picture judge would check each image for accuracy.
 3. **A weekly long-form video: already built (studio.py weekly, Saturdays 10 AM ET); first run 14 Nov 2026.** (8–10 min, 16:9) on the same researched topics. This builds watch hours toward YPP and earns the high long-form RPM.
-4. **Fewer, better Shorts: DONE.** 2 a day (12:00 and 19:00 ET) from 13 Nov. Titles now 4–8 concrete words, no emojis; topics widened to hidden engineering and how machines work (new series "How Things Work").
+4. **Fewer, better Shorts: DONE.** 2 a day (12:00 and 19:00 ET) from 13 Nov. Titles now 4–8 concrete words ending in ONE face emoji (Zack D. Films, below); topics widened to hidden engineering and how machines work (new series "How Things Work").
 5. **Countdown experiment: RUNNING.** Half the Shorts keep "Pause and guess... 3-2-1", half ask the question plainly. analyst.experiment() names the winner automatically (data/experiments.json); the daily report shows the score.
 6. **Second channel, geography and maps: the map engine is BUILT (agents/maps.py) and already used in the main channel for "where on Earth" lines.** The channel itself needs the user to create it (a Brand Account channel) and sign it in. Background: Natural Earth data is public domain, so maps drawn by code are 100% accurate. The niche's median is 3.6M views, and World Ji Ke has 88k subscribers after 6 months.
 7. **Spanish: titles and teasers are now translated on every upload (es, pt, de, fr, hi).** The user should also turn on YouTube auto-dubbing (27 languages, a Studio setting), or later a dubbed Spanish twin channel using Kokoro's Spanish voices.
@@ -75,3 +75,29 @@ Hits are lopsided. The Why Side's median video gets 103k views, but its best got
    - The next production run uses them by itself.
 2. **Auto-dubbing:** in YouTube Studio, go to Settings → Upload defaults → Advanced settings and make sure automatic dubbing is allowed.
 3. **Geography channel (when ready):** create a second channel on the same Google account (a Brand Account). The code side then needs its own sign-in token secret.
+
+## 8. Zack D. Films check (13 Nov 2026, the user's request)
+YouTube Data API. Last 100 uploads, 23 Oct - 13 Nov 2026, plus preview frames of the top 4.
+- **Size:** created 07 Jun 2021; 29.7M subscribers, 83 billion views, 4,215 videos.
+- **Posting rate:** about 5 uploads a day.
+- **Views:** median 8.6M per video; lowest 250k (a video a few hours old); top 50.2M ("Why Dobermans Have Cropped Ears").
+- **Length:** median 35 s (21-89 s); hits and flops are the same length.
+- **Titles:** median 7 plain words, and EVERY title ends with ONE face emoji that shows the feeling (worried, thinking, surprised). No hashtags, few question marks.
+- **Formats:**
+  - why or how about animals and the body ("How Horseflies Bite You")
+  - "What If" worked out with real numbers ("What If Humans Had Hummingbird Hearts")
+  - practical "How To" ("How To Find Tiny Things You Dropped")
+  - short dramatised stories, labelled "(fiction)" when made up
+- **Visuals:** every line is its own custom 3D-animated shot that shows the words literally:
+  - x-ray cutaways (a heart inside the chest, veins inside a leg)
+  - extreme close-ups (a horsefly's mouthparts on skin)
+  - 3D people reacting
+  - small white captions near the middle
+- **Production:** a large studio. A secondary source says 50+ staff, about 30 of them 3D animators (unverified). Tutorials copying the look use Character Creator / iClone / Blender and AI voices.
+
+**What we take:**
+- one face emoji at the end of every title
+- "What If" and "How it gets you" formats, both worked out with real science
+- 30-45 s, one literal picture per line
+
+**What we cannot copy for free:** custom 3D animation of every line. Our nearest honest equivalents are real footage, exact maps and checked drawings.

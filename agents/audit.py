@@ -25,7 +25,7 @@ TITLE: {title}
 DESCRIPTION: {first}
 NARRATION (spoken, cannot be edited): {spoken}
 Return JSON: {{"title_ok": true or false, "description_ok": true or false,
- "fixed_title": "accurate title, same curiosity, max 70 chars, Title Case, ends with 2 fitting emojis",
+ "fixed_title": "accurate title, same curiosity, max 70 chars, Title Case, ends with exactly one face emoji that shows the feeling",
  "fixed_description": "accurate 1-2 lines, no hashtags",
  "narration_false": true only if the narration states something actually FALSE or clearly misleading,
  "false_sentence": "if narration_false: the exact sentence from the narration that is wrong",

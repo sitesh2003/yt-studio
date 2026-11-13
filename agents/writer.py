@@ -69,6 +69,10 @@ fish hit 5 million views and 1,800 comments in two days). Use these shapes, neve
   In the Nov 2026 study this was the fastest-growing format in our genre.
 - HOW A MACHINE WORKS: what really happens inside something people use every day (a fridge, a lock,
   a microwave, an elevator), shown step by step.
+- WHAT IF: a vivid, TRUE hypothetical worked out with real science ("What if humans had a
+  hummingbird's heart rate"); the answer must follow from real numbers, never fantasy.
+- HOW IT GETS YOU: what really happens, step by step, when something everyday acts on your body
+  ("How a horsefly bite works"), told close up. Never gore, never fear for its own sake.
 - EVERYDAY DEBATE: food, pets, kitchen and body habits people have opinions on (sushi, eggs, coffee,
   dogs, sleep), so viewers want to comment their own experience. Never health advice, never fear.
 Proven outlier titles in this space (patterns only): {_outliers()}
@@ -278,7 +282,7 @@ Return JSON exactly in this shape:
 {{
  "hook_options": ["...", "...", "..."],
  "scenes": [{{"speaker": "host or explainer", "narration": "...", "visual_query": "...", "alt_queries": ["...", "..."]}}],
- "title_options": ["4 to 8 words, max 60 characters, Title Case, NO emojis, NO hashtags: one concrete object, place or moment and a curiosity gap that is TRUE (e.g. 'Why Plane Windows Are Never Square', 'What This Yellow Box on Highways Does'); never the answer", "...", "..."],
+ "title_options": ["4 to 8 words, max 60 characters, Title Case, NO hashtags, ending with exactly ONE face emoji that shows the feeling (one of: 🤔 😮 😨 😱 🤯 😳), like the biggest channel in the genre: one concrete object, place or moment and a curiosity gap that is TRUE (e.g. 'Why Plane Windows Are Never Square 🤔', 'How Horseflies Bite You 😨'); never the answer", "...", "..."],
  "description": "2-3 lines for US viewers that tease the answer without giving it, then 3 relevant hashtags including #shorts",
  "tags": ["...", "..."],
  "thumbnail": {{
