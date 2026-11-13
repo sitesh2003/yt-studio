@@ -123,6 +123,52 @@ def _nasa_candidates(query):
     return out
 
 
+def _nasa_video_candidates(query):
+    """NASA video: real public-domain footage of space, Earth, oceans, weather, flight - no key."""
+    r = _get("https://images-api.nasa.gov/search", params={"q": query[:80], "media_type": "video"})
+    out = []
+    for it in r.json().get("collection", {}).get("items", [])[:6]:
+        d, thumb = it["data"][0], (it.get("links") or [{}])[0].get("href", "")
+        if thumb and it.get("href"):
+            out.append({"kind": "video", "id": ("nv", d.get("nasa_id")), "url": None, "manifest": it["href"],
+                        "thumb": thumb, "user": "NASA", "fit": True,
+                        "tags": (d.get("title") or "") + " " + " ".join(d.get("keywords") or []),
+                        "credit": "Video: NASA (public domain)"})
+    return out
+
+
+def _nasa_video_url(manifest):
+    files = _get(manifest).json()
+    for pref in ("~large.mp4", "~medium.mp4", "~mobile.mp4"):   # never ~orig (can be gigabytes)
+        hit = next((f for f in files if f.endswith(pref)), None)
+        if hit:
+            return hit.replace("http://", "https://")
+    raise ValueError("no mp4 in NASA asset")
+
+
+def _commons_video_candidates(query):
+    """Wikimedia Commons video (webm/ogv): real footage of specific animals, plants and processes.
+    Same licence rule as the photos: public domain, CC0 or CC BY only."""
+    import re
+    r = _get("https://commons.wikimedia.org/w/api.php", params={
+        "action": "query", "format": "json", "generator": "search", "gsrnamespace": 6,
+        "gsrsearch": f"{query[:80]} filetype:video", "gsrlimit": 10, "prop": "imageinfo",
+        "iiprop": "url|extmetadata|size", "iiurlwidth": 640})
+    out = []
+    for p in (r.json().get("query") or {}).get("pages", {}).values():
+        ii = (p.get("imageinfo") or [{}])[0]
+        m = ii.get("extmetadata", {})
+        lic = (m.get("LicenseShortName", {}).get("value") or "").strip()
+        if (not lic.lower().startswith(_OK_LICENCES) or min(ii.get("width", 0), ii.get("height", 0)) < 720
+                or not ii.get("thumburl") or ii.get("duration", 99) < 3):
+            continue
+        artist = re.sub(r"<[^>]+>|\s+", " ", m.get("Artist", {}).get("value", "")).strip()[:60] or "unknown"
+        out.append({"kind": "video", "id": ("cv", p.get("pageid")), "url": ii["url"], "thumb": ii["thumburl"],
+                    "user": artist, "tags": p.get("title", "").lower(), "fit": True,
+                    "credit": f"Video: {artist}, {lic}, via Wikimedia Commons"})
+    return out
+
+
 def _shortlist(cands, query, n=10):
     words = {w for w in query.lower().split() if len(w) > 2}
     def score(c):
@@ -288,6 +334,12 @@ def pick_scene(i, scene, a, b, job_dir, used, note="", extra_queries=()):
                 cands += [c for c in _video_candidates(q) if c["id"] not in used]
             except Exception as e:
                 log(f"visuals: video search error {e}")
+        for q in queries[:2]:          # real public-domain footage beyond Pixabay (no key needed)
+            for src in (_nasa_video_candidates, _commons_video_candidates):
+                try:
+                    cands += [c for c in src(q) if c["id"] not in used]
+                except Exception as e:
+                    log(f"visuals: {src.__name__[1:-11]} search error {str(e)[:60]}")
         for q in queries[:2]:
             try:
                 cands += [c for c in _photo_candidates(q) if c["id"] not in used]
@@ -311,8 +363,13 @@ def pick_scene(i, scene, a, b, job_dir, used, note="", extra_queries=()):
         used.add(pick["id"])
         try:
             if pick["kind"] == "video":
-                _download(pick["url"], out)
-                credit = f"Video by {pick['user']} on Pixabay"
+                url = pick["url"] or _nasa_video_url(pick["manifest"])
+                if pick["id"][0] in ("nv", "cv"):   # NASA / Commons: read only the first 20 s, as mp4
+                    run(["ffmpeg", "-y", "-user_agent", UA["User-Agent"]] + (["-ss", "4"] if pick["id"][0] == "nv" else []) + ["-i", url, "-t", "20", "-an",
+                         "-c:v", "libx264", "-pix_fmt", "yuv420p", "-preset", "veryfast", str(out)])
+                else:
+                    _download(url, out)
+                credit = pick.get("credit") or f"Video by {pick['user']} on Pixabay"
             else:
                 img = job_dir / f"img_{i:02d}.jpg"
                 _download(pick["url"], img)
