@@ -617,7 +617,10 @@ if __name__ == "__main__":
                 d = illustrate._describe(line, topic, query, "")
                 prompt = illustrate.full_prompt(d["prompt"])
                 raw = illustrate._render(prompt, w, h)
-                score, problem = illustrate._check(raw, line, d.get("must_show", query))
+                score, problem = illustrate._check(raw, line, d.get("must_show", query), d.get("checks") or [])
+                if score >= illustrate.PASS:
+                    s2, p2 = illustrate._check(raw, line, d.get("must_show", query), d.get("checks") or [])
+                    score, problem = min(score, s2), (p2 if s2 < score else problem)
                 (out_dir / f"sample_{k}.jpg").write_bytes(illustrate._jpeg(raw))
                 ok += 1
                 report.append({"line": line, "prompt": prompt, "score": score, "problem": problem,

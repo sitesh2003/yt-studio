@@ -113,24 +113,41 @@ Write an image prompt for an illustrator. Rules:
   feather's front edge, shown large).
 - 1-3 sentences, concrete nouns and positions. Never say photo, photograph or realistic, and do not
   describe the art style (a stylised illustration style is added for you).
-Return JSON: {{"prompt": "...", "must_show": "the one thing a viewer must see, in a few words"}}""")
+Also write 3-5 YES/NO QUESTIONS a checker will answer by looking at the finished picture. For an
+accurate, on-topic picture the answer to EVERY question must be "yes". Cover: (1) the key feature is
+clearly visible and large (name it concretely); (2) each thing that must stay contained, attached or in
+place really is (e.g. "Is all of the liquid inside the pipes, with none spilling out?"); (3) the right
+number and shape of the parts that matter; (4) "Is the picture free of any letters, numbers or writing?".
+Questions must be about what is VISIBLE, never about invisible forces the narrator explains.
+Return JSON: {{"prompt": "...", "must_show": "the one thing a viewer must see, in a few words",
+ "checks": ["yes/no question", "..."]}}""")
 
 
-def _check(jpg, narration, must_show):
-    out = llm_json(f"""You are the strict picture checker for an accurate science video.
-The narrator says: "{narration}"
-The picture must show: "{must_show}"
-Look at the picture. Score 0-10 for how clearly and literally it shows that, so a viewer instantly
-connects picture and words (10 exact, 7 clearly right, 5 loose, 0 wrong).
-Score 0 if ANYTHING in it is scientifically wrong or misleading (wrong number of legs, wings or eyes,
-impossible anatomy, wrong colour or shape for the real thing, wrong cause and effect), if it contains
-any letters, numbers, words or symbols that look like writing, if it looks like a real photograph,
-or if it is confusing or cluttered.
-Return JSON: {{"score": number, "problem": "what is wrong, or empty"}}""", images=[_jpeg(jpg, 640)])
-    try:
-        return float(out.get("score", 0)), str(out.get("problem", ""))[:200]
-    except (TypeError, ValueError):
-        return 0.0, "unreadable check"
+def _check(jpg, narration, must_show, checks=()):
+    """Answers the scene's own yes/no questions by looking at the picture; every answer must be yes.
+    Why questions and not an open audit: in the first cloud tests (13 Nov 2026) an open "anything
+    wrong?" check passed a fridge whose liquid poured OUT of its sealed pipes and a feather with no
+    comb-like edge, then failed a correct window for not drawing "pressure". Specific questions about
+    what is visible are what a vision model answers reliably."""
+    qs = [str(q) for q in checks if str(q).strip()][:6] or [
+        f"Is {must_show} clearly visible and large in the picture?",
+        "Is every object shown in its real place, with nothing leaking, spilling or floating where it should not?",
+        "Is the picture free of any letters, numbers or writing?"]
+    out = llm_json(f"""You check one illustration for an accurate science video, shown while the narrator says:
+"{narration}"
+The intended style is a 3D cartoon with matte, clay-like materials; judge content, not style.
+Look carefully at the picture and answer each question strictly from what you SEE. If you are not sure,
+or the thing is too small or unclear to tell, the answer is "no".
+Questions: {qs}
+Return JSON: {{"answers": [{{"question": "...", "answer": "yes" or "no", "seen": "what in the picture decides it"}}]}}""",
+                   images=[_jpeg(jpg, 640)])
+    ans = [a for a in (out.get("answers") or []) if isinstance(a, dict)]
+    if len(ans) < len(qs):
+        return 0.0, "the checker did not answer every question"
+    no = [f"{a.get('question')} -> {a.get('seen')}" for a in ans if str(a.get("answer", "")).strip().lower() != "yes"]
+    if no:
+        return 0.0, ("failed: " + "; ".join(no))[:240]
+    return 9.0, ""
 
 
 def _unphoto(p):
@@ -155,7 +172,10 @@ def scene(narration, topic, query, out_jpg, note="", tries=2):
         try:
             d = _describe(narration, topic, query, problem)
             raw = _render(full_prompt(d["prompt"]), w, h)
-            score, problem = _check(raw, narration, d.get("must_show", query))
+            score, problem = _check(raw, narration, d.get("must_show", query), d.get("checks") or [])
+            if score >= PASS:      # one check can be lenient by chance: a pass must survive a second
+                s2, p2 = _check(raw, narration, d.get("must_show", query), d.get("checks") or [])
+                score, problem = min(score, s2), (p2 if s2 < score else problem)
         except Exception as e:
             log(f"illustrate: attempt {attempt + 1} failed ({str(e)[:80]})")
             continue
