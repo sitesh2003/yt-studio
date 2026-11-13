@@ -834,7 +834,8 @@
     "repairs": 2,
     "video_id": "Bxp7r8IzbiY",
     "publish_at": "2026-11-12T19:00:00-05:00",
-    "answered": true
+    "answered": true,
+    "recapped": true
   },
   {
     "job": "20261112-0926-why-apples-float-in-water-while-pears-im",
@@ -1370,6 +1371,42 @@
       "review": [],
       "pass": true,
       "duration": 45.7
+    },
+    "repairs": 0,
+    "audited": true
+  },
+  {
+    "job": "20261113-0024-why-owls-fly-in-complete-silence-while-o",
+    "topic": "Why Owls Fly in Complete Silence While Other Birds Make Loud Wing Flaps",
+    "title": "Why Owls Fly in Complete Silence vs Loud Pigeons 🦉🤫",
+    "description": "Discover the hidden biomechanics behind how owl feathers turn noisy air turbulence into silent micro-currents.\n#shorts #science #animals\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nPhoto: M▲TTHOFFM▲N, BY 2.0, via Openverse (flickr)\nPhoto: U.S. Fish and Wildlife Service - Midwest Region, Public domain, via Wikimedia Commons\nPhoto: ahisgett, BY 2.0, via Openverse (flickr)\nVideo by Coverr-Free-Footage on Pixabay\nVideo by Vimeo-Free-Videos on Pixabay",
+    "tags": [
+      "owl silent flight",
+      "how owls fly silently",
+      "bird wing aerodynamics",
+      "owl feathers biomechanics",
+      "animal science facts"
+    ],
+    "hook": "Why are an owl's wings secretly built completely differently from a pigeon's?",
+    "status": "banked",
+    "narration": "Why are an owl's wings secretly built completely differently from a pigeon's? Most birds flap loudly because air rushes over stiff feather edges, creating noisy turbulence. Owls have velvety wing tops, but think about the front edge... Pause and guess... three, two, one. Here's why! The front edge of an owl feather has comb-like serrated teeth. These tiny teeth break big air rushes into silent micro-currents, while trailing fringe muffles remaining sound. Yesterday's answer: pruned fingers act like tire treads to grip wet objects! Nobody got it, so today's your chance. Ever thought why a diving sea bird couldn't use soft owl feathers to flap quietly?",
+    "voice_engine": "kokoro",
+    "voices": "female host, male explainer",
+    "diagrams": 1,
+    "series": "Animal Whys",
+    "question": "Ever thought why a diving sea bird couldn't use soft owl feathers to flap quietly?",
+    "answer_comment": "The answer: Soft owl feathers would trap water and lose their trapping power, ruining the bird's waterproofing and insulation. Ocean birds need stiff, tightly packed, waterproof feathers to stay light and dry. Got a follow-up question about bird flight?",
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": "Bxp7r8IzbiY",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "footage": [],
+      "review": [],
+      "pass": true,
+      "duration": 47.6
     },
     "repairs": 0,
     "audited": true
