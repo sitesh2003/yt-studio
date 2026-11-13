@@ -107,9 +107,12 @@ Return JSON: {{
 def brief():
     """The playbook as a block of text for the writer's prompt ('' before the first study)."""
     p = current()
+    r = read_json(DATA / "research.json", {}) or {}
+    research = ("WHAT THE FASTEST-GROWING CHANNELS IN OUR GENRE DO (studied " + r.get("studied", "") + "):\n- "
+                + "\n- ".join(r["lessons"]) + "\n") if r.get("lessons") else ""
     if not p.get("rules"):
-        return ""
-    lines = ["THIS WEEK'S PLAYBOOK (learned from the biggest science Shorts right now + our own numbers;",
+        return research
+    lines = [research + "THIS WEEK'S PLAYBOOK (learned from the biggest science Shorts right now + our own numbers;",
              "follow it unless it would break accuracy or any rule above):"]
     for key, label in (("rules", "Rules"), ("formats_now", "Winning formats"), ("hook_shapes", "Hook shapes"),
                        ("title_shapes", "Title shapes"), ("stop_doing", "Stop doing")):
