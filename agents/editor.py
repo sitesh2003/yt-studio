@@ -120,19 +120,22 @@ def _dims(path):
 
 
 def _vf(path):
-    """Fill the frame. A landscape clip on a vertical video is NOT centre-cropped (that cuts the
-    subject out); it sits whole-ish in the middle over a blurred copy of itself - the format the
-    biggest explainer Shorts use, and it lets us use the far larger pool of 16:9 stock footage."""
+    """Fill the WHOLE frame, edge to edge. Every big Short we studied (13 Nov 2026) is full-bleed;
+    our old landscape-in-a-box over a blurred copy read as a small 4:3 picture on a phone. A landscape
+    clip is now cropped to a 9:16 slice centred on the subject the picture judge located (raw_NN.json)."""
+    import json
     f = config()["format"]
     W, H = f["width"], f["height"]
     w, h = _dims(path)
     tail = f"fps={f['fps']},setsar=1"
-    if H > W and w and h and w / h > 0.9:
-        fg_h = int(W * 0.8) // 2 * 2          # 16:9 shown 1.4x wider than the screen, sides trimmed
-        return (f"split[a][b];[a]scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},"
-                f"boxblur=28:4,eq=brightness=-0.10:saturation=1.1[bg];"
-                f"[b]scale=-2:{fg_h},crop='min(iw,{W})':{fg_h}[fg];"
-                f"[bg][fg]overlay=(W-w)/2:(H-h)/2-{int(H*0.04)},{tail}")
+    if H > W and w and h and w / h > W / H * 1.05:
+        try:
+            sx = float(json.loads(path.with_suffix(".json").read_text()).get("x", 0.5))
+        except Exception:
+            sx = 0.5
+        sw = int(w * H / h) // 2 * 2                      # width after scaling to full height
+        x = int(min(max(sx * sw - W / 2, 0), sw - W))
+        return f"scale={sw}:{H},crop={W}:{H}:{x}:0,{tail}"
     return f"scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},{tail}"
 
 

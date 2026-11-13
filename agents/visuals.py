@@ -254,7 +254,10 @@ this moment, so a viewer instantly connects picture and words. Be strict:
 3 = only loosely related (same mood or setting); 0 = unrelated. Most candidates should NOT get 9-10. Score 0 for: green screen,
 unrelated people or animals, abstract shapes, text overlays, watermarks, anything misleading
 or scientifically wrong for the narration.
-Return JSON: {{"scores": [numbers, one per image], "best": index starting at 1}}""", images=imgs)
+The video is shown FULL SCREEN on a phone (tall 9:16), so a landscape frame is cropped to a narrow
+vertical slice: also say where the main subject sits left-to-right in the best image.
+Return JSON: {{"scores": [numbers, one per image], "best": index starting at 1,
+ "subject_x": the horizontal centre of the main subject in the best image, 0 = left edge, 1 = right edge}}""", images=imgs)
         scores = [float(x) if isinstance(x, (int, float, str)) and str(x).replace(".", "", 1).isdigit() else 0.0
                   for x in (out.get("scores") or [])]
         b = out.get("best")
@@ -265,7 +268,11 @@ Return JSON: {{"scores": [numbers, one per image], "best": index starting at 1}}
         except (TypeError, ValueError):
             best = max(range(len(scores)), key=scores.__getitem__) if scores else -1
         if 0 <= best < len(keep):
-            return keep[best], float(scores[best]) if best < len(scores) else 5.0
+            try:
+                sx = min(1.0, max(0.0, float(out.get("subject_x", 0.5))))
+            except (TypeError, ValueError):
+                sx = 0.5
+            return {**keep[best], "subject_x": sx}, float(scores[best]) if best < len(scores) else 5.0
     except Exception as e:
         log(f"visuals: judge unavailable ({str(e)[:60]}), using tag match")
     return keep[0], 4.0
@@ -361,6 +368,8 @@ def pick_scene(i, scene, a, b, job_dir, used, note="", extra_queries=()):
     credit = None
     if pick and score >= 5:
         used.add(pick["id"])
+        import json as _json   # where the subject is, so the editor crops a landscape clip around it
+        (job_dir / f"raw_{i:02d}.json").write_text(_json.dumps({"x": pick.get("subject_x", 0.5)}))
         try:
             if pick["kind"] == "video":
                 url = pick["url"] or _nasa_video_url(pick["manifest"])
