@@ -27,9 +27,20 @@ DAILY_CAP = 60            # images a day; ~140 neurons each, so it stays inside 
 LONG_CAP = 25             # of those, at most this many for the weekly long video
 PASS = 7                 # the vision check's score a picture needs before it can be used
 CREDIT = "Illustrations: drawn for this video with FLUX.2 [klein] 4B (AI, Apache 2.0) and checked for accuracy"
-STYLE = ("stylised 3D illustration, soft clay-like render, bright clean colours, soft studio lighting, "
-         "simple uncluttered background, one clear subject large in frame, "
-         "no text, no letters, no numbers, no words, no labels, no logos, no watermark, not photorealistic")
+# The style goes FIRST: the model weights the start of a prompt most. With the style at the end
+# (first cloud test, 13 Nov 2026), 1 picture in 3 drifted to a photo look and failed the check.
+STYLE_HEAD = ("A stylised 3D cartoon illustration with simplified rounded shapes and matte clay-like "
+              "materials, like a frame from an animated science explainer.")
+STYLE_TAIL = ("Bright clean colours, soft even lighting, plain soft-gradient background, one clear subject "
+              "large in the frame. No text, no letters, no numbers, no labels, no logos, no watermark. "
+              "Not a photograph, not photorealistic.")
+STYLE = STYLE_HEAD + " " + STYLE_TAIL
+
+
+def full_prompt(scene_prompt):
+    return f"{STYLE_HEAD} {_unphoto(scene_prompt)} {STYLE_TAIL}"
+
+
 USAGE = DATA / "illustrate_usage.json"
 
 
@@ -96,6 +107,10 @@ Write an image prompt for an illustrator. Rules:
   scale relationships, correct cause and effect. If the idea is invisible (heat, sound, a force), show
   its visible effect or a simple honest cutaway, never a made-up gadget.
 - No people's faces in close-up, no real brands, no text of any kind in the picture.
+- SIMPLE beats detailed: only the parts needed to show the idea, nothing floating or decorative
+  (no stray bubbles, sparkles or particles unless they are the point, and then exactly where they
+  really are). The key feature must be big and obvious (e.g. the comb-like fringe along the
+  feather's front edge, shown large).
 - 1-3 sentences, concrete nouns and positions. Never say photo, photograph or realistic, and do not
   describe the art style (a stylised illustration style is added for you).
 Return JSON: {{"prompt": "...", "must_show": "the one thing a viewer must see, in a few words"}}""")
@@ -139,7 +154,7 @@ def scene(narration, topic, query, out_jpg, note="", tries=2):
             break
         try:
             d = _describe(narration, topic, query, problem)
-            raw = _render(f"{_unphoto(d['prompt'])} {STYLE}", w, h)
+            raw = _render(full_prompt(d["prompt"]), w, h)
             score, problem = _check(raw, narration, d.get("must_show", query))
         except Exception as e:
             log(f"illustrate: attempt {attempt + 1} failed ({str(e)[:80]})")

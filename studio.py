@@ -615,7 +615,7 @@ if __name__ == "__main__":
         for k, (line, topic, query) in enumerate(samples, 1):
             try:
                 d = illustrate._describe(line, topic, query, "")
-                prompt = f"{illustrate._unphoto(d['prompt'])} {illustrate.STYLE}"
+                prompt = illustrate.full_prompt(d["prompt"])
                 raw = illustrate._render(prompt, w, h)
                 score, problem = illustrate._check(raw, line, d.get("must_show", query))
                 (out_dir / f"sample_{k}.jpg").write_bytes(illustrate._jpeg(raw))
