@@ -40,6 +40,8 @@ def build(results, stats=None):
     try:
         from .analyst import experiment_line
         health = list(health) + [experiment_line()]
+        from .illustrate import status_line
+        health.append(status_line())
     except Exception:
         pass
     st = stats or {}

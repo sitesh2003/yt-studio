@@ -58,7 +58,7 @@ def _spend():
     today = dt.date.today().isoformat()
     u = read_json(USAGE, {}) or {}
     if u.get("date") != today:
-        u = {"date": today, "images": 0}
+        u = {"date": today, "images": 0, "results": u.get("results", [])}
     long_form = _size()[0] > _size()[1]          # the weekly episode has ~40 scenes: it may not eat
     if u["images"] >= DAILY_CAP or (long_form and u.get("long", 0) >= LONG_CAP):   # the Shorts' share
         return False
@@ -67,6 +67,37 @@ def _spend():
         u["long"] = u.get("long", 0) + 1
     write_json(USAGE, u)
     return True
+
+
+PER_VIDEO = 3        # drawn scenes a Short may TRY: each try costs ~3-6 free Gemini calls
+
+
+def _record(passed):
+    u = read_json(USAGE, {}) or {}
+    u["results"] = (u.get("results", []) + [1 if passed else 0])[-30:]
+    write_json(USAGE, u)
+
+
+def pass_rate():
+    r = (read_json(USAGE, {}) or {}).get("results", [])
+    return (sum(r) / len(r), len(r)) if r else (None, 0)
+
+
+def per_video_cap():
+    """3 tries a video; just 1 while fewer than 1 in 5 of the last 15+ drawings passed (it keeps
+    sampling, so it notices if drawings get better, without spending the free AI limit on misses)."""
+    rate, n = pass_rate()
+    return 1 if n >= 15 and rate < 0.2 else PER_VIDEO
+
+
+def status_line():
+    rate, n = pass_rate()
+    if not available():
+        return "Drawn scenes: off (no Cloudflare keys)."
+    if not n:
+        return "Drawn scenes: on, none tried yet."
+    return (f"Drawn scenes: {round(rate * 100)}% of the last {n} drawings passed the accuracy check"
+            f"{' (throttled to 1 try a video)' if per_video_cap() == 1 else ''}.")
 
 
 def _render(prompt, w, h):
@@ -101,6 +132,10 @@ narrator says: "{narration}"
 Video topic: "{topic}". Intended visual: "{query}".
 {("A previous picture for this scene was rejected because: " + note + ". Fix that.") if note else ""}
 Write an image prompt for an illustrator. Rules:
+- DRAW THE OBJECT, NOT THE MECHANISM: show the whole thing the line is about (a whole plane window,
+  an owl gliding, the back of a fridge), never microscopic structures, flows inside pipes, or liquids
+  and gases in motion: the image model cannot draw those correctly, and the narrator explains them.
+  "must_show" is that visible object, and the checks are about drawing IT correctly.
 - Show literally what the line is about: one clear subject or one simple scene, composed for a
   {'tall phone screen (9:16)' if _size()[1] > _size()[0] else 'wide screen (16:9)'}.
 - Scientifically exact: correct anatomy (count of legs, wings, eyes), real colours and shapes, correct
@@ -184,6 +219,7 @@ def scene(narration, topic, query, out_jpg, note="", tries=2):
             best, best_score = raw, score
         if score >= 9:
             break
+    _record(best is not None and best_score >= PASS)
     if best is None or best_score < PASS:
         return 0.0
     out_jpg.write_bytes(_jpeg(best))

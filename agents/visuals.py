@@ -379,10 +379,12 @@ def pick_scene(i, scene, a, b, job_dir, used, note="", extra_queries=()):
     # ILLUSTRATION: when no real footage shows the line exactly, draw it (agents/illustrate.py). Used
     # only if the drawing passes its own accuracy check AND scores higher than the best footage.
     below = config().get("visuals", {}).get("illustrate_below", 8)
+    global _drawn
     if score < below:
         try:
             from . import illustrate
-            if illustrate.available():
+            if illustrate.available() and _drawn < illustrate.per_video_cap():
+                _drawn += 1
                 img = job_dir / f"ill_{i:02d}.jpg"
                 s2 = illustrate.scene(scene["narration"], _topic, scene["visual_query"], img, note)
                 if s2 > score and img.exists():
@@ -433,12 +435,12 @@ def pick_scene(i, scene, a, b, job_dir, used, note="", extra_queries=()):
     return score, pick, credit
 
 
-_topic, _diagrams, _board = "", 0, {}
+_topic, _diagrams, _board, _drawn = "", 0, {}, 0
 
 
 def gather(script, times, job_dir):
-    global last_scores, last_picks, last_credits, last_used, _topic, _diagrams, _board
-    _topic, _diagrams, _board = script.get("topic", ""), 0, {}
+    global last_scores, last_picks, last_credits, last_used, _topic, _diagrams, _board, _drawn
+    _topic, _diagrams, _board, _drawn = script.get("topic", ""), 0, {}, 0
     if config().get("visuals", {}).get("board", True):
         try:
             from . import diagram
