@@ -595,6 +595,39 @@ if __name__ == "__main__":
             analyst.learn()
         finally:
             playbook.study(force="--force" in sys.argv)
+    elif cmd == "illustrate-test":
+        # three sample scenes through the real engine; every picture is kept (passed or not) with its score
+        import json as _json
+        from agents import illustrate
+        out_dir = DATA.parent / "research" / "illustration_test"
+        out_dir.mkdir(parents=True, exist_ok=True)
+        if not illustrate.available():
+            log("illustrate-test: the CLOUDFLARE_ACCOUNT_ID / CLOUDFLARE_API_TOKEN secrets are missing")
+            sys.exit(1)
+        samples = [("An owl's wing feathers have a soft, comb-like front edge that breaks up rushing air.",
+                    "why owls fly silently", "owl feather edge"),
+                   ("A plane window has rounded corners, because square corners crack under pressure.",
+                    "why plane windows are round", "airplane window"),
+                   ("Inside a fridge, a liquid boils in thin pipes and carries the heat out of the box.",
+                    "how a fridge keeps cold", "fridge cooling pipes")]
+        report, ok = [], 0
+        w, h = illustrate._size()
+        for k, (line, topic, query) in enumerate(samples, 1):
+            try:
+                d = illustrate._describe(line, topic, query, "")
+                prompt = f"{illustrate._unphoto(d['prompt'])} {illustrate.STYLE}"
+                raw = illustrate._render(prompt, w, h)
+                score, problem = illustrate._check(raw, line, d.get("must_show", query))
+                (out_dir / f"sample_{k}.jpg").write_bytes(illustrate._jpeg(raw))
+                ok += 1
+                report.append({"line": line, "prompt": prompt, "score": score, "problem": problem,
+                               "passes": score >= illustrate.PASS})
+                log(f"illustrate-test {k}: check {score:.0f}/10 {problem}")
+            except Exception as e:
+                report.append({"line": line, "error": str(e)[:300]})
+                log(f"illustrate-test {k}: FAILED {str(e)[:300]}")
+        (out_dir / "report.json").write_text(_json.dumps(report, indent=2), encoding="utf-8")
+        sys.exit(0 if ok else 1)
     elif cmd == "demo":
         build(dict(DEMO))
     else:
