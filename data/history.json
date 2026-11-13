@@ -814,7 +814,7 @@
       "human body science"
     ],
     "hook": "Your fingers prune in water, but it is not because you are absorbing it like a sponge.",
-    "status": "scheduled",
+    "status": "public",
     "narration": "Your fingers prune in water, but it is not because you are absorbing it like a sponge. In fact, dead skin cells would actually swell up and smooth out if they just soaked up water. Instead, your nervous system actively shrinks your blood vessels underneath. Now think about what happens when you lose that underlying volume inside a rigid shell. Pause and guess... three, two, one. The skin collapses inward into neat folds because it loses support from below. And get this: if nerve damage blocks those signals, your fingers stay completely smooth in the tub. Some researchers think pruned fingers help us grip wet objects better, acting like tire treads on a road—but scientists are still debating if this is actually true. Drop your guess below.",
     "series": "Body Whys",
     "question": "Some researchers think pruned fingers help us grip wet objects better, acting like tire treads on a road—but scientists are still debating if this is actually true. Drop your guess below.",
@@ -833,7 +833,8 @@
     },
     "repairs": 2,
     "video_id": "Bxp7r8IzbiY",
-    "publish_at": "2026-11-12T19:00:00-05:00"
+    "publish_at": "2026-11-12T19:00:00-05:00",
+    "answered": true
   },
   {
     "job": "20261112-0926-why-apples-float-in-water-while-pears-im",
