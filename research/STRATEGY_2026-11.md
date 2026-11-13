@@ -101,3 +101,41 @@ YouTube Data API. Last 100 uploads, 23 Oct - 13 Nov 2026, plus preview frames of
 - 30-45 s, one literal picture per line
 
 **What we cannot copy for free:** custom 3D animation of every line. Our nearest honest equivalents are real footage, exact maps and checked drawings.
+
+## 9. Meanwhile Mayank check (13 Nov 2026, the user's request)
+YouTube Data API, all 27 uploads, plus preview frames of the top 3 and "How We Are Still Alive?".
+- **Growth:** created 16 Oct 2026, and under 4 weeks later has 65.4K subscribers and 22M views from 27 videos. The fastest start in all our research.
+- **Shorts vs long videos:** median Short 292K views; top 5.8M ("Saap Katne Par Ye Sab Kyon?"). Its 3 long videos (7-9 min) flopped, with 3K-14K views each.
+- **Length:** Shorts run 2-3 minutes (median 147 s). They are long because each one tells a documentary-style story.
+- **Language:** Hinglish narration and titles; a question title plus 😳 plus a block of hashtags (#shorts #facts #documentary #science).
+- **Topics:** health fears and myths people face, told as "what really happens in your body":
+  - snake bite, tetanus, rabies, HIV, radiation
+  - TB, dengue, AQI and pollution
+  - comment counts are high (922 on the AQI video)
+- **"How We Are Still Alive?" (677K views, 922 comments):**
+  - **The question:** if AQI 300 is deadly, how is Delhi alive at 1,000+?
+  - **The answer:** dose. A whole severe day's PM2.5 is about 4-6 mg, lighter than a grain of rice, and AQI is a warning, not a death meter.
+  - **Why it works:** one surprising number that settles a fear everyone shares.
+- **Visuals:** one dramatic, museum-like still per line, with a slow move. Examples:
+  - anatomical models (lungs, a skull on a stand, a heart)
+  - a "WANTED" poster for a virus
+  - a polaroid evidence board
+  - an Indian street scene
+
+  Each scene carries a bold 2-4 word HEADLINE top-left, the key word in an accent colour (e.g. "FIRST / LOCKJAW"), instead of word-by-word captions.
+
+**What we can take:**
+- **Stakes topics:** fears and myths about the body and dangers, answered with one surprising true number. For US viewers, for example:
+  - the rusty-nail tetanus myth
+  - rattlesnake-bite myths
+  - bats and rabies
+  - carbon monoxide
+  - ticks
+
+  Facts only from CDC, WHO or NIH-level sources; never treatment advice beyond "get medical help now".
+- **Scene headlines:** a big keyword headline per scene, the museum-object look (objects, not mechanisms: exactly what our drawings and a Blender anatomy model can do).
+- **Longer Shorts for story topics (90-150 s):** only with visuals that cannot draw a copyright claim, because a Short over 1 minute with any claim is blocked worldwide.
+- **A Hinglish twin channel:**
+  - **For:** Kokoro has Hindi voices, and this channel shows the market moves fast.
+  - **Against:** India pays roughly 1/20 of US rates per view.
+- **Long videos:** his flopped too. This confirms one a week for us, not two.
