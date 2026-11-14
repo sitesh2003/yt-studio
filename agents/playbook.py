@@ -110,8 +110,11 @@ def brief():
     """The playbook as a block of text for the writer's prompt ('' before the first study)."""
     p = current()
     r = read_json(DATA / "research.json", {}) or {}
+    from .retention import brief as _ret
+    ret = _ret()
     research = ("WHAT THE FASTEST-GROWING CHANNELS IN OUR GENRE DO (studied " + r.get("studied", "") + "):\n- "
                 + "\n- ".join(r["lessons"]) + "\n") if r.get("lessons") else ""
+    research = ret + research
     if not p.get("rules"):
         return research
     lines = [research + "THIS WEEK'S PLAYBOOK (learned from the biggest science Shorts right now + our own numbers;",

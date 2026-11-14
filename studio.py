@@ -51,6 +51,9 @@ def build(script):
             "series": script.get("series", ""), "countdown": script.get("countdown"),
             "question": script.get("question", ""), "answer_comment": script.get("answer_comment", ""),
             "sources": script.get("sources", []), "fact_check": script.get("fact_check", []),
+            "scene_times": [[round(a, 2), round(b, 2)] for a, b in times],
+            "duration": round(times[-1][1], 2) if times else None,
+            "scene_lines": [sc["narration"] for sc in script["scenes"]],
             "fact_ok": not (script.get("fact_check_result") or {}).get("unresolved", False),
             "weekly": bool(script.get("weekly")), "recap_source": script.get("recap_source")}
     write_json(job / "meta.json", meta)
@@ -594,9 +597,15 @@ if __name__ == "__main__":
     elif cmd == "comments":
         comments(post="--post" in sys.argv)
     elif cmd == "learn":
-        from agents import analyst, playbook
+        from agents import analyst, playbook, retention
         try:
             analyst.learn()
+        except Exception as e:
+            log(f"analyst skipped: {str(e)[:100]}")
+        try:
+            retention.study()      # where exactly viewers leave, per line
+        except Exception as e:
+            log(f"retention skipped: {str(e)[:100]}")
         finally:
             playbook.study(force="--force" in sys.argv)
     elif cmd == "illustrate-test":
