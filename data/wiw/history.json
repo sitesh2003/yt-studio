@@ -15,7 +15,7 @@
       "school"
     ],
     "hook": "Why is a negative times a negative a positive?",
-    "status": "banked",
+    "status": "withdrawn",
     "narration": "Why is a negative times a negative a positive? Picture a number line. Walking forward is positive. Walking backward is negative. Now, face backward and walk backward. You end up moving forward. why: Reversing direction twice flips your movement back to the positive side. Try this: what is negative three times positive four?",
     "voice_engine": "kokoro",
     "voices": "male host, female explainer",
@@ -88,7 +88,8 @@
       "duration": 21.4
     },
     "repairs": 1,
-    "audited": true
+    "audited": true,
+    "withdrawn_reason": "made before 14 Nov fixes: wrong channel logo (Ever Thought Why? mark) and emoji title; never published; files kept in the video-bank-wiw release"
   },
   {
     "job": "20261114-1627-why-does-a-transformer-only-work-with-al",
@@ -103,7 +104,7 @@
       "induction"
     ],
     "hook": "Why won't a transformer work with direct current?",
-    "status": "banked",
+    "status": "withdrawn",
     "narration": "Why won't a transformer work with direct current? Connect a battery to the first coil. A steady magnetic field grows, then stops. The second coil feels no change, so no current flows. Switch to alternating current, and the field constantly flips back and forth. Transformers only work with changing magnetic fields, which require a changing current to create. Try this: why does a moving magnet create electricity?",
     "voice_engine": "kokoro",
     "voices": "female host, male explainer",
@@ -188,6 +189,7 @@
       "duration": 26.0
     },
     "repairs": 1,
-    "audited": true
+    "audited": true,
+    "withdrawn_reason": "made before 14 Nov fixes: wrong channel logo (Ever Thought Why? mark) and emoji title; never published; files kept in the video-bank-wiw release"
   }
 ]
