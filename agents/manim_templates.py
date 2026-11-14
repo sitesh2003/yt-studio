@@ -9,7 +9,7 @@ import json
 import os
 
 import numpy as np
-from manim import (DOWN, ORIGIN, UP, Arrow, Circle, Create, FadeIn, GrowFromEdge, Rectangle, RoundedRectangle,
+from manim import (DOWN, LEFT, ORIGIN, RIGHT, UP, Arrow, Circle, Create, FadeIn, GrowFromEdge, Rectangle, RoundedRectangle,
                    Scene, Text, ValueTracker, VGroup, Write, always_redraw, config)
 
 P = json.load(open(os.environ["ANIM_PARAMS"], encoding="utf-8"))
@@ -213,6 +213,34 @@ class NumberLine(Base):
             self.play(Create(arc), FadeIn(lab), dot.animate.move_to([x(new), y, 0]), run_time=0.6)
             pos = new
         self.play(FadeIn(T(_fmt(pos), 72, YEL).next_to(dot, DOWN, buff=0.9)), run_time=0.4)
+        self.finish()
+
+
+class Graph(Base):
+    """A curve computed from a formula: {"title", "expr": "2**x", "x0": 0, "x1": 10, "x_label": "days",
+    "y_label": "bacteria"}. Points are calculated here (the expression was checked safe in animate.py);
+    axes and labels are plain shapes and text, no LaTeX."""
+    def construct(self):
+        from manim import Line, VMobject
+        title = self.title()
+        x0, x1 = float(P.get("x0", 0)), float(P.get("x1", 10))
+        xs = np.linspace(x0, x1, 200)
+        env = {"np": np, "sin": np.sin, "cos": np.cos, "exp": np.exp, "log": np.log, "sqrt": np.sqrt, "pi": np.pi}
+        ys = np.array([float(eval(P["expr"], {"__builtins__": {}}, {**env, "x": v})) for v in xs])
+        ok = np.isfinite(ys)
+        xs, ys = xs[ok], ys[ok]
+        y0, y1 = min(0.0, ys.min()), ys.max() if ys.max() > min(0.0, ys.min()) else ys.min() + 1
+        top, bot = title.get_bottom()[1] - 0.9, UP_BOT + 0.9
+        left, right = -SAFE_W / 2 + 0.4, SAFE_W / 2
+        px = lambda v: left + (v - x0) / (x1 - x0) * (right - left)
+        py = lambda v: bot + (v - y0) / (y1 - y0) * (top - bot)
+        ax = VGroup(Line([left, py(y0), 0], [right, py(y0), 0], color=WHITE, stroke_width=5),
+                    Line([left, bot, 0], [left, top, 0], color=WHITE, stroke_width=5))
+        labs = VGroup(T(P.get("x_label", "x"), 36, MUTED).next_to([right, py(y0), 0], DOWN, buff=0.25).align_to([right, 0, 0], RIGHT),
+                      T(P.get("y_label", "y"), 36, MUTED).next_to([left, top, 0], UP, buff=0.15).align_to([left, 0, 0], LEFT))
+        curve = VMobject(color=YEL, stroke_width=8).set_points_smoothly([[px(a), py(b), 0] for a, b in zip(xs, ys)])
+        self.play(Write(title), Create(ax), FadeIn(labs), run_time=0.8)
+        self.play(Create(curve), run_time=max(1.2, float(P.get("seconds", 4)) * 0.45))
         self.finish()
 
 

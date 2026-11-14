@@ -85,7 +85,34 @@ def _numberline_ok(spec, narration):
     return {n for n in need if n} <= said | {0.0}
 
 
+def _graph_ok(spec, narration):
+    """Only a safe formula in x (digits, operators, sin/cos/exp/log/sqrt/pi) over a finite range, and it
+    must evaluate to real numbers across most of that range. Constants in it must be said aloud."""
+    import math
+    expr = str(spec.get("expr", ""))
+    if not expr or not re.fullmatch(r"[\dx\s.+\-*/()]*((sin|cos|exp|log|sqrt|pi)[\dx\s.+\-*/()]*)*", expr):
+        return False
+    try:
+        x0, x1 = float(spec.get("x0", 0)), float(spec.get("x1", 10))
+    except (TypeError, ValueError):
+        return False
+    if not x1 > x0:
+        return False
+    env = {"sin": math.sin, "cos": math.cos, "exp": math.exp, "log": math.log, "sqrt": math.sqrt, "pi": math.pi}
+    good = 0
+    for k in range(21):
+        try:
+            v = eval(expr, {"__builtins__": {}}, {**env, "x": x0 + (x1 - x0) * k / 20})
+            good += isinstance(v, (int, float)) and math.isfinite(v)
+        except Exception:
+            pass
+    consts = {float(n) for n in re.findall(r"\d+(?:\.\d+)?", expr)} - {0.0, 1.0, 2.0}
+    return good >= 17 and consts <= _numbers_in(narration)
+
+
 def _numbers_ok(spec, narration):
+    if spec.get("type") == "Graph":
+        return _graph_ok(spec, narration)
     if spec.get("type") == "Equation":
         return _equation_ok(spec, narration)
     if spec.get("type") == "NumberLine":
@@ -114,6 +141,9 @@ a simple computed graphic, and only if the line itself states the thing exactly:
 - "Steps": the line describes a short process of 2-4 steps.
 - "Equation": the line works through a calculation or formula (e.g. "negative three times negative four
   is twelve" -> lines ["(-3) × (-4)", "= 12"]); 2-5 short lines, the last one the result. Use × for times.
+- "Graph": the line describes how one quantity changes with another by a known rule (doubling, an
+  inverse square, a wave): "expr" in x using + - * / ** sin cos exp log sqrt pi, with x0..x1 and short
+  axis labels. Only when the rule is exactly what the line says.
 - "NumberLine": the line moves along numbers (adding, subtracting, negatives): start, jumps, and a
   lo..hi range that contains every landing point (span at most 40).
 Use ONLY numbers and words that appear in that scene's narration; never compute or add anything.
@@ -123,14 +153,15 @@ Scenes: {[{"i": i, "narration": s.get("narration")} for i, s in enumerate(scenes
 Return JSON: {{"picks": [{{"i": scene index, "type": "Compare|Counter|Grid|Steps", "title": "max 6 words",
  "a_label": "", "a_value": number, "b_label": "", "b_value": number, "unit": "",
  "value": number, "decimals": 0, "caption": "max 6 words", "k": number, "n": number,
- "steps": ["..."], "lines": ["..."], "start": number, "jumps": [number], "lo": number, "hi": number}}]}}""")
+ "steps": ["..."], "lines": ["..."], "start": number, "jumps": [number], "lo": number, "hi": number,
+ "expr": "", "x0": number, "x1": number, "x_label": "", "y_label": ""}}]}}""")
     used = 0
     for p in out.get("picks") or []:
         try:
             i = int(p.get("i"))
         except (TypeError, ValueError):
             continue
-        if not 0 < i < len(scenes) or used >= _max() or p.get("type") not in ("Compare", "Counter", "Grid", "Steps", "Equation", "NumberLine"):
+        if not 0 < i < len(scenes) or used >= _max() or p.get("type") not in ("Compare", "Counter", "Grid", "Steps", "Equation", "NumberLine", "Graph"):
             continue
         if p["type"] != "Steps" and not _numbers_ok(p, scenes[i].get("narration", "")):
             log(f"animate: scene {i + 1} skipped, a number is not in its narration ({p.get('type')})")
