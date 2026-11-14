@@ -297,5 +297,62 @@ class Circuit(Base):
         self.finish()
 
 
+class Molecule(Base):
+    """A real molecule turning slowly: {"title", "atoms": [[el, x, y, z]], "bonds": [[i, j, order]]}.
+    Coordinates are PubChem's computed 3D structure (fetched by animate.py), so angles and shapes are
+    true (water is bent, methane is a tetrahedron, CO2 is straight). Element colours follow the common
+    CPK convention, with each atom labelled."""
+    def construct(self):
+        from manim import Dot, Line, ValueTracker
+        title = self.title()
+        atoms = [(str(a[0]), np.array([float(a[1]), float(a[2]), float(a[3])])) for a in P["atoms"]]
+        bonds = [(int(b[0]) - 1, int(b[1]) - 1, int(b[2]) if len(b) > 2 else 1) for b in P["bonds"]]
+        centre = np.mean([p for _, p in atoms], axis=0)
+        atoms = [(e, p - centre) for e, p in atoms]
+        if len(atoms) >= 3:   # face the viewer: widest spread across the screen, thinnest into it
+            _, _, vt = np.linalg.svd(np.array([p for _, p in atoms]))
+            atoms = [(e, vt @ p) for e, p in atoms]
+        size = max(1e-6, max(np.linalg.norm(p) for _, p in atoms))
+        top, bot = title.get_bottom()[1] - 0.6, UP_BOT + 0.2
+        scale = min((top - bot) / 2.2, SAFE_W / 2.2) / size
+        cy = (top + bot) / 2
+        colours = {"H": "#ffffff", "C": "#9aa5b1", "O": "#ff4d4d", "N": "#4d7cff", "Cl": "#3ddc84",
+                   "S": "#ffd60a", "P": "#ff9f1c", "F": "#3ddc84", "Na": "#b388ff", "Br": "#a0522d"}
+        angle = ValueTracker(-0.5)
+        if len(atoms) >= 4:   # a slight tilt so symmetric shapes (a tetrahedron) never sit flat
+            t = 0.45
+            rx = np.array([[1, 0, 0], [0, np.cos(t), -np.sin(t)], [0, np.sin(t), np.cos(t)]])
+            atoms = [(e, rx @ p) for e, p in atoms]
+
+        def proj(p):
+            a = angle.get_value()
+            x = p[0] * np.cos(a) + p[2] * np.sin(a)
+            z = -p[0] * np.sin(a) + p[2] * np.cos(a)
+            return np.array([x * scale, cy + p[1] * scale, 0]), z
+
+        def draw():
+            g = VGroup()
+            for i, j, order in bonds:
+                (a, _), (b, _) = proj(atoms[i][1]), proj(atoms[j][1])
+                off = np.array([-(b - a)[1], (b - a)[0], 0])
+                off = off / (np.linalg.norm(off) or 1) * 0.09
+                for k in range(order):
+                    shift = off * (k - (order - 1) / 2) * 2
+                    g.add(Line(a + shift, b + shift, color=MUTED, stroke_width=7))
+            for el, p in sorted(atoms, key=lambda t: proj(t[1])[1]):        # far atoms first
+                pos, z = proj(p)
+                r = (0.42 if el != "H" else 0.28) * (1 + 0.3 * z / size)   # nearer atoms larger: depth
+                g.add(Dot(pos, radius=r, color=colours.get(el, "#e0aaff")))
+                g.add(T(el, 34 if el != "H" else 26, "#0b1630").move_to(pos))
+            return g
+        mol = always_redraw(draw)
+        self.play(Write(title), run_time=0.6)
+        self.add(mol)
+        rock = max(1.5, float(P.get("seconds", 4)) - 0.9)   # a gentle rock shows depth and stays readable
+        self.play(angle.animate.set_value(0.5), run_time=rock / 2)
+        self.play(angle.animate.set_value(0.0), run_time=rock / 2)
+        self.finish()
+
+
 def _fmt(v):
     return f"{int(v):,}" if float(v).is_integer() else f"{v:,.2f}".rstrip("0").rstrip(".")

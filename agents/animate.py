@@ -120,7 +120,44 @@ def _circuit_ok(spec, narration):
     return bool(parts) and len(parts) <= 2 and known and about and         str(spec.get("flow", "conventional")).lower().startswith(("conventional", "electron"))
 
 
+def _pubchem(name):
+    """(atoms, bonds) from PubChem's 3D record for a compound name, or None. Small molecules only."""
+    import requests
+    r = requests.get(f"https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/{requests.utils.quote(name)}/SDF",
+                     params={"record_type": "3d"}, timeout=20)
+    if not r.ok:
+        return None
+    lines = r.text.splitlines()
+    try:
+        na, nb = int(lines[3][:3]), int(lines[3][3:6])
+    except (IndexError, ValueError):
+        return None
+    if not 2 <= na <= 30:
+        return None
+    atoms = [[l[31:34].strip(), float(l[0:10]), float(l[10:20]), float(l[20:30])] for l in lines[4:4 + na]]
+    bonds = [[int(l[0:3]), int(l[3:6]), int(l[6:9])] for l in lines[4 + na:4 + na + nb]]
+    return atoms, bonds
+
+
+def _molecule_ok(spec, narration):
+    """The named compound must be in the line, and PubChem must have a small 3D structure for it;
+    the real coordinates are put into the spec (the model never supplies geometry)."""
+    name = str(spec.get("name", "")).strip()
+    if not name or name.lower() not in narration.lower():
+        return False
+    try:
+        got = _pubchem(name)
+    except Exception:
+        got = None
+    if not got:
+        return False
+    spec["atoms"], spec["bonds"] = got
+    return True
+
+
 def _numbers_ok(spec, narration):
+    if spec.get("type") == "Molecule":
+        return _molecule_ok(spec, narration)
     if spec.get("type") == "Circuit":
         return _circuit_ok(spec, narration)
     if spec.get("type") == "Graph":
@@ -159,6 +196,9 @@ a simple computed graphic, and only if the line itself states the thing exactly:
 - "Circuit": the line is about current in a simple loop with a battery and 1-2 parts (resistor, bulb,
   LED); "parts" and "flow" ("conventional" if the line talks about current, "electrons" if it talks
   about electrons moving).
+- "Molecule": the line names one small molecule whose SHAPE matters (water, carbon dioxide, methane,
+  ammonia, ethanol, glucose); give only "name" as written in the line - its real 3D structure is
+  fetched from PubChem.
 - "NumberLine": the line moves along numbers (adding, subtracting, negatives): start, jumps, and a
   lo..hi range that contains every landing point (span at most 40).
 Use ONLY numbers and words that appear in that scene's narration; never compute or add anything.
@@ -170,14 +210,14 @@ Return JSON: {{"picks": [{{"i": scene index, "type": "Compare|Counter|Grid|Steps
  "value": number, "decimals": 0, "caption": "max 6 words", "k": number, "n": number,
  "steps": ["..."], "lines": ["..."], "start": number, "jumps": [number], "lo": number, "hi": number,
  "expr": "", "x0": number, "x1": number, "x_label": "", "y_label": "",
- "parts": ["..."], "flow": "conventional or electrons"}}]}}""")
+ "parts": ["..."], "flow": "conventional or electrons", "name": ""}}]}}""")
     used = 0
     for p in out.get("picks") or []:
         try:
             i = int(p.get("i"))
         except (TypeError, ValueError):
             continue
-        if not 0 < i < len(scenes) or used >= _max() or p.get("type") not in ("Compare", "Counter", "Grid", "Steps", "Equation", "NumberLine", "Graph", "Circuit"):
+        if not 0 < i < len(scenes) or used >= _max() or p.get("type") not in ("Compare", "Counter", "Grid", "Steps", "Equation", "NumberLine", "Graph", "Circuit", "Molecule"):
             continue
         if p["type"] != "Steps" and not _numbers_ok(p, scenes[i].get("narration", "")):
             log(f"animate: scene {i + 1} skipped, its {p.get('type')} failed the accuracy check (numbers, range or subject)")
