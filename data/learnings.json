@@ -1,15 +1,13 @@
 {
-  "summary": "1. Focus scripts on bodily functions and immediate sensory experiences rather than passive food trivia. 2. Address the viewer directly in the first sentence using 'You' or 'Your' to establish instant personal relevance. 3. Frame hooks around active bodily tricks or hidden physical realities happening 'right now'. 4. Keep video length between 17 to 23 seconds with dynamic pacing to maintain retention near or above 50%. 5. Avoid passive opening statements that sound like standard encyclopedia facts or documentaries.",
+  "summary": "- Focus exclusively on immediate human bodily phenomena rather than external food manufacturing or general trivia.\n- Address the viewer directly in the first 3 words using 'Your' or 'You' to create instant personal relevance.\n- Keep script length strictly between 17 and 18 seconds to maximize average view percentage.\n- Omit emojis from video titles, as text-only titles out-performed emoji titles by over 5x in views.\n- State a surprising or counter-intuitive fact about the viewer's current state in the hook rather than asking a rhetorical question.",
   "winning_hooks": [
-    "Your eyes are leaking right now, and your brain is hiding it.",
-    "You are not sad when you chop an onion.",
-    "Gulping ice water after a hot pepper feels like relief, but the real fire stays untouched."
+    "Direct second-person body claims (e.g., 'Your eyes are leaking right now, and your brain is hiding it.')",
+    "Short, confrontational state-of-being declarations (e.g., 'You are not sad when you chop an onion.')"
   ],
   "avoid": [
-    "Opening with generic fact-stating phrases like '[Subject] is famous for being...'",
-    "Topics focused on food manufacturing processes or passive storage trivia (e.g., maple syrup sap ratios, honey expiration)",
-    "Titles that emphasize production metrics (e.g., 'Takes 40 Gallons') instead of personal physical reactions",
-    "Short videos under 15 seconds that lack a immediate suspense-building hook"
+    "Passive/informational openers about facts (e.g., 'Honey is famous for being...')",
+    "Rhetorical questions about everyday items (e.g., 'That sweet maple syrup on your pancakes?')",
+    "Adding decorative emojis to video titles"
   ],
-  "next_experiment": "Test bodily mechanism hooks vs. external world hooks: Video A starts with 'Your brain turns off your ears every time you swallow' vs. Video B starting with 'Swallowing makes a secret sound in your throat'."
+  "next_experiment": "Test a body-centric hook ('Your stomach acid is strong enough to dissolve metal right now') against a general trivia hook ('Stomach acid is one of the strongest liquids on earth') using the exact same 17-second script body and clean title format."
 }

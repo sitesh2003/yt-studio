@@ -1216,7 +1216,7 @@
       "shorts"
     ],
     "hook": "Why do potatoes sprout shoots from those tiny dents instead of anywhere else?",
-    "status": "banked",
+    "status": "scheduled",
     "narration": "Why do potatoes sprout shoots from those tiny dents instead of anywhere else? Those little dents are actually called nodes, and each one holds tiny backup buds waiting for the right signal. Wait, so the whole potato is basically a living survival pod? Spot on. It packs stored starch to feed those baby shoots until they can reach the sunlight. Think about what happens if you plant just one small piece with a single dent. Pause and guess... three, two, one. That single eye awakens, drinks the stored starch, and grows an entirely new plant. Ever thought how a grocery potato knows it is time to grow those shoots when spring hits? Drop your guess below.",
     "voice_engine": "kokoro",
     "voices": "male host, female explainer",
@@ -1237,7 +1237,9 @@
       "duration": 47.7
     },
     "repairs": 0,
-    "audited": true
+    "audited": true,
+    "video_id": "syvvVya0Q4g",
+    "publish_at": "2026-11-15T12:00:00-05:00"
   },
   {
     "job": "20261112-1741-why-chameleons-change-color-it-is-not-ju",
