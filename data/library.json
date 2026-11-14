@@ -71,5 +71,30 @@
         "claim": "Mosquitoes use a fascicle containing a labrum, mandibles, and maxillae to pierce skin."
       }
     ]
+  },
+  {
+    "job": "20261114-1605-weekly-why-fingers-prune-in-water-why-tu",
+    "date": "2026-11-14",
+    "title": "Why Fingers Prune, Pineapples Sting, and Sharks Live 400 Years",
+    "topic": "weekly: Why Fingers Prune In Water 💧🧽, Why Tuna Meat Is Red Meat While Cod Is Pure White 🐟🥩, Why Fresh Pineapples Eat You Back 🍍",
+    "series": "",
+    "weekly": true,
+    "claims": [
+      "Pruney fingers are an active nervous system reaction causing vasoconstriction, as studied by Changizi (2011) and Kareklas (2013).",
+      "Myoglobin color determines red vs white muscle tissue in fish and land animals based on aerobic endurance demands.",
+      "Bromelain in fresh pineapple digests proteins and is denatured by heat during cooking or processing.",
+      "Greenland sharks have extremely low metabolisms and can live for centuries, as radiocarbon-dated by Nielsen (2016).",
+      "Onions release syn-propanethial-S-oxide via lacrimatory factor synthase which irritates eyes, while garlic releases allicin which does not.",
+      "Buoyancy of watermelons is due to overall average density being lower than water due to trapped air and porous rind structure.",
+      "Potato tubers respond to temperature and humidity cues that shift the balance of abscisic acid and gibberellins to break node dormancy.",
+      "The ulnar nerve runs close to the elbow surface without muscle padding, causing electric shock sensations upon compression."
+    ],
+    "sources": [
+      {
+        "cite": "Thondiyil et al. (2025), Journal of Food Quality. doi:10.1155/jfq/5580791",
+        "doi": "10.1155/jfq/5580791",
+        "claim": "Bromelain in fresh pineapple digests proteins and is denatured by heat during cooking or processing."
+      }
+    ]
   }
 ]

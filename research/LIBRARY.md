@@ -37,3 +37,18 @@ Sources:
 
 Sources:
 - Wahid et al. (2007), The Open Entomology Journal. doi:10.2174/1874407900701010001 — supports: Mosquitoes use a fascicle containing a labrum, mandibles, and maxillae to pierce skin.
+
+## Why Fingers Prune, Pineapples Sting, and Sharks Live 400 Years
+*2026-11-14 ·  · weekly episode*
+
+- Pruney fingers are an active nervous system reaction causing vasoconstriction, as studied by Changizi (2011) and Kareklas (2013).
+- Myoglobin color determines red vs white muscle tissue in fish and land animals based on aerobic endurance demands.
+- Bromelain in fresh pineapple digests proteins and is denatured by heat during cooking or processing.
+- Greenland sharks have extremely low metabolisms and can live for centuries, as radiocarbon-dated by Nielsen (2016).
+- Onions release syn-propanethial-S-oxide via lacrimatory factor synthase which irritates eyes, while garlic releases allicin which does not.
+- Buoyancy of watermelons is due to overall average density being lower than water due to trapped air and porous rind structure.
+- Potato tubers respond to temperature and humidity cues that shift the balance of abscisic acid and gibberellins to break node dormancy.
+- The ulnar nerve runs close to the elbow surface without muscle padding, causing electric shock sensations upon compression.
+
+Sources:
+- Thondiyil et al. (2025), Journal of Food Quality. doi:10.1155/jfq/5580791 — supports: Bromelain in fresh pineapple digests proteins and is denatured by heat during cooking or processing.
