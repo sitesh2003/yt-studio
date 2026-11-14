@@ -1,0 +1,59 @@
+name: Blender test
+
+# Can GitHub's machines (no graphics card) render 3D fast enough? Renders the same 30-frame 1080x1920
+# shot with Workbench, EEVEE and Cycles (16 samples), and saves timing plus a sample frame of each to
+# research/blender_test/. Blender comes from Ubuntu's own packages. Manual only.
+on:
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: studio-state
+  cancel-in-progress: false
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Blender and a virtual screen from Ubuntu
+        run: |
+          timeout 900 bash -c 'sudo apt-get update -q && sudo apt-get install -y -q blender xvfb ffmpeg'
+          blender --version | head -1
+
+      - name: Workbench
+        continue-on-error: true
+        timeout-minutes: 20
+        run: xvfb-run -a blender -b -P tools/blender_sample.py -- workbench out
+
+      - name: EEVEE
+        continue-on-error: true
+        timeout-minutes: 30
+        run: xvfb-run -a blender -b -P tools/blender_sample.py -- eevee out
+
+      - name: Cycles (16 samples)
+        continue-on-error: true
+        timeout-minutes: 45
+        run: blender -b -P tools/blender_sample.py -- cycles out
+
+      - name: Save the results
+        if: always()
+        run: |
+          mkdir -p research/blender_test
+          for e in workbench eevee cycles; do
+            [ -f out/$e.json ] && cp out/$e.json research/blender_test/
+            [ -f out/${e}_0015.png ] && ffmpeg -y -loglevel error -i out/${e}_0015.png -vf scale=540:-1 research/blender_test/${e}_frame.jpg
+          done
+          ls research/blender_test
+          git config user.name "yt-studio-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -f research/blender_test
+          git diff --cached --quiet || git commit -m "test: blender sample $(date -u +%F)"
+          git pull --rebase -X theirs -q || true
+          git push -q || true
