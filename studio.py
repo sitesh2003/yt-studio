@@ -655,6 +655,33 @@ if __name__ == "__main__":
                 log(f"illustrate-test {k}: FAILED {str(e)[:300]}")
         (out_dir / "report.json").write_text(_json.dumps(report, indent=2), encoding="utf-8")
         sys.exit(0 if ok else 1)
+    elif cmd == "voice-test":
+        # the real narrator on a short sample: listen to research/voice_test/voice.mp3; pauses.txt
+        # lists every silence so the gaps between sentences can be checked by number too
+        import re
+        import shutil
+        import subprocess
+        out_dir = DATA.parent / "research" / "voice_test"
+        out_dir.mkdir(parents=True, exist_ok=True)
+        sample = {"title": "Why maple trees bleed", "topic": "maple sap", "scenes": [
+            {"narration": "Every spring, maple trees bleed sweet water. Nobody cuts them first. "
+                          "So where does it come from?"},
+            {"narration": "Pause and guess. Three, two, one."},
+            {"narration": "It's the frost! Cold nights pull water up into the trunk. "
+                          "But warm days push it back out, through any small hole."},
+            {"narration": "So here's a question for you. Why can't a palm tree do the same?"}]}
+        job = JOBS / "voice_test"
+        job.mkdir(parents=True, exist_ok=True)
+        words = voice.narrate(sample, job)
+        shutil.copy(job / "voice.mp3", out_dir / "voice.mp3")
+        err = subprocess.run(["ffmpeg", "-hide_banner", "-i", str(out_dir / "voice.mp3"), "-af",
+                              "silencedetect=n=-40dB:d=0.2", "-f", "null", "-"],
+                             capture_output=True, text=True, errors="replace").stderr
+        gaps = re.findall(r"silence_start: ([\d.]+).*?silence_end: ([\d.]+)", err, re.S)
+        lines = [f"engine: {voice.last_engine}", f"words: {len(words)}, length {words[-1]['end']:.1f}s", ""]
+        lines += [f"pause {float(b) - float(a):.2f}s at {float(a):.2f}s" for a, b in gaps]
+        (out_dir / "pauses.txt").write_text("\n".join(lines), encoding="utf-8")
+        log("voice-test: " + " | ".join(lines))
     elif cmd == "demo":
         build(dict(DEMO))
     else:

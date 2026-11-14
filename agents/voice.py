@@ -36,24 +36,95 @@ def clean(text):
     return re.sub(r"\s{2,}", " ", text).strip()
 
 
-def _pause_after(text, nxt):
-    """A human narrator breathes: a beat between scenes, longer after a question or before an answer."""
-    t, n = text.strip(), (nxt or "").strip().lower()
-    if re.search(r"(?i)three\.?\s*two\.?\s*one\.?$", t):
-        return 0.55                                  # let the countdown land before the reveal
-    if t.endswith("?"):
-        return 0.4
-    if n.startswith(("here's why", "here is why", "but ", "and that", "so ", "turns out", "the answer")):
-        return 0.3                                   # a held beat before the turn
-    return 0.1   # the voice engine already ends each part with ~0.5 s of natural silence
+_COUNTDOWN = re.compile(r"(?i)\bthree\.\s*two\.\s*one\.")
+_ABBR = re.compile(r"\b(Dr|Mr|Mrs|Ms|Prof|St|vs|etc|e\.g|i\.e|U\.S|approx|No)\.$", re.I)
+_TURNS = ("here's why", "here is why", "but ", "and that", "so ", "turns out", "the answer", "now ", "and yet")
 
 
-def _rate_for(text, base):
-    """Small changes of pace so it doesn't drone: slower for the countdown and the closing question."""
+def sentences(text):
+    """A scene's narration as spoken sentences. 'Three. Two. One.' stays one unit (one held count),
+    and abbreviations such as 'Dr.' or 'e.g.' never end a sentence."""
+    keep = {}
+
+    def hold(m):
+        keep[f"\u2063{len(keep)}\u2063."] = m.group(0)   # ends in "." so the count ends its sentence
+        return list(keep)[-1]
+    t = _COUNTDOWN.sub(hold, text.strip())
+    out, cur = [], ""
+    for piece in re.split(r"(?<=[.!?])\s+", t):
+        cur = f"{cur} {piece}".strip()
+        if not _ABBR.search(cur):
+            out.append(cur)
+            cur = ""
+    if cur:
+        out.append(cur)
+    for k, v in keep.items():
+        out = [o.replace(k, v) for o in out]
+    return [o for o in out if re.search(r"\w", o)]
+
+
+def _gap_after(sent, nxt, scene_end):
+    """How long a person pauses after this sentence: no breath sound, just the silence a narrator
+    leaves when one thought closes and the next opens. Longer after a question (let it land), after a
+    long sentence, before a turn ('But...', 'Here's why...') and at the end of a scene."""
+    t, n = sent.strip(), (nxt or "").strip().lower()
+    if _COUNTDOWN.search(t):
+        g = 0.6                                       # let the count land before the reveal
+    elif t.endswith("?"):
+        g = 0.55
+    elif t.endswith("!"):
+        g = 0.38
+    else:
+        g = 0.34 + (0.08 if len(t.split()) > 14 else 0.0)
+    if n.startswith(_TURNS):
+        g = max(g, 0.5)                               # a held beat before the turn
+    if scene_end:
+        g += 0.12
+    return g
+
+
+def _delivery(sent, base):
+    """(rate, pitch lift) for one sentence. A question is asked a little slower and its last words
+    rise; an exclamation is a touch brighter and quicker; the countdown is slow and even."""
     b = int(re.sub(r"[^-\d]", "", base) or 0)
-    if "pause and guess" in text.lower() or text.strip().endswith("?"):
-        b -= 6
-    return f"{b:+d}%"
+    t = sent.strip()
+    if _COUNTDOWN.search(t) or "pause and guess" in t.lower():
+        return f"{b - 8:+d}%", 0.0
+    if t.endswith("?"):
+        return f"{b - 5:+d}%", 0.045                  # about three quarters of a semitone, on the tail
+    if t.endswith("!"):
+        return f"{b + 4:+d}%", 0.02
+    return f"{b:+d}%", 0.0
+
+
+def _shape_clip(path, words, lift):
+    """Cut the clip's trailing silence (so OUR pause is the pause) and, for a question, raise the pitch
+    of its last words without changing timing (asetrate up, atempo back: same length, so the word
+    timings stay exact). The split is at a word boundary, so there is no warble mid-word."""
+    import subprocess
+    out = path.with_name(path.stem + "_s.wav")
+    trim = "areverse,silenceremove=start_periods=1:start_threshold=-45dB:start_silence=0.04,areverse"
+    if lift and len(words) >= 3:
+        k = max(1, int(len(words) * 0.6))
+        cut = (words[k - 1]["end"] + words[k]["start"]) / 2
+        r = 1 + lift
+        fc = (f"[0:a]aresample=24000,asplit=2[a][b];"
+              f"[a]atrim=0:{cut:.3f},asetpts=PTS-STARTPTS[h];"
+              f"[b]atrim={cut:.3f},asetpts=PTS-STARTPTS,asetrate={24000 * r:.0f},aresample=24000,"
+              f"atempo={1 / r:.5f}[t];[h][t]concat=n=2:v=0:a=1,{trim}[o]")
+    elif lift:
+        r = 1 + lift
+        fc = f"[0:a]aresample=24000,asetrate={24000 * r:.0f},aresample=24000,atempo={1 / r:.5f},{trim}[o]"
+    else:
+        fc = f"[0:a]aresample=24000,{trim}[o]"
+    try:
+        subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(path), "-filter_complex", fc,
+                        "-map", "[o]", "-ac", "1", str(out)], check=True)
+        path.unlink(missing_ok=True)
+        return out
+    except Exception as e:
+        log(f"voice: shaping skipped ({str(e)[:60]})")
+        return path
 
 
 _KOKORO = None
@@ -139,24 +210,36 @@ def narrate(script, job_dir):
     else:
         last_cast = "female host, male explainer"
     log(f"voice: {last_cast}")
+    n_sent = 0
     for k, text in enumerate(scenes):
         who = script["scenes"][k].get("speaker") or ("host" if k == 0 or k == len(scenes) - 1 else "explainer")
         cast = cast_map.get(who, {})
         sv = dict(v, kokoro_voice=cast.get("kokoro") or v.get("kokoro_voice"), edge_voice=cast.get("edge"))
-        w, part = _speak_retry(text, sv, _rate_for(text, v["rate"]), job_dir / f"vo_{k:02d}.mp3")
-        v["engine"] = sv["engine"]   # if Kokoro failed for one scene, stay on Edge for both narrators
-        for x in w:
-            words.append({"start": x["start"] + t, "end": x["end"] + t, "text": x["text"]})
-        gap = _pause_after(text, scenes[k + 1] if k + 1 < len(scenes) else "") if k + 1 < len(scenes) else 0.0
-        if k + 1 < len(scenes) and (script["scenes"][k + 1].get("speaker") or who) != who:
-            gap += 0.15   # a natural hand-over between the two narrators
-        parts.append((part, gap))
-        t += _dur(part) + gap
+        sents = sentences(text) or [text]
+        nxt_scene = scenes[k + 1] if k + 1 < len(scenes) else ""
+        for m, sent in enumerate(sents):
+            # one sentence at a time, like a narrator: its own pace and tone, then a real pause
+            rate, lift = _delivery(sent, v["rate"])
+            w, part = _speak_retry(sent, sv, rate, job_dir / f"vo_{k:02d}_{m:02d}.mp3")
+            v["engine"] = sv["engine"]   # if Kokoro failed once, stay on Edge for both narrators
+            part = _shape_clip(part, w, lift)
+            for x in w:
+                words.append({"start": x["start"] + t, "end": x["end"] + t, "text": x["text"]})
+            last = m == len(sents) - 1
+            if last and not nxt_scene:
+                gap = 0.0
+            else:
+                gap = _gap_after(sent, sents[m + 1] if not last else nxt_scene, last)
+                if last and (script["scenes"][k + 1].get("speaker") or who) != who:
+                    gap += 0.15   # a natural hand-over between the two narrators
+            parts.append((part, gap))
+            t += _dur(part) + gap   # exactly what is joined, so the captions never drift
+            n_sent += 1
     # join: each part followed by its silence, re-encoded to one clean track
     inputs, chain = [], []
     for k, (part, gap) in enumerate(parts):
         inputs += ["-i", str(part)]
-        chain.append(f"[{k}:a]aresample=24000,apad=pad_dur={gap:.2f}[a{k}]")
+        chain.append(f"[{k}:a]aresample=24000,aformat=channel_layouts=mono,apad=pad_dur={gap:.2f}[a{k}]")
     cat = "".join(f"[a{k}]" for k in range(len(parts))) + f"concat=n={len(parts)}:v=0:a=1[out]"
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error"] + inputs +
                    ["-filter_complex", ";".join(chain) + ";" + cat, "-map", "[out]",
@@ -165,7 +248,8 @@ def narrate(script, job_dir):
         part.unlink(missing_ok=True)
     global last_engine
     last_engine = v["engine"]
-    log(f"voice: {len(words)} words, {words[-1]['end']:.1f}s, {len(parts)} scenes with natural pauses ({v['engine']})")
+    log(f"voice: {len(words)} words, {words[-1]['end']:.1f}s, {len(scenes)} scenes, {n_sent} sentences each "
+        f"followed by a natural pause; questions rise ({v['engine']})")
     return words
 
 
