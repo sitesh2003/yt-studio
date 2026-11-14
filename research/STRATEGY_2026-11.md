@@ -281,3 +281,42 @@ Orpheus (GPU only in practice), Parler-TTS (too slow on CPU), Supertonic (archiv
 above 3 people), Revideo (unmaintained), python-lottie (AGPL), Free Music Archive (mostly
 non-commercial). Music has no free API with safe licences: a small CC0/CC-BY set is downloaded by hand
 once and kept in assets/music.
+
+## 14. Growth, licences and fresh research: second pass (14 Nov 2026)
+Several sources are secondary; official pages are linked in the commit history of this section.
+
+**The biggest risk: YouTube's "inauthentic content" rule** (since 15 Jul 2025). It is aimed at
+mass-produced, template-like videos. AI help is allowed with "considerable human input".
+- Built today (agents/variety.py): near-duplicate topics dropped (zebra stripes had been made
+  twice), hooks that open like most recent ones rewritten, title openings varied.
+- What only the owner can add, and what helps most: a short human look at each week's videos (a
+  10-minute review of the bank, a changed title or a pinned comment in your own words). Real human
+  input is what the rule asks for; it cannot be automated honestly.
+
+**Partner Programme from 01 Feb 2027 for new applicants:** 1,000 subscribers + 8,000 watch hours or
+20M Shorts views in 90 days. Why It Works will apply under the new bar, so its long-form watch time
+will matter more than Shorts views: plan a weekly long video for it once it has 3+ weeks of Shorts.
+
+**Built today:** exact English captions from the narrator's timings (agents/subtitles.py; 400 quota
+units per video, a failure never stops a publish); a 180-concept map for Why It Works
+(channels/wiw_concepts.json, names only).
+
+**Already in place (checked):** Shorts → weekly-episode line in every answer comment; series
+playlists; chapters; translated titles; auto-dubbing.
+
+**Next, buildable:**
+1. bioRxiv/medRxiv `/pubs` (prefers preprints later published in a journal) and arXiv (labelled
+   "preprint, not peer-reviewed") as fresh-research feeds for Why It Works.
+2. Instagram Reels through the Graph API (free; needs an Instagram professional account and a Meta
+   app, which only the owner can create), then Facebook Reels.
+3. Misconception openers from the AAAS Project 2061 item bank (free login; owner signs up).
+4. Europe PMC / Semantic Scholar for "is this preprint now published?" and follow-up papers.
+
+**Owner steps that unlock more reach (whenever convenient):**
+- Apply for the TikTok Content Posting API audit (public posting needs it; takes days to weeks).
+- Create an Instagram professional account + Meta developer app for Reels.
+- In Studio, by hand (no API exists): the Shorts "related video" link, Test & Compare thumbnails.
+
+**Do not use on a monetised channel:** PhET simulations (moving to non-commercial), GeoGebra and Desmos
+(non-commercial terms), CK-12 and most LibreTexts pages, newer OpenStax books (CC BY-NC-SA), syllabus
+text or figures (copyright; topic names are fine), EurekAlert text (journalist terms).
