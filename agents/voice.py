@@ -98,33 +98,37 @@ def _delivery(sent, base):
 
 
 def _shape_clip(path, words, lift):
-    """Cut the clip's trailing silence (so OUR pause is the pause) and, for a question, raise the pitch
-    of its last words without changing timing (asetrate up, atempo back: same length, so the word
-    timings stay exact). The split is at a word boundary, so there is no warble mid-word."""
+    """Trim the clip to the speech itself, so OUR pause is the only pause: the silence a voice engine
+    puts before the first word (about 0.35 s on Kokoro) and after the last one both go. For a question,
+    raise the pitch of its last words without changing timing (asetrate up, atempo back: same length,
+    so the word timings stay exact); the split is between two words, so there is no warble mid-word.
+    Returns (clip, seconds trimmed from the front) - the caller shifts the word timings by that."""
     import subprocess
     out = path.with_name(path.stem + "_s.wav")
+    lead = max(0.0, words[0]["start"] - 0.05) if words else 0.0
+    head = f"aresample=24000,atrim=start={lead:.3f},asetpts=PTS-STARTPTS"
     trim = "areverse,silenceremove=start_periods=1:start_threshold=-45dB:start_silence=0.04,areverse"
     if lift and len(words) >= 3:
         k = max(1, int(len(words) * 0.6))
-        cut = (words[k - 1]["end"] + words[k]["start"]) / 2
+        cut = (words[k - 1]["end"] + words[k]["start"]) / 2 - lead
         r = 1 + lift
-        fc = (f"[0:a]aresample=24000,asplit=2[a][b];"
+        fc = (f"[0:a]{head},asplit=2[a][b];"
               f"[a]atrim=0:{cut:.3f},asetpts=PTS-STARTPTS[h];"
               f"[b]atrim={cut:.3f},asetpts=PTS-STARTPTS,asetrate={24000 * r:.0f},aresample=24000,"
               f"atempo={1 / r:.5f}[t];[h][t]concat=n=2:v=0:a=1,{trim}[o]")
     elif lift:
         r = 1 + lift
-        fc = f"[0:a]aresample=24000,asetrate={24000 * r:.0f},aresample=24000,atempo={1 / r:.5f},{trim}[o]"
+        fc = f"[0:a]{head},asetrate={24000 * r:.0f},aresample=24000,atempo={1 / r:.5f},{trim}[o]"
     else:
-        fc = f"[0:a]aresample=24000,{trim}[o]"
+        fc = f"[0:a]{head},{trim}[o]"
     try:
         subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(path), "-filter_complex", fc,
                         "-map", "[o]", "-ac", "1", str(out)], check=True)
         path.unlink(missing_ok=True)
-        return out
+        return out, lead
     except Exception as e:
         log(f"voice: shaping skipped ({str(e)[:60]})")
-        return path
+        return path, 0.0
 
 
 _KOKORO = None
@@ -222,9 +226,9 @@ def narrate(script, job_dir):
             rate, lift = _delivery(sent, v["rate"])
             w, part = _speak_retry(sent, sv, rate, job_dir / f"vo_{k:02d}_{m:02d}.mp3")
             v["engine"] = sv["engine"]   # if Kokoro failed once, stay on Edge for both narrators
-            part = _shape_clip(part, w, lift)
+            part, lead = _shape_clip(part, w, lift)
             for x in w:
-                words.append({"start": x["start"] + t, "end": x["end"] + t, "text": x["text"]})
+                words.append({"start": x["start"] - lead + t, "end": x["end"] - lead + t, "text": x["text"]})
             last = m == len(sents) - 1
             if last and not nxt_scene:
                 gap = 0.0
