@@ -1,0 +1,30 @@
+[
+  {
+    "job": "20261114-1422-why-highway-guardrail-ends-feature-a-hea",
+    "date": "2026-11-14",
+    "title": "Why Highway Guardrails Have Heavy End Boxes 🤯",
+    "topic": "Why highway guardrail ends feature a heavy steel box designed to flatten and redirect guardrail beams during a crash.",
+    "series": "How Things Work",
+    "weekly": false,
+    "claims": [
+      "Guardrail end terminals (extruder terminals) flatten and curl steel W-beams upon impact.",
+      "Plastic deformation of the guardrail absorbs the kinetic energy of a crashing vehicle.",
+      "Extruder terminals are engineered to redirect the flattened beam away from the roadway to prevent vehicle spearing."
+    ],
+    "sources": []
+  },
+  {
+    "job": "20261114-1508-why-bumping-your-elbow-s-funny-bone-trig",
+    "date": "2026-11-14",
+    "title": "Why Your Funny Bone Shocks You ⚡",
+    "topic": "Why bumping your elbow's funny bone triggers an intense electrical shock down your forearm.",
+    "series": "Body Whys",
+    "weekly": false,
+    "claims": [
+      "The ulnar nerve runs close to the surface at the elbow joint.",
+      "Impact on the ulnar nerve produces a tingling or electric shock sensation down the forearm.",
+      "Lack of thick muscle and fat padding over the ulnar nerve at the elbow makes it vulnerable to direct compression."
+    ],
+    "sources": []
+  }
+]

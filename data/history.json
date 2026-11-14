@@ -977,7 +977,8 @@
     "repairs": 1,
     "video_id": "S3s-iGcOMVY",
     "publish_at": "2026-11-13T19:00:00-05:00",
-    "answered": true
+    "answered": true,
+    "recapped": true
   },
   {
     "job": "20261112-1118-why-garlic-doesn-t-make-you-cry",
@@ -1416,6 +1417,168 @@
       "duration": 47.6
     },
     "repairs": 0,
+    "audited": true
+  },
+  {
+    "job": "20261114-1422-why-highway-guardrail-ends-feature-a-hea",
+    "topic": "Why highway guardrail ends feature a heavy steel box designed to flatten and redirect guardrail beams during a crash.",
+    "title": "Why Highway Guardrails Have Heavy End Boxes 🤯",
+    "description": "Ever wondered what those yellow or steel boxes at the end of highway guardrails actually do? Discover the hidden crash engineering protecting drivers every day. #shorts #engineering #physics\n\nIllustrations: drawn for this video with FLUX.2 [klein] 4B (AI, Apache 2.0) and checked for accuracy\nPhoto: daveynin, BY 2.0, via Openverse (flickr)\nVideo by Luiz-Jorge-Artista on Pixabay\nVideo by TungArt7 on Pixabay",
+    "tags": [
+      "guardrail",
+      "highway safety",
+      "engineering",
+      "physics",
+      "how things work",
+      "science"
+    ],
+    "hook": "Your car swerves off the highway right toward a steel guardrail.",
+    "status": "banked",
+    "narration": "Your car swerves off the highway right toward a steel guardrail. Instead of impaling your vehicle, your car hits a heavy steel box on the end of the rail. This terminal squeezes the steel beam as it pushes through. So what is that heavy box actually doing to the metal? Here's why: it flattens the steel beam and curls it away from you, absorbing massive energy. How does a guardrail end box absorb energy during a crash?",
+    "voice_engine": "kokoro",
+    "voices": "male host, female explainer",
+    "diagrams": 0,
+    "series": "How Things Work",
+    "countdown": false,
+    "question": "How does a guardrail end box absorb energy during a crash?",
+    "answer_comment": "The answer: When the steel rail forces through the narrow extruder box, it undergoes plastic deformation, bending and flattening the metal. This mechanical process absorbs massive amounts of kinetic energy, slowing the vehicle down safely while directing the sharp rail away from the cabin! What other hidden road safety features have you noticed?",
+    "sources": [],
+    "fact_check": [
+      "Guardrail end terminals (extruder terminals) flatten and curl steel W-beams upon impact.",
+      "Plastic deformation of the guardrail absorbs the kinetic energy of a crashing vehicle.",
+      "Extruder terminals are engineered to redirect the flattened beam away from the roadway to prevent vehicle spearing."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        4.86
+      ],
+      [
+        4.86,
+        10.49
+      ],
+      [
+        10.49,
+        14.79
+      ],
+      [
+        14.79,
+        19.38
+      ],
+      [
+        19.38,
+        25.69
+      ],
+      [
+        25.69,
+        30.37
+      ]
+    ],
+    "duration": 30.37,
+    "scene_lines": [
+      "Your car swerves off the highway right toward a steel guardrail.",
+      "Instead of impaling your vehicle, your car hits a heavy steel box on the end of the rail.",
+      "This terminal squeezes the steel beam as it pushes through.",
+      "So what is that heavy box actually doing to the metal?",
+      "Here's why: it flattens the steel beam and curls it away from you, absorbing massive energy.",
+      "How does a guardrail end box absorb energy during a crash?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": "S3s-iGcOMVY",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "footage": [],
+      "review": [],
+      "pass": true,
+      "duration": 30.1
+    },
+    "repairs": 1,
+    "audited": true
+  },
+  {
+    "job": "20261114-1508-why-bumping-your-elbow-s-funny-bone-trig",
+    "topic": "Why bumping your elbow's funny bone triggers an intense electrical shock down your forearm.",
+    "title": "Why Your Funny Bone Shocks You ⚡",
+    "description": "That sharp electric shock in your arm comes from a very specific nerve setup near your joint. Here is what is actually happening under your skin.\n\n#shorts #science #anatomy\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nPhoto by BLoafX on Pixabay\nPhoto by videorevive on Pixabay\nVideo by Engin_Akyurt on Pixabay\nVideo by SYG_Anime on Pixabay",
+    "tags": [
+      "funny bone",
+      "nervous system",
+      "anatomy",
+      "science facts",
+      "shorts"
+    ],
+    "hook": "You just smashed your elbow on a desk and now your entire forearm is buzzing with pain.",
+    "status": "banked",
+    "narration": "You just smashed your elbow on a desk and now your entire forearm is buzzing with pain. It feels like an electric current, but there is no electricity in your arm. Wait, really? It feels exactly like touching a live wire. This is because of how one specific nerve is positioned in your joint. So why does a simple tap cause that intense shooting sensation? Here's why. You are actually compressing the ulnar nerve directly against hard bone, which fires a sudden volley of signals straight to your brain. Ever thought why other nerves don't hurt quite like that when you poke them? Drop your guess below.",
+    "voice_engine": "kokoro",
+    "voices": "male host, female explainer",
+    "diagrams": 1,
+    "series": "Body Whys",
+    "countdown": false,
+    "question": "Ever thought why other nerves don't hurt quite like that when you poke them?",
+    "answer_comment": "The answer: Most nerves are buried deep beneath thick layers of muscle and fat, keeping them safe from everyday bumps. The ulnar nerve at your elbow runs through a shallow tunnel right against the bone with almost zero padding, so any direct impact squishes it straight against the hard surface and triggers that sharp jolt. Have you ever noticed this zap in your other arm?",
+    "sources": [],
+    "fact_check": [
+      "The ulnar nerve runs close to the surface at the elbow joint.",
+      "Impact on the ulnar nerve produces a tingling or electric shock sensation down the forearm.",
+      "Lack of thick muscle and fat padding over the ulnar nerve at the elbow makes it vulnerable to direct compression."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        6.73
+      ],
+      [
+        6.73,
+        11.91
+      ],
+      [
+        11.91,
+        16.84
+      ],
+      [
+        16.84,
+        22.11
+      ],
+      [
+        22.11,
+        27.27
+      ],
+      [
+        27.27,
+        36.31
+      ],
+      [
+        36.31,
+        42.62
+      ]
+    ],
+    "duration": 42.62,
+    "scene_lines": [
+      "You just smashed your elbow on a desk and now your entire forearm is buzzing with pain.",
+      "It feels like an electric current, but there is no electricity in your arm.",
+      "Wait, really? It feels exactly like touching a live wire.",
+      "This is because of how one specific nerve is positioned in your joint.",
+      "So why does a simple tap cause that intense shooting sensation?",
+      "Here's why. You are actually compressing the ulnar nerve directly against hard bone, which fires a sudden volley of signals straight to your brain.",
+      "Ever thought why other nerves don't hurt quite like that when you poke them? Drop your guess below."
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "footage": [],
+      "review": [],
+      "pass": true,
+      "duration": 42.3
+    },
+    "repairs": 2,
     "audited": true
   }
 ]

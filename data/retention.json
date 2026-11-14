@@ -1,0 +1,71 @@
+{
+  "4LJjIxeP_dY": {
+    "title": "Why your eyes are secretly leaking",
+    "hook_line": "",
+    "kept_at_10pct": 1.0663,
+    "kept_at_50pct": 0.44920000000000004,
+    "kept_at_end": 0.2047,
+    "vs_similar_start": 0.34,
+    "vs_similar_end": 0.56,
+    "biggest_drops": [
+      {
+        "at": 0.13,
+        "lost": 0.134,
+        "line": ""
+      },
+      {
+        "at": 0.26,
+        "lost": 0.105,
+        "line": ""
+      }
+    ],
+    "countdown": null,
+    "checked": "2026-11-14"
+  },
+  "a8Kooq5Sswk": {
+    "title": "Why Onions Make You Cry",
+    "hook_line": "",
+    "kept_at_10pct": 1.178,
+    "kept_at_50pct": 0.3615,
+    "kept_at_end": 0.21280000000000002,
+    "vs_similar_start": 0.46,
+    "vs_similar_end": 0.64,
+    "biggest_drops": [
+      {
+        "at": 0.13,
+        "lost": 0.253,
+        "line": ""
+      },
+      {
+        "at": 0.26,
+        "lost": 0.119,
+        "line": ""
+      }
+    ],
+    "countdown": null,
+    "checked": "2026-11-14"
+  },
+  "yF1Dj5F1icM": {
+    "title": "Why Cold Water Fails Against Spicy Food 🌶️🥛",
+    "hook_line": "Gulping ice water after a hot pepper feels like relief, but the real fire stays untouched.",
+    "kept_at_10pct": 1.0208,
+    "kept_at_50pct": 0.4514,
+    "kept_at_end": 0.11460000000000001,
+    "vs_similar_start": 0.33,
+    "vs_similar_end": 0.43,
+    "biggest_drops": [
+      {
+        "at": 0.1,
+        "lost": 0.227,
+        "line": "Gulping ice water after a hot pepper feels like relief, but the real fire stays untouched."
+      },
+      {
+        "at": 0.94,
+        "lost": 0.116,
+        "line": "Ever thought why drinking an ice-cold fruit juice won't stop spicy food burn either?"
+      }
+    ],
+    "countdown": null,
+    "checked": "2026-11-14"
+  }
+}
