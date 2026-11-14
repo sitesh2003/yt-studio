@@ -79,6 +79,8 @@ def compare(script_text, heard_text):
         if op == "equal":
             continue
         said, heard = " ".join(a[i1:i2]), " ".join(b[j1:j2])
+        if said.replace(" ", "") == heard.replace(" ", ""):
+            continue                         # "mouthparts" heard as "mouth parts": the same words
         # "one" is also a pronoun ("no one", "this one"), so on its own it is not treated as a number
         n_said = [w for w in a[i1:i2] if w in NUMBER_WORDS and w != "one"]
         n_heard = [w for w in b[j1:j2] if w in NUMBER_WORDS and w != "one"]
