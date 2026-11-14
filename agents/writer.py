@@ -43,6 +43,15 @@ footage, never a repeat. Return JSON: {{"topic": "...", "why": "..."}}""")
     return out
 
 
+def _ideas(student=False):
+    try:
+        from . import ideas
+        return ideas.brief(student)
+    except Exception as e:
+        log(f"ideas skipped: {str(e)[:60]}")
+        return ""
+
+
 def pick_topics(n=3):
     if config()["channel"].get("style") == "student":   # Why It Works has its own planner
         from . import student
@@ -63,6 +72,8 @@ Topics VIEWERS asked for in the comments (use one when it is true, showable and 
 {[r['topic'] for r in (read_json(DATA / 'viewer_requests.json', []) or [])][-15:] or 'none yet'}
 
 {playbook.brief()}
+
+{_ideas()}
 
 PROVEN FORMATS (from a study of the biggest explainer Shorts, Nov 2026; a contrast video about two
 fish hit 5 million views and 1,800 comments in two days). Use these shapes, never copy a title or idea:

@@ -64,6 +64,16 @@ def key(name):
     return v or None
 
 
+def openalex_params(params=None):
+    """OpenAlex query parameters plus the free API key when set (OPENALEX_API_KEY). Since Feb 2026 a
+    keyless caller gets 1,000 credits a day per address (a search costs 10) and GitHub's runners share
+    addresses; a free key gives 100,000."""
+    p = dict(params or {})
+    if key("OPENALEX_API_KEY"):
+        p["api_key"] = key("OPENALEX_API_KEY")
+    return p
+
+
 def slug(text, n=40):
     s = re.sub(r"[^a-zA-Z0-9]+", "-", text.lower()).strip("-")
     return s[:n] or "video"

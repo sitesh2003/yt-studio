@@ -14,7 +14,8 @@ import random
 import requests
 
 from . import playbook
-from .core import DATA, config, llm_json, log, read_json
+from .writer import _ideas
+from .core import DATA, config, llm_json, log, openalex_params, read_json
 
 SUBJECTS = ["physics", "chemistry", "biology", "maths", "electronics", "technology", "earth and space"]
 
@@ -40,7 +41,7 @@ def _recent_papers(subject, n=6):
     try:
         r = requests.get("https://api.openalex.org/works", timeout=30,
                          headers={"User-Agent": "yt-studio-student/1.0"},
-                         params={"search": subject, "per-page": n, "sort": "cited_by_count:desc",
+                         params=openalex_params() | {"search": subject, "per-page": n, "sort": "cited_by_count:desc",
                                  "filter": f"is_oa:true,has_abstract:true,type:article,is_retracted:false,"
                                            f"from_publication_date:{since}"})
         r.raise_for_status()
@@ -78,6 +79,7 @@ def pick_topics(n=3):
 Audience: {cfg['audience']}.
 {playbook.brief()}
 {FORMATS}
+{_ideas(True)}
 Recent open-access papers you MAY use for one NEW RESEARCH topic (only if it can be explained truly and
 simply; otherwise ignore the list): {papers or 'none today'}
 CONCEPTS STUDENTS STUDY that this channel has not covered yet, by subject (prefer one of these; phrase it

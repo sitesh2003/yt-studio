@@ -90,6 +90,7 @@ jobs:
       - name: Make, fact-check, bank, publish when due
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}   # free key: research sources (empty = keyless, 1,000 credits a day)
           PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
           REPORT_EMAIL: ${{ secrets.REPORT_EMAIL }}

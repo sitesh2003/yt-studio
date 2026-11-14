@@ -11,7 +11,7 @@ comment replier can point to them. Shorts do not make links clickable, so each o
 """
 import requests
 
-from .core import llm_json, log
+from .core import llm_json, log, openalex_params
 
 API = "https://api.openalex.org/works"
 UA = {"User-Agent": "yt-studio-sources/1.0"}
@@ -26,8 +26,8 @@ def _abstract(inv):
 
 
 def _search(query, n=6):
-    r = requests.get(API, params={"search": query[:200], "per-page": n,
-                                  "filter": "is_oa:true,has_abstract:true,type:article,is_retracted:false"},
+    r = requests.get(API, params=openalex_params({"search": query[:200], "per-page": n,
+                                  "filter": "is_oa:true,has_abstract:true,type:article,is_retracted:false"}),
                      headers=UA, timeout=30)
     r.raise_for_status()
     out = []

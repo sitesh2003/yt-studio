@@ -44,6 +44,7 @@ jobs:
       - name: Post answers, draft comment replies
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}   # free key: research sources (empty = keyless, 1,000 credits a day)
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python studio.py hourly
 

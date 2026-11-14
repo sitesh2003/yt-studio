@@ -89,6 +89,7 @@ jobs:
       - name: Write, fact-check, render and schedule the weekly episode
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}   # free key: research sources (empty = keyless, 1,000 credits a day)
           PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
           # Illustrated scenes (agents/illustrate.py): free Cloudflare Workers AI; empty = footage only
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
