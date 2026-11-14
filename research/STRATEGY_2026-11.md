@@ -139,3 +139,20 @@ YouTube Data API, all 27 uploads, plus preview frames of the top 3 and "How We A
   - **For:** Kokoro has Hindi voices, and this channel shows the market moves fast.
   - **Against:** India pays roughly 1/20 of US rates per view.
 - **Long videos:** his flopped too. This confirms one a week for us, not two.
+
+## 10. The user's "EVER THOUGHT WHY" playlist, 4 new Shorts (14 Nov 2026)
+| Short | Views (by 14 Nov) | Channel | What it is |
+|---|---|---|---|
+| Jensen Huang's Affair Rocks NVIDIA | 849K in 1 day | Afterhour Theory (7 videos, 12.7K subs) | simple 3D stick-figure cartoon telling a real person's life story |
+| Electronegativity in 60 Seconds (ICSE Class 10) | 386 | Score With Science | clean animated textbook infographic |
+| Linked List Explained in 60 Seconds | 205 | the_web_brain | neon coding animation, clickbait thumbnail |
+| Theoretical Yield (Hinglish, Ch-28) | 154 | Zovik: Chem | beautiful 3D molecule renders |
+
+**Lessons:**
+1. **Polished visuals do not bring reach on their own.** Zovik's 3D renders are excellent and got 154 views. The textbook and syllabus topics (ICSE, DSA, chapter numbers) are search content for students, not feed content.
+2. **The feed rewards a story or a surprise with stakes.** A stick-figure cartoon got 849K because it is a human story.
+3. **Our format matches the winners:** a curiosity contrast (Explain Station's tuna Short, 8.9M) or a story, never a lesson.
+
+**What we take:** a "TRUE SCIENCE STORY" format (real, documented discoveries and people).
+
+**What we will not do:** gossip or scandal about real living people. We could not verify that story, and it is a defamation and misinformation risk.

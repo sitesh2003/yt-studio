@@ -83,6 +83,11 @@ fish hit 5 million views and 1,800 comments in two days). Use these shapes, neve
   sleep"), settled with ONE surprising true number or mechanism. In the Nov 2026 study a channel grew
   to 65K subscribers in 4 weeks this way. Facts ONLY from established medicine (CDC, WHO, NIH level or
   peer-reviewed research); never personal treatment advice beyond "get medical help"; calm, never scary.
+- TRUE SCIENCE STORY: a real, well-documented person or moment behind a discovery, told as a story
+  with stakes (the doctor who drank bacteria to prove what causes ulcers; the man whose head was hit by
+  a particle-accelerator beam). In the Nov 2026 study, story Shorts about real people reached 850K views
+  in a day on a 7-video channel. Only events confirmed by reliable history; no gossip, rumours or
+  private lives of living people.
 - ANY OTHER SCIENCE (space, physics, chemistry, earth, history of science, technology): welcome, as
   long as it is true, surprising, and can be SHOWN (see below).
 Proven outlier titles in this space (patterns only): {_outliers()}
