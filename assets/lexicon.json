@@ -1,0 +1,4 @@
+{
+  "_note": "Kokoro pronunciation fixes, applied to the Kokoro voice only (misaki phonemes, US). Found by reading 72 science words aloud and transcribing them (14 Nov 2026): only 'bromelain' was clearly wrong ('bromline'). Add a word here when the listening check keeps mishearing it the same way.",
+  "bromelain": "bɹˈOməlˌAn"
+}

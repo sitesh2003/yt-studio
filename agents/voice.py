@@ -142,6 +142,26 @@ def _cast_key(script):
     return (script.get("title") or (script.get("title_options") or [""])[0] or script.get("topic") or "").strip()
 
 
+_LEX = None
+
+
+def _lexicon(text):
+    """Science words Kokoro gets wrong, given their sound ([word](/phonemes/)); the word itself is kept,
+    so the word timings and captions still spell it normally. Kokoro only (assets/lexicon.json)."""
+    global _LEX
+    if _LEX is None:
+        import json
+        from .core import ASSETS
+        try:
+            _LEX = {k: v for k, v in json.loads((ASSETS / "lexicon.json").read_text(encoding="utf-8")).items()
+                    if not k.startswith("_")}
+        except Exception:
+            _LEX = {}
+    for word, ph in _LEX.items():
+        text = re.sub(rf"(?i)(?<![\[\w])({re.escape(word)})(?![\w\]])", rf"[](/{ph}/)", text)
+    return text
+
+
 def _kokoro_speak(text, v, rate, path):
     """Kokoro (open source, Apache 2.0, runs right here on the CPU): a warmer, more human voice.
     Returns word timings like the Edge voice does."""
@@ -153,7 +173,7 @@ def _kokoro_speak(text, v, rate, path):
         _KOKORO = KPipeline(lang_code="a", repo_id="hexgrad/Kokoro-82M")
     speed = 1.0 + int(re.sub(r"[^-\d]", "", rate) or 0) / 100
     audio, words, offset = [], [], 0.0
-    for r in _KOKORO(text, voice=v.get("kokoro_voice") or "af_heart", speed=speed):
+    for r in _KOKORO(_lexicon(text), voice=v.get("kokoro_voice") or "af_heart", speed=speed):
         a = r.audio.numpy() if hasattr(r.audio, "numpy") else np.asarray(r.audio)
         for tk in (r.tokens or []):
             if tk.start_ts is not None and tk.end_ts is not None and re.search(r"\w", tk.text):
