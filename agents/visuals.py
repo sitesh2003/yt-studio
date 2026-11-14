@@ -157,6 +157,29 @@ def _wellcome_candidates(query):
     return out
 
 
+def _met_candidates(query, n=6):
+    """The Met's Open Access collection (CC0): historic scientific instruments, anatomy prints and
+    portraits, for science-history moments. Only objects marked public domain. (The old /v1/search
+    was retired on 01 Oct 2026; /v1.1/search is the paginated replacement.)"""
+    hdr = {"User-Agent": "Mozilla/5.0 (yt-studio)"}
+    r = requests.get("https://collectionapi.metmuseum.org/public/collection/v1.1/search", headers=hdr, timeout=20,
+                     params={"q": query[:60], "hasImages": "true", "limit": n})
+    out = []
+    for oid in (r.json().get("objectIDs") or [])[:n]:
+        try:
+            o = requests.get(f"https://collectionapi.metmuseum.org/public/collection/v1/objects/{oid}",
+                             headers=hdr, timeout=15).json()
+        except Exception:
+            continue
+        if not o.get("isPublicDomain") or not o.get("primaryImage"):
+            continue
+        out.append({"kind": "photo", "id": ("met", oid), "url": o["primaryImage"],
+                    "thumb": o.get("primaryImageSmall") or o["primaryImage"], "user": "The Met",
+                    "tags": f"{o.get('title', '')} {o.get('objectName', '')} {o.get('classification', '')}".lower(),
+                    "fit": True, "credit": "Image: The Metropolitan Museum of Art (CC0)"})
+    return out
+
+
 def _nasa_candidates(query):
     """NASA Image Library: public-domain photos of space, Earth and oceans - free, no key."""
     r = _get("https://images-api.nasa.gov/search", params={"q": query[:80], "media_type": "image"})
@@ -448,7 +471,7 @@ def pick_scene(i, scene, a, b, job_dir, used, note="", extra_queries=()):
             except Exception as e:
                 log(f"visuals: photo search error {e}")
             for src in (_commons_candidates, _openverse_candidates, _nasa_candidates, _inat_candidates,
-                        _wellcome_candidates):
+                        _wellcome_candidates, _met_candidates):
                 try:
                     cands += [c for c in src(q) if c["id"] not in used]
                 except Exception as e:
