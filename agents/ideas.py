@@ -91,12 +91,40 @@ def young_minds(n=8):
     return random.sample(items, min(n, len(items))) if items else []
 
 
+FEEDS = {"ScienceDaily": "https://www.sciencedaily.com/rss/top/science.xml",
+         "Phys.org": "https://phys.org/rss-feed/"}
+
+
+def news(n=8):
+    """This week's science headlines (ScienceDaily allows headline use with credit; Phys.org asks for
+    credit). Only the headline is used, as an idea; the video always cites the original paper."""
+    import xml.etree.ElementTree as ET
+
+    def fetch():
+        out = []
+        for name, url in FEEDS.items():
+            try:
+                r = requests.get(url, headers={"User-Agent": "Mozilla/5.0 (yt-studio ideas)"}, timeout=20)
+                for it in ET.fromstring(r.content).iter("item"):
+                    t = html.unescape((it.findtext("title") or "").strip())
+                    if t:
+                        out.append({"title": t, "via": name})
+            except Exception as e:
+                log(f"ideas: {name} feed unavailable ({str(e)[:50]})")
+        return out
+    items = _cached("news", fetch)
+    return random.sample(items, min(n, len(items))) if items else []
+
+
 def brief(student=False):
     """The block the topic planner reads."""
     qs = questions(student)
     lines = ["REAL QUESTIONS people asked online (proven curiosity). Use one when it fits the channel and can",
              "be answered truly and simply; rephrase it in your own words, never copy:"]
     lines += [f"- {q['q']}" for q in qs] or ["- (none today)"]
+    lines += ["", "THIS WEEK'S SCIENCE HEADLINES (ideas only: a video built on one must explain the underlying",
+              "science truly, and the fact-checker and sources check the claim itself, never the headline):"]
+    lines += [f"- {x['title']} (via {x['via']})" for x in news()] or ["- (none today)"]
     if student:
         lines += ["", "NEW RESEARCH written for young readers (Frontiers for Young Minds, peer-reviewed, CC BY 4.0).",
                   "A good NEW RESEARCH topic; the paper itself becomes the cited source:"]

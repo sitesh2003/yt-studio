@@ -30,9 +30,25 @@ FORMATS = """FORMATS for this channel (one concept per video):
   if it only works for special numbers, say so clearly.
 - NEW RESEARCH: one recent open-access paper (from the list below) explained at school level: what
   they found, how they know, why it matters. Never overstate it: "a new study suggests", not "proved".
+- EXAM TRAP: a concept students lose marks on (units, sign errors, "heavier falls faster"), the wrong
+  answer most people give, then the right reasoning step by step. Never a real exam question.
 - COMMON MISTAKE: a misconception students and textbooks often repeat (heavier things fall faster,
   the tongue taste map, electrons flow from + to -), settled with the reason.
 """
+
+
+EXAMS = [("CBSE board exams (India)", dt.date(2027, 2, 16)), ("AP exams (US)", dt.date(2027, 5, 3)),
+         ("GCSE exams (UK)", dt.date(2027, 5, 10))]
+
+
+def _exam_season():
+    """In the 6 weeks before a big exam window, students search for exactly the traps that cost marks."""
+    today = dt.date.today()
+    near = [f"{name} start {d:%d %b %Y}" for name, d in EXAMS if 0 <= (d - today).days <= 42]
+    if not near:
+        return ""
+    return (f"EXAM SEASON: {'; '.join(near)}. Make at least one topic an EXAM TRAP: a concept students "
+            "commonly get wrong in exams, shown with the right reasoning (never a real past-paper question).")
 
 
 def _recent_papers(subject, n=6):
@@ -80,6 +96,7 @@ Audience: {cfg['audience']}.
 {playbook.brief()}
 {FORMATS}
 {_ideas(True)}
+{_exam_season()}
 Recent open-access papers you MAY use for one NEW RESEARCH topic (only if it can be explained truly and
 simply; otherwise ignore the list): {papers or 'none today'}
 CONCEPTS STUDENTS STUDY that this channel has not covered yet, by subject (prefer one of these; phrase it
@@ -137,7 +154,7 @@ Return JSON exactly in this shape:
 {{
  "hook_options": ["...", "...", "..."],
  "scenes": [{{"speaker": "host or explainer", "narration": "...", "visual_query": "...", "alt_queries": ["...", "..."]}}],
- "title_options": ["4 to 8 words, max 60 characters, Title Case, NO hashtags, the student's question or the surprising fact, ending with ONE emoji (🤔 😮 🤯 💡 ⚡ 🧪); true, never the answer", "...", "..."],
+ "title_options": ["4 to 8 words, 30-55 characters, Title Case, NO hashtags, NO emoji and NO capitals-only words (a study of 18,000 channels found both hurt trust in education titles), the student's question or the surprising fact; true, never the answer", "...", "..."],
  "description": "2-3 lines: the question, a tease of the reason, then 3 hashtags including #shorts and the subject (e.g. #physics)",
  "tags": ["...", "..."],
  "thumbnail": {{"layout": "single", "scene": 0, "text": "max 4 words", "highlight": "one word"}},

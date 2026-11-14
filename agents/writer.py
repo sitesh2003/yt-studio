@@ -97,6 +97,10 @@ fish hit 5 million views and 1,800 comments in two days). Use these shapes, neve
   sleep"), settled with ONE surprising true number or mechanism. In the Nov 2026 study a channel grew
   to 65K subscribers in 4 weeks this way. Facts ONLY from established medicine (CDC, WHO, NIH level or
   peer-reviewed research); never personal treatment advice beyond "get medical help"; calm, never scary.
+- VIRAL CLAIM, CHECKED: a claim that spreads online or in everyday talk ("you lose most heat through
+  your head", "goldfish have a 3-second memory", "lightning never strikes twice"), checked with the real
+  evidence and one surprising true number. Calm and fair, never mocking. In the Nov 2026 study,
+  fact-checking channels were among the fastest-growing Shorts channels; accuracy is this channel's edge.
 - TRUE SCIENCE STORY: a real, well-documented person or moment behind a discovery, told as a story
   with stakes (the doctor who drank bacteria to prove what causes ulcers; the man whose head was hit by
   a particle-accelerator beam). In the Nov 2026 study, story Shorts about real people reached 850K views
