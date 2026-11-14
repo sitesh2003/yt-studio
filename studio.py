@@ -514,7 +514,8 @@ def weekly():
         now = dt.datetime.now(et)
         when = (now + dt.timedelta(days=(5 - now.weekday()) % 7)).replace(hour=10, minute=0, second=0, microsecond=0)
         if when < now + dt.timedelta(minutes=30):
-            when += dt.timedelta(days=7)
+            # missed Saturday 10 AM (a long render): go out at the next 10 AM ET instead of waiting a week
+            when = (now + dt.timedelta(days=1)).replace(hour=10, minute=0, second=0, microsecond=0)
         vid, at = youtube.upload(job, meta, when)
         meta.update(status="scheduled", video_id=vid, publish_at=at)
         try:

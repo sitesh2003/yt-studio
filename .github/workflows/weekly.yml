@@ -16,7 +16,7 @@ concurrency:
 jobs:
   weekly:
     runs-on: ubuntu-latest
-    timeout-minutes: 90
+    timeout-minutes: 340   # a 9-minute, ~30-scene episode took over 90 min on 14 Nov 2026 (cut off); 360 is GitHub's limit
     steps:
       - uses: actions/checkout@v4
         with:
