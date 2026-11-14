@@ -201,3 +201,46 @@ YouTube Data API, all 27 uploads, plus preview frames of the top 3 and "How We A
 - **Honesty edge:** say when a viral trick only works for special numbers.
 - **Audience:** English for global school and early-college students, with auto-dubbing for Hindi and Spanish. Syllabus tags in the description, never "Chapter 28" in the title.
 - **Needs from the user:** create the channel (a Brand Account) and sign it in.
+
+## 12. Open tools for more accurate videos and stories (14 Nov 2026)
+Rule for all of them: the picture is COMPUTED from real data or drawn by code, so it cannot be wrong
+the way a generated picture can.
+
+**Pictures drawn by code**
+| Need | Tool | Licence | Use |
+|---|---|---|---|
+| Maths, physics diagrams | Manim Community | MIT | step-by-step animation, every number computed |
+| Charts of real numbers | matplotlib (or Manim graphs) | BSD-style | animated charts from real datasets |
+| 3D science scenes | Blender (bpy) | GPL (output is ours) | anatomy, objects, orbits |
+| Scientific 3D (fields, molecules, terrain) | PyVista / VTK | MIT / BSD | correct 3D shapes from data |
+| Molecules | RDKit + PubChem | BSD + free API | true structures from the chemical database |
+| Space | Skyfield + NASA JPL Horizons | MIT + free API | real planet and moon positions |
+| Physics demos | MuJoCo | Apache 2.0 | simulated falls, pendulums and collisions with real physics |
+| Maps | Natural Earth (in use) | public domain | exact borders |
+| Web-style animation (option) | Motion Canvas | MIT | needs a headless browser |
+
+**Facts and numbers**
+- OpenAlex (in use), Europe PMC (abstracts and open full text), Semantic Scholar (free API), arXiv, Crossref: papers.
+- Wikidata (CC0): checkable structured facts (dates, people, places); Wikipedia: only via its cited references.
+- Our World in Data (CC BY): curated datasets with sources.
+- WHO Global Health Observatory (OData API): health statistics.
+- NASA, JPL, NOAA, USGS (earthquakes) APIs: live and official numbers.
+- PubChem: chemical facts.
+
+**Real archive pictures for TRUE SCIENCE STORIES**
+- Wikimedia Commons (in use): historical photos with licences.
+- Smithsonian Open Access (CC0; free api.data.gov key).
+- Library of Congress free-to-use images.
+- Internet Archive / Prelinger Archives: public-domain films.
+- NASA archive (in use).
+
+**Quality checks**
+- **faster-whisper (MIT):** transcribe the finished voice and compare it with the script. This catches skipped or mispronounced words before upload.
+- **WhisperX (BSD-2):** word-exact timing, to prove captions and scene cuts line up with the voice.
+
+**Suggested order:**
+1. Manim (student channel, plus diagrams for the main channel)
+2. faster-whisper voice check
+3. Wikidata plus archives for story videos
+4. real-data charts
+5. molecules and space
