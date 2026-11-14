@@ -388,3 +388,42 @@ numbers, shapes and geometry come from code or data, and a check refuses anythin
 | Molecule | the real 3D molecule, face-on, gently rocking | geometry from PubChem; the model only names it |
 | Cycle | 3-5 stages round a ring with arrows | only for lines about something that repeats |
 The student channel can use up to 5 per video; the main channel 2.
+
+## 16. Getting paid: Partner Programme review and early income (14 Nov 2026)
+Not tax or legal advice; items marked (CA) need a chartered accountant to confirm.
+
+**How a channel is reviewed.** Reviewers watch a sample: the channel's main theme, the most-viewed,
+the newest and the highest watch-time videos, plus titles, thumbnails, descriptions and the About
+section, and they look at how the content was made. Not eligible: "templated storylines... with minimal
+or no narrative, commentary, or educational value", AI content from "generic or unoriginal templates
+giving the impression of mass production", and videos that differ only slightly. Allowed: AI help with
+scripts and visuals, a series where each video has its own focus. Creator reports: TTS-only faceless
+channels are often refused for having "no creative voice", not for using AI. After a refusal: appeal
+within about 21 days or reapply after 30 (check the dates in Studio).
+
+**Built:** an honest "How this was made" note on every description; variety checks; sources and
+corrections credited.
+
+**Realistic timeline:** 1,000 subscribers + 4,000 hours before 01 Feb 2027 is unlikely from ~10
+subscribers, so plan for the 2027 bar (8,000 hours or 20M Shorts views). The 500-subscriber tier
+(3,000 hours or 3M Shorts views; India eligible) unlocks memberships, Super Thanks and Shopping first.
+
+**Owner actions, in order (all free):**
+1. The strongest single step for review: add the owner's real voice or face somewhere - a 5-second
+   spoken intro on the weekly episode, an occasional "why I made this", or replying to comments in your
+   own words. It is the "creative voice" reviewers look for, and only a person can add it.
+2. Before applying, make the weakest early Shorts private (reviewers see the newest and most-viewed).
+3. Amazon Associates (US store for Ever Thought Why?): no subscriber minimum; 3 qualifying sales within
+   180 days or the account closes. Then Claude can add disclosed kit links to long-video descriptions
+   ("As an Amazon Associate I earn from qualifying purchases").
+4. KiwiCo affiliate (10%, no published minimum) and Brilliant (via the Impact network) - fit both
+   channels, especially Why It Works.
+5. A Ko-fi or Buy Me a Coffee page (no threshold); Claude can add the link to long videos.
+6. Keep Why It Works as general audience (not "Made for Kids"): Made for Kids turns off comments,
+   memberships and Shopping. Checked: it is set to not made for kids.
+7. When monetisation starts: W-8BEN in AdSense with a treaty claim (needs PAN; reduces US withholding on
+   US-viewer earnings), Form 67 for the foreign tax credit, and GST/LUT for export of services (CA).
+
+**Disclosure rules:** YouTube's "altered or synthetic" label is for realistic AI scenes (not needed for
+our cartoons and diagrams); tick "paid promotion" for any sponsorship; FTC (US audience) wants
+disclosure in the video and the description; ASCI (India) wants an "Ad"/"Affiliate" label too.
