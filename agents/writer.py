@@ -224,6 +224,18 @@ def countdown_arm(topic):
     return int(hashlib.md5(topic.lower().strip().encode()).hexdigest(), 16) % 2 == 0
 
 
+def length_arm(topic):
+    """THE LENGTH EXPERIMENT (14 Nov 2026): the 2026 studies disagree on the best Shorts length (11-20 s,
+    16-30 s, 50-60 s), so the channel tests its own: half the Shorts aim for about 28 s ("short"), half
+    for the usual target ("standard"). A different hash from the countdown test, so the two do not
+    line up. Once analyst.length_experiment() names a winner, every video uses it."""
+    import hashlib
+    win = ((read_json(DATA / "experiments.json", {}) or {}).get("length") or {}).get("winner")
+    if win in ("short", "standard"):
+        return win
+    return "short" if int(hashlib.sha1(topic.lower().strip().encode()).hexdigest(), 16) % 2 else "standard"
+
+
 ARM = {
     True: {
         "giveaway": """- NEVER GIVE THE ANSWER AWAY BEFORE THE COUNTDOWN. The hook only asks or surprises; the middle gives
@@ -262,6 +274,9 @@ def write_script(topic, recap=None, fix=None):
     ch, fmt = c["channel"], c["format"]
     learn = read_json(DATA / "learnings.json", {}) or {}
     secs = playbook.target_seconds(fmt["target_seconds"])
+    la = length_arm(topic)
+    if la == "short":
+        secs = min(secs, 28)
     words = int(secs * 2.3)          # measured: Kokoro + the countdown pauses run ~2.3 words a second
     prompt = f"""Write a YouTube Short script for US viewers.
 Channel: {ch['niche']}. Tone: {ch['voice_tone']}. American English spelling.
@@ -365,6 +380,7 @@ Return the whole script JSON.""")
             s = again
     s["topic"] = topic
     s["countdown"] = cd
+    s["length_arm"] = la
     if recap:
         s["recap_source"] = recap.get("video_id")
     log(f"writer: script ready, {sum(len(x['narration'].split()) for x in s['scenes'])} words, title {s['title_options'][0]!r}")

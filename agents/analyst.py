@@ -13,12 +13,17 @@ def learn():
         h = history.get(s["video"])
         if h:
             rows.append({"topic": h["topic"], "title": h["title"], "hook": h["hook"],
-                         "countdown": h.get("countdown"), "publish_at": h.get("publish_at"), **s})
+                         "countdown": h.get("countdown"), "length_arm": h.get("length_arm"),
+                         "duration": h.get("duration"), "publish_at": h.get("publish_at"), **s})
     write_json(DATA / "performance.json", rows)
     try:
         experiment(rows)
     except Exception as e:
         log(f"analyst: experiment scoring skipped: {e}")
+    try:
+        length_experiment(rows)
+    except Exception as e:
+        log(f"analyst: length experiment skipped: {e}")
     if len(rows) < 5:
         log(f"analyst: {len(rows)} videos with data, need 5+ before drawing conclusions")
         return None
@@ -67,6 +72,40 @@ def experiment(rows, min_each=8, clear_gap=5.0, max_each=15):
             exp["decided"] = now.date().isoformat()
             log(f"analyst: countdown experiment decided -> {exp['winner']} ({a['avg_view_pct']}% vs {b['avg_view_pct']}% watched)")
     write_json(DATA / "experiments.json", {**old, "countdown": exp})
+    return exp
+
+
+def length_experiment(rows, min_each=8, clear_lead=1.25, max_each=15):
+    """Scores the length test on VIEWS per video (reach), not view percentage: a shorter video always
+    shows a higher percentage, so that number would favour 'short' by arithmetic alone. Same gates as
+    the countdown test: public 2+ days, 100+ views; a winner at 8+ each with a 25% lead, or at 15+ each."""
+    import datetime as dt
+    now = dt.datetime.now(dt.timezone.utc)
+    arms = {"short": [], "standard": []}
+    for r in rows:
+        if r.get("length_arm") not in arms or (r.get("views") or 0) < 100 or not r.get("publish_at"):
+            continue
+        try:
+            if now - dt.datetime.fromisoformat(r["publish_at"]).astimezone(dt.timezone.utc) < dt.timedelta(days=2):
+                continue
+        except ValueError:
+            continue
+        arms[r["length_arm"]].append(r)
+    old = read_json(DATA / "experiments.json", {}) or {}
+    exp = dict(old.get("length") or {})
+    stat = {k: {"videos": len(v), "avg_views": round(sum(r["views"] for r in v) / len(v)) if v else None,
+                "avg_view_pct": round(sum(r.get("averageViewPercentage", 0) for r in v) / len(v), 1) if v else None,
+                "avg_seconds": round(sum(r.get("duration") or 0 for r in v) / len(v), 1) if v else None}
+            for k, v in arms.items()}
+    exp.update(started="2026-11-14", measure="views per video", arms=stat)
+    a, b = stat["short"], stat["standard"]
+    if not exp.get("winner") and min(a["videos"], b["videos"]) >= min_each:
+        hi, lo = max(a["avg_views"], b["avg_views"]), max(1, min(a["avg_views"], b["avg_views"]))
+        if hi / lo >= clear_lead or min(a["videos"], b["videos"]) >= max_each:
+            exp["winner"] = "short" if a["avg_views"] >= b["avg_views"] else "standard"
+            exp["decided"] = now.date().isoformat()
+            log(f"analyst: length experiment decided -> {exp['winner']} ({a['avg_views']} vs {b['avg_views']} views)")
+    write_json(DATA / "experiments.json", {**old, "length": exp})
     return exp
 
 

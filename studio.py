@@ -54,6 +54,7 @@ def build(script):
             "narration": " ".join(sc["narration"] for sc in script["scenes"]),
             "voice_engine": voice.last_engine, "voices": voice.last_cast, "diagrams": visuals._diagrams,
             "series": script.get("series", ""), "countdown": script.get("countdown"),
+            "length_arm": script.get("length_arm"),
             "question": script.get("question", ""), "answer_comment": script.get("answer_comment", ""),
             "sources": script.get("sources", []), "fact_check": script.get("fact_check", []),
             "scene_times": [[round(a, 2), round(b, 2)] for a, b in times],

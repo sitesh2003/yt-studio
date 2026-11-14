@@ -9,7 +9,7 @@ import html
 from email.mime.text import MIMEText
 from zoneinfo import ZoneInfo
 
-from .core import config, log
+from .core import DATA, config, log, read_json
 
 
 def _when(iso):
@@ -40,6 +40,11 @@ def build(results, stats=None):
     try:
         from .analyst import experiment_line
         health = list(health) + [experiment_line()]
+        le = (read_json(DATA / "experiments.json", {}) or {}).get("length") or {}
+        a, b = (le.get("arms") or {}).get("short") or {}, (le.get("arms") or {}).get("standard") or {}
+        health.append(f"Length test (~28 s vs standard): {a.get('videos', 0)} short ({a.get('avg_views') or '-'} views each) "
+                      f"vs {b.get('videos', 0)} standard ({b.get('avg_views') or '-'}); "
+                      + (f"decided: {le['winner']}." if le.get("winner") else "needs 8 of each, public 2+ days."))
         from .illustrate import status_line
         health.append(status_line())
     except Exception:
