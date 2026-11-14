@@ -166,7 +166,11 @@ def render(clips, times, words, job_dir, overlays=None):
     k = max(1.0, float(f.get("upload_short_side", min(f["width"], f["height"]))) / min(f["width"], f["height"]))
     W, H = int(f["width"] * k) // 2 * 2, int(f["height"] * k) // 2 * 2
     up = f"scale={W}:{H}:flags=lanczos," if k > 1 else ""
-    vchain = f"[0:v]{up}ass=captions.ass:fontsdir=fonts[c]"
+    # a light, moving film grain under the captions: takes the flat, digital look off drawings and
+    # stock clips the way an editor's finishing pass does (captions and logo stay clean on top)
+    grain = int(config().get("finish", {}).get("grain", 4))
+    gr = f"noise=alls={grain}:allf=t," if grain > 0 else ""
+    vchain = f"[0:v]{up}{gr}ass=captions.ass:fontsdir=fonts[c]"
     if logo.exists():
         cmd += ["-i", str(logo)]
         li = 2
@@ -179,10 +183,13 @@ def render(clips, times, words, job_dir, overlays=None):
         mi = 3 if logo.exists() else 2
         cmd += ["-stream_loop", "-1", "-i", str(random.choice(music))]
         vol = config()["music"]["volume"]
-        audio = f"[{mi}:a]volume={vol}[m];[1:a][m]amix=inputs=2:duration=first:dropout_transition=0[a]"
-        cmd += ["-filter_complex", f"{vchain};{audio}", "-map", "[v]", "-map", "[a]"]
+        # the music dips whenever the narrator speaks (side-chain ducking), then the mix is levelled
+        audio = (f"[1:a]{VOICE_POLISH},asplit=2[vo][key];[{mi}:a]volume={vol}[m0];"
+                 f"[m0][key]sidechaincompress=threshold=0.02:ratio=8:attack=20:release=450[m];"
+                 f"[vo][m]amix=inputs=2:duration=first:dropout_transition=0:normalize=0,{LOUDNESS}[a]")
     else:
-        cmd += ["-filter_complex", vchain, "-map", "[v]", "-map", "1:a"]
+        audio = f"[1:a]{VOICE_POLISH},{LOUDNESS}[a]"
+    cmd += ["-filter_complex", f"{vchain};{audio}", "-map", "[v]", "-map", "[a]"]
     cmd += ["-c:v", "libx264", "-preset", "medium", "-crf", "18", "-pix_fmt", "yuv420p",
             "-c:a", "aac", "-b:a", "160k", "-shortest", "-movflags", "+faststart", "final.mp4"]
     run(cmd, cwd=job_dir)
@@ -198,6 +205,12 @@ def render(clips, times, words, job_dir, overlays=None):
     log("editor: final.mp4 rendered")
     return job_dir / "final.mp4"
 
+
+# Finishing the sound like an editor would: cut rumble below 70 Hz, a gentle compressor so quiet and
+# loud words sit closer together, then level the whole mix to -14 LUFS with peaks under -1.5 dBTP
+# (the loudness YouTube plays at, so we are never turned down or sound weaker than the next video).
+VOICE_POLISH = "highpass=f=70,acompressor=threshold=-20dB:ratio=2.5:attack=15:release=200:makeup=2"
+LOUDNESS = "loudnorm=I=-14:TP=-1.5:LRA=11,aresample=48000"
 
 YELLOW, WHITE, BLACK = (255, 222, 0), (255, 255, 255), (0, 0, 0)
 FONT = str(ASSETS / "fonts" / "ArchivoBlack-Regular.ttf")  # bundled, so cloud and PC renders match

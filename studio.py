@@ -67,7 +67,7 @@ def build(script):
             log(f"qa failed to run, holding the video: {e}")
             break
         q = meta["qa"]
-        if q.get("pass") or attempt == 2 or q.get("facts") or q.get("technical") or q.get("sync"):
+        if q.get("pass") or attempt == 2 or q.get("facts") or q.get("technical") or q.get("sync") or q.get("spoken"):
             break  # passed, or a problem footage can't fix
         notes = flagged_scenes(q, len(script["scenes"]))
         if not notes:
@@ -82,7 +82,7 @@ def build(script):
         meta["description"] = desc
     q = meta.get("qa") or {}
     weak = [i for i, sc in enumerate(visuals.last_scores) if sc < 3]
-    only_footage = q.get("footage") and not any(q.get(k) for k in ("facts", "technical", "sync", "review"))
+    only_footage = q.get("footage") and not any(q.get(k) for k in ("facts", "technical", "sync", "spoken", "review"))
     if not q.get("pass") and only_footage and 0 < len(weak) <= 2 and 0 not in weak:
         # LAST RESORT: after every search, a scene still has nothing that fits. Hold the shot before
         # it a little longer (a different moment of the strongest neighbouring clip) rather than lose

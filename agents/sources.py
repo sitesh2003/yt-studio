@@ -27,7 +27,7 @@ def _abstract(inv):
 
 def _search(query, n=6):
     r = requests.get(API, params={"search": query[:200], "per-page": n,
-                                  "filter": "is_oa:true,has_abstract:true,type:article"},
+                                  "filter": "is_oa:true,has_abstract:true,type:article,is_retracted:false"},
                      headers=UA, timeout=30)
     r.raise_for_status()
     out = []

@@ -6,6 +6,7 @@ A video is published only if ALL of these pass:
   3. sync       caption timings line up with the real pauses in the audio
   4. footage    every scene's footage scored >= 5 by the visuals judge
   5. review     an AI looks at frames from every scene next to the narration and signs off
+  6. spoken     the finished audio is transcribed and compared with the script (agents/listen.py)
 Results go to meta["qa"]; the review page shows them.
 """
 import io
@@ -114,11 +115,18 @@ Return JSON: {{"pass": true or false, "issues": ["specific problem with frame nu
 
 def check(job, script, times, words, footage_scores):
     meta = read_json(job / "meta.json", {}) or {}
-    result = {"facts": [], "technical": [], "sync": [], "footage": [], "review": []}
+    result = {"facts": [], "technical": [], "sync": [], "spoken": [], "footage": [], "review": []}
     if not meta.get("fact_ok", True):
         result["facts"].append("fact-check not fully resolved")
     result["technical"], dur = technical(job)
     result["sync"] = sync(job, words)
+    try:   # 6. the audio says what the script says (agents/listen.py)
+        from . import listen
+        result["spoken"], heard_notes = listen.check(job, script)
+        if heard_notes:
+            result["heard"] = heard_notes
+    except Exception as e:
+        result["heard"] = [f"listening check failed to run: {str(e)[:80]}"]
     sc = list(footage_scores or [])
     weak = [i + 1 for i, s in enumerate(sc) if s < 5]
     # one loosely-related middle scene (score 3-4) is allowed when the AI frame review
@@ -132,7 +140,7 @@ def check(job, script, times, words, footage_scores):
         result["review"] = review(job, script, times)
     except Exception as e:
         result["review"] = [f"AI review unavailable: {str(e)[:80]}"]
-    passed = not any(v for k, v in result.items() if k != "notes")
+    passed = not any(v for k, v in result.items() if k not in ("notes", "heard"))
     result["pass"] = passed
     result["duration"] = dur
     problems = [f"{k}: {v}" for k, vals in result.items() if isinstance(vals, list) for v in vals]
