@@ -1,12 +1,13 @@
 {
-  "summary": "Prioritize direct, startling physiological facts in the first sentence to instantly grab attention without slow wind-ups. Keep titles punchy and focused on hidden mechanisms rather than generic descriptions. Maintain hook lengths under 15 words to maximize immediate comprehension and retention. Focus topics on everyday sensory or biological mysteries that directly challenge common assumptions. Avoid descriptive, drawn-out introductory statements that summarize the topic instead of triggering curiosity.",
+  "summary": "Prioritize short, highly punchy hook sentences under 10 words to maximize initial viewer retention. Focus on visceral, counter-intuitive bodily reactions like eating and biological defense mechanisms. Use dramatic, short-form titles instead of descriptive academic summaries to drive algorithmic interest. Eliminate lengthy, explanatory hook clauses that reveal the full context too early. Keep average view durations high by maintaining active curiosity gaps in the middle segments of the video.",
   "winning_hooks": [
+    "Fresh pineapple is literally eating you back.",
     "Your eyes are leaking right now, and your brain is hiding it.",
-    "You are not sad when you chop an onion."
+    "This shark is older than the United States."
   ],
   "avoid": [
-    "Honey is famous for being one of the only natural foods that never truly spoils.",
-    "That sweet maple syrup on your pancakes? It started out as practically water."
+    "Starting hooks with explanatory phrases like 'Garlic usually doesn't make you cry when you chop it, because...'",
+    "Using long, academic titles that lack curiosity-driven contrast or emotional hooks."
   ],
-  "next_experiment": "Test a zero-setup physiological hook against a traditional question-based hook using the same topic to measure impact on averageViewPercentage."
+  "next_experiment": "Test an A/B split on a new biological topic comparing a 6-word shocking hook ('Your saliva is currently dissolving you') against a standard descriptive hook ('Why your mouth produces liquid all day') while tracking averageViewPercentage for rewatch value."
 }

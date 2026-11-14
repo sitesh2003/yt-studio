@@ -14,5 +14,23 @@
         "avg_views": null
       }
     }
+  },
+  "length": {
+    "started": "2026-11-14",
+    "measure": "views per video",
+    "arms": {
+      "short": {
+        "videos": 0,
+        "avg_views": null,
+        "avg_view_pct": null,
+        "avg_seconds": null
+      },
+      "standard": {
+        "videos": 0,
+        "avg_views": null,
+        "avg_view_pct": null,
+        "avg_seconds": null
+      }
+    }
   }
 }

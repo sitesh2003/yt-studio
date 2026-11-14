@@ -1014,7 +1014,8 @@
     "repairs": 1,
     "video_id": "fXKlhAXJSTc",
     "publish_at": "2026-11-14T12:00:00-05:00",
-    "answered": true
+    "answered": true,
+    "recapped": true
   },
   {
     "job": "20261112-1229-why-apples-float-in-water-while-pears-im",
@@ -1991,5 +1992,192 @@
     "repairs": 0,
     "video_id": "w0zPA2nv_Rg",
     "publish_at": "2026-11-15T10:00:00-05:00"
+  },
+  {
+    "job": "20261114-2119-why-tuning-forks-require-two-identical-p",
+    "topic": "Why tuning forks require two identical prongs to make sound instead of a single metal rod",
+    "title": "How Tuning Forks Actually Make Sound 🔊",
+    "description": "Discover the mechanical engineering inside a simple tuning fork and why two symmetrical prongs maintain clear resonance. #shorts #science #physics\n\nIllustrations: drawn for this video with FLUX.2 [klein] 4B (AI, Apache 2.0) and checked for accuracy\nPhoto: Minh Ngoc Nguyen et al., CC BY 4.0, via Wikimedia Commons\nPhoto: Speculum Mundi, BY 2.0, via Openverse (flickr)\nPhoto: eurok, BY 2.0, via Openverse (flickr)\nPhoto: unknown, BY 4.0, via Openverse (museumsvictoria)\nVideo by RuslanSikunov on Pixabay",
+    "tags": [
+      "tuning fork",
+      "physics",
+      "engineering",
+      "sound waves",
+      "shorts"
+    ],
+    "hook": "Ever wonder how tuning forks make that steady ringing sound?",
+    "status": "banked",
+    "narration": "Ever wonder how tuning forks make that steady ringing sound? If you just hit a flat piece of metal, the sound fades away quickly. Why doesn't that make a pure musical note? Because two prongs working together maintain vibration much more effectively. So how do two identical prongs create that steady ring? The two prongs swing outward and inward in opposite directions. This balances forces at the stem, preventing your hand from dampening the vibration. Yesterday's garlic puzzle remains unsolved! Why do scissors use two crossing blades instead of pushing one edge straight down? Guess below.",
+    "voice_engine": "kokoro",
+    "voices": "male host, female explainer",
+    "diagrams": 0,
+    "series": "How Things Work",
+    "countdown": false,
+    "length_arm": "standard",
+    "question": "Ever thought why a pair of scissors uses two crossing blades instead of just pushing one sharp edge straight down through paper?",
+    "answer_comment": "The answer: Scissors use two crossing blades to create a shearing action that slices materials cleanly at a single point of contact, whereas pushing one flat blade straight down would just crush and tear the fibers apart. Got another everyday tool question?",
+    "sources": [],
+    "fact_check": [
+      "Tuning forks have two prongs that vibrate in opposite directions, creating a balanced mechanical system that minimizes stem vibration.",
+      "A single metal rod vibrates differently and lacks the counter-balancing motion of paired prongs.",
+      "Scissors use a shearing mechanism created by two crossing blades rather than a single downward wedge."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        4.14
+      ],
+      [
+        4.14,
+        8.43
+      ],
+      [
+        8.43,
+        11.42
+      ],
+      [
+        11.42,
+        16.69
+      ],
+      [
+        16.69,
+        21.08
+      ],
+      [
+        21.08,
+        25.13
+      ],
+      [
+        25.13,
+        30.45
+      ],
+      [
+        30.45,
+        40.52
+      ]
+    ],
+    "duration": 40.52,
+    "scene_lines": [
+      "Ever wonder how tuning forks make that steady ringing sound?",
+      "If you just hit a flat piece of metal, the sound fades away quickly.",
+      "Why doesn't that make a pure musical note?",
+      "Because two prongs working together maintain vibration much more effectively.",
+      "So how do two identical prongs create that steady ring?",
+      "The two prongs swing outward and inward in opposite directions.",
+      "This balances forces at the stem, preventing your hand from dampening the vibration.",
+      "Yesterday's garlic puzzle remains unsolved! Why do scissors use two crossing blades instead of pushing one edge straight down? Guess below."
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": "fXKlhAXJSTc",
+    "captions_srt": "1\n00:00:00,050 --> 00:00:04,000\nEver wonder how tuning forks make that steady ringing sound?\n\n2\n00:00:04,140 --> 00:00:05,428\nIf you just hit a flat piece\n\n3\n00:00:05,428 --> 00:00:08,240\nof metal, the sound fades away quickly.\n\n4\n00:00:08,430 --> 00:00:11,230\nWhy doesn't that make a pure musical note?\n\n5\n00:00:11,420 --> 00:00:16,370\nBecause two prongs working together maintain vibration much more effectively.\n\n6\n00:00:16,690 --> 00:00:20,890\nSo how do two identical prongs create that steady ring?\n\n7\n00:00:21,080 --> 00:00:25,055\nThe two prongs swing outward and inward in opposite directions.\n\n8\n00:00:25,130 --> 00:00:27,842\nThis balances forces at the stem, preventing\n\n9\n00:00:27,842 --> 00:00:30,280\nyour hand from dampening the vibration.\n\n10\n00:00:30,450 --> 00:00:33,410\nYesterday's garlic puzzle remains unsolved!\n\n11\n00:00:33,410 --> 00:00:36,260\nWhy do scissors use two crossing blades\n\n12\n00:00:36,260 --> 00:00:38,870\ninstead of pushing one edge straight down?\n\n13\n00:00:38,870 --> 00:00:39,920\nGuess below.\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [],
+      "footage": [],
+      "review": [],
+      "pass": true,
+      "duration": 39.8
+    },
+    "repairs": 1,
+    "audited": true
+  },
+  {
+    "job": "20261114-2201-what-actually-triggers-a-sudden-brain-fr",
+    "topic": "What actually triggers a sudden 'brain freeze' when you consume cold food too fast",
+    "title": "The Hidden Cause Of Brain Freeze 😮",
+    "description": "Ever wonder what's actually happening inside your head when you eat something cold too fast? It's not your brain getting cold; it's a clever biological reflex gone wrong. #science #brainfreeze #shorts\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nIllustrations: drawn for this video with FLUX.2 [klein] 4B (AI, Apache 2.0) and checked for accuracy\nPhoto by Surprising_Media on Pixabay\nPhoto: unknown, CC0 1.0, via Openverse (rawpixel)\nVideo by Engin_Akyurt on Pixabay\nVideo by LaurencD on Pixabay\nVideo by SYG_Anime on Pixabay\n\nHow this was made: the script is researched and fact-checked with AI tools against open-access research (sources above when found), narrated by an AI voice, and edited with open-source software. Corrections from viewers are checked and credited.",
+    "tags": [
+      "science",
+      "biology",
+      "brain freeze",
+      "how things work",
+      "shorts"
+    ],
+    "hook": "A sudden brain freeze happens as a reflex when cold triggers nerves in your mouth.",
+    "status": "banked",
+    "narration": "A sudden brain freeze happens as a reflex when cold triggers nerves in your mouth. It feels like a headache, but that pain isn't coming from your brain. When something freezing hits the roof of your mouth, it chills the blood vessels. Scientists think blood vessels in the area rapidly change size. So, what is the brain actually doing with that information? That rapid temperature change triggers nerves, sending a signal your brain misinterprets as pain. It’s referred pain, like when an arm hurts during a heart attack. Ever thought how you might stop the freeze by pressing your tongue against your palate?",
+    "voice_engine": "kokoro",
+    "voices": "male host, female explainer",
+    "diagrams": 1,
+    "series": "Body Whys",
+    "countdown": false,
+    "length_arm": "standard",
+    "question": "Ever thought how you might stop the freeze just by pressing your tongue against your warm palate?",
+    "answer_comment": "The answer: Pressing your warm tongue against the roof of your mouth helps warm up those sensitive blood vessels again, which helps calm the nerves sending the pain signal. It's like a manual reset for your nerves! Ever thought why it only happens with cold things touching the roof of your mouth and not just cold air?",
+    "sources": [],
+    "fact_check": [
+      "Brain freeze (sphenopalatine ganglioneuralgia) is caused by rapid cooling and warming of the palate capillaries.",
+      "The pain is referred pain, misinterpreted by the trigeminal nerve.",
+      "The trigeminal nerve carries sensory signals from the face and mouth to the brain.",
+      "Pressing the tongue against the palate is a widely accepted technique to alleviate the sensation by providing warmth."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        5.32
+      ],
+      [
+        5.32,
+        9.88
+      ],
+      [
+        9.88,
+        14.5
+      ],
+      [
+        14.5,
+        18.64
+      ],
+      [
+        18.64,
+        22.71
+      ],
+      [
+        22.71,
+        28.78
+      ],
+      [
+        28.78,
+        32.83
+      ],
+      [
+        32.83,
+        38.18
+      ]
+    ],
+    "duration": 38.18,
+    "scene_lines": [
+      "A sudden brain freeze happens as a reflex when cold triggers nerves in your mouth.",
+      "It feels like a headache, but that pain isn't coming from your brain.",
+      "When something freezing hits the roof of your mouth, it chills the blood vessels.",
+      "Scientists think blood vessels in the area rapidly change size.",
+      "So, what is the brain actually doing with that information?",
+      "That rapid temperature change triggers nerves, sending a signal your brain misinterprets as pain.",
+      "It’s referred pain, like when an arm hurts during a heart attack.",
+      "Ever thought how you might stop the freeze by pressing your tongue against your palate?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,050 --> 00:00:02,125\nA sudden brain freeze happens as a\n\n2\n00:00:02,125 --> 00:00:05,320\nreflex when cold triggers nerves in your mouth.\n\n3\n00:00:05,320 --> 00:00:07,483\nIt feels like a headache, but that\n\n4\n00:00:07,483 --> 00:00:09,845\npain isn't coming from your brain.\n\n5\n00:00:09,880 --> 00:00:11,642\nWhen something freezing hits the roof of\n\n6\n00:00:11,642 --> 00:00:14,430\nyour mouth, it chills the blood vessels.\n\n7\n00:00:14,500 --> 00:00:18,400\nScientists think blood vessels in the area rapidly change size.\n\n8\n00:00:18,640 --> 00:00:22,515\nSo, what is the brain actually doing with that information?\n\n9\n00:00:22,710 --> 00:00:25,810\nThat rapid temperature change triggers nerves, sending\n\n10\n00:00:25,810 --> 00:00:28,760\na signal your brain misinterprets as pain.\n\n11\n00:00:28,780 --> 00:00:30,930\nIt’s referred pain, like when an arm\n\n12\n00:00:30,930 --> 00:00:32,605\nhurts during a heart attack.\n\n13\n00:00:32,830 --> 00:00:34,368\nEver thought how you might stop the\n\n14\n00:00:34,368 --> 00:00:37,580\nfreeze by pressing your tongue against your palate?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [],
+      "footage": [],
+      "review": [],
+      "heard": [
+        "\"freeze\" heard as \"free\"",
+        "\"it s\" heard as \"it's\""
+      ],
+      "pass": true,
+      "duration": 37.2
+    },
+    "repairs": 0,
+    "audited": true
   }
 ]

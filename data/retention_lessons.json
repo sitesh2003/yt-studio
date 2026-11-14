@@ -1,15 +1,17 @@
 {
   "lessons": [
-    "Not enough data to definitively determine which hook types keep people past the first seconds, as only one video ('Why Cold Water Fails Against Spicy Food') provides a hook line, and its start retention vs similar is low (0.33).",
-    "Not enough data to determine specific line types causing viewer drop-off, as 'biggest_drops' lines are missing for two out of three videos and drops happen across varied timestamps.",
-    "Not enough data to compare best-holding videos against others, because overall retention variance across the small sample size is too narrow."
+    "Avoid starting with declarative background facts or process descriptions (like tree sap composition), as they trigger massive initial drop-offs up to 38.5%.",
+    "Eliminate mid-video pauses and guessing prompts (e.g., 'Pause and guess...'), which cause immediate abandonment (15.4% drop).",
+    "Keep hook lines directly tied to counter-intuitive sensory experiences rather than abstract statements to minimize early viewer bleeding.",
+    "Not enough data to definitively rank best-holding script structures due to small sample size and consistently low end-retention across all videos."
   ],
   "worst_moment_types": [
-    "Not enough data"
+    "Explanatory background filler facts early in the video",
+    "Mid-video rhetorical questions paired with pauses"
   ],
   "best_hook_types": [
     "Not enough data"
   ],
   "studied": "2026-11-14",
-  "videos": 3
+  "videos": 4
 }

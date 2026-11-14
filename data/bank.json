@@ -70,5 +70,29 @@
     "locked": true,
     "series": "Animal Whys",
     "stored": "2026-11-14T16:53:14.754291+00:00"
+  },
+  {
+    "job": "20261114-2119-why-tuning-forks-require-two-identical-p",
+    "title": "How Tuning Forks Actually Make Sound 🔊",
+    "assets": {
+      "mp4": 748894034,
+      "jpg": 748894242,
+      "json": 748894268
+    },
+    "locked": true,
+    "series": "How Things Work",
+    "stored": "2026-11-14T21:55:31.001622+00:00"
+  },
+  {
+    "job": "20261114-2201-what-actually-triggers-a-sudden-brain-fr",
+    "title": "The Hidden Cause Of Brain Freeze 😮",
+    "assets": {
+      "mp4": 748956443,
+      "jpg": 748956688,
+      "json": 748956711
+    },
+    "locked": true,
+    "series": "Body Whys",
+    "stored": "2026-11-14T22:21:37.015410+00:00"
   }
 ]

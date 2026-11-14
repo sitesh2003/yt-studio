@@ -52,3 +52,18 @@ Sources:
 
 Sources:
 - Thondiyil et al. (2025), Journal of Food Quality. doi:10.1155/jfq/5580791 — supports: Bromelain in fresh pineapple digests proteins and is denatured by heat during cooking or processing.
+
+## How Tuning Forks Actually Make Sound 🔊
+*2026-11-14 · How Things Work*
+
+- Tuning forks have two prongs that vibrate in opposite directions, creating a balanced mechanical system that minimizes stem vibration.
+- A single metal rod vibrates differently and lacks the counter-balancing motion of paired prongs.
+- Scissors use a shearing mechanism created by two crossing blades rather than a single downward wedge.
+
+## The Hidden Cause Of Brain Freeze 😮
+*2026-11-14 · Body Whys*
+
+- Brain freeze (sphenopalatine ganglioneuralgia) is caused by rapid cooling and warming of the palate capillaries.
+- The pain is referred pain, misinterpreted by the trigeminal nerve.
+- The trigeminal nerve carries sensory signals from the face and mouth to the brain.
+- Pressing the tongue against the palate is a widely accepted technique to alleviate the sensation by providing warmth.

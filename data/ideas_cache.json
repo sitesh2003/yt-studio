@@ -1,0 +1,1467 @@
+{
+  "se:biology": {
+    "date": "2026-11-14",
+    "items": [
+      {
+        "q": "What is the advantage of circular DNA in bacteria? ",
+        "site": "biology",
+        "votes": 34
+      },
+      {
+        "q": "Why are not all species hermaphrodites?",
+        "site": "biology",
+        "votes": 34
+      },
+      {
+        "q": "How long does it take for memory to disperse after death?",
+        "site": "biology",
+        "votes": 34
+      },
+      {
+        "q": "What do you see when your eyes are closed?",
+        "site": "biology",
+        "votes": 34
+      },
+      {
+        "q": "Ripening bananas artificially: What is the biological theory behind?",
+        "site": "biology",
+        "votes": 34
+      },
+      {
+        "q": "Can beavers control the direction a tree falls?",
+        "site": "biology",
+        "votes": 34
+      },
+      {
+        "q": "Why are many fruits sour?",
+        "site": "biology",
+        "votes": 34
+      },
+      {
+        "q": "How long can an octopus survive out of the water?",
+        "site": "biology",
+        "votes": 34
+      },
+      {
+        "q": "What do butterflies eat?",
+        "site": "biology",
+        "votes": 34
+      },
+      {
+        "q": "Why do some viruses cease being a problem even though no vaccine or cure is found?",
+        "site": "biology",
+        "votes": 34
+      },
+      {
+        "q": "Why don't viruses cause wounds?",
+        "site": "biology",
+        "votes": 34
+      },
+      {
+        "q": "Why is DNA replication performed in the 5' to 3' direction?",
+        "site": "biology",
+        "votes": 33
+      },
+      {
+        "q": "Why do mammalian red blood cells lack a nucleus?",
+        "site": "biology",
+        "votes": 33
+      },
+      {
+        "q": "How do trees manage to grow equally in all directions?",
+        "site": "biology",
+        "votes": 33
+      },
+      {
+        "q": "Why is saltatory conduction in myelinated axons faster than continuous conduction in unmyelinated axons?",
+        "site": "biology",
+        "votes": 33
+      },
+      {
+        "q": "Were there any flying dinosaurs?",
+        "site": "biology",
+        "votes": 33
+      },
+      {
+        "q": "Why are there species instead of a continuum of various animals?",
+        "site": "biology",
+        "votes": 33
+      },
+      {
+        "q": "Is there anything that is completely non-toxic to humans at any dose?",
+        "site": "biology",
+        "votes": 33
+      },
+      {
+        "q": "Is evolution a fact?",
+        "site": "biology",
+        "votes": 33
+      },
+      {
+        "q": "Why doesn't blood remain on a mosquito's proboscis in quantities that could spread blood-borne diseases?",
+        "site": "biology",
+        "votes": 33
+      },
+      {
+        "q": "Why isn't Fluorine, or Neon, the final electron acceptor in cellular respiration?",
+        "site": "biology",
+        "votes": 33
+      },
+      {
+        "q": "Can a bacterium infect another bacterium?",
+        "site": "biology",
+        "votes": 33
+      },
+      {
+        "q": "Why aren't there any competing biologies on Earth?",
+        "site": "biology",
+        "votes": 33
+      },
+      {
+        "q": "How does cerebrospinal fluid circulate in the central nervous system?",
+        "site": "biology",
+        "votes": 32
+      },
+      {
+        "q": "How long will a vegetable live for after being harvested?",
+        "site": "biology",
+        "votes": 32
+      },
+      {
+        "q": "What is the lowest pressure at which plants can survive?",
+        "site": "biology",
+        "votes": 32
+      },
+      {
+        "q": "Do men have more extreme variations than women?",
+        "site": "biology",
+        "votes": 32
+      },
+      {
+        "q": "How did viruses come to be?",
+        "site": "biology",
+        "votes": 32
+      },
+      {
+        "q": "How can homosexuality evolve despite natural selection?",
+        "site": "biology",
+        "votes": 32
+      },
+      {
+        "q": "Why did abiogenesis only happen once?",
+        "site": "biology",
+        "votes": 32
+      }
+    ]
+  },
+  "se:chemistry": {
+    "date": "2026-11-14",
+    "items": [
+      {
+        "q": "Does O2 have a color in the gas phase",
+        "site": "chemistry",
+        "votes": 35
+      },
+      {
+        "q": "What would be the effect of the addition of an inert gas to a reaction at equilibrium?",
+        "site": "chemistry",
+        "votes": 35
+      },
+      {
+        "q": "Why can't Pd/C and H2 reduce both the alkene and carbonyl portions of α,β-unsaturated carbonyls?",
+        "site": "chemistry",
+        "votes": 35
+      },
+      {
+        "q": "Why is 1-ethylidene-4-methylcyclohexane chiral?",
+        "site": "chemistry",
+        "votes": 35
+      },
+      {
+        "q": "Would it be possible to destroy gold?",
+        "site": "chemistry",
+        "votes": 35
+      },
+      {
+        "q": "Why is '-ethane' in 'methane'?",
+        "site": "chemistry",
+        "votes": 35
+      },
+      {
+        "q": "Why does the unstabilised Wittig reaction selectively form cis alkenes?",
+        "site": "chemistry",
+        "votes": 34
+      },
+      {
+        "q": "Why do branched chain compounds have lower boiling points than the corresponding straight chain isomers?",
+        "site": "chemistry",
+        "votes": 34
+      },
+      {
+        "q": "Why does pyrite form cubic crystals?",
+        "site": "chemistry",
+        "votes": 34
+      },
+      {
+        "q": "Has anyone even taken a picture of a molecule to confirm the geometry predicted by theory?",
+        "site": "chemistry",
+        "votes": 34
+      },
+      {
+        "q": "What is the exchange interaction?",
+        "site": "chemistry",
+        "votes": 34
+      },
+      {
+        "q": "Why does burnt hair smell bad?",
+        "site": "chemistry",
+        "votes": 34
+      },
+      {
+        "q": "Where did amino acids get their one-letter codes?",
+        "site": "chemistry",
+        "votes": 34
+      },
+      {
+        "q": "What makes Gorilla Glass more durable with each generation?",
+        "site": "chemistry",
+        "votes": 34
+      },
+      {
+        "q": "What is the molecular structure of xenon hexafluoride?",
+        "site": "chemistry",
+        "votes": 34
+      },
+      {
+        "q": "Why isn't 'chemically-strengthened glass' made with potassium carbonate to begin with?",
+        "site": "chemistry",
+        "votes": 34
+      },
+      {
+        "q": "Flammability (NFPA) - how is it defined?",
+        "site": "chemistry",
+        "votes": 33
+      },
+      {
+        "q": "Why is methanol toxic?",
+        "site": "chemistry",
+        "votes": 33
+      },
+      {
+        "q": "Are there non-transparent gases?",
+        "site": "chemistry",
+        "votes": 33
+      },
+      {
+        "q": "Why does hyperconjugation help for ring cleavage?",
+        "site": "chemistry",
+        "votes": 33
+      },
+      {
+        "q": "Why are there only 7 types of unit cells and 14 types of Bravais lattices?",
+        "site": "chemistry",
+        "votes": 33
+      },
+      {
+        "q": "What caused the flashes in the video footage of Chernobyl?",
+        "site": "chemistry",
+        "votes": 33
+      }
+    ]
+  },
+  "se:physics": {
+    "date": "2026-11-14",
+    "items": [
+      {
+        "q": "Why does nature favour the Laplacian?",
+        "site": "physics",
+        "votes": 111
+      },
+      {
+        "q": "Why does a sticker slowly peel off, but if it is pulled quickly it tears?",
+        "site": "physics",
+        "votes": 111
+      },
+      {
+        "q": "Why do tuning forks have two prongs?",
+        "site": "physics",
+        "votes": 110
+      },
+      {
+        "q": "Why are some people are claiming that the Big Bang never happened?",
+        "site": "physics",
+        "votes": 110
+      },
+      {
+        "q": "How do we know that radioactive decay rates are constant over billions of years?",
+        "site": "physics",
+        "votes": 110
+      },
+      {
+        "q": "What justifies dimensional analysis?",
+        "site": "physics",
+        "votes": 109
+      },
+      {
+        "q": "Why is oil a better lubricant than water?",
+        "site": "physics",
+        "votes": 109
+      },
+      {
+        "q": "If gravity isn't a force, then why do we learn in school that it is?",
+        "site": "physics",
+        "votes": 108
+      },
+      {
+        "q": "What is spontaneous symmetry breaking in quantum systems?",
+        "site": "physics",
+        "votes": 107
+      },
+      {
+        "q": "Why does the Sun's (or other stars') nuclear reaction not use up all its \"fuel\" immediately?",
+        "site": "physics",
+        "votes": 107
+      },
+      {
+        "q": "Why do most formulas in physics have integer and rational exponents?",
+        "site": "physics",
+        "votes": 106
+      },
+      {
+        "q": "Best books for mathematical background?",
+        "site": "physics",
+        "votes": 105
+      },
+      {
+        "q": "Why does the atmosphere rotate along with the earth?",
+        "site": "physics",
+        "votes": 105
+      },
+      {
+        "q": "Why is there a scarcity of lithium?",
+        "site": "physics",
+        "votes": 105
+      },
+      {
+        "q": "Why do same/opposite electric charges repel/attract each other, respectively?",
+        "site": "physics",
+        "votes": 105
+      },
+      {
+        "q": "Is there such thing as imaginary time dilation?",
+        "site": "physics",
+        "votes": 105
+      },
+      {
+        "q": "Why is filling a balloon from your mouth much harder initially?",
+        "site": "physics",
+        "votes": 104
+      },
+      {
+        "q": "What is the speed of sound in space?",
+        "site": "physics",
+        "votes": 104
+      },
+      {
+        "q": "Which is stronger, a rope without knots or a rope with knots?",
+        "site": "physics",
+        "votes": 104
+      },
+      {
+        "q": "How did Einstein know the speed of light was constant?",
+        "site": "physics",
+        "votes": 104
+      },
+      {
+        "q": "Would a pin head heated to 15 million degrees Celsius kill everyone in a 1000 mile radius?",
+        "site": "physics",
+        "votes": 103
+      },
+      {
+        "q": "Can we theoretically balance a perfectly symmetrical pencil on its one-atom tip?",
+        "site": "physics",
+        "votes": 102
+      },
+      {
+        "q": "If I pull a metal bar for long enough with a constant small force, will it eventually break?",
+        "site": "physics",
+        "votes": 102
+      },
+      {
+        "q": "Can tin foil hats block anything?",
+        "site": "physics",
+        "votes": 101
+      },
+      {
+        "q": "What is a manifold?",
+        "site": "physics",
+        "votes": 101
+      },
+      {
+        "q": "Why does hot water clean better than cold water?",
+        "site": "physics",
+        "votes": 100
+      },
+      {
+        "q": "Why is there a controversy on whether mass increases with speed?",
+        "site": "physics",
+        "votes": 100
+      }
+    ]
+  },
+  "se:cooking": {
+    "date": "2026-11-14",
+    "items": [
+      {
+        "q": "How dangerous is it to refreeze meat that has been thawed?",
+        "site": "cooking",
+        "votes": 67
+      },
+      {
+        "q": "Is there a problem with defrosting meat on the counter?",
+        "site": "cooking",
+        "votes": 67
+      },
+      {
+        "q": "How long can I store a food in the pantry, refrigerator, or freezer?",
+        "site": "cooking",
+        "votes": 67
+      },
+      {
+        "q": "What is the difference between a prawn and a shrimp?",
+        "site": "cooking",
+        "votes": 66
+      },
+      {
+        "q": "Why wooden sticks for ice cream bars?",
+        "site": "cooking",
+        "votes": 66
+      },
+      {
+        "q": "Why do you need to heat the pan before heating the olive oil?",
+        "site": "cooking",
+        "votes": 66
+      },
+      {
+        "q": "Why does plastic never dry properly in a dishwasher?",
+        "site": "cooking",
+        "votes": 65
+      },
+      {
+        "q": "How Did I Explode A Saucepan?",
+        "site": "cooking",
+        "votes": 63
+      },
+      {
+        "q": "Why do we peel carrots?",
+        "site": "cooking",
+        "votes": 62
+      },
+      {
+        "q": "Is there a quick, easy, mess-free way to peel an orange (or grapefruit)?",
+        "site": "cooking",
+        "votes": 62
+      },
+      {
+        "q": "How is sushi supposed to be eaten?",
+        "site": "cooking",
+        "votes": 62
+      },
+      {
+        "q": "Why did flatbread dominate the Middle East but Europe adopted raised breads?",
+        "site": "cooking",
+        "votes": 62
+      },
+      {
+        "q": "How can I get chewy chocolate chip cookies?",
+        "site": "cooking",
+        "votes": 61
+      },
+      {
+        "q": "How should I poach an egg?",
+        "site": "cooking",
+        "votes": 61
+      },
+      {
+        "q": "Why should I soak beans before cooking?",
+        "site": "cooking",
+        "votes": 61
+      },
+      {
+        "q": "What does the \"bagel\" setting on toasters do?",
+        "site": "cooking",
+        "votes": 60
+      },
+      {
+        "q": "What constitutes the majority of meat?",
+        "site": "cooking",
+        "votes": 60
+      },
+      {
+        "q": "How do you funnel food off a cutting board?",
+        "site": "cooking",
+        "votes": 60
+      },
+      {
+        "q": "What is the point of a salt mill?",
+        "site": "cooking",
+        "votes": 58
+      },
+      {
+        "q": "What's the ideal coffee to water ratio for a French press?",
+        "site": "cooking",
+        "votes": 58
+      },
+      {
+        "q": "How do I wash the \"pokey\" side of a box grater?",
+        "site": "cooking",
+        "votes": 58
+      },
+      {
+        "q": "Why can applesauce be used in place of oil?",
+        "site": "cooking",
+        "votes": 57
+      },
+      {
+        "q": "Why is it dangerous to eat meat which has been left out and then cooked?",
+        "site": "cooking",
+        "votes": 57
+      },
+      {
+        "q": "How should I care for my knives?",
+        "site": "cooking",
+        "votes": 56
+      },
+      {
+        "q": "What exactly is \"Sushi Grade\" fish?",
+        "site": "cooking",
+        "votes": 56
+      },
+      {
+        "q": "Should I rinse canned beans before using them?",
+        "site": "cooking",
+        "votes": 56
+      },
+      {
+        "q": "Can I fry food with solely essential lemon oil?",
+        "site": "cooking",
+        "votes": 56
+      },
+      {
+        "q": "Why is my red cabbage suddenly turning blue when cooking, while it never did so before?",
+        "site": "cooking",
+        "votes": 56
+      }
+    ]
+  },
+  "se:earthscience": {
+    "date": "2026-11-14",
+    "items": [
+      {
+        "q": "Could the extraction of energy by wind turbines be harmful to the environment?",
+        "site": "earthscience",
+        "votes": 25
+      },
+      {
+        "q": "How much of a mountain is below the surface?",
+        "site": "earthscience",
+        "votes": 25
+      },
+      {
+        "q": "Is there an upper bound to the amount of rain that can fall in an hour?",
+        "site": "earthscience",
+        "votes": 25
+      },
+      {
+        "q": "Does rain (temporarily) deplete the surrounding atmosphere of carbon dioxide?",
+        "site": "earthscience",
+        "votes": 25
+      },
+      {
+        "q": "Why is geothermal heat insignificant to surface temperature?",
+        "site": "earthscience",
+        "votes": 25
+      },
+      {
+        "q": "Is climate chaotic?",
+        "site": "earthscience",
+        "votes": 24
+      },
+      {
+        "q": "Why did the Laki eruption of 1783 produce so much fluorine?",
+        "site": "earthscience",
+        "votes": 24
+      },
+      {
+        "q": "Does the strength of Earth's magnetic field influence its climate?",
+        "site": "earthscience",
+        "votes": 24
+      },
+      {
+        "q": "How good were climate models of the 1990s at predicting the global temperature trends of the 2000s/2010s?",
+        "site": "earthscience",
+        "votes": 24
+      },
+      {
+        "q": "Why is there a seasonal cycle to the amount of CO2 in the atmosphere?",
+        "site": "earthscience",
+        "votes": 24
+      },
+      {
+        "q": "What were the tallest mountain ranges in Earth's geological past?",
+        "site": "earthscience",
+        "votes": 24
+      },
+      {
+        "q": "How reliable were early measurements of palaeomagnetic directions?",
+        "site": "earthscience",
+        "votes": 24
+      },
+      {
+        "q": "Are there pockets of liquid carbon dioxide in Earth's oceans?",
+        "site": "earthscience",
+        "votes": 24
+      },
+      {
+        "q": "Why is the temperature *still* rising?",
+        "site": "earthscience",
+        "votes": 24
+      },
+      {
+        "q": "Why were both the sun and the moon red today?",
+        "site": "earthscience",
+        "votes": 24
+      },
+      {
+        "q": "Does human body temperature impact climate change?",
+        "site": "earthscience",
+        "votes": 24
+      },
+      {
+        "q": "Is Earth getting heavier or lighter?",
+        "site": "earthscience",
+        "votes": 24
+      },
+      {
+        "q": "How do oases form in the middle of the desert?",
+        "site": "earthscience",
+        "votes": 24
+      },
+      {
+        "q": "What's causing this high SO2 concentrations in Kazakhstan?",
+        "site": "earthscience",
+        "votes": 24
+      },
+      {
+        "q": "What are some of the strongest theories against the existence of mantle plumes?",
+        "site": "earthscience",
+        "votes": 23
+      },
+      {
+        "q": "What causes 'positive' lightning to be rarer, higher charged, and longer lasting than 'negative' lightning?",
+        "site": "earthscience",
+        "votes": 23
+      },
+      {
+        "q": "Why do crystals, like quartz and diamonds, form in different colors?",
+        "site": "earthscience",
+        "votes": 23
+      },
+      {
+        "q": "How to distinguish P, S, Love, and Rayleigh waves in a seismogram?",
+        "site": "earthscience",
+        "votes": 23
+      },
+      {
+        "q": "Where does wind come from?",
+        "site": "earthscience",
+        "votes": 23
+      },
+      {
+        "q": "Why are most peninsulas oriented north-south?",
+        "site": "earthscience",
+        "votes": 23
+      },
+      {
+        "q": "Why do Earth and Venus have different atmospheres?",
+        "site": "earthscience",
+        "votes": 23
+      },
+      {
+        "q": "What properties must a rocky body possess in order to exhibit plate tectonics?",
+        "site": "earthscience",
+        "votes": 23
+      },
+      {
+        "q": "Why is there no middle ground between tornadoes and hurricanes?",
+        "site": "earthscience",
+        "votes": 23
+      },
+      {
+        "q": "What caused the bend in the Emperor/Hawaii chain of islands, 45 million years ago?",
+        "site": "earthscience",
+        "votes": 23
+      }
+    ]
+  },
+  "se:engineering": {
+    "date": "2026-11-14",
+    "items": [
+      {
+        "q": "What is the process of transferring an engineering license from the United States to Germany?",
+        "site": "engineering",
+        "votes": 12
+      },
+      {
+        "q": "What are the lightest springs?",
+        "site": "engineering",
+        "votes": 12
+      },
+      {
+        "q": "In Engineering fields, how often do you find yourself being asked to be a \"salesperson\", and what is your reaction?",
+        "site": "engineering",
+        "votes": 12
+      },
+      {
+        "q": "What causes rechargeable batteries to age? What can be done to extend life of these batteries?",
+        "site": "engineering",
+        "votes": 12
+      },
+      {
+        "q": "What is the difference between pressure and stress?",
+        "site": "engineering",
+        "votes": 12
+      },
+      {
+        "q": "How can Pareto Analysis help solve engineering problems?",
+        "site": "engineering",
+        "votes": 12
+      },
+      {
+        "q": "Does a Faraday cage effectively act as a notch filter?",
+        "site": "engineering",
+        "votes": 12
+      },
+      {
+        "q": "How do I calculate the forces on a desk and its legs?",
+        "site": "engineering",
+        "votes": 12
+      },
+      {
+        "q": "At what point does an I-beam becomes a H-beam?",
+        "site": "engineering",
+        "votes": 12
+      },
+      {
+        "q": "Why are most standard bolt threads single start?",
+        "site": "engineering",
+        "votes": 12
+      },
+      {
+        "q": "Is interference between aircraft an issue for fly-by-wireless technology?",
+        "site": "engineering",
+        "votes": 12
+      },
+      {
+        "q": "How to calculate lever force when lever has uniformed distributed load?",
+        "site": "engineering",
+        "votes": 12
+      },
+      {
+        "q": "How would adding a wind deflector in front of roof-mounted solar panels affect drag on an RV?",
+        "site": "engineering",
+        "votes": 12
+      },
+      {
+        "q": "Why do earth cuts sometimes have steps on their walls",
+        "site": "engineering",
+        "votes": 12
+      },
+      {
+        "q": "Will more electricity be generated by using a lens to focus sunlight onto solar cells?",
+        "site": "engineering",
+        "votes": 12
+      },
+      {
+        "q": "How long does it take for dust to settle out of the air?",
+        "site": "engineering",
+        "votes": 12
+      },
+      {
+        "q": "What is the meaning of vorticity and circulation?",
+        "site": "engineering",
+        "votes": 12
+      },
+      {
+        "q": "Defining the heap and stack size for an ARM Cortex-M4 microcontroller?",
+        "site": "engineering",
+        "votes": 12
+      },
+      {
+        "q": "How fast should I sample with a logic analyzer?",
+        "site": "engineering",
+        "votes": 12
+      },
+      {
+        "q": "Why are typical UART baud rates not in multiples of 1000?",
+        "site": "engineering",
+        "votes": 12
+      },
+      {
+        "q": "What is the difference between aeronautical and aerospace engineering?",
+        "site": "engineering",
+        "votes": 12
+      },
+      {
+        "q": "How thick is it reasonable for the walls of a steel gas pipeline to be?",
+        "site": "engineering",
+        "votes": 12
+      }
+    ]
+  },
+  "se:astronomy": {
+    "date": "2026-11-14",
+    "items": [
+      {
+        "q": "Is the Solar core \"hard\"?",
+        "site": "astronomy",
+        "votes": 56
+      },
+      {
+        "q": "Does matter accumulate just outside the event horizon of a black hole?",
+        "site": "astronomy",
+        "votes": 55
+      },
+      {
+        "q": "Why is moon light not the same color as sunlight?",
+        "site": "astronomy",
+        "votes": 55
+      },
+      {
+        "q": "Is there a star over my head?",
+        "site": "astronomy",
+        "votes": 55
+      },
+      {
+        "q": "Is it possible to achieve a stable \"selenostationary\" orbit around the Moon?",
+        "site": "astronomy",
+        "votes": 54
+      },
+      {
+        "q": "Does the Milky Way orbit around anything?",
+        "site": "astronomy",
+        "votes": 54
+      },
+      {
+        "q": "Is there any role today that would justify building a large single dish radio telescope to replace Arecibo?",
+        "site": "astronomy",
+        "votes": 54
+      },
+      {
+        "q": "What is in the center of the universe?",
+        "site": "astronomy",
+        "votes": 52
+      },
+      {
+        "q": "Two species of dark matter?",
+        "site": "astronomy",
+        "votes": 52
+      },
+      {
+        "q": "How powerful a telescope would allow me to view the astronauts aboard ISS do a space-walk?",
+        "site": "astronomy",
+        "votes": 51
+      },
+      {
+        "q": "Why does it take so long to transmit an image from New Horizons to Earth?",
+        "site": "astronomy",
+        "votes": 51
+      },
+      {
+        "q": "Is there a better explanation of this picture showing the very distant star \"Earendel\"?",
+        "site": "astronomy",
+        "votes": 51
+      },
+      {
+        "q": "Why do Black Holes in the middle of galaxies not suck up the whole galaxy?",
+        "site": "astronomy",
+        "votes": 49
+      },
+      {
+        "q": "Where does the Solar System end?",
+        "site": "astronomy",
+        "votes": 48
+      },
+      {
+        "q": "If Earth is tilted, why is Polaris always above the same spot?",
+        "site": "astronomy",
+        "votes": 48
+      },
+      {
+        "q": "How does a neutron star collapse into a black hole?",
+        "site": "astronomy",
+        "votes": 47
+      },
+      {
+        "q": "How can 'HD 140283' be older than the universe?",
+        "site": "astronomy",
+        "votes": 47
+      },
+      {
+        "q": "Why is Mars cold?",
+        "site": "astronomy",
+        "votes": 47
+      },
+      {
+        "q": "Does the sun cross other spiral arms in its movement around the galaxy's center?",
+        "site": "astronomy",
+        "votes": 47
+      },
+      {
+        "q": "Shouldn't very very distant objects appear magnified?",
+        "site": "astronomy",
+        "votes": 47
+      },
+      {
+        "q": "Why does the Sun have different day lengths, but not the gas giants?",
+        "site": "astronomy",
+        "votes": 46
+      },
+      {
+        "q": "Why did Venus not lose its atmosphere without a magnetic field?",
+        "site": "astronomy",
+        "votes": 45
+      },
+      {
+        "q": "How do we know that black holes are spinning?",
+        "site": "astronomy",
+        "votes": 45
+      },
+      {
+        "q": "Why is Gaia operating around Earth orbit? Why not send it to Neptune's orbit?",
+        "site": "astronomy",
+        "votes": 45
+      },
+      {
+        "q": "Why are we building larger land-based telescopes instead of launching larger ones into space?",
+        "site": "astronomy",
+        "votes": 44
+      },
+      {
+        "q": "How do I calculate the inclination of an object with an amateur telescope?",
+        "site": "astronomy",
+        "votes": 43
+      },
+      {
+        "q": "Why is our solar system \"tipped\" about 63° with respect to the plane of our galaxy?",
+        "site": "astronomy",
+        "votes": 43
+      },
+      {
+        "q": "Where can I find the positions of the planets, stars, moons, artificial satellites, etc. and visualize them?",
+        "site": "astronomy",
+        "votes": 43
+      },
+      {
+        "q": "How large can a ball of water be without fusion starting?",
+        "site": "astronomy",
+        "votes": 43
+      },
+      {
+        "q": "How do we have photos of galaxies so far away?",
+        "site": "astronomy",
+        "votes": 43
+      }
+    ]
+  },
+  "se:outdoors": {
+    "date": "2026-11-14",
+    "items": [
+      {
+        "q": "Are wheelchairs allowed in US Wilderness Areas?",
+        "site": "outdoors",
+        "votes": 30
+      },
+      {
+        "q": "What are some things to keep in mind when stealth camping?",
+        "site": "outdoors",
+        "votes": 29
+      },
+      {
+        "q": "Is digging a \"cold hole\" really effective when sheltering in a snowed area?",
+        "site": "outdoors",
+        "votes": 29
+      },
+      {
+        "q": "What equipment do I need as a beginner outdoor rock climber?",
+        "site": "outdoors",
+        "votes": 29
+      },
+      {
+        "q": "How can I start a fire by rubbing two sticks together?",
+        "site": "outdoors",
+        "votes": 29
+      },
+      {
+        "q": "Which side of an emergency blanket should I use?",
+        "site": "outdoors",
+        "votes": 29
+      },
+      {
+        "q": "Is there a definitive list of the tallest mountains in the world that require little or no mountaineering experience?",
+        "site": "outdoors",
+        "votes": 29
+      },
+      {
+        "q": "What are some toilet paper alternatives you could use in the woods?",
+        "site": "outdoors",
+        "votes": 29
+      },
+      {
+        "q": "How to cheaply introduce someone to backpacking",
+        "site": "outdoors",
+        "votes": 29
+      },
+      {
+        "q": "Do bear-safe rules still apply in the winter?",
+        "site": "outdoors",
+        "votes": 29
+      },
+      {
+        "q": "What's the best way to carry a dslr camera when rock-climbing?",
+        "site": "outdoors",
+        "votes": 29
+      },
+      {
+        "q": "Are trekking poles proven to be helpful?",
+        "site": "outdoors",
+        "votes": 29
+      },
+      {
+        "q": "What are some effective ways to deal with sand when camping on or near the beach?",
+        "site": "outdoors",
+        "votes": 29
+      },
+      {
+        "q": "What's the problem with burying toilet paper?",
+        "site": "outdoors",
+        "votes": 29
+      },
+      {
+        "q": "Is it offensive to \"just hike\" on a pilgrim's path?",
+        "site": "outdoors",
+        "votes": 29
+      },
+      {
+        "q": "Should I eat when I don't have anything to drink in a survival situations?",
+        "site": "outdoors",
+        "votes": 29
+      },
+      {
+        "q": "Are grey squirrels really bad for the overall habitat in Germany?",
+        "site": "outdoors",
+        "votes": 29
+      },
+      {
+        "q": "What are the measurable prerequisites of strength and/or flexiblity for starting to climb in a climbing gym?",
+        "site": "outdoors",
+        "votes": 29
+      },
+      {
+        "q": "Why is there such a singular place for bird watching?",
+        "site": "outdoors",
+        "votes": 29
+      },
+      {
+        "q": "When buying a backpack, what should I pay attention to?",
+        "site": "outdoors",
+        "votes": 28
+      },
+      {
+        "q": "Why do shin splints happen?",
+        "site": "outdoors",
+        "votes": 28
+      },
+      {
+        "q": "How to keep water cold in hot weather?",
+        "site": "outdoors",
+        "votes": 28
+      },
+      {
+        "q": "How to calculate backpacking food requirements for a dog",
+        "site": "outdoors",
+        "votes": 28
+      },
+      {
+        "q": "How is hygiene possible with ocean water only?",
+        "site": "outdoors",
+        "votes": 28
+      }
+    ]
+  },
+  "news": {
+    "date": "2026-11-14",
+    "items": [
+      {
+        "title": "Scientists find a simple daily routine linked to less pain and depression",
+        "via": "ScienceDaily"
+      },
+      {
+        "title": "A giant icy world hiding beyond Pluto could be our sixth dwarf planet",
+        "via": "ScienceDaily"
+      },
+      {
+        "title": "Stanford scientists discover hidden brain signals that predict Alzheimer’s years before symptoms",
+        "via": "ScienceDaily"
+      },
+      {
+        "title": "5,000-year-old skulls reveal a disturbing secret of ancient Egypt's first kings",
+        "via": "ScienceDaily"
+      },
+      {
+        "title": "Scientists discover a hidden danger of viral infections that vaccines may prevent",
+        "via": "ScienceDaily"
+      },
+      {
+        "title": "A new treasure map reveals where Earth's lost prehistoric life may be hiding",
+        "via": "ScienceDaily"
+      },
+      {
+        "title": "Scientists capture electrons making seemingly impossible quantum jumps",
+        "via": "ScienceDaily"
+      },
+      {
+        "title": "Superheated magma could fuel towering lava fountains",
+        "via": "ScienceDaily"
+      },
+      {
+        "title": "NASA’s Perseverance confirms a key ingredient for life hidden in ancient Mars rocks",
+        "via": "ScienceDaily"
+      },
+      {
+        "title": "The Sun unleashed a monster storm. Earth may have made it worse",
+        "via": "ScienceDaily"
+      },
+      {
+        "title": "Dark energy may have flipped from negative to positive 9.5 billion years ago",
+        "via": "ScienceDaily"
+      },
+      {
+        "title": "Crows can make decisions twice as fast as humans, scientists discover",
+        "via": "ScienceDaily"
+      },
+      {
+        "title": "Where are all the males? Ancient human fossils reveal a startling mystery",
+        "via": "ScienceDaily"
+      },
+      {
+        "title": "A butterfly that fooled scientists for 200 years finally reveals its secrets",
+        "via": "ScienceDaily"
+      },
+      {
+        "title": "AI-powered bionic eye breakthrough could help the blind see again",
+        "via": "ScienceDaily"
+      },
+      {
+        "title": "Earth's fiery birth may have created hundreds of oceans' worth of water",
+        "via": "ScienceDaily"
+      },
+      {
+        "title": "NASA reveals Earth's ozone hole has grown to a size not seen in a decade",
+        "via": "ScienceDaily"
+      },
+      {
+        "title": "A massive new simulation reveals how the universe emerged from darkness",
+        "via": "ScienceDaily"
+      },
+      {
+        "title": "Scientists discover a giant 66-pound rodent that lived 34 million years ago",
+        "via": "ScienceDaily"
+      },
+      {
+        "title": "Why heart attacks can still happen even when bad cholesterol is low",
+        "via": "ScienceDaily"
+      },
+      {
+        "title": "The mystery of how hair knows where to grow may finally be solved",
+        "via": "ScienceDaily"
+      },
+      {
+        "title": "NASA’s Parker Solar Probe discovers a hidden pattern in the Sun’s chaotic magnetic fields",
+        "via": "ScienceDaily"
+      },
+      {
+        "title": "237-million-year-old fossils reveal a bizarre armored sea amphibian",
+        "via": "ScienceDaily"
+      },
+      {
+        "title": "NASA’s CHAPEA Mars crew finally emerges after more than a year in isolation",
+        "via": "ScienceDaily"
+      },
+      {
+        "title": "Scientists uncover a 192-year-old mystery hidden in a mangled silver coin",
+        "via": "ScienceDaily"
+      },
+      {
+        "title": "Alzheimer’s may have early warning signs outside the brain",
+        "via": "ScienceDaily"
+      },
+      {
+        "title": "Scientists discover that necks didn't evolve for the reason we thought",
+        "via": "ScienceDaily"
+      },
+      {
+        "title": "Scientists finally discover why we learn to love bitter coffee",
+        "via": "ScienceDaily"
+      },
+      {
+        "title": "NASA reveals bold new plan to return astronauts to the Moon in 2028",
+        "via": "ScienceDaily"
+      },
+      {
+        "title": "After 40 years, CERN finds evidence of a one-in-10-billion particle decay",
+        "via": "ScienceDaily"
+      },
+      {
+        "title": "A radical theory says the universe is twice as old as we thought",
+        "via": "ScienceDaily"
+      },
+      {
+        "title": "Astronomers discover hidden alien planet in James Webb images",
+        "via": "ScienceDaily"
+      },
+      {
+        "title": "DNA on the Shroud of Turin reveals centuries of hidden secrets",
+        "via": "ScienceDaily"
+      },
+      {
+        "title": "Scientists find deadly virus DNA hidden in 1,000-year-old manuscripts",
+        "via": "ScienceDaily"
+      },
+      {
+        "title": "Scientists discover why some mosquitoes love you and others don't",
+        "via": "ScienceDaily"
+      },
+      {
+        "title": "A hidden limit of space and time could unlock electronics 100,000 times faster",
+        "via": "ScienceDaily"
+      },
+      {
+        "title": "An ancient ocean full of giant predators reveals a surprising twist in evolution",
+        "via": "ScienceDaily"
+      },
+      {
+        "title": "A nuclear blast could save Earth from an asteroid, but there's a catch",
+        "via": "ScienceDaily"
+      },
+      {
+        "title": "Ancient Siberian tomb reveals surprising secrets of cannabis use 2,800 years ago",
+        "via": "ScienceDaily"
+      },
+      {
+        "title": "Mysterious gas leaks suggest Mars may still be volcanically alive",
+        "via": "ScienceDaily"
+      },
+      {
+        "title": "Scientists discover a surprising link between acorns and lyme disease",
+        "via": "ScienceDaily"
+      },
+      {
+        "title": "Stronger flu shot linked to nearly 55% lower Alzheimer's risk",
+        "via": "ScienceDaily"
+      },
+      {
+        "title": "Hidden climate superpower: Why some ocean “snow” carries six times more carbon",
+        "via": "ScienceDaily"
+      },
+      {
+        "title": "A mysterious 93-billion-mile cosmic structure may be the wreckage of colliding worlds",
+        "via": "ScienceDaily"
+      },
+      {
+        "title": "Comets may have destroyed life's ingredients instead of delivering them to Earth",
+        "via": "ScienceDaily"
+      },
+      {
+        "title": "Don't miss: Meteor showers, fireballs, and a supermoon light up November's night sky",
+        "via": "ScienceDaily"
+      },
+      {
+        "title": "NASA’s Swift telescope falls to Earth after nearly 22 years in space",
+        "via": "ScienceDaily"
+      },
+      {
+        "title": "Scientists just found dinosaur blood that survived 115 million years",
+        "via": "ScienceDaily"
+      },
+      {
+        "title": "A quantum breakthrough makes light behave like both a solid and a liquid",
+        "via": "ScienceDaily"
+      },
+      {
+        "title": "Paleontologists discover “one-in-a-million” fossil with 450-million-year-old soft tissue",
+        "via": "ScienceDaily"
+      },
+      {
+        "title": "Scientists discover stunning new Amazon fish that may already be endangered",
+        "via": "ScienceDaily"
+      },
+      {
+        "title": "An anti-aging drug may help protect the brain before Alzheimer's symptoms begin",
+        "via": "ScienceDaily"
+      },
+      {
+        "title": "A simple supplement may help clear brain fog after cancer",
+        "via": "ScienceDaily"
+      },
+      {
+        "title": "Einstein's equations reveal how gravity could break, reconnect, and release energy",
+        "via": "ScienceDaily"
+      },
+      {
+        "title": "Scientists wipe out deadly brain tumors in every mouse tested with new cancer therapy",
+        "via": "ScienceDaily"
+      },
+      {
+        "title": "Scientists discover Europe's ancient forests were nothing like we imagined",
+        "via": "ScienceDaily"
+      },
+      {
+        "title": "Scientists squeeze record-breaking X-ray power into an incredibly tiny spot",
+        "via": "ScienceDaily"
+      },
+      {
+        "title": "Human bodies produce 2 billion metric tons of CO2 a year just by staying alive",
+        "via": "ScienceDaily"
+      },
+      {
+        "title": "Scientists discover hidden brain changes linked to common sleep disorders",
+        "via": "ScienceDaily"
+      },
+      {
+        "title": "SLAC scientists find conclusive proof of a mysterious third type of magnetism",
+        "via": "ScienceDaily"
+      },
+      {
+        "title": "A dead star is flashing radio waves every 8 minutes, and its partner looks a lot like the sun",
+        "via": "Phys.org"
+      },
+      {
+        "title": "Does your culture shape how you look at art? What an eye‑tracking study in Sudan revealed",
+        "via": "Phys.org"
+      },
+      {
+        "title": "NASA's Voyager 1 closes in on a light-day in interstellar space for a new distance record",
+        "via": "Phys.org"
+      },
+      {
+        "title": "A cosmic magnifying glass could reveal the same supernova two more times in roughly 70 years",
+        "via": "Phys.org"
+      },
+      {
+        "title": "Some of the oldest rocks ever discovered shed light on Earth's early history",
+        "via": "Phys.org"
+      },
+      {
+        "title": "World's largest freshwater lake is recovering after decades of decline",
+        "via": "Phys.org"
+      },
+      {
+        "title": "Archaeologists shed new light on wealth and status among Europe's early herders",
+        "via": "Phys.org"
+      },
+      {
+        "title": "A common food emulsifier could solve one of rocketry's oldest fuel problems",
+        "via": "Phys.org"
+      },
+      {
+        "title": "Alaska laments decline of its prized salmon populations",
+        "via": "Phys.org"
+      },
+      {
+        "title": "California steels for storms that could trigger massive waves, flooding",
+        "via": "Phys.org"
+      },
+      {
+        "title": "SpaceX's Starship set for return to Earth after booster catch aborted",
+        "via": "Phys.org"
+      },
+      {
+        "title": "SpaceX's Starship soars into orbit after booster explosion prevents an unprecedented double catch",
+        "via": "Phys.org"
+      },
+      {
+        "title": "The role of social relationships in scaling agricultural innovations: A dimension that remains underreported in research",
+        "via": "Phys.org"
+      },
+      {
+        "title": "Heavier-than-expected electron behavior may explain slower electrical flow in alpha-gallium oxide",
+        "via": "Phys.org"
+      },
+      {
+        "title": "Fiji petrel eludes 10-day search as communities aim to protect bird's habitat",
+        "via": "Phys.org"
+      },
+      {
+        "title": "Unstable plasma heats itself with waves it generates, experiments reveal",
+        "via": "Phys.org"
+      },
+      {
+        "title": "Same farms, different answers: When nitrogen pollution estimates don't add up",
+        "via": "Phys.org"
+      },
+      {
+        "title": "Hidden 'master switch' allows bacteria to breach the body's defenses",
+        "via": "Phys.org"
+      },
+      {
+        "title": "'Planimal' cells retain nearly entire algal genome after experimental cell fusion",
+        "via": "Phys.org"
+      },
+      {
+        "title": "Modified $450 3D printer builds living materials with more than 100 layers",
+        "via": "Phys.org"
+      },
+      {
+        "title": "Genomic analysis restores species status to 12 overlooked Great Barrier Reef corals",
+        "via": "Phys.org"
+      },
+      {
+        "title": "Common ADHD classroom accommodations may not help students succeed, study finds",
+        "via": "Phys.org"
+      },
+      {
+        "title": "Happy face, angry voice: Human–dog interaction study tracks conflicting cues",
+        "via": "Phys.org"
+      },
+      {
+        "title": "A perfect couple: Chromium keeps ruthenium grounded in water electrolysis",
+        "via": "Phys.org"
+      },
+      {
+        "title": "A newly discovered South African dinosaur was a heavyweight even as a youngster",
+        "via": "Phys.org"
+      },
+      {
+        "title": "Molecular sensor makes invisible traces of mercury easier to see",
+        "via": "Phys.org"
+      },
+      {
+        "title": "Fruit fly sleep protein yields peptides that inhibit drug-resistant bacteria in lab tests",
+        "via": "Phys.org"
+      },
+      {
+        "title": "New genetic atlas reveals traces of 10,000 years of sheep breeding",
+        "via": "Phys.org"
+      },
+      {
+        "title": "Ancient rocks reveal a dramatic journey from deep inside Earth",
+        "via": "Phys.org"
+      },
+      {
+        "title": "Evolution found another way to build a primate brain",
+        "via": "Phys.org"
+      }
+    ]
+  }
+}
