@@ -1,0 +1,41 @@
+[
+  {
+    "job": "20261114-1553-why-is-a-negative-times-a-negative-a-pos",
+    "date": "2026-11-14",
+    "title": "Why Minus Times Minus Is Plus ➕",
+    "topic": "Why is a negative times a negative a positive?",
+    "series": "Maths",
+    "weekly": false,
+    "claims": [
+      "Negative times negative is positive because reversing direction twice points you forward.",
+      "Negative three times positive four equals negative twelve."
+    ],
+    "sources": []
+  },
+  {
+    "job": "20261114-1627-why-does-a-transformer-only-work-with-al",
+    "date": "2026-11-14",
+    "title": "Why Transformers Need Changing Current ⚡",
+    "topic": "Why does a transformer only work with alternating current (AC)?",
+    "series": "Physics",
+    "weekly": false,
+    "claims": [
+      "Transformers require a changing magnetic flux to induce voltage in the secondary coil via Faraday's law of induction.",
+      "Direct current produces a static magnetic field after initial turn-on, creating zero steady-state induced voltage in the secondary coil.",
+      "Alternating current continuously changes direction, producing the necessary changing magnetic field.",
+      "Answer to Try this: A moving magnet changes the magnetic flux through the coil, which induces an electromotive force (voltage)."
+    ],
+    "sources": [
+      {
+        "cite": "Gan (2026), Zenodo (CERN European Organization for Nuclear Research). doi:10.5281/zenodo.20597697",
+        "doi": "10.5281/zenodo.20597697",
+        "claim": "Transformers require a changing magnetic flux to induce voltage in the secondary coil via Faraday's law of induction."
+      },
+      {
+        "cite": "Kumru et al. (2022), European Journal of Science and Technology. doi:10.31590/ejosat.1075985",
+        "doi": "10.31590/ejosat.1075985",
+        "claim": "Alternating current continuously changes direction, producing the necessary changing magnetic field."
+      }
+    ]
+  }
+]

@@ -1,0 +1,193 @@
+[
+  {
+    "job": "20261114-1553-why-is-a-negative-times-a-negative-a-pos",
+    "topic": "Why is a negative times a negative a positive?",
+    "title": "Why Minus Times Minus Is Plus ➕",
+    "description": "Ever wondered why multiplying two negatives gives a positive? Let's trace it out step by step using a simple number line. #shorts #maths #education\n\nPhoto by 422737 on Pixabay\nPhoto by PublicDomainPictures on Pixabay\nPhoto by Septimiu on Pixabay\nPhoto by Tho-Ge on Pixabay\nPhoto by kaboompics on Pixabay\nPhoto by surotez9 on Pixabay\nVideo by 2seewell on Pixabay",
+    "tags": [
+      "maths",
+      "algebra",
+      "negative numbers",
+      "math tricks",
+      "stem",
+      "education",
+      "learning",
+      "school"
+    ],
+    "hook": "Why is a negative times a negative a positive?",
+    "status": "banked",
+    "narration": "Why is a negative times a negative a positive? Picture a number line. Walking forward is positive. Walking backward is negative. Now, face backward and walk backward. You end up moving forward. why: Reversing direction twice flips your movement back to the positive side. Try this: what is negative three times positive four?",
+    "voice_engine": "kokoro",
+    "voices": "male host, female explainer",
+    "diagrams": 0,
+    "series": "Maths",
+    "countdown": false,
+    "question": "Try this: what is negative three times positive four?",
+    "answer_comment": "The answer: negative twelve. Walking backward three steps, four times, leaves you twelve steps behind zero on the negative side. One factor is negative, so the final direction stays negative. Drop your questions below!",
+    "sources": [],
+    "fact_check": [
+      "Negative times negative is positive because reversing direction twice points you forward.",
+      "Negative three times positive four equals negative twelve."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        3.35
+      ],
+      [
+        3.35,
+        4.98
+      ],
+      [
+        4.98,
+        6.9
+      ],
+      [
+        6.9,
+        8.97
+      ],
+      [
+        8.97,
+        11.55
+      ],
+      [
+        11.55,
+        13.36
+      ],
+      [
+        13.36,
+        18.48
+      ],
+      [
+        18.48,
+        22.28
+      ]
+    ],
+    "duration": 22.28,
+    "scene_lines": [
+      "Why is a negative times a negative a positive?",
+      "Picture a number line.",
+      "Walking forward is positive.",
+      "Walking backward is negative.",
+      "Now, face backward and walk backward.",
+      "You end up moving forward.",
+      "why: Reversing direction twice flips your movement back to the positive side.",
+      "Try this: what is negative three times positive four?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [],
+      "footage": [],
+      "review": [],
+      "pass": true,
+      "duration": 21.4
+    },
+    "repairs": 1,
+    "audited": true
+  },
+  {
+    "job": "20261114-1627-why-does-a-transformer-only-work-with-al",
+    "topic": "Why does a transformer only work with alternating current (AC)?",
+    "title": "Why Transformers Need Changing Current ⚡",
+    "description": "Ever wonder why transformers need alternating current to function? Discover how changing magnetic fields make induction work.\n\n#shorts #physics #electronics\n\nSources (open-access research):\n- Gan (2026), Zenodo (CERN European Organization for Nuclear Research). doi:10.5281/zenodo.20597697\n- Kumru et al. (2022), European Journal of Science and Technology. doi:10.31590/ejosat.1075985\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nPhoto by ds_30 on Pixabay\nPhoto: unknown, CC BY 4.0, via Wikimedia Commons\nVideo by Cristian-Manieri on Pixabay",
+    "tags": [
+      "transformer",
+      "alternating current",
+      "physics",
+      "electronics",
+      "induction"
+    ],
+    "hook": "Why won't a transformer work with direct current?",
+    "status": "banked",
+    "narration": "Why won't a transformer work with direct current? Connect a battery to the first coil. A steady magnetic field grows, then stops. The second coil feels no change, so no current flows. Switch to alternating current, and the field constantly flips back and forth. Transformers only work with changing magnetic fields, which require a changing current to create. Try this: why does a moving magnet create electricity?",
+    "voice_engine": "kokoro",
+    "voices": "female host, male explainer",
+    "diagrams": 1,
+    "series": "Physics",
+    "countdown": false,
+    "question": "Try this: why does a moving magnet create electricity?",
+    "answer_comment": "The answer: A moving magnet constantly changes the magnetic field inside the coil. According to Faraday's law, this changing magnetic field induces a voltage in the wire, driving an electric current. It is the exact same changing-field rule that makes transformers work! What happens if you stop moving the magnet?\n\nSources (open-access research):\n- Gan (2026), Zenodo (CERN European Organization for Nuclear Research). doi:10.5281/zenodo.20597697\n- Kumru et al. (2022), European Journal of Science and Technology. doi:10.31590/ejosat.1075985",
+    "sources": [
+      {
+        "claim": "Transformers require a changing magnetic flux to induce voltage in the secondary coil via Faraday's law of induction.",
+        "cite": "Gan (2026), Zenodo (CERN European Organization for Nuclear Research). doi:10.5281/zenodo.20597697",
+        "doi": "10.5281/zenodo.20597697",
+        "title": "Generators, Motors, and Transformers: How Induction Works",
+        "why": "It shows how generators convert mechanical motion into electrical energy, how motors convert electrical energy into mechanical motion, and how transformers use changing magnetic flux between coils to change AC voltage levels."
+      },
+      {
+        "claim": "Alternating current continuously changes direction, producing the necessary changing magnetic field.",
+        "cite": "Kumru et al. (2022), European Journal of Science and Technology. doi:10.31590/ejosat.1075985",
+        "doi": "10.31590/ejosat.1075985",
+        "title": "Numerical Analysis and Comparison of Magnetic Fields Caused by Constant and Time Varying Currents in Medium Voltage Underground Cables",
+        "why": "However, alternating current, which is the source of the magnetic field, is a time-varying vector quantity."
+      }
+    ],
+    "fact_check": [
+      "Transformers require a changing magnetic flux to induce voltage in the secondary coil via Faraday's law of induction.",
+      "Direct current produces a static magnetic field after initial turn-on, creating zero steady-state induced voltage in the secondary coil.",
+      "Alternating current continuously changes direction, producing the necessary changing magnetic field.",
+      "Answer to Try this: A moving magnet changes the magnetic flux through the coil, which induces an electromotive force (voltage)."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        3.34
+      ],
+      [
+        3.34,
+        5.52
+      ],
+      [
+        5.52,
+        8.2
+      ],
+      [
+        8.2,
+        11.67
+      ],
+      [
+        11.67,
+        16.19
+      ],
+      [
+        16.19,
+        22.67
+      ],
+      [
+        22.67,
+        26.9
+      ]
+    ],
+    "duration": 26.9,
+    "scene_lines": [
+      "Why won't a transformer work with direct current?",
+      "Connect a battery to the first coil.",
+      "A steady magnetic field grows, then stops.",
+      "The second coil feels no change, so no current flows.",
+      "Switch to alternating current, and the field constantly flips back and forth.",
+      "Transformers only work with changing magnetic fields, which require a changing current to create.",
+      "Try this: why does a moving magnet create electricity?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [],
+      "footage": [],
+      "review": [],
+      "pass": true,
+      "duration": 26.0
+    },
+    "repairs": 1,
+    "audited": true
+  }
+]

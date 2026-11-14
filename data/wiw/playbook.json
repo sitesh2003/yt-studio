@@ -1,0 +1,49 @@
+{
+  "rules": [
+    "Strict adherence to a 40-second total length to maintain high retention.",
+    "Place the visual hook text within the first 3 seconds to anchor the viewer's attention.",
+    "Explain complex processes by breaking them into exactly three distinct logical steps.",
+    "Include a 'How it works' or 'Why' query in every title to trigger curiosity.",
+    "Ensure the transition from the explanation to the 'pause and predict' segment occurs exactly at the 20-second mark.",
+    "Use only high-contrast, simple line diagrams or clean, real-world footage."
+  ],
+  "formats_now": [
+    "Mechanism Breakdown: Showing how a complex machine (like a turbine or gear) functions, as it is highly searchable.",
+    "Visual Paradoxes: Presenting a counter-intuitive physical result and explaining the 'why' behind it.",
+    "Applied Physics in Real World: Linking abstract science to a relatable event like a bridge build or a structural design.",
+    "The 'Hidden Path': Explaining the invisible process behind a common technology (e.g., cables, signals)."
+  ],
+  "hook_shapes": [
+    "Ever thought why X happens? Most people get it wrong.",
+    "X seems simple, but the science behind it is actually Y.",
+    "You’ve used X your whole life, but do you know how it actually works?"
+  ],
+  "title_shapes": [
+    "How X works: The [Scientific Principle] Explained",
+    "Why does X happen? The physics of [Topic]",
+    "Ever thought why X is designed like Y?"
+  ],
+  "topic_areas": [
+    "Mechanical engineering (gears, engines, cranes)",
+    "Civil infrastructure (bridges, tunnels, foundations)",
+    "Everyday tech (cables, connectors, sensors)",
+    "Applied physics (force, motion, energy transfer)",
+    "Material science (why specific materials are used in construction)"
+  ],
+  "stop_doing": [
+    "Avoid content longer than 60 seconds as it leads to audience drop-off.",
+    "Stop using complex jargon that requires an external search to understand.",
+    "Do not include generic 'subscribe' or 'like' calls to action as they distract from the loop."
+  ],
+  "target_seconds": 40,
+  "experiment": "Test the impact of placing the title card on a bright, solid-colored background versus overlaying it on the footage. Success will be measured by a higher Average Percentage Viewed (APV) in the first 5 seconds.",
+  "facts": {
+    "median_seconds_top20": 65.5,
+    "median_seconds_rest": 53,
+    "question_titles_top20": 1,
+    "why_how_what_titles_top20": 7,
+    "median_title_chars_top20": 67.0
+  },
+  "studied": "2026-11-14T16:50:55",
+  "history": []
+}
