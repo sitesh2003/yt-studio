@@ -244,3 +244,40 @@ the way a generated picture can.
 3. Wikidata plus archives for story videos
 4. real-data charts
 5. molecules and space
+
+## 13. Production upgrades: research and what was built (14 Nov 2026)
+The question: what else, free and open, makes the videos more rigorous and makes them feel made by a
+person? A research pass covered speech, animation, asset libraries, finishing and checks. CPU figures
+for the newer speech models are estimates; time any of them on a runner before relying on it.
+
+**Built today**
+| What | How | Why |
+|---|---|---|
+| Natural narration | one sentence at a time; trimmed to the speech; 0.45 s after a full stop, ~0.6 s after a question, up to 0.85 s at a scene change or before a reveal; no breath sounds | sounds like a person reading aloud, not one breathless run (user, 14 Nov) |
+| Asking voice | questions read slower, last words raised ~3/4 semitone (same length, captions stay exact); exclamations a touch brighter | the tone change a person makes when asking |
+| Listening check (QA 6) | faster-whisper (MIT, CPU) transcribes the final audio; a wrong number or a flipped negative ("can't" heard as "can") holds the video | captions come from the script, so a mis-spoken line used to look right |
+| Finishing pass | voice cleaned and compressed, mix levelled to -14 LUFS, music ducked under the voice, light film grain under the captions | the cheap touches of a hand edit |
+| Retraction filter | OpenAlex `is_retracted:false` | never cite a retracted paper |
+| Second channel | Why It Works (@whyitworksstem), same engine, own settings/memory/bank/sign-in | students, all subjects + new research |
+| Weekly lane | the weekly has its own queue and adds its episode on top of the latest saved state | run #3 was bumped from the queue on 14 Nov |
+
+**Next, in order** (all free; adopt = proven fit, try = time it first)
+1. Kinetic captions from real word timings (stable-ts / faster-whisper word stamps): adopt.
+2. Tesseract OCR of sampled frames: on-screen numbers and spelling checked against the script: adopt.
+3. Science archives with clear licences: Smithsonian Open Access (CC0), ESA/Hubble/Webb (CC BY),
+   NASA Images, NOAA/USGS (public domain), Servier Medical Art (CC BY), Our World in Data (CC BY data,
+   redrawn by us), RCSB PDB / PubChem (molecules): adopt.
+4. `pip install bpy` (newer Blender) + Molecular Nodes for molecules, Grease Pencil for a hand-drawn
+   look; PyMOL (apt) for quick protein renders: adopt for the student channel.
+5. PyVista (fields, flows) and matplotlib animation (real-data charts): adopt.
+6. J/L cuts and CC0 scene-change sounds (Freesound API needs a free key from the owner): adopt.
+7. Crossref retraction data + PubMed E-utilities + Google Fact Check Tools as extra checks: adopt.
+8. Chatterbox-Turbo (MIT, emotion dial) for the weekly episode only, if a runner renders 60 s in
+   under ~10 minutes: try.
+9. Motion Canvas / HyperFrames (HTML to video) for typography scenes: try.
+
+**Rejected, and why**: F5-TTS (weights non-commercial), Piper (archived, GPL fork, robotic), Dia and
+Orpheus (GPU only in practice), Parler-TTS (too slow on CPU), Supertonic (archived), Remotion (paid
+above 3 people), Revideo (unmaintained), python-lottie (AGPL), Free Music Archive (mostly
+non-commercial). Music has no free API with safe licences: a small CC0/CC-BY set is downloaded by hand
+once and kept in assets/music.
