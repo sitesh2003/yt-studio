@@ -194,6 +194,54 @@ def _dur(path):
     return int(m[1]) * 3600 + int(m[2]) * 60 + float(m[3]) if m else 0.0
 
 
+class _SentenceFailed(Exception):
+    pass
+
+
+def _merge_short(sents):
+    """A one-word line ("Wait!", "Right.") joins the next one: engines often return nothing for it,
+    and a narrator runs it straight on anyway. The held count "Three. Two. One." stays as it is."""
+    out = []
+    for s in sents:
+        if out and len(re.findall(r"\w+", out[-1])) < 2 and not _COUNTDOWN.search(out[-1]):
+            out[-1] = f"{out[-1]} {s}"
+        else:
+            out.append(s)
+    if (len(out) > 1 and len(re.findall(r"\w+", out[-1])) < 2 and not _COUNTDOWN.search(out[-1])
+            and not _COUNTDOWN.search(out[-2])):
+        out[-2:] = [f"{out[-2]} {out[-1]}"]
+    return out
+
+
+def _say_sentence(sent, nxt, nxt_scene, sv, v, who, script, k, m, job_dir, words, parts, t, n_sent, whole=False):
+    rate, lift = _delivery(sent, v["rate"])
+    trial = dict(sv)
+    try:
+        w, part = _speak_retry(sent, trial, rate, job_dir / f"vo_{k:02d}_{m:02d}.mp3")
+    except Exception as e:
+        if not whole:
+            raise _SentenceFailed(f"no audio for {sent[:50]!r}") from e
+        raise
+    if trial["engine"] != sv["engine"]:
+        if not whole:   # Kokoro refused this one line: try the scene whole before changing voice
+            part.unlink(missing_ok=True)
+            raise _SentenceFailed(f"Kokoro gave no audio for {sent[:50]!r}")
+        sv["engine"] = v["engine"] = trial["engine"]   # the whole scene failed on Kokoro: Edge from here
+    part, lead = _shape_clip(part, w, 0.0 if whole else lift)
+    for x in w:
+        words.append({"start": x["start"] - lead + t, "end": x["end"] - lead + t, "text": x["text"]})
+    scenes_n = len(script["scenes"])
+    last = whole or nxt is None
+    if last and not nxt_scene:
+        gap = 0.0
+    else:
+        gap = _gap_after(sent, nxt if not last else nxt_scene, last)
+        if last and k + 1 < scenes_n and (script["scenes"][k + 1].get("speaker") or who) != who:
+            gap += 0.15   # a natural hand-over between the two narrators
+    parts.append((part, gap))
+    return t + _dur(part) + gap, n_sent + 1   # exactly what is joined, so the captions never drift
+
+
 def narrate(script, job_dir):
     """One scene at a time, joined with natural pauses, so it sounds like a person telling a story
     rather than one long breathless read. Word timings are shifted onto the joined timeline."""
@@ -219,26 +267,25 @@ def narrate(script, job_dir):
         who = script["scenes"][k].get("speaker") or ("host" if k == 0 or k == len(scenes) - 1 else "explainer")
         cast = cast_map.get(who, {})
         sv = dict(v, kokoro_voice=cast.get("kokoro") or v.get("kokoro_voice"), edge_voice=cast.get("edge"))
-        sents = sentences(text) or [text]
+        sents = _merge_short(sentences(text)) or [text]
         nxt_scene = scenes[k + 1] if k + 1 < len(scenes) else ""
-        for m, sent in enumerate(sents):
-            # one sentence at a time, like a narrator: its own pace and tone, then a real pause
-            rate, lift = _delivery(sent, v["rate"])
-            w, part = _speak_retry(sent, sv, rate, job_dir / f"vo_{k:02d}_{m:02d}.mp3")
-            v["engine"] = sv["engine"]   # if Kokoro failed once, stay on Edge for both narrators
-            part, lead = _shape_clip(part, w, lift)
-            for x in w:
-                words.append({"start": x["start"] - lead + t, "end": x["end"] - lead + t, "text": x["text"]})
-            last = m == len(sents) - 1
-            if last and not nxt_scene:
-                gap = 0.0
-            else:
-                gap = _gap_after(sent, sents[m + 1] if not last else nxt_scene, last)
-                if last and (script["scenes"][k + 1].get("speaker") or who) != who:
-                    gap += 0.15   # a natural hand-over between the two narrators
-            parts.append((part, gap))
-            t += _dur(part) + gap   # exactly what is joined, so the captions never drift
-            n_sent += 1
+        mark = (len(words), len(parts), t, n_sent)
+        try:
+            for m, sent in enumerate(sents):
+                # one sentence at a time, like a narrator: its own pace and tone, then a real pause
+                t, n_sent = _say_sentence(sent, sents[m + 1] if m + 1 < len(sents) else None, nxt_scene,
+                                          sv, v, who, script, k, m, job_dir, words, parts, t, n_sent)
+        except _SentenceFailed as e:
+            # a line the engine would not say on its own (it happens with very short or odd lines):
+            # say this scene in one piece, the way every video was read before 14 Nov, rather than
+            # switching voices or losing the video
+            log(f"voice: scene {k + 1} read in one piece ({e})")
+            for p_, _ in parts[mark[1]:]:
+                p_.unlink(missing_ok=True)
+            del words[mark[0]:], parts[mark[1]:]
+            t, n_sent = mark[2], mark[3]
+            t, n_sent = _say_sentence(text, None, nxt_scene, sv, v, who, script, k, 99, job_dir,
+                                      words, parts, t, n_sent, whole=True)
     # join: each part followed by its silence, re-encoded to one clean track
     inputs, chain = [], []
     for k, (part, gap) in enumerate(parts):
