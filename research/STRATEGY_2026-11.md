@@ -320,3 +320,57 @@ playlists; chapters; translated titles; auto-dubbing.
 **Do not use on a monetised channel:** PhET simulations (moving to non-commercial), GeoGebra and Desmos
 (non-commercial terms), CK-12 and most LibreTexts pages, newer OpenStax books (CC BY-NC-SA), syllabus
 text or figures (copyright; topic names are fine), EurekAlert text (journalist terms).
+
+## 15. Ideas, research, media and what works now: four-way research + live tests (14 Nov 2026, evening)
+Four research passes ran in parallel; every source adopted below was then called live from this PC
+before it was built. Secondary claims are marked in the commit messages.
+
+### Built tonight
+| Area | What | Source and licence |
+|---|---|---|
+| Ideas | real questions people asked: top-voted questions on 8 Stack Exchange sites per channel | question titles as ideas only (CC BY-SA text never copied); 300 calls/day keyless |
+| Ideas | this week's science headlines | ScienceDaily (headline use allowed with credit), Phys.org; headlines as ideas only |
+| Ideas (student) | newest Frontiers for Young Minds articles | peer-reviewed, written for ages 8-15, CC BY 4.0; the paper becomes the cited source |
+| Ideas | exam season: an EXAM TRAP topic in the 6 weeks before CBSE (16 Feb 2027), AP (03 May 2027), GCSE (May 2027) | dates from the boards |
+| Demand | topics ranked by the median daily readers of their Wikipedia article (planner names the article) | Wikimedia pageviews, open data |
+| Rigour | the fact-checker compares claims with the lead of the subject's Wikipedia article | reference only, never shown |
+| Footage | iNaturalist: the exact species, research-grade, CC0/CC BY, credited | per-photo licence filter |
+| Footage | Wellcome Collection: anatomy, medicine, microscopy; PDM/CC BY only | CC BY-NC skipped |
+| Format | VIRAL CLAIM, CHECKED (main channel) | fact-check channels were among the fastest-growing Shorts of 2026 |
+| Packaging | Why It Works titles: no emoji, no all-caps, 30-55 characters | AIR study of 18,080 channels (correlational): emoji and caps hurt trust in education |
+| Plumbing | every OpenAlex call uses OPENALEX_API_KEY when set | keyless = 1,000 credits/day per (shared) runner address since Feb 2026 |
+
+### Tested and rejected
+- Semantic Scholar TLDR: works, but its licence is non-commercial.
+- Wikipedia "top articles" as an idea feed: almost all celebrities; used for demand instead.
+- Physics Stack Exchange "hot": mostly graduate-level; "top votes" on many sites is far better.
+- Internet Archive Prelinger: licences mixed per item, footage old; not worth it yet.
+- Reddit (paid/approval-only since Nov 2025, non-commercial free tier), Google "People also ask"
+  (scraping), pytrends (archived), Pollinations (no clear commercial rights), Recraft free tier
+  (non-commercial), Free Music Archive (API closed), BBC Sound Effects (non-commercial), PhET,
+  GeoGebra, Desmos, Cochrane text, Science News Explores text, IUCN API (commercial use forbidden).
+
+### Next (ranked)
+1. Arrows and highlights timed to the narration on drawn scenes (signalling: d = 0.38 in learning
+   studies; Noetel et al. 2022 meta-review).
+2. Reply-to-comment Shorts: the best viewer question each week becomes a Short (the "viewer requests"
+   list already collects them).
+3. Wikipedia "On this day" + Wikidata dates for anniversary hooks (CC0 data).
+4. Wikidata SPARQL, JPL SSD, PubChem, USDA FoodData Central, AnAge for checking specific numbers
+   (lifespans, masses, distances, nutrients) against databases, not just the model.
+5. Europe PMC full text (CC BY/CC0 only) for richer briefs and conflict-of-interest checks.
+6. ESO (CC BY 4.0, visible credit) and Met/Rijksmuseum (CC0) as image sources; BHL illustrations
+   via Flickr (needs a free Flickr key).
+7. Icons for diagrams from Apache/MIT/CC0 sets (Material Symbols, Tabler, Phosphor, Health Icons).
+8. Experiments to run with the Analytics API (engaged views, average % viewed): a 1-2 s "Guess?" pause
+   before answers; length bands (<25 s, 35-50 s, 60-90 s); question vs statement titles.
+
+### Owner steps that unlock more (free)
+1. **OpenAlex API key (most important):** sign up at openalex.org, copy the key, add GitHub secret
+   `OPENALEX_API_KEY`. Without it the sources step can run out of its daily allowance.
+2. Stack Exchange key (stackapps.com, raises 300 to 10,000 calls a day): secret `STACKEXCHANGE_KEY`
+   (the code does not read it yet; tell Claude when it exists).
+3. Music: pick 5-10 tracks you like from Incompetech (CC BY 4.0) or Kenney (CC0) and put the MP3s in
+   assets/music; the mix already ducks music under the voice. Taste is yours to choose.
+4. In Studio by hand: Shorts "related video" links, Test & Compare, the Quiz/Poll stickers on a few
+   Shorts (no API exists for any of these).
