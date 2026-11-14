@@ -158,7 +158,7 @@ def _lexicon(text):
         except Exception:
             _LEX = {}
     for word, ph in _LEX.items():
-        text = re.sub(rf"(?i)(?<![\[\w])({re.escape(word)})(?![\w\]])", rf"[](/{ph}/)", text)
+        text = re.sub(rf"(?i)(?<![\[\w])({re.escape(word)})(?![\w\]])", lambda m: f"[{m.group(1)}](/{ph}/)", text)
     return text
 
 
