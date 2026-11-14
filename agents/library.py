@@ -10,10 +10,10 @@ It is the channel's memory of what it knows and how it knows it:
 import datetime as dt
 import re
 
-from .core import DATA, read_json, write_json
+from .core import CHANNEL, DATA, ROOT, read_json, write_json
 
 PATH = DATA / "library.json"
-INDEX = DATA.parent / "research" / "LIBRARY.md"
+INDEX = ROOT / "research" / ("LIBRARY.md" if CHANNEL == "main" else f"LIBRARY_{CHANNEL}.md")
 
 
 def _words(t):

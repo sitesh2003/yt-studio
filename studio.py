@@ -13,7 +13,7 @@ import html
 import sys
 
 from agents import editor, trends, visuals, voice, writer
-from agents.core import DATA, JOBS, config, log, read_json, slug, write_json
+from agents.core import DATA, JOBS, ROOT, config, log, read_json, slug, write_json
 
 
 def build(script):
@@ -631,7 +631,7 @@ if __name__ == "__main__":
         # three sample scenes through the real engine; every picture is kept (passed or not) with its score
         import json as _json
         from agents import illustrate
-        out_dir = DATA.parent / "research" / "illustration_test"
+        out_dir = ROOT / "research" / "illustration_test"
         out_dir.mkdir(parents=True, exist_ok=True)
         if not illustrate.available():
             log("illustrate-test: the CLOUDFLARE_ACCOUNT_ID / CLOUDFLARE_API_TOKEN secrets are missing")
@@ -690,7 +690,7 @@ if __name__ == "__main__":
         import re
         import shutil
         import subprocess
-        out_dir = DATA.parent / "research" / "voice_test"
+        out_dir = ROOT / "research" / "voice_test"
         out_dir.mkdir(parents=True, exist_ok=True)
         sample = {"title": "Why maple trees bleed", "topic": "maple sap", "scenes": [
             {"narration": "Every spring, maple trees bleed sweet water. Nobody cuts them first. "

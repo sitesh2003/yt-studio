@@ -6,7 +6,7 @@ already made (history.json) so it never repeats a topic.
 """
 import re
 
-from .core import DATA, add_lesson, config, llm_json, log, read_json
+from .core import DATA, ROOT, add_lesson, config, llm_json, log, read_json
 from . import playbook
 
 
@@ -22,7 +22,7 @@ def _outliers():
     import glob
     import json as _j
     rows = []
-    for f in glob.glob(str(DATA.parent / "research" / "*.json")):
+    for f in glob.glob(str(ROOT / "research" / "*.json")):
         try:
             rows += _j.load(open(f, encoding="utf-8")).get("videos", [])
         except Exception:
