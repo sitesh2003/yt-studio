@@ -244,5 +244,57 @@ class Graph(Base):
         self.finish()
 
 
+class Circuit(Base):
+    """A simple series loop: {"title", "parts": ["resistor", "bulb"], "flow": "conventional" | "electrons"}.
+    Battery on the left (long plate = +, short plate = -). Conventional current leaves + and returns to -;
+    electrons go the other way. The moving dots follow the chosen flow, and it is labelled."""
+    def construct(self):
+        from manim import Dot, Line, MoveAlongPath, Polygon, Rectangle as R, LaggedStart, linear
+        title = self.title()
+        top, bot = title.get_bottom()[1] - 1.2, UP_BOT + 1.0
+        l, r = -SAFE_W / 2 + 0.6, SAFE_W / 2 - 0.6
+        midy = (top + bot) / 2
+        # battery on the left side: gap in the wire with two plates
+        bt, bb = midy + 0.35, midy - 0.35
+        wire = VGroup(Line([l, bt, 0], [l, top, 0]), Line([l, top, 0], [r, top, 0]),
+                      Line([r, top, 0], [r, bot, 0]), Line([r, bot, 0], [l, bot, 0]), Line([l, bot, 0], [l, bb, 0]))
+        wire.set_stroke(WHITE, 6)
+        plus = Line([l - 0.6, bt, 0], [l + 0.6, bt, 0], color=YEL, stroke_width=8)      # long plate: +
+        minus = Line([l - 0.3, bb, 0], [l + 0.3, bb, 0], color=YEL, stroke_width=12)    # short plate: -
+        signs = VGroup(T("+", 48, YEL).next_to(plus, LEFT, buff=0.2), T("-", 48, YEL).next_to(minus, LEFT, buff=0.3))
+        parts = VGroup()
+        names = [str(p).lower() for p in list(P.get("parts", ["bulb"]))[:2]]
+        xs = np.linspace(l, r, len(names) + 2)[1:-1]
+        for name, x in zip(names, xs):
+            if "resist" in name:
+                g = R(width=1.4, height=0.55, color=BLUE, stroke_width=6, fill_color="#0b1630", fill_opacity=1)
+            elif "led" in name or "diode" in name:
+                g = Polygon([-0.4, 0.35, 0], [-0.4, -0.35, 0], [0.4, 0, 0], color=BLUE, stroke_width=6,
+                            fill_color="#0b1630", fill_opacity=1)
+            else:   # bulb
+                g = Circle(radius=0.45, color=YEL, stroke_width=6, fill_color="#3a3000", fill_opacity=1)
+            g.move_to([x, top, 0])
+            parts.add(VGroup(g, T(name, 34, MUTED).next_to(g, UP, buff=0.2)))
+        flow = str(P.get("flow", "conventional")).lower()
+        conventional = not flow.startswith("electron")
+        # path: conventional = out of + (top of battery), clockwise round the loop, back into -
+        path_pts = [[l, bt, 0], [l, top, 0], [r, top, 0], [r, bot, 0], [l, bot, 0], [l, bb, 0]]
+        if not conventional:
+            path_pts = path_pts[::-1]
+        from manim import VMobject
+        path = VMobject().set_points_as_corners(path_pts)
+        label = T("conventional current: + to -" if conventional else "electrons: - to +", 38,
+                  BLUE).move_to([0, bot - 0.55, 0])
+        self.play(Write(title), Create(wire), FadeIn(plus, minus, signs, parts), run_time=1.0)
+        self.play(FadeIn(label), run_time=0.3)
+        dots = [Dot(radius=0.1, color=BLUE if conventional else YEL) for _ in range(6)]
+        run = max(1.5, float(P.get("seconds", 4)) - self.renderer.time - 0.3)
+        self.play(LaggedStart(*[MoveAlongPath(d, path, rate_func=linear) for d in dots], lag_ratio=0.15),
+                  run_time=run)
+        for d in dots:
+            self.remove(d)
+        self.finish()
+
+
 def _fmt(v):
     return f"{int(v):,}" if float(v).is_integer() else f"{v:,.2f}".rstrip("0").rstrip(".")

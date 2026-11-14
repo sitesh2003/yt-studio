@@ -110,7 +110,18 @@ def _graph_ok(spec, narration):
     return good >= 17 and consts <= _numbers_in(narration)
 
 
+def _circuit_ok(spec, narration):
+    """A circuit is drawn only when the line is about a circuit, with known parts and a stated flow."""
+    n = narration.lower()
+    parts = [str(p).lower() for p in spec.get("parts", [])]
+    known = all(any(k in p for k in ("resist", "bulb", "lamp", "led", "diode")) for p in parts)
+    about = any(w in n for w in ("circuit", "current", "battery", "bulb", "resistor", "led", "diode", "electron"))
+    return bool(parts) and len(parts) <= 2 and known and about and         str(spec.get("flow", "conventional")).lower().startswith(("conventional", "electron"))
+
+
 def _numbers_ok(spec, narration):
+    if spec.get("type") == "Circuit":
+        return _circuit_ok(spec, narration)
     if spec.get("type") == "Graph":
         return _graph_ok(spec, narration)
     if spec.get("type") == "Equation":
@@ -144,6 +155,9 @@ a simple computed graphic, and only if the line itself states the thing exactly:
 - "Graph": the line describes how one quantity changes with another by a known rule (doubling, an
   inverse square, a wave): "expr" in x using + - * / ** sin cos exp log sqrt pi, with x0..x1 and short
   axis labels. Only when the rule is exactly what the line says.
+- "Circuit": the line is about current in a simple loop with a battery and 1-2 parts (resistor, bulb,
+  LED); "parts" and "flow" ("conventional" if the line talks about current, "electrons" if it talks
+  about electrons moving).
 - "NumberLine": the line moves along numbers (adding, subtracting, negatives): start, jumps, and a
   lo..hi range that contains every landing point (span at most 40).
 Use ONLY numbers and words that appear in that scene's narration; never compute or add anything.
@@ -154,14 +168,15 @@ Return JSON: {{"picks": [{{"i": scene index, "type": "Compare|Counter|Grid|Steps
  "a_label": "", "a_value": number, "b_label": "", "b_value": number, "unit": "",
  "value": number, "decimals": 0, "caption": "max 6 words", "k": number, "n": number,
  "steps": ["..."], "lines": ["..."], "start": number, "jumps": [number], "lo": number, "hi": number,
- "expr": "", "x0": number, "x1": number, "x_label": "", "y_label": ""}}]}}""")
+ "expr": "", "x0": number, "x1": number, "x_label": "", "y_label": "",
+ "parts": ["..."], "flow": "conventional or electrons"}}]}}""")
     used = 0
     for p in out.get("picks") or []:
         try:
             i = int(p.get("i"))
         except (TypeError, ValueError):
             continue
-        if not 0 < i < len(scenes) or used >= _max() or p.get("type") not in ("Compare", "Counter", "Grid", "Steps", "Equation", "NumberLine", "Graph"):
+        if not 0 < i < len(scenes) or used >= _max() or p.get("type") not in ("Compare", "Counter", "Grid", "Steps", "Equation", "NumberLine", "Graph", "Circuit"):
             continue
         if p["type"] != "Steps" and not _numbers_ok(p, scenes[i].get("narration", "")):
             log(f"animate: scene {i + 1} skipped, a number is not in its narration ({p.get('type')})")
