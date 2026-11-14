@@ -146,6 +146,34 @@ def _nasa_video_url(manifest):
     raise ValueError("no mp4 in NASA asset")
 
 
+def _svs_video_candidates(query):
+    """NASA Scientific Visualization Studio: accurate science ANIMATIONS made by NASA visualisers from
+    real data (hurricanes, the Sun, Earth, the Moon, oceans, climate, orbits). Free API, no key; NASA
+    work is not copyrighted, credited as NASA's Scientific Visualization Studio."""
+    r = _get("https://svs.gsfc.nasa.gov/api/search/", params={"search": query[:80], "limit": 4})
+    out = []
+    for hit in r.json().get("results", [])[:4]:
+        try:
+            d = _get(f"https://svs.gsfc.nasa.gov/api/{hit['id']}").json()
+        except Exception:
+            continue
+        movie, still = None, None
+        for g in d.get("media_groups") or []:
+            for it in g.get("items") or []:
+                inst = it.get("instance") or {}
+                url = (inst.get("url") or "").replace("http://", "https://")
+                w = inst.get("width") or 0
+                if inst.get("media_type") == "Movie" and url.endswith(".mp4") and 720 <= w <= 3840 and not movie:
+                    movie = url
+                if inst.get("media_type") == "Image" and url.endswith((".jpg", ".png")) and not still:
+                    still = url
+        if movie and still:
+            out.append({"kind": "video", "id": ("sv", hit["id"]), "url": movie, "thumb": still, "user": "NASA SVS",
+                        "fit": True, "tags": f"{d.get('title', '')} {' '.join(d.get('keywords') or [])}",
+                        "credit": "Visualization: NASA's Scientific Visualization Studio"})
+    return out
+
+
 def _commons_video_candidates(query):
     """Wikimedia Commons video (webm/ogv): real footage of specific animals, plants and processes.
     Same licence rule as the photos: public domain, CC0 or CC BY only."""
@@ -353,7 +381,7 @@ def pick_scene(i, scene, a, b, job_dir, used, note="", extra_queries=()):
             except Exception as e:
                 log(f"visuals: video search error {e}")
         for q in queries[:2]:          # real public-domain footage beyond Pixabay (no key needed)
-            for src in (_nasa_video_candidates, _commons_video_candidates):
+            for src in (_nasa_video_candidates, _svs_video_candidates, _commons_video_candidates):
                 try:
                     cands += [c for c in src(q) if c["id"] not in used]
                 except Exception as e:
@@ -401,8 +429,8 @@ def pick_scene(i, scene, a, b, job_dir, used, note="", extra_queries=()):
         try:
             if pick["kind"] == "video":
                 url = pick["url"] or _nasa_video_url(pick["manifest"])
-                if pick["id"][0] in ("nv", "cv"):   # NASA / Commons: read only the first 20 s, as mp4
-                    run(["ffmpeg", "-y", "-user_agent", UA["User-Agent"]] + (["-ss", "4"] if pick["id"][0] == "nv" else []) + ["-i", url, "-t", "20", "-an",
+                if pick["id"][0] in ("nv", "cv", "sv"):   # NASA / SVS / Commons: read only 20 s, as mp4
+                    run(["ffmpeg", "-y", "-user_agent", UA["User-Agent"]] + (["-ss", "4"] if pick["id"][0] in ("nv", "sv") else []) + ["-i", url, "-t", "20", "-an",
                          "-c:v", "libx264", "-pix_fmt", "yuv420p", "-preset", "veryfast", str(out)])
                 else:
                     _download(url, out)
