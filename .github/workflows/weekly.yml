@@ -46,6 +46,15 @@ jobs:
           ffmpeg -version | head -1
           ffmpeg -hide_banner -filters | grep " ass "
 
+      - name: Manim, for computed animations (optional; videos fall back to footage without it)
+        continue-on-error: true
+        timeout-minutes: 12
+        run: |
+          timeout 420 bash -c 'sudo apt-get install -y -q libcairo2-dev libpango1.0-dev pkg-config' || \
+            timeout 420 bash -c 'sudo apt-get update -q && sudo apt-get install -y -q libcairo2-dev libpango1.0-dev pkg-config'
+          pip install -q manim
+          manim --version
+
       - name: Install Python packages
         run: pip install -q -r requirements.txt
 

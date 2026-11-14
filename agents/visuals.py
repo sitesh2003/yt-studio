@@ -361,6 +361,14 @@ def pick_scene(i, scene, a, b, job_dir, used, note="", extra_queries=()):
             return 8.0, {"kind": "board", "id": ("b", i)}, diagram.CREDIT
         except Exception as e:
             log(f"visuals: board scene {i + 1} skipped ({str(e)[:60]})")
+    if scene.get("anim") and not note:   # a number, comparison or process: computed Manim animation
+        try:
+            from . import animate
+            if animate.available():
+                animate.render(scene["anim"], out, b - a + 0.5, job_dir)
+                return 9.0, {"kind": "anim", "id": ("a", i)}, None
+        except Exception as e:
+            log(f"visuals: animation for scene {i + 1} skipped ({str(e)[:80]})")
     if scene.get("map") and not note:   # a "where on Earth" line: an exact map from Natural Earth data
         try:
             from . import illustrate, maps
@@ -476,6 +484,12 @@ def gather(script, times, job_dir):
             _diagrams = 1 if _board else 0   # the board counts toward the 3-diagram limit
         except Exception as e:
             log(f"visuals: no explainer board ({str(e)[:60]})")
+    try:   # number / comparison / process lines -> computed Manim animations (agents/animate.py)
+        from . import animate
+        if animate.available():
+            animate.plan(script)
+    except Exception as e:
+        log(f"visuals: no animation plan ({str(e)[:60]})")
     if not key("PIXABAY_API_KEY"):
         log("visuals: no PIXABAY_API_KEY, using gradient backgrounds")
     used, scores, picks, credits = set(), [], [], []
