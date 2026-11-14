@@ -540,7 +540,8 @@ def weekly():
     if config()["publish"]["mode"] == "auto" and meta.get("fact_ok", True) and (meta.get("qa") or {}).get("pass"):
         et = ZoneInfo("America/New_York")
         now = dt.datetime.now(et)
-        when = (now + dt.timedelta(days=(5 - now.weekday()) % 7)).replace(hour=10, minute=0, second=0, microsecond=0)
+        wd = int(config()["publish"].get("weekly_day", 5))   # 5 = Saturday (main), 6 = Sunday (Why It Works)
+        when = (now + dt.timedelta(days=(wd - now.weekday()) % 7)).replace(hour=10, minute=0, second=0, microsecond=0)
         if when < now + dt.timedelta(minutes=30):
             # missed Saturday 10 AM (a long render): go out at the next 10 AM ET instead of waiting a week
             when = (now + dt.timedelta(days=1)).replace(hour=10, minute=0, second=0, microsecond=0)

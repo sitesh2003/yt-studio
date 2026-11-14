@@ -424,7 +424,7 @@ def write_weekly(week):
     known = library.find(" ".join(w["title"] for w in week), n=10)
     verified = chr(10).join(f"- {e['title']}: claims {e.get('claims', [])[:5]}; sources {[s['cite'] for s in e.get('sources', [])]}"
                             for e in known) or "- (none yet)"
-    s = llm_json(f"""Write a weekly long-form YouTube episode for the channel "Ever Thought Why?" ({ch['niche']}).
+    s = llm_json(f"""Write a weekly long-form YouTube episode for the channel "{ch.get('name', 'Ever Thought Why?')}" ({ch['niche']}).
 Audience: {ch['audience']}. Tone: {ch['voice_tone']}. American English.
 This week's Shorts (go DEEPER on each, add the "how we know" and a real-world connection):
 {items}
@@ -441,7 +441,7 @@ Rules:
   "Pause and guess... three, two, one." (mark that scene "predict": true), the reveal, why it works,
   how scientists found out, and where you meet it in everyday life.
 - 100% accurate, plain spoken numbers, honest simplification only. No jargon without explaining it.
-- End with a fresh "Ever thought why...?" question for the comments and a one-line tease of next week.
+- End with {'a "Try this:" question for the comments' if ch.get('style') == 'student' else 'a fresh "Ever thought why...?" question for the comments'} and a one-line tease of next week.
 - Scenes of 2-4 sentences, each with a concrete 1-3 word stock-footage query and 2 alternatives.
 
 Return JSON:
@@ -451,7 +451,7 @@ Return JSON:
  "description": "3-4 lines, then a blank line (chapter timestamps are added automatically), then hashtags",
  "tags": ["..."],
  "thumbnail": {{"layout": "single", "text": "max 4 words", "highlight": "one word"}},
- "question": "the closing Ever thought why question",
+ "question": "the closing question for the comments",
  "answer_comment": "The answer: 2-4 friendly sentences",
  "fact_check": ["every factual claim"]}}""")
     s["topic"] = "weekly: " + ", ".join(w["title"] for w in week)[:120]

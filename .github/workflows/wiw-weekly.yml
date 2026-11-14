@@ -1,0 +1,132 @@
+name: Why It Works - weekly long video
+
+on:
+  schedule:
+    - cron: "37 3 * * 0"       # Sunday 03:37 UTC = 9:07 AM IST; goes public Sunday 10 AM US Eastern
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  actions: write        # lets the health agent start a catch-up production run
+
+concurrency:
+  # its own lane: a run of several hours must never be bumped from the queue by the frequent daily and
+  # comment runs (GitHub keeps one waiting run per lane; that cancelled the episode on 14 Nov 2026)
+  group: studio-wiw-weekly
+  cancel-in-progress: false
+
+jobs:
+  weekly:
+    runs-on: ubuntu-latest
+    env:
+      STUDIO_CHANNEL: wiw
+    timeout-minutes: 340   # a 9-minute, ~30-scene episode took over 90 min on 14 Nov 2026 (cut off); 360 is GitHub's limit
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # The LATEST main, not the commit from when this run was queued: a run queued behind
+          # another (studio-state) started from stale state on 12 Nov and its save erased two videos.
+          ref: main
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install FFmpeg
+        timeout-minutes: 10
+        run: |
+          # From PyPI (the same source as our other packages): a full static FFmpeg with captions
+          # (libass), x264 and fonts. Ubuntu's apt mirrors hung for over an hour on 11 Nov, so apt
+          # is only the back-up now.
+          if pip install -q imageio-ffmpeg==0.7.0; then
+            sudo cp "$(python -c 'import imageio_ffmpeg; print(imageio_ffmpeg.get_ffmpeg_exe())')" /usr/local/bin/ffmpeg
+            sudo chmod +x /usr/local/bin/ffmpeg
+          fi
+          if ! ffmpeg -hide_banner -filters 2>/dev/null | grep -q " ass "; then
+            echo "PyPI FFmpeg unavailable, trying apt"
+            timeout 300 bash -c 'sudo apt-get update -q -o Acquire::Retries=2 && sudo apt-get install -y -q ffmpeg'
+          fi
+          ffmpeg -version | head -1
+          ffmpeg -hide_banner -filters | grep " ass "
+
+      - name: Manim, for computed animations (optional; videos fall back to footage without it)
+        continue-on-error: true
+        timeout-minutes: 12
+        run: |
+          timeout 420 bash -c 'sudo apt-get install -y -q libcairo2-dev libpango1.0-dev pkg-config' || \
+            timeout 420 bash -c 'sudo apt-get update -q && sudo apt-get install -y -q libcairo2-dev libpango1.0-dev pkg-config'
+          pip install -q manim
+          manim --version
+
+      - name: Install Python packages
+        run: pip install -q -r requirements.txt
+
+      - name: faster-whisper, for the listening check (optional; QA skips it without)
+        continue-on-error: true
+        timeout-minutes: 5
+        run: pip install -q "faster-whisper==1.2.1"
+
+      - name: Keep the Kokoro voice model between runs
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/huggingface
+          key: kokoro-82m-v1
+
+      - name: Install the Kokoro voice (open source; the Edge voice is the fallback)
+        continue-on-error: true
+        timeout-minutes: 10
+        run: |
+          pip install -q torch --index-url https://download.pytorch.org/whl/cpu
+          pip install -q "kokoro==0.9.4" soundfile en-core-web-sm@https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl
+
+      - name: Write sign-in files from secrets
+        env:
+          CLIENT_SECRET_JSON: ${{ secrets.CLIENT_SECRET_JSON }}
+          TOKEN_JSON: ${{ secrets.TOKEN_JSON }}
+          TOKEN_JSON_WIW: ${{ secrets.TOKEN_JSON_WIW }}
+        run: |
+          printf '%s' "$CLIENT_SECRET_JSON" > client_secret.json
+          printf '%s' "$TOKEN_JSON" > token.json
+          printf '%s' "$TOKEN_JSON_WIW" > token_wiw.json
+
+      - name: Write, fact-check, render and schedule the weekly episode
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}   # free key: research sources (empty = keyless, 1,000 credits a day)
+          STACKEXCHANGE_KEY: ${{ secrets.STACKEXCHANGE_KEY }}   # optional: 10,000 idea lookups a day instead of 300
+          PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
+          # Illustrated scenes (agents/illustrate.py): free Cloudflare Workers AI; empty = footage only
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          REPORT_EMAIL: ${{ secrets.REPORT_EMAIL }}
+          PUBLISH_MODE: auto
+          PYTHONUNBUFFERED: "1"
+        run: python studio.py weekly
+
+      - name: Keep the episode for 7 days
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: weekly-episode
+          path: |
+            jobs/wiw/*/final.mp4
+            jobs/wiw/*/thumbnail*.jpg
+            jobs/wiw/*/review.html
+          retention-days: 7
+          if-no-files-found: ignore
+
+      - name: Save state
+        if: always()
+        run: |
+          git config user.name "yt-studio-bot"
+          git config user.email "actions@users.noreply.github.com"
+          # the daily runs saved while this ran for hours: start from THEIR state and add only the episode
+          for i in 1 2 3; do
+            git fetch -q origin main && git reset -q --hard origin/main
+            [ -f data/wiw/weekly_out.json ] && python studio.py absorb-weekly
+            git add -f data/wiw/history.json data/wiw/library.json 2>/dev/null || true
+            git add -f research/LIBRARY_wiw.md 2>/dev/null || true
+            git diff --cached --quiet && break
+            git commit -q -m "state: wiw weekly episode $(date -u +%F)" && git push -q && break
+            sleep 15
+          done

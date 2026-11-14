@@ -47,7 +47,8 @@
     ],
     "timezone_note": "07:30 ET = 18:00 IST (Indian students after school), 16:30 ET = US after school",
     "videos_per_day": 2,
-    "bank_days": 5
+    "bank_days": 5,
+    "weekly_day": 6
   },
   "animate": {
     "max_per_video": 5,
