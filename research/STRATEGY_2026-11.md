@@ -374,3 +374,17 @@ before it was built. Secondary claims are marked in the commit messages.
    assets/music; the mix already ducks music under the voice. Taste is yours to choose.
 4. In Studio by hand: Shorts "related video" links, Test & Compare, the Quiz/Poll stickers on a few
    Shorts (no API exists for any of these).
+
+### Code-drawn visuals added tonight (all rendered here and checked by eye)
+The first Why It Works video ("negative times negative") had to use stock footage for a maths idea,
+so six new computed animation types were added. In every one, the model only chooses and labels; the
+numbers, shapes and geometry come from code or data, and a check refuses anything it cannot verify.
+| Type | Draws | Accuracy guard |
+|---|---|---|
+| Equation | a worked example line by line, result in yellow | every arithmetic line is evaluated; all numbers must be said |
+| NumberLine | jumps along a marked line | every number said; every landing inside the range |
+| Graph | a curve from a formula (doubling, inverse square, waves) | safe maths only, real across the range, constants said |
+| Circuit | battery (+ long, - short), resistor/bulb/LED, moving charges | direction stated and labelled (conventional vs electrons) |
+| Molecule | the real 3D molecule, face-on, gently rocking | geometry from PubChem; the model only names it |
+| Cycle | 3-5 stages round a ring with arrows | only for lines about something that repeats |
+The student channel can use up to 5 per video; the main channel 2.
