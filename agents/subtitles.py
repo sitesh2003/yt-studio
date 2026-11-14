@@ -31,15 +31,18 @@ def build(words, script, max_words=7, pause=0.3):
     for blk in difflib.SequenceMatcher(None, a, b, autojunk=False).get_matching_blocks():
         for k in range(blk.size):          # matched word: show it as the script wrote it
             shown[blk.b + k] = tokens[blk.a + k]
-    def left_in_sentence(j):   # words from j up to the next pause
+    def left_in_sentence(j):   # words from j up to the end of the script sentence (or a real pause)
         n = 1
-        while j + n < len(words) and words[j + n]["start"] - words[j + n - 1]["end"] <= pause:
+        while (j + n < len(words) and not re.search(r"[.?!][\"')]*$", shown[j + n - 1])
+               and words[j + n]["start"] - words[j + n - 1]["end"] <= pause):
             n += 1
         return n
 
     cues, cur = [], []
     for j, w in enumerate(words):
-        gap = cur and w["start"] - words[cur[-1]]["end"] > pause
+        # a new line after every sentence end in the SCRIPT (voice-engine timings can run past trimmed
+        # audio and hide the pause), and at any real pause
+        gap = cur and (w["start"] - words[cur[-1]]["end"] > pause or re.search(r"[.?!][\"')]*$", shown[cur[-1]]))
         # a long line breaks after max_words, unless only 1-3 words of the sentence are left
         full = cur and len(cur) >= max_words and left_in_sentence(j) > 3
         if gap or full:

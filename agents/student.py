@@ -10,6 +10,7 @@ bank and publisher need no changes.
 """
 import datetime as dt
 import random
+import re
 
 import requests
 
@@ -134,8 +135,9 @@ Rules:
   (1) HOOK in under 2 seconds: the question a student actually asks, or the surprising fact
       ("Ice is a solid. So why doesn't it sink?"). No greeting, no "Did you know", no "In this video".
   (2) SHOW IT step by step: what happens, one step per scene, each step something that can be DRAWN.
-  (3) WHY IT WORKS: the reason in one plain sentence of school-level science, said clearly and slowly.
-      Mark that scene "why": true.
+  (3) WHY IT WORKS: the reason in one plain sentence of school-level science, said clearly and slowly,
+      opening with "Here's why" or "That's because". Mark that scene with the JSON field "why": true
+      (a field, never words in the narration).
   (4) WHERE YOU SEE IT: one real-world use or, for research, how they know and why it matters.
   (5) TRY THIS: a short question the viewer can work out from the video, for the comments, starting
       with "Try this:" (e.g. "Try this: why does a lake freeze from the top down?"). It must have one
@@ -176,6 +178,10 @@ Script: {s}
 Return the whole script JSON.""")
         if again.get("scenes"):
             s = again
+    for sc in s.get("scenes", []):   # a "why:" marker must never be read aloud
+        n = sc.get("narration", "")
+        if re.match(r"(?i)\s*why\s*:\s*", n) and not re.match(r"(?i)\s*why it works", n):
+            sc["narration"] = re.sub(r"(?i)^\s*why\s*:\s*", "Here's why: ", n)
     s["topic"] = topic
     s["countdown"] = False
     log(f"student: script ready, {sum(len(x['narration'].split()) for x in s.get('scenes', []))} words, "
