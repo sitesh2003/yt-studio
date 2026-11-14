@@ -122,6 +122,9 @@ def upload(job_dir, meta, when=None):
             yt().thumbnails().set(videoId=vid, media_body=MediaFileUpload(str(thumb))).execute()
         except Exception as e:
             log(f"youtube: thumbnail not set ({str(e)[:80]})")
+    if meta.get("captions_srt") and p.get("upload_captions", True):
+        from . import subtitles
+        subtitles.upload(yt(), vid, meta["captions_srt"])
     sched =read_json(DATA / "scheduled.json", []) or []
     write_json(DATA / "scheduled.json", sched + [when.isoformat()])
     log(f"youtube: uploaded {vid}, goes public {when:%a %d %b %H:%M} ET")

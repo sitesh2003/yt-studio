@@ -17,6 +17,11 @@ from agents.core import DATA, JOBS, ROOT, config, log, read_json, slug, write_js
 
 
 def build(script):
+    try:   # if most recent titles open the same way, lead with an option that does not
+        from agents import variety
+        script["title_options"] = variety.pick_title(script.get("title_options"))
+    except Exception as e:
+        log(f"variety: title check skipped ({str(e)[:60]})")
     job = JOBS / (dt.datetime.now().strftime("%Y%m%d-%H%M") + "-" + slug(script["topic"]))
     job.mkdir(parents=True, exist_ok=True)
     if "sources" not in script:   # open-access papers whose abstracts back the key claims (agents/sources.py)
@@ -56,6 +61,11 @@ def build(script):
             "scene_lines": [sc["narration"] for sc in script["scenes"]],
             "fact_ok": not (script.get("fact_check_result") or {}).get("unresolved", False),
             "weekly": bool(script.get("weekly")), "recap_source": script.get("recap_source")}
+    try:   # exact captions from the narrator's timings; uploaded with the video (agents/subtitles.py)
+        from agents import subtitles
+        meta["captions_srt"] = subtitles.build(words, script)
+    except Exception as e:
+        log(f"captions file skipped: {str(e)[:80]}")
     write_json(job / "meta.json", meta)
     write_json(job / "words.json", words)
     from agents import qa
@@ -396,6 +406,11 @@ def daily():
     for attempt in range(2):  # a bad answer from the free model must not end the whole run
         try:
             topics = writer.pick_topics(want + 2)
+            from agents import variety
+            kept = [t for t in topics if not variety.topic_is_repeat(t.get("topic", ""))]
+            if len(kept) < len(topics):
+                log(f"variety: dropped {len(topics) - len(kept)} topic(s) too close to videos already made")
+            topics = kept
             if topics:
                 break
         except Exception as e:

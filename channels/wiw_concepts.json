@@ -1,0 +1,66 @@
+{
+  "_note": "Concept NAMES that school and early-college courses share (NCERT/CBSE, AP, GCSE, IB). Names only - never syllabus text or figures (copyright). The student planner prefers concepts not yet made, so the channel covers what students actually study. Add freely.",
+  "physics": [
+    "Newton's first law and inertia", "why F = ma", "action and reaction pairs", "friction and why it exists",
+    "why heavy and light objects fall together", "projectile motion", "circular motion and centripetal force",
+    "work and energy", "conservation of momentum", "pressure in liquids", "buoyancy and Archimedes' principle",
+    "why ice floats", "heat transfer by conduction convection and radiation", "specific heat capacity",
+    "refraction and why a straw looks bent", "total internal reflection and optical fibres", "how lenses form images",
+    "why the sky is blue", "sound waves and pitch", "resonance", "the Doppler effect", "Ohm's law",
+    "series and parallel circuits", "electromagnetic induction", "how a transformer works", "why AC is used for the grid",
+    "the photoelectric effect", "half-life and radioactive decay", "escape velocity", "why satellites do not fall"
+  ],
+  "chemistry": [
+    "why atoms bond", "ionic and covalent bonds", "why water is polar", "hydrogen bonding", "states of matter",
+    "why salt melts ice", "acids and bases and the pH scale", "neutralisation", "why metals conduct",
+    "the reactivity series", "rusting and corrosion", "oxidation and reduction", "rates of reaction and catalysts",
+    "why enzymes speed reactions", "exothermic and endothermic reactions", "Le Chatelier's principle",
+    "electrolysis", "how batteries make electricity", "isotopes", "the periodic table's pattern",
+    "why noble gases do not react", "moles and Avogadro's number", "crude oil and fractional distillation",
+    "polymers and plastics", "why soap cleans", "flame tests and atomic emission", "chromatography",
+    "solubility and why sugar dissolves", "carbon allotropes diamond and graphite", "why baking soda fizzes with vinegar"
+  ],
+  "biology": [
+    "cell structure", "how diffusion and osmosis work", "active transport", "how enzymes work",
+    "photosynthesis", "respiration and ATP", "why we breathe", "how the heart pumps", "blood groups",
+    "how vaccines train the immune system", "antibodies", "how neurons send signals", "reflex arcs",
+    "hormones and homeostasis", "how insulin controls blood sugar", "DNA structure", "how genes make proteins",
+    "mitosis and meiosis", "inheritance and Punnett squares", "mutations", "natural selection",
+    "antibiotic resistance", "food chains and energy loss", "the carbon cycle", "the nitrogen cycle",
+    "how kidneys filter blood", "how the eye sees colour", "how plants move water upwards", "viruses versus bacteria",
+    "how CRISPR edits genes"
+  ],
+  "maths": [
+    "why a negative times a negative is positive", "why you cannot divide by zero", "Pythagoras' theorem visual proof",
+    "why the angles of a triangle add to 180", "area of a circle by unrolling it", "what pi really is",
+    "why a squared plus b squared", "prime numbers and why they matter", "the divisibility rules and why they work",
+    "why any number to the power zero is one", "logarithms as counting multiplications", "compound interest and e",
+    "the birthday paradox", "the Monty Hall problem", "probability of independent events", "mean median and mode",
+    "why 0.999 recurring equals 1", "irrational numbers", "the quadratic formula from completing the square",
+    "slope and gradient", "what a derivative means", "what an integral means", "vectors", "sine and cosine on a circle",
+    "similar triangles", "the golden ratio honestly", "exponential growth", "binary numbers", "sequences and series",
+    "infinite series that add to a finite number"
+  ],
+  "electronics": [
+    "how a diode works", "how an LED makes light", "how a transistor switches", "logic gates", "how a capacitor stores charge",
+    "resistors and colour codes", "voltage current and resistance", "how a battery works", "how a solar cell works",
+    "how an electric motor spins", "how a generator makes electricity", "why fuses and circuit breakers trip",
+    "earthing and why the third pin exists", "how a speaker makes sound", "how a microphone works",
+    "how wireless charging works", "how a touchscreen senses a finger", "analogue versus digital signals",
+    "how a microcontroller reads a sensor", "how semiconductors work"
+  ],
+  "technology": [
+    "how GPS finds you", "how the internet sends data in packets", "how Wi-Fi works", "how a microwave oven heats food",
+    "how a refrigerator moves heat", "how a camera sensor captures light", "how noise-cancelling headphones work",
+    "how QR codes store data", "how encryption keeps messages secret", "how a computer stores data in memory",
+    "how machine learning finds patterns", "how a 3D printer works", "how an MRI scanner sees inside", "how X-rays work",
+    "how lithium-ion batteries charge", "how electric cars brake regeneratively", "how a jet engine works",
+    "how a plane wing makes lift", "how bridges carry load", "how a lock and key work"
+  ],
+  "earth and space": [
+    "why we have seasons", "phases of the Moon", "why tides happen", "eclipses", "how stars shine by fusion",
+    "the life cycle of a star", "black holes", "why planets orbit", "plate tectonics", "how earthquakes happen",
+    "how volcanoes erupt", "the water cycle", "the greenhouse effect", "why the ocean is salty", "how rainbows form",
+    "how lightning happens", "why Mars is red", "how we measure the age of the universe", "the rock cycle", "how weather fronts work"
+  ]
+}

@@ -171,6 +171,13 @@ def lint(s, words):
             A, B = _content_words(a), _content_words(b)
             if len(A & B) / max(1, min(len(A), len(B))) >= 0.7:
                 issues.append(f"says the same thing twice: \"{a}\" / \"{b}\"")
+    try:   # no two videos should open the same way (YouTube's inauthentic-content rule)
+        from .variety import hook_issue
+        hi = hook_issue(scenes[0].get("narration", "")) if scenes else ""
+        if hi:
+            issues.append(hi)
+    except Exception:
+        pass
     n = len(text.split())
     if n > words * 1.2:
         issues.append(f"{n} words, aim for about {words}: cut the weakest lines")

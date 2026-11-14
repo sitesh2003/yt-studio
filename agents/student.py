@@ -51,6 +51,23 @@ def _recent_papers(subject, n=6):
         return []
 
 
+def _syllabus(subjects, per=6):
+    """Concepts from channels/wiw_concepts.json for today's subjects that the channel has not made yet."""
+    import json
+    from .core import ROOT
+    from .variety import topic_is_repeat
+    try:
+        cmap = json.loads((ROOT / "channels" / "wiw_concepts.json").read_text(encoding="utf-8"))
+    except Exception:
+        return {}
+    out = {}
+    for sub in subjects:
+        todo = [c for c in cmap.get(sub, []) if not topic_is_repeat(c)]
+        random.shuffle(todo)
+        out[sub] = todo[:per]
+    return out
+
+
 def pick_topics(n=3):
     cfg = config()["channel"]
     done = [h.get("topic") for h in (read_json(DATA / "history.json", []) or []) if h.get("topic")][-80:]
@@ -63,6 +80,8 @@ Audience: {cfg['audience']}.
 {FORMATS}
 Recent open-access papers you MAY use for one NEW RESEARCH topic (only if it can be explained truly and
 simply; otherwise ignore the list): {papers or 'none today'}
+CONCEPTS STUDENTS STUDY that this channel has not covered yet, by subject (prefer one of these; phrase it
+as the question a student would ask): {_syllabus(subjects)}
 Topics already made (never repeat): {done or 'none'}
 Topics viewers asked for: {[r['topic'] for r in (read_json(DATA / 'viewer_requests.json', []) or [])][-10:] or 'none yet'}
 
