@@ -266,6 +266,9 @@ def pull_requested():
     return done
 
 
+NEW_FORMAT_SINCE = "2026-11-13T07:30"   # UTC: after the full-screen and growth-plan commits (cb0e1e2, 156f8ea)
+
+
 def publish_due(hours=30):
     """Fill YouTube's public slots for the next `hours` from the bank - three a day, oldest first.
     Each video was audited before it was banked, so nothing uploaded here is ever deleted."""
@@ -278,7 +281,11 @@ def publish_due(hours=30):
         return 0
     horizon = dt.datetime.now(dt.timezone.utc) + dt.timedelta(hours=hours)
     done = 0
-    for item in list(bank.items()):
+    # NEW FORMAT FIRST (user, 14 Nov 2026): videos made after the 13 Nov improvements (full-screen crop,
+    # sources, plain titles, countdown test) go out first, oldest first among them; videos made before
+    # wait as reserves and fill a slot only when no new one is ready. Nothing finished is wasted.
+    queue = sorted(bank.items(), key=lambda it: (it.get("stored", "") < NEW_FORMAT_SINCE, it.get("stored", "")))
+    for item in queue:
         slot = youtube.next_slot()
         if slot.astimezone(dt.timezone.utc) > horizon:
             break
