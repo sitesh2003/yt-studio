@@ -48,7 +48,9 @@
     "timezone_note": "07:30 ET = 18:00 IST (Indian students after school), 16:30 ET = US after school",
     "videos_per_day": 2,
     "bank_days": 5,
-    "weekly_day": 6
+    "weekly_day": 6,
+    "upload_captions": false,
+    "_quota_note": "both channels share one YouTube API project (10,000 units a day): exact captions (400 units each) stay on the main channel; turn on here once quota use is measured"
   },
   "animate": {
     "max_per_video": 5,
