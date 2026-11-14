@@ -1435,7 +1435,7 @@
       "science"
     ],
     "hook": "Your car swerves off the highway right toward a steel guardrail.",
-    "status": "banked",
+    "status": "scheduled",
     "narration": "Your car swerves off the highway right toward a steel guardrail. Instead of impaling your vehicle, your car hits a heavy steel box on the end of the rail. This terminal squeezes the steel beam as it pushes through. So what is that heavy box actually doing to the metal? Here's why: it flattens the steel beam and curls it away from you, absorbing massive energy. How does a guardrail end box absorb energy during a crash?",
     "voice_engine": "kokoro",
     "voices": "male host, female explainer",
@@ -1498,7 +1498,9 @@
       "duration": 30.1
     },
     "repairs": 1,
-    "audited": true
+    "audited": true,
+    "video_id": "3HaBsuVSlmA",
+    "publish_at": "2026-11-15T19:00:00-05:00"
   },
   {
     "job": "20261114-1508-why-bumping-your-elbow-s-funny-bone-trig",
