@@ -458,6 +458,11 @@ def daily():
             write_json(job / "meta.json", meta)
             if bank.available():
                 bank.store(job, meta)                # waits in the bank; published close to its slot
+                try:
+                    from agents import library
+                    library.add(job.name, meta)      # verified claims + sources, reusable
+                except Exception as e:
+                    log(f"library skipped: {str(e)[:80]}")
                 hist = read_json(DATA / "history.json", []) or []
                 for h in hist:
                     if h.get("job") == job.name:
@@ -512,6 +517,11 @@ def weekly():
             when += dt.timedelta(days=7)
         vid, at = youtube.upload(job, meta, when)
         meta.update(status="scheduled", video_id=vid, publish_at=at)
+        try:
+            from agents import library
+            library.add(job.name, meta)
+        except Exception as e:
+            log(f"library skipped: {str(e)[:80]}")
         write_json(job / "meta.json", meta)
         hist = read_json(DATA / "history.json", []) or []
         for h in hist:

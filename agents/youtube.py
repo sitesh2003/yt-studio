@@ -220,6 +220,18 @@ def channel_summary():
     return {"subscribers": ch.get("subscriberCount"), "views": ch.get("viewCount"), "videos": ch.get("videoCount")}
 
 
+def _episode_line(hist, h):
+    """Shorts viewers -> the long episode (watch hours): name the newest public weekly episode."""
+    if h.get("weekly"):
+        return ""
+    eps = [e for e in hist if e.get("weekly") and e.get("video_id") and e.get("publish_at")
+           and e["publish_at"] <= dt.datetime.now(dt.timezone.utc).isoformat()]
+    if not eps:
+        return ""
+    e = max(eps, key=lambda e: e["publish_at"])
+    return f"\n\nWant the deeper story? Our weekly episode \"{e.get('title')}\" is on the channel."
+
+
 def post_answers():
     """Once a video is PUBLIC, post its enquiry answer as the channel's first comment (once).
     YouTube cannot comment on private videos, and apps cannot pin comments; pin it in the app."""
@@ -237,7 +249,7 @@ def post_answers():
             continue
         y.commentThreads().insert(part="snippet", body={"snippet": {
             "channelId": me, "videoId": h["video_id"],
-            "topLevelComment": {"snippet": {"textOriginal": h["answer_comment"]}}}}).execute()
+            "topLevelComment": {"snippet": {"textOriginal": h["answer_comment"] + _episode_line(hist, h)}}}}).execute()
         h["answered"] = True
         posted += 1
         log(f"youtube: answer posted on {h['video_id']} ({h['title'][:40]})")

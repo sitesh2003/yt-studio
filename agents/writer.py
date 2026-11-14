@@ -375,10 +375,19 @@ def write_weekly(week):
     ch = config()["channel"]
     items = chr(10).join(f"- {w['title']} | question: {w.get('question','')} | answer: {w.get('answer_comment','')}"
                       for w in week)
+    from . import library
+    known = library.find(" ".join(w["title"] for w in week), n=10)
+    verified = chr(10).join(f"- {e['title']}: claims {e.get('claims', [])[:5]}; sources {[s['cite'] for s in e.get('sources', [])]}"
+                            for e in known) or "- (none yet)"
     s = llm_json(f"""Write a weekly long-form YouTube episode for the channel "Ever Thought Why?" ({ch['niche']}).
 Audience: {ch['audience']}. Tone: {ch['voice_tone']}. American English.
 This week's Shorts (go DEEPER on each, add the "how we know" and a real-world connection):
 {items}
+
+ALREADY VERIFIED by this channel (claims that passed our fact check, and open-access papers whose abstracts
+support them). Build on these first; when a chapter uses one of these papers, name it in the narration as
+"a study by <author> in <year>" so viewers know how we know:
+{verified}
 
 Rules:
 - 1300 to 1500 words of narration (8 to 10 minutes). Strong 10-second cold open with the most
