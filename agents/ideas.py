@@ -17,7 +17,7 @@ import random
 
 import requests
 
-from .core import DATA, log, openalex_params, read_json, write_json
+from .core import DATA, key, log, openalex_params, read_json, write_json
 
 UA = {"User-Agent": "yt-studio-ideas/1.0 (science education channel)"}
 CACHE = DATA / "ideas_cache.json"
@@ -45,8 +45,10 @@ def _cached(key, fetch):
 def _se(site, pages=(1, 2, 3, 4, 5, 6, 7, 8)):
     """Top-voted questions from a random page of one site (so the list changes from day to day)."""
     page = random.choice(pages)
-    r = requests.get("https://api.stackexchange.com/2.3/questions", headers=UA, timeout=20, params={
-        "order": "desc", "sort": "votes", "site": site, "pagesize": 30, "page": page})
+    params = {"order": "desc", "sort": "votes", "site": site, "pagesize": 30, "page": page}
+    if key("STACKEXCHANGE_KEY"):          # free app key: 10,000 calls a day instead of 300
+        params["key"] = key("STACKEXCHANGE_KEY")
+    r = requests.get("https://api.stackexchange.com/2.3/questions", headers=UA, timeout=20, params=params)
     r.raise_for_status()
     return [{"q": html.unescape(q["title"]), "site": site, "votes": q.get("score", 0)}
             for q in r.json().get("items", [])

@@ -369,7 +369,7 @@ before it was built. Secondary claims are marked in the commit messages.
 1. **OpenAlex API key (most important):** sign up at openalex.org, copy the key, add GitHub secret
    `OPENALEX_API_KEY`. Without it the sources step can run out of its daily allowance.
 2. Stack Exchange key (stackapps.com, raises 300 to 10,000 calls a day): secret `STACKEXCHANGE_KEY`
-   (the code does not read it yet; tell Claude when it exists).
+   (already wired: add the secret and it is used).
 3. Music: pick 5-10 tracks you like from Incompetech (CC BY 4.0) or Kenney (CC0) and put the MP3s in
    assets/music; the mix already ducks music under the voice. Taste is yours to choose.
 4. In Studio by hand: Shorts "related video" links, Test & Compare, the Quiz/Poll stickers on a few
