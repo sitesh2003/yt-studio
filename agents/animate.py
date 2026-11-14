@@ -113,7 +113,8 @@ def _graph_ok(spec, narration):
 def _circuit_ok(spec, narration):
     """A circuit is drawn only when the line is about a circuit, with known parts and a stated flow."""
     n = narration.lower()
-    parts = [str(p).lower() for p in spec.get("parts", [])]
+    parts = [str(p).lower() for p in spec.get("parts", [])
+             if not any(k in str(p).lower() for k in ("battery", "cell", "wire", "switch"))]   # always drawn
     known = all(any(k in p for k in ("resist", "bulb", "lamp", "led", "diode")) for p in parts)
     about = any(w in n for w in ("circuit", "current", "battery", "bulb", "resistor", "led", "diode", "electron"))
     return bool(parts) and len(parts) <= 2 and known and about and         str(spec.get("flow", "conventional")).lower().startswith(("conventional", "electron"))
@@ -179,7 +180,7 @@ Return JSON: {{"picks": [{{"i": scene index, "type": "Compare|Counter|Grid|Steps
         if not 0 < i < len(scenes) or used >= _max() or p.get("type") not in ("Compare", "Counter", "Grid", "Steps", "Equation", "NumberLine", "Graph", "Circuit"):
             continue
         if p["type"] != "Steps" and not _numbers_ok(p, scenes[i].get("narration", "")):
-            log(f"animate: scene {i + 1} skipped, a number is not in its narration ({p.get('type')})")
+            log(f"animate: scene {i + 1} skipped, its {p.get('type')} failed the accuracy check (numbers, range or subject)")
             continue
         if p["type"] == "Steps" and not (2 <= len(p.get("steps") or []) <= 4):
             continue

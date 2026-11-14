@@ -174,7 +174,7 @@ class Equation(Base):
     is the result, in yellow. Every arithmetic line was evaluated by animate.py before rendering."""
     def construct(self):
         title = self.title()
-        lines = list(P["lines"])[:5]
+        lines = [str(l).replace("*", "×") for l in list(P["lines"])[:5]]   # "×" reads as times on screen
         rows = VGroup(*[T(l, 76, YEL if i == len(lines) - 1 else WHITE) for i, l in enumerate(lines)])
         rows.arrange(DOWN, buff=0.55)
         fit(rows, title.get_bottom()[1] - 0.6, UP_BOT)
@@ -263,7 +263,8 @@ class Circuit(Base):
         minus = Line([l - 0.3, bb, 0], [l + 0.3, bb, 0], color=YEL, stroke_width=12)    # short plate: -
         signs = VGroup(T("+", 48, YEL).next_to(plus, LEFT, buff=0.2), T("-", 48, YEL).next_to(minus, LEFT, buff=0.3))
         parts = VGroup()
-        names = [str(p).lower() for p in list(P.get("parts", ["bulb"]))[:2]]
+        names = [str(p).lower() for p in P.get("parts", ["bulb"])
+                 if not any(k in str(p).lower() for k in ("battery", "cell", "wire", "switch"))][:2] or ["bulb"]
         xs = np.linspace(l, r, len(names) + 2)[1:-1]
         for name, x in zip(names, xs):
             if "resist" in name:
