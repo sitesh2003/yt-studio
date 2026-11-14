@@ -6,6 +6,7 @@ best candidates next to the narration and let it pick the one that fits. If noth
 falls back to a matching photo with a slow zoom, and only then to a plain moving gradient.
 """
 import io
+import re
 
 import requests
 from PIL import Image
@@ -106,6 +107,53 @@ def _openverse_candidates(query):
                     "thumb": x.get("thumbnail") or x["url"], "user": who,
                     "tags": " ".join(t.get("name", "") for t in (x.get("tags") or [])[:12]) + " " + (x.get("title") or ""),
                     "fit": True, "credit": f"Photo: {who}, {lic}, via Openverse ({x.get('source', '')})"})
+    return out
+
+
+def _inat_candidates(query):
+    """iNaturalist: research-grade photos of the EXACT species a line names (a monarch, not "a
+    butterfly"), CC0 or CC BY only, credited to the observer. Used only when the query resolves to a
+    real taxon whose name or common name appears in the query."""
+    t = _get("https://api.inaturalist.org/v1/taxa/autocomplete", params={"q": query[:60], "per_page": 1}).json()
+    tx = (t.get("results") or [None])[0]
+    if not tx:
+        return []
+    names = {(tx.get("name") or "").lower(), (tx.get("preferred_common_name") or "").lower(),
+             (tx.get("matched_term") or "").lower()} - {""}
+    if not any(n in query.lower() or query.lower() in n for n in names):
+        return []                                  # a loose match ("bark" -> a beetle) is not the subject
+    r = _get("https://api.inaturalist.org/v1/observations", params={
+        "taxon_id": tx["id"], "photo_license": "cc0,cc-by", "quality_grade": "research",
+        "order_by": "votes", "per_page": 10})
+    out = []
+    for o in r.json().get("results", []):
+        ph = (o.get("photos") or [{}])[0]
+        lic = (ph.get("license_code") or "").lower()
+        if lic not in ("cc0", "cc-by") or not ph.get("url"):
+            continue
+        who = re.sub(r"^\(c\)\s*|,.*$", "", ph.get("attribution") or "").strip()[:50] or "iNaturalist observer"
+        out.append({"kind": "photo", "id": ("in", ph.get("id")), "url": ph["url"].replace("square", "original"),
+                    "thumb": ph["url"].replace("square", "medium"), "user": who,
+                    "tags": f"{tx.get('preferred_common_name', '')} {tx.get('name', '')}".lower(), "fit": True,
+                    "credit": f"Photo: {who}, {'CC0' if lic == 'cc0' else 'CC BY'}, via iNaturalist"})
+    return out
+
+
+def _wellcome_candidates(query):
+    """Wellcome Collection: anatomy, medicine and microscopy images (old plates and modern
+    photographs). Public-domain mark or CC BY only - CC BY-NC is common there and always skipped."""
+    r = _get("https://api.wellcomecollection.org/catalogue/v2/images", params={"query": query[:80], "pageSize": 12})
+    out = []
+    for x in r.json().get("results", []):
+        loc = (x.get("locations") or [{}])[0]
+        lic = (loc.get("license") or {}).get("id", "")
+        if lic not in ("pdm", "cc-0", "cc-by") or not loc.get("url"):
+            continue
+        base = loc["url"].rsplit("/info.json", 1)[0]
+        title = ((x.get("source") or {}).get("title") or "")[:80]
+        out.append({"kind": "photo", "id": ("wc", x.get("id")), "url": f"{base}/full/1600,/0/default.jpg",
+                    "thumb": f"{base}/full/400,/0/default.jpg", "user": "Wellcome Collection", "tags": title.lower(),
+                    "fit": True, "credit": f"Image: Wellcome Collection ({'public domain' if lic != 'cc-by' else 'CC BY 4.0'})"})
     return out
 
 
@@ -399,7 +447,8 @@ def pick_scene(i, scene, a, b, job_dir, used, note="", extra_queries=()):
                 cands += [c for c in _photo_candidates(q) if c["id"] not in used]
             except Exception as e:
                 log(f"visuals: photo search error {e}")
-            for src in (_commons_candidates, _openverse_candidates, _nasa_candidates):
+            for src in (_commons_candidates, _openverse_candidates, _nasa_candidates, _inat_candidates,
+                        _wellcome_candidates):
                 try:
                     cands += [c for c in src(q) if c["id"] not in used]
                 except Exception as e:
