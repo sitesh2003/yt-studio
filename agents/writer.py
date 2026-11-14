@@ -44,6 +44,9 @@ footage, never a repeat. Return JSON: {{"topic": "...", "why": "..."}}""")
 
 
 def pick_topics(n=3):
+    if config()["channel"].get("style") == "student":   # Why It Works has its own planner
+        from . import student
+        return student.pick_topics(n)
     cfg = config()["channel"]
     trends, learn, done = _context()
     prompt = f"""You plan YouTube Shorts for a channel about: {cfg['niche']}.
@@ -227,6 +230,9 @@ ARM = {
 
 
 def write_script(topic, recap=None, fix=None):
+    if config()["channel"].get("style") == "student":
+        from . import student
+        return student.write_script(topic, recap, fix)
     c = config()
     cd = countdown_arm(topic)
     arm = ARM[cd]

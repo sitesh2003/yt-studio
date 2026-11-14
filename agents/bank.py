@@ -18,7 +18,8 @@ import requests
 from .core import DATA, log, read_json, write_json
 
 REPO = os.environ.get("GITHUB_REPOSITORY", "sitesh2003/yt-studio")
-TAG = "video-bank"
+from .core import CHANNEL as _CH
+TAG = "video-bank" if _CH == "main" else f"video-bank-{_CH}"   # each channel banks separately
 PATH = DATA / "bank.json"
 
 

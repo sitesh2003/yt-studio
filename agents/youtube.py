@@ -4,23 +4,29 @@ YOUR channel; the token is kept in token.json on this PC only."""
 import datetime as dt
 from zoneinfo import ZoneInfo
 
-from .core import DATA, ROOT, config, log, read_json, write_json
+from .core import DATA, ROOT, TOKEN, config, log, read_json, write_json
 
 SCOPES = ["https://www.googleapis.com/auth/youtube.upload",
           "https://www.googleapis.com/auth/youtube.force-ssl",
           "https://www.googleapis.com/auth/yt-analytics.readonly",
           "https://www.googleapis.com/auth/gmail.send"]       # daily report to your own inbox only
+from .core import CHANNEL as _CH
+if _CH != "main":   # a second channel is a Brand Account with no Gmail: the report goes out on the main sign-in
+    SCOPES = SCOPES[:3]
 
 
 def _creds():
     from google.auth.transport.requests import Request
     from google.oauth2.credentials import Credentials
     from google_auth_oauthlib.flow import InstalledAppFlow
-    tok = ROOT / "token.json"
+    tok = TOKEN   # token.json for the main channel, token_<channel>.json for the others
     creds = Credentials.from_authorized_user_file(str(tok), SCOPES) if tok.exists() else None
     if creds and creds.expired and creds.refresh_token:
         creds.refresh(Request())
     if not creds or not creds.valid:
+        import os
+        if os.getenv("GITHUB_ACTIONS"):   # in the cloud nobody can click a sign-in link: fail fast
+            raise RuntimeError(f"not signed in: {tok.name} is missing or expired (run 'studio.py signin' on the PC)")
         secret = ROOT / "client_secret.json"
         if not secret.exists():
             raise RuntimeError("client_secret.json missing: see README step 3")

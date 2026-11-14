@@ -63,7 +63,7 @@ def build(results, stats=None):
 <p style="margin:22px 0 0;font-size:12px;color:#8a94a6">Every video passed the fact-check and the quality check before upload.
 Open YouTube Studio from the desktop icon to see everything.</p>
 </td></tr></table></td></tr></table>"""
-    subject = f"Ever Thought Why? · {len(pub)} published, {len(held)} held · {today}"
+    subject = f"{config()['channel'].get('name', 'Ever Thought Why?')} · {len(pub)} published, {len(held)} held · {today}"
     return subject, body
 
 
@@ -79,6 +79,14 @@ def send(subject, body_html):
     msg["to"] = to
     msg["subject"] = subject
     raw = base64.urlsafe_b64encode(msg.as_bytes()).decode()
-    gbuild("gmail", "v1", credentials=_creds(), cache_discovery=False).users().messages().send(
+    from .core import CHANNEL, ROOT
+    creds = _creds()
+    if CHANNEL != "main" and (ROOT / "token.json").exists():   # Brand Accounts have no Gmail
+        from google.oauth2.credentials import Credentials
+        from google.auth.transport.requests import Request
+        creds = Credentials.from_authorized_user_file(str(ROOT / "token.json"))
+        if creds.expired and creds.refresh_token:
+            creds.refresh(Request())
+    gbuild("gmail", "v1", credentials=creds, cache_discovery=False).users().messages().send(
         userId="me", body={"raw": raw}).execute()
     log("report: sent to the owner")  # never print the address: the run logs are public

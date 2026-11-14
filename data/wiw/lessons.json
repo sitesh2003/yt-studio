@@ -1,0 +1,6 @@
+[
+  {
+    "kind": "checker miss",
+    "text": "A coupling capacitor blocks a DC OFFSET, not hum: mains hum is 50/60 Hz AC and passes through. Never call hum DC."
+  }
+]

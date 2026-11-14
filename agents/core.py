@@ -18,8 +18,15 @@ from dotenv import load_dotenv
 ROOT = Path(__file__).resolve().parent.parent
 load_dotenv(ROOT / ".env")
 
-JOBS = ROOT / "jobs"
-DATA = ROOT / "data"
+# One engine, several channels. STUDIO_CHANNEL picks which one this run works for:
+#   main (default) = Ever Thought Why?   -> config.json, data/, token.json, the "video-bank" release
+#   wiw            = Why It Works        -> config.json + channels/wiw.json, data/wiw/, token_wiw.json
+# Each channel keeps its own history, lessons, bank and sign-in; the code is shared.
+CHANNEL = (os.getenv("STUDIO_CHANNEL") or "main").strip().lower()
+_SUB = "" if CHANNEL == "main" else CHANNEL
+JOBS = ROOT / "jobs" / _SUB if _SUB else ROOT / "jobs"
+DATA = ROOT / "data" / _SUB if _SUB else ROOT / "data"
+TOKEN = ROOT / ("token.json" if not _SUB else f"token_{_SUB}.json")
 ASSETS = ROOT / "assets"
 for d in (JOBS, DATA, ASSETS / "music"):
     d.mkdir(parents=True, exist_ok=True)
@@ -36,6 +43,11 @@ def set_override(sections):
 
 def config():
     cfg = json.loads((ROOT / "config.json").read_text(encoding="utf-8"))
+    if _SUB:   # the channel's own settings, section by section, over the shared defaults
+        extra = ROOT / "channels" / f"{_SUB}.json"
+        if extra.exists():
+            for k, v in json.loads(extra.read_text(encoding="utf-8")).items():
+                cfg[k] = {**cfg[k], **v} if isinstance(v, dict) and isinstance(cfg.get(k), dict) else v
     for k, v in _OVERRIDE.items():
         cfg[k] = {**cfg.get(k, {}), **v}
     if os.getenv("PUBLISH_MODE"):  # the cloud run sets auto: upload private + scheduled, you review in the app

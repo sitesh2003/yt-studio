@@ -16,7 +16,12 @@ from pathlib import Path
 from .core import config, llm_json, log
 
 TEMPLATES = Path(__file__).with_name("manim_templates.py")
-MAX_PER_VIDEO = 2
+MAX_PER_VIDEO = 2   # the main channel; a channel can raise it ("animate": {"max_per_video": n})
+
+
+def _max():
+    from .core import config
+    return int((config().get("animate") or {}).get("max_per_video", MAX_PER_VIDEO))
 
 
 def available():
@@ -54,7 +59,7 @@ def plan(script):
     """Mark up to 2 scenes with scene["anim"] = template spec (only lines that state a number, a
     comparison or a short process)."""
     scenes = script.get("scenes") or []
-    out = llm_json(f"""A science video's scenes are below. Choose AT MOST {MAX_PER_VIDEO} scenes whose line is best shown as
+    out = llm_json(f"""A science video's scenes are below. Choose AT MOST {_max()} scenes whose line is best shown as
 a simple computed graphic, and only if the line itself states the thing exactly:
 - "Compare": the line compares two quantities with numbers (e.g. "40 gallons of sap make 1 gallon of syrup").
 - "Counter": the line states one striking number (e.g. "about 4 to 6 milligrams").
@@ -74,7 +79,7 @@ Return JSON: {{"picks": [{{"i": scene index, "type": "Compare|Counter|Grid|Steps
             i = int(p.get("i"))
         except (TypeError, ValueError):
             continue
-        if not 0 < i < len(scenes) or used >= MAX_PER_VIDEO or p.get("type") not in ("Compare", "Counter", "Grid", "Steps"):
+        if not 0 < i < len(scenes) or used >= _max() or p.get("type") not in ("Compare", "Counter", "Grid", "Steps"):
             continue
         if p["type"] != "Steps" and not _numbers_ok(p, scenes[i].get("narration", "")):
             log(f"animate: scene {i + 1} skipped, a number is not in its narration ({p.get('type')})")

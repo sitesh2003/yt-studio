@@ -357,7 +357,11 @@ def daily():
     import os
     p = config()["publish"]
     from agents import youtube as _yt
-    waiting, quota_left = _yt.bank()
+    try:
+        waiting, quota_left = _yt.bank()
+    except Exception as e:   # a channel not signed in yet still makes and banks its videos
+        log(f"bank count without YouTube ({str(e)[:80]})")
+        waiting, quota_left = 0, p["videos_per_day"]
     from agents import bank as _vault
     if _vault.available():
         waiting += len(_vault.items())   # videos in the bank count; uploads happen only at publish time
@@ -552,6 +556,9 @@ def hourly():
         publish_due()                                 # bank -> YouTube for the next day's slots
     except Exception as e:
         log(f"publisher skipped: {e}")
+    from agents.core import CHANNEL
+    if CHANNEL != "main":   # the roll call and catch-ups watch the main channel's runs only
+        return []
     try:  # roll call of production runs, catch-up if one was skipped, last accuracy audit, STATUS.md
         from agents import health
         return health.check()
@@ -655,6 +662,14 @@ if __name__ == "__main__":
                 log(f"illustrate-test {k}: FAILED {str(e)[:300]}")
         (out_dir / "report.json").write_text(_json.dumps(report, indent=2), encoding="utf-8")
         sys.exit(0 if ok else 1)
+    elif cmd == "signin":
+        # one-time sign-in for THIS channel (STUDIO_CHANNEL=wiw python studio.py signin): open the
+        # printed link, pick the right channel, allow. The token file it writes goes into a GitHub
+        # secret by hand (TOKEN_JSON for main, TOKEN_JSON_WIW for Why It Works) - never committed.
+        from agents import youtube
+        from agents.core import CHANNEL, TOKEN
+        ch = youtube.yt().channels().list(part="snippet", mine=True).execute()["items"][0]["snippet"]["title"]
+        log(f"signin: {CHANNEL} -> signed in as the channel '{ch}'; token saved to {TOKEN.name}")
     elif cmd == "voice-test":
         # the real narrator on a short sample: listen to research/voice_test/voice.mp3; pauses.txt
         # lists every silence so the gaps between sentences can be checked by number too

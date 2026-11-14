@@ -1,0 +1,53 @@
+{
+  "channel": {
+    "name": "Why It Works",
+    "niche": "the reason behind the science students learn and the science being discovered now: physics, chemistry, biology, maths, electronics and technology; one concept per video, shown step by step, then WHY it works in one line of school-level science; new open-access research explained at school level",
+    "audience": "school and early-college students worldwide (ages 13-22) and curious adults; English, auto-dubbed to Hindi and Spanish; they know some school science and want the reason, not a lecture",
+    "voice_tone": "clear, warm, a good teacher who is excited by the idea; never talks down, never clickbait-false",
+    "language": "en-US",
+    "seed_keywords": [
+      "physics explained",
+      "chemistry explained",
+      "biology explained",
+      "maths trick",
+      "visual proof",
+      "how circuits work",
+      "why it works",
+      "science concept",
+      "new research explained",
+      "engineering explained"
+    ],
+    "style": "student",
+    "_note": "Sister channel of Ever Thought Why? (created 14 Nov 2026, handle @whyitworksstem). Visuals are drawn by code first (Manim, diagrams, maps), real footage second; a viral trick that only works for special numbers is called out."
+  },
+  "format": {
+    "target_seconds": 35
+  },
+  "voice": {
+    "kokoro_voice": "af_bella",
+    "narrators": {
+      "host": {
+        "kokoro": "af_bella",
+        "edge": "en-US-EmmaMultilingualNeural"
+      },
+      "explainer": {
+        "kokoro": "am_fenrir",
+        "edge": "en-US-BrianMultilingualNeural"
+      }
+    }
+  },
+  "publish": {
+    "category_id": "27",
+    "slots_et": [
+      "07:30",
+      "16:30"
+    ],
+    "timezone_note": "07:30 ET = 18:00 IST (Indian students after school), 16:30 ET = US after school",
+    "videos_per_day": 2,
+    "bank_days": 5
+  },
+  "animate": {
+    "max_per_video": 5,
+    "_note": "code-drawn first: up to 5 computed animations per video (main channel: 2)"
+  }
+}
