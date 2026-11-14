@@ -439,7 +439,7 @@ Return JSON: {{"verdict": "pass" or "fix",
  "claims": [{{"claim": "...", "status": "correct|wrong|doubtful", "note": "why, with the correct figure"}}],
  "fixes": ["exact change to make, quoting the sentence"]}}""")
         script["fact_check_result"] = check
-        bad = [c for c in check.get("claims", []) if c.get("status") != "correct"]
+        bad = [c for c in (check.get("claims") or []) if isinstance(c, dict) and c.get("status") != "correct"]
         if not bad:  # every claim correct: remaining "fixes" are only style, not facts
             log(f"checker: passed ({len(check.get('claims', []))} claims verified)")
             return script
@@ -472,9 +472,10 @@ Return the corrected script as JSON in exactly the same shape.""")
 Narration: {" ".join(sc["narration"] for sc in cut.get("scenes", []))}
 Question: {cut.get('question', '')}  Answer: {cut.get('answer_comment', '')}
 Return JSON: {{"claims": [{{"claim": "...", "status": "correct|wrong|doubtful"}}]}}""")
-        if cut.get("scenes") and final.get("claims") and all(c.get("status") == "correct" for c in final["claims"]):
-            cut["fact_check_result"] = {"verdict": "pass", "claims": final.get("claims", []), "cut": True}
-            log(f"checker: passed after cutting ({len(final.get('claims', []))} claims verified)")
+        claims = [c for c in (final.get("claims") or []) if isinstance(c, dict)]
+        if cut.get("scenes") and claims and all(c.get("status") == "correct" for c in claims):
+            cut["fact_check_result"] = {"verdict": "pass", "claims": claims, "cut": True}
+            log(f"checker: passed after cutting ({len(claims)} claims verified)")
             return cut
     for c in bad:
         add_lesson("unconfirmed", f"{c.get('claim', '')} -> {c.get('note', 'could not be confirmed')}")

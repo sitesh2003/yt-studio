@@ -94,6 +94,12 @@ class _ListResult(dict):
     def get(self, k, default=None):
         return self.items_list if k not in ("verdict", "best", "pass", "why") else default
 
+    def __getitem__(self, k):   # x["claims"] must behave like x.get("claims"), not KeyError
+        v = self.get(k)
+        if v is None:
+            raise KeyError(k)
+        return v
+
 
 def _shape(out):
     if isinstance(out, list):
