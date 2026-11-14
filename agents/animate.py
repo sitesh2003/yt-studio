@@ -42,7 +42,54 @@ def _numbers_in(text):
     return nums
 
 
+def _arith(expr):
+    """Value of a plain arithmetic expression (digits, + - x / ^ and brackets), or None if it is not one."""
+    e = expr.replace("−", "-").replace("×", "*").replace("÷", "/").replace("x", "*").replace("^", "**")
+    e = e.replace(",", "").strip()
+    if not e or not re.fullmatch(r"[\d\s.+\-*/()]+", e):
+        return None
+    try:
+        return float(eval(e, {"__builtins__": {}}, {}))   # only digits and operators reach here
+    except Exception:
+        return None
+
+
+def _equation_ok(spec, narration):
+    """Every '='-joined part that is plain arithmetic must have the same value, and every number shown
+    must be one the narration says (or the computed result). Symbolic lines pass only on the numbers rule."""
+    text = " ".join(str(l) for l in spec.get("lines", []))
+    if not spec.get("lines"):
+        return False
+    parts = [p for p in re.split(r"=", text) if p.strip()]
+    vals = [v for v in (_arith(p) for p in parts) if v is not None]
+    if vals and any(abs(v - vals[0]) > 1e-9 for v in vals):
+        return False
+    said = _numbers_in(narration) | set(vals) | {abs(v) for v in vals}
+    shown = {float(n) for n in re.findall(r"\d+(?:\.\d+)?", text.replace(",", ""))}
+    return shown <= said
+
+
+def _numberline_ok(spec, narration):
+    try:
+        start, jumps = float(spec.get("start", 0)), [float(j) for j in spec.get("jumps", [])]
+        lo, hi = float(spec["lo"]), float(spec["hi"])
+    except (KeyError, TypeError, ValueError):
+        return False
+    path = [start]
+    for j in jumps:
+        path.append(path[-1] + j)
+    if not jumps or min(path) < lo or max(path) > hi or hi - lo > 40:
+        return False
+    said = _numbers_in(narration)
+    need = {abs(start)} | {abs(j) for j in jumps} | {abs(path[-1])}
+    return {n for n in need if n} <= said | {0.0}
+
+
 def _numbers_ok(spec, narration):
+    if spec.get("type") == "Equation":
+        return _equation_ok(spec, narration)
+    if spec.get("type") == "NumberLine":
+        return _numberline_ok(spec, narration)
     said = _numbers_in(narration)
     keys = {"Compare": ("a_value", "b_value"), "Counter": ("value",), "Grid": ("k", "n")}.get(spec.get("type"), ())
     for k in keys:
@@ -65,6 +112,10 @@ a simple computed graphic, and only if the line itself states the thing exactly:
 - "Counter": the line states one striking number (e.g. "about 4 to 6 milligrams").
 - "Grid": the line states a proportion "k in n" with n <= 100 (e.g. "1 in 10 people").
 - "Steps": the line describes a short process of 2-4 steps.
+- "Equation": the line works through a calculation or formula (e.g. "negative three times negative four
+  is twelve" -> lines ["(-3) × (-4)", "= 12"]); 2-5 short lines, the last one the result. Use × for times.
+- "NumberLine": the line moves along numbers (adding, subtracting, negatives): start, jumps, and a
+  lo..hi range that contains every landing point (span at most 40).
 Use ONLY numbers and words that appear in that scene's narration; never compute or add anything.
 Short labels (max 4 words). Never choose the first scene (the hook needs real footage) or a scene
 with no number or process. Choosing none is fine.
@@ -72,14 +123,14 @@ Scenes: {[{"i": i, "narration": s.get("narration")} for i, s in enumerate(scenes
 Return JSON: {{"picks": [{{"i": scene index, "type": "Compare|Counter|Grid|Steps", "title": "max 6 words",
  "a_label": "", "a_value": number, "b_label": "", "b_value": number, "unit": "",
  "value": number, "decimals": 0, "caption": "max 6 words", "k": number, "n": number,
- "steps": ["..."]}}]}}""")
+ "steps": ["..."], "lines": ["..."], "start": number, "jumps": [number], "lo": number, "hi": number}}]}}""")
     used = 0
     for p in out.get("picks") or []:
         try:
             i = int(p.get("i"))
         except (TypeError, ValueError):
             continue
-        if not 0 < i < len(scenes) or used >= _max() or p.get("type") not in ("Compare", "Counter", "Grid", "Steps"):
+        if not 0 < i < len(scenes) or used >= _max() or p.get("type") not in ("Compare", "Counter", "Grid", "Steps", "Equation", "NumberLine"):
             continue
         if p["type"] != "Steps" and not _numbers_ok(p, scenes[i].get("narration", "")):
             log(f"animate: scene {i + 1} skipped, a number is not in its narration ({p.get('type')})")

@@ -169,5 +169,52 @@ class Steps(Base):
         self.finish()
 
 
+class Equation(Base):
+    """A worked example, one line at a time: {"title", "lines": ["(-3) x (-4)", "= 12"]}. The last line
+    is the result, in yellow. Every arithmetic line was evaluated by animate.py before rendering."""
+    def construct(self):
+        title = self.title()
+        lines = list(P["lines"])[:5]
+        rows = VGroup(*[T(l, 76, YEL if i == len(lines) - 1 else WHITE) for i, l in enumerate(lines)])
+        rows.arrange(DOWN, buff=0.55)
+        fit(rows, title.get_bottom()[1] - 0.6, UP_BOT)
+        self.play(Write(title), run_time=0.7)
+        for r in rows:
+            self.play(FadeIn(r, shift=UP * 0.25), run_time=0.6)
+            self.wait(0.35)
+        self.finish()
+
+
+class NumberLine(Base):
+    """Jumps along a number line: {"title", "start": 0, "jumps": [-3, -3], "lo": -8, "hi": 4}.
+    Each jump is an arrow from where you are to where you land, labelled with its size."""
+    def construct(self):
+        from manim import Dot, Line, CurvedArrow
+        title = self.title()
+        lo, hi = int(P.get("lo", -10)), int(P.get("hi", 10))
+        span = max(1, hi - lo)
+        y = (title.get_bottom()[1] + UP_BOT) / 2 - 0.6
+        x = lambda v: -SAFE_W / 2 + (v - lo) / span * SAFE_W
+        axis = Line([x(lo), y, 0], [x(hi), y, 0], color=WHITE, stroke_width=6)
+        step = max(1, round(span / 10))
+        ticks = VGroup()
+        for v in range(lo, hi + 1, step):
+            ticks.add(Line([x(v), y - 0.15, 0], [x(v), y + 0.15, 0], color=WHITE, stroke_width=4))
+            ticks.add(T(v, 34, MUTED).move_to([x(v), y - 0.5, 0]))
+        self.play(Write(title), Create(axis), FadeIn(ticks), run_time=0.9)
+        pos = float(P.get("start", 0))
+        dot = Dot([x(pos), y, 0], radius=0.16, color=YEL)
+        self.play(FadeIn(dot), run_time=0.3)
+        for j in list(P.get("jumps", []))[:6]:
+            new = pos + float(j)
+            arc = CurvedArrow([x(pos), y + 0.25, 0], [x(new), y + 0.25, 0], color=BLUE, stroke_width=6,
+                              angle=-1.2 if new > pos else 1.2)
+            lab = T(("+" if j > 0 else "") + _fmt(j), 40, BLUE).next_to(arc, UP, buff=0.1)
+            self.play(Create(arc), FadeIn(lab), dot.animate.move_to([x(new), y, 0]), run_time=0.6)
+            pos = new
+        self.play(FadeIn(T(_fmt(pos), 72, YEL).next_to(dot, DOWN, buff=0.9)), run_time=0.4)
+        self.finish()
+
+
 def _fmt(v):
     return f"{int(v):,}" if float(v).is_integer() else f"{v:,.2f}".rstrip("0").rstrip(".")
