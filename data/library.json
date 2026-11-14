@@ -26,5 +26,50 @@
       "Lack of thick muscle and fat padding over the ulnar nerve at the elbow makes it vulnerable to direct compression."
     ],
     "sources": []
+  },
+  {
+    "job": "20261114-1555-why-car-windshields-have-tiny-black-dots",
+    "date": "2026-11-14",
+    "title": "Why Car Windshields Have Black Dots 🤔",
+    "topic": "Why car windshields have tiny black dots along the outer edges (the frit pattern)",
+    "series": "Everyday Whys",
+    "weekly": false,
+    "claims": [
+      "The black border and dots on a windshield are a ceramic paint called frit.",
+      "Frit helps bake the adhesive that bonds the windshield to the car frame.",
+      "The dot pattern (halftone) helps distribute thermal stress to prevent the glass from cracking due to temperature differentials between the dark ceramic and clear glass."
+    ],
+    "sources": [
+      {
+        "cite": "Öztürk et al. (2024), Bulgarian Chemical Communications. doi:10.34049/bcc.56.3.ik-m",
+        "doi": "10.34049/bcc.56.3.ik-m",
+        "claim": "The black border and dots on a windshield are a ceramic paint called frit."
+      },
+      {
+        "cite": "Lundevall et al. (2018), Applied Adhesion Science. doi:10.1186/s40563-018-0111-6",
+        "doi": "10.1186/s40563-018-0111-6",
+        "claim": "Frit helps bake the adhesive that bonds the windshield to the car frame."
+      }
+    ]
+  },
+  {
+    "job": "20261114-1628-how-mosquitoes-pierce-your-skin-without-",
+    "date": "2026-11-14",
+    "title": "How Mosquitoes Bite You Without Pain 🦟",
+    "topic": "How mosquitoes pierce your skin without triggering pain receptors",
+    "series": "Animal Whys",
+    "weekly": false,
+    "claims": [
+      "Mosquitoes use a fascicle containing a labrum, mandibles, and maxillae to pierce skin.",
+      "Mosquito saliva contains compounds with anesthetic properties that numb the feeding site.",
+      "The bending and micro-serration of the proboscis reduce mechanical stress on skin mechanoreceptors."
+    ],
+    "sources": [
+      {
+        "cite": "Wahid et al. (2007), The Open Entomology Journal. doi:10.2174/1874407900701010001",
+        "doi": "10.2174/1874407900701010001",
+        "claim": "Mosquitoes use a fascicle containing a labrum, mandibles, and maxillae to pierce skin."
+      }
+    ]
   }
 ]

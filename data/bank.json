@@ -58,5 +58,29 @@
     "locked": true,
     "series": "Body Whys",
     "stored": "2026-11-14T15:42:18.716938+00:00"
+  },
+  {
+    "job": "20261114-1555-why-car-windshields-have-tiny-black-dots",
+    "title": "Why Car Windshields Have Black Dots 🤔",
+    "assets": {
+      "mp4": 748055185,
+      "jpg": 748055558,
+      "json": 748055584
+    },
+    "locked": true,
+    "series": "Everyday Whys",
+    "stored": "2026-11-14T16:22:17.422188+00:00"
+  },
+  {
+    "job": "20261114-1628-how-mosquitoes-pierce-your-skin-without-",
+    "title": "How Mosquitoes Bite You Without Pain 🦟",
+    "assets": {
+      "mp4": 748137787,
+      "jpg": 748138135,
+      "json": 748138154
+    },
+    "locked": true,
+    "series": "Animal Whys",
+    "stored": "2026-11-14T16:53:14.754291+00:00"
   }
 ]

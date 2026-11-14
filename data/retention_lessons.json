@@ -1,16 +1,14 @@
 {
   "lessons": [
-    "Keep hooks extremely punchy: the video with a descriptive hook line ('Why Cold Water Fails Against Spicy Food 🌶️🥛') experienced a massive 22.7% drop at the 10% mark, underperforming similar videos at the start (0.33 vs typical 0.5).",
-    "Avoid trailing off into secondary questions near the end: the highest end-drop (11.6% at 94%) occurred immediately after introducing an auxiliary question ('Ever thought why drinking an ice-cold fruit juice won't stop spicy food burn either?').",
-    "Maintain consistent pacing through the first quarter: across all videos, the sharpest drop-offs happen predictably between 10% and 26% into the runtime, indicating that elaborate setups lose audience attention.",
-    "Prioritize early retention mechanics over mid-video explanations, as all analyzed videos suffer steep drops (over 10-25%) within the first quarter regardless of topic."
+    "Not enough data to definitively determine which hook types keep people past the first seconds, as only one video ('Why Cold Water Fails Against Spicy Food') provides a hook line, and its start retention vs similar is low (0.33).",
+    "Not enough data to determine specific line types causing viewer drop-off, as 'biggest_drops' lines are missing for two out of three videos and drops happen across varied timestamps.",
+    "Not enough data to compare best-holding videos against others, because overall retention variance across the small sample size is too narrow."
   ],
   "worst_moment_types": [
-    "Introductory lines describing the premise rather than immediately escalating the tension",
-    "Secondary rhetorical questions near the conclusion that disrupt the flow before the final payoff"
+    "Not enough data"
   ],
   "best_hook_types": [
-    "Not enough data to isolate specific positive hook types, as all tested videos underperformed against similar YouTube content at the start (0.33 to 0.46 vs 0.5 baseline)."
+    "Not enough data"
   ],
   "studied": "2026-11-14",
   "videos": 3

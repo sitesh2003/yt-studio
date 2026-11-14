@@ -1,5 +1,5 @@
 {
-  "summary": "Focus exclusively on biological oddities and hidden bodily functions to drive higher viewer retention. Use paradoxical or startling statements in the first three seconds rather than standard educational openings. Keep titles under 35 characters to maximize mobile click-through rates. Avoid descriptive statements about food processing or long historical facts which suffer from lower engagement. Ensure hook wording directly challenges common assumptions to force an immediate mental double-take.",
+  "summary": "Prioritize direct, startling physiological facts in the first sentence to instantly grab attention without slow wind-ups. Keep titles punchy and focused on hidden mechanisms rather than generic descriptions. Maintain hook lengths under 15 words to maximize immediate comprehension and retention. Focus topics on everyday sensory or biological mysteries that directly challenge common assumptions. Avoid descriptive, drawn-out introductory statements that summarize the topic instead of triggering curiosity.",
   "winning_hooks": [
     "Your eyes are leaking right now, and your brain is hiding it.",
     "You are not sad when you chop an onion."
@@ -8,5 +8,5 @@
     "Honey is famous for being one of the only natural foods that never truly spoils.",
     "That sweet maple syrup on your pancakes? It started out as practically water."
   ],
-  "next_experiment": "Test a hook that directly addresses a physical pain point or immediate sensory reaction (e.g., 'Your tongue is lying to you about...') against a purely factual statement to measure impact on average view percentage."
+  "next_experiment": "Test a zero-setup physiological hook against a traditional question-based hook using the same topic to measure impact on averageViewPercentage."
 }

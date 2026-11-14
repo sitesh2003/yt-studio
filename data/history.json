@@ -942,7 +942,8 @@
     "repairs": 2,
     "video_id": "80jyJN1A1y8",
     "publish_at": "2026-11-13T15:00:00-05:00",
-    "answered": true
+    "answered": true,
+    "recapped": true
   },
   {
     "job": "20261112-1040-this-24-foot-ocean-monster-can-live-for-",
@@ -1579,6 +1580,221 @@
       "duration": 42.3
     },
     "repairs": 2,
+    "audited": true
+  },
+  {
+    "job": "20261114-1555-why-car-windshields-have-tiny-black-dots",
+    "topic": "Why car windshields have tiny black dots along the outer edges (the frit pattern)",
+    "title": "Why Car Windshields Have Black Dots 🤔",
+    "description": "Discover the hidden engineering behind the black dots on your car windshield and how they protect you. #shorts #science #cars\n\nSources (open-access research):\n- Öztürk et al. (2024), Bulgarian Chemical Communications. doi:10.34049/bcc.56.3.ik-m\n- Lundevall et al. (2018), Applied Adhesion Science. doi:10.1186/s40563-018-0111-6\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nIllustrations: drawn for this video with FLUX.2 [klein] 4B (AI, Apache 2.0) and checked for accuracy\nPhoto by Fotomaus13 on Pixabay\nPhoto: Kevin Kandlbinder, CC BY 4.0, via Wikimedia Commons\nPhoto: User:Mattes, Public domain, via Wikimedia Commons\nVideo by Kmeel_com on Pixabay\nVideo by NickyPe on Pixabay\nVideo by VariousPhotography on Pixabay",
+    "tags": [
+      "windshield frit",
+      "car secrets",
+      "hidden engineering",
+      "everyday science"
+    ],
+    "hook": "Ever noticed those tiny black dots fading around your car windshield? 🚗",
+    "status": "banked",
+    "narration": "Ever noticed those tiny black dots fading around your car windshield? 🚗 They are not just there to look cool. Wait, really? I thought they were stickers. That painted band is the frit. Why the gradient dots instead of a solid line? Think about glass baking in direct sunlight. It gets hot at the edge. How does heat spread before baking the glass? Pause and guess... three, two, one. The black ceramic band helps hold the windshield in place and protects the glue from the sun. The fading dots act as a visual transition to hide the thick glue, while also helping manage the thermal transition between the hot ceramic band and the glass. Why does pineapple stop stinging? Drop your guess below. How does that black band protect the glass?",
+    "voice_engine": "kokoro",
+    "voices": "female host, male explainer",
+    "diagrams": 1,
+    "series": "Everyday Whys",
+    "countdown": true,
+    "question": "How does that black band protect the glass?",
+    "answer_comment": "The answer: The primary purpose of the black ceramic band and its dots is protecting the adhesive from UV rays, with thermal distribution being a secondary benefit. Got another car part you are curious about?\n\nSources (open-access research):\n- Öztürk et al. (2024), Bulgarian Chemical Communications. doi:10.34049/bcc.56.3.ik-m\n- Lundevall et al. (2018), Applied Adhesion Science. doi:10.1186/s40563-018-0111-6",
+    "sources": [
+      {
+        "claim": "The black border and dots on a windshield are a ceramic paint called frit.",
+        "cite": "Öztürk et al. (2024), Bulgarian Chemical Communications. doi:10.34049/bcc.56.3.ik-m",
+        "doi": "10.34049/bcc.56.3.ik-m",
+        "title": "The effect of pigment on the properties of black automotive enamel",
+        "why": "Automotive glass enamels meeting these criteria are composed of low-melting bismuth ingredient-based frit, CuCr2O4 black inorganic pigment, and an organic vehicle."
+      },
+      {
+        "claim": "Frit helps bake the adhesive that bonds the windshield to the car frame.",
+        "cite": "Lundevall et al. (2018), Applied Adhesion Science. doi:10.1186/s40563-018-0111-6",
+        "doi": "10.1186/s40563-018-0111-6",
+        "title": "Improved glass bonding with plasma treatment",
+        "why": "Bonding of automotive glass is generally performed with 1C PUR adhesive on a primed ceramic frit or naked glass surface."
+      }
+    ],
+    "fact_check": [
+      "The black border and dots on a windshield are a ceramic paint called frit.",
+      "Frit helps bake the adhesive that bonds the windshield to the car frame.",
+      "The dot pattern (halftone) helps distribute thermal stress to prevent the glass from cracking due to temperature differentials between the dark ceramic and clear glass."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        4.84
+      ],
+      [
+        4.84,
+        7.28
+      ],
+      [
+        7.28,
+        10.51
+      ],
+      [
+        10.51,
+        12.77
+      ],
+      [
+        12.77,
+        16.12
+      ],
+      [
+        16.12,
+        19.1
+      ],
+      [
+        19.1,
+        20.9
+      ],
+      [
+        20.9,
+        27.3
+      ],
+      [
+        27.3,
+        43.75
+      ],
+      [
+        43.75,
+        48.08
+      ],
+      [
+        48.08,
+        50.81
+      ]
+    ],
+    "duration": 50.81,
+    "scene_lines": [
+      "Ever noticed those tiny black dots fading around your car windshield? 🚗",
+      "They are not just there to look cool.",
+      "Wait, really? I thought they were stickers.",
+      "That painted band is the frit.",
+      "Why the gradient dots instead of a solid line?",
+      "Think about glass baking in direct sunlight.",
+      "It gets hot at the edge.",
+      "How does heat spread before baking the glass? Pause and guess... three, two, one.",
+      "The black ceramic band helps hold the windshield in place and protects the glue from the sun. The fading dots act as a visual transition to hide the thick glue, while also helping manage the thermal transition between the hot ceramic band and the glass.",
+      "Why does pineapple stop stinging? Drop your guess below.",
+      "How does that black band protect the glass?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": "80jyJN1A1y8",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [],
+      "footage": [],
+      "review": [],
+      "heard": [
+        "\"noticed\" heard as \"notice\""
+      ],
+      "pass": true,
+      "duration": 50.1
+    },
+    "repairs": 0,
+    "audited": true
+  },
+  {
+    "job": "20261114-1628-how-mosquitoes-pierce-your-skin-without-",
+    "topic": "How mosquitoes pierce your skin without triggering pain receptors",
+    "title": "How Mosquitoes Bite You Without Pain 🦟",
+    "description": "Discover the hidden biomechanics of how mosquitoes bite without triggering your pain receptors. #shorts #science #animals\n\nSources (open-access research):\n- Wahid et al. (2007), The Open Entomology Journal. doi:10.2174/1874407900701010001\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nIllustrations: drawn for this video with FLUX.2 [klein] 4B (AI, Apache 2.0) and checked for accuracy\nPhoto by Yummymoon on Pixabay\nPhoto by ds_30 on Pixabay\nPhoto: unknown, CC BY 4.0, via Wikimedia Commons\nVideo by Jari-Lobo on Pixabay",
+    "tags": [
+      "mosquito bite",
+      "animal biology",
+      "science shorts",
+      "how things work"
+    ],
+    "hook": "How does a mosquito bite you without hurting?",
+    "status": "banked",
+    "narration": "How does a mosquito bite you without hurting? You would expect a sharp sting from a needle poking your arm. And that's not even the strangest bit. The insect uses tiny microscopic tips to pierce your skin. Yet your nerves stay completely quiet. Think about how a blunt edge presses differently than a sharp micro-probe. Pause and guess... three, two, one. Here's why. It uses saliva containing chemicals that prevent clotting while numbing the area, while its flexible mouthparts bend to help steady the probe. Ever thought how tiny needles in modern medicine might copy this bending trick?",
+    "voice_engine": "kokoro",
+    "voices": "male host, female explainer",
+    "diagrams": 1,
+    "series": "Animal Whys",
+    "countdown": true,
+    "question": "Ever thought how tiny needles in modern medicine might copy this bending trick?",
+    "answer_comment": "The answer: Mosquitoes use specialized mouthparts that apply minimal pressure on touch receptors, combined with saliva that numbs the area and prevents clotting. This prevents your pain receptors from allowing the insect to feed undetected. Ever thought what other medical tools might learn from insect biology?\n\nSources (open-access research):\n- Wahid et al. (2007), The Open Entomology Journal. doi:10.2174/1874407900701010001",
+    "sources": [
+      {
+        "claim": "Mosquitoes use a fascicle containing a labrum, mandibles, and maxillae to pierce skin.",
+        "cite": "Wahid et al. (2007), The Open Entomology Journal. doi:10.2174/1874407900701010001",
+        "doi": "10.2174/1874407900701010001",
+        "title": "The Hypopharynx of Male and Female Mosquitoes",
+        "why": "In blood-feeder female mosquitoes, the hypopharynx stylet is one part of the fascicle, the structure that pierces into the host skin during blood feeding.As other parts, the hypopharynx is a free stylet."
+      }
+    ],
+    "fact_check": [
+      "Mosquitoes use a fascicle containing a labrum, mandibles, and maxillae to pierce skin.",
+      "Mosquito saliva contains compounds with anesthetic properties that numb the feeding site.",
+      "The bending and micro-serration of the proboscis reduce mechanical stress on skin mechanoreceptors."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        3.12
+      ],
+      [
+        3.12,
+        6.73
+      ],
+      [
+        6.73,
+        13.22
+      ],
+      [
+        13.22,
+        19.83
+      ],
+      [
+        19.83,
+        23.39
+      ],
+      [
+        23.39,
+        33.16
+      ],
+      [
+        33.16,
+        39.09
+      ]
+    ],
+    "duration": 39.09,
+    "scene_lines": [
+      "How does a mosquito bite you without hurting?",
+      "You would expect a sharp sting from a needle poking your arm.",
+      "And that's not even the strangest bit. The insect uses tiny microscopic tips to pierce your skin.",
+      "Yet your nerves stay completely quiet. Think about how a blunt edge presses differently than a sharp micro-probe.",
+      "Pause and guess... three, two, one.",
+      "Here's why. It uses saliva containing chemicals that prevent clotting while numbing the area, while its flexible mouthparts bend to help steady the probe.",
+      "Ever thought how tiny needles in modern medicine might copy this bending trick?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [],
+      "footage": [],
+      "review": [],
+      "heard": [
+        "\"mouthparts\" heard as \"mouth parts\""
+      ],
+      "pass": true,
+      "duration": 38.0
+    },
+    "repairs": 0,
     "audited": true
   }
 ]
