@@ -32,6 +32,16 @@ def _article(topic):
     return hits[0]["title"] if hits else None
 
 
+def lead(title, chars=2500):
+    """The plain-text opening section of a Wikipedia article (reference for the fact-checker only;
+    never read out or shown, so its CC BY-SA licence does not reach the video)."""
+    r = requests.get("https://en.wikipedia.org/w/api.php", headers=UA, timeout=15, params={
+        "action": "query", "prop": "extracts", "exintro": 1, "explaintext": 1, "redirects": 1,
+        "titles": title, "format": "json"})
+    pages = r.json().get("query", {}).get("pages", {})
+    return next((p.get("extract", "") for p in pages.values()), "")[:chars]
+
+
 def views(title, days=60):
     end = dt.date.today() - dt.timedelta(days=1)
     start = end - dt.timedelta(days=days)

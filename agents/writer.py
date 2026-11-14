@@ -443,10 +443,26 @@ Return JSON:
     return verify(s)
 
 
+def _reference(script):
+    """The opening of the Wikipedia article on the video's subject, as a reference the checker can
+    compare claims against (it may be incomplete; it is evidence, not the judge)."""
+    try:
+        from . import demand
+        title = demand._article(script.get("topic") or (script.get("title_options") or [""])[0])
+        text = demand.lead(title) if title else ""
+        if text:
+            return (f"\nREFERENCE - the opening of the Wikipedia article \"{title}\" (may be incomplete or about a "
+                    f"related subject; use it as evidence where it applies, flag any claim it contradicts):\n{text}\n")
+    except Exception as e:
+        log(f"checker: no reference ({str(e)[:60]})")
+    return ""
+
+
 def verify(script, rounds=2):
     """Fact-checker agent: a second, sceptical pass over every claim and the answer.
     If anything is wrong or doubtful it sends exact fixes back and the script is corrected."""
     last_bad = []
+    ref = _reference(script)
     for r in range(rounds + 1):  # check, fix, ... and always re-check the final fix
         text = " ".join(sc["narration"] for sc in script["scenes"])
         check = llm_json(f"""You are a strict science fact-checker for a YouTube channel. Be sceptical.
@@ -463,7 +479,7 @@ Title: {(script.get('title_options') or [''])[0]}
 Narration: {text}
 Question: {script.get('question', '')}
 Answer comment: {script.get('answer_comment', '')}
-
+{ref}
 Return JSON: {{"verdict": "pass" or "fix",
  "claims": [{{"claim": "...", "status": "correct|wrong|doubtful", "note": "why, with the correct figure"}}],
  "fixes": ["exact change to make, quoting the sentence"]}}""")
