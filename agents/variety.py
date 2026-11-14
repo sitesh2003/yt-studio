@@ -34,6 +34,8 @@ def topic_is_repeat(topic, n=120):
     if len(a) < 2:
         return False
     for h in (read_json(DATA / "history.json", []) or [])[-n:]:
+        if h.get("status") == "withdrawn":      # never published: free to make again, properly
+            continue
         b = _words(f"{h.get('topic', '')} {h.get('title', '')}")
         if b and len(a & b) / len(a) >= 0.6:
             return True

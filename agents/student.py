@@ -88,7 +88,8 @@ def _syllabus(subjects, per=6):
 
 def pick_topics(n=3):
     cfg = config()["channel"]
-    done = [h.get("topic") for h in (read_json(DATA / "history.json", []) or []) if h.get("topic")][-80:]
+    done = [h.get("topic") for h in (read_json(DATA / "history.json", []) or [])
+            if h.get("topic") and h.get("status") != "withdrawn"][-80:]
     day = dt.date.today().toordinal()
     subjects = [SUBJECTS[(day * n + k) % len(SUBJECTS)] for k in range(n)]   # rotate every subject
     papers = _recent_papers(random.choice(SUBJECTS))
