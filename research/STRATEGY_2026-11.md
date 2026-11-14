@@ -156,3 +156,48 @@ YouTube Data API, all 27 uploads, plus preview frames of the top 3 and "How We A
 **What we take:** a "TRUE SCIENCE STORY" format (real, documented discoveries and people).
 
 **What we will not do:** gossip or scandal about real living people. We could not verify that story, and it is a defamation and misinformation risk.
+
+## 11. A student channel: research (14 Nov 2026)
+**Method:**
+- YouTube Data API: the top 50 videos of the last 120 days in each of 16 student niches (771 videos, 418 channels).
+- A deep pass on the last 50 uploads of 9 young channels.
+- Frames from the 3 strongest.
+
+**Median views of the top videos by niche:**
+- maths tricks 2.76M (54% are Shorts)
+- history explained 2.23M
+- class 10 science 737K and class 12 physics 722K (mostly multi-hour Indian coaching lectures)
+- biology concept 602K (58% are Shorts)
+- JEE physics 587K
+- physics concept 155K
+- chemistry 114K
+- AP US 18K
+- coding concept 108 (dead as Shorts)
+
+**What wins and what does not:**
+- **Coaching (PW, Vedantu, Prashant Kirad):** huge, but built on teachers' faces and multi-hour lectures. Not automatable.
+- **Textbook "concept" Shorts are weak:**
+  - Career Guide With PREM, "Force vs Pressure, Class 10": median 8K
+  - Zovik, Score With Science: about 200 views
+- **Mass AI-3D anatomy channels are weak:** AiEngineer median 8.7K, Nature Discovery 3.2K, daudvoice 1.7K.
+- **The winners frame a concept as curiosity:**
+  - Siddharth Choudhary, physics mind-benders: median 534K, 566K subs in 6 months, but face-driven.
+  - eSaral Science, Hindi 3D medical: median 56K, top 15.7M ("Kidney transplant mein purani kidney ka kya karte hain?").
+  - 3D Eye, engineering 3D: median 206K, top 41.7M.
+  - Myst Editz, maths tricks: 15-24 s, about 5 a day, median 143K, 231K subs in 11 months. Its visuals reuse someone's footage, and its tricks are often presented without the "why".
+
+**Conclusion:** the student channel that can be automated AND accurate is visual maths and concepts drawn by code.
+- **Tool:** Manim Community Edition (MIT licence, the engine behind 3Blue1Brown's style), which renders every step from code, so every number is computed and always right.
+- **Format, 20-45 s:**
+  1. the trick or surprising fact
+  2. one worked example drawn step by step
+  3. WHY it works in one visual line of school maths
+  4. a "try this one" question for the comments
+- **Topics:**
+  - mental maths methods
+  - visual proofs (Pythagoras, why the area of a circle is pi r squared, why negative times negative is positive)
+  - probability puzzles (the birthday paradox, Monty Hall)
+  - geometry, plus physics concepts drawn as vectors, waves and orbits
+- **Honesty edge:** say when a viral trick only works for special numbers.
+- **Audience:** English for global school and early-college students, with auto-dubbing for Hindi and Spanish. Syllabus tags in the description, never "Chapter 28" in the title.
+- **Needs from the user:** create the channel (a Brand Account) and sign it in.
