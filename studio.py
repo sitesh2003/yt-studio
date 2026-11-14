@@ -19,6 +19,18 @@ from agents.core import DATA, JOBS, config, log, read_json, slug, write_json
 def build(script):
     job = JOBS / (dt.datetime.now().strftime("%Y%m%d-%H%M") + "-" + slug(script["topic"]))
     job.mkdir(parents=True, exist_ok=True)
+    if "sources" not in script:   # open-access papers whose abstracts back the key claims (agents/sources.py)
+        try:
+            from agents import sources as _src
+            script["sources"] = _src.find(script)
+        except Exception as e:
+            log(f"sources skipped: {str(e)[:100]}")
+            script["sources"] = []
+        blk = __import__("agents.sources", fromlist=["block"]).block(script["sources"])
+        if blk:
+            script["description"] = script["description"].rstrip() + "\n\n" + blk
+            if script.get("answer_comment"):
+                script["answer_comment"] = script["answer_comment"].rstrip() + "\n\n" + blk
     write_json(job / "script.json", script)
     words = voice.narrate(script, job)
     times = voice.scene_times(script, words)
@@ -38,6 +50,7 @@ def build(script):
             "voice_engine": voice.last_engine, "voices": voice.last_cast, "diagrams": visuals._diagrams,
             "series": script.get("series", ""), "countdown": script.get("countdown"),
             "question": script.get("question", ""), "answer_comment": script.get("answer_comment", ""),
+            "sources": script.get("sources", []), "fact_check": script.get("fact_check", []),
             "fact_ok": not (script.get("fact_check_result") or {}).get("unresolved", False),
             "weekly": bool(script.get("weekly")), "recap_source": script.get("recap_source")}
     write_json(job / "meta.json", meta)
@@ -293,28 +306,12 @@ def publish_due(hours=30):
 
 
 def comments(post=False):
-    from agents import youtube
-    drafts_path = DATA / "reply_drafts.json"
+    """Read, understand, check and reply to comments (agents/community.py); post=True sends the drafts."""
+    from agents import community
     if post:
-        drafts = read_json(drafts_path, []) or []
-        sent = 0
-        for d in drafts:
-            if d.get("action") == "reply" and d.get("approved", config()["community"]["mode"] == "auto"):
-                youtube.post_reply(d["id"], d["reply"])
-                sent += 1
-        write_json(drafts_path, [d for d in drafts if d.get("action") != "reply"])
-        log(f"comments: {sent} replies posted")
-        return
-    new = youtube.recent_comments()[:config()["community"]["max_replies_per_run"]]
-    if not new:
-        log("comments: nothing new")
-        return
-    items = writer.draft_replies(new)
-    texts = {c["id"]: c["text"] for c in new}
-    for it in items:
-        it["comment"] = texts.get(it["id"], "")
-    write_json(drafts_path, items)
-    log(f"comments: {sum(i['action'] == 'reply' for i in items)} reply drafts in data/reply_drafts.json")
+        community.post()
+    else:
+        community.draft()
 
 
 def _sequel():

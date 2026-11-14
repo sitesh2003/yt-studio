@@ -37,7 +37,7 @@ def sequel_topic(title, topic):
 Title: "{title}"  Topic: "{topic}"
 Suggest ONE follow-up topic that keeps what made it work (the same format: contrast, hidden process,
 stakes, or debate) on a closely related subject viewers will also wonder about - or a genuine
-"Part 2" that answers the obvious next question. Scientifically TRUE, filmable with real stock
+"Part 2" that answers the obvious next question. Scientifically TRUE, showable with real stock
 footage, never a repeat. Return JSON: {{"topic": "...", "why": "..."}}""")
     log(f"writer: sequel to {title!r} -> {out.get('topic')}")
     return out
@@ -55,6 +55,9 @@ Top performing Shorts in this niche for US viewers in the last 30 days (title, v
 What has worked on THIS channel so far: {learn.get('summary', 'no data yet')}
 
 Topics already made (never repeat these): {done or 'none'}
+
+Topics VIEWERS asked for in the comments (use one when it is true, showable and fits the channel):
+{[r['topic'] for r in (read_json(DATA / 'viewer_requests.json', []) or [])][-15:] or 'none yet'}
 
 {playbook.brief()}
 
@@ -74,13 +77,22 @@ fish hit 5 million views and 1,800 comments in two days). Use these shapes, neve
 - HOW IT GETS YOU: what really happens, step by step, when something everyday acts on your body
   ("How a horsefly bite works"), told close up. Never gore, never fear for its own sake.
 - EVERYDAY DEBATE: food, pets, kitchen and body habits people have opinions on (sushi, eggs, coffee,
-  dogs, sleep), so viewers want to comment their own experience. Never health advice, never fear.
+  dogs, sleep), so viewers want to comment their own experience.
+- BODY MYTH OR FEAR, SETTLED: a fear or myth people really have about their body or a danger
+  (the rusty-nail tetanus myth, sucking out snake venom, bats and rabies, "you swallow spiders in your
+  sleep"), settled with ONE surprising true number or mechanism. In the Nov 2026 study a channel grew
+  to 65K subscribers in 4 weeks this way. Facts ONLY from established medicine (CDC, WHO, NIH level or
+  peer-reviewed research); never personal treatment advice beyond "get medical help"; calm, never scary.
+- ANY OTHER SCIENCE (space, physics, chemistry, earth, history of science, technology): welcome, as
+  long as it is true, surprising, and can be SHOWN (see below).
 Proven outlier titles in this space (patterns only): {_outliers()}
 
-Suggest {n} NEW topics. Every topic must be scientifically TRUE, explainable in about a minute, and
-FILMABLE WITH REAL STOCK FOOTAGE: the things named must be easy to film (animals, food, cooking,
-nature, ocean, people doing everyday things, machines, roads, vehicles, buildings, everyday objects). Avoid topics that would need diagrams of invisible
-things (electrons, sound waves, quantum, signals) - those cannot get matching footage.
+Suggest {n} NEW topics. Every topic must be scientifically TRUE (settled science, the kind a
+peer-reviewed paper or CDC/NASA/NIH page states), explainable in about a minute, and SHOWABLE: the
+things named can be filmed (animals, food, nature, ocean, people, machines, roads, vehicles, buildings,
+everyday objects, space from NASA footage), drawn as one clear object, or shown on a map. Avoid
+topics that need diagrams of invisible things (electrons, sound waves, quantum, signals) as the
+main picture. Prefer topics with a good chance of an open-access research paper behind them.
 Return JSON: {{"topics": [{{"topic": "...", "why_it_will_work": "...", "pattern": "..."}}]}}"""
     out = llm_json(prompt)
     topics = out.get("topics", [])

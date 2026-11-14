@@ -37,6 +37,10 @@ made once at most.
 | A line is about where something is on Earth | The writer marks it "map" | Drawn from Natural Earth data (exact shapes); a place not in the data falls back to footage |
 | Is the countdown helping or hurting? | Half the Shorts have it, half ask the question plainly (data/experiments.json) | After 8+ of each, public 2+ days, the arm with the higher average view percentage (5+ points ahead, or the leader at 15 each) becomes the rule |
 | Viewers outside the US see an English title | Every upload | Title and teaser translated into Spanish, Portuguese, German, French and Hindi (credits stay as written) |
+| A claim needs a source | Every video: OpenAlex open-access papers for the key claims | A paper is kept only if its abstract directly supports the claim; shown in the description and under the answer comment; none if nothing passes |
+| A viewer says the video is wrong | The replier fact-checks the claim separately | Right: thanked, and it becomes a lesson the writer never repeats (data/corrections.json). Wrong: a kind explanation |
+| A reply would overstate, promise or drift | Every drafted reply gets a second check that sees the video, its answer and the viewer's words | Fixed (keeps any uncertainty the video states, removes promises) or not posted |
+| Viewers ask for a topic | The replier notes it (data/viewer_requests.json) | The topic picker considers it next run |
 | New comments | Every 2 hours | Short, warm replies; the answer to each closing question is posted when the video goes public |
 
 What still needs a person: creating accounts (Instagram, Facebook), signing in, and anything that

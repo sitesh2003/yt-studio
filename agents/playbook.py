@@ -76,7 +76,7 @@ ask the question plainly; the data decides, never suggest changing it); an on-sc
 the first seconds; phrase captions; the loop ending; the small corner logo; illustrated scenes and
 maps where footage cannot show a line.
 Rules for you: concrete and testable, never generic advice. Patterns only - never copy a title, idea
-or anyone's footage. Never suggest anything inaccurate, sensational fear, health advice, photo-real
+or anyone's footage. Never suggest anything inaccurate, sensational fear, personal medical advice, photo-real
 AI imagery, re-cut TV footage, or asking viewers to subscribe/like. Ignore kids-song, prank, comedy
 and dance videos: they are not our genre.
 Return JSON: {{
