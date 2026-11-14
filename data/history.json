@@ -994,7 +994,7 @@
       "science facts"
     ],
     "hook": "Garlic usually doesn't make you cry when you chop it, because its defense chemicals work differently than the ones in onions.",
-    "status": "scheduled",
+    "status": "public",
     "narration": "Garlic usually doesn't make you cry when you chop it, because its defense chemicals work differently than the ones in onions. Onions launch a chemical cloud that hits your eyes and triggers waterworks. But raw garlic uses a completely different defense system. It stores its flavor compounds and enzymes in totally separate rooms inside each cell. Think about what happens when you smash a clove versus slicing it softly. Pause and guess... three, two, one. Here's why it stays tear-free. Those compounds never mix enough to make an airborne gas that reaches your face. Ever thought why a smashed garlic clove smells way stronger than a whole one if it still doesn't make you cry?",
     "series": "Food Whys",
     "question": "Ever thought why a smashed garlic clove smells way stronger than a whole one if it still doesn't make you cry?",
@@ -1013,7 +1013,8 @@
     },
     "repairs": 1,
     "video_id": "fXKlhAXJSTc",
-    "publish_at": "2026-11-14T12:00:00-05:00"
+    "publish_at": "2026-11-14T12:00:00-05:00",
+    "answered": true
   },
   {
     "job": "20261112-1229-why-apples-float-in-water-while-pears-im",
