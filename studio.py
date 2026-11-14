@@ -411,6 +411,11 @@ def daily():
             if len(kept) < len(topics):
                 log(f"variety: dropped {len(topics) - len(kept)} topic(s) too close to videos already made")
             topics = kept
+            try:   # most-read subjects first (Wikipedia readers, free); a tie-breaker, never a reason
+                from agents import demand
+                topics = demand.rank(topics)
+            except Exception as e:
+                log(f"demand ranking skipped: {str(e)[:60]}")
             if topics:
                 break
         except Exception as e:

@@ -116,7 +116,8 @@ things named can be filmed (animals, food, nature, ocean, people, machines, road
 everyday objects, space from NASA footage), drawn as one clear object, or shown on a map. Avoid
 topics that need diagrams of invisible things (electrons, sound waves, quantum, signals) as the
 main picture. Prefer topics with a good chance of an open-access research paper behind them.
-Return JSON: {{"topics": [{{"topic": "...", "why_it_will_work": "...", "pattern": "..."}}]}}"""
+Return JSON: {{"topics": [{{"topic": "...", "why_it_will_work": "...", "pattern": "...",
+ "wikipedia": "the exact title of the English Wikipedia article about the topic's core subject (e.g. 'Ear clearing', 'Gecko')"}}]}}"""
     out = llm_json(prompt)
     topics = out.get("topics", [])
     log("writer: topics -> " + " | ".join(t["topic"] for t in topics))

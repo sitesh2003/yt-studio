@@ -108,7 +108,8 @@ Suggest {n} NEW topics, one for each of these subjects in order: {subjects}.
 Every topic must be scientifically TRUE (textbook or peer-reviewed), explainable in about 35 seconds,
 and SHOWABLE with a diagram, a computed animation, or real footage. Prefer the concepts students meet
 in school and early college, phrased as the question a student would actually ask.
-Return JSON: {{"topics": [{{"topic": "...", "subject": "...", "format": "...", "why_it_will_work": "..."}}]}}""")
+Return JSON: {{"topics": [{{"topic": "...", "subject": "...", "format": "...", "why_it_will_work": "...",
+ "wikipedia": "the exact title of the English Wikipedia article about the core concept (e.g. 'Capacitor')"}}]}}""")
     topics = out.get("topics", [])
     log("student: topics -> " + " | ".join(t.get("topic", "") for t in topics))
     return topics
