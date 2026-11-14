@@ -18,7 +18,8 @@
       "engineering explained"
     ],
     "style": "student",
-    "_note": "Sister channel of Ever Thought Why? (created 14 Nov 2026, handle @whyitworksstem). Visuals are drawn by code first (Manim, diagrams, maps), real footage second; a viral trick that only works for special numbers is called out."
+    "_note": "Sister channel of Ever Thought Why? (created 14 Nov 2026, handle @whyitworksstem). Visuals are drawn by code first (Manim, diagrams, maps), real footage second; a viral trick that only works for special numbers is called out.",
+    "how_made": "How this was made: the script is researched and fact-checked with AI tools against open-access research and textbooks, narrated by an AI voice, and every diagram, number and graph is drawn by code from the real values. Spot a mistake? Tell us in the comments - corrections are checked and credited."
   },
   "format": {
     "target_seconds": 35

@@ -49,6 +49,9 @@ def build(script):
     if chapters:
         desc = desc.rstrip() + "\n\n" + chapters
     desc += ("\n\n" + "\n".join(credits) if credits else "")
+    how = config()["channel"].get("how_made")
+    if how:   # an honest note on how the video was made (YouTube reviews "how you produced" content)
+        desc += "\n\n" + how
     meta = {"topic": script["topic"], "title": script["title_options"][0], "description": desc,
             "tags": script.get("tags", []), "hook": script["scenes"][0]["narration"], "status": "review",
             "narration": " ".join(sc["narration"] for sc in script["scenes"]),

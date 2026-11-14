@@ -16,7 +16,8 @@
       "how it's made",
       "weird science"
     ],
-    "name": "Ever Thought Why?"
+    "name": "Ever Thought Why?",
+    "how_made": "How this was made: the script is researched and fact-checked with AI tools against open-access research (sources above when found), narrated by an AI voice, and edited with open-source software. Corrections from viewers are checked and credited."
   },
   "format": {
     "type": "short",
