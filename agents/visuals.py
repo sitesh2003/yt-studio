@@ -472,6 +472,8 @@ def pick_scene(i, scene, a, b, job_dir, used, note="", extra_queries=()):
                 log(f"visuals: photo search error {e}")
             for src in (_commons_candidates, _openverse_candidates, _nasa_candidates, _inat_candidates,
                         _wellcome_candidates, _met_candidates):
+                if src is _openverse_candidates and q != queries[0]:
+                    continue   # anonymous Openverse allows ~200 calls a day: one search per scene
                 try:
                     cands += [c for c in src(q) if c["id"] not in used]
                 except Exception as e:
