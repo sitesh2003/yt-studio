@@ -354,5 +354,35 @@ class Molecule(Base):
         self.finish()
 
 
+class Cycle(Base):
+    """A loop of 3-5 stages that repeats (water cycle, cell cycle): {"title", "stages": ["..."]}.
+    Stages sit round a ring, clockwise from the top, joined by arrows, revealed in order."""
+    def construct(self):
+        from manim import CurvedArrow
+        title = self.title()
+        stages = [str(s) for s in list(P["stages"])[:5]]
+        n = len(stages)
+        top, bot = title.get_bottom()[1] - 0.5, UP_BOT
+        cy = (top + bot) / 2
+        rad = min((top - bot) / 2 - 0.6, SAFE_W / 2 - 1.4)
+        pts = [np.array([rad * np.sin(2 * np.pi * k / n), cy + rad * np.cos(2 * np.pi * k / n), 0]) for k in range(n)]
+        boxes = VGroup()
+        for s, p in zip(stages, pts):
+            t = T(s, 40, WHITE, max_w=2.6)
+            box = RoundedRectangle(corner_radius=0.2, width=t.width + 0.5, height=t.height + 0.4, stroke_color=BLUE,
+                                   stroke_width=4, fill_color="#13234a", fill_opacity=1).move_to(p)
+            boxes.add(VGroup(box, t.move_to(p)))
+        self.play(Write(title), run_time=0.6)
+        per = max(0.35, (float(P.get("seconds", 4)) - 1.2) / (2 * n))
+        for k in range(n):
+            self.play(FadeIn(boxes[k], scale=0.9), run_time=per)
+            a, b = boxes[k], boxes[(k + 1) % n]
+            arc = CurvedArrow(a.get_center() + (b.get_center() - a.get_center()) * 0.28,
+                              a.get_center() + (b.get_center() - a.get_center()) * 0.72,
+                              angle=-0.5, color=YEL, stroke_width=6)
+            self.play(Create(arc), run_time=per)
+        self.finish()
+
+
 def _fmt(v):
     return f"{int(v):,}" if float(v).is_integer() else f"{v:,.2f}".rstrip("0").rstrip(".")

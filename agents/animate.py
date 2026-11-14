@@ -155,7 +155,16 @@ def _molecule_ok(spec, narration):
     return True
 
 
+def _cycle_ok(spec, narration):
+    """3-5 short stages, and the line must be about something that repeats in a loop."""
+    st = [str(x) for x in spec.get("stages", [])]
+    loop = any(w in narration.lower() for w in ("cycle", "loop", "again", "over and over", "repeat", "round and round"))
+    return 3 <= len(st) <= 5 and all(0 < len(x.split()) <= 3 for x in st) and loop
+
+
 def _numbers_ok(spec, narration):
+    if spec.get("type") == "Cycle":
+        return _cycle_ok(spec, narration)
     if spec.get("type") == "Molecule":
         return _molecule_ok(spec, narration)
     if spec.get("type") == "Circuit":
@@ -199,6 +208,8 @@ a simple computed graphic, and only if the line itself states the thing exactly:
 - "Molecule": the line names one small molecule whose SHAPE matters (water, carbon dioxide, methane,
   ammonia, ethanol, glucose); give only "name" as written in the line - its real 3D structure is
   fetched from PubChem.
+- "Cycle": the line describes a loop that repeats (the water cycle, the cell cycle, the carbon cycle):
+  "stages", 3-5 labels of 1-3 words in the true order.
 - "NumberLine": the line moves along numbers (adding, subtracting, negatives): start, jumps, and a
   lo..hi range that contains every landing point (span at most 40).
 Use ONLY numbers and words that appear in that scene's narration; never compute or add anything.
@@ -210,14 +221,14 @@ Return JSON: {{"picks": [{{"i": scene index, "type": "Compare|Counter|Grid|Steps
  "value": number, "decimals": 0, "caption": "max 6 words", "k": number, "n": number,
  "steps": ["..."], "lines": ["..."], "start": number, "jumps": [number], "lo": number, "hi": number,
  "expr": "", "x0": number, "x1": number, "x_label": "", "y_label": "",
- "parts": ["..."], "flow": "conventional or electrons", "name": ""}}]}}""")
+ "parts": ["..."], "flow": "conventional or electrons", "name": "", "stages": ["..."]}}]}}""")
     used = 0
     for p in out.get("picks") or []:
         try:
             i = int(p.get("i"))
         except (TypeError, ValueError):
             continue
-        if not 0 < i < len(scenes) or used >= _max() or p.get("type") not in ("Compare", "Counter", "Grid", "Steps", "Equation", "NumberLine", "Graph", "Circuit", "Molecule"):
+        if not 0 < i < len(scenes) or used >= _max() or p.get("type") not in ("Compare", "Counter", "Grid", "Steps", "Equation", "NumberLine", "Graph", "Circuit", "Molecule", "Cycle"):
             continue
         if p["type"] != "Steps" and not _numbers_ok(p, scenes[i].get("narration", "")):
             log(f"animate: scene {i + 1} skipped, its {p.get('type')} failed the accuracy check (numbers, range or subject)")
