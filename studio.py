@@ -613,10 +613,6 @@ if __name__ == "__main__":
             log("already uploaded and scheduled, nothing to do")
         else:
             publish(job)
-    elif cmd == "signin":
-        from agents import youtube
-        ch = youtube.yt().channels().list(part="snippet,statistics", mine=True).execute().get("items", [])
-        log(f"signed in. channel: {ch[0]['snippet']['title']}" if ch else "signed in, but this account has NO YouTube channel yet")
     elif cmd == "comments":
         comments(post="--post" in sys.argv)
     elif cmd == "learn":
@@ -667,14 +663,27 @@ if __name__ == "__main__":
                 log(f"illustrate-test {k}: FAILED {str(e)[:300]}")
         (out_dir / "report.json").write_text(_json.dumps(report, indent=2), encoding="utf-8")
         sys.exit(0 if ok else 1)
+    elif cmd == "absorb-weekly":
+        # after `git reset --hard origin/main` in the weekly save step: put the episode's history and
+        # library entries into the latest state (upsert by job), nothing else
+        out = read_json(DATA / "weekly_out.json", {}) or {}
+        for name, key in (("history.json", "history"), ("library.json", "library")):
+            cur = read_json(DATA / name, []) or []
+            for e in out.get(key, []):
+                cur = [c for c in cur if c.get("job") != e.get("job")] + [e]
+            write_json(DATA / name, cur)
+        from agents import library
+        library.write_index()
+        log(f"absorb-weekly: {len(out.get('history', []))} history + {len(out.get('library', []))} library entries")
     elif cmd == "signin":
         # one-time sign-in for THIS channel (STUDIO_CHANNEL=wiw python studio.py signin): open the
         # printed link, pick the right channel, allow. The token file it writes goes into a GitHub
         # secret by hand (TOKEN_JSON for main, TOKEN_JSON_WIW for Why It Works) - never committed.
         from agents import youtube
         from agents.core import CHANNEL, TOKEN
-        ch = youtube.yt().channels().list(part="snippet", mine=True).execute()["items"][0]["snippet"]["title"]
-        log(f"signin: {CHANNEL} -> signed in as the channel '{ch}'; token saved to {TOKEN.name}")
+        items = youtube.yt().channels().list(part="snippet", mine=True).execute().get("items", [])
+        log(f"signin: {CHANNEL} -> signed in as the channel '{items[0]['snippet']['title']}'; token saved to {TOKEN.name}"
+            if items else "signin: signed in, but this account has NO YouTube channel - pick the channel on the sign-in page")
     elif cmd == "voice-test":
         # the real narrator on a short sample: listen to research/voice_test/voice.mp3; pauses.txt
         # lists every silence so the gaps between sentences can be checked by number too

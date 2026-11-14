@@ -10,7 +10,9 @@ permissions:
   actions: write        # lets the health agent start a catch-up production run
 
 concurrency:
-  group: studio-state
+  # its own lane: a run of several hours must never be bumped from the queue by the frequent daily and
+  # comment runs (GitHub keeps one waiting run per lane; that cancelled the episode on 14 Nov 2026)
+  group: studio-weekly
   cancel-in-progress: false
 
 jobs:
@@ -114,7 +116,12 @@ jobs:
         run: |
           git config user.name "yt-studio-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add -f data/*.json STATUS.md research/LIBRARY.md 2>/dev/null || true
-          git diff --cached --quiet || git commit -m "state: weekly $(date -u +%F)"
-          git pull --rebase -X theirs -q || { git rebase --abort; git pull --no-rebase -X ours -q --no-edit; } || true
-          git push -q || true
+          # the daily runs saved while this ran for hours: start from THEIR state and add only the episode
+          for i in 1 2 3; do
+            git fetch -q origin main && git reset -q --hard origin/main
+            [ -f data/weekly_out.json ] && python studio.py absorb-weekly
+            git add -f data/history.json data/library.json research/LIBRARY.md 2>/dev/null || true
+            git diff --cached --quiet && break
+            git commit -q -m "state: weekly episode $(date -u +%F)" && git push -q && break
+            sleep 15
+          done
