@@ -533,6 +533,11 @@ def weekly():
             if h.get("job") == job.name:
                 h.update(video_id=vid, status="scheduled", publish_at=at)
         write_json(DATA / "history.json", hist)
+        # hand-off for the save step: the weekly runs in its own lane (hours long), so it adds its
+        # episode on top of the LATEST saved state instead of overwriting what the daily runs saved
+        lib = [e for e in (read_json(DATA / "library.json", []) or []) if e.get("job") == job.name]
+        write_json(DATA / "weekly_out.json", {"history": [h for h in hist if h.get("job") == job.name],
+                                              "library": lib})
 
 
 def hourly():
