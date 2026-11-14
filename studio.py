@@ -81,9 +81,15 @@ def build(script):
             log(f"qa failed to run, holding the video: {e}")
             break
         q = meta["qa"]
-        if q.get("pass") or attempt == 2 or q.get("facts") or q.get("technical") or q.get("sync") or q.get("spoken"):
+        tech = q.get("technical") or []
+        black_only = tech and all("black frames" in t for t in tech)
+        if q.get("pass") or attempt == 2 or q.get("facts") or (tech and not black_only) or q.get("sync") or q.get("spoken"):
             break  # passed, or a problem footage can't fix
         notes = flagged_scenes(q, len(script["scenes"]))
+        if black_only:   # a black stretch is a clip problem: re-pick the scenes it falls in
+            notes = dict(notes or {})
+            for i in qa.black_scenes(job, times):
+                notes.setdefault(i, "this clip goes black on screen; pick one where the subject is clearly visible the whole time")
         if not notes:
             break
         log(f"repair {attempt + 1}: re-picking footage for scene(s) {[i + 1 for i in notes]}")

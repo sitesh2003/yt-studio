@@ -51,6 +51,13 @@ def technical(job):
     return issues, round(dur, 1)
 
 
+def black_scenes(job, times):
+    """Indexes of the scenes that contain a black stretch (so the repair can re-pick their footage)."""
+    out = _ff(["-i", str(job / "final.mp4"), "-vf", "blackdetect=d=0.6:pix_th=0.08", "-an", "-f", "null", "-"])
+    spans = [(float(a), float(b)) for a, b in re.findall(r"black_start:([\d.]+) black_end:([\d.]+)", out)]
+    return sorted({i for i, (s, e) in enumerate(times) for a, b in spans if a < e and b > s})
+
+
 def sync(job, words):
     """Every clear pause in the audio should be followed by a word starting within 0.35 s."""
     out = _ff(["-i", str(job / "voice.mp3"), "-af", "silencedetect=noise=-35dB:d=0.3", "-f", "null", "-"])
