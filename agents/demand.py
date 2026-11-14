@@ -42,7 +42,18 @@ def lead(title, chars=2500):
     return next((p.get("extract", "") for p in pages.values()), "")[:chars]
 
 
+def _canonical(title):
+    """Follow a redirect ("Flicker fusion rate" -> "Flicker fusion threshold"): readers land on the
+    target, so a redirect's own count is near zero."""
+    r = requests.get("https://en.wikipedia.org/w/api.php", headers=UA, timeout=15, params={
+        "action": "query", "titles": title, "redirects": 1, "format": "json"})
+    pages = r.json().get("query", {}).get("pages", {})
+    p = next(iter(pages.values()), {})
+    return None if "missing" in p else p.get("title", title)
+
+
 def views(title, days=60):
+    title = _canonical(title) or title
     end = dt.date.today() - dt.timedelta(days=1)
     start = end - dt.timedelta(days=days)
     url = ("https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/"
@@ -60,8 +71,14 @@ def score(topic, article=None):
             v = views(article)
             if v:
                 return v, article
-        title = _article(topic)
-        return (views(title), title) if title else (0, None)
+        import re
+        key = {w.lower()[:5] for w in re.findall(r"[A-Za-z]{4,}", f"{topic} {article or ''}") if w.lower() not in _Q}
+        for q in ([article] if article else []) + [topic]:
+            title = _article(q)
+            # a search hit must share a key word with the topic ("brain energy" once matched "Israel")
+            if title and key & {w.lower()[:5] for w in re.findall(r"[A-Za-z]{4,}", title)}:
+                return views(title), title
+        return 0, None
     except Exception as e:
         log(f"demand: {str(e)[:60]}")
         return 0, None
