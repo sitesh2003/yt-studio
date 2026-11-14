@@ -427,3 +427,12 @@ subscribers, so plan for the 2027 bar (8,000 hours or 20M Shorts views). The 500
 **Disclosure rules:** YouTube's "altered or synthetic" label is for realistic AI scenes (not needed for
 our cartoons and diagrams); tick "paid promotion" for any sponsorship; FTC (US audience) wants
 disclosure in the video and the description; ASCI (India) wants an "Ad"/"Affiliate" label too.
+
+## 17. Experiments run tonight and what they changed (14 Nov 2026, late)
+| Experiment | Result | Change |
+|---|---|---|
+| Full student video built locally, end to end | passed QA; but the Ever Thought Why? logo was on it, a "why:" marker was read aloud, an untitled equation shrank to a speck, a caption line ran across two sentences | per-channel logo + reviewer told which logo is ours; marker stripped; empty titles fixed; captions break at sentence ends; the two cloud videos made earlier were withdrawn before publishing |
+| Full main video built locally | held for 1.1 s of black (a night-sky clip with no moon visible) | the self-repair now re-picks the scenes a black stretch falls in, instead of giving up |
+| 72 science words read by Kokoro, transcribed by faster-whisper | 66 clean; one real error, "bromelain" (said "bromline") | assets/lexicon.json gives Kokoro the right sounds; captions keep the spelling |
+| Weekly long video #5 | succeeded (6 min 44 s, 73 sentences with natural pauses); scheduled Sun 15 Nov 10:00 ET | the safe save (absorb onto latest state) worked first time |
+| Listening check in production | clean on the newest main videos | spacing differences ("mouth parts") ignored; overall score by letters |
