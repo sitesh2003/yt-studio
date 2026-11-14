@@ -1,0 +1,63 @@
+name: Manim test
+
+# Stage 1 of research/ARSENAL_PLAN.md: does Manim render a vertical Short on GitHub, how good, how fast?
+# Manual only; saves the video, a frame strip and the timing to research/manim_test/.
+on:
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: studio-state
+  cancel-in-progress: false
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: System libraries from Ubuntu (drawing, text, video)
+        run: |
+          start=$(date +%s)
+          timeout 600 bash -c 'sudo apt-get update -q && sudo apt-get install -y -q libcairo2-dev libpango1.0-dev pkg-config ffmpeg'
+          echo "APT_SECONDS=$(( $(date +%s) - start ))" >> $GITHUB_ENV
+
+      - name: Install Manim
+        run: |
+          start=$(date +%s)
+          pip install -q manim
+          echo "PIP_SECONDS=$(( $(date +%s) - start ))" >> $GITHUB_ENV
+
+      - name: Render the sample (1080x1920, 30 fps)
+        run: |
+          start=$(date +%s)
+          manim render -qh --format mp4 -o pythagoras tools/manim_sample.py Pythagoras
+          echo "RENDER_SECONDS=$(( $(date +%s) - start ))" >> $GITHUB_ENV
+
+      - name: Save the result
+        if: always()
+        run: |
+          mkdir -p research/manim_test
+          f=$(find media -name 'pythagoras.mp4' | head -1)
+          if [ -n "$f" ]; then
+            cp "$f" research/manim_test/pythagoras.mp4
+            ffmpeg -y -loglevel error -i "$f" -vf "fps=1/2,scale=270:-1,tile=6x1" -frames:v 1 research/manim_test/strip.jpg
+            dur=$(ffmpeg -i "$f" 2>&1 | grep -o 'Duration: [0-9:.]*')
+          fi
+          echo "{\"apt_s\": ${APT_SECONDS:-0}, \"pip_s\": ${PIP_SECONDS:-0}, \"render_s\": ${RENDER_SECONDS:-0}, \"video\": \"${dur:-none}\"}" > research/manim_test/timing.json
+          cat research/manim_test/timing.json
+          git config user.name "yt-studio-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -f research/manim_test
+          git diff --cached --quiet || git commit -m "test: manim sample $(date -u +%F)"
+          git pull --rebase -X theirs -q || true
+          git push -q || true
