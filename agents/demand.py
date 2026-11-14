@@ -91,3 +91,45 @@ def rank(topics):
     out = sorted(topics, key=lambda t: -t["demand"][0])
     log("demand: " + " | ".join(f"{t['demand'][0]}/day {t['demand'][1]}" for t in out))
     return out
+
+
+# Numeric facts from Wikidata (CC0) for the fact-checker. Property -> plain name.
+FACT_PROPS = {"P2250": "life expectancy", "P4214": "highest observed lifespan", "P2067": "mass",
+              "P2052": "speed", "P2048": "height", "P2043": "length", "P2049": "width", "P2386": "diameter",
+              "P2120": "radius", "P2583": "distance from Earth", "P2102": "boiling point",
+              "P2101": "melting point", "P2054": "density", "P2046": "area", "P2044": "elevation",
+              "P1082": "population", "P2146": "orbital period", "P2147": "rotation period",
+              "P2076": "temperature", "P1086": "atomic number", "P2665": "alcohol by volume"}
+_UNITS = {}
+
+
+def _unit(qid):
+    if not qid or qid == "1":
+        return ""
+    if qid not in _UNITS:
+        try:
+            e = requests.get(f"https://www.wikidata.org/wiki/Special:EntityData/{qid}.json", headers=UA, timeout=15).json()
+            _UNITS[qid] = list(e["entities"].values())[0]["labels"].get("en", {}).get("value", qid)
+        except Exception:
+            _UNITS[qid] = qid
+    return _UNITS[qid]
+
+
+def facts(title, limit=12):
+    """['highest observed lifespan: 500 year', ...] for the Wikipedia article's Wikidata item."""
+    r = requests.get("https://en.wikipedia.org/w/api.php", headers=UA, timeout=15, params={
+        "action": "query", "prop": "pageprops", "ppprop": "wikibase_item", "redirects": 1,
+        "titles": title, "format": "json"})
+    page = next(iter(r.json().get("query", {}).get("pages", {}).values()), {})
+    qid = page.get("pageprops", {}).get("wikibase_item")
+    if not qid:
+        return []
+    e = requests.get(f"https://www.wikidata.org/wiki/Special:EntityData/{qid}.json", headers=UA, timeout=20).json()
+    claims = list(e["entities"].values())[0].get("claims", {})
+    out = []
+    for p, name in FACT_PROPS.items():
+        for st in claims.get(p, [])[:2]:
+            v = (st.get("mainsnak", {}).get("datavalue") or {}).get("value")
+            if isinstance(v, dict) and "amount" in v:
+                out.append(f"{name}: {v['amount'].lstrip('+')} {_unit(v.get('unit', '').rsplit('/', 1)[-1])}".strip())
+    return out[:limit]

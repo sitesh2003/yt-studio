@@ -450,9 +450,16 @@ def _reference(script):
         from . import demand
         title = demand._article(script.get("topic") or (script.get("title_options") or [""])[0])
         text = demand.lead(title) if title else ""
+        try:
+            nums = demand.facts(title) if title else []
+        except Exception:
+            nums = []
         if text:
+            data = (f"\nRECORDED FIGURES for \"{title}\" from Wikidata (check every number in the script against these "
+                    f"where they apply; mind the units; a value may belong to a newborn, a record or one specimen, so a "
+                    f"mismatch means look closer, not automatically wrong):\n" + "\n".join(f"- {n}" for n in nums) + "\n") if nums else ""
             return (f"\nREFERENCE - the opening of the Wikipedia article \"{title}\" (may be incomplete or about a "
-                    f"related subject; use it as evidence where it applies, flag any claim it contradicts):\n{text}\n")
+                    f"related subject; use it as evidence where it applies, flag any claim it contradicts):\n{text}\n{data}")
     except Exception as e:
         log(f"checker: no reference ({str(e)[:60]})")
     return ""
