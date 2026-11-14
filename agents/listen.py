@@ -73,7 +73,8 @@ def compare(script_text, heard_text):
     """(issues, notes, ratio) for the script versus what was heard."""
     a, b = norm(script_text), norm(heard_text)
     sm = difflib.SequenceMatcher(None, a, b, autojunk=False)
-    ratio = sm.ratio()
+    # the overall score is by letters, so spacing ("mouth parts") or one short word barely moves it
+    ratio = difflib.SequenceMatcher(None, "".join(a), "".join(b), autojunk=False).ratio()
     issues, notes = [], []
     for op, i1, i2, j1, j2 in sm.get_opcodes():
         if op == "equal":
