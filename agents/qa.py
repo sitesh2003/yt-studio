@@ -15,7 +15,7 @@ import subprocess
 
 from PIL import Image
 
-from .core import llm_json, log, read_json
+from .core import config, llm_json, log, read_json
 
 
 def _ff(args):
@@ -96,7 +96,7 @@ US viewers. You see one frame from each scene, in order, with what the narrator 
 Fail the video if ANY of these is true:
 - a frame clearly contradicts or is unrelated to what is being said (a loose but sensible visual
   analogy is fine)
-(The small square mark in the top-left corner - a yellow question mark with an orbit - is THIS
+(The small square mark in the top-left corner - {config()["channel"].get("logo_desc", "a yellow question mark with an orbit")} - is THIS
 channel's own logo on every frame. It is correct; never flag it. Some scenes are deliberately drawn
 explainer diagrams on a navy background with short labels: that is intended - judge them only on
 whether they are accurate and readable.)

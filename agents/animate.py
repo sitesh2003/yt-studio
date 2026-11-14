@@ -78,7 +78,9 @@ def _numberline_ok(spec, narration):
     path = [start]
     for j in jumps:
         path.append(path[-1] + j)
-    if not jumps or min(path) < lo or max(path) > hi or hi - lo > 40:
+    if not jumps and "number line" not in narration.lower():
+        return False                       # a bare number line only when the line talks about one
+    if min(path) < lo or max(path) > hi or hi - lo > 40:
         return False
     said = _numbers_in(narration)
     need = {abs(start)} | {abs(j) for j in jumps} | {abs(path[-1])}
@@ -213,7 +215,8 @@ a simple computed graphic, and only if the line itself states the thing exactly:
 - "NumberLine": the line moves along numbers (adding, subtracting, negatives): start, jumps, and a
   lo..hi range that contains every landing point (span at most 40).
 Use ONLY numbers and words that appear in that scene's narration; never compute or add anything.
-Short labels (max 4 words). Never choose the first scene (the hook needs real footage) or a scene
+Short labels (max 4 words), and always a "title". Never choose the first scene (the hook needs real
+footage) or the LAST scene (the closing question must not show its own answer), or a scene
 with no number or process. Choosing none is fine.
 Scenes: {[{"i": i, "narration": s.get("narration")} for i, s in enumerate(scenes)]}
 Return JSON: {{"picks": [{{"i": scene index, "type": "Compare|Counter|Grid|Steps", "title": "max 6 words",
@@ -228,7 +231,7 @@ Return JSON: {{"picks": [{{"i": scene index, "type": "Compare|Counter|Grid|Steps
             i = int(p.get("i"))
         except (TypeError, ValueError):
             continue
-        if not 0 < i < len(scenes) or used >= _max() or p.get("type") not in ("Compare", "Counter", "Grid", "Steps", "Equation", "NumberLine", "Graph", "Circuit", "Molecule", "Cycle"):
+        if not 0 < i < len(scenes) - 1 or used >= _max() or p.get("type") not in ("Compare", "Counter", "Grid", "Steps", "Equation", "NumberLine", "Graph", "Circuit", "Molecule", "Cycle"):
             continue
         if p["type"] != "Steps" and not _numbers_ok(p, scenes[i].get("narration", "")):
             log(f"animate: scene {i + 1} skipped, its {p.get('type')} failed the accuracy check (numbers, range or subject)")

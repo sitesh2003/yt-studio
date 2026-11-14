@@ -67,6 +67,10 @@ def check_layout(scene):
 
 class Base(Scene):
     def title(self):
+        if not str(P.get("title", "")).strip():
+            # no title: an invisible marker at the top, so layouts that hang below the title keep their
+            # full height (an empty Text sat at the centre and shrank an equation to a speck, 14 Nov)
+            return Rectangle(width=0.01, height=0.6, stroke_opacity=0, fill_opacity=0).move_to([0, UP_TOP - 0.3, 0])
         t = T(P.get("title", ""), 72)
         return t.move_to([0, UP_TOP - t.height / 2, 0])
 

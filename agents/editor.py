@@ -158,7 +158,9 @@ def render(clips, times, words, job_dir, overlays=None):
     cmd = ["ffmpeg", "-y", "-i", "visual.mp4", "-i", "voice.mp3"]
     # the channel logo as a small corner mark the whole way through: branding without an intro
     # card (a logo intro in the first 2 seconds makes people swipe away)
-    logo = ASSETS / "brand" / "logo-800.png"
+    from .core import ROOT
+    own = config()["channel"].get("logo")             # each channel's own corner mark
+    logo = ROOT / own if own else ASSETS / "brand" / "logo-800.png"
     f = config()["format"]
     # Upload in 2K (1440 x 2560): YouTube gives 1440p+ uploads its better encoder, so the same
     # footage looks sharper on phones. The picture is scaled up BEFORE the captions and logo are
