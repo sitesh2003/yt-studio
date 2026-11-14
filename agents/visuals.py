@@ -157,7 +157,7 @@ def _wellcome_candidates(query):
     return out
 
 
-def _met_candidates(query, n=6):
+def _met_candidates(query, n=4):
     """The Met's Open Access collection (CC0): historic scientific instruments, anatomy prints and
     portraits, for science-history moments. Only objects marked public domain. (The old /v1/search
     was retired on 01 Oct 2026; /v1.1/search is the paginated replacement.)"""
