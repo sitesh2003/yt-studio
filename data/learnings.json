@@ -1,0 +1,15 @@
+{
+  "summary": "1. Focus scripts on bodily functions and immediate sensory experiences rather than passive food trivia. 2. Address the viewer directly in the first sentence using 'You' or 'Your' to establish instant personal relevance. 3. Frame hooks around active bodily tricks or hidden physical realities happening 'right now'. 4. Keep video length between 17 to 23 seconds with dynamic pacing to maintain retention near or above 50%. 5. Avoid passive opening statements that sound like standard encyclopedia facts or documentaries.",
+  "winning_hooks": [
+    "Your eyes are leaking right now, and your brain is hiding it.",
+    "You are not sad when you chop an onion.",
+    "Gulping ice water after a hot pepper feels like relief, but the real fire stays untouched."
+  ],
+  "avoid": [
+    "Opening with generic fact-stating phrases like '[Subject] is famous for being...'",
+    "Topics focused on food manufacturing processes or passive storage trivia (e.g., maple syrup sap ratios, honey expiration)",
+    "Titles that emphasize production metrics (e.g., 'Takes 40 Gallons') instead of personal physical reactions",
+    "Short videos under 15 seconds that lack a immediate suspense-building hook"
+  ],
+  "next_experiment": "Test bodily mechanism hooks vs. external world hooks: Video A starts with 'Your brain turns off your ears every time you swallow' vs. Video B starting with 'Swallowing makes a secret sound in your throat'."
+}

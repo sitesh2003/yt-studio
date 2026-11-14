@@ -957,7 +957,7 @@
       "science facts"
     ],
     "hook": "This shark is older than the United States.",
-    "status": "scheduled",
+    "status": "public",
     "narration": "This shark is older than the United States. The Greenland shark roams the freezing Arctic depths, growing only about an inch every few years. It takes over a century just to reach maturity. But here is the weird part: how does it survive so long in water that should freeze its blood? Think about how extreme cold affects the speed of chemical reactions in your own cells. Pause and guess... three, two, one. Here is why: the intense cold forces its metabolism to crawl at an incredibly slow, energy-saving pace. This icy, slow-motion lifestyle keeps its cells from wearing out for over four hundred years. Ever thought why this same deep-freeze strategy would be impossible for a warm-blooded animal like you? Drop your guess below.",
     "series": "Ocean Whys",
     "question": "Ever thought why this same deep-freeze strategy would be impossible for a warm-blooded animal like you?",
@@ -976,7 +976,8 @@
     },
     "repairs": 1,
     "video_id": "S3s-iGcOMVY",
-    "publish_at": "2026-11-13T19:00:00-05:00"
+    "publish_at": "2026-11-13T19:00:00-05:00",
+    "answered": true
   },
   {
     "job": "20261112-1118-why-garlic-doesn-t-make-you-cry",

@@ -6,11 +6,11 @@
     "countdown": null,
     "publish_at": null,
     "video": "4LJjIxeP_dY",
-    "views": 109,
-    "averageViewPercentage": 53.13,
+    "views": 1309,
+    "averageViewPercentage": 53.620000000000005,
     "averageViewDuration": 17,
-    "likes": 2,
-    "subscribersGained": 0
+    "likes": 22,
+    "subscribersGained": 3
   },
   {
     "topic": "Why do onions make you cry when you cut them",
@@ -19,9 +19,48 @@
     "countdown": null,
     "publish_at": "2026-11-10T19:00:00-05:00",
     "video": "a8Kooq5Sswk",
-    "views": 63,
-    "averageViewPercentage": 35.9,
-    "averageViewDuration": 13,
+    "views": 1212,
+    "averageViewPercentage": 49.45,
+    "averageViewDuration": 18,
+    "likes": 19,
+    "subscribersGained": 1
+  },
+  {
+    "topic": "Why drinking cold water doesn't stop the burn of spicy food, and what does",
+    "title": "Why Cold Water Fails Against Spicy Food 🌶️🥛",
+    "hook": "Gulping ice water after a hot pepper feels like relief, but the real fire stays untouched.",
+    "countdown": null,
+    "publish_at": "2026-11-11T15:00:00-05:00",
+    "video": "yF1Dj5F1icM",
+    "views": 1063,
+    "averageViewPercentage": 48.66,
+    "averageViewDuration": 23,
+    "likes": 17,
+    "subscribersGained": 1
+  },
+  {
+    "topic": "How Authentic Maple Syrup Is Boiled Down From Tree Sap",
+    "title": "Why Maple Syrup Takes 40 Gallons 🍁🍯",
+    "hook": "That sweet maple syrup on your pancakes? It started out as practically water.",
+    "countdown": null,
+    "publish_at": "2026-11-11T19:00:00-05:00",
+    "video": "_EnG9sUTAUY",
+    "views": 206,
+    "averageViewPercentage": 38.93,
+    "averageViewDuration": 18,
+    "likes": 3,
+    "subscribersGained": 0
+  },
+  {
+    "topic": "Why Real Honey Never Spoils Even After Thousands of Years",
+    "title": "The Only Food That Lasts Forever 🐝✨",
+    "hook": "Honey is famous for being one of the only natural foods that never truly spoils.",
+    "countdown": null,
+    "publish_at": "2026-11-12T12:00:00-05:00",
+    "video": "EfZ-P6him7k",
+    "views": 1,
+    "averageViewPercentage": 30.48,
+    "averageViewDuration": 12,
     "likes": 0,
     "subscribersGained": 0
   }
