@@ -311,7 +311,7 @@
       "surfactants"
     ],
     "hook": "You've used soap your whole life, but do you know how it actually removes grease?",
-    "status": "scheduled",
+    "status": "public",
     "narration": "You've used soap your whole life, but do you know how it actually removes grease? Step one: water molecules prefer to stick to each other rather than to greasy surfaces, so they bead up instead of washing the grease away. Step two: a soap molecule has two very different ends. Step three: the long tail grabs the oil, while the head dissolves in water. That's because soap molecules act as an intermediate bridge, linking the polar water to non-polar grease. Try this: why does hot water often help soap clean greasy pans more effectively than cold water?",
     "voice_engine": "kokoro",
     "voices": "female host, male explainer",
@@ -386,6 +386,203 @@
     "repairs": 0,
     "audited": true,
     "video_id": "QqhblhrBHUs",
-    "publish_at": "2026-11-15T07:30:00-05:00"
+    "publish_at": "2026-11-15T07:30:00-05:00",
+    "recapped": true,
+    "answered": true
+  },
+  {
+    "job": "20261115-1306-how-do-vaccines-actually-train-your-immu",
+    "topic": "How do vaccines actually train your immune system to fight real viruses?",
+    "title": "How Vaccines Train Your Immune System",
+    "description": "Discover how vaccines safely train your body to remember and fight dangerous viruses using your own cellular blueprints. #shorts #biology #science\n\nSources (open-access research):\n- Abayasingam et al. (2021), Cell Reports Medicine. doi:10.1016/j.xcrm.2021.100228\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nPhoto by Alexandra_Koch on Pixabay\nPhoto by nad_dyagileva on Pixabay\nPhoto by tookapic on Pixabay\nVideo by 4Shaida on Pixabay\n\nHow this was made: the script is researched and fact-checked with AI tools against open-access research and textbooks, narrated by an AI voice, and every diagram, number and graph is drawn by code from the real values. Spot a mistake? Tell us in the comments - corrections are checked and credited.",
+    "tags": [
+      "vaccines",
+      "immune system",
+      "biology",
+      "science shorts",
+      "how it works"
+    ],
+    "hook": "How do vaccines actually train your immune system?",
+    "status": "scheduled",
+    "narration": "How do vaccines actually train your immune system? Step one: the vaccine delivers a harmless piece or blueprint of the virus. Step two: your white blood cells spot this foreign shape and build matching antibodies. Step three: specialized cells remember the foreign shape to make those exact antibodies fast if the real virus ever returns. That's because your body builds an immune library of genetic blueprints for rapid defense without getting sick first. That is how millions of lives get protected every single year. Try this: why do some vaccines require a second booster shot weeks later?",
+    "voice_engine": "kokoro",
+    "voices": "female host, male explainer",
+    "diagrams": 1,
+    "series": "Biology",
+    "countdown": false,
+    "length_arm": null,
+    "question": "Try this: why do some vaccines require a second booster shot weeks later?",
+    "answer_comment": "The answer: A booster shot exposes your immune system to the antigen a second time, which triggers memory cells to multiply and produce an even stronger, longer-lasting antibody response. This reinforces your immunological blueprint just like studying notes before a final exam. Have you ever wondered how long these memory cells live in your body?\n\nSources (open-access research):\n- Abayasingam et al. (2021), Cell Reports Medicine. doi:10.1016/j.xcrm.2021.100228",
+    "sources": [
+      {
+        "claim": "Memory cells store the genetic information required to produce those specific antibodies upon re-exposure.",
+        "cite": "Abayasingam et al. (2021), Cell Reports Medicine. doi:10.1016/j.xcrm.2021.100228",
+        "doi": "10.1016/j.xcrm.2021.100228",
+        "title": "Long-term persistence of RBD+ memory B cells encoding neutralizing antibodies in SARS-CoV-2 infection",
+        "why": "Furthermore, we are able to generate monoclonal antibodies with SARS-CoV-2 neutralizing capacity from these memory B cells."
+      }
+    ],
+    "fact_check": [
+      "Vaccines deliver a harmless piece or blueprint of the pathogen to stimulate an immune response.",
+      "White blood cells detect foreign antigens and produce specific antibodies.",
+      "Memory cells store the genetic information required to produce those specific antibodies upon re-exposure.",
+      "Booster shots enhance the immune response by reinforcing memory cell populations."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        3.68
+      ],
+      [
+        3.68,
+        8.38
+      ],
+      [
+        8.38,
+        13.55
+      ],
+      [
+        13.55,
+        21.92
+      ],
+      [
+        21.92,
+        29.66
+      ],
+      [
+        29.66,
+        33.74
+      ],
+      [
+        33.74,
+        39.19
+      ]
+    ],
+    "duration": 39.19,
+    "scene_lines": [
+      "How do vaccines actually train your immune system?",
+      "Step one: the vaccine delivers a harmless piece or blueprint of the virus.",
+      "Step two: your white blood cells spot this foreign shape and build matching antibodies.",
+      "Step three: specialized cells remember the foreign shape to make those exact antibodies fast if the real virus ever returns.",
+      "That's because your body builds an immune library of genetic blueprints for rapid defense without getting sick first.",
+      "That is how millions of lives get protected every single year.",
+      "Try this: why do some vaccines require a second booster shot weeks later?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,050 --> 00:00:03,375\nHow do vaccines actually train your immune system?\n\n2\n00:00:03,680 --> 00:00:06,092\nStep one: the vaccine delivers a harmless\n\n3\n00:00:06,092 --> 00:00:08,380\npiece or blueprint of the virus.\n\n4\n00:00:08,380 --> 00:00:10,505\nStep two: your white blood cells spot\n\n5\n00:00:10,505 --> 00:00:13,550\nthis foreign shape and build matching antibodies.\n\n6\n00:00:13,550 --> 00:00:16,525\nStep three: specialized cells remember the foreign\n\n7\n00:00:16,525 --> 00:00:19,175\nshape to make those exact antibodies fast\n\n8\n00:00:19,175 --> 00:00:21,900\nif the real virus ever returns.\n\n9\n00:00:21,920 --> 00:00:24,270\nThat's because your body builds an immune\n\n10\n00:00:24,270 --> 00:00:27,357\nlibrary of genetic blueprints for rapid defense\n\n11\n00:00:27,357 --> 00:00:29,445\nwithout getting sick first.\n\n12\n00:00:29,660 --> 00:00:31,510\nThat is how millions of lives get\n\n13\n00:00:31,510 --> 00:00:33,740\nprotected every single year.\n\n14\n00:00:33,740 --> 00:00:36,277\nTry this: why do some vaccines require\n\n15\n00:00:36,277 --> 00:00:38,590\na second booster shot weeks later?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [],
+      "footage": [],
+      "review": [],
+      "pass": true,
+      "duration": 38.4
+    },
+    "repairs": 0,
+    "audited": true,
+    "video_id": "NS68pl6mBmI",
+    "publish_at": "2026-11-15T16:30:00-05:00"
+  },
+  {
+    "job": "20261115-1321-why-does-baking-soda-fizz-when-mixed-wit",
+    "topic": "Why does baking soda fizz when mixed with vinegar?",
+    "title": "Why Does Baking Soda Fizz With Vinegar",
+    "description": "Ever wonder what causes the iconic fizz between vinegar and baking soda? We break down the acid-base chemistry in seconds. #shorts #chemistry #science\n\nSources (open-access research):\n- Mori et al. (2026), Chromatography. doi:10.15583/jpchrom.2026.016\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nPhoto: Fondo Antiguo de la Biblioteca de la Universidad de Sevilla , CC BY 2.0, via Wikimedia Commons\nPhoto: katerha, CC BY 2.0, via Wikimedia Commons\nPhoto: kdurcan, BY 2.0, via Openverse (flickr)\nVideo by Vimeo-Free-Videos on Pixabay\n\nHow this was made: the script is researched and fact-checked with AI tools against open-access research and textbooks, narrated by an AI voice, and every diagram, number and graph is drawn by code from the real values. Spot a mistake? Tell us in the comments - corrections are checked and credited.",
+    "tags": [
+      "chemistry",
+      "science",
+      "education",
+      "baking soda",
+      "vinegar"
+    ],
+    "hook": "Why does baking soda fizz the moment it hits vinegar?",
+    "status": "scheduled",
+    "narration": "Why does baking soda fizz the moment it hits vinegar? First, baking soda is a base called sodium bicarbonate. Second, vinegar is a diluted acetic acid. Third, the acid and base react instantly to trade parts, creating water and carbon dioxide gas. That's because the carbon dioxide gas tries to escape the liquid, which creates the fizzing bubbles we see. You see this reaction in fluffy pancakes, where those gas bubbles make the batter rise. Try this: why would using too much baking soda make your pancakes taste bitter?",
+    "voice_engine": "kokoro",
+    "voices": "male host, female explainer",
+    "diagrams": 1,
+    "series": "Chemistry",
+    "countdown": false,
+    "length_arm": null,
+    "question": "Try this: why would using too much baking soda make your pancakes taste bitter?",
+    "answer_comment": "The answer: Baking soda is a base, which has a naturally bitter, soapy taste. If you add too much, there isn't enough acid in the recipe to neutralize it all, so the excess baking soda remains in the batter. This is the same reason why over-salted food tastes, well, salty! Do you have a favorite baking hack that uses science?\n\nSources (open-access research):\n- Mori et al. (2026), Chromatography. doi:10.15583/jpchrom.2026.016",
+    "sources": [
+      {
+        "claim": "Vinegar contains acetic acid.",
+        "cite": "Mori et al. (2026), Chromatography. doi:10.15583/jpchrom.2026.016",
+        "doi": "10.15583/jpchrom.2026.016",
+        "title": "Determination of Acetic Acid in Vinegar Using High-Performance Liquid Chromatography with Fluorescence Detection",
+        "why": "Acetic acid is a major organic acid in vinegar, and monitoring its concentration during fermentation is important for process control and quality assessment."
+      }
+    ],
+    "fact_check": [
+      "Baking soda is sodium bicarbonate (a base).",
+      "Vinegar contains acetic acid.",
+      "The reaction creates sodium acetate, water, and carbon dioxide.",
+      "Carbon dioxide gas causes the fizzing.",
+      "Unreacted baking soda is basic and bitter."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        3.74
+      ],
+      [
+        3.74,
+        7.62
+      ],
+      [
+        7.62,
+        10.81
+      ],
+      [
+        10.81,
+        17.83
+      ],
+      [
+        17.83,
+        24.89
+      ],
+      [
+        24.89,
+        30.42
+      ],
+      [
+        30.42,
+        35.6
+      ]
+    ],
+    "duration": 35.6,
+    "scene_lines": [
+      "Why does baking soda fizz the moment it hits vinegar?",
+      "First, baking soda is a base called sodium bicarbonate.",
+      "Second, vinegar is a diluted acetic acid.",
+      "Third, the acid and base react instantly to trade parts, creating water and carbon dioxide gas.",
+      "That's because the carbon dioxide gas tries to escape the liquid, which creates the fizzing bubbles we see.",
+      "You see this reaction in fluffy pancakes, where those gas bubbles make the batter rise.",
+      "Try this: why would using too much baking soda make your pancakes taste bitter?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,050 --> 00:00:03,400\nWhy does baking soda fizz the moment it hits vinegar?\n\n2\n00:00:03,740 --> 00:00:07,620\nFirst, baking soda is a base called sodium bicarbonate.\n\n3\n00:00:07,620 --> 00:00:10,810\nSecond, vinegar is a diluted acetic acid.\n\n4\n00:00:10,810 --> 00:00:13,360\nThird, the acid and base react instantly\n\n5\n00:00:13,360 --> 00:00:17,735\nto trade parts, creating water and carbon dioxide gas.\n\n6\n00:00:17,830 --> 00:00:20,605\nThat's because the carbon dioxide gas tries\n\n7\n00:00:20,605 --> 00:00:22,868\nto escape the liquid, which creates the\n\n8\n00:00:22,868 --> 00:00:24,680\nfizzing bubbles we see.\n\n9\n00:00:24,890 --> 00:00:27,415\nYou see this reaction in fluffy pancakes,\n\n10\n00:00:27,415 --> 00:00:30,340\nwhere those gas bubbles make the batter rise.\n\n11\n00:00:30,420 --> 00:00:32,333\nTry this: why would using too much\n\n12\n00:00:32,333 --> 00:00:34,995\nbaking soda make your pancakes taste bitter?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [],
+      "footage": [],
+      "review": [],
+      "pass": true,
+      "duration": 34.8
+    },
+    "repairs": 0,
+    "audited": true,
+    "video_id": "Sxptr2TsIRI",
+    "publish_at": "2026-11-16T07:30:00-05:00"
   }
 ]

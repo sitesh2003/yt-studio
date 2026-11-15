@@ -13,5 +13,48 @@
       "Hot water increases molecular kinetic energy, speeding up the dissolving and melting of fats."
     ],
     "sources": []
+  },
+  {
+    "job": "20261115-1306-how-do-vaccines-actually-train-your-immu",
+    "date": "2026-11-15",
+    "title": "How Vaccines Train Your Immune System",
+    "topic": "How do vaccines actually train your immune system to fight real viruses?",
+    "series": "Biology",
+    "weekly": false,
+    "claims": [
+      "Vaccines deliver a harmless piece or blueprint of the pathogen to stimulate an immune response.",
+      "White blood cells detect foreign antigens and produce specific antibodies.",
+      "Memory cells store the genetic information required to produce those specific antibodies upon re-exposure.",
+      "Booster shots enhance the immune response by reinforcing memory cell populations."
+    ],
+    "sources": [
+      {
+        "cite": "Abayasingam et al. (2021), Cell Reports Medicine. doi:10.1016/j.xcrm.2021.100228",
+        "doi": "10.1016/j.xcrm.2021.100228",
+        "claim": "Memory cells store the genetic information required to produce those specific antibodies upon re-exposure."
+      }
+    ]
+  },
+  {
+    "job": "20261115-1321-why-does-baking-soda-fizz-when-mixed-wit",
+    "date": "2026-11-15",
+    "title": "Why Does Baking Soda Fizz With Vinegar",
+    "topic": "Why does baking soda fizz when mixed with vinegar?",
+    "series": "Chemistry",
+    "weekly": false,
+    "claims": [
+      "Baking soda is sodium bicarbonate (a base).",
+      "Vinegar contains acetic acid.",
+      "The reaction creates sodium acetate, water, and carbon dioxide.",
+      "Carbon dioxide gas causes the fizzing.",
+      "Unreacted baking soda is basic and bitter."
+    ],
+    "sources": [
+      {
+        "cite": "Mori et al. (2026), Chromatography. doi:10.15583/jpchrom.2026.016",
+        "doi": "10.15583/jpchrom.2026.016",
+        "claim": "Vinegar contains acetic acid."
+      }
+    ]
   }
 ]

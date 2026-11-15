@@ -1,11 +1,1 @@
-[
-  {
-    "topic": "How do vaccines actually train your immune system to fight real viruses?",
-    "pulled": "",
-    "title": "How Vaccines Work: Immune Memory Explained",
-    "false_sentence": "Step three: specialized white blood cells become memory cells, storing the exact shape of that antibody.",
-    "correct_version": "Memory cells do not store the shape of the antibody; they store the genetic information required to produce those specific antibodies upon re-exposure to the antigen.",
-    "why": "The narration incorrectly suggests memory cells store the antibody shape, rather than the immunological blueprint for producing them.",
-    "tries": 0
-  }
-]
+[]
