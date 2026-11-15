@@ -489,6 +489,8 @@ def daily():
                 t["fix"]["tries"] = t["fix"].get("tries", 0) + 1
                 write_json(DATA / "remakes.json", remakes)
                 log(f"remake: rebuilding '{t['fix'].get('title')}' with the correction")
+            if t.get("wikipedia"):
+                writer._WIKI_HINT[t["topic"]] = t["wikipedia"]   # the fact-checker's reference article
             script = writer.write_script(t["topic"], use_recap, fix=t.get("fix"))
             if (script.get("fact_check_result") or {}).get("unresolved"):
                 # it could never be uploaded: skip the 10+ minutes of voice, footage and render

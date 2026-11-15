@@ -7,6 +7,7 @@ videos made first are the ones on subjects more people are already curious about
 never a reason to make something untrue or off-niche.
 """
 import datetime as dt
+import re
 import statistics
 from urllib.parse import quote
 
@@ -30,6 +31,25 @@ def _article(topic):
         "action": "query", "list": "search", "srsearch": q[:200], "srlimit": 1, "format": "json"})
     hits = r.json().get("query", {}).get("search", [])
     return hits[0]["title"] if hits else None
+
+
+def article_for(topic):
+    """A Wikipedia article that is really ABOUT the topic: the search hit must share a key word with it
+    (15 Nov: 'Why Garlic Doesn't Make You Cry' returned an article about a murderer). None if unsure."""
+    key = {w.lower()[:5] for w in re.findall(r"[A-Za-z]{4,}", topic or "") if w.lower() not in _Q}
+    q = " ".join(w for w in re.findall(r"[A-Za-z0-9'-]+", topic or "") if w.lower() not in _Q)
+    try:
+        r = requests.get("https://en.wikipedia.org/w/api.php", headers=UA, timeout=15, params={
+            "action": "query", "list": "search", "srsearch": q[:200], "srlimit": 6, "format": "json"})
+        hits = [h["title"] for h in r.json().get("query", {}).get("search", [])]
+    except Exception:
+        hits = []
+    best, best_n = None, 0
+    for cand in hits:          # the hit sharing the most key words with the topic, earliest on ties
+        n = len(key & {w.lower()[:5] for w in re.findall(r"[A-Za-z]{4,}", cand)})
+        if n > best_n:
+            best, best_n = cand, n
+    return best
 
 
 def lead(title, chars=2500):

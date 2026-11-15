@@ -439,8 +439,71 @@ Return JSON: {{"winners": ["name", "..."], "correct_count": 0}}""")
     return [w.lstrip("@").strip()[:30] for w in out.get("winners", []) if w and w.strip()][:2]
 
 
+FLOW = ("- ONE CONNECTED PROGRAMME, NOT A LIST OF FACTS: each chapter carries one concrete running example "
+        "with real numbers through all its scenes; each scene answers the question the previous one left "
+        "open and opens the next; the same objects keep coming back on screen; every scene has a key_idea "
+        "(2-5 words, the ONE key word in *asterisks*).\n")
+
+
+def _weekly_research(week, per_topic=3):
+    """RESEARCH BEFORE WRITING (user, 15 Nov: "make it big, research the topics properly"). For each of
+    the week's topics: the Wikipedia overview, recorded figures from Wikidata, and the top open-access
+    papers (non-retracted, with abstracts). The episode is written FROM these notes."""
+    from . import demand, sources
+    notes = []
+    named = {}
+    try:   # one small call: the model names the right article; the code checks it exists
+        out = llm_json("For each science topic, give the exact title of the English Wikipedia article about its "
+                       "core subject (e.g. 'Why garlic doesn't make you cry' -> 'Garlic', 'Why ice floats' -> 'Ice').\n"
+                       + "\n".join(f"{k}: {w.get('topic') or w.get('title')}" for k, w in enumerate(week[:5]))
+                       + '\nReturn JSON: {"articles": ["title for 0", "title for 1", ...]}')
+        for k, t in enumerate(out.get("articles") or []):
+            ok = demand._canonical(str(t)) if t else None
+            if ok:
+                named[k] = ok
+    except Exception as e:
+        log(f"weekly research: no article names ({str(e)[:50]})")
+    for k, w in enumerate(week[:5]):
+        topic = w.get("topic") or w.get("title", "")
+        block = [f"TOPIC: {w.get('title')} (from the Short: {topic})"]
+        try:
+            art = named.get(k) or demand.article_for(topic)
+            if art:
+                block.append(f"  Wikipedia '{art}': {demand.lead(art, 1200)}")
+                figs = demand.facts(art)
+                if figs:
+                    block.append("  Recorded figures (Wikidata): " + "; ".join(figs))
+        except Exception as e:
+            log(f"weekly research: no reference for {topic[:40]} ({str(e)[:50]})")
+        try:
+            q = " ".join(x for x in re.findall(r"[A-Za-z]{4,}", topic) if x.lower() not in
+                         {"why", "does", "what", "when", "their", "they", "your", "with", "from", "that", "this"})[:120]
+            if art:
+                q = f"{art} {q}"[:150]
+            cands = sources._search(q, n=10)
+            if cands:
+                # relevance check: raw search matched words, not meaning (15 Nov dry run: "Fertility
+                # Cleansing" under garlic, a novel under the funny bone). Keep only papers that are
+                # directly about this topic's science.
+                pick = llm_json(f"Topic: {topic}\nWhich of these papers are DIRECTLY about the science of this "
+                                "topic (its mechanism, chemistry, biology or physics)? Reject anything off-topic, "
+                                "medical treatments unrelated to the question, fiction, or opinion pieces.\n"
+                                + "\n".join(f"{k}: {p['title'][:150]} | {p['abstract'][:300]}" for k, p in enumerate(cands))
+                                + '\nReturn JSON: {"keep": [indexes, best first]}')
+                keep = [int(k) for k in (pick.get("keep") or []) if str(k).isdigit() and int(k) < len(cands)]
+                for k in keep[:per_topic]:
+                    p = cands[k]
+                    block.append(f"  Paper: {sources.cite(p)} - \"{p['title'][:140]}\" - abstract: {p['abstract'][:600]}")
+        except Exception as e:
+            log(f"weekly research: no papers for {topic[:40]} ({str(e)[:50]})")
+        notes.append("\n".join(block))
+    log(f"weekly research: notes on {len(notes)} topics, {sum(n.count('Paper:') for n in notes)} open-access papers")
+    return "\n\n".join(notes)
+
+
 def write_weekly(week):
-    """Weekly long-form episode (8-10 minutes, widescreen) that goes deeper on the week's Shorts."""
+    """Weekly long-form episode (~10 minutes, widescreen): researched first, then written as one
+    connected programme with a chapter per topic."""
     ch = config()["channel"]
     items = chr(10).join(f"- {w['title']} | question: {w.get('question','')} | answer: {w.get('answer_comment','')}"
                       for w in week)
@@ -448,39 +511,69 @@ def write_weekly(week):
     known = library.find(" ".join(w["title"] for w in week), n=10)
     verified = chr(10).join(f"- {e['title']}: claims {e.get('claims', [])[:5]}; sources {[s['cite'] for s in e.get('sources', [])]}"
                             for e in known) or "- (none yet)"
-    s = llm_json(f"""Write a weekly long-form YouTube episode for the channel "{ch.get('name', 'Ever Thought Why?')}" ({ch['niche']}).
+    research = _weekly_research(week)
+    target = int(10 * 60 * 2.55)       # ten minutes at the narrator's pace (~2.55 words a second)
+    closing = ('a "Try this:" question for the comments' if ch.get('style') == 'student'
+               else 'a fresh "Ever thought why...?" question for the comments')
+    prompt = f"""Write a weekly long-form YouTube episode for the channel "{ch.get('name', 'Ever Thought Why?')}" ({ch['niche']}).
 Audience: {ch['audience']}. Tone: {ch['voice_tone']}. American English.
-This week's Shorts (go DEEPER on each, add the "how we know" and a real-world connection):
+This week's Shorts - the episode goes much DEEPER on them:
 {items}
 
-ALREADY VERIFIED by this channel (claims that passed our fact check, and open-access papers whose abstracts
-support them). Build on these first; when a chapter uses one of these papers, name it in the narration as
-"a study by <author> in <year>" so viewers know how we know:
-{verified}
+RESEARCH NOTES (gathered for this episode: Wikipedia overviews, recorded figures, open-access papers with
+their abstracts). Build every chapter FROM these notes. State only what they or settled textbook science
+support. When a chapter relies on one of the papers, say so in the narration as "a study by <author>
+in <year>" - only papers listed here, never invented ones:
+{research}
+
+ALREADY VERIFIED by this channel: {verified}
 
 Rules:
-- 1300 to 1500 words of narration (8 to 10 minutes). Strong 10-second cold open with the most
-  surprising idea of the week, then a one-line promise of what they will understand by the end.
-- One chapter per topic. Inside each chapter: the mystery, a "pause and predict" moment ending with
-  "Pause and guess... three, two, one." (mark that scene "predict": true), the reveal, why it works,
-  how scientists found out, and where you meet it in everyday life.
-- 100% accurate, plain spoken numbers, honest simplification only. No jargon without explaining it.
-- End with {'a "Try this:" question for the comments' if ch.get('style') == 'student' else 'a fresh "Ever thought why...?" question for the comments'} and a one-line tease of next week.
+- About {target} words of narration in total (about 10 minutes) - never under {target - 200}.
+- A 10-second cold open with the most surprising idea of the week, then one line promising what they
+  will understand by the end, and ONE thread that ties the chapters together (e.g. "hidden forces
+  inside the kitchen") so it feels like one programme, not separate clips.
+- 4 or 5 chapters, one per topic, each 250-350 words, in this order inside the chapter:
+  the mystery -> the question -> a "pause and predict" moment ending exactly "Pause and guess... three,
+  two, one." (mark that scene "predict": true) -> the reveal -> WHY it works, step by step -> HOW
+  scientists found out (the study from the notes) -> where you meet it in everyday life -> a one-line
+  bridge into the next chapter.
+""" + FLOW + f"""- 100% accurate, plain spoken numbers, honest simplification only; explain any technical word.
+- End with {closing} and a one-line tease of next week.
 - Scenes of 2-4 sentences, each with a concrete 1-3 word stock-footage query and 2 alternatives.
 
 Return JSON:
 {{"topic": "weekly episode", "title_options": ["max 70 characters, Title Case, no emojis, concrete and true", "...", "..."],
  "hook_options": ["the cold open line"],
- "scenes": [{{"narration": "...", "visual_query": "...", "alt_queries": ["...", "..."], "chapter": "chapter title or empty"}}],
+ "running_example": "the thread that ties the episode together",
+ "frame_title": "2-4 words for the top of the frame",
+ "scenes": [{{"narration": "...", "key_idea": "2-5 words, one *key* word", "visual_query": "...", "alt_queries": ["...", "..."], "chapter": "chapter title or empty"}}],
  "description": "3-4 lines, then a blank line (chapter timestamps are added automatically), then hashtags",
  "tags": ["..."],
  "thumbnail": {{"layout": "single", "text": "max 4 words", "highlight": "one word"}},
  "question": "the closing question for the comments",
  "answer_comment": "The answer: 2-4 friendly sentences",
- "fact_check": ["every factual claim"]}}""")
+ "fact_check": ["every factual claim"]}}"""
+    s = llm_json(prompt)
+    n = sum(len(x.get("narration", "").split()) for x in s.get("scenes", []))
+    if n < target - 250 and s.get("scenes"):
+        log(f"writer: weekly episode only {n} words, expanding to ~{target}")
+        more = llm_json(f"""This weekly episode script is {n} words; it must be about {target} words (10 minutes).
+Expand it using ONLY the research notes below: deepen the "why it works" and "how scientists found out"
+parts of each chapter and add one more everyday example per chapter. Keep every true fact, the
+chapters, the JSON shape and the closing question.
+Research notes:
+{research}
+Script: {s}
+Return the whole script JSON.""")
+        if sum(len(x.get("narration", "").split()) for x in more.get("scenes", [])) > n:
+            s = more
     s["topic"] = "weekly: " + ", ".join(w["title"] for w in week)[:120]
     log(f"writer: weekly episode, {sum(len(x['narration'].split()) for x in s['scenes'])} words")
     return verify(s)
+
+
+_WIKI_HINT = {}   # topic -> the Wikipedia article the planner named (set by studio.daily)
 
 
 def _reference(script):
@@ -488,7 +581,8 @@ def _reference(script):
     compare claims against (it may be incomplete; it is evidence, not the judge)."""
     try:
         from . import demand
-        title = demand._article(script.get("topic") or (script.get("title_options") or [""])[0])
+        hint = script.get("wikipedia") or _WIKI_HINT.get(script.get("topic", ""))
+        title = (demand._canonical(hint) if hint else None) or             demand.article_for(script.get("topic") or (script.get("title_options") or [""])[0])
         text = demand.lead(title) if title else ""
         try:
             nums = demand.facts(title) if title else []
