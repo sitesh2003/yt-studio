@@ -1,14 +1,20 @@
 {
-  "summary": "Focus video length on maintaining a duration where averageViewDuration exceeds 35 seconds to maximize retention. Use short, high-impact hooks under 10 words that make visceral or predatory claims, like 'eating you back'. Avoid explanatory or conversational opening statements that lower curiosity. Match engaging visual titles with concise hooks to drive view percentages above 100%. Prioritize biological or physical oddities over historical or manufacturing processes.",
+  "summary": [
+    "Prioritize 'Body Horror' or 'Self-Defense' biological themes where the body acts against itself (e.g., eating you back, leaking, pruney skin).",
+    "Increase hook length by focusing on direct, counter-intuitive claims that disrupt the viewer's current reality.",
+    "Shift focus to longer-form retention by maintaining a higher Average View Duration (40+ seconds) rather than just broad reach.",
+    "Eliminate 'process-based' informational topics (like syrup production) in favor of 'mystery' or 'survival' biology.",
+    "Use active, aggressive verbs in the first five seconds to increase rewatchability and engagement."
+  ],
   "winning_hooks": [
     "Fresh pineapple is literally eating you back.",
-    "This shark is older than the United States.",
-    "Your eyes are leaking right now, and your brain is hiding it."
+    "Your eyes are leaking right now, and your brain is hiding it.",
+    "Your fingers prune in water, but it is not because you are absorbing it like a sponge."
   ],
   "avoid": [
-    "Starting hooks with explanatory phrases like 'Garlic usually doesn't make you cry because...'",
-    "Using process-based topics like 'How Authentic Maple Syrup Is Boiled Down'",
-    "Long, multi-clause hook setups that delay the core oddity past the first 3 seconds"
+    "Topics that focus on neutral manufacturing or production processes like 'how syrup is made'.",
+    "Hooks that lead with soft intros like 'Honey is famous for...'",
+    "Explaining simple facts without a 'hidden secret' or 'deception' element."
   ],
-  "next_experiment": "Test a physical-reaction topic ('Why your skin gets goosebumps') using a brutal, 6-word hook ('Your body is glitching when you're cold') against a standard explanatory hook."
+  "next_experiment": "A/B test two videos on the same topic: one with a 'process' hook ('How X is made') and one with a 'conflict' hook ('Why X is killing you'), measuring Average View Percentage to see if the conflict narrative sustains high retention."
 }

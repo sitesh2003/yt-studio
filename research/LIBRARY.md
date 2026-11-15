@@ -21,6 +21,16 @@ agents/library.py; a source is listed only if its abstract was checked to suppor
 Sources:
 - Wijnen et al. (2025), Materials & Design. doi:10.1016/j.matdes.2025.113698 — supports: At room temperature, iron atoms form a ferrite crystal structure where planes can slip past each other.
 
+## Why Do Microwaved Grapes Shoot Sparks? 🤯
+*2026-11-15 · Everyday Whys*
+
+- Grapes match the wavelength of microwave radiation, acting like antennas that trap electromagnetic energy.
+- Water inside grape halves traps microwave energy like a cavity resonator, concentrating electromagnetic fields into an intense hotspot where the halves touch to ionize surrounding gas into plasma.
+- Halved grapes held together by a sliver of skin focus electromagnetic hotspots at the skin bridge, creating localized plasma in a microwave.
+
+Sources:
+- Khattak et al. (2019), Proceedings of the National Academy of Sciences. doi:10.1073/pnas.1818350116 — supports: Grapes match the wavelength of microwave radiation, acting like antennas that trap electromagnetic energy.
+
 ## Why Highway Guardrails Have Heavy End Boxes 🤯
 *2026-11-14 · How Things Work*
 

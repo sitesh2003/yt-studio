@@ -160,5 +160,25 @@
         "claim": "At room temperature, iron atoms form a ferrite crystal structure where planes can slip past each other."
       }
     ]
+  },
+  {
+    "job": "20261115-0247-why-do-bananas-catch-fire-in-the-microwa",
+    "date": "2026-11-15",
+    "title": "Why Do Microwaved Grapes Shoot Sparks? 🤯",
+    "topic": "Why Do Bananas Catch Fire in the Microwave Due to Microwave Radiation and Potassium Ions?",
+    "series": "Everyday Whys",
+    "weekly": false,
+    "claims": [
+      "Grapes match the wavelength of microwave radiation, acting like antennas that trap electromagnetic energy.",
+      "Water inside grape halves traps microwave energy like a cavity resonator, concentrating electromagnetic fields into an intense hotspot where the halves touch to ionize surrounding gas into plasma.",
+      "Halved grapes held together by a sliver of skin focus electromagnetic hotspots at the skin bridge, creating localized plasma in a microwave."
+    ],
+    "sources": [
+      {
+        "cite": "Khattak et al. (2019), Proceedings of the National Academy of Sciences. doi:10.1073/pnas.1818350116",
+        "doi": "10.1073/pnas.1818350116",
+        "claim": "Grapes match the wavelength of microwave radiation, acting like antennas that trap electromagnetic energy."
+      }
+    ]
   }
 ]

@@ -1,16 +1,18 @@
 {
   "lessons": [
-    "Avoid starting with descriptive filler lines (e.g., 'When maple trees wake up...'), which caused a massive 38.5% drop on 'Why Maple Syrup Takes 40 Gallons'.",
-    "Do not use rhetorical pauses like 'Pause and guess...', which triggered a 15.4% drop right after the midpoint.",
-    "Hook lines that directly challenge viewer intuition (e.g., the spicy food water myth) help sustain above-average end retention (0.56 vs similar) despite a rough start.",
-    "Not enough data to definitively rank hook types for 10% retention, as all tested videos suffered from below-average start performance compared to similar YouTube shorts (0.27 to 0.46)."
+    "Avoid starting with declarative background facts without an immediate tension or conflict, as seen in the Maple Syrup video where 38.5% of viewers dropped at 13% progress after a factual sap explanation.",
+    "Do not use explicit interactive pauses or calls to guess ('Pause and guess...'), as the Maple Syrup video suffered a 15.4% drop right at the 52% mark where this occurred.",
+    "Deliver a strong narrative or sensory hook immediately within the first 10% to push retention above 1.0 (rewatch territory); the Onions and Eyes videos achieved 1.178 and 1.065 at 10% respectively, whereas descriptive informational intros like Maple Syrup fell to 0.923.",
+    "Keep initial problem statements concise and direct; the Spicy Food video hook held reasonably well at the start (1.0479 at 10%), but generic setup lines caused high early friction across all samples."
   ],
   "worst_moment_types": [
-    "Descriptive explanatory statements early in the video (around 13% progress)",
-    "Direct pauses and guessing prompts (around 52% progress)"
+    "Explanatory background trivia delivered without emotional or physical stakes",
+    "Direct prompt pauses asking the viewer to guess an answer",
+    "Slow informational tangents around the 13% to 26% video marks"
   ],
   "best_hook_types": [
-    "Contrasting myth-busting statements that address common everyday habits"
+    "Intriguing sensory dilemmas or body mysteries (eyes leaking, onion crying, spicy food relief)",
+    "High-conflict physiological setups that defy expected intuition within the first few seconds"
   ],
   "studied": "2026-11-15",
   "videos": 4

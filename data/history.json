@@ -907,7 +907,8 @@
     "repairs": 2,
     "video_id": "u_qOehVEHQI",
     "publish_at": "2026-11-13T12:00:00-05:00",
-    "answered": true
+    "answered": true,
+    "recapped": true
   },
   {
     "job": "20261112-1022-why-fresh-pineapples-burn-your-tongue-wh",
@@ -2385,6 +2386,107 @@
       "duration": 45.0
     },
     "repairs": 0,
+    "audited": true
+  },
+  {
+    "job": "20261115-0247-why-do-bananas-catch-fire-in-the-microwa",
+    "topic": "Why Do Bananas Catch Fire in the Microwave Due to Microwave Radiation and Potassium Ions?",
+    "title": "Why Do Microwaved Grapes Shoot Sparks? 🤯",
+    "description": "Discover how water-rich fruit concentrates microwave energy to create glowing plasma. #shorts #science #physics\n\nSources (open-access research):\n- Khattak et al. (2019), Proceedings of the National Academy of Sciences. doi:10.1073/pnas.1818350116\n\nIllustrations: drawn for this video with FLUX.2 [klein] 4B (AI, Apache 2.0) and checked for accuracy\nVideo by NickyPe on Pixabay\nVideo by anncapictures on Pixabay",
+    "tags": [
+      "science",
+      "physics",
+      "grape",
+      "microwave",
+      "sparks",
+      "plasma",
+      "potassium",
+      "experiments",
+      "hidden engineering"
+    ],
+    "hook": "What if a grape creates glowing plasma inside your microwave?",
+    "status": "banked",
+    "narration": "What if a grape creates glowing plasma inside your microwave? Grapes match the wavelength of microwave radiation, acting like tiny antennas that trap the electromagnetic energy. The electric field traps energy. What happens next? Guess in 3, 2, 1... Water inside grape halves traps microwave energy like a cavity resonator, concentrating electromagnetic fields into an intense hotspot where the halves touch, ionizing the surrounding gas into a bright plasma flare. Why does a microwaved grape spark?",
+    "voice_engine": "kokoro",
+    "voices": "male host, female explainer",
+    "diagrams": 0,
+    "series": "Everyday Whys",
+    "countdown": true,
+    "length_arm": "short",
+    "question": "Ever thought why a halved grape sparks when microwaved?",
+    "answer_comment": "The answer: Water inside grape halves traps microwave energy like a cavity resonator, concentrating electromagnetic fields into an intense hotspot where the halves touch to ionize the surrounding gas into plasma. What other fruit physics mystery should we explore next?\n\nSources (open-access research):\n- Khattak et al. (2019), Proceedings of the National Academy of Sciences. doi:10.1073/pnas.1818350116",
+    "sources": [
+      {
+        "claim": "Grapes match the wavelength of microwave radiation, acting like antennas that trap electromagnetic energy.",
+        "cite": "Khattak et al. (2019), Proceedings of the National Academy of Sciences. doi:10.1073/pnas.1818350116",
+        "doi": "10.1073/pnas.1818350116",
+        "title": "Linking plasma formation in grapes to microwave resonances of aqueous dimers",
+        "why": "By expanding this phenomenon to whole spherical dimers of various grape-sized fruit and hydrogel water beads, we demonstrate that the formation of plasma is due to electromagnetic hotspots arising from the cooperative interaction of Mie resonances in the individual spheres."
+      }
+    ],
+    "fact_check": [
+      "Grapes match the wavelength of microwave radiation, acting like antennas that trap electromagnetic energy.",
+      "Water inside grape halves traps microwave energy like a cavity resonator, concentrating electromagnetic fields into an intense hotspot where the halves touch to ionize surrounding gas into plasma.",
+      "Halved grapes held together by a sliver of skin focus electromagnetic hotspots at the skin bridge, creating localized plasma in a microwave."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        4.45
+      ],
+      [
+        4.45,
+        7.67
+      ],
+      [
+        7.67,
+        12.26
+      ],
+      [
+        12.26,
+        18.4
+      ],
+      [
+        18.4,
+        23.46
+      ],
+      [
+        23.46,
+        33.2
+      ],
+      [
+        33.2,
+        36.17
+      ]
+    ],
+    "duration": 36.17,
+    "scene_lines": [
+      "What if a grape creates glowing plasma inside your microwave?",
+      "Grapes match the wavelength of microwave radiation,",
+      "acting like tiny antennas that trap the electromagnetic energy.",
+      "The electric field traps energy. What happens next? Guess in 3, 2, 1...",
+      "Water inside grape halves traps microwave energy like a cavity resonator,",
+      "concentrating electromagnetic fields into an intense hotspot where the halves touch, ionizing the surrounding gas into a bright plasma flare.",
+      "Why does a microwaved grape spark?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": "u_qOehVEHQI",
+    "captions_srt": "1\n00:00:00,050 --> 00:00:04,300\nWhat if a grape creates glowing plasma inside your microwave?\n\n2\n00:00:04,450 --> 00:00:07,625\nGrapes match the wavelength of microwave radiation,\n\n3\n00:00:07,670 --> 00:00:12,095\nacting like tiny antennas that trap the electromagnetic energy.\n\n4\n00:00:12,260 --> 00:00:14,560\nThe electric field traps energy.\n\n5\n00:00:14,560 --> 00:00:16,210\nWhat happens next?\n\n6\n00:00:16,260 --> 00:00:18,310\nGuess in 3, 2, 1...\n\n7\n00:00:18,400 --> 00:00:21,675\nWater inside grape halves traps microwave energy\n\n8\n00:00:21,675 --> 00:00:25,947\nlike a cavity resonator, concentrating electromagnetic fields\n\n9\n00:00:25,947 --> 00:00:28,222\ninto an intense hotspot where the halves\n\n10\n00:00:28,222 --> 00:00:32,935\ntouch, ionizing the surrounding gas into a bright plasma flare.\n\n11\n00:00:33,200 --> 00:00:35,575\nWhy does a microwaved grape spark?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [],
+      "footage": [],
+      "review": [],
+      "heard": [
+        "\"microwaved\" heard as \"microwave\""
+      ],
+      "pass": true,
+      "duration": 35.1
+    },
+    "repairs": 2,
     "audited": true
   }
 ]
