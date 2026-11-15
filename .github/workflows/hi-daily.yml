@@ -3,7 +3,10 @@ name: Aakhir Kyun? (Hindi) - daily
 # The Hindi channel (STUDIO_CHANNEL=hi): same engine, channels/hi.json, data/hi/, the
 # video-bank-hi release, sign-in TOKEN_JSON_HI. Until that secret exists it makes and banks videos only.
 on:
-  # schedule: switched on once the Hindi channel exists and is signed in (shares the free AI quota)
+  schedule:   # 07:11, 14:41 and 18:41 IST (switched on 16 Nov 2026, channel signed in)
+    - cron: "41 1 * * *"
+    - cron: "11 9 * * *"
+    - cron: "11 13 * * *"
   workflow_dispatch: {}
 
 permissions:

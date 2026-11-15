@@ -1,7 +1,8 @@
 name: Aakhir Kyun? (Hindi) - answers and comments
 
 on:
-  # schedule: switched on once the Hindi channel exists and is signed in (shares the free AI quota)
+  schedule:   # every 2 hours (switched on 16 Nov 2026)
+    - cron: "47 */2 * * *"
   workflow_dispatch: {}
 
 permissions:
