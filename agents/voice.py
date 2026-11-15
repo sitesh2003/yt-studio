@@ -97,6 +97,47 @@ def _delivery(sent, base):
     return f"{b:+d}%", 0.0
 
 
+def _tighten(wav, keep=0.15, longer_than=0.22, floor_db=-40.0):
+    """Shorten silences INSIDE a sentence: Kokoro stops for ~0.4 s at a comma, where a person barely
+    pauses. Any inner silence longer than `longer_than` keeps only `keep` seconds. Returns the cuts as
+    [(position_in_original_clip, seconds_removed)] so the word timings can follow."""
+    import numpy as np
+    import soundfile as sf
+    a, sr = sf.read(str(wav))
+    if a.ndim > 1:
+        a = a.mean(axis=1)
+    hop = int(sr * 0.01)
+    n = len(a) // hop
+    if n < 10:
+        return []
+    rms = np.sqrt(np.mean(a[: n * hop].reshape(n, hop) ** 2, axis=1) + 1e-12)
+    quiet = 20 * np.log10(rms) < floor_db
+    runs, k = [], 0
+    while k < n:
+        if quiet[k]:
+            j = k
+            while j < n and quiet[j]:
+                j += 1
+            if k > 0 and j < n and (j - k) * 0.01 > longer_than:   # inner silences only
+                runs.append((k * hop, j * hop))
+            k = j
+        else:
+            k += 1
+    if not runs:
+        return []
+    keep_n = int(sr * keep)
+    pieces, cuts, last, removed = [], [], 0, 0
+    for s0, s1 in runs:
+        mid0, mid1 = s0 + keep_n // 2, s1 - keep_n // 2
+        pieces.append(a[last:mid0])
+        cuts.append((mid0 / sr, (mid1 - mid0) / sr))   # position in the ORIGINAL clip
+        removed += mid1 - mid0
+        last = mid1
+    pieces.append(a[last:])
+    sf.write(str(wav), np.concatenate(pieces), sr)
+    return cuts
+
+
 def _shape_clip(path, words, lift):
     """Trim the clip to the speech itself, so OUR pause is the only pause: the silence a voice engine
     puts before the first word (about 0.35 s on Kokoro) and after the last one both go. For a question,
@@ -125,10 +166,15 @@ def _shape_clip(path, words, lift):
         subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(path), "-filter_complex", fc,
                         "-map", "[o]", "-ac", "1", str(out)], check=True)
         path.unlink(missing_ok=True)
-        return out, lead
+        try:
+            cuts = _tighten(out)
+        except Exception as e:
+            log(f"voice: comma tightening skipped ({str(e)[:60]})")
+            cuts = []
+        return out, lead, cuts
     except Exception as e:
         log(f"voice: shaping skipped ({str(e)[:60]})")
-        return path, 0.0
+        return path, 0.0, []
 
 
 _KOKORO = None
@@ -247,9 +293,13 @@ def _say_sentence(sent, nxt, nxt_scene, sv, v, who, script, k, m, job_dir, words
             part.unlink(missing_ok=True)
             raise _SentenceFailed(f"Kokoro gave no audio for {sent[:50]!r}")
         sv["engine"] = v["engine"] = trial["engine"]   # the whole scene failed on Kokoro: Edge from here
-    part, lead = _shape_clip(part, w, 0.0 if whole else lift)
+    part, lead, cuts = _shape_clip(part, w, 0.0 if whole else lift)
+
+    def moved(sec):   # a time in the trimmed clip, after the shortened inner silences
+        sec -= lead
+        return sec - sum(amt for pos, amt in cuts if pos + amt <= sec + 1e-6) + t
     for x in w:
-        words.append({"start": x["start"] - lead + t, "end": x["end"] - lead + t, "text": x["text"]})
+        words.append({"start": moved(x["start"]), "end": moved(x["end"]), "text": x["text"]})
     scenes_n = len(script["scenes"])
     last = whole or nxt is None
     if last and not nxt_scene:
