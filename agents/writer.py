@@ -97,6 +97,13 @@ fish hit 5 million views and 1,800 comments in two days). Use these shapes, neve
   sleep"), settled with ONE surprising true number or mechanism. In the Nov 2026 study a channel grew
   to 65K subscribers in 4 weeks this way. Facts ONLY from established medicine (CDC, WHO, NIH level or
   peer-reviewed research); never personal treatment advice beyond "get medical help"; calm, never scary.
+- SCIENCE NEWS, EXPLAINED: one real new finding from THIS WEEK'S SCIENCE HEADLINES above, told as
+  "Scientists just found..." - what they found, how they know, why it matters to you. Never overstate
+  ("a new study suggests"), and the study itself becomes the cited source. In the 15 Nov niche scan a
+  channel built on this format had a 1.6M median per Short.
+- TOP 3: a numbered list of three TRUE, checkable things around one surprising idea ("3 animals that
+  never stop growing"), each with its one real number or reason, the most surprising last. Numbered
+  lists drove the fastest-growing new fact channel of 2026 (1.16M subscribers since July).
 - VIRAL CLAIM, CHECKED: a claim that spreads online or in everyday talk ("you lose most heat through
   your head", "goldfish have a 3-second memory", "lightning never strikes twice"), checked with the real
   evidence and one surprising true number. Calm and fair, never mocking. In the Nov 2026 study,
@@ -242,9 +249,10 @@ def length_arm(topic):
     line up. Once analyst.length_experiment() names a winner, every video uses it."""
     import hashlib
     win = ((read_json(DATA / "experiments.json", {}) or {}).get("length") or {}).get("winner")
-    if win in ("short", "standard"):
+    if win in ("short", "standard", "long"):
         return win
-    return "short" if int(hashlib.sha1(topic.lower().strip().encode()).hexdigest(), 16) % 2 else "standard"
+    # 15 Nov niche scan: several of the fastest-growing new channels run 110-170 s Shorts, so a third arm
+    return ("short", "standard", "long")[int(hashlib.sha1(topic.lower().strip().encode()).hexdigest(), 16) % 3]
 
 
 ARM = {
@@ -288,6 +296,8 @@ def write_script(topic, recap=None, fix=None):
     la = length_arm(topic)
     if la == "short":
         secs = min(secs, 28)
+    elif la == "long":
+        secs = 95       # room for a fuller "show it, then why" - still one idea
     words = int(secs * 2.55)         # ~2.55 words a second since 15 Nov (faster pace, short pauses)
     prompt = f"""Write a YouTube Short script for US viewers.
 Channel: {ch['niche']}. Tone: {ch['voice_tone']}. American English spelling.

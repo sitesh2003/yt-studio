@@ -24,8 +24,11 @@ def frame_label(script):
         done = [h for h in (read_json(DATA / "history.json", []) or [])
                 if h.get("video_id") and h.get("status") not in ("deleted", "withdrawn")]
         return f"Chapter {len(done) + 1} · {topic}"
+    done = [h for h in (read_json(DATA / "history.json", []) or [])
+            if h.get("video_id") and not h.get("weekly") and h.get("status") not in ("deleted", "withdrawn")]
     series = (script.get("series") or "").strip()
-    return f"{series} · {topic}" if series else topic
+    # a numbered series is what makes a viewer want the next one (15 Nov: 0.12% of viewers subscribed)
+    return f"Why #{len(done) + 1} · {series or topic}"
 
 
 def build(script):

@@ -36,8 +36,8 @@ def technical(job):
     video = job / "final.mp4"
     dur = _duration(video)
     long_form = (read_json(job / "meta.json", {}) or {}).get("weekly")
-    if not long_form and not 15 <= dur <= 60:
-        issues.append(f"length {dur:.1f}s is outside 15-60 s for a Short")
+    if not long_form and not 15 <= dur <= 175:   # Shorts may run to 3 minutes (since Oct 2024)
+        issues.append(f"length {dur:.1f}s is outside 15-175 s for a Short")
     vol = _ff(["-i", str(video), "-af", "volumedetect", "-vn", "-f", "null", "-"])
     m = re.search(r"mean_volume:\s*(-?[\d.]+) dB", vol)
     if not m or float(m.group(1)) < -35:

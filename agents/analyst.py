@@ -81,7 +81,7 @@ def length_experiment(rows, min_each=8, clear_lead=1.25, max_each=15):
     the countdown test: public 2+ days, 100+ views; a winner at 8+ each with a 25% lead, or at 15+ each."""
     import datetime as dt
     now = dt.datetime.now(dt.timezone.utc)
-    arms = {"short": [], "standard": []}
+    arms = {"short": [], "standard": [], "long": []}
     for r in rows:
         if r.get("length_arm") not in arms or (r.get("views") or 0) < 100 or not r.get("publish_at"):
             continue
@@ -98,13 +98,14 @@ def length_experiment(rows, min_each=8, clear_lead=1.25, max_each=15):
                 "avg_seconds": round(sum(r.get("duration") or 0 for r in v) / len(v), 1) if v else None}
             for k, v in arms.items()}
     exp.update(started="2026-11-14", measure="views per video", arms=stat)
-    a, b = stat["short"], stat["standard"]
-    if not exp.get("winner") and min(a["videos"], b["videos"]) >= min_each:
-        hi, lo = max(a["avg_views"], b["avg_views"]), max(1, min(a["avg_views"], b["avg_views"]))
-        if hi / lo >= clear_lead or min(a["videos"], b["videos"]) >= max_each:
-            exp["winner"] = "short" if a["avg_views"] >= b["avg_views"] else "standard"
+    ready = [k for k, v in stat.items() if v["videos"] >= min_each]
+    if not exp.get("winner") and len(ready) == len(stat):
+        ranked = sorted(stat, key=lambda k: -(stat[k]["avg_views"] or 0))
+        top, second = stat[ranked[0]]["avg_views"] or 0, max(1, stat[ranked[1]]["avg_views"] or 0)
+        if top / second >= clear_lead or min(v["videos"] for v in stat.values()) >= max_each:
+            exp["winner"] = ranked[0]
             exp["decided"] = now.date().isoformat()
-            log(f"analyst: length experiment decided -> {exp['winner']} ({a['avg_views']} vs {b['avg_views']} views)")
+            log(f"analyst: length experiment decided -> {exp['winner']} ({ {k: v['avg_views'] for k, v in stat.items()} })")
     write_json(DATA / "experiments.json", {**old, "length": exp})
     return exp
 
