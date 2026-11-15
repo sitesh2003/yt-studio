@@ -290,6 +290,8 @@ proportions; hexagonal ice has hexagons; arrows point the way things really move
 {("The previous figure was rejected because: " + note + " Fix that.") if note else ""}
 Return JSON: {{"svg": "<svg ...>...</svg>"}}""")
             svg = str(out.get("svg") or "")
+            for ent, ch in (("&deg;", "°"), ("&nbsp;", " "), ("&rarr;", "→"), ("&times;", "×"), ("&minus;", "−")):
+                svg = svg.replace(ent, ch)   # HTML names an SVG renderer does not know (one crashed it)
             ids = sorted({int(x) for x in re.findall(r'<g\b[^>]*\bid="s(\d+)"', svg)})
             if not svg.startswith("<svg") or len([k for k in ids if k in middle]) < 3:
                 note = "it must be one <svg> whose elements sit in groups id=s1, s2, ... for the middle scenes"
