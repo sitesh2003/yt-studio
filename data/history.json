@@ -1028,7 +1028,7 @@
       "physics"
     ],
     "hook": "Drop an apple or a pear in a bowl of water and they both float.",
-    "status": "scheduled",
+    "status": "public",
     "narration": "Drop an apple or a pear in a bowl of water and they both float. Wait, really? They look like similar fruits. They are, and both hide a secret inside their flesh. About one quarter of an apple’s volume is made up of intracellular gas spaces within its cellular structure. Okay, so the trapped gas keeps it buoyant. But what happens if we compare those air pockets to a peach? Think about if that air makes it sink or float. Pause and guess... three, two, one. Here’s why: a peach also has internal gas spaces, so it floats just like an apple. Ever thought why a watermelon, which is way bigger and heavier, still floats on the surface? Drop your guess below.",
     "voice_engine": "kokoro",
     "diagrams": 0,
@@ -1053,7 +1053,9 @@
     "repairs": 0,
     "audited": true,
     "video_id": "19fmphmc7A8",
-    "publish_at": "2026-11-14T19:00:00-05:00"
+    "publish_at": "2026-11-14T19:00:00-05:00",
+    "recapped": true,
+    "answered": true
   },
   {
     "job": "20261112-1308-why-sharks-have-zero-bones-in-their-enti",
@@ -2176,6 +2178,211 @@
       ],
       "pass": true,
       "duration": 37.2
+    },
+    "repairs": 0,
+    "audited": true
+  },
+  {
+    "job": "20261115-0136-why-backyards-ponds-do-not-freeze-solid-",
+    "topic": "Why Backyards Ponds Do Not Freeze Solid When It Is -15 °C Outside",
+    "title": "Why Ponds Don't Freeze Solid 🤔",
+    "description": "Ever wonder how fish survive harsh sub-zero winters in tiny backyard ponds? It all comes down to a strange physical property of liquid water.\n\n#science #physics #shorts\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nIllustrations: drawn for this video with FLUX.2 [klein] 4B (AI, Apache 2.0) and checked for accuracy\nPhoto by fietzfotos on Pixabay\nVideo by TPMotion on Pixabay\nVideo by TungArt7 on Pixabay\n\nHow this was made: the script is researched and fact-checked with AI tools against open-access research (sources above when found), narrated by an AI voice, and edited with open-source software. Corrections from viewers are checked and credited.",
+    "tags": [
+      "pond science",
+      "why ponds don't freeze solid",
+      "water density anomaly",
+      "physics of ice",
+      "how fish survive winter",
+      "backyard pond physics"
+    ],
+    "hook": "Your frozen pond is secretly keeping fish alive.",
+    "status": "banked",
+    "narration": "Your frozen pond is secretly keeping fish alive. At negative fifteen degrees, why doesn't it freeze solid? Many liquids shrink when cold, but water does something strange. So why does ice float on top? Water reaches maximum density at four degrees Celsius. Water gets lighter as it turns to ice, floating to the top and creating an insulating lid. Yesterday: watermelons float because their density is below water. Ever thought why ice cubes float in your glass?",
+    "voice_engine": "kokoro",
+    "voices": "male host, female explainer",
+    "diagrams": 1,
+    "series": "How Things Work",
+    "countdown": false,
+    "length_arm": "short",
+    "question": "Ever thought why ice cubes float in your glass?",
+    "answer_comment": "The answer: Ice cubes float because solid water expands and becomes less dense than liquid water, forming an open crystal structure. This density drop makes ice lighter than the surrounding liquid, so it sits on top instead of sinking. What everyday object should we test for density next?",
+    "sources": [],
+    "fact_check": [
+      "Water reaches its maximum density at approximately 4 °C (39 °F).",
+      "Liquid water cooler than 4 °C becomes less dense and rises toward the surface, freezing into an insulating layer of ice.",
+      "The ice layer acts as a thermal insulator, preventing the underlying water from freezing solid and allowing aquatic life to survive.",
+      "Watermelons float because their overall average density is lower than that of liquid water."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        3.63
+      ],
+      [
+        3.63,
+        8.1
+      ],
+      [
+        8.1,
+        12.44
+      ],
+      [
+        12.44,
+        14.89
+      ],
+      [
+        14.89,
+        18.76
+      ],
+      [
+        18.76,
+        24.38
+      ],
+      [
+        24.38,
+        28.92
+      ],
+      [
+        28.92,
+        32.32
+      ]
+    ],
+    "duration": 32.32,
+    "scene_lines": [
+      "Your frozen pond is secretly keeping fish alive.",
+      "At negative fifteen degrees, why doesn't it freeze solid?",
+      "Many liquids shrink when cold, but water does something strange.",
+      "So why does ice float on top?",
+      "Water reaches maximum density at four degrees Celsius.",
+      "Water gets lighter as it turns to ice, floating to the top and creating an insulating lid.",
+      "Yesterday: watermelons float because their density is below water.",
+      "Ever thought why ice cubes float in your glass?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": "19fmphmc7A8",
+    "captions_srt": "1\n00:00:00,050 --> 00:00:03,630\nYour frozen pond is secretly keeping fish alive.\n\n2\n00:00:03,630 --> 00:00:07,855\nAt negative fifteen degrees, why doesn't it freeze solid?\n\n3\n00:00:08,100 --> 00:00:12,025\nMany liquids shrink when cold, but water does something strange.\n\n4\n00:00:12,440 --> 00:00:14,640\nSo why does ice float on top?\n\n5\n00:00:14,890 --> 00:00:18,665\nWater reaches maximum density at four degrees Celsius.\n\n6\n00:00:18,760 --> 00:00:20,385\nWater gets lighter as it turns to\n\n7\n00:00:20,385 --> 00:00:24,260\nice, floating to the top and creating an insulating lid.\n\n8\n00:00:24,380 --> 00:00:28,730\nYesterday: watermelons float because their density is below water.\n\n9\n00:00:28,920 --> 00:00:31,720\nEver thought why ice cubes float in your glass?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [],
+      "footage": [],
+      "review": [],
+      "pass": true,
+      "duration": 31.5
+    },
+    "repairs": 0,
+    "audited": true
+  },
+  {
+    "job": "20261115-0159-why-metal-becomes-significantly-harder-a",
+    "topic": "Why Metal Becomes Significantly Harder and Stronger When Heat Treated",
+    "title": "Why Heat Treating Makes Steel Hard 🤯",
+    "description": "Discover how heating and rapid cooling trap carbon atoms to lock steel into a rigid, hard structure. #shorts #science #engineering\n\nSources (open-access research):\n- Wijnen et al. (2025), Materials & Design. doi:10.1016/j.matdes.2025.113698\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nIllustrations: drawn for this video with FLUX.2 [klein] 4B (AI, Apache 2.0) and checked for accuracy\nPhoto: sponsor: ARMCO studio: Tri-State Motion Pictures, Public domain, via Wikimedia Commons\nVideo by AlexKopeykin on Pixabay\nVideo by Cal_Captures on Pixabay\nVideo by romyrwood on Pixabay\n\nHow this was made: the script is researched and fact-checked with AI tools against open-access research (sources above when found), narrated by an AI voice, and edited with open-source software. Corrections from viewers are checked and credited.",
+    "tags": [
+      "heat treatment",
+      "metallurgy",
+      "steel strength",
+      "how it works",
+      "engineering"
+    ],
+    "hook": "Why does heating and quenching metal lock it into a rigid structure? 🤯",
+    "status": "banked",
+    "narration": "Why does heating and quenching metal lock it into a rigid structure? 🤯 At room temperature, iron atoms sit neatly in organized crystal layers. Push on them, and those neat layers simply slide past each other. That is why soft iron bends so easily. Wait, it gets stranger when you crank up the heat. Heat it red hot, and the crystal layout completely rearranges itself. Think about what happens when you plunge that glowing metal into cold water... Pause and guess... three, two, one. Sudden cooling traps the carbon atoms midway, locking the crystal layers in a severe twist. Ever thought why a simple blacksmithing quench makes the steel so hard? Drop your guess below.",
+    "voice_engine": "kokoro",
+    "voices": "male host, female explainer",
+    "diagrams": 1,
+    "series": "How Things Work",
+    "countdown": true,
+    "length_arm": "standard",
+    "question": "Ever thought why a simple blacksmithing quench makes the steel so hard?",
+    "answer_comment": "The answer: Quenching cools the hot metal so fast that carbon atoms get trapped inside the iron crystal lattice before they can escape. This trapped carbon distorts the crystal shape, preventing the layers from sliding past each other and making the steel rigid and hard. Got a question about how other materials change shape? Drop it below!\n\nSources (open-access research):\n- Wijnen et al. (2025), Materials & Design. doi:10.1016/j.matdes.2025.113698",
+    "sources": [
+      {
+        "claim": "At room temperature, iron atoms form a ferrite crystal structure where planes can slip past each other.",
+        "cite": "Wijnen et al. (2025), Materials & Design. doi:10.1016/j.matdes.2025.113698",
+        "doi": "10.1016/j.matdes.2025.113698",
+        "title": "Discrete slip plane analysis of ferrite microtensile tests: Influence of dislocation source distribution and non-Schmid effects on slip system activity",
+        "why": "The slip system activity in microtensile tests of ferrite single crystals is compared with predictions made by the discrete slip plane model"
+      }
+    ],
+    "fact_check": [
+      "At room temperature, iron atoms form a ferrite crystal structure where planes can slip past each other.",
+      "Heating iron transforms it into austenite, dissolving carbon atoms in the face-centered cubic structure.",
+      "Rapid quenching freezes the carbon in place, forming martensite, which is a stressed body-centered tetragonal structure that resists dislocation movement and increases hardness."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        4.92
+      ],
+      [
+        4.92,
+        10.12
+      ],
+      [
+        10.12,
+        14.43
+      ],
+      [
+        14.43,
+        17.5
+      ],
+      [
+        17.5,
+        20.3
+      ],
+      [
+        20.3,
+        24.78
+      ],
+      [
+        24.78,
+        29.74
+      ],
+      [
+        29.74,
+        33.27
+      ],
+      [
+        33.27,
+        39.39
+      ],
+      [
+        39.39,
+        45.74
+      ]
+    ],
+    "duration": 45.74,
+    "scene_lines": [
+      "Why does heating and quenching metal lock it into a rigid structure? 🤯",
+      "At room temperature, iron atoms sit neatly in organized crystal layers.",
+      "Push on them, and those neat layers simply slide past each other.",
+      "That is why soft iron bends so easily.",
+      "Wait, it gets stranger when you crank up the heat.",
+      "Heat it red hot, and the crystal layout completely rearranges itself.",
+      "Think about what happens when you plunge that glowing metal into cold water...",
+      "Pause and guess... three, two, one.",
+      "Sudden cooling traps the carbon atoms midway, locking the crystal layers in a severe twist.",
+      "Ever thought why a simple blacksmithing quench makes the steel so hard? Drop your guess below."
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,050 --> 00:00:02,450\nWhy does heating and quenching metal lock\n\n2\n00:00:02,450 --> 00:00:04,525\nit into a rigid structure?\n\n3\n00:00:04,770 --> 00:00:07,458\nAt room temperature, iron atoms sit neatly\n\n4\n00:00:07,458 --> 00:00:09,645\nin organized crystal layers.\n\n5\n00:00:09,870 --> 00:00:11,908\nPush on them, and those neat layers\n\n6\n00:00:11,908 --> 00:00:14,245\nsimply slide past each other.\n\n7\n00:00:14,290 --> 00:00:16,915\nThat is why soft iron bends so easily.\n\n8\n00:00:17,100 --> 00:00:20,100\nWait, it gets stranger when you crank up the heat.\n\n9\n00:00:20,110 --> 00:00:21,935\nHeat it red hot, and the crystal\n\n10\n00:00:21,935 --> 00:00:24,435\nlayout completely rearranges itself.\n\n11\n00:00:24,620 --> 00:00:26,495\nThink about what happens when you plunge\n\n12\n00:00:26,495 --> 00:00:29,340\nthat glowing metal into cold water...\n\n13\n00:00:29,340 --> 00:00:30,770\nPause and guess...\n\n14\n00:00:30,770 --> 00:00:32,570\nthree, two, one.\n\n15\n00:00:32,930 --> 00:00:35,942\nSudden cooling traps the carbon atoms midway,\n\n16\n00:00:35,942 --> 00:00:38,780\nlocking the crystal layers in a severe twist.\n\n17\n00:00:39,090 --> 00:00:41,615\nEver thought why a simple blacksmithing quench\n\n18\n00:00:41,615 --> 00:00:43,620\nmakes the steel so hard?\n\n19\n00:00:43,620 --> 00:00:45,145\nDrop your guess below.\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [],
+      "footage": [],
+      "review": [],
+      "heard": [
+        "\"atoms\" heard as \"atom's\""
+      ],
+      "pass": true,
+      "duration": 45.0
     },
     "repairs": 0,
     "audited": true

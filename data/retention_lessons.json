@@ -1,17 +1,17 @@
 {
   "lessons": [
-    "Avoid starting with declarative background facts or process descriptions (like tree sap composition), as they trigger massive initial drop-offs up to 38.5%.",
-    "Eliminate mid-video pauses and guessing prompts (e.g., 'Pause and guess...'), which cause immediate abandonment (15.4% drop).",
-    "Keep hook lines directly tied to counter-intuitive sensory experiences rather than abstract statements to minimize early viewer bleeding.",
-    "Not enough data to definitively rank best-holding script structures due to small sample size and consistently low end-retention across all videos."
+    "Avoid starting with descriptive filler lines (e.g., 'When maple trees wake up...'), which caused a massive 38.5% drop on 'Why Maple Syrup Takes 40 Gallons'.",
+    "Do not use rhetorical pauses like 'Pause and guess...', which triggered a 15.4% drop right after the midpoint.",
+    "Hook lines that directly challenge viewer intuition (e.g., the spicy food water myth) help sustain above-average end retention (0.56 vs similar) despite a rough start.",
+    "Not enough data to definitively rank hook types for 10% retention, as all tested videos suffered from below-average start performance compared to similar YouTube shorts (0.27 to 0.46)."
   ],
   "worst_moment_types": [
-    "Explanatory background filler facts early in the video",
-    "Mid-video rhetorical questions paired with pauses"
+    "Descriptive explanatory statements early in the video (around 13% progress)",
+    "Direct pauses and guessing prompts (around 52% progress)"
   ],
   "best_hook_types": [
-    "Not enough data"
+    "Contrasting myth-busting statements that address common everyday habits"
   ],
-  "studied": "2026-11-14",
+  "studied": "2026-11-15",
   "videos": 4
 }

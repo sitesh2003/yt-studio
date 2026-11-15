@@ -3,6 +3,24 @@
 Every video, the claims it makes, and the open-access research behind them. Built automatically by
 agents/library.py; a source is listed only if its abstract was checked to support the claim.
 
+## Why Ponds Don't Freeze Solid 🤔
+*2026-11-15 · How Things Work*
+
+- Water reaches its maximum density at approximately 4 °C (39 °F).
+- Liquid water cooler than 4 °C becomes less dense and rises toward the surface, freezing into an insulating layer of ice.
+- The ice layer acts as a thermal insulator, preventing the underlying water from freezing solid and allowing aquatic life to survive.
+- Watermelons float because their overall average density is lower than that of liquid water.
+
+## Why Heat Treating Makes Steel Hard 🤯
+*2026-11-15 · How Things Work*
+
+- At room temperature, iron atoms form a ferrite crystal structure where planes can slip past each other.
+- Heating iron transforms it into austenite, dissolving carbon atoms in the face-centered cubic structure.
+- Rapid quenching freezes the carbon in place, forming martensite, which is a stressed body-centered tetragonal structure that resists dislocation movement and increases hardness.
+
+Sources:
+- Wijnen et al. (2025), Materials & Design. doi:10.1016/j.matdes.2025.113698 — supports: At room temperature, iron atoms form a ferrite crystal structure where planes can slip past each other.
+
 ## Why Highway Guardrails Have Heavy End Boxes 🤯
 *2026-11-14 · How Things Work*
 

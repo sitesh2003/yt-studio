@@ -1,15 +1,15 @@
 # Ever Thought Why? - status
 
-Updated Sun 15 Nov, 03:53 AM IST by the health agent (every 2 hours, and after every production run).
+Updated Sun 15 Nov, 07:55 AM IST by the health agent (every 2 hours, and after every production run).
 
-- Video bank: 12 of 14 videos ready (8 waiting in the bank, 4 scheduled on YouTube); YouTube schedule covers until Mon 16 Nov, 05:30 AM IST.
-- Next production run: Sun 15 Nov, 09:17 AM IST.
+- Video bank: 13 of 14 videos ready (10 waiting in the bank, 3 scheduled on YouTube); YouTube schedule covers until Mon 16 Nov, 05:30 AM IST.
+- Next production run: Sun 15 Nov, 09:17 AM IST (one is running now).
+- GitHub skipped the production run planned for Sun 15 Nov, 03:13 AM IST.
 
 ## Videos waiting to go public
 
 | Goes public (India) | US time |
 |---|---|
-| Sun 15 Nov, 05:30 AM IST | Sat 07:00 PM ET |
 | Sun 15 Nov, 08:30 PM IST | Sun 10:00 AM ET |
 | Sun 15 Nov, 10:30 PM IST | Sun 12:00 PM ET |
 | Mon 16 Nov, 05:30 AM IST | Sun 07:00 PM ET |

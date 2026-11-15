@@ -125,5 +125,40 @@
       "Pressing the tongue against the palate is a widely accepted technique to alleviate the sensation by providing warmth."
     ],
     "sources": []
+  },
+  {
+    "job": "20261115-0136-why-backyards-ponds-do-not-freeze-solid-",
+    "date": "2026-11-15",
+    "title": "Why Ponds Don't Freeze Solid 🤔",
+    "topic": "Why Backyards Ponds Do Not Freeze Solid When It Is -15 °C Outside",
+    "series": "How Things Work",
+    "weekly": false,
+    "claims": [
+      "Water reaches its maximum density at approximately 4 °C (39 °F).",
+      "Liquid water cooler than 4 °C becomes less dense and rises toward the surface, freezing into an insulating layer of ice.",
+      "The ice layer acts as a thermal insulator, preventing the underlying water from freezing solid and allowing aquatic life to survive.",
+      "Watermelons float because their overall average density is lower than that of liquid water."
+    ],
+    "sources": []
+  },
+  {
+    "job": "20261115-0159-why-metal-becomes-significantly-harder-a",
+    "date": "2026-11-15",
+    "title": "Why Heat Treating Makes Steel Hard 🤯",
+    "topic": "Why Metal Becomes Significantly Harder and Stronger When Heat Treated",
+    "series": "How Things Work",
+    "weekly": false,
+    "claims": [
+      "At room temperature, iron atoms form a ferrite crystal structure where planes can slip past each other.",
+      "Heating iron transforms it into austenite, dissolving carbon atoms in the face-centered cubic structure.",
+      "Rapid quenching freezes the carbon in place, forming martensite, which is a stressed body-centered tetragonal structure that resists dislocation movement and increases hardness."
+    ],
+    "sources": [
+      {
+        "cite": "Wijnen et al. (2025), Materials & Design. doi:10.1016/j.matdes.2025.113698",
+        "doi": "10.1016/j.matdes.2025.113698",
+        "claim": "At room temperature, iron atoms form a ferrite crystal structure where planes can slip past each other."
+      }
+    ]
   }
 ]

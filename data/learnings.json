@@ -1,13 +1,14 @@
 {
-  "summary": "Prioritize short, highly punchy hook sentences under 10 words to maximize initial viewer retention. Focus on visceral, counter-intuitive bodily reactions like eating and biological defense mechanisms. Use dramatic, short-form titles instead of descriptive academic summaries to drive algorithmic interest. Eliminate lengthy, explanatory hook clauses that reveal the full context too early. Keep average view durations high by maintaining active curiosity gaps in the middle segments of the video.",
+  "summary": "Focus video length on maintaining a duration where averageViewDuration exceeds 35 seconds to maximize retention. Use short, high-impact hooks under 10 words that make visceral or predatory claims, like 'eating you back'. Avoid explanatory or conversational opening statements that lower curiosity. Match engaging visual titles with concise hooks to drive view percentages above 100%. Prioritize biological or physical oddities over historical or manufacturing processes.",
   "winning_hooks": [
     "Fresh pineapple is literally eating you back.",
-    "Your eyes are leaking right now, and your brain is hiding it.",
-    "This shark is older than the United States."
+    "This shark is older than the United States.",
+    "Your eyes are leaking right now, and your brain is hiding it."
   ],
   "avoid": [
-    "Starting hooks with explanatory phrases like 'Garlic usually doesn't make you cry when you chop it, because...'",
-    "Using long, academic titles that lack curiosity-driven contrast or emotional hooks."
+    "Starting hooks with explanatory phrases like 'Garlic usually doesn't make you cry because...'",
+    "Using process-based topics like 'How Authentic Maple Syrup Is Boiled Down'",
+    "Long, multi-clause hook setups that delay the core oddity past the first 3 seconds"
   ],
-  "next_experiment": "Test an A/B split on a new biological topic comparing a 6-word shocking hook ('Your saliva is currently dissolving you') against a standard descriptive hook ('Why your mouth produces liquid all day') while tracking averageViewPercentage for rewatch value."
+  "next_experiment": "Test a physical-reaction topic ('Why your skin gets goosebumps') using a brutal, 6-word hook ('Your body is glitching when you're cold') against a standard explanatory hook."
 }

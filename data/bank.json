@@ -94,5 +94,29 @@
     "locked": true,
     "series": "Body Whys",
     "stored": "2026-11-14T22:21:37.015410+00:00"
+  },
+  {
+    "job": "20261115-0136-why-backyards-ponds-do-not-freeze-solid-",
+    "title": "Why Ponds Don't Freeze Solid 🤔",
+    "assets": {
+      "mp4": 749467773,
+      "jpg": 749467978,
+      "json": 749468008
+    },
+    "locked": true,
+    "series": "How Things Work",
+    "stored": "2026-11-15T01:56:13.101399+00:00"
+  },
+  {
+    "job": "20261115-0159-why-metal-becomes-significantly-harder-a",
+    "title": "Why Heat Treating Makes Steel Hard 🤯",
+    "assets": {
+      "mp4": 749544094,
+      "jpg": 749544595,
+      "json": 749544620
+    },
+    "locked": true,
+    "series": "How Things Work",
+    "stored": "2026-11-15T02:25:43.267871+00:00"
   }
 ]
