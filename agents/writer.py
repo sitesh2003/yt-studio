@@ -407,10 +407,12 @@ Rules:
   part...", "And that's not even the strangest bit."). Never pad; each turn must lead to a new fact.
 - COMMENTS: one moment that invites people to share their own experience (a habit, a food, a pet),
   without asking for comments directly until the closing question.
-- TWO NARRATORS, a natural conversation between friends: the HOST is curious - opens with the
-  hook, wonders aloud, reacts ("Wait, really?"), {{host_rule}}, and asks
-  the closing "Ever thought why" question; the EXPLAINER answers warmly and clearly. Mark every scene
-  "speaker": "host" or "explainer". Never have them introduce themselves or use names.
+- ONE NARRATOR, one voice, talking straight to the viewer like a friend who can't wait to tell them
+  this (16 Nov 2026, owner: two voices felt like an overheard conversation). The same person opens
+  with the hook, wonders aloud ("Wait, really?" then answers it), {{host_rule}}, explains, and asks the
+  closing "Ever thought why" question. Still mark scenes "speaker": "host" for the hook, the asides
+  and the closing question and "explainer" for the rest (it sets the delivery, not a second voice).
+  Never introduce yourself or use names.
 - LOOP: Shorts replay automatically, and a replay counts. Make the very last words of the closing
   question lead naturally back into the first line, so the video feels like one circle (e.g. the
   question ends on the same object the hook opens with). End right after the question - no outro.

@@ -160,8 +160,10 @@ Rules:
 - One idea per sentence. Short words. Talk to one student ("you"), warm and clear, like the best
   teacher they ever had. Contractions are fine. No "subscribe", "like", "share" or "follow".
 {SPOKEN}
-- TWO NARRATORS: the HOST asks the hook and the Try-this question and reacts like a curious student;
-  the EXPLAINER shows and explains. Mark every scene "speaker": "host" or "explainer".
+- ONE NARRATOR, one voice: a teacher talking straight to one student, asking the hook question,
+  explaining, reacting naturally, and asking the Try-this question (16 Nov 2026, owner: two voices felt
+  like a conversation). Still mark scenes "speaker": "host" (hook, asides, Try this) or "explainer" (the
+  rest); it sets the delivery only.
 - 7 to 10 scenes. For each scene: "visual_query" = 1-3 plain concrete nouns for real footage of what is
   on screen, plus 2 "alt_queries". Most scenes here will be DRAWN as diagrams or animations from the
   narration, so make each line say exactly what should be drawn (the objects, the numbers, the arrows).

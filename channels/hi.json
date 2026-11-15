@@ -24,15 +24,16 @@
   },
   "voice": {
     "engine": "edge-tts",
-    "name": "hi-IN-MadhurNeural",
+    "name": "hi-IN-SwaraNeural",
     "narrators": {
       "host": {
         "edge": "hi-IN-SwaraNeural"
       },
       "explainer": {
-        "edge": "hi-IN-MadhurNeural"
+        "edge": "hi-IN-SwaraNeural"
       }
-    }
+    },
+    "_note": "ONE narrator per channel (16 Nov 2026, owner: two voices felt like an overheard conversation; a single consistent voice becomes the channel's identity). host/explainer only change delivery."
   },
   "captions": {
     "font": "Hind",

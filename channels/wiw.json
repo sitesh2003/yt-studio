@@ -45,10 +45,11 @@
         "edge": "en-US-EmmaMultilingualNeural"
       },
       "explainer": {
-        "kokoro": "am_fenrir",
-        "edge": "en-US-BrianMultilingualNeural"
+        "kokoro": "af_bella",
+        "edge": "en-US-EmmaMultilingualNeural"
       }
-    }
+    },
+    "_note": "ONE narrator per channel (16 Nov 2026, owner: two voices felt like an overheard conversation; a single consistent voice becomes the channel's identity). host/explainer only change delivery."
   },
   "publish": {
     "category_id": "27",

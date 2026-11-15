@@ -355,6 +355,8 @@ def narrate(script, job_dir):
         who = script["scenes"][k].get("speaker") or ("host" if k == 0 or k == len(scenes) - 1 else "explainer")
         cast = cast_map.get(who, {})
         sv = dict(v, kokoro_voice=cast.get("kokoro") or v.get("kokoro_voice"), edge_voice=cast.get("edge"))
+        if cast.get("engine"):   # a narrator can use its own engine (e.g. an Edge voice beside a Kokoro one)
+            sv["engine"] = cast["engine"]
         sents = _merge_short(sentences(text)) or [text]
         nxt_scene = scenes[k + 1] if k + 1 < len(scenes) else ""
         mark = (len(words), len(parts), t, n_sent)

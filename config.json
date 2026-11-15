@@ -43,15 +43,15 @@
     "name": "en-US-AndrewMultilingualNeural",
     "rate": "+6%",
     "kokoro_voice": "af_heart",
-    "_note": "two narrators: a curious host (hook, wondering aloud, pause-and-guess, closing question) and an explainer; Kokoro first, the Edge voices are the fallback",
+    "_note": "ONE narrator per channel (16 Nov 2026, owner: two voices felt like an overheard conversation; a single consistent voice becomes the channel's identity). host/explainer only change delivery.",
     "narrators": {
       "host": {
         "kokoro": "af_heart",
         "edge": "en-US-AvaMultilingualNeural"
       },
       "explainer": {
-        "kokoro": "am_michael",
-        "edge": "en-US-AndrewMultilingualNeural"
+        "kokoro": "af_heart",
+        "edge": "en-US-AvaMultilingualNeural"
       }
     }
   },
