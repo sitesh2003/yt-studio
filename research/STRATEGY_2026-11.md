@@ -436,3 +436,45 @@ disclosure in the video and the description; ASCI (India) wants an "Ad"/"Affilia
 | 72 science words read by Kokoro, transcribed by faster-whisper | 66 clean; one real error, "bromelain" (said "bromline") | assets/lexicon.json gives Kokoro the right sounds; captions keep the spelling |
 | Weekly long video #5 | succeeded (6 min 44 s, 73 sentences with natural pauses); scheduled Sun 15 Nov 10:00 ET | the safe save (absorb onto latest state) worked first time |
 | Listening check in production | clean on the newest main videos | spacing differences ("mouth parts") ignored; overall score by letters |
+
+## 18. Niche scan and our own numbers (15 Nov 2026, measured - not from articles)
+**Method.** Our YouTube Analytics (last 28 days) + YouTube Data API: the most-viewed English science
+Shorts of the last 60 days for 8 topic searches (US region), then the last 30 uploads of the 60
+channels behind them (median views, uploads a week, length, title patterns). Script:
+scratchpad niche_scan_1115.py; rows saved as niche_rows_1115.json.
+
+**Our numbers (28 days; analytics lag 2-3 days):** 5,123 views, 96% from the Shorts feed, 21 s average
+watch (52%), +6/-4 subscribers (0.12% of viewers subscribe - the weakest number), US 52%,
+Philippines 11%, India 9%. Best: eyes leaking, onions, pruney fingers, spicy food (1.1-1.3K each) -
+body and food everyday topics.
+
+**The niche (median views of recent Shorts):**
+| Channel | Subs | Started | Median | Per week | Length | Note |
+|---|---|---|---|---|---|---|
+| Zack D. Films | 29.7M | 2021 | 7.0M | 42 | 36 s | emoji in every title |
+| Dr Ben Miles | 2.7M | 2014 | 1.6M | 2.2 | 117 s | "Scientists discover..." news |
+| Unique Fact Official | 1.16M | Jul 2026 | 963K | 8 | 63 s | numbered lists (67% of titles) |
+| Atharv Explains Why | 202K | Apr 2026 | 413K | 3.4 | 139 s | Hindi-English |
+| Kam Ki Bat Studio | 333K | Apr 2026 | 422K | 4.9 | 119 s | Hindi, how it's made |
+| Meanwhile Mayank | 77.5K | Oct 2026 | 362K | 6 | 142 s | story-driven |
+| How Made | 84K | Aug 2026 | 326K | 5 | 167 s | process videos |
+| The Why Side | 60K | Sep 2026 | 62K | 11.7 | 58 s | closest to our format |
+
+**What it says:**
+1. Volume matters (Zack: 42/week); our 14/week is in range for a new channel.
+2. Several of the fastest-growing 2026 channels run 110-170 s Shorts; we had never tested beyond 48 s.
+3. Science news ("Scientists just found...") and numbered lists are proven formats we lacked.
+4. Hindi/Telugu science Shorts are the fastest-growing segment of all; India is already 9% of our
+   viewers and the student channel's natural audience.
+5. Subscribing follows recognisable series (Zack's fixed title style, Zovik's chapters); we had none.
+
+**Built (commit 7228d61):** length test now short/standard/long (~28/40/95 s), QA accepts up to 175 s;
+formats SCIENCE NEWS, EXPLAINED and TOP 3; numbered main-channel episodes ("Why #N · series").
+
+**Next, in order:**
+1. Watch the length test and the two new formats in the daily report; double down on what wins.
+2. A Hindi-language version of Why It Works (Kokoro has a Hindi voice; the Indian student market is
+   where the fastest growth is) - once the English channel's format is stable.
+3. The owner's own voice on the weekly intro (the "creative voice" YouTube's reviewers look for, and
+   the strongest subscribe signal we can add without asking for subscribes).
+4. Re-run this scan monthly (same script) and compare.
