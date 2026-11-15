@@ -320,10 +320,45 @@ def _fit(d, text, max_w, start=170, low=70):
     return _font(size)
 
 
+def _headline_shaped(canvas, text, cy, highlight=""):
+    """The thumbnail headline for scripts that need shaping (Hindi): drawn as SVG and rendered by
+    resvg, which joins conjuncts and vowel signs correctly (Pillow here splits them)."""
+    import io as _io
+    import resvg_py
+    from xml.sax.saxutils import escape
+    W, H = canvas.size
+    words = text.split()
+    lines = [" ".join(words)] if len(words) <= 2 else [" ".join(words[:len(words) // 2]),
+                                                       " ".join(words[len(words) // 2:])]
+    hl = set(highlight.split())
+    size = int(min(170, W * 0.9 / max(1, max(len(ln) for ln in lines) * 0.52)))
+    lh = int(size * 1.15)
+    y = cy - lh * len(lines) // 2 + int(size * 0.85)
+    parts = []
+    for ln in lines:
+        spans = "".join(f'<tspan fill="{"#ffde00" if w in hl else "#ffffff"}">{escape(w)} </tspan>' for w in ln.split())
+        parts.append(f'<text x="{W // 2 + 7}" y="{y + 9}" text-anchor="middle" font-family="Hind" font-weight="bold" '
+                     f'font-size="{size}" fill="#000">{escape(ln)}</text>')
+        parts.append(f'<text x="{W // 2}" y="{y}" text-anchor="middle" font-family="Hind" font-weight="bold" '
+                     f'font-size="{size}" stroke="#000" stroke-width="{max(6, size // 13)}" paint-order="stroke" '
+                     f'stroke-linejoin="round">{spans}</text>')
+        y += lh
+    svg = f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}">{"".join(parts)}</svg>'
+    own = (config().get("captions") or {}).get("font_file")
+    png = resvg_py.svg_to_bytes(svg_string=svg, font_files=[str(ASSETS.parent / own)] if own else [FONT],
+                                font_family="Hind", width=W, height=H)
+    layer = Image.open(_io.BytesIO(bytes(png))).convert("RGBA")
+    base = canvas.convert("RGBA")
+    base.alpha_composite(layer)
+    canvas.paste(base.convert(canvas.mode))
+
+
 def _headline(canvas, text, cy, highlight=""):
     """Big centred line(s); highlight word(s) in yellow; heavy outline and drop shadow."""
     if not text:
         return
+    if (config()["channel"].get("language") or "en")[:2] != "en":
+        return _headline_shaped(canvas, text, cy, highlight)
     d = ImageDraw.Draw(canvas)
     W = canvas.width
     words = text.upper().split()
