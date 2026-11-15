@@ -16,7 +16,23 @@ from agents import editor, trends, visuals, voice, writer
 from agents.core import DATA, JOBS, ROOT, config, log, read_json, slug, write_json
 
 
+def frame_label(script):
+    """'CHAPTER 7 · ELECTROLYSIS' on Why It Works (numbered lessons, like a course), 'FOOD WHYS ·
+    MAPLE SAP' on the main channel. Shown at the top of the frame for the whole video."""
+    topic = (script.get("frame_title") or "").strip() or " ".join((script.get("topic") or "").split()[:3])
+    if config()["channel"].get("style") == "student":
+        done = [h for h in (read_json(DATA / "history.json", []) or [])
+                if h.get("video_id") and h.get("status") not in ("deleted", "withdrawn")]
+        return f"Chapter {len(done) + 1} · {topic}"
+    series = (script.get("series") or "").strip()
+    return f"{series} · {topic}" if series else topic
+
+
 def build(script):
+    try:
+        script.setdefault("frame_label", frame_label(script))
+    except Exception as e:
+        log(f"frame label skipped: {str(e)[:60]}")
     try:   # if most recent titles open the same way, lead with an option that does not
         from agents import variety
         script["title_options"] = variety.pick_title(script.get("title_options"))
@@ -316,6 +332,26 @@ def publish_due(hours=30):
         try:
             bank.fetch(item, job)
             meta = read_json(job / "meta.json")
+            # LAST LISTEN before it goes out (15 Nov: a published Short and a test video were missing whole
+            # phrases; videos banked before that fix were only checked on the voice track). A video whose
+            # finished audio drops a phrase is never uploaded: it leaves the bank and its topic is free to
+            # be made again.
+            try:
+                from agents import listen
+                lines = meta.get("scene_lines") or []
+                if listen.available() and lines:
+                    issues, _ = listen.check(job, {"scenes": [{"narration": l} for l in lines]})
+                    if issues:
+                        log(f"publisher: NOT uploading '{meta.get('title')}' - {issues[0]}; removed from the bank")
+                        bank.remove(item)
+                        hist = read_json(DATA / "history.json", []) or []
+                        for h in hist:
+                            if h.get("job") == item["job"]:
+                                h.update(status="withdrawn", withdrawn_reason=f"final audio check: {issues[0][:160]}")
+                        write_json(DATA / "history.json", hist)
+                        continue
+            except Exception as e:
+                log(f"publisher: last listen unavailable ({str(e)[:80]})")
             vid, when = youtube.upload(job, meta, slot)
             try:
                 youtube.add_to_series(vid, meta.get("series") or item.get("series"))

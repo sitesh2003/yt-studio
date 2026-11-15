@@ -33,6 +33,11 @@ jobs:
       - name: Install Python packages
         run: pip install -q -r requirements.txt
 
+      - name: faster-whisper, for the last listen before publishing (optional)
+        continue-on-error: true
+        timeout-minutes: 5
+        run: pip install -q "faster-whisper==1.2.1"
+
       - name: Write sign-in files from secrets
         env:
           CLIENT_SECRET_JSON: ${{ secrets.CLIENT_SECRET_JSON }}
