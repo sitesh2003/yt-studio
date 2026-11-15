@@ -1,20 +1,17 @@
 {
   "lessons": [
-    "Never insert arbitrary pauses or interaction prompts like 'Pause and guess...', which lost 15.4% of viewers at 52% in the Maple Syrup video.",
-    "Avoid jumping directly into slow background setups after the hook; explaining sap composition lost 38.5% of viewers at 13% in the Maple Syrup video.",
-    "Keep verbal hooks tight; overly long descriptive hook sentences caused an immediate 22.4% viewer drop at 10% in the Cold Water video.",
-    "Focus on intrigue that naturally drives immediate rewatches at the start; videos with strong visual curiosity peaked above 1.0 retention at 10% (up to 1.178 in 'Why Onions Make You Cry').",
-    "Avoid closing with redundant side-questions near the end; asking another rhetorical question at 94% dropped 11.6% of viewers in the Cold Water video."
+    "Avoid starting with declarative descriptive facts about tree biology; the maple syrup video lost 38.5% of viewers at 13% duration when explaining sap composition, compared to much better retention on psychological or body-related hooks.",
+    "Do not use explicit interactive pauses asking the audience to guess; the maple syrup video suffered a 15.4% drop right after the line 'Pause and guess...'.",
+    "Hook lines that immediately establish a relatable human sensation or counterintuitive mystery (like spicy food relief failing) maintain better performance at the 50% mark (47.95%) despite poor starts.",
+    "Not enough data to conclusively determine the effect of countdowns, as all provided entries have countdown set to null.",
+    "To improve start performance relative to similar YouTube videos (currently ranging from 0.27 to 0.46), shift away from slow scene-setting sentences and lead directly with the core paradox or problem."
   ],
   "worst_moment_types": [
-    "Artificial narrative pauses and prompts (e.g., 'Pause and guess...')",
-    "Slow, detailed scientific background setup immediately following the hook",
-    "Verbose, wordy hook lines that take too long to deliver the payoff",
-    "Tack-on rhetorical questions in the final seconds of the video"
+    "Explanatory scientific details delivered too early (e.g., sap water percentages at 13% video length)",
+    "Direct calls to pause and guess mid-video"
   ],
   "best_hook_types": [
-    "Visual curiosity hooks that encourage immediate rewinds (>1.0 retention at 10%)",
-    "Concise problem statements that get directly to the core topic without verbal filler"
+    "Not enough data to isolate specific winning hook line structures, though body/food-related mysteries perform moderately better at mid-video retention"
   ],
   "studied": "2026-11-15",
   "videos": 4

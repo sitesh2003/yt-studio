@@ -1,14 +1,14 @@
 {
-  "summary": "1. Keep video duration strictly under 25 seconds for maximum total view distribution, as 17-24 second Shorts achieved 1000+ views while 39+ second Shorts stalled below 5 views. 2. Address the viewer directly in the hook using second-person pronouns ('Your eyes are leaking right now', 'Your fingers prune') to trigger immediate personal relevance. 3. Frame hooks around active bodily processes or paradoxical physical sensations rather than static historical facts or food production processes. 4. Use short, punchy title structures that state a clear phenomenon with 1-2 relevant emojis (e.g., 'Why Cold Water Fails Against Spicy Food 🌶️🥛'). 5. Avoid passive passive introductory phrasing like 'Honey is famous for...' or 'That sweet maple syrup...' which produce retention drop-offs below 50%.",
+  "summary": "1. Prioritize biological and chemical everyday mysteries like pineapple enzyme irritation or eye reflexes to maximize retention. \n2. Write short, punchy hooks under 10 words that state an aggressive counterintuitive fact rather than a descriptive setup. \n3. Keep titles concise and use visceral active verbs such as 'Eat You Back' instead of explanatory phrasing. \n4. Aim for longer viewing durations by structuring the narrative around an unresolved physical anomaly. \n5. Avoid slow academic definitions or long compound sentences in the first two seconds.",
   "winning_hooks": [
-    "Direct personal confrontation: 'Your eyes are leaking right now, and your brain is hiding it.' (1,320 views, 53.8% retention)",
-    "Debunking a personal perception instantly: 'Your fingers prune in water, but it is not because you are absorbing it like a sponge.' (1,185 views, 54.3% retention)",
-    "Visceral subversion of food reaction: 'Fresh pineapple is literally eating you back.' (103.2% retention)"
+    "Fresh pineapple is literally eating you back.",
+    "Your eyes are leaking right now, and your brain is hiding it.",
+    "This shark is older than the United States."
   ],
   "avoid": [
-    "Fact-book style intros: 'Honey is famous for being one of the only natural foods...' (47.3% retention, low engagement)",
-    "Process descriptions starting with rhetorical questions: 'That sweet maple syrup on your pancakes? It started out...' (39.7% retention, lowest performer)",
-    "Script lengths exceeding 35 seconds (39s-51s videos failed to reach broader feed distribution despite high rewatch rates)"
+    "Starting hooks with explanatory phrases like 'A bluefin tuna and a cod are both fish...'",
+    "Using passive titles that describe a process rather than creating a curiosity gap.",
+    "Lengthy, multi-clause hook sentences that delay the core weird fact."
   ],
-  "next_experiment": "Test a 20-second high-rewatch concept by combining a 100%+ retention hook style ('X is literally Y-ing your body right now') with a short 18-second script length to evaluate if shorter duration unlocks algorithm distribution for high-rewatch topics."
+  "next_experiment": "Test two versions of a new food-science hook: Version A (Descriptive) 'Why cheese gets moldy in the fridge' vs Version B (Counterintuitive) 'Why scraping mold off cheese actually keeps you safe'."
 }
