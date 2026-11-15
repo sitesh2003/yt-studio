@@ -480,3 +480,15 @@ formats SCIENCE NEWS, EXPLAINED and TOP 3; numbered main-channel episodes ("Why 
 3. The owner's own voice on the weekly intro (the "creative voice" YouTube's reviewers look for, and
    the strongest subscribe signal we can add without asking for subscribes).
 4. Re-run this scan monthly (same script) and compare.
+
+## 19. Hindi and student niches (16 Nov 2026, measured)
+Same method as section 18 (script niche_scan_sets.py --set hindi|student; India region).
+- **Hindi science Shorts are 5-10x bigger per video** than English ones: Facts' Mine 5.1M median,
+  Professor of AI 3.1M, Fact2Fact 2.0M. The standout: **FACT RADAR, started Sep 2026, 308K subscribers,
+  1.57M median, ~164 s Shorts** - hidden engineering in natural Hindi ("45°C की धूप में बिना gap
+  वाली train की पटरी टेढ़ी क्यों नहीं होती?"), a number in most titles, one emoji. Our main format, in Hindi.
+- **Student STEM (India):** exam-focused channels dominate (Class 10, JEE/NEET, numbers in titles);
+  the biggest by median is Theory of Physics (visual physics demos, 6M). Why It Works stays English and
+  global for now; exam-season topics already switch on before CBSE/AP.
+**Built:** a Hindi channel pipeline, "Aakhir Kyun?" (STUDIO_CHANNEL=hi) - see the commit message of
+9296f8e. Waiting on the owner to create the channel and sign it in; then the schedule is switched on.
