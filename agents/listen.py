@@ -91,6 +91,10 @@ def compare(script_text, heard_text):
             issues.append(f'meaning flips: script "{said}" but the audio says "{heard or "(nothing)"}"')
         elif n_said != n_heard:
             issues.append(f'number differs: script "{said}" but the audio says "{heard or "(nothing)"}"')
+        elif len(a[i1:i2]) >= 4 and len(b[j1:j2]) <= 1:
+            # a whole phrase is missing from the audio (15 Nov: "one water molecules prefer to stick
+            # to each other" went out silent because 95% overall still "passed")
+            issues.append(f'phrase missing from the audio: "{said}"')
         else:
             notes.append(f'"{said}" heard as "{heard}"' if said and heard else
                          f'"{said}" not heard' if said else f'extra "{heard}"')
@@ -104,7 +108,8 @@ def check(job, script):
     if not available():
         return [], ["listening check skipped (faster-whisper not installed)"]
     try:
-        heard = transcribe(job / "voice.mp3")
+        # what viewers hear: the finished video's sound (falls back to the voice track before render)
+        heard = transcribe(job / "final.mp4" if (job / "final.mp4").exists() else job / "voice.mp3")
     except Exception as e:
         return [], [f"listening check unavailable: {str(e)[:80]}"]
     text = " ".join(s["narration"] for s in script["scenes"])

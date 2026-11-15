@@ -32,6 +32,7 @@ def clean(text):
     import re
     text = re.sub(r"\s*(\.\s*){2,}|…", ". ", text)                       # ellipses -> one full stop
     text = re.sub(r"(?i)\bthree[,.\s]+two[,.\s]+one\b[.,!]?", "Three. Two. One.", text)
+    text = re.sub(r"(?<!\d):(?!\d)", ",", text)   # "Step one:" -> "Step one," (not 3:30)
     text = re.sub(r"\s+([.,!?])", r"\1", text)
     return re.sub(r"\s{2,}", " ", text).strip()
 
@@ -288,6 +289,20 @@ def _say_sentence(sent, nxt, nxt_scene, sv, v, who, script, k, m, job_dir, words
         if not whole:
             raise _SentenceFailed(f"no audio for {sent[:50]!r}") from e
         raise
+    for retry in range(2):
+        # DROP GUARD (15 Nov: a cloud run lost "one water molecules prefer to stick to each other" -
+        # 3 s of audio missing while the word timings still listed every word). If the audio is
+        # clearly shorter than the timings, speak it again; still short -> read the scene whole.
+        short = w and _dur(part) < w[-1]["end"] - 0.35
+        if not short:
+            break
+        log(f"voice: audio {_dur(part):.1f}s but words run to {w[-1]['end']:.1f}s for {sent[:40]!r}; speaking it again")
+        part.unlink(missing_ok=True)
+        if retry == 1:
+            if not whole:
+                raise _SentenceFailed(f"audio shorter than its words for {sent[:50]!r}")
+            raise RuntimeError(f"voice: audio keeps dropping words in {sent[:50]!r}")
+        w, part = _speak_retry(sent, dict(trial), rate, job_dir / f"vo_{k:02d}_{m:02d}_r.mp3")
     if trial["engine"] != sv["engine"]:
         if not whole:   # Kokoro refused this one line: try the scene whole before changing voice
             part.unlink(missing_ok=True)
