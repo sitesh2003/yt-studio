@@ -66,5 +66,8 @@
   "animate": {
     "max_per_video": 5,
     "_note": "code-drawn first: up to 5 computed animations per video (main channel: 2)"
+  },
+  "visuals": {
+    "story": true
   }
 }

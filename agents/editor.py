@@ -166,13 +166,24 @@ def _vf(path):
 
 def render(clips, times, words, job_dir, overlays=None):
     segs = []
-    for i, (clip, (a, b)) in enumerate(zip(clips, times)):
-        seg = f"seg_{i:02d}.mp4"
-        vf = _vf(job_dir / clip.name)
-        run(["ffmpeg", "-y", "-stream_loop", "-1", "-i", clip.name, "-t", f"{b - a:.3f}", "-filter_complex" if "[a]" in vf else "-vf", vf,
-             "-an", "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-pix_fmt", "yuv420p", seg],
-            cwd=job_dir)
+
+    def cut(src, seconds, seg):
+        vf = _vf(job_dir / src)
+        run(["ffmpeg", "-y", "-stream_loop", "-1", "-i", src, "-t", f"{seconds:.3f}", "-filter_complex" if "[a]" in vf else "-vf", vf,
+             "-an", "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-pix_fmt", "yuv420p", seg], cwd=job_dir)
         segs.append(seg)
+
+    for i, (clip, (a, b)) in enumerate(zip(clips, times)):
+        second = job_dir / (clip.stem + "_b.mp4")
+        if second.exists() and b - a >= 3.6:
+            # cut at the gap between two words nearest the middle (never mid-word)
+            gaps = [(words[k]["end"] + words[k + 1]["start"]) / 2 for k in range(len(words) - 1)
+                    if a + 1.5 <= words[k]["end"] and words[k + 1]["start"] <= b - 1.5]
+            mid = min(gaps, key=lambda g: abs(g - (a + b) / 2)) if gaps else (a + b) / 2
+            cut(clip.name, mid - a, f"seg_{i:02d}a.mp4")
+            cut(second.name, b - mid, f"seg_{i:02d}b.mp4")
+        else:
+            cut(clip.name, b - a, f"seg_{i:02d}.mp4")
     (job_dir / "list.txt").write_text("".join(f"file '{s}'\n" for s in segs), encoding="utf-8")
     run(["ffmpeg", "-y", "-fflags", "+genpts", "-f", "concat", "-safe", "0", "-i", "list.txt", "-c", "copy",
          "-avoid_negative_ts", "make_zero", "visual.mp4"], cwd=job_dir)

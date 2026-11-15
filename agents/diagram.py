@@ -14,7 +14,7 @@ from .core import ASSETS, llm_json, log
 
 STYLE = """Canvas: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" width="1080" height="1920">.
 Start with <rect width="1080" height="1920" fill="#0b1630"/> (dark navy).
-Draw ONLY in the band y=220..1060 (the area below is covered by captions and phone buttons).
+Draw ONLY in the band y=290..1060 (above is the channel header and logo; below are the captions).
 Flat, friendly educational illustration: simple shapes, thick 8-14px strokes, rounded corners,
 bright colours only from #ffd60a (yellow), #2ec4b6 (teal), #ff6b6b (coral), #ffffff, #8ecae6.
 Draw RECOGNISABLE OBJECTS (a tongue, a glass, a drop, an apple cut in half, a tree trunk), never
@@ -202,16 +202,16 @@ def _esc(t):
 
 
 def _board_svg(steps, upto):
-    """Steps as a top-to-bottom flow in the free band (y 230-1050): the step's pictures on the left
+    """Steps as a top-to-bottom flow in the free band (y 290-1050): the step's pictures on the left
     (joined by small arrows when a step shows one thing turning into another), its label on the right,
     an arrow down to the next step. Only the first `upto` steps are drawn."""
     n = len(steps)
-    row = 820 / n
+    row = 760 / n
     area = 470                                     # width for the pictures, from x=130
     out = ['<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" width="1080" height="1920">',
            '<rect width="1080" height="1920" fill="#0b1630"/>']
     for k, st in enumerate(steps[:upto]):
-        top = 230 + k * row
+        top = 290 + k * row
         cy = top + row / 2
         out.append(f'<rect x="90" y="{top + 10:.0f}" width="900" height="{row - 20:.0f}" rx="36" '
                    f'fill="#13234a" stroke="{"#ffd60a" if k == upto - 1 else "#2b3f6e"}" stroke-width="6"/>')
@@ -229,7 +229,7 @@ def _board_svg(steps, upto):
         fs = 64 if len(label) <= 8 else 54 if len(label) <= 11 else 46
         out.append(f'<text x="{130 + area + (990 - 130 - area) / 2:.0f}" y="{cy + fs * 0.35:.0f}" text-anchor="middle" '
                    f'font-family="Archivo Black" font-size="{fs}" fill="#ffffff">{label}</text>')
-        out.append(f'<circle cx="90" cy="{top + 10:.0f}" r="34" fill="#ffd60a"/><text x="90" y="{top + 26:.0f}" '
+        out.append(f'<circle cx="120" cy="{top + 10:.0f}" r="34" fill="#ffd60a"/><text x="120" y="{top + 26:.0f}" '
                    f'text-anchor="middle" font-family="Archivo Black" font-size="44" fill="#0b1630">{k + 1}</text>')
         if k + 1 < n and k + 1 < upto:
             y0 = top + row - 14
@@ -237,6 +237,79 @@ def _board_svg(steps, upto):
                        f'<path d="M515 {y0 + 14:.0f} L540 {y0 + 40:.0f} L565 {y0 + 14:.0f} Z" fill="#ffd60a"/>')
     out.append("</svg>")
     return "".join(out)
+
+
+STORY = """Canvas: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" width="1080" height="1920">.
+First element: <rect width="1080" height="1920" fill="#0b1630"/>.
+Draw ONLY inside x=60..1020, y=290..1060. Use the WHOLE band: the drawing should be big.
+Flat, clean educational style like a good textbook figure: simple shapes, 6-10px strokes, rounded
+corners, colours only #ffd60a (yellow), #2ec4b6 (teal), #ff6b6b (coral), #ffffff, #8ecae6, #13234a.
+Text: font-family="Archivo Black", font-size 40 or more, white or yellow, 1-3 words per label,
+never overlapping a shape outline or another label. No title, no paragraphs, no faces, no logos,
+nothing photo-realistic.
+Make it instantly readable for a 12-year-old in one second: few, BIG, recognisable objects (a beaker,
+molecules drawn the way textbooks draw them - e.g. water as one coral O with two small white H at an
+angle - a pan, a wire, a cell), plain everyday labels (1-2 words each, e.g. "LIQUID", "ICE", "SPACE"),
+never two ideas squeezed into one label, and arrows only where something really moves or changes."""
+
+
+def _story_stage(svg, upto):
+    """The story board as it stands after scene `upto`: groups s{k} for k > upto are hidden."""
+    def hide(m):
+        k = int(m.group(1))
+        return m.group(0) if k <= upto else m.group(0)[:-1] + ' display="none">'
+    return re.sub(r'<g\b[^>]*\bid="s(\d+)"[^>]*>', hide, svg)
+
+
+def make_story(script, topic):
+    """ONE drawing of the video's running example that grows scene by scene (15 Nov: the connected
+    explainers the user benchmarked - one board, the same objects all the way through, each step adds
+    to it). Returns {scene_index: png} for the middle scenes, like make_board, or {} if it fails."""
+    scenes = script.get("scenes", [])
+    example = (script.get("running_example") or "").strip()
+    middle = list(range(1, len(scenes) - 1))
+    if len(middle) < 3 or not example:
+        return {}
+    lines = "\n".join(f"s{k}: {scenes[k].get('narration', '')}" for k in middle)
+    note = ""
+    import os
+    for attempt in range(3):
+        try:
+            out = llm_json(f"""You draw ONE explainer figure for a science Short about: {topic}
+The running example every scene builds on: {example}
+The middle scenes, in order (group id: what the narrator says):
+{lines}
+
+Draw the running example ONCE, and build it up: every element goes inside exactly one group
+<g id="sK"> for the FIRST scene that needs it, in scene order. Later groups ADD to the same drawing
+(new molecules, arrows, labels, a highlight) - never a separate picture, never redraw what an earlier
+group drew. Shown one group at a time, it must read as one lesson unfolding on one board.
+Everything must be scientifically ACCURATE for what that scene says (correct shapes, directions,
+proportions; hexagonal ice has hexagons; arrows point the way things really move).
+{STORY}
+{("The previous figure was rejected because: " + note + " Fix that.") if note else ""}
+Return JSON: {{"svg": "<svg ...>...</svg>"}}""")
+            svg = str(out.get("svg") or "")
+            ids = sorted({int(x) for x in re.findall(r'<g\b[^>]*\bid="s(\d+)"', svg)})
+            if not svg.startswith("<svg") or len([k for k in ids if k in middle]) < 3:
+                note = "it must be one <svg> whose elements sit in groups id=s1, s2, ... for the middle scenes"
+                continue
+            full = _render(svg)
+            if os.environ.get("STORY_DEBUG"):
+                open(os.path.join(os.environ["STORY_DEBUG"], f"story_try{attempt + 1}.png"), "wb").write(full)
+            said = " ".join(scenes[k].get("narration", "") for k in middle)
+            verdict = _check(full, said)
+            if not (verdict.get("accurate") and float(verdict.get("score", 0) or 0) >= 7):
+                note = verdict.get("problems") or f"score {verdict.get('score')}"
+                log(f"diagram: story board attempt {attempt + 1} rejected ({note[:90]})")
+                continue
+            covered = [k for k in middle if k in ids]
+            log(f"diagram: story board of '{example[:50]}' for scenes {[k + 1 for k in covered]} (score {verdict.get('score')})")
+            return {k: _render(_story_stage(svg, k)) for k in covered}
+        except Exception as e:
+            note = str(e)[:120]
+            log(f"diagram: story board attempt {attempt + 1} failed ({note[:80]})")
+    return {}
 
 
 def make_board(script, topic):

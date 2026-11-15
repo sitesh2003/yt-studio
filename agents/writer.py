@@ -517,6 +517,8 @@ Check every factual claim in this narration, the enquiry question, and the poste
 Flag anything false, exaggerated, outdated, a common myth, or stated with more certainty than the
 evidence allows. Honest simplification for a general audience is FINE ("almost entirely empty",
 rounded numbers with "about"): only flag it if a viewer would come away believing something wrong.
+Check that every number is attached to the RIGHT thing (e.g. water is densest at 4 C, but it
+freezes at 0 C - "right before freezing, at 4 degrees" is WRONG even though both facts exist).
 Check the TITLE and the first line (the hook) hardest: a hook or title that overstates ("makes it
 worse" when it only fails to help, "always", "never", "100%") is WRONG, even if the rest is right.
 Every fix must keep plain, spoken English: no long digit strings, no jargon. Also flag if the question does not have one clear correct answer, or if the answer

@@ -366,6 +366,14 @@ Return JSON: {{"scores": [numbers, one per image], "best": index starting at 1,
             best = int(b) - 1
         except (TypeError, ValueError):
             best = max(range(len(scores)), key=scores.__getitem__) if scores else -1
+        global _runner_up
+        _runner_up = None
+        order = sorted(range(min(len(scores), len(keep))), key=lambda k: -scores[k])
+        for k in order:
+            if k != best and scores[k] >= 7 and keep[k]["kind"] == "video" and keep[k]["id"] != keep[best]["id"] \
+                    if 0 <= best < len(keep) else False:
+                _runner_up = keep[k]
+                break
         if 0 <= best < len(keep):
             try:
                 sx = min(1.0, max(0.0, float(out.get("subject_x", 0.5))))
@@ -422,6 +430,7 @@ def _fallback(path, seconds, idx):
 def pick_scene(i, scene, a, b, job_dir, used, note="", extra_queries=()):
     """Choose and prepare footage for one scene. Returns (score, pick-or-None, credit)."""
     out = job_dir / f"raw_{i:02d}.mp4"
+    out.with_name(out.stem + "_b.mp4").unlink(missing_ok=True)   # a re-pick never keeps an old second shot
     pick, score = None, 0
     if i in _board and not note:   # this scene is a step on the explainer board
         try:
@@ -517,6 +526,23 @@ def pick_scene(i, scene, a, b, job_dir, used, note="", extra_queries=()):
                 else:
                     _download(url, out)
                 credit = pick.get("credit") or f"Video by {pick['user']} on Pixabay"
+                # TWO SHOTS for a long scene (15 Nov, benchmarked: the 12.7M-view process Short changes
+                # shot every ~2 s). A strong second clip of the same subject is cut in mid-sentence.
+                second = out.with_name(out.stem + "_b.mp4")
+                second.unlink(missing_ok=True)
+                ru = _runner_up
+                if (config().get("visuals", {}).get("two_shots", True) and b - a >= 3.6 and score >= 7
+                        and ru and ru["kind"] == "video" and ru["id"] not in used and ru["id"][0] not in ("nv", "cv", "sv")
+                        and ru.get("url")):
+                    try:
+                        _download(ru["url"], second)
+                        used.add(ru["id"])
+                        (job_dir / f"raw_{i:02d}_b.json").write_text(_json.dumps({"x": 0.5}))
+                        c2 = ru.get("credit") or f"Video by {ru['user']} on Pixabay"
+                        credit = credit if c2 == credit else f"{credit}\n{c2}"
+                    except Exception as e:
+                        second.unlink(missing_ok=True)
+                        log(f"visuals: second shot skipped for scene {i + 1} ({str(e)[:50]})")
             else:
                 img = job_dir / f"img_{i:02d}.jpg"
                 _download(pick["url"], img)
@@ -546,6 +572,7 @@ def pick_scene(i, scene, a, b, job_dir, used, note="", extra_queries=()):
 
 
 _topic, _diagrams, _board, _drawn = "", 0, {}, 0
+_runner_up = None   # the judge's strong second clip for the current scene (two shots per long scene)
 
 
 def gather(script, times, job_dir):
@@ -554,7 +581,10 @@ def gather(script, times, job_dir):
     if config().get("visuals", {}).get("board", True):
         try:
             from . import diagram
-            _board = diagram.make_board(script, _topic)
+            if config().get("visuals", {}).get("story") and script.get("running_example"):
+                _board = diagram.make_story(script, _topic)
+            if not _board:
+                _board = diagram.make_board(script, _topic)
             _diagrams = 1 if _board else 0   # the board counts toward the 3-diagram limit
         except Exception as e:
             log(f"visuals: no explainer board ({str(e)[:60]})")
