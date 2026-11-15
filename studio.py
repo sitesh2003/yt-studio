@@ -27,7 +27,7 @@ def frame_label(script):
     done = [h for h in (read_json(DATA / "history.json", []) or [])
             if h.get("video_id") and not h.get("weekly") and h.get("status") not in ("deleted", "withdrawn")]
     series = (script.get("series") or "").strip()
-    # a numbered series is what makes a viewer want the next one (15 Nov: 0.12% of viewers subscribed)
+    # a numbered series is what makes a viewer want the next one (what the top channels in the niche do)
     return f"Why #{len(done) + 1} · {series or topic}"
 
 
