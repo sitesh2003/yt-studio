@@ -432,6 +432,11 @@ def pick_scene(i, scene, a, b, job_dir, used, note="", extra_queries=()):
     out = job_dir / f"raw_{i:02d}.mp4"
     out.with_name(out.stem + "_b.mp4").unlink(missing_ok=True)   # a re-pick never keeps an old second shot
     pick, score = None, 0
+    if i in _drawn_clips and not note:   # this scene is drawn live on the continuous board (agents/whiteboard.py)
+        import shutil
+        shutil.copy(_drawn_clips[i], out)
+        from . import diagram
+        return 8.5, {"kind": "draw", "id": ("d", i)}, diagram.CREDIT
     if i in _board and not note:   # this scene is a step on the explainer board
         try:
             from . import diagram
@@ -572,13 +577,24 @@ def pick_scene(i, scene, a, b, job_dir, used, note="", extra_queries=()):
 
 
 _topic, _diagrams, _board, _drawn = "", 0, {}, 0
+_drawn_clips = {}   # scene index -> clip of that scene being drawn on the continuous board
 _runner_up = None   # the judge's strong second clip for the current scene (two shots per long scene)
 
 
 def gather(script, times, job_dir):
-    global last_scores, last_picks, last_credits, last_used, _topic, _diagrams, _board, _drawn
-    _topic, _diagrams, _board, _drawn = script.get("topic", ""), 0, {}, 0
-    if config().get("visuals", {}).get("board", True):
+    global last_scores, last_picks, last_credits, last_used, _topic, _diagrams, _board, _drawn, _drawn_clips
+    _topic, _diagrams, _board, _drawn, _drawn_clips = script.get("topic", ""), 0, {}, 0, {}
+    if config().get("visuals", {}).get("draw"):   # the explanation drawn live on one continuous board
+        from . import animate, whiteboard
+        try:
+            if animate.available():
+                animate.plan(script)              # computed animations keep their scenes; the board draws the rest
+        except Exception:
+            pass
+        _drawn_clips = whiteboard.make(script, times, job_dir, _topic)
+        if _drawn_clips:
+            _diagrams = 1
+    if not _drawn_clips and config().get("visuals", {}).get("board", True):
         try:
             from . import diagram
             if config().get("visuals", {}).get("story") and script.get("running_example"):
@@ -590,7 +606,7 @@ def gather(script, times, job_dir):
             log(f"visuals: no explainer board ({str(e)[:60]})")
     try:   # number / comparison / process lines -> computed Manim animations (agents/animate.py)
         from . import animate
-        if animate.available():
+        if animate.available() and not config().get("visuals", {}).get("draw"):   # (the board path planned them)
             animate.plan(script)
     except Exception as e:
         log(f"visuals: no animation plan ({str(e)[:60]})")

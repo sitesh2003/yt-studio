@@ -92,5 +92,9 @@
   "report": {
     "email": "",
     "_note": "the address comes from the REPORT_EMAIL secret (cloud) or .env (PC); never written here, the repo is public"
+  },
+  "visuals": {
+    "draw": true,
+    "_draw_note": "16 Nov 2026 (owner): the explaining scenes are DRAWN live on one continuous board (agents/whiteboard.py: stick figures, simple objects, each drawing checked); the hook and real-life scenes keep footage; a scene whose drawing fails the check falls back to footage"
   }
 }
