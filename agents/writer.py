@@ -117,6 +117,10 @@ fish hit 5 million views and 1,800 comments in two days). Use these shapes, neve
   long as it is true, surprising, and can be SHOWN (see below).
 Proven outlier titles in this space (patterns only): {_outliers()}
 
+MIX (15 Nov niche scan): among the {n} topics include at least one SCIENCE NEWS, EXPLAINED (from the
+headlines above) and at least one TOP 3, plus the channel's proven body / food / hidden-engineering
+whys. Put the format name in "pattern".
+
 Suggest {n} NEW topics. Every topic must be scientifically TRUE (settled science, the kind a
 peer-reviewed paper or CDC/NASA/NIH page states), explainable in about a minute, and SHOWABLE: the
 things named can be filmed (animals, food, nature, ocean, people, machines, roads, vehicles, buildings,
@@ -297,7 +301,7 @@ def write_script(topic, recap=None, fix=None):
     if la == "short":
         secs = min(secs, 28)
     elif la == "long":
-        secs = 95       # room for a fuller "show it, then why" - still one idea
+        secs = 130      # 110-170 s is where several fast-growing 2026 channels sit; still one idea
     words = int(secs * 2.55)         # ~2.55 words a second since 15 Nov (faster pace, short pauses)
     prompt = f"""Write a YouTube Short script for US viewers.
 Channel: {ch['niche']}. Tone: {ch['voice_tone']}. American English spelling.

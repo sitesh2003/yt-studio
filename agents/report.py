@@ -42,7 +42,7 @@ def build(results, stats=None):
         health = list(health) + [experiment_line()]
         le = (read_json(DATA / "experiments.json", {}) or {}).get("length") or {}
         arms = le.get("arms") or {}
-        health.append("Length test (~28 s / ~40 s / ~95 s): " + ", ".join(
+        health.append("Length test (~28 s / ~40 s / ~130 s): " + ", ".join(
                       f"{k} {(arms.get(k) or {}).get('videos', 0)} videos ({(arms.get(k) or {}).get('avg_views') or '-'} views each)"
                       for k in ("short", "standard", "long")) + "; "
                       + (f"decided: {le['winner']}." if le.get("winner") else "needs 8 of each, public 2+ days."))
