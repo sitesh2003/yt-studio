@@ -204,6 +204,11 @@ def lint(s, words):
         hi = hook_issue(scenes[0].get("narration", "")) if scenes and english else ""
         if hi:
             issues.append(hi)
+        if scenes and english and not s.get("weekly"):
+            from .variety import hook_weak
+            hw = hook_weak(scenes[0].get("narration", ""))
+            if hw:
+                issues.append(hw)
     except Exception:
         pass
     ex = _content_words(s.get("running_example", ""))
@@ -332,6 +337,11 @@ Rules:
   the biggest science Shorts run about 40 seconds, and a Short people finish gets shown to more people.
 - The first line is the hook and must land in under 2 seconds: a surprising claim, a question, or a
   pattern interrupt. No "Did you know", no "In this video", no greeting.
+  Our own numbers (16 Nov 2026): openings that state a TRUE surprise about the viewer or the object in
+  under 12 words kept the most viewers ("Fresh pineapple is literally eating you back." 58% stayed; "Your
+  fingers prune in water, but it is not because you are absorbing it like a sponge." 65%). Openings that
+  repeat what people already know lost them ("Honey is famous for ... never truly spoils" 37%). Lead with
+  the part that sounds wrong but is true; the famous fact, if needed, comes second.
 - Open a curiosity loop early and close it near the end, so people watch to the end.
 {{giveaway_rule}}
 - Never say the same thing twice, even in different words.

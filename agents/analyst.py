@@ -28,7 +28,10 @@ def learn():
         log(f"analyst: {len(rows)} videos with data, need 5+ before drawing conclusions")
         return None
     out = llm_json(f"""These are a YouTube Shorts channel's videos with real performance numbers.
-averageViewPercentage above 100 means people rewatch. Compare the top third with the bottom third.
+averageViewPercentage above 100 means people rewatch. stayed_pct = % of viewers who did NOT swipe away in the
+first seconds; it is what the Shorts feed tests before showing a video to more people, so it decides reach (on
+this channel most videos stall near 1,200 views at ~50-60% stayed). Compare the top third with the bottom third
+by views AND by stayed_pct; say what the first sentence and the title of high-stayed videos do differently.
 Find concrete, testable patterns in topic, hook wording, title and length. No generic advice.
 Data: {rows}
 Return JSON: {{"summary": "5 bullet-style sentences the scriptwriter must follow next",

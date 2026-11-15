@@ -64,6 +64,30 @@ def hook_issue(hook, window=6, limit=3):
     return ""
 
 
+# Openings that told viewers something they already knew kept the fewest of them (16 Nov 2026, our own numbers:
+# "Honey is famous for being one of the only natural foods that never truly spoils" 37% stayed, 191 views;
+# "Fresh pineapple is literally eating you back" 58%, "Your fingers prune in water, but it is not because..." 65%).
+_KNOWN = re.compile(r"\b(is|are) (famous|known|well known|renowned) for\b|\bone of the only\b|\byou (probably|may) (already )?know\b|"
+                    r"\b(everyone|we all) knows?\b|\bhave you ever (wondered|noticed)\b|\bin this video\b", re.I)
+
+
+def hook_weak(hook, max_words=12, max_sentence=20):
+    """A rewrite instruction when the first sentence is likely to be swiped away, else ''.
+    The surprise must land in the first clause (before a comma): 'Your fingers prune in water, but it is not because
+    you are absorbing it' keeps a 5-word first clause and was our best opening at 65% stayed."""
+    first = re.split(r"(?<=[.?!])\s+", (hook or "").strip())[0]
+    clause = re.split(r"[,;:—]", first)[0]
+    n, c = len(first.split()), len(clause.split())
+    if _KNOWN.search(first):
+        return (f"the first sentence opens with something viewers already know (\"{first}\"): open with the surprising, "
+                "true twist instead, in under 12 words, aimed at the viewer (e.g. 'Fresh pineapple is literally eating you back.')")
+    if c > max_words or n > max_sentence:
+        return (f"the first sentence is too slow (\"{first[:90]}\"): viewers decide to stay or swipe in about 2 seconds, "
+                f"so the surprise must land within the first {max_words} words (before any comma) and the whole sentence "
+                f"must be {max_sentence} words or fewer; explain after")
+    return ""
+
+
 def pick_title(options, window=6, limit=4):
     """The first title option, unless most recent titles open the same way and another option does not."""
     options = [o for o in (options or []) if o]
