@@ -492,3 +492,30 @@ Same method as section 18 (script niche_scan_sets.py --set hindi|student; India 
   global for now; exam-season topics already switch on before CBSE/AP.
 **Built:** a Hindi channel pipeline, "Aakhir Kyun?" (STUDIO_CHANNEL=hi) - see the commit message of
 9296f8e. Waiting on the owner to create the channel and sign it in; then the schedule is switched on.
+
+## 20. Reach, narrator and pictures (16 Nov 2026, night - measured on our own channel)
+
+**Reach.** Ever Thought Why?, 10 public Shorts, 11-14 Nov: most get a ~1,200-view test batch and stop;
+four stalled near 250. Traffic is 94% Shorts feed. "Stayed to watch" (engagedViews / views, i.e. not
+swiped away) is 47-65%. Openings that state a short TRUE surprise kept the most viewers ("Your fingers
+prune in water, but it is not because..." 65%; "Fresh pineapple is literally eating you back." 58%);
+openings repeating a known fact kept the fewest ("Honey is famous for ... never truly spoils" 37%;
+maple syrup 36%). Changed: the analyst sees stayed_pct; the writer prompt carries this evidence; the
+lint asks for a rewrite when the first clause is over 12 words, the sentence over 20, or it opens with
+"is famous for" / "one of the only". Small sample - the learning loop keeps re-testing it.
+
+**Narrator.** Measured the voice on a real script: ~0.3-0.5 s after a sentence, ~0.1 s at a comma,
+~178 words a minute - already human pacing. What sounded robotic was the WORDING ("Step one: water
+molecules are polar, sticking strongly to each other while excluding nonpolar oil."). Both writers now
+write for the ear (no list labels said aloud, contractions, short + long sentences, none over 18 words)
+and the lint checks it. Owner: two voices felt like a conversation -> ONE narrator per channel
+(af_heart / af_bella / Swara); no study shows two voices help, and creator guides say one consistent
+voice becomes the channel's identity. Kokoro has no emotion control; Chatterbox (MIT) has an emotion
+strength setting (Turbo adds [sigh]/[gasp]-style tags, vendor claims) - tools/voice_lab.py +
+voice-lab.yml render the same lines for a listening test before any switch.
+
+**Pictures.** Owner: continuous drawing, stick figures, the explanation drawn as a narrative, with real
+footage where it helps. Built agents/whiteboard.py + board_scene.py: the AI draws one SVG per explaining
+scene (stick figures, simple objects, the same objects in the same colours), each checked by the vision
+judge; Manim draws them on ONE board (outline -> colour -> labels) while the line is spoken, and the
+camera glides down to the next drawing. Hook and real-life scenes keep footage. Switch: visuals.draw.
