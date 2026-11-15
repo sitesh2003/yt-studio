@@ -1247,7 +1247,8 @@
     "audited": true,
     "video_id": "syvvVya0Q4g",
     "publish_at": "2026-11-15T12:00:00-05:00",
-    "answered": true
+    "answered": true,
+    "recapped": true
   },
   {
     "job": "20261112-1741-why-chameleons-change-color-it-is-not-ju",
@@ -1604,7 +1605,7 @@
       "everyday science"
     ],
     "hook": "Ever noticed those tiny black dots fading around your car windshield? 🚗",
-    "status": "banked",
+    "status": "scheduled",
     "narration": "Ever noticed those tiny black dots fading around your car windshield? 🚗 They are not just there to look cool. Wait, really? I thought they were stickers. That painted band is the frit. Why the gradient dots instead of a solid line? Think about glass baking in direct sunlight. It gets hot at the edge. How does heat spread before baking the glass? Pause and guess... three, two, one. The black ceramic band helps hold the windshield in place and protects the glue from the sun. The fading dots act as a visual transition to hide the thick glue, while also helping manage the thermal transition between the hot ceramic band and the glass. Why does pineapple stop stinging? Drop your guess below. How does that black band protect the glass?",
     "voice_engine": "kokoro",
     "voices": "female host, male explainer",
@@ -1711,7 +1712,9 @@
       "duration": 50.1
     },
     "repairs": 0,
-    "audited": true
+    "audited": true,
+    "video_id": "nnxCKv3odg4",
+    "publish_at": "2026-11-16T19:00:00-05:00"
   },
   {
     "job": "20261114-1628-how-mosquitoes-pierce-your-skin-without-",
@@ -2492,6 +2495,216 @@
       "duration": 35.1
     },
     "repairs": 2,
+    "audited": true
+  },
+  {
+    "job": "20261115-1737-why-you-can-grab-hot-aluminum-foil-strai",
+    "topic": "Why You Can Grab Hot Aluminum Foil Straight Out of a 400°F Oven",
+    "title": "How 400 Degree Foil Stays Safe 🤔",
+    "description": "Ever wondered why pulling hot foil out of a 400°F oven doesn't burn your skin? The answer comes down to low thermal mass! #shorts #science #engineering\n\nSources (open-access research):\n- Hu et al. (2026), Science Advances. doi:10.1126/sciadv.aef7735\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nPhoto: Shixart1985, CC BY 2.0, via Wikimedia Commons\nPhoto: jimw, BY 2.0, via Openverse (flickr)\nPhoto: oskay, BY 2.0, via Openverse (flickr)\nVideo by AlekseiyPovar on Pixabay\nVideo by Citor3 on Pixabay\nVideo by Pixabay on Pixabay",
+    "tags": [
+      "science",
+      "physics",
+      "everyday science",
+      "engineering",
+      "aluminum foil",
+      "heat transfer"
+    ],
+    "hook": "You can touch hot foil briefly just as it comes out of the oven because it stores very little heat.",
+    "status": "banked",
+    "narration": "You can touch hot foil briefly just as it comes out of the oven because it stores very little heat. It came straight from a hot oven, yet it holds a surprisingly small amount of total thermal energy. That sheet is so paper-thin that its mass is extremely low. Think about what happens when you touch that thin metal. Pause and guess... three, two, one. Here's why: because it has so little total heat energy, it transfers very little warmth to your fingers. So when you touch it, there is barely any heat available to burn your skin. Yesterday's answer: potatoes sprout by sensing temperature and humidity. Nobody cracked it! Ever thought why a thick metal pan in that same oven burns you instantly?",
+    "voice_engine": "kokoro",
+    "voices": "female host, male explainer",
+    "diagrams": 1,
+    "series": "Everyday Whys",
+    "countdown": true,
+    "length_arm": "standard",
+    "question": "Ever thought why a thick metal pan in that same oven burns you instantly?",
+    "answer_comment": "The answer: A thick metal pan has much more mass, storing a large amount of heat energy at 400°F. When you touch it, that high thermal capacity transfers heat continuously into your skin! What other kitchen mystery should we test next?\n\nSources (open-access research):\n- Hu et al. (2026), Science Advances. doi:10.1126/sciadv.aef7735",
+    "sources": [
+      {
+        "claim": "Potatoes sprout in response to environmental cues like temperature and humidity changes triggering dormant buds.",
+        "cite": "Hu et al. (2026), Science Advances. doi:10.1126/sciadv.aef7735",
+        "doi": "10.1126/sciadv.aef7735",
+        "title": "StSIRT1 regulates potato dormancy through deacetylation of peroxidase-like 3 at K37",
+        "why": "Plants have evolved sophisticated defense systems to synchronize growth with environmental fluctuations, including the adaptive strategy of dormancy, an important agronomic trait."
+      }
+    ],
+    "fact_check": [
+      "Aluminum foil has an extremely low mass (thin gauge) resulting in very low total thermal capacity (heat content), despite being at 400°F.",
+      "A thick metal pan has significantly more mass and stores much more thermal energy, transferring more heat to skin upon contact.",
+      "Potatoes sprout in response to environmental cues like temperature and humidity changes triggering dormant buds."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        5.34
+      ],
+      [
+        5.34,
+        11.06
+      ],
+      [
+        11.06,
+        14.76
+      ],
+      [
+        14.76,
+        20.44
+      ],
+      [
+        20.44,
+        26.46
+      ],
+      [
+        26.46,
+        30.54
+      ],
+      [
+        30.54,
+        35.75
+      ],
+      [
+        35.75,
+        40.29
+      ]
+    ],
+    "duration": 40.29,
+    "scene_lines": [
+      "You can touch hot foil briefly just as it comes out of the oven because it stores very little heat.",
+      "It came straight from a hot oven, yet it holds a surprisingly small amount of total thermal energy.",
+      "That sheet is so paper-thin that its mass is extremely low.",
+      "Think about what happens when you touch that thin metal. Pause and guess... three, two, one.",
+      "Here's why: because it has so little total heat energy, it transfers very little warmth to your fingers.",
+      "So when you touch it, there is barely any heat available to burn your skin.",
+      "Yesterday's answer: potatoes sprout by sensing temperature and humidity. Nobody cracked it!",
+      "Ever thought why a thick metal pan in that same oven burns you instantly?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": "syvvVya0Q4g",
+    "captions_srt": "1\n00:00:00,050 --> 00:00:02,040\nYou can touch hot foil briefly just\n\n2\n00:00:02,040 --> 00:00:03,402\nas it comes out of the oven\n\n3\n00:00:03,402 --> 00:00:05,340\nbecause it stores very little heat.\n\n4\n00:00:05,340 --> 00:00:06,825\nIt came straight from a hot oven,\n\n5\n00:00:06,825 --> 00:00:09,275\nyet it holds a surprisingly small amount\n\n6\n00:00:09,275 --> 00:00:11,060\nof total thermal energy.\n\n7\n00:00:11,060 --> 00:00:12,848\nThat sheet is so paper-thin that its\n\n8\n00:00:12,848 --> 00:00:14,760\nmass is extremely low.\n\n9\n00:00:14,760 --> 00:00:17,370\nThink about what happens when you touch that thin metal.\n\n10\n00:00:17,370 --> 00:00:18,500\nPause and guess...\n\n11\n00:00:18,500 --> 00:00:20,250\nthree, two, one.\n\n12\n00:00:20,440 --> 00:00:22,352\nHere's why: because it has so little\n\n13\n00:00:22,352 --> 00:00:24,887\ntotal heat energy, it transfers very little\n\n14\n00:00:24,887 --> 00:00:26,460\nwarmth to your fingers.\n\n15\n00:00:26,460 --> 00:00:27,627\nSo when you touch it, there is\n\n16\n00:00:27,627 --> 00:00:30,540\nbarely any heat available to burn your skin.\n\n17\n00:00:30,540 --> 00:00:34,540\nYesterday's answer: potatoes sprout by sensing temperature and humidity.\n\n18\n00:00:34,540 --> 00:00:35,750\nNobody cracked it!\n\n19\n00:00:35,750 --> 00:00:37,375\nEver thought why a thick metal pan\n\n20\n00:00:37,375 --> 00:00:39,695\nin that same oven burns you instantly?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [],
+      "footage": [],
+      "review": [],
+      "pass": true,
+      "duration": 39.5
+    },
+    "repairs": 1,
+    "audited": true
+  },
+  {
+    "job": "20261115-1802-why-car-side-windows-shatter-into-tiny-c",
+    "topic": "Why Car Side Windows Shatter Into Tiny Cubes Instead of Sharp Shards",
+    "title": "Why Car Windows Shatter Into Cubes 🤯",
+    "description": "Ever wonder why car side windows crumble into tiny cubes instead of sharp shards? The answer lies in extreme heat and built-in glass tension. #science #engineering #shorts\n\nSources (open-access research):\n- Nielsen et al. (2021), Construction and Building Materials. doi:10.1016/j.conbuildmat.2021.125238\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nPhoto by LunarSeaArt on Pixabay\nPhoto: Artotem, BY 2.0, via Openverse (flickr)\nPhoto: Jitney58, BY 2.0, via Openverse (flickr)\nPhoto: Shixart1985, CC BY 2.0, via Wikimedia Commons\n\nHow this was made: the script is researched and fact-checked with AI tools against open-access research (sources above when found), narrated by an AI voice, and edited with open-source software. Corrections from viewers are checked and credited.",
+    "tags": [
+      "car windows",
+      "tempered glass",
+      "physics",
+      "hidden engineering",
+      "how things work"
+    ],
+    "hook": "Why do car windows shatter into tiny cubes?",
+    "status": "banked",
+    "narration": "Why do car windows shatter into tiny cubes? Regular glass breaks into jagged knives. Car side glass takes a totally different path. Wait, doesn't all glass snap the exact same way under a heavy blow? Not this one. Factories bake extreme stress right into the panel during manufacturing. Think about what happens when you heat and rapidly cool outer layers. Pause and guess... three, two, one. Here's why. The outside cools fast and traps the hot center. That creates a web of opposing tension forces. So when one tiny crack slips past the outer skin, the trapped energy releases instantly. The entire sheet unbinds at once, snapping into harmless pebble shapes instead of long blades. Ever thought why eyeglasses use a similar heat treatment when you drop them?",
+    "voice_engine": "kokoro",
+    "voices": "male host, female explainer",
+    "diagrams": 1,
+    "series": "Everyday Whys",
+    "countdown": true,
+    "length_arm": "short",
+    "question": "Ever thought why eyeglasses use a similar heat treatment when you drop them?",
+    "answer_comment": "The answer: Eyeglasses and car side windows are both made of tempered glass. Manufacturers rapidly cool the outer surfaces while the inside stays hot, locking the glass in a state of high internal tension. When the surface breaks, that trapped energy snaps the whole piece into tiny, harmless cubes rather than long, sharp blades. Got a question about other safety objects around you? Drop it below!\n\nSources (open-access research):\n- Nielsen et al. (2021), Construction and Building Materials. doi:10.1016/j.conbuildmat.2021.125238",
+    "sources": [
+      {
+        "claim": "Tempered glass is manufactured through a process of extreme heating and rapid cooling (quenching) which creates compressive stresses on the surface and tensile stress in the center.",
+        "cite": "Nielsen et al. (2021), Construction and Building Materials. doi:10.1016/j.conbuildmat.2021.125238",
+        "doi": "10.1016/j.conbuildmat.2021.125238",
+        "title": "Compressive zone depth of thermally tempered glass",
+        "why": "In most literature, the residual stress distribution is assumed to be a symmetrically 2nd order polynomial with compressive stresses near the surface, balanced by tensile stresses in the centre."
+      }
+    ],
+    "fact_check": [
+      "Tempered glass is manufactured through a process of extreme heating and rapid cooling (quenching) which creates compressive stresses on the surface and tensile stress in the center.",
+      "When tempered glass breaks, the internal tension causes it to dice into small, relatively harmless granular chunks (cubes) instead of splintering into jagged shards."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        3.03
+      ],
+      [
+        3.03,
+        8.18
+      ],
+      [
+        8.18,
+        12.5
+      ],
+      [
+        12.5,
+        17.65
+      ],
+      [
+        17.65,
+        24.4
+      ],
+      [
+        24.4,
+        30.99
+      ],
+      [
+        30.99,
+        36.52
+      ],
+      [
+        36.52,
+        42.14
+      ],
+      [
+        42.14,
+        47.39
+      ]
+    ],
+    "duration": 47.39,
+    "scene_lines": [
+      "Why do car windows shatter into tiny cubes?",
+      "Regular glass breaks into jagged knives. Car side glass takes a totally different path.",
+      "Wait, doesn't all glass snap the exact same way under a heavy blow?",
+      "Not this one. Factories bake extreme stress right into the panel during manufacturing.",
+      "Think about what happens when you heat and rapidly cool outer layers. Pause and guess... three, two, one.",
+      "Here's why. The outside cools fast and traps the hot center. That creates a web of opposing tension forces.",
+      "So when one tiny crack slips past the outer skin, the trapped energy releases instantly.",
+      "The entire sheet unbinds at once, snapping into harmless pebble shapes instead of long blades.",
+      "Ever thought why eyeglasses use a similar heat treatment when you drop them?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,050 --> 00:00:03,030\nWhy do car windows shatter into tiny cubes?\n\n2\n00:00:03,030 --> 00:00:05,450\nRegular glass breaks into jagged knives.\n\n3\n00:00:05,450 --> 00:00:08,180\nCar side glass takes a totally different path.\n\n4\n00:00:08,180 --> 00:00:10,392\nWait, doesn't all glass snap the exact\n\n5\n00:00:10,392 --> 00:00:12,500\nsame way under a heavy blow?\n\n6\n00:00:12,500 --> 00:00:13,440\nNot this one.\n\n7\n00:00:13,440 --> 00:00:17,650\nFactories bake extreme stress right into the panel during manufacturing.\n\n8\n00:00:17,650 --> 00:00:19,197\nThink about what happens when you heat\n\n9\n00:00:19,197 --> 00:00:21,420\nand rapidly cool outer layers.\n\n10\n00:00:21,420 --> 00:00:22,600\nPause and guess...\n\n11\n00:00:22,600 --> 00:00:24,300\nthree, two, one.\n\n12\n00:00:24,400 --> 00:00:25,260\nHere's why.\n\n13\n00:00:25,260 --> 00:00:28,050\nThe outside cools fast and traps the hot center.\n\n14\n00:00:28,050 --> 00:00:30,975\nThat creates a web of opposing tension forces.\n\n15\n00:00:30,990 --> 00:00:33,077\nSo when one tiny crack slips past\n\n16\n00:00:33,077 --> 00:00:36,520\nthe outer skin, the trapped energy releases instantly.\n\n17\n00:00:36,520 --> 00:00:39,042\nThe entire sheet unbinds at once, snapping\n\n18\n00:00:39,042 --> 00:00:42,140\ninto harmless pebble shapes instead of long blades.\n\n19\n00:00:42,140 --> 00:00:44,852\nEver thought why eyeglasses use a similar\n\n20\n00:00:44,852 --> 00:00:46,790\nheat treatment when you drop them?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [],
+      "footage": [],
+      "review": [],
+      "heard": [
+        "\"wait\" heard as \"weight\"",
+        "\"a\" not heard"
+      ],
+      "notes": [
+        "scene 8 footage is a loose match (score 3.0), accepted"
+      ],
+      "pass": true,
+      "duration": 46.5
+    },
+    "repairs": 0,
     "audited": true
   }
 ]

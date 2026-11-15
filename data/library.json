@@ -180,5 +180,44 @@
         "claim": "Grapes match the wavelength of microwave radiation, acting like antennas that trap electromagnetic energy."
       }
     ]
+  },
+  {
+    "job": "20261115-1737-why-you-can-grab-hot-aluminum-foil-strai",
+    "date": "2026-11-15",
+    "title": "How 400 Degree Foil Stays Safe 🤔",
+    "topic": "Why You Can Grab Hot Aluminum Foil Straight Out of a 400°F Oven",
+    "series": "Everyday Whys",
+    "weekly": false,
+    "claims": [
+      "Aluminum foil has an extremely low mass (thin gauge) resulting in very low total thermal capacity (heat content), despite being at 400°F.",
+      "A thick metal pan has significantly more mass and stores much more thermal energy, transferring more heat to skin upon contact.",
+      "Potatoes sprout in response to environmental cues like temperature and humidity changes triggering dormant buds."
+    ],
+    "sources": [
+      {
+        "cite": "Hu et al. (2026), Science Advances. doi:10.1126/sciadv.aef7735",
+        "doi": "10.1126/sciadv.aef7735",
+        "claim": "Potatoes sprout in response to environmental cues like temperature and humidity changes triggering dormant buds."
+      }
+    ]
+  },
+  {
+    "job": "20261115-1802-why-car-side-windows-shatter-into-tiny-c",
+    "date": "2026-11-15",
+    "title": "Why Car Windows Shatter Into Cubes 🤯",
+    "topic": "Why Car Side Windows Shatter Into Tiny Cubes Instead of Sharp Shards",
+    "series": "Everyday Whys",
+    "weekly": false,
+    "claims": [
+      "Tempered glass is manufactured through a process of extreme heating and rapid cooling (quenching) which creates compressive stresses on the surface and tensile stress in the center.",
+      "When tempered glass breaks, the internal tension causes it to dice into small, relatively harmless granular chunks (cubes) instead of splintering into jagged shards."
+    ],
+    "sources": [
+      {
+        "cite": "Nielsen et al. (2021), Construction and Building Materials. doi:10.1016/j.conbuildmat.2021.125238",
+        "doi": "10.1016/j.conbuildmat.2021.125238",
+        "claim": "Tempered glass is manufactured through a process of extreme heating and rapid cooling (quenching) which creates compressive stresses on the surface and tensile stress in the center."
+      }
+    ]
   }
 ]

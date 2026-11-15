@@ -31,6 +31,25 @@ Sources:
 Sources:
 - Khattak et al. (2019), Proceedings of the National Academy of Sciences. doi:10.1073/pnas.1818350116 — supports: Grapes match the wavelength of microwave radiation, acting like antennas that trap electromagnetic energy.
 
+## How 400 Degree Foil Stays Safe 🤔
+*2026-11-15 · Everyday Whys*
+
+- Aluminum foil has an extremely low mass (thin gauge) resulting in very low total thermal capacity (heat content), despite being at 400°F.
+- A thick metal pan has significantly more mass and stores much more thermal energy, transferring more heat to skin upon contact.
+- Potatoes sprout in response to environmental cues like temperature and humidity changes triggering dormant buds.
+
+Sources:
+- Hu et al. (2026), Science Advances. doi:10.1126/sciadv.aef7735 — supports: Potatoes sprout in response to environmental cues like temperature and humidity changes triggering dormant buds.
+
+## Why Car Windows Shatter Into Cubes 🤯
+*2026-11-15 · Everyday Whys*
+
+- Tempered glass is manufactured through a process of extreme heating and rapid cooling (quenching) which creates compressive stresses on the surface and tensile stress in the center.
+- When tempered glass breaks, the internal tension causes it to dice into small, relatively harmless granular chunks (cubes) instead of splintering into jagged shards.
+
+Sources:
+- Nielsen et al. (2021), Construction and Building Materials. doi:10.1016/j.conbuildmat.2021.125238 — supports: Tempered glass is manufactured through a process of extreme heating and rapid cooling (quenching) which creates compressive stresses on the surface and tensile stress in the center.
+
 ## Why Highway Guardrails Have Heavy End Boxes 🤯
 *2026-11-14 · How Things Work*
 

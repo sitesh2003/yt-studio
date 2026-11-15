@@ -1,14 +1,13 @@
 {
-  "summary": "1. Prioritize biological and chemical everyday mysteries like pineapple enzyme irritation or eye reflexes to maximize retention. \n2. Write short, punchy hooks under 10 words that state an aggressive counterintuitive fact rather than a descriptive setup. \n3. Keep titles concise and use visceral active verbs such as 'Eat You Back' instead of explanatory phrasing. \n4. Aim for longer viewing durations by structuring the narrative around an unresolved physical anomaly. \n5. Avoid slow academic definitions or long compound sentences in the first two seconds.",
+  "summary": "1. Prioritize short, punchy hooks under 10 words that rely on paradox or bodily shock value.\n2. Avoid verbose, descriptive hook sentences that explain the mechanism too early.\n3. Keep titles concise and intriguing without overloading them with emojis or long explanations.\n4. Target everyday bodily or biological curiosities like 'eyes leaking' or 'pineapples eating you back' to drive high view percentages.\n5. Structure scripts to maintain high retention past the 30-second mark to trigger the rewatch algorithm.",
   "winning_hooks": [
-    "Fresh pineapple is literally eating you back.",
     "Your eyes are leaking right now, and your brain is hiding it.",
-    "This shark is older than the United States."
+    "Fresh pineapple is literally eating you back.",
+    "Your fingers prune in water, but it is not because you are absorbing it like a sponge."
   ],
   "avoid": [
-    "Starting hooks with explanatory phrases like 'A bluefin tuna and a cod are both fish...'",
-    "Using passive titles that describe a process rather than creating a curiosity gap.",
-    "Lengthy, multi-clause hook sentences that delay the core weird fact."
+    "Starting hooks with explanatory context or qualifiers like 'Garlic usually doesn't make you cry... because...'",
+    "Using overly descriptive sentences that give away the core answer in the first three seconds."
   ],
-  "next_experiment": "Test two versions of a new food-science hook: Version A (Descriptive) 'Why cheese gets moldy in the fridge' vs Version B (Counterintuitive) 'Why scraping mold off cheese actually keeps you safe'."
+  "next_experiment": "Test an A/B split on a short paradox hook (<7 words) versus a descriptive educational hook on a common food mystery to see which drives a higher averageViewPercentage above 100."
 }

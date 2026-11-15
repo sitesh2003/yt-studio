@@ -1,17 +1,19 @@
 {
   "lessons": [
-    "Avoid starting with declarative descriptive facts about tree biology; the maple syrup video lost 38.5% of viewers at 13% duration when explaining sap composition, compared to much better retention on psychological or body-related hooks.",
-    "Do not use explicit interactive pauses asking the audience to guess; the maple syrup video suffered a 15.4% drop right after the line 'Pause and guess...'.",
-    "Hook lines that immediately establish a relatable human sensation or counterintuitive mystery (like spicy food relief failing) maintain better performance at the 50% mark (47.95%) despite poor starts.",
-    "Not enough data to conclusively determine the effect of countdowns, as all provided entries have countdown set to null.",
-    "To improve start performance relative to similar YouTube videos (currently ranging from 0.27 to 0.46), shift away from slow scene-setting sentences and lead directly with the core paradox or problem."
+    "Avoid starting with declarative exposition like 'When maple trees wake up in spring...', as it caused the largest single drop (-38.5%) across the analyzed videos.",
+    "Do not include meta-engagement prompts like 'Pause and guess...', which triggered an immediate 15.4% drop in retention.",
+    "Frame the hook as an unresolved paradox or sensory tension (e.g., trying to fix spicy food with ice water) to achieve strong 10% retention above 1.0 despite weak relative starts.",
+    "Keep initial explanations punchy; high drops consistently occur between 10% and 26% of video length when pacing slows down.",
+    "Not enough data to establish a definitive rule for countdowns, as none were present in the analyzed sample."
   ],
   "worst_moment_types": [
-    "Explanatory scientific details delivered too early (e.g., sap water percentages at 13% video length)",
-    "Direct calls to pause and guess mid-video"
+    "Expository scientific setup statements ('When maple trees wake up in spring...')",
+    "Meta-commentary and direct interaction prompts ('Pause and guess...')",
+    "Slow transitions or elaborations between the 10% and 26% marks"
   ],
   "best_hook_types": [
-    "Not enough data to isolate specific winning hook line structures, though body/food-related mysteries perform moderately better at mid-video retention"
+    "Conflict-driven hooks that highlight a failed everyday solution ('Gulping ice water... but the real fire stays untouched')",
+    "Intriguing everyday phenomena that promise a hidden mechanism ('Why your eyes are secretly leaking', 'Why Onions Make You Cry')"
   ],
   "studied": "2026-11-15",
   "videos": 4

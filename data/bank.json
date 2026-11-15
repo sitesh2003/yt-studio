@@ -36,18 +36,6 @@
     "stored": "2026-11-13T00:38:38.270642+00:00"
   },
   {
-    "job": "20261114-1555-why-car-windshields-have-tiny-black-dots",
-    "title": "Why Car Windshields Have Black Dots 🤔",
-    "assets": {
-      "mp4": 748055185,
-      "jpg": 748055558,
-      "json": 748055584
-    },
-    "locked": true,
-    "series": "Everyday Whys",
-    "stored": "2026-11-14T16:22:17.422188+00:00"
-  },
-  {
     "job": "20261114-1628-how-mosquitoes-pierce-your-skin-without-",
     "title": "How Mosquitoes Bite You Without Pain 🦟",
     "assets": {
@@ -118,5 +106,29 @@
     "locked": true,
     "series": "Everyday Whys",
     "stored": "2026-11-15T03:43:40.168092+00:00"
+  },
+  {
+    "job": "20261115-1737-why-you-can-grab-hot-aluminum-foil-strai",
+    "title": "How 400 Degree Foil Stays Safe 🤔",
+    "assets": {
+      "mp4": 751844465,
+      "jpg": 751844712,
+      "json": 751844739
+    },
+    "locked": true,
+    "series": "Everyday Whys",
+    "stored": "2026-11-15T17:59:00.067412+00:00"
+  },
+  {
+    "job": "20261115-1802-why-car-side-windows-shatter-into-tiny-c",
+    "title": "Why Car Windows Shatter Into Cubes 🤯",
+    "assets": {
+      "mp4": 751917860,
+      "jpg": 751918319,
+      "json": 751918372
+    },
+    "locked": true,
+    "series": "Everyday Whys",
+    "stored": "2026-11-15T18:25:21.552423+00:00"
   }
 ]
