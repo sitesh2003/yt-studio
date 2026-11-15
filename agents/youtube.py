@@ -283,9 +283,20 @@ def channel_stats():
 SERIES = ["Food Whys", "Ocean Whys", "Animal Whys", "Body Whys", "Everyday Whys", "How Things Work"]
 
 
+def _series_list():
+    """This channel's playlists (channels/<name>.json "series"; the main channel's by default)."""
+    s = (config().get("channel") or {}).get("series")
+    return s if isinstance(s, list) and s else SERIES
+
+
 def add_to_series(video_id, series):
     """Every video joins a themed playlist, so a viewer who finishes one is offered the next."""
-    series = series if series in SERIES else "Everyday Whys"
+    names = _series_list()
+    if series not in names:
+        if "Everyday Whys" not in names:
+            log(f"youtube: no playlist for series {series!r} on this channel; skipped")
+            return
+        series = "Everyday Whys"
     path = DATA / "playlists.json"
     ids = read_json(path, {}) or {}
     y = yt()
@@ -296,7 +307,8 @@ def add_to_series(video_id, series):
                 found = pl["id"]
         if not found:
             found = y.playlists().insert(part="snippet,status", body={
-                "snippet": {"title": series, "description": f"Ever Thought Why? - {series}: the surprising science, one short why at a time."},
+                "snippet": {"title": series, "description": f"{config()['channel'].get('name', 'Ever Thought Why?')} - {series}: "
+                            f"{config()['channel'].get('series_tagline', 'the surprising science, one short why at a time.')}"},
                 "status": {"privacyStatus": "public"}}).execute()["id"]
         ids[series] = found
         write_json(path, ids)

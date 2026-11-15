@@ -311,7 +311,7 @@
       "surfactants"
     ],
     "hook": "You've used soap your whole life, but do you know how it actually removes grease?",
-    "status": "public",
+    "status": "deleted",
     "narration": "You've used soap your whole life, but do you know how it actually removes grease? Step one: water molecules prefer to stick to each other rather than to greasy surfaces, so they bead up instead of washing the grease away. Step two: a soap molecule has two very different ends. Step three: the long tail grabs the oil, while the head dissolves in water. That's because soap molecules act as an intermediate bridge, linking the polar water to non-polar grease. Try this: why does hot water often help soap clean greasy pans more effectively than cold water?",
     "voice_engine": "kokoro",
     "voices": "female host, male explainer",
@@ -388,7 +388,8 @@
     "video_id": "QqhblhrBHUs",
     "publish_at": "2026-11-15T07:30:00-05:00",
     "recapped": true,
-    "answered": true
+    "answered": true,
+    "deleted_reason": "15 Nov: a phrase was missing from the audio (voice engine dropped it); replaced by a fixed rebuild"
   },
   {
     "job": "20261115-1306-how-do-vaccines-actually-train-your-immu",
@@ -584,5 +585,94 @@
     "audited": true,
     "video_id": "Sxptr2TsIRI",
     "publish_at": "2026-11-16T07:30:00-05:00"
+  },
+  {
+    "job": "20261115-1937-why-does-soap-remove-grease-and-oil-when",
+    "topic": "Why does soap remove grease and oil when plain water cannot?",
+    "title": "How Soap Works: The Chemistry of Cleaning",
+    "description": "Why does plain water fail to wash away oil, while soap lifts it effortlessly? Discover how soap molecules act as a bridge between water and grease. #shorts #chemistry #science\n\nVideo by Coverr-Free-Footage on Pixabay\nVideo by FOTEROS on Pixabay\nVideo by klimkin on Pixabay",
+    "tags": [
+      "soap chemistry",
+      "how soap works",
+      "micelles",
+      "chemistry shorts",
+      "why it works",
+      "polar nonpolar"
+    ],
+    "hook": "You've used soap your whole life, but why does it clean grease when plain water fails?",
+    "status": "scheduled",
+    "narration": "You've used soap your whole life, but why does it clean grease when plain water fails? Step one: water molecules are polar, sticking strongly to each other while excluding nonpolar oil. Step two: soap molecules have a water-loving head and an oil-loving tail. Step three: the tails pin into grease, surrounding it with heads facing outward. That's because soap forms tiny spheres that trap grease so water can carry it away. You see this when dish soap washes greasy pans or lifts away dirty oils. Try this: how do soap molecules organize themselves to trap oil in water?",
+    "voice_engine": "kokoro",
+    "voices": "female host, male explainer",
+    "diagrams": 1,
+    "series": "Chemistry",
+    "countdown": false,
+    "length_arm": null,
+    "question": "Try this: how do soap molecules organize themselves to trap oil in water?",
+    "answer_comment": "The answer: Soap molecules form tiny spherical structures called micelles! The oil-loving tails hide on the inside around the grease, while the water-loving heads point outward to mix with water. Have you ever seen micelles in action with dish soap?",
+    "sources": [],
+    "fact_check": [
+      "Water is polar and forms strong hydrogen bonds, making it immiscible with nonpolar oil and grease.",
+      "Soap molecules are amphiphilic, featuring a hydrophilic (polar) head and a hydrophobic (nonpolar) tail.",
+      "Soap molecules organize around grease droplets to form micelles, with tails pointing inward into oil and heads pointing outward into water.",
+      "Surfactants like soap reduce the surface tension of water by disrupting intermolecular hydrogen bonding, causing floating objects held by surface tension to sink."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        5.16
+      ],
+      [
+        5.16,
+        11.62
+      ],
+      [
+        11.62,
+        16.29
+      ],
+      [
+        16.29,
+        21.08
+      ],
+      [
+        21.08,
+        26.35
+      ],
+      [
+        26.35,
+        31.29
+      ],
+      [
+        31.29,
+        36.67
+      ]
+    ],
+    "duration": 36.67,
+    "scene_lines": [
+      "You've used soap your whole life, but why does it clean grease when plain water fails?",
+      "Step one: water molecules are polar, sticking strongly to each other while excluding nonpolar oil.",
+      "Step two: soap molecules have a water-loving head and an oil-loving tail.",
+      "Step three: the tails pin into grease, surrounding it with heads facing outward.",
+      "That's because soap forms tiny spheres that trap grease so water can carry it away.",
+      "You see this when dish soap washes greasy pans or lifts away dirty oils.",
+      "Try this: how do soap molecules organize themselves to trap oil in water?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,050 --> 00:00:01,622\nYou've used soap your whole life, but\n\n2\n00:00:01,622 --> 00:00:04,835\nwhy does it clean grease when plain water fails?\n\n3\n00:00:05,160 --> 00:00:08,008\nStep one: water molecules are polar, sticking\n\n4\n00:00:08,008 --> 00:00:11,620\nstrongly to each other while excluding nonpolar oil.\n\n5\n00:00:11,620 --> 00:00:14,132\nStep two: soap molecules have a water-loving\n\n6\n00:00:14,132 --> 00:00:16,290\nhead and an oil-loving tail.\n\n7\n00:00:16,290 --> 00:00:18,502\nStep three: the tails pin into grease,\n\n8\n00:00:18,502 --> 00:00:21,080\nsurrounding it with heads facing outward.\n\n9\n00:00:21,080 --> 00:00:23,430\nThat's because soap forms tiny spheres that\n\n10\n00:00:23,430 --> 00:00:26,330\ntrap grease so water can carry it away.\n\n11\n00:00:26,350 --> 00:00:28,112\nYou see this when dish soap washes\n\n12\n00:00:28,112 --> 00:00:31,150\ngreasy pans or lifts away dirty oils.\n\n13\n00:00:31,290 --> 00:00:33,820\nTry this: how do soap molecules organize\n\n14\n00:00:33,820 --> 00:00:36,070\nthemselves to trap oil in water?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [],
+      "footage": [],
+      "review": [],
+      "pass": true,
+      "duration": 35.8
+    },
+    "repairs": 1,
+    "video_id": "kU4gc_KAIJ4",
+    "publish_at": "2026-11-16T16:30:00-05:00"
   }
 ]

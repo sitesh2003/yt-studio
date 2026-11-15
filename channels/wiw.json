@@ -21,7 +21,18 @@
     "_note": "Sister channel of Ever Thought Why? (created 14 Nov 2026, handle @whyitworksstem). Visuals are drawn by code first (Manim, diagrams, maps), real footage second; a viral trick that only works for special numbers is called out.",
     "how_made": "How this was made: the script is researched and fact-checked with AI tools against open-access research and textbooks, narrated by an AI voice, and every diagram, number and graph is drawn by code from the real values. Spot a mistake? Tell us in the comments - corrections are checked and credited.",
     "logo": "brand/whyitworks/avatar.png",
-    "logo_desc": "a white right triangle with blue and yellow squares on its sides, on navy"
+    "logo_desc": "a white right triangle with blue and yellow squares on its sides, on navy",
+    "series": [
+      "Physics",
+      "Chemistry",
+      "Biology",
+      "Maths",
+      "Electronics",
+      "Technology",
+      "Earth and Space",
+      "New Research"
+    ],
+    "series_tagline": "the reason behind the science, one concept at a time."
   },
   "format": {
     "target_seconds": 35
