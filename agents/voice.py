@@ -69,18 +69,21 @@ def _gap_after(sent, nxt, scene_end):
     leaves when one thought closes and the next opens. Longer after a question (let it land), after a
     long sentence, before a turn ('But...', 'Here's why...') and at the end of a scene."""
     t, n = sent.strip(), (nxt or "").strip().lower()
+    # 15 Nov (user, comparing a 12M-view narrated Short): "only after the sentence is done it takes a
+    # very small break". Real gaps come out ~0.1 s above these numbers (clip edges), so a plain
+    # sentence ends with ~0.25-0.3 s of silence, a question ~0.4 s.
     if _COUNTDOWN.search(t):
-        g = 0.6                                       # let the count land before the reveal
+        g = 0.45                                      # let the count land before the reveal
     elif t.endswith("?"):
-        g = 0.55
+        g = 0.3
     elif t.endswith("!"):
-        g = 0.38
+        g = 0.18
     else:
-        g = 0.34 + (0.08 if len(t.split()) > 14 else 0.0)
+        g = 0.16 + (0.04 if len(t.split()) > 16 else 0.0)
     if n.startswith(_TURNS):
-        g = max(g, 0.5)                               # a held beat before the turn
+        g = max(g, 0.26)                              # a short held beat before the turn
     if scene_end:
-        g += 0.12
+        g += 0.05
     return g
 
 
@@ -322,7 +325,7 @@ def _say_sentence(sent, nxt, nxt_scene, sv, v, who, script, k, m, job_dir, words
     else:
         gap = _gap_after(sent, nxt if not last else nxt_scene, last)
         if last and k + 1 < scenes_n and (script["scenes"][k + 1].get("speaker") or who) != who:
-            gap += 0.15   # a natural hand-over between the two narrators
+            gap += 0.08   # a quick hand-over between the two narrators
     parts.append((part, gap))
     return t + _dur(part) + gap, n_sent + 1   # exactly what is joined, so the captions never drift
 

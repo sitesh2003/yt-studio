@@ -41,7 +41,7 @@
   "voice": {
     "engine": "kokoro",
     "name": "en-US-AndrewMultilingualNeural",
-    "rate": "+0%",
+    "rate": "+6%",
     "kokoro_voice": "af_heart",
     "_note": "two narrators: a curious host (hook, wondering aloud, pause-and-guess, closing question) and an explainer; Kokoro first, the Edge voices are the fallback",
     "narrators": {

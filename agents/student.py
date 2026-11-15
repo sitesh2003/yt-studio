@@ -122,7 +122,7 @@ def write_script(topic, recap=None, fix=None):
     c = config()
     ch, fmt = c["channel"], c["format"]
     secs = playbook.target_seconds(fmt["target_seconds"])
-    words = int(secs * 2.4)
+    words = int(secs * 2.6)
     lessons = [l["text"] for l in (read_json(DATA / "lessons.json", []) or [])][-15:]
     s = llm_json(f"""Write a YouTube Short script for the channel "Why It Works".
 Channel: {ch['niche']}. Audience: {ch['audience']}. Tone: {ch['voice_tone']}. American English spelling.

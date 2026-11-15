@@ -277,7 +277,7 @@ def write_script(topic, recap=None, fix=None):
     la = length_arm(topic)
     if la == "short":
         secs = min(secs, 28)
-    words = int(secs * 2.3)          # measured: Kokoro + the countdown pauses run ~2.3 words a second
+    words = int(secs * 2.55)         # ~2.55 words a second since 15 Nov (faster pace, short pauses)
     prompt = f"""Write a YouTube Short script for US viewers.
 Channel: {ch['niche']}. Tone: {ch['voice_tone']}. American English spelling.
 Topic: {topic}
