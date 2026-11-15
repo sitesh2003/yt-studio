@@ -33,3 +33,19 @@ Sources:
 
 Sources:
 - Mori et al. (2026), Chromatography. doi:10.15583/jpchrom.2026.016 — supports: Vinegar contains acetic acid.
+
+## Why Do Objects Fall At The Same Rate? 😲
+*2026-11-15 · Physics*
+
+- Gravity accelerates all objects at the same rate in a vacuum regardless of mass (Equivalence Principle).
+- F = ma, so a = F/m. Since F is proportional to mass (F = GmM/r^2), the 'm' in the numerator and denominator cancel out.
+- Inertia is the resistance to acceleration, which is exactly why heavier objects are harder to move but also experience more gravitational force.
+
+## How Salt Melts Ice: Chemistry Explained
+*2026-11-15 · Chemistry*
+
+- Water molecules on ice constantly shift between solid and liquid phases.
+- Sodium and chloride ions dissolve into the surface liquid layer.
+- Dissolved ions physically interfere with water molecules rejoining the crystal lattice.
+- Freezing point depression lowers the temperature at which ice can remain solid.
+- Eutectic point of NaCl-water is approximately -21.1 degrees Celsius.

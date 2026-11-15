@@ -56,5 +56,35 @@
         "claim": "Vinegar contains acetic acid."
       }
     ]
+  },
+  {
+    "job": "20261115-1821-why-do-heavy-and-light-objects-fall-at-t",
+    "date": "2026-11-15",
+    "title": "Why Do Objects Fall At The Same Rate? 😲",
+    "topic": "Why do heavy and light objects fall at the same speed? The physics of gravity",
+    "series": "Physics",
+    "weekly": false,
+    "claims": [
+      "Gravity accelerates all objects at the same rate in a vacuum regardless of mass (Equivalence Principle).",
+      "F = ma, so a = F/m. Since F is proportional to mass (F = GmM/r^2), the 'm' in the numerator and denominator cancel out.",
+      "Inertia is the resistance to acceleration, which is exactly why heavier objects are harder to move but also experience more gravitational force."
+    ],
+    "sources": []
+  },
+  {
+    "job": "20261115-1838-why-does-salt-melt-ice-on-frozen-roads-t",
+    "date": "2026-11-15",
+    "title": "How Salt Melts Ice: Chemistry Explained",
+    "topic": "Why does salt melt ice on frozen roads? The chemistry of freezing point depression",
+    "series": "Chemistry",
+    "weekly": false,
+    "claims": [
+      "Water molecules on ice constantly shift between solid and liquid phases.",
+      "Sodium and chloride ions dissolve into the surface liquid layer.",
+      "Dissolved ions physically interfere with water molecules rejoining the crystal lattice.",
+      "Freezing point depression lowers the temperature at which ice can remain solid.",
+      "Eutectic point of NaCl-water is approximately -21.1 degrees Celsius."
+    ],
+    "sources": []
   }
 ]

@@ -1,1 +1,11 @@
-[]
+[
+  {
+    "topic": "How colour vision works: The biology of cone cells explained",
+    "pulled": "",
+    "title": "How Colour Vision Works: The Biology Explained",
+    "false_sentence": "Step three: each cone cell absorbs a different wavelength from the red apple, sending nerve signals to your brain.",
+    "correct_version": "A red apple reflects mostly long wavelengths; these stimulate your long-wavelength (red) cones significantly, while medium and short-wavelength cones are stimulated less. It is the specific pattern of relative activation across all three cone types that your brain interprets as the color red.",
+    "why": "The narration implies each cone type only absorbs 'a' wavelength (singular) and that red cones are the only ones responding to a red apple, which is inaccurate; color perception relies on the ratio of activation across all three cone types.",
+    "tries": 0
+  }
+]

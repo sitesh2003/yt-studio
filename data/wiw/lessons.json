@@ -6,5 +6,13 @@
   {
     "kind": "false_line",
     "text": "said \"Step three: specialized white blood cells become memory cells, storing the exact shape of that antibody.\" but Memory cells do not store the shape of the antibody; they store the genetic information required to produce those specific antibodies upon re-exposure to the antigen."
+  },
+  {
+    "kind": "false_line",
+    "text": "said \"Step three: each cone cell absorbs a different wavelength from the red apple, sending nerve signals to your brain.\" but A red apple reflects mostly long wavelengths; these stimulate your long-wavelength (red) cones significantly, while medium and short-wavelength cones are stimulated less. It "
+  },
+  {
+    "kind": "title",
+    "text": "title 'Why Do Objects Fall At The Same Acceleration?' overstated: The original title incorrectly used acceleration instead of rate/speed for a general audience, but the narration and physics are correct."
   }
 ]

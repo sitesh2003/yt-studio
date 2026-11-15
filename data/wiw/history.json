@@ -674,5 +674,385 @@
     "repairs": 1,
     "video_id": "kU4gc_KAIJ4",
     "publish_at": "2026-11-16T16:30:00-05:00"
+  },
+  {
+    "job": "20261115-1729-why-do-23-people-share-a-birthday-the-bi",
+    "topic": "Why do 23 people share a birthday? The birthday paradox explained",
+    "title": "Why Two People in a Group of 23 Likely Share a Birthday",
+    "description": "Why does a group of just 23 people have a 50% chance of a shared birthday? The secret lies in counting pairs, not individuals. #shorts #maths #probability\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nVideo by Vacampbe on Pixabay",
+    "tags": [
+      "birthday paradox",
+      "probability",
+      "combinatorics",
+      "math",
+      "science shorts",
+      "why it works"
+    ],
+    "hook": "In a room of just 23 people, two likely share a birthday. How?",
+    "status": "review",
+    "narration": "In a room of just 23 people, two likely share a birthday. How? In our classroom circle of 23 students, step one is not comparing everyone to just your own birthday. Step two: look across the student circle to connect every possible pair. The first student in the circle checks 22 classmates, the next checks 21, and so on down the line. Step three: count the connections across the circle—23 students form 253 total pairs. That's because those 253 pairs in the student circle give 253 separate chances for a match, pushing odds over 50 percent. Cybersecurity engineers use this same collision math to set hash lengths and prevent collision attacks on digital signatures. Try this: how many unique pairs can four people make?",
+    "voice_engine": "kokoro",
+    "voices": "male host, female explainer",
+    "diagrams": 2,
+    "series": "Maths",
+    "countdown": false,
+    "length_arm": null,
+    "question": "Try this: how many unique pairs can four people make?",
+    "answer_comment": "The answer: 6 pairs. Person A pairs with 3 others (B, C, D), Person B pairs with 2 new people (C, D), and Person C pairs with D (3 + 2 + 1 = 6). Notice how quickly pairs add up even with tiny numbers! How many pairs do you think 5 people would make?",
+    "sources": [],
+    "fact_check": [
+      "In a group of 23 people, the probability that at least two share a birthday (assuming 365 days) is approximately 50.73%.",
+      "The number of pairs among n people is given by n(n-1)/2. For n=23, 23*22/2 = 253 pairs.",
+      "For 4 people, the number of unique pairs is 4*3/2 = 6 pairs.",
+      "The birthday paradox is the foundation of birthday attacks against cryptographic hash functions."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        4.22
+      ],
+      [
+        4.22,
+        10.42
+      ],
+      [
+        10.42,
+        14.45
+      ],
+      [
+        14.45,
+        20.74
+      ],
+      [
+        20.74,
+        27.18
+      ],
+      [
+        27.18,
+        36.23
+      ],
+      [
+        36.23,
+        43.59
+      ],
+      [
+        43.59,
+        47.22
+      ]
+    ],
+    "duration": 47.22,
+    "scene_lines": [
+      "In a room of just 23 people, two likely share a birthday. How?",
+      "In our classroom circle of 23 students, step one is not comparing everyone to just your own birthday.",
+      "Step two: look across the student circle to connect every possible pair.",
+      "The first student in the circle checks 22 classmates, the next checks 21, and so on down the line.",
+      "Step three: count the connections across the circle—23 students form 253 total pairs.",
+      "That's because those 253 pairs in the student circle give 253 separate chances for a match, pushing odds over 50 percent.",
+      "Cybersecurity engineers use this same collision math to set hash lengths and prevent collision attacks on digital signatures.",
+      "Try this: how many unique pairs can four people make?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,050 --> 00:00:01,812\nIn a room of just 23 people,\n\n2\n00:00:01,812 --> 00:00:03,388\ntwo likely share a birthday.\n\n3\n00:00:03,388 --> 00:00:04,220\nHow?\n\n4\n00:00:04,220 --> 00:00:06,717\nIn our classroom circle of 23 students,\n\n5\n00:00:06,717 --> 00:00:08,955\nstep one is not comparing everyone to\n\n6\n00:00:08,955 --> 00:00:10,420\njust your own birthday.\n\n7\n00:00:10,420 --> 00:00:12,415\nStep two: look across the student circle\n\n8\n00:00:12,415 --> 00:00:14,450\nto connect every possible pair.\n\n9\n00:00:14,450 --> 00:00:16,213\nThe first student in the circle checks\n\n10\n00:00:16,213 --> 00:00:19,132\n22 classmates, the next checks 21, and\n\n11\n00:00:19,132 --> 00:00:20,740\nso on down the line.\n\n12\n00:00:20,740 --> 00:00:23,002\nStep three: count the connections across the\n\n13\n00:00:23,002 --> 00:00:27,180\ncircle—23 students form 253 total pairs.\n\n14\n00:00:27,180 --> 00:00:29,980\nThat's because those 253 pairs in the\n\n15\n00:00:29,980 --> 00:00:33,468\nstudent circle give 253 separate chances for\n\n16\n00:00:33,468 --> 00:00:36,230\na match, pushing odds over 50 percent.\n\n17\n00:00:36,230 --> 00:00:39,273\nCybersecurity engineers use this same collision math\n\n18\n00:00:39,273 --> 00:00:41,415\nto set hash lengths and prevent collision\n\n19\n00:00:41,415 --> 00:00:43,590\nattacks on digital signatures.\n\n20\n00:00:43,590 --> 00:00:46,615\nTry this: how many unique pairs can four people make?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [],
+      "footage": [],
+      "review": [
+        "Frame 1 contains misspelled burned-in caption 'PEOPLE TWO LIKELY' instead of 'people two likely share a birthday' or correct grammar."
+      ],
+      "pass": false,
+      "duration": 46.3
+    },
+    "repairs": 1
+  },
+  {
+    "job": "20261115-1753-how-colour-vision-works-the-biology-of-c",
+    "topic": "How colour vision works: The biology of cone cells explained",
+    "title": "How Colour Vision Works: The Biology Explained",
+    "description": "Ever wondered how your eyes turn light into a vibrant red apple? Discover the biology of cone cells and how your brain mixes wavelengths. #shorts #biology #science\n\nSources (open-access research):\n- Sabesan et al. (2015), PLoS ONE. doi:10.1371/journal.pone.0144891\n- Gießl et al. (2010), e-Neuroforum. doi:10.1007/s13295-010-0007-9\n- Panwar et al. (2021), Indian Journal of Ophthalmology. doi:10.4103/ijo.ijo_357_21\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nPhoto by 3652586 on Pixabay\nVideo by NickyPe on Pixabay",
+    "tags": [
+      "colour vision",
+      "cone cells",
+      "biology",
+      "human eye",
+      "science shorts"
+    ],
+    "hook": "Most people see a red apple, but how does light become colour in your eyes?",
+    "status": "review",
+    "narration": "Most people see a red apple, but how does light become colour in your eyes? Step one: light reflects off the red apple and enters your eye through the lens. Step two: that light from the red apple strikes three types of cone cells on your retina. Step three: each cone cell absorbs a different wavelength from the red apple, sending nerve signals to your brain. That's because different wavelengths from the red apple trigger distinct cone responses, which your brain combines into colour. You see this daily on phone screens too, using tiny red, green, and blue dots to show that red apple. Try this: why do some people see this red apple and green leaves as the exact same shade?",
+    "voice_engine": "kokoro",
+    "voices": "male host, female explainer",
+    "diagrams": 1,
+    "series": "Biology",
+    "countdown": false,
+    "length_arm": null,
+    "question": "Try this: why do some people see red and green as the exact same shade?",
+    "answer_comment": "The answer: Colour blindness happens when one or more types of cone cells in the retina lack specific light-sensitive pigments. Without all three functional cone types, certain wavelengths look identical to the brain. Ask below if you have any questions!\n\nSources (open-access research):\n- Sabesan et al. (2015), PLoS ONE. doi:10.1371/journal.pone.0144891\n- Gießl et al. (2010), e-Neuroforum. doi:10.1007/s13295-010-0007-9\n- Panwar et al. (2021), Indian Journal of Ophthalmology. doi:10.4103/ijo.ijo_357_21",
+    "sources": [
+      {
+        "claim": "The human retina contains three types of cone cells responsive to different light wavelengths (red, green, blue).",
+        "cite": "Sabesan et al. (2015), PLoS ONE. doi:10.1371/journal.pone.0144891",
+        "doi": "10.1371/journal.pone.0144891",
+        "title": "Characterizing the Human Cone Photoreceptor Mosaic via Dynamic Photopigment Densitometry",
+        "why": "Estimated uncertainty in identifying a cone as long vs middle wavelength was less than 5%, and the total time taken per subject ranged from 3-9 hours. Short wavelength cones were delineated in every subject with high fidelity."
+      },
+      {
+        "claim": "Cone cells convert light into electrical nerve signals sent via the optic nerve to the brain.",
+        "cite": "Gießl et al. (2010), e-Neuroforum. doi:10.1007/s13295-010-0007-9",
+        "doi": "10.1007/s13295-010-0007-9",
+        "title": "Signal transduction and signal transmission: The two faces of a photoreceptor",
+        "why": "Vision begins in highly specialized light-sensing neurons, the rod and cone photoreceptors. Their task is to absorb photons, transduce the physical stimulus into neuronal signals, transmit the signals to the parallel signal processing pathways of the subsequent retinal network..."
+      },
+      {
+        "claim": "Colour blindness is typically caused by missing or defective cone cell photopigments.",
+        "cite": "Panwar et al. (2021), Indian Journal of Ophthalmology. doi:10.4103/ijo.ijo_357_21",
+        "doi": "10.4103/ijo.ijo_357_21",
+        "title": "Color blindness in dental profession: An issue unexplored",
+        "why": "Color blindness, in its congenital form, is the product of genetic mutations that affect expression of three types of cone cells present in eye that respond differently to light of different wavelengths."
+      }
+    ],
+    "fact_check": [
+      "Light reflects off objects into the eye through the cornea and lens.",
+      "The human retina contains three types of cone cells responsive to different light wavelengths (red, green, blue).",
+      "Cone cells convert light into electrical nerve signals sent via the optic nerve to the brain.",
+      "Colour blindness is typically caused by missing or defective cone cell photopigments."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        4.59
+      ],
+      [
+        4.59,
+        8.93
+      ],
+      [
+        8.93,
+        13.58
+      ],
+      [
+        13.58,
+        19.69
+      ],
+      [
+        19.69,
+        26.82
+      ],
+      [
+        26.82,
+        33.03
+      ],
+      [
+        33.03,
+        39.05
+      ]
+    ],
+    "duration": 39.05,
+    "scene_lines": [
+      "Most people see a red apple, but how does light become colour in your eyes?",
+      "Step one: light reflects off the red apple and enters your eye through the lens.",
+      "Step two: that light from the red apple strikes three types of cone cells on your retina.",
+      "Step three: each cone cell absorbs a different wavelength from the red apple, sending nerve signals to your brain.",
+      "That's because different wavelengths from the red apple trigger distinct cone responses, which your brain combines into colour.",
+      "You see this daily on phone screens too, using tiny red, green, and blue dots to show that red apple.",
+      "Try this: why do some people see this red apple and green leaves as the exact same shade?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,050 --> 00:00:01,938\nMost people see a red apple, but\n\n2\n00:00:01,938 --> 00:00:04,590\nhow does light become colour in your eyes?\n\n3\n00:00:04,590 --> 00:00:06,535\nStep one: light reflects off the red\n\n4\n00:00:06,535 --> 00:00:08,930\napple and enters your eye through the lens.\n\n5\n00:00:08,930 --> 00:00:10,505\nStep two: that light from the red\n\n6\n00:00:10,505 --> 00:00:13,580\napple strikes three types of cone cells on your retina.\n\n7\n00:00:13,580 --> 00:00:15,740\nStep three: each cone cell absorbs a\n\n8\n00:00:15,740 --> 00:00:17,922\ndifferent wavelength from the red apple, sending\n\n9\n00:00:17,922 --> 00:00:19,690\nnerve signals to your brain.\n\n10\n00:00:19,690 --> 00:00:21,902\nThat's because different wavelengths from the red\n\n11\n00:00:21,902 --> 00:00:24,842\napple trigger distinct cone responses, which your\n\n12\n00:00:24,842 --> 00:00:26,820\nbrain combines into colour.\n\n13\n00:00:26,820 --> 00:00:28,782\nYou see this daily on phone screens\n\n14\n00:00:28,782 --> 00:00:31,215\ntoo, using tiny red, green, and blue\n\n15\n00:00:31,215 --> 00:00:33,030\ndots to show that red apple.\n\n16\n00:00:33,030 --> 00:00:34,830\nTry this: why do some people see\n\n17\n00:00:34,830 --> 00:00:36,742\nthis red apple and green leaves as\n\n18\n00:00:36,742 --> 00:00:38,455\nthe exact same shade?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [],
+      "footage": [],
+      "review": [],
+      "heard": [
+        "\"colour\" heard as \"color\"",
+        "\"colour\" heard as \"color\""
+      ],
+      "pass": true,
+      "duration": 38.2
+    },
+    "repairs": 1
+  },
+  {
+    "job": "20261115-1821-why-do-heavy-and-light-objects-fall-at-t",
+    "topic": "Why do heavy and light objects fall at the same speed? The physics of gravity",
+    "title": "Why Do Objects Fall At The Same Rate? 😲",
+    "description": "Discover why gravity pulls objects of different weights down at the same speed. #shorts #physics #science\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nPhoto by Sinousxl on Pixabay\n\nHow this was made: the script is researched and fact-checked with AI tools against open-access research and textbooks, narrated by an AI voice, and every diagram, number and graph is drawn by code from the real values. Spot a mistake? Tell us in the comments - corrections are checked and credited.",
+    "tags": [
+      "physics",
+      "gravity",
+      "science",
+      "education",
+      "shorts"
+    ],
+    "hook": "A 10kg lead sphere and a 1kg lead sphere dropped from the same height in a vacuum. Why don't they hit the ground at different moments?",
+    "status": "banked",
+    "narration": "A 10kg lead sphere and a 1kg lead sphere dropped from the same height in a vacuum. Why don't they hit the ground at different moments? First, gravity pulls harder on the 10kg lead sphere, because it has more weight. But second, that 10kg lead sphere also has more inertia, which is its resistance to changing speed. Third, for our 10kg lead sphere and 1kg lead sphere, these two effects exactly cancel out; the extra force is perfectly balanced by the extra resistance. That's because when you drop the 10kg lead sphere and 1kg lead sphere, the acceleration of an object is force divided by mass, so the mass cancels itself out. Physicists use this universal constant of gravitational acceleration when calculating the motion of falling objects near planetary surfaces. Try this: if we did this with our 10kg lead sphere and 1kg lead sphere on the Moon, would they still hit the ground together?",
+    "voice_engine": "kokoro",
+    "voices": "female host, male explainer",
+    "diagrams": 2,
+    "series": "Physics",
+    "countdown": false,
+    "length_arm": null,
+    "question": "Try this: if we did this on the Moon, would the heavy and light objects still hit the ground together?",
+    "answer_comment": "The answer: Yes, they would hit the ground at the same time. Since the Moon has a gravitational field, the same physics applies regardless of the object's mass. Just like in our vacuum chamber on Earth, the Moon's air is too thin to slow objects down, so objects of different weights still hit the ground at the same time. Does this change if you drop them in a vacuum chamber on Earth? Let me know!",
+    "sources": [],
+    "fact_check": [
+      "Gravity accelerates all objects at the same rate in a vacuum regardless of mass (Equivalence Principle).",
+      "F = ma, so a = F/m. Since F is proportional to mass (F = GmM/r^2), the 'm' in the numerator and denominator cancel out.",
+      "Inertia is the resistance to acceleration, which is exactly why heavier objects are harder to move but also experience more gravitational force."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        7.78
+      ],
+      [
+        7.78,
+        12.84
+      ],
+      [
+        12.84,
+        19.27
+      ],
+      [
+        19.27,
+        29.66
+      ],
+      [
+        29.66,
+        40.35
+      ],
+      [
+        40.35,
+        49.35
+      ],
+      [
+        49.35,
+        57.63
+      ]
+    ],
+    "duration": 57.63,
+    "scene_lines": [
+      "A 10kg lead sphere and a 1kg lead sphere dropped from the same height in a vacuum. Why don't they hit the ground at different moments?",
+      "First, gravity pulls harder on the 10kg lead sphere, because it has more weight.",
+      "But second, that 10kg lead sphere also has more inertia, which is its resistance to changing speed.",
+      "Third, for our 10kg lead sphere and 1kg lead sphere, these two effects exactly cancel out; the extra force is perfectly balanced by the extra resistance.",
+      "That's because when you drop the 10kg lead sphere and 1kg lead sphere, the acceleration of an object is force divided by mass, so the mass cancels itself out.",
+      "Physicists use this universal constant of gravitational acceleration when calculating the motion of falling objects near planetary surfaces.",
+      "Try this: if we did this with our 10kg lead sphere and 1kg lead sphere on the Moon, would they still hit the ground together?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,050 --> 00:00:02,500\nA 10kg lead sphere and a 1kg\n\n2\n00:00:02,500 --> 00:00:05,400\nlead sphere dropped from the same height in a vacuum.\n\n3\n00:00:05,400 --> 00:00:07,780\nWhy don't they hit the ground at different moments?\n\n4\n00:00:07,780 --> 00:00:10,405\nFirst, gravity pulls harder on the 10kg\n\n5\n00:00:10,405 --> 00:00:12,840\nlead sphere, because it has more weight.\n\n6\n00:00:12,840 --> 00:00:15,590\nBut second, that 10kg lead sphere also\n\n7\n00:00:15,590 --> 00:00:19,270\nhas more inertia, which is its resistance to changing speed.\n\n8\n00:00:19,270 --> 00:00:21,708\nThird, for our 10kg lead sphere and\n\n9\n00:00:21,708 --> 00:00:24,958\n1kg lead sphere, these two effects exactly\n\n10\n00:00:24,958 --> 00:00:27,360\ncancel out; the extra force is perfectly\n\n11\n00:00:27,360 --> 00:00:29,660\nbalanced by the extra resistance.\n\n12\n00:00:29,660 --> 00:00:32,035\nThat's because when you drop the 10kg\n\n13\n00:00:32,035 --> 00:00:34,785\nlead sphere and 1kg lead sphere, the\n\n14\n00:00:34,785 --> 00:00:37,260\nacceleration of an object is force divided\n\n15\n00:00:37,260 --> 00:00:40,350\nby mass, so the mass cancels itself out.\n\n16\n00:00:40,350 --> 00:00:43,975\nPhysicists use this universal constant of gravitational\n\n17\n00:00:43,975 --> 00:00:46,892\nacceleration when calculating the motion of falling\n\n18\n00:00:46,892 --> 00:00:49,350\nobjects near planetary surfaces.\n\n19\n00:00:49,350 --> 00:00:50,922\nTry this: if we did this with\n\n20\n00:00:50,922 --> 00:00:54,022\nour 10kg lead sphere and 1kg lead\n\n21\n00:00:54,022 --> 00:00:55,660\nsphere on the Moon, would they still\n\n22\n00:00:55,660 --> 00:00:57,035\nhit the ground together?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [],
+      "footage": [],
+      "review": [],
+      "pass": true,
+      "duration": 56.7
+    },
+    "repairs": 0,
+    "audited": true
+  },
+  {
+    "job": "20261115-1838-why-does-salt-melt-ice-on-frozen-roads-t",
+    "topic": "Why does salt melt ice on frozen roads? The chemistry of freezing point depression",
+    "title": "How Salt Melts Ice: Chemistry Explained",
+    "description": "Ever wondered how salt melts ice on winter roads? Discover the chemistry of freezing point depression in three simple steps. #shorts #chemistry #science\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nVideo by anncapictures on Pixabay",
+    "tags": [
+      "chemistry",
+      "freezing point depression",
+      "science shorts",
+      "how it works",
+      "melting ice"
+    ],
+    "hook": "You've seen trucks dump salt on frozen roads, but how does it actually melt the ice?",
+    "status": "banked",
+    "narration": "You've seen trucks dump salt on frozen roads, but how does it actually melt the ice? First, water molecules on the ice surface are constantly shifting back and forth between solid and liquid. Step two: when you add salt, the sodium and chloride ions dissolve into that thin liquid layer. Step three: these dissolved ions get in the way, blocking water molecules from rejoining the solid ice crystal. That's because the salt lowers the freezing point below the actual temperature, forcing the ice to melt. You see this on icy winter highways worldwide every time cold weather hits. Try this: why does adding salt stop working if the road gets way below freezing?",
+    "voice_engine": "kokoro",
+    "voices": "female host, male explainer",
+    "diagrams": 1,
+    "series": "Chemistry",
+    "countdown": false,
+    "length_arm": null,
+    "question": "Try this: why does adding salt stop working if the road gets way below freezing?",
+    "answer_comment": "The answer: Salt only lowers the freezing point down to about minus twenty-one degrees Celsius for sodium chloride. If the road gets colder than that, the solution freezes solid and the salt can no longer keep it liquid. What other substances could melt ice at extreme temperatures? Drop your ideas below!",
+    "sources": [],
+    "fact_check": [
+      "Water molecules on ice constantly shift between solid and liquid phases.",
+      "Sodium and chloride ions dissolve into the surface liquid layer.",
+      "Dissolved ions physically interfere with water molecules rejoining the crystal lattice.",
+      "Freezing point depression lowers the temperature at which ice can remain solid.",
+      "Eutectic point of NaCl-water is approximately -21.1 degrees Celsius."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        4.9
+      ],
+      [
+        4.9,
+        11.15
+      ],
+      [
+        11.15,
+        16.93
+      ],
+      [
+        16.93,
+        23.53
+      ],
+      [
+        23.53,
+        29.48
+      ],
+      [
+        29.48,
+        34.46
+      ],
+      [
+        34.46,
+        39.8
+      ]
+    ],
+    "duration": 39.8,
+    "scene_lines": [
+      "You've seen trucks dump salt on frozen roads, but how does it actually melt the ice?",
+      "First, water molecules on the ice surface are constantly shifting back and forth between solid and liquid.",
+      "Step two: when you add salt, the sodium and chloride ions dissolve into that thin liquid layer.",
+      "Step three: these dissolved ions get in the way, blocking water molecules from rejoining the solid ice crystal.",
+      "That's because the salt lowers the freezing point below the actual temperature, forcing the ice to melt.",
+      "You see this on icy winter highways worldwide every time cold weather hits.",
+      "Try this: why does adding salt stop working if the road gets way below freezing?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,050 --> 00:00:02,175\nYou've seen trucks dump salt on frozen\n\n2\n00:00:02,175 --> 00:00:04,900\nroads, but how does it actually melt the ice?\n\n3\n00:00:04,900 --> 00:00:07,412\nFirst, water molecules on the ice surface\n\n4\n00:00:07,412 --> 00:00:11,150\nare constantly shifting back and forth between solid and liquid.\n\n5\n00:00:11,150 --> 00:00:12,912\nStep two: when you add salt, the\n\n6\n00:00:12,912 --> 00:00:16,930\nsodium and chloride ions dissolve into that thin liquid layer.\n\n7\n00:00:16,930 --> 00:00:19,192\nStep three: these dissolved ions get in\n\n8\n00:00:19,192 --> 00:00:21,932\nthe way, blocking water molecules from rejoining\n\n9\n00:00:21,932 --> 00:00:23,530\nthe solid ice crystal.\n\n10\n00:00:23,530 --> 00:00:25,842\nThat's because the salt lowers the freezing\n\n11\n00:00:25,842 --> 00:00:29,480\npoint below the actual temperature, forcing the ice to melt.\n\n12\n00:00:29,480 --> 00:00:31,542\nYou see this on icy winter highways\n\n13\n00:00:31,542 --> 00:00:34,460\nworldwide every time cold weather hits.\n\n14\n00:00:34,460 --> 00:00:36,575\nTry this: why does adding salt stop\n\n15\n00:00:36,575 --> 00:00:39,200\nworking if the road gets way below freezing?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [],
+      "footage": [],
+      "review": [],
+      "pass": true,
+      "duration": 38.9
+    },
+    "repairs": 1,
+    "audited": true
   }
 ]
