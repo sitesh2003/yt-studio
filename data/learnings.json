@@ -1,20 +1,14 @@
 {
-  "summary": [
-    "Prioritize 'Body Horror' or 'Self-Defense' biological themes where the body acts against itself (e.g., eating you back, leaking, pruney skin).",
-    "Increase hook length by focusing on direct, counter-intuitive claims that disrupt the viewer's current reality.",
-    "Shift focus to longer-form retention by maintaining a higher Average View Duration (40+ seconds) rather than just broad reach.",
-    "Eliminate 'process-based' informational topics (like syrup production) in favor of 'mystery' or 'survival' biology.",
-    "Use active, aggressive verbs in the first five seconds to increase rewatchability and engagement."
-  ],
+  "summary": "1. Keep video duration strictly under 25 seconds for maximum total view distribution, as 17-24 second Shorts achieved 1000+ views while 39+ second Shorts stalled below 5 views. 2. Address the viewer directly in the hook using second-person pronouns ('Your eyes are leaking right now', 'Your fingers prune') to trigger immediate personal relevance. 3. Frame hooks around active bodily processes or paradoxical physical sensations rather than static historical facts or food production processes. 4. Use short, punchy title structures that state a clear phenomenon with 1-2 relevant emojis (e.g., 'Why Cold Water Fails Against Spicy Food 🌶️🥛'). 5. Avoid passive passive introductory phrasing like 'Honey is famous for...' or 'That sweet maple syrup...' which produce retention drop-offs below 50%.",
   "winning_hooks": [
-    "Fresh pineapple is literally eating you back.",
-    "Your eyes are leaking right now, and your brain is hiding it.",
-    "Your fingers prune in water, but it is not because you are absorbing it like a sponge."
+    "Direct personal confrontation: 'Your eyes are leaking right now, and your brain is hiding it.' (1,320 views, 53.8% retention)",
+    "Debunking a personal perception instantly: 'Your fingers prune in water, but it is not because you are absorbing it like a sponge.' (1,185 views, 54.3% retention)",
+    "Visceral subversion of food reaction: 'Fresh pineapple is literally eating you back.' (103.2% retention)"
   ],
   "avoid": [
-    "Topics that focus on neutral manufacturing or production processes like 'how syrup is made'.",
-    "Hooks that lead with soft intros like 'Honey is famous for...'",
-    "Explaining simple facts without a 'hidden secret' or 'deception' element."
+    "Fact-book style intros: 'Honey is famous for being one of the only natural foods...' (47.3% retention, low engagement)",
+    "Process descriptions starting with rhetorical questions: 'That sweet maple syrup on your pancakes? It started out...' (39.7% retention, lowest performer)",
+    "Script lengths exceeding 35 seconds (39s-51s videos failed to reach broader feed distribution despite high rewatch rates)"
   ],
-  "next_experiment": "A/B test two videos on the same topic: one with a 'process' hook ('How X is made') and one with a 'conflict' hook ('Why X is killing you'), measuring Average View Percentage to see if the conflict narrative sustains high retention."
+  "next_experiment": "Test a 20-second high-rewatch concept by combining a 100%+ retention hook style ('X is literally Y-ing your body right now') with a short 18-second script length to evaluate if shorter duration unlocks algorithm distribution for high-rewatch topics."
 }

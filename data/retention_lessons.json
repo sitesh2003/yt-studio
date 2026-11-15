@@ -1,18 +1,20 @@
 {
   "lessons": [
-    "Avoid starting with declarative background facts without an immediate tension or conflict, as seen in the Maple Syrup video where 38.5% of viewers dropped at 13% progress after a factual sap explanation.",
-    "Do not use explicit interactive pauses or calls to guess ('Pause and guess...'), as the Maple Syrup video suffered a 15.4% drop right at the 52% mark where this occurred.",
-    "Deliver a strong narrative or sensory hook immediately within the first 10% to push retention above 1.0 (rewatch territory); the Onions and Eyes videos achieved 1.178 and 1.065 at 10% respectively, whereas descriptive informational intros like Maple Syrup fell to 0.923.",
-    "Keep initial problem statements concise and direct; the Spicy Food video hook held reasonably well at the start (1.0479 at 10%), but generic setup lines caused high early friction across all samples."
+    "Never insert arbitrary pauses or interaction prompts like 'Pause and guess...', which lost 15.4% of viewers at 52% in the Maple Syrup video.",
+    "Avoid jumping directly into slow background setups after the hook; explaining sap composition lost 38.5% of viewers at 13% in the Maple Syrup video.",
+    "Keep verbal hooks tight; overly long descriptive hook sentences caused an immediate 22.4% viewer drop at 10% in the Cold Water video.",
+    "Focus on intrigue that naturally drives immediate rewatches at the start; videos with strong visual curiosity peaked above 1.0 retention at 10% (up to 1.178 in 'Why Onions Make You Cry').",
+    "Avoid closing with redundant side-questions near the end; asking another rhetorical question at 94% dropped 11.6% of viewers in the Cold Water video."
   ],
   "worst_moment_types": [
-    "Explanatory background trivia delivered without emotional or physical stakes",
-    "Direct prompt pauses asking the viewer to guess an answer",
-    "Slow informational tangents around the 13% to 26% video marks"
+    "Artificial narrative pauses and prompts (e.g., 'Pause and guess...')",
+    "Slow, detailed scientific background setup immediately following the hook",
+    "Verbose, wordy hook lines that take too long to deliver the payoff",
+    "Tack-on rhetorical questions in the final seconds of the video"
   ],
   "best_hook_types": [
-    "Intriguing sensory dilemmas or body mysteries (eyes leaking, onion crying, spicy food relief)",
-    "High-conflict physiological setups that defy expected intuition within the first few seconds"
+    "Visual curiosity hooks that encourage immediate rewinds (>1.0 retention at 10%)",
+    "Concise problem statements that get directly to the core topic without verbal filler"
   ],
   "studied": "2026-11-15",
   "videos": 4

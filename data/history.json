@@ -1519,7 +1519,7 @@
       "shorts"
     ],
     "hook": "You just smashed your elbow on a desk and now your entire forearm is buzzing with pain.",
-    "status": "banked",
+    "status": "scheduled",
     "narration": "You just smashed your elbow on a desk and now your entire forearm is buzzing with pain. It feels like an electric current, but there is no electricity in your arm. Wait, really? It feels exactly like touching a live wire. This is because of how one specific nerve is positioned in your joint. So why does a simple tap cause that intense shooting sensation? Here's why. You are actually compressing the ulnar nerve directly against hard bone, which fires a sudden volley of signals straight to your brain. Ever thought why other nerves don't hurt quite like that when you poke them? Drop your guess below.",
     "voice_engine": "kokoro",
     "voices": "male host, female explainer",
@@ -1587,7 +1587,9 @@
       "duration": 42.3
     },
     "repairs": 2,
-    "audited": true
+    "audited": true,
+    "video_id": "9naAs1wMGVY",
+    "publish_at": "2026-11-16T12:00:00-05:00"
   },
   {
     "job": "20261114-1555-why-car-windshields-have-tiny-black-dots",
