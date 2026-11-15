@@ -443,10 +443,11 @@ Shorts of the last 60 days for 8 topic searches (US region), then the last 30 up
 channels behind them (median views, uploads a week, length, title patterns). Script:
 scratchpad niche_scan_1115.py; rows saved as niche_rows_1115.json.
 
-**Our numbers (28 days; analytics lag 2-3 days):** 5,123 views, 96% from the Shorts feed, 21 s average
-watch (52%), +6/-4 subscribers (0.12% of viewers subscribe - the weakest number), US 52%,
-Philippines 11%, India 9%. Best: eyes leaking, onions, pruney fingers, spicy food (1.1-1.3K each) -
-body and food everyday topics.
+**Our numbers - VERY EARLY: the first public video went out on 11 Nov 2026, so this is ~5 days, and
+analytics lag 2-3 days (correction: an earlier draft called it "28 days").** 5,123 views over 16 public
+videos, 96% from the Shorts feed, 21 s average watch (52%), 11 subscribers in total. Too early to judge
+the subscribe rate or anything per-topic; early signal only: the body and food topics (eyes leaking,
+onions, pruney fingers, spicy food) got 1.1-1.3K views each. Re-measure at 30 days (11 Dec 2026).
 
 **The niche (median views of recent Shorts):**
 | Channel | Subs | Started | Median | Per week | Length | Note |
@@ -466,7 +467,8 @@ body and food everyday topics.
 3. Science news ("Scientists just found...") and numbered lists are proven formats we lacked.
 4. Hindi/Telugu science Shorts are the fastest-growing segment of all; India is already 9% of our
    viewers and the student channel's natural audience.
-5. Subscribing follows recognisable series (Zack's fixed title style, Zovik's chapters); we had none.
+5. Subscribing follows recognisable series (Zack's fixed title style, Zovik's chapters); we had none
+   (true of the niche regardless of our own early numbers).
 
 **Built (commit 7228d61):** length test now short/standard/long (~28/40/95 s), QA accepts up to 175 s;
 formats SCIENCE NEWS, EXPLAINED and TOP 3; numbered main-channel episodes ("Why #N · series").
