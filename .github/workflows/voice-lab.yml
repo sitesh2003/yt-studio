@@ -4,6 +4,9 @@ name: Voice lab (emotion test)
 # strengths, same lines. Saves research/voice_lab/*.mp3 + timings.txt. Never touches a real video.
 on:
   workflow_dispatch: {}
+  push:   # also runs when the lab script itself changes (no browser click needed)
+    branches: [main]
+    paths: ["tools/voice_lab.py"]
 
 permissions:
   contents: write

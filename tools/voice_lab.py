@@ -5,7 +5,8 @@ Renders the same short spoken-style script with:
   chatterbox_calm.wav          - Chatterbox (MIT, open source) with low emotion exaggeration
   chatterbox_lively.wav        - Chatterbox with stronger emotion exaggeration
 and writes timings.txt (seconds to make each, length), so speed on the free cloud CPU is known too.
-Run by .github/workflows/voice-lab.yml; listen to the files in the run's artifact."""
+Run by .github/workflows/voice-lab.yml (manually, or on any change to this file); the MP3s are
+committed to research/voice_lab/."""
 import os
 import sys
 import time
