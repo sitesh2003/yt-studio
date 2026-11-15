@@ -2,5 +2,9 @@
   {
     "kind": "checker miss",
     "text": "A coupling capacitor blocks a DC OFFSET, not hum: mains hum is 50/60 Hz AC and passes through. Never call hum DC."
+  },
+  {
+    "kind": "false_line",
+    "text": "said \"Step three: specialized white blood cells become memory cells, storing the exact shape of that antibody.\" but Memory cells do not store the shape of the antibody; they store the genetic information required to produce those specific antibodies upon re-exposure to the antigen."
   }
 ]

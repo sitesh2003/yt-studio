@@ -1,1 +1,17 @@
-[]
+[
+  {
+    "job": "20261115-0757-why-does-soap-remove-grease-and-oil-when",
+    "date": "2026-11-15",
+    "title": "Why Does Soap Remove Grease?",
+    "topic": "Why does soap remove grease and oil when plain water cannot?",
+    "series": "Chemistry",
+    "weekly": false,
+    "claims": [
+      "Water molecules are polar and do not mix with non-polar grease due to hydrophobic interactions.",
+      "Soap molecules possess a polar hydrophilic head and a non-polar hydrophobic tail.",
+      "Soap forms micelles around grease, allowing it to be rinsed away by water.",
+      "Hot water increases molecular kinetic energy, speeding up the dissolving and melting of fats."
+    ],
+    "sources": []
+  }
+]

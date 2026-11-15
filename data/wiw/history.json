@@ -191,5 +191,201 @@
     "repairs": 1,
     "audited": true,
     "withdrawn_reason": "made before 14 Nov fixes: wrong channel logo (Ever Thought Why? mark) and emoji title; never published; files kept in the video-bank-wiw release"
+  },
+  {
+    "job": "20261115-0655-how-do-vaccines-actually-train-your-immu",
+    "topic": "How do vaccines actually train your immune system to fight real viruses?",
+    "title": "How Vaccines Work: Immune Memory Explained",
+    "description": "How do vaccines train your immune system without making you sick? Here is the step-by-step biology of antibodies and memory cells.\n\n#shorts #biology #science\n\nSources (open-access research):\n- Turner et al. (2017), PLoS ONE. doi:10.1371/journal.pone.0183877\n- Galeone et al. (2024), Viruses. doi:10.3390/v16101515\n\nPhoto by whitesession on Pixabay\nVideo by 4Shaida on Pixabay\nVideo by Cassiopeia_Arts on Pixabay",
+    "tags": [
+      "vaccines",
+      "immune system",
+      "how vaccines work",
+      "biology",
+      "antibodies",
+      "science explained"
+    ],
+    "hook": "You’ve gotten vaccines your whole life, but do you know how they actually train your body?",
+    "status": "review",
+    "narration": "You’ve gotten vaccines your whole life, but do you know how they actually train your body? Step one: a vaccine introduces harmless viral protein fragments, called antigens, into muscle tissue. Step two: your immune system detects these antigens and builds custom Y-shaped proteins called antibodies to lock onto them. Step three: specialized white blood cells become memory cells, storing the exact shape of that antibody. That's because your body saves molecular blueprints, allowing your immune system to destroy real viruses before you feel sick. This cellular memory is how vaccines successfully eliminated deadly diseases like smallpox worldwide. Try this: why do you need a new flu vaccine almost every year?",
+    "voice_engine": "kokoro",
+    "voices": "male host, female explainer",
+    "diagrams": 0,
+    "series": "Biology",
+    "countdown": false,
+    "length_arm": null,
+    "question": "Try this: why do you need a new flu vaccine almost every year?",
+    "answer_comment": "The answer: the influenza virus mutates rapidly, changing the shape of its surface antigens. Because your memory cells look for specific protein shapes, old antibodies cannot recognize the mutated strain. Updated flu vaccines train your immune system to recognize the newest surface shapes!\n\nSources (open-access research):\n- Turner et al. (2017), PLoS ONE. doi:10.1371/journal.pone.0183877\n- Galeone et al. (2024), Viruses. doi:10.3390/v16101515",
+    "sources": [
+      {
+        "claim": "Memory B and T cells retain the specific molecular shape of antigens for rapid secondary response.",
+        "cite": "Turner et al. (2017), PLoS ONE. doi:10.1371/journal.pone.0183877",
+        "doi": "10.1371/journal.pone.0183877",
+        "title": "Transiently antigen primed B cells can generate multiple subsets of memory cells",
+        "why": "Memory B cells are long-lived cells that generate a more vigorous response upon recognition of antigen (Ag) and T cell help than naïve B cells and ensure maintenance of durable humoral immunity."
+      },
+      {
+        "claim": "Influenza antigenic drift alters surface hemagglutinin and neuraminidase, requiring annual vaccine reformulations.",
+        "cite": "Galeone et al. (2024), Viruses. doi:10.3390/v16101515",
+        "doi": "10.3390/v16101515",
+        "title": "Evolutionary Insights from Association Rule Mining of Co-Occurring Mutations in Influenza Hemagglutinin and Neuraminidase",
+        "why": "Seasonal influenza viruses continuously evolve via antigenic drift. This leads to recurring epidemics, globally significant mortality rates, and the need for annually updated vaccines."
+      }
+    ],
+    "fact_check": [
+      "Vaccines present harmless antigens to stimulate primary antibody production.",
+      "Memory B and T cells retain the specific molecular shape of antigens for rapid secondary response.",
+      "Immune memory prevents disease onset upon later exposure to the wild pathogen.",
+      "Influenza antigenic drift alters surface hemagglutinin and neuraminidase, requiring annual vaccine reformulations."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        5.21
+      ],
+      [
+        5.21,
+        12.7
+      ],
+      [
+        12.7,
+        21.37
+      ],
+      [
+        21.37,
+        28.59
+      ],
+      [
+        28.59,
+        36.81
+      ],
+      [
+        36.81,
+        44.34
+      ],
+      [
+        44.34,
+        48.62
+      ]
+    ],
+    "duration": 48.62,
+    "scene_lines": [
+      "You’ve gotten vaccines your whole life, but do you know how they actually train your body?",
+      "Step one: a vaccine introduces harmless viral protein fragments, called antigens, into muscle tissue.",
+      "Step two: your immune system detects these antigens and builds custom Y-shaped proteins called antibodies to lock onto them.",
+      "Step three: specialized white blood cells become memory cells, storing the exact shape of that antibody.",
+      "That's because your body saves molecular blueprints, allowing your immune system to destroy real viruses before you feel sick.",
+      "This cellular memory is how vaccines successfully eliminated deadly diseases like smallpox worldwide.",
+      "Try this: why do you need a new flu vaccine almost every year?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,050 --> 00:00:02,250\nYou’ve gotten vaccines your whole life, but\n\n2\n00:00:02,250 --> 00:00:04,925\ndo you know how they actually train your body?\n\n3\n00:00:05,210 --> 00:00:08,435\nStep one: a vaccine introduces harmless viral\n\n4\n00:00:08,435 --> 00:00:12,700\nprotein fragments, called antigens, into muscle tissue.\n\n5\n00:00:12,700 --> 00:00:15,388\nStep two: your immune system detects these\n\n6\n00:00:15,388 --> 00:00:18,888\nantigens and builds custom Y-shaped proteins called\n\n7\n00:00:18,888 --> 00:00:21,350\nantibodies to lock onto them.\n\n8\n00:00:21,370 --> 00:00:24,495\nStep three: specialized white blood cells become\n\n9\n00:00:24,495 --> 00:00:28,570\nmemory cells, storing the exact shape of that antibody.\n\n10\n00:00:28,590 --> 00:00:31,877\nThat's because your body saves molecular blueprints,\n\n11\n00:00:31,877 --> 00:00:34,415\nallowing your immune system to destroy real\n\n12\n00:00:34,415 --> 00:00:36,765\nviruses before you feel sick.\n\n13\n00:00:36,810 --> 00:00:40,085\nThis cellular memory is how vaccines successfully\n\n14\n00:00:40,085 --> 00:00:44,235\neliminated deadly diseases like smallpox worldwide.\n\n15\n00:00:44,340 --> 00:00:45,552\nTry this: why do you need a\n\n16\n00:00:45,552 --> 00:00:48,015\nnew flu vaccine almost every year?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [],
+      "footage": [],
+      "review": [],
+      "heard": [
+        "\"you ve\" heard as \"you've\""
+      ],
+      "pass": true,
+      "duration": 47.7
+    },
+    "repairs": 2
+  },
+  {
+    "job": "20261115-0757-why-does-soap-remove-grease-and-oil-when",
+    "topic": "Why does soap remove grease and oil when plain water cannot?",
+    "title": "Why Does Soap Remove Grease?",
+    "description": "Water alone can't wash away grease, but soap solves this instantly. Discover the molecular bridge that makes cleaning possible.\n\n#chemistry #shorts #science\n\nVideo by Kaffeesüchtig on Pixabay\nVideo by Moos-Media on Pixabay\nVideo by NickyPe on Pixabay\nVideo by StefWithAnF on Pixabay\nVideo by klimkin on Pixabay\n\nHow this was made: the script is researched and fact-checked with AI tools against open-access research and textbooks, narrated by an AI voice, and every diagram, number and graph is drawn by code from the real values. Spot a mistake? Tell us in the comments - corrections are checked and credited.",
+    "tags": [
+      "soap",
+      "grease",
+      "chemistry",
+      "molecules",
+      "science",
+      "surfactants"
+    ],
+    "hook": "You've used soap your whole life, but do you know how it actually removes grease?",
+    "status": "scheduled",
+    "narration": "You've used soap your whole life, but do you know how it actually removes grease? Step one: water molecules prefer to stick to each other rather than to greasy surfaces, so they bead up instead of washing the grease away. Step two: a soap molecule has two very different ends. Step three: the long tail grabs the oil, while the head dissolves in water. That's because soap molecules act as an intermediate bridge, linking the polar water to non-polar grease. Try this: why does hot water often help soap clean greasy pans more effectively than cold water?",
+    "voice_engine": "kokoro",
+    "voices": "female host, male explainer",
+    "diagrams": 0,
+    "series": "Chemistry",
+    "countdown": false,
+    "length_arm": null,
+    "question": "Try this: why does hot water often help soap clean greasy pans more effectively than cold water?",
+    "answer_comment": "The answer: Hot water gives molecules more kinetic energy, causing them to move faster and melt solid fats into liquids more quickly. This makes it easier for soap molecules to surround and lift the grease away. Additionally, heat lowers the viscosity of the grease, making it flow more easily so soap can break it up. What other everyday items rely on chemistry to clean?",
+    "sources": [],
+    "fact_check": [
+      "Water molecules are polar and do not mix with non-polar grease due to hydrophobic interactions.",
+      "Soap molecules possess a polar hydrophilic head and a non-polar hydrophobic tail.",
+      "Soap forms micelles around grease, allowing it to be rinsed away by water.",
+      "Hot water increases molecular kinetic energy, speeding up the dissolving and melting of fats."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        4.95
+      ],
+      [
+        4.95,
+        13.49
+      ],
+      [
+        13.49,
+        16.95
+      ],
+      [
+        16.95,
+        21.34
+      ],
+      [
+        21.34,
+        28.47
+      ],
+      [
+        28.47,
+        35.52
+      ]
+    ],
+    "duration": 35.52,
+    "scene_lines": [
+      "You've used soap your whole life, but do you know how it actually removes grease?",
+      "Step one: water molecules prefer to stick to each other rather than to greasy surfaces, so they bead up instead of washing the grease away.",
+      "Step two: a soap molecule has two very different ends.",
+      "Step three: the long tail grabs the oil, while the head dissolves in water.",
+      "That's because soap molecules act as an intermediate bridge, linking the polar water to non-polar grease.",
+      "Try this: why does hot water often help soap clean greasy pans more effectively than cold water?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,050 --> 00:00:01,962\nYou've used soap your whole life, but\n\n2\n00:00:01,962 --> 00:00:04,625\ndo you know how it actually removes grease?\n\n3\n00:00:04,950 --> 00:00:07,600\nStep one: water molecules prefer to stick\n\n4\n00:00:07,600 --> 00:00:09,338\nto each other rather than to greasy\n\n5\n00:00:09,338 --> 00:00:11,588\nsurfaces, so they bead up instead of\n\n6\n00:00:11,588 --> 00:00:13,490\nwashing the grease away.\n\n7\n00:00:13,490 --> 00:00:16,915\nStep two: a soap molecule has two very different ends.\n\n8\n00:00:16,950 --> 00:00:18,850\nStep three: the long tail grabs the\n\n9\n00:00:18,850 --> 00:00:21,340\noil, while the head dissolves in water.\n\n10\n00:00:21,340 --> 00:00:23,728\nThat's because soap molecules act as an\n\n11\n00:00:23,728 --> 00:00:28,240\nintermediate bridge, linking the polar water to non-polar grease.\n\n12\n00:00:28,470 --> 00:00:30,920\nTry this: why does hot water often\n\n13\n00:00:30,920 --> 00:00:34,920\nhelp soap clean greasy pans more effectively than cold water?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [],
+      "footage": [],
+      "review": [],
+      "heard": [
+        "\"bead\" heard as \"beat\""
+      ],
+      "notes": [
+        "scene 3 footage is a loose match (score 3.0), accepted"
+      ],
+      "pass": true,
+      "duration": 34.6
+    },
+    "repairs": 0,
+    "audited": true,
+    "video_id": "QqhblhrBHUs",
+    "publish_at": "2026-11-15T07:30:00-05:00"
   }
 ]
