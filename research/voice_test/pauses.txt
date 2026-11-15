@@ -1,15 +1,13 @@
 engine: kokoro
-words: 59, length 22.3s
+words: 59, length 22.0s
 
-pause 0.26s at 0.78s
-pause 0.39s at 2.98s
-pause 0.52s at 4.74s
-pause 0.79s at 6.49s
-pause 0.42s at 8.21s
-pause 0.21s at 9.35s
-pause 0.85s at 9.95s
-pause 0.48s at 11.59s
-pause 0.64s at 13.99s
-pause 0.29s at 16.13s
-pause 0.71s at 17.45s
-pause 0.45s at 19.60s
+pause 0.38s at 2.84s
+pause 0.56s at 4.56s
+pause 0.78s at 6.35s
+pause 0.42s at 8.07s
+pause 0.21s at 9.20s
+pause 0.85s at 9.80s
+pause 0.48s at 11.44s
+pause 0.64s at 13.85s
+pause 0.71s at 17.16s
+pause 0.44s at 19.31s
