@@ -143,6 +143,17 @@ Rules:
   (5) TRY THIS: a short question the viewer can work out from the video, for the comments, starting
       with "Try this:" (e.g. "Try this: why does a lake freeze from the top down?"). It must have one
       clear answer.
+- ONE CONNECTED LESSON, NOT A LIST OF FACTS (the best explainers we studied all do this):
+  * Pick ONE running example - a concrete case with real, checkable numbers or a specific object
+    (e.g. "theory says 36 g, the lab gives 30 g", "a 2 kg block of ice", "one drop of dish soap in a
+    greasy pan") - and carry it through EVERY scene. Each scene uses or extends that same example.
+  * Each scene answers the question the previous scene left open, and ends by opening the next one
+    ("So where did the missing 6 g go?"). A viewer should feel someone is asking them and walking them
+    through it, one step at a time.
+  * The same objects keep coming back on screen: say exactly what is seen so the pictures connect
+    (the same beaker, the same pan, the same molecule), never an unrelated new picture each line.
+  * For each scene give "key_idea": the main point in 2-5 words with the ONE key word in *asterisks*
+    (e.g. "Compare with the *maximum*"). It is shown in a box under the picture.
 - 100% correct. Simplify honestly ("roughly", "in most cases"); never state a myth or an overclaim.
   If a trick only works for special cases, SAY so.
 - Numbers easy to say; any number you use must be exactly right.
@@ -157,7 +168,9 @@ Rules:
 Return JSON exactly in this shape:
 {{
  "hook_options": ["...", "...", "..."],
- "scenes": [{{"speaker": "host or explainer", "narration": "...", "visual_query": "...", "alt_queries": ["...", "..."]}}],
+ "running_example": "the one concrete example every scene builds on",
+ "frame_title": "2-4 words naming the concept, shown at the top as the chapter title (e.g. 'Percentage Yield')",
+ "scenes": [{{"speaker": "host or explainer", "narration": "...", "key_idea": "2-5 words, one *key* word", "visual_query": "...", "alt_queries": ["...", "..."]}}],
  "title_options": ["4 to 8 words, 30-55 characters, Title Case, NO hashtags, NO emoji and NO capitals-only words (a study of 18,000 channels found both hurt trust in education titles), the student's question or the surprising fact; true, never the answer", "...", "..."],
  "description": "2-3 lines: the question, a tease of the reason, then 3 hashtags including #shorts and the subject (e.g. #physics)",
  "tags": ["...", "..."],

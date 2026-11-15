@@ -194,6 +194,17 @@ def lint(s, words):
             issues.append(hi)
     except Exception:
         pass
+    ex = _content_words(s.get("running_example", ""))
+    if not ex:
+        issues.append("no running_example: pick one concrete example and carry it through every scene")
+    elif scenes:
+        carried = sum(1 for x in scenes[1:-1] if ex & _content_words(x.get("narration", "")))
+        if carried < max(2, (len(scenes) - 2) // 2):
+            issues.append(f"the running example ({s.get('running_example')}) appears in only {carried} middle scenes: "
+                          "build every step on that same example so the video is one connected lesson")
+    missing = [i + 1 for i, x in enumerate(scenes) if not x.get("key_idea")]
+    if missing:
+        issues.append(f"scenes {missing} have no key_idea (2-5 words, one *key* word)")
     n = len(text.split())
     if n > words * 1.2:
         issues.append(f"{n} words, aim for about {words}: cut the weakest lines")
@@ -327,6 +338,17 @@ Rules:
 - SOUND LIKE A CURIOUS HUMAN, not a fact list: talk to one person ("you"), use contractions, let real
   wonder show ("Here's what got me...", "Wait, it gets stranger."), react to the surprising bit,
   vary sentence length. Never robotic lists, never "Fact one, fact two".
+- ONE CONNECTED LESSON, NOT A LIST OF FACTS (the best explainers we studied all do this):
+  * Pick ONE running example - a concrete case with real, checkable numbers or a specific object
+    (e.g. "theory says 36 g, the lab gives 30 g", "a 2 kg block of ice", "one drop of dish soap in a
+    greasy pan") - and carry it through EVERY scene. Each scene uses or extends that same example.
+  * Each scene answers the question the previous scene left open, and ends by opening the next one
+    ("So where did the missing 6 g go?"). A viewer should feel someone is asking them and walking them
+    through it, one step at a time.
+  * The same objects keep coming back on screen: say exactly what is seen so the pictures connect
+    (the same beaker, the same pan, the same molecule), never an unrelated new picture each line.
+  * For each scene give "key_idea": the main point in 2-5 words with the ONE key word in *asterisks*
+    (e.g. "Compare with the *maximum*"). It is shown in a box under the picture.
 - THE ENQUIRY ARC, always in this order: (1) hook; (2) explain; {{arc_rule}}
   (4) reveal the answer with the why; (5) close with the "Ever thought why/how" tinkering question
   that applies the idea to something new.
@@ -342,7 +364,9 @@ Rules:
 Return JSON exactly in this shape:
 {{
  "hook_options": ["...", "...", "..."],
- "scenes": [{{"speaker": "host or explainer", "narration": "...", "visual_query": "...", "alt_queries": ["...", "..."]}}],
+ "running_example": "the one concrete example every scene builds on",
+ "frame_title": "2-4 words naming the topic, shown at the top of the frame (e.g. 'Maple Sap')",
+ "scenes": [{{"speaker": "host or explainer", "narration": "...", "key_idea": "2-5 words, one *key* word", "visual_query": "...", "alt_queries": ["...", "..."]}}],
  "title_options": ["4 to 8 words, max 60 characters, Title Case, NO hashtags, ending with exactly ONE face emoji that shows the feeling (one of: 🤔 😮 😨 😱 🤯 😳), like the biggest channel in the genre: one concrete object, place or moment and a curiosity gap that is TRUE (e.g. 'Why Plane Windows Are Never Square 🤔', 'How Horseflies Bite You 😨'); never the answer", "...", "..."],
  "description": "2-3 lines for US viewers that tease the answer without giving it, then 3 relevant hashtags including #shorts",
  "tags": ["...", "..."],

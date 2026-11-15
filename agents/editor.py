@@ -1,6 +1,7 @@
 """Agent 4c - Editing: cut clips to the voice timeline, burn word-by-word
 captions, mix music, render a vertical MP4 and a thumbnail. FFmpeg only."""
 import random
+import re
 
 from PIL import Image, ImageDraw, ImageFont
 
@@ -26,6 +27,8 @@ Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour,
 Style: Banner,{c['font']},{int(c['size']*0.95)},&H0000E5FF,&H0000E5FF,&H00000000,&HA0000000,0,0,0,0,100,100,2,0,3,10,0,8,40,40,{int(f['height']*0.12)},1
 Style: Count,{c['font']},{int(c['size']*2.6)},&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,0,0,0,0,100,100,0,0,1,12,4,5,0,0,0,1
 Style: Cap,{c['font']},{c['size']},{c['color']},{c['highlight']},&H00000000,&H64000000,0,0,0,0,100,100,0,0,1,{c['outline']},3,5,60,60,0,1
+Style: Header,{c['font']},{int(c['size']*0.42)},&H00FFFFFF,&H00FFFFFF,&H00301A0B,&H90301A0B,0,0,0,0,100,100,3,0,3,14,0,8,200,200,{int(f['height']*0.075)},1
+Style: Key,{c['font']},{int(c['size']*0.5)},&H00FFFFFF,&H00FFFFFF,&H00301A0B,&H70301A0B,0,0,0,0,100,100,1,0,3,18,0,2,90,90,{int(f['height']*0.2)},1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
@@ -92,6 +95,18 @@ def predict_overlays(script, times, words):
     hook = hook_title(script.get("title", ""))
     if hook and times:
         out.append((0.0, min(times[0][1], 3.0), "{\\fs76}" + hook, "Banner"))
+    # THE FRAME (15 Nov, from the videos the user benchmarked): one fixed header the whole way through
+    # and a key-idea box under each scene, so every scene visibly belongs to one lesson.
+    label = (script.get("frame_label") or "").strip()
+    if label and times:
+        out.append((min(times[0][1], 3.0) if hook else 0.0, times[-1][1], label.upper(), "Header"))
+    for sc, (a, b) in zip(script["scenes"], times):
+        key = (sc.get("key_idea") or "").strip()
+        if not key or sc.get("anim") or sc.get("predict") or b - a < 1.2:
+            continue          # animations carry their own labels; the 3-2-1 has its banner
+        hi = config()["captions"]["highlight"]
+        text = re.sub(r"\*([^*]+)\*", lambda m: "{\\c" + hi + "}" + m.group(1) + "{\\c&H00FFFFFF&}", key.upper())
+        out.append((a + 0.15, b - 0.05, text, "Key"))
     nums = {"three": "3", "two": "2", "one": "1"}
     for sc, (a, b) in zip(script["scenes"], times):
         if not (sc.get("predict") or "pause and guess" in sc.get("narration", "").lower()):
@@ -104,6 +119,16 @@ def predict_overlays(script, times, words):
             end = hits[k + 1]["start"] if k + 1 < len(hits) else w["end"] + 0.5
             out.append((w["start"], end, nums[w["text"].lower().strip(".,!?")], "Count"))
     return out
+
+
+def _dur(path):
+    """Seconds, from ffmpeg's own header line."""
+    import re
+    import subprocess
+    err = subprocess.run(["ffmpeg", "-hide_banner", "-i", str(path)], capture_output=True, text=True,
+                         encoding="utf-8", errors="replace").stderr
+    m = re.search(r"Duration:\s*(\d+):(\d+):([\d.]+)", err)
+    return int(m[1]) * 3600 + int(m[2]) * 60 + float(m[3]) if m else 0.0
 
 
 def _dims(path):
@@ -149,13 +174,18 @@ def render(clips, times, words, job_dir, overlays=None):
             cwd=job_dir)
         segs.append(seg)
     (job_dir / "list.txt").write_text("".join(f"file '{s}'\n" for s in segs), encoding="utf-8")
-    run(["ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", "list.txt", "-c", "copy", "visual.mp4"], cwd=job_dir)
+    run(["ffmpeg", "-y", "-fflags", "+genpts", "-f", "concat", "-safe", "0", "-i", "list.txt", "-c", "copy",
+         "-avoid_negative_ts", "make_zero", "visual.mp4"], cwd=job_dir)
 
     captions(words, job_dir / "captions.ass", overlays)
     import shutil
     shutil.copytree(ASSETS / "fonts", job_dir / "fonts", dirs_exist_ok=True)
     music = sorted((ASSETS / "music").glob("*.mp3"))
-    cmd = ["ffmpeg", "-y", "-i", "visual.mp4", "-i", "voice.mp3"]
+    # THREE STEPS, NOT ONE PASS (15 Nov: a combined audio+video render dropped whole phrases while the
+    # voice file itself was complete - twice, once on a published Short). 1) the sound is finished on
+    # its own, 2) the picture is rendered with no audio, 3) the two are joined by copying, which
+    # cannot change either. QA then listens to the result.
+    cmd = ["ffmpeg", "-y", "-fflags", "+genpts", "-i", "visual.mp4", "-i", "voice.mp3"]
     # the channel logo as a small corner mark the whole way through: branding without an intro
     # card (a logo intro in the first 2 seconds makes people swipe away)
     from .core import ROOT
@@ -191,10 +221,23 @@ def render(clips, times, words, job_dir, overlays=None):
                  f"[vo][m]amix=inputs=2:duration=first:dropout_transition=0:normalize=0,{LOUDNESS}[a]")
     else:
         audio = f"[1:a]{VOICE_POLISH},{LOUDNESS}[a]"
-    cmd += ["-filter_complex", f"{vchain};{audio}", "-map", "[v]", "-map", "[a]"]
-    cmd += ["-c:v", "libx264", "-preset", "medium", "-crf", "18", "-pix_fmt", "yuv420p",
-            "-c:a", "aac", "-b:a", "160k", "-shortest", "-movflags", "+faststart", "final.mp4"]
-    run(cmd, cwd=job_dir)
+    # 1) sound: voice (+ ducked music) cleaned and levelled into its own file
+    acmd = ["ffmpeg", "-y", "-i", "visual.mp4", "-i", "voice.mp3"] + (cmd[cmd.index("-stream_loop"):cmd.index("-stream_loop") + 4] if music else [])
+    if music:   # the music input is the third input in the sound-only command
+        audio = audio.replace(f"[{mi}:a]", "[2:a]")
+    run(acmd + ["-filter_complex", audio, "-map", "[a]", "-vn", "-t", f"{_dur(job_dir / 'voice.mp3'):.3f}",
+                "-c:a", "aac", "-b:a", "160k", "sound.m4a"], cwd=job_dir)
+    # 2) picture: everything visual, no audio at all
+    if music:
+        i = cmd.index("-stream_loop")
+        cmd = cmd[:i] + cmd[i + 4:]
+    run(cmd + ["-filter_complex", vchain, "-map", "[v]", "-an", "-c:v", "libx264", "-preset", "medium", "-crf", "18",
+               "-pix_fmt", "yuv420p", "picture.mp4"], cwd=job_dir)
+    # 3) join by copying
+    run(["ffmpeg", "-y", "-i", "picture.mp4", "-i", "sound.m4a", "-map", "0:v", "-map", "1:a", "-c", "copy",
+         "-shortest", "-movflags", "+faststart", "final.mp4"], cwd=job_dir)
+    for tmp in ("picture.mp4", "sound.m4a"):
+        (job_dir / tmp).unlink(missing_ok=True)
     # one clean frame (no captions) from the middle of every scene, for the thumbnail designer
     (job_dir / "frames").mkdir(exist_ok=True)
     for i, (a, b) in enumerate(times):
