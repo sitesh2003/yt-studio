@@ -44,8 +44,16 @@ def _say(n):
     return str(n)
 
 
+def _lang():
+    from .core import config
+    return ((config().get("channel") or {}).get("language") or "en")[:2].lower()
+
+
 def norm(text):
-    """Lower-case word tokens with every number spelled out, so '40' and 'forty' compare equal."""
+    """Lower-case word tokens with every number spelled out, so '40' and 'forty' compare equal.
+    Other languages (Hindi): plain word tokens in their own script, numbers left as they are."""
+    if _lang() != "en":
+        return re.findall(r"[\w\u0900-\u097F']+", (text or "").lower())
     t = (text or "").lower().replace("%", " percent").replace("&", " and ")
     t = re.sub(r"(\d),(\d{3})", r"\1\2", t)
 
@@ -63,9 +71,10 @@ def norm(text):
 def transcribe(audio_path):
     global _MODEL
     from faster_whisper import WhisperModel
-    if _MODEL is None:
-        _MODEL = WhisperModel("base.en", device="cpu", compute_type="int8")
-    segs, _ = _MODEL.transcribe(str(audio_path), language="en", beam_size=5, vad_filter=False)
+    lang = _lang()
+    if _MODEL is None:   # English: the small English model; other languages: the multilingual one
+        _MODEL = WhisperModel("base.en" if lang == "en" else "small", device="cpu", compute_type="int8")
+    segs, _ = _MODEL.transcribe(str(audio_path), language=lang, beam_size=5, vad_filter=False)
     return " ".join(s.text for s in segs)
 
 
@@ -83,6 +92,12 @@ def compare(script_text, heard_text):
         if said.replace(" ", "") == heard.replace(" ", ""):
             continue                         # "mouthparts" heard as "mouth parts": the same words
         # "one" is also a pronoun ("no one", "this one"), so on its own it is not treated as a number
+        if _lang() != "en":   # the number and negation checks are English; elsewhere: missing phrases only
+            if len(a[i1:i2]) >= 4 and len(b[j1:j2]) <= 1:
+                issues.append(f'phrase missing from the audio: "{said}"')
+            else:
+                notes.append(f'"{said}" heard as "{heard}"')
+            continue
         n_said = [w for w in a[i1:i2] if w in NUMBER_WORDS and w != "one"]
         n_heard = [w for w in b[j1:j2] if w in NUMBER_WORDS and w != "one"]
         neg_said = [w for w in a[i1:i2] if w in NEGATIONS or w.endswith("n't")]
@@ -98,7 +113,8 @@ def compare(script_text, heard_text):
         else:
             notes.append(f'"{said}" heard as "{heard}"' if said and heard else
                          f'"{said}" not heard' if said else f'extra "{heard}"')
-    if ratio < 0.85:
+    # recognisers spell Hindi loosely (पटरी / पट्री), so the bar there is lower; missing phrases still hold
+    if ratio < (0.85 if _lang() == "en" else 0.7):
         issues.append(f"only {ratio:.0%} of the script is heard as written")
     return issues, notes, ratio
 

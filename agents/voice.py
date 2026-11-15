@@ -52,7 +52,7 @@ def sentences(text):
         return list(keep)[-1]
     t = _COUNTDOWN.sub(hold, text.strip())
     out, cur = [], ""
-    for piece in re.split(r"(?<=[.!?])\s+", t):
+    for piece in re.split(r"(?<=[.!?\u0964])\s+", t):   # \u0964 = the Hindi full stop (।)
         cur = f"{cur} {piece}".strip()
         if not _ABBR.search(cur):
             out.append(cur)
@@ -220,7 +220,7 @@ def _kokoro_speak(text, v, rate, path):
     import soundfile as sf
     if _KOKORO is None:
         from kokoro import KPipeline
-        _KOKORO = KPipeline(lang_code="a", repo_id="hexgrad/Kokoro-82M")
+        _KOKORO = KPipeline(lang_code=config()["voice"].get("kokoro_lang", "a"), repo_id="hexgrad/Kokoro-82M")
     speed = 1.0 + int(re.sub(r"[^-\d]", "", rate) or 0) / 100
     audio, words, offset = [], [], 0.0
     for r in _KOKORO(_lexicon(text), voice=v.get("kokoro_voice") or "af_heart", speed=speed):

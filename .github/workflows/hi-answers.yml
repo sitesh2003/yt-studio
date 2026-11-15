@@ -1,0 +1,65 @@
+name: Aakhir Kyun? (Hindi) - answers and comments
+
+on:
+  # schedule: switched on once the Hindi channel exists and is signed in (shares the free AI quota)
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: studio-hi     # the Hindi channel's lane: never overlaps its daily run's save
+  cancel-in-progress: false
+
+jobs:
+  answer:
+    runs-on: ubuntu-latest
+    env:
+      STUDIO_CHANNEL: hi
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # The LATEST main, not the commit from when this run was queued: a run queued behind
+          # another (studio-state) started from stale state on 12 Nov and its save erased two videos.
+          ref: main
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install Python packages
+        run: pip install -q -r requirements.txt
+
+      - name: faster-whisper, for the last listen before publishing (optional)
+        continue-on-error: true
+        timeout-minutes: 5
+        run: pip install -q "faster-whisper==1.2.1"
+
+      - name: Write sign-in files from secrets
+        env:
+          CLIENT_SECRET_JSON: ${{ secrets.CLIENT_SECRET_JSON }}
+          TOKEN_JSON: ${{ secrets.TOKEN_JSON }}
+          TOKEN_JSON_HI: ${{ secrets.TOKEN_JSON_HI }}
+        run: |
+          printf '%s' "$CLIENT_SECRET_JSON" > client_secret.json
+          printf '%s' "$TOKEN_JSON" > token.json
+          printf '%s' "$TOKEN_JSON_HI" > token_hi.json
+
+      - name: Post answers, draft comment replies
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}   # free key: research sources (empty = keyless, 1,000 credits a day)
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python studio.py hourly
+
+      - name: Save state
+        if: always()
+        run: |
+          git config user.name "yt-studio-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -f data/hi/*.json 2>/dev/null || true
+          git diff --cached --quiet || git commit -m "state: hi answers $(date -u +%FT%H%M)"
+          git pull --rebase -X theirs -q || { git rebase --abort; git pull --no-rebase -X ours -q --no-edit; } || true
+          git push -q || true

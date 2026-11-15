@@ -557,7 +557,7 @@ def pick_scene(i, scene, a, b, job_dir, used, note="", extra_queries=()):
         # nothing on stock sites shows it: draw an explainer diagram (free, checked for accuracy)
         drawn = False
         global _diagrams
-        if _diagrams < 3:
+        if _diagrams < 3 and config().get("visuals", {}).get("diagrams", True):
             try:
                 from . import diagram
                 if diagram.make_clip(scene["narration"], _topic, job_dir, i, out, b - a + 0.5):

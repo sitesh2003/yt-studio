@@ -16,6 +16,8 @@ def _ass_time(t):
 
 def captions(words, path, overlays=None):
     c, f = config()["captions"], config()["format"]
+    latin = (config()["channel"].get("language") or "en")[:2] == "en"
+    sp = lambda n: n if latin else 0   # letter spacing breaks Hindi shaping (vowel signs come apart)
     head = f"""[Script Info]
 ScriptType: v4.00+
 PlayResX: {f['width']}
@@ -27,8 +29,8 @@ Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour,
 Style: Banner,{c['font']},{int(c['size']*0.95)},&H0000E5FF,&H0000E5FF,&H00000000,&HA0000000,0,0,0,0,100,100,2,0,3,10,0,8,40,40,{int(f['height']*0.12)},1
 Style: Count,{c['font']},{int(c['size']*2.6)},&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,0,0,0,0,100,100,0,0,1,12,4,5,0,0,0,1
 Style: Cap,{c['font']},{c['size']},{c['color']},{c['highlight']},&H00000000,&H64000000,0,0,0,0,100,100,0,0,1,{c['outline']},3,5,60,60,0,1
-Style: Header,{c['font']},{int(c['size']*0.42)},&H00FFFFFF,&H00FFFFFF,&H00301A0B,&H90301A0B,0,0,0,0,100,100,3,0,3,14,0,8,200,200,{int(f['height']*0.075)},1
-Style: Key,{c['font']},{int(c['size']*0.5)},&H00FFFFFF,&H00FFFFFF,&H00301A0B,&H70301A0B,0,0,0,0,100,100,1,0,3,18,0,2,90,90,{int(f['height']*0.2)},1
+Style: Header,{c['font']},{int(c['size']*0.42)},&H00FFFFFF,&H00FFFFFF,&H00301A0B,&H90301A0B,0,0,0,0,100,100,{sp(3)},0,3,14,0,8,200,200,{int(f['height']*0.075)},1
+Style: Key,{c['font']},{int(c['size']*0.5)},&H00FFFFFF,&H00FFFFFF,&H00301A0B,&H70301A0B,0,0,0,0,100,100,{sp(1)},0,3,18,0,2,90,90,{int(f['height']*0.2)},1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
@@ -274,7 +276,8 @@ FONT = str(ASSETS / "fonts" / "ArchivoBlack-Regular.ttf")  # bundled, so cloud a
 
 def _font(size):
     try:
-        return ImageFont.truetype(FONT, size)
+        own = (config().get("captions") or {}).get("font_file")
+        return ImageFont.truetype(str(ASSETS.parent / own) if own else FONT, size)
     except OSError:
         return ImageFont.load_default()
 

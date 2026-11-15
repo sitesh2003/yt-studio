@@ -71,16 +71,17 @@ def localizations(meta):
     their own language (search and the feed too), which auto-dubbing alone does not translate. Only
     the first paragraph is translated: the credits and licence lines stay exactly as written."""
     from .core import llm_json
+    langs = (config().get("channel") or {}).get("translate_to") or LANGS
     head, _, rest = meta["description"].partition("\n\n")
     out = llm_json(f"""Translate this YouTube Short's title and teaser for viewers in each language.
 Natural, as a native speaker would write it, same curiosity, never more dramatic than the English,
 no emojis added. Keep hashtags exactly as they are (#shorts stays #shorts). Title max 90 characters.
 Title: {meta["title"]}
 Teaser: {head}
-Languages: {LANGS}
-Return JSON: {{"es": {{"title": "...", "teaser": "..."}}, "pt": {{...}}, "de": {{...}}, "fr": {{...}}, "hi": {{...}}}}""")
+Languages: {langs}
+Return JSON with one entry per language code: {{"<code>": {{"title": "...", "teaser": "..."}}}}""")
     loc = {}
-    for code in LANGS:
+    for code in langs:
         t = out.get(code) or {}
         if t.get("title") and t.get("teaser"):
             loc[code] = {"title": t["title"][:100],
@@ -97,7 +98,8 @@ def upload(job_dir, meta, when=None):
     body = {
         "snippet": {"title": meta["title"][:100], "description": meta["description"][:4900],
                     "tags": meta.get("tags", [])[:30], "categoryId": p["category_id"],
-                    "defaultLanguage": "en", "defaultAudioLanguage": "en-US"},
+                    "defaultLanguage": (config()["channel"].get("language") or "en-US")[:2],
+                    "defaultAudioLanguage": config()["channel"].get("language") or "en-US"},
         "status": {"privacyStatus": "private", "publishAt": when.astimezone(dt.timezone.utc).isoformat(),
                    "selfDeclaredMadeForKids": p["made_for_kids"],
                    "containsSyntheticMedia": p["contains_synthetic_media"]},

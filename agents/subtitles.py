@@ -60,6 +60,15 @@ def build(words, script, max_words=7, pause=0.3):
     return "\n".join(out)
 
 
+def _cfg_lang():
+    from .core import config
+    return (config().get("channel") or {}).get("language") or "en-US"
+
+
+def _cfg_lang_name():
+    return {"hi": "Hindi"}.get(_cfg_lang()[:2], "English")
+
+
 def upload(yt, video_id, srt):
     """captions.insert (400 quota units). A failure never stops a publish."""
     if not srt:
@@ -67,7 +76,7 @@ def upload(yt, video_id, srt):
     try:
         from googleapiclient.http import MediaInMemoryUpload
         yt.captions().insert(part="snippet", body={"snippet": {
-            "videoId": video_id, "language": "en", "name": "English", "isDraft": False}},
+            "videoId": video_id, "language": (_cfg_lang() or "en")[:2], "name": _cfg_lang_name(), "isDraft": False}},
             media_body=MediaInMemoryUpload(srt.encode("utf-8"), mimetype="application/octet-stream")).execute()
         log("youtube: exact English captions uploaded")
         return True

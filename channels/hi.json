@@ -1,0 +1,66 @@
+{
+  "channel": {
+    "name": "Aakhir Kyun?",
+    "language": "hi-IN",
+    "niche": "the surprising science and hidden engineering behind everyday things in India and around the world: trains, planes, roads, food, the body, animals and how things are made; why and how things really work, explained accurately in everyday Hindi",
+    "audience": "Hindi-speaking viewers in India aged 14-40, curious, scroll fast, no science background needed",
+    "voice_tone": "friendly, confident, curious, like an older sibling who loves science; never clickbait-false",
+    "seed_keywords": [
+      "science facts hindi",
+      "kaise banta hai",
+      "kyun hota hai",
+      "train facts",
+      "airplane facts",
+      "human body facts hindi",
+      "food science hindi",
+      "engineering facts hindi"
+    ],
+    "countdown": false,
+    "translate_to": {
+      "en": "English"
+    },
+    "how_made": "यह वीडियो कैसे बना: स्क्रिप्ट को AI tools की मदद से open research के आधार पर लिखा और fact-check किया गया है, आवाज़ AI voice की है, और editing open-source software से हुई है। कोई गलती दिखे तो comment में बताइए — जाँच कर सुधार करेंगे।",
+    "_note": "Hindi version of Ever Thought Why? (built 16 Nov 2026 after the niche scan: a Hindi hidden-engineering channel started Sep 2026 reached 308K subscribers and a 1.57M median). The owner creates the channel and signs it in (STUDIO_CHANNEL=hi studio.py signin; secret TOKEN_JSON_HI)."
+  },
+  "voice": {
+    "engine": "edge-tts",
+    "name": "hi-IN-MadhurNeural",
+    "narrators": {
+      "host": {
+        "edge": "hi-IN-SwaraNeural"
+      },
+      "explainer": {
+        "edge": "hi-IN-MadhurNeural"
+      }
+    }
+  },
+  "captions": {
+    "font": "Hind",
+    "font_file": "assets/fonts/Hind-Bold.ttf",
+    "size": 108
+  },
+  "publish": {
+    "category_id": "28",
+    "slots_et": [
+      "09:30",
+      "02:30"
+    ],
+    "timezone_note": "09:30 ET = 20:00 IST (India prime time), 02:30 ET = 13:00 IST (lunch)",
+    "videos_per_day": 2,
+    "bank_days": 5,
+    "upload_captions": false
+  },
+  "animate": {
+    "max_per_video": 0,
+    "_note": "Manim labels use a Latin-only font; off until a Devanagari font is wired in"
+  },
+  "visuals": {
+    "board": false,
+    "story": false,
+    "diagrams": false,
+    "two_shots": true
+  },
+  "format": {
+    "target_seconds": 45
+  }
+}

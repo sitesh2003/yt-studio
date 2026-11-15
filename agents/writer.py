@@ -184,7 +184,7 @@ def _fix_rule(fix):
 
 
 def _content_words(sentence):
-    return {w for w in re.findall(r"[a-z']+", sentence.lower()) if len(w) > 3}
+    return {w for w in re.findall(r"[\w\u0900-\u097F']+", sentence.lower()) if len(w) > 3 and not w.isdigit()}
 
 
 def lint(s, words):
@@ -200,7 +200,8 @@ def lint(s, words):
                 issues.append(f"says the same thing twice: \"{a}\" / \"{b}\"")
     try:   # no two videos should open the same way (YouTube's inauthentic-content rule)
         from .variety import hook_issue
-        hi = hook_issue(scenes[0].get("narration", "")) if scenes else ""
+        english = (config()["channel"].get("language") or "en")[:2] == "en"
+        hi = hook_issue(scenes[0].get("narration", "")) if scenes and english else ""
         if hi:
             issues.append(hi)
     except Exception:
@@ -234,12 +235,28 @@ it away; a hint that leaves the viewer still guessing does not. Return JSON: {{"
     return issues[:5]
 
 
+def _language_rule():
+    """How the script is written: American English by default; the Hindi channel speaks natural
+    everyday Hindi the way the fastest-growing Hindi science channels do (15 Nov niche scan)."""
+    lang = (config()["channel"].get("language") or "en-US")[:2]
+    if lang == "hi":
+        return ("LANGUAGE: write the narration, title, description, question and answer in natural spoken "
+                "Hindi in Devanagari script, the way people really talk: keep common English science and tech "
+                "words in English letters (train, oxygen, battery, engine), numbers as digits, short sentences "
+                "ending in '।' or '?'. Titles: Hindi with the key English word, include one real number when "
+                "possible, end with one emoji (😱 🤯 🤔). The closing question starts with 'कभी सोचा है' "
+                "(the channel's signature) instead of 'Ever thought why'. Hashtags: #shorts #hindi plus 1-2 topic tags.")
+    return "American English spelling."
+
+
 def countdown_arm(topic):
     """THE COUNTDOWN EXPERIMENT (approved 13 Nov 2026). None of the fastest-growing channels in our
     genre uses a countdown, so half the Shorts keep "Pause and guess... three, two, one" and half ask
     the same question plainly with no count (a "turn"). The topic decides the arm, so a remake keeps
     its arm. Once analyst.experiment() names a winner (data/experiments.json), every video uses it."""
     import hashlib
+    if config()["channel"].get("countdown") is False:   # a channel that never uses the 3-2-1
+        return False
     win = ((read_json(DATA / "experiments.json", {}) or {}).get("countdown") or {}).get("winner")
     if win in ("countdown", "turn"):
         return win == "countdown"
@@ -304,7 +321,7 @@ def write_script(topic, recap=None, fix=None):
         secs = 130      # 110-170 s is where several fast-growing 2026 channels sit; still one idea
     words = int(secs * 2.55)         # ~2.55 words a second since 15 Nov (faster pace, short pauses)
     prompt = f"""Write a YouTube Short script for US viewers.
-Channel: {ch['niche']}. Tone: {ch['voice_tone']}. American English spelling.
+Channel: {ch['niche']}. Tone: {ch['voice_tone']}. {_language_rule()}
 Topic: {topic}
 What has worked on this channel: {learn.get('summary', 'no data yet')}
 Mistakes this channel's checkers already caught (never repeat these): {[l['text'] for l in (read_json(DATA / 'lessons.json', []) or [])][-15:] or 'none yet'}
