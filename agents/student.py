@@ -118,7 +118,7 @@ Return JSON: {{"topics": [{{"topic": "...", "subject": "...", "format": "...", "
 
 
 def write_script(topic, recap=None, fix=None):
-    from .writer import _fix_rule, lint, verify
+    from .writer import _fix_rule, lint, verify, SPOKEN
     c = config()
     ch, fmt = c["channel"], c["format"]
     secs = playbook.target_seconds(fmt["target_seconds"])
@@ -159,6 +159,7 @@ Rules:
 - Numbers easy to say; any number you use must be exactly right.
 - One idea per sentence. Short words. Talk to one student ("you"), warm and clear, like the best
   teacher they ever had. Contractions are fine. No "subscribe", "like", "share" or "follow".
+{SPOKEN}
 - TWO NARRATORS: the HOST asks the hook and the Try-this question and reacts like a curious student;
   the EXPLAINER shows and explains. Mark every scene "speaker": "host" or "explainer".
 - 7 to 10 scenes. For each scene: "visual_query" = 1-3 plain concrete nouns for real footage of what is

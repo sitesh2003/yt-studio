@@ -187,6 +187,42 @@ def _content_words(sentence):
     return {w for w in re.findall(r"[\w\u0900-\u097F']+", sentence.lower()) if len(w) > 3 and not w.isdigit()}
 
 
+# Write for the EAR (16 Nov 2026, user: "make sure the narrator feels natural"). The voice pacing already matches a
+# person (measured: ~0.3-0.5 s after a sentence, ~0.1 s at a comma, ~178 words a minute), so what still sounded
+# robotic was the WORDING: "Step one: water molecules are polar, sticking strongly to each other while excluding
+# nonpolar oil." A person explaining out loud never reads headings, and mixes short and long sentences.
+SPOKEN = """- WRITE FOR THE EAR - it must sound like one person talking to a friend, not a textbook read aloud:
+  * Never say list headings or labels out loud: no "Step one", "Step two", "First,", "Secondly", "Finally,",
+    "Fact:", "In conclusion". Move on with how people talk: "So...", "Now...", "And here's the trick...",
+    "But wait...", "That's it."
+  * Contractions always (it's, that's, doesn't, you're, here's). Everyday words first; a science word only
+    when it's needed, and then say what it means in the same breath ("polar - one end slightly negative").
+  * Mix sentence lengths: some just 3-6 words ("Water hates oil." "That's the trick."), none over 18 words.
+  * Talk to the viewer and react: "you", "your pan", "look at this", "wait, really?". One small
+    reaction or aside per video, never forced.
+  * No stacked clauses ("..., sticking ... while excluding ..."): split it into two short sentences."""
+
+_HEADINGS = re.compile(r"(?:^|[.?!]\s+)(step (?:one|two|three|four|five|\d)|first(?:ly)?|second(?:ly)?|third(?:ly)?|"
+                       r"finally|lastly|in conclusion|fact)\s*[:,]", re.I)
+
+
+def spoken_issues(scenes):
+    """Lines that will sound read-aloud rather than spoken (English channels)."""
+    issues = []
+    text = " ".join(x.get("narration", "") for x in scenes)
+    m = _HEADINGS.findall(text)
+    if m:
+        issues.append(f"says list labels out loud ({', '.join(sorted(set(w.lower() for w in m)))}): "
+                      "remove them and move on the way a person talks ('So...', 'Now...', 'And here's the trick...')")
+    sents = [x for x in re.split(r"(?<=[.?!])\s+", text) if x.strip()]
+    long = [x for x in sents if len(x.split()) > 18]
+    if long:
+        issues.append(f"{len(long)} sentence(s) over 18 words (e.g. \"{long[0][:70]}...\"): split into short spoken sentences")
+    if len(sents) >= 5 and not any(len(x.split()) <= 6 for x in sents):
+        issues.append("every sentence is medium-long: add one or two very short ones (3-6 words) so it sounds spoken")
+    return issues
+
+
 def lint(s, words):
     """Problems a reader would notice that the fact-checker does not look for."""
     issues = []
@@ -209,6 +245,8 @@ def lint(s, words):
             hw = hook_weak(scenes[0].get("narration", ""))
             if hw:
                 issues.append(hw)
+        if scenes and english and not s.get("weekly"):
+            issues += spoken_issues(scenes)
     except Exception:
         pass
     ex = _content_words(s.get("running_example", ""))
@@ -348,6 +386,7 @@ Rules:
 - Any contrast between two things ("X sticks while Y slides off") must be TRUE for BOTH sides. If one
   side is a myth, pick a different contrast or drop it.
 - One idea per sentence. Short words. Cut every word that does not earn its place.
+{SPOKEN}
 - 100% factually correct. If a number is uncertain, round it and say "about". Never state a myth,
   an exaggeration or a disputed claim as fact.
 - Numbers must be easy to SAY: never write long decimals or strings of digits (no "99.9999999%").
