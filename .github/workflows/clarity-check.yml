@@ -29,7 +29,7 @@ jobs:
 
       - name: Tools
         run: |
-          pip install -q imageio-ffmpeg==0.7.0 requests "faster-whisper==1.2.1" yt-dlp
+          pip install -q imageio-ffmpeg==0.7.0 requests python-dotenv "faster-whisper==1.2.1" yt-dlp
           sudo cp "$(python -c 'import imageio_ffmpeg; print(imageio_ffmpeg.get_ffmpeg_exe())')" /usr/local/bin/ffmpeg
 
       - name: Measure each scene

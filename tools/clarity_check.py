@@ -35,6 +35,13 @@ def main(prefixes):
     for _, _, path, _ in A.CHANNELS:
         if path.exists():
             hist.update({h["job"]: h for h in json.load(open(path, encoding="utf-8"))})
+    # finished but not yet uploaded (banked / review) videos can be checked too, when named
+    seen = {v["job"] for v in vids}
+    for key, name, path, lang in A.CHANNELS:
+        for h in json.load(open(path, encoding="utf-8")) if path.exists() else []:
+            if h["job"] not in seen and not h.get("video_id") and any(h["job"].startswith(p) for p in prefixes):
+                vids.append({"channel": key, "channel_name": name, "lang": lang, "job": h["job"],
+                             "title": h.get("title", ""), "status": h.get("status"), "video_id": "(not uploaded yet)"})
     files = A.artifact_files({v["job"] for v in vids})
     from faster_whisper import WhisperModel
     sys.path.insert(0, str(ROOT))
