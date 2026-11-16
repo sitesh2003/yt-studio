@@ -1,3 +1,6 @@
 kokoro af_heart: 16s to make, 26.0s long
 chatterbox_calm (exaggeration 0.4, cfg 0.5): 249s to make, 22.9s long
 chatterbox_lively (exaggeration 0.8, cfg 0.3): 201s to make, 21.1s long
+kokoro af_heart: 9s to make, 26.0s long
+chatterbox_lively_checked (exaggeration 0.8, cfg 0.3, checked by ear): 185s to make, 23.5s long, 0 re-takes, unfixed: none
+chatterbox_lively_tuned (exaggeration 0.7, cfg 0.5, checked by ear): 237s to make, 23.1s long, 4 re-takes, unfixed: none
