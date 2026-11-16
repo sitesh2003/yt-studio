@@ -23,7 +23,7 @@
     "_note": "Hindi version of Ever Thought Why? (built 16 Nov 2026 after the niche scan: a Hindi hidden-engineering channel started Sep 2026 reached 308K subscribers and a 1.57M median). The owner creates the channel and signs it in (STUDIO_CHANNEL=hi studio.py signin; secret TOKEN_JSON_HI)."
   },
   "voice": {
-    "engine": "edge-tts",
+    "engine": "chatterbox",
     "name": "hi-IN-SwaraNeural",
     "narrators": {
       "host": {
@@ -33,7 +33,13 @@
         "edge": "hi-IN-SwaraNeural"
       }
     },
-    "_note": "ONE narrator per channel (16 Nov 2026, owner: two voices felt like an overheard conversation; a single consistent voice becomes the channel's identity). host/explainer only change delivery."
+    "_note": "ONE narrator per channel (16 Nov 2026, owner: two voices felt like an overheard conversation; a single consistent voice becomes the channel's identity). host/explainer only change delivery.",
+    "cb_lang": "hi",
+    "cb_voice_ref": "assets/voice/owner.wav",
+    "cb_exaggeration": 0.5,
+    "cb_cfg": 0.3,
+    "cb_tempo": 1.3,
+    "_engine_note": "17 Nov 2026, owner: his own voice (cloned from assets/voice/owner.wav, unlocked in GitHub with the VOICE_KEY secret) is the one narrator on every channel. Without the key, Chatterbox's own voice reads instead. Hindi: Chatterbox multilingual, sped up 1.3x (lab H13 setting; the plain read was too slow). If it fails, Swara reads the whole video."
   },
   "captions": {
     "font": "Hind",

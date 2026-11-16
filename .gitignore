@@ -14,3 +14,7 @@ data/*
 !data/performance.json
 !data/trends.json
 !data/reply_drafts.json
+
+# the owner's voice sample: only the encrypted copy is committed (public repo, 17 Nov 2026)
+assets/voice/owner.wav
+.voice-key.secret.txt

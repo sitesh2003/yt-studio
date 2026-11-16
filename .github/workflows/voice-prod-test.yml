@@ -18,7 +18,7 @@ concurrency:
 jobs:
   test:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 90
     steps:
       - uses: actions/checkout@v4
         with:
@@ -50,14 +50,34 @@ jobs:
         with:
           path: ~/.cache/huggingface
           key: voice-prod-test-v1
+      - name: Unlock the owner's voice (only the encrypted copy is in the public repo)
+        env:
+          VOICE_KEY: ${{ secrets.VOICE_KEY }}
+        run: |
+          if [ -n "$VOICE_KEY" ]; then
+            printf '%s' "$VOICE_KEY" > "$RUNNER_TEMP/vk"
+            openssl enc -d -aes-256-cbc -pbkdf2 -iter 200000 -in assets/voice/owner.wav.enc -out assets/voice/owner.wav -pass "file:$RUNNER_TEMP/vk" && echo "voice unlocked" || echo "VOICE_KEY does not open the sample"
+            rm -f "$RUNNER_TEMP/vk"
+          else echo "no VOICE_KEY secret yet: Chatterbox's own voice reads English, Swara reads Hindi"; fi
+
       - name: Narrate with Chatterbox, listen, fall back to Kokoro
         run: python tools/voice_prod_test.py 2>&1 | tee research/voice_lab/prod_test.txt; exit ${PIPESTATUS[0]}
       - name: Save the result
         if: always()
+        env:
+          VOICE_KEY: ${{ secrets.VOICE_KEY }}
         run: |
           git config user.name "yt-studio-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add -f research/voice_lab/prod_test.mp3 research/voice_lab/prod_test.txt || true
+          # samples in the owner's voice are locked with the same key before they reach the public repo
+          if [ -n "$VOICE_KEY" ]; then
+            printf '%s' "$VOICE_KEY" > "$RUNNER_TEMP/vk"
+            for f in prod_test prod_test_hi; do
+              [ -f research/voice_lab/$f.mp3 ] && openssl enc -aes-256-cbc -pbkdf2 -iter 200000 -salt -in research/voice_lab/$f.mp3 -out research/voice_lab/$f.mp3.enc -pass "file:$RUNNER_TEMP/vk" && rm research/voice_lab/$f.mp3
+            done
+            rm -f "$RUNNER_TEMP/vk"
+          fi
+          git add -f research/voice_lab/prod_test*.mp3 research/voice_lab/prod_test*.enc research/voice_lab/prod_test.txt || true
           git diff --cached --quiet || git commit -q -m "test: Chatterbox narrator in the production setup"
           git pull --rebase -X theirs -q || true
           git push -q || true

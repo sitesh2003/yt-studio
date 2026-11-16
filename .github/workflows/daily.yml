@@ -94,6 +94,16 @@ jobs:
           printf '%s' "$CLIENT_SECRET_JSON" > client_secret.json
           printf '%s' "$TOKEN_JSON" > token.json
 
+      - name: Unlock the owner's voice (only the encrypted copy is in the public repo)
+        env:
+          VOICE_KEY: ${{ secrets.VOICE_KEY }}
+        run: |
+          if [ -n "$VOICE_KEY" ]; then
+            printf '%s' "$VOICE_KEY" > "$RUNNER_TEMP/vk"
+            openssl enc -d -aes-256-cbc -pbkdf2 -iter 200000 -in assets/voice/owner.wav.enc -out assets/voice/owner.wav -pass "file:$RUNNER_TEMP/vk" && echo "voice unlocked" || echo "VOICE_KEY does not open the sample"
+            rm -f "$RUNNER_TEMP/vk"
+          else echo "no VOICE_KEY secret yet: Chatterbox's own voice reads English, Swara reads Hindi"; fi
+
       - name: Make, fact-check, upload (private + scheduled)
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}

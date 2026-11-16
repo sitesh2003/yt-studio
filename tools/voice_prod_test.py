@@ -40,6 +40,29 @@ ok = ok and not issues
 print("caption words:", " ".join(f"{w['text']}@{w['start']:.2f}" for w in words[:12]))
 (ROOT / "research" / "voice_lab").mkdir(parents=True, exist_ok=True)
 shutil.copy(job / "voice.mp3", ROOT / "research" / "voice_lab" / "prod_test.mp3")
+# 17 Nov 2026: the owner's own voice speaking Hindi (Chatterbox multilingual, 1.3x)
+print("owner voice sample unlocked:", (ROOT / "assets" / "voice" / "owner.wav").exists())
+import json as _j
+hv = _j.loads((ROOT / "channels" / "hi.json").read_text(encoding="utf-8"))["voice"]
+HI = {"title_options": ["उंगलियां पानी में क्यों सिकुड़ती हैं"], "scenes": [
+    {"narration": "नहाते समय आपकी उंगलियां सिकुड़ जाती हैं। लेकिन कोहनी नहीं। क्यों?"},
+    {"narration": "अगर उंगली की नस कट जाए, तो वो कभी नहीं सिकुड़ती! यानी ये आपके शरीर का फ़ैसला है।"},
+    {"narration": "ये लकीरें पानी को हटाती हैं, जैसे टायर की ग्रिप। आप क्या सोचते हैं?"}]}
+job3 = ROOT / "jobs" / "_voice_prod_test_hi"
+shutil.rmtree(job3, ignore_errors=True)
+job3.mkdir(parents=True)
+set_override({"voice": hv})
+t = time.time()
+try:
+    w3 = voice.narrate(HI, job3)
+    print(f"hindi: engine {voice.last_engine}; {len(w3)} words; {w3[-1]['end']:.1f}s audio; {time.time() - t:.0f}s to make")
+    shutil.copy(job3 / "voice.mp3", ROOT / "research" / "voice_lab" / "prod_test_hi.mp3")
+    if voice.last_engine != "chatterbox":
+        print("FAIL: Hindi fell back from Chatterbox")
+        ok = False
+except Exception as e:
+    print(f"FAIL hindi: {type(e).__name__}: {e}")
+    ok = False
 # the A1 fallback still works
 job2 = ROOT / "jobs" / "_voice_prod_test_k"
 shutil.rmtree(job2, ignore_errors=True)

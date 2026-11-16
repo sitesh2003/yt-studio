@@ -237,19 +237,22 @@ def _kokoro_speak(text, v, rate, path):
 
 
 _CB = None
+_CBM = None
 _EAR = None
+_EARS = {}
 
 
 def _norm_w(w):
     return re.sub(r"[^\w]", "", (w or "").lower())
 
 
-def _align(text, heard):
+def _align(text, heard, norm=None):
     """The script's own words on the times the listener heard them (captions keep the script's spelling).
     Unmatched script words are spread evenly between their matched neighbours."""
     import difflib
     said = re.findall(r"\S+", text)
-    a, b = [_norm_w(w) for w in said], [_norm_w(h["text"]) for h in heard]
+    norm = norm or _norm_w
+    a, b = [norm(w) for w in said], [norm(h["text"]) for h in heard]
     times = [None] * len(said)
     for blk in difflib.SequenceMatcher(None, a, b, autojunk=False).get_matching_blocks():
         for i in range(blk.size):
@@ -275,25 +278,65 @@ def _chatterbox_speak(text, v, rate, path, tries=3):
     """Chatterbox (MIT, open source, CPU): the expressive narrator the owner picked on 16 Nov 2026 (lab option E2:
     emotion 0.7, cfg 0.5). It gives no word timings and can drop a word, so each sentence is listened to
     (faster-whisper, word timings), re-made with a new seed if a word is missing, and the best take kept."""
-    global _CB, _EAR
+    # 17 Nov 2026, owner: his own voice (assets/voice/owner.wav, a 22 s sample, unlocked in GitHub from the
+    # encrypted copy) is the narrator on every channel. cb_voice_ref = the sample to copy; cb_lang "hi" = the
+    # multilingual model speaking Hindi; cb_tempo = quicker delivery (Hindi Chatterbox reads slowly, H12/H13).
+    global _CB, _CBM, _EAR, _EARS
     import soundfile as sf
     import torch
-    if _CB is None:
-        from chatterbox.tts import ChatterboxTTS
-        _CB = ChatterboxTTS.from_pretrained(device="cpu")
-    if _EAR is None:
+    from .core import ROOT
+    lang = v.get("cb_lang") or "en"
+    ref = v.get("cb_voice_ref")
+    ref = str(ROOT / ref) if ref and (ROOT / ref).exists() else None
+    if v.get("cb_voice_ref") and not ref and lang != "en":
+        raise RuntimeError("the owner's voice sample is not unlocked here (VOICE_KEY)")   # -> Swara, not a stranger
+    if v.get("cb_voice_ref") and not ref:
+        log("voice: the owner's voice sample is not unlocked here (VOICE_KEY), using Chatterbox's own voice")
+    if lang == "en":
+        if _CB is None:
+            from chatterbox.tts import ChatterboxTTS
+            _CB = ChatterboxTTS.from_pretrained(device="cpu")
+        model = _CB
+    else:
+        if _CBM is None:
+            from chatterbox.mtl_tts import ChatterboxMultilingualTTS
+            _CBM = ChatterboxMultilingualTTS.from_pretrained(device="cpu")
+        model = _CBM
+    if lang not in _EARS:
         from faster_whisper import WhisperModel
-        _EAR = WhisperModel("base.en", device="cpu", compute_type="int8")
-    want = [w for w in (_norm_w(x) for x in re.findall(r"\S+", text)) if w]
+        _EARS[lang] = WhisperModel("base.en" if lang == "en" else "small", device="cpu", compute_type="int8")
+    ear = _EARS[lang]
+    if lang == "en":
+        norm = _norm_w
+    else:   # Hindi is compared by sound (listen.skeleton), so spelling and script do not count
+        from .listen import skeleton as norm
+    kw = dict(exaggeration=float(v.get("cb_exaggeration", 0.7)), cfg_weight=float(v.get("cb_cfg", 0.5)))
+    if ref:
+        kw["audio_prompt_path"] = ref
+    if lang != "en":
+        kw["language_id"] = lang
+    tempo = float(v.get("cb_tempo") or 1.0)
+    want = [w for w in (norm(x) for x in re.findall(r"\S+", text)) if w]
+    # the Hindi listener is a small model that misses up to half the words of a clean Edge read (17 Nov clarity
+    # check: 41-100%), so in Hindi only a take the listener mostly cannot follow is re-made or refused
+    ok_miss, max_miss = (0, max(1, len(want) // 8)) if lang == "en" else (len(want) // 3, max(2, len(want) * 2 // 3))
     best = None
     for n in range(tries):
         torch.manual_seed(1000 + n)
-        wav = _CB.generate(text, exaggeration=float(v.get("cb_exaggeration", 0.7)),
-                           cfg_weight=float(v.get("cb_cfg", 0.5))).squeeze(0).cpu().numpy().astype("float32")
-        sf.write(str(path), wav, _CB.sr)
-        segs, _ = _EAR.transcribe(str(path), language="en", beam_size=5, word_timestamps=True)
+        wav = model.generate(text, **kw).squeeze(0).cpu().numpy().astype("float32")
+        sf.write(str(path), wav, model.sr)
+        if tempo > 1.001:   # quicker, same pitch; long gaps inside the line shortened first
+            import subprocess
+            tmp = path.with_name(path.stem + "_t.wav")
+            subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(path), "-af",
+                            "silenceremove=stop_periods=-1:stop_duration=0.2:stop_threshold=-40dB:stop_silence=0.1,"
+                            f"atempo={tempo:.3f}", str(tmp)], check=True)
+            wav = sf.read(str(tmp), dtype="float32")[0]
+            tmp.unlink(missing_ok=True)
+            sf.write(str(path), wav, model.sr)
+        segs, _ = ear.transcribe(str(path), language=lang, beam_size=5, word_timestamps=True)
         heard = [{"start": w.start, "end": w.end, "text": w.word.strip()} for s in segs for w in (s.words or [])]
-        got = {_norm_w(h["text"]) for h in heard}
+        got = {norm(h["text"]) for h in heard}
         # spelling is not a dropped word: "tyre" heard as "tire", "colour" as "color" (the 16 Nov test re-made
         # three good takes for that), so a word counts as said if anything heard is close to it
         import difflib
@@ -301,14 +344,14 @@ def _chatterbox_speak(text, v, rate, path, tries=3):
                 and not difflib.get_close_matches(w, got, n=1, cutoff=0.7)]
         if best is None or len(miss) < len(best[2]):
             best = (wav, heard, miss)
-        if not miss:
+        if len(miss) <= ok_miss:
             break
         log(f"voice: Chatterbox dropped {miss[:4]} in {text[:40]!r}; take {n + 2}")
     wav, heard, miss = best
-    if not heard or len(miss) > max(1, len(want) // 8):
+    if not heard or len(miss) > max_miss:
         raise RuntimeError(f"Chatterbox kept dropping words ({miss[:4]})")
     sf.write(str(path), wav, _CB.sr)
-    return _align(text, heard)
+    return _align(text, heard, norm)
 
 
 def _speak_retry(text, v, rate, path):
@@ -317,8 +360,12 @@ def _speak_retry(text, v, rate, path):
             return _chatterbox_speak(text, v, rate, path.with_suffix(".wav")), path.with_suffix(".wav")
         except Exception as e:
             # the owner's second choice (lab option A1) for the rest of this video
-            log(f"voice: Chatterbox unavailable ({str(e)[:80]}), using Kokoro {v.get('kokoro_voice') or 'af_heart'}")
-            v["engine"] = "kokoro"
+            if (v.get("cb_lang") or "en") != "en":   # Hindi: back to the channel's Edge voice, never an English one
+                log(f"voice: Chatterbox unavailable ({str(e)[:80]}), using {v.get('edge_voice') or v['name']}")
+                v["engine"] = "edge-tts"
+            else:
+                log(f"voice: Chatterbox unavailable ({str(e)[:80]}), using Kokoro {v.get('kokoro_voice') or 'af_heart'}")
+                v["engine"] = "kokoro"
     if v.get("engine") == "kokoro":
         try:
             return _kokoro_speak(text, v, rate, path.with_suffix(".wav")), path.with_suffix(".wav")
@@ -423,8 +470,9 @@ def narrate(script, job_dir, engine=None):
         if v["engine"] == "chatterbox":
             return words
         # Chatterbox failed part-way: one video never mixes two voices, so read it all again with Kokoro
-        log("voice: Chatterbox failed part-way; the whole video is read again with Kokoro")
-        return narrate(script, job_dir, engine="kokoro")
+        back = "kokoro" if (v.get("cb_lang") or "en") == "en" else "edge-tts"
+        log(f"voice: Chatterbox failed part-way; the whole video is read again with {back}")
+        return narrate(script, job_dir, engine=back)
     return _narrate(script, job_dir, v)
 
 

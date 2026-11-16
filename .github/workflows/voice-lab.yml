@@ -41,6 +41,16 @@ jobs:
           path: ~/.cache/huggingface
           key: voice-lab-models-v1
 
+      - name: Unlock the owner's voice (only the encrypted copy is in the public repo)
+        env:
+          VOICE_KEY: ${{ secrets.VOICE_KEY }}
+        run: |
+          if [ -n "$VOICE_KEY" ]; then
+            printf '%s' "$VOICE_KEY" > "$RUNNER_TEMP/vk"
+            openssl enc -d -aes-256-cbc -pbkdf2 -iter 200000 -in assets/voice/owner.wav.enc -out assets/voice/owner.wav -pass "file:$RUNNER_TEMP/vk" && echo "voice unlocked" || echo "VOICE_KEY does not open the sample"
+            rm -f "$RUNNER_TEMP/vk"
+          else echo "no VOICE_KEY secret yet: Chatterbox's own voice reads English, Swara reads Hindi"; fi
+
       - name: Voice options (every voice, the same lines, real-video pauses)
         timeout-minutes: 30
         if: github.event_name == 'workflow_dispatch'   # done 16 Nov; its samples are saved

@@ -22,7 +22,7 @@ concurrency:
 jobs:
   make:
     runs-on: ubuntu-latest
-    timeout-minutes: 125
+    timeout-minutes: 200   # Chatterbox Hindi narration (17 Nov 2026)
     env:
       STUDIO_CHANNEL: hi
     steps:
@@ -68,14 +68,19 @@ jobs:
         uses: actions/cache@v4
         with:
           path: ~/.cache/huggingface
-          key: kokoro-82m-v1
+          key: voices-kokoro-chatterbox-mtl-v1
 
       - name: Install the Kokoro voice (open source; the Edge voice is the fallback)
         continue-on-error: true
         timeout-minutes: 10
         run: |
-          pip install -q torch --index-url https://download.pytorch.org/whl/cpu
+          pip install -q torch==2.6.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cpu
           pip install -q "kokoro==0.9.4" soundfile en-core-web-sm@https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl
+
+      - name: Install Chatterbox (the owner's own voice speaking Hindi; Swara is the back-up)
+        continue-on-error: true
+        timeout-minutes: 10
+        run: pip install -q chatterbox-tts --extra-index-url https://download.pytorch.org/whl/cpu
 
       - name: Write sign-in files from secrets
         env:
@@ -87,6 +92,16 @@ jobs:
           printf '%s' "$TOKEN_JSON" > token.json          # the daily report goes out on the main sign-in
           if [ -n "$TOKEN_JSON_HI" ]; then printf '%s' "$TOKEN_JSON_HI" > token_hi.json; else
             echo "TOKEN_JSON_HI not set yet: videos are made and banked, not published"; fi
+
+      - name: Unlock the owner's voice (only the encrypted copy is in the public repo)
+        env:
+          VOICE_KEY: ${{ secrets.VOICE_KEY }}
+        run: |
+          if [ -n "$VOICE_KEY" ]; then
+            printf '%s' "$VOICE_KEY" > "$RUNNER_TEMP/vk"
+            openssl enc -d -aes-256-cbc -pbkdf2 -iter 200000 -in assets/voice/owner.wav.enc -out assets/voice/owner.wav -pass "file:$RUNNER_TEMP/vk" && echo "voice unlocked" || echo "VOICE_KEY does not open the sample"
+            rm -f "$RUNNER_TEMP/vk"
+          else echo "no VOICE_KEY secret yet: Chatterbox's own voice reads English, Swara reads Hindi"; fi
 
       - name: Make, fact-check, bank, publish when due
         env:
