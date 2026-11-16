@@ -118,5 +118,230 @@
       "duration": 49.8
     },
     "repairs": 0
+  },
+  {
+    "job": "20261116-0543-3-hidden-engineering-features-built-into",
+    "topic": "3 Hidden Engineering Features Built Into Train Tracks That Stop High-Speed Derailments",
+    "title": "High-Speed Train पटरी पर कैसे रहती है? 3 Engineering Principles",
+    "description": "Discover the engineering principles built into modern train tracks that keep 300 km/h high-speed trains completely safe on sharp turns. Learn how conical wheels, canted rails, and continuously welded steel rails prevent derailments! #shorts #hindi #engineering\n\nSources (open-access research):\n- Saba et al. (2021), Mehran University Research Journal of Engineering and Technology. doi:10.22581/muet1982.2104.06\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nPhoto by mistyfeltner on Pixabay\nPhoto: Elsie esq., BY 2.0, via Openverse (flickr)\n\nयह वीडियो कैसे बना: स्क्रिप्ट को AI tools की मदद से open research के आधार पर लिखा और fact-check किया गया है, आवाज़ AI voice की है, और editing open-source software से हुई है। कोई गलती दिखे तो comment में बताइए — जाँच कर सुधार करेंगे।",
+    "tags": [
+      "trains",
+      "engineering",
+      "science",
+      "physics"
+    ],
+    "hook": "300 km/h पर दौड़ती train curve पर गिरती क्यों नहीं?",
+    "status": "review",
+    "narration": "300 km/h पर दौड़ती train curve पर गिरती क्यों नहीं? पहला principle: wheels का cone shape। यह train को naturally center में रखता है। दूसरा: curve पर बाहरी rail उठी होती है ताकि force balance रहे। पर भीषण गर्मी में steel track buckling से कैसे बचता है? भीषण गर्मी में पटरियां फैलकर टेढ़ी न हों, इसके लिए इन्हें खास तरीके से बिछाया जाता है। Continuously welded rails को कंक्रीट के स्लीपर्स पर मजबूती से कसा जाता है और गिट्टी (ballast) का उपयोग किया जाता है ताकि थर्मल स्ट्रेस के बावजूद वे अपनी जगह पर बनी रहें। अगर wheels cone के बजाए flat cylinder होते तो क्या होता? बताओ!",
+    "voice_engine": "edge-tts",
+    "voices": "one narrator (hi-IN-SwaraNeural)",
+    "diagrams": 1,
+    "series": "How Things Work",
+    "countdown": false,
+    "length_arm": "short",
+    "question": "कभी सोचा है, अगर train के wheels cone नहीं बल्कि flat cylinder होते तो turning पर क्या होता? नीचे लिखकर बताओ!",
+    "answer_comment": "The answer: अगर wheels flat cylinder होते, तो curve पर बाहर वाले wheel को ज्यादा दूरी तय करने के लिए घिसटना (skid होना) पड़ता। Cone shape की वजह से बाहर वाला wheel बड़ा diameter इस्तेमाल करता है, जिससे train बिना फिसले खुद को center में रखकर आसानी से मुड़ जाती है! What engineering wonder should we unpack next?\n\nSources (open-access research):\n- Saba et al. (2021), Mehran University Research Journal of Engineering and Technology. doi:10.22581/muet1982.2104.06",
+    "sources": [
+      {
+        "claim": "Train wheels are tapered/conical (wheel conicity), which naturally self-centers the wheelset on straight lines and curves without relying constantly on flanges.",
+        "cite": "Saba et al. (2021), Mehran University Research Journal of Engineering and Technology. doi:10.22581/muet1982.2104.06",
+        "doi": "10.22581/muet1982.2104.06",
+        "title": "Model Based Indirect Conicity Estimation Technique for Solid Axle Railway Wheelset",
+        "why": "Conicity is an important characteristic that helps the railway vehicle to steer itself down the track."
+      }
+    ],
+    "fact_check": [
+      "Train wheels are tapered/conical (wheel conicity), which naturally self-centers the wheelset on straight lines and curves without relying constantly on flanges.",
+      "Track superelevation (cant) raises the outer rail on curves to counteract centrifugal force using gravity.",
+      "High-speed lines use Continuously Welded Rail (CWR) heavily anchored to concrete sleepers to resist extreme heat expansion without buckling."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        5.52
+      ],
+      [
+        5.52,
+        11.37
+      ],
+      [
+        11.37,
+        15.62
+      ],
+      [
+        15.62,
+        20.16
+      ],
+      [
+        20.16,
+        38.53
+      ],
+      [
+        38.53,
+        43.56
+      ]
+    ],
+    "duration": 43.56,
+    "scene_lines": [
+      "300 km/h पर दौड़ती train curve पर गिरती क्यों नहीं?",
+      "पहला principle: wheels का cone shape। यह train को naturally center में रखता है।",
+      "दूसरा: curve पर बाहरी rail उठी होती है ताकि force balance रहे।",
+      "पर भीषण गर्मी में steel track buckling से कैसे बचता है?",
+      "भीषण गर्मी में पटरियां फैलकर टेढ़ी न हों, इसके लिए इन्हें खास तरीके से बिछाया जाता है। Continuously welded rails को कंक्रीट के स्लीपर्स पर मजबूती से कसा जाता है और गिट्टी (ballast) का उपयोग किया जाता है ताकि थर्मल स्ट्रेस के बावजूद वे अपनी जगह पर बनी रहें।",
+      "अगर wheels cone के बजाए flat cylinder होते तो क्या होता? बताओ!"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,050 --> 00:00:04,916\n300 km/h पर दौड़ती train curve पर गिरती क्यों नहीं?\n\n2\n00:00:05,040 --> 00:00:07,974\nपहला principle: wheels का cone shape। यह\n\n3\n00:00:07,974 --> 00:00:10,441\ntrain को naturally center में रखता है।\n\n4\n00:00:10,450 --> 00:00:13,123\nदूसरा: curve पर बाहरी rail उठी होती\n\n5\n00:00:13,123 --> 00:00:15,224\nहै ताकि force balance रहे।\n\n6\n00:00:15,310 --> 00:00:17,884\nपर भीषण गर्मी में steel track buckling\n\n7\n00:00:17,884 --> 00:00:19,421\nसे कैसे बचता है?\n\n8\n00:00:19,620 --> 00:00:22,179\nभीषण गर्मी में पटरियां फैलकर टेढ़ी न\n\n9\n00:00:22,179 --> 00:00:24,467\nहों, इसके लिए इन्हें खास तरीके से\n\n10\n00:00:24,467 --> 00:00:27,588\nबिछाया जाता है। Continuously welded rails को\n\n11\n00:00:27,588 --> 00:00:30,159\nकंक्रीट के स्लीपर्स पर मजबूती से कसा\n\n12\n00:00:30,159 --> 00:00:33,019\nजाता है और गिट्टी (ballast) का उपयोग\n\n13\n00:00:33,019 --> 00:00:35,271\nकिया जाता है ताकि थर्मल स्ट्रेस के\n\n14\n00:00:35,271 --> 00:00:37,997\nबावजूद वे अपनी जगह पर बनी रहें।\n\n15\n00:00:38,130 --> 00:00:40,655\nअगर wheels cone के बजाए flat cylinder\n\n16\n00:00:40,655 --> 00:00:42,130\nहोते तो क्या होता?\n\n17\n00:00:42,200 --> 00:00:42,961\nबताओ!\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [
+        "phrase missing from the audio: \"continuously welded rails को कंक्रीट के स्लीपर्स पर मजबूती से कसा जाता है और गिट्टी ballast का उपयोग किया जाता है ताकि थर्मल स्ट्रेस के बावजूद वे अपनी जगह पर बनी रहें।\"",
+        "only 69% of the script is heard as written"
+      ],
+      "footage": [],
+      "review": [
+        "Frame 1 contains Hindi text ('TRAIN CURVE पर') which is not appropriate for a US-based audience as per the instructions.",
+        "Frame 2 contains Hindi text ('यह TRAIN को') which is not appropriate for a US-based audience.",
+        "Frame 3 contains Hindi text ('है ताकि FORCE') which is not appropriate for a US-based audience.",
+        "Frame 4 contains Hindi text ('BUCKLING से कैसे') which is not appropriate for a US-based audience.",
+        "Frame 5 contains Hindi text ('स्लीपर्स पर मजबूती') which is not appropriate for a US-based audience.",
+        "Frame 6 contains Hindi text ('CYLINDER होते तो') which is not appropriate for a US-based audience."
+      ],
+      "heard": [
+        "\"300 km h\" heard as \"तीन सो किलो मीटर\"",
+        "\"दौड़ती\" heard as \"आवर पर दोड़ती\"",
+        "\"curve\" heard as \"कर्फ\"",
+        "\"क्यों\" heard as \"क्यो\"",
+        "\"principle\" heard as \"प्रन्सिपल\"",
+        "\"cone shape।\" heard as \"कोन्षेप\"",
+        "\"naturally center में\" heard as \"नाच्चरली सेंटमे\"",
+        "\"curve\" heard as \"कर्फ\""
+      ],
+      "pass": false,
+      "duration": 43.0
+    },
+    "repairs": 0
+  },
+  {
+    "job": "20261116-0621-why-train-wheels-are-shaped-like-cones-i",
+    "topic": "Why Train Wheels Are Shaped Like Cones Instead of Flat Cylinders",
+    "title": "ट्रेन के पहिए शंकु जैसे क्यों बनाए जाते हैं? 🤯",
+    "description": "ट्रेन के पहिए गोल नहीं, बल्कि शंकु के आकार के होते हैं। क्या आप जानते हैं कि यही शेप ट्रेन को पटरी पर बनाए रखता है? \n\n#shorts #hindi #engineering\n\nSources (open-access research):\n- Urassa (2021), International Journal of Engineering Applied Sciences and Technology. doi:10.33564/ijeast.2021.v06i02.003\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nPhoto: Elsie esq., BY 2.0, via Openverse (flickr)\nVideo by superanton on Pixabay\nVideo by svetjekolem on Pixabay",
+    "tags": [
+      "science",
+      "technology"
+    ],
+    "hook": "ट्रेन के पहियों की सतह शंकु के आकार (tapered) की क्यों होती है?",
+    "status": "review",
+    "narration": "ट्रेन के पहियों की सतह शंकु के आकार (tapered) की क्यों होती है? अगर ये पहिए पूरी तरह बेलनाकार होते, तो मोड़ पर बहुत घर्षण होता और पहिए जल्दी घिस जाते। सीधी पटरी पर तो ये ठीक चलते, लेकिन मोड़ पर दिक्कत होती। तो क्या मोड़ पर ये पहिए अपने आप को बैलेंस कैसे करते हैं? मोड़ पर ट्रेन का पूरा व्हील-सेट (wheelset) थोड़ा सा खिसक जाता है। बाहरी पहिया बड़े व्यास (diameter) पर चलता है, और अंदर वाला छोटे पर। इससे बाहरी पहिया ज्यादा दूरी तय करता है और ट्रेन आसानी से बिना फिसले मुड़ जाती है। कभी सोचा है, अगर ट्रेन के पहियों में ये ढलान (taper) न हो, तो तेज रफ्तार में ट्रेन पर क्या असर पड़ेगा? अपना जवाब नीचे कमेंट्स में बताएं।",
+    "voice_engine": "edge-tts",
+    "voices": "one narrator (hi-IN-SwaraNeural)",
+    "diagrams": 1,
+    "series": "How Things Work",
+    "countdown": false,
+    "length_arm": "short",
+    "question": "कभी सोचा है, अगर ट्रेन के पहियों में ये ढलान (taper) न हो, तो तेज रफ्तार में ट्रेन पर क्या असर पड़ेगा?",
+    "answer_comment": "सही जवाब: अगर पहियों में ढलान न हो, तो ट्रेन तेज रफ्तार में सीधी नहीं चल पाएगी और पटरी पर डगमगाने (hunting oscillation) लगेगी। यह शंक्वाकार डिजाइन पहियों को अपने आप पटरी के बीच में रखता है, जिससे ट्रेन की स्थिरता बनी रहती है और वह बिना पटरी से उतरे सुरक्षित मुड़ पाती है।\n\nSources (open-access research):\n- Urassa (2021), International Journal of Engineering Applied Sciences and Technology. doi:10.33564/ijeast.2021.v06i02.003",
+    "sources": [
+      {
+        "claim": "Train wheels are conical (tapered) to provide self-centering and navigate curves without slipping.",
+        "cite": "Urassa (2021), International Journal of Engineering Applied Sciences and Technology. doi:10.33564/ijeast.2021.v06i02.003",
+        "doi": "10.33564/ijeast.2021.v06i02.003",
+        "title": "DYNAMIC ANALYSIS OF BOGIE WHEELSET- A REVIEW",
+        "why": "The dynamic of railway vehicle wheelsets is influenced by the actions of the conicity of the wheels and the creep forces acting between the wheels and rails."
+      }
+    ],
+    "fact_check": [
+      "Train wheels are conical (tapered) to provide self-centering and navigate curves without slipping.",
+      "The conicity of the wheelset allows the outer wheel to roll on a larger diameter while the inner rolls on a smaller diameter during a curve.",
+      "Flanges are primarily safety backups to prevent derailment, not the primary steering mechanism.",
+      "Without the conical taper, train wheelsets would exhibit hunting oscillation, causing instability at high speeds."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        4.7
+      ],
+      [
+        4.7,
+        11.24
+      ],
+      [
+        11.24,
+        15.92
+      ],
+      [
+        15.92,
+        20.33
+      ],
+      [
+        20.33,
+        25.09
+      ],
+      [
+        25.09,
+        30.53
+      ],
+      [
+        30.53,
+        36.78
+      ],
+      [
+        36.78,
+        47.5
+      ]
+    ],
+    "duration": 47.5,
+    "scene_lines": [
+      "ट्रेन के पहियों की सतह शंकु के आकार (tapered) की क्यों होती है?",
+      "अगर ये पहिए पूरी तरह बेलनाकार होते, तो मोड़ पर बहुत घर्षण होता और पहिए जल्दी घिस जाते।",
+      "सीधी पटरी पर तो ये ठीक चलते, लेकिन मोड़ पर दिक्कत होती।",
+      "तो क्या मोड़ पर ये पहिए अपने आप को बैलेंस कैसे करते हैं?",
+      "मोड़ पर ट्रेन का पूरा व्हील-सेट (wheelset) थोड़ा सा खिसक जाता है।",
+      "बाहरी पहिया बड़े व्यास (diameter) पर चलता है, और अंदर वाला छोटे पर।",
+      "इससे बाहरी पहिया ज्यादा दूरी तय करता है और ट्रेन आसानी से बिना फिसले मुड़ जाती है।",
+      "कभी सोचा है, अगर ट्रेन के पहियों में ये ढलान (taper) न हो, तो तेज रफ्तार में ट्रेन पर क्या असर पड़ेगा? अपना जवाब नीचे कमेंट्स में बताएं।"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,050 --> 00:00:02,117\nट्रेन के पहियों की सतह शंकु के\n\n2\n00:00:02,117 --> 00:00:04,493\nआकार (tapered) की क्यों होती है?\n\n3\n00:00:04,700 --> 00:00:07,627\nअगर ये पहिए पूरी तरह बेलनाकार होते,\n\n4\n00:00:07,672 --> 00:00:09,495\nतो मोड़ पर बहुत घर्षण होता और\n\n5\n00:00:09,495 --> 00:00:11,172\nपहिए जल्दी घिस जाते।\n\n6\n00:00:11,240 --> 00:00:13,799\nसीधी पटरी पर तो ये ठीक चलते,\n\n7\n00:00:13,799 --> 00:00:15,861\nलेकिन मोड़ पर दिक्कत होती।\n\n8\n00:00:15,920 --> 00:00:17,999\nतो क्या मोड़ पर ये पहिए अपने\n\n9\n00:00:17,999 --> 00:00:20,180\nआप को बैलेंस कैसे करते हैं?\n\n10\n00:00:20,330 --> 00:00:23,379\nमोड़ पर ट्रेन का पूरा व्हील-सेट (wheelset)\n\n11\n00:00:23,379 --> 00:00:26,081\nथोड़ा सा खिसक जाता है। बाहरी पहिया\n\n12\n00:00:26,081 --> 00:00:28,879\nबड़े व्यास (diameter) पर चलता है, और\n\n13\n00:00:28,879 --> 00:00:31,827\nअंदर वाला छोटे पर। इससे बाहरी पहिया\n\n14\n00:00:31,827 --> 00:00:34,115\nज्यादा दूरी तय करता है और ट्रेन\n\n15\n00:00:34,115 --> 00:00:36,653\nआसानी से बिना फिसले मुड़ जाती है।\n\n16\n00:00:36,780 --> 00:00:39,093\nकभी सोचा है, अगर ट्रेन के पहियों\n\n17\n00:00:39,093 --> 00:00:41,195\nमें ये ढलान (taper) न हो, तो\n\n18\n00:00:41,195 --> 00:00:44,167\nतेज रफ्तार में ट्रेन पर क्या असर पड़ेगा?\n\n19\n00:00:44,200 --> 00:00:46,900\nअपना जवाब नीचे कमेंट्स में बताएं।\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [],
+      "footage": [],
+      "review": [
+        "Frame 1: The caption 'के आकार' is cut off and incomplete, making it unreadable/nonsensical in isolation.",
+        "Frame 2: The caption 'सीधे पहिए का खतरा' is partially obscured or awkwardly placed relative to the visual elements.",
+        "Frame 3: The caption 'सीधी पटरी की स्थिरता' is partially obscured by the visual elements.",
+        "Frame 4: The caption 'मोड़ पर संतुलन' is partially obscured by the visual elements.",
+        "Frame 5: The caption 'पहियों का खिसकना' is partially obscured by the visual elements.",
+        "Frame 6: The caption 'डायमीटर का अंतर' is partially obscured by the visual elements.",
+        "Frame 7: The caption 'दूरी का तालमेल' is partially obscured by the visual elements.",
+        "Frame 8: The caption 'ढीला या सीधा पहिया' is partially obscured by the visual elements."
+      ],
+      "heard": [
+        "\"सतह\" heard as \"सत्या\"",
+        "\"tapered\" heard as \"तेपर\"",
+        "\"पहिए\" heard as \"पहिये\"",
+        "\"मोड़\" heard as \"मोड़\"",
+        "\"पहिए\" heard as \"पहिये\"",
+        "\"पहिए\" heard as \"पहिये\"",
+        "\"हैं मोड़\" heard as \"है मोड़\"",
+        "\"diameter\" heard as \"दायामिता\""
+      ],
+      "notes": [
+        "scene 6 footage is a loose match (score 4.0), accepted"
+      ],
+      "pass": false,
+      "duration": 46.6
+    },
+    "repairs": 2
   }
 ]
