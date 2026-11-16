@@ -404,7 +404,7 @@
       "how it works"
     ],
     "hook": "How do vaccines actually train your immune system?",
-    "status": "public",
+    "status": "withdrawn",
     "narration": "How do vaccines actually train your immune system? Step one: the vaccine delivers a harmless piece or blueprint of the virus. Step two: your white blood cells spot this foreign shape and build matching antibodies. Step three: specialized cells remember the foreign shape to make those exact antibodies fast if the real virus ever returns. That's because your body builds an immune library of genetic blueprints for rapid defense without getting sick first. That is how millions of lives get protected every single year. Try this: why do some vaccines require a second booster shot weeks later?",
     "voice_engine": "kokoro",
     "voices": "female host, male explainer",
@@ -488,7 +488,8 @@
     "video_id": "NS68pl6mBmI",
     "publish_at": "2026-11-15T16:30:00-05:00",
     "answered": true,
-    "recapped": true
+    "recapped": true,
+    "withdrawn_reason": "16 Nov 2026: set private - the voice breaks up in the last third (old one-pass render); owner approved"
   },
   {
     "job": "20261115-1321-why-does-baking-soda-fizz-when-mixed-wit",
@@ -503,7 +504,7 @@
       "vinegar"
     ],
     "hook": "Why does baking soda fizz the moment it hits vinegar?",
-    "status": "public",
+    "status": "withdrawn",
     "narration": "Why does baking soda fizz the moment it hits vinegar? First, baking soda is a base called sodium bicarbonate. Second, vinegar is a diluted acetic acid. Third, the acid and base react instantly to trade parts, creating water and carbon dioxide gas. That's because the carbon dioxide gas tries to escape the liquid, which creates the fizzing bubbles we see. You see this reaction in fluffy pancakes, where those gas bubbles make the batter rise. Try this: why would using too much baking soda make your pancakes taste bitter?",
     "voice_engine": "kokoro",
     "voices": "male host, female explainer",
@@ -588,7 +589,8 @@
     "video_id": "Sxptr2TsIRI",
     "publish_at": "2026-11-16T07:30:00-05:00",
     "recapped": true,
-    "answered": true
+    "answered": true,
+    "withdrawn_reason": "16 Nov 2026: set private - the voice breaks up in the last third (old one-pass render); owner approved"
   },
   {
     "job": "20261115-1937-why-does-soap-remove-grease-and-oil-when",

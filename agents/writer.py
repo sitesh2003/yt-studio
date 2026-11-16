@@ -174,6 +174,13 @@ def tidy_countdown(script):
 def _fix_rule(fix):
     if not fix:
         return ""
+    if fix.get("kind") == "audio":
+        # 16 Nov 2026: the content was right, the old render broke the sound; the remake must not be a copy
+        # (a re-upload of the same video reads as reused content)
+        return f"""- THIS IS A FRESH REMAKE of a video taken down because its SOUND broke (its facts were fine):
+  "{fix.get('title', '')}". Write a NEW script on the same topic: a different hook, a different running
+  example and a different title. Do not reuse the old title or its first sentence.
+"""
     return f"""- THIS IS A CORRECTED REMAKE. An earlier version of this video was pulled before going public
   because it said: "{fix.get('false_sentence', '')}"
   That is wrong: {fix.get('why', '')}

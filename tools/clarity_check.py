@@ -22,7 +22,10 @@ def loudness(path, a, b):
     return float(m[-1]) if m else None
 
 
-def words_norm(s):
+def words_norm(s, lang="en"):
+    if lang != "en":   # Hindi: compared by sound (agents/listen.py skeletons), so spelling and script do not count
+        from agents.listen import skeleton
+        return [k for k in (skeleton(w) for w in re.findall(r"[\wऀ-ॿ']+", (s or "").lower())) if k]
     return re.findall(r"[a-z0-9']+", (s or "").lower())
 
 
@@ -34,7 +37,8 @@ def main(prefixes):
             hist.update({h["job"]: h for h in json.load(open(path, encoding="utf-8"))})
     files = A.artifact_files({v["job"] for v in vids})
     from faster_whisper import WhisperModel
-    ear = WhisperModel("small.en", device="cpu", compute_type="int8")
+    sys.path.insert(0, str(ROOT))
+    ears = {}
     md = ["# Clarity check, scene by scene", ""]
     for v in vids:
         h, path = hist[v["job"]], files.get(v["job"])
@@ -42,13 +46,16 @@ def main(prefixes):
         if not path:
             md += ["Could not get the uploaded file.", ""]
             continue
-        segs, _ = ear.transcribe(str(path), language="en", word_timestamps=True, beam_size=5)
+        lang = v["lang"]
+        if lang not in ears:
+            ears[lang] = WhisperModel("small.en" if lang == "en" else "small", device="cpu", compute_type="int8")
+        segs, _ = ears[lang].transcribe(str(path), language=lang, word_timestamps=True, beam_size=5)
         heard = [(w.start, w.end, w.word) for s in segs for w in (s.words or [])]
         overall = loudness(path, 0, A._duration(path))
         md += [f"Whole video: {overall} LUFS.", "", "| Scene | Time | Loudness | Heard | Words lost |", "|---|---|---|---|---|"]
         for k, ((a, b), line) in enumerate(zip(h.get("scene_times") or [], h.get("scene_lines") or [])):
-            said = words_norm(line)
-            got = words_norm(" ".join(w for s, e, w in heard if s >= a - 0.2 and e <= b + 0.2))
+            said = words_norm(line, lang)
+            got = words_norm(" ".join(w for s, e, w in heard if s >= a - 0.2 and e <= b + 0.2), lang)
             import difflib
             sm = difflib.SequenceMatcher(None, said, got, autojunk=False)
             match = sum(blk.size for blk in sm.get_matching_blocks())
