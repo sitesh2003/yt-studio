@@ -78,6 +78,10 @@ def sync(job, words):
     return []
 
 
+def _english():
+    return (config()["channel"].get("language") or "en")[:2].lower() == "en"
+
+
 def review(job, script, times):
     """AI sign-off: one frame per scene, checked against what is being said at that moment."""
     frames, lines = [], []
@@ -89,15 +93,22 @@ def review(job, script, times):
         if not raw:
             continue
         im = Image.open(io.BytesIO(raw)).convert("RGB")
-        im.thumbnail((360, 640))
+        im.thumbnail((360, 640) if _english() else (540, 960))   # Devanagari needs more pixels to read
         buf = io.BytesIO()
         im.save(buf, "JPEG", quality=80)
         frames.append(buf.getvalue())
         lines.append(f"Frame {len(frames)}: narrator says \"{sc['narration']}\"")
     if not frames:
         return ["could not read frames for review"]
-    out = llm_json(f"""You are the final quality reviewer for a family-friendly science YouTube Short aimed at
-US viewers. You see one frame from each scene, in order, with what the narrator says at that moment.
+    ch = config()["channel"]
+    # 16 Nov 2026: "aimed at US viewers" made the reviewer fail every frame of the Hindi channel for having
+    # Hindi text, and at 360px it misread clean Devanagari captions as "partially obscured"
+    lang_note = "" if _english() else (
+        f"\nThe channel is in {ch.get('language')}: captions, labels and headers in Devanagari mixed with English "
+        "words are CORRECT and intended. Flag a caption as cut off or covered only if you can clearly see it is.")
+    out = llm_json(f"""You are the final quality reviewer for a family-friendly science YouTube Short for this
+audience: {ch.get('audience') or 'US viewers'}. You see one frame from each scene, in order, with what the
+narrator says at that moment.{lang_note}
 {chr(10).join(lines)}
 
 Fail the video if ANY of these is true:
