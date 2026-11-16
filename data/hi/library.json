@@ -1,0 +1,41 @@
+[
+  {
+    "job": "20261116-0725-why-a-115-million-year-old-dinosaur-s-bl",
+    "date": "2026-11-16",
+    "title": "डायनासोर के जीवाश्मों में मिली रहस्यमयी आकृतियां: क्या ये वाकई खून की कोशिकाएं हैं?",
+    "topic": "Why a 115-million-year-old dinosaur's blood cells are still visible today",
+    "series": "Animal Whys",
+    "weekly": false,
+    "claims": [
+      "The structures found in fossils are mineralized casts, not preserved biological cells.",
+      "DNA degrades relatively quickly and cannot survive for millions of years."
+    ],
+    "sources": [
+      {
+        "cite": "Allentoft et al. (2012), Proceedings of the Royal Society B Biological Sciences. doi:10.1098/rspb.2012.1745",
+        "doi": "10.1098/rspb.2012.1745",
+        "claim": "DNA degrades relatively quickly and cannot survive for millions of years."
+      }
+    ]
+  },
+  {
+    "job": "20261116-0818-the-hidden-engineering-of-why-airport-ru",
+    "date": "2026-11-16",
+    "title": "Wet Runway पर Plane Hydroplaning से कैसे बचता है? 🤯",
+    "topic": "The hidden engineering of why airport runways are grooved",
+    "series": "How Things Work",
+    "weekly": false,
+    "claims": [
+      "Standard airport runway grooving specs require transversely cut channels roughly 6 mm (1/4 inch) wide and 6 mm deep spaced about 38 mm apart.",
+      "Hydroplaning occurs when water pressure builds in front of a rolling tire, lifting it off the pavement and eliminating friction.",
+      "Grooves provide high-pressure escape channels for water under heavy loads, allowing tire rubber to directly contact dry aggregate surface."
+    ],
+    "sources": [
+      {
+        "cite": "Deng et al. (2025), Lubricants. doi:10.3390/lubricants13020076",
+        "doi": "10.3390/lubricants13020076",
+        "claim": "Hydroplaning occurs when water pressure builds in front of a rolling tire, lifting it off the pavement and eliminating friction."
+      }
+    ]
+  }
+]

@@ -343,5 +343,218 @@
       "duration": 46.6
     },
     "repairs": 2
+  },
+  {
+    "job": "20261116-0725-why-a-115-million-year-old-dinosaur-s-bl",
+    "topic": "Why a 115-million-year-old dinosaur's blood cells are still visible today",
+    "title": "डायनासोर के जीवाश्मों में मिली रहस्यमयी आकृतियां: क्या ये वाकई खून की कोशिकाएं हैं?",
+    "description": "कैसे करोड़ों साल पुराने डायनासोर की हड्डियां आज भी कोशिकाओं जैसी आकृतियां दिखा रही हैं? क्या ये असली खून है या बस पत्थर का कमाल? जानिये इस वीडियो में। #shorts #hindi #dinosaur\n\nSources (open-access research):\n- Allentoft et al. (2012), Proceedings of the Royal Society B Biological Sciences. doi:10.1098/rspb.2012.1745\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nPhoto by heimseiten_WebdesignKoeln on Pixabay\nPhoto: Different Seasons Jewelry, BY 2.0, via Openverse (flickr)\nPhoto: Korinna, CC BY 4.0, via Wikimedia Commons\nVideo by Jari-Lobo on Pixabay",
+    "tags": [
+      "shorts",
+      "hindi",
+      "dinosaur",
+      "science"
+    ],
+    "hook": "डायनासोर के जीवाश्मों में वैज्ञानिकों को ऐसी सूक्ष्म आकृतियां क्यों मिली हैं जो खून की कोशिकाओं जैसी दिखती हैं?",
+    "status": "scheduled",
+    "narration": "डायनासोर के जीवाश्मों में वैज्ञानिकों को ऐसी सूक्ष्म आकृतियां क्यों मिली हैं जो खून की कोशिकाओं जैसी दिखती हैं? आमतौर पर, मौत के बाद सारा सॉफ्ट टिश्यू मिट्टी में मिल जाता है और अवशेष नहीं बचते। लेकिन यहाँ हड्डी के अंदर के खाली स्थानों में खनिजों का जमाव हो गया, जिससे कोशिका जैसी आकृतियां बन गईं। तो क्या ये कोशिकाएं आज भी वैसी ही हैं जैसे करोड़ों साल पहले थीं? नहीं, ये असली कोशिकाएं नहीं हैं। वैज्ञानिक मानते हैं कि ये खनिजों के जमाव से बनी आकृतियां हैं, न कि जैविक सेल्स। ये संरचनाएं इतनी बारीक हैं कि ऐसा लगता है मानो इन्होंने कोशिका की दीवार का आकार ले लिया हो, पर ये केवल मिनरल कास्ट हैं। कभी सोचा है, क्या पत्थरों में कैद इन निशानों से हम कभी डायनासोर का DNA वापस ला पाएंगे?",
+    "voice_engine": "edge-tts",
+    "voices": "one narrator (hi-IN-SwaraNeural)",
+    "diagrams": 1,
+    "series": "Animal Whys",
+    "countdown": false,
+    "length_arm": "short",
+    "question": "कभी सोचा है, क्या पत्थरों में कैद इन निशानों से हम कभी डायनासोर का DNA वापस ला पाएंगे?",
+    "answer_comment": "DNA एक बहुत ही नाजुक मॉलिक्यूल है जो हजारों सालों में टूटकर खत्म हो जाता है, इसलिए करोड़ों साल बाद इसे वापस पाना नामुमकिन है। वीडियो में जो सेल्स दिख रही हैं, वो फॉसिल्स में बनी खनिजों की आकृतियां हैं।\n\nSources (open-access research):\n- Allentoft et al. (2012), Proceedings of the Royal Society B Biological Sciences. doi:10.1098/rspb.2012.1745",
+    "sources": [
+      {
+        "claim": "DNA degrades relatively quickly and cannot survive for millions of years.",
+        "cite": "Allentoft et al. (2012), Proceedings of the Royal Society B Biological Sciences. doi:10.1098/rspb.2012.1745",
+        "doi": "10.1098/rspb.2012.1745",
+        "title": "The half-life of DNA in bone: measuring decay kinetics in 158 dated fossils",
+        "why": "The average DNA half-life within this geographically constrained fossil assemblage was estimated to be 521 years for a 242 bp mtDNA sequence, corresponding to a per nucleotide fragmentation rate (k) of 5.50 × 10(-6) per year."
+      }
+    ],
+    "fact_check": [
+      "The structures found in fossils are mineralized casts, not preserved biological cells.",
+      "DNA degrades relatively quickly and cannot survive for millions of years."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        8.31
+      ],
+      [
+        8.31,
+        14.38
+      ],
+      [
+        14.38,
+        21.85
+      ],
+      [
+        21.85,
+        27.05
+      ],
+      [
+        27.05,
+        35.52
+      ],
+      [
+        35.52,
+        44.16
+      ],
+      [
+        44.16,
+        51.33
+      ]
+    ],
+    "duration": 51.33,
+    "scene_lines": [
+      "डायनासोर के जीवाश्मों में वैज्ञानिकों को ऐसी सूक्ष्म आकृतियां क्यों मिली हैं जो खून की कोशिकाओं जैसी दिखती हैं?",
+      "आमतौर पर, मौत के बाद सारा सॉफ्ट टिश्यू मिट्टी में मिल जाता है और अवशेष नहीं बचते।",
+      "लेकिन यहाँ हड्डी के अंदर के खाली स्थानों में खनिजों का जमाव हो गया, जिससे कोशिका जैसी आकृतियां बन गईं।",
+      "तो क्या ये कोशिकाएं आज भी वैसी ही हैं जैसे करोड़ों साल पहले थीं?",
+      "नहीं, ये असली कोशिकाएं नहीं हैं। वैज्ञानिक मानते हैं कि ये खनिजों के जमाव से बनी आकृतियां हैं, न कि जैविक सेल्स।",
+      "ये संरचनाएं इतनी बारीक हैं कि ऐसा लगता है मानो इन्होंने कोशिका की दीवार का आकार ले लिया हो, पर ये केवल मिनरल कास्ट हैं।",
+      "कभी सोचा है, क्या पत्थरों में कैद इन निशानों से हम कभी डायनासोर का DNA वापस ला पाएंगे?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,050 --> 00:00:03,466\nडायनासोर के जीवाश्मों में वैज्ञानिकों को ऐसी\n\n2\n00:00:03,466 --> 00:00:05,988\nसूक्ष्म आकृतियां क्यों मिली हैं जो खून\n\n3\n00:00:05,988 --> 00:00:08,156\nकी कोशिकाओं जैसी दिखती हैं?\n\n4\n00:00:08,310 --> 00:00:10,990\nआमतौर पर, मौत के बाद सारा सॉफ्ट\n\n5\n00:00:10,990 --> 00:00:14,318\nटिश्यू मिट्टी में मिल जाता है और अवशेष नहीं बचते।\n\n6\n00:00:14,380 --> 00:00:16,715\nलेकिन यहाँ हड्डी के अंदर के खाली\n\n7\n00:00:16,715 --> 00:00:19,201\nस्थानों में खनिजों का जमाव हो गया,\n\n8\n00:00:19,201 --> 00:00:22,085\nजिससे कोशिका जैसी आकृतियां बन गईं। तो\n\n9\n00:00:22,085 --> 00:00:24,449\nक्या ये कोशिकाएं आज भी वैसी ही\n\n10\n00:00:24,449 --> 00:00:26,947\nहैं जैसे करोड़ों साल पहले थीं?\n\n11\n00:00:27,050 --> 00:00:30,286\nनहीं, ये असली कोशिकाएं नहीं हैं। वैज्ञानिक\n\n12\n00:00:30,286 --> 00:00:32,431\nमानते हैं कि ये खनिजों के जमाव\n\n13\n00:00:32,431 --> 00:00:34,711\nसे बनी आकृतियां हैं, न कि जैविक\n\n14\n00:00:34,711 --> 00:00:37,900\nसेल्स। ये संरचनाएं इतनी बारीक हैं कि\n\n15\n00:00:37,900 --> 00:00:40,247\nऐसा लगता है मानो इन्होंने कोशिका की\n\n16\n00:00:40,247 --> 00:00:42,170\nदीवार का आकार ले लिया हो, पर\n\n17\n00:00:42,170 --> 00:00:44,095\nये केवल मिनरल कास्ट हैं।\n\n18\n00:00:44,160 --> 00:00:46,648\nकभी सोचा है, क्या पत्थरों में कैद\n\n19\n00:00:46,648 --> 00:00:49,111\nइन निशानों से हम कभी डायनासोर का\n\n20\n00:00:49,111 --> 00:00:50,732\nDNA वापस ला पाएंगे?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [],
+      "footage": [],
+      "review": [],
+      "heard": [
+        "\"डायनासोर\" heard as \"दैनासोर\"",
+        "\"जीवाश्मों\" heard as \"जीवाश्मो\"",
+        "\"वैज्ञानिकों\" heard as \"वेग्यानिको\"",
+        "\"आकृतियां क्यों\" heard as \"अक्रतिया क्यो\"",
+        "\"हैं\" heard as \"है\"",
+        "\"कोशिकाओं\" heard as \"कोशिकाओ\"",
+        "\"हैं आमतौर\" heard as \"है आम तोर\"",
+        "\"बाद\" heard as \"बाज\""
+      ],
+      "pass": true,
+      "duration": 50.8
+    },
+    "repairs": 2,
+    "audited": true,
+    "video_id": "2PhLJl6N1R8",
+    "publish_at": "2026-11-16T09:30:00-05:00"
+  },
+  {
+    "job": "20261116-0818-the-hidden-engineering-of-why-airport-ru",
+    "topic": "The hidden engineering of why airport runways are grooved",
+    "title": "Wet Runway पर Plane Hydroplaning से कैसे बचता है? 🤯",
+    "description": "Ever wondered how heavy aircraft land safely on wet airport runways without skids? Here is the simple physics engineering behind grooved runways! #shorts #hindi #engineering\n\nSources (open-access research):\n- Deng et al. (2025), Lubricants. doi:10.3390/lubricants13020076\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nPhoto: TireZoo, BY 2.0, via Openverse (flickr)\nVideo by Life-Of-Vids on Pixabay\nVideo by Vimeo-Free-Videos on Pixabay\nVideo by wserrano on Pixabay\nVideo by danydory on Pixabay\n\nयह वीडियो कैसे बना: स्क्रिप्ट को AI tools की मदद से open research के आधार पर लिखा और fact-check किया गया है, आवाज़ AI voice की है, और editing open-source software से हुई है। कोई गलती दिखे तो comment में बताइए — जाँच कर सुधार करेंगे।",
+    "tags": [
+      "aviation",
+      "engineering",
+      "physics"
+    ],
+    "hook": "250 km/h की speed से गीली runway पर plane hydroplaning से कैसे बचता है?",
+    "status": "scheduled",
+    "narration": "250 km/h की speed से गीली runway पर plane hydroplaning से कैसे बचता है? तेज rain में जब plane land करता है, तो tires और ground के बीच पानी जमा हो जाता है। इसे hydroplaning कहते हैं, यानी tire पानी पर तैरने लगता है और friction खत्म हो जाता है। तो फिर 200 ton का plane safely कैसे रुकता है? Secret hidden है runway पर बनी 6 mm गहरी grooves में। Plane का heavy weight पानी को इन grooves में दबा देता है, जिससे पानी तुरंत किनारे बह जाता है। Rubber tire directly road surface के contact में आ जाता है और hydroplaning का risk बहुत कम ہو जाता है। कभी सोचा है कार के tires पर भी धागे जैसी tread lines क्यों बनी होती हैं?",
+    "voice_engine": "edge-tts",
+    "voices": "one narrator (hi-IN-SwaraNeural)",
+    "diagrams": 1,
+    "series": "How Things Work",
+    "countdown": false,
+    "length_arm": "standard",
+    "question": "कभी सोचा है कार के tires पर भी धागे जैसी tread lines क्यों बनी होती हैं?",
+    "answer_comment": "The answer: Car tire treads act exactly like runway grooves! When driving in rain, the channels in your tire tread push water away from the contact area, allowing rubber to touch the road directly and preventing hydroplaning. What other everyday object designs have surprised you?\n\nSources (open-access research):\n- Deng et al. (2025), Lubricants. doi:10.3390/lubricants13020076",
+    "sources": [
+      {
+        "claim": "Hydroplaning occurs when water pressure builds in front of a rolling tire, lifting it off the pavement and eliminating friction.",
+        "cite": "Deng et al. (2025), Lubricants. doi:10.3390/lubricants13020076",
+        "doi": "10.3390/lubricants13020076",
+        "title": "Effects of Driving Conditions on Tire Hydroplaning Performance",
+        "why": "Hydroplaning occurs as standing water on the road surface not only acts as a lubricant but also generates hydrodynamic pressure, causing the tire to lose contact with the ground."
+      }
+    ],
+    "fact_check": [
+      "Standard airport runway grooving specs require transversely cut channels roughly 6 mm (1/4 inch) wide and 6 mm deep spaced about 38 mm apart.",
+      "Hydroplaning occurs when water pressure builds in front of a rolling tire, lifting it off the pavement and eliminating friction.",
+      "Grooves provide high-pressure escape channels for water under heavy loads, allowing tire rubber to directly contact dry aggregate surface."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        7.26
+      ],
+      [
+        7.26,
+        12.68
+      ],
+      [
+        12.68,
+        18.68
+      ],
+      [
+        18.68,
+        22.97
+      ],
+      [
+        22.97,
+        26.77
+      ],
+      [
+        26.77,
+        32.81
+      ],
+      [
+        32.81,
+        40.05
+      ],
+      [
+        40.05,
+        44.96
+      ]
+    ],
+    "duration": 44.96,
+    "scene_lines": [
+      "250 km/h की speed से गीली runway पर plane hydroplaning से कैसे बचता है?",
+      "तेज rain में जब plane land करता है, तो tires और ground के बीच पानी जमा हो जाता है।",
+      "इसे hydroplaning कहते हैं, यानी tire पानी पर तैरने लगता है और friction खत्म हो जाता है।",
+      "तो फिर 200 ton का plane safely कैसे रुकता है?",
+      "Secret hidden है runway पर बनी 6 mm गहरी grooves में।",
+      "Plane का heavy weight पानी को इन grooves में दबा देता है, जिससे पानी तुरंत किनारे बह जाता है।",
+      "Rubber tire directly road surface के contact में आ जाता है और hydroplaning का risk बहुत कम ہو जाता है।",
+      "कभी सोचा है कार के tires पर भी धागे जैसी tread lines क्यों बनी होती हैं?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,050 --> 00:00:03,812\n250 km/h की speed से गीली runway पर\n\n2\n00:00:03,812 --> 00:00:06,637\nplane hydroplaning से कैसे बचता है?\n\n3\n00:00:06,850 --> 00:00:08,808\nतेज rain में जब plane land करता\n\n4\n00:00:08,808 --> 00:00:10,688\nहै, तो tires और ground के बीच\n\n5\n00:00:10,688 --> 00:00:13,496\nपानी जमा हो जाता है। इसे hydroplaning\n\n6\n00:00:13,496 --> 00:00:15,836\nकहते हैं, यानी tire पानी पर तैरने\n\n7\n00:00:15,836 --> 00:00:18,374\nलगता है और friction खत्म हो जाता है।\n\n8\n00:00:18,480 --> 00:00:22,158\nतो फिर 200 ton का plane safely कैसे रुकता है?\n\n9\n00:00:22,380 --> 00:00:24,738\nSecret hidden है runway पर बनी 6\n\n10\n00:00:24,738 --> 00:00:27,244\nmm गहरी grooves में। Plane का heavy\n\n11\n00:00:27,244 --> 00:00:29,025\nweight पानी को इन grooves में दबा\n\n12\n00:00:29,025 --> 00:00:31,407\nदेता है, जिससे पानी तुरंत किनारे बह\n\n13\n00:00:31,407 --> 00:00:34,517\nजाता है। Rubber tire directly road surface\n\n14\n00:00:34,517 --> 00:00:36,309\nके contact में आ जाता है और\n\n15\n00:00:36,309 --> 00:00:39,095\nhydroplaning का risk बहुत कम ہو जाता\n\n16\n00:00:39,210 --> 00:00:41,425\nहै। कभी सोचा है कार tires पर\n\n17\n00:00:41,425 --> 00:00:44,359\nभी धागे जैसी tread lines क्यों बनी होती हैं?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [],
+      "footage": [],
+      "review": [],
+      "heard": [
+        "\"h\" heard as \"पर आवर\"",
+        "\"runway\" heard as \"रन्वेः\"",
+        "\"hydroplaning\" heard as \"हीट्रो प्लेनिंग\"",
+        "\"land\" heard as \"लान\"",
+        "\"tires\" heard as \"तायाज\"",
+        "\"ground\" heard as \"ग्राउन\"",
+        "\"hydroplaning\" heard as \"हीट्रो प्लेनिंग\"",
+        "\"हैं\" heard as \"है\""
+      ],
+      "pass": true,
+      "duration": 44.4
+    },
+    "repairs": 0,
+    "audited": true,
+    "video_id": "WXx_iDFI9BA",
+    "publish_at": "2026-11-17T09:30:00-05:00"
   }
 ]
