@@ -1441,7 +1441,7 @@
       "science"
     ],
     "hook": "Your car swerves off the highway right toward a steel guardrail.",
-    "status": "scheduled",
+    "status": "public",
     "narration": "Your car swerves off the highway right toward a steel guardrail. Instead of impaling your vehicle, your car hits a heavy steel box on the end of the rail. This terminal squeezes the steel beam as it pushes through. So what is that heavy box actually doing to the metal? Here's why: it flattens the steel beam and curls it away from you, absorbing massive energy. How does a guardrail end box absorb energy during a crash?",
     "voice_engine": "kokoro",
     "voices": "male host, female explainer",
@@ -1506,7 +1506,9 @@
     "repairs": 1,
     "audited": true,
     "video_id": "3HaBsuVSlmA",
-    "publish_at": "2026-11-15T19:00:00-05:00"
+    "publish_at": "2026-11-15T19:00:00-05:00",
+    "recapped": true,
+    "answered": true
   },
   {
     "job": "20261114-1508-why-bumping-your-elbow-s-funny-bone-trig",
@@ -2703,6 +2705,113 @@
       ],
       "pass": true,
       "duration": 46.5
+    },
+    "repairs": 0,
+    "audited": true
+  },
+  {
+    "job": "20261116-0143-why-an-explosion-of-fallen-acorns-secret",
+    "topic": "Why an explosion of fallen acorns secretly triggers an outbreak of Lyme disease two years later",
+    "title": "How Acorns Indirectly Affect Lyme Disease Rates 🤯",
+    "description": "Discover the surprising chain reaction linking autumn acorns to a delayed surge in Lyme disease years later. #shorts #science #nature\n\nSources (open-access research):\n- Pedersen et al. (2007), Journal of Animal Ecology. doi:10.1111/j.1365-2656.2007.01321.x\n- Parise et al. (2019), Journal of Medical Entomology. doi:10.1093/jme/tjz242\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nIllustrations: drawn for this video with FLUX.2 [klein] 4B (AI, Apache 2.0) and checked for accuracy\nPhoto by Gruendercoach on Pixabay\nPhoto: Elsie esq., BY 2.0, via Openverse (flickr)\nVideo by Matthias_Groeneveld on Pixabay\nVideo by 43485955 on Pixabay\nVideo by TheMarcKnight on Pixabay\n\nHow this was made: the script is researched and fact-checked with AI tools against open-access research (sources above when found), narrated by an AI voice, and edited with open-source software. Corrections from viewers are checked and credited.",
+    "tags": [
+      "lyme disease",
+      "acorns",
+      "biology",
+      "ecology",
+      "ticks",
+      "science"
+    ],
+    "hook": "Massive acorn drops trigger Lyme disease spikes two years later, driven by a hidden chain reaction.",
+    "status": "banked",
+    "narration": "Massive acorn drops trigger Lyme disease spikes two years later, driven by a hidden chain reaction. When oak trees drop extra acorns, white-footed mice feast and multiply rapidly. Those mice carry immature ticks, which feed safely on the surging rodent population. Think about what happens when that giant mouse food supply suddenly runs dry next season. Pause and guess... three, two, one. Those well-fed ticks grow into nymphs next year, greatly increasing the number of infected ticks in the woods. That delayed chain reaction is why heavy acorn seasons predict high Lyme disease rates. Ever thought how forest food webs secretly connect to human health right outside your door?",
+    "voice_engine": "kokoro",
+    "voices": "male host, female explainer",
+    "diagrams": 1,
+    "series": "Animal Whys",
+    "countdown": true,
+    "length_arm": "long",
+    "question": "Ever thought how forest food webs secretly connect to human health right outside your door?",
+    "answer_comment": "The answer: Heavy acorn years cause mice populations to explode because of abundant food. When the mice population peaks, tick larvae thrive; those ticks survive and mature into nymphs the following year, leading to more human encounters.\n\nSources (open-access research):\n- Pedersen et al. (2007), Journal of Animal Ecology. doi:10.1111/j.1365-2656.2007.01321.x\n- Parise et al. (2019), Journal of Medical Entomology. doi:10.1093/jme/tjz242",
+    "sources": [
+      {
+        "claim": "Heavy acorn production correlates with increases in white-footed mouse populations.",
+        "cite": "Pedersen et al. (2007), Journal of Animal Ecology. doi:10.1111/j.1365-2656.2007.01321.x",
+        "doi": "10.1111/j.1365-2656.2007.01321.x",
+        "title": "The interaction of parasites and resources cause crashes in a wild mouse population",
+        "why": "Populations of white-footed mice Peromyscus leucopus and deer mice Peromyscus maniculatus increase dramatically in response to food availability from oak acorn masts."
+      },
+      {
+        "claim": "White-footed mice are primary reservoirs for the bacterium that causes Lyme disease.",
+        "cite": "Parise et al. (2019), Journal of Medical Entomology. doi:10.1093/jme/tjz242",
+        "doi": "10.1093/jme/tjz242",
+        "title": "Experimental Demonstration of Reservoir Competence of the White-Footed Mouse, Peromyscus leucopus (Rodentia: Cricetidae), for the Lyme Disease Spirochete, Borrelia mayonii (Spirochaetales: Spirochaetaceae)",
+        "why": "The white-footed mouse, Peromyscus leucopus (Rafinesque), is a reservoir for the Lyme disease spirochete Borrelia burgdorferi sensu stricto in the eastern half of the United States, where the blacklegged tick, Ixodes scapularis Say (Acari: Ixodidae), is the primary vector."
+      }
+    ],
+    "fact_check": [
+      "Heavy acorn production correlates with increases in white-footed mouse populations.",
+      "White-footed mice are primary reservoirs for the bacterium that causes Lyme disease.",
+      "A surge in infected nymph ticks follows peak mouse populations with a time lag of about two years."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        5.61
+      ],
+      [
+        5.61,
+        10.34
+      ],
+      [
+        10.34,
+        15.06
+      ],
+      [
+        15.06,
+        19.97
+      ],
+      [
+        19.97,
+        23.04
+      ],
+      [
+        23.04,
+        28.83
+      ],
+      [
+        28.83,
+        34.05
+      ],
+      [
+        34.05,
+        39.66
+      ]
+    ],
+    "duration": 39.66,
+    "scene_lines": [
+      "Massive acorn drops trigger Lyme disease spikes two years later, driven by a hidden chain reaction.",
+      "When oak trees drop extra acorns, white-footed mice feast and multiply rapidly.",
+      "Those mice carry immature ticks, which feed safely on the surging rodent population.",
+      "Think about what happens when that giant mouse food supply suddenly runs dry next season.",
+      "Pause and guess... three, two, one.",
+      "Those well-fed ticks grow into nymphs next year, greatly increasing the number of infected ticks in the woods.",
+      "That delayed chain reaction is why heavy acorn seasons predict high Lyme disease rates.",
+      "Ever thought how forest food webs secretly connect to human health right outside your door?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": "3HaBsuVSlmA",
+    "captions_srt": "1\n00:00:00,050 --> 00:00:02,688\nMassive acorn drops trigger Lyme disease spikes\n\n2\n00:00:02,688 --> 00:00:05,610\ntwo years later, driven by a hidden chain reaction.\n\n3\n00:00:05,610 --> 00:00:08,180\nWhen oak trees drop extra acorns, white-footed\n\n4\n00:00:08,180 --> 00:00:10,340\nmice feast and multiply rapidly.\n\n5\n00:00:10,340 --> 00:00:12,597\nThose mice carry immature ticks, which feed\n\n6\n00:00:12,597 --> 00:00:15,060\nsafely on the surging rodent population.\n\n7\n00:00:15,060 --> 00:00:16,710\nThink about what happens when that giant\n\n8\n00:00:16,710 --> 00:00:19,970\nmouse food supply suddenly runs dry next season.\n\n9\n00:00:19,970 --> 00:00:21,100\nPause and guess...\n\n10\n00:00:21,100 --> 00:00:22,850\nthree, two, one.\n\n11\n00:00:23,040 --> 00:00:25,377\nThose well-fed ticks grow into nymphs next\n\n12\n00:00:25,377 --> 00:00:27,560\nyear, greatly increasing the number of infected\n\n13\n00:00:27,560 --> 00:00:28,830\nticks in the woods.\n\n14\n00:00:28,830 --> 00:00:30,942\nThat delayed chain reaction is why heavy\n\n15\n00:00:30,942 --> 00:00:34,050\nacorn seasons predict high Lyme disease rates.\n\n16\n00:00:34,050 --> 00:00:36,515\nEver thought how forest food webs secretly\n\n17\n00:00:36,515 --> 00:00:39,065\nconnect to human health right outside your door?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [],
+      "footage": [],
+      "review": [],
+      "pass": true,
+      "duration": 38.9
     },
     "repairs": 0,
     "audited": true

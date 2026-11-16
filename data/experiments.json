@@ -30,6 +30,12 @@
         "avg_views": null,
         "avg_view_pct": null,
         "avg_seconds": null
+      },
+      "long": {
+        "videos": 0,
+        "avg_views": null,
+        "avg_view_pct": null,
+        "avg_seconds": null
       }
     }
   }

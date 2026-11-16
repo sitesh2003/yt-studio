@@ -219,5 +219,30 @@
         "claim": "Tempered glass is manufactured through a process of extreme heating and rapid cooling (quenching) which creates compressive stresses on the surface and tensile stress in the center."
       }
     ]
+  },
+  {
+    "job": "20261116-0143-why-an-explosion-of-fallen-acorns-secret",
+    "date": "2026-11-16",
+    "title": "How Acorns Indirectly Affect Lyme Disease Rates 🤯",
+    "topic": "Why an explosion of fallen acorns secretly triggers an outbreak of Lyme disease two years later",
+    "series": "Animal Whys",
+    "weekly": false,
+    "claims": [
+      "Heavy acorn production correlates with increases in white-footed mouse populations.",
+      "White-footed mice are primary reservoirs for the bacterium that causes Lyme disease.",
+      "A surge in infected nymph ticks follows peak mouse populations with a time lag of about two years."
+    ],
+    "sources": [
+      {
+        "cite": "Pedersen et al. (2007), Journal of Animal Ecology. doi:10.1111/j.1365-2656.2007.01321.x",
+        "doi": "10.1111/j.1365-2656.2007.01321.x",
+        "claim": "Heavy acorn production correlates with increases in white-footed mouse populations."
+      },
+      {
+        "cite": "Parise et al. (2019), Journal of Medical Entomology. doi:10.1093/jme/tjz242",
+        "doi": "10.1093/jme/tjz242",
+        "claim": "White-footed mice are primary reservoirs for the bacterium that causes Lyme disease."
+      }
+    ]
   }
 ]

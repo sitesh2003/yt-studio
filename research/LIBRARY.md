@@ -3,6 +3,17 @@
 Every video, the claims it makes, and the open-access research behind them. Built automatically by
 agents/library.py; a source is listed only if its abstract was checked to support the claim.
 
+## How Acorns Indirectly Affect Lyme Disease Rates 🤯
+*2026-11-16 · Animal Whys*
+
+- Heavy acorn production correlates with increases in white-footed mouse populations.
+- White-footed mice are primary reservoirs for the bacterium that causes Lyme disease.
+- A surge in infected nymph ticks follows peak mouse populations with a time lag of about two years.
+
+Sources:
+- Pedersen et al. (2007), Journal of Animal Ecology. doi:10.1111/j.1365-2656.2007.01321.x — supports: Heavy acorn production correlates with increases in white-footed mouse populations.
+- Parise et al. (2019), Journal of Medical Entomology. doi:10.1093/jme/tjz242 — supports: White-footed mice are primary reservoirs for the bacterium that causes Lyme disease.
+
 ## Why Ponds Don't Freeze Solid 🤔
 *2026-11-15 · How Things Work*
 

@@ -1,20 +1,23 @@
 {
   "lessons": [
-    "Avoid starting with declarative exposition like 'When maple trees wake up in spring...', as it caused the largest single drop (-38.5%) across the analyzed videos.",
-    "Do not include meta-engagement prompts like 'Pause and guess...', which triggered an immediate 15.4% drop in retention.",
-    "Frame the hook as an unresolved paradox or sensory tension (e.g., trying to fix spicy food with ice water) to achieve strong 10% retention above 1.0 despite weak relative starts.",
-    "Keep initial explanations punchy; high drops consistently occur between 10% and 26% of video length when pacing slows down.",
-    "Not enough data to establish a definitive rule for countdowns, as none were present in the analyzed sample."
+    "Prioritize dynamic, high-stakes comparisons over descriptive statements: the best-performing video (Tuna) uses a clear, high-contrast hook comparing two distinct subjects, while descriptive, passive hooks correlate with higher immediate drop-off.",
+    "Eliminate slow context-setting: videos that lead with scientific mechanics or 'process' explanations (Maple Syrup, Pineapples) experience the largest early-exit spikes. Get to the result or the 'why' immediately.",
+    "Avoid technical jargon or multi-sentence definitions in the first 15% of the video: the data shows major drop-offs coincide with specific lines explaining chemical processes (Honey, Pineapples, Fingers).",
+    "Anchor the hook in conflict or human-centric experience: the most successful hooks frame the topic as a relatable mystery or a counter-intuitive phenomenon, whereas process-oriented lines lead to immediate audience attrition.",
+    "Sustain momentum after the hook: since the largest drops frequently occur between 10% and 30% of the video, ensure that the bridge between the hook and the core explanation is brief and immediately delivers on the promise of the title."
   ],
   "worst_moment_types": [
-    "Expository scientific setup statements ('When maple trees wake up in spring...')",
-    "Meta-commentary and direct interaction prompts ('Pause and guess...')",
-    "Slow transitions or elaborations between the 10% and 26% marks"
+    "Explanatory lines focusing on chemical composition (e.g., 'unique chemistry,' 'protein-melting enzyme').",
+    "Descriptive process steps that lack immediate payoff (e.g., 'boil off almost all of it').",
+    "Lines that explain 'how it works' before establishing why the viewer should care about the outcome.",
+    "Pacing lulls where the narrative shifts from the hook's premise to technical methodology."
   ],
   "best_hook_types": [
-    "Conflict-driven hooks that highlight a failed everyday solution ('Gulping ice water... but the real fire stays untouched')",
-    "Intriguing everyday phenomena that promise a hidden mechanism ('Why your eyes are secretly leaking', 'Why Onions Make You Cry')"
+    "High-contrast comparisons (e.g., Tuna vs. Cod).",
+    "Direct, visceral threats or unusual biological actions (e.g., 'fresh pineapple is eating you back').",
+    "Intriguing, counter-intuitive claims that contradict common sense (e.g., 'ice water fails against spicy food').",
+    "Hooks that establish a clear, relatable scenario that the viewer has personally experienced."
   ],
-  "studied": "2026-11-15",
-  "videos": 4
+  "studied": "2026-11-16",
+  "videos": 8
 }

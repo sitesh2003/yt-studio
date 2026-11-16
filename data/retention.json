@@ -2,25 +2,25 @@
   "4LJjIxeP_dY": {
     "title": "Why your eyes are secretly leaking",
     "hook_line": "",
-    "kept_at_10pct": 1.0658,
-    "kept_at_50pct": 0.45030000000000003,
-    "kept_at_end": 0.2061,
+    "kept_at_10pct": 1.0656999999999999,
+    "kept_at_50pct": 0.4511,
+    "kept_at_end": 0.20579999999999998,
     "vs_similar_start": 0.34,
     "vs_similar_end": 0.56,
     "biggest_drops": [
       {
-        "at": 0.13,
+        "at": 0.21,
         "lost": 0.133,
         "line": ""
       },
       {
-        "at": 0.26,
-        "lost": 0.104,
+        "at": 0.33,
+        "lost": 0.069,
         "line": ""
       }
     ],
     "countdown": null,
-    "checked": "2026-11-15"
+    "checked": "2026-11-16"
   },
   "a8Kooq5Sswk": {
     "title": "Why Onions Make You Cry",
@@ -43,52 +43,144 @@
       }
     ],
     "countdown": null,
-    "checked": "2026-11-15"
+    "checked": "2026-11-16"
   },
   "yF1Dj5F1icM": {
     "title": "Why Cold Water Fails Against Spicy Food 🌶️🥛",
     "hook_line": "Gulping ice water after a hot pepper feels like relief, but the real fire stays untouched.",
-    "kept_at_10pct": 1.0479,
-    "kept_at_50pct": 0.47950000000000004,
-    "kept_at_end": 0.1404,
+    "kept_at_10pct": 1.0476999999999999,
+    "kept_at_50pct": 0.4815,
+    "kept_at_end": 0.1492,
     "vs_similar_start": 0.38,
     "vs_similar_end": 0.56,
     "biggest_drops": [
       {
         "at": 0.1,
-        "lost": 0.224,
+        "lost": 0.221,
         "line": "Gulping ice water after a hot pepper feels like relief, but the real fire stays untouched."
       },
       {
         "at": 0.94,
-        "lost": 0.116,
+        "lost": 0.117,
         "line": "Ever thought why drinking an ice-cold fruit juice won't stop spicy food burn either?"
       }
     ],
     "countdown": null,
-    "checked": "2026-11-15"
+    "checked": "2026-11-16"
   },
   "_EnG9sUTAUY": {
     "title": "Why Maple Syrup Takes 40 Gallons 🍁🍯",
     "hook_line": "That sweet maple syrup on your pancakes?",
-    "kept_at_10pct": 0.9231,
-    "kept_at_50pct": 0.46149999999999997,
-    "kept_at_end": 0.15380000000000002,
-    "vs_similar_start": 0.27,
-    "vs_similar_end": 0.24,
+    "kept_at_10pct": 0.9545,
+    "kept_at_50pct": 0.3636,
+    "kept_at_end": 0.1818,
+    "vs_similar_start": 0.33,
+    "vs_similar_end": 0.37,
     "biggest_drops": [
       {
-        "at": 0.13,
-        "lost": 0.385,
+        "at": 0.07,
+        "lost": 0.364,
         "line": "When maple trees wake up in spring, they pump out sap that is about ninety-eight percent water."
       },
       {
-        "at": 0.52,
-        "lost": 0.154,
-        "line": "Pause and guess..."
+        "at": 0.22,
+        "lost": 0.136,
+        "line": "To turn that watery sap into thick syrup, you have to boil off almost all of it."
       }
     ],
     "countdown": null,
-    "checked": "2026-11-15"
+    "checked": "2026-11-16"
+  },
+  "EfZ-P6him7k": {
+    "title": "The Only Food That Lasts Forever 🐝✨",
+    "hook_line": "Honey is famous for being one of the only natural foods that never truly spoils.",
+    "kept_at_10pct": 1.0714,
+    "kept_at_50pct": 0.4143,
+    "kept_at_end": 0.2143,
+    "vs_similar_start": 0.36,
+    "vs_similar_end": 0.57,
+    "biggest_drops": [
+      {
+        "at": 0.14,
+        "lost": 0.243,
+        "line": "It stays shelf-stable because of its unique chemistry, not just because it’s sealed tight."
+      },
+      {
+        "at": 0.3,
+        "lost": 0.114,
+        "line": "Honey is incredibly low in water, which makes it a nightmare for bacteria to survive."
+      }
+    ],
+    "countdown": null,
+    "checked": "2026-11-16"
+  },
+  "Bxp7r8IzbiY": {
+    "title": "Why Fingers Prune In Water 💧🧽",
+    "hook_line": "Your fingers prune in water, but it is not because you are absorbing it like a sponge.",
+    "kept_at_10pct": 1.0241,
+    "kept_at_50pct": 0.19879999999999998,
+    "kept_at_end": 0.0663,
+    "vs_similar_start": 0.21,
+    "vs_similar_end": 0.2,
+    "biggest_drops": [
+      {
+        "at": 0.13,
+        "lost": 0.229,
+        "line": "In fact, dead skin cells would actually swell up and smooth out if they just soaked up water."
+      },
+      {
+        "at": 0.34,
+        "lost": 0.096,
+        "line": "Now think about what happens when you lose that underlying volume inside a rigid shell."
+      }
+    ],
+    "countdown": null,
+    "checked": "2026-11-16"
+  },
+  "u_qOehVEHQI": {
+    "title": "Why Tuna Meat Is Red Meat While Cod Is Pure White 🐟🥩",
+    "hook_line": "A bluefin tuna and a cod are both fish, but their meat looks like two completely different animals.",
+    "kept_at_10pct": 1.2329,
+    "kept_at_50pct": 0.6301,
+    "kept_at_end": 0.42469999999999997,
+    "vs_similar_start": 0.56,
+    "vs_similar_end": 0.87,
+    "biggest_drops": [
+      {
+        "at": 0.09,
+        "lost": 0.226,
+        "line": "A bluefin tuna and a cod are both fish, but their meat looks like two completely different animals."
+      },
+      {
+        "at": 0.26,
+        "lost": 0.117,
+        "line": "The secret comes down to how they move."
+      }
+    ],
+    "countdown": null,
+    "checked": "2026-11-16"
+  },
+  "80jyJN1A1y8": {
+    "title": "Why Fresh Pineapples Eat You Back 🍍👅",
+    "hook_line": "Fresh pineapple is literally eating you back.",
+    "kept_at_10pct": 1.0931,
+    "kept_at_50pct": 0.3883,
+    "kept_at_end": 0.2464,
+    "vs_similar_start": 0.38,
+    "vs_similar_end": 0.74,
+    "biggest_drops": [
+      {
+        "at": 0.11,
+        "lost": 0.203,
+        "line": "Every time you bite into a fresh slice, it stings because of a clever defense weapon."
+      },
+      {
+        "at": 0.27,
+        "lost": 0.139,
+        "line": "The fruit contains a potent protein-melting enzyme called bromelain."
+      }
+    ],
+    "countdown": null,
+    "checked": "2026-11-16"
   }
 }

@@ -1,13 +1,20 @@
 {
-  "summary": "1. Prioritize short, punchy hooks under 10 words that rely on paradox or bodily shock value.\n2. Avoid verbose, descriptive hook sentences that explain the mechanism too early.\n3. Keep titles concise and intriguing without overloading them with emojis or long explanations.\n4. Target everyday bodily or biological curiosities like 'eyes leaking' or 'pineapples eating you back' to drive high view percentages.\n5. Structure scripts to maintain high retention past the 30-second mark to trigger the rewatch algorithm.",
+  "summary": [
+    "Keep hooks under 15 words to instantly disrupt the swipe reflex and maximize early retention.",
+    "Frame the first sentence as a direct paradox or counter-intuitive claim rather than a neutral definition.",
+    "Use curiosity gaps that challenge common everyday assumptions, such as body reactions or familiar foods.",
+    "Incorporate high-contrast title descriptors and visual emojis to stand out in the Shorts feed.",
+    "Target universally relatable biological or culinary oddities to ensure broader initial algorithm testing."
+  ],
   "winning_hooks": [
+    "Your fingers prune in water, but it is not because you are absorbing it like a sponge.",
     "Your eyes are leaking right now, and your brain is hiding it.",
-    "Fresh pineapple is literally eating you back.",
-    "Your fingers prune in water, but it is not because you are absorbing it like a sponge."
+    "Fresh pineapple is literally eating you back."
   ],
   "avoid": [
-    "Starting hooks with explanatory context or qualifiers like 'Garlic usually doesn't make you cry... because...'",
-    "Using overly descriptive sentences that give away the core answer in the first three seconds."
+    "Long, explanatory introductory sentences that begin with background context.",
+    "Descriptive hooks that summarize the topic straightforwardly without creating an immediate mystery.",
+    "Titles that lack emotional or sensory trigger words like 'Secretly', 'Fails', or 'Eating You Back'."
   ],
-  "next_experiment": "Test an A/B split on a short paradox hook (<7 words) versus a descriptive educational hook on a common food mystery to see which drives a higher averageViewPercentage above 100."
+  "next_experiment": "A/B test a high-performing topic (like pineapples or fingers) with two hook variations: Variation A uses a direct counter-intuitive claim ('It is not absorption'), while Variation B uses an urgent sensory warning ('Do this before eating pineapple'). Compare stayed_pct after 2,000 impressions."
 }
