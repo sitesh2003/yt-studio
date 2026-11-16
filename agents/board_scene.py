@@ -112,8 +112,10 @@ class Board(MovingCameraScene):
                           rate_func=rate_functions.ease_in_out_sine)
                 secs -= min(MOVE, secs * 0.25)
             parts = [m for m in shapes.submobjects if m.has_points()] or [shapes]
-            draw = min(secs * 0.7, 1.2 + 0.35 * len(parts))
-            write = min(secs - draw, 0.4 + 0.3 * len(labels)) if labels else 0
+            # draw, write the labels, then HOLD so the finished picture and its words can be read
+            # (16 Nov 2026: labels were still being written as the scene ended)
+            draw = min(secs * 0.5, 1.2 + 0.12 * len(parts))
+            write = min(secs * 0.2, 0.4 + 0.25 * len(labels)) if labels else 0
             self.play(DrawBorderThenFill(parts[0]), run_time=draw * (0.3 if parts[1:] else 1.0))
             if parts[1:]:
                 self.play(LaggedStart(*[DrawBorderThenFill(m) for m in parts[1:]], lag_ratio=0.15), run_time=draw * 0.7)

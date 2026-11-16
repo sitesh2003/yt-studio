@@ -52,43 +52,166 @@ def _fix(svg):
 
 
 def _look(topic, example, lines):
-    """One shared look for the whole board: each recurring object, how it is drawn and its colour."""
-    out = llm_json(f"""A science Short about {topic} is explained with simple drawings on a dark board, one per scene:
+    """One shared look for the whole board: each recurring thing and the ONE emoji that always shows it."""
+    out = llm_json(f"""A science Short about {topic} is explained on a board with pictures, one picture per scene:
 {lines}
 The running example: {example or 'the topic itself'}
-List the objects that recur across the drawings (at most 6) and fix how each is ALWAYS drawn, so every drawing
-matches: shape in a few words and one colour from #ffffff #ffd60a #2ec4b6 #ff6b6b #8ecae6. People are stick figures.
-Return JSON: {{"objects": [{{"name": "...", "drawn_as": "...", "colour": "#..."}}]}}""")
-    return "; ".join(f"{o.get('name')}: {o.get('drawn_as')}, {o.get('colour')}" for o in (out.get("objects") or [])[:6])
+List the things that recur across the scenes (at most 6) and pick ONE standard emoji whose picture shows each
+(an animal, food, plant, body part, tool, weather...), so the same thing always looks the same.
+Return JSON: {{"objects": [{{"name": "...", "emoji": "..."}}]}}""")
+    return "; ".join(f"{o.get('name')} = {o.get('emoji')}" for o in (out.get("objects") or [])[:6])
+
+
+# 16 Nov 2026: the free AI cannot DRAW animals and objects (a mouse came out as "a circle with two loops", a tick
+# as "an oval with crossed lines"; 0 of 4 acorn drawings passed). So it no longer draws them: it LAYS OUT real,
+# recognisable pictures (Twemoji, already credited on the board) as groups joined by arrows, and the board draws
+# those pictures on live, outline then colour, exactly as before.
+GROUPS = """Show the scene as 1-3 GROUPS from left to right; an arrow between two groups means "leads to" or
+"turns into". Each group is:
+  "emoji": 1-2 standard emoji whose PICTURES show the real things (or the closest thing of the SAME kind:
+  a spider for a tick is fine, a tree for a tick is not) (never symbols like arrows, crosses, ticks,
+  question marks or letters);
+  "count": 1-6, how many of the first emoji to show (use 4-6 to show "many", "more", "multiply");
+  "gone": true if that thing runs out, dies or disappears (it is drawn crossed out), else false;
+  "label": 1-2 words, at most 12 letters, naming it (e.g. "MORE MICE").
+Use the board's emoji for things that recur. The pictures must make the sentence clear at a glance."""
+
+
+def _compose(groups):
+    """The groups as one board SVG in the 1080x1920 frame (pictures in the band y=290..1060)."""
+    import math
+    from .diagram import _esc
+    # a phone screen is tall: groups are stacked top to bottom (arrows pointing down), pictures on the left,
+    # the label on the right; one group alone is centred, label underneath
+    n = len(groups)
+    rowh = 770 / n
+    out = ['<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" width="1080" height="1920">',
+           '<rect width="1080" height="1920" fill="#0b1630"/>']
+    labels = []
+    for gi, g in enumerate(groups):
+        cy = 290 + rowh * (gi + 0.5)
+        cx, area_w, area_h = (540, 900, 520) if n == 1 else (360, 620, rowh - 80)
+        pics = [g["icons"][0]] * g["count"] + list(g["icons"][1:])
+        best = max(range(1, len(pics) + 1), key=lambda c: min(area_w / c, area_h / math.ceil(len(pics) / c)))
+        cols, rows = best, math.ceil(len(pics) / best)
+        size = min(320, area_w / cols, area_h / rows)
+        x0, y0 = cx - cols * size / 2, cy - rows * size / 2
+        for j, (inner, vb) in enumerate(pics):
+            r, c = divmod(j, cols)
+            w = float((vb.split() + ["36"] * 4)[2]) or 36
+            out.append(f'<g transform="translate({x0 + c * size + size * 0.06:.1f} {y0 + r * size + size * 0.06:.1f}) '
+                       f'scale({size * 0.88 / w:.4f})">{inner}</g>')
+        if g.get("gone"):
+            hw, hh = cols * size / 2, rows * size / 2
+            out.append(f'<path d="M{cx - hw:.0f} {cy - hh:.0f} L{cx + hw:.0f} {cy + hh:.0f} M{cx + hw:.0f} {cy - hh:.0f} '
+                       f'L{cx - hw:.0f} {cy + hh:.0f}" stroke="#ff6b6b" stroke-width="16" stroke-linecap="round" fill="none"/>')
+        if gi + 1 < n:
+            ay = 290 + rowh * (gi + 1)
+            out.append(f'<path d="M{cx:.0f} {ay - 34:.0f} L{cx:.0f} {ay + 12:.0f}" stroke="#ffd60a" stroke-width="12" '
+                       f'stroke-linecap="round" fill="none"/><path d="M{cx - 24:.0f} {ay + 4:.0f} L{cx:.0f} {ay + 36:.0f} '
+                       f'L{cx + 24:.0f} {ay + 4:.0f} Z" fill="#ffd60a"/>')
+        label = _esc(str(g.get("label") or "")[:12].upper())
+        if label:
+            colour = "#ffd60a" if gi == n - 1 else "#ffffff"
+            if n == 1:
+                fs = min(72, 900 / (0.72 * len(label)))
+                lx, ly, anchor = 540, cy + rows * size / 2 + 40 + fs, "middle"
+            else:
+                fs = min(60, 380 / (0.72 * len(label)))
+                lx, ly, anchor = 700, cy + fs * 0.36, "start"
+            labels.append(f'<text x="{lx:.0f}" y="{ly:.0f}" text-anchor="{anchor}" '
+                          f'font-family="Archivo Black" font-size="{fs:.0f}" fill="{colour}">{label}</text>')
+    return "".join(out + labels) + "</svg>"
+
+
+def _board_check(png, said):
+    """The board's own check (diagram._check is for stand-alone diagrams: it scores any cross 4/10 and judges
+    without the voice, so it rejected every 'it runs out' picture and argued with the already fact-checked script)."""
+    import io
+    from PIL import Image
+    im = Image.open(io.BytesIO(png)).convert("RGB")
+    im.thumbnail((540, 960))
+    buf = io.BytesIO()
+    im.save(buf, "JPEG", quality=85)
+    return llm_json(f"""You check one picture for a science YouTube Short. It appears WHILE the narrator says:
+"{said}"
+(That sentence is already fact-checked; judge only the PICTURE.)
+The picture's language: emoji pictures stand for the things (the closest emoji is fine when its label names it,
+e.g. a spider labelled TICKS, both being small eight-legged animals), but a picture of a DIFFERENT KIND of thing
+(a tree labelled NYMPHS, a coin labelled CELL) is WRONG; several copies mean "many"; a downward arrow means "leads to"; a red cross over a
+group means it runs out or is gone.
+- Does the picture show what the sentence says, so a 12-year-old hearing it would connect them? (0-10)
+- Is anything in the picture WRONG for that sentence (wrong thing, wrong direction, wrong label), misspelled,
+  overlapping or unreadable?
+Return JSON: {{"score": 0-10, "accurate": true or false, "problems": "one line or empty"}}""", images=[buf.getvalue()])
+
+
+def _groups(out):
+    """The AI's groups with their pictures fetched; raises ValueError naming what is wrong."""
+    from .diagram import _icon
+    groups = []
+    for g in (out.get("groups") or [])[:3]:
+        icons = [_icon(str(e)) for e in (g.get("emoji") or [])[:2]]
+        if not icons or not all(icons):
+            raise ValueError(f"no picture exists for {g.get('emoji')}; use single standard emoji")
+        groups.append({"icons": icons, "count": max(1, min(6, int(g.get("count") or 1))),
+                       "gone": bool(g.get("gone")), "label": g.get("label") or ""})
+    if not groups:
+        raise ValueError("it needs 1-3 groups")
+    return groups
 
 
 def _draw_one(k, scenes, topic, look, lines):
     """One scene's drawing, checked; up to 2 tries (the free AI quota is shared by three channels). Returns svg or None."""
-    from .diagram import _check
     said, note = scenes[k].get("narration", ""), ""
-    for attempt in range(2):
+    for attempt in range(3):
         try:
-            out = llm_json(f"""You draw, live on a board, ONE step of the explanation in a science YouTube Short about: {topic}
-The whole lesson, scene by scene (for context): 
+            out = llm_json(f"""You picture, on a board, ONE step of the explanation in a science YouTube Short about: {topic}
+The whole lesson, scene by scene (for context):
 {lines}
-Draw ONLY scene {k}: "{said}"
-Keep the board's look - every recurring object is always drawn like this: {look or 'simple, consistent shapes'}
+Picture ONLY scene {k}: "{said}"
+The board's emoji for recurring things: {look or 'pick clear, consistent emoji'}
 It must be scientifically ACCURATE for exactly that sentence, and make sense at a glance without the voice.
-{STYLE}
-{("The previous drawing was rejected because: " + note + " Fix that.") if note else ""}
-Return JSON: {{"svg": "<svg ...>...</svg>"}}""")
-            svg = _fix(str(out.get("svg") or ""))
-            if not svg.startswith("<svg"):
-                note = "it must be one complete <svg> element"
+{GROUPS}
+{("The previous picture was rejected because: " + note + " Fix that.") if note else ""}
+Return JSON: {{"groups": [{{"emoji": ["..."], "count": 1, "gone": false, "label": "..."}}]}}""")
+            try:
+                svg = _compose(_groups(out))
+            except (ValueError, TypeError) as e:
+                note = str(e)
                 continue
-            verdict = _check(_render_png(svg), said)
+            verdict = _board_check(_render_png(svg), said)
             if verdict.get("accurate") and float(verdict.get("score", 0) or 0) >= 6:
                 return svg
             note = verdict.get("problems") or f"score {verdict.get('score')}"
         except Exception as e:
             note = str(e)[:120]
     log(f"whiteboard: scene {k + 1} not drawn ({note[:80]})")
+    _NOTES[k] = note[:160]
     return None
+
+
+_NOTES = {}   # scene index -> why it was not drawn (saved to data/board_log.json; the CI log needs a sign-in)
+_COUNT = re.compile(r"pause and guess|three[,.…]*\s*two[,.…]*\s*one", re.I)
+
+
+def _drawable(sc):
+    """A scene worth drawing: not the countdown, and long enough to show something."""
+    said = sc.get("narration", "")
+    return not sc.get("anim") and not _COUNT.search(said) and len(said.split()) >= 6
+
+
+def _record(script, drawn, error=""):
+    try:
+        path = Path(__file__).resolve().parent.parent / "data" / "board_log.json"
+        rows = json.loads(path.read_text(encoding="utf-8")) if path.exists() else []
+        from datetime import datetime, timezone
+        rows.append({"when": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M"), "topic": script.get("topic", "")[:90],
+                     "drawn": [k + 1 for k in sorted(drawn)], "not_drawn": {str(k + 1): v for k, v in sorted(_NOTES.items())},
+                     "error": error[:300]})
+        path.write_text(json.dumps(rows[-40:], ensure_ascii=False, indent=1), encoding="utf-8")
+    except Exception:
+        pass
 
 
 def plan(script, topic):
@@ -97,8 +220,10 @@ def plan(script, topic):
     request for every drawing at once: 2 of 5 passed that way on the first test, 16 Nov 2026)."""
     from concurrent.futures import ThreadPoolExecutor
     scenes = script.get("scenes", [])
-    middle = [k for k in range(1, len(scenes) - 1) if not scenes[k].get("anim")][:4]   # at most 4 drawn scenes
-    if len(middle) < 2:
+    # at most 4 drawn scenes; never the countdown ("Pause and guess... three, two, one" drew a blob, 16 Nov 2026)
+    middle = [k for k in range(1, len(scenes) - 1) if _drawable(scenes[k])][:4]
+    _NOTES.clear()
+    if not middle:
         return {}
     example = (script.get("running_example") or "").strip()
     lines = chr(10).join(f"{k}: {scenes[k].get('narration', '')}" for k in middle)
@@ -109,7 +234,7 @@ def plan(script, topic):
     with ThreadPoolExecutor(max_workers=3) as pool:
         svgs = list(pool.map(lambda k: _draw_one(k, scenes, topic, look, lines), middle))
     good = {k: v for k, v in zip(middle, svgs) if v}
-    if len(good) < 2:
+    if not good:   # one checked drawing is still better than none (the rest of the scenes use footage)
         return {}
     log(f"whiteboard: {len(good)}/{len(middle)} checked drawings for scenes {[k + 1 for k in sorted(good)]}")
     return good
@@ -153,9 +278,13 @@ def render(drawings, times, job_dir):
 
 def make(script, times, job_dir, topic=""):
     """The whole drawing board for a video: {scene_index: clip}, or {} (the video then uses footage)."""
+    drawings = {}
     try:
         drawings = plan(script, topic or script.get("topic", ""))
-        return render(drawings, times, job_dir) if drawings else {}
+        clips = render(drawings, times, job_dir) if drawings else {}
+        _record(script, clips)
+        return clips
     except Exception as e:
         log(f"whiteboard: no drawing board ({str(e)[:100]})")
+        _record(script, {}, f"{type(e).__name__}: {e} (drawings passed: {[k + 1 for k in sorted(drawings)]})")
         return {}

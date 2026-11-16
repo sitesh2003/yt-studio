@@ -349,6 +349,8 @@ def narrate(script, job_dir):
         last_cast = "male host, female explainer"
     else:
         last_cast = "female host, male explainer"
+    if cast_map.get("host") == cast_map.get("explainer"):   # one narrator per channel since 16 Nov 2026
+        last_cast = f"one narrator ({(cast_map.get('host') or {}).get('kokoro') or (cast_map.get('host') or {}).get('edge') or 'default'})"
     log(f"voice: {last_cast}")
     n_sent = 0
     for k, text in enumerate(scenes):
