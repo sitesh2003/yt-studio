@@ -1,0 +1,122 @@
+[
+  {
+    "job": "20261116-0335-why-humans-learn-to-love-bitter-coffee-d",
+    "topic": "Why humans learn to love bitter coffee despite our natural biological defense against poison",
+    "title": "Why 1st Sip Of Coffee Tastes Bitter 😱",
+    "description": "शरीर को कडवा स्वाद ज़हर लगता है, तो फिर इंसान black coffee पीना कैसे सीखता है? जानिए इसके पीछे का ब्रेन साइंस।\n\n#shorts #hindi #science\n\nSources (open-access research):\n- Li et al. (2013), Molecular Biology and Evolution. doi:10.1093/molbev/mst219\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nVideo by Conserjedeluniverso on Pixabay\nVideo by Eaktas06 on Pixabay\nVideo by Life-Of-Vids on Pixabay\nVideo by QuoteMyLab on Pixabay\n\nयह वीडियो कैसे बना: स्क्रिप्ट को AI tools की मदद से open research के आधार पर लिखा और fact-check किया गया है, आवाज़ AI voice की है, और editing open-source software से हुई है। कोई गलती दिखे तो comment में बताइए — जाँच कर सुधार करेंगे।",
+    "tags": [
+      "coffee",
+      "brain"
+    ],
+    "hook": "हमारी जीभ और दिमाग कड़वे स्वाद से दूर रहने की कोशिश करते हैं क्योंकि प्रकृति में कई ज़हरीली चीज़ें कड़वी होती हैं।",
+    "status": "review",
+    "narration": "हमारी जीभ और दिमाग कड़वे स्वाद से दूर रहने की कोशिश करते हैं क्योंकि प्रकृति में कई ज़हरीली चीज़ें कड़वी होती हैं। Evolution के कारण हमारी जीभ bitter taste को poison का signal समझती है। Coffee plant में caffeine असल में कीड़ों के लिए natural poison ही है। इसीलिए 1st sip black coffee पीते ही शरीर इसे reject करता है। तो फिर हम रोज़ इसी कड़वी coffee के दीवाने कैसे बनते हैं? Coffee पीने के कुछ ही मिनटों में caffeine हमारे दिमाग तक पहुँच जाता है। यह हमें तुरंत तरोताजा महसूस कराता है और ध्यान केंद्रित करने में मदद करता है। Brain इस feeling को bitter taste के साथ connect कर लेता है। अब वही bitter taste poison नहीं, energy का signal बनता है। बच्चे dark chocolate नापसंद क्यों करते हैं, पर बड़े 1 bar खुशी से खा जाते हैं?",
+    "voice_engine": "edge-tts",
+    "voices": "one narrator (hi-IN-SwaraNeural)",
+    "diagrams": 1,
+    "series": "Body Whys",
+    "countdown": false,
+    "length_arm": "standard",
+    "question": "कभी सोचा है बच्चे dark chocolate नापसंद क्यों करते हैं, पर बड़े 1 bar खुशी से खा जाते हैं?",
+    "answer_comment": "The answer: Dark chocolate में भी बहुत कम sugar और ज्यादा bitter cacao होता है। बच्चों का दिमाग कड़वाहट को ज़हर मानता है, लेकिन उम्र के साथ जब दिमाग इसके साथ मिलने वाले energy और endorphin reward को समझ लेता है, तो बड़े इसे पसंद करने लगते हैं। क्या आपको dark chocolate पसंद है या milk chocolate?\n\nSources (open-access research):\n- Li et al. (2013), Molecular Biology and Evolution. doi:10.1093/molbev/mst219",
+    "sources": [
+      {
+        "claim": "Human bitter taste receptors evolved as a mechanism to detect toxic plant alkaloids.",
+        "cite": "Li et al. (2013), Molecular Biology and Evolution. doi:10.1093/molbev/mst219",
+        "doi": "10.1093/molbev/mst219",
+        "title": "Diet Shapes the Evolution of the Vertebrate Bitter Taste Receptor Gene Repertoire",
+        "why": "Vertebrate Tas2r taste receptors bind to bitter compounds, which are typically poisonous, to elicit bitter sensation to prevent the ingestion of toxins."
+      }
+    ],
+    "fact_check": [
+      "Human bitter taste receptors evolved as a mechanism to detect toxic plant alkaloids.",
+      "Caffeine is a naturally produced alkaloid plant defense against herbivores/insects.",
+      "Acquired taste for coffee happens through Pavlovian conditioning and central nervous system stimulant rewards (caffeine).",
+      "Caffeine peak blood level typically occurs within 30-45 minutes (approx 20 minutes onset)."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        7.96
+      ],
+      [
+        7.96,
+        12.85
+      ],
+      [
+        12.85,
+        17.15
+      ],
+      [
+        17.15,
+        21.88
+      ],
+      [
+        21.88,
+        26.33
+      ],
+      [
+        26.33,
+        30.91
+      ],
+      [
+        30.91,
+        36.41
+      ],
+      [
+        36.41,
+        40.06
+      ],
+      [
+        40.06,
+        44.23
+      ],
+      [
+        44.23,
+        50.38
+      ]
+    ],
+    "duration": 50.38,
+    "scene_lines": [
+      "हमारी जीभ और दिमाग कड़वे स्वाद से दूर रहने की कोशिश करते हैं क्योंकि प्रकृति में कई ज़हरीली चीज़ें कड़वी होती हैं।",
+      "Evolution के कारण हमारी जीभ bitter taste को poison का signal समझती है।",
+      "Coffee plant में caffeine असल में कीड़ों के लिए natural poison ही है।",
+      "इसीलिए 1st sip black coffee पीते ही शरीर इसे reject करता है।",
+      "तो फिर हम रोज़ इसी कड़वी coffee के दीवाने कैसे बनते हैं?",
+      "Coffee पीने के कुछ ही मिनटों में caffeine हमारे दिमाग तक पहुँच जाता है।",
+      "यह हमें तुरंत तरोताजा महसूस कराता है और ध्यान केंद्रित करने में मदद करता है।",
+      "Brain इस feeling को bitter taste के साथ connect कर लेता है।",
+      "अब वही bitter taste poison नहीं, energy का signal बनता है।",
+      "बच्चे dark chocolate नापसंद क्यों करते हैं, पर बड़े 1 bar खुशी से खा जाते हैं?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,050 --> 00:00:02,432\nहमारी जीभ और दिमाग कड़वे स्वाद से\n\n2\n00:00:02,432 --> 00:00:04,648\nदूर रहने की कोशिश करते हैं क्योंकि\n\n3\n00:00:04,648 --> 00:00:07,882\nप्रकृति में कई ज़हरीली चीज़ें कड़वी होती हैं।\n\n4\n00:00:07,960 --> 00:00:10,625\nEvolution के कारण हमारी जीभ bitter taste\n\n5\n00:00:10,625 --> 00:00:13,322\nको poison का signal समझती है। Coffee\n\n6\n00:00:13,322 --> 00:00:15,329\nplant में caffeine असल में कीड़ों के\n\n7\n00:00:15,329 --> 00:00:18,353\nलिए natural poison ही है। इसीलिए 1st\n\n8\n00:00:18,353 --> 00:00:21,799\nsip black coffee पीते ही शरीर इसे reject करता है।\n\n9\n00:00:21,880 --> 00:00:24,157\nतो फिर हम रोज़ इसी कड़वी coffee\n\n10\n00:00:24,157 --> 00:00:26,177\nके दीवाने कैसे बनते हैं?\n\n11\n00:00:26,330 --> 00:00:28,429\nCoffee पीने के कुछ ही मिनटों में\n\n12\n00:00:28,429 --> 00:00:30,910\ncaffeine हमारे दिमाग तक पहुँच जाता है।\n\n13\n00:00:30,910 --> 00:00:33,634\nयह हमें तुरंत तरोताजा महसूस कराता है\n\n14\n00:00:33,634 --> 00:00:35,886\nऔर ध्यान केंद्रित करने में मदद करता\n\n15\n00:00:35,886 --> 00:00:38,250\nहै। Brain इस feeling को bitter taste\n\n16\n00:00:38,250 --> 00:00:40,319\nके साथ connect कर लेता है। अब\n\n17\n00:00:40,319 --> 00:00:44,136\nवही bitter taste poison नहीं, energy का signal बनता है।\n\n18\n00:00:44,230 --> 00:00:47,398\nबच्चे dark chocolate नापसंद क्यों करते हैं,\n\n19\n00:00:47,398 --> 00:00:49,782\nपर बड़े 1 bar खुशी से खा जाते हैं?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [
+        "only 62% of the script is heard as written"
+      ],
+      "footage": [
+        "scene(s) [7, 9] have weak or placeholder footage"
+      ],
+      "review": [],
+      "heard": [
+        "\"जीभ\" heard as \"जीप\"",
+        "\"दिमाग कड़वे स्वाद\" heard as \"दिमाक कदवे स्वाथ\"",
+        "\"कोशिश\" heard as \"कोशिष\"",
+        "\"क्योंकि प्रकृति\" heard as \"क्योंकी प्रक्रिती\"",
+        "\"कई ज़हरीली चीज़ें कड़वी\" heard as \"कईजहरी ली चीजे कदवी\"",
+        "\"हैं। evolution\" heard as \"हैं अवलूशन\"",
+        "\"जीभ bitter taste\" heard as \"जीप बिट्टर तेश्ट\"",
+        "\"poison\" heard as \"पोधिन\""
+      ],
+      "pass": false,
+      "duration": 49.8
+    },
+    "repairs": 0
+  }
+]

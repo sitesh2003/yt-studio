@@ -1,0 +1,46 @@
+{
+  "rules": [
+    "Keep total video length strictly between 30 and 50 seconds to match top performing pacing.",
+    "Open every video with an on-screen hook title in the first 3 seconds.",
+    "Maintain the strict narrator split: host handles hooks and prediction prompts, explainer delivers the science.",
+    "Use real-world footage or clean drawn diagrams/maps; never use photo-real AI images.",
+    "End every video with the signature closing 'Ever thought why...' question to drive loops."
+  ],
+  "formats_now": [
+    "Transportation danger/survival mechanics: high views on train and aviation safety because the physical stakes are instantly clear.",
+    "Industrial scale creation: viewers engage heavily with 'how X is made in factories' due to satisfying mechanical repetition.",
+    "Counter-intuitive physics phenomena: breaking down hidden forces in everyday objects drives high retention."
+  ],
+  "hook_shapes": [
+    "Why you should never X inside a Y 😱",
+    "What happens if X happens while you are Y?",
+    "How to actually survive X! ☢️"
+  ],
+  "title_shapes": [
+    "Why You Should Never X Inside a Y! 😱 #shorts #science",
+    "What Happens If X Opens Mid-Flight 🤯 #facts",
+    "How X Actually Works: The Secret Engineering Behind Y ⚙️"
+  ],
+  "topic_areas": [
+    "Aviation and emergency flight mechanics",
+    "Heavy railway engineering and physics",
+    "Extreme environment survival science",
+    "Industrial manufacturing and material science",
+    "Hidden biomechanical reflexes of the human body"
+  ],
+  "stop_doing": [
+    "Producing scripts over 70 seconds that slow down the narrative momentum",
+    "Using sensationalized medical advice or fear-mongering health claims"
+  ],
+  "target_seconds": 45,
+  "experiment": "Test starting the hook directly with a first-person danger scenario instead of a third-person question, measuring audience retention at the 10-second mark.",
+  "facts": {
+    "median_seconds_top20": 63.5,
+    "median_seconds_rest": 48.5,
+    "question_titles_top20": 3,
+    "why_how_what_titles_top20": 5,
+    "median_title_chars_top20": 66.5
+  },
+  "studied": "2026-11-16T04:19:51",
+  "history": []
+}
