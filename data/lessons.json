@@ -26,5 +26,9 @@
   {
     "kind": "unconfirmed",
     "text": "Your arms lack these specialized grip pathways. -> The skin on arms does not wrinkle because it lacks the high concentration of sweat ducts found on fingers and toes, where the nervous response creates the folds, not entirely separate 'grip pathways'."
+  },
+  {
+    "kind": "false_line",
+    "text": "said \"Drive down any high-speed interstate, and you will notice heavy steel boxes welded onto the ends of metal guardrails right where traffic approaches.\" but Guardrail end terminals are not welded to the guardrail beam. Instead, they are mounted so that during an end-on collision, the impact force"
   }
 ]

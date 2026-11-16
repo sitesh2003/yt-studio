@@ -1,20 +1,14 @@
 {
-  "summary": [
-    "Keep hooks under 15 words to instantly disrupt the swipe reflex and maximize early retention.",
-    "Frame the first sentence as a direct paradox or counter-intuitive claim rather than a neutral definition.",
-    "Use curiosity gaps that challenge common everyday assumptions, such as body reactions or familiar foods.",
-    "Incorporate high-contrast title descriptors and visual emojis to stand out in the Shorts feed.",
-    "Target universally relatable biological or culinary oddities to ensure broader initial algorithm testing."
-  ],
+  "summary": "1. Focus topics on visceral body phenomena and immediate sensory traps rather than standard pantry trivia like honey or maple syrup. 2. Start script hooks instantly with a direct second-person contradiction or aggressive statement within the first 8 words. 3. Title videos using visceral action verbs and bodily consequences like 'Eat You Back' or 'Secretly Leaking' to maximize feed CTR. 4. Target optimal video duration between 18 to 22 seconds, which balances high stayed rate with strong view percentage. 5. Completely strip out introductory fluff, textbook explanations, and rhetorical setup questions from second 0.",
   "winning_hooks": [
-    "Your fingers prune in water, but it is not because you are absorbing it like a sponge.",
-    "Your eyes are leaking right now, and your brain is hiding it.",
-    "Fresh pineapple is literally eating you back."
+    "Direct bodily paradoxes that confront the viewer immediately ('Your fingers prune in water, but it is not because...')",
+    "Aggressive personification of everyday items ('Fresh pineapple is literally eating you back')",
+    "Extreme comparative anchors ('This shark is older than the United States')"
   ],
   "avoid": [
-    "Long, explanatory introductory sentences that begin with background context.",
-    "Descriptive hooks that summarize the topic straightforwardly without creating an immediate mystery.",
-    "Titles that lack emotional or sensory trigger words like 'Secretly', 'Fails', or 'Eating You Back'."
+    "Passive, encyclopedic openings like 'Honey is famous for being one of the only...'",
+    "Rhetorical fluff questions at second 0 like 'That sweet maple syrup on your pancakes?'",
+    "Long explanatory clauses that give away technical reasons before establishing a paradox"
   ],
-  "next_experiment": "A/B test a high-performing topic (like pineapples or fingers) with two hook variations: Variation A uses a direct counter-intuitive claim ('It is not absorption'), while Variation B uses an urgent sensory warning ('Do this before eating pineapple'). Compare stayed_pct after 2,000 impressions."
+  "next_experiment": "A/B test a body-anomaly video topic ('Why Stomach Acid Doesn't Melt You'): Version A opens with an aggressive direct statement ('Your stomach is currently digesting itself') vs. Version B opening with a fact setup ('Stomach acid is strong enough to burn through wood'), keeping length at 18 seconds to measure stayed_pct lift."
 }

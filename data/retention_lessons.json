@@ -1,22 +1,19 @@
 {
   "lessons": [
-    "Prioritize dynamic, high-stakes comparisons over descriptive statements: the best-performing video (Tuna) uses a clear, high-contrast hook comparing two distinct subjects, while descriptive, passive hooks correlate with higher immediate drop-off.",
-    "Eliminate slow context-setting: videos that lead with scientific mechanics or 'process' explanations (Maple Syrup, Pineapples) experience the largest early-exit spikes. Get to the result or the 'why' immediately.",
-    "Avoid technical jargon or multi-sentence definitions in the first 15% of the video: the data shows major drop-offs coincide with specific lines explaining chemical processes (Honey, Pineapples, Fingers).",
-    "Anchor the hook in conflict or human-centric experience: the most successful hooks frame the topic as a relatable mystery or a counter-intuitive phenomenon, whereas process-oriented lines lead to immediate audience attrition.",
-    "Sustain momentum after the hook: since the largest drops frequently occur between 10% and 30% of the video, ensure that the bridge between the hook and the core explanation is brief and immediately delivers on the promise of the title."
+    "Avoid empty or blank hook lines; the dataset shows that videos with missing hooks (like 'Why your eyes are secretly leaking') suffer from below-average start retention (0.34 vs_similar_start).",
+    "Do not start with lengthy throat-clearing exposition; drops of over 20% consistently occur when the first lines over-explain context rather than diving straight into the mechanism (e.g., Maple Syrup and Cold Water scripts).",
+    "Keep the premise active and punchy; the best-performing video ('Why Tuna Meat Is Red Meat While Cod Is Pure White') hooked 56% better than similar shorts at the start by immediately framing a stark visual contrast.",
+    "Avoid mid-video structural shifts or philosophical pivots around the 25% to 34% mark, which trigger secondary viewer drop-offs across multiple topics (e.g., Onions, Honey, and Fingers Prune).",
+    "Ensure the end payoff is fast and directly answers the premise, as end retention correlates strongly with strong vs_similar_end metrics (seen in the Tuna and Pineapple scripts)."
   ],
   "worst_moment_types": [
-    "Explanatory lines focusing on chemical composition (e.g., 'unique chemistry,' 'protein-melting enzyme').",
-    "Descriptive process steps that lack immediate payoff (e.g., 'boil off almost all of it').",
-    "Lines that explain 'how it works' before establishing why the viewer should care about the outcome.",
-    "Pacing lulls where the narrative shifts from the hook's premise to technical methodology."
+    "Slow preamble sentences explaining basic natural states or water percentages instead of actionable mechanics.",
+    "Mid-script conceptual transitions around the 25% to 34% timestamp where momentum slows down.",
+    "Blank or missing transcript lines during critical high-drop timestamps."
   ],
   "best_hook_types": [
-    "High-contrast comparisons (e.g., Tuna vs. Cod).",
-    "Direct, visceral threats or unusual biological actions (e.g., 'fresh pineapple is eating you back').",
-    "Intriguing, counter-intuitive claims that contradict common sense (e.g., 'ice water fails against spicy food').",
-    "Hooks that establish a clear, relatable scenario that the viewer has personally experienced."
+    "Immediate visual or biological contrasts that challenge common assumptions (e.g., fish meat colors or pineapple 'eating you back').",
+    "Direct, high-stakes declarative statements about familiar food or bodily reactions."
   ],
   "studied": "2026-11-16",
   "videos": 8
