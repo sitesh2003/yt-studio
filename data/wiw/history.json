@@ -404,7 +404,7 @@
       "how it works"
     ],
     "hook": "How do vaccines actually train your immune system?",
-    "status": "scheduled",
+    "status": "public",
     "narration": "How do vaccines actually train your immune system? Step one: the vaccine delivers a harmless piece or blueprint of the virus. Step two: your white blood cells spot this foreign shape and build matching antibodies. Step three: specialized cells remember the foreign shape to make those exact antibodies fast if the real virus ever returns. That's because your body builds an immune library of genetic blueprints for rapid defense without getting sick first. That is how millions of lives get protected every single year. Try this: why do some vaccines require a second booster shot weeks later?",
     "voice_engine": "kokoro",
     "voices": "female host, male explainer",
@@ -486,7 +486,8 @@
     "repairs": 0,
     "audited": true,
     "video_id": "NS68pl6mBmI",
-    "publish_at": "2026-11-15T16:30:00-05:00"
+    "publish_at": "2026-11-15T16:30:00-05:00",
+    "answered": true
   },
   {
     "job": "20261115-1321-why-does-baking-soda-fizz-when-mixed-wit",
