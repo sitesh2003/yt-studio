@@ -1,0 +1,50 @@
+name: Clarity check (scene by scene)
+
+on:
+  workflow_dispatch: {}
+  push:                       # the start button: edit kick/audit.txt
+    branches: [main]
+    paths: ["kick/clarity.txt"]
+
+permissions:
+  contents: write
+  actions: read          # to read the runs' stored videos
+
+concurrency:
+  group: clarity-check
+  cancel-in-progress: false
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Tools
+        run: |
+          pip install -q imageio-ffmpeg==0.7.0 requests "faster-whisper==1.2.1" yt-dlp
+          sudo cp "$(python -c 'import imageio_ffmpeg; print(imageio_ffmpeg.get_ffmpeg_exe())')" /usr/local/bin/ffmpeg
+
+      - name: Measure each scene
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python tools/clarity_check.py $(cat kick/clarity.txt)
+
+      - name: Save the report
+        if: always()
+        run: |
+          git config user.name "yt-studio-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add research/clarity_check.md || true
+          for i in 1 2 3; do
+            git diff --cached --quiet && break
+            git commit -q -m "audit: clarity scene by scene $(date -u +%F)" && git push -q && break
+            git pull -q --rebase
+          done
