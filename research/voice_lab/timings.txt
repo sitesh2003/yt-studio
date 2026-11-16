@@ -34,3 +34,5 @@ opt_H8 hi-IN-MadhurNeural +15% pauses x0.7: 31.0s long
 opt_H9 hi-IN-MadhurNeural +25% pauses x0.6: 28.5s long
 opt_H10 chatterbox multilingual hi (emotion 0.7, cfg 0.5): 386s to make, 56.5s long
 opt_H11 chatterbox multilingual hi (emotion 0.5, cfg 0.3): 350s to make, 52.3s long
+opt_H14 Swara +18% Hinglish: 29.1s long
+owner voice: NOT UNLOCKED (add the VOICE_KEY secret), no samples in his voice made
