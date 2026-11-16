@@ -4,3 +4,27 @@ chatterbox_lively (exaggeration 0.8, cfg 0.3): 201s to make, 21.1s long
 kokoro af_heart: 9s to make, 26.0s long
 chatterbox_lively_checked (exaggeration 0.8, cfg 0.3, checked by ear): 185s to make, 23.5s long, 0 re-takes, unfixed: none
 chatterbox_lively_tuned (exaggeration 0.7, cfg 0.5, checked by ear): 237s to make, 23.1s long, 4 re-takes, unfixed: none
+opt_A1 kokoro af_heart 1.06 pauses x1.0: 23s to make, 26.6s long
+opt_A2 kokoro af_heart 0.96 pauses x1.6: 17s to make, 30.0s long
+opt_A3 kokoro af_heart 1.14 pauses x0.7: 15s to make, 24.6s long
+opt_A4 kokoro af_bella 1.06 pauses x1.0: 17s to make, 26.8s long
+opt_A5 kokoro af_nicole 1.0 pauses x1.0: 26s to make, 39.2s long
+opt_A6 kokoro af_sarah 1.06 pauses x1.0: 19s to make, 26.7s long
+opt_B1 kokoro am_michael 1.04 pauses x1.0: 19s to make, 29.8s long
+opt_B2 kokoro am_fenrir 1.04 pauses x1.0: 16s to make, 26.1s long
+opt_B3 kokoro am_puck 1.06 pauses x1.0: 16s to make, 24.4s long
+opt_B4 kokoro bm_george 1.02 pauses x1.0: 22s to make, 33.2s long
+opt_B5 kokoro bf_emma 1.04 pauses x1.0: 18s to make, 27.5s long
+opt_C1 edge en-US-AvaMultilingualNeural +4% pauses x1.0: 45s to make, 29.2s long
+opt_C2 edge en-US-EmmaMultilingualNeural +4% pauses x1.0: 29s to make, 28.6s long
+opt_C3 edge en-US-AndrewMultilingualNeural: FAILED NoAudioReceived: No audio was received. Please verify that your parameters are correct.
+opt_C4 edge en-US-BrianMultilingualNeural +4% pauses x1.0: 41s to make, 28.9s long
+opt_C5 edge en-GB-RyanNeural +2% pauses x1.0: 14s to make, 27.6s long
+opt_C6 edge en-IN-NeerjaNeural +2% pauses x1.0: 7s to make, 30.6s long
+opt_C7 edge en-IN-PrabhatNeural +2% pauses x1.0: 12s to make, 34.2s long
+opt_D1 two ('am_michael', 'af_heart') 1.06 pauses x1.0: 17s to make, 27.5s long
+opt_H1 edge hi-IN-SwaraNeural +0% pauses x1.0: 8s to make, 36.0s long
+opt_H2 edge hi-IN-MadhurNeural +0% pauses x1.0: 12s to make, 36.1s long
+opt_H3 edge hi-IN-SwaraNeural -6% pauses x1.6: 10s to make, 39.7s long
+opt_H4 kokoro hf_alpha 1.0 pauses x1.0: 26s to make, 38.1s long
+opt_H5 kokoro hm_omega 1.0 pauses x1.0: 24s to make, 38.9s long
