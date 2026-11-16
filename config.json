@@ -39,7 +39,10 @@
     ]
   },
   "voice": {
-    "engine": "kokoro",
+    "engine": "chatterbox",
+    "cb_exaggeration": 0.7,
+    "cb_cfg": 0.5,
+    "_engine_note": "16 Nov 2026, owner picked lab E2 (Chatterbox, emotion 0.7, cfg 0.5) with A1 (Kokoro af_heart) as the back-up; the weekly reads with Kokoro.",
     "name": "en-US-AndrewMultilingualNeural",
     "rate": "+6%",
     "kokoro_voice": "af_heart",

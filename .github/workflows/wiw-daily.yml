@@ -24,7 +24,7 @@ concurrency:
 jobs:
   make:
     runs-on: ubuntu-latest
-    timeout-minutes: 180   # 125 cut off the third video of a bank fill (16 Nov 2026)
+    timeout-minutes: 240   # 125 cut off the third video of a bank fill; Chatterbox adds ~10 min a video (16 Nov 2026)
     env:
       STUDIO_CHANNEL: wiw
     steps:
@@ -70,14 +70,19 @@ jobs:
         uses: actions/cache@v4
         with:
           path: ~/.cache/huggingface
-          key: kokoro-82m-v1
+          key: voices-kokoro-chatterbox-v2
 
       - name: Install the Kokoro voice (open source; the Edge voice is the fallback)
         continue-on-error: true
         timeout-minutes: 10
         run: |
-          pip install -q torch --index-url https://download.pytorch.org/whl/cpu
+          pip install -q torch==2.6.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cpu
           pip install -q "kokoro==0.9.4" soundfile en-core-web-sm@https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl
+
+      - name: Install the Chatterbox voice (the owner's pick; Kokoro Heart is the back-up)
+        continue-on-error: true
+        timeout-minutes: 12
+        run: pip install -q chatterbox-tts --extra-index-url https://download.pytorch.org/whl/cpu
 
       - name: Write sign-in files from secrets
         env:

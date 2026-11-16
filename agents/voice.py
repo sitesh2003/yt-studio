@@ -294,7 +294,11 @@ def _chatterbox_speak(text, v, rate, path, tries=3):
         segs, _ = _EAR.transcribe(str(path), language="en", beam_size=5, word_timestamps=True)
         heard = [{"start": w.start, "end": w.end, "text": w.word.strip()} for s in segs for w in (s.words or [])]
         got = {_norm_w(h["text"]) for h in heard}
-        miss = [w for w in want if w not in got and not w.isdigit()]
+        # spelling is not a dropped word: "tyre" heard as "tire", "colour" as "color" (the 16 Nov test re-made
+        # three good takes for that), so a word counts as said if anything heard is close to it
+        import difflib
+        miss = [w for w in want if w not in got and not w.isdigit()
+                and not difflib.get_close_matches(w, got, n=1, cutoff=0.7)]
         if best is None or len(miss) < len(best[2]):
             best = (wav, heard, miss)
         if not miss:
