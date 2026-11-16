@@ -287,14 +287,18 @@ it away; a hint that leaves the viewer still guessing does not. Return JSON: {{"
 
 def _language_rule():
     """How the script is written: American English by default; the Hindi channel speaks natural
-    everyday Hindi the way the fastest-growing Hindi science channels do (15 Nov niche scan)."""
+    everyday Hinglish the way the fastest-growing Hindi science channels do (15 Nov niche scan; Hinglish 17 Nov)."""
     lang = (config()["channel"].get("language") or "en-US")[:2]
     if lang == "hi":
-        return ("LANGUAGE: write the narration, title, description, question and answer in natural spoken "
-                "Hindi in Devanagari script, the way people really talk: keep common English science and tech "
-                "words in English letters (train, oxygen, battery, engine), numbers as digits, short sentences "
-                "ending in '।' or '?'. Titles: Hindi with the key English word, include one real number when "
-                "possible, end with one emoji (😱 🤯 🤔). The closing question starts with 'कभी सोचा है' "
+        return ("LANGUAGE: write the narration, title, description, question and answer in HINGLISH, the "
+                "Hindi-English mix people in India really speak (17 Nov 2026, owner: not pure Hindi). Hindi grammar "
+                "and connecting words in Devanagari, but everyday and science words in English letters the way people "
+                "say them: fingers, skin, body, blood vessels, decision, simple, easy, next time, actually, train, "
+                "oxygen, battery, engine. Never a formal or bookish Hindi word where people would say the English one "
+                "(say 'blood vessels', not 'रक्त नलिकाएं'; 'decision', not 'निर्णय'). Example: 'मतलब ये आपकी body का "
+                "decision है। छोटी blood vessels सिकुड़ती हैं, और skin में grooves बन जाते हैं।' Numbers as digits, "
+                "short sentences ending in '।' or '?'. Titles: Hinglish with the key English word, include one real "
+                "number when possible, end with one emoji (😱 🤯 🤔). The closing question starts with 'कभी सोचा है' "
                 "(the channel's signature) instead of 'Ever thought why'. Hashtags: #shorts #hindi plus 1-2 topic tags.")
     return "American English spelling."
 

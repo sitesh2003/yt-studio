@@ -271,7 +271,97 @@ def hindi2():
         log.append(f"opt_H10/H11 chatterbox hindi: FAILED {type(e).__name__}: {str(e)[:200]}")
 
 
-jobs = {"kokoro": [kokoro], "options": [options], "hindi2": [hindi2],
+# 17 Nov 2026, owner: "show me my voice speaking all the versions". His 22 s sample (unlocked from
+# assets/voice/owner.wav.enc with VOICE_KEY) read by Chatterbox in English, Hinglish and romanised Hinglish,
+# plus H14 = the new Hindi pick (H6, Swara) at +18% reading the same Hinglish lines.
+OPT_HING = [["नहाने के बाद fingers पर wrinkles आ जाते हैं। लेकिन elbow पर नहीं। क्यों?"],
+            ["सालों तक हमें लगा कि skin बस sponge की तरह पानी सोख लेती है।",
+             "लेकिन असली बात कुछ और है! अगर finger की nerves कट जाएं, तो wrinkles आते ही नहीं।"],
+            ["मतलब ये आपकी body का decision है। छोटी blood vessels सिकुड़ती हैं, और skin में grooves बन जाते हैं।"],
+            ["ये grooves पानी को हटाते हैं, बिल्कुल tyre की तरह। गीली चीज़ें पकड़ना easy हो जाता है।"],
+            ["तो next time गीला कंचा उठाकर देखिए। कौन सा हाथ जीतेगा?"]]
+OPT_HING_ROMAN = [["Nahaane ke baad fingers pe wrinkles aa jaate hain. Lekin elbow pe nahi. Kyun?"],
+                  ["Saalon tak humein laga ki skin bas sponge ki tarah paani sokh leti hai.",
+                   "Lekin asli baat kuch aur hai! Agar finger ki nerves kat jaayein, toh wrinkles aate hi nahi."],
+                  ["Matlab ye aapki body ka decision hai. Chhoti blood vessels sikudti hain, aur skin mein grooves ban jaate hain."],
+                  ["Ye grooves paani ko hataate hain, bilkul tyre ki tarah. Geeli cheezein pakadna easy ho jaata hai."],
+                  ["Toh next time geela kancha utha ke dekhiye. Kaunsa haath jeetega?"]]
+
+
+def _tempo(wav, sr, f):
+    import subprocess
+    import tempfile
+    import numpy as np
+    import soundfile as sf
+    d = tempfile.mkdtemp()
+    sf.write(f"{d}/a.wav", wav, sr)
+    subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", f"{d}/a.wav", "-af",
+                    "silenceremove=stop_periods=-1:stop_duration=0.2:stop_threshold=-40dB:stop_silence=0.1,"
+                    f"atempo={f:.3f}", f"{d}/b.wav"], check=True)
+    return np.asarray(sf.read(f"{d}/b.wav", dtype="float32")[0])
+
+
+def _read(lines, say, sr, pscale=0.7):
+    import re
+    import numpy as np
+    parts = []
+    for scene in lines:
+        sents = [s for line in scene for s in re.split(r"(?<=[.?!।])\s+", line.strip()) if s]
+        for m, sent in enumerate(sents):
+            parts += [_trim(say(sent), sr), np.zeros(int(sr * _gap(sent, m == len(sents) - 1) * pscale), dtype="float32")]
+    return np.concatenate(parts)
+
+
+def owner():
+    # the new Hindi pick first (no key needed): H6 Swara at +18%, Hinglish
+    try:
+        w = _read(OPT_HING, lambda t: _edge_say(t, "hi-IN-SwaraNeural", "+18%")[0], 24000)
+        save("opt_H14.wav", w, 24000)
+        log.append(f"opt_H14 Swara +18% Hinglish: {len(w) / 24000:.1f}s long")
+    except Exception as e:
+        log.append(f"opt_H14: FAILED {type(e).__name__}: {str(e)[:200]}")
+    ref = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "assets", "voice", "owner.wav")
+    if not os.path.exists(ref):
+        log.append("owner voice: NOT UNLOCKED (add the VOICE_KEY secret), no samples in his voice made")
+        return
+    import torch
+    from chatterbox.tts import ChatterboxTTS
+    en = ChatterboxTTS.from_pretrained(device="cpu")
+    for oid, lines, ex, cfg, f, what in (("O1", OPT_EN, 0.7, 0.5, 1.0, "English, E2 settings"),
+                                         ("O2", OPT_EN, 0.5, 0.3, 1.0, "English, calmer"),
+                                         ("O3", OPT_EN, 0.7, 0.5, 1.12, "English, E2 settings, quicker"),
+                                         ("O4", OPT_HING_ROMAN, 0.5, 0.3, 1.0, "Hinglish in English letters, English model")):
+        t = time.time()
+        try:
+            def say(s, ex=ex, cfg=cfg):
+                torch.manual_seed(1000)
+                return en.generate(s, audio_prompt_path=ref, exaggeration=ex, cfg_weight=cfg).squeeze(0).cpu().numpy()
+            w = _read(lines, say, en.sr)
+            if f > 1.001:
+                w = _tempo(w, en.sr, f)
+            save(f"owner_{oid}.wav", w, en.sr)
+            log.append(f"owner_{oid} {what}: {time.time() - t:.0f}s to make, {len(w) / en.sr:.1f}s long")
+        except Exception as e:
+            log.append(f"owner_{oid}: FAILED {type(e).__name__}: {str(e)[:200]}")
+    del en
+    from chatterbox.mtl_tts import ChatterboxMultilingualTTS
+    hi = ChatterboxMultilingualTTS.from_pretrained(device="cpu")
+    for oid, ex, cfg, what in (("O5", 0.5, 0.3, "Hinglish, Hindi model, +18%"),
+                               ("O6", 0.7, 0.5, "Hinglish, Hindi model, livelier, +18%")):
+        t = time.time()
+        try:
+            def say(s, ex=ex, cfg=cfg):
+                torch.manual_seed(1000)
+                return hi.generate(s, language_id="hi", audio_prompt_path=ref, exaggeration=ex,
+                                   cfg_weight=cfg).squeeze(0).cpu().numpy()
+            w = _tempo(_read(OPT_HING, say, hi.sr), hi.sr, 1.18)
+            save(f"owner_{oid}.wav", w, hi.sr)
+            log.append(f"owner_{oid} {what}: {time.time() - t:.0f}s to make, {len(w) / hi.sr:.1f}s long")
+        except Exception as e:
+            log.append(f"owner_{oid}: FAILED {type(e).__name__}: {str(e)[:200]}")
+
+
+jobs = {"kokoro": [kokoro], "options": [options], "hindi2": [hindi2], "owner": [owner],
         "chatterbox": [lambda: chatterbox("chatterbox_calm", 0.4, 0.5), lambda: chatterbox("chatterbox_lively", 0.8, 0.3)],
         "checked": [lambda: chatterbox_checked("chatterbox_lively_checked", 0.8, 0.3),
                     lambda: chatterbox_checked("chatterbox_lively_tuned", 0.7, 0.5)]}

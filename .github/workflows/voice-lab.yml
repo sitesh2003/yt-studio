@@ -18,7 +18,7 @@ concurrency:
 jobs:
   lab:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 90
     steps:
       - uses: actions/checkout@v4
         with:
@@ -65,12 +65,22 @@ jobs:
 
       - name: Hindi round 2 (quicker Edge voices + Chatterbox speaking Hindi)
         timeout-minutes: 45
+        if: github.event_name == 'workflow_dispatch'   # done 16 Nov; its samples are saved
         continue-on-error: true
         run: |
           python -m venv /tmp/h2 && . /tmp/h2/bin/activate
           pip install -q torch==2.6.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cpu
           pip install -q chatterbox-tts soundfile edge-tts --extra-index-url https://download.pytorch.org/whl/cpu
           python tools/voice_lab.py research/voice_lab hindi2
+
+      - name: The owner's own voice in every version (17 Nov) + H14
+        timeout-minutes: 50
+        continue-on-error: true
+        run: |
+          python -m venv /tmp/ow && . /tmp/ow/bin/activate
+          pip install -q torch==2.6.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cpu
+          pip install -q chatterbox-tts soundfile edge-tts --extra-index-url https://download.pytorch.org/whl/cpu
+          python tools/voice_lab.py research/voice_lab owner
 
       - name: Chatterbox lively, every word checked by ear
         timeout-minutes: 50
@@ -83,9 +93,19 @@ jobs:
 
       - name: Save the samples
         if: always()
+        env:
+          VOICE_KEY: ${{ secrets.VOICE_KEY }}
         run: |
           cd research/voice_lab
           for f in *.wav; do [ -f "$f" ] && ffmpeg -loglevel error -y -i "$f" -b:a 128k "${f%.wav}.mp3" && rm "$f"; done
+          # anything in the owner's voice is locked before it reaches the public repo
+          if [ -n "$VOICE_KEY" ]; then printf '%s' "$VOICE_KEY" > "$RUNNER_TEMP/vk"; fi
+          for f in owner_*.mp3; do
+            [ -f "$f" ] || continue
+            if [ -f "$RUNNER_TEMP/vk" ]; then openssl enc -aes-256-cbc -pbkdf2 -iter 200000 -salt -in "$f" -out "$f.enc" -pass "file:$RUNNER_TEMP/vk"; fi
+            rm "$f"
+          done
+          rm -f "$RUNNER_TEMP/vk"
           cd ../..
           git config user.name "yt-studio-bot"
           git config user.email "actions@users.noreply.github.com"

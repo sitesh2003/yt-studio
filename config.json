@@ -40,14 +40,11 @@
   },
   "voice": {
     "engine": "chatterbox",
-    "cb_exaggeration": 0.6,
-    "cb_cfg": 0.35,
-    "cb_voice_ref": "assets/voice/owner.wav",
-    "cb_tempo": 1.05,
-    "_voice_ref_note": "17 Nov 2026, owner: his own voice (cloned from assets/voice/owner.wav, unlocked in GitHub with the VOICE_KEY secret) is the one narrator on every channel. Without the key, Chatterbox's own voice reads instead.",
-    "_engine_note": "16 Nov 2026, owner picked lab E2 (Chatterbox, emotion 0.7, cfg 0.5) with A1 (Kokoro af_heart) as the back-up; the weekly reads with Kokoro.",
+    "cb_exaggeration": 0.7,
+    "cb_cfg": 0.5,
+    "_engine_note": "17 Nov 2026, owner: male voice = E2 only (Chatterbox, emotion 0.7, cfg 0.5); girl's voice = A3 permanently (Kokoro af_heart at 1.14x, rate +14%), the back-up and the weekly's voice. His own cloned voice (cb_voice_ref assets/voice/owner.wav) is ready but OFF until he picks it from the samples.",
     "name": "en-US-AndrewMultilingualNeural",
-    "rate": "+6%",
+    "rate": "+14%",
     "kokoro_voice": "af_heart",
     "_note": "ONE narrator per channel (16 Nov 2026, owner: two voices felt like an overheard conversation; a single consistent voice becomes the channel's identity). host/explainer only change delivery.",
     "narrators": {
