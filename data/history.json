@@ -1523,7 +1523,7 @@
       "shorts"
     ],
     "hook": "You just smashed your elbow on a desk and now your entire forearm is buzzing with pain.",
-    "status": "scheduled",
+    "status": "public",
     "narration": "You just smashed your elbow on a desk and now your entire forearm is buzzing with pain. It feels like an electric current, but there is no electricity in your arm. Wait, really? It feels exactly like touching a live wire. This is because of how one specific nerve is positioned in your joint. So why does a simple tap cause that intense shooting sensation? Here's why. You are actually compressing the ulnar nerve directly against hard bone, which fires a sudden volley of signals straight to your brain. Ever thought why other nerves don't hurt quite like that when you poke them? Drop your guess below.",
     "voice_engine": "kokoro",
     "voices": "male host, female explainer",
@@ -1593,7 +1593,9 @@
     "repairs": 2,
     "audited": true,
     "video_id": "9naAs1wMGVY",
-    "publish_at": "2026-11-16T12:00:00-05:00"
+    "publish_at": "2026-11-16T12:00:00-05:00",
+    "recapped": true,
+    "answered": true
   },
   {
     "job": "20261114-1555-why-car-windshields-have-tiny-black-dots",
@@ -2305,7 +2307,7 @@
       "engineering"
     ],
     "hook": "Why does heating and quenching metal lock it into a rigid structure? 🤯",
-    "status": "banked",
+    "status": "withdrawn",
     "narration": "Why does heating and quenching metal lock it into a rigid structure? 🤯 At room temperature, iron atoms sit neatly in organized crystal layers. Push on them, and those neat layers simply slide past each other. That is why soft iron bends so easily. Wait, it gets stranger when you crank up the heat. Heat it red hot, and the crystal layout completely rearranges itself. Think about what happens when you plunge that glowing metal into cold water... Pause and guess... three, two, one. Sudden cooling traps the carbon atoms midway, locking the crystal layers in a severe twist. Ever thought why a simple blacksmithing quench makes the steel so hard? Drop your guess below.",
     "voice_engine": "kokoro",
     "voices": "male host, female explainer",
@@ -2402,7 +2404,8 @@
       "duration": 45.0
     },
     "repairs": 0,
-    "audited": true
+    "audited": true,
+    "withdrawn_reason": "final audio check: phrase missing from the audio: \"them and those neat layers simply slide past\""
   },
   {
     "job": "20261115-0247-why-do-bananas-catch-fire-in-the-microwa",
@@ -2421,7 +2424,7 @@
       "hidden engineering"
     ],
     "hook": "What if a grape creates glowing plasma inside your microwave?",
-    "status": "banked",
+    "status": "withdrawn",
     "narration": "What if a grape creates glowing plasma inside your microwave? Grapes match the wavelength of microwave radiation, acting like tiny antennas that trap the electromagnetic energy. The electric field traps energy. What happens next? Guess in 3, 2, 1... Water inside grape halves traps microwave energy like a cavity resonator, concentrating electromagnetic fields into an intense hotspot where the halves touch, ionizing the surrounding gas into a bright plasma flare. Why does a microwaved grape spark?",
     "voice_engine": "kokoro",
     "voices": "male host, female explainer",
@@ -2503,7 +2506,8 @@
       "duration": 35.1
     },
     "repairs": 2,
-    "audited": true
+    "audited": true,
+    "withdrawn_reason": "final audio check: phrase missing from the audio: \"acting like tiny antennas that trap the electromagnetic\""
   },
   {
     "job": "20261115-1737-why-you-can-grab-hot-aluminum-foil-strai",
@@ -2519,7 +2523,7 @@
       "heat transfer"
     ],
     "hook": "You can touch hot foil briefly just as it comes out of the oven because it stores very little heat.",
-    "status": "banked",
+    "status": "scheduled",
     "narration": "You can touch hot foil briefly just as it comes out of the oven because it stores very little heat. It came straight from a hot oven, yet it holds a surprisingly small amount of total thermal energy. That sheet is so paper-thin that its mass is extremely low. Think about what happens when you touch that thin metal. Pause and guess... three, two, one. Here's why: because it has so little total heat energy, it transfers very little warmth to your fingers. So when you touch it, there is barely any heat available to burn your skin. Yesterday's answer: potatoes sprout by sensing temperature and humidity. Nobody cracked it! Ever thought why a thick metal pan in that same oven burns you instantly?",
     "voice_engine": "kokoro",
     "voices": "female host, male explainer",
@@ -2603,7 +2607,10 @@
       "duration": 39.5
     },
     "repairs": 1,
-    "audited": true
+    "audited": true,
+    "video_id": "qAcYz-fodfU",
+    "publish_at": "2026-11-17T19:00:00-05:00",
+    "thumbnail_set": true
   },
   {
     "job": "20261115-1802-why-car-side-windows-shatter-into-tiny-c",
@@ -2970,5 +2977,215 @@
     "repairs": 0,
     "video_id": "2NDu0QQ6kSY",
     "publish_at": "2026-11-21T10:00:00-05:00"
+  },
+  {
+    "job": "20261116-1716-weekly-this-shark-can-live-for-centuries",
+    "topic": "weekly: This Shark Can Live For Centuries! 🦈❄️, Why Garlic Doesn't Make You Cry Like Onions Do 🧄😭, Why Fruits Float In Water 🍎🍐,",
+    "title": "Why Guardrail Ends Aren't Welded to the Rail 😮",
+    "description": "Ever wonder why guardrail ends have that heavy steel box on them? Discover how clever extrusion engineering turns rigid steel into a lifesaver.\n\n#engineering #physics #shorts\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nIllustrations: drawn for this video with FLUX.2 [klein] 4B (AI, Apache 2.0) and checked for accuracy\nVideo by Close-UpStock on Pixabay\nVideo by MabelAmber on Pixabay\nVideo by Vimeo-Free-Videos on Pixabay\nVideo by lumosajans on Pixabay",
+    "tags": [
+      "guardrail",
+      "civil engineering",
+      "road safety",
+      "physics",
+      "how it works",
+      "car crash science"
+    ],
+    "hook": "That steel box on the guardrail isn't welded on.",
+    "status": "banked",
+    "narration": "That steel box on the guardrail isn't welded on. If solidly attached without a breakaway design, a crashing car could be impaled by the rigid rail. Instead, this terminal box sits loose over the rail. Impact forces push the head sliding along the beam. Think how forced metal absorbs motion. Pause and guess... three, two, one. Here's why: the sliding head forces the steel rail to bend and curl away from the road. This metal deformation acts like a giant brake, slowing your car safely. Yesterday's answer: your ulnar nerve runs close to the bone with very little fat or muscle to pad it! Nobody cracked it, try today's! Ever thought how steel guardrails can curl like paper without snapping?",
+    "voice_engine": "chatterbox",
+    "voices": "one narrator (af_heart)",
+    "diagrams": 1,
+    "series": "How Things Work",
+    "countdown": true,
+    "length_arm": "standard",
+    "question": "Ever thought how steel guardrails can curl like paper without snapping?",
+    "answer_comment": "The answer: Guardrail steel is made of ductile W-beam steel engineered to bend and reshape under extreme pressure rather than fracture. When the terminal forces it through a narrowing chute, the metal continuously deforms plasticly, rolling outward safely without breaking apart. Have a question about road safety design?",
+    "sources": [],
+    "fact_check": [
+      "Guardrail end terminals (extruder terminals) are not welded to the guardrail beam; they are mounted to slide along the rail upon impact.",
+      "Impact forces push the terminal head along the beam, extruding and flattening the steel to absorb kinetic energy and safely slow down colliding vehicles.",
+      "The ulnar nerve passes through the cubital tunnel directly against the humerus bone with minimal subcutaneous padding."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        2.57
+      ],
+      [
+        2.57,
+        7.35
+      ],
+      [
+        7.35,
+        10.18
+      ],
+      [
+        10.18,
+        12.61
+      ],
+      [
+        12.61,
+        17.37
+      ],
+      [
+        17.37,
+        21.32
+      ],
+      [
+        21.32,
+        25.13
+      ],
+      [
+        25.13,
+        31.17
+      ],
+      [
+        31.17,
+        34.35
+      ]
+    ],
+    "duration": 34.35,
+    "scene_lines": [
+      "That steel box on the guardrail isn't welded on.",
+      "If solidly attached without a breakaway design, a crashing car could be impaled by the rigid rail.",
+      "Instead, this terminal box sits loose over the rail.",
+      "Impact forces push the head sliding along the beam.",
+      "Think how forced metal absorbs motion. Pause and guess... three, two, one.",
+      "Here's why: the sliding head forces the steel rail to bend and curl away from the road.",
+      "This metal deformation acts like a giant brake, slowing your car safely.",
+      "Yesterday's answer: your ulnar nerve runs close to the bone with very little fat or muscle to pad it! Nobody cracked it, try today's!",
+      "Ever thought how steel guardrails can curl like paper without snapping?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": "9naAs1wMGVY",
+    "captions_srt": "1\n00:00:00,000 --> 00:00:02,310\nThat steel box on the guardrail isn't welded on.\n\n2\n00:00:02,570 --> 00:00:04,800\nIf solidly attached without a breakaway design,\n\n3\n00:00:04,910 --> 00:00:07,080\na crashing car could be impaled by the rigid rail.\n\n4\n00:00:07,350 --> 00:00:07,900\nInstead,\n\n5\n00:00:07,970 --> 00:00:09,960\nthis terminal box sits loose over the rail.\n\n6\n00:00:10,180 --> 00:00:12,370\nImpact forces push the head sliding along the beam.\n\n7\n00:00:12,610 --> 00:00:14,360\nThink how forced metal absorbs motion.\n\n8\n00:00:14,510 --> 00:00:15,460\nPause and guess...\n\n9\n00:00:15,630 --> 00:00:16,400\nthree, two,\n\n10\n00:00:16,450 --> 00:00:16,900\none.\n\n11\n00:00:17,370 --> 00:00:18,970\nHere's why: the sliding head forces the\n\n12\n00:00:18,970 --> 00:00:21,120\nsteel rail to bend and curl away from the road.\n\n13\n00:00:21,320 --> 00:00:23,060\nThis metal deformation acts like a giant\n\n14\n00:00:23,060 --> 00:00:24,790\nbrake, slowing your car safely.\n\n15\n00:00:25,130 --> 00:00:26,970\nYesterday's answer: your ulnar nerve runs close\n\n16\n00:00:26,970 --> 00:00:28,110\nto the bone with very little fat\n\n17\n00:00:28,110 --> 00:00:29,180\nor muscle to pad it!\n\n18\n00:00:29,280 --> 00:00:31,170\nNobody cracked it, try today's!\n\n19\n00:00:31,170 --> 00:00:32,730\nEver thought how steel guardrails can curl\n\n20\n00:00:32,730 --> 00:00:33,750\nlike paper without snapping?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [],
+      "footage": [],
+      "review": [],
+      "heard": [
+        "\"brake\" heard as \"break\"",
+        "\"ulnar\" heard as \"ulna\"",
+        "\"pad\" heard as \"pat\"",
+        "\"guardrails\" heard as \"guard rail\""
+      ],
+      "notes": [
+        "scene 9 footage is a loose match (score 3.0), accepted"
+      ],
+      "pass": true,
+      "duration": 34.1
+    },
+    "repairs": 1,
+    "audited": true
+  },
+  {
+    "job": "20261116-1813-scientists-just-found-dinosaur-blood-tha",
+    "topic": "Scientists just found dinosaur blood that survived 115 million years inside fossilized bones",
+    "title": "Did Scientists Find Real Dinosaur Blood? 🩸",
+    "description": "Scientists discovered soft tissue remnants inside dinosaur bones that should have vanished millions of years ago. Here is the science behind the mystery of their preservation. #science #dinosaur #fossils\n\nSources (open-access research):\n- Anderson (2023), Earth-Science Reviews. doi:10.1016/j.earscirev.2023.104367\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nPhoto by PublicDomainPictures on Pixabay\nPhoto: Eric M Martin, BY 2.0, via Openverse (flickr)\nPhoto: James St. John, BY 2.0, via Openverse (flickr)\nVideo by F1Digitals on Pixabay\n\nHow this was made: the script is researched and fact-checked with AI tools against open-access research (sources above when found), narrated by an AI voice, and edited with open-source software. Corrections from viewers are checked and credited.",
+    "tags": [
+      "dinosaur",
+      "paleontology",
+      "fossil",
+      "science",
+      "biology"
+    ],
+    "hook": "Fossilized bones can last millions of years, but sometimes they hide more than just minerals.",
+    "status": "banked",
+    "narration": "Fossilized bones can last millions of years, but sometimes they hide more than just minerals. Researchers studying a fossilized dinosaur bone found microscopic, flexible structures that resemble ancient blood vessels. Deep inside, they spotted flexible, dark structures that looked like remnants of vessels. But wait, how can something so delicate survive geological time? So, is it really liquid blood sitting inside that ancient stone? turn: true. Not exactly liquid, but potentially ancient protein fragments. Some scientists have hypothesized that iron from the blood might have played a role in preservation, though this remains an active subject of debate. Ever thought how a material that rots in days stays locked in stone for eons? Drop your guess below.",
+    "voice_engine": "chatterbox",
+    "voices": "one narrator (af_heart)",
+    "diagrams": 1,
+    "series": "Animal Whys",
+    "countdown": false,
+    "length_arm": "standard",
+    "question": "Ever thought how a material that rots in days stays locked in stone for eons? Drop your guess below.",
+    "answer_comment": "The answer: It is not liquid blood, but possibly ancient protein fragments, though how they survived is still debated by scientists. Ever thought how that same iron process might affect other types of fossilized organs?\n\nSources (open-access research):\n- Anderson (2023), Earth-Science Reviews. doi:10.1016/j.earscirev.2023.104367",
+    "sources": [
+      {
+        "claim": "Iron-mediated preservation is a hypothesis currently being tested.",
+        "cite": "Anderson (2023), Earth-Science Reviews. doi:10.1016/j.earscirev.2023.104367",
+        "doi": "10.1016/j.earscirev.2023.104367",
+        "title": "A chemical framework for the preservation of fossil vertebrate cells and soft tissues",
+        "why": "To explain such reports, Schweitzer et al. (2014) hypothesized that iron-mediated radical crosslinking preserves ancient soft tissues in a manner somewhat analogous to histological tissue fixation."
+      }
+    ],
+    "fact_check": [
+      "Soft tissue in dinosaur fossils was documented by Mary Schweitzer.",
+      "Iron-mediated preservation is a hypothesis currently being tested.",
+      "The structures found are typically collagen and blood vessel remnants, not liquid blood."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        4.69
+      ],
+      [
+        4.69,
+        9.9
+      ],
+      [
+        9.9,
+        14.14
+      ],
+      [
+        14.14,
+        17.77
+      ],
+      [
+        17.77,
+        21.17
+      ],
+      [
+        21.17,
+        25.38
+      ],
+      [
+        25.38,
+        31.24
+      ],
+      [
+        31.24,
+        36.59
+      ]
+    ],
+    "duration": 36.59,
+    "scene_lines": [
+      "Fossilized bones can last millions of years, but sometimes they hide more than just minerals.",
+      "Researchers studying a fossilized dinosaur bone found microscopic, flexible structures that resemble ancient blood vessels.",
+      "Deep inside, they spotted flexible, dark structures that looked like remnants of vessels.",
+      "But wait, how can something so delicate survive geological time?",
+      "So, is it really liquid blood sitting inside that ancient stone?",
+      "turn: true. Not exactly liquid, but potentially ancient protein fragments.",
+      "Some scientists have hypothesized that iron from the blood might have played a role in preservation, though this remains an active subject of debate.",
+      "Ever thought how a material that rots in days stays locked in stone for eons? Drop your guess below."
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,000 --> 00:00:02,130\nFossilized bones can last millions of years,\n\n2\n00:00:02,200 --> 00:00:04,210\nbut sometimes they hide more than just minerals.\n\n3\n00:00:04,690 --> 00:00:07,360\nResearchers studying a fossilized dinosaur bone found microscopic,\n\n4\n00:00:07,490 --> 00:00:09,720\nflexible structures that resemble ancient blood vessels.\n\n5\n00:00:09,900 --> 00:00:10,490\nDeep inside,\n\n6\n00:00:10,600 --> 00:00:11,510\nthey spotted flexible,\n\n7\n00:00:11,580 --> 00:00:13,670\ndark structures that looked like remnants of vessels.\n\n8\n00:00:14,140 --> 00:00:14,710\nBut wait,\n\n9\n00:00:14,780 --> 00:00:17,320\nhow can something so delicate survive geological time?\n\n10\n00:00:17,770 --> 00:00:19,390\nSo, is it really liquid blood sitting\n\n11\n00:00:19,390 --> 00:00:20,700\ninside that ancient stone?\n\n12\n00:00:21,170 --> 00:00:22,120\nturn: true.\n\n13\n00:00:22,210 --> 00:00:25,080\nNot exactly liquid, but potentially ancient protein fragments.\n\n14\n00:00:25,380 --> 00:00:27,200\nSome scientists have hypothesized that iron from\n\n15\n00:00:27,200 --> 00:00:28,770\nthe blood might have played a role in preservation,\n\n16\n00:00:29,160 --> 00:00:30,890\nthough this remains an active subject of debate.\n\n17\n00:00:31,240 --> 00:00:32,760\nEver thought how a material that rots\n\n18\n00:00:32,760 --> 00:00:34,790\nin days stays locked in stone for eons?\n\n19\n00:00:35,090 --> 00:00:35,990\nDrop your guess below.\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [],
+      "footage": [],
+      "review": [],
+      "heard": [
+        "\"fossilized\" heard as \"oscillized\"",
+        "\"though\" heard as \"but\"",
+        "\"in\" heard as \"and\""
+      ],
+      "pass": true,
+      "duration": 36.3
+    },
+    "repairs": 0,
+    "audited": true
   }
 ]

@@ -1,19 +1,20 @@
 {
   "lessons": [
-    "Avoid empty or blank hook lines; the dataset shows that videos with missing hooks (like 'Why your eyes are secretly leaking') suffer from below-average start retention (0.34 vs_similar_start).",
-    "Do not start with lengthy throat-clearing exposition; drops of over 20% consistently occur when the first lines over-explain context rather than diving straight into the mechanism (e.g., Maple Syrup and Cold Water scripts).",
-    "Keep the premise active and punchy; the best-performing video ('Why Tuna Meat Is Red Meat While Cod Is Pure White') hooked 56% better than similar shorts at the start by immediately framing a stark visual contrast.",
-    "Avoid mid-video structural shifts or philosophical pivots around the 25% to 34% mark, which trigger secondary viewer drop-offs across multiple topics (e.g., Onions, Honey, and Fingers Prune).",
-    "Ensure the end payoff is fast and directly answers the premise, as end retention correlates strongly with strong vs_similar_end metrics (seen in the Tuna and Pineapple scripts)."
+    "Keep hooks concise and punchy; the video with the highest start retention (Tuna vs. Cod) used a strong visual and behavioral contrast immediately in its opening line.",
+    "Avoid starting with long, multi-clause scientific definitions or background facts (such as the maple syrup percentage drop), as viewers drop off steeply within the first 10-15% when over-explained.",
+    "Ensure the core mechanism or answer is introduced early; drops frequently occur around the 25% to 35% mark when the explanation of 'how it works' transitions too slowly.",
+    "Eliminate mid-video pauses or philosophical questions near the end (like the juice question in the spicy food video) which trigger a secondary wave of viewers to leave right before the finish.",
+    "Not enough data to determine the effect of countdowns since all entries had 'countdown: null'."
   ],
   "worst_moment_types": [
-    "Slow preamble sentences explaining basic natural states or water percentages instead of actionable mechanics.",
-    "Mid-script conceptual transitions around the 25% to 34% timestamp where momentum slows down.",
-    "Blank or missing transcript lines during critical high-drop timestamps."
+    "Dense background statistics and percentages delivered too early in the script",
+    "Slow transitions into the biochemical mechanism of the topic around the 25-35% mark",
+    "Extra rhetorical questions or tangents introduced late in the video near the final 10% of runtime"
   ],
   "best_hook_types": [
-    "Immediate visual or biological contrasts that challenge common assumptions (e.g., fish meat colors or pineapple 'eating you back').",
-    "Direct, high-stakes declarative statements about familiar food or bodily reactions."
+    "Direct, high-contrast comparisons between two familiar things (e.g., Tuna vs. Cod meat)",
+    "Startling action-oriented statements about everyday foods or bodily reactions (e.g., pineapple eating you back)",
+    "Short, provocative premise statements that immediately challenge a common assumption"
   ],
   "studied": "2026-11-16",
   "videos": 8

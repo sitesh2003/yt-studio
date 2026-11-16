@@ -1,14 +1,20 @@
 {
-  "summary": "1. Focus topics on visceral body phenomena and immediate sensory traps rather than standard pantry trivia like honey or maple syrup. 2. Start script hooks instantly with a direct second-person contradiction or aggressive statement within the first 8 words. 3. Title videos using visceral action verbs and bodily consequences like 'Eat You Back' or 'Secretly Leaking' to maximize feed CTR. 4. Target optimal video duration between 18 to 22 seconds, which balances high stayed rate with strong view percentage. 5. Completely strip out introductory fluff, textbook explanations, and rhetorical setup questions from second 0.",
+  "summary": [
+    "Prioritize everyday biological mysteries and body sensations (pruned fingers, leaky eyes, pineapple burning) over general natural facts to capture high initial views.",
+    "Formulate hook sentences as direct contradictions or shocking revelations that immediately flip an assumption in the viewer's mind.",
+    "Keep titles punchy and use high-contrast emoji pairings to boost curiosity without relying on complex phrasing.",
+    "Eliminate long setup phrases or throat-clearing context in the first sentence; start right at the point of conflict.",
+    "Target a high stayed percentage above 60% by making the hook directly challenge a common physical sensation everyone experiences."
+  ],
   "winning_hooks": [
-    "Direct bodily paradoxes that confront the viewer immediately ('Your fingers prune in water, but it is not because...')",
-    "Aggressive personification of everyday items ('Fresh pineapple is literally eating you back')",
-    "Extreme comparative anchors ('This shark is older than the United States')"
+    "Your fingers prune in water, but it is not because you are absorbing it like a sponge.",
+    "Your eyes are leaking right now, and your brain is hiding it.",
+    "Fresh pineapple is literally eating you back."
   ],
   "avoid": [
-    "Passive, encyclopedic openings like 'Honey is famous for being one of the only...'",
-    "Rhetorical fluff questions at second 0 like 'That sweet maple syrup on your pancakes?'",
-    "Long explanatory clauses that give away technical reasons before establishing a paradox"
+    "Starting hooks with descriptive background information or boring definitions.",
+    "Using long, academic introductions that give the answer away before the viewer is hooked.",
+    "Writing passive first sentences that fail to create an immediate sense of intrigue or conflict."
   ],
-  "next_experiment": "A/B test a body-anomaly video topic ('Why Stomach Acid Doesn't Melt You'): Version A opens with an aggressive direct statement ('Your stomach is currently digesting itself') vs. Version B opening with a fact setup ('Stomach acid is strong enough to burn through wood'), keeping length at 18 seconds to measure stayed_pct lift."
+  "next_experiment": "Test an A/B split where Video A uses a direct bodily sensation contradiction ('You think you know why you sweat...') and Video B uses an external nature fact ('This tree makes poison...'), measuring which one achieves a stayed_pct above 60%."
 }

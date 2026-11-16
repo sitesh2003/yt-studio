@@ -26,6 +26,23 @@ Sources:
 Sources:
 - Nielsen et al. (2016), Science. doi:10.1126/science.aaf1703 — supports: Greenland sharks have a lifespan estimated between 272 and 510 years as supported by Nielsen (2016).
 
+## Why Guardrail Ends Aren't Welded to the Rail 😮
+*2026-11-16 · How Things Work*
+
+- Guardrail end terminals (extruder terminals) are not welded to the guardrail beam; they are mounted to slide along the rail upon impact.
+- Impact forces push the terminal head along the beam, extruding and flattening the steel to absorb kinetic energy and safely slow down colliding vehicles.
+- The ulnar nerve passes through the cubital tunnel directly against the humerus bone with minimal subcutaneous padding.
+
+## Did Scientists Find Real Dinosaur Blood? 🩸
+*2026-11-16 · Animal Whys*
+
+- Soft tissue in dinosaur fossils was documented by Mary Schweitzer.
+- Iron-mediated preservation is a hypothesis currently being tested.
+- The structures found are typically collagen and blood vessel remnants, not liquid blood.
+
+Sources:
+- Anderson (2023), Earth-Science Reviews. doi:10.1016/j.earscirev.2023.104367 — supports: Iron-mediated preservation is a hypothesis currently being tested.
+
 ## Why Ponds Don't Freeze Solid 🤔
 *2026-11-15 · How Things Work*
 

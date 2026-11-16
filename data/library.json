@@ -266,5 +266,39 @@
         "claim": "Greenland sharks have a lifespan estimated between 272 and 510 years as supported by Nielsen (2016)."
       }
     ]
+  },
+  {
+    "job": "20261116-1716-weekly-this-shark-can-live-for-centuries",
+    "date": "2026-11-16",
+    "title": "Why Guardrail Ends Aren't Welded to the Rail 😮",
+    "topic": "weekly: This Shark Can Live For Centuries! 🦈❄️, Why Garlic Doesn't Make You Cry Like Onions Do 🧄😭, Why Fruits Float In Water 🍎🍐,",
+    "series": "How Things Work",
+    "weekly": false,
+    "claims": [
+      "Guardrail end terminals (extruder terminals) are not welded to the guardrail beam; they are mounted to slide along the rail upon impact.",
+      "Impact forces push the terminal head along the beam, extruding and flattening the steel to absorb kinetic energy and safely slow down colliding vehicles.",
+      "The ulnar nerve passes through the cubital tunnel directly against the humerus bone with minimal subcutaneous padding."
+    ],
+    "sources": []
+  },
+  {
+    "job": "20261116-1813-scientists-just-found-dinosaur-blood-tha",
+    "date": "2026-11-16",
+    "title": "Did Scientists Find Real Dinosaur Blood? 🩸",
+    "topic": "Scientists just found dinosaur blood that survived 115 million years inside fossilized bones",
+    "series": "Animal Whys",
+    "weekly": false,
+    "claims": [
+      "Soft tissue in dinosaur fossils was documented by Mary Schweitzer.",
+      "Iron-mediated preservation is a hypothesis currently being tested.",
+      "The structures found are typically collagen and blood vessel remnants, not liquid blood."
+    ],
+    "sources": [
+      {
+        "cite": "Anderson (2023), Earth-Science Reviews. doi:10.1016/j.earscirev.2023.104367",
+        "doi": "10.1016/j.earscirev.2023.104367",
+        "claim": "Iron-mediated preservation is a hypothesis currently being tested."
+      }
+    ]
   }
 ]

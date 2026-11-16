@@ -36,42 +36,6 @@
     "stored": "2026-11-13T00:38:38.270642+00:00"
   },
   {
-    "job": "20261115-0159-why-metal-becomes-significantly-harder-a",
-    "title": "Why Heat Treating Makes Steel Hard 🤯",
-    "assets": {
-      "mp4": 749544094,
-      "jpg": 749544595,
-      "json": 749544620
-    },
-    "locked": true,
-    "series": "How Things Work",
-    "stored": "2026-11-15T02:25:43.267871+00:00"
-  },
-  {
-    "job": "20261115-0247-why-do-bananas-catch-fire-in-the-microwa",
-    "title": "Why Do Microwaved Grapes Shoot Sparks? 🤯",
-    "assets": {
-      "mp4": 749718806,
-      "jpg": 749719009,
-      "json": 749719020
-    },
-    "locked": true,
-    "series": "Everyday Whys",
-    "stored": "2026-11-15T03:43:40.168092+00:00"
-  },
-  {
-    "job": "20261115-1737-why-you-can-grab-hot-aluminum-foil-strai",
-    "title": "How 400 Degree Foil Stays Safe 🤔",
-    "assets": {
-      "mp4": 751844465,
-      "jpg": 751844712,
-      "json": 751844739
-    },
-    "locked": true,
-    "series": "Everyday Whys",
-    "stored": "2026-11-15T17:59:00.067412+00:00"
-  },
-  {
     "job": "20261115-1802-why-car-side-windows-shatter-into-tiny-c",
     "title": "Why Car Windows Shatter Into Cubes 🤯",
     "assets": {
@@ -94,5 +58,29 @@
     "locked": true,
     "series": "Animal Whys",
     "stored": "2026-11-16T02:11:48.593423+00:00"
+  },
+  {
+    "job": "20261116-1716-weekly-this-shark-can-live-for-centuries",
+    "title": "Why Guardrail Ends Aren't Welded to the Rail 😮",
+    "assets": {
+      "mp4": 755884048,
+      "jpg": 755884408,
+      "json": 755884447
+    },
+    "locked": true,
+    "series": "How Things Work",
+    "stored": "2026-11-16T18:05:49.515393+00:00"
+  },
+  {
+    "job": "20261116-1813-scientists-just-found-dinosaur-blood-tha",
+    "title": "Did Scientists Find Real Dinosaur Blood? 🩸",
+    "assets": {
+      "mp4": 755980167,
+      "jpg": 755980455,
+      "json": 755980508
+    },
+    "locked": true,
+    "series": "Animal Whys",
+    "stored": "2026-11-16T18:34:39.343305+00:00"
   }
 ]
