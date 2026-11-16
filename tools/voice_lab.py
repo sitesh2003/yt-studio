@@ -271,7 +271,7 @@ def hindi2():
         log.append(f"opt_H10/H11 chatterbox hindi: FAILED {type(e).__name__}: {str(e)[:200]}")
 
 
-# 17 Nov 2026, owner: "show me my voice speaking all the versions". His 22 s sample (unlocked from
+# 17 Nov 2026, owner: "show me my voice speaking all the versions" (VOICE_KEY added 17 Nov). His 22 s sample (unlocked from
 # assets/voice/owner.wav.enc with VOICE_KEY) read by Chatterbox in English, Hinglish and romanised Hinglish,
 # plus H14 = the new Hindi pick (H6, Swara) at +18% reading the same Hinglish lines.
 OPT_HING = [["नहाने के बाद fingers पर wrinkles आ जाते हैं। लेकिन elbow पर नहीं। क्यों?"],
