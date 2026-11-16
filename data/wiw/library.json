@@ -115,5 +115,50 @@
       "Cameras use lens convergence to focus real, inverted images onto sensors."
     ],
     "sources": []
+  },
+  {
+    "job": "20261116-1409-why-does-a-siren-change-pitch-as-it-pass",
+    "date": "2026-11-16",
+    "title": "Why Does a Siren Change Pitch? The Doppler Effect",
+    "topic": "Why does a siren change pitch as it passes? The Doppler effect explained",
+    "series": "Physics",
+    "weekly": false,
+    "claims": [
+      "Sound wave crests bunch up ahead of a moving sound source and spread apart behind it.",
+      "Perceived pitch is directly proportional to the frequency of sound waves hitting the ear.",
+      "The speed of sound in air is determined by properties of the air (temperature, density) and is independent of source velocity."
+    ],
+    "sources": [
+      {
+        "cite": "Usagawa et al. (1987), Journal of the Acoustical Society of Japan (E). doi:10.1250/ast.8.23",
+        "doi": "10.1250/ast.8.23",
+        "claim": "Sound wave crests bunch up ahead of a moving sound source and spread apart behind it."
+      },
+      {
+        "cite": "Rabenstein et al. (2017), Wireless Communications and Mobile Computing. doi:10.1155/2017/9524943",
+        "doi": "10.1155/2017/9524943",
+        "claim": "The speed of sound in air is determined by properties of the air (temperature, density) and is independent of source velocity."
+      }
+    ]
+  },
+  {
+    "job": "20261116-1432-why-don-t-planets-fall-into-the-sun-cele",
+    "date": "2026-11-16",
+    "title": "Why Don't Planets Fall Into The Sun?",
+    "topic": "Why don't planets fall into the Sun? Celestial orbits explained",
+    "series": "Physics",
+    "weekly": false,
+    "claims": [
+      "Planets stay in orbit because their tangential velocity is sufficient to counteract the gravitational pull of the Sun.",
+      "If tangential velocity is removed, an object will fall directly toward the center of gravity.",
+      "Orbits are effectively a continuous state of falling while moving fast enough to miss the central body."
+    ],
+    "sources": [
+      {
+        "cite": "Tsang (2025), Zenodo (CERN European Organization for Nuclear Research). doi:10.5281/zenodo.20150543",
+        "doi": "10.5281/zenodo.20150543",
+        "claim": "Orbits are effectively a continuous state of falling while moving fast enough to miss the central body."
+      }
+    ]
   }
 ]

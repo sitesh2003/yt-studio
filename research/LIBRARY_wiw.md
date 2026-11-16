@@ -18,6 +18,27 @@ agents/library.py; a source is listed only if its abstract was checked to suppor
 - The virtual image produced within the focal length is upright and magnified.
 - Cameras use lens convergence to focus real, inverted images onto sensors.
 
+## Why Does a Siren Change Pitch? The Doppler Effect
+*2026-11-16 · Physics*
+
+- Sound wave crests bunch up ahead of a moving sound source and spread apart behind it.
+- Perceived pitch is directly proportional to the frequency of sound waves hitting the ear.
+- The speed of sound in air is determined by properties of the air (temperature, density) and is independent of source velocity.
+
+Sources:
+- Usagawa et al. (1987), Journal of the Acoustical Society of Japan (E). doi:10.1250/ast.8.23 — supports: Sound wave crests bunch up ahead of a moving sound source and spread apart behind it.
+- Rabenstein et al. (2017), Wireless Communications and Mobile Computing. doi:10.1155/2017/9524943 — supports: The speed of sound in air is determined by properties of the air (temperature, density) and is independent of source velocity.
+
+## Why Don't Planets Fall Into The Sun?
+*2026-11-16 · Physics*
+
+- Planets stay in orbit because their tangential velocity is sufficient to counteract the gravitational pull of the Sun.
+- If tangential velocity is removed, an object will fall directly toward the center of gravity.
+- Orbits are effectively a continuous state of falling while moving fast enough to miss the central body.
+
+Sources:
+- Tsang (2025), Zenodo (CERN European Organization for Nuclear Research). doi:10.5281/zenodo.20150543 — supports: Orbits are effectively a continuous state of falling while moving fast enough to miss the central body.
+
 ## Why Does Soap Remove Grease?
 *2026-11-15 · Chemistry*
 

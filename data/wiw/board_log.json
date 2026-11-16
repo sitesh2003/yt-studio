@@ -24,5 +24,30 @@
    "4": "Light bulb emojis do not represent light rays and fail to show rays bending or crossing over."
   },
   "error": ""
+ },
+ {
+  "when": "2026-11-16 14:19",
+  "topic": "Why does a siren change pitch as it passes? The Doppler effect explained",
+  "drawn": [
+   2,
+   3,
+   4,
+   5
+  ],
+  "not_drawn": {},
+  "error": ""
+ },
+ {
+  "when": "2026-11-16 14:41",
+  "topic": "Why don't planets fall into the Sun? Celestial orbits explained",
+  "drawn": [
+   2,
+   3,
+   5
+  ],
+  "not_drawn": {
+   "4": "The image shows vertical downward falling paths ('FAST THROW', 'CURVED FALL', 'ORBIT') instead of horizontal orbital motion, which fails to illustrate how throw"
+  },
+  "error": ""
  }
 ]

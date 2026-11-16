@@ -503,7 +503,7 @@
       "vinegar"
     ],
     "hook": "Why does baking soda fizz the moment it hits vinegar?",
-    "status": "scheduled",
+    "status": "public",
     "narration": "Why does baking soda fizz the moment it hits vinegar? First, baking soda is a base called sodium bicarbonate. Second, vinegar is a diluted acetic acid. Third, the acid and base react instantly to trade parts, creating water and carbon dioxide gas. That's because the carbon dioxide gas tries to escape the liquid, which creates the fizzing bubbles we see. You see this reaction in fluffy pancakes, where those gas bubbles make the batter rise. Try this: why would using too much baking soda make your pancakes taste bitter?",
     "voice_engine": "kokoro",
     "voices": "male host, female explainer",
@@ -586,7 +586,9 @@
     "repairs": 0,
     "audited": true,
     "video_id": "Sxptr2TsIRI",
-    "publish_at": "2026-11-16T07:30:00-05:00"
+    "publish_at": "2026-11-16T07:30:00-05:00",
+    "recapped": true,
+    "answered": true
   },
   {
     "job": "20261115-1937-why-does-soap-remove-grease-and-oil-when",
@@ -1443,6 +1445,216 @@
       "duration": 35.1
     },
     "repairs": 0,
+    "audited": true
+  },
+  {
+    "job": "20261116-1409-why-does-a-siren-change-pitch-as-it-pass",
+    "topic": "Why does a siren change pitch as it passes? The Doppler effect explained",
+    "title": "Why Does a Siren Change Pitch? The Doppler Effect",
+    "description": "Ever wondered why an approaching siren suddenly drops in pitch as it passes by? Here is how wave frequency and motion create the Doppler effect.\n\n#physics #science #shorts\n\nSources (open-access research):\n- Usagawa et al. (1987), Journal of the Acoustical Society of Japan (E). doi:10.1250/ast.8.23\n- Rabenstein et al. (2017), Wireless Communications and Mobile Computing. doi:10.1155/2017/9524943\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nPhoto: U.S. Army photo by Sgt. Raven Jones, Public domain, via Wikimedia Commons\nVideo by BlenderTimer on Pixabay\nVideo by Mario_Krimer on Pixabay\nVideo by ninosouza on Pixabay\n\nHow this was made: the script is researched and fact-checked with AI tools against open-access research and textbooks, narrated by an AI voice, and every diagram, number and graph is drawn by code from the real values. Spot a mistake? Tell us in the comments - corrections are checked and credited.",
+    "tags": [
+      "doppler effect",
+      "physics",
+      "sound waves",
+      "pitch",
+      "science explained",
+      "frequency",
+      "why it works"
+    ],
+    "hook": "You've heard an ambulance siren drop in pitch as it speeds past. But why does that happen?",
+    "status": "banked",
+    "narration": "You've heard an ambulance siren drop in pitch as it speeds past. But why does that happen? Imagine a parked ambulance sending out sound waves in equal circles. Now it drives toward you, chasing its own waves and squishing them closer together. More waves reach your ear every second, making the pitch sound higher. Once it passes, it travels away from those waves, stretching them apart. That's because pitch depends on wave frequency, so bunched waves sound higher and stretched waves sound lower. Engineers use this exact wave shift in radar guns to measure car speeds. Try this: does a moving siren change the speed of sound through the air?",
+    "voice_engine": "kokoro",
+    "voices": "one narrator (af_bella)",
+    "diagrams": 1,
+    "series": "Physics",
+    "countdown": false,
+    "length_arm": null,
+    "question": "Try this: does a moving siren change the speed of sound through the air?",
+    "answer_comment": "The answer: No! The speed of sound depends only on the medium (the air itself), not on how fast the source moves. The siren pushes sound wave crests closer together in space, but each wave crest still travels through the air at the exact same speed of sound (about 343 meters per second at room temperature). Have you noticed this effect with train horns too?\n\nSources (open-access research):\n- Usagawa et al. (1987), Journal of the Acoustical Society of Japan (E). doi:10.1250/ast.8.23\n- Rabenstein et al. (2017), Wireless Communications and Mobile Computing. doi:10.1155/2017/9524943",
+    "sources": [
+      {
+        "claim": "Sound wave crests bunch up ahead of a moving sound source and spread apart behind it.",
+        "cite": "Usagawa et al. (1987), Journal of the Acoustical Society of Japan (E). doi:10.1250/ast.8.23",
+        "doi": "10.1250/ast.8.23",
+        "title": "Analysis of a moving sound source - Orbit estimation using microphone array.",
+        "why": "It is not easy to observe the original spectrum information of a moving sound source because of the Doppler effect."
+      },
+      {
+        "claim": "The speed of sound in air is determined by properties of the air (temperature, density) and is independent of source velocity.",
+        "cite": "Rabenstein et al. (2017), Wireless Communications and Mobile Computing. doi:10.1155/2017/9524943",
+        "doi": "10.1155/2017/9524943",
+        "title": "Acoustic Source Localization under Variable Speed of Sound Conditions",
+        "why": "It reviews the physical foundations for the dependence of the speed of sound on the air temperature and presents the essential approaches to acoustic source localization."
+      }
+    ],
+    "fact_check": [
+      "Sound wave crests bunch up ahead of a moving sound source and spread apart behind it.",
+      "Perceived pitch is directly proportional to the frequency of sound waves hitting the ear.",
+      "The speed of sound in air is determined by properties of the air (temperature, density) and is independent of source velocity."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        5.34
+      ],
+      [
+        5.34,
+        9.65
+      ],
+      [
+        9.65,
+        13.95
+      ],
+      [
+        13.95,
+        17.58
+      ],
+      [
+        17.58,
+        21.6
+      ],
+      [
+        21.6,
+        27.59
+      ],
+      [
+        27.59,
+        32.65
+      ],
+      [
+        32.65,
+        37.05
+      ]
+    ],
+    "duration": 37.05,
+    "scene_lines": [
+      "You've heard an ambulance siren drop in pitch as it speeds past. But why does that happen?",
+      "Imagine a parked ambulance sending out sound waves in equal circles.",
+      "Now it drives toward you, chasing its own waves and squishing them closer together.",
+      "More waves reach your ear every second, making the pitch sound higher.",
+      "Once it passes, it travels away from those waves, stretching them apart.",
+      "That's because pitch depends on wave frequency, so bunched waves sound higher and stretched waves sound lower.",
+      "Engineers use this exact wave shift in radar guns to measure car speeds.",
+      "Try this: does a moving siren change the speed of sound through the air?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,050 --> 00:00:01,850\nYou've heard an ambulance siren drop in\n\n2\n00:00:01,850 --> 00:00:03,780\npitch as it speeds past.\n\n3\n00:00:03,780 --> 00:00:05,340\nBut why does that happen?\n\n4\n00:00:05,340 --> 00:00:07,815\nImagine a parked ambulance sending out sound\n\n5\n00:00:07,815 --> 00:00:09,650\nwaves in equal circles.\n\n6\n00:00:09,650 --> 00:00:11,430\nNow it drives toward you, chasing its\n\n7\n00:00:11,430 --> 00:00:13,950\nown waves and squishing them closer together.\n\n8\n00:00:13,950 --> 00:00:15,925\nMore waves reach your ear every second,\n\n9\n00:00:15,925 --> 00:00:17,580\nmaking the pitch sound higher.\n\n10\n00:00:17,580 --> 00:00:19,458\nOnce it passes, it travels away from\n\n11\n00:00:19,458 --> 00:00:21,600\nthose waves, stretching them apart.\n\n12\n00:00:21,600 --> 00:00:23,943\nThat's because pitch depends on wave frequency,\n\n13\n00:00:23,943 --> 00:00:27,590\nso bunched waves sound higher and stretched waves sound lower.\n\n14\n00:00:27,590 --> 00:00:30,155\nEngineers use this exact wave shift in\n\n15\n00:00:30,155 --> 00:00:32,650\nradar guns to measure car speeds.\n\n16\n00:00:32,650 --> 00:00:34,568\nTry this: does a moving siren change\n\n17\n00:00:34,568 --> 00:00:36,455\nthe speed of sound through the air?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [],
+      "footage": [],
+      "review": [],
+      "heard": [
+        "\"in\" heard as \"and\"",
+        "\"it\" heard as \"its\"",
+        "\"past\" heard as \"passed\""
+      ],
+      "pass": true,
+      "duration": 36.2
+    },
+    "repairs": 0,
+    "audited": true
+  },
+  {
+    "job": "20261116-1432-why-don-t-planets-fall-into-the-sun-cele",
+    "topic": "Why don't planets fall into the Sun? Celestial orbits explained",
+    "title": "Why Don't Planets Fall Into The Sun?",
+    "description": "Why don't planets spiral into the Sun? It comes down to a perfect balance of gravity and speed. Explore the physics of orbits. #shorts #physics #science\n\nSources (open-access research):\n- Tsang (2025), Zenodo (CERN European Organization for Nuclear Research). doi:10.5281/zenodo.20150543\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nPhoto by Tumisu on Pixabay\nVideo by AlexAntropov86 on Pixabay\nVideo by Vimeo-Free-Videos on Pixabay\nVideo by Nerd_Nonsense on Pixabay\nVideo by u_tdcdmi53de on Pixabay",
+    "tags": [
+      "physics",
+      "astronomy",
+      "orbits",
+      "science",
+      "gravity"
+    ],
+    "hook": "If the Sun pulls the Earth, why don't we just crash into it?",
+    "status": "banked",
+    "narration": "If the Sun pulls the Earth, why don't we just crash into it? Imagine throwing a ball sideways at 30 kilometers per second. It's fast. Gravity pulls the ball down, but its sideways speed keeps it moving forward. If you throw it fast enough, the curve of the fall matches the curve of the Earth. It's perfect. That's because the Earth is essentially in a constant state of falling around the Sun. It’s a perfect balance of speed and gravity that keeps us safe in orbit. Try this: why would the Earth crash into the Sun if it suddenly stopped moving sideways?",
+    "voice_engine": "kokoro",
+    "voices": "one narrator (af_bella)",
+    "diagrams": 1,
+    "series": "Physics",
+    "countdown": false,
+    "length_arm": null,
+    "question": "Try this: why would the Earth crash into the Sun if it suddenly stopped moving sideways?",
+    "answer_comment": "The answer: Without sideways velocity, gravity would have nothing to balance out. The Earth would lose its orbital path and fall directly toward the Sun's center. Sideways speed is the only thing preventing a collision. Does that make sense?\n\nSources (open-access research):\n- Tsang (2025), Zenodo (CERN European Organization for Nuclear Research). doi:10.5281/zenodo.20150543",
+    "sources": [
+      {
+        "claim": "Orbits are effectively a continuous state of falling while moving fast enough to miss the central body.",
+        "cite": "Tsang (2025), Zenodo (CERN European Organization for Nuclear Research). doi:10.5281/zenodo.20150543",
+        "doi": "10.5281/zenodo.20150543",
+        "title": "A Thermodynamic Interpretation of Gravitational Curvature via Entropy-Decay Gradients",
+        "why": "Free fall and orbital motion are interpreted as unconstrained trajectories, explaining the absence of locally experienced gravitational force."
+      }
+    ],
+    "fact_check": [
+      "Planets stay in orbit because their tangential velocity is sufficient to counteract the gravitational pull of the Sun.",
+      "If tangential velocity is removed, an object will fall directly toward the center of gravity.",
+      "Orbits are effectively a continuous state of falling while moving fast enough to miss the central body."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        3.27
+      ],
+      [
+        3.27,
+        8.25
+      ],
+      [
+        8.25,
+        12.5
+      ],
+      [
+        12.5,
+        17.43
+      ],
+      [
+        17.43,
+        22.2
+      ],
+      [
+        22.2,
+        26.17
+      ],
+      [
+        26.17,
+        31.58
+      ]
+    ],
+    "duration": 31.58,
+    "scene_lines": [
+      "If the Sun pulls the Earth, why don't we just crash into it?",
+      "Imagine throwing a ball sideways at 30 kilometers per second. It's fast.",
+      "Gravity pulls the ball down, but its sideways speed keeps it moving forward.",
+      "If you throw it fast enough, the curve of the fall matches the curve of the Earth. It's perfect.",
+      "That's because the Earth is essentially in a constant state of falling around the Sun.",
+      "It’s a perfect balance of speed and gravity that keeps us safe in orbit.",
+      "Try this: why would the Earth crash into the Sun if it suddenly stopped moving sideways?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,050 --> 00:00:01,512\nIf the Sun pulls the Earth, why\n\n2\n00:00:01,512 --> 00:00:03,270\ndon't we just crash into it?\n\n3\n00:00:03,270 --> 00:00:07,250\nImagine throwing a ball sideways at 30 kilometers per second.\n\n4\n00:00:07,250 --> 00:00:08,250\nIt's fast.\n\n5\n00:00:08,250 --> 00:00:10,078\nGravity pulls the ball down, but its\n\n6\n00:00:10,078 --> 00:00:12,500\nsideways speed keeps it moving forward.\n\n7\n00:00:12,500 --> 00:00:13,920\nIf you throw it fast enough, the\n\n8\n00:00:13,920 --> 00:00:16,330\ncurve of the fall matches the curve of the Earth.\n\n9\n00:00:16,330 --> 00:00:17,430\nIt's perfect.\n\n10\n00:00:17,430 --> 00:00:19,478\nThat's because the Earth is essentially in\n\n11\n00:00:19,478 --> 00:00:22,200\na constant state of falling around the Sun.\n\n12\n00:00:22,200 --> 00:00:23,875\nIt’s a perfect balance of speed and\n\n13\n00:00:23,875 --> 00:00:26,170\ngravity that keeps us safe in orbit.\n\n14\n00:00:26,170 --> 00:00:27,988\nTry this: why would the Earth crash\n\n15\n00:00:27,988 --> 00:00:30,975\ninto the Sun if it suddenly stopped moving sideways?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [],
+      "footage": [],
+      "review": [],
+      "heard": [
+        "\"it s\" heard as \"it's\""
+      ],
+      "pass": true,
+      "duration": 30.7
+    },
+    "repairs": 1,
     "audited": true
   }
 ]
