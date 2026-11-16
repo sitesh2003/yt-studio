@@ -8,6 +8,9 @@ on:
     - cron: "11 9 * * *"
     - cron: "11 13 * * *"
   workflow_dispatch: {}
+  push:   # a start button with no browser: change kick/hi.txt (GitHub sometimes skips a schedule)
+    branches: [main]
+    paths: ["kick/hi.txt"]
 
 permissions:
   contents: write
