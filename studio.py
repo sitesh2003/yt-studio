@@ -63,8 +63,8 @@ def build(script):
     spec = match_scenes(script)
     editor.thumbnail(job, spec or script.get("thumbnail_text") or script["title_options"][0])
     thumbs = thumbnail_options(job, spec)
+    chapters = chapter_marks(script, times)   # first: it also removes the writer's own guessed timestamps
     desc = script["description"]
-    chapters = chapter_marks(script, times)
     if chapters:
         desc = desc.rstrip() + "\n\n" + chapters
     desc += ("\n\n" + "\n".join(credits) if credits else "")
@@ -169,7 +169,12 @@ def flagged_scenes(q, n):
 
 
 def chapter_marks(script, times):
-    """YouTube chapters for the weekly episode: '0:00 Intro' then one line per chapter."""
+    """YouTube chapters for the weekly episode: '0:00 Intro' then one line per chapter.
+    16 Nov 2026: the writer also typed its own guessed timestamps (0:00, 3:00 ... 12:00 on a 9:53 episode)
+    into the description, so any timestamp lines it wrote are removed first; only these measured ones stay."""
+    import re
+    desc = re.sub(r"(?m)^[ \t]*\d{1,2}:\d{2}(?::\d{2})?[ \t]+\S.*\n?", "", script.get("description") or "")
+    script["description"] = re.sub(r"\n{3,}", "\n\n", desc)
     marks = [(0.0, "Intro")]
     for sc, (a, _) in zip(script["scenes"], times):
         if sc.get("chapter") and a > 10 and sc["chapter"] != marks[-1][1]:
