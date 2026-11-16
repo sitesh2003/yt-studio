@@ -576,6 +576,17 @@ def weekly():
     if len(week) < 3:
         log(f"weekly: only {len(week)} uploaded Shorts this week, need 3+; skipping")
         return
+    # a rebuilt episode (16 Nov 2026: the 15 Nov one lost its audio and was redone on Monday) already
+    # holds the coming Saturday slot, so the regular Saturday run must not schedule a second one
+    for h in hist:
+        if h.get("weekly") and h.get("status") == "scheduled" and h.get("publish_at"):
+            try:
+                at = dt.datetime.fromisoformat(h["publish_at"].replace("Z", "+00:00"))
+            except ValueError:
+                continue
+            if at > dt.datetime.now(dt.timezone.utc):
+                log(f"weekly: {h['job']} is already scheduled for {h['publish_at']}; skipping")
+                return
     set_override({"format": {"width": 1920, "height": 1080, "type": "long"},
                   "captions": {"size": 64, "position_y": 940, "words_per_line": 4, "outline": 4}})
     try:

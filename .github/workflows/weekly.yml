@@ -4,6 +4,9 @@ on:
   schedule:
     - cron: "37 3 * * 6"       # Saturday 03:37 UTC = 9:07 AM IST (odd minute: fewer skipped runs); it goes public Saturday 10 AM US Eastern
   workflow_dispatch: {}
+  push:                       # the start button: edit kick/weekly.txt (no browser needed)
+    branches: [main]
+    paths: ["kick/weekly.txt"]
 
 permissions:
   contents: write
