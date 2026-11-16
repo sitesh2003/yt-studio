@@ -207,5 +207,20 @@
         "claim": "mRNA vaccines use cellular machinery to produce harmless spike proteins."
       }
     ]
+  },
+  {
+    "job": "20261116-2121-why-do-i-actually-need-a-resistor-for-an",
+    "date": "2026-11-16",
+    "title": "Why Does An LED Need A Resistor?",
+    "topic": "Why do I actually need a resistor for an LED?",
+    "series": "Electronics",
+    "weekly": false,
+    "claims": [
+      "LEDs are current-controlled devices and lack internal current-limiting mechanisms.",
+      "Resistors in series with LEDs follow Ohm's Law (V=IR) to limit current.",
+      "Excess current causes thermal damage to the semiconductor junction in an LED.",
+      "Increasing resistance in a series circuit decreases the total current."
+    ],
+    "sources": []
   }
 ]

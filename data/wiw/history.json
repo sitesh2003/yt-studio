@@ -606,7 +606,7 @@
       "polar nonpolar"
     ],
     "hook": "You've used soap your whole life, but why does it clean grease when plain water fails?",
-    "status": "scheduled",
+    "status": "public",
     "narration": "You've used soap your whole life, but why does it clean grease when plain water fails? Step one: water molecules are polar, sticking strongly to each other while excluding nonpolar oil. Step two: soap molecules have a water-loving head and an oil-loving tail. Step three: the tails pin into grease, surrounding it with heads facing outward. That's because soap forms tiny spheres that trap grease so water can carry it away. You see this when dish soap washes greasy pans or lifts away dirty oils. Try this: how do soap molecules organize themselves to trap oil in water?",
     "voice_engine": "kokoro",
     "voices": "female host, male explainer",
@@ -679,7 +679,8 @@
     },
     "repairs": 1,
     "video_id": "kU4gc_KAIJ4",
-    "publish_at": "2026-11-16T16:30:00-05:00"
+    "publish_at": "2026-11-16T16:30:00-05:00",
+    "answered": true
   },
   {
     "job": "20261115-1729-why-do-23-people-share-a-birthday-the-bi",
@@ -1859,6 +1860,197 @@
       "duration": 31.3
     },
     "repairs": 1,
+    "audited": true
+  },
+  {
+    "job": "20261116-2045-how-does-gps-actually-know-where-i-am",
+    "topic": "How does GPS actually know where I am?",
+    "title": "How Does GPS Know Your Exact Location?",
+    "description": "Ever wondered how your phone finds you? It's all about math and the speed of light. See how satellites map your world. #shorts #physics #technology\n\nSources (open-access research):\n- Fiolhais et al. (2023), The Physics Teacher. doi:10.1119/5.0063725\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nPhoto by Mimzy on Pixabay\nVideo by Coverr-Free-Footage on Pixabay\n\nHow this was made: the script is researched and fact-checked with AI tools against open-access research and textbooks, narrated by an AI voice, and every diagram, number and graph is drawn by code from the real values. Spot a mistake? Tell us in the comments - corrections are checked and credited.",
+    "tags": [
+      "GPS",
+      "Physics",
+      "Technology",
+      "Navigation",
+      "Science"
+    ],
+    "hook": "You use GPS every day, but how does it actually know where you are?",
+    "status": "review",
+    "narration": "You use GPS every day, but how does it actually know where you are? Your phone receives signals from satellites orbiting above, while often using local Wi-Fi and cell data to speed up the process. Each satellite transmits its precise position and the exact time the message was sent using an onboard atomic clock. Your phone compares the satellite's timestamp to its own clock to estimate the signal's travel time. It draws a sphere around each satellite representing your possible distance. With four satellites, your device accounts for the clock error to find the single point where the spheres intersect at your location. Signals travel at the speed of light. Because your phone's clock isn't perfectly synced with the satellites, it uses the fourth satellite to solve for the timing error and determine its distance. Why do you need a fourth satellite when three might seem like enough for a 3D position?",
+    "voice_engine": "chatterbox",
+    "voices": "one narrator (af_heart)",
+    "diagrams": 1,
+    "series": "Physics",
+    "countdown": false,
+    "length_arm": null,
+    "question": "Why do you need a fourth satellite when three might seem like enough for a 3D position?",
+    "answer_comment": "Three satellites can theoretically provide a 3D position only if your receiver has an atomic clock perfectly synced with the satellites, or if you assume a fixed altitude. Since phone clocks are not that precise, they have a timing error that acts as an unknown variable. The fourth satellite provides the necessary data to solve for that time error, which is required for a reliable 3D location fix.\n\nSources (open-access research):\n- Fiolhais et al. (2023), The Physics Teacher. doi:10.1119/5.0063725",
+    "sources": [
+      {
+        "claim": "Orbital decay is a real phenomenon for satellites.",
+        "cite": "Fiolhais et al. (2023), The Physics Teacher. doi:10.1119/5.0063725",
+        "doi": "10.1119/5.0063725",
+        "title": "Orbital Decay in the Classroom",
+        "why": "The objective of this paper is to provide a pedagogical framework for the phenomenon of orbital decay of satellites in low Earth orbit."
+      }
+    ],
+    "fact_check": [
+      "GPS uses trilateration based on time-of-flight measurements of radio signals.",
+      "Signals travel at the speed of light.",
+      "At least four satellites are required for a 3D position fix (x, y, z, and time offset).",
+      "Orbital decay is a real phenomenon for satellites."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        3.84
+      ],
+      [
+        3.84,
+        9.53
+      ],
+      [
+        9.53,
+        14.77
+      ],
+      [
+        14.77,
+        18.79
+      ],
+      [
+        18.79,
+        22.21
+      ],
+      [
+        22.21,
+        27.47
+      ],
+      [
+        27.47,
+        35.53
+      ],
+      [
+        35.53,
+        39.17
+      ]
+    ],
+    "duration": 39.17,
+    "scene_lines": [
+      "You use GPS every day, but how does it actually know where you are?",
+      "Your phone receives signals from satellites orbiting above, while often using local Wi-Fi and cell data to speed up the process.",
+      "Each satellite transmits its precise position and the exact time the message was sent using an onboard atomic clock.",
+      "Your phone compares the satellite's timestamp to its own clock to estimate the signal's travel time.",
+      "It draws a sphere around each satellite representing your possible distance.",
+      "With four satellites, your device accounts for the clock error to find the single point where the spheres intersect at your location.",
+      "Signals travel at the speed of light. Because your phone's clock isn't perfectly synced with the satellites, it uses the fourth satellite to solve for the timing error and determine its distance.",
+      "Why do you need a fourth satellite when three might seem like enough for a 3D position?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,000 --> 00:00:02,000\nYou use GPS every day, but how\n\n2\n00:00:02,000 --> 00:00:03,410\ndoes it actually know where you are?\n\n3\n00:00:03,840 --> 00:00:05,620\nYour phone receives signals from satellites orbiting\n\n4\n00:00:05,620 --> 00:00:07,700\nabove, while often using local Wi-Fi and\n\n5\n00:00:07,700 --> 00:00:09,170\ncell data to speed up the process.\n\n6\n00:00:09,530 --> 00:00:11,630\nEach satellite transmits its precise position and\n\n7\n00:00:11,630 --> 00:00:12,890\nthe exact time the message was sent\n\n8\n00:00:12,890 --> 00:00:14,520\nusing an onboard atomic clock.\n\n9\n00:00:14,770 --> 00:00:16,630\nYour phone compares the satellite's timestamp to\n\n10\n00:00:16,630 --> 00:00:18,660\nits own clock to estimate the signal's travel time.\n\n11\n00:00:18,790 --> 00:00:20,250\nIt draws a sphere around each satellite\n\n12\n00:00:20,250 --> 00:00:21,860\nrepresenting your possible distance.\n\n13\n00:00:22,210 --> 00:00:23,820\nWith four satellites, your device accounts for\n\n14\n00:00:23,820 --> 00:00:25,050\nthe clock error to find the single\n\n15\n00:00:25,050 --> 00:00:27,100\npoint where the spheres intersect at your location.\n\n16\n00:00:27,470 --> 00:00:29,200\nSignals travel at the speed of light.\n\n17\n00:00:29,330 --> 00:00:31,700\nBecause your phone's clock isn't perfectly synced with the satellites,\n\n18\n00:00:31,790 --> 00:00:33,150\nit uses the fourth satellite to solve\n\n19\n00:00:33,150 --> 00:00:35,100\nfor the timing error and determine its distance.\n\n20\n00:00:35,530 --> 00:00:36,510\nWhy do you need a fourth satellite\n\n21\n00:00:36,510 --> 00:00:38,570\nwhen three might seem like enough for a 3D position?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [
+        "number differs: script \"three\" but the audio says \"free\""
+      ],
+      "footage": [
+        "scene(s) [7] have weak or placeholder footage"
+      ],
+      "review": [],
+      "heard": [
+        "\"for the\" heard as \"with a\""
+      ],
+      "pass": false,
+      "duration": 39.0
+    },
+    "repairs": 0
+  },
+  {
+    "job": "20261116-2121-why-do-i-actually-need-a-resistor-for-an",
+    "topic": "Why do I actually need a resistor for an LED?",
+    "title": "Why Does An LED Need A Resistor?",
+    "description": "Connecting an LED directly to a battery causes it to fail. See how a simple resistor controls the current to keep your circuit safe. #shorts #electronics #physics\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nPhoto by PublicDomainPictures on Pixabay\nVideo by motion5 on Pixabay\n\nHow this was made: the script is researched and fact-checked with AI tools against open-access research and textbooks, narrated by an AI voice, and every diagram, number and graph is drawn by code from the real values. Spot a mistake? Tell us in the comments - corrections are checked and credited.",
+    "tags": [
+      "electronics",
+      "physics",
+      "LED",
+      "circuit",
+      "resistors"
+    ],
+    "hook": "Why does your LED need a resistor? Without one, current can quickly spiral out of control.",
+    "status": "banked",
+    "narration": "Why does your LED need a resistor? Without one, current can quickly spiral out of control. Connect a 3-volt coin battery to a red LED. If the battery voltage exceeds the LED's forward voltage, the current can rise significantly. The LED lacks internal current limiting. If too much current flows through it, the heat damages the internal structure of the semiconductor. Adding a resistor is key. It acts like a narrow pipe, limiting how many electrons flow through the circuit at once. A resistor uses resistance to turn excess energy into heat. Safety first. This is a common practice to ensure the LED operates within its safe current limits. If you used a larger resistor, what would happen to the LED's brightness?",
+    "voice_engine": "chatterbox",
+    "voices": "one narrator (af_heart)",
+    "diagrams": 1,
+    "series": "Electronics",
+    "countdown": false,
+    "length_arm": null,
+    "question": "Try this: if you used a larger resistor, what would happen to the LED's brightness?",
+    "answer_comment": "The answer: The LED would get dimmer. A larger resistor increases resistance, which further restricts the flow of electrons through the circuit. Since less current reaches the LED, it emits less light. Do you have a question about how different resistor values affect circuit performance?",
+    "sources": [],
+    "fact_check": [
+      "LEDs are current-controlled devices and lack internal current-limiting mechanisms.",
+      "Resistors in series with LEDs follow Ohm's Law (V=IR) to limit current.",
+      "Excess current causes thermal damage to the semiconductor junction in an LED.",
+      "Increasing resistance in a series circuit decreases the total current."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        4.84
+      ],
+      [
+        4.84,
+        11.46
+      ],
+      [
+        11.46,
+        17.79
+      ],
+      [
+        17.79,
+        23.5
+      ],
+      [
+        23.5,
+        28.38
+      ],
+      [
+        28.38,
+        35.7
+      ]
+    ],
+    "duration": 35.7,
+    "scene_lines": [
+      "Why does your LED need a resistor? Without one, current can quickly spiral out of control.",
+      "Connect a 3-volt coin battery to a red LED. If the battery voltage exceeds the LED's forward voltage, the current can rise significantly.",
+      "The LED lacks internal current limiting. If too much current flows through it, the heat damages the internal structure of the semiconductor.",
+      "Adding a resistor is key. It acts like a narrow pipe, limiting how many electrons flow through the circuit at once.",
+      "A resistor uses resistance to turn excess energy into heat. Safety first.",
+      "This is a common practice to ensure the LED operates within its safe current limits. If you used a larger resistor, what would happen to the LED's brightness?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,000 --> 00:00:01,550\nWhy does your LED need a resistor?\n\n2\n00:00:01,990 --> 00:00:04,460\nWithout one, current can quickly spiral out of control.\n\n3\n00:00:04,840 --> 00:00:07,170\nConnect a 3-volt coin battery to a red LED.\n\n4\n00:00:07,410 --> 00:00:09,820\nIf the battery voltage exceeds the LED's forward voltage,\n\n5\n00:00:09,870 --> 00:00:11,020\nthe current can rise significantly.\n\n6\n00:00:11,460 --> 00:00:13,330\nThe LED lacks internal current limiting.\n\n7\n00:00:13,530 --> 00:00:15,150\nIf too much current flows through it,\n\n8\n00:00:15,150 --> 00:00:17,520\nthe heat damages the internal structure of the semiconductor.\n\n9\n00:00:17,790 --> 00:00:19,280\nAdding a resistor is key.\n\n10\n00:00:19,480 --> 00:00:20,850\nIt acts like a narrow pipe, limiting\n\n11\n00:00:20,850 --> 00:00:23,240\nhow many electrons flow through the circuit at once.\n\n12\n00:00:23,500 --> 00:00:27,170\nA resistor uses resistance to turn excess energy into heat.\n\n13\n00:00:27,330 --> 00:00:28,120\nSafety first.\n\n14\n00:00:28,380 --> 00:00:29,700\nThis is a common practice to ensure\n\n15\n00:00:29,700 --> 00:00:32,170\nthe LED operates within its safe current limits.\n\n16\n00:00:32,340 --> 00:00:33,790\nIf you used a larger resistor,\n\n17\n00:00:33,900 --> 00:00:35,100\nwhat would happen to the LED's brightness?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [],
+      "footage": [],
+      "review": [],
+      "heard": [
+        "\"used\" heard as \"use\""
+      ],
+      "pass": true,
+      "duration": 35.6
+    },
+    "repairs": 0,
     "audited": true
   }
 ]

@@ -73,5 +73,27 @@
   ],
   "not_drawn": {},
   "error": ""
+ },
+ {
+  "when": "2026-11-16 21:03",
+  "topic": "How does GPS actually know where I am?",
+  "drawn": [
+   2,
+   3,
+   4,
+   5
+  ],
+  "not_drawn": {},
+  "error": ""
+ },
+ {
+  "when": "2026-11-16 21:40",
+  "topic": "Why do I actually need a resistor for an LED?",
+  "drawn": [
+   3,
+   5
+  ],
+  "not_drawn": {},
+  "error": ""
  }
 ]

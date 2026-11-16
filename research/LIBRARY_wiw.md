@@ -62,6 +62,14 @@ Sources:
 - Altulea et al. (2025), HLA. doi:10.1111/tan.70393 — supports: Memory cells store information to produce antibodies upon re-exposure.
 - Schreckenberg et al. (2026), Frontiers in Immunology. doi:10.3389/fimmu.2026.1635478 — supports: mRNA vaccines use cellular machinery to produce harmless spike proteins.
 
+## Why Does An LED Need A Resistor?
+*2026-11-16 · Electronics*
+
+- LEDs are current-controlled devices and lack internal current-limiting mechanisms.
+- Resistors in series with LEDs follow Ohm's Law (V=IR) to limit current.
+- Excess current causes thermal damage to the semiconductor junction in an LED.
+- Increasing resistance in a series circuit decreases the total current.
+
 ## Why Does Soap Remove Grease?
 *2026-11-15 · Chemistry*
 

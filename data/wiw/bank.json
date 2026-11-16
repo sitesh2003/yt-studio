@@ -70,5 +70,17 @@
     "locked": true,
     "series": "Biology",
     "stored": "2026-11-16T18:02:43.220161+00:00"
+  },
+  {
+    "job": "20261116-2121-why-do-i-actually-need-a-resistor-for-an",
+    "title": "Why Does An LED Need A Resistor?",
+    "assets": {
+      "mp4": 756571187,
+      "jpg": 756571506,
+      "json": 756571531
+    },
+    "locked": true,
+    "series": "Electronics",
+    "stored": "2026-11-16T21:47:38.199452+00:00"
   }
 ]
