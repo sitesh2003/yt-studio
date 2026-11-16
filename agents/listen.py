@@ -68,6 +68,32 @@ def norm(text):
     return re.findall(r"[a-z']+", t)
 
 
+# Hindi (16 Nov 2026): the scripts mix Hindi with English words in Latin letters ("Evolution", "bitter taste"),
+# and the recogniser writes those in Devanagari ("अवलूशन", "बिट्टर तेश्ट") and spells Hindi loosely (जीभ/जीप,
+# कड़वे/कदवे). Spelling-for-spelling, a clearly spoken first Hindi Short scored 62% and was held. So Hindi is
+# compared by SOUND: each word becomes a consonant skeleton in one alphabet (vowels, aspiration and nukta
+# dropped, sounds that recognisers confuse merged), the same for both scripts.
+_DEV = {}
+for _cls, _chars in (("K", "कखगघङ"), ("C", "चछजझञ"), ("T", "टठडढणतथदध"), ("N", "नण"), ("P", "पफबभ"), ("M", "म"),
+                     ("Y", "य"), ("R", "रऱृ"), ("L", "लळ"), ("V", "व"), ("S", "शषस"), ("N", "ंँ")):
+    for _ch in _chars:
+        _DEV[_ch] = _cls
+_LAT2 = (("ch", "C"), ("sh", "S"), ("th", "T"), ("ph", "P"), ("kh", "K"), ("gh", "K"), ("bh", "P"), ("dh", "T"),
+         ("jh", "C"), ("ck", "K"), ("x", "KS"))
+_LAT1 = {"k": "K", "c": "K", "q": "K", "g": "K", "j": "C", "z": "C", "t": "T", "d": "T", "n": "N", "p": "P",
+         "b": "P", "f": "P", "m": "M", "y": "Y", "r": "R", "l": "L", "v": "V", "w": "V", "s": "S"}
+
+
+def skeleton(word):
+    """A word's consonant sounds in one alphabet, whichever script it is written in."""
+    w = (word or "").lower()
+    if re.search(r"[ऀ-ॿ]", w):
+        return "".join(_DEV.get(ch, "") for ch in w)
+    for a, b in _LAT2:
+        w = w.replace(a, b)
+    return "".join(_LAT1.get(ch, ch if ch.isupper() else "") for ch in w)
+
+
 def transcribe(audio_path):
     global _MODEL
     from faster_whisper import WhisperModel
@@ -81,15 +107,19 @@ def transcribe(audio_path):
 def compare(script_text, heard_text):
     """(issues, notes, ratio) for the script versus what was heard."""
     a, b = norm(script_text), norm(heard_text)
-    sm = difflib.SequenceMatcher(None, a, b, autojunk=False)
+    if _lang() != "en":   # compared by sound, not spelling (see skeleton)
+        sa, sb = [skeleton(w) for w in a], [skeleton(w) for w in b]
+    else:
+        sa, sb = a, b
+    sm = difflib.SequenceMatcher(None, sa, sb, autojunk=False)
     # the overall score is by letters, so spacing ("mouth parts") or one short word barely moves it
-    ratio = difflib.SequenceMatcher(None, "".join(a), "".join(b), autojunk=False).ratio()
+    ratio = difflib.SequenceMatcher(None, "".join(sa), "".join(sb), autojunk=False).ratio()
     issues, notes = [], []
     for op, i1, i2, j1, j2 in sm.get_opcodes():
         if op == "equal":
             continue
         said, heard = " ".join(a[i1:i2]), " ".join(b[j1:j2])
-        if said.replace(" ", "") == heard.replace(" ", ""):
+        if said.replace(" ", "") == heard.replace(" ", "") or "".join(sa[i1:i2]) == "".join(sb[j1:j2]):
             continue                         # "mouthparts" heard as "mouth parts": the same words
         # "one" is also a pronoun ("no one", "this one"), so on its own it is not treated as a number
         if _lang() != "en":   # the number and negation checks are English; elsewhere: missing phrases only

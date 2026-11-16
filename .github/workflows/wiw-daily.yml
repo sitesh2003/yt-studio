@@ -24,7 +24,7 @@ concurrency:
 jobs:
   make:
     runs-on: ubuntu-latest
-    timeout-minutes: 125
+    timeout-minutes: 180   # 125 cut off the third video of a bank fill (16 Nov 2026)
     env:
       STUDIO_CHANNEL: wiw
     steps:

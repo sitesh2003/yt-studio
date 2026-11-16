@@ -191,7 +191,7 @@ Return JSON: {{"groups": [{{"emoji": ["..."], "count": 1, "gone": false, "label"
     return None
 
 
-_NOTES = {}   # scene index -> why it was not drawn (saved to data/board_log.json; the CI log needs a sign-in)
+_NOTES = {}   # scene index -> why it was not drawn (saved to board_log.json in the channel's data; the CI log needs a sign-in)
 _COUNT = re.compile(r"pause and guess|three[,.…]*\s*two[,.…]*\s*one", re.I)
 
 
@@ -203,7 +203,8 @@ def _drawable(sc):
 
 def _record(script, drawn, error=""):
     try:
-        path = Path(__file__).resolve().parent.parent / "data" / "board_log.json"
+        from .core import DATA
+        path = DATA / "board_log.json"   # data/<channel>/ on a channel run, so its workflow saves it
         rows = json.loads(path.read_text(encoding="utf-8")) if path.exists() else []
         from datetime import datetime, timezone
         rows.append({"when": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M"), "topic": script.get("topic", "")[:90],
