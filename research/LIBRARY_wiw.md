@@ -39,6 +39,29 @@ Sources:
 Sources:
 - Tsang (2025), Zenodo (CERN European Organization for Nuclear Research). doi:10.5281/zenodo.20150543 — supports: Orbits are effectively a continuous state of falling while moving fast enough to miss the central body.
 
+## Why Does Baking Soda Fizz In Vinegar?
+*2026-11-16 · Chemistry*
+
+- Baking soda (sodium bicarbonate) is a base.
+- Vinegar (dilute acetic acid) is an acid.
+- The reaction produces water, sodium acetate, and carbon dioxide gas.
+- Gas production creates the physical foaming effect.
+
+Sources:
+- Petracci et al. (2012), Poultry Science. doi:10.3382/ps.2011-01753 — supports: Baking soda (sodium bicarbonate) is a base.
+
+## How Do Vaccines Train Your Immune System?
+*2026-11-16 · Biology*
+
+- Vaccines teach the immune system to recognize specific antigens.
+- Memory cells store information to produce antibodies upon re-exposure.
+- Antibodies are specific to the antigen shape they were developed for.
+- mRNA vaccines use cellular machinery to produce harmless spike proteins.
+
+Sources:
+- Altulea et al. (2025), HLA. doi:10.1111/tan.70393 — supports: Memory cells store information to produce antibodies upon re-exposure.
+- Schreckenberg et al. (2026), Frontiers in Immunology. doi:10.3389/fimmu.2026.1635478 — supports: mRNA vaccines use cellular machinery to produce harmless spike proteins.
+
 ## Why Does Soap Remove Grease?
 *2026-11-15 · Chemistry*
 

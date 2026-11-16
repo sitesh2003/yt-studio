@@ -160,5 +160,52 @@
         "claim": "Orbits are effectively a continuous state of falling while moving fast enough to miss the central body."
       }
     ]
+  },
+  {
+    "job": "20261116-1645-why-does-baking-soda-fizz-when-mixed-wit",
+    "date": "2026-11-16",
+    "title": "Why Does Baking Soda Fizz In Vinegar?",
+    "topic": "Why does baking soda fizz when mixed with vinegar?",
+    "series": "Chemistry",
+    "weekly": false,
+    "claims": [
+      "Baking soda (sodium bicarbonate) is a base.",
+      "Vinegar (dilute acetic acid) is an acid.",
+      "The reaction produces water, sodium acetate, and carbon dioxide gas.",
+      "Gas production creates the physical foaming effect."
+    ],
+    "sources": [
+      {
+        "cite": "Petracci et al. (2012), Poultry Science. doi:10.3382/ps.2011-01753",
+        "doi": "10.3382/ps.2011-01753",
+        "claim": "Baking soda (sodium bicarbonate) is a base."
+      }
+    ]
+  },
+  {
+    "job": "20261116-1731-how-do-vaccines-actually-train-your-immu",
+    "date": "2026-11-16",
+    "title": "How Do Vaccines Train Your Immune System?",
+    "topic": "How do vaccines actually train your immune system to fight real viruses?",
+    "series": "Biology",
+    "weekly": false,
+    "claims": [
+      "Vaccines teach the immune system to recognize specific antigens.",
+      "Memory cells store information to produce antibodies upon re-exposure.",
+      "Antibodies are specific to the antigen shape they were developed for.",
+      "mRNA vaccines use cellular machinery to produce harmless spike proteins."
+    ],
+    "sources": [
+      {
+        "cite": "Altulea et al. (2025), HLA. doi:10.1111/tan.70393",
+        "doi": "10.1111/tan.70393",
+        "claim": "Memory cells store information to produce antibodies upon re-exposure."
+      },
+      {
+        "cite": "Schreckenberg et al. (2026), Frontiers in Immunology. doi:10.3389/fimmu.2026.1635478",
+        "doi": "10.3389/fimmu.2026.1635478",
+        "claim": "mRNA vaccines use cellular machinery to produce harmless spike proteins."
+      }
+    ]
   }
 ]

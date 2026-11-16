@@ -988,7 +988,7 @@
       "melting ice"
     ],
     "hook": "You've seen trucks dump salt on frozen roads, but how does it actually melt the ice?",
-    "status": "banked",
+    "status": "scheduled",
     "narration": "You've seen trucks dump salt on frozen roads, but how does it actually melt the ice? First, water molecules on the ice surface are constantly shifting back and forth between solid and liquid. Step two: when you add salt, the sodium and chloride ions dissolve into that thin liquid layer. Step three: these dissolved ions get in the way, blocking water molecules from rejoining the solid ice crystal. That's because the salt lowers the freezing point below the actual temperature, forcing the ice to melt. You see this on icy winter highways worldwide every time cold weather hits. Try this: why does adding salt stop working if the road gets way below freezing?",
     "voice_engine": "kokoro",
     "voices": "female host, male explainer",
@@ -1061,7 +1061,10 @@
       "duration": 38.9
     },
     "repairs": 1,
-    "audited": true
+    "audited": true,
+    "video_id": "uh9aaSIkMiI",
+    "publish_at": "2026-11-17T16:30:00-05:00",
+    "thumbnail_set": true
   },
   {
     "job": "20261116-0329-how-colour-vision-works-the-biology-of-c",
@@ -1655,6 +1658,205 @@
       ],
       "pass": true,
       "duration": 30.7
+    },
+    "repairs": 1,
+    "audited": true
+  },
+  {
+    "job": "20261116-1645-why-does-baking-soda-fizz-when-mixed-wit",
+    "topic": "Why does baking soda fizz when mixed with vinegar?",
+    "title": "Why Does Baking Soda Fizz In Vinegar?",
+    "description": "Ever wondered why your kitchen volcano erupts? We break down the acid-base chemistry behind the bubbles. #shorts #chemistry #science\n\nSources (open-access research):\n- Petracci et al. (2012), Poultry Science. doi:10.3382/ps.2011-01753\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nVideo by xat-ch on Pixabay",
+    "tags": [
+      "chemistry",
+      "baking soda",
+      "vinegar",
+      "science",
+      "education"
+    ],
+    "hook": "Why does a pinch of baking soda erupt when it hits vinegar?",
+    "status": "banked",
+    "narration": "Why does a pinch of baking soda erupt when it hits vinegar? Drop a small 2-gram spoonful into 50 milliliters of vinegar. Watch closely now. The vinegar, an acid, immediately attacks the baking soda, a base. They react to quickly form carbon dioxide gas and water. They react to quickly form carbon dioxide gas and water. That gas is what pushes the liquid into a massive, frothy foam. Try this! If you used double the vinegar, would you get double the fizz, or just more leftover liquid?",
+    "voice_engine": "chatterbox",
+    "voices": "one narrator (af_heart)",
+    "diagrams": 2,
+    "series": "Chemistry",
+    "countdown": false,
+    "length_arm": null,
+    "question": "Try this: if you used double the vinegar, would you get double the fizz or just more leftover liquid?",
+    "answer_comment": "The answer: You would get the same amount of fizz until the baking soda is completely used up. The fizzing stops when one of the ingredients—the 'limiting reactant'—runs out. Adding extra vinegar just leaves you with unreacted acid in the beaker. Does that help explain why amounts matter in chemistry?\n\nSources (open-access research):\n- Petracci et al. (2012), Poultry Science. doi:10.3382/ps.2011-01753",
+    "sources": [
+      {
+        "claim": "Baking soda (sodium bicarbonate) is a base.",
+        "cite": "Petracci et al. (2012), Poultry Science. doi:10.3382/ps.2011-01753",
+        "doi": "10.3382/ps.2011-01753",
+        "title": "The use of sodium bicarbonate for marination of broiler breast meat",
+        "why": "Samples marinated with bicarbonate alone or in combination (B, SB, and SPB) significantly increased (P < 0.05) the meat pH by approximately 0.7 units compared with that of the control"
+      }
+    ],
+    "fact_check": [
+      "Baking soda (sodium bicarbonate) is a base.",
+      "Vinegar (dilute acetic acid) is an acid.",
+      "The reaction produces water, sodium acetate, and carbon dioxide gas.",
+      "Gas production creates the physical foaming effect."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        3.05
+      ],
+      [
+        3.05,
+        6.05
+      ],
+      [
+        6.05,
+        10.95
+      ],
+      [
+        10.95,
+        13.86
+      ],
+      [
+        13.86,
+        16.77
+      ],
+      [
+        16.77,
+        20.56
+      ],
+      [
+        20.56,
+        25.72
+      ]
+    ],
+    "duration": 25.72,
+    "scene_lines": [
+      "Why does a pinch of baking soda erupt when it hits vinegar?",
+      "Drop a small 2-gram spoonful into 50 milliliters of vinegar.",
+      "Watch closely now. The vinegar, an acid, immediately attacks the baking soda, a base.",
+      "They react to quickly form carbon dioxide gas and water.",
+      "They react to quickly form carbon dioxide gas and water.",
+      "That gas is what pushes the liquid into a massive, frothy foam.",
+      "Try this! If you used double the vinegar, would you get double the fizz, or just more leftover liquid?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,000 --> 00:00:01,220\nWhy does a pinch of baking soda\n\n2\n00:00:01,220 --> 00:00:02,470\nerupt when it hits vinegar?\n\n3\n00:00:03,050 --> 00:00:05,800\nDrop a small 2-gram spoonful into 50 milliliters of vinegar.\n\n4\n00:00:06,050 --> 00:00:07,300\nWatch closely now.\n\n5\n00:00:07,400 --> 00:00:08,050\nThe vinegar,\n\n6\n00:00:08,140 --> 00:00:10,150\nan acid, immediately attacks the baking soda,\n\n7\n00:00:10,260 --> 00:00:10,690\na base.\n\n8\n00:00:10,950 --> 00:00:13,720\nThey react to quickly form carbon dioxide gas and water.\n\n9\n00:00:13,860 --> 00:00:16,630\nThey react to quickly form carbon dioxide gas and water.\n\n10\n00:00:16,770 --> 00:00:19,320\nThat gas is what pushes the liquid into a massive,\n\n11\n00:00:19,370 --> 00:00:20,180\nfrothy foam.\n\n12\n00:00:20,560 --> 00:00:21,210\nTry this!\n\n13\n00:00:21,360 --> 00:00:22,890\nIf you used double the vinegar,\n\n14\n00:00:22,980 --> 00:00:24,100\nwould you get double the fizz, or\n\n15\n00:00:24,100 --> 00:00:25,120\njust more leftover liquid?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [],
+      "footage": [],
+      "review": [],
+      "heard": [
+        "\"gram\" heard as \"grams\""
+      ],
+      "pass": true,
+      "duration": 25.4
+    },
+    "repairs": 1,
+    "audited": true
+  },
+  {
+    "job": "20261116-1731-how-do-vaccines-actually-train-your-immu",
+    "topic": "How do vaccines actually train your immune system to fight real viruses?",
+    "title": "How Do Vaccines Train Your Immune System?",
+    "description": "Ever wonder how a vaccine gives your body a head start against infections? We break down the mechanism of immune training. #shorts #biology #vaccines\n\nSources (open-access research):\n- Altulea et al. (2025), HLA. doi:10.1111/tan.70393\n- Schreckenberg et al. (2026), Frontiers in Immunology. doi:10.3389/fimmu.2026.1635478\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nVideo by 4Shaida on Pixabay\nVideo by fotoblend on Pixabay\nVideo by jorono on Pixabay",
+    "tags": [
+      "biology",
+      "vaccines",
+      "immune system",
+      "science education"
+    ],
+    "hook": "A virus attacks your body. How does a vaccine prepare your defenses before the fight starts?",
+    "status": "banked",
+    "narration": "A virus attacks your body. How does a vaccine prepare your defenses before the fight starts? A single piece of viral protein blueprint (mRNA) is injected into a muscle cell. Your cells read that mRNA blueprint. They build only the harmless surface spikes of the virus. Immune cells detect those spikes. They begin a multi-day process to craft specific weapons called antibodies. What happens if the real virus shows up weeks later? Memory cells recognize the protein and signal your body to rapidly produce those exact antibodies to stop the virus. Think about this. Why wouldn't your memory cells recognize a totally different cold virus?",
+    "voice_engine": "chatterbox",
+    "voices": "one narrator (af_heart)",
+    "diagrams": 1,
+    "series": "Biology",
+    "countdown": false,
+    "length_arm": null,
+    "question": "Try this: If you took a vaccine, why wouldn't your memory cells recognize a totally different cold virus?",
+    "answer_comment": "The answer: Your memory cells are highly specific to the shape of the antigen they were trained on. Because each virus has a unique shape, the antibodies created for one virus won't fit or neutralize the spikes of a different one. It is like a key that only fits one specific lock.\n\nSources (open-access research):\n- Altulea et al. (2025), HLA. doi:10.1111/tan.70393\n- Schreckenberg et al. (2026), Frontiers in Immunology. doi:10.3389/fimmu.2026.1635478",
+    "sources": [
+      {
+        "claim": "Memory cells store information to produce antibodies upon re-exposure.",
+        "cite": "Altulea et al. (2025), HLA. doi:10.1111/tan.70393",
+        "doi": "10.1111/tan.70393",
+        "title": "Memory B‐Cell Assay Uncovers Prior HLA Sensitisation in Transplant Candidates With Prior Exposure to Non‐Self HLA",
+        "why": "Memory B cells are critical in kidney transplantation for rapid anti-HLA antibody production upon re-exposure"
+      },
+      {
+        "claim": "mRNA vaccines use cellular machinery to produce harmless spike proteins.",
+        "cite": "Schreckenberg et al. (2026), Frontiers in Immunology. doi:10.3389/fimmu.2026.1635478",
+        "doi": "10.3389/fimmu.2026.1635478",
+        "title": "mRNA-based SARS-CoV-2 vaccines: intracellular processing and aggregation of the encoded spike protein as a mechanistic contributor to cardiac cellular stress",
+        "why": "For this reason, the two mRNA-based corona vaccines Comirnaty (BNT162b2, Pfizer/BioNTech) and Spikevax (mRNA-1273, Moderna) first induce the production of a spike monomer in body cells."
+      }
+    ],
+    "fact_check": [
+      "Vaccines teach the immune system to recognize specific antigens.",
+      "Memory cells store information to produce antibodies upon re-exposure.",
+      "Antibodies are specific to the antigen shape they were developed for.",
+      "mRNA vaccines use cellular machinery to produce harmless spike proteins."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        4.74
+      ],
+      [
+        4.74,
+        8.58
+      ],
+      [
+        8.58,
+        13.16
+      ],
+      [
+        13.16,
+        18.7
+      ],
+      [
+        18.7,
+        21.39
+      ],
+      [
+        21.39,
+        26.84
+      ],
+      [
+        26.84,
+        31.44
+      ]
+    ],
+    "duration": 31.44,
+    "scene_lines": [
+      "A virus attacks your body. How does a vaccine prepare your defenses before the fight starts?",
+      "A single piece of viral protein blueprint (mRNA) is injected into a muscle cell.",
+      "Your cells read that mRNA blueprint. They build only the harmless surface spikes of the virus.",
+      "Immune cells detect those spikes. They begin a multi-day process to craft specific weapons called antibodies.",
+      "What happens if the real virus shows up weeks later?",
+      "Memory cells recognize the protein and signal your body to rapidly produce those exact antibodies to stop the virus.",
+      "Think about this. Why wouldn't your memory cells recognize a totally different cold virus?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,000 --> 00:00:01,390\nA virus attacks your body.\n\n2\n00:00:01,530 --> 00:00:02,970\nHow does a vaccine prepare your defenses\n\n3\n00:00:02,970 --> 00:00:04,300\nbefore the fight starts?\n\n4\n00:00:04,740 --> 00:00:06,200\nA single piece of viral protein blueprint\n\n5\n00:00:06,200 --> 00:00:08,470\n(mRNA) is injected into a muscle cell.\n\n6\n00:00:08,580 --> 00:00:10,270\nYour cells read that mRNA blueprint.\n\n7\n00:00:10,460 --> 00:00:12,930\nThey build only the harmless surface spikes of the virus.\n\n8\n00:00:13,160 --> 00:00:14,810\nImmune cells detect those spikes.\n\n9\n00:00:15,080 --> 00:00:16,640\nThey begin a multi-day process to craft\n\n10\n00:00:16,640 --> 00:00:18,150\nspecific weapons called antibodies.\n\n11\n00:00:18,700 --> 00:00:21,030\nWhat happens if the real virus shows up weeks later?\n\n12\n00:00:21,390 --> 00:00:23,210\nMemory cells recognize the protein and signal\n\n13\n00:00:23,210 --> 00:00:24,930\nyour body to rapidly produce those exact\n\n14\n00:00:24,930 --> 00:00:26,500\nantibodies to stop the virus.\n\n15\n00:00:26,840 --> 00:00:27,830\nThink about this.\n\n16\n00:00:27,980 --> 00:00:29,620\nWhy wouldn't your memory cells recognize a\n\n17\n00:00:29,620 --> 00:00:30,840\ntotally different cold virus?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [],
+      "footage": [],
+      "review": [],
+      "pass": true,
+      "duration": 31.3
     },
     "repairs": 1,
     "audited": true

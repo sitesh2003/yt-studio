@@ -49,5 +49,29 @@
    "4": "The image shows vertical downward falling paths ('FAST THROW', 'CURVED FALL', 'ORBIT') instead of horizontal orbital motion, which fails to illustrate how throw"
   },
   "error": ""
+ },
+ {
+  "when": "2026-11-16 17:03",
+  "topic": "Why does baking soda fizz when mixed with vinegar?",
+  "drawn": [
+   2,
+   3,
+   4,
+   5
+  ],
+  "not_drawn": {},
+  "error": ""
+ },
+ {
+  "when": "2026-11-16 17:47",
+  "topic": "How do vaccines actually train your immune system to fight real viruses?",
+  "drawn": [
+   2,
+   3,
+   4,
+   5
+  ],
+  "not_drawn": {},
+  "error": ""
  }
 ]

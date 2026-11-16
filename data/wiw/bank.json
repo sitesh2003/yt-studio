@@ -1,17 +1,5 @@
 [
   {
-    "job": "20261115-1838-why-does-salt-melt-ice-on-frozen-roads-t",
-    "title": "How Salt Melts Ice: Chemistry Explained",
-    "assets": {
-      "mp4": 752016996,
-      "jpg": 752017195,
-      "json": 752017219
-    },
-    "locked": true,
-    "series": "Chemistry",
-    "stored": "2026-11-15T18:59:50.146287+00:00"
-  },
-  {
     "job": "20261116-0329-how-colour-vision-works-the-biology-of-c",
     "title": "How Colour Vision Works: The Biology of Cone Cells Explained",
     "assets": {
@@ -58,5 +46,29 @@
     "locked": true,
     "series": "Physics",
     "stored": "2026-11-16T14:53:49.466397+00:00"
+  },
+  {
+    "job": "20261116-1645-why-does-baking-soda-fizz-when-mixed-wit",
+    "title": "Why Does Baking Soda Fizz In Vinegar?",
+    "assets": {
+      "mp4": 755733135,
+      "jpg": 755733408,
+      "json": 755733460
+    },
+    "locked": true,
+    "series": "Chemistry",
+    "stored": "2026-11-16T17:21:03.016476+00:00"
+  },
+  {
+    "job": "20261116-1731-how-do-vaccines-actually-train-your-immu",
+    "title": "How Do Vaccines Train Your Immune System?",
+    "assets": {
+      "mp4": 755874054,
+      "jpg": 755874305,
+      "json": 755874358
+    },
+    "locked": true,
+    "series": "Biology",
+    "stored": "2026-11-16T18:02:43.220161+00:00"
   }
 ]
