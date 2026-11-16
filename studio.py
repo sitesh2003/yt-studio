@@ -275,7 +275,7 @@ def publish(job):
     hist = read_json(DATA / "history.json", []) or []
     for h in hist:
         if h.get("job") == job.name:
-            h.update(video_id=vid, status="scheduled", publish_at=when)
+            h.update(video_id=vid, status="scheduled", publish_at=when, thumbnail_set=meta.get("thumbnail_set"))
     write_json(DATA / "history.json", hist)
 
 
@@ -368,7 +368,7 @@ def publish_due(hours=30):
             hist = read_json(DATA / "history.json", []) or []
             for h in hist:
                 if h.get("job") == item["job"]:
-                    h.update(video_id=vid, status="scheduled", publish_at=when)
+                    h.update(video_id=vid, status="scheduled", publish_at=when, thumbnail_set=meta.get("thumbnail_set"))
             write_json(DATA / "history.json", hist)
             bank.remove(item)
             done += 1
@@ -619,7 +619,7 @@ def weekly():
         hist = read_json(DATA / "history.json", []) or []
         for h in hist:
             if h.get("job") == job.name:
-                h.update(video_id=vid, status="scheduled", publish_at=at)
+                h.update(video_id=vid, status="scheduled", publish_at=at, thumbnail_set=meta.get("thumbnail_set"))
         write_json(DATA / "history.json", hist)
         # hand-off for the save step: the weekly runs in its own lane (hours long), so it adds its
         # episode on top of the LATEST saved state instead of overwriting what the daily runs saved

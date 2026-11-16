@@ -119,10 +119,15 @@ def upload(job_dir, meta, when=None):
         _, resp = req.next_chunk()
     vid = resp["id"]
     thumb = job_dir / meta.get("thumbnail", "thumbnail.jpg")
+    # 16 Nov 2026: whether the thumbnail went on was only in the run log (sign-in needed); it is now kept
+    # in meta["thumbnail_set"] (True, or the reason) so the history and a check can see it
+    meta["thumbnail_set"] = "no thumbnail file"
     if thumb.exists():
         try:  # needs a verified channel (youtube.com/verify); skipped quietly otherwise
             yt().thumbnails().set(videoId=vid, media_body=MediaFileUpload(str(thumb))).execute()
+            meta["thumbnail_set"] = True
         except Exception as e:
+            meta["thumbnail_set"] = str(e)[:120]
             log(f"youtube: thumbnail not set ({str(e)[:80]})")
     if meta.get("captions_srt") and p.get("upload_captions", True):
         from . import subtitles
