@@ -556,5 +556,323 @@
     "audited": true,
     "video_id": "WXx_iDFI9BA",
     "publish_at": "2026-11-17T09:30:00-05:00"
+  },
+  {
+    "job": "20261116-0854-how-physicists-use-laser-light-to-unlock",
+    "topic": "How physicists use laser light to unlock a crystal's hidden electrical powers",
+    "title": "कैसे एक Laser क्रिस्टल में बिजली जगाती है 🤯",
+    "description": "एक साधारण लेज़र लाइट कैसे एक ठोस क्रिस्टल के अंदर बिजली पैदा कर सकती है? आइए देखते हैं इसके पीछे की कमाल की physics। \n\n#shorts #hindi #science\n\nSources (open-access research):\n- Zhang et al. (2018), Journal of the Korean Ceramic Society. doi:10.4191/kcers.2018.55.5.12\n- Su et al. (2026), Nature Communications. doi:10.1038/s41467-026-71287-1\n- Dong et al. (2024), Energy & environment materials. doi:10.1002/eem2.12705\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nVideo by fotoblend on Pixabay\nVideo by crows on Pixabay\nVideo by tmeier1964 on Pixabay\nVideo by Protocultura on Pixabay",
+    "tags": [
+      "science",
+      "physics"
+    ],
+    "hook": "क्या आप जानते हैं कि light की एक तेज़ किरण एक solid क्रिस्टल के अंदर बिजली पैदा कर सकती है?",
+    "status": "review",
+    "narration": "क्या आप जानते हैं कि light की एक तेज़ किरण एक solid क्रिस्टल के अंदर बिजली पैदा कर सकती है? क्या आपने कभी सोचा है कि यह सब कैसे मुमकिन है? क्या यह कोई जादू है या इसके पीछे कोई गहरी Physics छिपी है? जब हम एक laser की energy को क्रिस्टल पर फोकस करते हैं, तो उससे पैदा होने वाला दबाव क्रिस्टल के अंदर बिजली बना सकता है। तो सवाल ये है कि आखिर light क्रिस्टल को चार्ज कैसे कर देती है? असल में, laser से क्रिस्टल में एक stress पैदा होता है, और 'piezoelectric' प्रभाव के कारण यह तनाव बिजली में बदल जाता है, जिससे उसके charges अलग-अलग हो जाते हैं। इसी असंतुलन की वजह से क्रिस्टल के अंदर एक voltage बनता है, जो बिजली की तरह बहने लगता है। कभी सोचा है कि क्या इस तरह की तकनीक से भविष्य में बिना बैटरी के चलने वाले उपकरण बनाए जा सकते हैं? अपनी राय कमेंट्स में बताएं!",
+    "voice_engine": "edge-tts",
+    "voices": "one narrator (hi-IN-SwaraNeural)",
+    "diagrams": 1,
+    "series": "How Things Work",
+    "countdown": false,
+    "length_arm": "long",
+    "question": "कभी सोचा है कि क्या इस तरह की तकनीक से भविष्य में बिना बैटरी के चलने वाले उपकरण बनाए जा सकते हैं?",
+    "answer_comment": "The answer: जब लेज़र लाइट क्रिस्टल पर पड़ती है, तो वह क्रिस्टल की संरचना में एक सूक्ष्म तनाव (stress) पैदा करती है। यह तनाव 'piezoelectric' पदार्थ में आवेशों (charges) को अलग कर देता है, जिससे एक वोल्टेज उत्पन्न होता है। यह ठीक वैसा ही है जैसे दबाव डालने पर कुछ क्रिस्टल बिजली पैदा करते हैं, बस यहाँ लेज़र का काम यांत्रिक दबाव देना है।\n\nSources (open-access research):\n- Zhang et al. (2018), Journal of the Korean Ceramic Society. doi:10.4191/kcers.2018.55.5.12\n- Su et al. (2026), Nature Communications. doi:10.1038/s41467-026-71287-1\n- Dong et al. (2024), Energy & environment materials. doi:10.1002/eem2.12705",
+    "sources": [
+      {
+        "claim": "Piezoelectric effect is a well-documented physical property of certain materials.",
+        "cite": "Zhang et al. (2018), Journal of the Korean Ceramic Society. doi:10.4191/kcers.2018.55.5.12",
+        "doi": "10.4191/kcers.2018.55.5.12",
+        "title": "Recent Developments in Piezoelectric Crystals",
+        "why": "Piezoelectric materials are essential parts of the electronics and electrical equipment used for consumer and industrial applications"
+      },
+      {
+        "claim": "Laser light can induce thermal stress in materials, which can be linked to electrical outputs in piezoelectric systems.",
+        "cite": "Su et al. (2026), Nature Communications. doi:10.1038/s41467-026-71287-1",
+        "doi": "10.1038/s41467-026-71287-1",
+        "title": "Thermal-stress enhanced pyroelectricity in piezoelectric bimorphs",
+        "why": "interfacial thermal stresses to efficiently generate piezoelectricity"
+      },
+      {
+        "claim": "The explanation avoids magic and sticks to physical stress and charge separation.",
+        "cite": "Dong et al. (2024), Energy & environment materials. doi:10.1002/eem2.12705",
+        "doi": "10.1002/eem2.12705",
+        "title": "Harvesting the Vibration Energy of CdS for High‐Efficient Piezo‐Photocatalysis Removal of U( VI ): Roles of Shape Dependent and Piezoelectric Polarization",
+        "why": "The ultrasonic induces piezoelectric potential to generate a 0.57 eV A −1 electric field, which is added to the direction of CdS (010) as a driving force to efficiently separate photogenerated charges."
+      }
+    ],
+    "fact_check": [
+      "Piezoelectric effect is a well-documented physical property of certain materials.",
+      "Laser light can induce thermal stress in materials, which can be linked to electrical outputs in piezoelectric systems.",
+      "The explanation avoids magic and sticks to physical stress and charge separation."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        6.92
+      ],
+      [
+        6.92,
+        15.67
+      ],
+      [
+        15.67,
+        24.09
+      ],
+      [
+        24.09,
+        29.08
+      ],
+      [
+        29.08,
+        39.8
+      ],
+      [
+        39.8,
+        46.42
+      ],
+      [
+        46.42,
+        56.17
+      ]
+    ],
+    "duration": 56.17,
+    "scene_lines": [
+      "क्या आप जानते हैं कि light की एक तेज़ किरण एक solid क्रिस्टल के अंदर बिजली पैदा कर सकती है?",
+      "क्या आपने कभी सोचा है कि यह सब कैसे मुमकिन है? क्या यह कोई जादू है या इसके पीछे कोई गहरी Physics छिपी है?",
+      "जब हम एक laser की energy को क्रिस्टल पर फोकस करते हैं, तो उससे पैदा होने वाला दबाव क्रिस्टल के अंदर बिजली बना सकता है।",
+      "तो सवाल ये है कि आखिर light क्रिस्टल को चार्ज कैसे कर देती है?",
+      "असल में, laser से क्रिस्टल में एक stress पैदा होता है, और 'piezoelectric' प्रभाव के कारण यह तनाव बिजली में बदल जाता है, जिससे उसके charges अलग-अलग हो जाते हैं।",
+      "इसी असंतुलन की वजह से क्रिस्टल के अंदर एक voltage बनता है, जो बिजली की तरह बहने लगता है।",
+      "कभी सोचा है कि क्या इस तरह की तकनीक से भविष्य में बिना बैटरी के चलने वाले उपकरण बनाए जा सकते हैं? अपनी राय कमेंट्स में बताएं!"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,050 --> 00:00:02,216\nक्या आप जानते हैं कि light की\n\n2\n00:00:02,216 --> 00:00:04,555\nएक तेज़ किरण एक solid क्रिस्टल के\n\n3\n00:00:04,555 --> 00:00:06,723\nअंदर बिजली पैदा कर सकती है?\n\n4\n00:00:06,920 --> 00:00:09,222\nक्या आपने कभी सोचा है कि यह\n\n5\n00:00:09,222 --> 00:00:10,821\nसब कैसे मुमकिन है?\n\n6\n00:00:10,910 --> 00:00:13,138\nक्या यह कोई जादू है या इसके\n\n7\n00:00:13,138 --> 00:00:15,541\nपीछे कोई गहरी Physics छिपी है?\n\n8\n00:00:15,670 --> 00:00:17,804\nजब हम एक laser की energy को\n\n9\n00:00:17,804 --> 00:00:20,020\nक्रिस्टल पर फोकस करते हैं, तो उससे\n\n10\n00:00:20,020 --> 00:00:22,437\nपैदा होने वाला दबाव क्रिस्टल के अंदर\n\n11\n00:00:22,437 --> 00:00:23,973\nबिजली बना सकता है।\n\n12\n00:00:24,090 --> 00:00:26,330\nतो सवाल ये है कि आखिर light\n\n13\n00:00:26,330 --> 00:00:28,870\nक्रिस्टल को चार्ज कैसे कर देती है?\n\n14\n00:00:29,080 --> 00:00:31,360\nअसल में, laser से क्रिस्टल में एक\n\n15\n00:00:31,360 --> 00:00:34,344\nstress पैदा होता है, और piezoelectric प्रभाव\n\n16\n00:00:34,344 --> 00:00:36,337\nके कारण यह तनाव बिजली में बदल\n\n17\n00:00:36,337 --> 00:00:38,922\nजाता है, जिससे उसके charges अलग-अलग हो\n\n18\n00:00:38,922 --> 00:00:41,545\nजाते हैं। इसी असंतुलन की वजह से\n\n19\n00:00:41,545 --> 00:00:44,154\nक्रिस्टल के अंदर एक voltage बनता है,\n\n20\n00:00:44,246 --> 00:00:46,278\nजो बिजली की तरह बहने लगता है।\n\n21\n00:00:46,420 --> 00:00:48,573\nकभी सोचा है कि क्या इस तरह\n\n22\n00:00:48,573 --> 00:00:50,851\nकी तकनीक से भविष्य में बिना बैटरी\n\n23\n00:00:50,851 --> 00:00:53,710\nके चलने वाले उपकरण बनाए जा सकते हैं?\n\n24\n00:00:53,710 --> 00:00:55,574\nअपनी राय कमेंट्स में बताएं!\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [
+        "phrase missing from the audio: \"जो बिजली की तरह बहने लगता है। कभी सोचा है कि क्या इस तरह की तकनीक से भविष्य में बिना बैटरी के चलने वाले उपकरण बनाए जा सकते हैं अपनी राय कमेंट्स में बताएं\""
+      ],
+      "footage": [
+        "scene(s) [6] have weak or placeholder footage"
+      ],
+      "review": [],
+      "heard": [
+        "\"light\" heard as \"लाइत\"",
+        "\"तेज़\" heard as \"तेस\"",
+        "\"है\" heard as \"हैं\"",
+        "\"है\" heard as \"हैं\"",
+        "\"है\" heard as \"हैं\"",
+        "\"physics\" heard as \"फिजिक्स\"",
+        "\"है\" heard as \"हैं\"",
+        "\"laser\" heard as \"लेज़र\""
+      ],
+      "pass": false,
+      "duration": 55.5
+    },
+    "repairs": 1
+  },
+  {
+    "job": "20261116-0926-3-strange-everyday-objects-that-secretly",
+    "topic": "3 strange everyday objects that secretly contain radioactive materials",
+    "title": "क्या आपके घर की इन आम चीजों में रेडिएशन होता है?",
+    "description": "घर में रखी इन 3 सामान्य चीजों में रेडियोधर्मी तत्व हो सकते हैं। जानिए इनके बारे में और इनके सही रख-रखाव का तरीका। #shorts #hindi #science\n\nSources (open-access research):\n- Kostecka (2008), Bulletin for the history of chemistry. doi:10.70359/bhc2008v033p089\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nVideo by SoyKhaler on Pixabay",
+    "tags": [
+      "science",
+      "hindi"
+    ],
+    "hook": "क्या आप जानते हैं कि हमारे आसपास मौजूद कुछ आम चीजों में रेडियोधर्मी पदार्थ हो सकते हैं?",
+    "status": "review",
+    "narration": "क्या आप जानते हैं कि हमारे आसपास मौजूद कुछ आम चीजों में रेडियोधर्मी पदार्थ हो सकते हैं? पहली है घर की पुरानी घड़ी, जिसकी सुइयां अंधेरे में चमकती हैं। इनमें अक्सर रेडियम पेंट का उपयोग किया गया होता है, जिसे आज के दौर में सुरक्षा कारणों से इस्तेमाल नहीं किया जाता। दूसरा है स्मोक डिटेक्टर, जिसमें Americium-241 आइसोटोप होता है। ये उपयोग के दौरान तो सीलबंद होते हैं, लेकिन इनके निस्तारण (disposal) के लिए विशेष नियमों का पालन करना जरूरी होता है। तीसरी है घर में रखे पुराने नारंगी मिट्टी के बर्तन, जिनमें ग्लेजिंग के लिए कभी यूरेनियम ऑक्साइड का इस्तेमाल किया जाता था। तो क्या घर में मौजूद ये चीजें हमें नुकसान पहुंचाती हैं? सामान्य स्थिति में ये वस्तुएं कम रेडिएशन उत्सर्जित करती हैं। मुख्य खतरा तब होता है जब ये टूटें या घिसें, जिससे इनका पाउडर सांस के जरिए शरीर के अंदर जा सकता है। क्या आपने कभी सोचा है कि पुरानी और नई चीजों के बीच रेडिएशन के मामले में क्या अंतर होता है?",
+    "voice_engine": "edge-tts",
+    "voices": "one narrator (hi-IN-SwaraNeural)",
+    "diagrams": 1,
+    "series": "Everyday Whys",
+    "countdown": false,
+    "length_arm": "long",
+    "question": "क्या आपने कभी सोचा है कि पुरानी और नई चीजों के बीच रेडिएशन के मामले में क्या अंतर होता है?",
+    "answer_comment": "आधुनिक तकनीक हमेशा पुरानी से सुरक्षित नहीं होती। उदाहरण के लिए, परमाणु परीक्षणों के कारण आज के स्टील में बैकग्राउंड रेडिएशन के अंश पाए जाते हैं, जो द्वितीय विश्व युद्ध से पहले बने 'लो-बैकग्राउंड' स्टील में नहीं मिलते।\n\nSources (open-access research):\n- Kostecka (2008), Bulletin for the history of chemistry. doi:10.70359/bhc2008v033p089",
+    "sources": [
+      {
+        "claim": "Smoke detectors use Americium-241 in an ionization chamber.",
+        "cite": "Kostecka (2008), Bulletin for the history of chemistry. doi:10.70359/bhc2008v033p089",
+        "doi": "10.70359/bhc2008v033p089",
+        "title": "Americium - From the discovery to the smoke detector and beyond",
+        "why": "The article discusses the discovery, announcement of and naming of americium, its characteristics, isotopes, applications [including in smoke detectors]"
+      }
+    ],
+    "fact_check": [
+      "Vintage watch dials used Radium-226 to glow.",
+      "Smoke detectors use Americium-241 in an ionization chamber.",
+      "Fiestaware and other vintage ceramics used Uranium oxide in their orange glaze.",
+      "These items are generally safe unless damaged or ingested, as the radiation is low-level and shielded."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        6.94
+      ],
+      [
+        6.94,
+        19.08
+      ],
+      [
+        19.08,
+        32.98
+      ],
+      [
+        32.98,
+        41.01
+      ],
+      [
+        41.01,
+        45.2
+      ],
+      [
+        45.2,
+        57.28
+      ],
+      [
+        57.28,
+        64.43
+      ]
+    ],
+    "duration": 64.43,
+    "scene_lines": [
+      "क्या आप जानते हैं कि हमारे आसपास मौजूद कुछ आम चीजों में रेडियोधर्मी पदार्थ हो सकते हैं?",
+      "पहली है घर की पुरानी घड़ी, जिसकी सुइयां अंधेरे में चमकती हैं। इनमें अक्सर रेडियम पेंट का उपयोग किया गया होता है, जिसे आज के दौर में सुरक्षा कारणों से इस्तेमाल नहीं किया जाता।",
+      "दूसरा है स्मोक डिटेक्टर, जिसमें Americium-241 आइसोटोप होता है। ये उपयोग के दौरान तो सीलबंद होते हैं, लेकिन इनके निस्तारण (disposal) के लिए विशेष नियमों का पालन करना जरूरी होता है।",
+      "तीसरी है घर में रखे पुराने नारंगी मिट्टी के बर्तन, जिनमें ग्लेजिंग के लिए कभी यूरेनियम ऑक्साइड का इस्तेमाल किया जाता था।",
+      "तो क्या घर में मौजूद ये चीजें हमें नुकसान पहुंचाती हैं?",
+      "सामान्य स्थिति में ये वस्तुएं कम रेडिएशन उत्सर्जित करती हैं। मुख्य खतरा तब होता है जब ये टूटें या घिसें, जिससे इनका पाउडर सांस के जरिए शरीर के अंदर जा सकता है।",
+      "क्या आपने कभी सोचा है कि पुरानी और नई चीजों के बीच रेडिएशन के मामले में क्या अंतर होता है?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,050 --> 00:00:02,728\nक्या आप जानते हैं कि हमारे आसपास\n\n2\n00:00:02,728 --> 00:00:06,798\nमौजूद कुछ आम चीजों में रेडियोधर्मी पदार्थ हो सकते हैं?\n\n3\n00:00:06,940 --> 00:00:09,298\nपहली है घर की पुरानी घड़ी, जिसकी\n\n4\n00:00:09,298 --> 00:00:12,211\nसुइयां अंधेरे में चमकती हैं। इनमें अक्सर\n\n5\n00:00:12,211 --> 00:00:14,345\nरेडियम पेंट का उपयोग किया गया होता\n\n6\n00:00:14,345 --> 00:00:16,704\nहै, जिसे आज के दौर में सुरक्षा\n\n7\n00:00:16,704 --> 00:00:19,658\nकारणों से इस्तेमाल नहीं किया जाता। दूसरा\n\n8\n00:00:19,658 --> 00:00:24,006\nहै स्मोक डिटेक्टर, जिसमें Americium-241 आइसोटोप होता\n\n9\n00:00:24,006 --> 00:00:26,575\nहै। ये उपयोग के दौरान तो सीलबंद\n\n10\n00:00:26,575 --> 00:00:29,566\nहोते हैं, लेकिन इनके निस्तारण (disposal) के\n\n11\n00:00:29,566 --> 00:00:32,905\nलिए विशेष नियमों का पालन करना जरूरी होता है।\n\n12\n00:00:32,980 --> 00:00:35,409\nतीसरी है घर में रखे पुराने नारंगी\n\n13\n00:00:35,409 --> 00:00:37,612\nमिट्टी के बर्तन, जिनमें ग्लेजिंग के लिए\n\n14\n00:00:37,612 --> 00:00:40,940\nकभी यूरेनियम ऑक्साइड का इस्तेमाल किया जाता था।\n\n15\n00:00:41,010 --> 00:00:43,114\nतो क्या घर में मौजूद ये चीजें\n\n16\n00:00:43,114 --> 00:00:45,084\nहमें नुकसान पहुंचाती हैं?\n\n17\n00:00:45,200 --> 00:00:48,113\nसामान्य स्थिति में ये वस्तुएं कम रेडिएशन\n\n18\n00:00:48,113 --> 00:00:50,855\nउत्सर्जित करती हैं। मुख्य खतरा तब होता\n\n19\n00:00:50,855 --> 00:00:53,308\nहै जब ये टूटें या घिसें, जिससे\n\n20\n00:00:53,308 --> 00:00:55,714\nइनका पाउडर सांस के जरिए शरीर के\n\n21\n00:00:55,714 --> 00:00:57,155\nअंदर जा सकता है।\n\n22\n00:00:57,280 --> 00:00:59,829\nक्या आपने कभी सोचा है कि पुरानी\n\n23\n00:00:59,829 --> 00:01:01,983\nऔर नई चीजों के बीच रेडिएशन के\n\n24\n00:01:01,983 --> 00:01:03,827\nमामले में क्या अंतर होता है?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [],
+      "footage": [
+        "scene(s) [1, 6] have weak or placeholder footage"
+      ],
+      "review": [],
+      "heard": [
+        "\"चीजों\" heard as \"चीजो\"",
+        "\"सुइयां\" heard as \"सुया\"",
+        "\"है\" heard as \"हैं\"",
+        "\"किया\" heard as \"कि\"",
+        "\"जिसमें americium 241 आइसोटोप\" heard as \"जिस में आमरिश्यम\"",
+        "\"है।\" heard as \"सो एक तालीस अइसो तोप होता हैं\"",
+        "\"लिए\" heard as \"लिये\"",
+        "\"नियमों\" heard as \"नियोमो\""
+      ],
+      "pass": false,
+      "duration": 63.8
+    },
+    "repairs": 2
+  },
+  {
+    "job": "20261116-1006-why-some-foods-taste-significantly-bette",
+    "topic": "Why some foods taste significantly better the next day after sitting in the fridge",
+    "title": "Why Some Leftover Food Tastes Better Next Day 😋",
+    "description": "जानें क्यों रात भर फ्रिज में रखा कुछ खाना अगले दिन और ज्यादा स्वादिष्ट लगता है। इसके पीछे छुपा है गजब का विज्ञान। #shorts #hindi #science\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nPhoto: goblinbox_(queen_of_ad_hoc_bento), BY 2.0, via Openverse (flickr)\nPhoto: jurvetson, BY 2.0, via Openverse (flickr)\nPhoto: yummyoyummy, BY 2.0, via Openverse (flickr)\nVideo by Life-Of-Vids on Pixabay\n\nयह वीडियो कैसे बना: स्क्रिप्ट को AI tools की मदद से open research के आधार पर लिखा और fact-check किया गया है, आवाज़ AI voice की है, और editing open-source software से हुई है। कोई गलती दिखे तो comment में बताइए — जाँच कर सुधार करेंगे।",
+    "tags": [
+      "food science",
+      "leftover food"
+    ],
+    "hook": "राजमा रात भर फ्रिज में रखने के बाद अक्सर अलग स्वाद क्यों देता है?",
+    "status": "scheduled",
+    "narration": "राजमा रात भर फ्रिज में रखने के बाद अक्सर अलग स्वाद क्यों देता है? जब आप खाना बनाते हैं, तो मसाले और पानी पूरी तरह आपस में नहीं मिलते। लेकिन जब बर्तन ठंडा होता है, तो एक कमाल की केमिस्ट्री शुरू होती है। सारे फ्लेवर मॉलिक्यूल्स धीरे-धीरे राजमा के दाने के अंदर तक पहुंच जाते हैं। तो क्या सिर्फ समय बीतने से ऐसा होता है? नहीं, असली खेल मसालों के अंदर तक रचने और स्टार्च के ठंडा होकर सेट होने का है। ठंडा होने पर ग्रेवी गाढ़ी होती है और मसालों का स्वाद आपस में अच्छी तरह मिल जाता है। कभी सोचा है कि फ्रिज में रखा कुछ खाना दोबारा गर्म करने पर कई बार ज्यादा स्वादिष्ट क्यों लग सकता है?",
+    "voice_engine": "edge-tts",
+    "voices": "one narrator (hi-IN-SwaraNeural)",
+    "diagrams": 1,
+    "series": "Food Whys",
+    "countdown": false,
+    "length_arm": "standard",
+    "question": "कभी सोचा है कि फ्रिज में रखा कुछ खाना दोबारा गर्म करने पर कई बार ज्यादा स्वादिष्ट क्यों लग सकता है?",
+    "answer_comment": "The answer: जब खाना फ्रिज में रखा जाता है, तो मसालों के मॉलिक्यूल्स धीरे-धीरे समय के साथ खाने के अंदर गहराई तक समा जाते हैं। साथ ही, पानी और स्टार्च का स्ट्रक्चर बेहतर होने से रीहीट करने पर स्वाद और भी खुलकर बाहर आता है। क्या आपको भी बासी खाना पसंद है? हमें बताएं!",
+    "sources": [],
+    "fact_check": [
+      "Leftover food often tastes better because flavor compounds have more time to diffuse into the food matrix.",
+      "Cooling and reheating allow starches to gelatinize further and amino acids to break down, enhancing perceived flavor."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        4.85
+      ],
+      [
+        4.85,
+        9.98
+      ],
+      [
+        9.98,
+        14.83
+      ],
+      [
+        14.83,
+        20.2
+      ],
+      [
+        20.2,
+        23.54
+      ],
+      [
+        23.54,
+        29.45
+      ],
+      [
+        29.45,
+        35.4
+      ],
+      [
+        35.4,
+        42.71
+      ]
+    ],
+    "duration": 42.71,
+    "scene_lines": [
+      "राजमा रात भर फ्रिज में रखने के बाद अक्सर अलग स्वाद क्यों देता है?",
+      "जब आप खाना बनाते हैं, तो मसाले और पानी पूरी तरह आपस में नहीं मिलते।",
+      "लेकिन जब बर्तन ठंडा होता है, तो एक कमाल की केमिस्ट्री शुरू होती है।",
+      "सारे फ्लेवर मॉलिक्यूल्स धीरे-धीरे राजमा के दाने के अंदर तक पहुंच जाते हैं।",
+      "तो क्या सिर्फ समय बीतने से ऐसा होता है?",
+      "नहीं, असली खेल मसालों के अंदर तक रचने और स्टार्च के ठंडा होकर सेट होने का है।",
+      "ठंडा होने पर ग्रेवी गाढ़ी होती है और मसालों का स्वाद आपस में अच्छी तरह मिल जाता है।",
+      "कभी सोचा है कि फ्रिज में रखा कुछ खाना दोबारा गर्म करने पर कई बार ज्यादा स्वादिष्ट क्यों लग सकता है?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,050 --> 00:00:02,191\nराजमा रात भर फ्रिज में रखने के\n\n2\n00:00:02,191 --> 00:00:04,632\nबाद अक्सर अलग स्वाद क्यों देता है?\n\n3\n00:00:04,850 --> 00:00:07,210\nजब आप खाना बनाते हैं, तो मसाले\n\n4\n00:00:07,210 --> 00:00:09,297\nऔर पानी पूरी तरह आपस में नहीं\n\n5\n00:00:09,297 --> 00:00:12,376\nमिलते। लेकिन जब बर्तन ठंडा होता है,\n\n6\n00:00:12,480 --> 00:00:14,332\nतो एक कमाल की केमिस्ट्री शुरू होती\n\n7\n00:00:14,332 --> 00:00:17,837\nहै। सारे फ्लेवर मॉलिक्यूल्स धीरे-धीरे राजमा के\n\n8\n00:00:17,837 --> 00:00:20,139\nदाने के अंदर तक पहुंच जाते हैं।\n\n9\n00:00:20,200 --> 00:00:23,346\nतो क्या सिर्फ समय बीतने से ऐसा होता है?\n\n10\n00:00:23,540 --> 00:00:26,114\nनहीं, असली खेल मसालों के अंदर तक\n\n11\n00:00:26,114 --> 00:00:28,460\nरचने और स्टार्च के ठंडा होकर सेट\n\n12\n00:00:28,460 --> 00:00:30,806\nहोने का है। ठंडा होने पर ग्रेवी\n\n13\n00:00:30,806 --> 00:00:33,000\nगाढ़ी होती है और मसालों का स्वाद\n\n14\n00:00:33,000 --> 00:00:35,271\nआपस में अच्छी तरह मिल जाता है।\n\n15\n00:00:35,400 --> 00:00:37,504\nकभी सोचा है कि फ्रिज में रखा\n\n16\n00:00:37,504 --> 00:00:39,769\nकुछ खाना दोबारा गर्म करने पर कई\n\n17\n00:00:39,769 --> 00:00:42,108\nबार ज्यादा स्वादिष्ट क्यों लग सकता है?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [],
+      "footage": [],
+      "review": [],
+      "heard": [
+        "\"हैं\" heard as \"है\"",
+        "\"पहुंच\" heard as \"पहज\"",
+        "\"हैं।\" heard as \"है\"",
+        "\"मसालों\" heard as \"मसालो\"",
+        "\"मसालों\" heard as \"मसालो\"",
+        "\"क्यों\" heard as \"क्यो\""
+      ],
+      "pass": true,
+      "duration": 42.1
+    },
+    "repairs": 0,
+    "audited": true,
+    "video_id": "gdPezFuHclY",
+    "publish_at": "2026-11-17T02:30:00-05:00"
   }
 ]

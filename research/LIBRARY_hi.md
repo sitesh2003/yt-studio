@@ -21,3 +21,9 @@ Sources:
 
 Sources:
 - Deng et al. (2025), Lubricants. doi:10.3390/lubricants13020076 — supports: Hydroplaning occurs when water pressure builds in front of a rolling tire, lifting it off the pavement and eliminating friction.
+
+## Why Some Leftover Food Tastes Better Next Day 😋
+*2026-11-16 · Food Whys*
+
+- Leftover food often tastes better because flavor compounds have more time to diffuse into the food matrix.
+- Cooling and reheating allow starches to gelatinize further and amino acids to break down, enhancing perceived flavor.

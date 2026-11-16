@@ -37,5 +37,18 @@
         "claim": "Hydroplaning occurs when water pressure builds in front of a rolling tire, lifting it off the pavement and eliminating friction."
       }
     ]
+  },
+  {
+    "job": "20261116-1006-why-some-foods-taste-significantly-bette",
+    "date": "2026-11-16",
+    "title": "Why Some Leftover Food Tastes Better Next Day 😋",
+    "topic": "Why some foods taste significantly better the next day after sitting in the fridge",
+    "series": "Food Whys",
+    "weekly": false,
+    "claims": [
+      "Leftover food often tastes better because flavor compounds have more time to diffuse into the food matrix.",
+      "Cooling and reheating allow starches to gelatinize further and amino acids to break down, enhancing perceived flavor."
+    ],
+    "sources": []
   }
 ]
