@@ -1,0 +1,28 @@
+[
+ {
+  "when": "2026-11-16 07:10",
+  "topic": "How does a touchscreen actually sense my finger?",
+  "drawn": [
+   2,
+   3,
+   5
+  ],
+  "not_drawn": {
+   "4": "The image uses a magnet emoji to represent capacitance, which is scientifically incorrect and confusing for a 12-year-old."
+  },
+  "error": ""
+ },
+ {
+  "when": "2026-11-16 08:17",
+  "topic": "Why does a lens flip the image I see?",
+  "drawn": [
+   2,
+   5
+  ],
+  "not_drawn": {
+   "3": "Light bulbs are shown instead of light rays, and no bending or inward movement of rays is illustrated.",
+   "4": "Light bulb emojis do not represent light rays and fail to show rays bending or crossing over."
+  },
+  "error": ""
+ }
+]

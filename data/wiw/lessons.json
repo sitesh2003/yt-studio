@@ -14,5 +14,9 @@
   {
     "kind": "title",
     "text": "title 'Why Do Objects Fall At The Same Acceleration?' overstated: The original title incorrectly used acceleration instead of rate/speed for a general audience, but the narration and physics are correct."
+  },
+  {
+    "kind": "unconfirmed",
+    "text": "It never crashes. -> Satellites do eventually crash due to orbital decay caused by atmospheric drag, including the ISS which requires regular re-boosts."
   }
 ]

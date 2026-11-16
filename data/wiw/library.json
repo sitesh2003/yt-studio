@@ -100,5 +100,20 @@
       "Protanopia is the absence or malfunction of long-wavelength (L) cone photopigments, causing red colors to appear dark or dull."
     ],
     "sources": []
+  },
+  {
+    "job": "20261116-0759-why-does-a-lens-flip-the-image-i-see",
+    "date": "2026-11-16",
+    "title": "When Does A Lens Flip The Image?",
+    "topic": "Why does a lens flip the image I see?",
+    "series": "Physics",
+    "weekly": false,
+    "claims": [
+      "Lenses converge light rays to a focal point.",
+      "Light from the top of an object passes through the lens and is redirected to the bottom of the image plane, causing inversion.",
+      "The virtual image produced within the focal length is upright and magnified.",
+      "Cameras use lens convergence to focus real, inverted images onto sensors."
+    ],
+    "sources": []
   }
 ]

@@ -1,17 +1,5 @@
 [
   {
-    "job": "20261115-1821-why-do-heavy-and-light-objects-fall-at-t",
-    "title": "Why Do Objects Fall At The Same Rate? 😲",
-    "assets": {
-      "mp4": 751952362,
-      "jpg": 751952602,
-      "json": 751952630
-    },
-    "locked": true,
-    "series": "Physics",
-    "stored": "2026-11-15T18:36:57.899971+00:00"
-  },
-  {
     "job": "20261115-1838-why-does-salt-melt-ice-on-frozen-roads-t",
     "title": "How Salt Melts Ice: Chemistry Explained",
     "assets": {
@@ -34,5 +22,17 @@
     "locked": true,
     "series": "Biology",
     "stored": "2026-11-16T03:56:56.815480+00:00"
+  },
+  {
+    "job": "20261116-0759-why-does-a-lens-flip-the-image-i-see",
+    "title": "When Does A Lens Flip The Image?",
+    "assets": {
+      "mp4": 754070047,
+      "jpg": 754070215,
+      "json": 754070240
+    },
+    "locked": true,
+    "series": "Physics",
+    "stored": "2026-11-16T08:32:21.524083+00:00"
   }
 ]

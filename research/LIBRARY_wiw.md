@@ -10,6 +10,14 @@ agents/library.py; a source is listed only if its abstract was checked to suppor
 - A red object reflects long wavelengths primarily, stimulating L-cones most heavily, but color perception is determined by the brain processing the ratio of activation across all three cone types.
 - Protanopia is the absence or malfunction of long-wavelength (L) cone photopigments, causing red colors to appear dark or dull.
 
+## When Does A Lens Flip The Image?
+*2026-11-16 · Physics*
+
+- Lenses converge light rays to a focal point.
+- Light from the top of an object passes through the lens and is redirected to the bottom of the image plane, causing inversion.
+- The virtual image produced within the focal length is upright and magnified.
+- Cameras use lens convergence to focus real, inverted images onto sensors.
+
 ## Why Does Soap Remove Grease?
 *2026-11-15 · Chemistry*
 

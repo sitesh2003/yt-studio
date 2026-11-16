@@ -896,7 +896,7 @@
       "shorts"
     ],
     "hook": "A 10kg lead sphere and a 1kg lead sphere dropped from the same height in a vacuum. Why don't they hit the ground at different moments?",
-    "status": "banked",
+    "status": "scheduled",
     "narration": "A 10kg lead sphere and a 1kg lead sphere dropped from the same height in a vacuum. Why don't they hit the ground at different moments? First, gravity pulls harder on the 10kg lead sphere, because it has more weight. But second, that 10kg lead sphere also has more inertia, which is its resistance to changing speed. Third, for our 10kg lead sphere and 1kg lead sphere, these two effects exactly cancel out; the extra force is perfectly balanced by the extra resistance. That's because when you drop the 10kg lead sphere and 1kg lead sphere, the acceleration of an object is force divided by mass, so the mass cancels itself out. Physicists use this universal constant of gravitational acceleration when calculating the motion of falling objects near planetary surfaces. Try this: if we did this with our 10kg lead sphere and 1kg lead sphere on the Moon, would they still hit the ground together?",
     "voice_engine": "kokoro",
     "voices": "female host, male explainer",
@@ -967,7 +967,9 @@
       "duration": 56.7
     },
     "repairs": 0,
-    "audited": true
+    "audited": true,
+    "video_id": "ib9znstwvhE",
+    "publish_at": "2026-11-17T07:30:00-05:00"
   },
   {
     "job": "20261115-1838-why-does-salt-melt-ice-on-frozen-roads-t",
@@ -1256,5 +1258,191 @@
       "duration": 33.8
     },
     "repairs": 2
+  },
+  {
+    "job": "20261116-0658-how-does-a-touchscreen-actually-sense-my",
+    "topic": "How does a touchscreen actually sense my finger?",
+    "title": "How Does A Touchscreen Detect Your Finger?",
+    "description": "Your finger never actually touches the display glass. Discover how your body's electricity allows you to control your phone. #shorts #physics #technology\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nVideo by Coverr-Free-Footage on Pixabay",
+    "tags": [
+      "touchscreen",
+      "physics",
+      "capacitance",
+      "electronics",
+      "how it works"
+    ],
+    "hook": "Your finger doesn't actually touch the internal sensors, as they are shielded by a layer of glass. How do you trigger it?",
+    "status": "review",
+    "narration": "Your finger doesn't actually touch the internal sensors, as they are shielded by a layer of glass. How do you trigger it? Under the glass, tiny electrodes hold an electric charge. When your finger gets close, it acts like a conductor. Your finger creates a tiny change in the electric field near the electrode. The sensor detects this change in capacitance. The sensor measures this change in capacitance. Your body is conductive. It acts as part of a capacitor, pulling charge from the screen's field. That's how your phone maps your touch. Try this: why doesn't a touchscreen work if you wear thick rubber gloves?",
+    "voice_engine": "kokoro",
+    "voices": "one narrator (af_bella)",
+    "diagrams": 2,
+    "series": "Electronics",
+    "countdown": false,
+    "length_arm": null,
+    "question": "why doesn't a touchscreen work if you wear thick rubber gloves?",
+    "answer_comment": "The answer: Rubber is an insulator that blocks the flow of charge, preventing your finger from coupling with the electric field of the sensors. Without this coupling, the phone cannot detect the change in capacitance. Do you think a very thin glove would work instead?",
+    "sources": [],
+    "fact_check": [
+      "Capacitive touchscreens work by detecting changes in the electrostatic field created by the human body's conductivity.",
+      "The human body acts as a capacitor plate, and bringing it near an electrode changes the capacitance at that specific grid point.",
+      "Insulators like thick rubber prevent the capacitive coupling necessary for the sensor to detect the finger's position."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        6.86
+      ],
+      [
+        6.86,
+        10.24
+      ],
+      [
+        10.24,
+        13.02
+      ],
+      [
+        13.02,
+        19.87
+      ],
+      [
+        19.87,
+        22.59
+      ],
+      [
+        22.59,
+        27.86
+      ],
+      [
+        27.86,
+        33.99
+      ]
+    ],
+    "duration": 33.99,
+    "scene_lines": [
+      "Your finger doesn't actually touch the internal sensors, as they are shielded by a layer of glass. How do you trigger it?",
+      "Under the glass, tiny electrodes hold an electric charge.",
+      "When your finger gets close, it acts like a conductor.",
+      "Your finger creates a tiny change in the electric field near the electrode. The sensor detects this change in capacitance.",
+      "The sensor measures this change in capacitance.",
+      "Your body is conductive. It acts as part of a capacitor, pulling charge from the screen's field.",
+      "That's how your phone maps your touch. Try this: why doesn't a touchscreen work if you wear thick rubber gloves?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,050 --> 00:00:02,338\nYour finger doesn't actually touch the internal\n\n2\n00:00:02,338 --> 00:00:05,440\nsensors, as they are shielded by a layer of glass.\n\n3\n00:00:05,440 --> 00:00:06,860\nHow do you trigger it?\n\n4\n00:00:06,860 --> 00:00:10,240\nUnder the glass, tiny electrodes hold an electric charge.\n\n5\n00:00:10,240 --> 00:00:13,020\nWhen your finger gets close, it acts like a conductor.\n\n6\n00:00:13,020 --> 00:00:15,048\nYour finger creates a tiny change in\n\n7\n00:00:15,048 --> 00:00:17,230\nthe electric field near the electrode.\n\n8\n00:00:17,230 --> 00:00:19,870\nThe sensor detects this change in capacitance.\n\n9\n00:00:19,870 --> 00:00:22,590\nThe sensor measures this change in capacitance.\n\n10\n00:00:22,590 --> 00:00:24,030\nYour body is conductive.\n\n11\n00:00:24,030 --> 00:00:25,955\nIt acts as part of a capacitor,\n\n12\n00:00:25,955 --> 00:00:27,860\npulling charge from the screen's field.\n\n13\n00:00:27,860 --> 00:00:29,640\nThat's how your phone maps your touch.\n\n14\n00:00:29,640 --> 00:00:31,523\nTry this: why doesn't a touchscreen work\n\n15\n00:00:31,523 --> 00:00:33,385\nif you wear thick rubber gloves?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [],
+      "footage": [
+        "scene(s) [4] have weak or placeholder footage"
+      ],
+      "review": [
+        "Frame 1: The caption 'THEY ARE SHIELDED' is cut off by the bottom edge of the frame.",
+        "Frame 4: The caption 'THE ELECTRODE THE' is grammatically nonsensical and does not match the narration.",
+        "Frame 5: The caption 'THIS CHANGE IN' is cut off by the bottom edge of the frame.",
+        "Frame 7: The caption 'TOUCHSCREEN WORK IF' is cut off by the bottom edge of the frame."
+      ],
+      "pass": false,
+      "duration": 33.1
+    },
+    "repairs": 2
+  },
+  {
+    "job": "20261116-0759-why-does-a-lens-flip-the-image-i-see",
+    "topic": "Why does a lens flip the image I see?",
+    "title": "When Does A Lens Flip The Image?",
+    "description": "Ever noticed the world looks upside down through a lens? Here is the simple physics of how light rays cross paths. #shorts #physics #optics\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nPhoto by PublicDomainPictures on Pixabay\nVideo by Kaffeesüchtig on Pixabay\nVideo by bellergy on Pixabay\nVideo by Life-Of-Vids on Pixabay\nVideo by ninosouza on Pixabay\nVideo by roldavidespin on Pixabay\n\nHow this was made: the script is researched and fact-checked with AI tools against open-access research and textbooks, narrated by an AI voice, and every diagram, number and graph is drawn by code from the real values. Spot a mistake? Tell us in the comments - corrections are checked and credited.",
+    "tags": [
+      "physics",
+      "optics",
+      "light",
+      "science education",
+      "lenses"
+    ],
+    "hook": "Have you ever noticed that a magnifying glass can make things look huge and upright, but if you pull it away, the world suddenly flips upside down? It’s simple physics.",
+    "status": "banked",
+    "narration": "Have you ever noticed that a magnifying glass can make things look huge and upright, but if you pull it away, the world suddenly flips upside down? It’s simple physics. Let’s track light from the top tip of this paper arrow. The lens bends these light rays inward. The rays are redirected by the lens so they cross over each other before reaching your eye. Because the light from the top of the object is bent to the bottom of the image path, the entire view is flipped. This is the same principle that allows a camera to focus an image onto a sensor. Try this: why does the lens stop flipping the image if you hold it really close to the object?",
+    "voice_engine": "kokoro",
+    "voices": "one narrator (af_bella)",
+    "diagrams": 1,
+    "series": "Physics",
+    "countdown": false,
+    "length_arm": null,
+    "question": "Try this: why does a lens stop flipping the image if you move it really close to the object?",
+    "answer_comment": "The answer: When the object is inside the focal length of the lens, the light rays don't cross to form a real image. Instead, they form a virtual, upright image that appears magnified. Once the object is moved beyond the focal point, the rays cross and the image inverts. Do you have other questions about how light bends?",
+    "sources": [],
+    "fact_check": [
+      "Lenses converge light rays to a focal point.",
+      "Light from the top of an object passes through the lens and is redirected to the bottom of the image plane, causing inversion.",
+      "The virtual image produced within the focal length is upright and magnified.",
+      "Cameras use lens convergence to focus real, inverted images onto sensors."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        9.73
+      ],
+      [
+        9.73,
+        12.59
+      ],
+      [
+        12.59,
+        14.89
+      ],
+      [
+        14.89,
+        19.58
+      ],
+      [
+        19.58,
+        25.44
+      ],
+      [
+        25.44,
+        30.17
+      ],
+      [
+        30.17,
+        35.91
+      ]
+    ],
+    "duration": 35.91,
+    "scene_lines": [
+      "Have you ever noticed that a magnifying glass can make things look huge and upright, but if you pull it away, the world suddenly flips upside down? It’s simple physics.",
+      "Let’s track light from the top tip of this paper arrow.",
+      "The lens bends these light rays inward.",
+      "The rays are redirected by the lens so they cross over each other before reaching your eye.",
+      "Because the light from the top of the object is bent to the bottom of the image path, the entire view is flipped.",
+      "This is the same principle that allows a camera to focus an image onto a sensor.",
+      "Try this: why does the lens stop flipping the image if you hold it really close to the object?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,050 --> 00:00:01,925\nHave you ever noticed that a magnifying\n\n2\n00:00:01,925 --> 00:00:04,050\nglass can make things look huge and\n\n3\n00:00:04,050 --> 00:00:05,850\nupright, but if you pull it away,\n\n4\n00:00:05,850 --> 00:00:08,320\nthe world suddenly flips upside down?\n\n5\n00:00:08,320 --> 00:00:09,730\nIt’s simple physics.\n\n6\n00:00:09,730 --> 00:00:11,342\nLet’s track light from the top tip\n\n7\n00:00:11,342 --> 00:00:12,590\nof this paper arrow.\n\n8\n00:00:12,590 --> 00:00:14,890\nThe lens bends these light rays inward.\n\n9\n00:00:14,890 --> 00:00:16,915\nThe rays are redirected by the lens\n\n10\n00:00:16,915 --> 00:00:19,580\nso they cross over each other before reaching your eye.\n\n11\n00:00:19,580 --> 00:00:20,842\nBecause the light from the top of\n\n12\n00:00:20,842 --> 00:00:22,443\nthe object is bent to the bottom\n\n13\n00:00:22,443 --> 00:00:25,440\nof the image path, the entire view is flipped.\n\n14\n00:00:25,440 --> 00:00:27,402\nThis is the same principle that allows\n\n15\n00:00:27,402 --> 00:00:30,170\na camera to focus an image onto a sensor.\n\n16\n00:00:30,170 --> 00:00:32,198\nTry this: why does the lens stop\n\n17\n00:00:32,198 --> 00:00:33,610\nflipping the image if you hold it\n\n18\n00:00:33,610 --> 00:00:35,310\nreally close to the object?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [],
+      "footage": [],
+      "review": [],
+      "heard": [
+        "\"it s\" heard as \"it's\"",
+        "\"let s\" heard as \"let's\""
+      ],
+      "notes": [
+        "scene 7 footage is a loose match (score 3.0), accepted"
+      ],
+      "pass": true,
+      "duration": 35.1
+    },
+    "repairs": 0,
+    "audited": true
   }
 ]
