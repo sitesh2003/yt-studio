@@ -244,5 +244,27 @@
         "claim": "White-footed mice are primary reservoirs for the bacterium that causes Lyme disease."
       }
     ]
+  },
+  {
+    "job": "20261116-0825-weekly-this-shark-can-live-for-centuries",
+    "date": "2026-11-16",
+    "title": "The Secret Engineering Inside Your Car and Kitchen",
+    "topic": "weekly: This Shark Can Live For Centuries! 🦈❄️, Why Garlic Doesn't Make You Cry Like Onions Do 🧄😭, Why Fruits Float In Water 🍎🍐,",
+    "series": "",
+    "weekly": true,
+    "claims": [
+      "Greenland sharks have a lifespan estimated between 272 and 510 years as supported by Nielsen (2016).",
+      "Garlic sulfur compounds give its pungent aroma without triggering the lacrimal tear gas found in onions.",
+      "Watermelons and apples float because their overall average density is lower than liquid water.",
+      "Potatoes sprout from dormant buds in response to temperature and humidity changes.",
+      "Guardrail end terminals absorb kinetic energy through plastic deformation of steel W-beams."
+    ],
+    "sources": [
+      {
+        "cite": "Nielsen et al. (2016), Science. doi:10.1126/science.aaf1703",
+        "doi": "10.1126/science.aaf1703",
+        "claim": "Greenland sharks have a lifespan estimated between 272 and 510 years as supported by Nielsen (2016)."
+      }
+    ]
   }
 ]

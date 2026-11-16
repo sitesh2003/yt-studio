@@ -14,6 +14,18 @@ Sources:
 - Pedersen et al. (2007), Journal of Animal Ecology. doi:10.1111/j.1365-2656.2007.01321.x — supports: Heavy acorn production correlates with increases in white-footed mouse populations.
 - Parise et al. (2019), Journal of Medical Entomology. doi:10.1093/jme/tjz242 — supports: White-footed mice are primary reservoirs for the bacterium that causes Lyme disease.
 
+## The Secret Engineering Inside Your Car and Kitchen
+*2026-11-16 ·  · weekly episode*
+
+- Greenland sharks have a lifespan estimated between 272 and 510 years as supported by Nielsen (2016).
+- Garlic sulfur compounds give its pungent aroma without triggering the lacrimal tear gas found in onions.
+- Watermelons and apples float because their overall average density is lower than liquid water.
+- Potatoes sprout from dormant buds in response to temperature and humidity changes.
+- Guardrail end terminals absorb kinetic energy through plastic deformation of steel W-beams.
+
+Sources:
+- Nielsen et al. (2016), Science. doi:10.1126/science.aaf1703 — supports: Greenland sharks have a lifespan estimated between 272 and 510 years as supported by Nielsen (2016).
+
 ## Why Ponds Don't Freeze Solid 🤔
 *2026-11-15 · How Things Work*
 
