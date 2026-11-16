@@ -114,7 +114,117 @@ def chatterbox_checked(name, exaggeration, cfg, tries=4):
                f"{len(wav) / model.sr:.1f}s long, {retakes} re-takes, unfixed: {'; '.join(unfixed) or 'none'}")
 
 
-jobs = {"kokoro": [kokoro],
+# ---- 16 Nov 2026, owner: "I don't feel the male and female voice pace is great ... share all the options" ----
+# The same Short-style lines, read sentence by sentence with the pauses a real video uses (agents/voice.py
+# _gap_after), so each option sounds as it would in a video. Files: opt_<id>.wav.
+OPT_EN = [["Your fingers wrinkle in the bath. But your elbows don't. Why?"],
+          ["For years, we thought skin just soaked up water like a sponge.",
+           "But here's the twist. If the nerves in a finger are cut, it never wrinkles at all!"],
+          ["So wrinkling is your body's choice. Tiny blood vessels squeeze, and the skin folds into grooves."],
+          ["Those grooves push water away, like the tread on a tyre. Wet things are easier to grip."],
+          ["So next time you're in the bath, try picking up a wet marble. Which hand wins?"]]
+OPT_HI = [["नहाने के बाद उंगलियों पर झुर्रियां पड़ जाती हैं। लेकिन कोहनी पर नहीं। क्यों?"],
+          ["सालों तक हमें लगा कि त्वचा बस स्पंज की तरह पानी सोख लेती है।",
+           "लेकिन असली बात कुछ और है! अगर उंगली की नसें कट जाएं, तो झुर्रियां पड़ती ही नहीं।"],
+          ["यानी यह आपके शरीर का फैसला है। छोटी रक्त नलिकाएं सिकुड़ती हैं, और त्वचा में खांचे बन जाते हैं।"],
+          ["ये खांचे पानी को हटाते हैं, बिल्कुल टायर की तरह। गीली चीज़ें पकड़ना आसान हो जाता है।"],
+          ["तो अगली बार गीला कंचा उठाकर देखिए। कौन सा हाथ जीतेगा?"]]
+# id, engine, voice, speed (Kokoro) or rate (Edge), pause scale, language
+OPTIONS = [
+    ("A1", "kokoro", "af_heart", 1.06, 1.0, "en"),      # main channel today
+    ("A2", "kokoro", "af_heart", 0.96, 1.6, "en"),      # same voice, calmer pace, longer pauses
+    ("A3", "kokoro", "af_heart", 1.14, 0.7, "en"),      # same voice, quicker
+    ("A4", "kokoro", "af_bella", 1.06, 1.0, "en"),      # Why It Works today
+    ("A5", "kokoro", "af_nicole", 1.0, 1.0, "en"),
+    ("A6", "kokoro", "af_sarah", 1.06, 1.0, "en"),
+    ("B1", "kokoro", "am_michael", 1.04, 1.0, "en"),
+    ("B2", "kokoro", "am_fenrir", 1.04, 1.0, "en"),
+    ("B3", "kokoro", "am_puck", 1.06, 1.0, "en"),
+    ("B4", "kokoro", "bm_george", 1.02, 1.0, "en-gb"),
+    ("B5", "kokoro", "bf_emma", 1.04, 1.0, "en-gb"),
+    ("C1", "edge", "en-US-AvaMultilingualNeural", "+4%", 1.0, "en"),
+    ("C2", "edge", "en-US-EmmaMultilingualNeural", "+4%", 1.0, "en"),
+    ("C3", "edge", "en-US-AndrewMultilingualNeural", "+4%", 1.0, "en"),
+    ("C4", "edge", "en-US-BrianMultilingualNeural", "+4%", 1.0, "en"),
+    ("C5", "edge", "en-GB-RyanNeural", "+2%", 1.0, "en"),
+    ("C6", "edge", "en-IN-NeerjaNeural", "+2%", 1.0, "en"),
+    ("C7", "edge", "en-IN-PrabhatNeural", "+2%", 1.0, "en"),
+    ("D1", "two", ("am_michael", "af_heart"), 1.06, 1.0, "en"),   # the OLD style: male host, female explainer
+    ("H1", "edge", "hi-IN-SwaraNeural", "+0%", 1.0, "hi"),        # Aakhir Kyun? today
+    ("H2", "edge", "hi-IN-MadhurNeural", "+0%", 1.0, "hi"),
+    ("H3", "edge", "hi-IN-SwaraNeural", "-6%", 1.6, "hi"),         # calmer
+    ("H4", "kokoro", "hf_alpha", 1.0, 1.0, "hi"),
+    ("H5", "kokoro", "hm_omega", 1.0, 1.0, "hi"),
+]
+
+
+def _gap(sent, last_in_scene):
+    s = sent.strip()
+    g = 0.3 if s.endswith("?") else 0.18 if s.endswith("!") else 0.2
+    return g + (0.05 if last_in_scene else 0.0)
+
+
+def _trim(wav, sr):
+    import numpy as np
+    loud = np.where(np.abs(wav) > 0.01)[0]
+    if not len(loud):
+        return wav
+    a, b = max(0, loud[0] - int(0.03 * sr)), min(len(wav), loud[-1] + int(0.05 * sr))
+    return wav[a:b]
+
+
+_PIPES = {}
+
+
+def _kokoro_say(text, voice, speed, lang):
+    import numpy as np
+    from kokoro import KPipeline
+    code = {"en": "a", "en-gb": "b", "hi": "h"}[lang]
+    if code not in _PIPES:
+        _PIPES[code] = KPipeline(lang_code=code, repo_id="hexgrad/Kokoro-82M")
+    return np.concatenate([r.audio.numpy() for r in _PIPES[code](text, voice=voice, speed=speed)]), 24000
+
+
+def _edge_say(text, voice, rate):
+    import asyncio
+    import subprocess
+    import tempfile
+    import edge_tts
+    import soundfile as sf
+    d = tempfile.mkdtemp()
+    asyncio.run(edge_tts.Communicate(text, voice, rate=rate).save(f"{d}/s.mp3"))
+    subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-i", f"{d}/s.mp3", "-ac", "1", "-ar", "24000", f"{d}/s.wav"],
+                   check=True)
+    return sf.read(f"{d}/s.wav", dtype="float32")
+
+
+def options():
+    import re
+    import numpy as np
+    for oid, engine, voice, pace, pscale, lang in OPTIONS:
+        t = time.time()
+        try:
+            parts, sr = [], 24000
+            script = OPT_HI if lang == "hi" else OPT_EN
+            for k, scene in enumerate(script):
+                sents = [s for line in scene for s in re.split(r"(?<=[.?!।])\s+", line.strip()) if s]
+                for m, sent in enumerate(sents):
+                    if engine == "edge":
+                        w, sr = _edge_say(sent, voice, pace)
+                    else:
+                        v = voice if engine == "kokoro" else voice[0 if k in (0, len(script) - 1) else 1]
+                        w, sr = _kokoro_say(sent, v, pace, lang)
+                    gap = _gap(sent, m == len(sents) - 1) * pscale
+                    parts += [_trim(w, sr), np.zeros(int(sr * gap), dtype="float32")]
+            wav = np.concatenate(parts)
+            save(f"opt_{oid}.wav", wav, sr)
+            log.append(f"opt_{oid} {engine} {voice} {pace} pauses x{pscale}: {time.time() - t:.0f}s to make, "
+                       f"{len(wav) / sr:.1f}s long")
+        except Exception as e:
+            log.append(f"opt_{oid} {engine} {voice}: FAILED {type(e).__name__}: {str(e)[:200]}")
+
+
+jobs = {"kokoro": [kokoro], "options": [options],
         "chatterbox": [lambda: chatterbox("chatterbox_calm", 0.4, 0.5), lambda: chatterbox("chatterbox_lively", 0.8, 0.3)],
         "checked": [lambda: chatterbox_checked("chatterbox_lively_checked", 0.8, 0.3),
                     lambda: chatterbox_checked("chatterbox_lively_tuned", 0.7, 0.5)]}

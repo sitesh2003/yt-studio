@@ -41,16 +41,20 @@ jobs:
           path: ~/.cache/huggingface
           key: voice-lab-models-v1
 
-      - name: Kokoro (today's narrator)
-        timeout-minutes: 15
+      - name: Voice options (every voice, the same lines, real-video pauses)
+        timeout-minutes: 30
         run: |
           python -m venv /tmp/kk && . /tmp/kk/bin/activate
           pip install -q torch --index-url https://download.pytorch.org/whl/cpu
           pip install -q "kokoro==0.9.4" soundfile en-core-web-sm@https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl
-          python tools/voice_lab.py research/voice_lab kokoro
+          pip install -q edge-tts
+          sudo apt-get install -y -q espeak-ng > /dev/null 2>&1 || true   # Kokoro's Hindi voices read through espeak
+          pip install -q "misaki[hi]" || true
+          python tools/voice_lab.py research/voice_lab options
 
       - name: Chatterbox lively, every word checked by ear
         timeout-minutes: 50
+        if: github.event_name == 'workflow_dispatch'   # its samples are already saved
         continue-on-error: true
         run: |
           python -m venv /tmp/cb && . /tmp/cb/bin/activate
