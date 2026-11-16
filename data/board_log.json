@@ -23,5 +23,28 @@
   ],
   "not_drawn": {},
   "error": ""
+ },
+ {
+  "when": "2026-11-16 19:12",
+  "topic": "Scientists just found a hidden alien planet in James Webb images",
+  "drawn": [
+   3,
+   5,
+   6
+  ],
+  "not_drawn": {},
+  "error": ""
+ },
+ {
+  "when": "2026-11-16 19:48",
+  "topic": "Why mosquitoes choose some people over others",
+  "drawn": [
+   2,
+   3,
+   4,
+   5
+  ],
+  "not_drawn": {},
+  "error": ""
  }
 ]

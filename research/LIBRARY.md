@@ -43,6 +43,12 @@ Sources:
 Sources:
 - Anderson (2023), Earth-Science Reviews. doi:10.1016/j.earscirev.2023.104367 — supports: Iron-mediated preservation is a hypothesis currently being tested.
 
+## How James Webb Spots Hidden Planets In Plain Sight
+*2026-11-16 · How Things Work*
+
+- The James Webb Space Telescope uses infrared imaging capable of detecting the thermal glow of young exoplanets and brown dwarfs.
+- Astronomers frequently find new celestial bodies in archived public space telescope data using improved processing techniques.
+
 ## Why Ponds Don't Freeze Solid 🤔
 *2026-11-15 · How Things Work*
 

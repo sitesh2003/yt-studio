@@ -2,20 +2,20 @@
   "4LJjIxeP_dY": {
     "title": "Why your eyes are secretly leaking",
     "hook_line": "",
-    "kept_at_10pct": 1.0656999999999999,
-    "kept_at_50pct": 0.4511,
-    "kept_at_end": 0.20579999999999998,
+    "kept_at_10pct": 1.0653,
+    "kept_at_50pct": 0.4499,
+    "kept_at_end": 0.2046,
     "vs_similar_start": 0.34,
     "vs_similar_end": 0.56,
     "biggest_drops": [
       {
-        "at": 0.21,
-        "lost": 0.133,
+        "at": 0.13,
+        "lost": 0.135,
         "line": ""
       },
       {
-        "at": 0.33,
-        "lost": 0.069,
+        "at": 0.26,
+        "lost": 0.103,
         "line": ""
       }
     ],
@@ -94,20 +94,20 @@
   "EfZ-P6him7k": {
     "title": "The Only Food That Lasts Forever 🐝✨",
     "hook_line": "Honey is famous for being one of the only natural foods that never truly spoils.",
-    "kept_at_10pct": 1.0714,
-    "kept_at_50pct": 0.4143,
-    "kept_at_end": 0.2143,
-    "vs_similar_start": 0.36,
-    "vs_similar_end": 0.57,
+    "kept_at_10pct": 1.0854000000000001,
+    "kept_at_50pct": 0.40240000000000004,
+    "kept_at_end": 0.2073,
+    "vs_similar_start": 0.37,
+    "vs_similar_end": 0.55,
     "biggest_drops": [
       {
         "at": 0.14,
-        "lost": 0.243,
+        "lost": 0.22,
         "line": "It stays shelf-stable because of its unique chemistry, not just because it’s sealed tight."
       },
       {
         "at": 0.3,
-        "lost": 0.114,
+        "lost": 0.098,
         "line": "Honey is incredibly low in water, which makes it a nightmare for bacteria to survive."
       }
     ],
@@ -117,20 +117,20 @@
   "Bxp7r8IzbiY": {
     "title": "Why Fingers Prune In Water 💧🧽",
     "hook_line": "Your fingers prune in water, but it is not because you are absorbing it like a sponge.",
-    "kept_at_10pct": 1.0241,
-    "kept_at_50pct": 0.19879999999999998,
-    "kept_at_end": 0.0663,
+    "kept_at_10pct": 1.0275,
+    "kept_at_50pct": 0.1923,
+    "kept_at_end": 0.0659,
     "vs_similar_start": 0.21,
     "vs_similar_end": 0.2,
     "biggest_drops": [
       {
         "at": 0.13,
-        "lost": 0.229,
+        "lost": 0.22,
         "line": "In fact, dead skin cells would actually swell up and smooth out if they just soaked up water."
       },
       {
         "at": 0.34,
-        "lost": 0.096,
+        "lost": 0.104,
         "line": "Now think about what happens when you lose that underlying volume inside a rigid shell."
       }
     ],
@@ -140,21 +140,21 @@
   "u_qOehVEHQI": {
     "title": "Why Tuna Meat Is Red Meat While Cod Is Pure White 🐟🥩",
     "hook_line": "A bluefin tuna and a cod are both fish, but their meat looks like two completely different animals.",
-    "kept_at_10pct": 1.2329,
-    "kept_at_50pct": 0.6301,
-    "kept_at_end": 0.42469999999999997,
-    "vs_similar_start": 0.56,
-    "vs_similar_end": 0.87,
+    "kept_at_10pct": 1.2182,
+    "kept_at_50pct": 0.6579999999999999,
+    "kept_at_end": 0.45770000000000005,
+    "vs_similar_start": 0.57,
+    "vs_similar_end": 0.86,
     "biggest_drops": [
       {
         "at": 0.09,
-        "lost": 0.226,
+        "lost": 0.176,
         "line": "A bluefin tuna and a cod are both fish, but their meat looks like two completely different animals."
       },
       {
-        "at": 0.26,
-        "lost": 0.117,
-        "line": "The secret comes down to how they move."
+        "at": 0.23,
+        "lost": 0.116,
+        "line": "Slice a tuna steak and it looks like deep red beef, while a cod fillet is bright white."
       }
     ],
     "countdown": null,
@@ -163,21 +163,67 @@
   "80jyJN1A1y8": {
     "title": "Why Fresh Pineapples Eat You Back 🍍👅",
     "hook_line": "Fresh pineapple is literally eating you back.",
-    "kept_at_10pct": 1.0931,
-    "kept_at_50pct": 0.3883,
-    "kept_at_end": 0.2464,
+    "kept_at_10pct": 1.0903,
+    "kept_at_50pct": 0.3847,
+    "kept_at_end": 0.24309999999999998,
     "vs_similar_start": 0.38,
     "vs_similar_end": 0.74,
     "biggest_drops": [
       {
         "at": 0.11,
-        "lost": 0.203,
+        "lost": 0.201,
         "line": "Every time you bite into a fresh slice, it stings because of a clever defense weapon."
       },
       {
         "at": 0.27,
-        "lost": 0.139,
+        "lost": 0.137,
         "line": "The fruit contains a potent protein-melting enzyme called bromelain."
+      }
+    ],
+    "countdown": null,
+    "checked": "2026-11-16"
+  },
+  "S3s-iGcOMVY": {
+    "title": "This Shark Can Live For Centuries! 🦈❄️",
+    "hook_line": "This shark is older than the United States.",
+    "kept_at_10pct": 1.8636000000000001,
+    "kept_at_50pct": 1.3485,
+    "kept_at_end": 1.1061,
+    "vs_similar_start": 0.56,
+    "vs_similar_end": 0.84,
+    "biggest_drops": [
+      {
+        "at": 0.09,
+        "lost": 0.227,
+        "line": "The Greenland shark roams the freezing Arctic depths, growing only about an inch every few years."
+      },
+      {
+        "at": 0.28,
+        "lost": 0.076,
+        "line": "But here is the weird part: how does it survive so long in water that should freeze its blood?"
+      }
+    ],
+    "countdown": null,
+    "checked": "2026-11-16"
+  },
+  "fXKlhAXJSTc": {
+    "title": "Why Garlic Doesn't Make You Cry Like Onions Do 🧄😭",
+    "hook_line": "Garlic usually doesn't make you cry when you chop it, because its defense chemicals work differently than the ones in onions.",
+    "kept_at_10pct": 1.2736,
+    "kept_at_50pct": 0.4764,
+    "kept_at_end": 0.34909999999999997,
+    "vs_similar_start": 0.52,
+    "vs_similar_end": 0.74,
+    "biggest_drops": [
+      {
+        "at": 0.1,
+        "lost": 0.316,
+        "line": "Garlic usually doesn't make you cry when you chop it, because its defense chemicals work differently than the ones in onions."
+      },
+      {
+        "at": 0.41,
+        "lost": 0.099,
+        "line": "It stores its flavor compounds and enzymes in totally separate rooms inside each cell."
       }
     ],
     "countdown": null,

@@ -1,20 +1,21 @@
 {
   "summary": [
-    "Prioritize everyday biological mysteries and body sensations (pruned fingers, leaky eyes, pineapple burning) over general natural facts to capture high initial views.",
-    "Formulate hook sentences as direct contradictions or shocking revelations that immediately flip an assumption in the viewer's mind.",
-    "Keep titles punchy and use high-contrast emoji pairings to boost curiosity without relying on complex phrasing.",
-    "Eliminate long setup phrases or throat-clearing context in the first sentence; start right at the point of conflict.",
-    "Target a high stayed percentage above 60% by making the hook directly challenge a common physical sensation everyone experiences."
+    "Prioritize counter-intuitive biological or physical phenomena over simple facts; the highest-performing content challenges common perceptions.",
+    "Hooks must establish a direct contradiction between the viewer's assumption and a 'hidden' reality within the first 3 seconds.",
+    "Use high-contrast language in titles—words like 'leaking,' 'eating you back,' or 'secretly'—to signal a hidden mystery that demands immediate resolution.",
+    "Keep hooks punchy and brief; avoid long, descriptive setups that explain the context before stating the conflict.",
+    "If a video does not explicitly address the 'why' or 'secret' mechanism in the title, it fails to achieve the high stay-rates required for algorithm traction."
   ],
   "winning_hooks": [
     "Your fingers prune in water, but it is not because you are absorbing it like a sponge.",
     "Your eyes are leaking right now, and your brain is hiding it.",
-    "Fresh pineapple is literally eating you back."
+    "Fresh pineapple is literally eating you back.",
+    "This shark is older than the United States."
   ],
   "avoid": [
-    "Starting hooks with descriptive background information or boring definitions.",
-    "Using long, academic introductions that give the answer away before the viewer is hooked.",
-    "Writing passive first sentences that fail to create an immediate sense of intrigue or conflict."
+    "Starting with descriptive observations that are easily verified (e.g., 'Drop an apple or a pear in a bowl of water').",
+    "Overly informative titles that feel like a textbook heading (e.g., 'How Authentic Maple Syrup Is Boiled').",
+    "Hooks that lack a sense of urgency or mystery regarding the viewer's own body or environment."
   ],
-  "next_experiment": "Test an A/B split where Video A uses a direct bodily sensation contradiction ('You think you know why you sweat...') and Video B uses an external nature fact ('This tree makes poison...'), measuring which one achieves a stayed_pct above 60%."
+  "next_experiment": "A/B test a 'direct challenge' hook vs. a 'revealed secret' hook for a single topic: Use 'You have been eating pineapple wrong' (Direct Challenge) vs. 'Fresh pineapple is eating your mouth' (Revealed Secret) to see which yields a higher stay_pct."
 }

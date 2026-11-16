@@ -300,5 +300,18 @@
         "claim": "Iron-mediated preservation is a hypothesis currently being tested."
       }
     ]
+  },
+  {
+    "job": "20261116-1902-scientists-just-found-a-hidden-alien-pla",
+    "date": "2026-11-16",
+    "title": "How James Webb Spots Hidden Planets In Plain Sight",
+    "topic": "Scientists just found a hidden alien planet in James Webb images",
+    "series": "How Things Work",
+    "weekly": false,
+    "claims": [
+      "The James Webb Space Telescope uses infrared imaging capable of detecting the thermal glow of young exoplanets and brown dwarfs.",
+      "Astronomers frequently find new celestial bodies in archived public space telescope data using improved processing techniques."
+    ],
+    "sources": []
   }
 ]

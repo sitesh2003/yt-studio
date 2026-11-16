@@ -3187,5 +3187,199 @@
     },
     "repairs": 0,
     "audited": true
+  },
+  {
+    "job": "20261116-1902-scientists-just-found-a-hidden-alien-pla",
+    "topic": "Scientists just found a hidden alien planet in James Webb images",
+    "title": "How James Webb Spots Hidden Planets In Plain Sight",
+    "description": "Researchers found an uncataloged exoplanet hiding in plain sight within James Webb telescope data. Here is how infrared detection reveals unseen worlds. #Space #JamesWebb #Science\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nIllustrations: drawn for this video with FLUX.2 [klein] 4B (AI, Apache 2.0) and checked for accuracy\nVideo by NASA-Imagery on Pixabay\n\nHow this was made: the script is researched and fact-checked with AI tools against open-access research (sources above when found), narrated by an AI voice, and edited with open-source software. Corrections from viewers are checked and credited.",
+    "tags": [
+      "James Webb",
+      "Exoplanet",
+      "Astronomy",
+      "Space Science"
+    ],
+    "hook": "Most James Webb images hold secrets.",
+    "status": "banked",
+    "narration": "Most James Webb images hold secrets. It was right there. Most exoplanets are found when they cross in front of their star and briefly block a tiny fraction of its light. Too far to block light. So how did researchers pick it out from billions of background galaxies? By using infrared light to spot the faint heat glow of a young world. Ever thought how many more uncharted worlds are sitting in plain sight in our space archives?",
+    "voice_engine": "chatterbox",
+    "voices": "one narrator (af_heart)",
+    "diagrams": 1,
+    "series": "How Things Work",
+    "countdown": false,
+    "length_arm": "long",
+    "question": "Ever thought how many more uncharted worlds are sitting in plain sight in our space archives?",
+    "answer_comment": "The answer: Many astronomical datasets contain massive amounts of raw infrared information that algorithms and researchers comb through years later. By filtering out background starlight, faint thermal signatures of rogue planets or distant companions emerge. Drop your guess on what else might be hiding in the data below!",
+    "sources": [],
+    "fact_check": [
+      "The James Webb Space Telescope uses infrared imaging capable of detecting the thermal glow of young exoplanets and brown dwarfs.",
+      "Astronomers frequently find new celestial bodies in archived public space telescope data using improved processing techniques."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        2.29
+      ],
+      [
+        2.29,
+        3.33
+      ],
+      [
+        3.33,
+        8.12
+      ],
+      [
+        8.12,
+        9.61
+      ],
+      [
+        9.61,
+        13.17
+      ],
+      [
+        13.17,
+        16.74
+      ],
+      [
+        16.74,
+        20.42
+      ]
+    ],
+    "duration": 20.42,
+    "scene_lines": [
+      "Most James Webb images hold secrets.",
+      "It was right there.",
+      "Most exoplanets are found when they cross in front of their star and briefly block a tiny fraction of its light.",
+      "Too far to block light.",
+      "So how did researchers pick it out from billions of background galaxies?",
+      "By using infrared light to spot the faint heat glow of a young world.",
+      "Ever thought how many more uncharted worlds are sitting in plain sight in our space archives?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,000 --> 00:00:01,890\nMost James Webb images hold secrets.\n\n2\n00:00:02,290 --> 00:00:03,180\nIt was right there.\n\n3\n00:00:03,330 --> 00:00:04,950\nMost exoplanets are found when they cross\n\n4\n00:00:04,950 --> 00:00:06,110\nin front of their star and briefly\n\n5\n00:00:06,110 --> 00:00:07,900\nblock a tiny fraction of its light.\n\n6\n00:00:08,120 --> 00:00:09,250\nToo far to block light.\n\n7\n00:00:09,610 --> 00:00:11,010\nSo how did researchers pick it out\n\n8\n00:00:11,010 --> 00:00:12,580\nfrom billions of background galaxies?\n\n9\n00:00:13,170 --> 00:00:14,890\nBy using infrared light to spot the\n\n10\n00:00:14,890 --> 00:00:16,520\nfaint heat glow of a young world.\n\n11\n00:00:16,740 --> 00:00:18,160\nEver thought how many more uncharted worlds\n\n12\n00:00:18,160 --> 00:00:19,820\nare sitting in plain sight in our space archives?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [],
+      "footage": [],
+      "review": [],
+      "heard": [
+        "\"james webb\" heard as \"chainswept\"",
+        "\"so\" heard as \"though\"",
+        "extra \"plus\""
+      ],
+      "pass": true,
+      "duration": 20.2
+    },
+    "repairs": 0,
+    "audited": true
+  },
+  {
+    "job": "20261116-1933-why-mosquitoes-choose-some-people-over-o",
+    "topic": "Why mosquitoes choose some people over others",
+    "title": "Why Mosquitoes Choose Certain People 🦟",
+    "description": "Ever wondered why mosquitoes always seem to pick you over everyone else? It comes down to invisible chemistry on your skin. Watch to see how it works.\n\n#shorts #science #animals\n\nSources (open-access research):\n- Dekker et al. (2011), Journal of Experimental Biology. doi:10.1242/jeb.055186\n- Chandel et al. (2024), Nature. doi:10.1038/s41586-024-07848-5\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nPhoto: Federal Bureau of Investigation, Public domain, via Wikimedia Commons",
+    "tags": [
+      "mosquitoes",
+      "science",
+      "biology",
+      "insects",
+      "skin"
+    ],
+    "hook": "Why do mosquitoes target some people and totally ignore others?",
+    "status": "review",
+    "narration": "Why do mosquitoes target some people and totally ignore others? Sitting on your porch, they hunt using invisible chemical trails. Every breath you exhale on the porch releases carbon dioxide that guides them. Once close to your porch seat, skin bacteria take over and decide your fate. What is the exact chemical mix making your porch skin irresistible? Your microbes break down sweat into carboxylic acids, creating a unique perfume. Ever thought how these scents let mosquitoes find you? Drop your guess below.",
+    "voice_engine": "chatterbox",
+    "voices": "one narrator (af_heart)",
+    "diagrams": 1,
+    "series": "Animal Whys",
+    "countdown": false,
+    "length_arm": "short",
+    "question": "Ever thought how these scents let mosquitoes find you in the dark?",
+    "answer_comment": "The answer: Mosquitoes rely on specialized receptors to track carbon dioxide and specific carboxylic acids produced by skin bacteria. Even in total darkness, these chemical plumes act like a neon sign leading them straight to their preferred target.\n\nSources (open-access research):\n- Dekker et al. (2011), Journal of Experimental Biology. doi:10.1242/jeb.055186\n- Chandel et al. (2024), Nature. doi:10.1038/s41586-024-07848-5",
+    "sources": [
+      {
+        "claim": "Mosquitoes track hosts using carbon dioxide emissions.",
+        "cite": "Dekker et al. (2011), Journal of Experimental Biology. doi:10.1242/jeb.055186",
+        "doi": "10.1242/jeb.055186",
+        "title": "Moment-to-moment flight manoeuvres of the female yellow fever mosquito ( Aedes aegypti L.) in response to plumes of carbon dioxide and human skin odour",
+        "why": "Odours are crucial cues enabling female mosquitoes to orient to prospective hosts... Following a brief (~0.03 s) encounter with CO(2), mosquitoes surged upwind..."
+      },
+      {
+        "claim": "Mosquitoes use heat and chemical cues to navigate in low-light environments.",
+        "cite": "Chandel et al. (2024), Nature. doi:10.1038/s41586-024-07848-5",
+        "doi": "10.1038/s41586-024-07848-5",
+        "title": "Thermal infrared directs host-seeking behaviour in Aedes aegypti mosquitoes",
+        "why": "We demonstrate that Ae. aegypti sense the infrared (IR) radiation emanating from their targets and use this information in combination with other cues for highly effective mid-range navigation."
+      }
+    ],
+    "fact_check": [
+      "Mosquitoes track hosts using carbon dioxide emissions.",
+      "Skin bacteria metabolize sweat into carboxylic acids which attract mosquitoes.",
+      "Mosquitoes use heat and chemical cues to navigate in low-light environments."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        3.48
+      ],
+      [
+        3.48,
+        6.48
+      ],
+      [
+        6.48,
+        10.0
+      ],
+      [
+        10.0,
+        13.67
+      ],
+      [
+        13.67,
+        17.15
+      ],
+      [
+        17.15,
+        21.51
+      ],
+      [
+        21.51,
+        25.36
+      ]
+    ],
+    "duration": 25.36,
+    "scene_lines": [
+      "Why do mosquitoes target some people and totally ignore others?",
+      "Sitting on your porch, they hunt using invisible chemical trails.",
+      "Every breath you exhale on the porch releases carbon dioxide that guides them.",
+      "Once close to your porch seat, skin bacteria take over and decide your fate.",
+      "What is the exact chemical mix making your porch skin irresistible?",
+      "Your microbes break down sweat into carboxylic acids, creating a unique perfume.",
+      "Ever thought how these scents let mosquitoes find you? Drop your guess below."
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,000 --> 00:00:02,990\nWhy do mosquitoes target some people and totally ignore others?\n\n2\n00:00:03,480 --> 00:00:06,130\nSitting on your porch, they hunt using invisible chemical trails.\n\n3\n00:00:06,480 --> 00:00:07,820\nEvery breath you exhale on the porch\n\n4\n00:00:07,820 --> 00:00:09,910\nreleases carbon dioxide that guides them.\n\n5\n00:00:10,000 --> 00:00:11,250\nOnce close to your porch seat,\n\n6\n00:00:11,300 --> 00:00:13,510\nskin bacteria take over and decide your fate.\n\n7\n00:00:13,670 --> 00:00:15,270\nWhat is the exact chemical mix making\n\n8\n00:00:15,270 --> 00:00:16,480\nyour porch skin irresistible?\n\n9\n00:00:17,150 --> 00:00:19,820\nYour microbes break down sweat into carboxylic acids,\n\n10\n00:00:19,870 --> 00:00:21,060\ncreating a unique perfume.\n\n11\n00:00:21,510 --> 00:00:23,680\nEver thought how these scents let mosquitoes find you?\n\n12\n00:00:23,880 --> 00:00:24,760\nDrop your guess below.\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [],
+      "footage": [
+        "scene(s) [7] have weak or placeholder footage"
+      ],
+      "review": [],
+      "heard": [
+        "\"sitting\" heard as \"fitting\""
+      ],
+      "pass": false,
+      "duration": 25.1
+    },
+    "repairs": 2
   }
 ]

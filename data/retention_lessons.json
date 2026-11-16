@@ -1,21 +1,23 @@
 {
   "lessons": [
-    "Keep hooks concise and punchy; the video with the highest start retention (Tuna vs. Cod) used a strong visual and behavioral contrast immediately in its opening line.",
-    "Avoid starting with long, multi-clause scientific definitions or background facts (such as the maple syrup percentage drop), as viewers drop off steeply within the first 10-15% when over-explained.",
-    "Ensure the core mechanism or answer is introduced early; drops frequently occur around the 25% to 35% mark when the explanation of 'how it works' transitions too slowly.",
-    "Eliminate mid-video pauses or philosophical questions near the end (like the juice question in the spicy food video) which trigger a secondary wave of viewers to leave right before the finish.",
-    "Not enough data to determine the effect of countdowns since all entries had 'countdown: null'."
+    "Prioritize immediate, dramatic stakes: The highest-performing video ('Greenland Shark') succeeds by pairing a 'centuries-old' longevity claim with immediate mystery, whereas videos starting with dry explanations (like 'Maple Syrup' or 'Fingers Prune') lose over 35% of viewers within the first 15 seconds.",
+    "Avoid technical definitions in the hook: Lines that explain 'how' or 'why' something works (e.g., 'It stays shelf-stable because of its unique chemistry') consistently cause drops, whereas sensory, results-oriented hooks ('Fresh pineapple is literally eating you back') retain well above 1.0 at 10%.",
+    "Keep biological transitions fast: Deep dives into internal cell structure (e.g., 'separate rooms in cells' in the Garlic video or 'protein-melting enzymes' in Pineapple) lead to a secondary drop-off once the initial curiosity gap is addressed; move to the next point faster.",
+    "Use comparative framing for high engagement: The 'Tuna vs. Cod' video maintains the highest end-retention (0.457) by framing the entire narrative as an active comparison of two familiar, contrasting objects, rather than a single-topic lecture.",
+    "Prioritize emotional or visceral triggers: The most successful hooks identify a specific physical reaction or extreme anomaly (e.g., 'eating you back', 'older than the US'), keeping viewers in a state of active inquiry."
   ],
   "worst_moment_types": [
-    "Dense background statistics and percentages delivered too early in the script",
-    "Slow transitions into the biochemical mechanism of the topic around the 25-35% mark",
-    "Extra rhetorical questions or tangents introduced late in the video near the final 10% of runtime"
+    "Dry, academic explanations of chemical processes or mechanical functions.",
+    "Slow-paced 'in fact' statements that provide background rather than new, shocking information.",
+    "Lines that explain the 'mechanism' of an effect (e.g., 'dead skin cells would swell') before the payoff of the original question is fully satisfied.",
+    "Transitions that focus on 'what happens' in a static way, rather than driving the narrative forward."
   ],
   "best_hook_types": [
-    "Direct, high-contrast comparisons between two familiar things (e.g., Tuna vs. Cod meat)",
-    "Startling action-oriented statements about everyday foods or bodily reactions (e.g., pineapple eating you back)",
-    "Short, provocative premise statements that immediately challenge a common assumption"
+    "Direct, counter-intuitive claims (e.g., 'Fresh pineapple is eating you back').",
+    "Extreme time-based longevity claims (e.g., 'older than the United States').",
+    "Comparison-based setups that immediately contrast two common items (e.g., 'Tuna and cod are both fish, but...').",
+    "Sensory-focused statements involving immediate physical reactions."
   ],
   "studied": "2026-11-16",
-  "videos": 8
+  "videos": 10
 }
