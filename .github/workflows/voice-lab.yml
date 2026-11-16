@@ -49,13 +49,13 @@ jobs:
           pip install -q "kokoro==0.9.4" soundfile en-core-web-sm@https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl
           python tools/voice_lab.py research/voice_lab kokoro
 
-      - name: Chatterbox (emotion control)
-        timeout-minutes: 40
+      - name: Chatterbox lively, every word checked by ear
+        timeout-minutes: 50
         continue-on-error: true
         run: |
           python -m venv /tmp/cb && . /tmp/cb/bin/activate
-          pip install -q chatterbox-tts soundfile
-          python tools/voice_lab.py research/voice_lab chatterbox
+          pip install -q chatterbox-tts soundfile faster-whisper
+          python tools/voice_lab.py research/voice_lab checked
 
       - name: Save the samples
         if: always()

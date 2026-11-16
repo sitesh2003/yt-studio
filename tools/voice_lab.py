@@ -61,8 +61,63 @@ def chatterbox(name, exaggeration, cfg):
     log.append(f"{name} (exaggeration {exaggeration}, cfg {cfg}): {time.time() - t:.0f}s to make, {len(wav) / model.sr:.1f}s long")
 
 
+def _words(s):
+    import re
+    return re.findall(r"[a-z0-9]+(?:'[a-z]+)?", s.lower().replace("’", "'"))
+
+
+def _missing(text, wav, sr, ear):
+    """Words of `text` the listener (Whisper) did not hear in `wav`."""
+    import soundfile as sf
+    path = os.path.join(OUT, "_check.wav")
+    sf.write(path, wav, sr)
+    segs, _ = ear.transcribe(path, language="en", beam_size=5)
+    heard = set(_words(" ".join(s.text for s in segs)))
+    return [w for w in _words(text) if w not in heard]
+
+
+def chatterbox_checked(name, exaggeration, cfg, tries=4):
+    """Lively, but every word said: one sentence at a time, each one listened to, re-made (new seed) if a word
+    is missing (16 Nov 2026: plain lively dropped 8% of the words)."""
+    import re
+    import numpy as np
+    import torch
+    from chatterbox.tts import ChatterboxTTS
+    from faster_whisper import WhisperModel
+    t = time.time()
+    model = ChatterboxTTS.from_pretrained(device="cuda" if torch.cuda.is_available() else "cpu")
+    ear = WhisperModel("base.en", device="cpu", compute_type="int8")
+    parts, retakes, unfixed = [], 0, []
+    for line in LINES:
+        for sent in [s for s in re.split(r"(?<=[.?!])\s+", line.strip()) if s]:
+            best, best_miss = None, None
+            for n in range(tries):
+                torch.manual_seed(1000 + n)
+                w = model.generate(sent, exaggeration=exaggeration, cfg_weight=cfg).squeeze(0).cpu().numpy()
+                miss = _missing(sent, w, model.sr, ear)
+                if best is None or len(miss) < len(best_miss):
+                    best, best_miss = w, miss
+                if not miss:
+                    break
+                retakes += 1
+            if best_miss:
+                unfixed.append(f"{sent!r} still missing {best_miss}")
+            parts += [best, np.zeros(int(model.sr * 0.15), dtype="float32")]
+        parts.append(np.zeros(int(model.sr * 0.15), dtype="float32"))
+    try:
+        os.remove(os.path.join(OUT, "_check.wav"))
+    except OSError:
+        pass
+    wav = np.concatenate(parts)
+    save(f"{name}.wav", wav, model.sr)
+    log.append(f"{name} (exaggeration {exaggeration}, cfg {cfg}, checked by ear): {time.time() - t:.0f}s to make, "
+               f"{len(wav) / model.sr:.1f}s long, {retakes} re-takes, unfixed: {'; '.join(unfixed) or 'none'}")
+
+
 jobs = {"kokoro": [kokoro],
-        "chatterbox": [lambda: chatterbox("chatterbox_calm", 0.4, 0.5), lambda: chatterbox("chatterbox_lively", 0.8, 0.3)]}
+        "chatterbox": [lambda: chatterbox("chatterbox_calm", 0.4, 0.5), lambda: chatterbox("chatterbox_lively", 0.8, 0.3)],
+        "checked": [lambda: chatterbox_checked("chatterbox_lively_checked", 0.8, 0.3),
+                    lambda: chatterbox_checked("chatterbox_lively_tuned", 0.7, 0.5)]}
 for job in (jobs.get(WHICH) or jobs["kokoro"] + jobs["chatterbox"]):
     try:
         job()
