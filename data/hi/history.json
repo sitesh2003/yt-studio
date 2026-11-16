@@ -447,7 +447,8 @@
     "audited": true,
     "video_id": "2PhLJl6N1R8",
     "publish_at": "2026-11-16T09:30:00-05:00",
-    "answered": true
+    "answered": true,
+    "recapped": true
   },
   {
     "job": "20261116-0818-the-hidden-engineering-of-why-airport-ru",
@@ -875,5 +876,345 @@
     "audited": true,
     "video_id": "gdPezFuHclY",
     "publish_at": "2026-11-17T02:30:00-05:00"
+  },
+  {
+    "job": "20261116-1937-why-do-car-wing-mirrors-say-objects-in-m",
+    "topic": "Why Do Car Wing Mirrors Say 'Objects in Mirror Are Closer Than They Appear'?",
+    "title": "Why Your Car Mirror Lies To You 🤯",
+    "description": "Ever wondered why that warning is on your passenger mirror? It’s not just a legal thing, it’s all about the engineering of your field of view. #shorts #science #engineering\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nPhoto by miguellupo on Pixabay\nPhoto by woo on Pixabay\nVideo by KM007_ on Pixabay\nVideo by blackmarketmusic on Pixabay\nVideo by Marsel_beijing on Pixabay\n\nयह वीडियो कैसे बना: स्क्रिप्ट को AI tools की मदद से open research के आधार पर लिखा और fact-check किया गया है, आवाज़ AI voice की है, और editing open-source software से हुई है। कोई गलती दिखे तो comment में बताइए — जाँच कर सुधार करेंगे।",
+    "tags": [
+      "science",
+      "engineering"
+    ],
+    "hook": "Objects in mirror are closer than they appear. But why does your passenger mirror say that?",
+    "status": "review",
+    "narration": "Objects in mirror are closer than they appear. But why does your passenger mirror say that? If your passenger mirror were completely flat, it would show true sizes but create a massive blind spot. You wouldn't see a car changing lanes right next to your passenger side. So engineers give that passenger mirror a convex curve, bending outward to capture a wider road view. turn: But why does that curved passenger mirror make cars look farther away than they are? The outward curve shrinks the reflected cars to fit more lane view onto the mirror surface. recap: Smaller reflections trick your brain into perceiving that trailing car on your passenger side as farther away. How would you design a passenger mirror to balance wide field of view with accurate distance judgment?",
+    "voice_engine": "edge-tts",
+    "voices": "one narrator (hi-IN-SwaraNeural)",
+    "diagrams": 1,
+    "series": "Everyday Whys",
+    "countdown": false,
+    "length_arm": "standard",
+    "question": "How would you design a passenger mirror to balance wide field of view with accurate distance judgment?",
+    "answer_comment": "The answer: A convex mirror curves outward to give you a wider field of view, which eliminates dangerous blind spots. However, that curve makes objects look smaller, which tricks your brain into thinking they are further away than they really are. Have you ever noticed this while parking?",
+    "sources": [],
+    "fact_check": [
+      "Side mirrors on the passenger side in the US are convex to increase field of view.",
+      "Convex mirrors create a virtual, diminished image.",
+      "The 'Objects in mirror are closer than they appear' warning is required by FMVSS 111.",
+      "The brain uses object size as a cue for distance, which is why diminished images feel further away."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        5.53
+      ],
+      [
+        5.53,
+        11.33
+      ],
+      [
+        11.33,
+        15.37
+      ],
+      [
+        15.37,
+        21.36
+      ],
+      [
+        21.36,
+        26.6
+      ],
+      [
+        26.6,
+        31.56
+      ],
+      [
+        31.56,
+        38.05
+      ],
+      [
+        38.05,
+        44.03
+      ]
+    ],
+    "duration": 44.03,
+    "scene_lines": [
+      "Objects in mirror are closer than they appear. But why does your passenger mirror say that?",
+      "If your passenger mirror were completely flat, it would show true sizes but create a massive blind spot.",
+      "You wouldn't see a car changing lanes right next to your passenger side.",
+      "So engineers give that passenger mirror a convex curve, bending outward to capture a wider road view.",
+      "turn: But why does that curved passenger mirror make cars look farther away than they are?",
+      "The outward curve shrinks the reflected cars to fit more lane view onto the mirror surface.",
+      "recap: Smaller reflections trick your brain into perceiving that trailing car on your passenger side as farther away.",
+      "How would you design a passenger mirror to balance wide field of view with accurate distance judgment?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": "2PhLJl6N1R8",
+    "captions_srt": "1\n00:00:00,050 --> 00:00:02,747\nObjects in mirror are closer than they appear.\n\n2\n00:00:02,780 --> 00:00:05,364\nBut why does your passenger mirror say that?\n\n3\n00:00:05,530 --> 00:00:08,210\nIf your passenger mirror were completely flat,\n\n4\n00:00:08,210 --> 00:00:09,876\nit would show true sizes but create\n\n5\n00:00:09,876 --> 00:00:11,330\na massive blind spot.\n\n6\n00:00:11,330 --> 00:00:13,247\nYou wouldn't see a car changing lanes\n\n7\n00:00:13,247 --> 00:00:15,288\nright next to your passenger side.\n\n8\n00:00:15,370 --> 00:00:17,669\nSo engineers give that passenger mirror a\n\n9\n00:00:17,669 --> 00:00:21,250\nconvex curve, bending outward to capture a wider road view.\n\n10\n00:00:21,360 --> 00:00:23,714\nturn: But why does that curved passenger\n\n11\n00:00:23,714 --> 00:00:26,420\nmirror make cars look farther away than they are?\n\n12\n00:00:26,600 --> 00:00:28,909\nThe outward curve shrinks the reflected cars\n\n13\n00:00:28,909 --> 00:00:31,560\nto fit more lane view onto the mirror surface.\n\n14\n00:00:31,560 --> 00:00:34,238\nrecap: Smaller reflections trick your brain into\n\n15\n00:00:34,238 --> 00:00:36,442\nperceiving that trailing car on your passenger\n\n16\n00:00:36,442 --> 00:00:37,931\nside as farther away.\n\n17\n00:00:38,050 --> 00:00:39,986\nHow would you design a passenger mirror\n\n18\n00:00:39,986 --> 00:00:43,426\nto balance wide field of view with accurate distance judgment?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [
+        "phrase missing from the audio: \"you wouldn't see a car changing lanes right next to your passenger side so engineers give that passenger mirror a convex curve bending outward to capture a wider road view turn but why does that curved passenger mirror make cars look farther away than they are the outward curve shrinks the reflected cars to fit more lane view onto the mirror surface recap smaller reflections trick your brain into perceiving that trailing car on your passenger side as farther away how would you design a passenger mirror to balance wide field of view with accurate distance judgment\"",
+        "only 33% of the script is heard as written"
+      ],
+      "footage": [],
+      "review": [],
+      "heard": [
+        "\"objects\" heard as \"अबज्यक्त्स\"",
+        "\"mirror are\" heard as \"मिरर\"",
+        "\"they appear but why\" heard as \"दे अप्या बच्वाय\"",
+        "\"your passenger mirror say\" heard as \"यो पैसंजर मिरर से\"",
+        "\"your passenger mirror\" heard as \"यो पैसंजर मिरर\"",
+        "\"completely\" heard as \"कमप्लेट्ली\"",
+        "\"would show\" heard as \"वो शो\"",
+        "\"a massive blind\" heard as \"आप मास्विप ब्लाइन\""
+      ],
+      "pass": false,
+      "duration": 43.4
+    },
+    "repairs": 0
+  },
+  {
+    "job": "20261116-2011-mysterious-gas-leaks-suggest-mars-may-st",
+    "topic": "Mysterious gas leaks suggest Mars may still be volcanically alive",
+    "title": "Why Mars Might Be Alive Inside 🤔",
+    "description": "Scientists are finding methane gas on Mars, but where is it coming from? Could the red planet be hiding active volcanoes, or something even more exciting? Let's decode the science. #shorts #hindi #space\n\nSources (open-access research):\n- Oehler et al. (2017), Astrobiology. doi:10.1089/ast.2017.1657\n- Klusman et al. (2022), Icarus. doi:10.1016/j.icarus.2022.115079\n- Fries et al. (2015), Geochemical Perspectives Letters. doi:10.7185/geochemlet.1602\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nPhoto: ESO/S. Brunier, CC BY 4.0, via Wikimedia Commons\nPhoto: IAU/M. Kornmesser, CC BY 4.0, via Wikimedia Commons\nPhoto: NASA Goddard Photo and Video, BY 2.0, via Openverse (nasa)\nVideo by Cassiopeia_Arts on Pixabay\nVideo by BlenderTimer on Pixabay\n\nयह वीडियो कैसे बना: स्क्रिप्ट को AI tools की मदद से open research के आधार पर लिखा और fact-check किया गया है, आवाज़ AI voice की है, और editing open-source software से हुई है। कोई गलती दिखे तो comment में बताइए — जाँच कर सुधार करेंगे।",
+    "tags": [
+      "mars",
+      "space",
+      "science",
+      "hindi"
+    ],
+    "hook": "Mars par methane gas ka milna, shayad ye dikhata hai ki wahan geologically ya biologically kuch activity ho rahi hai!",
+    "status": "banked",
+    "narration": "Mars par methane gas ka milna, shayad ye dikhata hai ki wahan geologically ya biologically kuch activity ho rahi hai! Scientists ne Mars ke atmosphere mein methane ke plumes dekhe hain. Methane jaldi khatam ho jati hai, matlab ye wahan abhi produce ho rahi hai. Toh kya Mars ke andar volcanoes abhi bhi zinda ho sakte hain? Methane ka ek possible source volcanoes hain jo deep underground heat se gas chhod rahe hain. Lekin ye gas microbes se bhi aa sakti hai, jo wahan survive kar rahe hon. Abhi tak hamare paas proof nahi hai, par ye signals batate hain ki Mars dead nahi hai. Ever thought how we could finally prove if these gas leaks are from volcanoes or something else? Drop your guess below.",
+    "voice_engine": "edge-tts",
+    "voices": "one narrator (hi-IN-SwaraNeural)",
+    "diagrams": 1,
+    "series": "Everyday Whys",
+    "countdown": false,
+    "length_arm": "long",
+    "question": "Ever thought how we could finally prove if these gas leaks are from volcanoes or something else?",
+    "answer_comment": "Currently, even with orbiters and rovers, it is extremely difficult to pinpoint these methane sources due to their very low concentrations and the complex nature of Martian atmospheric circulation, but researchers look for seasonal patterns or traces of other gases like ethane or propane to distinguish between volcanic and biological origins.\n\nSources (open-access research):\n- Oehler et al. (2017), Astrobiology. doi:10.1089/ast.2017.1657\n- Klusman et al. (2022), Icarus. doi:10.1016/j.icarus.2022.115079\n- Fries et al. (2015), Geochemical Perspectives Letters. doi:10.7185/geochemlet.1602",
+    "sources": [
+      {
+        "claim": "Methane has been detected in the Martian atmosphere by various orbiters and rovers.",
+        "cite": "Oehler et al. (2017), Astrobiology. doi:10.1089/ast.2017.1657",
+        "doi": "10.1089/ast.2017.1657",
+        "title": "Methane Seepage on Mars: Where to Look and Why",
+        "why": "The variable detections of methane by the Curiosity rover, orbiters, and terrestrial telescopes, coupled with methane's short lifetime in the martian atmosphere, may imply an active gas source in the planet's subsurface"
+      },
+      {
+        "claim": "Methane in the Martian atmosphere has a relatively short lifetime, implying current production.",
+        "cite": "Klusman et al. (2022), Icarus. doi:10.1016/j.icarus.2022.115079",
+        "doi": "10.1016/j.icarus.2022.115079",
+        "title": "Seasonality in Mars atmospheric methane driven by microseepage, barometric pumping, and adsorption",
+        "why": "Given methane's short atmospheric lifetime relative to geological timescales, its presence implies a replenishing source"
+      },
+      {
+        "claim": "Microbial life is a competing hypothesis for Martian methane production.",
+        "cite": "Fries et al. (2015), Geochemical Perspectives Letters. doi:10.7185/geochemlet.1602",
+        "doi": "10.7185/geochemlet.1602",
+        "title": "A cometary origin for martian atmospheric methane",
+        "why": "The abstract explicitly states: 'Possible sources include aqueous alteration of igneous rocks, release from ancient deposits of methane/water ice clathrates, infall from exogenous sources such as background interplanetary dust, or biological activity.' This lists biological activity as one of the co"
+      }
+    ],
+    "fact_check": [
+      "Methane has been detected in the Martian atmosphere by various orbiters and rovers.",
+      "Methane in the Martian atmosphere has a relatively short lifetime, implying current production.",
+      "Volcanic outgassing is a leading hypothesis for Martian methane.",
+      "Microbial life is a competing hypothesis for Martian methane production."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        6.59
+      ],
+      [
+        6.59,
+        10.46
+      ],
+      [
+        10.46,
+        14.79
+      ],
+      [
+        14.79,
+        18.73
+      ],
+      [
+        18.73,
+        23.91
+      ],
+      [
+        23.91,
+        28.11
+      ],
+      [
+        28.11,
+        33.14
+      ],
+      [
+        33.14,
+        40.31
+      ]
+    ],
+    "duration": 40.31,
+    "scene_lines": [
+      "Mars par methane gas ka milna, shayad ye dikhata hai ki wahan geologically ya biologically kuch activity ho rahi hai!",
+      "Scientists ne Mars ke atmosphere mein methane ke plumes dekhe hain.",
+      "Methane jaldi khatam ho jati hai, matlab ye wahan abhi produce ho rahi hai.",
+      "Toh kya Mars ke andar volcanoes abhi bhi zinda ho sakte hain?",
+      "Methane ka ek possible source volcanoes hain jo deep underground heat se gas chhod rahe hain.",
+      "Lekin ye gas microbes se bhi aa sakti hai, jo wahan survive kar rahe hon.",
+      "Abhi tak hamare paas proof nahi hai, par ye signals batate hain ki Mars dead nahi hai.",
+      "Ever thought how we could finally prove if these gas leaks are from volcanoes or something else? Drop your guess below."
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,050 --> 00:00:02,279\nMars par methane gas ka milna, shayad\n\n2\n00:00:02,279 --> 00:00:04,164\nye dikhata hai ki wahan geologically ya\n\n3\n00:00:04,164 --> 00:00:06,504\nbiologically kuch activity ho rahi hai!\n\n4\n00:00:06,590 --> 00:00:09,111\nScientists ne Mars ke atmosphere mein methane\n\n5\n00:00:09,111 --> 00:00:10,460\nke plumes dekhe hain.\n\n6\n00:00:10,460 --> 00:00:12,726\nMethane jaldi khatam ho jati hai, matlab\n\n7\n00:00:12,726 --> 00:00:14,714\nye wahan abhi produce ho rahi hai.\n\n8\n00:00:14,790 --> 00:00:17,047\nToh kya Mars ke andar volcanoes abhi\n\n9\n00:00:17,047 --> 00:00:18,525\nbhi zinda ho sakte hain?\n\n10\n00:00:18,730 --> 00:00:21,177\nMethane ka ek possible source volcanoes hain\n\n11\n00:00:21,177 --> 00:00:23,885\njo deep underground heat se gas chhod rahe hain.\n\n12\n00:00:23,910 --> 00:00:26,565\nLekin ye gas microbes se bhi aa sakti hai,\n\n13\n00:00:26,622 --> 00:00:28,110\njo wahan survive kar rahe hon.\n\n14\n00:00:28,110 --> 00:00:30,271\nAbhi tak hamare paas proof nahi hai,\n\n15\n00:00:30,271 --> 00:00:33,023\npar ye signals batate hain ki Mars dead nahi hai.\n\n16\n00:00:33,140 --> 00:00:35,164\nEver thought how we could finally prove\n\n17\n00:00:35,164 --> 00:00:38,490\nif these gas leaks are from volcanoes or something else?\n\n18\n00:00:38,580 --> 00:00:39,713\nDrop your guess below.\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [],
+      "footage": [],
+      "review": [],
+      "heard": [
+        "\"mars\" heard as \"मास\"",
+        "\"geologically\" heard as \"जीोलोगिकली\"",
+        "\"biologically\" heard as \"बायोलोगिकली\"",
+        "\"activity\" heard as \"अक्टिविटी\"",
+        "\"scientists\" heard as \"साँन्टिस्स\"",
+        "\"mars\" heard as \"मास\"",
+        "\"atmosphere\" heard as \"अतमोस्फ्या\"",
+        "\"hain\" heard as \"है\""
+      ],
+      "pass": true,
+      "duration": 39.8
+    },
+    "repairs": 0,
+    "audited": true
+  },
+  {
+    "job": "20261116-2045-why-are-mirror-images-flipped-horizontal",
+    "topic": "Why are mirror images flipped horizontally but not vertically?",
+    "title": "Why Mirrors Actually Don't Flip Left-Right 🤯",
+    "description": "Ever wondered why your reflection seems to flip horizontally? It’s not the mirror—it’s the way we perceive coordinate axes. Here is the science of perception. #shorts #hindi #science\n\nSources (open-access research):\n- Gardner et al. (2013), Frontiers in Human Neuroscience. doi:10.3389/fnhum.2013.00457\n- Cox (2014), Bond University Research Portal (Bond University). doi:10.13153/diam.41.2014.649\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nPhoto: Muybridge, Eadweard, CC0, via Wikimedia Commons\nPhoto: Pittigrilli, CC0, via Wikimedia Commons\n\nयह वीडियो कैसे बना: स्क्रिप्ट को AI tools की मदद से open research के आधार पर लिखा और fact-check किया गया है, आवाज़ AI voice की है, और editing open-source software से हुई है। कोई गलती दिखे तो comment में बताइए — जाँच कर सुधार करेंगे।",
+    "tags": [
+      "science",
+      "physics"
+    ],
+    "hook": "Aapka mirror kabhi bhi left ko right nahi karta, fir bhi image flip dikhti hai.",
+    "status": "review",
+    "narration": "Aapka mirror kabhi bhi left ko right nahi karta, fir bhi image flip dikhti hai. Sochiye aap ek paper par apna naam likh kar mirror ke saamne khade hain. Mirror light ko reflect karta hai, jis wajah se image aisi lagti hai jaise woh mirror ke piche bani ho. Turn: Toh agar mirror sirf light reflect kar raha hai, toh left-right flip ka illusion kyun hota hai? Actually, mirror sirf front-to-back axis reverse karta hai. Humein left-right flip isliye lagta hai kyunki hum reflection ko ek aise insaan par map karte hain jo humein face kar raha hai, jiske liye mental 180-degree turn chahiye. Hum imagine karte hain ki hum ghoom kar mirror ke piche gaye hain, isliye left right lagta hai. Think about it: if you hold a piece of paper with text, you have to rotate it to face the mirror, which is why the text appears reversed. Toh agli baar mirror dekhein, toh yaad rakhein ki woh flip nahi, sirf aapki depth ko reverse kar raha hai.",
+    "voice_engine": "edge-tts",
+    "voices": "one narrator (hi-IN-SwaraNeural)",
+    "diagrams": 1,
+    "series": "Everyday Whys",
+    "countdown": false,
+    "length_arm": "standard",
+    "question": "Mirror reflection mein left-right flip ka illusion kyun hota hai?",
+    "answer_comment": "Mirrors technically do not flip anything laterally. They create a depth-reversed image along the Z-axis. We perceive it as left-right because we map the reflection onto a person facing us, which requires a mental 180-degree turn. Any more questions about light?\n\nSources (open-access research):\n- Gardner et al. (2013), Frontiers in Human Neuroscience. doi:10.3389/fnhum.2013.00457\n- Cox (2014), Bond University Research Portal (Bond University). doi:10.13153/diam.41.2014.649",
+    "sources": [
+      {
+        "claim": "The left-right reversal is a result of human mental rotation (the 'mirror' perspective).",
+        "cite": "Gardner et al. (2013), Frontiers in Human Neuroscience. doi:10.3389/fnhum.2013.00457",
+        "doi": "10.3389/fnhum.2013.00457",
+        "title": "Strategy modulates spatial perspective-taking: evidence for dissociable disembodied and embodied routes",
+        "why": "This relationship was restricted to those participants reporting that they adopted the perspective of another by reversing left and right whenever confronted with a front-view figure; it was absent in those participants who reported perspective-taking by mentally transforming their spatial orientati"
+      },
+      {
+        "claim": "If you face a mirror and assume you have rotated to match the reflection, it creates the illusion of lateral swapping.",
+        "cite": "Cox (2014), Bond University Research Portal (Bond University). doi:10.13153/diam.41.2014.649",
+        "doi": "10.13153/diam.41.2014.649",
+        "title": "Reflections in a Mirror",
+        "why": "I set out the different forms the puzzle takes and argue that one form of it – arguably the key form – has not been satisfactorily solved. I offer a solution in three parts: setting out the conditions in which an apparent left/right reversal of mirror images is generated; explaining why these condit"
+      }
+    ],
+    "fact_check": [
+      "Mirrors perform a front-to-back reversal (depth inversion), not a lateral reversal.",
+      "The left-right reversal is a result of human mental rotation (the 'mirror' perspective).",
+      "If you face a mirror and assume you have rotated to match the reflection, it creates the illusion of lateral swapping."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        4.52
+      ],
+      [
+        4.52,
+        8.62
+      ],
+      [
+        8.62,
+        14.57
+      ],
+      [
+        14.57,
+        20.22
+      ],
+      [
+        20.22,
+        33.53
+      ],
+      [
+        33.53,
+        38.4
+      ],
+      [
+        38.4,
+        45.94
+      ],
+      [
+        45.94,
+        51.93
+      ]
+    ],
+    "duration": 51.93,
+    "scene_lines": [
+      "Aapka mirror kabhi bhi left ko right nahi karta, fir bhi image flip dikhti hai.",
+      "Sochiye aap ek paper par apna naam likh kar mirror ke saamne khade hain.",
+      "Mirror light ko reflect karta hai, jis wajah se image aisi lagti hai jaise woh mirror ke piche bani ho.",
+      "Turn: Toh agar mirror sirf light reflect kar raha hai, toh left-right flip ka illusion kyun hota hai?",
+      "Actually, mirror sirf front-to-back axis reverse karta hai. Humein left-right flip isliye lagta hai kyunki hum reflection ko ek aise insaan par map karte hain jo humein face kar raha hai, jiske liye mental 180-degree turn chahiye.",
+      "Hum imagine karte hain ki hum ghoom kar mirror ke piche gaye hain, isliye left right lagta hai.",
+      "Think about it: if you hold a piece of paper with text, you have to rotate it to face the mirror, which is why the text appears reversed.",
+      "Toh agli baar mirror dekhein, toh yaad rakhein ki woh flip nahi, sirf aapki depth ko reverse kar raha hai."
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,050 --> 00:00:01,957\nAapka mirror kabhi bhi left ko right\n\n2\n00:00:01,957 --> 00:00:04,443\nnahi karta, fir bhi image flip dikhti hai.\n\n3\n00:00:04,520 --> 00:00:06,692\nSochiye aap ek paper par apna naam\n\n4\n00:00:06,692 --> 00:00:08,620\nlikh kar mirror ke saamne khade hain.\n\n5\n00:00:08,620 --> 00:00:10,640\nMirror light ko reflect karta hai, jis\n\n6\n00:00:10,640 --> 00:00:12,716\nwajah se image aisi lagti hai jaise\n\n7\n00:00:12,716 --> 00:00:14,555\nwoh mirror ke piche bani ho.\n\n8\n00:00:14,570 --> 00:00:16,784\nTurn: Toh agar mirror sirf light reflect\n\n9\n00:00:16,784 --> 00:00:18,525\nkar raha hai, toh left-right flip ka\n\n10\n00:00:18,525 --> 00:00:20,014\nillusion kyun hota hai?\n\n11\n00:00:20,220 --> 00:00:23,560\nActually, mirror sirf front-to-back axis reverse karta hai.\n\n12\n00:00:23,560 --> 00:00:25,848\nHumein left-right flip isliye lagta hai kyunki\n\n13\n00:00:25,848 --> 00:00:28,062\nhum reflection ko ek aise insaan par\n\n14\n00:00:28,062 --> 00:00:29,757\nmap karte hain jo humein face kar\n\n15\n00:00:29,757 --> 00:00:33,529\nraha hai, jiske liye mental 180-degree turn chahiye.\n\n16\n00:00:33,530 --> 00:00:35,352\nHum imagine karte hain ki hum ghoom\n\n17\n00:00:35,352 --> 00:00:37,069\nkar mirror ke piche gaye hain, isliye\n\n18\n00:00:37,069 --> 00:00:38,357\nleft right lagta hai.\n\n19\n00:00:38,400 --> 00:00:40,007\nThink about it: if you hold a\n\n20\n00:00:40,007 --> 00:00:41,951\npiece of paper with text, you have\n\n21\n00:00:41,951 --> 00:00:43,567\nto rotate it to face the mirror,\n\n22\n00:00:43,567 --> 00:00:45,841\nwhich is why the text appears reversed.\n\n23\n00:00:45,940 --> 00:00:47,868\nToh agli baar mirror dekhein, toh yaad\n\n24\n00:00:47,868 --> 00:00:49,913\nrakhein ki woh flip nahi, sirf aapki\n\n25\n00:00:49,913 --> 00:00:51,333\ndepth ko reverse kar raha hai.\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [
+        "phrase missing from the audio: \"think about it if you hold a piece of paper with text you have to rotate it to face the mirror which is why the text appears reversed toh\""
+      ],
+      "footage": [
+        "scene(s) [7, 8] have weak or placeholder footage"
+      ],
+      "review": [],
+      "heard": [
+        "\"mirror\" heard as \"मिरग\"",
+        "\"right nahi\" heard as \"रइट नहीं\"",
+        "\"image\" heard as \"एमज\"",
+        "\"sochiye\" heard as \"सोची\"",
+        "\"paper par\" heard as \"पेपपा\"",
+        "\"mirror\" heard as \"मिरग\"",
+        "\"hain mirror light\" heard as \"है मिरग लाइट\"",
+        "\"image\" heard as \"एमज\""
+      ],
+      "pass": false,
+      "duration": 51.4
+    },
+    "repairs": 0
   }
 ]

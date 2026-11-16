@@ -27,3 +27,16 @@ Sources:
 
 - Leftover food often tastes better because flavor compounds have more time to diffuse into the food matrix.
 - Cooling and reheating allow starches to gelatinize further and amino acids to break down, enhancing perceived flavor.
+
+## Why Mars Might Be Alive Inside 🤔
+*2026-11-16 · Everyday Whys*
+
+- Methane has been detected in the Martian atmosphere by various orbiters and rovers.
+- Methane in the Martian atmosphere has a relatively short lifetime, implying current production.
+- Volcanic outgassing is a leading hypothesis for Martian methane.
+- Microbial life is a competing hypothesis for Martian methane production.
+
+Sources:
+- Oehler et al. (2017), Astrobiology. doi:10.1089/ast.2017.1657 — supports: Methane has been detected in the Martian atmosphere by various orbiters and rovers.
+- Klusman et al. (2022), Icarus. doi:10.1016/j.icarus.2022.115079 — supports: Methane in the Martian atmosphere has a relatively short lifetime, implying current production.
+- Fries et al. (2015), Geochemical Perspectives Letters. doi:10.7185/geochemlet.1602 — supports: Microbial life is a competing hypothesis for Martian methane production.

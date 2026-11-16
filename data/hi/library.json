@@ -50,5 +50,36 @@
       "Cooling and reheating allow starches to gelatinize further and amino acids to break down, enhancing perceived flavor."
     ],
     "sources": []
+  },
+  {
+    "job": "20261116-2011-mysterious-gas-leaks-suggest-mars-may-st",
+    "date": "2026-11-16",
+    "title": "Why Mars Might Be Alive Inside 🤔",
+    "topic": "Mysterious gas leaks suggest Mars may still be volcanically alive",
+    "series": "Everyday Whys",
+    "weekly": false,
+    "claims": [
+      "Methane has been detected in the Martian atmosphere by various orbiters and rovers.",
+      "Methane in the Martian atmosphere has a relatively short lifetime, implying current production.",
+      "Volcanic outgassing is a leading hypothesis for Martian methane.",
+      "Microbial life is a competing hypothesis for Martian methane production."
+    ],
+    "sources": [
+      {
+        "cite": "Oehler et al. (2017), Astrobiology. doi:10.1089/ast.2017.1657",
+        "doi": "10.1089/ast.2017.1657",
+        "claim": "Methane has been detected in the Martian atmosphere by various orbiters and rovers."
+      },
+      {
+        "cite": "Klusman et al. (2022), Icarus. doi:10.1016/j.icarus.2022.115079",
+        "doi": "10.1016/j.icarus.2022.115079",
+        "claim": "Methane in the Martian atmosphere has a relatively short lifetime, implying current production."
+      },
+      {
+        "cite": "Fries et al. (2015), Geochemical Perspectives Letters. doi:10.7185/geochemlet.1602",
+        "doi": "10.7185/geochemlet.1602",
+        "claim": "Microbial life is a competing hypothesis for Martian methane production."
+      }
+    ]
   }
 ]

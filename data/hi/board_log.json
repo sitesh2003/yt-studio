@@ -83,5 +83,41 @@
   ],
   "not_drawn": {},
   "error": ""
+ },
+ {
+  "when": "2026-11-16 19:48",
+  "topic": "Why Do Car Wing Mirrors Say 'Objects in Mirror Are Closer Than They Appear'?",
+  "drawn": [
+   2,
+   3,
+   4,
+   5
+  ],
+  "not_drawn": {},
+  "error": ""
+ },
+ {
+  "when": "2026-11-16 20:21",
+  "topic": "Mysterious gas leaks suggest Mars may still be volcanically alive",
+  "drawn": [
+   2,
+   3,
+   4,
+   5
+  ],
+  "not_drawn": {},
+  "error": ""
+ },
+ {
+  "when": "2026-11-16 20:47",
+  "topic": "Why are mirror images flipped horizontally but not vertically?",
+  "drawn": [
+   2,
+   3,
+   4,
+   5
+  ],
+  "not_drawn": {},
+  "error": ""
  }
 ]
