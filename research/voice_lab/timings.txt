@@ -36,3 +36,10 @@ opt_H10 chatterbox multilingual hi (emotion 0.7, cfg 0.5): 386s to make, 56.5s l
 opt_H11 chatterbox multilingual hi (emotion 0.5, cfg 0.3): 350s to make, 52.3s long
 opt_H14 Swara +18% Hinglish: 29.1s long
 owner voice: NOT UNLOCKED (add the VOICE_KEY secret), no samples in his voice made
+opt_H14 Swara +18% Hinglish: 29.1s long
+owner_O1 English, E2 settings: 362s to make, 33.8s long
+owner_O2 English, calmer: 354s to make, 37.0s long
+owner_O3 English, E2 settings, quicker: 332s to make, 29.7s long
+owner_O4 Hinglish in English letters, English model: 409s to make, 46.8s long
+owner_O5 Hinglish, Hindi model, +18%: 488s to make, 34.6s long
+owner_O6 Hinglish, Hindi model, livelier, +18%: 530s to make, 37.6s long
