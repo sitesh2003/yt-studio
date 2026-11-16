@@ -1,0 +1,63 @@
+name: Voice production test (Chatterbox)
+
+# 16 Nov 2026: the owner picked Chatterbox (lab E2) with Kokoro Heart (A1) as back-up. This runs the real
+# narrator with the daily workflow's packages before any video uses it. Never touches a real video.
+on:
+  workflow_dispatch: {}
+  push:
+    branches: [main]
+    paths: ["tools/voice_prod_test.py", "kick/voice-test.txt"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: voice-prod-test
+  cancel-in-progress: false
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - name: Install FFmpeg
+        run: |
+          pip install -q imageio-ffmpeg==0.7.0
+          sudo cp "$(python -c 'import imageio_ffmpeg; print(imageio_ffmpeg.get_ffmpeg_exe())')" /usr/local/bin/ffmpeg
+          sudo chmod +x /usr/local/bin/ffmpeg
+      - name: Manim
+        continue-on-error: true
+        run: |
+          timeout 420 bash -c 'sudo apt-get install -y -q libcairo2-dev libpango1.0-dev pkg-config' || true
+          pip install -q manim
+      - name: Daily packages, Kokoro and Chatterbox (the same steps the daily runs will use)
+        run: |
+          pip install -q -r requirements.txt
+          pip install -q "faster-whisper==1.2.1"
+          pip install -q torch==2.6.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cpu
+          pip install -q "kokoro==0.9.4" soundfile en-core-web-sm@https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl
+          pip install -q chatterbox-tts --extra-index-url https://download.pytorch.org/whl/cpu
+          pip list 2>/dev/null | grep -i -E "^(torch|torchaudio|numpy|transformers|chatterbox-tts|kokoro|manim) "
+      - name: Keep voice models between runs
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/huggingface
+          key: voice-prod-test-v1
+      - name: Narrate with Chatterbox, listen, fall back to Kokoro
+        run: python tools/voice_prod_test.py 2>&1 | tee research/voice_lab/prod_test.txt; exit ${PIPESTATUS[0]}
+      - name: Save the result
+        if: always()
+        run: |
+          git config user.name "yt-studio-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -f research/voice_lab/prod_test.mp3 research/voice_lab/prod_test.txt || true
+          git diff --cached --quiet || git commit -q -m "test: Chatterbox narrator in the production setup"
+          git pull --rebase -X theirs -q || true
+          git push -q || true

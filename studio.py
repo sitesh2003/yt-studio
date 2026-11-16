@@ -592,7 +592,9 @@ def weekly():
             if at > dt.datetime.now(dt.timezone.utc):
                 log(f"weekly: {h['job']} is already scheduled for {h['publish_at']}; skipping")
                 return
-    set_override({"format": {"width": 1920, "height": 1080, "type": "long"},
+    # the long episode reads with Kokoro Heart (lab A1): Chatterbox would take hours for 9 minutes of speech
+    set_override({"voice": {"engine": "kokoro", "kokoro_voice": "af_heart"},
+                  "format": {"width": 1920, "height": 1080, "type": "long"},
                   "captions": {"size": 64, "position_y": 940, "words_per_line": 4, "outline": 4}})
     try:
         script = writer.write_weekly(week[-7:])

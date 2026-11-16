@@ -43,6 +43,7 @@ jobs:
 
       - name: Voice options (every voice, the same lines, real-video pauses)
         timeout-minutes: 30
+        if: github.event_name == 'workflow_dispatch'   # done 16 Nov; its samples are saved
         run: |
           python -m venv /tmp/kk && . /tmp/kk/bin/activate
           pip install -q torch --index-url https://download.pytorch.org/whl/cpu
@@ -51,6 +52,15 @@ jobs:
           sudo apt-get install -y -q espeak-ng > /dev/null 2>&1 || true   # Kokoro's Hindi voices read through espeak
           pip install -q "misaki[hi]" || true
           python tools/voice_lab.py research/voice_lab options
+
+      - name: Hindi round 2 (quicker Edge voices + Chatterbox speaking Hindi)
+        timeout-minutes: 45
+        continue-on-error: true
+        run: |
+          python -m venv /tmp/h2 && . /tmp/h2/bin/activate
+          pip install -q torch==2.6.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cpu
+          pip install -q chatterbox-tts soundfile edge-tts --extra-index-url https://download.pytorch.org/whl/cpu
+          python tools/voice_lab.py research/voice_lab hindi2
 
       - name: Chatterbox lively, every word checked by ear
         timeout-minutes: 50

@@ -224,7 +224,54 @@ def options():
             log.append(f"opt_{oid} {engine} {voice}: FAILED {type(e).__name__}: {str(e)[:200]}")
 
 
-jobs = {"kokoro": [kokoro], "options": [options],
+# ---- Hindi round 2 (16 Nov 2026, owner: liked none of H1-H5, "hindi is very slow") ----
+HINDI2 = [("H6", "edge", "hi-IN-SwaraNeural", "+15%", 0.7),
+          ("H7", "edge", "hi-IN-SwaraNeural", "+25%", 0.6),
+          ("H8", "edge", "hi-IN-MadhurNeural", "+15%", 0.7),
+          ("H9", "edge", "hi-IN-MadhurNeural", "+25%", 0.6)]
+
+
+def hindi2():
+    import re
+    import numpy as np
+    for oid, engine, voice, rate, pscale in HINDI2:
+        t = time.time()
+        try:
+            parts, sr = [], 24000
+            for scene in OPT_HI:
+                sents = [s for line in scene for s in re.split(r"(?<=[.?!।])\s+", line.strip()) if s]
+                for m, sent in enumerate(sents):
+                    w, sr = _edge_say(sent, voice, rate)
+                    parts += [_trim(w, sr), np.zeros(int(sr * _gap(sent, m == len(sents) - 1) * pscale), dtype="float32")]
+            wav = np.concatenate(parts)
+            save(f"opt_{oid}.wav", wav, sr)
+            log.append(f"opt_{oid} {voice} {rate} pauses x{pscale}: {len(wav) / sr:.1f}s long")
+        except Exception as e:
+            log.append(f"opt_{oid} {voice}: FAILED {type(e).__name__}: {str(e)[:200]}")
+    # the owner's English pick (E2) speaking Hindi: Chatterbox's multilingual model, same voice, quicker pauses
+    try:
+        import torch
+        from chatterbox.mtl_tts import ChatterboxMultilingualTTS
+        model = ChatterboxMultilingualTTS.from_pretrained(device="cpu")
+        for oid, ex, cfg in (("H10", 0.7, 0.5), ("H11", 0.5, 0.3)):
+            t = time.time()
+            parts = []
+            for scene in OPT_HI:
+                sents = [s for line in scene for s in re.split(r"(?<=[.?!।])\s+", line.strip()) if s]
+                for m, sent in enumerate(sents):
+                    torch.manual_seed(1000)
+                    w = model.generate(sent, language_id="hi", exaggeration=ex, cfg_weight=cfg).squeeze(0).cpu().numpy()
+                    parts += [_trim(w, model.sr), np.zeros(int(model.sr * _gap(sent, m == len(sents) - 1) * 0.7),
+                                                          dtype="float32")]
+            wav = np.concatenate(parts)
+            save(f"opt_{oid}.wav", wav, model.sr)
+            log.append(f"opt_{oid} chatterbox multilingual hi (emotion {ex}, cfg {cfg}): {time.time() - t:.0f}s to make, "
+                       f"{len(wav) / model.sr:.1f}s long")
+    except Exception as e:
+        log.append(f"opt_H10/H11 chatterbox hindi: FAILED {type(e).__name__}: {str(e)[:200]}")
+
+
+jobs = {"kokoro": [kokoro], "options": [options], "hindi2": [hindi2],
         "chatterbox": [lambda: chatterbox("chatterbox_calm", 0.4, 0.5), lambda: chatterbox("chatterbox_lively", 0.8, 0.3)],
         "checked": [lambda: chatterbox_checked("chatterbox_lively_checked", 0.8, 0.3),
                     lambda: chatterbox_checked("chatterbox_lively_tuned", 0.7, 0.5)]}

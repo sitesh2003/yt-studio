@@ -236,7 +236,85 @@ def _kokoro_speak(text, v, rate, path):
     return words
 
 
+_CB = None
+_EAR = None
+
+
+def _norm_w(w):
+    return re.sub(r"[^\w]", "", (w or "").lower())
+
+
+def _align(text, heard):
+    """The script's own words on the times the listener heard them (captions keep the script's spelling).
+    Unmatched script words are spread evenly between their matched neighbours."""
+    import difflib
+    said = re.findall(r"\S+", text)
+    a, b = [_norm_w(w) for w in said], [_norm_w(h["text"]) for h in heard]
+    times = [None] * len(said)
+    for blk in difflib.SequenceMatcher(None, a, b, autojunk=False).get_matching_blocks():
+        for i in range(blk.size):
+            times[blk.a + i] = (heard[blk.b + i]["start"], heard[blk.b + i]["end"])
+    end_all = heard[-1]["end"] if heard else 0.0
+    k = 0
+    while k < len(said):
+        if times[k] is None:
+            j = k
+            while j < len(said) and times[j] is None:
+                j += 1
+            lo = times[k - 1][1] if k else (heard[0]["start"] if heard else 0.0)
+            hi = times[j][0] if j < len(said) else end_all
+            step = max(hi - lo, 0.05 * (j - k)) / (j - k)
+            for n in range(k, j):
+                times[n] = (lo + step * (n - k), lo + step * (n - k + 1))
+            k = j
+        k += 1
+    return [{"start": s, "end": e, "text": w} for w, (s, e) in zip(said, times)]
+
+
+def _chatterbox_speak(text, v, rate, path, tries=3):
+    """Chatterbox (MIT, open source, CPU): the expressive narrator the owner picked on 16 Nov 2026 (lab option E2:
+    emotion 0.7, cfg 0.5). It gives no word timings and can drop a word, so each sentence is listened to
+    (faster-whisper, word timings), re-made with a new seed if a word is missing, and the best take kept."""
+    global _CB, _EAR
+    import soundfile as sf
+    import torch
+    if _CB is None:
+        from chatterbox.tts import ChatterboxTTS
+        _CB = ChatterboxTTS.from_pretrained(device="cpu")
+    if _EAR is None:
+        from faster_whisper import WhisperModel
+        _EAR = WhisperModel("base.en", device="cpu", compute_type="int8")
+    want = [w for w in (_norm_w(x) for x in re.findall(r"\S+", text)) if w]
+    best = None
+    for n in range(tries):
+        torch.manual_seed(1000 + n)
+        wav = _CB.generate(text, exaggeration=float(v.get("cb_exaggeration", 0.7)),
+                           cfg_weight=float(v.get("cb_cfg", 0.5))).squeeze(0).cpu().numpy().astype("float32")
+        sf.write(str(path), wav, _CB.sr)
+        segs, _ = _EAR.transcribe(str(path), language="en", beam_size=5, word_timestamps=True)
+        heard = [{"start": w.start, "end": w.end, "text": w.word.strip()} for s in segs for w in (s.words or [])]
+        got = {_norm_w(h["text"]) for h in heard}
+        miss = [w for w in want if w not in got and not w.isdigit()]
+        if best is None or len(miss) < len(best[2]):
+            best = (wav, heard, miss)
+        if not miss:
+            break
+        log(f"voice: Chatterbox dropped {miss[:4]} in {text[:40]!r}; take {n + 2}")
+    wav, heard, miss = best
+    if not heard or len(miss) > max(1, len(want) // 8):
+        raise RuntimeError(f"Chatterbox kept dropping words ({miss[:4]})")
+    sf.write(str(path), wav, _CB.sr)
+    return _align(text, heard)
+
+
 def _speak_retry(text, v, rate, path):
+    if v.get("engine") == "chatterbox":
+        try:
+            return _chatterbox_speak(text, v, rate, path.with_suffix(".wav")), path.with_suffix(".wav")
+        except Exception as e:
+            # the owner's second choice (lab option A1) for the rest of this video
+            log(f"voice: Chatterbox unavailable ({str(e)[:80]}), using Kokoro {v.get('kokoro_voice') or 'af_heart'}")
+            v["engine"] = "kokoro"
     if v.get("engine") == "kokoro":
         try:
             return _kokoro_speak(text, v, rate, path.with_suffix(".wav")), path.with_suffix(".wav")
@@ -330,13 +408,26 @@ def _say_sentence(sent, nxt, nxt_scene, sv, v, who, script, k, m, job_dir, words
     return t + _dur(part) + gap, n_sent + 1   # exactly what is joined, so the captions never drift
 
 
-def narrate(script, job_dir):
+def narrate(script, job_dir, engine=None):
     """One scene at a time, joined with natural pauses, so it sounds like a person telling a story
     rather than one long breathless read. Word timings are shifted onto the joined timeline."""
+    v = dict(config()["voice"])
+    if engine:
+        v["engine"] = engine
+    if v.get("engine") == "chatterbox":
+        words = _narrate(script, job_dir, v)
+        if v["engine"] == "chatterbox":
+            return words
+        # Chatterbox failed part-way: one video never mixes two voices, so read it all again with Kokoro
+        log("voice: Chatterbox failed part-way; the whole video is read again with Kokoro")
+        return narrate(script, job_dir, engine="kokoro")
+    return _narrate(script, job_dir, v)
+
+
+def _narrate(script, job_dir, v):
     import subprocess
     from .writer import tidy_countdown
     tidy_countdown(script)   # "Pause and guess" exactly once, right before the 3-2-1
-    v = dict(config()["voice"])
     scenes = [clean(s["narration"].strip()) for s in script["scenes"]]
     words, parts, t = [], [], 0.0
     # Change the voices from video to video: in about half the videos the host is male and the

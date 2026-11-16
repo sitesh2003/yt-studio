@@ -38,14 +38,14 @@
     "target_seconds": 35
   },
   "voice": {
-    "kokoro_voice": "af_bella",
+    "kokoro_voice": "af_heart",
     "narrators": {
       "host": {
-        "kokoro": "af_bella",
+        "kokoro": "af_heart",
         "edge": "en-US-EmmaMultilingualNeural"
       },
       "explainer": {
-        "kokoro": "af_bella",
+        "kokoro": "af_heart",
         "edge": "en-US-EmmaMultilingualNeural"
       }
     },
