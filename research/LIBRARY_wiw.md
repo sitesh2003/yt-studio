@@ -3,6 +3,13 @@
 Every video, the claims it makes, and the open-access research behind them. Built automatically by
 agents/library.py; a source is listed only if its abstract was checked to support the claim.
 
+## How Colour Vision Works: The Biology of Cone Cells Explained
+*2026-11-16 · Biology*
+
+- Human trichromatic color vision relies on three cone cell types (S, M, L) responding to overlapping spectral sensitivity curves.
+- A red object reflects long wavelengths primarily, stimulating L-cones most heavily, but color perception is determined by the brain processing the ratio of activation across all three cone types.
+- Protanopia is the absence or malfunction of long-wavelength (L) cone photopigments, causing red colors to appear dark or dull.
+
 ## Why Does Soap Remove Grease?
 *2026-11-15 · Chemistry*
 

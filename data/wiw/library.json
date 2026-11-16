@@ -86,5 +86,19 @@
       "Eutectic point of NaCl-water is approximately -21.1 degrees Celsius."
     ],
     "sources": []
+  },
+  {
+    "job": "20261116-0329-how-colour-vision-works-the-biology-of-c",
+    "date": "2026-11-16",
+    "title": "How Colour Vision Works: The Biology of Cone Cells Explained",
+    "topic": "How colour vision works: The biology of cone cells explained",
+    "series": "Biology",
+    "weekly": false,
+    "claims": [
+      "Human trichromatic color vision relies on three cone cell types (S, M, L) responding to overlapping spectral sensitivity curves.",
+      "A red object reflects long wavelengths primarily, stimulating L-cones most heavily, but color perception is determined by the brain processing the ratio of activation across all three cone types.",
+      "Protanopia is the absence or malfunction of long-wavelength (L) cone photopigments, causing red colors to appear dark or dull."
+    ],
+    "sources": []
   }
 ]
