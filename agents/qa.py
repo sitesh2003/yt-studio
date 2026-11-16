@@ -42,6 +42,14 @@ def technical(job):
     m = re.search(r"mean_volume:\s*(-?[\d.]+) dB", vol)
     if not m or float(m.group(1)) < -35:
         issues.append(f"audio too quiet or missing (mean {m.group(1) if m else 'n/a'} dB)")
+    # 16 Nov 2026: the sound dropping out in the MIDDLE (the 15 Nov weekly went silent mid-episode and
+    # still passed, because the mean volume over the whole video looked fine)
+    quiet = _ff(["-i", str(video), "-vn", "-af", "silencedetect=noise=-45dB:d=1.0", "-f", "null", "-"])
+    q_starts = [float(x) for x in re.findall(r"silence_start: (-?[\d.]+)", quiet)]
+    q_ends = [float(x) for x in re.findall(r"silence_end: ([\d.]+)", quiet)] + [dur]
+    mid = [(a, b) for a, b in zip(q_starts, q_ends) if a > 1.5 and b < dur - 1.5]
+    if mid:
+        issues.append("the sound drops out mid-video: " + ", ".join(f"{a:.1f}-{b:.1f} s" for a, b in mid[:3]))
     black = _ff(["-i", str(video), "-vf", "blackdetect=d=0.6:pix_th=0.08", "-an", "-f", "null", "-"])
     if "black_start" in black:
         issues.append("black frames for more than 0.6 s")

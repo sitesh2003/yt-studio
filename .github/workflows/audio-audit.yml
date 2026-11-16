@@ -1,0 +1,50 @@
+name: Audio audit (voice all the way through)
+
+on:
+  workflow_dispatch: {}
+  push:                       # the start button: edit kick/audit.txt
+    branches: [main]
+    paths: ["kick/audit.txt"]
+
+permissions:
+  contents: write
+  actions: read          # to read the runs' stored videos
+
+concurrency:
+  group: audio-audit
+  cancel-in-progress: false
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Tools
+        run: |
+          pip install -q imageio-ffmpeg==0.7.0 requests "faster-whisper==1.2.1" yt-dlp
+          sudo cp "$(python -c 'import imageio_ffmpeg; print(imageio_ffmpeg.get_ffmpeg_exe())')" /usr/local/bin/ffmpeg
+
+      - name: Listen to every video on YouTube
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python tools/audio_audit.py
+
+      - name: Save the report
+        if: always()
+        run: |
+          git config user.name "yt-studio-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add research/audio_audit.md research/audio_audit.json || true
+          for i in 1 2 3; do
+            git diff --cached --quiet && break
+            git commit -q -m "audit: voice all the way through $(date -u +%F)" && git push -q && break
+            git pull -q --rebase
+          done
