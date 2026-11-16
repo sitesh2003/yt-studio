@@ -154,6 +154,12 @@ def _vf(path):
     f = config()["format"]
     W, H = f["width"], f["height"]
     w, h = _dims(path)
+    # 16 Nov 2026 (owner: "sometimes it's getting stretched"): a stock clip with non-square pixels (an
+    # anamorphic 1440x1080 that plays as 16:9) was scaled by its STORED size and then marked square, so it
+    # came out squeezed or stretched. Square the pixels first; the sizes below use the shape it is shown at.
+    sar = _sar(path)
+    head = "scale=trunc(iw*sar/2)*2:ih,setsar=1," if abs(sar - 1) > 0.01 else ""
+    w = int(w * sar) if w else w
     tail = f"fps={f['fps']},setsar=1"
     if H > W and w and h and w / h > W / H * 1.05:
         try:
@@ -162,8 +168,21 @@ def _vf(path):
             sx = 0.5
         sw = int(w * H / h) // 2 * 2                      # width after scaling to full height
         x = int(min(max(sx * sw - W / 2, 0), sw - W))
-        return f"scale={sw}:{H},crop={W}:{H}:{x}:0,{tail}"
-    return f"scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},{tail}"
+        return f"{head}scale={sw}:{H},crop={W}:{H}:{x}:0,{tail}"
+    return f"{head}scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},{tail}"
+
+
+def _sar(path):
+    """The clip's pixel shape (1.0 = square), from ffmpeg's stream line '[SAR 4:3 DAR 16:9]'."""
+    import re
+    import subprocess
+    try:
+        err = subprocess.run(["ffmpeg", "-hide_banner", "-i", str(path)], capture_output=True, text=True,
+                             encoding="utf-8", errors="replace", timeout=30).stderr
+        m = re.search(r"Video:.*?SAR (\d+):(\d+)", err)
+        return int(m[1]) / int(m[2]) if m and int(m[2]) and int(m[1]) else 1.0
+    except Exception:
+        return 1.0
 
 
 def render(clips, times, words, job_dir, overlays=None):
