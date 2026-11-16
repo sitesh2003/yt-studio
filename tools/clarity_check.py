@@ -41,11 +41,24 @@ def main(prefixes):
     ears = {}
     md = ["# Clarity check, scene by scene", ""]
     for v in vids:
+        try:
+            md += one(v, hist, files, ears)
+        except Exception as e:   # one bad video must not lose the whole report
+            import traceback
+            md += [f"## {v.get('title')}", "Check crashed: " + repr(e), "", "```", traceback.format_exc()[-1500:], "```", ""]
+            print(traceback.format_exc())
+    (ROOT / "research" / "clarity_check.md").write_text("\n".join(md) + "\n", encoding="utf-8")
+    print("\n".join(md))
+
+
+def one(v, hist, files, ears):
+    from faster_whisper import WhisperModel
+    md = []
+    if True:
         h, path = hist[v["job"]], files.get(v["job"])
         md += [f"## {v['title']}", f"{v['channel_name']} · https://youtu.be/{v['video_id']} · voices: {h.get('voices')}", ""]
         if not path:
-            md += ["Could not get the uploaded file.", ""]
-            continue
+            return md + ["Could not get the uploaded file.", ""]
         lang = v["lang"]
         if lang not in ears:
             ears[lang] = WhisperModel("small.en" if lang == "en" else "small", device="cpu", compute_type="int8")
@@ -65,8 +78,7 @@ def main(prefixes):
             md.append(f"| {k + 1} | {A.mmss(a)} to {A.mmss(b)} | {lu} LUFS | {pct:.0%} | {'; '.join(lost)[:120]} |")
             print(v["job"][:13], k + 1, lu, f"{pct:.0%}", lost[:3])
         md.append("")
-    (ROOT / "research" / "clarity_check.md").write_text("\n".join(md) + "\n", encoding="utf-8")
-    print("\n".join(md))
+    return md
 
 
 if __name__ == "__main__":
