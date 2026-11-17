@@ -2214,7 +2214,7 @@
       "backyard pond physics"
     ],
     "hook": "Your frozen pond is secretly keeping fish alive.",
-    "status": "scheduled",
+    "status": "public",
     "narration": "Your frozen pond is secretly keeping fish alive. At negative fifteen degrees, why doesn't it freeze solid? Many liquids shrink when cold, but water does something strange. So why does ice float on top? Water reaches maximum density at four degrees Celsius. Water gets lighter as it turns to ice, floating to the top and creating an insulating lid. Yesterday: watermelons float because their density is below water. Ever thought why ice cubes float in your glass?",
     "voice_engine": "kokoro",
     "voices": "male host, female explainer",
@@ -2294,7 +2294,8 @@
     "audited": true,
     "video_id": "7CxPpDW31G0",
     "publish_at": "2026-11-17T12:00:00-05:00",
-    "thumbnail_set": true
+    "thumbnail_set": true,
+    "answered": true
   },
   {
     "job": "20261115-0159-why-metal-becomes-significantly-harder-a",
@@ -2741,7 +2742,7 @@
       "science"
     ],
     "hook": "Massive acorn drops trigger Lyme disease spikes two years later, driven by a hidden chain reaction.",
-    "status": "banked",
+    "status": "scheduled",
     "narration": "Massive acorn drops trigger Lyme disease spikes two years later, driven by a hidden chain reaction. When oak trees drop extra acorns, white-footed mice feast and multiply rapidly. Those mice carry immature ticks, which feed safely on the surging rodent population. Think about what happens when that giant mouse food supply suddenly runs dry next season. Pause and guess... three, two, one. Those well-fed ticks grow into nymphs next year, greatly increasing the number of infected ticks in the woods. That delayed chain reaction is why heavy acorn seasons predict high Lyme disease rates. Ever thought how forest food webs secretly connect to human health right outside your door?",
     "voice_engine": "kokoro",
     "voices": "male host, female explainer",
@@ -2832,7 +2833,10 @@
       "duration": 38.9
     },
     "repairs": 0,
-    "audited": true
+    "audited": true,
+    "video_id": "KlP_2pVJbjU",
+    "publish_at": "2026-11-18T19:00:00-05:00",
+    "thumbnail_set": true
   },
   {
     "job": "20261116-0825-weekly-this-shark-can-live-for-centuries",
