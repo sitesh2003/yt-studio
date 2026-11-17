@@ -42,9 +42,9 @@
     "engine": "chatterbox",
     "cb_exaggeration": 0.7,
     "cb_cfg": 0.5,
-    "_engine_note": "17 Nov 2026, owner: male voice = E2 only (Chatterbox, emotion 0.7, cfg 0.5); girl's voice = A3 permanently (Kokoro af_heart at 1.14x, rate +14%), the back-up and the weekly's voice. His own cloned voice (cb_voice_ref assets/voice/owner.wav) is ready but OFF until he picks it from the samples.",
+    "_engine_note": "FIXED 17 Nov 2026, owner: male voice = E2 (Chatterbox, emotion 0.7, cfg 0.5), female voice = A1 (Kokoro af_heart, rate +6% = 1.06x). A1 is the back-up and the weekly voice. Do not change without the owner. His cloned voice (O1-O6) was tried and rejected; the code stays but is off. Hindi = H14 (Swara +18%, Hinglish).",
     "name": "en-US-AndrewMultilingualNeural",
-    "rate": "+14%",
+    "rate": "+6%",
     "kokoro_voice": "af_heart",
     "_note": "ONE narrator per channel (16 Nov 2026, owner: two voices felt like an overheard conversation; a single consistent voice becomes the channel's identity). host/explainer only change delivery.",
     "narrators": {
