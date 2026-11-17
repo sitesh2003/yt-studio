@@ -374,5 +374,25 @@
         "claim": "Hippos produce 'blood sweat', which is actually a mixture of hipposudoric acid and norhipposudoric acid."
       }
     ]
+  },
+  {
+    "job": "20261117-1237-why-mosquitoes-prefer-specific-people-ov",
+    "date": "2026-11-17",
+    "title": "How Mosquitoes Pick Their Next Meal 😮",
+    "topic": "Why mosquitoes prefer specific people over others based on skin chemistry",
+    "series": "Animal Whys",
+    "weekly": false,
+    "claims": [
+      "Mosquitoes use chemical cues like lactic acid and carboxylic acids to identify hosts (Verhulst et al., 2011).",
+      "Body heat acts as a secondary attraction cue after chemical detection.",
+      "Breezes disperse chemical plumes, interfering with host-seeking behavior in mosquitoes."
+    ],
+    "sources": [
+      {
+        "cite": "Smallegange et al. (2005), Chemical Senses. doi:10.1093/chemse/bji010",
+        "doi": "10.1093/chemse/bji010",
+        "claim": "Mosquitoes use chemical cues like lactic acid and carboxylic acids to identify hosts (Verhulst et al., 2011)."
+      }
+    ]
   }
 ]

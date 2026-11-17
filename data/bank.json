@@ -36,18 +36,6 @@
     "stored": "2026-11-13T00:38:38.270642+00:00"
   },
   {
-    "job": "20261115-1802-why-car-side-windows-shatter-into-tiny-c",
-    "title": "Why Car Windows Shatter Into Cubes 🤯",
-    "assets": {
-      "mp4": 751917860,
-      "jpg": 751918319,
-      "json": 751918372
-    },
-    "locked": true,
-    "series": "Everyday Whys",
-    "stored": "2026-11-15T18:25:21.552423+00:00"
-  },
-  {
     "job": "20261116-0143-why-an-explosion-of-fallen-acorns-secret",
     "title": "How Acorns Indirectly Affect Lyme Disease Rates 🤯",
     "assets": {
@@ -130,5 +118,17 @@
     "locked": true,
     "series": "Animal Whys",
     "stored": "2026-11-17T06:29:13.998182+00:00"
+  },
+  {
+    "job": "20261117-1237-why-mosquitoes-prefer-specific-people-ov",
+    "title": "How Mosquitoes Pick Their Next Meal 😮",
+    "assets": {
+      "mp4": 759116712,
+      "jpg": 759116896,
+      "json": 759116927
+    },
+    "locked": true,
+    "series": "Animal Whys",
+    "stored": "2026-11-17T13:10:05.532765+00:00"
   }
 ]

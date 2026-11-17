@@ -1,21 +1,19 @@
 {
   "lessons": [
-    "Prioritize immediate, contrast-based hooks: The top-performing video ('This Shark Can Live For Centuries!') and 'Why Tuna Meat Is Red Meat' show the highest early retention when the hook establishes an immediate, high-stakes curiosity gap or surprising visual category comparison.",
-    "Eliminate slow exposition: Drop-off data shows that lines explaining technical mechanisms (e.g., 'To turn that watery sap into thick syrup...') consistently trigger viewer exits. Keep technical explanations secondary to the immediate hook.",
-    "Avoid redundant explanations: The data shows significant abandonment when scripts re-explain concepts that were already implied or stated in the hook, such as in the 'Why your eyes are secretly leaking' and 'Why Onions Make You Cry' videos.",
-    "Maintain high stakes through the end: Videos like the shark study keep viewers until the end because they sustain a high-level mystery, whereas videos that pivot to slow, mechanical details (e.g., 'Why Fingers Prune In Water') see a total collapse of retention at the 50% mark.",
-    "Anchor scientific claims to physical action: Lines that focus on the 'why' of a physical sensation (e.g., pineapple 'eating you back') hold viewers better than lines focused on abstract definitions or chemical compositions."
+    "Hook lines that directly name a counter-intuitive or sensory conflict (e.g., pineapple eating you back, shark older than the US) correlate with high early retention above 1.8x at 10%, whereas empty or missing hooks show weaker performance.",
+    "Lines that explain technical chemical processes or slow mechanism breakdowns too early (e.g., specific cell structures or water displacement mechanics around 0.2-0.4 marks) consistently trigger the largest audience drop-offs.",
+    "Best-holding videos (such as the Greenland shark or Tuna vs Cod) maintain exceptionally high engagement past the 50% and end marks by establishing high-stakes biological anomalies rather than everyday kitchen trivia.",
+    "When a hook line is absent or generic (like in the onion or leaky eyes shorts), audience retention at 10% drops significantly compared to explicitly provocative hook lines."
   ],
   "worst_moment_types": [
-    "Technical process breakdowns (e.g., boiling sap, cell storage of chemicals)",
-    "Secondary explanation of the hook premise",
-    "Lines correcting common misconceptions that require multiple sentences to explain",
-    "Abstract definitions that lack immediate sensory context"
+    "Slow mechanical explanations of bodily reactions (e.g., dead skin cells swelling or internal volume loss)",
+    "Complex descriptions of cellular anatomy or enzyme storage locations midway through the short",
+    "Dry secondary context regarding everyday processes without an immediate narrative payoff"
   ],
   "best_hook_types": [
-    "Direct category contradictions (e.g., 'Tuna vs Cod', 'Garlic vs Onions')",
-    "Extreme superlative claims (e.g., 'This shark is older than the United States')",
-    "Provocative personification of inanimate objects (e.g., 'Fresh pineapple is eating you back')"
+    "Provocative statements about sensory experiences (e.g., 'Fresh pineapple is literally eating you back')",
+    "Extreme statistical or temporal claims about animals (e.g., 'This shark is older than the United States')",
+    "Direct contrast of physical appearances or material properties (e.g., tuna red meat vs cod white meat)"
   ],
   "studied": "2026-11-17",
   "videos": 10

@@ -34,6 +34,16 @@ Sources:
 Sources:
 - Uddin et al. (2026), Helvetica Chimica Acta. doi:10.1002/hlca.70102 — supports: Hippos produce 'blood sweat', which is actually a mixture of hipposudoric acid and norhipposudoric acid.
 
+## How Mosquitoes Pick Their Next Meal 😮
+*2026-11-17 · Animal Whys*
+
+- Mosquitoes use chemical cues like lactic acid and carboxylic acids to identify hosts (Verhulst et al., 2011).
+- Body heat acts as a secondary attraction cue after chemical detection.
+- Breezes disperse chemical plumes, interfering with host-seeking behavior in mosquitoes.
+
+Sources:
+- Smallegange et al. (2005), Chemical Senses. doi:10.1093/chemse/bji010 — supports: Mosquitoes use chemical cues like lactic acid and carboxylic acids to identify hosts (Verhulst et al., 2011).
+
 ## How Acorns Indirectly Affect Lyme Disease Rates 🤯
 *2026-11-16 · Animal Whys*
 

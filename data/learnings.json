@@ -1,21 +1,22 @@
 {
   "summary": [
-    "Prioritize human-centric 'us vs. them' or 'body vs. nature' conflict themes over purely factual observations.",
-    "Use declarative, counter-intuitive hooks that explicitly negate the viewer's common assumptions immediately.",
-    "Structure titles to highlight an active reversal (e.g., 'A eats B') rather than a passive explanation of an object.",
-    "Keep hooks under 15 words to ensure they land before the swipe-away threshold triggers.",
-    "Front-load the core mystery in the first 3 seconds; avoid preamble-style setups like 'Drop an apple in water'."
+    "Prioritize counter-intuitive claims that directly challenge a common assumption about a daily object or body function.",
+    "Structure the hook as a high-stakes contradiction where the viewer is 'wrong' about how a mechanism works (e.g., 'it is not X, it is Y').",
+    "Utilize shorter, punchy sentences in the opening to maintain high momentum; avoid lengthy explanations before the primary reveal.",
+    "Ensure the title promises a clear transformation or 'secret' rather than just a descriptive label.",
+    "Keep hook duration under 5 seconds to maximize stayed_pct, as lower retention at the start leads to immediate feed abandonment."
   ],
   "winning_hooks": [
     "Your fingers prune in water, but it is not because you are absorbing it like a sponge.",
+    "Your eyes are leaking right now, and your brain is hiding it.",
     "Fresh pineapple is literally eating you back.",
-    "This shark is older than the United States.",
-    "Your eyes are leaking right now, and your brain is hiding it."
+    "This shark is older than the United States."
   ],
   "avoid": [
-    "Descriptive, passive hooks like 'Drop an apple or a pear in a bowl'.",
-    "Topics that feel like a dictionary definition (e.g., 'How maple syrup is boiled').",
-    "Titles that lack an emotional or surprising hook (e.g., 'Why Fruits Float In Water')."
+    "Starting with observational statements that describe an action without adding conflict or a 'twist' (e.g., 'Drop an apple in water').",
+    "Titles that are purely descriptive/educational (e.g., 'Why Fruits Float') instead of evocative or curiosity-inducing.",
+    "Complex sentences in the first 3 seconds that force the viewer to process too much information before the payoff.",
+    "Topics that feel like a general science fact without a direct, relatable physical consequence for the viewer."
   ],
-  "next_experiment": "Test the impact of 'Personalized Stakes' by rephrasing a topic as a direct physical threat to the viewer (e.g., instead of 'Why onions make you cry', use 'Why you are losing the chemical war against your onions')."
+  "next_experiment": "A/B test two styles of hooks: one that starts with an 'Action/Observation' (e.g., 'You are doing X...') versus a 'Negative Constraint' (e.g., 'Stop doing X, because it is actually Y...'), keeping all other production values identical."
 }

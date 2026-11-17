@@ -2627,7 +2627,7 @@
       "how things work"
     ],
     "hook": "Why do car windows shatter into tiny cubes?",
-    "status": "banked",
+    "status": "scheduled",
     "narration": "Why do car windows shatter into tiny cubes? Regular glass breaks into jagged knives. Car side glass takes a totally different path. Wait, doesn't all glass snap the exact same way under a heavy blow? Not this one. Factories bake extreme stress right into the panel during manufacturing. Think about what happens when you heat and rapidly cool outer layers. Pause and guess... three, two, one. Here's why. The outside cools fast and traps the hot center. That creates a web of opposing tension forces. So when one tiny crack slips past the outer skin, the trapped energy releases instantly. The entire sheet unbinds at once, snapping into harmless pebble shapes instead of long blades. Ever thought why eyeglasses use a similar heat treatment when you drop them?",
     "voice_engine": "kokoro",
     "voices": "male host, female explainer",
@@ -2722,7 +2722,10 @@
       "duration": 46.5
     },
     "repairs": 0,
-    "audited": true
+    "audited": true,
+    "video_id": "obq6Xb4utkY",
+    "publish_at": "2026-11-18T12:00:00-05:00",
+    "thumbnail_set": true
   },
   {
     "job": "20261116-0143-why-an-explosion-of-fallen-acorns-secret",
@@ -3794,6 +3797,104 @@
       ],
       "pass": true,
       "duration": 45.0
+    },
+    "repairs": 0,
+    "audited": true
+  },
+  {
+    "job": "20261117-1237-why-mosquitoes-prefer-specific-people-ov",
+    "topic": "Why mosquitoes prefer specific people over others based on skin chemistry",
+    "title": "How Mosquitoes Pick Their Next Meal 😮",
+    "description": "Ever wonder why you're always the one getting bitten while everyone else is left alone? It comes down to the specific chemical cocktail your skin is releasing right now. #mosquitoes #science #shorts\n\nSources (open-access research):\n- Smallegange et al. (2005), Chemical Senses. doi:10.1093/chemse/bji010\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nIllustrations: drawn for this video with FLUX.2 [klein] 4B (AI, Apache 2.0) and checked for accuracy\nPhoto by imsogabriel_Stock on Pixabay\nPhoto: Paul Lucas  from Leicestershire, UK, CC BY 2.0, via Wikimedia Commons\nVideo by CharlesAldridge on Pixabay\nVideo by GreenCardShow on Pixabay\n\nHow this was made: the script is researched and fact-checked with AI tools against open-access research (sources above when found), narrated by an AI voice, and edited with open-source software. Corrections from viewers are checked and credited.",
+    "tags": [
+      "mosquito",
+      "science",
+      "biology",
+      "insects"
+    ],
+    "hook": "Mosquitoes don't bite randomly; they're actually hunting for specific chemical signals on your skin.",
+    "status": "banked",
+    "narration": "Mosquitoes don't bite randomly; they're actually hunting for specific chemical signals on your skin. Your sweat is a complex cocktail of compounds that varies from person to person. Mosquitoes detect these molecules with their antennae, locking onto your personal scent from yards away. Some people produce high levels of carboxylic acids, which act like a dinner bell for hungry mosquitoes. Pause and guess... three, two, one. The heat guides them. It intensifies the plume of chemicals rising off your skin, making you an easier target. Ever thought why moving into a breeze makes it harder for mosquitoes to find your scent trail? Drop your guess below.",
+    "voice_engine": "chatterbox",
+    "voices": "one narrator (af_heart)",
+    "diagrams": 1,
+    "series": "Animal Whys",
+    "countdown": true,
+    "length_arm": "standard",
+    "question": "Ever thought why moving into a breeze makes it harder for mosquitoes to find your scent trail?",
+    "answer_comment": "The answer: Mosquitoes rely on a continuous 'scent plume' of carbon dioxide and skin chemicals to track their host. Moving into a breeze disperses these chemical molecules faster than your body can replenish them, breaking the trail and making it much harder for the mosquito to track you. Have you noticed other things that keep them away?\n\nSources (open-access research):\n- Smallegange et al. (2005), Chemical Senses. doi:10.1093/chemse/bji010",
+    "sources": [
+      {
+        "claim": "Mosquitoes use chemical cues like lactic acid and carboxylic acids to identify hosts (Verhulst et al., 2011).",
+        "cite": "Smallegange et al. (2005), Chemical Senses. doi:10.1093/chemse/bji010",
+        "doi": "10.1093/chemse/bji010",
+        "title": "Synergism between ammonia, lactic acid and carboxylic acids as kairomones in the host-seeking behaviour of the malaria mosquito Anopheles gambiae sensu stricto (Diptera: Culicidae)",
+        "why": "Ammonia, lactic acid and several carboxylic acids are known to be present in the human odour blend. We investigated the effect of these compounds on naive female mosquitoes using a dual-port olfactometer... Our findings indicate that An. gambiae s.s. relies on the combination of ammonia, lactic acid"
+      }
+    ],
+    "fact_check": [
+      "Mosquitoes use chemical cues like lactic acid and carboxylic acids to identify hosts (Verhulst et al., 2011).",
+      "Body heat acts as a secondary attraction cue after chemical detection.",
+      "Breezes disperse chemical plumes, interfering with host-seeking behavior in mosquitoes."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        4.1
+      ],
+      [
+        4.1,
+        8.24
+      ],
+      [
+        8.24,
+        12.64
+      ],
+      [
+        12.64,
+        17.1
+      ],
+      [
+        17.1,
+        19.8
+      ],
+      [
+        19.8,
+        21.0
+      ],
+      [
+        21.0,
+        24.93
+      ],
+      [
+        24.93,
+        30.3
+      ]
+    ],
+    "duration": 30.3,
+    "scene_lines": [
+      "Mosquitoes don't bite randomly; they're actually hunting for specific chemical signals on your skin.",
+      "Your sweat is a complex cocktail of compounds that varies from person to person.",
+      "Mosquitoes detect these molecules with their antennae, locking onto your personal scent from yards away.",
+      "Some people produce high levels of carboxylic acids, which act like a dinner bell for hungry mosquitoes.",
+      "Pause and guess... three, two, one.",
+      "The heat guides them.",
+      "It intensifies the plume of chemicals rising off your skin, making you an easier target.",
+      "Ever thought why moving into a breeze makes it harder for mosquitoes to find your scent trail? Drop your guess below."
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,000 --> 00:00:01,310\nMosquitoes don't bite randomly;\n\n2\n00:00:01,360 --> 00:00:03,790\nthey're actually hunting for specific chemical signals on your skin.\n\n3\n00:00:04,100 --> 00:00:05,920\nYour sweat is a complex cocktail of\n\n4\n00:00:05,920 --> 00:00:08,070\ncompounds that varies from person to person.\n\n5\n00:00:08,240 --> 00:00:10,500\nMosquitoes detect these molecules with their antennae,\n\n6\n00:00:10,500 --> 00:00:12,430\nlocking onto your personal scent from yards away.\n\n7\n00:00:12,640 --> 00:00:14,380\nSome people produce high levels of carboxylic\n\n8\n00:00:14,380 --> 00:00:16,670\nacids, which act like a dinner bell for hungry mosquitoes.\n\n9\n00:00:17,100 --> 00:00:18,090\nPause and guess...\n\n10\n00:00:18,280 --> 00:00:19,380\nthree, two, one.\n\n11\n00:00:19,800 --> 00:00:20,890\nThe heat guides them.\n\n12\n00:00:21,000 --> 00:00:22,680\nIt intensifies the plume of chemicals rising\n\n13\n00:00:22,680 --> 00:00:24,750\noff your skin, making you an easier target.\n\n14\n00:00:24,930 --> 00:00:26,210\nEver thought why moving into a breeze\n\n15\n00:00:26,210 --> 00:00:28,520\nmakes it harder for mosquitoes to find your scent trail?\n\n16\n00:00:28,820 --> 00:00:29,700\nDrop your guess below.\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [],
+      "footage": [],
+      "review": [],
+      "pass": true,
+      "duration": 30.0
     },
     "repairs": 0,
     "audited": true
