@@ -1216,5 +1216,333 @@
       "duration": 51.4
     },
     "repairs": 0
+  },
+  {
+    "job": "20261116-2300-why-raw-honey-never-spoils-while-fresh-f",
+    "topic": "Why Raw Honey Never Spoils While Fresh Fruit Decays in Days",
+    "title": "The 3000 Year Secret Of Raw Honey 🤔",
+    "description": "3000 saal purana honey aaj bhi edible hai, lekin fresh fruit 3 din mein spoil ho jata hai! Iski piche ki chemistry aur bees ki secret engineering janiye.\n\n#shorts #hindi #science\n\nSources (open-access research):\n- Siddiqui et al. (2025), International Journal of Environmental Sciences. doi:10.64252/577nm781\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nPhoto by Daria-Yakovleva on Pixabay\nPhoto by Nawalescape on Pixabay\nPhoto by PublicDomainPictures on Pixabay\nVideo by adege on Pixabay\n\nयह वीडियो कैसे बना: स्क्रिप्ट को AI tools की मदद से open research के आधार पर लिखा और fact-check किया गया है, आवाज़ AI voice की है, और editing open-source software से हुई है। कोई गलती दिखे तो comment में बताइए — जाँच कर सुधार करेंगे।",
+    "tags": [
+      "shorts",
+      "hindi",
+      "science",
+      "foodscience"
+    ],
+    "hook": "3000 साल पुराना honey आज भी edible है, पर fresh fruit कुछ ही days में spoil हो जाता है।",
+    "status": "review",
+    "narration": "3000 साल पुराना honey आज भी edible है, पर fresh fruit कुछ ही days में spoil हो जाता है। Fresh fruit में lots of water और sugar होता है, जो bacteria के लिए perfect home है। लेकिन raw honey में usually water content 18% से कम होता है। Low moisture की वजह से honey bacteria का moisture खींच लेता है और वे dehydrate होकर मर जाते हैं। तो फिर sealed jar में honey सालों तक rot क्यों नहीं होता? यहाँ है reason! Honey naturally acidic होता है, और bees उसमें ek special enzyme add करती हैं। यह enzyme Glucose Oxidase small amount में Hydrogen Peroxide बनाती है, जो microbes को kill कर देता है। कभी सोचा है अगर honey में पानी मिलाकर moisture बढ़ा दें, तो क्या वह spoil होगा?",
+    "voice_engine": "edge-tts",
+    "voices": "one narrator (hi-IN-SwaraNeural)",
+    "diagrams": 1,
+    "series": "Food Whys",
+    "countdown": false,
+    "length_arm": "long",
+    "question": "What happens if you add water to honey, and could it start to spoil?",
+    "answer_comment": "The answer: A single drop of water is unlikely to cause spoilage, but adding enough moisture to significantly raise the overall water content can indeed allow fermentation. Extra moisture raises the water level above 18-20%, allowing dormant wild yeasts and bacteria to multiply and ferment the honey into mead or sour liquid. What other kitchen shelf mystery should we break down next?\n\nSources (open-access research):\n- Siddiqui et al. (2025), International Journal of Environmental Sciences. doi:10.64252/577nm781",
+    "sources": [
+      {
+        "claim": "Bees add the enzyme glucose oxidase, which converts glucose into gluconic acid and produces trace amounts of hydrogen peroxide.",
+        "cite": "Siddiqui et al. (2025), International Journal of Environmental Sciences. doi:10.64252/577nm781",
+        "doi": "10.64252/577nm781",
+        "title": "Abu Dhabi Honey – A Good Source Of Hydrogen Peroxide And Antimicrobial Activity",
+        "why": "The hydrogen peroxide production resulting from the enzymatic action of glucose oxidase produced by the hypopharyngeal glands of honeybees has a linear correlation with antimicrobial property."
+      }
+    ],
+    "fact_check": [
+      "Ancient honey retrieved from Egyptian tombs over 3000 years old remains unspoilable and edible when sealed properly.",
+      "Raw honey usually has a water content below 18%, creating an osmotic environment that dehydrates bacteria.",
+      "Honey has an acidic pH ranging between 3.2 and 4.5.",
+      "Bees add the enzyme glucose oxidase, which converts glucose into gluconic acid and produces trace amounts of hydrogen peroxide."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        5.88
+      ],
+      [
+        5.88,
+        11.01
+      ],
+      [
+        11.01,
+        15.29
+      ],
+      [
+        15.29,
+        21.35
+      ],
+      [
+        21.35,
+        25.05
+      ],
+      [
+        25.05,
+        30.9
+      ],
+      [
+        30.9,
+        37.22
+      ],
+      [
+        37.22,
+        42.73
+      ]
+    ],
+    "duration": 42.73,
+    "scene_lines": [
+      "3000 साल पुराना honey आज भी edible है, पर fresh fruit कुछ ही days में spoil हो जाता है।",
+      "Fresh fruit में lots of water और sugar होता है, जो bacteria के लिए perfect home है।",
+      "लेकिन raw honey में usually water content 18% से कम होता है।",
+      "Low moisture की वजह से honey bacteria का moisture खींच लेता है और वे dehydrate होकर मर जाते हैं।",
+      "तो फिर sealed jar में honey सालों तक rot क्यों नहीं होता?",
+      "यहाँ है reason! Honey naturally acidic होता है, और bees उसमें ek special enzyme add करती हैं।",
+      "यह enzyme Glucose Oxidase small amount में Hydrogen Peroxide बनाती है, जो microbes को kill कर देता है।",
+      "कभी सोचा है अगर honey में पानी मिलाकर moisture बढ़ा दें, तो क्या वह spoil होगा?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,050 --> 00:00:02,582\n3000 साल पुराना honey आज भी edible\n\n2\n00:00:02,582 --> 00:00:04,236\nहै, पर fresh fruit कुछ ही days\n\n3\n00:00:04,236 --> 00:00:05,746\nमें spoil हो जाता है।\n\n4\n00:00:05,880 --> 00:00:07,882\nFresh fruit में lots of water और\n\n5\n00:00:07,882 --> 00:00:09,727\nsugar होता है, जो bacteria के लिए\n\n6\n00:00:09,727 --> 00:00:12,090\nperfect home है। लेकिन raw honey में\n\n7\n00:00:12,090 --> 00:00:14,813\nusually water content 18% से कम होता\n\n8\n00:00:14,813 --> 00:00:16,932\nहै। Low moisture की वजह से honey\n\n9\n00:00:16,932 --> 00:00:19,157\nbacteria का moisture खींच लेता है और\n\n10\n00:00:19,157 --> 00:00:21,250\nवे dehydrate होकर मर जाते हैं।\n\n11\n00:00:21,350 --> 00:00:23,319\nतो फिर sealed jar में honey सालों\n\n12\n00:00:23,319 --> 00:00:24,830\nतक rot क्यों नहीं होता?\n\n13\n00:00:25,050 --> 00:00:26,250\nयहाँ है reason!\n\n14\n00:00:26,250 --> 00:00:28,537\nHoney naturally acidic होता है, और bees\n\n15\n00:00:28,537 --> 00:00:30,900\nउसमें ek special enzyme add करती हैं।\n\n16\n00:00:30,900 --> 00:00:33,432\nयह enzyme Glucose Oxidase small amount में\n\n17\n00:00:33,432 --> 00:00:36,000\nHydrogen Peroxide बनाती है, जो microbes को\n\n18\n00:00:36,000 --> 00:00:37,098\nkill कर देता है।\n\n19\n00:00:37,220 --> 00:00:39,344\nकभी सोचा है अगर honey में पानी\n\n20\n00:00:39,344 --> 00:00:42,129\nमिलाकर moisture बढ़ा दें, तो क्या वह spoil होगा?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [
+        "phrase missing from the audio: \"special enzyme add करती हैं। यह enzyme glucose oxidase small amount में hydrogen peroxide बनाती है जो microbes को kill कर देता है। कभी सोचा है अगर honey में पानी मिलाकर moisture बढ़ा दें तो क्या वह spoil होगा\"",
+        "only 66% of the script is heard as written"
+      ],
+      "footage": [],
+      "review": [],
+      "heard": [
+        "\"honey\" heard as \"हानी\"",
+        "\"ही days\" heard as \"देज\"",
+        "\"bacteria के लिए\" heard as \"बक्तिर्या किलिए\"",
+        "\"raw honey\" heard as \"रोग हानी\"",
+        "\"usually\" heard as \"योछली\"",
+        "\"18\" heard as \"अथारा पसेंच\"",
+        "\"low moisture\" heard as \"लो वोच्षर\"",
+        "\"वजह\" heard as \"बज़ा\""
+      ],
+      "pass": false,
+      "duration": 42.1
+    },
+    "repairs": 0
+  },
+  {
+    "job": "20261116-2330-why-vitamin-c-can-block-cancer-causing-n",
+    "topic": "Why Vitamin C Can Block Cancer-Causing Nitrosamines From Forming In Your Stomach",
+    "title": "Can Vitamin C Affect Cancer-Linked Chemicals?",
+    "description": "Ever wondered how your stomach turns food into harmful chemicals? See how Vitamin C influences digestion chemistry. #shorts #hindi #science\n\nSources (open-access research):\n- Vijayageetha et al. (2026), International Journal of Pharmaceutical Sciences Review and Research. doi:10.47583/ijpsrr.2026.v86i8.027\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nPhoto by 955169 on Pixabay\nPhoto: frielp, BY 2.0, via Openverse (flickr)\nPhoto: justDONQUE.images, BY 2.0, via Openverse (flickr)\nVideo by F1Digitals on Pixabay\n\nयह वीडियो कैसे बना: स्क्रिप्ट को AI tools की मदद से open research के आधार पर लिखा और fact-check किया गया है, आवाज़ AI voice की है, और editing open-source software से हुई है। कोई गलती दिखे तो comment में बताइए — जाँच कर सुधार करेंगे।",
+    "tags": [
+      "science",
+      "health"
+    ],
+    "hook": "Aapke stomach mein cancer-linked nitrosamines ban sakte hain, aur kuch dietary habits iske chemical formation ko kam karne mein madad kar sakti hain.",
+    "status": "review",
+    "narration": "Aapke stomach mein cancer-linked nitrosamines ban sakte hain, aur kuch dietary habits iske chemical formation ko kam karne mein madad kar sakti hain. Jab aap processed meat khaate hain, toh usme hote hain nitrites jo nitrosamines banane ki shuruat hain. Stomach ke acid aur nitrites se nitrous acid banta hai, jo amines ke sath milkar 'nitrosamines' banata hai. Toh kya humein meat khana hi chhod dena chahiye ya nitrosamine formation rokne ka koi aur scientific tareeka hai? Bilkul nahi. Yahan Vitamin C ki chemical properties nitrosamine formation ko inhibit karne mein madad karti hain. Vitamin C ek antioxidant hai jo stomach mein nitrosamines ke banne ki prakriya ko neutralize karne mein madad kar sakta hai. Isliye, agar aap processed food le rahe hain, toh sath mein thoda citrus juice ya fruits add karna ek helpful dietary practice ho sakti hai. Ever thought why Vitamin C aapke stomach mein nitrosamine banne ki chemical process ko slow down karne mein ek madadgar factor ban sakta hai?",
+    "voice_engine": "edge-tts",
+    "voices": "one narrator (hi-IN-SwaraNeural)",
+    "diagrams": 1,
+    "series": "Body Whys",
+    "countdown": false,
+    "length_arm": "long",
+    "question": "Ever thought why Vitamin C aapke stomach mein nitrosamine banne ki chemical process ko slow down karne mein ek madadgar factor ban sakta hai?",
+    "answer_comment": "The answer: Vitamin C acts as a reducing agent that converts nitrite into nitric oxide, preventing the formation of the nitrosating agents that would otherwise create nitrosamines. It effectively outcompetes the harmful reaction.\n\nSources (open-access research):\n- Vijayageetha et al. (2026), International Journal of Pharmaceutical Sciences Review and Research. doi:10.47583/ijpsrr.2026.v86i8.027",
+    "sources": [
+      {
+        "claim": "Nitrites can react in the acidic environment of the stomach to form nitrosamines.",
+        "cite": "Vijayageetha et al. (2026), International Journal of Pharmaceutical Sciences Review and Research. doi:10.47583/ijpsrr.2026.v86i8.027",
+        "doi": "10.47583/ijpsrr.2026.v86i8.027",
+        "title": "Nitrosamine Impurities in Processed Meats: Formation, Detection, and Risk Mitigation Strategies",
+        "why": "Under acidic conditions, nitrites can combine with amines to form volatile and non-volatile nitrosamines such as NDMA, NDEA, and NPYR."
+      }
+    ],
+    "fact_check": [
+      "Processed meats contain nitrites used for preservation.",
+      "Nitrites can react in the acidic environment of the stomach to form nitrosamines.",
+      "Ascorbic acid (Vitamin C) is a potent inhibitor of nitrosamine formation.",
+      "Vitamin C acts by reducing nitrites to nitric oxide, preventing the nitrosation process."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        7.85
+      ],
+      [
+        7.85,
+        13.62
+      ],
+      [
+        13.62,
+        20.09
+      ],
+      [
+        20.09,
+        26.85
+      ],
+      [
+        26.85,
+        33.37
+      ],
+      [
+        33.37,
+        40.46
+      ],
+      [
+        40.46,
+        48.22
+      ],
+      [
+        48.22,
+        56.55
+      ]
+    ],
+    "duration": 56.55,
+    "scene_lines": [
+      "Aapke stomach mein cancer-linked nitrosamines ban sakte hain, aur kuch dietary habits iske chemical formation ko kam karne mein madad kar sakti hain.",
+      "Jab aap processed meat khaate hain, toh usme hote hain nitrites jo nitrosamines banane ki shuruat hain.",
+      "Stomach ke acid aur nitrites se nitrous acid banta hai, jo amines ke sath milkar 'nitrosamines' banata hai.",
+      "Toh kya humein meat khana hi chhod dena chahiye ya nitrosamine formation rokne ka koi aur scientific tareeka hai?",
+      "Bilkul nahi. Yahan Vitamin C ki chemical properties nitrosamine formation ko inhibit karne mein madad karti hain.",
+      "Vitamin C ek antioxidant hai jo stomach mein nitrosamines ke banne ki prakriya ko neutralize karne mein madad kar sakta hai.",
+      "Isliye, agar aap processed food le rahe hain, toh sath mein thoda citrus juice ya fruits add karna ek helpful dietary practice ho sakti hai.",
+      "Ever thought why Vitamin C aapke stomach mein nitrosamine banne ki chemical process ko slow down karne mein ek madadgar factor ban sakta hai?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,050 --> 00:00:02,963\nAapke stomach mein cancer-linked nitrosamines ban sakte\n\n2\n00:00:02,963 --> 00:00:05,176\nhain, aur kuch dietary habits iske chemical\n\n3\n00:00:05,176 --> 00:00:07,746\nformation ko kam karne mein madad kar sakti hain.\n\n4\n00:00:07,850 --> 00:00:09,785\nJab aap processed meat khaate hain, toh\n\n5\n00:00:09,785 --> 00:00:13,573\nusme hote hain nitrites jo nitrosamines banane ki shuruat hain.\n\n6\n00:00:13,620 --> 00:00:16,035\nStomach ke acid aur nitrites se nitrous\n\n7\n00:00:16,035 --> 00:00:17,937\nacid banta hai, jo amines ke sath\n\n8\n00:00:17,937 --> 00:00:19,956\nmilkar nitrosamines banata hai.\n\n9\n00:00:20,090 --> 00:00:21,915\nToh kya humein meat khana hi chhod\n\n10\n00:00:21,915 --> 00:00:24,581\ndena chahiye ya nitrosamine formation rokne ka\n\n11\n00:00:24,581 --> 00:00:26,634\nkoi aur scientific tareeka hai?\n\n12\n00:00:26,850 --> 00:00:27,940\nBilkul nahi.\n\n13\n00:00:27,940 --> 00:00:30,821\nYahan Vitamin C ki chemical properties nitrosamine\n\n14\n00:00:30,821 --> 00:00:33,370\nformation ko inhibit karne mein madad karti hain.\n\n15\n00:00:33,370 --> 00:00:36,040\nVitamin C ek antioxidant hai jo stomach\n\n16\n00:00:36,040 --> 00:00:38,158\nmein nitrosamines ke banne ki prakriya ko\n\n17\n00:00:38,158 --> 00:00:40,421\nneutralize karne mein madad kar sakta hai.\n\n18\n00:00:40,460 --> 00:00:42,596\nIsliye, agar aap processed food le rahe\n\n19\n00:00:42,596 --> 00:00:44,572\nhain, toh sath mein thoda citrus juice\n\n20\n00:00:44,572 --> 00:00:46,743\nya fruits add karna ek helpful dietary\n\n21\n00:00:46,743 --> 00:00:48,116\npractice ho sakti hai.\n\n22\n00:00:48,220 --> 00:00:50,665\nEver thought why Vitamin C aapke stomach\n\n23\n00:00:50,665 --> 00:00:53,065\nmein nitrosamine banne ki chemical process ko\n\n24\n00:00:53,065 --> 00:00:55,952\nslow down karne mein ek madadgar factor ban sakta hai?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [
+        "phrase missing from the audio: \"madad kar sakti hain jab aap processed meat khaate hain toh usme hote hain nitrites jo nitrosamines banane ki shuruat hain stomach ke acid aur nitrites se nitrous acid banta hai jo amines ke sath milkar 'nitrosamines' banata hai toh kya humein meat khana hi chhod dena chahiye ya nitrosamine formation rokne ka koi aur scientific tareeka hai bilkul nahi yahan vitamin c ki chemical properties nitrosamine formation ko inhibit karne mein madad karti hain vitamin c ek antioxidant hai jo stomach mein nitrosamines ke banne ki prakriya ko neutralize karne mein madad\"",
+        "only 40% of the script is heard as written"
+      ],
+      "footage": [],
+      "review": [],
+      "heard": [
+        "\"stomach\" heard as \"स्तमक\"",
+        "\"cancer linked nitrosamines\" heard as \"कन्सर लिंक नट्रो सेमाइन्स\"",
+        "\"hain\" heard as \"है\"",
+        "\"dietary\" heard as \"डीयाट्री\"",
+        "\"chemical formation\" heard as \"केमिकल फरमेशन\"",
+        "\"isliye agar aap processed food le rahe hain toh sath\" heard as \"आपके स्तमक\"",
+        "\"thoda citrus juice ya fruits add karna ek helpful dietary practice ho sakti hai ever thought why vitamin c aapke stomach mein nitrosamine\" heard as \"नट्रो सेमाइन\"",
+        "\"chemical process\" heard as \"कमिकल प्रोसेस\""
+      ],
+      "pass": false,
+      "duration": 56.0
+    },
+    "repairs": 0
+  },
+  {
+    "job": "20261117-0009-what-actually-happens-inside-your-body-w",
+    "topic": "What Actually Happens Inside Your Body When Your Leg 'Falls Asleep'",
+    "title": "The Science Behind Numb Legs 😱",
+    "description": "Ever wondered why your leg feels like it's full of pins and needles? It is primarily the nerve being squeezed. Let's look at the hidden engineering inside your nerves.\n#shorts #science #body\n\nSources (open-access research):\n- Tsantoulas et al. (2012), Journal of Neuroscience. doi:10.1523/jneurosci.3561-12.2012\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nPhoto by TheHilaryClark on Pixabay\nPhoto: NAnuMORE KWANA Simonz, CC0, via Wikimedia Commons\nPhoto: unknown, CC BY 4.0, via Wikimedia Commons",
+    "tags": [
+      "science",
+      "body",
+      "biology"
+    ],
+    "hook": "Ever had your leg fall asleep and it feels like 1000 tiny needles?",
+    "status": "review",
+    "narration": "Ever had your leg fall asleep and it feels like 1000 tiny needles? That prickling sensation is called paresthesia. It happens when you put pressure on a nerve. Think of a garden hose. If you step on it, the water stops flowing. So, is your leg actually losing its blood supply or is it something else? It is primarily the nerve being squeezed, which interferes with the electrical signals traveling to and from your brain. When the pressure stops, the nerve signals fire all at once, like a traffic jam clearing up. Your brain gets confused by this flood of data and thinks your skin is being pricked. Ever wondered why certain positions trigger this more often than others? Drop your guess below.",
+    "voice_engine": "edge-tts",
+    "voices": "one narrator (hi-IN-SwaraNeural)",
+    "diagrams": 1,
+    "series": "Body Whys",
+    "countdown": false,
+    "length_arm": "standard",
+    "question": "Ever wondered why certain positions trigger this more often than others?",
+    "answer_comment": "The answer: It happens because some nerves, like the peroneal nerve in your leg or the ulnar nerve in your arm, run close to the surface or over bone. These are easier to compress against hard surfaces than nerves buried deep in muscle. Got another body mystery? Ask away!\n\nSources (open-access research):\n- Tsantoulas et al. (2012), Journal of Neuroscience. doi:10.1523/jneurosci.3561-12.2012",
+    "sources": [
+      {
+        "claim": "The pins and needles sensation is caused by nerve signals firing as they recover from compression.",
+        "cite": "Tsantoulas et al. (2012), Journal of Neuroscience. doi:10.1523/jneurosci.3561-12.2012",
+        "doi": "10.1523/jneurosci.3561-12.2012",
+        "title": "Sensory Neuron Downregulation of the Kv9.1 Potassium Channel Subunit Mediates Neuropathic Pain following Nerve Injury",
+        "why": "Similar neurophysiological changes were detected in animals subjected to traumatic nerve injury and provide an explanation for neuropathic pain symptoms, including poorly understood conditions such as hyperpathia and paresthesias."
+      }
+    ],
+    "fact_check": [
+      "Paresthesia is primarily caused by nerve compression.",
+      "The pins and needles sensation is caused by nerve signals firing as they recover from compression.",
+      "The brain interprets the chaotic signals as tactile sensations like pricking or tingling."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        4.48
+      ],
+      [
+        4.48,
+        9.8
+      ],
+      [
+        9.8,
+        14.12
+      ],
+      [
+        14.12,
+        18.74
+      ],
+      [
+        18.74,
+        24.98
+      ],
+      [
+        24.98,
+        30.24
+      ],
+      [
+        30.24,
+        34.91
+      ],
+      [
+        34.91,
+        40.63
+      ]
+    ],
+    "duration": 40.63,
+    "scene_lines": [
+      "Ever had your leg fall asleep and it feels like 1000 tiny needles?",
+      "That prickling sensation is called paresthesia. It happens when you put pressure on a nerve.",
+      "Think of a garden hose. If you step on it, the water stops flowing.",
+      "So, is your leg actually losing its blood supply or is it something else?",
+      "It is primarily the nerve being squeezed, which interferes with the electrical signals traveling to and from your brain.",
+      "When the pressure stops, the nerve signals fire all at once, like a traffic jam clearing up.",
+      "Your brain gets confused by this flood of data and thinks your skin is being pricked.",
+      "Ever wondered why certain positions trigger this more often than others? Drop your guess below."
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,050 --> 00:00:01,765\nEver had your leg fall asleep and\n\n2\n00:00:01,765 --> 00:00:04,304\nit feels like 1000 tiny needles?\n\n3\n00:00:04,480 --> 00:00:07,360\nThat prickling sensation is called paresthesia.\n\n4\n00:00:07,360 --> 00:00:09,800\nIt happens when you put pressure on a nerve.\n\n5\n00:00:09,800 --> 00:00:11,340\nThink of a garden hose.\n\n6\n00:00:11,340 --> 00:00:14,042\nIf you step on it, the water stops flowing.\n\n7\n00:00:14,120 --> 00:00:16,199\nSo, is your leg actually losing its\n\n8\n00:00:16,199 --> 00:00:18,529\nblood supply or is it something else?\n\n9\n00:00:18,740 --> 00:00:21,102\nIt is primarily the nerve being squeezed,\n\n10\n00:00:21,102 --> 00:00:23,550\nwhich interferes with the electrical signals traveling\n\n11\n00:00:23,550 --> 00:00:24,912\nto and from your brain.\n\n12\n00:00:24,980 --> 00:00:27,182\nWhen the pressure stops, the nerve signals\n\n13\n00:00:27,182 --> 00:00:30,240\nfire all at once, like a traffic jam clearing up.\n\n14\n00:00:30,240 --> 00:00:32,274\nYour brain gets confused by this flood\n\n15\n00:00:32,274 --> 00:00:34,812\nof data and thinks your skin is being pricked.\n\n16\n00:00:34,910 --> 00:00:37,322\nEver wondered why certain positions trigger this\n\n17\n00:00:37,322 --> 00:00:38,844\nmore often than others?\n\n18\n00:00:38,900 --> 00:00:40,033\nDrop your guess below.\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [
+        "phrase missing from the audio: \"a nerve think of a garden hose if you step on it the water stops flowing so is your leg actually losing its blood supply or is it something else it is primarily the nerve being squeezed which interferes with the electrical signals traveling to and from your brain when the pressure stops the nerve signals fire all at once\"",
+        "only 26% of the script is heard as written"
+      ],
+      "footage": [
+        "scene(s) [8] have weak or placeholder footage"
+      ],
+      "review": [],
+      "heard": [
+        "\"ever\" heard as \"\"",
+        "\"your leg fall asleep and\" heard as \"बतर सीजने मेंा कहाँ ज़र्द औगा हो ख्सीजने की शमब वो वहाएं ख़यपी है\"",
+        "\"feels like 1000 tiny needles that prickling sensation is called paresthesia it happens when you put pressure\" heard as \"वहाग में गर्खें ञाज मेंमें ग़े सोझेगत शोग में बेचाच्नाझेगा आपवाज़। नहतें की वंजा में जान का वह ठींगा\"",
+        "\"your brain gets confused by this flood\" heard as \"यो वंजाम। जाम। जाम। औगाम नहीं तोड़ी एक\"",
+        "\"data and thinks your skin is being pricked ever wondered why certain positions trigger this more often than others drop your guess below\" heard as \"बजासी और नहींग लुग है क्याएब मत roy ज़ुऊ मम जबस्यों सब साव्नेón प्रश़वास्एब ब्र स्वाद़ावे थाप्हीगे जाचारर talk on twitter com\""
+      ],
+      "pass": false,
+      "duration": 40.1
+    },
+    "repairs": 1
   }
 ]
