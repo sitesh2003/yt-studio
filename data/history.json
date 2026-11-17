@@ -1719,7 +1719,8 @@
     "audited": true,
     "video_id": "nnxCKv3odg4",
     "publish_at": "2026-11-16T19:00:00-05:00",
-    "answered": true
+    "answered": true,
+    "recapped": true
   },
   {
     "job": "20261114-1628-how-mosquitoes-pierce-your-skin-without-",
@@ -3382,5 +3383,215 @@
       "duration": 25.1
     },
     "repairs": 2
+  },
+  {
+    "job": "20261117-0318-scientists-just-found-a-giant-hidden-wor",
+    "topic": "Scientists Just Found a Giant Hidden World Past Pluto",
+    "title": "Why Our Solar System Is Secretly Bigger 🤯",
+    "description": "Astronomers found evidence that our solar system extends much further than the classic Kuiper cliff. Here is how deep-space dust changed astronomical history. #solarsystem #space #shorts\n\nSources (open-access research):\n- Li et al. (2026), The Astrophysical Journal. doi:10.3847/1538-4357/ae91d1\n- Doner et al. (2024), The Astrophysical Journal Letters. doi:10.3847/2041-8213/ad18b0\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nIllustrations: drawn for this video with FLUX.2 [klein] 4B (AI, Apache 2.0) and checked for accuracy\nPhoto: Kevin M. Gill, CC BY 2.0, via Wikimedia Commons\nVideo by ChristianBodhi on Pixabay",
+    "tags": [
+      "solar system",
+      "kuiper belt",
+      "pluto",
+      "new horizons",
+      "astronomy",
+      "space science",
+      "outer space"
+    ],
+    "hook": "Our solar system secretly has a second frozen edge past Pluto.",
+    "status": "review",
+    "narration": "Our solar system secretly has a second frozen edge past Pluto. For decades, telescopes showed a sharp drop-off in icy objects past fifty Sun-distances. Past fifty Sun-distances, astronomers expected NASA's New Horizons probe to hit empty space. So what did the probe's dust detector suddenly start hitting? Fresh collision dust from millions of undiscovered icy worlds out there. Without enough solar heat out there to vaporize ice into glowing comet tails, a second, wider belt was hiding in the dark. Ever thought why those far-out ice worlds never grow tails like comets?",
+    "voice_engine": "chatterbox",
+    "voices": "one narrator (af_heart)",
+    "diagrams": 1,
+    "series": "How Things Work",
+    "countdown": false,
+    "length_arm": "standard",
+    "question": "Ever thought why those far-out ice worlds never grow tails like comets?",
+    "answer_comment": "The answer: Comets only form glowing tails when they swoop close to the Sun, where intense solar heat turns frozen gases into vapor and dust. Way out past Pluto, it is far too cold for ice to vaporize, so these bodies stay frozen solid year-round. What other deep-space mystery should we look into next?\n\nSources (open-access research):\n- Li et al. (2026), The Astrophysical Journal. doi:10.3847/1538-4357/ae91d1\n- Doner et al. (2024), The Astrophysical Journal Letters. doi:10.3847/2041-8213/ad18b0",
+    "sources": [
+      {
+        "claim": "Historically, astronomers identified a drop in Kuiper Belt object density near 50 astronomical units (AU), termed the Kuiper Cliff.",
+        "cite": "Li et al. (2026), The Astrophysical Journal. doi:10.3847/1538-4357/ae91d1",
+        "doi": "10.3847/1538-4357/ae91d1",
+        "title": "The Edges of Planetary Systems: Falling Off the Kuiper Cliff in a Dissipating Gas Disk",
+        "why": "Their population density drops abruptly beyond a heliocentric radius of ∼47 au, a feature known as the “Kuiper Cliff.”"
+      },
+      {
+        "claim": "NASA's New Horizons spacecraft, while cruising past 55 to 60 AU, detected higher-than-expected dust impact rates using its Venetia Burney Student Dust Counter.",
+        "cite": "Doner et al. (2024), The Astrophysical Journal Letters. doi:10.3847/2041-8213/ad18b0",
+        "doi": "10.3847/2041-8213/ad18b0",
+        "title": "New Horizons Venetia Burney Student Dust Counter Observes Higher than Expected Fluxes Approaching 60 au",
+        "why": "Continued measurements through 55 au show higher than model-predicted dust fluxes as New Horizons approaches the putative outer edge of the Kuiper Belt (KB)."
+      }
+    ],
+    "fact_check": [
+      "Historically, astronomers identified a drop in Kuiper Belt object density near 50 astronomical units (AU), termed the Kuiper Cliff.",
+      "NASA's New Horizons spacecraft, while cruising past 55 to 60 AU, detected higher-than-expected dust impact rates using its Venetia Burney Student Dust Counter.",
+      "Subaru Telescope surveys and New Horizons dust measurements published between 2023 and 2024 suggest an extended Kuiper Belt or a possible second outer ring between 70 and 90 AU.",
+      "Comet tails (comae and ion tails) are created by solar radiation and solar wind sublimating volatile ices as the comet approaches the inner solar system."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        3.61
+      ],
+      [
+        3.61,
+        8.49
+      ],
+      [
+        8.49,
+        13.85
+      ],
+      [
+        13.85,
+        17.1
+      ],
+      [
+        17.1,
+        20.67
+      ],
+      [
+        20.67,
+        26.36
+      ],
+      [
+        26.36,
+        29.92
+      ]
+    ],
+    "duration": 29.92,
+    "scene_lines": [
+      "Our solar system secretly has a second frozen edge past Pluto.",
+      "For decades, telescopes showed a sharp drop-off in icy objects past fifty Sun-distances.",
+      "Past fifty Sun-distances, astronomers expected NASA's New Horizons probe to hit empty space.",
+      "So what did the probe's dust detector suddenly start hitting?",
+      "Fresh collision dust from millions of undiscovered icy worlds out there.",
+      "Without enough solar heat out there to vaporize ice into glowing comet tails, a second, wider belt was hiding in the dark.",
+      "Ever thought why those far-out ice worlds never grow tails like comets?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": "nnxCKv3odg4",
+    "captions_srt": "1\n00:00:00,000 --> 00:00:01,900\nOur solar system secretly has a second\n\n2\n00:00:01,900 --> 00:00:03,210\nfrozen edge past Pluto.\n\n3\n00:00:03,610 --> 00:00:04,180\nFor decades,\n\n4\n00:00:04,270 --> 00:00:06,190\ntelescopes showed a sharp drop-off in icy\n\n5\n00:00:06,190 --> 00:00:08,140\nobjects past fifty Sun-distances.\n\n6\n00:00:08,490 --> 00:00:11,620\nPast fifty Sun-distances, astronomers expected NASA's New\n\n7\n00:00:11,620 --> 00:00:13,390\nHorizons probe to hit empty space.\n\n8\n00:00:13,850 --> 00:00:16,660\nSo what did the probe's dust detector suddenly start hitting?\n\n9\n00:00:17,100 --> 00:00:19,180\nFresh collision dust from millions of undiscovered\n\n10\n00:00:19,180 --> 00:00:20,530\nicy worlds out there.\n\n11\n00:00:20,670 --> 00:00:22,150\nWithout enough solar heat out there to\n\n12\n00:00:22,150 --> 00:00:24,210\nvaporize ice into glowing comet tails, a\n\n13\n00:00:24,210 --> 00:00:26,040\nsecond, wider belt was hiding in the dark.\n\n14\n00:00:26,360 --> 00:00:27,860\nEver thought why those far-out ice worlds\n\n15\n00:00:27,860 --> 00:00:29,320\nnever grow tails like comets?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [],
+      "footage": [],
+      "review": [],
+      "heard": [
+        "\"past\" heard as \"asked\""
+      ],
+      "pass": true,
+      "duration": 29.5
+    },
+    "repairs": 2
+  },
+  {
+    "job": "20261117-0407-why-does-your-leg-actually-fall-asleep-w",
+    "topic": "Why Does Your Leg Actually 'Fall Asleep' When You Sit On It?",
+    "title": "What Actually Happens When Your Leg Falls Asleep",
+    "description": "Think your circulation is to blame for that numb feeling? Here is the secret behind why your nerves stop talking to your brain. #shorts #science #anatomy\n\nSources (open-access research):\n- Leveille et al. (2023), JAAOS Global Research and Reviews. doi:10.5435/jaaosglobal-d-23-00123\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nPhoto by TheHilaryClark on Pixabay\nPhoto: Muybridge, Eadweard, 1830-1904, Public domain, via Wikimedia Commons\nVideo by Vimeo-Free-Videos on Pixabay\nVideo by conolan on Pixabay",
+    "tags": [
+      "science",
+      "anatomy",
+      "biology",
+      "human body"
+    ],
+    "hook": "Your leg doesn't actually fall asleep because of blood loss. It's not blood.",
+    "status": "banked",
+    "narration": "Your leg doesn't actually fall asleep because of blood loss. It's not blood. You feel that pins-and-needles sensation when you sit wrong for too long. Most people blame their circulation, but your heart is still pumping fine. While blood flow to the nerve itself is restricted by the pressure, your overall circulation is not actually stopped. So, if the blood is still flowing, why does your leg feel totally dead? It’s actually a nerve being compressed, often against a bone or hard surface. It's compressed. That pressure prevents the nerve from sending clear signals to your brain. When you move, the pressure is released, but the nerve signals begin to misfire as they reconnect, which creates that characteristic pins-and-needles sensation. Have you ever woken up with a numb arm after sleeping on it?",
+    "voice_engine": "chatterbox",
+    "voices": "one narrator (af_heart)",
+    "diagrams": 2,
+    "series": "Body Whys",
+    "countdown": false,
+    "length_arm": "standard",
+    "question": "Have you ever woken up with a numb arm after sleeping on it?",
+    "answer_comment": "The answer: Numbness occurs when external pressure prevents a nerve from communicating with the brain, and the resulting sensation arises as the nerve recovers its ability to fire. Ever thought why some positions are easier to hold than others?\n\nSources (open-access research):\n- Leveille et al. (2023), JAAOS Global Research and Reviews. doi:10.5435/jaaosglobal-d-23-00123",
+    "sources": [
+      {
+        "claim": "The peroneal nerve is highly susceptible to compression at the fibular head.",
+        "cite": "Leveille et al. (2023), JAAOS Global Research and Reviews. doi:10.5435/jaaosglobal-d-23-00123",
+        "doi": "10.5435/jaaosglobal-d-23-00123",
+        "title": "Pediatric Peroneal Nerve Palsy Secondary to Fibular Osteochondroma",
+        "why": "Peripheral nerve injuries due to mass effect from bony lesions can occur when the nerve exists in an anatomically constrained location, such as the common peroneal nerve at the fibular head which passes into the tight fascia of the lateral leg compartment."
+      }
+    ],
+    "fact_check": [
+      "Paresthesia (pins and needles) is primarily caused by nerve compression, not ischemia (blood flow restriction).",
+      "The peroneal nerve is highly susceptible to compression at the fibular head.",
+      "Nerves firing randomly as they recover from compression causes the paresthesia sensation."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        3.69
+      ],
+      [
+        3.69,
+        6.57
+      ],
+      [
+        6.57,
+        15.0
+      ],
+      [
+        15.0,
+        18.32
+      ],
+      [
+        18.32,
+        22.74
+      ],
+      [
+        22.74,
+        25.85
+      ],
+      [
+        25.85,
+        33.82
+      ],
+      [
+        33.82,
+        36.56
+      ]
+    ],
+    "duration": 36.56,
+    "scene_lines": [
+      "Your leg doesn't actually fall asleep because of blood loss. It's not blood.",
+      "You feel that pins-and-needles sensation when you sit wrong for too long.",
+      "Most people blame their circulation, but your heart is still pumping fine. While blood flow to the nerve itself is restricted by the pressure, your overall circulation is not actually stopped.",
+      "So, if the blood is still flowing, why does your leg feel totally dead?",
+      "It’s actually a nerve being compressed, often against a bone or hard surface. It's compressed.",
+      "That pressure prevents the nerve from sending clear signals to your brain.",
+      "When you move, the pressure is released, but the nerve signals begin to misfire as they reconnect, which creates that characteristic pins-and-needles sensation.",
+      "Have you ever woken up with a numb arm after sleeping on it?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,000 --> 00:00:02,450\nYour leg doesn't actually fall asleep because of blood loss.\n\n2\n00:00:02,710 --> 00:00:03,460\nIt's not blood.\n\n3\n00:00:03,690 --> 00:00:05,370\nYou feel that pins-and-needles sensation when you\n\n4\n00:00:05,370 --> 00:00:06,380\nsit wrong for too long.\n\n5\n00:00:06,570 --> 00:00:08,140\nMost people blame their circulation,\n\n6\n00:00:08,250 --> 00:00:09,860\nbut your heart is still pumping fine.\n\n7\n00:00:10,040 --> 00:00:11,220\nWhile blood flow to the nerve itself\n\n8\n00:00:11,220 --> 00:00:12,470\nis restricted by the pressure,\n\n9\n00:00:12,560 --> 00:00:14,770\nyour overall circulation is not actually stopped.\n\n10\n00:00:15,000 --> 00:00:16,560\nSo, if the blood is still flowing,\n\n11\n00:00:16,560 --> 00:00:17,950\nwhy does your leg feel totally dead?\n\n12\n00:00:18,320 --> 00:00:19,670\nIt’s actually a nerve being compressed,\n\n13\n00:00:19,820 --> 00:00:21,330\noften against a bone or hard surface.\n\n14\n00:00:21,600 --> 00:00:22,310\nIt's compressed.\n\n15\n00:00:22,740 --> 00:00:24,300\nThat pressure prevents the nerve from sending\n\n16\n00:00:24,300 --> 00:00:25,650\nclear signals to your brain.\n\n17\n00:00:25,850 --> 00:00:27,560\nWhen you move, the pressure is released,\n\n18\n00:00:27,710 --> 00:00:30,300\nbut the nerve signals begin to misfire as they reconnect,\n\n19\n00:00:30,530 --> 00:00:33,280\nwhich creates that characteristic pins-and-needles sensation.\n\n20\n00:00:33,820 --> 00:00:34,720\nHave you ever woken up with a\n\n21\n00:00:34,720 --> 00:00:35,960\nnumb arm after sleeping on it?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [],
+      "footage": [],
+      "review": [],
+      "heard": [
+        "\"it s\" heard as \"it's\""
+      ],
+      "notes": [
+        "scene 5 footage is a loose match (score 4.0), accepted"
+      ],
+      "pass": true,
+      "duration": 36.1
+    },
+    "repairs": 1,
+    "audited": true
   }
 ]

@@ -3,6 +3,16 @@
 Every video, the claims it makes, and the open-access research behind them. Built automatically by
 agents/library.py; a source is listed only if its abstract was checked to support the claim.
 
+## What Actually Happens When Your Leg Falls Asleep
+*2026-11-17 · Body Whys*
+
+- Paresthesia (pins and needles) is primarily caused by nerve compression, not ischemia (blood flow restriction).
+- The peroneal nerve is highly susceptible to compression at the fibular head.
+- Nerves firing randomly as they recover from compression causes the paresthesia sensation.
+
+Sources:
+- Leveille et al. (2023), JAAOS Global Research and Reviews. doi:10.5435/jaaosglobal-d-23-00123 — supports: The peroneal nerve is highly susceptible to compression at the fibular head.
+
 ## How Acorns Indirectly Affect Lyme Disease Rates 🤯
 *2026-11-16 · Animal Whys*
 

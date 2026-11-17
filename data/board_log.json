@@ -46,5 +46,30 @@
   ],
   "not_drawn": {},
   "error": ""
+ },
+ {
+  "when": "2026-11-17 03:30",
+  "topic": "Scientists Just Found a Giant Hidden World Past Pluto",
+  "drawn": [
+   2,
+   3,
+   4,
+   5
+  ],
+  "not_drawn": {},
+  "error": ""
+ },
+ {
+  "when": "2026-11-17 04:28",
+  "topic": "Why Does Your Leg Actually 'Fall Asleep' When You Sit On It?",
+  "drawn": [
+   2,
+   4,
+   5
+  ],
+  "not_drawn": {
+   "3": "The image uses a bone emoji to represent a nerve, which is biologically incorrect and confusing for a 12-year-old."
+  },
+  "error": ""
  }
 ]

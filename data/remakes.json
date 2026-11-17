@@ -1,1 +1,11 @@
-[]
+[
+  {
+    "topic": "Scientists Just Found a Giant Hidden World Past Pluto",
+    "pulled": "",
+    "title": "Why Our Solar System Is Secretly Bigger 🤯",
+    "false_sentence": "Without enough solar heat out there to vaporize ice into glowing comet tails, a second, wider belt was hiding in the dark.",
+    "correct_version": "Comets do not need to be close to the Sun to have tails; they develop comas and tails when their ices sublimate as they approach perihelion. The hypothesized objects in the distant Kuiper belt are not comets, and their lack of tails is due to their stable, distant orbits, not a lack of heat for sublimation.",
+    "why": "The narration implies that distance from the Sun prevents tail formation due to cold, whereas comet tails form specifically because of heating during orbital approach; the objects are not emitting tails because they are not comets undergoing active sublimation.",
+    "tries": 0
+  }
+]

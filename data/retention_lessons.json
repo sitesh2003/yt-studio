@@ -1,23 +1,22 @@
 {
   "lessons": [
-    "Prioritize immediate, dramatic stakes: The highest-performing video ('Greenland Shark') succeeds by pairing a 'centuries-old' longevity claim with immediate mystery, whereas videos starting with dry explanations (like 'Maple Syrup' or 'Fingers Prune') lose over 35% of viewers within the first 15 seconds.",
-    "Avoid technical definitions in the hook: Lines that explain 'how' or 'why' something works (e.g., 'It stays shelf-stable because of its unique chemistry') consistently cause drops, whereas sensory, results-oriented hooks ('Fresh pineapple is literally eating you back') retain well above 1.0 at 10%.",
-    "Keep biological transitions fast: Deep dives into internal cell structure (e.g., 'separate rooms in cells' in the Garlic video or 'protein-melting enzymes' in Pineapple) lead to a secondary drop-off once the initial curiosity gap is addressed; move to the next point faster.",
-    "Use comparative framing for high engagement: The 'Tuna vs. Cod' video maintains the highest end-retention (0.457) by framing the entire narrative as an active comparison of two familiar, contrasting objects, rather than a single-topic lecture.",
-    "Prioritize emotional or visceral triggers: The most successful hooks identify a specific physical reaction or extreme anomaly (e.g., 'eating you back', 'older than the US'), keeping viewers in a state of active inquiry."
+    "Prioritize immediate, high-stakes value propositions in the hook: Videos with specific, surprising facts (like the Greenland shark age or tuna vs. cod color) showed significantly higher retention compared to generic observational hooks.",
+    "Avoid repetitive or slow-paced introductory explanations: Heavy drop-offs occurred when sentences focused on definitions (e.g., 'What is maple syrup') rather than the 'why' or 'how' of the mystery.",
+    "Balance scientific terminology with immediate context: Using complex terms like 'bromelain' or 'protein-melting enzymes' early on caused sharp drop-offs, indicating that technical jargon should follow a relatable hook.",
+    "Maintain high engagement through the middle of the video: The best-performing videos (Tuna/Cod, Greenland Shark) maintained curiosity throughout the middle section, whereas lower performers lost viewers once the initial 'fact' was stated.",
+    "Avoid meta-commentary or filler dialogue: Lines that set up a comparison or 'think about this' often led to exits, while direct, punchy sentences kept viewers engaged."
   ],
   "worst_moment_types": [
-    "Dry, academic explanations of chemical processes or mechanical functions.",
-    "Slow-paced 'in fact' statements that provide background rather than new, shocking information.",
-    "Lines that explain the 'mechanism' of an effect (e.g., 'dead skin cells would swell') before the payoff of the original question is fully satisfied.",
-    "Transitions that focus on 'what happens' in a static way, rather than driving the narrative forward."
+    "Definition-heavy exposition that explains what an object is rather than why the viewer should care",
+    "Sentences that feel like filler, such as 'Now think about what happens when...'",
+    "The transition point between the initial hook and the first substantive fact, where viewers check if the video matches the promise",
+    "Over-explaining scientific processes in the first 25% of the video length"
   ],
   "best_hook_types": [
-    "Direct, counter-intuitive claims (e.g., 'Fresh pineapple is eating you back').",
-    "Extreme time-based longevity claims (e.g., 'older than the United States').",
-    "Comparison-based setups that immediately contrast two common items (e.g., 'Tuna and cod are both fish, but...').",
-    "Sensory-focused statements involving immediate physical reactions."
+    "Provocative comparisons (e.g., 'Tuna steak looks like beef, cod is white')",
+    "Astonishing statistics or time-frames (e.g., 'This shark is older than the United States')",
+    "Direct contradictions of common knowledge (e.g., 'Fresh pineapple is eating you back')"
   ],
-  "studied": "2026-11-16",
+  "studied": "2026-11-17",
   "videos": 10
 }

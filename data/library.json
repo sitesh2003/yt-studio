@@ -313,5 +313,25 @@
       "Astronomers frequently find new celestial bodies in archived public space telescope data using improved processing techniques."
     ],
     "sources": []
+  },
+  {
+    "job": "20261117-0407-why-does-your-leg-actually-fall-asleep-w",
+    "date": "2026-11-17",
+    "title": "What Actually Happens When Your Leg Falls Asleep",
+    "topic": "Why Does Your Leg Actually 'Fall Asleep' When You Sit On It?",
+    "series": "Body Whys",
+    "weekly": false,
+    "claims": [
+      "Paresthesia (pins and needles) is primarily caused by nerve compression, not ischemia (blood flow restriction).",
+      "The peroneal nerve is highly susceptible to compression at the fibular head.",
+      "Nerves firing randomly as they recover from compression causes the paresthesia sensation."
+    ],
+    "sources": [
+      {
+        "cite": "Leveille et al. (2023), JAAOS Global Research and Reviews. doi:10.5435/jaaosglobal-d-23-00123",
+        "doi": "10.5435/jaaosglobal-d-23-00123",
+        "claim": "The peroneal nerve is highly susceptible to compression at the fibular head."
+      }
+    ]
   }
 ]

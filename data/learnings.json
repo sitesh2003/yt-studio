@@ -1,10 +1,10 @@
 {
   "summary": [
-    "Prioritize counter-intuitive biological or physical phenomena over simple facts; the highest-performing content challenges common perceptions.",
-    "Hooks must establish a direct contradiction between the viewer's assumption and a 'hidden' reality within the first 3 seconds.",
-    "Use high-contrast language in titles—words like 'leaking,' 'eating you back,' or 'secretly'—to signal a hidden mystery that demands immediate resolution.",
-    "Keep hooks punchy and brief; avoid long, descriptive setups that explain the context before stating the conflict.",
-    "If a video does not explicitly address the 'why' or 'secret' mechanism in the title, it fails to achieve the high stay-rates required for algorithm traction."
+    "Prioritize counter-intuitive biological or physical phenomena that challenge common experiences.",
+    "Structure hooks as direct contradictions to the viewer's current reality rather than neutral introductions.",
+    "Use high-intensity 'personification' verbs in titles (e.g., 'eating you back', 'secretly leaking') to drive immediate curiosity.",
+    "Avoid descriptive, 'how-to' style titles, which correlated with the lowest stayed_pct and view counts.",
+    "Ensure the first sentence contains a 'but' or 'yet' pivot to force the brain to pause and resolve the conflict."
   ],
   "winning_hooks": [
     "Your fingers prune in water, but it is not because you are absorbing it like a sponge.",
@@ -13,9 +13,9 @@
     "This shark is older than the United States."
   ],
   "avoid": [
-    "Starting with descriptive observations that are easily verified (e.g., 'Drop an apple or a pear in a bowl of water').",
-    "Overly informative titles that feel like a textbook heading (e.g., 'How Authentic Maple Syrup Is Boiled').",
-    "Hooks that lack a sense of urgency or mystery regarding the viewer's own body or environment."
+    "Starting with neutral observation-based sentences like 'Drop an apple in water...'",
+    "Explaining process over curiosity (e.g., 'How Authentic Maple Syrup Is Boiled...').",
+    "Long, explanatory titles that feel like textbook headings instead of 'click-worthy' questions."
   ],
-  "next_experiment": "A/B test a 'direct challenge' hook vs. a 'revealed secret' hook for a single topic: Use 'You have been eating pineapple wrong' (Direct Challenge) vs. 'Fresh pineapple is eating your mouth' (Revealed Secret) to see which yields a higher stay_pct."
+  "next_experiment": "A/B test the same topic using two title styles: 'The Scientific Reason Why [Object] [Does Action]' vs 'Why [Object] [Dangerous/Surprising Action] You'. Compare the stayed_pct for the first 3 seconds to see if a more aggressive personification verb increases retention."
 }
