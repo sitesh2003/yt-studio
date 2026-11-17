@@ -148,11 +148,22 @@ def check(job, script, times, words, footage_scores):
     result["sync"] = sync(job, words)
     try:   # 6. the audio says what the script says (agents/listen.py)
         from . import listen
-        result["spoken"], heard_notes = listen.check(job, script)
-        if heard_notes:
-            result["heard"] = heard_notes
+        # 17 Nov 2026: the vaccines and baking soda videos went out with the voice breaking up because the
+        # listening check did not run and a skipped check counted as a pass. Now a check that cannot run
+        # HOLDS the video, and every scene is listened to on its own (a good whole-video score hid them).
+        if not listen.available():
+            result["spoken"] = ["the listening check could not run (faster-whisper missing), so nobody has heard this video"]
+        else:
+            result["spoken"], heard_notes = listen.check(job, script)
+            if heard_notes:
+                result["heard"] = heard_notes
+            if any("listening check unavailable" in n for n in heard_notes or []):
+                result["spoken"].append("the listening check failed to run, so nobody has heard this video")
+            scene_issues, scene_notes = listen.check_scenes(job, script, times)
+            result["spoken"] += scene_issues
+            result["scene_heard"] = scene_notes
     except Exception as e:
-        result["heard"] = [f"listening check failed to run: {str(e)[:80]}"]
+        result["spoken"] = list(result.get("spoken") or []) + [f"listening check failed to run: {str(e)[:80]}"]
     sc = list(footage_scores or [])
     weak = [i + 1 for i, s in enumerate(sc) if s < 5]
     # one loosely-related middle scene (score 3-4) is allowed when the AI frame review
@@ -166,7 +177,7 @@ def check(job, script, times, words, footage_scores):
         result["review"] = review(job, script, times)
     except Exception as e:
         result["review"] = [f"AI review unavailable: {str(e)[:80]}"]
-    passed = not any(v for k, v in result.items() if k not in ("notes", "heard"))
+    passed = not any(v for k, v in result.items() if k not in ("notes", "heard", "scene_heard"))
     result["pass"] = passed
     result["duration"] = dur
     problems = [f"{k}: {v}" for k, vals in result.items() if isinstance(vals, list) for v in vals]

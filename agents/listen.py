@@ -162,3 +162,39 @@ def check(job, script):
     issues, notes, ratio = compare(text, heard)
     log(f"listen: {ratio:.0%} of the script heard as written; {len(issues)} problem(s), {len(notes)} note(s)")
     return issues, notes[:8]
+
+
+# Below this share of a scene's script words heard, the voice has broken up in that scene. Measured 16-17 Nov
+# 2026: good English scenes are 88-100% (worst 79%), the two broken videos fell to 0-20% from 0:17/0:21; good
+# Hindi scenes 41-100% (the small Hindi listener is weak), so Hindi has a lower bar.
+SCENE_MIN = {"en": 0.6, "hi": 0.25}
+
+
+def check_scenes(job, script, times):
+    """Scene by scene: how much of each scene's script is heard inside that scene's time window in the
+    finished video. One scene where the voice breaks up or goes silent holds the video, even when the
+    whole-video score looks fine. Returns (issues, notes)."""
+    global _MODEL
+    from faster_whisper import WhisperModel
+    lang = _lang()
+    if _MODEL is None:
+        _MODEL = WhisperModel("base.en" if lang == "en" else "small", device="cpu", compute_type="int8")
+    src = job / "final.mp4" if (job / "final.mp4").exists() else job / "voice.mp3"
+    segs, _ = _MODEL.transcribe(str(src), language=lang, beam_size=5, vad_filter=False, word_timestamps=True)
+    heard = [(w.start, w.end, w.word) for sg in segs for w in (sg.words or [])]
+    key = (lambda w: skeleton(w)) if lang != "en" else (lambda w: w)
+    issues, notes = [], []
+    bar = SCENE_MIN.get(lang, 0.25)
+    for k, (scene, (a, b)) in enumerate(zip(script["scenes"], times)):
+        said = [x for x in (key(w) for w in norm(scene.get("narration", ""))) if x]
+        if len(said) < 3:
+            continue
+        got = [x for x in (key(w) for w in norm(" ".join(t for s0, e0, t in heard if s0 >= a - 0.3 and e0 <= b + 0.3))) if x]
+        sm = difflib.SequenceMatcher(None, said, got, autojunk=False)
+        share = sum(m.size for m in sm.get_matching_blocks()) / len(said)
+        notes.append(f"scene {k + 1}: {share:.0%}")
+        if share < bar:
+            issues.append(f"scene {k + 1} ({a:.1f}-{b:.1f} s): only {share:.0%} of its words can be heard - "
+                          "the voice breaks up or drops out")
+    log("listen per scene: " + ", ".join(notes))
+    return issues, notes
