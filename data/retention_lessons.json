@@ -1,18 +1,19 @@
 {
   "lessons": [
-    "Hook lines that directly state a surprising consequence or unusual fact (e.g., Tuna meat vs. Cod, Shark living for centuries) achieve higher start benchmarks (0.52 to 0.57 vs_similar_start) and keep retention above 1.8 at 10%.",
-    "Abstract or overly broad premise lines at the very start cause immediate drop-offs; specific physiological contrasts retain attention better.",
-    "Lines that transition into heavy scientific explanations or mechanism breakdowns (e.g., bromelain enzymes or water chemistry) trigger the largest single-point drop-offs, often losing 20% to 36% of viewers around 7% to 14% into the video.",
-    "Videos with exceptional retention at the end (like the Greenland shark, keeping 1.10 at the end) maintain high viewer engagement throughout by continuously posing structural mysteries rather than settling into dry exposition."
+    "Start with provocative statements rather than descriptive setup; hooks that present a surprising paradox or vivid danger (like tuna meat vs. cod or pineapple eating you back) yield high start performance.",
+    "Eliminate immediate exposition in the first 10% of the script; lines that explain mechanics or background too early (seen in maple syrup and potato videos) trigger massive viewer drops exceeding 30%.",
+    "Avoid redundant phrasing and repetitive statements in early transition lines; repeating information causes immediate viewer fatigue and drop-off.",
+    "Ensure mid-video pacing remains tight; pauses, prompts to guess, or slow narrative detours around the 50% mark lead to steep audience loss (e.g., the sharp drop in the maple syrup and finger pruning videos)."
   ],
   "worst_moment_types": [
-    "Introducing complex scientific terms or definitions too early in the video (e.g., bromelain, cellular room separation).",
-    "Providing slow, methodical explanations of physical processes (e.g., boiling off sap or how dead skin cells absorb water) rather than immediate narrative progression."
+    "Slow mechanical explanations and background definitions delivered right after the hook",
+    "Repetitive restatements of the same concept in consecutive lines",
+    "Mid-video pauses and direct prompts for the viewer to guess"
   ],
   "best_hook_types": [
-    "Direct comparative hooks contrasting two familiar items with surprising differences (e.g., Tuna vs. Cod).",
-    "Extreme superlative or temporal claims (e.g., sharks older than the United States, foods that last forever)."
+    "Striking biological contrasts comparing two familiar items (e.g., tuna vs. cod)",
+    "Urgent, visceral framing of a common experience as a defensive threat (e.g., pineapples eating you back)"
   ],
   "studied": "2026-11-17",
-  "videos": 10
+  "videos": 12
 }

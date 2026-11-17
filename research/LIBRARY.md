@@ -44,6 +44,18 @@ Sources:
 Sources:
 - Smallegange et al. (2005), Chemical Senses. doi:10.1093/chemse/bji010 — supports: Mosquitoes use chemical cues like lactic acid and carboxylic acids to identify hosts (Verhulst et al., 2011).
 
+## Does Pineapple Juice Actually Digest Meat? 😮
+*2026-11-17 · Food Whys*
+
+- Bromelain is a protease enzyme found in pineapple that hydrolyzes proteins.
+- Bromelain effectively tenderizes meat by breaking down collagen and muscle fibers.
+- High heat (canning/cooking) denatures enzymes, rendering them inactive.
+- The 'tingle' on the tongue is the enzyme digesting surface proteins of the tongue tissue.
+
+Sources:
+- Yulastri et al. (2024), Jurnal Penelitian Pendidikan IPA. doi:10.29303/jppipa.v10i8.6976 — supports: Bromelain is a protease enzyme found in pineapple that hydrolyzes proteins.
+- Ketnawa et al. (2011), Food and Nutrition Sciences. doi:10.4236/fns.2011.25055 — supports: Bromelain effectively tenderizes meat by breaking down collagen and muscle fibers.
+
 ## How Acorns Indirectly Affect Lyme Disease Rates 🤯
 *2026-11-16 · Animal Whys*
 

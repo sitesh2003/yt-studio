@@ -2,9 +2,9 @@
   "4LJjIxeP_dY": {
     "title": "Why your eyes are secretly leaking",
     "hook_line": "",
-    "kept_at_10pct": 1.0653,
-    "kept_at_50pct": 0.4499,
-    "kept_at_end": 0.2046,
+    "kept_at_10pct": 1.0652,
+    "kept_at_50pct": 0.4493,
+    "kept_at_end": 0.2043,
     "vs_similar_start": 0.34,
     "vs_similar_end": 0.56,
     "biggest_drops": [
@@ -71,21 +71,21 @@
   "_EnG9sUTAUY": {
     "title": "Why Maple Syrup Takes 40 Gallons 🍁🍯",
     "hook_line": "That sweet maple syrup on your pancakes?",
-    "kept_at_10pct": 0.9545,
-    "kept_at_50pct": 0.3636,
-    "kept_at_end": 0.1818,
-    "vs_similar_start": 0.33,
-    "vs_similar_end": 0.37,
+    "kept_at_10pct": 0.9565,
+    "kept_at_50pct": 0.39130000000000004,
+    "kept_at_end": 0.1739,
+    "vs_similar_start": 0.32,
+    "vs_similar_end": 0.32,
     "biggest_drops": [
       {
-        "at": 0.07,
-        "lost": 0.364,
+        "at": 0.1,
+        "lost": 0.348,
         "line": "When maple trees wake up in spring, they pump out sap that is about ninety-eight percent water."
       },
       {
-        "at": 0.22,
-        "lost": 0.136,
-        "line": "To turn that watery sap into thick syrup, you have to boil off almost all of it."
+        "at": 0.52,
+        "lost": 0.087,
+        "line": "Pause and guess..."
       }
     ],
     "countdown": null,
@@ -140,20 +140,20 @@
   "u_qOehVEHQI": {
     "title": "Why Tuna Meat Is Red Meat While Cod Is Pure White 🐟🥩",
     "hook_line": "A bluefin tuna and a cod are both fish, but their meat looks like two completely different animals.",
-    "kept_at_10pct": 1.2182,
+    "kept_at_10pct": 1.2172,
     "kept_at_50pct": 0.6579999999999999,
-    "kept_at_end": 0.45770000000000005,
+    "kept_at_end": 0.4587,
     "vs_similar_start": 0.57,
     "vs_similar_end": 0.86,
     "biggest_drops": [
       {
-        "at": 0.09,
-        "lost": 0.176,
+        "at": 0.08,
+        "lost": 0.177,
         "line": "A bluefin tuna and a cod are both fish, but their meat looks like two completely different animals."
       },
       {
         "at": 0.23,
-        "lost": 0.116,
+        "lost": 0.115,
         "line": "Slice a tuna steak and it looks like deep red beef, while a cod fillet is bright white."
       }
     ],
@@ -163,9 +163,9 @@
   "80jyJN1A1y8": {
     "title": "Why Fresh Pineapples Eat You Back 🍍👅",
     "hook_line": "Fresh pineapple is literally eating you back.",
-    "kept_at_10pct": 1.0903,
-    "kept_at_50pct": 0.3847,
-    "kept_at_end": 0.24309999999999998,
+    "kept_at_10pct": 1.0863,
+    "kept_at_50pct": 0.3822,
+    "kept_at_end": 0.2425,
     "vs_similar_start": 0.38,
     "vs_similar_end": 0.74,
     "biggest_drops": [
@@ -176,7 +176,7 @@
       },
       {
         "at": 0.27,
-        "lost": 0.137,
+        "lost": 0.136,
         "line": "The fruit contains a potent protein-melting enzyme called bromelain."
       }
     ],
@@ -186,21 +186,21 @@
   "S3s-iGcOMVY": {
     "title": "This Shark Can Live For Centuries! 🦈❄️",
     "hook_line": "This shark is older than the United States.",
-    "kept_at_10pct": 1.8636000000000001,
-    "kept_at_50pct": 1.3485,
-    "kept_at_end": 1.1061,
+    "kept_at_10pct": 1.8507,
+    "kept_at_50pct": 1.3284,
+    "kept_at_end": 1.0896,
     "vs_similar_start": 0.56,
     "vs_similar_end": 0.84,
     "biggest_drops": [
       {
         "at": 0.09,
-        "lost": 0.227,
+        "lost": 0.224,
         "line": "The Greenland shark roams the freezing Arctic depths, growing only about an inch every few years."
       },
       {
-        "at": 0.28,
-        "lost": 0.076,
-        "line": "But here is the weird part: how does it survive so long in water that should freeze its blood?"
+        "at": 0.63,
+        "lost": 0.075,
+        "line": "Here is why: the intense cold forces its metabolism to crawl at an incredibly slow, energy-saving pace."
       }
     ],
     "countdown": null,
@@ -209,21 +209,67 @@
   "fXKlhAXJSTc": {
     "title": "Why Garlic Doesn't Make You Cry Like Onions Do 🧄😭",
     "hook_line": "Garlic usually doesn't make you cry when you chop it, because its defense chemicals work differently than the ones in onions.",
-    "kept_at_10pct": 1.2736,
-    "kept_at_50pct": 0.4764,
-    "kept_at_end": 0.34909999999999997,
-    "vs_similar_start": 0.52,
-    "vs_similar_end": 0.74,
+    "kept_at_10pct": 1.1905,
+    "kept_at_50pct": 0.38689999999999997,
+    "kept_at_end": 0.2708,
+    "vs_similar_start": 0.48,
+    "vs_similar_end": 0.77,
     "biggest_drops": [
       {
         "at": 0.1,
-        "lost": 0.316,
+        "lost": 0.342,
         "line": "Garlic usually doesn't make you cry when you chop it, because its defense chemicals work differently than the ones in onions."
       },
       {
         "at": 0.41,
-        "lost": 0.099,
+        "lost": 0.089,
         "line": "It stores its flavor compounds and enzymes in totally separate rooms inside each cell."
+      }
+    ],
+    "countdown": null,
+    "checked": "2026-11-17"
+  },
+  "19fmphmc7A8": {
+    "title": "Why Fruits Float In Water 🍎🍐",
+    "hook_line": "Drop an apple or a pear in a bowl of water and they both float.",
+    "kept_at_10pct": 0.8667,
+    "kept_at_50pct": 0.2667,
+    "kept_at_end": 0.2,
+    "vs_similar_start": 0.23,
+    "vs_similar_end": 0.47,
+    "biggest_drops": [
+      {
+        "at": 0.09,
+        "lost": 0.333,
+        "line": "Drop an apple or a pear in a bowl of water and they both float."
+      },
+      {
+        "at": 0.88,
+        "lost": 0.067,
+        "line": "Ever thought why a watermelon, which is way bigger and heavier, still floats on the surface?"
+      }
+    ],
+    "countdown": null,
+    "checked": "2026-11-17"
+  },
+  "syvvVya0Q4g": {
+    "title": "Why Do Potatoes Sprout From Dents? 🥔🌱",
+    "hook_line": "Why do potatoes sprout shoots from those tiny dents instead of anywhere else?",
+    "kept_at_10pct": 1.0331000000000001,
+    "kept_at_50pct": 0.27149999999999996,
+    "kept_at_end": 0.1589,
+    "vs_similar_start": 0.38,
+    "vs_similar_end": 0.73,
+    "biggest_drops": [
+      {
+        "at": 0.1,
+        "lost": 0.272,
+        "line": "Those little dents are actually called nodes, and each one holds tiny backup buds waiting for the right signal."
+      },
+      {
+        "at": 0.25,
+        "lost": 0.086,
+        "line": "Those little dents are actually called nodes, and each one holds tiny backup buds waiting for the right signal."
       }
     ],
     "countdown": null,

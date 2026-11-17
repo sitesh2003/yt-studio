@@ -107,5 +107,18 @@
   ],
   "not_drawn": {},
   "error": ""
+ },
+ {
+  "when": "2026-11-17 23:06",
+  "topic": "Can Pineapples Pre-Digest Meat? (How Pineapple Juice Makes Steaks Tender)",
+  "drawn": [
+   2,
+   3,
+   6
+  ],
+  "not_drawn": {
+   "4": "A soccer ball is used to represent a wrecking ball, and meat pieces are laid horizontally instead of forming a wall."
+  },
+  "error": ""
  }
 ]

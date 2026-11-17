@@ -1,10 +1,10 @@
 {
   "summary": [
-    "Prioritize human-centric 'us vs. nature' conflict in titles, using active verbs like 'eat', 'leaking', or 'hide'.",
-    "Hook with a direct contradiction or 'counter-intuitive fact' in the first 3 seconds to disrupt the scroll.",
-    "Avoid descriptive or educational setups that sound like textbook facts; focus on emotional or sensory anomalies.",
-    "Ensure titles are concise and use emojis to signal lighthearted, visual discovery rather than dry science.",
-    "Higher-performing videos address bodily sensations (fingers, eyes, taste buds) rather than abstract external objects like syrup or honey."
+    "Top-performing videos by views consistently achieved a stayed_pct above 50%, whereas the bottom third experienced erratic or collapsed retention (falling as low as 16.2% despite a 100% anomaly on a single-view video).",
+    "High-stayed videos utilize punchy, direct statements in the first sentence that create an immediate cognitive gap or challenge a common assumption, avoiding filler or meta-introductions.",
+    "Titles of top videos incorporate high-contrast phrasing and relevant emojis to anchor the topic visually, contrasting with lower-performing titles that rely on generic questions.",
+    "Successful hooks rely on declarative sentences stating a counterintuitive fact ('Fresh pineapple is literally eating you back') rather than conversational throat-clearing.",
+    "Optimal duration for high-traction videos clusters around 17 to 38 seconds, while longer formats (over 50 seconds) severely risk early drop-offs."
   ],
   "winning_hooks": [
     "Your fingers prune in water, but it is not because you are absorbing it like a sponge.",
@@ -13,10 +13,9 @@
     "This shark is older than the United States."
   ],
   "avoid": [
-    "Starting with neutral observation statements like 'Drop an apple or a pear in a bowl'.",
-    "Long, multi-clause scientific explanations in the first sentence.",
-    "Titles that read like Wikipedia entries (e.g., 'Why Real Honey Never Spoils').",
-    "Topics that lack immediate physical stakes or personal relevance for the viewer."
+    "Starting hooks with conversational questions like 'Have you ever noticed...' or 'Did you know...'",
+    "Using lengthy descriptive setups that fail to deliver a core paradox within the first 5 words",
+    "Exceeding 45 seconds on niche explanatory topics where the initial premise does not immediately hook the scroll"
   ],
-  "next_experiment": "Compare a 'Direct Hook' (e.g., 'Stop doing this with your onions') vs. an 'Explanation Hook' (e.g., 'Here is why onions make you cry') to isolate if imperative commands improve stayed_pct."
+  "next_experiment": "Test two variations of a new hook: Variant A uses a direct counterintuitive statement ('Your kitchen sponge is dirtier than your toilet'), while Variant B uses a direct question ('Is your kitchen sponge dirtier than your toilet?'), tracking stayed_pct to see which drives a higher initial retention rate past the 3-second mark."
 }

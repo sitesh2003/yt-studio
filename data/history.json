@@ -2295,7 +2295,8 @@
     "video_id": "7CxPpDW31G0",
     "publish_at": "2026-11-17T12:00:00-05:00",
     "thumbnail_set": true,
-    "answered": true
+    "answered": true,
+    "recapped": true
   },
   {
     "job": "20261115-0159-why-metal-becomes-significantly-harder-a",
@@ -3901,6 +3902,130 @@
       "duration": 30.0
     },
     "repairs": 0,
+    "audited": true
+  },
+  {
+    "job": "20261117-2249-can-pineapples-pre-digest-meat-how-pinea",
+    "topic": "Can Pineapples Pre-Digest Meat? (How Pineapple Juice Makes Steaks Tender)",
+    "title": "Does Pineapple Juice Actually Digest Meat? 😮",
+    "description": "Ever feel that sharp tingle after eating fresh pineapple? It's not just acidity—it's nature's own meat tenderizer at work. Here is the science of why your fruit is biting back. #shorts #science #foodscience\n\nSources (open-access research):\n- Yulastri et al. (2024), Jurnal Penelitian Pendidikan IPA. doi:10.29303/jppipa.v10i8.6976\n- Ketnawa et al. (2011), Food and Nutrition Sciences. doi:10.4236/fns.2011.25055\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nPhoto by Storme22k on Pixabay\nPhoto: Alabama Extension, CC0 1.0, via Openverse (flickr)\nPhoto: Leonhard Lenz, CC0, via Wikimedia Commons\nVideo by Bichhong on Pixabay\nVideo by Kaffeesüchtig on Pixabay\nVideo by max_bbb on Pixabay",
+    "tags": [
+      "pineapple",
+      "science",
+      "foodscience",
+      "enzymes",
+      "shorts"
+    ],
+    "hook": "Most people don't know fresh pineapple contains an enzyme that attacks the proteins in your mouth, which is why it tingles or stings.",
+    "status": "banked",
+    "narration": "Most people don't know fresh pineapple contains an enzyme that attacks the proteins in your mouth, which is why it tingles or stings. It’s packed with bromelain, a powerful enzyme that slices through the protein structures holding your raw beef steak together. Think of these raw beef proteins like a sturdy brick wall. Bromelain acts like a wrecking ball on raw beef proteins. Soak a tough raw beef steak in pineapple juice for an hour. What happens to the texture? Pause and guess. The outer layer of the raw beef becomes very tender because the enzyme breaks down the meat proteins. Yesterday we asked why ice cubes float. They are less dense than water. Nobody cracked it! Ever thought why canned pineapple doesn't sting like the fresh fruit?",
+    "voice_engine": "chatterbox",
+    "voices": "one narrator (af_heart)",
+    "diagrams": 1,
+    "series": "Food Whys",
+    "countdown": true,
+    "length_arm": "standard",
+    "question": "Ever thought why canned pineapple doesn't make your tongue tingle like the fresh fruit does?",
+    "answer_comment": "The answer: Canning involves heat treating the pineapple, which denatures the bromelain enzymes. Once those proteins lose their shape due to the heat, they can no longer break down meat or your tongue. What other foods change properties when heated?\n\nSources (open-access research):\n- Yulastri et al. (2024), Jurnal Penelitian Pendidikan IPA. doi:10.29303/jppipa.v10i8.6976\n- Ketnawa et al. (2011), Food and Nutrition Sciences. doi:10.4236/fns.2011.25055",
+    "sources": [
+      {
+        "claim": "Bromelain is a protease enzyme found in pineapple that hydrolyzes proteins.",
+        "cite": "Yulastri et al. (2024), Jurnal Penelitian Pendidikan IPA. doi:10.29303/jppipa.v10i8.6976",
+        "doi": "10.29303/jppipa.v10i8.6976",
+        "title": "Innovation in Bromelain Enzyme Production from Pineapple and Honey and Its Characteristics",
+        "why": "Bromelain enzyme is one type of protease enzyme that has the ability to hydrolyze protein peptide bonds into amino acids. Bromelain enzyme can be found in pineapple (Ananas comosus) which consists of 95% cysteine protease mixture."
+      },
+      {
+        "claim": "Bromelain effectively tenderizes meat by breaking down collagen and muscle fibers.",
+        "cite": "Ketnawa et al. (2011), Food and Nutrition Sciences. doi:10.4236/fns.2011.25055",
+        "doi": "10.4236/fns.2011.25055",
+        "title": "Application of Bromelain Extract for Muscle Foods Tenderization",
+        "why": "The results show that the bromelain extract derived from the two-phase extraction of a pineapple peel could be used as an effective meat tenderizer."
+      }
+    ],
+    "fact_check": [
+      "Bromelain is a protease enzyme found in pineapple that hydrolyzes proteins.",
+      "Bromelain effectively tenderizes meat by breaking down collagen and muscle fibers.",
+      "High heat (canning/cooking) denatures enzymes, rendering them inactive.",
+      "The 'tingle' on the tongue is the enzyme digesting surface proteins of the tongue tissue."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        5.53
+      ],
+      [
+        5.53,
+        10.59
+      ],
+      [
+        10.59,
+        13.12
+      ],
+      [
+        13.12,
+        15.88
+      ],
+      [
+        15.88,
+        21.67
+      ],
+      [
+        21.67,
+        26.4
+      ],
+      [
+        26.4,
+        31.54
+      ],
+      [
+        31.54,
+        34.52
+      ]
+    ],
+    "duration": 34.52,
+    "scene_lines": [
+      "Most people don't know fresh pineapple contains an enzyme that attacks the proteins in your mouth, which is why it tingles or stings.",
+      "It’s packed with bromelain, a powerful enzyme that slices through the protein structures holding your raw beef steak together.",
+      "Think of these raw beef proteins like a sturdy brick wall.",
+      "Bromelain acts like a wrecking ball on raw beef proteins.",
+      "Soak a tough raw beef steak in pineapple juice for an hour. What happens to the texture? Pause and guess.",
+      "The outer layer of the raw beef becomes very tender because the enzyme breaks down the meat proteins.",
+      "Yesterday we asked why ice cubes float. They are less dense than water. Nobody cracked it!",
+      "Ever thought why canned pineapple doesn't sting like the fresh fruit?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": "7CxPpDW31G0",
+    "captions_srt": "1\n00:00:00,000 --> 00:00:01,010\nMost people don't know\n\n2\n00:00:01,140 --> 00:00:02,760\nfresh pineapple contains an enzyme that attacks\n\n3\n00:00:02,760 --> 00:00:03,980\nthe proteins in your mouth, which is\n\n4\n00:00:03,980 --> 00:00:05,190\nwhy it tingles or stings.\n\n5\n00:00:05,530 --> 00:00:07,150\nIt’s packed with bromelain, a powerful enzyme\n\n6\n00:00:07,150 --> 00:00:08,910\nthat slices through the protein structures holding\n\n7\n00:00:08,910 --> 00:00:10,360\nyour raw beef steak together.\n\n8\n00:00:10,590 --> 00:00:11,930\nThink of these raw beef proteins like\n\n9\n00:00:11,930 --> 00:00:12,920\na sturdy brick wall.\n\n10\n00:00:13,120 --> 00:00:15,550\nBromelain acts like a wrecking ball on raw beef proteins.\n\n11\n00:00:15,880 --> 00:00:17,340\nSoak a tough raw beef steak in\n\n12\n00:00:17,340 --> 00:00:18,730\npineapple juice for an hour.\n\n13\n00:00:18,870 --> 00:00:20,140\nWhat happens to the texture?\n\n14\n00:00:20,500 --> 00:00:21,450\nPause and guess.\n\n15\n00:00:21,670 --> 00:00:22,950\nThe outer layer of the raw beef\n\n16\n00:00:22,950 --> 00:00:25,030\nbecomes very tender because the enzyme breaks\n\n17\n00:00:25,030 --> 00:00:26,020\ndown the meat proteins.\n\n18\n00:00:26,400 --> 00:00:27,050\nYesterday\n\n19\n00:00:27,100 --> 00:00:28,510\nwe asked why ice cubes float.\n\n20\n00:00:28,670 --> 00:00:30,240\nThey are less dense than water.\n\n21\n00:00:30,360 --> 00:00:31,330\nNobody cracked it!\n\n22\n00:00:31,540 --> 00:00:33,220\nEver thought why canned pineapple doesn't sting\n\n23\n00:00:33,220 --> 00:00:33,920\nlike the fresh fruit?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [],
+      "footage": [],
+      "review": [],
+      "heard": [
+        "\"it s\" heard as \"it's\"",
+        "\"bromelain\" heard as \"bromlin\"",
+        "\"steak\" heard as \"staked\"",
+        "\"bromelain\" heard as \"bromlin\"",
+        "\"in\" heard as \"and\""
+      ],
+      "scene_heard": [
+        "scene 1: 100%",
+        "scene 2: 80%",
+        "scene 3: 100%",
+        "scene 4: 90%",
+        "scene 5: 95%",
+        "scene 6: 100%",
+        "scene 7: 100%",
+        "scene 8: 100%"
+      ],
+      "pass": true,
+      "duration": 34.2
+    },
+    "repairs": 1,
     "audited": true
   }
 ]

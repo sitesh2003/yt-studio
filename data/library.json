@@ -394,5 +394,31 @@
         "claim": "Mosquitoes use chemical cues like lactic acid and carboxylic acids to identify hosts (Verhulst et al., 2011)."
       }
     ]
+  },
+  {
+    "job": "20261117-2249-can-pineapples-pre-digest-meat-how-pinea",
+    "date": "2026-11-17",
+    "title": "Does Pineapple Juice Actually Digest Meat? 😮",
+    "topic": "Can Pineapples Pre-Digest Meat? (How Pineapple Juice Makes Steaks Tender)",
+    "series": "Food Whys",
+    "weekly": false,
+    "claims": [
+      "Bromelain is a protease enzyme found in pineapple that hydrolyzes proteins.",
+      "Bromelain effectively tenderizes meat by breaking down collagen and muscle fibers.",
+      "High heat (canning/cooking) denatures enzymes, rendering them inactive.",
+      "The 'tingle' on the tongue is the enzyme digesting surface proteins of the tongue tissue."
+    ],
+    "sources": [
+      {
+        "cite": "Yulastri et al. (2024), Jurnal Penelitian Pendidikan IPA. doi:10.29303/jppipa.v10i8.6976",
+        "doi": "10.29303/jppipa.v10i8.6976",
+        "claim": "Bromelain is a protease enzyme found in pineapple that hydrolyzes proteins."
+      },
+      {
+        "cite": "Ketnawa et al. (2011), Food and Nutrition Sciences. doi:10.4236/fns.2011.25055",
+        "doi": "10.4236/fns.2011.25055",
+        "claim": "Bromelain effectively tenderizes meat by breaking down collagen and muscle fibers."
+      }
+    ]
   }
 ]
