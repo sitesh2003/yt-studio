@@ -95,5 +95,18 @@
   ],
   "not_drawn": {},
   "error": ""
+ },
+ {
+  "when": "2026-11-17 08:21",
+  "topic": "Why does anything move if action equals reaction? The physics of Newton's third law",
+  "drawn": [
+   4,
+   5
+  ],
+  "not_drawn": {
+   "3": "The image shows the Earth pushing down on a person, which contradicts the concept of the ground pushing a person forward.",
+   "6": "A shoe emoji is incorrectly labelled 'BACK FORCE', and the 'leads to' downward arrows misrepresent simultaneous action-reaction forces."
+  },
+  "error": ""
  }
 ]

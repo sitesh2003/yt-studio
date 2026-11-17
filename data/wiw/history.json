@@ -680,7 +680,8 @@
     "repairs": 1,
     "video_id": "kU4gc_KAIJ4",
     "publish_at": "2026-11-16T16:30:00-05:00",
-    "answered": true
+    "answered": true,
+    "recapped": true
   },
   {
     "job": "20261115-1729-why-do-23-people-share-a-birthday-the-bi",
@@ -1082,7 +1083,7 @@
       "why it works"
     ],
     "hook": "Ever wondered how your eyes actually see a red apple?",
-    "status": "banked",
+    "status": "scheduled",
     "narration": "Ever wondered how your eyes actually see a red apple? Light bounces off. When light hits the apple, it reflects mostly long light wavelengths toward your retina. There, three types of cone cells absorb overlapping ranges of light wavelengths. The apple strongly activates long-wavelength cones, while medium and short cones activate much less. That's because your brain decodes color by comparing the relative ratio of signals from all three cones. It compares them. Phone screens use this exact trick, tweaking three pixel brightnesses to match those cone ratios. Try this: if your long-wavelength cones didn't work, which color would look much darker?",
     "voice_engine": "kokoro",
     "voices": "one narrator (af_bella)",
@@ -1156,7 +1157,10 @@
       "duration": 37.5
     },
     "repairs": 0,
-    "audited": true
+    "audited": true,
+    "video_id": "bZeFlqbrdf4",
+    "publish_at": "2026-11-18T07:30:00-05:00",
+    "thumbnail_set": true
   },
   {
     "job": "20261116-0402-how-does-a-capacitor-store-charge",
@@ -2049,6 +2053,101 @@
       ],
       "pass": true,
       "duration": 35.6
+    },
+    "repairs": 0,
+    "audited": true
+  },
+  {
+    "job": "20261117-0811-why-does-anything-move-if-action-equals-",
+    "topic": "Why does anything move if action equals reaction? The physics of Newton's third law",
+    "title": "How Newton's Third Law Actually Works",
+    "description": "If every action has an equal and opposite reaction, shouldn't every force cancel out to zero? Here is the simple reason things actually move.\n\n#shorts #physics #science\n\nSources (open-access research):\n- Habtamu (2026), Figshare. doi:10.6084/m9.figshare.31126042\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nPhoto by OlcayErtem on Pixabay\nPhoto: unknown, CC0 1.0, via Openverse (rawpixel)\nVideo by blackmarketmusic on Pixabay\n\nHow this was made: the script is researched and fact-checked with AI tools against open-access research and textbooks, narrated by an AI voice, and every diagram, number and graph is drawn by code from the real values. Spot a mistake? Tell us in the comments - corrections are checked and credited.",
+    "tags": [
+      "newton's third law",
+      "why does anything move",
+      "physics explained",
+      "forces and motion",
+      "high school physics",
+      "action and reaction"
+    ],
+    "hook": "Every force has an equal opposite reaction. So why does anything ever move?",
+    "status": "banked",
+    "narration": "Every force has an equal opposite reaction. So why does anything ever move? Imagine you're on a skateboard. You kick backward against the sidewalk with 40 newtons of force. That action triggers an instant reaction: the ground shoves you forward just as hard. Wait, don't those two opposite forces cancel out to zero? That's because action and reaction forces act on two entirely different objects, so they never cancel. The backward force acts on Earth, but the forward force acts on you, accelerating you forward. Try this: when you jump, your legs push Earth downward, so why doesn't Earth noticeably move?",
+    "voice_engine": "chatterbox",
+    "voices": "one narrator (af_heart)",
+    "diagrams": 1,
+    "series": "Physics",
+    "countdown": false,
+    "length_arm": null,
+    "question": "Try this: when you jump, your legs push Earth downward, so why doesn't Earth noticeably move?",
+    "answer_comment": "The answer: Earth actually does accelerate, but its mass is so huge that its movement is completely immeasurable! Newton's second law says acceleration equals force divided by mass. Since Earth's mass is roughly six septillion kilograms, the tiny force from your legs creates an acceleration practically equal to zero. What other force pairs seem totally one-sided to you?\n\nSources (open-access research):\n- Habtamu (2026), Figshare. doi:10.6084/m9.figshare.31126042",
+    "sources": [
+      {
+        "claim": "Newton's third law states that when object A exerts a force on object B, object B simultaneously exerts an equal magnitude and opposite direction force on object A.",
+        "cite": "Habtamu (2026), Figshare. doi:10.6084/m9.figshare.31126042",
+        "doi": "10.6084/m9.figshare.31126042",
+        "title": "Girum's Principle: The Principle of Distributed Causality and Global Compensation as a Unified Theory of Physical Interaction Beyond Newton's Third Law",
+        "why": "Newton’s third law has long been regarded as a universal axiom of mechanics, asserting that forces arise in equal and opposite pairs between the interacting bodies."
+      }
+    ],
+    "fact_check": [
+      "Newton's third law states that when object A exerts a force on object B, object B simultaneously exerts an equal magnitude and opposite direction force on object A.",
+      "Action-reaction pairs never cancel each other because they act on two different systems/objects, meaning the net external force on each individual object is non-zero.",
+      "When a person jumps, the gravitational and normal forces between the person and Earth are equal in magnitude; the Earth's acceleration is inversely proportional to its mass (a = F/m), resulting in an imperceptible acceleration of ~10^-25 m/s^2."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        4.76
+      ],
+      [
+        4.76,
+        9.61
+      ],
+      [
+        9.61,
+        13.8
+      ],
+      [
+        13.8,
+        16.82
+      ],
+      [
+        16.82,
+        21.74
+      ],
+      [
+        21.74,
+        26.15
+      ],
+      [
+        26.15,
+        30.65
+      ]
+    ],
+    "duration": 30.65,
+    "scene_lines": [
+      "Every force has an equal opposite reaction. So why does anything ever move?",
+      "Imagine you're on a skateboard. You kick backward against the sidewalk with 40 newtons of force.",
+      "That action triggers an instant reaction: the ground shoves you forward just as hard.",
+      "Wait, don't those two opposite forces cancel out to zero?",
+      "That's because action and reaction forces act on two entirely different objects, so they never cancel.",
+      "The backward force acts on Earth, but the forward force acts on you, accelerating you forward.",
+      "Try this: when you jump, your legs push Earth downward, so why doesn't Earth noticeably move?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,000 --> 00:00:02,350\nEvery force has an equal opposite reaction.\n\n2\n00:00:02,710 --> 00:00:04,380\nSo why does anything ever move?\n\n3\n00:00:04,760 --> 00:00:06,170\nImagine you're on a skateboard.\n\n4\n00:00:06,280 --> 00:00:08,060\nYou kick backward against the sidewalk with\n\n5\n00:00:08,060 --> 00:00:09,310\n40 newtons of force.\n\n6\n00:00:09,610 --> 00:00:11,600\nThat action triggers an instant reaction:\n\n7\n00:00:11,750 --> 00:00:13,580\nthe ground shoves you forward just as hard.\n\n8\n00:00:13,800 --> 00:00:16,390\nWait, don't those two opposite forces cancel out to zero?\n\n9\n00:00:16,820 --> 00:00:18,880\nThat's because action and reaction forces act\n\n10\n00:00:18,880 --> 00:00:20,590\non two entirely different objects,\n\n11\n00:00:20,640 --> 00:00:21,550\nso they never cancel.\n\n12\n00:00:21,740 --> 00:00:23,160\nThe backward force acts on Earth, but\n\n13\n00:00:23,160 --> 00:00:25,870\nthe forward force acts on you, accelerating you forward.\n\n14\n00:00:26,150 --> 00:00:26,740\nTry this:\n\n15\n00:00:26,850 --> 00:00:28,130\nwhen you jump, your legs push Earth\n\n16\n00:00:28,130 --> 00:00:30,050\ndownward, so why doesn't Earth noticeably move?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [],
+      "footage": [],
+      "review": [],
+      "pass": true,
+      "duration": 30.3
     },
     "repairs": 0,
     "audited": true

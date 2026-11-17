@@ -3,6 +3,16 @@
 Every video, the claims it makes, and the open-access research behind them. Built automatically by
 agents/library.py; a source is listed only if its abstract was checked to support the claim.
 
+## How Newton's Third Law Actually Works
+*2026-11-17 · Physics*
+
+- Newton's third law states that when object A exerts a force on object B, object B simultaneously exerts an equal magnitude and opposite direction force on object A.
+- Action-reaction pairs never cancel each other because they act on two different systems/objects, meaning the net external force on each individual object is non-zero.
+- When a person jumps, the gravitational and normal forces between the person and Earth are equal in magnitude; the Earth's acceleration is inversely proportional to its mass (a = F/m), resulting in an imperceptible acceleration of ~10^-25 m/s^2.
+
+Sources:
+- Habtamu (2026), Figshare. doi:10.6084/m9.figshare.31126042 — supports: Newton's third law states that when object A exerts a force on object B, object B simultaneously exerts an equal magnitude and opposite direction force on object A.
+
 ## How Colour Vision Works: The Biology of Cone Cells Explained
 *2026-11-16 · Biology*
 
