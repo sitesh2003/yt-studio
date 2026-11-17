@@ -71,5 +71,29 @@
    "3": "The image uses a bone emoji to represent a nerve, which is biologically incorrect and confusing for a 12-year-old."
   },
   "error": ""
+ },
+ {
+  "when": "2026-11-17 05:34",
+  "topic": "Scientists Just Found a Giant Hidden World Past Pluto",
+  "drawn": [
+   2,
+   3,
+   4,
+   5
+  ],
+  "not_drawn": {},
+  "error": ""
+ },
+ {
+  "when": "2026-11-17 06:19",
+  "topic": "Why hippos sweat a red liquid while human sweat is clear, and how it acts as a dual sunscr",
+  "drawn": [
+   2,
+   3,
+   4,
+   5
+  ],
+  "not_drawn": {},
+  "error": ""
  }
 ]

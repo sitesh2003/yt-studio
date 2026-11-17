@@ -333,5 +333,46 @@
         "claim": "The peroneal nerve is highly susceptible to compression at the fibular head."
       }
     ]
+  },
+  {
+    "job": "20261117-0512-scientists-just-found-a-giant-hidden-wor",
+    "date": "2026-11-17",
+    "title": "Why Scientists Missed an Outer Kuiper Belt 🤯",
+    "topic": "Scientists Just Found a Giant Hidden World Past Pluto",
+    "series": "How Things Work",
+    "weekly": false,
+    "claims": [
+      "Subaru Telescope survey data and New Horizons team observations discovered candidate Kuiper Belt Objects out around 55 to 70 AU, beyond the expected 50 AU cliff.",
+      "Objects past 50 AU receive extremely low solar radiation intensity, making them exceptionally faint in reflected visible light.",
+      "Distant solar system bodies move with slower orbital speeds according to Kepler's Third Law, causing minimal proper motion against background stars over time."
+    ],
+    "sources": [
+      {
+        "cite": "Fraser et al. (2024), The Planetary Science Journal. doi:10.3847/psj/ad6f9e",
+        "doi": "10.3847/psj/ad6f9e",
+        "claim": "Subaru Telescope survey data and New Horizons team observations discovered candidate Kuiper Belt Objects out around 55 to 70 AU, beyond the expected 50 AU cliff."
+      }
+    ]
+  },
+  {
+    "job": "20261117-0601-why-hippos-sweat-a-red-liquid-while-huma",
+    "date": "2026-11-17",
+    "title": "Why Hippos Excrete Red Liquid 🤯",
+    "topic": "Why hippos sweat a red liquid while human sweat is clear, and how it acts as a dual sunscreen and antibiotic.",
+    "series": "Animal Whys",
+    "weekly": false,
+    "claims": [
+      "Hippos produce 'blood sweat', which is actually a mixture of hipposudoric acid and norhipposudoric acid.",
+      "These pigments act as natural antibiotics.",
+      "The secretion is not blood.",
+      "The secretion helps prevent skin drying (desiccation)."
+    ],
+    "sources": [
+      {
+        "cite": "Uddin et al. (2026), Helvetica Chimica Acta. doi:10.1002/hlca.70102",
+        "doi": "10.1002/hlca.70102",
+        "claim": "Hippos produce 'blood sweat', which is actually a mixture of hipposudoric acid and norhipposudoric acid."
+      }
+    ]
   }
 ]

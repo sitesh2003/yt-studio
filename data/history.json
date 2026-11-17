@@ -3593,5 +3593,209 @@
     },
     "repairs": 1,
     "audited": true
+  },
+  {
+    "job": "20261117-0512-scientists-just-found-a-giant-hidden-wor",
+    "topic": "Scientists Just Found a Giant Hidden World Past Pluto",
+    "title": "Why Scientists Missed an Outer Kuiper Belt 🤯",
+    "description": "Astronomers scanning the far edges of our solar system recently detected candidate worlds beyond 50 AU, pointing toward a previously unknown extended Kuiper Belt region.\n\n#space #astronomy #shorts\n\nSources (open-access research):\n- Fraser et al. (2024), The Planetary Science Journal. doi:10.3847/psj/ad6f9e\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nImage: NASA (public domain)\nPhoto by akbarnemati on Pixabay\nPhoto: NASA Goddard Photo and Video, BY 2.0, via Openverse (nasa)\n\nHow this was made: the script is researched and fact-checked with AI tools against open-access research (sources above when found), narrated by an AI voice, and edited with open-source software. Corrections from viewers are checked and credited.",
+    "tags": [
+      "pluto",
+      "kuiper belt",
+      "solar system",
+      "astronomy",
+      "space exploration",
+      "subaru telescope",
+      "outer space"
+    ],
+    "hook": "Pluto seemed like our solar system's edge, yet astronomers are investigating evidence that the Kuiper Belt extends much further than we once thought.",
+    "status": "banked",
+    "narration": "Pluto seemed like our solar system's edge, yet astronomers are investigating evidence that the Kuiper Belt extends much further than we once thought. We long believed the Kuiper Belt density dropped off significantly around fifty astronomical units away from the Sun. That meant we were unsure what existed in the vast darkness beyond that point. So why were these distant candidate worlds so hard to detect until now? Here's why. Out at sixty astronomical units, sunlight is so dim these icy rocks reflect very little light, making them incredibly difficult to detect. And because their orbits are enormous, they shift across the night sky at a tiny crawl. Ever thought how telescopic cameras can spot something creeping significantly slower than Pluto?",
+    "voice_engine": "chatterbox",
+    "voices": "one narrator (af_heart)",
+    "diagrams": 1,
+    "series": "How Things Work",
+    "countdown": false,
+    "length_arm": "standard",
+    "question": "Ever thought how telescopic cameras can spot something creeping significantly slower than Pluto?",
+    "answer_comment": "The answer: Astronomers take multiple images of the same star field over time. They use a technique called 'shift-and-stacking,' where they shift the digital frames to match the predicted orbital motion of the target object. This causes the faint object to align into a single, bright point in the stacked image, while background stars—which don't match that shift—appear as streaks, allowing the object to stand out.\n\nSources (open-access research):\n- Fraser et al. (2024), The Planetary Science Journal. doi:10.3847/psj/ad6f9e",
+    "sources": [
+      {
+        "claim": "Subaru Telescope survey data and New Horizons team observations discovered candidate Kuiper Belt Objects out around 55 to 70 AU, beyond the expected 50 AU cliff.",
+        "cite": "Fraser et al. (2024), The Planetary Science Journal. doi:10.3847/psj/ad6f9e",
+        "doi": "10.3847/psj/ad6f9e",
+        "title": "Candidate Distant Trans-Neptunian Objects Detected by the New Horizons Subaru TNO Survey",
+        "why": "We highlight an overabundance of objects found at heliocentric distances R ≳ 70 au compared to expectations from modeling of the known outer solar system."
+      }
+    ],
+    "fact_check": [
+      "Subaru Telescope survey data and New Horizons team observations discovered candidate Kuiper Belt Objects out around 55 to 70 AU, beyond the expected 50 AU cliff.",
+      "Objects past 50 AU receive extremely low solar radiation intensity, making them exceptionally faint in reflected visible light.",
+      "Distant solar system bodies move with slower orbital speeds according to Kepler's Third Law, causing minimal proper motion against background stars over time."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        6.1
+      ],
+      [
+        6.1,
+        11.11
+      ],
+      [
+        11.11,
+        14.96
+      ],
+      [
+        14.96,
+        18.42
+      ],
+      [
+        18.42,
+        26.28
+      ],
+      [
+        26.28,
+        30.3
+      ],
+      [
+        30.3,
+        34.3
+      ]
+    ],
+    "duration": 34.3,
+    "scene_lines": [
+      "Pluto seemed like our solar system's edge, yet astronomers are investigating evidence that the Kuiper Belt extends much further than we once thought.",
+      "We long believed the Kuiper Belt density dropped off significantly around fifty astronomical units away from the Sun.",
+      "That meant we were unsure what existed in the vast darkness beyond that point.",
+      "So why were these distant candidate worlds so hard to detect until now?",
+      "Here's why. Out at sixty astronomical units, sunlight is so dim these icy rocks reflect very little light, making them incredibly difficult to detect.",
+      "And because their orbits are enormous, they shift across the night sky at a tiny crawl.",
+      "Ever thought how telescopic cameras can spot something creeping significantly slower than Pluto?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,000 --> 00:00:01,690\nPluto seemed like our solar system's edge,\n\n2\n00:00:01,770 --> 00:00:03,570\nyet astronomers are investigating evidence that the\n\n3\n00:00:03,570 --> 00:00:05,860\nKuiper Belt extends much further than we once thought.\n\n4\n00:00:06,100 --> 00:00:07,580\nWe long believed the Kuiper Belt density\n\n5\n00:00:07,580 --> 00:00:09,960\ndropped off significantly around fifty astronomical units\n\n6\n00:00:09,960 --> 00:00:10,850\naway from the Sun.\n\n7\n00:00:11,110 --> 00:00:12,570\nThat meant we were unsure what existed\n\n8\n00:00:12,570 --> 00:00:14,560\nin the vast darkness beyond that point.\n\n9\n00:00:14,960 --> 00:00:16,560\nSo why were these distant candidate worlds\n\n10\n00:00:16,560 --> 00:00:18,010\nso hard to detect until now?\n\n11\n00:00:18,420 --> 00:00:19,050\nHere's why.\n\n12\n00:00:19,140 --> 00:00:21,460\nOut at sixty astronomical units, sunlight is\n\n13\n00:00:21,460 --> 00:00:24,210\nso dim these icy rocks reflect very little light,\n\n14\n00:00:24,260 --> 00:00:25,980\nmaking them incredibly difficult to detect.\n\n15\n00:00:26,280 --> 00:00:27,920\nAnd because their orbits are enormous, they\n\n16\n00:00:27,920 --> 00:00:30,030\nshift across the night sky at a tiny crawl.\n\n17\n00:00:30,300 --> 00:00:31,940\nEver thought how telescopic cameras can spot\n\n18\n00:00:31,940 --> 00:00:33,700\nsomething creeping significantly slower than Pluto?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [],
+      "footage": [],
+      "review": [],
+      "heard": [
+        "\"pluto seemed\" heard as \"ludo seems\"",
+        "\"rocks\" heard as \"rots\"",
+        "\"and\" heard as \"but\""
+      ],
+      "pass": true,
+      "duration": 34.1
+    },
+    "repairs": 0,
+    "audited": true
+  },
+  {
+    "job": "20261117-0601-why-hippos-sweat-a-red-liquid-while-huma",
+    "topic": "Why hippos sweat a red liquid while human sweat is clear, and how it acts as a dual sunscreen and antibiotic.",
+    "title": "Why Hippos Excrete Red Liquid 🤯",
+    "description": "Hippos don't sweat like humans, they produce a unique red substance from their skin glands that keeps them safe. #shorts #science #animals\n\nSources (open-access research):\n- Uddin et al. (2026), Helvetica Chimica Acta. doi:10.1002/hlca.70102\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nPhoto by Yummymoon on Pixabay\nPhoto by mahendragur15 on Pixabay\nVideo by 23974438 on Pixabay\nVideo by KlausHausmann on Pixabay\n\nHow this was made: the script is researched and fact-checked with AI tools against open-access research (sources above when found), narrated by an AI voice, and edited with open-source software. Corrections from viewers are checked and credited.",
+    "tags": [
+      "science",
+      "animals",
+      "biology"
+    ],
+    "hook": "What if your skin oozed its own red protective lotion? That's exactly how a hippo's red skin excretions work.",
+    "status": "banked",
+    "narration": "What if your skin oozed its own red protective lotion? That's exactly how a hippo's red skin excretions work. It looks like blood, but this goo is actually a specialized chemical cocktail produced by skin glands, not sweat glands. These secretions absorb ultraviolet light, and while they offer some sun protection, they primarily act as an antibiotic to help keep the hippo's skin healthy. The secretions contain pigments that inhibit bacterial growth, which is vital for an animal that spends its day in murky, bacteria-rich water. Without these secretions, their sensitive, hairless skin would be much more vulnerable to infection in their aquatic home. Pause and guess: why don't desert animals need this same red coat? Desert animals rely on behavioral adaptations like burrowing or being nocturnal to avoid the sun, while hippos rely on water submersion to stay cool. Nature's protective coating is just one of many wild adaptations. Follow for more!",
+    "voice_engine": "chatterbox",
+    "voices": "one narrator (af_heart)",
+    "diagrams": 1,
+    "series": "Animal Whys",
+    "countdown": true,
+    "length_arm": "short",
+    "question": "Ever thought why a desert animal wouldn't need this same red coat?",
+    "answer_comment": "Desert animals are often nocturnal or have thick fur to protect them from UV, whereas hippos have thick but nearly hairless skin that is highly sensitive to infection. The secretion acts as a protective antibiotic layer while they spend their days in the water.\n\nSources (open-access research):\n- Uddin et al. (2026), Helvetica Chimica Acta. doi:10.1002/hlca.70102",
+    "sources": [
+      {
+        "claim": "Hippos produce 'blood sweat', which is actually a mixture of hipposudoric acid and norhipposudoric acid.",
+        "cite": "Uddin et al. (2026), Helvetica Chimica Acta. doi:10.1002/hlca.70102",
+        "doi": "10.1002/hlca.70102",
+        "title": "The Preparation of Novel Fluorenes Inspired by Hipposudoric Acid",
+        "why": "Hipposudoric acid and norhipposudoric acid, pigments isolated from the skin secretions of Hippopotamus amphibius, are predicted to exhibit antimicrobial activity"
+      }
+    ],
+    "fact_check": [
+      "Hippos produce 'blood sweat', which is actually a mixture of hipposudoric acid and norhipposudoric acid.",
+      "These pigments act as natural antibiotics.",
+      "The secretion is not blood.",
+      "The secretion helps prevent skin drying (desiccation)."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        5.75
+      ],
+      [
+        5.75,
+        11.29
+      ],
+      [
+        11.29,
+        18.43
+      ],
+      [
+        18.43,
+        24.79
+      ],
+      [
+        24.79,
+        29.73
+      ],
+      [
+        29.73,
+        33.06
+      ],
+      [
+        33.06,
+        40.34
+      ],
+      [
+        40.34,
+        45.28
+      ]
+    ],
+    "duration": 45.28,
+    "scene_lines": [
+      "What if your skin oozed its own red protective lotion? That's exactly how a hippo's red skin excretions work.",
+      "It looks like blood, but this goo is actually a specialized chemical cocktail produced by skin glands, not sweat glands.",
+      "These secretions absorb ultraviolet light, and while they offer some sun protection, they primarily act as an antibiotic to help keep the hippo's skin healthy.",
+      "The secretions contain pigments that inhibit bacterial growth, which is vital for an animal that spends its day in murky, bacteria-rich water.",
+      "Without these secretions, their sensitive, hairless skin would be much more vulnerable to infection in their aquatic home.",
+      "Pause and guess: why don't desert animals need this same red coat?",
+      "Desert animals rely on behavioral adaptations like burrowing or being nocturnal to avoid the sun, while hippos rely on water submersion to stay cool.",
+      "Nature's protective coating is just one of many wild adaptations. Follow for more!"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,000 --> 00:00:02,810\nWhat if your skin oozed its own red protective lotion?\n\n2\n00:00:03,050 --> 00:00:05,500\nThat's exactly how a hippo's red skin excretions work.\n\n3\n00:00:05,750 --> 00:00:06,600\nIt looks like blood,\n\n4\n00:00:06,650 --> 00:00:08,010\nbut this goo is actually a specialized\n\n5\n00:00:08,010 --> 00:00:10,140\nchemical cocktail produced by skin glands,\n\n6\n00:00:10,190 --> 00:00:10,940\nnot sweat glands.\n\n7\n00:00:11,290 --> 00:00:13,300\nThese secretions absorb ultraviolet light,\n\n8\n00:00:13,370 --> 00:00:14,780\nand while they offer some sun protection,\n\n9\n00:00:15,050 --> 00:00:16,790\nthey primarily act as an antibiotic to\n\n10\n00:00:16,790 --> 00:00:18,260\nhelp keep the hippo's skin healthy.\n\n11\n00:00:18,430 --> 00:00:20,310\nThe secretions contain pigments that inhibit bacterial\n\n12\n00:00:20,310 --> 00:00:21,930\ngrowth, which is vital for an animal\n\n13\n00:00:21,930 --> 00:00:24,480\nthat spends its day in murky, bacteria-rich water.\n\n14\n00:00:24,790 --> 00:00:26,930\nWithout these secretions, their sensitive, hairless skin\n\n15\n00:00:26,930 --> 00:00:28,450\nwould be much more vulnerable to infection\n\n16\n00:00:28,450 --> 00:00:29,520\nin their aquatic home.\n\n17\n00:00:29,730 --> 00:00:30,480\nPause and guess:\n\n18\n00:00:30,610 --> 00:00:32,680\nwhy don't desert animals need this same red coat?\n\n19\n00:00:33,060 --> 00:00:35,380\nDesert animals rely on behavioral adaptations like\n\n20\n00:00:35,380 --> 00:00:37,220\nburrowing or being nocturnal to avoid the\n\n21\n00:00:37,220 --> 00:00:40,050\nsun, while hippos rely on water submersion to stay cool.\n\n22\n00:00:40,340 --> 00:00:43,510\nNature's protective coating is just one of many wild adaptations.\n\n23\n00:00:44,080 --> 00:00:44,680\nFollow for more!\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [],
+      "footage": [],
+      "review": [],
+      "heard": [
+        "\"excretions\" heard as \"expressions\"",
+        "\"looks\" heard as \"looked\"",
+        "\"hippo's\" heard as \"hippo\""
+      ],
+      "pass": true,
+      "duration": 45.0
+    },
+    "repairs": 0,
+    "audited": true
   }
 ]

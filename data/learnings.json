@@ -1,21 +1,21 @@
 {
   "summary": [
-    "Prioritize counter-intuitive biological or physical phenomena that challenge common experiences.",
-    "Structure hooks as direct contradictions to the viewer's current reality rather than neutral introductions.",
-    "Use high-intensity 'personification' verbs in titles (e.g., 'eating you back', 'secretly leaking') to drive immediate curiosity.",
-    "Avoid descriptive, 'how-to' style titles, which correlated with the lowest stayed_pct and view counts.",
-    "Ensure the first sentence contains a 'but' or 'yet' pivot to force the brain to pause and resolve the conflict."
+    "Prioritize human-centric 'us vs. them' or 'body vs. nature' conflict themes over purely factual observations.",
+    "Use declarative, counter-intuitive hooks that explicitly negate the viewer's common assumptions immediately.",
+    "Structure titles to highlight an active reversal (e.g., 'A eats B') rather than a passive explanation of an object.",
+    "Keep hooks under 15 words to ensure they land before the swipe-away threshold triggers.",
+    "Front-load the core mystery in the first 3 seconds; avoid preamble-style setups like 'Drop an apple in water'."
   ],
   "winning_hooks": [
     "Your fingers prune in water, but it is not because you are absorbing it like a sponge.",
-    "Your eyes are leaking right now, and your brain is hiding it.",
     "Fresh pineapple is literally eating you back.",
-    "This shark is older than the United States."
+    "This shark is older than the United States.",
+    "Your eyes are leaking right now, and your brain is hiding it."
   ],
   "avoid": [
-    "Starting with neutral observation-based sentences like 'Drop an apple in water...'",
-    "Explaining process over curiosity (e.g., 'How Authentic Maple Syrup Is Boiled...').",
-    "Long, explanatory titles that feel like textbook headings instead of 'click-worthy' questions."
+    "Descriptive, passive hooks like 'Drop an apple or a pear in a bowl'.",
+    "Topics that feel like a dictionary definition (e.g., 'How maple syrup is boiled').",
+    "Titles that lack an emotional or surprising hook (e.g., 'Why Fruits Float In Water')."
   ],
-  "next_experiment": "A/B test the same topic using two title styles: 'The Scientific Reason Why [Object] [Does Action]' vs 'Why [Object] [Dangerous/Surprising Action] You'. Compare the stayed_pct for the first 3 seconds to see if a more aggressive personification verb increases retention."
+  "next_experiment": "Test the impact of 'Personalized Stakes' by rephrasing a topic as a direct physical threat to the viewer (e.g., instead of 'Why onions make you cry', use 'Why you are losing the chemical war against your onions')."
 }

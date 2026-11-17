@@ -1,21 +1,21 @@
 {
   "lessons": [
-    "Prioritize immediate, high-stakes value propositions in the hook: Videos with specific, surprising facts (like the Greenland shark age or tuna vs. cod color) showed significantly higher retention compared to generic observational hooks.",
-    "Avoid repetitive or slow-paced introductory explanations: Heavy drop-offs occurred when sentences focused on definitions (e.g., 'What is maple syrup') rather than the 'why' or 'how' of the mystery.",
-    "Balance scientific terminology with immediate context: Using complex terms like 'bromelain' or 'protein-melting enzymes' early on caused sharp drop-offs, indicating that technical jargon should follow a relatable hook.",
-    "Maintain high engagement through the middle of the video: The best-performing videos (Tuna/Cod, Greenland Shark) maintained curiosity throughout the middle section, whereas lower performers lost viewers once the initial 'fact' was stated.",
-    "Avoid meta-commentary or filler dialogue: Lines that set up a comparison or 'think about this' often led to exits, while direct, punchy sentences kept viewers engaged."
+    "Prioritize immediate, contrast-based hooks: The top-performing video ('This Shark Can Live For Centuries!') and 'Why Tuna Meat Is Red Meat' show the highest early retention when the hook establishes an immediate, high-stakes curiosity gap or surprising visual category comparison.",
+    "Eliminate slow exposition: Drop-off data shows that lines explaining technical mechanisms (e.g., 'To turn that watery sap into thick syrup...') consistently trigger viewer exits. Keep technical explanations secondary to the immediate hook.",
+    "Avoid redundant explanations: The data shows significant abandonment when scripts re-explain concepts that were already implied or stated in the hook, such as in the 'Why your eyes are secretly leaking' and 'Why Onions Make You Cry' videos.",
+    "Maintain high stakes through the end: Videos like the shark study keep viewers until the end because they sustain a high-level mystery, whereas videos that pivot to slow, mechanical details (e.g., 'Why Fingers Prune In Water') see a total collapse of retention at the 50% mark.",
+    "Anchor scientific claims to physical action: Lines that focus on the 'why' of a physical sensation (e.g., pineapple 'eating you back') hold viewers better than lines focused on abstract definitions or chemical compositions."
   ],
   "worst_moment_types": [
-    "Definition-heavy exposition that explains what an object is rather than why the viewer should care",
-    "Sentences that feel like filler, such as 'Now think about what happens when...'",
-    "The transition point between the initial hook and the first substantive fact, where viewers check if the video matches the promise",
-    "Over-explaining scientific processes in the first 25% of the video length"
+    "Technical process breakdowns (e.g., boiling sap, cell storage of chemicals)",
+    "Secondary explanation of the hook premise",
+    "Lines correcting common misconceptions that require multiple sentences to explain",
+    "Abstract definitions that lack immediate sensory context"
   ],
   "best_hook_types": [
-    "Provocative comparisons (e.g., 'Tuna steak looks like beef, cod is white')",
-    "Astonishing statistics or time-frames (e.g., 'This shark is older than the United States')",
-    "Direct contradictions of common knowledge (e.g., 'Fresh pineapple is eating you back')"
+    "Direct category contradictions (e.g., 'Tuna vs Cod', 'Garlic vs Onions')",
+    "Extreme superlative claims (e.g., 'This shark is older than the United States')",
+    "Provocative personification of inanimate objects (e.g., 'Fresh pineapple is eating you back')"
   ],
   "studied": "2026-11-17",
   "videos": 10

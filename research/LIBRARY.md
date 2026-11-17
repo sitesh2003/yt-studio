@@ -13,6 +13,27 @@ agents/library.py; a source is listed only if its abstract was checked to suppor
 Sources:
 - Leveille et al. (2023), JAAOS Global Research and Reviews. doi:10.5435/jaaosglobal-d-23-00123 — supports: The peroneal nerve is highly susceptible to compression at the fibular head.
 
+## Why Scientists Missed an Outer Kuiper Belt 🤯
+*2026-11-17 · How Things Work*
+
+- Subaru Telescope survey data and New Horizons team observations discovered candidate Kuiper Belt Objects out around 55 to 70 AU, beyond the expected 50 AU cliff.
+- Objects past 50 AU receive extremely low solar radiation intensity, making them exceptionally faint in reflected visible light.
+- Distant solar system bodies move with slower orbital speeds according to Kepler's Third Law, causing minimal proper motion against background stars over time.
+
+Sources:
+- Fraser et al. (2024), The Planetary Science Journal. doi:10.3847/psj/ad6f9e — supports: Subaru Telescope survey data and New Horizons team observations discovered candidate Kuiper Belt Objects out around 55 to 70 AU, beyond the expected 50 AU cliff.
+
+## Why Hippos Excrete Red Liquid 🤯
+*2026-11-17 · Animal Whys*
+
+- Hippos produce 'blood sweat', which is actually a mixture of hipposudoric acid and norhipposudoric acid.
+- These pigments act as natural antibiotics.
+- The secretion is not blood.
+- The secretion helps prevent skin drying (desiccation).
+
+Sources:
+- Uddin et al. (2026), Helvetica Chimica Acta. doi:10.1002/hlca.70102 — supports: Hippos produce 'blood sweat', which is actually a mixture of hipposudoric acid and norhipposudoric acid.
+
 ## How Acorns Indirectly Affect Lyme Disease Rates 🤯
 *2026-11-16 · Animal Whys*
 
