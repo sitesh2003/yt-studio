@@ -155,5 +155,54 @@
   ],
   "not_drawn": {},
   "error": ""
+ },
+ {
+  "when": "2026-11-17 10:01",
+  "topic": "Why the blinding flash of lightning actually shoots from the ground UP to the sky instead ",
+  "drawn": [
+   2,
+   5,
+   6
+  ],
+  "not_drawn": {
+   "3": "The picture shows an arrow pointing DOWN from the Earth, which contradicts the sentence describing positive charges moving UP from the ground."
+  },
+  "error": ""
+ },
+ {
+  "when": "2026-11-17 10:30",
+  "topic": "3 hidden physical fail-safes inside modern elevators that make a catastrophic free-fall im",
+  "drawn": [
+   2,
+   3,
+   4,
+   5
+  ],
+  "not_drawn": {},
+  "error": ""
+ },
+ {
+  "when": "2026-11-17 10:57",
+  "topic": "Scientists discover why deep ocean 'snow' traps six times more carbon than previously beli",
+  "drawn": [
+   2,
+   3,
+   4,
+   5
+  ],
+  "not_drawn": {},
+  "error": ""
+ },
+ {
+  "when": "2026-11-17 11:24",
+  "topic": "Why 120-ton freight locomotives carry hidden boxes of sand to spray onto the rails while m",
+  "drawn": [
+   2,
+   3,
+   4,
+   5
+  ],
+  "not_drawn": {},
+  "error": ""
  }
 ]

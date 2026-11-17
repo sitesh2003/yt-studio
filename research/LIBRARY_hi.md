@@ -3,6 +3,16 @@
 Every video, the claims it makes, and the open-access research behind them. Built automatically by
 agents/library.py; a source is listed only if its abstract was checked to support the claim.
 
+## How Deep Ocean Snow Moves Carbon 🌊
+*2026-11-17 · Ocean Whys*
+
+- Marine snow consists of falling organic material from the upper layers of the water column.
+- Data indicates this process exports carbon from the surface ocean to deeper waters.
+
+Sources:
+- Turner (2002), Aquatic Microbial Ecology. doi:10.3354/ame027057 — supports: Marine snow consists of falling organic material from the upper layers of the water column.
+- Chajwa et al. (2024), Science. doi:10.1126/science.adl5767 — supports: Data indicates this process exports carbon from the surface ocean to deeper waters.
+
 ## डायनासोर के जीवाश्मों में मिली रहस्यमयी आकृतियां: क्या ये वाकई खून की कोशिकाएं हैं?
 *2026-11-16 · Animal Whys*
 

@@ -790,7 +790,7 @@
       "leftover food"
     ],
     "hook": "राजमा रात भर फ्रिज में रखने के बाद अक्सर अलग स्वाद क्यों देता है?",
-    "status": "scheduled",
+    "status": "public",
     "narration": "राजमा रात भर फ्रिज में रखने के बाद अक्सर अलग स्वाद क्यों देता है? जब आप खाना बनाते हैं, तो मसाले और पानी पूरी तरह आपस में नहीं मिलते। लेकिन जब बर्तन ठंडा होता है, तो एक कमाल की केमिस्ट्री शुरू होती है। सारे फ्लेवर मॉलिक्यूल्स धीरे-धीरे राजमा के दाने के अंदर तक पहुंच जाते हैं। तो क्या सिर्फ समय बीतने से ऐसा होता है? नहीं, असली खेल मसालों के अंदर तक रचने और स्टार्च के ठंडा होकर सेट होने का है। ठंडा होने पर ग्रेवी गाढ़ी होती है और मसालों का स्वाद आपस में अच्छी तरह मिल जाता है। कभी सोचा है कि फ्रिज में रखा कुछ खाना दोबारा गर्म करने पर कई बार ज्यादा स्वादिष्ट क्यों लग सकता है?",
     "voice_engine": "edge-tts",
     "voices": "one narrator (hi-IN-SwaraNeural)",
@@ -875,7 +875,9 @@
     "repairs": 0,
     "audited": true,
     "video_id": "gdPezFuHclY",
-    "publish_at": "2026-11-17T02:30:00-05:00"
+    "publish_at": "2026-11-17T02:30:00-05:00",
+    "recapped": true,
+    "answered": true
   },
   {
     "job": "20261116-1937-why-do-car-wing-mirrors-say-objects-in-m",
@@ -990,7 +992,7 @@
       "hindi"
     ],
     "hook": "Mars par methane gas ka milna, shayad ye dikhata hai ki wahan geologically ya biologically kuch activity ho rahi hai!",
-    "status": "banked",
+    "status": "withdrawn",
     "narration": "Mars par methane gas ka milna, shayad ye dikhata hai ki wahan geologically ya biologically kuch activity ho rahi hai! Scientists ne Mars ke atmosphere mein methane ke plumes dekhe hain. Methane jaldi khatam ho jati hai, matlab ye wahan abhi produce ho rahi hai. Toh kya Mars ke andar volcanoes abhi bhi zinda ho sakte hain? Methane ka ek possible source volcanoes hain jo deep underground heat se gas chhod rahe hain. Lekin ye gas microbes se bhi aa sakti hai, jo wahan survive kar rahe hon. Abhi tak hamare paas proof nahi hai, par ye signals batate hain ki Mars dead nahi hai. Ever thought how we could finally prove if these gas leaks are from volcanoes or something else? Drop your guess below.",
     "voice_engine": "edge-tts",
     "voices": "one narrator (hi-IN-SwaraNeural)",
@@ -1099,7 +1101,8 @@
       "duration": 39.8
     },
     "repairs": 0,
-    "audited": true
+    "audited": true,
+    "withdrawn_reason": "final audio check: phrase missing from the audio: \"ever thought how we could finally prove\""
   },
   {
     "job": "20261116-2045-why-are-mirror-images-flipped-horizontal",
@@ -1544,5 +1547,448 @@
       "duration": 40.1
     },
     "repairs": 1
+  },
+  {
+    "job": "20261117-0950-why-the-blinding-flash-of-lightning-actu",
+    "topic": "Why the blinding flash of lightning actually shoots from the ground UP to the sky instead of down",
+    "title": "Lightning Actually Shoots UP At Huge Speeds 🤯",
+    "description": "You think lightning falls from the clouds, but the blinding flash actually shoots from the ground up! Here is the wild physics behind lightning's return stroke. #shorts #science #facts\n\nSources (open-access research):\n- Liang et al. (2014), Geophysical Research Letters. doi:10.1002/2014gl059703\n- Morrow et al. (2002), Journal of Physics D Applied Physics. doi:10.1088/0022-3727/35/16/101\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nPhoto by cocoparisienne on Pixabay\nPhoto: Unknown author Unknown author  or not provided, Public domain, via Wikimedia Commons\nVideo by BlenderTimer on Pixabay\nVideo by adege on Pixabay\n\nयह वीडियो कैसे बना: स्क्रिप्ट को AI tools की मदद से open research के आधार पर लिखा और fact-check किया गया है, आवाज़ AI voice की है, और editing open-source software से हुई है। कोई गलती दिखे तो comment में बताइए — जाँच कर सुधार करेंगे।",
+    "tags": [
+      "lightning",
+      "physics",
+      "shorts",
+      "sciencefacts",
+      "weather"
+    ],
+    "hook": "आसमान से गिरती lightning असल में नीचे नहीं, ऊपर भागती है।",
+    "status": "review",
+    "narration": "आसमान से गिरती lightning असल में नीचे नहीं, ऊपर भागती है। बादल से एक invisible spark ज़मीन की तरफ बढ़ता है। और ज़मीन से positive charges ऊपर खिंचते हैं। तो असली blinding flash? ज़मीन से ऊपर की तरफ दौड़ता है! Contact होते ही massive electric current ऊपर sky में दौड़ता है। कल का जवाब: फ्रिज में मसालों के molecules खाने में deeply absorb हो जाते हैं। कोई नहीं बूझ पाया! कभी सोचा है tall buildings पर pointed metal rod क्यों लगाते हैं? आसमान से गिरती...",
+    "voice_engine": "edge-tts",
+    "voices": "one narrator (hi-IN-SwaraNeural)",
+    "diagrams": 1,
+    "series": "Everyday Whys",
+    "countdown": false,
+    "length_arm": "short",
+    "question": "कभी सोचा है tall buildings पर pointed metal rod क्यों लगाते हैं?",
+    "answer_comment": "The answer: Pointed metal rods (lightning rods) concentrate the electric charge at their sharp tip. When the stepped leader descends from the clouds, the rod easily sends up a welcoming streamer first, safely guiding the massive return current straight into the ground through a thick wire before it can ignite the building. What everyday mystery should we investigate next?\n\nSources (open-access research):\n- Liang et al. (2014), Geophysical Research Letters. doi:10.1002/2014gl059703\n- Morrow et al. (2002), Journal of Physics D Applied Physics. doi:10.1088/0022-3727/35/16/101",
+    "sources": [
+      {
+        "claim": "The visible bright flash of cloud-to-ground lightning is the return stroke, which propagates from the ground upward into the cloud at roughly one-third the speed of light.",
+        "cite": "Liang et al. (2014), Geophysical Research Letters. doi:10.1002/2014gl059703",
+        "doi": "10.1002/2014gl059703",
+        "title": "Differing current and optical return stroke speeds in lightning",
+        "why": "During the return stroke in downward negative cloud-to-ground lightning, a current wave propagates upward from the ground along the lightning channel. The optical radiation wave propagation speed along the channel has been measured to be between and of the speed of light."
+      },
+      {
+        "claim": "Before the return stroke, a faintly luminous stepped leader carries negative charge downwards from the cloud, prompting positive upward streamers from ground objects to meet it.",
+        "cite": "Morrow et al. (2002), Journal of Physics D Applied Physics. doi:10.1088/0022-3727/35/16/101",
+        "doi": "10.1088/0022-3727/35/16/101",
+        "title": "The stepped nature of lightning, and the upward connecting streamer",
+        "why": "We present numerical results that provide an explanation of the finite steps of 20-50 m taken by lightning as it descends from the clouds... We also explain why positive streamers rise steadily from the ground to meet the descending lightning bolt at a distance of about 40 m above the ground, comple"
+      }
+    ],
+    "fact_check": [
+      "The visible bright flash of cloud-to-ground lightning is the return stroke, which propagates from the ground upward into the cloud at roughly one-third the speed of light.",
+      "Before the return stroke, a faintly luminous stepped leader carries negative charge downwards from the cloud, prompting positive upward streamers from ground objects to meet it.",
+      "Lightning rods work by providing an easy path for upward streamers to initiate and safely route electric current into the earth via grounding conductors."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        4.06
+      ],
+      [
+        4.06,
+        7.59
+      ],
+      [
+        7.59,
+        10.55
+      ],
+      [
+        10.55,
+        12.56
+      ],
+      [
+        12.56,
+        18.54
+      ],
+      [
+        18.54,
+        24.68
+      ],
+      [
+        24.68,
+        30.62
+      ]
+    ],
+    "duration": 30.62,
+    "scene_lines": [
+      "आसमान से गिरती lightning असल में नीचे नहीं, ऊपर भागती है।",
+      "बादल से एक invisible spark ज़मीन की तरफ बढ़ता है।",
+      "और ज़मीन से positive charges ऊपर खिंचते हैं।",
+      "तो असली blinding flash?",
+      "ज़मीन से ऊपर की तरफ दौड़ता है! Contact होते ही massive electric current ऊपर sky में दौड़ता है।",
+      "कल का जवाब: फ्रिज में मसालों के molecules खाने में deeply absorb हो जाते हैं। कोई नहीं बूझ पाया!",
+      "कभी सोचा है tall buildings पर pointed metal rod क्यों लगाते हैं? आसमान से गिरती..."
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": "gdPezFuHclY",
+    "captions_srt": "1\n00:00:00,050 --> 00:00:02,412\nआसमान से गिरती lightning असल में नीचे\n\n2\n00:00:02,412 --> 00:00:03,983\nनहीं, ऊपर भागती है।\n\n3\n00:00:04,060 --> 00:00:06,465\nबादल से एक invisible spark ज़मीन की\n\n4\n00:00:06,465 --> 00:00:08,851\nतरफ बढ़ता है। और ज़मीन से positive\n\n5\n00:00:08,851 --> 00:00:10,488\ncharges ऊपर खिंचते हैं।\n\n6\n00:00:10,550 --> 00:00:12,382\nतो असली blinding flash?\n\n7\n00:00:12,560 --> 00:00:14,710\nज़मीन से ऊपर की तरफ दौड़ता है!\n\n8\n00:00:14,710 --> 00:00:17,146\nContact होते ही massive electric current ऊपर\n\n9\n00:00:17,146 --> 00:00:18,477\nsky में दौड़ता है।\n\n10\n00:00:18,540 --> 00:00:20,409\nकल का जवाब: फ्रिज में मसालों के\n\n11\n00:00:20,409 --> 00:00:22,803\nmolecules खाने में deeply absorb हो जाते\n\n12\n00:00:22,803 --> 00:00:24,680\nहैं। कोई नहीं बूझ पाया!\n\n13\n00:00:24,680 --> 00:00:26,981\nकभी सोचा है tall buildings पर pointed\n\n14\n00:00:26,981 --> 00:00:28,746\nmetal rod क्यों लगाते हैं?\n\n15\n00:00:28,800 --> 00:00:30,018\nआसमान से गिरती...\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [
+        "phrase missing from the audio: \"असली blinding flash ज़मीन से ऊपर की तरफ दौड़ता है contact होते ही massive electric current ऊपर sky में दौड़ता है। कल का जवाब फ्रिज में मसालों के molecules खाने में deeply absorb हो जाते हैं। कोई नहीं बूझ पाया कभी सोचा है tall buildings पर pointed metal rod क्यों लगाते हैं\"",
+        "only 49% of the script is heard as written"
+      ],
+      "footage": [],
+      "review": [],
+      "heard": [
+        "\"lightning\" heard as \"लाइटनिंग\"",
+        "\"spark\" heard as \"स्पाक\"",
+        "\"तरफ\" heard as \"तरव\"",
+        "\"positive charges\" heard as \"पोजटिट चाँजिस\"",
+        "\"खिंचते हैं।\" heard as \"खिछते है\""
+      ],
+      "pass": false,
+      "duration": 30.1
+    },
+    "repairs": 0
+  },
+  {
+    "job": "20261117-1017-3-hidden-physical-fail-safes-inside-mode",
+    "topic": "3 hidden physical fail-safes inside modern elevators that make a catastrophic free-fall impossible",
+    "title": "Why Elevators Are Designed Not To Free Fall 😱",
+    "description": "Lift ki main cable tootne par kya hoga? Modern elevators mein 3 hidden engineering features hain jo aapko safe rakhte hain. See how physics works! #shorts #science #engineering\n\nSources (open-access research):\n- Ren et al. (2026), Eng—Advances in Engineering. doi:10.3390/eng7070360\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nPhoto by daschorsch on Pixabay\nPhoto: Lowe, Jet   Related names:     National Public Radio; Jones,, Public domain, via Wikimedia Commons\nVideo by Skylent on Pixabay\n\nयह वीडियो कैसे बना: स्क्रिप्ट को AI tools की मदद से open research के आधार पर लिखा और fact-check किया गया है, आवाज़ AI voice की है, और editing open-source software से हुई है। कोई गलती दिखे तो comment में बताइए — जाँच कर सुधार करेंगे।",
+    "tags": [
+      "#shorts",
+      "#science",
+      "#engineering"
+    ],
+    "hook": "Agar lift ki cables toot bhi jayein, toh safety systems aapko girne se bachane ke liye design kiye gaye hain! 😱",
+    "status": "review",
+    "narration": "Agar lift ki cables toot bhi jayein, toh safety systems aapko girne se bachane ke liye design kiye gaye hain! 😱 Yeh sirf ek cable par nahi, balki multiple steel cables par latki hoti hai. Agar saari cables fail ho jayein, toh yahan governor system activate hota hai. Yeh machine lift ki speed monitor karti hai aur limit cross hote hi brake maarti hai. So, kya yeh brakes lift ko puri tarah stop kar deti hain? Actually, safety gears rail ko andar se jakad lete hain, friction se lift ruk jati hai. Aur shaft ke bottom mein bade heavy-duty springs ya hydraulic buffers lage hote hain. Kabhi socha hai, agar lift emergency mein neeche aaye, toh yeh heavy-duty buffers kaise final cushion provide karte hain?",
+    "voice_engine": "edge-tts",
+    "voices": "one narrator (hi-IN-SwaraNeural)",
+    "diagrams": 1,
+    "series": "Everyday Whys",
+    "countdown": false,
+    "length_arm": "short",
+    "question": "Kabhi socha hai, agar lift emergency mein neeche aaye, toh yeh heavy-duty buffers kaise final cushion provide karte hain?",
+    "answer_comment": "The answer: If all primary cables fail, safety gears clamp onto the rails to physically stop the car. The buffers at the bottom are a final line of defense meant to cushion the car in a worst-case scenario, though they are not designed to survive a high-speed free fall from the top of a building. Drop your questions below!\n\nSources (open-access research):\n- Ren et al. (2026), Eng—Advances in Engineering. doi:10.3390/eng7070360",
+    "sources": [
+      {
+        "claim": "A governor system detects overspeed and engages safety gear/brakes.",
+        "cite": "Ren et al. (2026), Eng—Advances in Engineering. doi:10.3390/eng7070360",
+        "doi": "10.3390/eng7070360",
+        "title": "Dynamic Characteristic Analysis and Experimental Study of a Direct-Acting Centrifugal Speed Limiter Based on Adams–Ansys",
+        "why": "The speed limiter exhibits sensitive triggering and excellent dynamic stability, providing a methodological reference for the design and verification of elevator safety components."
+      }
+    ],
+    "fact_check": [
+      "Elevators are held by multiple independent steel cables.",
+      "A governor system detects overspeed and engages safety gear/brakes.",
+      "Safety gears (clutches) grip the guide rails to stop the cabin.",
+      "Buffers (spring or hydraulic) at the bottom are the final fail-safe for impact absorption."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        6.2
+      ],
+      [
+        6.2,
+        11.03
+      ],
+      [
+        11.03,
+        15.27
+      ],
+      [
+        15.27,
+        20.54
+      ],
+      [
+        20.54,
+        24.2
+      ],
+      [
+        24.2,
+        28.96
+      ],
+      [
+        28.96,
+        33.72
+      ],
+      [
+        33.72,
+        40.43
+      ]
+    ],
+    "duration": 40.43,
+    "scene_lines": [
+      "Agar lift ki cables toot bhi jayein, toh safety systems aapko girne se bachane ke liye design kiye gaye hain! 😱",
+      "Yeh sirf ek cable par nahi, balki multiple steel cables par latki hoti hai.",
+      "Agar saari cables fail ho jayein, toh yahan governor system activate hota hai.",
+      "Yeh machine lift ki speed monitor karti hai aur limit cross hote hi brake maarti hai.",
+      "So, kya yeh brakes lift ko puri tarah stop kar deti hain?",
+      "Actually, safety gears rail ko andar se jakad lete hain, friction se lift ruk jati hai.",
+      "Aur shaft ke bottom mein bade heavy-duty springs ya hydraulic buffers lage hote hain.",
+      "Kabhi socha hai, agar lift emergency mein neeche aaye, toh yeh heavy-duty buffers kaise final cushion provide karte hain?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,050 --> 00:00:02,273\nAgar lift ki cables toot bhi jayein,\n\n2\n00:00:02,273 --> 00:00:04,187\ntoh safety systems aapko girne se bachane\n\n3\n00:00:04,187 --> 00:00:05,820\nke liye design kiye gaye hain!\n\n4\n00:00:05,940 --> 00:00:08,069\nYeh sirf ek cable par nahi, balki\n\n5\n00:00:08,069 --> 00:00:10,682\nmultiple steel cables par latki hoti hai.\n\n6\n00:00:10,690 --> 00:00:12,633\nAgar saari cables fail ho jayein, toh\n\n7\n00:00:12,633 --> 00:00:15,023\nyahan governor system activate hota hai.\n\n8\n00:00:15,030 --> 00:00:17,117\nYeh machine lift ki speed monitor karti\n\n9\n00:00:17,117 --> 00:00:19,835\nhai aur limit cross hote hi brake maarti hai.\n\n10\n00:00:19,920 --> 00:00:21,745\nSo, kya yeh brakes lift ko puri\n\n11\n00:00:21,745 --> 00:00:23,190\ntarah stop kar deti hain?\n\n12\n00:00:23,390 --> 00:00:25,971\nActually, safety gears rail ko andar se\n\n13\n00:00:25,971 --> 00:00:28,691\njakad lete hain, friction se lift ruk jati hai.\n\n14\n00:00:28,720 --> 00:00:30,754\nAur shaft ke bottom mein bade heavy-duty\n\n15\n00:00:30,754 --> 00:00:33,271\nsprings ya hydraulic buffers lage hote hain.\n\n16\n00:00:33,350 --> 00:00:35,694\nKabhi socha hai, agar lift emergency mein\n\n17\n00:00:35,694 --> 00:00:38,168\nneeche aaye, toh yeh heavy-duty buffers kaise\n\n18\n00:00:38,168 --> 00:00:39,827\nfinal cushion provide karte hain?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [
+        "phrase missing from the audio: \"jayein toh safety systems aapko\""
+      ],
+      "footage": [],
+      "review": [],
+      "heard": [
+        "\"cables toot\" heard as \"केबल स्तूट भीजाए तो सेव्टी सिस्तम्स\"",
+        "\"liye design\" heard as \"लिए दिसाइं के लिए\"",
+        "\"gaye hain\" heard as \"है\"",
+        "\"par nahi balki\" heard as \"पा नहीं बल की\"",
+        "\"cables par\" heard as \"केबल स्पा\"",
+        "\"cables fail ho jayein\" heard as \"केबल स्वेल होजाए\"",
+        "\"governor system\" heard as \"गाउनर सिस्तम्\"",
+        "\"machine\" heard as \"मशीन\""
+      ],
+      "notes": [
+        "scene 8 footage is a loose match (score 3.0), accepted"
+      ],
+      "pass": false,
+      "duration": 39.9
+    },
+    "repairs": 0
+  },
+  {
+    "job": "20261117-1048-scientists-discover-why-deep-ocean-snow-",
+    "topic": "Scientists discover why deep ocean 'snow' traps six times more carbon than previously believed",
+    "title": "How Deep Ocean Snow Moves Carbon 🌊",
+    "description": "Discover how tiny sinking particles in the deep ocean help transport carbon to the deep sea. #shorts #hindi #ocean\n\nSources (open-access research):\n- Turner (2002), Aquatic Microbial Ecology. doi:10.3354/ame027057\n- Chajwa et al. (2024), Science. doi:10.1126/science.adl5767\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nPhoto: nathanleegreen, BY 2.0, via Openverse (flickr)\nVideo by JancickaL on Pixabay\nVideo by Mario_Krimer on Pixabay\nVideo by Engin_Akyurt on Pixabay\n\nयह वीडियो कैसे बना: स्क्रिप्ट को AI tools की मदद से open research के आधार पर लिखा और fact-check किया गया है, आवाज़ AI voice की है, और editing open-source software से हुई है। कोई गलती दिखे तो comment में बताइए — जाँच कर सुधार करेंगे।",
+    "tags": [
+      "ocean snow",
+      "carbon cycle",
+      "marine science"
+    ],
+    "hook": "Ever thought why deep ocean snow helps cycle carbon?",
+    "status": "scheduled",
+    "narration": "Ever thought why deep ocean snow helps cycle carbon? Ye ocean snow aslında dead plankton aur organic waste ke tiny flakes hain jo surface se sink karte hain. Jaise hi ye particles deep ocean me sink karte hain, ye apne andar organic carbon ko carry karte hain. So how are scientists measuring this carbon movement? Wo deep sea traps aur underwater sensors use karke actual sinking rate calculate karte hain. Aur data batata hai ki ye process surface ocean se carbon ko deep waters tak export karta hai. Ever thought why this natural pump matters so much for our climate?",
+    "voice_engine": "edge-tts",
+    "voices": "one narrator (hi-IN-SwaraNeural)",
+    "diagrams": 1,
+    "series": "Ocean Whys",
+    "countdown": false,
+    "length_arm": "standard",
+    "question": "Ever thought why this natural pump matters so much for our climate?",
+    "answer_comment": "The answer: Marine snow consists of organic detritus sinking from the upper ocean layers into the deep sea. Because these particles aggregate and sink efficiently, they transport organic carbon away from the ocean surface layers, locking it away in deep ocean waters for centuries. Ever thought how ocean currents affect this sinking speed?\n\nSources (open-access research):\n- Turner (2002), Aquatic Microbial Ecology. doi:10.3354/ame027057\n- Chajwa et al. (2024), Science. doi:10.1126/science.adl5767",
+    "sources": [
+      {
+        "claim": "Marine snow consists of falling organic material from the upper layers of the water column.",
+        "cite": "Turner (2002), Aquatic Microbial Ecology. doi:10.3354/ame027057",
+        "doi": "10.3354/ame027057",
+        "title": "Zooplankton fecal pellets, marine snow and sinking phytoplankton blooms",
+        "why": "Substantial proportions of this flux are from organic aggregates (‘marine snow’) of various origins, including phytoplankton blooms, which sediment directly to the benthos."
+      },
+      {
+        "claim": "Data indicates this process exports carbon from the surface ocean to deeper waters.",
+        "cite": "Chajwa et al. (2024), Science. doi:10.1126/science.adl5767",
+        "doi": "10.1126/science.adl5767",
+        "title": "Hidden comet tails of marine snow impede ocean-based carbon sequestration",
+        "why": "Gravity-driven sinking of 'marine snow' sequesters carbon in the ocean, constituting a key biological pump that regulates Earth's climate."
+      }
+    ],
+    "fact_check": [
+      "Marine snow consists of falling organic material from the upper layers of the water column.",
+      "Data indicates this process exports carbon from the surface ocean to deeper waters."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        3.5
+      ],
+      [
+        3.5,
+        9.68
+      ],
+      [
+        9.68,
+        15.63
+      ],
+      [
+        15.63,
+        18.98
+      ],
+      [
+        18.98,
+        24.24
+      ],
+      [
+        24.24,
+        29.66
+      ],
+      [
+        29.66,
+        33.82
+      ]
+    ],
+    "duration": 33.82,
+    "scene_lines": [
+      "Ever thought why deep ocean snow helps cycle carbon?",
+      "Ye ocean snow aslında dead plankton aur organic waste ke tiny flakes hain jo surface se sink karte hain.",
+      "Jaise hi ye particles deep ocean me sink karte hain, ye apne andar organic carbon ko carry karte hain.",
+      "So how are scientists measuring this carbon movement?",
+      "Wo deep sea traps aur underwater sensors use karke actual sinking rate calculate karte hain.",
+      "Aur data batata hai ki ye process surface ocean se carbon ko deep waters tak export karta hai.",
+      "Ever thought why this natural pump matters so much for our climate?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,050 --> 00:00:03,276\nEver thought why deep ocean snow helps cycle carbon?\n\n2\n00:00:03,500 --> 00:00:05,873\nYe ocean snow aslında dead plankton aur\n\n3\n00:00:05,873 --> 00:00:07,970\norganic waste ke tiny flakes hain jo\n\n4\n00:00:07,970 --> 00:00:09,640\nsurface se sink karte hain.\n\n5\n00:00:09,680 --> 00:00:11,682\nJaise hi ye particles deep ocean me\n\n6\n00:00:11,682 --> 00:00:13,858\nsink karte hain, ye apne andar organic\n\n7\n00:00:13,858 --> 00:00:15,453\ncarbon ko carry karte hain.\n\n8\n00:00:15,630 --> 00:00:18,811\nSo how are scientists measuring this carbon movement?\n\n9\n00:00:18,980 --> 00:00:21,279\nWo deep sea traps aur underwater sensors\n\n10\n00:00:21,279 --> 00:00:24,240\nuse karke actual sinking rate calculate karte hain.\n\n11\n00:00:24,240 --> 00:00:26,104\nAur data batata hai ki ye process\n\n12\n00:00:26,104 --> 00:00:28,149\nsurface ocean se carbon ko deep waters\n\n13\n00:00:28,149 --> 00:00:29,554\ntak export karta hai.\n\n14\n00:00:29,660 --> 00:00:31,939\nEver thought why this natural pump matters\n\n15\n00:00:31,939 --> 00:00:33,222\nso much for our climate?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [],
+      "footage": [],
+      "review": [],
+      "heard": [
+        "\"ever thought why\" heard as \"एवड ठौट वाई\"",
+        "\"ocean snow helps cycle carbon\" heard as \"वोशन्त नोग लप साइकल काबिन\"",
+        "\"ocean snow\" heard as \"वोशन्त नोग\"",
+        "\"tiny\" heard as \"टाइनी\"",
+        "\"surface\" heard as \"सरफिस\"",
+        "\"particles\" heard as \"पातेकल्स\"",
+        "\"ocean me\" heard as \"वोशन्मी\"",
+        "\"organic carbon\" heard as \"अगनेक काबन\""
+      ],
+      "pass": true,
+      "duration": 33.3
+    },
+    "repairs": 0,
+    "audited": true,
+    "video_id": "z9bREBUgT40",
+    "publish_at": "2026-11-18T09:30:00-05:00",
+    "thumbnail_set": true
+  },
+  {
+    "job": "20261117-1114-why-120-ton-freight-locomotives-carry-hi",
+    "topic": "Why 120-ton freight locomotives carry hidden boxes of sand to spray onto the rails while moving",
+    "title": "Why Freight Trains Carry Boxes Of Sand 🤯",
+    "description": "Ever wondered why massive 120-ton freight trains carry hidden boxes of sand? Here is the surprising physics behind how they get traction on steel tracks without slipping. #shorts #science #engineering\n\nSources (open-access research):\n- Gorbunov et al. (2019), Eksploatacja i Niezawodnosc - Maintenance and Reliability. doi:10.17531/ein.2019.3.12\n- Suhr et al. (2025), Lubricants. doi:10.3390/lubricants13070314\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nPhoto: Max_G6, BY 2.0, via Openverse (flickr)\nPhoto: jefzila, BY 2.0, via Openverse (flickr)\nVideo by muphfi-36181755 on Pixabay\nVideo by Jahhoo on Pixabay\n\nयह वीडियो कैसे बना: स्क्रिप्ट को AI tools की मदद से open research के आधार पर लिखा और fact-check किया गया है, आवाज़ AI voice की है, और editing open-source software से हुई है। कोई गलती दिखे तो comment में बताइए — जाँच कर सुधार करेंगे।",
+    "tags": [
+      "#shorts",
+      "#science",
+      "#engineering"
+    ],
+    "hook": "Ever noticed those boxes of sand on a 120-ton freight train? 🤔",
+    "status": "review",
+    "narration": "Ever noticed those boxes of sand on a 120-ton freight train? 🤔 Steel wheels on steel tracks sound smooth, but they actually have very little grip. When the engine pulls thousands of tons, those heavy wheels just spin in place. So how does the train actually get traction on wet or steep rails? That is what the hidden boxes are for, dropping sand right in front of the wheels. The tiny grains crush under the steel, instantly creating high friction so the train moves. Ever thought how heavy trains stop safely when the rails get covered in wet leaves?",
+    "voice_engine": "edge-tts",
+    "voices": "one narrator (hi-IN-SwaraNeural)",
+    "diagrams": 1,
+    "series": "How Things Work",
+    "countdown": false,
+    "length_arm": "standard",
+    "question": "Ever thought how heavy trains stop safely when the rails get covered in wet leaves?",
+    "answer_comment": "The answer: Trains use compressed air to blast dry sand directly onto the rails just ahead of the wheels when they need extra grip. The sand crushes between the steel wheel and track, creating instant friction so the heavy locomotive can accelerate or brake without sliding. Drop your questions below!\n\nSources (open-access research):\n- Gorbunov et al. (2019), Eksploatacja i Niezawodnosc - Maintenance and Reliability. doi:10.17531/ein.2019.3.12\n- Suhr et al. (2025), Lubricants. doi:10.3390/lubricants13070314",
+    "sources": [
+      {
+        "claim": "Freight locomotives use onboard sand boxes and pneumatic sanders to improve wheel-rail adhesion.",
+        "cite": "Gorbunov et al. (2019), Eksploatacja i Niezawodnosc - Maintenance and Reliability. doi:10.17531/ein.2019.3.12",
+        "doi": "10.17531/ein.2019.3.12",
+        "title": "Estimation of sand electrification influence on locomotive wheel/ rail adhesion processes",
+        "why": "The article describes a method of increasing the adhesion of the wheel to the rail based on the preliminary electrification of the abrasive-air mixture before its feed into a contact."
+      },
+      {
+        "claim": "Sand increases friction between steel wheels and steel rails to prevent slip during heavy pulling or braking.",
+        "cite": "Suhr et al. (2025), Lubricants. doi:10.3390/lubricants13070314",
+        "doi": "10.3390/lubricants13070314",
+        "title": "Mechanisms of Adhesion Increase in Wet Sanded Wheel–Rail Contacts—A DEM-Based Analysis",
+        "why": "In railways, problems in braking and traction can be caused by so-called low-adhesion conditions. Adhesion is increased by sanding, where sand grains are blasted towards the wheel–rail contact."
+      }
+    ],
+    "fact_check": [
+      "Freight locomotives use onboard sand boxes and pneumatic sanders to improve wheel-rail adhesion.",
+      "Sand increases friction between steel wheels and steel rails to prevent slip during heavy pulling or braking."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        5.12
+      ],
+      [
+        5.12,
+        9.5
+      ],
+      [
+        9.5,
+        14.2
+      ],
+      [
+        14.2,
+        18.49
+      ],
+      [
+        18.49,
+        22.85
+      ],
+      [
+        22.85,
+        28.1
+      ],
+      [
+        28.1,
+        32.69
+      ]
+    ],
+    "duration": 32.69,
+    "scene_lines": [
+      "Ever noticed those boxes of sand on a 120-ton freight train? 🤔",
+      "Steel wheels on steel tracks sound smooth, but they actually have very little grip.",
+      "When the engine pulls thousands of tons, those heavy wheels just spin in place.",
+      "So how does the train actually get traction on wet or steep rails?",
+      "That is what the hidden boxes are for, dropping sand right in front of the wheels.",
+      "The tiny grains crush under the steel, instantly creating high friction so the train moves.",
+      "Ever thought how heavy trains stop safely when the rails get covered in wet leaves?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,050 --> 00:00:02,085\nEver noticed those boxes of sand on\n\n2\n00:00:02,085 --> 00:00:04,404\na 120-ton freight train?\n\n3\n00:00:04,630 --> 00:00:07,032\nSteel wheels on steel tracks sound smooth,\n\n4\n00:00:07,032 --> 00:00:09,250\nbut they actually have very little grip.\n\n5\n00:00:09,250 --> 00:00:11,378\nWhen the engine pulls thousands of tons,\n\n6\n00:00:11,378 --> 00:00:13,746\nthose heavy wheels just spin in place.\n\n7\n00:00:13,890 --> 00:00:15,870\nSo how does the train actually get\n\n8\n00:00:15,870 --> 00:00:17,945\ntraction on wet or steep rails?\n\n9\n00:00:18,140 --> 00:00:19,824\nThat is what the hidden boxes are\n\n10\n00:00:19,824 --> 00:00:22,611\nfor, dropping sand right in front of the wheels.\n\n11\n00:00:22,640 --> 00:00:24,833\nThe tiny grains crush under the steel,\n\n12\n00:00:24,833 --> 00:00:27,699\ninstantly creating high friction so the train moves.\n\n13\n00:00:27,750 --> 00:00:30,084\nEver thought how heavy trains stop safely\n\n14\n00:00:30,084 --> 00:00:32,086\nwhen the rails get covered in wet leaves?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [
+        "phrase missing from the audio: \"how does the train actually get traction on wet or steep rails that is what the hidden boxes are for dropping sand right in front of the wheels the tiny grains crush under the steel instantly creating\"",
+        "only 33% of the script is heard as written"
+      ],
+      "footage": [],
+      "review": [],
+      "heard": [
+        "\"ever noticed those boxes\" heard as \"अगा दवाद कचरिनजीकले। स dieser\"",
+        "\"sand on\" heard as \"j j\"",
+        "\"\" heard as \"pupp oyster chapter\"",
+        "\"\" heard as \"वारण\"",
+        "\"freight train steel wheels on steel tracks sound smooth but they actually have very little grip when\" heard as \"और वादी ख чет मकस सब transcript\"",
+        "\"engine pulls thousands of tons those heavy wheels just spin in place\" heard as \"t ौडान कर你知道 어요 की ढ सब सब की लिए मकस сос सबौद जोनका सब the ौड था धान कलाऔ कर बचोचर用। औlog कि देपा सबौटphones आया गनंजद\"",
+        "\"friction so the train moves ever thought how heavy trains stop safely\" heard as \"fulf तोब सेझ्फली\"",
+        "\"get covered in wet leaves\" heard as \"के खववर्दें वेट्लीव्स।\""
+      ],
+      "pass": false,
+      "duration": 32.1
+    },
+    "repairs": 0
   }
 ]

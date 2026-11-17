@@ -81,5 +81,29 @@
         "claim": "Microbial life is a competing hypothesis for Martian methane production."
       }
     ]
+  },
+  {
+    "job": "20261117-1048-scientists-discover-why-deep-ocean-snow-",
+    "date": "2026-11-17",
+    "title": "How Deep Ocean Snow Moves Carbon 🌊",
+    "topic": "Scientists discover why deep ocean 'snow' traps six times more carbon than previously believed",
+    "series": "Ocean Whys",
+    "weekly": false,
+    "claims": [
+      "Marine snow consists of falling organic material from the upper layers of the water column.",
+      "Data indicates this process exports carbon from the surface ocean to deeper waters."
+    ],
+    "sources": [
+      {
+        "cite": "Turner (2002), Aquatic Microbial Ecology. doi:10.3354/ame027057",
+        "doi": "10.3354/ame027057",
+        "claim": "Marine snow consists of falling organic material from the upper layers of the water column."
+      },
+      {
+        "cite": "Chajwa et al. (2024), Science. doi:10.1126/science.adl5767",
+        "doi": "10.1126/science.adl5767",
+        "claim": "Data indicates this process exports carbon from the surface ocean to deeper waters."
+      }
+    ]
   }
 ]
