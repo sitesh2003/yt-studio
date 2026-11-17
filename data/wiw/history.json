@@ -992,7 +992,7 @@
       "melting ice"
     ],
     "hook": "You've seen trucks dump salt on frozen roads, but how does it actually melt the ice?",
-    "status": "scheduled",
+    "status": "public",
     "narration": "You've seen trucks dump salt on frozen roads, but how does it actually melt the ice? First, water molecules on the ice surface are constantly shifting back and forth between solid and liquid. Step two: when you add salt, the sodium and chloride ions dissolve into that thin liquid layer. Step three: these dissolved ions get in the way, blocking water molecules from rejoining the solid ice crystal. That's because the salt lowers the freezing point below the actual temperature, forcing the ice to melt. You see this on icy winter highways worldwide every time cold weather hits. Try this: why does adding salt stop working if the road gets way below freezing?",
     "voice_engine": "kokoro",
     "voices": "female host, male explainer",
@@ -1068,7 +1068,8 @@
     "audited": true,
     "video_id": "uh9aaSIkMiI",
     "publish_at": "2026-11-17T16:30:00-05:00",
-    "thumbnail_set": true
+    "thumbnail_set": true,
+    "answered": true
   },
   {
     "job": "20261116-0329-how-colour-vision-works-the-biology-of-c",
