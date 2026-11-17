@@ -105,5 +105,25 @@
         "claim": "Data indicates this process exports carbon from the surface ocean to deeper waters."
       }
     ]
+  },
+  {
+    "job": "20261117-1910-how-ultra-thin-emergency-blankets-could-",
+    "date": "2026-11-17",
+    "title": "How Space Blanket Technology Will Insulate Moon Bases 🤯",
+    "topic": "How ultra-thin emergency blankets could hold the secret to insulating future bases on the Moon",
+    "series": "How Things Work",
+    "weekly": false,
+    "claims": [
+      "Emergency mylar blankets reflect about 90 percent of radiated body heat.",
+      "Multi-layer insulation (MLI) is standard for spacecraft and satellite thermal control to combat extreme space temperatures.",
+      "Heat in a vacuum travels exclusively via radiation since conduction and convection require a medium."
+    ],
+    "sources": [
+      {
+        "cite": "Cui et al. (2020), Open Astronomy. doi:10.1515/astro-2020-0002",
+        "doi": "10.1515/astro-2020-0002",
+        "claim": "Multi-layer insulation (MLI) is standard for spacecraft and satellite thermal control to combat extreme space temperatures."
+      }
+    ]
   }
 ]

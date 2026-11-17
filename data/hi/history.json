@@ -461,7 +461,7 @@
       "physics"
     ],
     "hook": "250 km/h की speed से गीली runway पर plane hydroplaning से कैसे बचता है?",
-    "status": "scheduled",
+    "status": "public",
     "narration": "250 km/h की speed से गीली runway पर plane hydroplaning से कैसे बचता है? तेज rain में जब plane land करता है, तो tires और ground के बीच पानी जमा हो जाता है। इसे hydroplaning कहते हैं, यानी tire पानी पर तैरने लगता है और friction खत्म हो जाता है। तो फिर 200 ton का plane safely कैसे रुकता है? Secret hidden है runway पर बनी 6 mm गहरी grooves में। Plane का heavy weight पानी को इन grooves में दबा देता है, जिससे पानी तुरंत किनारे बह जाता है। Rubber tire directly road surface के contact में आ जाता है और hydroplaning का risk बहुत कम ہو जाता है। कभी सोचा है कार के tires पर भी धागे जैसी tread lines क्यों बनी होती हैं?",
     "voice_engine": "edge-tts",
     "voices": "one narrator (hi-IN-SwaraNeural)",
@@ -557,7 +557,9 @@
     "repairs": 0,
     "audited": true,
     "video_id": "WXx_iDFI9BA",
-    "publish_at": "2026-11-17T09:30:00-05:00"
+    "publish_at": "2026-11-17T09:30:00-05:00",
+    "recapped": true,
+    "answered": true
   },
   {
     "job": "20261116-0854-how-physicists-use-laser-light-to-unlock",
@@ -1988,6 +1990,511 @@
       ],
       "pass": false,
       "duration": 32.1
+    },
+    "repairs": 0
+  },
+  {
+    "job": "20261117-1841-what-actually-happens-under-your-skin-du",
+    "topic": "What actually happens under your skin during a mosquito bite that causes hours of itching",
+    "title": "Why Mosquito Bites Can Itch For A Long Time 😨",
+    "description": "Ever wonder why a tiny mosquito bite stays itchy for so long? It is not just about the bite, but how your body fights back. Find out the science behind the itch. #shorts #science #mosquito\n\nSources (open-access research):\n- Das et al. (2010), BMC Genomics. doi:10.1186/1471-2164-11-566\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nVideo by VariousPhotography on Pixabay\nVideo by allinonemovie on Pixabay\n\nयह वीडियो कैसे बना: स्क्रिप्ट को AI tools की मदद से open research के आधार पर लिखा और fact-check किया गया है, आवाज़ AI voice की है, और editing open-source software से हुई है। कोई गलती दिखे तो comment में बताइए — जाँच कर सुधार करेंगे।",
+    "tags": [
+      "science",
+      "mosquito",
+      "biology",
+      "hindi"
+    ],
+    "hook": "Mosquito bite ke baad wo itching hours tak kyun chalti hai?",
+    "status": "review",
+    "narration": "Mosquito bite ke baad wo itching hours tak kyun chalti hai? Jab mosquito skin par land karta hai, wo sirf blood nahi leta. Wo skin ke neeche tissue mein saliva inject karta hai taaki wo ek chhota sa blood pool bana sake. Is saliva mein aise proteins hote hain jo blood clotting ko block karte hain. So, ye proteins exactly hamari body mein kya trigger karte hain? Aapki body in foreign proteins ko ek threat maanti hai. Immune system 'histamine' release karta hai, jo swelling aur itching create karta hai. Kal ka sawal: car tires par tread lines kyun hoti hain? Ye lines pani ko side mein push karti hain taaki tire road se direct touch ho, jisse car slide na kare. Ever thought why scratching that bite sometimes makes the itch even worse? Drop your guess below.",
+    "voice_engine": "edge-tts",
+    "voices": "one narrator (hi-IN-SwaraNeural)",
+    "diagrams": 1,
+    "series": "Body Whys",
+    "countdown": false,
+    "length_arm": "standard",
+    "question": "Ever thought why scratching that bite sometimes makes the itch even worse?",
+    "answer_comment": "The answer: Scratching triggers a feedback loop in your nervous system. The mild pain from scratching provides temporary relief, but it actually causes your nerves to signal for even more itching once you stop, pulling you into an itch-scratch cycle!\n\nSources (open-access research):\n- Das et al. (2010), BMC Genomics. doi:10.1186/1471-2164-11-566",
+    "sources": [
+      {
+        "claim": "Mosquitoes inject saliva to prevent blood clotting during feeding.",
+        "cite": "Das et al. (2010), BMC Genomics. doi:10.1186/1471-2164-11-566",
+        "doi": "10.1186/1471-2164-11-566",
+        "title": "Transcriptomic and functional analysis of the Anopheles gambiae salivary gland in relation to blood feeding",
+        "why": "The Anopheles gambiae salivary glands play a major role in malaria transmission and express a variety of bioactive components that facilitate blood-feeding by preventing platelet aggregation, blood clotting, vasodilatation, and inflammatory and other reactions at the probing site on the vertebrate h"
+      }
+    ],
+    "fact_check": [
+      "Mosquitoes inject saliva to prevent blood clotting during feeding.",
+      "The body reacts to mosquito saliva proteins as a foreign allergen.",
+      "Histamine is the chemical released by the immune system that causes swelling and itching.",
+      "Scratching a bite can increase local inflammation and release more histamine."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        3.81
+      ],
+      [
+        3.81,
+        7.65
+      ],
+      [
+        7.65,
+        13.39
+      ],
+      [
+        13.39,
+        17.75
+      ],
+      [
+        17.75,
+        21.9
+      ],
+      [
+        21.9,
+        25.18
+      ],
+      [
+        25.18,
+        29.59
+      ],
+      [
+        29.59,
+        39.31
+      ],
+      [
+        39.31,
+        45.1
+      ]
+    ],
+    "duration": 45.1,
+    "scene_lines": [
+      "Mosquito bite ke baad wo itching hours tak kyun chalti hai?",
+      "Jab mosquito skin par land karta hai, wo sirf blood nahi leta.",
+      "Wo skin ke neeche tissue mein saliva inject karta hai taaki wo ek chhota sa blood pool bana sake.",
+      "Is saliva mein aise proteins hote hain jo blood clotting ko block karte hain.",
+      "So, ye proteins exactly hamari body mein kya trigger karte hain?",
+      "Aapki body in foreign proteins ko ek threat maanti hai.",
+      "Immune system 'histamine' release karta hai, jo swelling aur itching create karta hai.",
+      "Kal ka sawal: car tires par tread lines kyun hoti hain? Ye lines pani ko side mein push karti hain taaki tire road se direct touch ho, jisse car slide na kare.",
+      "Ever thought why scratching that bite sometimes makes the itch even worse? Drop your guess below."
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": "WXx_iDFI9BA",
+    "captions_srt": "1\n00:00:00,050 --> 00:00:02,340\nMosquito bite ke baad wo itching hours\n\n2\n00:00:02,340 --> 00:00:03,607\ntak kyun chalti hai?\n\n3\n00:00:03,810 --> 00:00:06,172\nJab mosquito skin par land karta hai,\n\n4\n00:00:06,172 --> 00:00:07,650\nwo sirf blood nahi leta.\n\n5\n00:00:07,650 --> 00:00:09,620\nWo skin ke neeche tissue mein saliva\n\n6\n00:00:09,620 --> 00:00:11,739\ninject karta hai taaki wo ek chhota\n\n7\n00:00:11,739 --> 00:00:13,345\nsa blood pool bana sake.\n\n8\n00:00:13,390 --> 00:00:15,551\nIs saliva mein aise proteins hote hain\n\n9\n00:00:15,551 --> 00:00:17,676\njo blood clotting ko block karte hain.\n\n10\n00:00:17,750 --> 00:00:20,361\nSo, ye proteins exactly hamari body mein\n\n11\n00:00:20,361 --> 00:00:21,695\nkya trigger karte hain?\n\n12\n00:00:21,900 --> 00:00:25,158\nAapki body in foreign proteins ko ek threat maanti hai.\n\n13\n00:00:25,180 --> 00:00:27,533\nImmune system histamine release karta hai, jo\n\n14\n00:00:27,533 --> 00:00:29,590\nswelling aur itching create karta hai.\n\n15\n00:00:29,590 --> 00:00:31,701\nKal ka sawal: car tires par tread\n\n16\n00:00:31,701 --> 00:00:33,024\nlines kyun hoti hain?\n\n17\n00:00:33,110 --> 00:00:34,974\nYe lines pani ko side mein push\n\n18\n00:00:34,974 --> 00:00:37,040\nkarti hain taaki tire road se direct\n\n19\n00:00:37,040 --> 00:00:39,179\ntouch ho, jisse car slide na kare.\n\n20\n00:00:39,310 --> 00:00:41,721\nEver thought why scratching that bite sometimes\n\n21\n00:00:41,721 --> 00:00:43,365\nmakes the itch even worse?\n\n22\n00:00:43,370 --> 00:00:44,503\nDrop your guess below.\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [
+        "phrase missing from the audio: \"jo swelling aur itching create karta hai kal ka sawal car tires par tread lines kyun hoti hain\"",
+        "only 69% of the script is heard as written"
+      ],
+      "footage": [
+        "scene(s) [1, 7, 9] have weak or placeholder footage"
+      ],
+      "review": [],
+      "heard": [
+        "\"itching hours tak kyun\" heard as \"इचिं आर्स्टक क्यो\"",
+        "\"par\" heard as \"पाल\"",
+        "\"nahi\" heard as \"नहीं\"",
+        "\"tissue\" heard as \"तिषु\"",
+        "\"inject\" heard as \"इंजेक\"",
+        "\"is\" heard as \"\"",
+        "\"hain\" heard as \"है\"",
+        "\"clotting\" heard as \"कलोतिं\""
+      ],
+      "scene_heard": [
+        "scene 1: 60%",
+        "scene 2: 73%",
+        "scene 3: 89%",
+        "scene 4: 71%",
+        "scene 5: 36%",
+        "scene 6: 44%",
+        "scene 7: 36%",
+        "scene 8: 61%",
+        "scene 9: 94%"
+      ],
+      "pass": false,
+      "duration": 44.5
+    },
+    "repairs": 0
+  },
+  {
+    "job": "20261117-1910-how-ultra-thin-emergency-blankets-could-",
+    "topic": "How ultra-thin emergency blankets could hold the secret to insulating future bases on the Moon",
+    "title": "How Space Blanket Technology Will Insulate Moon Bases 🤯",
+    "description": "Dekhiye kaise ek patli emergency blanket space exploration aur Moon bases ka game badal sakti hai. #shorts #science #space\n\nSources (open-access research):\n- Cui et al. (2020), Open Astronomy. doi:10.1515/astro-2020-0002\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nPhoto by justynkalp on Pixabay\nPhoto: Rick McCharles, BY 2.0, via Openverse (flickr)\nVideo by Spaceandbeyond on Pixabay\nVideo by Vimeo-Free-Videos on Pixabay\n\nयह वीडियो कैसे बना: स्क्रिप्ट को AI tools की मदद से open research के आधार पर लिखा और fact-check किया गया है, आवाज़ AI voice की है, और editing open-source software से हुई है। कोई गलती दिखे तो comment में बताइए — जाँच कर सुधार करेंगे।",
+    "tags": [
+      "#shorts",
+      "#science",
+      "#space"
+    ],
+    "hook": "Space missions mein astronauts ke liye sirf ek thin plastic sheet jaan bacha sakti hai 🤯",
+    "status": "scheduled",
+    "narration": "Space missions mein astronauts ke liye sirf ek thin plastic sheet jaan bacha sakti hai 🤯 Yeh ultra-thin mylar blanket sirf kuch grams ki hoti hai. Lekin yeh aapki body ki radiant heat ko seedha wapas reflect kar deti hai. Toh kya yahi technology Moon par hamare future bases ko insulate kar sakti hai? Actually, Moon par extreme temperatures minus 170 se plus 120 degrees Celsius ya usse bhi zyada badalte hain. Yahan multiple reflective layers vacuum ke sath milkar heat transfer ko rok deti hain. Isi principle ko MLI yaani multi-layer insulation kehte hain jo satellites mein bhi use hoti hai. Ever thought, agar space ke vacuum mein hawa nahi hai toh heat kaise escape hoti hai?",
+    "voice_engine": "edge-tts",
+    "voices": "one narrator (hi-IN-SwaraNeural)",
+    "diagrams": 1,
+    "series": "How Things Work",
+    "countdown": false,
+    "length_arm": "long",
+    "question": "Ever thought, agar space ke vacuum mein hawa nahi hai toh heat kaise escape hoti hai?",
+    "answer_comment": "The answer: Space ke vacuum mein air na hone ki wajah se conduction aur convection direct nahi hota, lekin heat infrared radiation ke zariye travel karti hai. Emergency blankets aur spacecrafts par lagi reflective mylar sheets ishi radiation ko reflect karke temperature control karti hain. Aur koi sawal ho toh zaroor poochiye!\n\nSources (open-access research):\n- Cui et al. (2020), Open Astronomy. doi:10.1515/astro-2020-0002",
+    "sources": [
+      {
+        "claim": "Multi-layer insulation (MLI) is standard for spacecraft and satellite thermal control to combat extreme space temperatures.",
+        "cite": "Cui et al. (2020), Open Astronomy. doi:10.1515/astro-2020-0002",
+        "doi": "10.1515/astro-2020-0002",
+        "title": "The temperature model of the thermal re-radiation model in multilayer insulation systems",
+        "why": "The thermodynamic model was applied to the motion simulation of GPS Block IIR satellites, and the theoretical model was verified based on the actual temperature measurement data of several GPS Block IIR satellites."
+      }
+    ],
+    "fact_check": [
+      "Emergency mylar blankets reflect about 90 percent of radiated body heat.",
+      "Multi-layer insulation (MLI) is standard for spacecraft and satellite thermal control to combat extreme space temperatures.",
+      "Heat in a vacuum travels exclusively via radiation since conduction and convection require a medium."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        5.49
+      ],
+      [
+        5.49,
+        9.07
+      ],
+      [
+        9.07,
+        13.44
+      ],
+      [
+        13.44,
+        18.91
+      ],
+      [
+        18.91,
+        26.63
+      ],
+      [
+        26.63,
+        31.58
+      ],
+      [
+        31.58,
+        37.39
+      ],
+      [
+        37.39,
+        42.35
+      ]
+    ],
+    "duration": 42.35,
+    "scene_lines": [
+      "Space missions mein astronauts ke liye sirf ek thin plastic sheet jaan bacha sakti hai 🤯",
+      "Yeh ultra-thin mylar blanket sirf kuch grams ki hoti hai.",
+      "Lekin yeh aapki body ki radiant heat ko seedha wapas reflect kar deti hai.",
+      "Toh kya yahi technology Moon par hamare future bases ko insulate kar sakti hai?",
+      "Actually, Moon par extreme temperatures minus 170 se plus 120 degrees Celsius ya usse bhi zyada badalte hain.",
+      "Yahan multiple reflective layers vacuum ke sath milkar heat transfer ko rok deti hain.",
+      "Isi principle ko MLI yaani multi-layer insulation kehte hain jo satellites mein bhi use hoti hai.",
+      "Ever thought, agar space ke vacuum mein hawa nahi hai toh heat kaise escape hoti hai?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,050 --> 00:00:02,603\nSpace missions mein astronauts ke liye sirf\n\n2\n00:00:02,603 --> 00:00:05,120\nek thin plastic sheet jaan bacha sakti hai\n\n3\n00:00:05,200 --> 00:00:08,628\nYeh ultra-thin mylar blanket sirf kuch grams ki hoti hai.\n\n4\n00:00:08,630 --> 00:00:10,865\nLekin yeh aapki body ki radiant heat\n\n5\n00:00:10,865 --> 00:00:13,170\nko seedha wapas reflect kar deti hai.\n\n6\n00:00:13,230 --> 00:00:15,542\nToh kya yahi technology Moon par hamare\n\n7\n00:00:15,542 --> 00:00:18,026\nfuture bases ko insulate kar sakti hai?\n\n8\n00:00:18,210 --> 00:00:21,967\nActually, Moon par extreme temperatures minus 170\n\n9\n00:00:21,967 --> 00:00:24,880\nse plus 120 degrees Celsius ya usse\n\n10\n00:00:24,880 --> 00:00:26,253\nbhi zyada badalte hain.\n\n11\n00:00:26,290 --> 00:00:28,896\nYahan multiple reflective layers vacuum ke sath\n\n12\n00:00:28,896 --> 00:00:31,230\nmilkar heat transfer ko rok deti hain.\n\n13\n00:00:31,230 --> 00:00:34,175\nIsi principle ko MLI yaani multi-layer insulation\n\n14\n00:00:34,175 --> 00:00:36,967\nkehte hain jo satellites mein bhi use hoti hai.\n\n15\n00:00:37,050 --> 00:00:39,168\nEver thought, agar space ke vacuum mein\n\n16\n00:00:39,168 --> 00:00:41,745\nhawa nahi hai toh heat kaise escape hoti hai?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [],
+      "footage": [],
+      "review": [],
+      "heard": [
+        "\"liye\" heard as \"लिए\"",
+        "\"bacha\" heard as \"बचाँ\"",
+        "\"mylar\" heard as \"myla\"",
+        "\"body\" heard as \"बोडी\"",
+        "\"actually\" heard as \"अच्छली\"",
+        "\"degrees\" heard as \"degree\"",
+        "\"usse\" heard as \"उसे\"",
+        "\"zyada\" heard as \"जादा\""
+      ],
+      "scene_heard": [
+        "scene 1: 86%",
+        "scene 2: 90%",
+        "scene 3: 85%",
+        "scene 4: 100%",
+        "scene 5: 69%",
+        "scene 6: 93%",
+        "scene 7: 88%",
+        "scene 8: 93%"
+      ],
+      "pass": true,
+      "duration": 41.8
+    },
+    "repairs": 0,
+    "audited": true,
+    "video_id": "_1eibUlcRyE",
+    "publish_at": "2026-11-18T02:30:00-05:00",
+    "thumbnail_set": true
+  },
+  {
+    "job": "20261117-1931-3-hidden-reasons-why-train-tracks-are-pa",
+    "topic": "3 Hidden reasons why train tracks are packed with tons of rough crushed stones",
+    "title": "Why Train Tracks Have So Many Stones 😱",
+    "description": "Ever wondered why railway tracks are covered in crushed stones? It is not for looks. Discover the engineering behind rail ballast and how it keeps trains safe. #shorts #hindi #science\n\nSources (open-access research):\n- Jia et al. (2019), Construction and Building Materials. doi:10.1016/j.conbuildmat.2019.05.020\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nPhoto: andyarthur, BY 2.0, via Openverse (flickr)\nVideo by Bonaparcik on Pixabay\nVideo by Kanenori on Pixabay\nVideo by livemedia_7 on Pixabay\nVideo by superanton on Pixabay\nVideo by MEISTERvideo on Pixabay\n\nयह वीडियो कैसे बना: स्क्रिप्ट को AI tools की मदद से open research के आधार पर लिखा और fact-check किया गया है, आवाज़ AI voice की है, और editing open-source software से हुई है। कोई गलती दिखे तो comment में बताइए — जाँच कर सुधार करेंगे।",
+    "tags": [
+      "railway",
+      "engineering"
+    ],
+    "hook": "Train tracks par patthar kyun bichhaye jaate hain? 😱",
+    "status": "review",
+    "narration": "Train tracks par patthar kyun bichhaye jaate hain? 😱 Ye pathar, जिन्हें ballast kehte hain, sirf raaste par nahi pade hain। Train ka weight hazaron tons hota hai। Jab ye patri se guzarti hai, to vibration paida hoti hai। Agar ye patthar na ho, to patri niche ki mitti mein dhas jayegi। Turn: So, ye patthar sirf weight sambhalte hain, ya kuch aur bhi karte hain? Inka asli kaam hai drainage। Barish ka pani in pattharon ke beech se nikal jata hai, jisse track ke neeche ki mitti dry aur mazboot rehti hai। Aur ye patthar noise aur vibration ko bhi absorb kar lete hain, taaki track apni jagah se hile nahi। Ever thought why some high-speed bullet trains don't use these stones at all? Drop your guess below.",
+    "voice_engine": "edge-tts",
+    "voices": "one narrator (hi-IN-SwaraNeural)",
+    "diagrams": 1,
+    "series": "Everyday Whys",
+    "countdown": false,
+    "length_arm": "long",
+    "question": "Ever thought why some high-speed bullet trains don't use these stones at all?",
+    "answer_comment": "The answer: High-speed trains often use 'slab tracks'—a solid concrete foundation instead of stones. Because they travel at such extreme speeds, loose stones (ballast) could be kicked up by the train, damaging the train or the infrastructure. Concrete provides the extreme stability needed for high speeds without the risk of loose debris.\n\nSources (open-access research):\n- Jia et al. (2019), Construction and Building Materials. doi:10.1016/j.conbuildmat.2019.05.020",
+    "sources": [
+      {
+        "claim": "Railway ballast distributes load, provides drainage, and absorbs vibration.",
+        "cite": "Jia et al. (2019), Construction and Building Materials. doi:10.1016/j.conbuildmat.2019.05.020",
+        "doi": "10.1016/j.conbuildmat.2019.05.020",
+        "title": "Experimental and numerical investigations on the shear behaviour of recycled railway ballast",
+        "why": "Ballast degradation is frequently observed under cyclic loading, and results in bearing capacity [distributes load] and drainage problem [provides drainage] of ballast track."
+      }
+    ],
+    "fact_check": [
+      "Railway ballast distributes load, provides drainage, and absorbs vibration.",
+      "Ballast helps prevent track settlement.",
+      "High-speed lines (like some Shinkansen or European lines) use concrete slab track to avoid ballast projection (flying stones) and maintenance issues at high speed."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        3.34
+      ],
+      [
+        3.34,
+        7.53
+      ],
+      [
+        7.53,
+        13.19
+      ],
+      [
+        13.19,
+        17.32
+      ],
+      [
+        17.32,
+        21.99
+      ],
+      [
+        21.99,
+        24.08
+      ],
+      [
+        24.08,
+        30.49
+      ],
+      [
+        30.49,
+        36.36
+      ],
+      [
+        36.36,
+        42.07
+      ]
+    ],
+    "duration": 42.07,
+    "scene_lines": [
+      "Train tracks par patthar kyun bichhaye jaate hain? 😱",
+      "Ye pathar, जिन्हें ballast kehte hain, sirf raaste par nahi pade hain।",
+      "Train ka weight hazaron tons hota hai। Jab ye patri se guzarti hai, to vibration paida hoti hai।",
+      "Agar ye patthar na ho, to patri niche ki mitti mein dhas jayegi।",
+      "Turn: So, ye patthar sirf weight sambhalte hain, ya kuch aur bhi karte hain?",
+      "Inka asli kaam hai drainage।",
+      "Barish ka pani in pattharon ke beech se nikal jata hai, jisse track ke neeche ki mitti dry aur mazboot rehti hai।",
+      "Aur ye patthar noise aur vibration ko bhi absorb kar lete hain, taaki track apni jagah se hile nahi।",
+      "Ever thought why some high-speed bullet trains don't use these stones at all? Drop your guess below."
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,050 --> 00:00:02,888\nTrain tracks par patthar kyun bichhaye jaate hain?\n\n2\n00:00:03,090 --> 00:00:05,561\nYe pathar, जिन्हें ballast kehte hain, sirf\n\n3\n00:00:05,561 --> 00:00:07,701\nraaste par nahi pade hain। Train ka\n\n4\n00:00:07,701 --> 00:00:09,865\nweight hazaron tons hota hai। Jab ye\n\n5\n00:00:09,865 --> 00:00:12,087\npatri se guzarti hai, to vibration paida\n\n6\n00:00:12,087 --> 00:00:14,395\nhoti hai। Agar ye patthar na ho,\n\n7\n00:00:14,395 --> 00:00:15,958\nto patri niche ki mitti mein dhas\n\n8\n00:00:15,958 --> 00:00:18,804\njayegi। Turn: So, ye patthar sirf weight\n\n9\n00:00:18,804 --> 00:00:21,325\nsambhalte hain, ya kuch aur bhi karte hain?\n\n10\n00:00:21,530 --> 00:00:24,247\nInka asli kaam hai drainage। Barish ka\n\n11\n00:00:24,247 --> 00:00:26,154\npani in pattharon ke beech se nikal\n\n12\n00:00:26,154 --> 00:00:28,003\njata hai, jisse track ke neeche ki\n\n13\n00:00:28,003 --> 00:00:30,170\nmitti dry aur mazboot rehti hai।\n\n14\n00:00:30,230 --> 00:00:32,327\nAur ye patthar noise aur vibration ko\n\n15\n00:00:32,327 --> 00:00:34,325\nbhi absorb kar lete hain, taaki track\n\n16\n00:00:34,325 --> 00:00:35,910\napni jagah se hile nahi।\n\n17\n00:00:36,020 --> 00:00:38,420\nEver thought why some high-speed bullet trains\n\n18\n00:00:38,420 --> 00:00:40,297\ndon't use these stones at all?\n\n19\n00:00:40,340 --> 00:00:41,473\nDrop your guess below.\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [
+        "phrase missing from the audio: \"pathar जिन्हें ballast kehte hain\"",
+        "phrase missing from the audio: \"to vibration paida hoti hai।\"",
+        "scene 1 (0.0-3.3 s): only 12% of its words can be heard - the voice breaks up or drops out",
+        "scene 9 (36.4-42.1 s): only 22% of its words can be heard - the voice breaks up or drops out"
+      ],
+      "footage": [],
+      "review": [],
+      "heard": [
+        "\"tracks par\" heard as \"ट्रोग श्पार पत्ठ ख्यू मिच्चाये जाते है ये\"",
+        "\"kyun bichhaye jaate hain\" heard as \"जूने ब्यालश्ट कहते है\"",
+        "\"nahi\" heard as \"नहीं\"",
+        "\"weight hazaron\" heard as \"लेज रेके खाए रोट\"",
+        "\"patri\" heard as \"पत्त्री\"",
+        "\"patthar\" heard as \"पत्ठा\"",
+        "\"jayegi। turn\" heard as \"जाएगी तुन\"",
+        "\"patthar\" heard as \"पत्ठा\""
+      ],
+      "scene_heard": [
+        "scene 1: 12%",
+        "scene 2: 64%",
+        "scene 3: 60%",
+        "scene 4: 82%",
+        "scene 5: 79%",
+        "scene 6: 67%",
+        "scene 7: 75%",
+        "scene 8: 72%",
+        "scene 9: 22%"
+      ],
+      "pass": false,
+      "duration": 41.5
+    },
+    "repairs": 0
+  },
+  {
+    "job": "20261117-2001-why-bananas-ripen-in-days-when-stored-ne",
+    "topic": "Why bananas ripen in days when stored near apples, while oranges stay completely unchanged",
+    "title": "The Hidden Gas In Your Fruit Bowl 🍎",
+    "description": "Apples are secret ethylene factories! See how one fruit controls the ripening of others in your kitchen. #shorts #science #kitchenhacks\n\nSources (open-access research):\n- Gussman et al. (1993), HortScience. doi:10.21273/hortsci.28.2.135\n- Ji et al. (2021), PLANT PHYSIOLOGY. doi:10.1093/plphys/kiab013\n- Gómez et al. (2017), International Journal of Engineering Research and Applications. doi:10.9790/9622-0707062229\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nPhoto by Foundry on Pixabay\nPhoto: unknown, CC0 1.0, via Openverse (rawpixel)\n\nयह वीडियो कैसे बना: स्क्रिप्ट को AI tools की मदद से open research के आधार पर लिखा और fact-check किया गया है, आवाज़ AI voice की है, और editing open-source software से हुई है। कोई गलती दिखे तो comment में बताइए — जाँच कर सुधार करेंगे।",
+    "tags": [
+      "science",
+      "food"
+    ],
+    "hook": "Ek apple aapke paas rakhe kuch doosre fruits ke pakne ki prakriya ko tez kar sakta hai.",
+    "status": "review",
+    "narration": "Ek apple aapke paas rakhe kuch doosre fruits ke pakne ki prakriya ko tez kar sakta hai. Lekin oranges par iska asar thoda alag hota hai, aur ye mainly unka hara rang hatane mein madad karta hai. Fruits hawa mein invisible ethylene gas chhodte hain. So kya ye gas har fruit par same asar daalti hai? turn: true. Bananas isse absorb karke jaldi pakte hain. Oranges ethylene ke prati kam sensitive hote hain, par unka rang isse badal sakta hai. Why does putting a banana in a paper bag with an apple make it ripen faster?",
+    "voice_engine": "edge-tts",
+    "voices": "one narrator (hi-IN-SwaraNeural)",
+    "diagrams": 1,
+    "series": "Food Whys",
+    "countdown": false,
+    "length_arm": "short",
+    "question": "Why does putting a banana in a paper bag with an apple make it ripen faster?",
+    "answer_comment": "The answer: Paper bags trap the ethylene gas released by the fruits, creating a concentrated environment that speeds up the ripening process. Because the gas can't escape, the bananas ripen much faster than they would in open air. Ever thought why some fruits continue ripening after being picked while others stop?\n\nSources (open-access research):\n- Gussman et al. (1993), HortScience. doi:10.21273/hortsci.28.2.135\n- Ji et al. (2021), PLANT PHYSIOLOGY. doi:10.1093/plphys/kiab013\n- Gómez et al. (2017), International Journal of Engineering Research and Applications. doi:10.9790/9622-0707062229",
+    "sources": [
+      {
+        "claim": "Apples produce significant amounts of ethylene gas.",
+        "cite": "Gussman et al. (1993), HortScience. doi:10.21273/hortsci.28.2.135",
+        "doi": "10.21273/hortsci.28.2.135",
+        "title": "Ethylene Production and Fruit-softening Rates in Several Apple Fruit Ripening Variants",
+        "why": "`Red Chief Delicious' and `Golden Delicious' fruit produced >100 μl ethylene/kg per hour during the same time period."
+      },
+      {
+        "claim": "Ethylene is a natural plant hormone that triggers ripening in climacteric fruits like bananas.",
+        "cite": "Ji et al. (2021), PLANT PHYSIOLOGY. doi:10.1093/plphys/kiab013",
+        "doi": "10.1093/plphys/kiab013",
+        "title": "The mechanism for brassinosteroids suppressing climacteric fruit ripening",
+        "why": "The plant hormone ethylene is important for the ripening of climacteric fruit, such as pear (Pyrus ussuriensis)"
+      },
+      {
+        "claim": "Oranges are less sensitive to ethylene, primarily showing skin color changes rather than rapid internal ripening.",
+        "cite": "Gómez et al. (2017), International Journal of Engineering Research and Applications. doi:10.9790/9622-0707062229",
+        "doi": "10.9790/9622-0707062229",
+        "title": "Methyl Jasmonate, a Degreening Alternative for Mandarin (Citrus Reticulata L.) Var. Arrayana Fruits",
+        "why": "The latter is commonly used to degreen mandarin, which, however, exhibits low sensitivity to this compound."
+      }
+    ],
+    "fact_check": [
+      "Apples produce significant amounts of ethylene gas.",
+      "Ethylene is a natural plant hormone that triggers ripening in climacteric fruits like bananas.",
+      "Oranges are less sensitive to ethylene, primarily showing skin color changes rather than rapid internal ripening.",
+      "Paper bags trap ethylene to accelerate ripening of climacteric fruits."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        5.25
+      ],
+      [
+        5.25,
+        11.5
+      ],
+      [
+        11.5,
+        14.69
+      ],
+      [
+        14.69,
+        18.05
+      ],
+      [
+        18.05,
+        22.02
+      ],
+      [
+        22.02,
+        27.09
+      ],
+      [
+        27.09,
+        31.83
+      ]
+    ],
+    "duration": 31.83,
+    "scene_lines": [
+      "Ek apple aapke paas rakhe kuch doosre fruits ke pakne ki prakriya ko tez kar sakta hai.",
+      "Lekin oranges par iska asar thoda alag hota hai, aur ye mainly unka hara rang hatane mein madad karta hai.",
+      "Fruits hawa mein invisible ethylene gas chhodte hain.",
+      "So kya ye gas har fruit par same asar daalti hai?",
+      "turn: true. Bananas isse absorb karke jaldi pakte hain.",
+      "Oranges ethylene ke prati kam sensitive hote hain, par unka rang isse badal sakta hai.",
+      "Why does putting a banana in a paper bag with an apple make it ripen faster?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,050 --> 00:00:02,328\nEk apple aapke paas rakhe kuch doosre\n\n2\n00:00:02,328 --> 00:00:05,131\nfruits ke pakne ki prakriya ko tez kar sakta hai.\n\n3\n00:00:05,250 --> 00:00:07,655\nLekin oranges par iska asar thoda alag\n\n4\n00:00:07,655 --> 00:00:09,584\nhota hai, aur ye mainly unka hara\n\n5\n00:00:09,584 --> 00:00:11,476\nrang hatane mein madad karta hai.\n\n6\n00:00:11,500 --> 00:00:14,515\nFruits hawa mein invisible ethylene gas chhodte hain.\n\n7\n00:00:14,690 --> 00:00:16,416\nSo kya ye gas har fruit par\n\n8\n00:00:16,416 --> 00:00:17,849\nsame asar daalti hai?\n\n9\n00:00:18,050 --> 00:00:19,150\nturn: true.\n\n10\n00:00:19,150 --> 00:00:21,942\nBananas isse absorb karke jaldi pakte hain.\n\n11\n00:00:22,020 --> 00:00:24,499\nOranges ethylene ke prati kam sensitive hote\n\n12\n00:00:24,499 --> 00:00:27,007\nhain, par unka rang isse badal sakta hai.\n\n13\n00:00:27,090 --> 00:00:28,716\nWhy does putting a banana in a\n\n14\n00:00:28,716 --> 00:00:31,227\npaper bag with an apple make it ripen faster?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [
+        "scene 3 (11.5-14.7 s): only 0% of its words can be heard - the voice breaks up or drops out",
+        "scene 4 (14.7-18.1 s): only 0% of its words can be heard - the voice breaks up or drops out",
+        "scene 5 (18.1-22.0 s): only 0% of its words can be heard - the voice breaks up or drops out"
+      ],
+      "footage": [
+        "scene(s) [1] have weak or placeholder footage"
+      ],
+      "review": [],
+      "heard": [
+        "\"apple\" heard as \"आपल\"",
+        "\"tez\" heard as \"तेस\"",
+        "\"oranges\" heard as \"औरिंज़स\"",
+        "\"mainly\" heard as \"मेंली\"",
+        "\"fruits hawa mein invisible ethylene gas chhodte hain so kya ye gas har fruit par same asar daalti hai turn true bananas isse absorb karke jaldi pakte hain oranges ethylene\" heard as \"औरिंज़स अतलीन\"",
+        "\"hain\" heard as \"है\"",
+        "\"isse\" heard as \"इसे\"",
+        "\"why\" heard as \"वाई\""
+      ],
+      "scene_heard": [
+        "scene 1: 88%",
+        "scene 2: 89%",
+        "scene 3: 0%",
+        "scene 4: 0%",
+        "scene 5: 0%",
+        "scene 6: 71%",
+        "scene 7: 43%"
+      ],
+      "pass": false,
+      "duration": 31.3
     },
     "repairs": 0
   }
