@@ -902,7 +902,7 @@
       "shorts"
     ],
     "hook": "A 10kg lead sphere and a 1kg lead sphere dropped from the same height in a vacuum. Why don't they hit the ground at different moments?",
-    "status": "scheduled",
+    "status": "public",
     "narration": "A 10kg lead sphere and a 1kg lead sphere dropped from the same height in a vacuum. Why don't they hit the ground at different moments? First, gravity pulls harder on the 10kg lead sphere, because it has more weight. But second, that 10kg lead sphere also has more inertia, which is its resistance to changing speed. Third, for our 10kg lead sphere and 1kg lead sphere, these two effects exactly cancel out; the extra force is perfectly balanced by the extra resistance. That's because when you drop the 10kg lead sphere and 1kg lead sphere, the acceleration of an object is force divided by mass, so the mass cancels itself out. Physicists use this universal constant of gravitational acceleration when calculating the motion of falling objects near planetary surfaces. Try this: if we did this with our 10kg lead sphere and 1kg lead sphere on the Moon, would they still hit the ground together?",
     "voice_engine": "kokoro",
     "voices": "female host, male explainer",
@@ -975,7 +975,9 @@
     "repairs": 0,
     "audited": true,
     "video_id": "ib9znstwvhE",
-    "publish_at": "2026-11-17T07:30:00-05:00"
+    "publish_at": "2026-11-17T07:30:00-05:00",
+    "recapped": true,
+    "answered": true
   },
   {
     "job": "20261115-1838-why-does-salt-melt-ice-on-frozen-roads-t",
@@ -1376,7 +1378,7 @@
       "lenses"
     ],
     "hook": "Have you ever noticed that a magnifying glass can make things look huge and upright, but if you pull it away, the world suddenly flips upside down? It’s simple physics.",
-    "status": "banked",
+    "status": "scheduled",
     "narration": "Have you ever noticed that a magnifying glass can make things look huge and upright, but if you pull it away, the world suddenly flips upside down? It’s simple physics. Let’s track light from the top tip of this paper arrow. The lens bends these light rays inward. The rays are redirected by the lens so they cross over each other before reaching your eye. Because the light from the top of the object is bent to the bottom of the image path, the entire view is flipped. This is the same principle that allows a camera to focus an image onto a sensor. Try this: why does the lens stop flipping the image if you hold it really close to the object?",
     "voice_engine": "kokoro",
     "voices": "one narrator (af_bella)",
@@ -1455,7 +1457,10 @@
       "duration": 35.1
     },
     "repairs": 0,
-    "audited": true
+    "audited": true,
+    "video_id": "RAyXuV7D0F0",
+    "publish_at": "2026-11-18T16:30:00-05:00",
+    "thumbnail_set": true
   },
   {
     "job": "20261116-1409-why-does-a-siren-change-pitch-as-it-pass",
@@ -2150,6 +2155,121 @@
       "duration": 30.3
     },
     "repairs": 0,
+    "audited": true
+  },
+  {
+    "job": "20261117-1504-why-does-a-sound-wave-change-pitch-with-",
+    "topic": "Why does a sound wave change pitch with resonance?",
+    "title": "Why Does A Guitar String Change Pitch?",
+    "description": "Ever wonder why your finger changes a note? Discover how string length dictates resonance. #shorts #physics #music\n\nSources (open-access research):\n- Xu et al. (2025), World Journal of Engineering Research. doi:10.61784/wjer3047\n- Kim et al. (2015), Sensors. doi:10.3390/s150203872\n- Amorim et al. (2011), The Physics Teacher. doi:10.1119/1.3628265\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nVideo by Vimeo-Free-Videos on Pixabay",
+    "tags": [
+      "physics",
+      "acoustics",
+      "guitar",
+      "science",
+      "education"
+    ],
+    "hook": "Why does a guitar string change pitch when you press it?",
+    "status": "banked",
+    "narration": "Why does a guitar string change pitch when you press it? When you pluck the open string, it vibrates across its full length, creating a low, slow wave. It's vibrating. Press your finger down, and you physically shorten the part of the string that's free to move. With less string, the wave completes its cycle much faster, hitting the ends more often. It moves fast. That's because a shorter string restricts the wave to a smaller space, which forces a higher frequency. This is how every fret on your guitar creates a precise new note. Try this: why does a longer straw produce a deeper sound than a short one?",
+    "voice_engine": "chatterbox",
+    "voices": "one narrator (af_heart)",
+    "diagrams": 1,
+    "series": "Physics",
+    "countdown": false,
+    "length_arm": null,
+    "question": "why does a longer straw produce a deeper sound than a short one?",
+    "answer_comment": "The answer: Just like the guitar string, the length of the air column inside the straw determines how fast the air vibrates. A longer straw forces the sound wave to travel further, creating a slower vibration and a lower pitch. Does the diameter of the straw also affect the sound?\n\nSources (open-access research):\n- Xu et al. (2025), World Journal of Engineering Research. doi:10.61784/wjer3047\n- Kim et al. (2015), Sensors. doi:10.3390/s150203872\n- Amorim et al. (2011), The Physics Teacher. doi:10.1119/1.3628265",
+    "sources": [
+      {
+        "claim": "Shortening a string increases its fundamental frequency.",
+        "cite": "Xu et al. (2025), World Journal of Engineering Research. doi:10.61784/wjer3047",
+        "doi": "10.61784/wjer3047",
+        "title": "VIBRATION MECHANISM AND EXPERIMENTAL VERIFICATION OF VIOLIN STRINGS",
+        "why": "There exists an inverse relationship between effective string length and natural frequency, with the fundamental frequency exhibiting a remarkable decrease as the length increases."
+      },
+      {
+        "claim": "Resonance in strings/tubes is inversely proportional to length.",
+        "cite": "Kim et al. (2015), Sensors. doi:10.3390/s150203872",
+        "doi": "10.3390/s150203872",
+        "title": "Monaural Sound Localization Based on Structure-Induced Acoustic Resonance",
+        "why": "The acoustic resonance within the horn provides a periodicity in the spectral domain known as the fundamental frequency which is inversely proportional to the radial horn length."
+      },
+      {
+        "claim": "Air columns in straws behave as standing waves, similar to strings.",
+        "cite": "Amorim et al. (2011), The Physics Teacher. doi:10.1119/1.3628265",
+        "doi": "10.1119/1.3628265",
+        "title": "A Simple Experiment to Explore Standing Waves in a Flexible Corrugated Sound Tube",
+        "why": "In particular, corrugated tubes present unique characteristics with respect to the sounds they can produce; that is why they have been studied so intensively, both at theoretical and experimental levels."
+      }
+    ],
+    "fact_check": [
+      "Shortening a string increases its fundamental frequency.",
+      "Higher frequency is perceived as a higher pitch.",
+      "Resonance in strings/tubes is inversely proportional to length.",
+      "Air columns in straws behave as standing waves, similar to strings."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        2.4
+      ],
+      [
+        2.4,
+        8.12
+      ],
+      [
+        8.12,
+        11.93
+      ],
+      [
+        11.93,
+        16.91
+      ],
+      [
+        16.91,
+        21.44
+      ],
+      [
+        21.44,
+        28.55
+      ]
+    ],
+    "duration": 28.55,
+    "scene_lines": [
+      "Why does a guitar string change pitch when you press it?",
+      "When you pluck the open string, it vibrates across its full length, creating a low, slow wave. It's vibrating.",
+      "Press your finger down, and you physically shorten the part of the string that's free to move.",
+      "With less string, the wave completes its cycle much faster, hitting the ends more often. It moves fast.",
+      "That's because a shorter string restricts the wave to a smaller space, which forces a higher frequency.",
+      "This is how every fret on your guitar creates a precise new note. Try this: why does a longer straw produce a deeper sound than a short one?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,000 --> 00:00:01,260\nWhy does a guitar string change pitch\n\n2\n00:00:01,260 --> 00:00:02,170\nwhen you press it?\n\n3\n00:00:02,400 --> 00:00:03,680\nWhen you pluck the open string, it\n\n4\n00:00:03,680 --> 00:00:06,810\nvibrates across its full length, creating a low, slow wave.\n\n5\n00:00:07,060 --> 00:00:07,970\nIt's vibrating.\n\n6\n00:00:08,120 --> 00:00:09,030\nPress your finger down,\n\n7\n00:00:09,120 --> 00:00:10,420\nand you physically shorten the part of\n\n8\n00:00:10,420 --> 00:00:11,770\nthe string that's free to move.\n\n9\n00:00:11,930 --> 00:00:12,700\nWith less string,\n\n10\n00:00:12,750 --> 00:00:14,440\nthe wave completes its cycle much faster,\n\n11\n00:00:14,490 --> 00:00:15,640\nhitting the ends more often.\n\n12\n00:00:15,740 --> 00:00:16,650\nIt moves fast.\n\n13\n00:00:16,910 --> 00:00:18,530\nThat's because a shorter string restricts the\n\n14\n00:00:18,530 --> 00:00:19,720\nwave to a smaller space,\n\n15\n00:00:19,790 --> 00:00:21,020\nwhich forces a higher frequency.\n\n16\n00:00:21,440 --> 00:00:22,980\nThis is how every fret on your\n\n17\n00:00:22,980 --> 00:00:24,870\nguitar creates a precise new note.\n\n18\n00:00:24,970 --> 00:00:25,540\nTry this:\n\n19\n00:00:25,610 --> 00:00:26,870\nwhy does a longer straw produce a\n\n20\n00:00:26,870 --> 00:00:27,950\ndeeper sound than a short one?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [],
+      "footage": [],
+      "review": [],
+      "scene_heard": [
+        "scene 1: 100%",
+        "scene 2: 100%",
+        "scene 3: 100%",
+        "scene 4: 100%",
+        "scene 5: 100%",
+        "scene 6: 100%"
+      ],
+      "notes": [
+        "scene 6 footage is a loose match (score 3.0), accepted"
+      ],
+      "pass": true,
+      "duration": 28.2
+    },
+    "repairs": 1,
     "audited": true
   }
 ]

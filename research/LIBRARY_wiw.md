@@ -13,6 +13,19 @@ agents/library.py; a source is listed only if its abstract was checked to suppor
 Sources:
 - Habtamu (2026), Figshare. doi:10.6084/m9.figshare.31126042 — supports: Newton's third law states that when object A exerts a force on object B, object B simultaneously exerts an equal magnitude and opposite direction force on object A.
 
+## Why Does A Guitar String Change Pitch?
+*2026-11-17 · Physics*
+
+- Shortening a string increases its fundamental frequency.
+- Higher frequency is perceived as a higher pitch.
+- Resonance in strings/tubes is inversely proportional to length.
+- Air columns in straws behave as standing waves, similar to strings.
+
+Sources:
+- Xu et al. (2025), World Journal of Engineering Research. doi:10.61784/wjer3047 — supports: Shortening a string increases its fundamental frequency.
+- Kim et al. (2015), Sensors. doi:10.3390/s150203872 — supports: Resonance in strings/tubes is inversely proportional to length.
+- Amorim et al. (2011), The Physics Teacher. doi:10.1119/1.3628265 — supports: Air columns in straws behave as standing waves, similar to strings.
+
 ## How Colour Vision Works: The Biology of Cone Cells Explained
 *2026-11-16 · Biology*
 

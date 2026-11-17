@@ -108,5 +108,17 @@
    "6": "A shoe emoji is incorrectly labelled 'BACK FORCE', and the 'leads to' downward arrows misrepresent simultaneous action-reaction forces."
   },
   "error": ""
+ },
+ {
+  "when": "2026-11-17 15:18",
+  "topic": "Why does a sound wave change pitch with resonance?",
+  "drawn": [
+   2,
+   3,
+   4,
+   5
+  ],
+  "not_drawn": {},
+  "error": ""
  }
 ]

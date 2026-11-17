@@ -242,5 +242,36 @@
         "claim": "Newton's third law states that when object A exerts a force on object B, object B simultaneously exerts an equal magnitude and opposite direction force on object A."
       }
     ]
+  },
+  {
+    "job": "20261117-1504-why-does-a-sound-wave-change-pitch-with-",
+    "date": "2026-11-17",
+    "title": "Why Does A Guitar String Change Pitch?",
+    "topic": "Why does a sound wave change pitch with resonance?",
+    "series": "Physics",
+    "weekly": false,
+    "claims": [
+      "Shortening a string increases its fundamental frequency.",
+      "Higher frequency is perceived as a higher pitch.",
+      "Resonance in strings/tubes is inversely proportional to length.",
+      "Air columns in straws behave as standing waves, similar to strings."
+    ],
+    "sources": [
+      {
+        "cite": "Xu et al. (2025), World Journal of Engineering Research. doi:10.61784/wjer3047",
+        "doi": "10.61784/wjer3047",
+        "claim": "Shortening a string increases its fundamental frequency."
+      },
+      {
+        "cite": "Kim et al. (2015), Sensors. doi:10.3390/s150203872",
+        "doi": "10.3390/s150203872",
+        "claim": "Resonance in strings/tubes is inversely proportional to length."
+      },
+      {
+        "cite": "Amorim et al. (2011), The Physics Teacher. doi:10.1119/1.3628265",
+        "doi": "10.1119/1.3628265",
+        "claim": "Air columns in straws behave as standing waves, similar to strings."
+      }
+    ]
   }
 ]
