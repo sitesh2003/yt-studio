@@ -1,19 +1,17 @@
 {
   "lessons": [
-    "Hook lines that directly name a counter-intuitive or sensory conflict (e.g., pineapple eating you back, shark older than the US) correlate with high early retention above 1.8x at 10%, whereas empty or missing hooks show weaker performance.",
-    "Lines that explain technical chemical processes or slow mechanism breakdowns too early (e.g., specific cell structures or water displacement mechanics around 0.2-0.4 marks) consistently trigger the largest audience drop-offs.",
-    "Best-holding videos (such as the Greenland shark or Tuna vs Cod) maintain exceptionally high engagement past the 50% and end marks by establishing high-stakes biological anomalies rather than everyday kitchen trivia.",
-    "When a hook line is absent or generic (like in the onion or leaky eyes shorts), audience retention at 10% drops significantly compared to explicitly provocative hook lines."
+    "Hook lines that directly state a surprising consequence or unusual fact (e.g., Tuna meat vs. Cod, Shark living for centuries) achieve higher start benchmarks (0.52 to 0.57 vs_similar_start) and keep retention above 1.8 at 10%.",
+    "Abstract or overly broad premise lines at the very start cause immediate drop-offs; specific physiological contrasts retain attention better.",
+    "Lines that transition into heavy scientific explanations or mechanism breakdowns (e.g., bromelain enzymes or water chemistry) trigger the largest single-point drop-offs, often losing 20% to 36% of viewers around 7% to 14% into the video.",
+    "Videos with exceptional retention at the end (like the Greenland shark, keeping 1.10 at the end) maintain high viewer engagement throughout by continuously posing structural mysteries rather than settling into dry exposition."
   ],
   "worst_moment_types": [
-    "Slow mechanical explanations of bodily reactions (e.g., dead skin cells swelling or internal volume loss)",
-    "Complex descriptions of cellular anatomy or enzyme storage locations midway through the short",
-    "Dry secondary context regarding everyday processes without an immediate narrative payoff"
+    "Introducing complex scientific terms or definitions too early in the video (e.g., bromelain, cellular room separation).",
+    "Providing slow, methodical explanations of physical processes (e.g., boiling off sap or how dead skin cells absorb water) rather than immediate narrative progression."
   ],
   "best_hook_types": [
-    "Provocative statements about sensory experiences (e.g., 'Fresh pineapple is literally eating you back')",
-    "Extreme statistical or temporal claims about animals (e.g., 'This shark is older than the United States')",
-    "Direct contrast of physical appearances or material properties (e.g., tuna red meat vs cod white meat)"
+    "Direct comparative hooks contrasting two familiar items with surprising differences (e.g., Tuna vs. Cod).",
+    "Extreme superlative or temporal claims (e.g., sharks older than the United States, foods that last forever)."
   ],
   "studied": "2026-11-17",
   "videos": 10

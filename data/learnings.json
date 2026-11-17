@@ -1,10 +1,10 @@
 {
   "summary": [
-    "Prioritize counter-intuitive claims that directly challenge a common assumption about a daily object or body function.",
-    "Structure the hook as a high-stakes contradiction where the viewer is 'wrong' about how a mechanism works (e.g., 'it is not X, it is Y').",
-    "Utilize shorter, punchy sentences in the opening to maintain high momentum; avoid lengthy explanations before the primary reveal.",
-    "Ensure the title promises a clear transformation or 'secret' rather than just a descriptive label.",
-    "Keep hook duration under 5 seconds to maximize stayed_pct, as lower retention at the start leads to immediate feed abandonment."
+    "Prioritize human-centric 'us vs. nature' conflict in titles, using active verbs like 'eat', 'leaking', or 'hide'.",
+    "Hook with a direct contradiction or 'counter-intuitive fact' in the first 3 seconds to disrupt the scroll.",
+    "Avoid descriptive or educational setups that sound like textbook facts; focus on emotional or sensory anomalies.",
+    "Ensure titles are concise and use emojis to signal lighthearted, visual discovery rather than dry science.",
+    "Higher-performing videos address bodily sensations (fingers, eyes, taste buds) rather than abstract external objects like syrup or honey."
   ],
   "winning_hooks": [
     "Your fingers prune in water, but it is not because you are absorbing it like a sponge.",
@@ -13,10 +13,10 @@
     "This shark is older than the United States."
   ],
   "avoid": [
-    "Starting with observational statements that describe an action without adding conflict or a 'twist' (e.g., 'Drop an apple in water').",
-    "Titles that are purely descriptive/educational (e.g., 'Why Fruits Float') instead of evocative or curiosity-inducing.",
-    "Complex sentences in the first 3 seconds that force the viewer to process too much information before the payoff.",
-    "Topics that feel like a general science fact without a direct, relatable physical consequence for the viewer."
+    "Starting with neutral observation statements like 'Drop an apple or a pear in a bowl'.",
+    "Long, multi-clause scientific explanations in the first sentence.",
+    "Titles that read like Wikipedia entries (e.g., 'Why Real Honey Never Spoils').",
+    "Topics that lack immediate physical stakes or personal relevance for the viewer."
   ],
-  "next_experiment": "A/B test two styles of hooks: one that starts with an 'Action/Observation' (e.g., 'You are doing X...') versus a 'Negative Constraint' (e.g., 'Stop doing X, because it is actually Y...'), keeping all other production values identical."
+  "next_experiment": "Compare a 'Direct Hook' (e.g., 'Stop doing this with your onions') vs. an 'Explanation Hook' (e.g., 'Here is why onions make you cry') to isolate if imperative commands improve stayed_pct."
 }
