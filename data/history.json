@@ -1609,7 +1609,7 @@
       "everyday science"
     ],
     "hook": "Ever noticed those tiny black dots fading around your car windshield? 🚗",
-    "status": "scheduled",
+    "status": "public",
     "narration": "Ever noticed those tiny black dots fading around your car windshield? 🚗 They are not just there to look cool. Wait, really? I thought they were stickers. That painted band is the frit. Why the gradient dots instead of a solid line? Think about glass baking in direct sunlight. It gets hot at the edge. How does heat spread before baking the glass? Pause and guess... three, two, one. The black ceramic band helps hold the windshield in place and protects the glue from the sun. The fading dots act as a visual transition to hide the thick glue, while also helping manage the thermal transition between the hot ceramic band and the glass. Why does pineapple stop stinging? Drop your guess below. How does that black band protect the glass?",
     "voice_engine": "kokoro",
     "voices": "female host, male explainer",
@@ -1718,7 +1718,8 @@
     "repairs": 0,
     "audited": true,
     "video_id": "nnxCKv3odg4",
-    "publish_at": "2026-11-16T19:00:00-05:00"
+    "publish_at": "2026-11-16T19:00:00-05:00",
+    "answered": true
   },
   {
     "job": "20261114-1628-how-mosquitoes-pierce-your-skin-without-",
