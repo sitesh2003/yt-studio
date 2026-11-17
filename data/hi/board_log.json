@@ -252,5 +252,30 @@
   ],
   "not_drawn": {},
   "error": ""
+ },
+ {
+  "when": "2026-11-17 22:08",
+  "topic": "Why this entire carton of eggs has 2 yolks each",
+  "drawn": [
+   2,
+   3,
+   4,
+   5
+  ],
+  "not_drawn": {},
+  "error": ""
+ },
+ {
+  "when": "2026-11-17 22:35",
+  "topic": "Why Tuna Has Almost No Parasites While Salmon Is Full of Them",
+  "drawn": [
+   3,
+   4,
+   5
+  ],
+  "not_drawn": {
+   "2": "The sushi is labeled SALMON, but the red fish on top is tuna nigiri, and the arrow points to a fish labeled TUNA. The labels and food items are mismatched."
+  },
+  "error": ""
  }
 ]

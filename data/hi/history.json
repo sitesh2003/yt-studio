@@ -2497,5 +2497,253 @@
       "duration": 31.3
     },
     "repairs": 0
+  },
+  {
+    "job": "20261117-2200-why-this-entire-carton-of-eggs-has-2-yol",
+    "topic": "Why this entire carton of eggs has 2 yolks each",
+    "title": "How Sorting Machines Create Special Double Yolk Cartons 😱",
+    "description": "Ek hi carton ke har egg mein 2 yolks kaise milte hain? Dekhiye iska surprising science! #shorts #hindi #science\n\nSources (open-access research):\n- Navara et al. (2018), Poultry Science. doi:10.3382/ps/pey518\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nPhoto by Couleur on Pixabay\nPhoto by ds_30 on Pixabay\nPhoto: Content Provider(s): CDC / Dr. Joseph McDade, Public domain, via Wikimedia Commons\nVideo by matlevesque on Pixabay\n\nयह वीडियो कैसे बना: स्क्रिप्ट को AI tools की मदद से open research के आधार पर लिखा और fact-check किया गया है, आवाज़ AI voice की है, और editing open-source software से हुई है। कोई गलती दिखे तो comment में बताइए — जाँच कर सुधार करेंगे।",
+    "tags": [
+      "#shorts",
+      "#hindi",
+      "science"
+    ],
+    "hook": "Agar ek special carton mein lagbhag sabhi eggs ke 2 yolks niklein, toh kya hoga? 😱",
+    "status": "review",
+    "narration": "Agar ek special carton mein lagbhag sabhi eggs ke 2 yolks niklein, toh kya hoga? 😱 Yeh koi magic nahi hai, balki ek natural biological timing ka result hai. Jab ek young hen ka reproductive system abhi develop ho raha hota hai, toh woh kabhi-kabhi ek sath do yolks release kar deti hai. So agar ek poore carton mein sabhi eggs ke 2 yolks hain, toh kya woh ek hi hen se aaye hain? turn: So ek hi carton mein sabhi eggs double yolk wale kaise milte hain? Yeh grading machines ka kamaal hai! Candling process mein light se eggs ka andar ka size check hota hai. Heavy double yolk eggs ko alag sort karke ek hi carton mein pack kar diya jata hai. Kabhi socha hai, agar young hens hamesha double yolks nahi deti, toh yeh batch specially market mein kaise aata hai?",
+    "voice_engine": "edge-tts",
+    "voices": "one narrator (hi-IN-SwaraNeural)",
+    "diagrams": 1,
+    "series": "Food Whys",
+    "countdown": false,
+    "length_arm": "long",
+    "question": "Kabhi socha hai, agar young hens hamesha double yolks nahi deti, toh yeh batch specially market mein kaise aata hai?",
+    "answer_comment": "The answer: Young hens apne laying cycle ke shuruat mein kabhi-kabhi ek sath do yolks release karti hain. Egg grading machines aur candling process se in heavy double-yolk eggs ko normal eggs se alag pehchan kar ek hi carton mein pack kiya jata hai. Next time aisa carton mile, toh samajh lena yeh usi sorting ka result hai!\n\nSources (open-access research):\n- Navara et al. (2018), Poultry Science. doi:10.3382/ps/pey518",
+    "sources": [
+      {
+        "claim": "Double yolks are most common in young hens whose reproductive cycles are not yet fully synchronized.",
+        "cite": "Navara et al. (2018), Poultry Science. doi:10.3382/ps/pey518",
+        "doi": "10.3382/ps/pey518",
+        "title": "Frequent double ovipositions in two flocks of laying hens",
+        "why": "While double ovulations, resulting in the production of double-yolked eggs, does occur on occasion in young birds just entering reproductive maturity"
+      }
+    ],
+    "fact_check": [
+      "Double yolks are most common in young hens whose reproductive cycles are not yet fully synchronized.",
+      "Egg candling allows automated systems and workers to detect heavier double-yolk eggs by their density and shadow.",
+      "Commercial grading facilities can physically sort and group double-yolk eggs into specialty cartons."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        5.08
+      ],
+      [
+        5.08,
+        9.73
+      ],
+      [
+        9.73,
+        16.95
+      ],
+      [
+        16.95,
+        22.99
+      ],
+      [
+        22.99,
+        27.13
+      ],
+      [
+        27.13,
+        33.01
+      ],
+      [
+        33.01,
+        37.76
+      ],
+      [
+        37.76,
+        44.33
+      ]
+    ],
+    "duration": 44.33,
+    "scene_lines": [
+      "Agar ek special carton mein lagbhag sabhi eggs ke 2 yolks niklein, toh kya hoga? 😱",
+      "Yeh koi magic nahi hai, balki ek natural biological timing ka result hai.",
+      "Jab ek young hen ka reproductive system abhi develop ho raha hota hai, toh woh kabhi-kabhi ek sath do yolks release kar deti hai.",
+      "So agar ek poore carton mein sabhi eggs ke 2 yolks hain, toh kya woh ek hi hen se aaye hain?",
+      "turn: So ek hi carton mein sabhi eggs double yolk wale kaise milte hain?",
+      "Yeh grading machines ka kamaal hai! Candling process mein light se eggs ka andar ka size check hota hai.",
+      "Heavy double yolk eggs ko alag sort karke ek hi carton mein pack kar diya jata hai.",
+      "Kabhi socha hai, agar young hens hamesha double yolks nahi deti, toh yeh batch specially market mein kaise aata hai?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,050 --> 00:00:02,251\nAgar ek special carton mein lagbhag sabhi\n\n2\n00:00:02,251 --> 00:00:04,662\neggs ke 2 yolks niklein, toh kya hoga?\n\n3\n00:00:04,800 --> 00:00:06,826\nYeh koi magic nahi hai, balki ek\n\n4\n00:00:06,826 --> 00:00:09,396\nnatural biological timing ka result hai.\n\n5\n00:00:09,400 --> 00:00:11,656\nJab ek young hen ka reproductive system\n\n6\n00:00:11,656 --> 00:00:13,411\nabhi develop ho raha hota hai, toh\n\n7\n00:00:13,411 --> 00:00:16,447\nwoh kabhi-kabhi ek sath do yolks release kar deti hai.\n\n8\n00:00:16,620 --> 00:00:18,755\nSo agar ek poore carton mein sabhi\n\n9\n00:00:18,755 --> 00:00:20,264\neggs ke 2 yolks hain, toh kya\n\n10\n00:00:20,264 --> 00:00:22,151\nwoh ek hi hen se aaye hain?\n\n11\n00:00:22,360 --> 00:00:24,501\nturn: So ek hi carton mein sabhi\n\n12\n00:00:24,501 --> 00:00:26,720\neggs double yolk wale kaise milte hain?\n\n13\n00:00:26,880 --> 00:00:28,820\nYeh grading machines ka kamaal hai!\n\n14\n00:00:28,820 --> 00:00:30,833\nCandling process mein light se eggs ka\n\n15\n00:00:30,833 --> 00:00:32,650\nandar ka size check hota hai.\n\n16\n00:00:32,650 --> 00:00:34,557\nHeavy double yolk eggs ko alag sort\n\n17\n00:00:34,557 --> 00:00:37,275\nkarke ek hi carton mein pack kar diya jata hai.\n\n18\n00:00:37,390 --> 00:00:39,788\nKabhi socha hai, agar young hens hamesha\n\n19\n00:00:39,788 --> 00:00:41,365\ndouble yolks nahi deti,\n\n20\n00:00:41,436 --> 00:00:43,727\ntoh yeh batch specially market mein kaise aata hai?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [
+        "phrase missing from the audio: \"hain turn so ek hi\"",
+        "scene 4 (17.0-23.0 s): only 0% of its words can be heard - the voice breaks up or drops out",
+        "scene 5 (23.0-27.1 s): only 0% of its words can be heard - the voice breaks up or drops out",
+        "scene 6 (27.1-33.0 s): only 0% of its words can be heard - the voice breaks up or drops out",
+        "scene 7 (33.0-37.8 s): only 0% of its words can be heard - the voice breaks up or drops out",
+        "scene 8 (37.8-44.3 s): only 11% of its words can be heard - the voice breaks up or drops out"
+      ],
+      "footage": [],
+      "review": [],
+      "heard": [
+        "\"special\" heard as \"स्पेश्यल\"",
+        "\"eggs\" heard as \"एख्स\"",
+        "\"2 yolks niklein\" heard as \"तु योक्स निकले\"",
+        "\"magic nahi\" heard as \"माजिक नहीं\"",
+        "\"natural biological\" heard as \"नाच्रल बायोलोगिकल\"",
+        "\"result\" heard as \"रिजाल्त\"",
+        "\"reproductive system\" heard as \"रीप्रड़ाक्तिफ सिस्तम\"",
+        "\"develop\" heard as \"देएलाप\""
+      ],
+      "scene_heard": [
+        "scene 1: 71%",
+        "scene 2: 55%",
+        "scene 3: 36%",
+        "scene 4: 0%",
+        "scene 5: 0%",
+        "scene 6: 0%",
+        "scene 7: 0%",
+        "scene 8: 11%"
+      ],
+      "pass": false,
+      "duration": 43.8
+    },
+    "repairs": 0
+  },
+  {
+    "job": "20261117-2226-why-tuna-has-almost-no-parasites-while-s",
+    "topic": "Why Tuna Has Almost No Parasites While Salmon Is Full of Them",
+    "title": "Why Raw Tuna And Salmon Are Handled Differently 🤯",
+    "description": "Ever wondered about the parasites in salmon and tuna? Let's check the science of ocean life and safety. #shorts #hindi #science\n\nSources (open-access research):\n- JOHNSON (1980), Fish Pathology. doi:10.3147/jsfp.14.183\n- Ciezarek (2018), journal. doi:10.25560/73282\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nPhoto: chrstphre, BY 2.0, via Openverse (flickr)\nVideo by BlenderTimer on Pixabay\nVideo by Vimeo-Free-Videos on Pixabay\nVideo by XiaosKitchen on Pixabay\n\nयह वीडियो कैसे बना: स्क्रिप्ट को AI tools की मदद से open research के आधार पर लिखा और fact-check किया गया है, आवाज़ AI voice की है, और editing open-source software से हुई है। कोई गलती दिखे तो comment में बताइए — जाँच कर सुधार करेंगे।",
+    "tags": [
+      "tuna",
+      "salmon",
+      "parasites",
+      "ocean science",
+      "fish facts"
+    ],
+    "hook": "Salmon में parasites आम हैं, लेकिन tuna में भी parasites मिल सकते हैं।",
+    "status": "review",
+    "narration": "Salmon में parasites आम हैं, लेकिन tuna में भी parasites मिल सकते हैं। दोनों का lifestyle बिल्कुल अलग है। Salmon उथले coastal पानी में रहती है, जहां parasites आसानी से मिल जाते हैं। तो फिर tuna के साथ क्या अलग होता है? Tuna खुले समंदर में रहती है और बहुत ज़्यादा movement करती है, जिससे उसका जीवन चक्र अलग होता है। हालांकि कुछ tuna species आंशिक रूप से warm-blooded होती हैं, लेकिन यह उन्हें पूरी तरह सुरक्षित नहीं बनाता। Ever thought कि raw sushi में खाई जाने वाली मछलियों को कैसे सुरक्षित बनाया जाता है?",
+    "voice_engine": "edge-tts",
+    "voices": "one narrator (hi-IN-SwaraNeural)",
+    "diagrams": 1,
+    "series": "Animal Whys",
+    "countdown": false,
+    "length_arm": "short",
+    "question": "Ever thought कि raw sushi में खाई जाने वाली मछलियों को कैसे सुरक्षित बनाया जाता है?",
+    "answer_comment": "दोनों ही मछलियों में parasites हो सकते हैं, लेकिन आधुनिक फ्रीजिंग तकनीकों की वजह से इन्हें raw खाना सुरक्षित होता है। इसके उलट, salmon ठंडे और उथले coastal पानी में रहती है जहाँ parasites आसानी से उसके life cycle का हिस्सा बन जाते हैं। क्या आपने कभी sushi खाते समय इस बात पर गौर किया था?\n\nSources (open-access research):\n- JOHNSON (1980), Fish Pathology. doi:10.3147/jsfp.14.183\n- Ciezarek (2018), journal. doi:10.25560/73282",
+    "sources": [
+      {
+        "claim": "Salmon live part of their lives in coastal rivers and shallow waters where parasite transmission is very common.",
+        "cite": "JOHNSON (1980), Fish Pathology. doi:10.3147/jsfp.14.183",
+        "doi": "10.3147/jsfp.14.183",
+        "title": "Host Susceptibility, Histopathologic and Transmission Studies on Ceratomyxa shasta, a Myxosporidan Parasite of Salmonid Fish",
+        "why": "The distribution of sites in which fish become infected with C. shasta appears to be restricted to several river systems of the Pacific Northwest coast of the United States."
+      },
+      {
+        "claim": "Tuna exhibit regional endothermy (warm-bloodedness) which raises their body temperature compared to the surrounding water.",
+        "cite": "Ciezarek (2018), journal. doi:10.25560/73282",
+        "doi": "10.25560/73282",
+        "title": "Phylotranscriptomic investigation into the evolution of endothermy in fish",
+        "why": "Regional endothermy, where metabolically-derived heat is used to maintain elevated temperatures in parts of the body, has independently evolved in several lineages of pelagic, predatory fish, including billfish, tuna, lamnid sharks and the opah."
+      }
+    ],
+    "fact_check": [
+      "Tuna are pelagic fish that swim constantly in warm or open ocean waters, making them less prone to certain common parasites found in coastal fish.",
+      "Salmon live part of their lives in coastal rivers and shallow waters where parasite transmission is very common.",
+      "Tuna exhibit regional endothermy (warm-bloodedness) which raises their body temperature compared to the surrounding water."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        4.43
+      ],
+      [
+        4.43,
+        6.78
+      ],
+      [
+        6.78,
+        11.63
+      ],
+      [
+        11.63,
+        14.45
+      ],
+      [
+        14.45,
+        20.6
+      ],
+      [
+        20.6,
+        27.39
+      ],
+      [
+        27.39,
+        32.81
+      ]
+    ],
+    "duration": 32.81,
+    "scene_lines": [
+      "Salmon में parasites आम हैं, लेकिन tuna में भी parasites मिल सकते हैं।",
+      "दोनों का lifestyle बिल्कुल अलग है।",
+      "Salmon उथले coastal पानी में रहती है, जहां parasites आसानी से मिल जाते हैं।",
+      "तो फिर tuna के साथ क्या अलग होता है?",
+      "Tuna खुले समंदर में रहती है और बहुत ज़्यादा movement करती है, जिससे उसका जीवन चक्र अलग होता है।",
+      "हालांकि कुछ tuna species आंशिक रूप से warm-blooded होती हैं, लेकिन यह उन्हें पूरी तरह सुरक्षित नहीं बनाता।",
+      "Ever thought कि raw sushi में खाई जाने वाली मछलियों को कैसे सुरक्षित बनाया जाता है?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,050 --> 00:00:02,505\nSalmon में parasites आम हैं, लेकिन tuna\n\n2\n00:00:02,505 --> 00:00:04,907\nमें भी parasites मिल सकते हैं। दोनों\n\n3\n00:00:04,907 --> 00:00:07,649\nका lifestyle बिल्कुल अलग है। Salmon उथले\n\n4\n00:00:07,649 --> 00:00:09,997\ncoastal पानी में रहती है, जहां parasites\n\n5\n00:00:09,997 --> 00:00:12,106\nआसानी से मिल जाते हैं। तो फिर\n\n6\n00:00:12,106 --> 00:00:14,236\ntuna के साथ क्या अलग होता है?\n\n7\n00:00:14,450 --> 00:00:16,494\nTuna खुले समंदर में रहती है और\n\n8\n00:00:16,494 --> 00:00:18,842\nबहुत ज़्यादा movement करती है, जिससे उसका\n\n9\n00:00:18,842 --> 00:00:21,469\nजीवन चक्र अलग होता है। हालांकि कुछ\n\n10\n00:00:21,469 --> 00:00:24,085\ntuna species आंशिक रूप से warm-blooded होती\n\n11\n00:00:24,085 --> 00:00:27,261\nहैं, लेकिन यह उन्हें पूरी तरह सुरक्षित नहीं बनाता।\n\n12\n00:00:27,390 --> 00:00:29,226\nEver thought कि raw sushi में खाई\n\n13\n00:00:29,226 --> 00:00:32,213\nजाने वाली मछलियों को कैसे सुरक्षित बनाया जाता है?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [
+        "scene 1 (0.0-4.4 s): only 23% of its words can be heard - the voice breaks up or drops out",
+        "scene 2 (4.4-6.8 s): only 0% of its words can be heard - the voice breaks up or drops out",
+        "scene 4 (11.6-14.4 s): only 0% of its words can be heard - the voice breaks up or drops out",
+        "scene 5 (14.4-20.6 s): only 0% of its words can be heard - the voice breaks up or drops out",
+        "scene 6 (20.6-27.4 s): only 0% of its words can be heard - the voice breaks up or drops out"
+      ],
+      "footage": [],
+      "review": [],
+      "heard": [
+        "\"parasites आम हैं\" heard as \"पारसािथ साम हैगं\"",
+        "\"tuna में भी parasites मिल\" heard as \"चूना मेरी पारसाइथ स्मिल\"",
+        "\"हैं। दोनों का lifestyle बिल्कुल अलग\" heard as \"है दोनोका लाइस्टालबिलकुल रहग\"",
+        "\"उथले\" heard as \"उपले\"",
+        "\"tuna\" heard as \"चूना\"",
+        "\"अलग\" heard as \"ड़़ळ\"",
+        "\"tuna\" heard as \"चूना\"",
+        "\"समंदर में रहती\" heard as \"समदर मेरहती\""
+      ],
+      "scene_heard": [
+        "scene 1: 23%",
+        "scene 2: 0%",
+        "scene 3: 31%",
+        "scene 4: 0%",
+        "scene 5: 0%",
+        "scene 6: 0%",
+        "scene 7: 80%"
+      ],
+      "pass": false,
+      "duration": 32.2
+    },
+    "repairs": 0
   }
 ]
