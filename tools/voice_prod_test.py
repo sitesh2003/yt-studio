@@ -40,7 +40,7 @@ ok = ok and not issues
 print("caption words:", " ".join(f"{w['text']}@{w['start']:.2f}" for w in words[:12]))
 (ROOT / "research" / "voice_lab").mkdir(parents=True, exist_ok=True)
 shutil.copy(job / "voice.mp3", ROOT / "research" / "voice_lab" / "prod_test.mp3")
-# 17 Nov 2026: the owner's own voice speaking Hindi (Chatterbox multilingual, 1.3x)
+# Hindi with the channel's fixed voice (H14: Swara +18%)
 print("owner voice sample unlocked:", (ROOT / "assets" / "voice" / "owner.wav").exists())
 import json as _j
 hv = _j.loads((ROOT / "channels" / "hi.json").read_text(encoding="utf-8"))["voice"]
@@ -57,8 +57,9 @@ try:
     w3 = voice.narrate(HI, job3)
     print(f"hindi: engine {voice.last_engine}; {len(w3)} words; {w3[-1]['end']:.1f}s audio; {time.time() - t:.0f}s to make")
     shutil.copy(job3 / "voice.mp3", ROOT / "research" / "voice_lab" / "prod_test_hi.mp3")
-    if voice.last_engine != "chatterbox":
-        print("FAIL: Hindi fell back from Chatterbox")
+    want = hv.get("engine", "edge-tts")   # fixed 17 Nov 2026: Hindi = H14, Swara (Edge) at +18%
+    if voice.last_engine != want:
+        print(f"FAIL: Hindi read with {voice.last_engine}, expected {want}")
         ok = False
 except Exception as e:
     print(f"FAIL hindi: {type(e).__name__}: {e}")

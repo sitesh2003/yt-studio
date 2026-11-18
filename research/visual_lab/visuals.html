@@ -1,0 +1,115 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Visuals Samples</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Grotesk:wght@600;700&display=swap">
+<style>
+/* Light only (owner's rule): one reading column, each sample is a card with its clip, what it shows, and its source */
+:root {
+  --bg: #f6f7fb; --card: #ffffff; --fg: #141826; --muted: #474d64; --line: #d9dceb; --accent: #2b3fbf; --chip: #e7eaff;
+  --good: #136b3a; --bad: #a12020;
+  --display: "Space Grotesk", "Segoe UI", sans-serif; --text: "Inter", "Segoe UI", system-ui, sans-serif;
+  color-scheme: light;
+}
+body { background: var(--bg); color: var(--fg); font: 16px/1.55 var(--text); margin: 0; }
+main { max-width: 820px; margin: 0 auto; padding: 28px 16px 64px; display: grid; gap: 32px; }
+h1, h2, h3 { font-family: var(--display); text-wrap: balance; margin: 0; }
+h1 { font-size: 2rem; line-height: 1.15; }
+h2 { font-size: 1.35rem; margin-bottom: 6px; }
+h3 { font-size: 1.05rem; }
+p, ul { margin: 0; }
+.lead { color: var(--muted); display: grid; gap: 8px; max-width: 64ch; }
+.note { color: var(--muted); max-width: 64ch; margin-bottom: 12px; }
+.grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 14px; }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 12px; display: grid; gap: 8px; align-content: start; }
+video, .card img { width: 100%; height: auto; border-radius: 8px; background: #0e1220; display: block; }
+.tech { color: var(--muted); font-size: .88rem; }
+.tag { display: inline-block; font-weight: 600; font-size: .85rem; padding: 2px 10px; border-radius: 999px; }
+.ok { background: #e3f4ea; color: var(--good); }
+.no { background: #fbe6e6; color: var(--bad); }
+.box { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 16px; display: grid; gap: 8px; }
+.box ul { padding-left: 1.2em; display: grid; gap: 6px; }
+.pick { border: 2px solid var(--accent); }
+a { color: var(--accent); }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+</style>
+</head>
+<body>
+<main>
+<header class="lead">
+  <h1>Visuals samples</h1>
+  <p>Two ideas to make the videos look better, made as samples first. Nothing here is in the daily videos yet. Watch them, then tell Claude which to switch on.</p>
+  <p>The clips are silent. In a real video the narration and captions play over them, and the captions sit in the empty band under the picture.</p>
+</header>
+
+<section aria-labelledby="h-papers">
+  <h2 id="h-papers">1. Pictures from the real study</h2>
+  <p class="note">Figures taken from open-access papers whose own licence is CC BY or CC0, the only licences that allow use on a monetised channel. Each figure is cropped to one panel so it reads on a phone, with a slow push-in, and the credit stays on screen.</p>
+  <ul class="grid">
+    <li class="card">
+      <video controls muted playsinline preload="metadata" poster="fig_fingers_photo.jpg" aria-label="Sample: the real grip test from the wrinkly fingers study"><source src="fig_fingers_photo.mp4" type="video/mp4"></video>
+      <h3>Wrinkly fingers: the real test</h3>
+      <p>Under the line: “Scientists tested it: people gripped this sensor with dry, wet and wrinkly fingers.”</p>
+      <p class="tech">Davis, PLoS One 2021, CC BY 4.0, Fig 1. <a href="https://europepmc.org/article/PMC/PMC8294484">Open the paper</a></p>
+    </li>
+    <li class="card">
+      <video controls muted playsinline preload="metadata" poster="fig_dino_photo.jpg" aria-label="Sample: the injured dinosaur rib from the fossil study"><source src="fig_dino_photo.mp4" type="video/mp4"></video>
+      <h3>Dinosaur blood: the fossil</h3>
+      <p>Under the line: “The fossil: an injured dinosaur rib.” Fits the banked Short “Did Scientists Find Real Dinosaur Blood?”.</p>
+      <p class="tech">Mitchell et al., Sci Rep 2025, CC BY 4.0, Fig 1A, cropped. <a href="https://europepmc.org/search?query=Mitchell%20pathogenic%20rib%20vessel-like%20structures">Find the paper</a></p>
+    </li>
+    <li class="card">
+      <video controls muted playsinline preload="metadata" poster="fig_dino_ct.jpg" aria-label="Sample: 3D scan of vessel-like structures inside the fossil rib"><source src="fig_dino_ct.mp4" type="video/mp4"></video>
+      <h3>Dinosaur blood: the scan</h3>
+      <p>Under the line: “Inside it, a scan found vessel-like structures still in the bone.”</p>
+      <p class="tech">Mitchell et al., Sci Rep 2025, CC BY 4.0, Fig 3F, cropped.</p>
+    </li>
+  </ul>
+</section>
+
+<section aria-labelledby="h-limits">
+  <h2 id="h-limits">What the paper pictures can and cannot do</h2>
+  <div class="box">
+    <ul>
+      <li><span class="tag ok">Works</span> Biology, medicine, fossils, space photos: real photos, scans and simple diagrams from the study behind the fact.</li>
+      <li><span class="tag no">Does not</span> Physics and engineering topics (sirens, LEDs, GPS): the open paper library is life science, so searches return unrelated medical papers.</li>
+      <li><span class="tag no">Rejected</span> Lab-only figures (protein maps, gels, dense graphs), like the vaccine paper's figure: correct, but meaningless to a viewer. These need a check that throws them out.</li>
+      <li><span class="tag no">Refused by rule</span> Non-commercial (NC), no-derivatives (ND) and share-alike (SA) licences, and “free to read” papers with no open licence. The licence is read from the paper itself, not just the search listing.</li>
+    </ul>
+  </div>
+</section>
+
+<section aria-labelledby="h-stick">
+  <h2 id="h-stick">2. A new stick character</h2>
+  <p class="note">One character with real joints, so it moves between poses instead of swapping drawings: every move eases in and out with a small overshoot, the body breathes when still, the face changes with the line, and objects react (the marble slides off the smooth hand and stays in the wrinkly one).</p>
+  <ul class="grid">
+    <li class="card">
+      <video controls muted playsinline preload="metadata" poster="stick_marble.jpg" aria-label="Sample: stick character tries to pick up a wet marble, it slips, then grips it"><source src="stick_marble.mp4" type="video/mp4"></video>
+      <h3>The wet marble</h3>
+      <p>Points, reaches, the marble slips (shock), thinks, grips it with wrinkly fingers, waves.</p>
+      <p class="tech">6 seconds, drawn by code, no AI pictures.</p>
+    </li>
+    <li class="card">
+      <video controls muted playsinline preload="metadata" poster="stick_poses.jpg" aria-label="Sample: the stick character's poses: wave, think, point, shock, cheer"><source src="stick_poses.mp4" type="video/mp4"></video>
+      <h3>The poses</h3>
+      <p>Wave, think, point, shock, cheer, all one character moving between them.</p>
+      <p class="tech">8 poses so far; more can be added.</p>
+    </li>
+  </ul>
+  <div class="box">
+    <p><strong>Honest level:</strong> this is clean and consistent, and moves far better than still drawings, but it is not a professional animator's work. Hands, walking and objects being handled are the hard part; those would come next if you like the direction.</p>
+  </div>
+</section>
+
+<section aria-labelledby="h-pick">
+  <h2 id="h-pick">Your choice</h2>
+  <div class="box pick">
+    <p>Tell Claude one of these, or anything in between:</p>
+    <ul>
+      <li>“Paper pictures on” (biology, medicine, fossils and space videos only, one or two per video)</li>
+      <li>“Stick character on” (replaces the stick figures on the drawing board)</li>
+      <li>“Both on”, or what to change first</li>
+    </ul>
+  </div>
+</section>
+</main>
+</body>
+</html>
