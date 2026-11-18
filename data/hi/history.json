@@ -3454,5 +3454,348 @@
       "duration": 29.7
     },
     "repairs": 0
+  },
+  {
+    "job": "20261118-2137-why-the-emergency-space-blankets-used-by",
+    "topic": "Why the emergency space blankets used by trekkers and astronauts can keep you warm by reflecting 90% of your body heat",
+    "title": "Why Emergency Space Blankets Keep You Warm 🤯",
+    "description": "Ever wondered how a foil sheet thinner than hair keeps astronauts and trekkers warm in freezing conditions? Here is the surprising science behind it.\n\n#shorts #hindi #science\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nPhoto by Kanenori on Pixabay\nPhoto: Namugwere Betsy Norah, CC0 1.0, via Openverse (wordpress)\nPhoto: ubcmicromet, BY 2.0, via Openverse (flickr)\nVideo by NickyPe on Pixabay\n\nयह वीडियो कैसे बना: स्क्रिप्ट को AI tools की मदद से open research के आधार पर लिखा और fact-check किया गया है, आवाज़ AI voice की है, और editing open-source software से हुई है। कोई गलती दिखे तो comment में बताइए — जाँच कर सुधार करेंगे।",
+    "tags": [
+      "space blanket science",
+      "how things work"
+    ],
+    "hook": "A shiny space blanket can keep you alive in freezing snow.",
+    "status": "review",
+    "narration": "A shiny space blanket can keep you alive in freezing snow. Your body constantly radiates heat out into the cold air. That thin plastic sheet is coated with a microscopic layer of vaporized metal. So how does a sheet thinner than hair block the freeze? Because that shiny metal surface reflects about 90 percent of your radiated body heat right back to your skin. Ever thought why the orientation of the shiny side facing inward or outward doesn't actually matter?",
+    "voice_engine": "edge-tts",
+    "voices": "one narrator (hi-IN-SwaraNeural)",
+    "diagrams": 1,
+    "series": "How Things Work",
+    "countdown": false,
+    "length_arm": "short",
+    "question": "Ever thought why the orientation of the shiny side facing inward or outward doesn't actually matter?",
+    "answer_comment": "The answer: The shiny blanket blocks radiant heat transfer regardless of which way the shiny side faces, because the metal layer reflects infrared radiation equally well from either direction. Drop another question below if you want to know how space suits work!",
+    "sources": [],
+    "fact_check": [
+      "Emergency space blankets reflect about 90 percent of radiated body heat.",
+      "They are made of a thin plastic sheet coated with vaporized metal, typically aluminum."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        3.55
+      ],
+      [
+        3.55,
+        6.88
+      ],
+      [
+        6.88,
+        11.45
+      ],
+      [
+        11.45,
+        14.73
+      ],
+      [
+        14.73,
+        21.06
+      ],
+      [
+        21.06,
+        27.31
+      ]
+    ],
+    "duration": 27.31,
+    "scene_lines": [
+      "A shiny space blanket can keep you alive in freezing snow.",
+      "Your body constantly radiates heat out into the cold air.",
+      "That thin plastic sheet is coated with a microscopic layer of vaporized metal.",
+      "So how does a sheet thinner than hair block the freeze?",
+      "Because that shiny metal surface reflects about 90 percent of your radiated body heat right back to your skin.",
+      "Ever thought why the orientation of the shiny side facing inward or outward doesn't actually matter?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,050 --> 00:00:01,946\nA shiny space blanket can keep you\n\n2\n00:00:01,946 --> 00:00:03,499\nalive in freezing snow.\n\n3\n00:00:03,550 --> 00:00:06,851\nYour body constantly radiates heat out into the cold air.\n\n4\n00:00:06,880 --> 00:00:08,744\nThat thin plastic sheet is coated with\n\n5\n00:00:08,744 --> 00:00:11,240\na microscopic layer of vaporized metal.\n\n6\n00:00:11,450 --> 00:00:13,154\nSo how does a sheet thinner than\n\n7\n00:00:13,154 --> 00:00:14,543\nhair block the freeze?\n\n8\n00:00:14,730 --> 00:00:17,357\nBecause that shiny metal surface reflects about\n\n9\n00:00:17,357 --> 00:00:19,560\n90 percent of your radiated body heat\n\n10\n00:00:19,560 --> 00:00:21,008\nright back to your skin.\n\n11\n00:00:21,060 --> 00:00:23,018\nEver thought why the orientation of the\n\n12\n00:00:23,018 --> 00:00:26,713\nshiny side facing inward or outward doesn't actually matter?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [
+        "phrase missing from the audio: \"that thin plastic sheet is coated with a microscopic layer\"",
+        "phrase missing from the audio: \"so how does a sheet thinner than hair block the freeze because that shiny metal surface reflects about 90 percent of your radiated body heat right back to your skin ever thought why the orientation of the shiny side facing inward or outward doesn't actually matter\"",
+        "only 30% of the script is heard as written",
+        "scene 1 (0.0-3.5 s): only 0% of its words can be heard - the voice breaks up or drops out",
+        "scene 3 (6.9-11.5 s): only 0% of its words can be heard - the voice breaks up or drops out"
+      ],
+      "footage": [
+        "scene(s) [4] have weak or placeholder footage"
+      ],
+      "review": [
+        "Frame 2 contains an irrelevant and confusing close-up of electronic wiring, connectors, and ports, which does not match the narrator's explanation of body heat radiation."
+      ],
+      "heard": [
+        "\"a shiny space blanket can keep you alive in freezing snow your body constantly radiates\" heard as \"आर छिएँ\"",
+        "\"\" heard as \"सोडौक और भीरगत्राद़ींले कि आप याजी ब्र। of वेप राइसदार॥\"",
+        "\"into\" heard as \"लग गाए बूँद करनीगवार सेतों खेजार अगली नुशेद कोत काशे\"",
+        "\"cold\" heard as \"वेप पबभात भीरगत्रोटनी करनीच की नहींट के थी साझता\"",
+        "\"vaporized\" heard as \"\""
+      ],
+      "scene_heard": [
+        "scene 1: 0%",
+        "scene 2: 30%",
+        "scene 3: 0%",
+        "scene 4: 50%",
+        "scene 5: 94%",
+        "scene 6: 100%"
+      ],
+      "pass": false,
+      "duration": 26.8
+    },
+    "repairs": 0
+  },
+  {
+    "job": "20261118-2207-3-strange-everyday-objects-like-smoke-de",
+    "topic": "3 strange everyday objects like smoke detectors, old camera lenses, and vintage glow-in-the-dark clocks that secretly contain radioactive materials",
+    "title": "Common Household Items That Contain Radioactive Materials",
+    "description": "Kya aapko pata hai ki aapke ghar mein kuch aisi cheezein hain jo radioactive hain? Dekhiye ye surprising science!\n\n#shorts #hindi #science\n\nSources (open-access research):\n- Adhi et al. (2026), Urania Jurnal Ilmiah Daur Bahan Bakar Nuklir. doi:10.55981/urania.2026.14937\n- Nam (2023), Journal of Student Research. doi:10.47611/jsrhs.v12i4.5526\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nPhoto: Georg Pik, CC0, via Wikimedia Commons\nPhoto: bradleypjohnson, BY 2.0, via Openverse (flickr)\nVideo by SamuelFJohanns on Pixabay\nVideo by padrinan on Pixabay\nVideo by fotoblend on Pixabay\nVideo by kried_yang on Pixabay\nVideo by wastedgeneration on Pixabay\n\nयह वीडियो कैसे बना: स्क्रिप्ट को AI tools की मदद से open research के आधार पर लिखा और fact-check किया गया है, आवाज़ AI voice की है, और editing open-source software से हुई है। कोई गलती दिखे तो comment में बताइए — जाँच कर सुधार करेंगे।",
+    "tags": [
+      "radioactive everyday objects",
+      "science facts hindi"
+    ],
+    "hook": "Kuch everyday objects mein secretly *radioactive* materials hote hain, jaise ki ek purani glow-in-the-dark watch aur smoke detector.",
+    "status": "scheduled",
+    "narration": "Kuch everyday objects mein secretly *radioactive* materials hote hain, jaise ki ek purani glow-in-the-dark watch aur smoke detector. Jaise aapke ghar ke smoke detector mein air ko ionize karne ke liye americium use hota hai, aur purani glow-in-the-dark watches mein radium ka istemal hota tha. Aur wo purane vintage cameras, jinke glass mein sharpness ke liye thorium mix kiya gaya tha, wo bhi usi watch ki tarah hain. So ye cheezein itni dangerous kyun nahi lagti? Turn: Toh phir ye *radiation* aapko harm kyun nahi karti? Kyunki inka amount extremely small hota hai aur casing radiation ko block kar deti hai. Kabhi socha hai ki purane glow-in-the-dark clocks mein konsa element use hota tha jo ab ban hai?",
+    "voice_engine": "edge-tts",
+    "voices": "one narrator (hi-IN-SwaraNeural)",
+    "diagrams": 1,
+    "series": "Everyday Whys",
+    "countdown": false,
+    "length_arm": "standard",
+    "question": "Kabhi socha hai ki purane glow-in-the-dark clocks mein konsa element use hota tha jo ab ban hai?",
+    "answer_comment": "The answer: Purane glow-in-the-dark clocks mein radium use hota tha, jisse wo andhere mein chamakte the. Ye ek radioactive element hai jo baad mein health risks ki wajah se ban kar diya gaya. Aapko kya lagta hai ki aisi aur konsi cheezein hongi?\n\nSources (open-access research):\n- Adhi et al. (2026), Urania Jurnal Ilmiah Daur Bahan Bakar Nuklir. doi:10.55981/urania.2026.14937\n- Nam (2023), Journal of Student Research. doi:10.47611/jsrhs.v12i4.5526",
+    "sources": [
+      {
+        "claim": "Smoke detectors contain a tiny amount of americium-241 to ionize air.",
+        "cite": "Adhi et al. (2026), Urania Jurnal Ilmiah Daur Bahan Bakar Nuklir. doi:10.55981/urania.2026.14937",
+        "doi": "10.55981/urania.2026.14937",
+        "title": "Comparative Study of Radiation Hardness in Semiconductor Materials (Si, SiC, GaN, Diamond) for Americium-241 Waste-Based Nuclear Batteries",
+        "why": "Using Americium-241 (Am-241) radioactive waste from spent smoke detectors as an alpha-voltaic energy source provides a long-term power solution for sensors in extreme environments."
+      },
+      {
+        "claim": "Old glow-in-the-dark watches and clocks used radium-226 before it was banned for safety.",
+        "cite": "Nam (2023), Journal of Student Research. doi:10.47611/jsrhs.v12i4.5526",
+        "doi": "10.47611/jsrhs.v12i4.5526",
+        "title": "The Radium Girls’ Eternal Glow: Politics, Gender, and Malpractice in the American Radium Industry",
+        "why": "One of the largest radium corporations was the United States Radium Corporation which employed thousands of young girls in New Jersey and Illinois to paint radium watches for the U.S. military."
+      }
+    ],
+    "fact_check": [
+      "Smoke detectors contain a tiny amount of americium-241 to ionize air.",
+      "Some vintage camera lenses used thorium oxide in the glass for optical properties.",
+      "Old glow-in-the-dark watches and clocks used radium-226 before it was banned for safety."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        7.59
+      ],
+      [
+        7.59,
+        16.48
+      ],
+      [
+        16.48,
+        23.4
+      ],
+      [
+        23.4,
+        26.66
+      ],
+      [
+        26.66,
+        30.19
+      ],
+      [
+        30.19,
+        35.5
+      ],
+      [
+        35.5,
+        41.5
+      ]
+    ],
+    "duration": 41.5,
+    "scene_lines": [
+      "Kuch everyday objects mein secretly *radioactive* materials hote hain, jaise ki ek purani glow-in-the-dark watch aur smoke detector.",
+      "Jaise aapke ghar ke smoke detector mein air ko ionize karne ke liye americium use hota hai, aur purani glow-in-the-dark watches mein radium ka istemal hota tha.",
+      "Aur wo purane vintage cameras, jinke glass mein sharpness ke liye thorium mix kiya gaya tha, wo bhi usi watch ki tarah hain.",
+      "So ye cheezein itni dangerous kyun nahi lagti?",
+      "Turn: Toh phir ye *radiation* aapko harm kyun nahi karti?",
+      "Kyunki inka amount extremely small hota hai aur casing radiation ko block kar deti hai.",
+      "Kabhi socha hai ki purane glow-in-the-dark clocks mein konsa element use hota tha jo ab ban hai?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,050 --> 00:00:03,313\nKuch everyday objects mein secretly *radioactive* materials\n\n2\n00:00:03,313 --> 00:00:05,789\nhote hain, jaise ki ek purani glow-in-the-dark\n\n3\n00:00:05,789 --> 00:00:07,458\nwatch aur smoke detector.\n\n4\n00:00:07,590 --> 00:00:09,868\nJaise aapke ghar ke smoke detector mein\n\n5\n00:00:09,868 --> 00:00:11,976\nair ko ionize karne ke liye americium\n\n6\n00:00:11,976 --> 00:00:14,415\nuse hota hai, aur purani glow-in-the-dark watches\n\n7\n00:00:14,415 --> 00:00:16,480\nmein radium ka istemal hota tha.\n\n8\n00:00:16,480 --> 00:00:19,013\nAur wo purane vintage cameras, jinke glass\n\n9\n00:00:19,013 --> 00:00:20,856\nmein sharpness ke liye thorium mix kiya\n\n10\n00:00:20,856 --> 00:00:23,213\ngaya tha, wo bhi usi watch ki tarah hain.\n\n11\n00:00:23,400 --> 00:00:26,427\nSo ye cheezein itni dangerous kyun nahi lagti?\n\n12\n00:00:26,660 --> 00:00:30,038\nTurn: Toh phir ye *radiation* aapko harm kyun nahi karti?\n\n13\n00:00:30,190 --> 00:00:32,912\nKyunki inka amount extremely small hota hai\n\n14\n00:00:32,912 --> 00:00:35,440\naur casing radiation ko block kar deti hai.\n\n15\n00:00:35,500 --> 00:00:38,221\nKabhi socha hai ki purane glow-in-the-dark clocks\n\n16\n00:00:38,221 --> 00:00:40,898\nmein konsa element use hota tha jo ab ban hai?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [],
+      "footage": [],
+      "review": [],
+      "heard": [
+        "\"everyday\" heard as \"everday\"",
+        "\"mein\" heard as \"me\"",
+        "\"hain\" heard as \"hai\"",
+        "\"mein\" heard as \"me\"",
+        "\"americium\" heard as \"amarishim\"",
+        "\"mein\" heard as \"me\"",
+        "\"jinke\" heard as \"dinke\"",
+        "\"mein\" heard as \"me\""
+      ],
+      "scene_heard": [
+        "scene 1: 86%",
+        "scene 2: 86%",
+        "scene 3: 83%",
+        "scene 4: 62%",
+        "scene 5: 80%",
+        "scene 6: 92%",
+        "scene 7: 89%"
+      ],
+      "pass": true,
+      "duration": 40.9
+    },
+    "repairs": 0,
+    "audited": true,
+    "video_id": "XeQkO2M3sew",
+    "publish_at": "2026-11-19T09:30:00-05:00",
+    "thumbnail_set": true
+  },
+  {
+    "job": "20261118-2241-why-black-tea-undergoes-full-oxidation-t",
+    "topic": "Why black tea undergoes full oxidation to turn dark while green and white tea stay light from the same exact plant leaves",
+    "title": "Why Black Tea Turns Dark 🤯",
+    "description": "Ever wonder how green, white, and black tea come from the exact same plant? Here is the surprising science of oxidation. #shorts #science #food\n\nSources (open-access research):\n- Wu et al. (2026), Food Science and Human Wellness. doi:10.26599/fshw.2025.9250866\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nPhoto by seinfuchs on Pixabay\nPhoto by yangjoy999 on Pixabay\nPhoto: Douglas P Perkins, CC BY 3.0, via Wikimedia Commons\nPhoto: Stewart, BY 2.0, via Openverse (flickr)\nPhoto: shankar s.  from Dubai, united arab emirates, CC BY 2.0, via Wikimedia Commons\n\nयह वीडियो कैसे बना: स्क्रिप्ट को AI tools की मदद से open research के आधार पर लिखा और fact-check किया गया है, आवाज़ AI voice की है, और editing open-source software से हुई है। कोई गलती दिखे तो comment में बताइए — जाँच कर सुधार करेंगे।",
+    "tags": [
+      "tea oxidation",
+      "science of tea",
+      "how tea is made"
+    ],
+    "hook": "Green, white, and black tea all come from the exact same plant leaves.",
+    "status": "review",
+    "narration": "Green, white, and black tea all come from the exact same plant leaves. Pick a fresh leaf and it is packed with clear juices and natural enzymes. If you heat the leaves right away to kill the enzymes, the leaves stay light green. But for black tea, workers crush those leaves to break open the cell walls completely. That lets oxygen rush in and mix freely with the exposed plant juices inside. So why does that process turn the crushed leaf dark? It triggers enzymatic browning, converting polyphenols into dark pigments called theaflavins and thearubigins. Ever thought what happens if you crush finished green tea leaves and leave them out? Drop your guess below.",
+    "voice_engine": "edge-tts",
+    "voices": "one narrator (hi-IN-SwaraNeural)",
+    "diagrams": 1,
+    "series": "Food Whys",
+    "countdown": false,
+    "length_arm": "short",
+    "question": "Ever thought what happens if you crush finished green tea leaves and leave them out? Drop your guess below.",
+    "answer_comment": "The answer: If you crush finished green tea leaves, they will not turn dark brown because the heat-processing step already destroyed the enzymes needed for that reaction. Got a question about your favorite food? Ask below.\n\nSources (open-access research):\n- Wu et al. (2026), Food Science and Human Wellness. doi:10.26599/fshw.2025.9250866",
+    "sources": [
+      {
+        "claim": "Oxidation converts colorless polyphenols into dark pigments like theaflavins and therubigins in black tea.",
+        "cite": "Wu et al. (2026), Food Science and Human Wellness. doi:10.26599/fshw.2025.9250866",
+        "doi": "10.26599/fshw.2025.9250866",
+        "title": "Research advancements on the biomimetic generation and stability strategies of theaflavins: from mechanisms, synthesis influencing factors to encapsulation with nanomaterials",
+        "why": "Theaflavins (TFs), natural orange-red tea pigments formed during tea fermentation and characterized by a benzophenone structure..."
+      }
+    ],
+    "fact_check": [
+      "Green, white, and black tea all come from the Camellia sinensis plant.",
+      "Crushing tea leaves breaks cell walls and allows enzymes to react with oxygen (oxidation).",
+      "Oxidation converts colorless polyphenols into dark pigments like theaflavins and therubigins in black tea."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        4.49
+      ],
+      [
+        4.49,
+        8.69
+      ],
+      [
+        8.69,
+        13.13
+      ],
+      [
+        13.13,
+        18.04
+      ],
+      [
+        18.04,
+        22.92
+      ],
+      [
+        22.92,
+        26.14
+      ],
+      [
+        26.14,
+        32.67
+      ],
+      [
+        32.67,
+        38.69
+      ]
+    ],
+    "duration": 38.69,
+    "scene_lines": [
+      "Green, white, and black tea all come from the exact same plant leaves.",
+      "Pick a fresh leaf and it is packed with clear juices and natural enzymes.",
+      "If you heat the leaves right away to kill the enzymes, the leaves stay light green.",
+      "But for black tea, workers crush those leaves to break open the cell walls completely.",
+      "That lets oxygen rush in and mix freely with the exposed plant juices inside.",
+      "So why does that process turn the crushed leaf dark?",
+      "It triggers enzymatic browning, converting polyphenols into dark pigments called theaflavins and thearubigins.",
+      "Ever thought what happens if you crush finished green tea leaves and leave them out? Drop your guess below."
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,050 --> 00:00:02,303\nGreen, white, and black tea all come\n\n2\n00:00:02,303 --> 00:00:04,439\nfrom the exact same plant leaves.\n\n3\n00:00:04,490 --> 00:00:05,835\nPick a fresh leaf and it is\n\n4\n00:00:05,835 --> 00:00:08,690\npacked with clear juices and natural enzymes.\n\n5\n00:00:08,690 --> 00:00:10,290\nIf you heat the leaves right away\n\n6\n00:00:10,290 --> 00:00:12,984\nto kill the enzymes, the leaves stay light green.\n\n7\n00:00:13,130 --> 00:00:15,320\nBut for black tea, workers crush those\n\n8\n00:00:15,320 --> 00:00:18,017\nleaves to break open the cell walls completely.\n\n9\n00:00:18,040 --> 00:00:20,010\nThat lets oxygen rush in and mix\n\n10\n00:00:20,010 --> 00:00:22,750\nfreely with the exposed plant juices inside.\n\n11\n00:00:22,920 --> 00:00:25,980\nSo why does that process turn the crushed leaf dark?\n\n12\n00:00:26,140 --> 00:00:29,571\nIt triggers enzymatic browning, converting polyphenols into\n\n13\n00:00:29,571 --> 00:00:32,649\ndark pigments called theaflavins and thearubigins.\n\n14\n00:00:32,670 --> 00:00:34,573\nEver thought what happens if you crush\n\n15\n00:00:34,573 --> 00:00:36,947\nfinished green tea leaves and leave them out?\n\n16\n00:00:36,960 --> 00:00:38,093\nDrop your guess below.\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [
+        "only 39% of the script is heard as written",
+        "scene 3 (8.7-13.1 s): only 0% of its words can be heard - the voice breaks up or drops out",
+        "scene 4 (13.1-18.0 s): only 0% of its words can be heard - the voice breaks up or drops out",
+        "scene 5 (18.0-22.9 s): only 0% of its words can be heard - the voice breaks up or drops out",
+        "scene 6 (22.9-26.1 s): only 0% of its words can be heard - the voice breaks up or drops out",
+        "scene 7 (26.1-32.7 s): only 0% of its words can be heard - the voice breaks up or drops out",
+        "scene 8 (32.7-38.7 s): only 0% of its words can be heard - the voice breaks up or drops out"
+      ],
+      "footage": [
+        "scene(s) [5, 7] have weak or placeholder footage"
+      ],
+      "review": [],
+      "heard": [
+        "\"and black tea all\" heard as \"और ब्लाग्टी आल\"",
+        "\"and it is\" heard as \"आन दिस\"",
+        "\"clear juices and natural enzymes if you heat the leaves right away to kill the enzymes the leaves stay light green but for black tea workers crush those leaves to break open the cell walls completely that lets oxygen rush\" heard as \"ख्लिए जूएस\"",
+        "\"and mix freely with the exposed plant juices inside so why does that process turn the crushed leaf dark it triggers enzymatic browning converting polyphenols into dark pigments called theaflavins and thearubigins ever thought what happens if you crush finished green tea leaves and leave them out drop your guess below\" heard as \"नाच्रल इन्जाइम्स। आन ब्लाग्टी अन श्वाँप्रुम प्रुम जाएस प्रुम आन प्रुम आन ब्लाग्टी आच्टीच।\""
+      ],
+      "scene_heard": [
+        "scene 1: 69%",
+        "scene 2: 38%",
+        "scene 3: 0%",
+        "scene 4: 0%",
+        "scene 5: 0%",
+        "scene 6: 0%",
+        "scene 7: 0%",
+        "scene 8: 0%"
+      ],
+      "pass": false,
+      "duration": 38.1
+    },
+    "repairs": 0
   }
 ]

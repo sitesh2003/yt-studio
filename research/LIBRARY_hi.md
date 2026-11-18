@@ -3,6 +3,17 @@
 Every video, the claims it makes, and the open-access research behind them. Built automatically by
 agents/library.py; a source is listed only if its abstract was checked to support the claim.
 
+## Common Household Items That Contain Radioactive Materials
+*2026-11-18 · Everyday Whys*
+
+- Smoke detectors contain a tiny amount of americium-241 to ionize air.
+- Some vintage camera lenses used thorium oxide in the glass for optical properties.
+- Old glow-in-the-dark watches and clocks used radium-226 before it was banned for safety.
+
+Sources:
+- Adhi et al. (2026), Urania Jurnal Ilmiah Daur Bahan Bakar Nuklir. doi:10.55981/urania.2026.14937 — supports: Smoke detectors contain a tiny amount of americium-241 to ionize air.
+- Nam (2023), Journal of Student Research. doi:10.47611/jsrhs.v12i4.5526 — supports: Old glow-in-the-dark watches and clocks used radium-226 before it was banned for safety.
+
 ## How Deep Ocean Snow Moves Carbon 🌊
 *2026-11-17 · Ocean Whys*
 

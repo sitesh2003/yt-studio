@@ -125,5 +125,30 @@
         "claim": "Multi-layer insulation (MLI) is standard for spacecraft and satellite thermal control to combat extreme space temperatures."
       }
     ]
+  },
+  {
+    "job": "20261118-2207-3-strange-everyday-objects-like-smoke-de",
+    "date": "2026-11-18",
+    "title": "Common Household Items That Contain Radioactive Materials",
+    "topic": "3 strange everyday objects like smoke detectors, old camera lenses, and vintage glow-in-the-dark clocks that secretly contain radioactive materials",
+    "series": "Everyday Whys",
+    "weekly": false,
+    "claims": [
+      "Smoke detectors contain a tiny amount of americium-241 to ionize air.",
+      "Some vintage camera lenses used thorium oxide in the glass for optical properties.",
+      "Old glow-in-the-dark watches and clocks used radium-226 before it was banned for safety."
+    ],
+    "sources": [
+      {
+        "cite": "Adhi et al. (2026), Urania Jurnal Ilmiah Daur Bahan Bakar Nuklir. doi:10.55981/urania.2026.14937",
+        "doi": "10.55981/urania.2026.14937",
+        "claim": "Smoke detectors contain a tiny amount of americium-241 to ionize air."
+      },
+      {
+        "cite": "Nam (2023), Journal of Student Research. doi:10.47611/jsrhs.v12i4.5526",
+        "doi": "10.47611/jsrhs.v12i4.5526",
+        "claim": "Old glow-in-the-dark watches and clocks used radium-226 before it was banned for safety."
+      }
+    ]
   }
 ]
