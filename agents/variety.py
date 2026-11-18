@@ -68,7 +68,11 @@ def hook_issue(hook, window=6, limit=3):
 # "Honey is famous for being one of the only natural foods that never truly spoils" 37% stayed, 191 views;
 # "Fresh pineapple is literally eating you back" 58%, "Your fingers prune in water, but it is not because..." 65%).
 _KNOWN = re.compile(r"\b(is|are) (famous|known|well known|renowned) for\b|\bone of the only\b|\byou (probably|may) (already )?know\b|"
-                    r"\b(everyone|we all) knows?\b|\bhave you ever (wondered|noticed)\b|\bin this video\b", re.I)
+                    r"\b(everyone|we all) knows?\b|\b(have you )?ever (wondered|noticed)\b|\bin this video\b", re.I)
+# 18 Nov 2026, our numbers: openings that ask the title's own question or set up a scene lost the swipe
+# ("Your car swerves off the highway..." 16% stayed, 105 views; "Drop an apple or pear..." 25%, 302 views),
+# while stated surprises held 50-65% and got 1,000-1,500 views. The answer-shaped claim goes first.
+_ASKS_TITLE = re.compile(r"^\s*(why|how) (do|does|did|is|are|can|could|would)\b.*\?\s*$", re.I)
 
 
 def hook_weak(hook, max_words=12, max_sentence=20):
@@ -81,6 +85,10 @@ def hook_weak(hook, max_words=12, max_sentence=20):
     if _KNOWN.search(first):
         return (f"the first sentence opens with something viewers already know (\"{first}\"): open with the surprising, "
                 "true twist instead, in under 12 words, aimed at the viewer (e.g. 'Fresh pineapple is literally eating you back.')")
+    if _ASKS_TITLE.match(first):
+        return (f"the first sentence only asks the title's question (\"{first}\"): viewers already read that in the title and "
+                "swipe. State the surprising true answer-shaped claim instead, in under 12 words "
+                "(e.g. 'This shark is older than the United States.')")
     if c > max_words or n > max_sentence:
         return (f"the first sentence is too slow (\"{first[:90]}\"): viewers decide to stay or swipe in about 2 seconds, "
                 f"so the surprise must land within the first {max_words} words (before any comma) and the whole sentence "

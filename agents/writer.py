@@ -378,14 +378,17 @@ def write_script(topic, recap=None, fix=None):
 Channel: {ch['niche']}. Tone: {ch['voice_tone']}. {_language_rule()}
 Topic: {topic}
 What has worked on this channel: {learn.get('summary', 'no data yet')}
+Where viewers LEFT our past videos (second-by-second retention, follow these): {(read_json(DATA / 'retention_lessons.json', {}) or {}).get('lessons') or 'no data yet'}
 Mistakes this channel's checkers already caught (never repeat these): {[l['text'] for l in (read_json(DATA / 'lessons.json', []) or [])][-15:] or 'none yet'}
 {playbook.brief()}
 
 Rules:
 - About {words} words of narration in total ({secs} seconds when spoken). Short is strong:
   the biggest science Shorts run about 40 seconds, and a Short people finish gets shown to more people.
-- The first line is the hook and must land in under 2 seconds: a surprising claim, a question, or a
-  pattern interrupt. No "Did you know", no "In this video", no greeting.
+- The first line is the hook and must land in under 2 seconds: a surprising TRUE statement, never a
+  question that repeats the title and never a scene set-up ("Your car swerves...", "Drop an apple...",
+  "Ever noticed..."). Our numbers (18 Nov 2026): set-ups kept 16-25% and got about 100-300 views; stated
+  surprises kept 50-65% and got 1,000-1,500. No "Did you know", no "In this video", no greeting.
   Our own numbers (16 Nov 2026): openings that state a TRUE surprise about the viewer or the object in
   under 12 words kept the most viewers ("Fresh pineapple is literally eating you back." 58% stayed; "Your
   fingers prune in water, but it is not because you are absorbing it like a sponge." 65%). Openings that
