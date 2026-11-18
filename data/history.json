@@ -3004,7 +3004,7 @@
       "car crash science"
     ],
     "hook": "That steel box on the guardrail isn't welded on.",
-    "status": "banked",
+    "status": "scheduled",
     "narration": "That steel box on the guardrail isn't welded on. If solidly attached without a breakaway design, a crashing car could be impaled by the rigid rail. Instead, this terminal box sits loose over the rail. Impact forces push the head sliding along the beam. Think how forced metal absorbs motion. Pause and guess... three, two, one. Here's why: the sliding head forces the steel rail to bend and curl away from the road. This metal deformation acts like a giant brake, slowing your car safely. Yesterday's answer: your ulnar nerve runs close to the bone with very little fat or muscle to pad it! Nobody cracked it, try today's! Ever thought how steel guardrails can curl like paper without snapping?",
     "voice_engine": "chatterbox",
     "voices": "one narrator (af_heart)",
@@ -3094,7 +3094,10 @@
       "duration": 34.1
     },
     "repairs": 1,
-    "audited": true
+    "audited": true,
+    "video_id": "TQ2oyk_3U2o",
+    "publish_at": "2026-11-19T12:00:00-05:00",
+    "thumbnail_set": true
   },
   {
     "job": "20261116-1813-scientists-just-found-dinosaur-blood-tha",

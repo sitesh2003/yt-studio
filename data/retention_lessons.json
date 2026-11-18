@@ -1,22 +1,21 @@
 {
   "lessons": [
-    "Deliver a hook that defines a 'mystery' or 'defensive purpose' immediately: videos with direct, curiosity-inducing statements (e.g., 'eating you back', 'Why Tuna Meat Is Red Meat') maintain higher retention than vague descriptive intros.",
-    "Eliminate slow, expository transitions: the biggest drops occur when lines describe basic processes (e.g., 'When maple trees wake up') rather than immediate conflict or stakes.",
-    "Prioritize high-stakes, long-term intrigue: the 'Greenland shark' video (the best performer) focuses on an extreme biological paradox (centuries-old life), suggesting viewers stay longer for 'impossible' science than 'everyday' science.",
-    "Avoid repetitive phrasing: videos that restate the premise or use identical lines early (e.g., 'Why Do Potatoes Sprout') suffer from sharper drops at the 25-30% mark.",
-    "Focus on the 'Why' over the 'How': audience retention holds higher when the content focuses on the evolution or 'why' behind a phenomenon rather than a dry mechanical explanation of 'how' it works.",
-    "Keep hooks under 10 seconds: the highest retention scores correlate with videos where the hook is completed before the 10% mark, minimizing the risk of drop-off during the initial transition."
+    "High-performing hooks use extreme comparisons or surprising scale (e.g., Shark older than the US reached 185.1% retention at 10%; Tuna vs. Cod contrast reached 121.7%).",
+    "Avoid wordy, dense explanations immediately after the hook; dropping into heavy percentages or chemistry at ~10% timestamp causes major viewer drop-off (e.g., Garlic lost 34.2% at 0.10, Maple Syrup lost 34.8% at 0.10).",
+    "Never pause for viewer interaction; explicit prompts like 'Pause and guess...' cause direct viewer drop-off (lost 8.7% at 52% in Maple Syrup).",
+    "Avoid asking late-stage rhetorical questions or abstract prompts (e.g., 'Ever thought why...' questions caused end-video drops in Cold Water and Fruits Float; 'Now think about what happens...' dropped 10.4% in Prune Fingers).",
+    "Visual contrast topics hold viewers significantly better through the middle than abstract anatomical explanations (Tuna vs. Cod held 65.8% at 50%, while Prune Fingers dropped to 19.2% at 50%)."
   ],
   "worst_moment_types": [
-    "Long-winded definitions of biological processes.",
-    "Repetitive phrasing of the initial premise within the first 30% of the video.",
-    "Transition lines that feel like a lecture (e.g., 'In fact, dead skin cells...').",
-    "Pacing lulls before the core 'reveal' happens."
+    "Immediate post-hook technical exposition and percentage stats (e.g., Maple Syrup, Garlic)",
+    "Engagement bait and forced pauses (e.g., 'Pause and guess...')",
+    "Abstract thought experiments or meta-prompts (e.g., 'Now think about what happens...')",
+    "Late-video rhetorical setup questions (e.g., 'Ever thought why...')"
   ],
   "best_hook_types": [
-    "Action-oriented conflict (e.g., 'Fresh pineapple is eating you back').",
-    "Extreme contrast (e.g., 'Tuna vs Cod' or 'Shark older than the US').",
-    "Counter-intuitive facts that challenge a common assumption (e.g., 'Ice water doesn't stop spice')."
+    "Extreme historical/scale comparisons (e.g., 'This shark is older than the United States')",
+    "Direct visual side-by-side paradoxes (e.g., 'A bluefin tuna and a cod are both fish, but their meat looks like two completely different animals')",
+    "Visceral, personified action claims (e.g., 'Fresh pineapple is literally eating you back')"
   ],
   "studied": "2026-11-18",
   "videos": 12

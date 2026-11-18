@@ -1,20 +1,15 @@
 {
-  "summary": [
-    "High-view and high-stayed videos (top third: Bxp7r8IzbiY, 4LJjIxeP_dY, 80jyJN1A1y8) rely on direct, counterintuitive statements that instantly challenge everyday assumptions.",
-    "Bottom-third videos by views and stayed_pct (such as nnxCKv3odg4 and 3HaBsuVSlmA) often suffer from overly conversational or rhetorical first sentences that fail to establish immediate factual tension.",
-    "Winning titles use concise 'Why [Subject] [Action/State]' phrasing paired with relevant emojis, avoiding generic clickbait questions like 'Ever noticed...?'",
-    "Hook wording that avoids setup fluff and delivers a declarative shocker ('Your fingers prune in water, but it is not because...') secures significantly higher retention.",
-    "Video length matters: severely underperforming or newly stalled outliers tend to drift past 30-50 seconds, whereas top performers maintain tight pacing."
-  ],
+  "summary": "1. High-stayed hooks open with an aggressive paradox, myth-debunk, or alarming punchline within the first 6 words rather than setting up a scenario. 2. Winning titles use active, visceral verbs and strong visual metaphors (e.g., 'Pineapples Eat You Back') rather than passive passive explanations. 3. Topic focus must center on personal body quirks or extreme sensory oddities rather than industrial objects or passive food production steps. 4. Videos under 25 seconds with 55%+ stayed rate outperform longer videos because they maintain concise pacing without filler setup sentences. 5. Opening lines containing rhetorical questions or slow storytelling ('Your car swerves...', 'Ever noticed...') trigger immediate swipes.",
   "winning_hooks": [
-    "Your fingers prune in water, but it is not because you are absorbing it like a sponge.",
-    "Your eyes are leaking right now, and your brain is hiding it.",
-    "Fresh pineapple is literally eating you back."
+    "Direct Myth Contradiction: State the common belief and immediately shatter it (e.g., 'Your fingers prune in water, but it is not because you are absorbing it like a sponge.')",
+    "Visceral Threat / Personification: Frame everyday items aggressively (e.g., 'Fresh pineapple is literally eating you back.')",
+    "Shocking Historical Anchor: Use extreme comparisons instead of exact measurements (e.g., 'This shark is older than the United States.')"
   ],
   "avoid": [
-    "Starting hooks with rhetorical questions like 'Ever noticed those tiny black dots...?' or 'Your car swerves off the highway...'",
-    "Prolonged setups or descriptive statements that delay the core counterintuitive fact beyond the first 10 words.",
-    "Failing to match the title's punchiness with an equally aggressive opening sentence."
+    "Preamble storytelling and scenario setups (e.g., 'Your car swerves off the highway...', 'Drop an apple or pear...')",
+    "Generic rhetorical opening questions (e.g., 'Ever noticed those tiny black dots...')",
+    "Dry textbook facts and definitions without emotional stakes (e.g., 'Honey is famous for being one of the only natural foods...')",
+    "Long, wordy explanatory hooks with scientific clauses (e.g., 'Garlic usually doesn't make you cry... because its defense chemicals work differently...')"
   ],
-  "next_experiment": "A/B test two hooks on the exact same topic: Version A uses a direct counterintuitive declaration ('X does not happen because of Y'), while Version B uses a rhetorical question ('Why does X happen?'), measuring which achieves a higher stayed_pct above 60%."
+  "next_experiment": "Test Hook Frame A (Direct Paradox/Threat: 'Your stomach acid can dissolve steel, but it doesn't destroy you') vs Hook Frame B (Scenario Setup: 'Inside your body right now is an acid strong enough to melt metal') keeping video visual and title identical."
 }
