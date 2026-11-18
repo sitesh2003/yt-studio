@@ -1783,7 +1783,7 @@
       "marine science"
     ],
     "hook": "Ever thought why deep ocean snow helps cycle carbon?",
-    "status": "scheduled",
+    "status": "public",
     "narration": "Ever thought why deep ocean snow helps cycle carbon? Ye ocean snow aslında dead plankton aur organic waste ke tiny flakes hain jo surface se sink karte hain. Jaise hi ye particles deep ocean me sink karte hain, ye apne andar organic carbon ko carry karte hain. So how are scientists measuring this carbon movement? Wo deep sea traps aur underwater sensors use karke actual sinking rate calculate karte hain. Aur data batata hai ki ye process surface ocean se carbon ko deep waters tak export karta hai. Ever thought why this natural pump matters so much for our climate?",
     "voice_engine": "edge-tts",
     "voices": "one narrator (hi-IN-SwaraNeural)",
@@ -1881,7 +1881,9 @@
     "audited": true,
     "video_id": "z9bREBUgT40",
     "publish_at": "2026-11-18T09:30:00-05:00",
-    "thumbnail_set": true
+    "thumbnail_set": true,
+    "recapped": true,
+    "answered": true
   },
   {
     "job": "20261117-1114-why-120-ton-freight-locomotives-carry-hi",
@@ -3097,5 +3099,360 @@
       "duration": 46.8
     },
     "repairs": 1
+  },
+  {
+    "job": "20261118-1802-why-yogurt-stops-bad-bacteria-from-growi",
+    "topic": "Why yogurt stops bad bacteria from growing while fresh milk spoils in days",
+    "title": "Why Fresh Milk Spoils While Yogurt Lasts 🤯",
+    "description": "Ever wondered why yogurt can sit in your fridge for weeks without going bad? It's all about what's happening at the microscopic level. #shorts #science #food\n\nSources (open-access research):\n- Correa et al. (2021), Current Research in Nutrition and Food Science Journal. doi:10.12944/crnfsj.9.3.30\n\nPhoto by NIL-Foto on Pixabay\nPhoto by TheDigitalArtist on Pixabay\nPhoto by surotez9 on Pixabay\nPhoto: Benoît Prieur, CC0, via Wikimedia Commons\nPhoto: Korinna, CC BY 4.0, via Wikimedia Commons\nPhoto: unknown, CC0 1.0, via Openverse (rawpixel)\nVideo by Matthias_Groeneveld on Pixabay\nVideo by Vimeo-Free-Videos on Pixabay\nVideo by SimplehadaStudio on Pixabay\n\nयह वीडियो कैसे बना: स्क्रिप्ट को AI tools की मदद से open research के आधार पर लिखा और fact-check किया गया है, आवाज़ AI voice की है, और editing open-source software से हुई है। कोई गलती दिखे तो comment में बताइए — जाँच कर सुधार करेंगे।",
+    "tags": [
+      "science",
+      "food"
+    ],
+    "hook": "Your fresh milk spoils in just 3 days, but yogurt can last for weeks in your fridge.",
+    "status": "review",
+    "narration": "Your fresh milk spoils in just 3 days, but yogurt can last for weeks in your fridge. In fresh milk, bacteria like to throw a party, multiplying until the milk is completely ruined. But yogurt starts with a different guest list: friendly bacteria that actually eat the milk's sugar, lactose. So, how do these tiny bugs keep the bad guys out? turn: true. Here's why. These friendly bacteria create lactic acid, which makes the whole yogurt super acidic. Most bad bacteria can't handle that acid and they simply can't survive in it. Ever thought why this natural pump matters so much for our climate? Marine snow effectively transports carbon into the deep ocean. Nobody got that one right yet, so here is your chance. Ever thought why some cheeses can last even longer than yogurt in your kitchen? Drop your guess below.",
+    "voice_engine": "edge-tts",
+    "voices": "one narrator (hi-IN-SwaraNeural)",
+    "diagrams": 1,
+    "series": "Food Whys",
+    "countdown": false,
+    "length_arm": "long",
+    "question": "Ever thought why some cheeses can last even longer than yogurt in your kitchen?",
+    "answer_comment": "The answer: Cheese lasts longer because it undergoes a more intense fermentation and dehydration process. By removing even more water and creating an even more acidic or salty environment, it becomes an almost impossible place for bad bacteria to survive. Do you think adding more salt would preserve other foods too?\n\nSources (open-access research):\n- Correa et al. (2021), Current Research in Nutrition and Food Science Journal. doi:10.12944/crnfsj.9.3.30",
+    "sources": [
+      {
+        "claim": "Lactic acid bacteria convert lactose into lactic acid, lowering the pH.",
+        "cite": "Correa et al. (2021), Current Research in Nutrition and Food Science Journal. doi:10.12944/crnfsj.9.3.30",
+        "doi": "10.12944/crnfsj.9.3.30",
+        "title": "Fermentation Parameters of Suero Costeño Elaborated with Lactic Acid Bacteria Strains",
+        "why": "It was found that the percentage of lactose decreased progressively during the hours of fermentation... on the other hand, the pH, which is a limiting factor in the fermentation process, was reported to have a considerable reduction in the samples with L. lactis in comparison with L. paracasei"
+      }
+    ],
+    "fact_check": [
+      "Fresh milk typically spoils within 3-7 days due to bacterial proliferation.",
+      "Yogurt is produced by bacterial fermentation of milk using starter cultures.",
+      "Lactic acid bacteria convert lactose into lactic acid, lowering the pH.",
+      "The acidic environment (low pH) inhibits the growth of spoilage-causing and pathogenic bacteria."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        4.91
+      ],
+      [
+        4.91,
+        10.65
+      ],
+      [
+        10.65,
+        17.06
+      ],
+      [
+        17.06,
+        20.56
+      ],
+      [
+        20.56,
+        27.75
+      ],
+      [
+        27.75,
+        32.19
+      ],
+      [
+        32.19,
+        43.28
+      ],
+      [
+        43.28,
+        49.35
+      ]
+    ],
+    "duration": 49.35,
+    "scene_lines": [
+      "Your fresh milk spoils in just 3 days, but yogurt can last for weeks in your fridge.",
+      "In fresh milk, bacteria like to throw a party, multiplying until the milk is completely ruined.",
+      "But yogurt starts with a different guest list: friendly bacteria that actually eat the milk's sugar, lactose.",
+      "So, how do these tiny bugs keep the bad guys out?",
+      "turn: true. Here's why. These friendly bacteria create lactic acid, which makes the whole yogurt super acidic.",
+      "Most bad bacteria can't handle that acid and they simply can't survive in it.",
+      "Ever thought why this natural pump matters so much for our climate? Marine snow effectively transports carbon into the deep ocean. Nobody got that one right yet, so here is your chance.",
+      "Ever thought why some cheeses can last even longer than yogurt in your kitchen? Drop your guess below."
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": "z9bREBUgT40",
+    "captions_srt": "1\n00:00:00,050 --> 00:00:01,904\nYour fresh milk spoils in just 3\n\n2\n00:00:01,904 --> 00:00:04,817\ndays, but yogurt can last for weeks in your fridge.\n\n3\n00:00:04,910 --> 00:00:07,029\nIn fresh milk, bacteria like to throw\n\n4\n00:00:07,029 --> 00:00:10,580\na party, multiplying until the milk is completely ruined.\n\n5\n00:00:10,650 --> 00:00:12,652\nBut yogurt starts with a different guest\n\n6\n00:00:12,652 --> 00:00:16,978\nlist: friendly bacteria that actually eat the milk's sugar, lactose.\n\n7\n00:00:17,060 --> 00:00:19,079\nSo, how do these tiny bugs keep\n\n8\n00:00:19,079 --> 00:00:20,402\nthe bad guys out?\n\n9\n00:00:20,560 --> 00:00:21,688\nturn: true.\n\n10\n00:00:21,760 --> 00:00:22,750\nHere's why.\n\n11\n00:00:22,750 --> 00:00:25,550\nThese friendly bacteria create lactic acid, which\n\n12\n00:00:25,550 --> 00:00:27,750\nmakes the whole yogurt super acidic.\n\n13\n00:00:27,750 --> 00:00:30,133\nMost bad bacteria can't handle that acid\n\n14\n00:00:30,133 --> 00:00:32,163\nand they simply can't survive in it.\n\n15\n00:00:32,190 --> 00:00:34,469\nEver thought why this natural pump matters\n\n16\n00:00:34,469 --> 00:00:36,002\nso much for our climate?\n\n17\n00:00:36,090 --> 00:00:39,750\nMarine snow effectively transports carbon into the deep ocean.\n\n18\n00:00:39,750 --> 00:00:41,824\nNobody got that one right yet, so\n\n19\n00:00:41,824 --> 00:00:43,229\nhere is your chance.\n\n20\n00:00:43,280 --> 00:00:45,338\nEver thought why some cheeses can last\n\n21\n00:00:45,338 --> 00:00:47,534\neven longer than yogurt in your kitchen?\n\n22\n00:00:47,620 --> 00:00:48,753\nDrop your guess below.\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [
+        "phrase missing from the audio: \"for weeks in your fridge in fresh milk bacteria like\"",
+        "phrase missing from the audio: \"the milk's sugar lactose so how do these tiny\"",
+        "only 34% of the script is heard as written",
+        "scene 6 (27.8-32.2 s): only 0% of its words can be heard - the voice breaks up or drops out",
+        "scene 7 (32.2-43.3 s): only 12% of its words can be heard - the voice breaks up or drops out",
+        "scene 8 (43.3-49.4 s): only 0% of its words can be heard - the voice breaks up or drops out"
+      ],
+      "footage": [],
+      "review": [
+        "Frame 7 introduces an off-topic question about marine snow and climate, completely unrelated to milk, yogurt, or food science discussed in the previous frames."
+      ],
+      "heard": [
+        "\"your fresh milk spoils in just 3 days but yogurt\" heard as \"यो प्रे श्वीलक स्पैलग श्विलसा और थी तुझगर्त से ये और ज़ा में भीचा से भी ठीचा नहीं तूउट्या के बाक्टेर्या लािक में तुफरे शादपद्य के भार्टीटाने क्या\"",
+        "\"\" heard as \"बाट्टीझ क्या कکो लिक करे बड़ियोगर्ट स्वट्स दब दिखच्ट\"",
+        "\"throw a party multiplying until\" heard as \"आख्चुली इट\"",
+        "\"is completely ruined but yogurt starts with a different guest list friendly bacteria that actually\" heard as \"सुगर लक्तोज जो जो आप\"",
+        "\"guys out turn true here's why these friendly bacteria create lactic acid which makes the whole yogurt super acidic most bad bacteria can't handle that acid and they simply can't survive in it ever thought why this natural pump matters so much for our climate marine snow effectively transports carbon into the deep ocean nobody got that one right yet so here is your chance ever thought why some cheeses can last even longer than yogurt in your kitchen drop your guess below\" heard as \"गईस अबताद\""
+      ],
+      "scene_heard": [
+        "scene 1: 100%",
+        "scene 2: 93%",
+        "scene 3: 75%",
+        "scene 4: 82%",
+        "scene 5: 100%",
+        "scene 6: 0%",
+        "scene 7: 12%",
+        "scene 8: 0%"
+      ],
+      "pass": false,
+      "duration": 48.8
+    },
+    "repairs": 0
+  },
+  {
+    "job": "20261118-1838-scientists-just-found-nasa-s-ozone-hole-",
+    "topic": "Scientists just found NASA's ozone hole has grown to a size not seen in a decade",
+    "title": "Understanding The Seasonal Ozone Hole Cycle",
+    "description": "Why Antarctica's ozone hole changes size every year. Discover the science behind the seasonal stratospheric shifts. #shorts #hindi #science\n\nSources (open-access research):\n- Stone et al. (2021), Geophysical Research Letters. doi:10.1029/2021gl095232\n- Lee et al. (2001), Journal of Geophysical Research Atmospheres. doi:10.1029/2000jd900398\n- Laube et al. (2016), Atmospheric chemistry and physics. doi:10.5194/acp-16-15347-2016\n\nMaps: Natural Earth (public domain)\nPhoto: NASA, Public domain, via Wikimedia Commons\nVideo by Gylfi on Pixabay\nVideo by Kaffeesüchtig on Pixabay\nVideo by TonyDias7 on Pixabay\nVideo by LAWJR on Pixabay\nVideo by dianakuehn30010 on Pixabay",
+    "tags": [
+      "ozone hole",
+      "nasa",
+      "environment"
+    ],
+    "hook": "Antarctica ke upar har saal ozone hole banta hai, jo ki CFCs jaise man-made chemicals ki wajah se hota hai.",
+    "status": "review",
+    "narration": "Antarctica ke upar har saal ozone hole banta hai, jo ki CFCs jaise man-made chemicals ki wajah se hota hai. Iska size har saal weather patterns aur temperatures ke hisaab se badalta rehta hai. CFCs par ban lagne ke baad ozone layer dheere-dheere recover ho rahi hai, lekin yeh ek lambi aur gradual process hai. Is healing process ke beech, har saal natural variations ki wajah se iske size mein badlav dikhta hai. Asal mein, Antarctica ke extreme cold mein banne wale clouds, purane ozone-depleting chemicals (CFCs) ke saath reaction karke ozone ko todte hain. Yeh growth temporary hoti hai, jo har saal atmospheric conditions aur polar vortex par depend karti hai. Kabhi socha hai ki Antarctica ke upar hi ozone hole sabse zyada kyun banta hai?",
+    "voice_engine": "edge-tts",
+    "voices": "one narrator (hi-IN-SwaraNeural)",
+    "diagrams": 1,
+    "series": "How Things Work",
+    "countdown": false,
+    "length_arm": "standard",
+    "question": "Kabhi socha hai ki Antarctica ke upar hi ozone hole sabse zyada kyun banta hai?",
+    "answer_comment": "The answer: Global chemicals (CFCs) Antarctica ke extreme cold temperatures aur polar vortex winds ki wajah se wahan clouds bante hain jo ozone-destroying chemical reactions ko fast kar dete hain. Yeh natural weather pattern har saal is hole ke size ko temporary badha deta hai, jabki long-term mein ozone layer heal ho rahi hai.\n\nSources (open-access research):\n- Stone et al. (2021), Geophysical Research Letters. doi:10.1029/2021gl095232\n- Lee et al. (2001), Journal of Geophysical Research Atmospheres. doi:10.1029/2000jd900398\n- Laube et al. (2016), Atmospheric chemistry and physics. doi:10.5194/acp-16-15347-2016",
+    "sources": [
+      {
+        "claim": "NASA reported that the ozone hole reached sizes among the largest on record in recent years.",
+        "cite": "Stone et al. (2021), Geophysical Research Letters. doi:10.1029/2021gl095232",
+        "doi": "10.1029/2021gl095232",
+        "title": "On Recent Large Antarctic Ozone Holes and Ozone Recovery Metrics",
+        "why": "The 2015 and 2020 ozone holes set record sizes in October-December."
+      },
+      {
+        "claim": "The Antarctic ozone hole is heavily influenced by polar stratospheric clouds and temperatures.",
+        "cite": "Lee et al. (2001), Journal of Geophysical Research Atmospheres. doi:10.1029/2000jd900398",
+        "doi": "10.1029/2000jd900398",
+        "title": "The impact of the mixing properties within the Antarctic stratospheric vortex on ozone loss in spring",
+        "why": "First, warmer temperatures in the broad ring prevent continuous polar stratospheric cloud (PSC) formation and the associated chemical processing (i.e., the conversion of unreactive chlorine into reactive forms)."
+      },
+      {
+        "claim": "CFCs are banned globally under the Montreal Protocol.",
+        "cite": "Laube et al. (2016), Atmospheric chemistry and physics. doi:10.5194/acp-16-15347-2016",
+        "doi": "10.5194/acp-16-15347-2016",
+        "title": "Tropospheric observations of CFC-114 and CFC-114a with a focus on long-term trends and emissions",
+        "why": "A global ban on consumption came into force in 2010, but there is evidence of continuing emissions of certain CFCs from a range of sources."
+      }
+    ],
+    "fact_check": [
+      "NASA reported that the ozone hole reached sizes among the largest on record in recent years.",
+      "The Antarctic ozone hole is heavily influenced by polar stratospheric clouds and temperatures.",
+      "CFCs are banned globally under the Montreal Protocol."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        7.01
+      ],
+      [
+        7.01,
+        11.7
+      ],
+      [
+        11.7,
+        18.74
+      ],
+      [
+        18.74,
+        24.61
+      ],
+      [
+        24.61,
+        33.61
+      ],
+      [
+        33.61,
+        39.47
+      ],
+      [
+        39.47,
+        45.01
+      ]
+    ],
+    "duration": 45.01,
+    "scene_lines": [
+      "Antarctica ke upar har saal ozone hole banta hai, jo ki CFCs jaise man-made chemicals ki wajah se hota hai.",
+      "Iska size har saal weather patterns aur temperatures ke hisaab se badalta rehta hai.",
+      "CFCs par ban lagne ke baad ozone layer dheere-dheere recover ho rahi hai, lekin yeh ek lambi aur gradual process hai.",
+      "Is healing process ke beech, har saal natural variations ki wajah se iske size mein badlav dikhta hai.",
+      "Asal mein, Antarctica ke extreme cold mein banne wale clouds, purane ozone-depleting chemicals (CFCs) ke saath reaction karke ozone ko todte hain.",
+      "Yeh growth temporary hoti hai, jo har saal atmospheric conditions aur polar vortex par depend karti hai.",
+      "Kabhi socha hai ki Antarctica ke upar hi ozone hole sabse zyada kyun banta hai?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,050 --> 00:00:03,351\nAntarctica ke upar har saal ozone hole banta hai,\n\n2\n00:00:03,461 --> 00:00:05,655\njo ki CFCs jaise man-made chemicals ki\n\n3\n00:00:05,655 --> 00:00:06,890\nwajah se hota hai.\n\n4\n00:00:07,010 --> 00:00:09,213\nIska size har saal weather patterns aur\n\n5\n00:00:09,213 --> 00:00:11,700\ntemperatures ke hisaab se badalta rehta hai.\n\n6\n00:00:11,700 --> 00:00:13,988\nCFCs par ban lagne ke baad ozone\n\n7\n00:00:13,988 --> 00:00:16,269\nlayer dheere-dheere recover ho rahi hai, lekin\n\n8\n00:00:16,269 --> 00:00:18,627\nyeh ek lambi aur gradual process hai.\n\n9\n00:00:18,740 --> 00:00:20,812\nIs healing process ke beech, har saal\n\n10\n00:00:20,812 --> 00:00:23,100\nnatural variations ki wajah se iske size\n\n11\n00:00:23,100 --> 00:00:24,484\nmein badlav dikhta hai.\n\n12\n00:00:24,610 --> 00:00:26,999\nAsal mein, Antarctica ke extreme cold mein\n\n13\n00:00:26,999 --> 00:00:31,097\nbanne wale clouds, purane ozone-depleting chemicals (CFCs)\n\n14\n00:00:31,097 --> 00:00:33,561\nke saath reaction karke ozone ko todte hain.\n\n15\n00:00:33,610 --> 00:00:35,407\nYeh growth temporary hoti hai,\n\n16\n00:00:35,464 --> 00:00:37,643\njo har saal atmospheric conditions aur polar\n\n17\n00:00:37,643 --> 00:00:39,355\nvortex par depend karti hai.\n\n18\n00:00:39,470 --> 00:00:41,837\nKabhi socha hai ki Antarctica ke upar\n\n19\n00:00:41,837 --> 00:00:44,415\nhi ozone hole sabse zyada kyun banta hai?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [],
+      "footage": [],
+      "review": [
+        "Frame sequence order is incorrect compared to standard narrative flow; Frame 1 shows an update/diagram while later frames show a polar bear and wind/snow, but overall visual-to-audio matching shows a continuity error in the video's editing structure where Frame 5 has caption 'CLOUDS PURANE' which is grammatically broken/unnatural Hindi-English mix ('purane' instead of 'purane chemicals' or weird phrasing)."
+      ],
+      "heard": [
+        "\"antarctica\" heard as \"अन्ताक्टीका\"",
+        "\"man made chemicals\" heard as \"मैंमेट केमिकल्स\"",
+        "\"patterns\" heard as \"पाटरन्स\"",
+        "\"temperatures\" heard as \"तेमप्रिच्योस\"",
+        "\"layer\" heard as \"लेया\"",
+        "\"recover\" heard as \"रखावा\"",
+        "\"lambi\" heard as \"लंभी\"",
+        "\"gradual process\" heard as \"ग्राज्वल प्रोसेस\""
+      ],
+      "scene_heard": [
+        "scene 1: 79%",
+        "scene 2: 85%",
+        "scene 3: 74%",
+        "scene 4: 88%",
+        "scene 5: 78%",
+        "scene 6: 73%",
+        "scene 7: 67%"
+      ],
+      "pass": false,
+      "duration": 44.5
+    },
+    "repairs": 2
+  },
+  {
+    "job": "20261118-1926-why-are-toasters-actually-electrified-in",
+    "topic": "Why are toasters actually electrified inside their slots and how do they avoid shocking you?",
+    "title": "The Hidden Engineering Inside Your Toaster 🤯",
+    "description": "Toaster slots have bare electric wires inside, yet touching them doesn't always shock you. Here is the hidden engineering keeping your breakfast safe. #shorts #hindi #science\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nPhoto by IdeaTivas-TLM on Pixabay\nVideo by LynX_BGW on Pixabay\nVideo by SamuelFJohanns on Pixabay\nVideo by crows on Pixabay\n\nयह वीडियो कैसे बना: स्क्रिप्ट को AI tools की मदद से open research के आधार पर लिखा और fact-check किया गया है, आवाज़ AI voice की है, और editing open-source software से हुई है। कोई गलती दिखे तो comment में बताइए — जाँच कर सुधार करेंगे।",
+    "tags": [
+      "science",
+      "engineering",
+      "electricity"
+    ],
+    "hook": "Toaster slots में bare metal heating elements होते हैं, जो सीधे electrified होते हैं।",
+    "status": "review",
+    "narration": "Toaster slots में bare metal heating elements होते हैं, जो सीधे electrified होते हैं। जब आप metal fork अंदर डालते हैं, तो circuit complete हो जाता है। लेकिन plastic levers और mica boards आपको live current से बचाते हैं। So जब bread अंदर जाती है, तो actual में क्या होता है? Spring-loaded mechanism bread को coils से दूर, center में hold करता है। और safety guards touch होने से रोकते हैं। Ever thought why a toaster doesn't trip your house breaker the second you push it down? Drop your guess below.",
+    "voice_engine": "edge-tts",
+    "voices": "one narrator (hi-IN-SwaraNeural)",
+    "diagrams": 1,
+    "series": "How Things Work",
+    "countdown": false,
+    "length_arm": "long",
+    "question": "Ever thought why a toaster doesn't trip your house breaker the second you push it down? Drop your guess below.",
+    "answer_comment": "The answer: A standard toaster uses high-resistance nichrome wire that draws a controlled amount of current, usually around 10 amps, which is well below the typical 15 or 20-amp limit of a standard home circuit breaker. The electrical resistance limits the current flow so it operates safely without overloading the house wiring. Have another appliance you are curious about? Ask below!",
+    "sources": [],
+    "fact_check": [
+      "Toasters contain bare nichrome wire heating elements that carry mains electricity.",
+      "Mica boards and plastic parts provide internal electrical insulation.",
+      "Spring mechanisms keep the bread centered and away from touching the live heating elements directly under normal operation."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        4.97
+      ],
+      [
+        4.97,
+        8.98
+      ],
+      [
+        8.98,
+        13.37
+      ],
+      [
+        13.37,
+        17.05
+      ],
+      [
+        17.05,
+        21.22
+      ],
+      [
+        21.22,
+        23.93
+      ],
+      [
+        23.93,
+        30.3
+      ]
+    ],
+    "duration": 30.3,
+    "scene_lines": [
+      "Toaster slots में bare metal heating elements होते हैं, जो सीधे electrified होते हैं।",
+      "जब आप metal fork अंदर डालते हैं, तो circuit complete हो जाता है।",
+      "लेकिन plastic levers और mica boards आपको live current से बचाते हैं।",
+      "So जब bread अंदर जाती है, तो actual में क्या होता है?",
+      "Spring-loaded mechanism bread को coils से दूर, center में hold करता है।",
+      "और safety guards touch होने से रोकते हैं।",
+      "Ever thought why a toaster doesn't trip your house breaker the second you push it down? Drop your guess below."
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,050 --> 00:00:02,328\nToaster slots में bare metal heating elements\n\n2\n00:00:02,328 --> 00:00:04,936\nहोते हैं, जो सीधे electrified होते हैं।\n\n3\n00:00:04,970 --> 00:00:07,195\nजब आप metal fork अंदर डालते हैं,\n\n4\n00:00:07,195 --> 00:00:09,414\nतो circuit complete हो जाता है। लेकिन\n\n5\n00:00:09,414 --> 00:00:11,851\nplastic levers और mica boards आपको live\n\n6\n00:00:11,851 --> 00:00:13,202\ncurrent से बचाते हैं।\n\n7\n00:00:13,370 --> 00:00:15,228\nSo जब bread अंदर जाती है, तो\n\n8\n00:00:15,228 --> 00:00:16,827\nactual में क्या होता है?\n\n9\n00:00:17,050 --> 00:00:19,772\nSpring-loaded mechanism bread को coils से दूर,\n\n10\n00:00:19,772 --> 00:00:21,909\ncenter में hold करता है। और safety\n\n11\n00:00:21,909 --> 00:00:23,864\nguards touch होने से रोकते हैं।\n\n12\n00:00:23,930 --> 00:00:26,065\nEver thought why a toaster doesn't trip\n\n13\n00:00:26,065 --> 00:00:28,494\nyour house breaker the second you push it down?\n\n14\n00:00:28,570 --> 00:00:29,703\nDrop your guess below.\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [
+        "phrase missing from the audio: \"ever thought why a toaster doesn't trip your house breaker the second you push it down drop your guess below\"",
+        "scene 7 (23.9-30.3 s): only 0% of its words can be heard - the voice breaks up or drops out"
+      ],
+      "footage": [
+        "scene(s) [7] have weak or placeholder footage"
+      ],
+      "review": [],
+      "heard": [
+        "\"elements\" heard as \"एलमेंस\"",
+        "\"fork\" heard as \"फोक\"",
+        "\"circuit complete\" heard as \"सर्कित कमठीट\"",
+        "\"है।\" heard as \"हैं\"",
+        "\"boards\" heard as \"बोध्स\"",
+        "\"live current से\" heard as \"लाइप करन्चे\"",
+        "\"so जब\" heard as \"तो सोजब\"",
+        "\"है\" heard as \"हैं\""
+      ],
+      "scene_heard": [
+        "scene 1: 93%",
+        "scene 2: 73%",
+        "scene 3: 67%",
+        "scene 4: 70%",
+        "scene 5: 67%",
+        "scene 6: 62%",
+        "scene 7: 0%"
+      ],
+      "pass": false,
+      "duration": 29.7
+    },
+    "repairs": 0
   }
 ]

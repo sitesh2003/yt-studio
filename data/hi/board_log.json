@@ -315,5 +315,41 @@
   ],
   "not_drawn": {},
   "error": ""
+ },
+ {
+  "when": "2026-11-18 18:12",
+  "topic": "Why yogurt stops bad bacteria from growing while fresh milk spoils in days",
+  "drawn": [
+   2,
+   3,
+   4,
+   5
+  ],
+  "not_drawn": {},
+  "error": ""
+ },
+ {
+  "when": "2026-11-18 18:47",
+  "topic": "Scientists just found NASA's ozone hole has grown to a size not seen in a decade",
+  "drawn": [
+   2,
+   3,
+   4,
+   5
+  ],
+  "not_drawn": {},
+  "error": ""
+ },
+ {
+  "when": "2026-11-18 19:36",
+  "topic": "Why are toasters actually electrified inside their slots and how do they avoid shocking yo",
+  "drawn": [
+   2,
+   3,
+   4,
+   5
+  ],
+  "not_drawn": {},
+  "error": ""
  }
 ]
