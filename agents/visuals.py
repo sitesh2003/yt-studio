@@ -427,16 +427,108 @@ def _fallback(path, seconds, idx):
          "-t", f"{seconds:.2f}", "-vf", f"hue=h={hue}", "-c:v", "libx264", "-pix_fmt", "yuv420p", str(path)])
 
 
+def _eso_ids(kind, query, n):
+    import re
+    html = _get(f"https://www.eso.org/public/{kind}/list/1/", params={"search": query[:80]}).text
+    ids = []
+    for m in re.findall(rf'/public/{kind}/((?:eso|potw|ann|cs)[0-9a-z]+)/', html):
+        if m not in ids:
+            ids.append(m)
+    return ids[:n]
+
+
+def _eso_page(kind, oid):
+    """(title, exact credit line) from an ESO item page. ESO's licence (CC BY 4.0) requires the FULL
+    credit line, unaltered and visible, so it is read from the page, never made up."""
+    import html as H
+    import re
+    page = _get(f"https://www.eso.org/public/{kind}/{oid}/").text
+    title = H.unescape((re.findall(r"<title>([^<|]*)", page) or [""])[0]).strip()
+    cred = re.findall(r'Credit:</strong>.*?<div class="credit">(.*?)</div>', page, re.S)
+    cred = re.sub(r"\s+", " ", H.unescape(re.sub(r"<[^>]+>", " ", cred[0]))).strip() if cred else ""
+    return title, cred, page
+
+
+def _eso_video_candidates(query):
+    """ESO (European Southern Observatory): professional astronomy animations and telescope footage,
+    CC BY 4.0. Full ESOcast episodes are skipped (narration + licensed music, credit runs a paragraph);
+    the short artist animations with a short credit line are what fits a Short. Videos are used silent."""
+    import re
+    out = []
+    ids = _eso_ids("videos", query, 16)
+    ids = [i for i in ids if not i.endswith("a")] + [i for i in ids if i.endswith("a")]   # b, c, d... are the short clips
+    for oid in ids[:8]:
+        if len(out) >= 3:
+            break
+        try:
+            title, cred, page = _eso_page("videos", oid)
+        except Exception:
+            continue
+        low = cred.lower()
+        # only ESO's own clips (an item credited to NAOJ alone may carry another licence), no episodes, no music
+        if (not cred or len(cred) > 90 or "eso" not in low or title.lower().startswith("esocast")
+                or "music" in low or "directed by" in low or "hosted by" in low):
+            continue
+        mp4 = [u for pref in ("hd_1080p25_screen", "hd_and_apple", "medium_podcast")
+               for u in re.findall(rf"https://cdn\.eso\.org/videos/{pref}/{oid}\.(?:mp4|m4v)", page)]
+        thumb = (re.findall(r'og:image" content="([^"]+)', page) or [None])[0]
+        if mp4 and thumb:
+            out.append({"kind": "video", "id": ("ev", oid), "url": mp4[0], "thumb": thumb, "user": "ESO",
+                        "fit": True, "tags": title.lower(), "credit": f"Video: {cred.rstrip('.')} (CC BY 4.0)"})
+    return out
+
+
+def _eso_candidates(query):
+    """ESO photos and artist's impressions of space, CC BY 4.0, with ESO's exact credit line."""
+    out = []
+    for oid in _eso_ids("images", query, 6)[:4]:
+        try:
+            title, cred, _ = _eso_page("images", oid)
+        except Exception:
+            continue
+        if not cred or len(cred) > 90 or "eso" not in cred.lower():
+            continue
+        out.append({"kind": "photo", "id": ("ei", oid), "url": f"https://cdn.eso.org/images/screen/{oid}.jpg",
+                    "thumb": f"https://cdn.eso.org/images/thumb300y/{oid}.jpg", "user": "ESO", "fit": True,
+                    "tags": title.lower(), "credit": f"Image: {cred.rstrip('.')} (CC BY 4.0)"})
+    return out
+
+
+def _smithsonian_candidates(query):
+    """Smithsonian Open Access: museum photographs of real specimens (fossils, animals, minerals,
+    aircraft, spacecraft), CC0 only (filtered in the query and checked per image). Key: SI_API_KEY from
+    api.data.gov, or the public DEMO_KEY (a few dozen searches a day)."""
+    q = f'{query[:70]} AND media_usage:"CC0"'
+    r = _get("https://api.si.edu/openaccess/api/v1.0/search",
+             params={"q": q, "rows": 12, "api_key": key("SI_API_KEY") or "DEMO_KEY"})
+    out = []
+    for row in (r.json().get("response") or {}).get("rows", []):
+        om = (row.get("content", {}).get("descriptiveNonRepeating", {}) or {}).get("online_media") or {}
+        for m in (om.get("media") or [])[:1]:
+            res = {x.get("label"): x for x in m.get("resources") or []}
+            hi = res.get("High-resolution JPEG") or {}
+            if (m.get("usage") or {}).get("access") != "CC0" or m.get("type") != "Images" or (hi.get("width") or 0) < 1000:
+                continue
+            base = m.get("content") or ""
+            out.append({"kind": "photo", "id": ("si", m.get("idsId") or base), "url": f"{base}&max=1800",
+                        "thumb": m.get("thumbnail") or f"{base}&max=400", "user": "Smithsonian", "fit": True,
+                        "tags": (row.get("title") or "").lower(),
+                        "credit": f"Image: Smithsonian ({row.get('unitCode', '')}), CC0"})
+    return out
+
+
+DRAW_UNLESS = 7.5   # real footage scoring this or more (out of 10) beats the drawn board
+
+
 def pick_scene(i, scene, a, b, job_dir, used, note="", extra_queries=()):
     """Choose and prepare footage for one scene. Returns (score, pick-or-None, credit)."""
     out = job_dir / f"raw_{i:02d}.mp4"
     out.with_name(out.stem + "_b.mp4").unlink(missing_ok=True)   # a re-pick never keeps an old second shot
     pick, score = None, 0
-    if i in _drawn_clips and not note:   # this scene is drawn live on the continuous board (agents/whiteboard.py)
-        import shutil
-        shutil.copy(_drawn_clips[i], out)
-        from . import diagram
-        return 8.5, {"kind": "draw", "id": ("d", i)}, diagram.CREDIT
+    # 18 Nov 2026, owner: the drawings "are not that great". A drawn board scene (agents/whiteboard.py) is now
+    # only the fallback: real footage, NASA/ESO animations and museum photos are searched first, and the
+    # drawing is used only when none of them fits the line well (score below DRAW_UNLESS).
+    drawn_ready = i in _drawn_clips and not note
     if i in _board and not note:   # this scene is a step on the explainer board
         try:
             from . import diagram
@@ -474,7 +566,7 @@ def pick_scene(i, scene, a, b, job_dir, used, note="", extra_queries=()):
             except Exception as e:
                 log(f"visuals: video search error {e}")
         for q in queries[:2]:          # real public-domain footage beyond Pixabay (no key needed)
-            for src in (_nasa_video_candidates, _svs_video_candidates, _commons_video_candidates):
+            for src in (_nasa_video_candidates, _svs_video_candidates, _eso_video_candidates, _commons_video_candidates):
                 try:
                     cands += [c for c in src(q) if c["id"] not in used]
                 except Exception as e:
@@ -485,9 +577,9 @@ def pick_scene(i, scene, a, b, job_dir, used, note="", extra_queries=()):
             except Exception as e:
                 log(f"visuals: photo search error {e}")
             for src in (_commons_candidates, _openverse_candidates, _nasa_candidates, _inat_candidates,
-                        _wellcome_candidates, _met_candidates):
-                if src is _openverse_candidates and q != queries[0]:
-                    continue   # anonymous Openverse allows ~200 calls a day: one search per scene
+                        _wellcome_candidates, _met_candidates, _eso_candidates, _smithsonian_candidates):
+                if src in (_openverse_candidates, _smithsonian_candidates, _eso_candidates) and q != queries[0]:
+                    continue   # rate-limited sources (Openverse ~200/day, Smithsonian DEMO_KEY): one search per scene
                 try:
                     cands += [c for c in src(q) if c["id"] not in used]
                 except Exception as e:
@@ -500,6 +592,11 @@ def pick_scene(i, scene, a, b, job_dir, used, note="", extra_queries=()):
         if uniq:
             pick, score = _judge(scene["narration"], scene["visual_query"],
                                  _shortlist(uniq, scene["visual_query"]), note)
+    if drawn_ready and score < DRAW_UNLESS:
+        import shutil
+        shutil.copy(_drawn_clips[i], out)
+        from . import diagram
+        return 8.5, {"kind": "draw", "id": ("d", i)}, diagram.CREDIT
     # ILLUSTRATION: when no real footage shows the line exactly, draw it (agents/illustrate.py). Used
     # only if the drawing passes its own accuracy check AND scores higher than the best footage.
     below = config().get("visuals", {}).get("illustrate_below", 8)
