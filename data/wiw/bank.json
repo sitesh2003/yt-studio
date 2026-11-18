@@ -1,17 +1,5 @@
 [
   {
-    "job": "20261116-1409-why-does-a-siren-change-pitch-as-it-pass",
-    "title": "Why Does a Siren Change Pitch? The Doppler Effect",
-    "assets": {
-      "mp4": 755162821,
-      "jpg": 755163163,
-      "json": 755163214
-    },
-    "locked": true,
-    "series": "Physics",
-    "stored": "2026-11-16T14:28:30.262470+00:00"
-  },
-  {
     "job": "20261116-1432-why-don-t-planets-fall-into-the-sun-cele",
     "title": "Why Don't Planets Fall Into The Sun?",
     "assets": {
@@ -82,5 +70,17 @@
     "locked": true,
     "series": "Physics",
     "stored": "2026-11-17T15:41:08.232346+00:00"
+  },
+  {
+    "job": "20261118-0748-how-an-electric-motor-spins-the-physics-",
+    "title": "How Does an Electric Motor Spin?",
+    "assets": {
+      "mp4": 762538148,
+      "jpg": 762538409,
+      "json": 762538441
+    },
+    "locked": true,
+    "series": "Physics",
+    "stored": "2026-11-18T08:17:05.471177+00:00"
   }
 ]

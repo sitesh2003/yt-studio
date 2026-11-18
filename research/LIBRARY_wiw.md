@@ -3,6 +3,14 @@
 Every video, the claims it makes, and the open-access research behind them. Built automatically by
 agents/library.py; a source is listed only if its abstract was checked to support the claim.
 
+## How Does an Electric Motor Spin?
+*2026-11-18 · Physics*
+
+- A current-carrying conductor in an external magnetic field experiences a magnetic force given by F = I(L x B) (Lorentz force).
+- Opposite sides of a rectangular loop carry current in opposite directions relative to the magnetic field, producing opposing forces that generate torque.
+- A split-ring commutator reverses the connection between the rotating coil and external circuit every 180 degrees (half-turn), maintaining unidirectional torque and preventing the coil from stalling at the neutral plane.
+- Reversing the polarity of the power supply reverses current direction, which reverses the direction of the magnetic forces and therefore the direction of rotation.
+
 ## How Newton's Third Law Actually Works
 *2026-11-17 · Physics*
 

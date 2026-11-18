@@ -1069,7 +1069,8 @@
     "video_id": "uh9aaSIkMiI",
     "publish_at": "2026-11-17T16:30:00-05:00",
     "thumbnail_set": true,
-    "answered": true
+    "answered": true,
+    "recapped": true
   },
   {
     "job": "20261116-0329-how-colour-vision-works-the-biology-of-c",
@@ -1478,7 +1479,7 @@
       "why it works"
     ],
     "hook": "You've heard an ambulance siren drop in pitch as it speeds past. But why does that happen?",
-    "status": "banked",
+    "status": "scheduled",
     "narration": "You've heard an ambulance siren drop in pitch as it speeds past. But why does that happen? Imagine a parked ambulance sending out sound waves in equal circles. Now it drives toward you, chasing its own waves and squishing them closer together. More waves reach your ear every second, making the pitch sound higher. Once it passes, it travels away from those waves, stretching them apart. That's because pitch depends on wave frequency, so bunched waves sound higher and stretched waves sound lower. Engineers use this exact wave shift in radar guns to measure car speeds. Try this: does a moving siren change the speed of sound through the air?",
     "voice_engine": "kokoro",
     "voices": "one narrator (af_bella)",
@@ -1574,7 +1575,10 @@
       "duration": 36.2
     },
     "repairs": 0,
-    "audited": true
+    "audited": true,
+    "video_id": "qvYQfC6SeFE",
+    "publish_at": "2026-11-19T07:30:00-05:00",
+    "thumbnail_set": true
   },
   {
     "job": "20261116-1432-why-don-t-planets-fall-into-the-sun-cele",
@@ -2271,6 +2275,118 @@
       "duration": 28.2
     },
     "repairs": 1,
+    "audited": true
+  },
+  {
+    "job": "20261118-0748-how-an-electric-motor-spins-the-physics-",
+    "topic": "How an electric motor spins: The physics of electromagnetism explained",
+    "title": "How Does an Electric Motor Spin?",
+    "description": "How does electricity turn into rotational motion? Discover how magnets and a split ring turn a simple current into continuous spin.\n\n#physics #electronics #shorts\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nPhoto by PublicDomainPictures on Pixabay\nPhoto by ds_30 on Pixabay\nVideo by 30037275 on Pixabay\n\nHow this was made: the script is researched and fact-checked with AI tools against open-access research and textbooks, narrated by an AI voice, and every diagram, number and graph is drawn by code from the real values. Spot a mistake? Tell us in the comments - corrections are checked and credited.",
+    "tags": [
+      "electric motor",
+      "how electric motors work",
+      "electromagnetism",
+      "physics",
+      "dc motor",
+      "commutator",
+      "lorentz force",
+      "stem"
+    ],
+    "hook": "You’ve used electric motors your whole life, but how do they actually spin?",
+    "status": "banked",
+    "narration": "You’ve used electric motors your whole life, but how do they actually spin? Send battery current through this flat copper wire loop placed between two magnets. Watch it turn. The magnetic field pushes the left wire up and the right wire down, twisting it halfway. Now pause and predict: why doesn't the loop just balance upright and stop? A split metal ring flips the current's direction every half-turn, reversing the forces to keep it turning. That's because a current-carrying wire makes its own magnetic field, which gets deflected by the permanent magnets. It's pure physics. You rely on this continuous twist in cordless drills, cooling fans, and electric cars. Try this: what happens to the loop's spin if you flip the battery backwards?",
+    "voice_engine": "chatterbox",
+    "voices": "one narrator (af_heart)",
+    "diagrams": 1,
+    "series": "Physics",
+    "countdown": false,
+    "length_arm": null,
+    "question": "Try this: what happens to the loop's spin if you flip the battery backwards?",
+    "answer_comment": "The answer: the motor spins in the opposite direction. Swapping the battery terminals reverses the current flowing through each side of the wire loop. Because the current flows backwards through the same magnetic field, the magnetic forces swap directions—pushing the left side down and the right side up. What would happen if you flipped the magnets instead?",
+    "sources": [],
+    "fact_check": [
+      "A current-carrying conductor in an external magnetic field experiences a magnetic force given by F = I(L x B) (Lorentz force).",
+      "Opposite sides of a rectangular loop carry current in opposite directions relative to the magnetic field, producing opposing forces that generate torque.",
+      "A split-ring commutator reverses the connection between the rotating coil and external circuit every 180 degrees (half-turn), maintaining unidirectional torque and preventing the coil from stalling at the neutral plane.",
+      "Reversing the polarity of the power supply reverses current direction, which reverses the direction of the magnetic forces and therefore the direction of rotation."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        3.77
+      ],
+      [
+        3.77,
+        8.52
+      ],
+      [
+        8.52,
+        12.8
+      ],
+      [
+        12.8,
+        16.33
+      ],
+      [
+        16.33,
+        21.22
+      ],
+      [
+        21.22,
+        27.09
+      ],
+      [
+        27.09,
+        31.18
+      ],
+      [
+        31.18,
+        34.88
+      ]
+    ],
+    "duration": 34.88,
+    "scene_lines": [
+      "You’ve used electric motors your whole life, but how do they actually spin?",
+      "Send battery current through this flat copper wire loop placed between two magnets. Watch it turn.",
+      "The magnetic field pushes the left wire up and the right wire down, twisting it halfway.",
+      "Now pause and predict: why doesn't the loop just balance upright and stop?",
+      "A split metal ring flips the current's direction every half-turn, reversing the forces to keep it turning.",
+      "That's because a current-carrying wire makes its own magnetic field, which gets deflected by the permanent magnets. It's pure physics.",
+      "You rely on this continuous twist in cordless drills, cooling fans, and electric cars.",
+      "Try this: what happens to the loop's spin if you flip the battery backwards?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,000 --> 00:00:01,920\nYou’ve used electric motors your whole life,\n\n2\n00:00:01,920 --> 00:00:03,230\nbut how do they actually spin?\n\n3\n00:00:03,770 --> 00:00:05,450\nSend battery current through this flat copper\n\n4\n00:00:05,450 --> 00:00:07,280\nwire loop placed between two magnets.\n\n5\n00:00:07,550 --> 00:00:08,340\nWatch it turn.\n\n6\n00:00:08,520 --> 00:00:10,040\nThe magnetic field pushes the left wire\n\n7\n00:00:10,040 --> 00:00:11,510\nup and the right wire down,\n\n8\n00:00:11,560 --> 00:00:12,330\ntwisting it halfway.\n\n9\n00:00:12,800 --> 00:00:14,440\nNow pause and predict: why doesn't the\n\n10\n00:00:14,440 --> 00:00:16,030\nloop just balance upright and stop?\n\n11\n00:00:16,330 --> 00:00:17,910\nA split metal ring flips the current's\n\n12\n00:00:17,910 --> 00:00:20,980\ndirection every half-turn, reversing the forces to keep it turning.\n\n13\n00:00:21,220 --> 00:00:24,070\nThat's because a current-carrying wire makes its own magnetic field,\n\n14\n00:00:24,160 --> 00:00:25,730\nwhich gets deflected by the permanent magnets.\n\n15\n00:00:26,020 --> 00:00:26,790\nIt's pure physics.\n\n16\n00:00:27,090 --> 00:00:28,610\nYou rely on this continuous twist in\n\n17\n00:00:28,610 --> 00:00:30,900\ncordless drills, cooling fans, and electric cars.\n\n18\n00:00:31,180 --> 00:00:31,750\nTry this:\n\n19\n00:00:31,880 --> 00:00:33,240\nwhat happens to the loop's spin if\n\n20\n00:00:33,240 --> 00:00:34,280\nyou flip the battery backwards?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [],
+      "footage": [],
+      "review": [],
+      "heard": [
+        "\"you ve\" heard as \"you've\"",
+        "\"loop's\" heard as \"loop\""
+      ],
+      "scene_heard": [
+        "scene 1: 86%",
+        "scene 2: 100%",
+        "scene 3: 100%",
+        "scene 4: 100%",
+        "scene 5: 100%",
+        "scene 6: 100%",
+        "scene 7: 93%",
+        "scene 8: 93%"
+      ],
+      "notes": [
+        "scene 6 footage is a loose match (score 3.0), accepted"
+      ],
+      "pass": true,
+      "duration": 34.6
+    },
+    "repairs": 0,
     "audited": true
   }
 ]
