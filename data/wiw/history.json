@@ -1087,7 +1087,7 @@
       "why it works"
     ],
     "hook": "Ever wondered how your eyes actually see a red apple?",
-    "status": "scheduled",
+    "status": "public",
     "narration": "Ever wondered how your eyes actually see a red apple? Light bounces off. When light hits the apple, it reflects mostly long light wavelengths toward your retina. There, three types of cone cells absorb overlapping ranges of light wavelengths. The apple strongly activates long-wavelength cones, while medium and short cones activate much less. That's because your brain decodes color by comparing the relative ratio of signals from all three cones. It compares them. Phone screens use this exact trick, tweaking three pixel brightnesses to match those cone ratios. Try this: if your long-wavelength cones didn't work, which color would look much darker?",
     "voice_engine": "kokoro",
     "voices": "one narrator (af_bella)",
@@ -1164,7 +1164,9 @@
     "audited": true,
     "video_id": "bZeFlqbrdf4",
     "publish_at": "2026-11-18T07:30:00-05:00",
-    "thumbnail_set": true
+    "thumbnail_set": true,
+    "recapped": true,
+    "answered": true
   },
   {
     "job": "20261116-0402-how-does-a-capacitor-store-charge",
@@ -1593,7 +1595,7 @@
       "gravity"
     ],
     "hook": "If the Sun pulls the Earth, why don't we just crash into it?",
-    "status": "banked",
+    "status": "scheduled",
     "narration": "If the Sun pulls the Earth, why don't we just crash into it? Imagine throwing a ball sideways at 30 kilometers per second. It's fast. Gravity pulls the ball down, but its sideways speed keeps it moving forward. If you throw it fast enough, the curve of the fall matches the curve of the Earth. It's perfect. That's because the Earth is essentially in a constant state of falling around the Sun. It’s a perfect balance of speed and gravity that keeps us safe in orbit. Try this: why would the Earth crash into the Sun if it suddenly stopped moving sideways?",
     "voice_engine": "kokoro",
     "voices": "one narrator (af_bella)",
@@ -1675,7 +1677,10 @@
       "duration": 30.7
     },
     "repairs": 1,
-    "audited": true
+    "audited": true,
+    "video_id": "Lu5BW3Ip8vo",
+    "publish_at": "2026-11-19T16:30:00-05:00",
+    "thumbnail_set": true
   },
   {
     "job": "20261116-1645-why-does-baking-soda-fizz-when-mixed-wit",
@@ -2388,5 +2393,214 @@
     },
     "repairs": 0,
     "audited": true
+  },
+  {
+    "job": "20261118-1451-why-do-enzymes-speed-up-biological-react",
+    "topic": "Why do enzymes speed up biological reactions? The lock and key model explained",
+    "title": "Why Do Enzymes Speed Up Reactions? The Lock And Key Model",
+    "description": "Ever wondered how enzymes speed up your biology? Watch how the lock and key model breaks down molecules in seconds. #shorts #biology #science\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nVideo by Pepino8A on Pixabay\nVideo by anncapictures on Pixabay",
+    "tags": [
+      "enzymes",
+      "biology",
+      "lock and key model",
+      "science shorts"
+    ],
+    "hook": "You've used enzymes your whole life, but how do they work so fast? Enzymes work fast.",
+    "status": "review",
+    "narration": "You've used enzymes your whole life, but how do they work so fast? Enzymes work fast. Here's a maltose sugar molecule floating toward our enzyme. Watch it move. It slides right into the matching slot, called the active site. The shape matches the sugar perfectly, like a key in a lock. It locks tight. That precise fit helps strain the chemical bonds so they break much faster. Two smaller glucose parts pop out, and the enzyme is ready again. It restarts. Try this: what happens to enzymes when your body gets dangerously hot?",
+    "voice_engine": "chatterbox",
+    "voices": "one narrator (af_heart)",
+    "diagrams": 2,
+    "series": "Biology",
+    "countdown": false,
+    "length_arm": null,
+    "question": "Try this: what happens to enzymes when your body gets dangerously hot?",
+    "answer_comment": "The answer: Dangerously high temperatures break the weak bonds holding an enzyme together, changing its shape—a process called denaturation. Once the active site loses its shape, the target molecule no longer fits and the enzyme stops working. Got a question about how proteins fold?",
+    "sources": [],
+    "fact_check": [
+      "Enzymes speed up biological reactions by lowering activation energy.",
+      "The lock and key model demonstrates specificity between substrate and active site.",
+      "Extreme heat causes enzyme denaturation, altering the active site shape."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        4.77
+      ],
+      [
+        4.77,
+        8.42
+      ],
+      [
+        8.42,
+        11.07
+      ],
+      [
+        11.07,
+        14.89
+      ],
+      [
+        14.89,
+        18.29
+      ],
+      [
+        18.29,
+        22.91
+      ],
+      [
+        22.91,
+        26.79
+      ]
+    ],
+    "duration": 26.79,
+    "scene_lines": [
+      "You've used enzymes your whole life, but how do they work so fast? Enzymes work fast.",
+      "Here's a maltose sugar molecule floating toward our enzyme. Watch it move.",
+      "It slides right into the matching slot, called the active site.",
+      "The shape matches the sugar perfectly, like a key in a lock. It locks tight.",
+      "That precise fit helps strain the chemical bonds so they break much faster.",
+      "Two smaller glucose parts pop out, and the enzyme is ready again. It restarts.",
+      "Try this: what happens to enzymes when your body gets dangerously hot?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,000 --> 00:00:01,680\nYou've used enzymes your whole life, but\n\n2\n00:00:01,680 --> 00:00:02,830\nhow do they work so fast?\n\n3\n00:00:03,100 --> 00:00:04,410\nEnzymes work fast.\n\n4\n00:00:04,770 --> 00:00:07,300\nHere's a maltose sugar molecule floating toward our enzyme.\n\n5\n00:00:07,570 --> 00:00:08,260\nWatch it move.\n\n6\n00:00:08,420 --> 00:00:09,820\nIt slides right into the matching slot,\n\n7\n00:00:09,820 --> 00:00:10,910\ncalled the active site.\n\n8\n00:00:11,070 --> 00:00:12,810\nThe shape matches the sugar perfectly, like\n\n9\n00:00:12,810 --> 00:00:13,640\na key in a lock.\n\n10\n00:00:13,750 --> 00:00:14,740\nIt locks tight.\n\n11\n00:00:14,890 --> 00:00:16,450\nThat precise fit helps strain the chemical\n\n12\n00:00:16,450 --> 00:00:18,060\nbonds so they break much faster.\n\n13\n00:00:18,290 --> 00:00:20,240\nTwo smaller glucose parts pop out,\n\n14\n00:00:20,310 --> 00:00:21,700\nand the enzyme is ready again.\n\n15\n00:00:21,860 --> 00:00:22,630\nIt restarts.\n\n16\n00:00:22,910 --> 00:00:23,580\nTry this:\n\n17\n00:00:23,790 --> 00:00:26,190\nwhat happens to enzymes when your body gets dangerously hot?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [],
+      "footage": [
+        "scene(s) [7] have weak or placeholder footage"
+      ],
+      "review": [
+        "Frame 3 shows a computer CPU socket instead of a biological enzyme active site or an accurate biological analogy."
+      ],
+      "heard": [
+        "\"do\" heard as \"did\""
+      ],
+      "scene_heard": [
+        "scene 1: 94%",
+        "scene 2: 100%",
+        "scene 3: 100%",
+        "scene 4: 100%",
+        "scene 5: 100%",
+        "scene 6: 100%",
+        "scene 7: 100%"
+      ],
+      "pass": false,
+      "duration": 26.4
+    },
+    "repairs": 2
+  },
+  {
+    "job": "20261118-1603-how-a-diode-works-the-one-way-valve-for-",
+    "topic": "How a diode works: The one-way valve for electricity explained",
+    "title": "How A Diode Works: The One-Way Valve",
+    "description": "Ever wonder how your charger turns AC into DC? It's all thanks to the P-N junction. See how this tiny component acts as a one-way street for electricity. #shorts #electronics #physics\n\nSources (open-access research):\n- Futscher et al. (2018), Journal of Physics Condensed Matter. doi:10.1088/1361-648x/aaf310\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nPhoto by AJS1 on Pixabay\nPhoto by cocoparisienne on Pixabay\nPhoto by geralt on Pixabay\nVideo by MAKY_OREL on Pixabay\nVideo by sharaed on Pixabay\n\nHow this was made: the script is researched and fact-checked with AI tools against open-access research and textbooks, narrated by an AI voice, and every diagram, number and graph is drawn by code from the real values. Spot a mistake? Tell us in the comments - corrections are checked and credited.",
+    "tags": [
+      "electronics",
+      "physics",
+      "diodes",
+      "how it works",
+      "semiconductors"
+    ],
+    "hook": "Most wall outlets provide AC, yet your phone charger needs DC. It's one-way only.",
+    "status": "review",
+    "narration": "Most wall outlets provide AC, yet your phone charger needs DC. It's one-way only. Inside, we have a P-N junction. These are layers of treated silicon. The N-side is stuffed with extra electrons, while the P-side has holes waiting for them. When voltage pushes current forward, electrons jump the gap. The circuit closes. But try pushing backward, and the electrons get pulled away from the gap, leaving a dead zone. That's because the gap acts like an empty, non-conductive wall that stops all current movement. It stops flow. Try this: if you swapped the P and N sides of this diode, would electricity still flow?",
+    "voice_engine": "chatterbox",
+    "voices": "one narrator (af_heart)",
+    "diagrams": 2,
+    "series": "Electronics",
+    "countdown": false,
+    "length_arm": null,
+    "question": "Try this: if you swapped the P and N sides of this diode, would electricity still flow?",
+    "answer_comment": "The answer: No, it wouldn't. The diode would simply block the current in the opposite direction because the internal junction structure is asymmetrical. The P-N junction is designed to only allow electrons to cross the barrier when voltage is applied in one specific direction.\n\nSources (open-access research):\n- Futscher et al. (2018), Journal of Physics Condensed Matter. doi:10.1088/1361-648x/aaf310",
+    "sources": [
+      {
+        "claim": "A P-N junction consists of P-type and N-type semiconductor materials.",
+        "cite": "Futscher et al. (2018), Journal of Physics Condensed Matter. doi:10.1088/1361-648x/aaf310",
+        "doi": "10.1088/1361-648x/aaf310",
+        "title": "Electronic properties of hybrid organic/inorganic semiconductor pn-junctions",
+        "why": "In this work, we elucidate the energy level alignment and its mechanisms at a prototypical hybrid pn-junction comprising ZnO (n-type) and p-doped N,N'-di(1-naphthyl)-N,N'-diphenyl-(1,1'-biphenyl)-4,4'-diamine (α-NPD) as semiconductors"
+      }
+    ],
+    "fact_check": [
+      "Diodes act as one-way valves for electricity.",
+      "A P-N junction consists of P-type and N-type semiconductor materials.",
+      "Forward bias allows current flow by narrowing the depletion region.",
+      "Reverse bias prevents current flow by widening the depletion region (the 'dead zone')."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        5.19
+      ],
+      [
+        5.19,
+        9.15
+      ],
+      [
+        9.15,
+        13.18
+      ],
+      [
+        13.18,
+        17.78
+      ],
+      [
+        17.78,
+        21.7
+      ],
+      [
+        21.7,
+        27.4
+      ],
+      [
+        27.4,
+        31.4
+      ]
+    ],
+    "duration": 31.4,
+    "scene_lines": [
+      "Most wall outlets provide AC, yet your phone charger needs DC. It's one-way only.",
+      "Inside, we have a P-N junction. These are layers of treated silicon.",
+      "The N-side is stuffed with extra electrons, while the P-side has holes waiting for them.",
+      "When voltage pushes current forward, electrons jump the gap. The circuit closes.",
+      "But try pushing backward, and the electrons get pulled away from the gap, leaving a dead zone.",
+      "That's because the gap acts like an empty, non-conductive wall that stops all current movement. It stops flow.",
+      "Try this: if you swapped the P and N sides of this diode, would electricity still flow?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,000 --> 00:00:01,770\nMost wall outlets provide AC,\n\n2\n00:00:01,840 --> 00:00:03,270\nyet your phone charger needs DC.\n\n3\n00:00:03,560 --> 00:00:04,930\nIt's one-way only.\n\n4\n00:00:05,190 --> 00:00:06,920\nInside, we have a P-N junction.\n\n5\n00:00:07,120 --> 00:00:08,710\nThese are layers of treated silicon.\n\n6\n00:00:09,150 --> 00:00:11,060\nThe N-side is stuffed with extra electrons,\n\n7\n00:00:11,150 --> 00:00:13,060\nwhile the P-side has holes waiting for them.\n\n8\n00:00:13,180 --> 00:00:16,430\nWhen voltage pushes current forward, electrons jump the gap.\n\n9\n00:00:16,550 --> 00:00:17,480\nThe circuit closes.\n\n10\n00:00:17,780 --> 00:00:19,420\nBut try pushing backward, and the electrons\n\n11\n00:00:19,420 --> 00:00:21,510\nget pulled away from the gap, leaving a dead zone.\n\n12\n00:00:21,700 --> 00:00:23,040\nThat's because the gap acts like an\n\n13\n00:00:23,040 --> 00:00:25,970\nempty, non-conductive wall that stops all current movement.\n\n14\n00:00:26,160 --> 00:00:27,110\nIt stops flow.\n\n15\n00:00:27,400 --> 00:00:28,460\nTry this: if you swapped the P\n\n16\n00:00:28,460 --> 00:00:30,800\nand N sides of this diode, would electricity still flow?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [
+        "scene 7 (27.4-31.4 s): only 59% of its words can be heard - the voice breaks up or drops out"
+      ],
+      "footage": [],
+      "review": [],
+      "heard": [
+        "\"n side\" heard as \"inside\"",
+        "\"p and n sides of\" heard as \"pn inside to\""
+      ],
+      "scene_heard": [
+        "scene 1: 100%",
+        "scene 2: 85%",
+        "scene 3: 88%",
+        "scene 4: 100%",
+        "scene 5: 100%",
+        "scene 6: 100%",
+        "scene 7: 59%"
+      ],
+      "pass": false,
+      "duration": 31.1
+    },
+    "repairs": 0
   }
 ]

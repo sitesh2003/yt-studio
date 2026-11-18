@@ -132,5 +132,30 @@
   ],
   "not_drawn": {},
   "error": ""
+ },
+ {
+  "when": "2026-11-18 15:11",
+  "topic": "Why do enzymes speed up biological reactions? The lock and key model explained",
+  "drawn": [
+   2,
+   4,
+   5
+  ],
+  "not_drawn": {
+   "3": "Maltose is represented by an ice cube emoji, which does not represent a sugar molecule, leading to confusion."
+  },
+  "error": ""
+ },
+ {
+  "when": "2026-11-18 16:24",
+  "topic": "How a diode works: The one-way valve for electricity explained",
+  "drawn": [
+   2,
+   3,
+   4,
+   5
+  ],
+  "not_drawn": {},
+  "error": ""
  }
 ]
