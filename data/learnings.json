@@ -1,15 +1,22 @@
 {
-  "summary": "1. High-stayed hooks open with an aggressive paradox, myth-debunk, or alarming punchline within the first 6 words rather than setting up a scenario. 2. Winning titles use active, visceral verbs and strong visual metaphors (e.g., 'Pineapples Eat You Back') rather than passive passive explanations. 3. Topic focus must center on personal body quirks or extreme sensory oddities rather than industrial objects or passive food production steps. 4. Videos under 25 seconds with 55%+ stayed rate outperform longer videos because they maintain concise pacing without filler setup sentences. 5. Opening lines containing rhetorical questions or slow storytelling ('Your car swerves...', 'Ever noticed...') trigger immediate swipes.",
+  "summary": [
+    "High-performing videos by views and stayed_pct rely on concise titles under 45 characters that use direct paradoxes rather than generic questions.",
+    "The first sentence of top-tier videos immediately subverts common physical assumptions with a direct, declarative statement rather than filler words.",
+    "Videos with low stayed_pct (below 35%) suffer from asking predictable questions or leaning on stale emojis instead of creating an urgent knowledge gap.",
+    "Length correlates heavily with drop-off; under-performing videos exceeding 30 seconds experienced massive audience attrition in the initial feed test.",
+    "Channel distribution stalls predictably unless the initial hook establishes a counterintuitive visual or logical contradiction within the first 3 seconds."
+  ],
   "winning_hooks": [
-    "Direct Myth Contradiction: State the common belief and immediately shatter it (e.g., 'Your fingers prune in water, but it is not because you are absorbing it like a sponge.')",
-    "Visceral Threat / Personification: Frame everyday items aggressively (e.g., 'Fresh pineapple is literally eating you back.')",
-    "Shocking Historical Anchor: Use extreme comparisons instead of exact measurements (e.g., 'This shark is older than the United States.')"
+    "Your fingers prune in water, but it is not because you are absorbing it like a sponge.",
+    "Fresh pineapple is literally eating you back.",
+    "Your eyes are leaking right now, and your brain is hiding it.",
+    "Ever noticed those tiny black dots fading around your car windshield? 🚗"
   ],
   "avoid": [
-    "Preamble storytelling and scenario setups (e.g., 'Your car swerves off the highway...', 'Drop an apple or pear...')",
-    "Generic rhetorical opening questions (e.g., 'Ever noticed those tiny black dots...')",
-    "Dry textbook facts and definitions without emotional stakes (e.g., 'Honey is famous for being one of the only natural foods...')",
-    "Long, wordy explanatory hooks with scientific clauses (e.g., 'Garlic usually doesn't make you cry... because its defense chemicals work differently...')"
+    "Starting a hook with a polite question like 'Have you ever wondered...'",
+    "Using long conversational introductions that delay the core paradox past the 3-second mark",
+    "Writing vague titles that do not immediately communicate the physical stakes or weirdness",
+    "Exceeding 30 seconds of runtime before establishing the payoff"
   ],
-  "next_experiment": "Test Hook Frame A (Direct Paradox/Threat: 'Your stomach acid can dissolve steel, but it doesn't destroy you') vs Hook Frame B (Scenario Setup: 'Inside your body right now is an acid strong enough to melt metal') keeping video visual and title identical."
+  "next_experiment": "Test two identical topics comparing a declarative physiological contradiction hook ('Your skin does X because Y') versus a direct question hook ('Why does your skin do X?'), measuring stayed_pct at the 3-second mark."
 }

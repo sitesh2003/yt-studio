@@ -1,21 +1,20 @@
 {
   "lessons": [
-    "High-performing hooks use extreme comparisons or surprising scale (e.g., Shark older than the US reached 185.1% retention at 10%; Tuna vs. Cod contrast reached 121.7%).",
-    "Avoid wordy, dense explanations immediately after the hook; dropping into heavy percentages or chemistry at ~10% timestamp causes major viewer drop-off (e.g., Garlic lost 34.2% at 0.10, Maple Syrup lost 34.8% at 0.10).",
-    "Never pause for viewer interaction; explicit prompts like 'Pause and guess...' cause direct viewer drop-off (lost 8.7% at 52% in Maple Syrup).",
-    "Avoid asking late-stage rhetorical questions or abstract prompts (e.g., 'Ever thought why...' questions caused end-video drops in Cold Water and Fruits Float; 'Now think about what happens...' dropped 10.4% in Prune Fingers).",
-    "Visual contrast topics hold viewers significantly better through the middle than abstract anatomical explanations (Tuna vs. Cod held 65.8% at 50%, while Prune Fingers dropped to 19.2% at 50%)."
+    "Keep hooks extremely direct and concise: the highest performing retention at 10% (such as the Greenland shark video) starts immediately with a bold, high-stakes claim without fluff.",
+    "Avoid descriptive framing or lengthy multi-clause hook lines in the first 10 seconds, as clips with overly descriptive intros (e.g., Maple Syrup or Potatoes) see massive early drop-offs exceeding 30%.",
+    "Eliminate repetitive phrasing or immediate redundancy in early explanation lines; the potato video showed identical drops due to repeating text, causing immediate viewer fatigue.",
+    "Structure the core explanation without pacing lags around the 25% to 50% mark, where sharp drops consistently occur if the script slows down its delivery.",
+    "Focus topics on extreme physical contrasts or biological anomalies (like the Greenland shark or Tuna vs. Cod), which maintain significantly higher end-retention and sustained viewer engagement compared to everyday food facts."
   ],
   "worst_moment_types": [
-    "Immediate post-hook technical exposition and percentage stats (e.g., Maple Syrup, Garlic)",
-    "Engagement bait and forced pauses (e.g., 'Pause and guess...')",
-    "Abstract thought experiments or meta-prompts (e.g., 'Now think about what happens...')",
-    "Late-video rhetorical setup questions (e.g., 'Ever thought why...')"
+    "Multi-clause introductory sentences that over-explain the premise before establishing high stakes",
+    "Slow transitional explanations around the 25% to 40% timeline that stall momentum",
+    "Repetitive information or redundant phrasing in early script lines",
+    "Abrupt pauses or low-energy delivery right after the hook"
   ],
   "best_hook_types": [
-    "Extreme historical/scale comparisons (e.g., 'This shark is older than the United States')",
-    "Direct visual side-by-side paradoxes (e.g., 'A bluefin tuna and a cod are both fish, but their meat looks like two completely different animals')",
-    "Visceral, personified action claims (e.g., 'Fresh pineapple is literally eating you back')"
+    "High-stakes declarative statements about extreme biological survival or longevity",
+    "Short, punchy contrarian facts that challenge common assumptions immediately"
   ],
   "studied": "2026-11-18",
   "videos": 12
