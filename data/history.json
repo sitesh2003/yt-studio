@@ -2631,7 +2631,7 @@
       "how things work"
     ],
     "hook": "Why do car windows shatter into tiny cubes?",
-    "status": "scheduled",
+    "status": "public",
     "narration": "Why do car windows shatter into tiny cubes? Regular glass breaks into jagged knives. Car side glass takes a totally different path. Wait, doesn't all glass snap the exact same way under a heavy blow? Not this one. Factories bake extreme stress right into the panel during manufacturing. Think about what happens when you heat and rapidly cool outer layers. Pause and guess... three, two, one. Here's why. The outside cools fast and traps the hot center. That creates a web of opposing tension forces. So when one tiny crack slips past the outer skin, the trapped energy releases instantly. The entire sheet unbinds at once, snapping into harmless pebble shapes instead of long blades. Ever thought why eyeglasses use a similar heat treatment when you drop them?",
     "voice_engine": "kokoro",
     "voices": "male host, female explainer",
@@ -2729,7 +2729,8 @@
     "audited": true,
     "video_id": "obq6Xb4utkY",
     "publish_at": "2026-11-18T12:00:00-05:00",
-    "thumbnail_set": true
+    "thumbnail_set": true,
+    "answered": true
   },
   {
     "job": "20261116-0143-why-an-explosion-of-fallen-acorns-secret",
@@ -3112,7 +3113,7 @@
       "biology"
     ],
     "hook": "Fossilized bones can last millions of years, but sometimes they hide more than just minerals.",
-    "status": "banked",
+    "status": "scheduled",
     "narration": "Fossilized bones can last millions of years, but sometimes they hide more than just minerals. Researchers studying a fossilized dinosaur bone found microscopic, flexible structures that resemble ancient blood vessels. Deep inside, they spotted flexible, dark structures that looked like remnants of vessels. But wait, how can something so delicate survive geological time? So, is it really liquid blood sitting inside that ancient stone? turn: true. Not exactly liquid, but potentially ancient protein fragments. Some scientists have hypothesized that iron from the blood might have played a role in preservation, though this remains an active subject of debate. Ever thought how a material that rots in days stays locked in stone for eons? Drop your guess below.",
     "voice_engine": "chatterbox",
     "voices": "one narrator (af_heart)",
@@ -3201,7 +3202,10 @@
       "duration": 36.3
     },
     "repairs": 0,
-    "audited": true
+    "audited": true,
+    "video_id": "G3nRCuOkhG8",
+    "publish_at": "2026-11-19T19:00:00-05:00",
+    "thumbnail_set": true
   },
   {
     "job": "20261116-1902-scientists-just-found-a-hidden-alien-pla",
