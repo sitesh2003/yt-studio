@@ -2527,7 +2527,7 @@
       "heat transfer"
     ],
     "hook": "You can touch hot foil briefly just as it comes out of the oven because it stores very little heat.",
-    "status": "scheduled",
+    "status": "public",
     "narration": "You can touch hot foil briefly just as it comes out of the oven because it stores very little heat. It came straight from a hot oven, yet it holds a surprisingly small amount of total thermal energy. That sheet is so paper-thin that its mass is extremely low. Think about what happens when you touch that thin metal. Pause and guess... three, two, one. Here's why: because it has so little total heat energy, it transfers very little warmth to your fingers. So when you touch it, there is barely any heat available to burn your skin. Yesterday's answer: potatoes sprout by sensing temperature and humidity. Nobody cracked it! Ever thought why a thick metal pan in that same oven burns you instantly?",
     "voice_engine": "kokoro",
     "voices": "female host, male explainer",
@@ -2614,7 +2614,9 @@
     "audited": true,
     "video_id": "qAcYz-fodfU",
     "publish_at": "2026-11-17T19:00:00-05:00",
-    "thumbnail_set": true
+    "thumbnail_set": true,
+    "recapped": true,
+    "answered": true
   },
   {
     "job": "20261115-1802-why-car-side-windows-shatter-into-tiny-c",
@@ -4026,6 +4028,111 @@
       "duration": 34.2
     },
     "repairs": 1,
+    "audited": true
+  },
+  {
+    "job": "20261118-0321-why-farmed-salmon-meat-is-naturally-gray",
+    "topic": "Why Farmed Salmon Meat Is Naturally Gray Until They Eat This 🦐",
+    "title": "Why Farmed Salmon Meat Is Gray 🐟",
+    "description": "Discover the surprising reason why farmed salmon meat starts out completely gray before a specific diet transforms it. #salmon #science #shorts\n\nSources (open-access research):\n- Buttle et al. (2001), Aquaculture Research. doi:10.1046/j.1365-2109.2001.00536.x\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nIllustrations: drawn for this video with FLUX.2 [klein] 4B (AI, Apache 2.0) and checked for accuracy\nPhoto: Jakub Kapusnak, CC0 1.0, via Openverse (rawpixel)\nPhoto: Milton Love, Marine Science Institute, University of Califor, Public domain, via Wikimedia Commons\nVideo by JayShawflybydrones on Pixabay\n\nHow this was made: the script is researched and fact-checked with AI tools against open-access research (sources above when found), narrated by an AI voice, and edited with open-source software. Corrections from viewers are checked and credited.",
+    "tags": [
+      "salmon",
+      "food science",
+      "farming",
+      "marine biology"
+    ],
+    "hook": "That fresh farm salmon you bought is actually completely gray under its skin.",
+    "status": "banked",
+    "narration": "That fresh farm salmon you bought is actually completely gray under its skin. Wild fish get their bright pink color from eating tiny ocean crustaceans full of red pigment. Farm pens sit away from natural wild food sources, so penned fish eat grain and fish meal instead. Without those specific marine pigments, their flesh grows in dull, drab shades of gray. So how do grocery store fillets get that vibrant pink look? Farmers mix precise natural carotenoids into the feed pellets to dye the meat. Ever thought why wild populations stay vibrant while farm fish need that exact color added?",
+    "voice_engine": "chatterbox",
+    "voices": "one narrator (af_heart)",
+    "diagrams": 1,
+    "series": "Food Whys",
+    "countdown": false,
+    "length_arm": "long",
+    "question": "Ever thought why wild populations stay vibrant while farm fish need that exact color added?",
+    "answer_comment": "The answer: Wild salmon eat large amounts of krill and shrimp containing astaxanthin, a natural red pigment that colors their muscle tissue. Farmed salmon eat grain pellets lacking this pigment, so farmers add safe carotenoids to match what consumers expect.\n\nSources (open-access research):\n- Buttle et al. (2001), Aquaculture Research. doi:10.1046/j.1365-2109.2001.00536.x",
+    "sources": [
+      {
+        "claim": "Farmed salmon are fed carotenoids (like astaxanthin) to achieve pink color.",
+        "cite": "Buttle et al. (2001), Aquaculture Research. doi:10.1046/j.1365-2109.2001.00536.x",
+        "doi": "10.1046/j.1365-2109.2001.00536.x",
+        "title": "The effect of feed pigment type on flesh pigment deposition and colour in farmed Atlantic salmon, Salmo salar L.",
+        "why": "The characteristic pink colour of salmonid flesh is a result of deposition of naturally occurring carotenoid pigments... Currently commercial diets for farmed salmonids contain either or both of the synthetic pigments commercially available, astaxanthin and canthaxanthin."
+      }
+    ],
+    "fact_check": [
+      "Farmed salmon meat is naturally gray-white without pigment additives.",
+      "Wild salmon get pink color from eating krill and shrimp.",
+      "Farmed salmon are fed carotenoids (like astaxanthin) to achieve pink color."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        3.66
+      ],
+      [
+        3.66,
+        8.03
+      ],
+      [
+        8.03,
+        12.61
+      ],
+      [
+        12.61,
+        16.56
+      ],
+      [
+        16.56,
+        19.5
+      ],
+      [
+        19.5,
+        23.32
+      ],
+      [
+        23.32,
+        27.5
+      ]
+    ],
+    "duration": 27.5,
+    "scene_lines": [
+      "That fresh farm salmon you bought is actually completely gray under its skin.",
+      "Wild fish get their bright pink color from eating tiny ocean crustaceans full of red pigment.",
+      "Farm pens sit away from natural wild food sources, so penned fish eat grain and fish meal instead.",
+      "Without those specific marine pigments, their flesh grows in dull, drab shades of gray.",
+      "So how do grocery store fillets get that vibrant pink look?",
+      "Farmers mix precise natural carotenoids into the feed pellets to dye the meat.",
+      "Ever thought why wild populations stay vibrant while farm fish need that exact color added?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": "qAcYz-fodfU",
+    "captions_srt": "1\n00:00:00,000 --> 00:00:01,400\nThat fresh farm salmon you bought is\n\n2\n00:00:01,400 --> 00:00:03,330\nactually completely gray under its skin.\n\n3\n00:00:03,660 --> 00:00:05,400\nWild fish get their bright pink color\n\n4\n00:00:05,400 --> 00:00:07,830\nfrom eating tiny ocean crustaceans full of red pigment.\n\n5\n00:00:08,030 --> 00:00:09,470\nFarm pens sit away from natural wild\n\n6\n00:00:09,470 --> 00:00:11,230\nfood sources, so penned fish eat grain\n\n7\n00:00:11,230 --> 00:00:12,440\nand fish meal instead.\n\n8\n00:00:12,610 --> 00:00:14,450\nWithout those specific marine pigments, their flesh\n\n9\n00:00:14,450 --> 00:00:16,320\ngrows in dull, drab shades of gray.\n\n10\n00:00:16,560 --> 00:00:17,940\nSo how do grocery store fillets get\n\n11\n00:00:17,940 --> 00:00:19,170\nthat vibrant pink look?\n\n12\n00:00:19,500 --> 00:00:21,740\nFarmers mix precise natural carotenoids into the\n\n13\n00:00:21,740 --> 00:00:23,070\nfeed pellets to dye the meat.\n\n14\n00:00:23,320 --> 00:00:25,100\nEver thought why wild populations stay vibrant\n\n15\n00:00:25,100 --> 00:00:26,900\nwhile farm fish need that exact color added?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [],
+      "footage": [],
+      "review": [],
+      "heard": [
+        "\"penned\" heard as \"pen\""
+      ],
+      "scene_heard": [
+        "scene 1: 100%",
+        "scene 2: 100%",
+        "scene 3: 94%",
+        "scene 4: 100%",
+        "scene 5: 100%",
+        "scene 6: 100%",
+        "scene 7: 100%"
+      ],
+      "pass": true,
+      "duration": 27.2
+    },
+    "repairs": 0,
     "audited": true
   }
 ]

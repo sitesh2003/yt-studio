@@ -3,6 +3,16 @@
 Every video, the claims it makes, and the open-access research behind them. Built automatically by
 agents/library.py; a source is listed only if its abstract was checked to support the claim.
 
+## Why Farmed Salmon Meat Is Gray 🐟
+*2026-11-18 · Food Whys*
+
+- Farmed salmon meat is naturally gray-white without pigment additives.
+- Wild salmon get pink color from eating krill and shrimp.
+- Farmed salmon are fed carotenoids (like astaxanthin) to achieve pink color.
+
+Sources:
+- Buttle et al. (2001), Aquaculture Research. doi:10.1046/j.1365-2109.2001.00536.x — supports: Farmed salmon are fed carotenoids (like astaxanthin) to achieve pink color.
+
 ## What Actually Happens When Your Leg Falls Asleep
 *2026-11-17 · Body Whys*
 

@@ -420,5 +420,25 @@
         "claim": "Bromelain effectively tenderizes meat by breaking down collagen and muscle fibers."
       }
     ]
+  },
+  {
+    "job": "20261118-0321-why-farmed-salmon-meat-is-naturally-gray",
+    "date": "2026-11-18",
+    "title": "Why Farmed Salmon Meat Is Gray 🐟",
+    "topic": "Why Farmed Salmon Meat Is Naturally Gray Until They Eat This 🦐",
+    "series": "Food Whys",
+    "weekly": false,
+    "claims": [
+      "Farmed salmon meat is naturally gray-white without pigment additives.",
+      "Wild salmon get pink color from eating krill and shrimp.",
+      "Farmed salmon are fed carotenoids (like astaxanthin) to achieve pink color."
+    ],
+    "sources": [
+      {
+        "cite": "Buttle et al. (2001), Aquaculture Research. doi:10.1046/j.1365-2109.2001.00536.x",
+        "doi": "10.1046/j.1365-2109.2001.00536.x",
+        "claim": "Farmed salmon are fed carotenoids (like astaxanthin) to achieve pink color."
+      }
+    ]
   }
 ]

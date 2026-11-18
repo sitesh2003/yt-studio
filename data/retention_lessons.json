@@ -1,19 +1,23 @@
 {
   "lessons": [
-    "Start with provocative statements rather than descriptive setup; hooks that present a surprising paradox or vivid danger (like tuna meat vs. cod or pineapple eating you back) yield high start performance.",
-    "Eliminate immediate exposition in the first 10% of the script; lines that explain mechanics or background too early (seen in maple syrup and potato videos) trigger massive viewer drops exceeding 30%.",
-    "Avoid redundant phrasing and repetitive statements in early transition lines; repeating information causes immediate viewer fatigue and drop-off.",
-    "Ensure mid-video pacing remains tight; pauses, prompts to guess, or slow narrative detours around the 50% mark lead to steep audience loss (e.g., the sharp drop in the maple syrup and finger pruning videos)."
+    "Deliver a hook that defines a 'mystery' or 'defensive purpose' immediately: videos with direct, curiosity-inducing statements (e.g., 'eating you back', 'Why Tuna Meat Is Red Meat') maintain higher retention than vague descriptive intros.",
+    "Eliminate slow, expository transitions: the biggest drops occur when lines describe basic processes (e.g., 'When maple trees wake up') rather than immediate conflict or stakes.",
+    "Prioritize high-stakes, long-term intrigue: the 'Greenland shark' video (the best performer) focuses on an extreme biological paradox (centuries-old life), suggesting viewers stay longer for 'impossible' science than 'everyday' science.",
+    "Avoid repetitive phrasing: videos that restate the premise or use identical lines early (e.g., 'Why Do Potatoes Sprout') suffer from sharper drops at the 25-30% mark.",
+    "Focus on the 'Why' over the 'How': audience retention holds higher when the content focuses on the evolution or 'why' behind a phenomenon rather than a dry mechanical explanation of 'how' it works.",
+    "Keep hooks under 10 seconds: the highest retention scores correlate with videos where the hook is completed before the 10% mark, minimizing the risk of drop-off during the initial transition."
   ],
   "worst_moment_types": [
-    "Slow mechanical explanations and background definitions delivered right after the hook",
-    "Repetitive restatements of the same concept in consecutive lines",
-    "Mid-video pauses and direct prompts for the viewer to guess"
+    "Long-winded definitions of biological processes.",
+    "Repetitive phrasing of the initial premise within the first 30% of the video.",
+    "Transition lines that feel like a lecture (e.g., 'In fact, dead skin cells...').",
+    "Pacing lulls before the core 'reveal' happens."
   ],
   "best_hook_types": [
-    "Striking biological contrasts comparing two familiar items (e.g., tuna vs. cod)",
-    "Urgent, visceral framing of a common experience as a defensive threat (e.g., pineapples eating you back)"
+    "Action-oriented conflict (e.g., 'Fresh pineapple is eating you back').",
+    "Extreme contrast (e.g., 'Tuna vs Cod' or 'Shark older than the US').",
+    "Counter-intuitive facts that challenge a common assumption (e.g., 'Ice water doesn't stop spice')."
   ],
-  "studied": "2026-11-17",
+  "studied": "2026-11-18",
   "videos": 12
 }

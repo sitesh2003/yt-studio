@@ -1,21 +1,20 @@
 {
   "summary": [
-    "Top-performing videos by views consistently achieved a stayed_pct above 50%, whereas the bottom third experienced erratic or collapsed retention (falling as low as 16.2% despite a 100% anomaly on a single-view video).",
-    "High-stayed videos utilize punchy, direct statements in the first sentence that create an immediate cognitive gap or challenge a common assumption, avoiding filler or meta-introductions.",
-    "Titles of top videos incorporate high-contrast phrasing and relevant emojis to anchor the topic visually, contrasting with lower-performing titles that rely on generic questions.",
-    "Successful hooks rely on declarative sentences stating a counterintuitive fact ('Fresh pineapple is literally eating you back') rather than conversational throat-clearing.",
-    "Optimal duration for high-traction videos clusters around 17 to 38 seconds, while longer formats (over 50 seconds) severely risk early drop-offs."
+    "High-view and high-stayed videos (top third: Bxp7r8IzbiY, 4LJjIxeP_dY, 80jyJN1A1y8) rely on direct, counterintuitive statements that instantly challenge everyday assumptions.",
+    "Bottom-third videos by views and stayed_pct (such as nnxCKv3odg4 and 3HaBsuVSlmA) often suffer from overly conversational or rhetorical first sentences that fail to establish immediate factual tension.",
+    "Winning titles use concise 'Why [Subject] [Action/State]' phrasing paired with relevant emojis, avoiding generic clickbait questions like 'Ever noticed...?'",
+    "Hook wording that avoids setup fluff and delivers a declarative shocker ('Your fingers prune in water, but it is not because...') secures significantly higher retention.",
+    "Video length matters: severely underperforming or newly stalled outliers tend to drift past 30-50 seconds, whereas top performers maintain tight pacing."
   ],
   "winning_hooks": [
     "Your fingers prune in water, but it is not because you are absorbing it like a sponge.",
     "Your eyes are leaking right now, and your brain is hiding it.",
-    "Fresh pineapple is literally eating you back.",
-    "This shark is older than the United States."
+    "Fresh pineapple is literally eating you back."
   ],
   "avoid": [
-    "Starting hooks with conversational questions like 'Have you ever noticed...' or 'Did you know...'",
-    "Using lengthy descriptive setups that fail to deliver a core paradox within the first 5 words",
-    "Exceeding 45 seconds on niche explanatory topics where the initial premise does not immediately hook the scroll"
+    "Starting hooks with rhetorical questions like 'Ever noticed those tiny black dots...?' or 'Your car swerves off the highway...'",
+    "Prolonged setups or descriptive statements that delay the core counterintuitive fact beyond the first 10 words.",
+    "Failing to match the title's punchiness with an equally aggressive opening sentence."
   ],
-  "next_experiment": "Test two variations of a new hook: Variant A uses a direct counterintuitive statement ('Your kitchen sponge is dirtier than your toilet'), while Variant B uses a direct question ('Is your kitchen sponge dirtier than your toilet?'), tracking stayed_pct to see which drives a higher initial retention rate past the 3-second mark."
+  "next_experiment": "A/B test two hooks on the exact same topic: Version A uses a direct counterintuitive declaration ('X does not happen because of Y'), while Version B uses a rhetorical question ('Why does X happen?'), measuring which achieves a higher stayed_pct above 60%."
 }

@@ -120,5 +120,18 @@
    "4": "A soccer ball is used to represent a wrecking ball, and meat pieces are laid horizontally instead of forming a wall."
   },
   "error": ""
+ },
+ {
+  "when": "2026-11-18 03:42",
+  "topic": "Why Farmed Salmon Meat Is Naturally Gray Until They Eat This 🦐",
+  "drawn": [
+   2,
+   4,
+   5
+  ],
+  "not_drawn": {
+   "3": "Cranes do not represent farm pens well, and a single fish pointing to grain feels confusing for representing farm-raised fish eating grain and fish meal."
+  },
+  "error": ""
  }
 ]
