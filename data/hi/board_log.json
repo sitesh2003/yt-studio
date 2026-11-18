@@ -277,5 +277,43 @@
    "2": "The sushi is labeled SALMON, but the red fish on top is tuna nigiri, and the arrow points to a fish labeled TUNA. The labels and food items are mismatched."
   },
   "error": ""
+ },
+ {
+  "when": "2026-11-18 09:28",
+  "topic": "How Stanford scientists discovered hidden brain signals that predict Alzheimer's years bef",
+  "drawn": [
+   2,
+   3
+  ],
+  "not_drawn": {
+   "4": "The image shows a laptop, hourglasses, and a brain, which do not clearly or accurately depict 'how a simple scan reads what's happening years in advance' for a ",
+   "5": "The image shows a calm brain leading to multiple lightning bolts and the text 'HIDDEN SHIFT', which does not visually represent memory loss or the long-term pro"
+  },
+  "error": ""
+ },
+ {
+  "when": "2026-11-18 10:01",
+  "topic": "Why cockroaches can easily survive massive doses of ionizing radiation that would kill hum",
+  "drawn": [
+   2,
+   3,
+   4
+  ],
+  "not_drawn": {
+   "5": "Cockroaches are used to represent 'inki cells' (which refers to insects/cockroaches scientifically, but the general viewer might be confused by insect emojis re"
+  },
+  "error": ""
+ },
+ {
+  "when": "2026-11-18 10:27",
+  "topic": "Why fresh rainwater smells wonderful after a dry spell, unlike water straight from the tap",
+  "drawn": [
+   2,
+   3,
+   4,
+   5
+  ],
+  "not_drawn": {},
+  "error": ""
  }
 ]

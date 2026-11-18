@@ -2133,7 +2133,7 @@
       "#space"
     ],
     "hook": "Space missions mein astronauts ke liye sirf ek thin plastic sheet jaan bacha sakti hai 🤯",
-    "status": "scheduled",
+    "status": "public",
     "narration": "Space missions mein astronauts ke liye sirf ek thin plastic sheet jaan bacha sakti hai 🤯 Yeh ultra-thin mylar blanket sirf kuch grams ki hoti hai. Lekin yeh aapki body ki radiant heat ko seedha wapas reflect kar deti hai. Toh kya yahi technology Moon par hamare future bases ko insulate kar sakti hai? Actually, Moon par extreme temperatures minus 170 se plus 120 degrees Celsius ya usse bhi zyada badalte hain. Yahan multiple reflective layers vacuum ke sath milkar heat transfer ko rok deti hain. Isi principle ko MLI yaani multi-layer insulation kehte hain jo satellites mein bhi use hoti hai. Ever thought, agar space ke vacuum mein hawa nahi hai toh heat kaise escape hoti hai?",
     "voice_engine": "edge-tts",
     "voices": "one narrator (hi-IN-SwaraNeural)",
@@ -2240,7 +2240,9 @@
     "audited": true,
     "video_id": "_1eibUlcRyE",
     "publish_at": "2026-11-18T02:30:00-05:00",
-    "thumbnail_set": true
+    "thumbnail_set": true,
+    "recapped": true,
+    "answered": true
   },
   {
     "job": "20261117-1931-3-hidden-reasons-why-train-tracks-are-pa",
@@ -2745,5 +2747,355 @@
       "duration": 32.2
     },
     "repairs": 0
+  },
+  {
+    "job": "20261118-0920-how-stanford-scientists-discovered-hidde",
+    "topic": "How Stanford scientists discovered hidden brain signals that predict Alzheimer's years before symptoms appear",
+    "title": "How Scientists Are Trying to Spot Alzheimer's Early 🤯",
+    "description": "Stanford researchers discovered hidden brain signals that predict Alzheimer's years before any symptoms appear. Here is how simple scans reveal what's happening inside the neural network early on. #shorts #hindi #science\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nVideo by BlenderTimer on Pixabay\nVideo by Coverr-Free-Footage on Pixabay\nVideo by CycleZyklusCiclo on Pixabay\nVideo by Hassas_Arts on Pixabay\nVideo by Amorn_mimi on Pixabay\nVideo by NeuroPixels on Pixabay\n\nयह वीडियो कैसे बना: स्क्रिप्ट को AI tools की मदद से open research के आधार पर लिखा और fact-check किया गया है, आवाज़ AI voice की है, और editing open-source software से हुई है। कोई गलती दिखे तो comment में बताइए — जाँच कर सुधार करेंगे।",
+    "tags": [
+      "#shorts",
+      "#hindi",
+      "#science",
+      "#brain"
+    ],
+    "hook": "Stanford scientists are studying brain signals that might help spot signs of Alzheimer's years before symptoms start.",
+    "status": "review",
+    "narration": "Stanford scientists are studying brain signals that might help spot signs of Alzheimer's years before symptoms start. When a 55-year-old sits down for an EEG scan, their brain waves usually look completely normal on the surface. But researchers looked closer at hidden electrical patterns deep inside the neural network. So how can a simple scan read what's happening years in advance? Turn: What is the brain actually doing differently long before memory loss begins? Here's why. Tiny disruptions in resting-state connectivity appear years early, around the time early brain changes begin. Ever thought how early detection of neural signals like this could change modern medicine?",
+    "voice_engine": "edge-tts",
+    "voices": "one narrator (hi-IN-SwaraNeural)",
+    "diagrams": 1,
+    "series": "Body Whys",
+    "countdown": false,
+    "length_arm": "standard",
+    "question": "Ever thought how early detection of neural signals like this could change modern medicine?",
+    "answer_comment": "The answer: Stanford scientists found that resting-state brain connectivity shows subtle disruptions years before clinical symptoms of Alzheimer's appear. By analyzing these tiny electrical patterns using advanced algorithms, researchers hope this could one day help spot risk markers much earlier than traditional memory tests allow. Drop your questions below!",
+    "sources": [],
+    "fact_check": [
+      "Stanford University researchers have utilized machine learning and EEG/fMRI data to identify early neural connectivity changes associated with Alzheimer's risk years prior to symptom onset."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        6.67
+      ],
+      [
+        6.67,
+        13.49
+      ],
+      [
+        13.49,
+        18.64
+      ],
+      [
+        18.64,
+        22.5
+      ],
+      [
+        22.5,
+        27.43
+      ],
+      [
+        27.43,
+        34.77
+      ],
+      [
+        34.77,
+        39.93
+      ]
+    ],
+    "duration": 39.93,
+    "scene_lines": [
+      "Stanford scientists are studying brain signals that might help spot signs of Alzheimer's years before symptoms start.",
+      "When a 55-year-old sits down for an EEG scan, their brain waves usually look completely normal on the surface.",
+      "But researchers looked closer at hidden electrical patterns deep inside the neural network.",
+      "So how can a simple scan read what's happening years in advance?",
+      "Turn: What is the brain actually doing differently long before memory loss begins?",
+      "Here's why. Tiny disruptions in resting-state connectivity appear years early, around the time early brain changes begin.",
+      "Ever thought how early detection of neural signals like this could change modern medicine?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": "_1eibUlcRyE",
+    "captions_srt": "1\n00:00:00,050 --> 00:00:02,804\nStanford scientists are studying brain signals that\n\n2\n00:00:02,804 --> 00:00:06,645\nmight help spot signs of Alzheimer's years before symptoms start.\n\n3\n00:00:06,670 --> 00:00:08,979\nWhen a 55-year-old sits down for an\n\n4\n00:00:08,979 --> 00:00:11,349\nEEG scan, their brain waves usually look\n\n5\n00:00:11,349 --> 00:00:13,443\ncompletely normal on the surface.\n\n6\n00:00:13,490 --> 00:00:16,085\nBut researchers looked closer at hidden electrical\n\n7\n00:00:16,085 --> 00:00:18,496\npatterns deep inside the neural network.\n\n8\n00:00:18,640 --> 00:00:20,332\nSo how can a simple scan read\n\n9\n00:00:20,332 --> 00:00:22,363\nwhat's happening years in advance?\n\n10\n00:00:22,500 --> 00:00:24,697\nTurn: What is the brain actually doing\n\n11\n00:00:24,697 --> 00:00:27,337\ndifferently long before memory loss begins?\n\n12\n00:00:27,430 --> 00:00:28,420\nHere's why.\n\n13\n00:00:28,420 --> 00:00:31,725\nTiny disruptions in resting-state connectivity appear years\n\n14\n00:00:31,725 --> 00:00:34,729\nearly, around the time early brain changes begin.\n\n15\n00:00:34,770 --> 00:00:36,971\nEver thought how early detection of neural\n\n16\n00:00:36,971 --> 00:00:39,327\nsignals like this could change modern medicine?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [
+        "scene 6 (27.4-34.8 s): only 6% of its words can be heard - the voice breaks up or drops out",
+        "scene 7 (34.8-39.9 s): only 0% of its words can be heard - the voice breaks up or drops out"
+      ],
+      "footage": [],
+      "review": [],
+      "heard": [
+        "\"stanford scientists are studying brain signals that might help spot signs of alzheimer's years before symptoms start when\" heard as \"स्तश़न्पोٹ सरवाड़생 सिब्देन di spinning सरवाड़still सम्ब स्थमन श्थमन णर शाजबसं तो वलोच स्बस्च्वोछा एत न्हीं सत्बध ki सबईशके मैदेетि येंत गामनाे अपन पिसल्गिर अँण वरिज जोब पोछग वणेगाई jo\"",
+        "\"55 year old sits down for an eeg scan their brain waves usually look completely normal on the surface\" heard as \"after phase\""
+      ],
+      "scene_heard": [
+        "scene 1: 71%",
+        "scene 2: 100%",
+        "scene 3: 100%",
+        "scene 4: 91%",
+        "scene 5: 100%",
+        "scene 6: 6%",
+        "scene 7: 0%"
+      ],
+      "pass": false,
+      "duration": 39.4
+    },
+    "repairs": 0
+  },
+  {
+    "job": "20261118-0949-why-cockroaches-can-easily-survive-massi",
+    "topic": "Why cockroaches can easily survive massive doses of ionizing radiation that would kill humans",
+    "title": "Why Cockroaches Can Survive Higher Radiation Doses Than Humans",
+    "description": "Cockroaches can withstand radiation levels that are lethal to humans. It is not magic, it is biology. Ever wondered why their slow cell cycle makes them so resistant?\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nPhoto by BarbeeAnne on Pixabay\nPhoto by Erik_Karits on Pixabay\nPhoto: Mike Lewinski  from Tres Piedras, NM, United States, CC BY 2.0, via Wikimedia Commons\n\nयह वीडियो कैसे बना: स्क्रिप्ट को AI tools की मदद से open research के आधार पर लिखा और fact-check किया गया है, आवाज़ AI voice की है, और editing open-source software से हुई है। कोई गलती दिखे तो comment में बताइए — जाँच कर सुधार करेंगे।",
+    "tags": [
+      "#shorts",
+      "#hindi",
+      "#science"
+    ],
+    "hook": "Ek cockroach high radiation ko humse behtar jhel sakta hai. Kyun?",
+    "status": "review",
+    "narration": "Ek cockroach high radiation ko humse behtar jhel sakta hai. Kyun? Radiation humari cells ke DNA ko tabah karti hai. Humari cells constant divide hoti rehti hain, isliye nuksan jaldi failta hai. Turn: Toh cockroach ki cells mein aisa kya alag hai jo ye high radiation jhel leta hai? Inki cells humari cells ke muqable radiation ko behtar jhel sakti hain kyunki unka cell division pattern alag hota hai. Inki cells aksar tabhi divide hoti hain jab ye molt karte hain, jisse DNA repair ke liye zyada waqt mil jata hai. Molting ke dauran active cell division ki wajah se inpar radiation ka asar sabse zyada hota hai. Ever wondered why cockroaches can withstand radiation levels that would be lethal to humans? Drop your guess below.",
+    "voice_engine": "edge-tts",
+    "voices": "one narrator (hi-IN-SwaraNeural)",
+    "diagrams": 1,
+    "series": "Animal Whys",
+    "countdown": false,
+    "length_arm": "standard",
+    "question": "Ever wondered why cockroaches can withstand levels of radiation that would be lethal to humans?",
+    "answer_comment": "The answer: Radiation damages cells most when they are actively dividing. Cockroaches are not completely immune to extreme radiation, but they are much more resistant than humans because their cells divide much less frequently, giving their bodies time to repair DNA damage between molts. Got more questions about insect biology?",
+    "sources": [],
+    "fact_check": [
+      "Ionizing radiation targets rapidly dividing cells (like in human bone marrow or gut lining).",
+      "Cockroach cells divide primarily during molting periods, making them less susceptible to radiation damage compared to mammals during non-molting periods.",
+      "Cockroaches have higher lethal radiation dose thresholds than humans, though extreme doses will still kill them."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        4.38
+      ],
+      [
+        4.38,
+        7.48
+      ],
+      [
+        7.48,
+        12.11
+      ],
+      [
+        12.11,
+        17.7
+      ],
+      [
+        17.7,
+        24.5
+      ],
+      [
+        24.5,
+        30.96
+      ],
+      [
+        30.96,
+        36.73
+      ],
+      [
+        36.73,
+        43.47
+      ]
+    ],
+    "duration": 43.47,
+    "scene_lines": [
+      "Ek cockroach high radiation ko humse behtar jhel sakta hai. Kyun?",
+      "Radiation humari cells ke DNA ko tabah karti hai.",
+      "Humari cells constant divide hoti rehti hain, isliye nuksan jaldi failta hai.",
+      "Turn: Toh cockroach ki cells mein aisa kya alag hai jo ye high radiation jhel leta hai?",
+      "Inki cells humari cells ke muqable radiation ko behtar jhel sakti hain kyunki unka cell division pattern alag hota hai.",
+      "Inki cells aksar tabhi divide hoti hain jab ye molt karte hain, jisse DNA repair ke liye zyada waqt mil jata hai.",
+      "Molting ke dauran active cell division ki wajah se inpar radiation ka asar sabse zyada hota hai.",
+      "Ever wondered why cockroaches can withstand radiation levels that would be lethal to humans? Drop your guess below."
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,050 --> 00:00:03,729\nEk cockroach high radiation ko humse behtar jhel sakta hai.\n\n2\n00:00:04,248 --> 00:00:04,196\nKyun?\n\n3\n00:00:04,380 --> 00:00:07,480\nRadiation humari cells ke DNA ko tabah karti hai.\n\n4\n00:00:07,480 --> 00:00:10,230\nHumari cells constant divide hoti rehti hain,\n\n5\n00:00:10,298 --> 00:00:12,039\nisliye nuksan jaldi failta hai.\n\n6\n00:00:12,110 --> 00:00:14,408\nTurn: Toh cockroach ki cells mein aisa\n\n7\n00:00:14,408 --> 00:00:17,501\nkya alag hai jo ye high radiation jhel leta hai?\n\n8\n00:00:17,700 --> 00:00:20,264\nInki cells humari cells ke muqable radiation\n\n9\n00:00:20,264 --> 00:00:22,382\nko behtar jhel sakti hain kyunki unka\n\n10\n00:00:22,382 --> 00:00:24,465\ncell division pattern alag hota hai.\n\n11\n00:00:24,500 --> 00:00:26,725\nInki cells aksar tabhi divide hoti hain\n\n12\n00:00:26,725 --> 00:00:28,636\njab ye molt karte hain, jisse DNA\n\n13\n00:00:28,636 --> 00:00:30,909\nrepair ke liye zyada waqt mil jata hai.\n\n14\n00:00:30,960 --> 00:00:33,216\nMolting ke dauran active cell division ki\n\n15\n00:00:33,216 --> 00:00:36,613\nwajah se inpar radiation ka asar sabse zyada hota hai.\n\n16\n00:00:36,730 --> 00:00:39,440\nEver wondered why cockroaches can withstand radiation\n\n17\n00:00:39,440 --> 00:00:41,703\nlevels that would be lethal to humans?\n\n18\n00:00:41,740 --> 00:00:42,873\nDrop your guess below.\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [
+        "phrase missing from the audio: \"kyun radiation humari cells ke dna ko tabah karti hai humari cells constant divide hoti rehti hain isliye nuksan jaldi failta hai turn toh cockroach ki cells mein aisa kya alag hai jo ye high radiation jhel leta hai\"",
+        "scene 8 (36.7-43.5 s): only 17% of its words can be heard - the voice breaks up or drops out"
+      ],
+      "footage": [
+        "scene(s) [6, 7] have weak or placeholder footage"
+      ],
+      "review": [],
+      "heard": [
+        "\"\" heard as \"हैरेडियेशन\"",
+        "\"radiation\" heard as \"हम से ब ہیںतर जहल सकता है किनौ रेडियेशन हमारी चैलस\"",
+        "\"humse\" heard as \"दिनए को तबाखती है हमारी सेलस कोंस्ट्न्द इस्लीये नॉक्सान जल्दी प्यलता है तु गफरोडष कि सेल्स में आज सा क्या олодग है जो ये हैइ अई रीएशन जेल लेटा है इनकि सelys हमारी सells के मूल्केपल रीएशन को\"",
+        "\"cells humari cells ke muqable radiation ko behtar jhel sakti hain kyunki unka cell division pattern\" heard as \"सेल्टिविशन पातरन रीएशन\"",
+        "\"cells\" heard as \"सेल्स\"",
+        "\"hain\" heard as \"है\"",
+        "\"hain jisse\" heard as \"है जिसे\"",
+        "\"liye zyada\" heard as \"लिए जाडा\""
+      ],
+      "scene_heard": [
+        "scene 1: 50%",
+        "scene 2: 50%",
+        "scene 3: 64%",
+        "scene 4: 60%",
+        "scene 5: 63%",
+        "scene 6: 71%",
+        "scene 7: 56%",
+        "scene 8: 17%"
+      ],
+      "pass": false,
+      "duration": 42.9
+    },
+    "repairs": 0
+  },
+  {
+    "job": "20261118-1019-why-fresh-rainwater-smells-wonderful-aft",
+    "topic": "Why fresh rainwater smells wonderful after a dry spell, unlike water straight from the tap",
+    "title": "Why Rain Smells So Good After A Dry Spell",
+    "description": "Ever wondered why rain after a dry spell smells so wonderful while tap water doesn't? Let's explore the hidden science of geosmin and soil bacteria! #shorts #hindi #science\n\nSources (open-access research):\n- Micciulla et al. (2025), Microbial Ecology. doi:10.1007/s00248-025-02510-7\n- Joung et al. (2015), Nature Communications. doi:10.1038/ncomms7083\n- Pelosi et al. (2018), Chemosensors. doi:10.3390/chemosensors6030032\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nPhoto: Ashraful Islam Shimul, CC BY 4.0, via Wikimedia Commons\nVideo by _tahasultan on Pixabay\nVideo by Matthias_Groeneveld on Pixabay\nVideo by estivejovem on Pixabay\nVideo by Vimeo-Free-Videos on Pixabay",
+    "tags": [
+      "#shorts",
+      "#hindi",
+      "#science",
+      "#rain"
+    ],
+    "hook": "कभी सोचा है कि dry spell के बाद पहली बारिश में मिट्टी से इतनी amazing खुशबू क्यों आती है?",
+    "status": "review",
+    "narration": "कभी सोचा है कि dry spell के बाद पहली बारिश में मिट्टी से इतनी amazing खुशबू क्यों आती है? जब लंबी गर्मी के बाद soil सूखती है, तो कुछ खास bacteria एक oil release करते हैं। साथ ही, पौधों से कुछ aromatic compounds भी पत्थरों और मिट्टी के बीच जमा हो जाते हैं। जब water की पहली बूंद उस सूखी surface पर गिरती है, तो air में tiny bubbles बनते हैं। तो क्या ये सारे chemicals सीधे हवा में उड़कर आपकी nose तक पहुँच जाते हैं? Turn: नहीं, असल में ये tiny bubbles ऊपर हवा में aerosol बनकर उड़ते हैं और geosmin chemical release करते हैं। इसी geosmin को हमारी nose तुरंत catch करती है, जिसकी बहुत कम मात्रा कभी-कभी नल के पानी में भी आ जाती है। कभी सोचा है कि human nose सिर्फ एक part per trillion की concentration में भी geosmin को क्यों सूंघ सकती है?",
+    "voice_engine": "edge-tts",
+    "voices": "one narrator (hi-IN-SwaraNeural)",
+    "diagrams": 1,
+    "series": "Everyday Whys",
+    "countdown": false,
+    "length_arm": "short",
+    "question": "कभी सोचा है कि human nose सिर्फ एक part per trillion की concentration में भी geosmin को क्यों सूंघ सकती है?",
+    "answer_comment": "The answer: मानव नाक जियोस्मिन (geosmin) के प्रति अत्यधिक संवेदनशील होती है क्योंकि हमारे पूर्वजों के लिए यह पानी और उपजाऊ जमीन खोजने का मुख्य संकेत था। बारिश की बूंदों के गिरने से यह केमिकल हवा में aerosol के रूप में फैल जाता है।\n\nSources (open-access research):\n- Micciulla et al. (2025), Microbial Ecology. doi:10.1007/s00248-025-02510-7\n- Joung et al. (2015), Nature Communications. doi:10.1038/ncomms7083\n- Pelosi et al. (2018), Chemosensors. doi:10.3390/chemosensors6030032",
+    "sources": [
+      {
+        "claim": "Dry soil bacteria (actinomycetes) produce geosmin.",
+        "cite": "Micciulla et al. (2025), Microbial Ecology. doi:10.1007/s00248-025-02510-7",
+        "doi": "10.1007/s00248-025-02510-7",
+        "title": "Effects of Geosmin on the Behavior of Soil Protists",
+        "why": "We investigated how soil protists respond to geosmin exposures, focusing on representatives of three morphological groups of protists, Colpoda sp. (ciliate), Cercomonas sp. (flagellate), and Acanthamoeba castellanii (naked amoeba), testing the hypothesis that geosmin production by bacteria influence"
+      },
+      {
+        "claim": "Raindrops trap air bubbles when hitting porous dry soil, launching aerosols into the air.",
+        "cite": "Joung et al. (2015), Nature Communications. doi:10.1038/ncomms7083",
+        "doi": "10.1038/ncomms7083",
+        "title": "Aerosol generation by raindrop impact on soil",
+        "why": "Here, Joung and Buie report another mechanism of aerosol generation from rainfall impact on porous soil surfaces, whereby elements can be delivered to the air."
+      },
+      {
+        "claim": "Human nose is extremely sensitive to geosmin (parts per trillion levels).",
+        "cite": "Pelosi et al. (2018), Chemosensors. doi:10.3390/chemosensors6030032",
+        "doi": "10.3390/chemosensors6030032",
+        "title": "From Gas Sensors to Biomimetic Artificial Noses",
+        "why": "On the other hand, the exceptional sensitivity of the human nose is based on amplification mechanisms difficult to reproduce with electronic circuits, and perhaps novel approaches are required to address this issue."
+      }
+    ],
+    "fact_check": [
+      "Dry soil bacteria (actinomycetes) produce geosmin.",
+      "Raindrops trap air bubbles when hitting porous dry soil, launching aerosols into the air.",
+      "Human nose is extremely sensitive to geosmin (parts per trillion levels).",
+      "Tap water lacks these specific organic soil compounds."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        6.17
+      ],
+      [
+        6.17,
+        11.5
+      ],
+      [
+        11.5,
+        17.13
+      ],
+      [
+        17.13,
+        22.45
+      ],
+      [
+        22.45,
+        27.24
+      ],
+      [
+        27.24,
+        33.94
+      ],
+      [
+        33.94,
+        40.66
+      ],
+      [
+        40.66,
+        47.41
+      ]
+    ],
+    "duration": 47.41,
+    "scene_lines": [
+      "कभी सोचा है कि dry spell के बाद पहली बारिश में मिट्टी से इतनी amazing खुशबू क्यों आती है?",
+      "जब लंबी गर्मी के बाद soil सूखती है, तो कुछ खास bacteria एक oil release करते हैं।",
+      "साथ ही, पौधों से कुछ aromatic compounds भी पत्थरों और मिट्टी के बीच जमा हो जाते हैं।",
+      "जब water की पहली बूंद उस सूखी surface पर गिरती है, तो air में tiny bubbles बनते हैं।",
+      "तो क्या ये सारे chemicals सीधे हवा में उड़कर आपकी nose तक पहुँच जाते हैं?",
+      "Turn: नहीं, असल में ये tiny bubbles ऊपर हवा में aerosol बनकर उड़ते हैं और geosmin chemical release करते हैं।",
+      "इसी geosmin को हमारी nose तुरंत catch करती है, जिसकी बहुत कम मात्रा कभी-कभी नल के पानी में भी आ जाती है।",
+      "कभी सोचा है कि human nose सिर्फ एक part per trillion की concentration में भी geosmin को क्यों सूंघ सकती है?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,050 --> 00:00:02,008\nकभी सोचा है कि dry spell के\n\n2\n00:00:02,008 --> 00:00:04,088\nबाद पहली बारिश में मिट्टी से इतनी\n\n3\n00:00:04,088 --> 00:00:05,964\namazing खुशबू क्यों आती है?\n\n4\n00:00:06,170 --> 00:00:08,310\nजब लंबी गर्मी के बाद soil सूखती\n\n5\n00:00:08,310 --> 00:00:10,317\nहै, तो कुछ खास bacteria एक oil\n\n6\n00:00:10,317 --> 00:00:12,805\nrelease करते हैं। साथ ही, पौधों से\n\n7\n00:00:12,805 --> 00:00:15,453\nकुछ aromatic compounds भी पत्थरों और मिट्टी\n\n8\n00:00:15,453 --> 00:00:17,416\nके बीच जमा हो जाते हैं। जब\n\n9\n00:00:17,416 --> 00:00:19,492\nwater की पहली बूंद उस सूखी surface\n\n10\n00:00:19,492 --> 00:00:22,375\nपर गिरती है, तो air में tiny bubbles बनते हैं।\n\n11\n00:00:22,450 --> 00:00:24,574\nतो क्या ये सारे chemicals सीधे हवा\n\n12\n00:00:24,574 --> 00:00:27,114\nमें उड़कर आपकी nose तक पहुँच जाते हैं?\n\n13\n00:00:27,240 --> 00:00:29,577\nTurn: नहीं, असल में ये tiny bubbles\n\n14\n00:00:29,577 --> 00:00:31,971\nऊपर हवा में aerosol बनकर उड़ते हैं\n\n15\n00:00:31,971 --> 00:00:34,300\nऔर geosmin chemical release करते हैं। इसी\n\n16\n00:00:34,300 --> 00:00:36,588\ngeosmin को हमारी nose तुरंत catch करती\n\n17\n00:00:36,588 --> 00:00:38,810\nहै, जिसकी बहुत कम मात्रा कभी-कभी नल\n\n18\n00:00:38,810 --> 00:00:40,543\nके पानी में भी आ जाती है।\n\n19\n00:00:40,660 --> 00:00:42,784\nकभी सोचा है कि human nose सिर्फ\n\n20\n00:00:42,784 --> 00:00:44,841\nएक part per trillion की concentration में\n\n21\n00:00:44,841 --> 00:00:46,810\nभी geosmin को क्यों सूंघ सकती है?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [
+        "scene 7 (33.9-40.7 s): only 0% of its words can be heard - the voice breaks up or drops out",
+        "scene 8 (40.7-47.4 s): only 0% of its words can be heard - the voice breaks up or drops out"
+      ],
+      "footage": [
+        "scene(s) [7] have weak or placeholder footage"
+      ],
+      "review": [
+        "Frame 1 contains a completely unrelated stock photo of sheep standing on dry cracked earth instead of a scientific illustration or dry soil related to the topic of rain smell."
+      ],
+      "heard": [
+        "\"spell\" heard as \"स्पल\"",
+        "\"amazing खुशबू क्यों\" heard as \"अमेजन कुश्वूँ क्यो\"",
+        "\"soil\" heard as \"सोई\"",
+        "\"bacteria\" heard as \"बक्तिर्या\"",
+        "\"oil\" heard as \"ओय\"",
+        "\"हैं।\" heard as \"है\"",
+        "\"पौधों\" heard as \"पोदो\"",
+        "\"compounds\" heard as \"पंपाँन्स\""
+      ],
+      "scene_heard": [
+        "scene 1: 76%",
+        "scene 2: 75%",
+        "scene 3: 60%",
+        "scene 4: 65%",
+        "scene 5: 73%",
+        "scene 6: 65%",
+        "scene 7: 0%",
+        "scene 8: 0%"
+      ],
+      "pass": false,
+      "duration": 46.8
+    },
+    "repairs": 1
   }
 ]
