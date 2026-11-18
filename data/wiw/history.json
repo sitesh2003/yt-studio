@@ -2602,5 +2602,225 @@
       "duration": 31.1
     },
     "repairs": 0
+  },
+  {
+    "job": "20261118-1905-why-any-number-to-the-power-zero-is-one",
+    "topic": "Why any number to the power zero is one",
+    "title": "Why Is Any Non-Zero Number To The Power Zero One?",
+    "description": "Ever wondered why math rules claim x to the power of zero is usually one? Let's break down the pattern of exponents and look at why order of operations matters. #shorts #math #education\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nPhoto by surotez9 on Pixabay\nPhoto: AlqudsTheory, CC BY 4.0, via Wikimedia Commons\nVideo by Coverr-Free-Footage on Pixabay\n\nHow this was made: the script is researched and fact-checked with AI tools against open-access research and textbooks, narrated by an AI voice, and every diagram, number and graph is drawn by code from the real values. Spot a mistake? Tell us in the comments - corrections are checked and credited.",
+    "tags": [
+      "math",
+      "exponents",
+      "algebra",
+      "numbers",
+      "science"
+    ],
+    "hook": "Does every number to the power of zero equal one? Let's look at the patterns.",
+    "status": "review",
+    "narration": "Does every number to the power of zero equal one? Let's look at the patterns. Start with two cubed, which is eight. Divide by two to get two squared, which is four. Divide by two again. Now you have two to the power of one, which is two. Divide by two one more time. What happens to the sequence? That's because any non-zero number divided by itself is one. Two divided by two is one. This rule works for every positive number, like a million to the power of zero, which is one. But watch out: negative signs matter. Is -5^0 equal to one? Actually, it's negative one because the exponent only applies to the five.",
+    "voice_engine": "kokoro",
+    "voices": "one narrator (af_heart)",
+    "diagrams": 2,
+    "series": "Maths",
+    "countdown": false,
+    "length_arm": null,
+    "question": "If five to the power of zero is one, what is negative five to the power of zero?",
+    "answer_comment": "The answer: Without parentheses, -5^0 equals -1 because the negative is outside the exponent -(5^0). With parentheses, (-5)^0 equals 1! Does that clear up the confusion?",
+    "sources": [],
+    "fact_check": [
+      "Any non-zero number to the power of 0 is 1.",
+      "The sequence division method (2^3=8, 2^2=4, 2^1=2, 2^0=1) is the standard proof for students.",
+      "0^0 is generally undefined or context-dependent, so non-zero is implied in school-level context."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        4.58
+      ],
+      [
+        4.58,
+        9.11
+      ],
+      [
+        9.11,
+        13.37
+      ],
+      [
+        13.37,
+        17.0
+      ],
+      [
+        17.0,
+        22.5
+      ],
+      [
+        22.5,
+        27.74
+      ],
+      [
+        27.74,
+        37.2
+      ]
+    ],
+    "duration": 37.2,
+    "scene_lines": [
+      "Does every number to the power of zero equal one? Let's look at the patterns.",
+      "Start with two cubed, which is eight. Divide by two to get two squared, which is four.",
+      "Divide by two again. Now you have two to the power of one, which is two.",
+      "Divide by two one more time. What happens to the sequence?",
+      "That's because any non-zero number divided by itself is one. Two divided by two is one.",
+      "This rule works for every positive number, like a million to the power of zero, which is one.",
+      "But watch out: negative signs matter. Is -5^0 equal to one? Actually, it's negative one because the exponent only applies to the five."
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,050 --> 00:00:03,000\nDoes every number to the power of zero equal one?\n\n2\n00:00:03,000 --> 00:00:04,580\nLet's look at the patterns.\n\n3\n00:00:04,580 --> 00:00:06,500\nStart with two cubed, which is eight.\n\n4\n00:00:06,500 --> 00:00:09,110\nDivide by two to get two squared, which is four.\n\n5\n00:00:09,110 --> 00:00:10,590\nDivide by two again.\n\n6\n00:00:10,590 --> 00:00:11,753\nNow you have two to the power\n\n7\n00:00:11,753 --> 00:00:13,370\nof one, which is two.\n\n8\n00:00:13,370 --> 00:00:15,140\nDivide by two one more time.\n\n9\n00:00:15,140 --> 00:00:16,940\nWhat happens to the sequence?\n\n10\n00:00:17,000 --> 00:00:20,650\nThat's because any non-zero number divided by itself is one.\n\n11\n00:00:20,650 --> 00:00:22,500\nTwo divided by two is one.\n\n12\n00:00:22,500 --> 00:00:24,795\nThis rule works for every positive number,\n\n13\n00:00:24,795 --> 00:00:26,095\nlike a million to the power of\n\n14\n00:00:26,095 --> 00:00:27,740\nzero, which is one.\n\n15\n00:00:27,740 --> 00:00:29,920\nBut watch out: negative signs matter.\n\n16\n00:00:29,920 --> 00:00:32,270\nIs -5^0 equal to one?\n\n17\n00:00:32,270 --> 00:00:35,008\nActually, it's negative one because the exponent\n\n18\n00:00:35,008 --> 00:00:36,595\nonly applies to the five.\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [],
+      "footage": [],
+      "review": [
+        "Frame 1 is excessively blurry and out of focus, making the text unreadable."
+      ],
+      "heard": [
+        "extra \"minus\""
+      ],
+      "scene_heard": [
+        "scene 1: 100%",
+        "scene 2: 100%",
+        "scene 3: 100%",
+        "scene 4: 100%",
+        "scene 5: 88%",
+        "scene 6: 100%",
+        "scene 7: 100%"
+      ],
+      "pass": false,
+      "duration": 36.4
+    },
+    "repairs": 0
+  },
+  {
+    "job": "20261118-1946-why-can-you-not-divide-by-zero",
+    "topic": "Why can you not divide by zero?",
+    "title": "Why Is Dividing By Zero Undefined?",
+    "description": "Ever wondered why you can't divide by zero? We look at the math behind the error message using cookies. #shorts #math #education\n\nSources (open-access research):\n- Meyenburg (2025), International Journal of Mathematics Trends and Technology. doi:10.14445/22315373/ijmtt-v71i1p102\n- Ciner (2025), International Journal of Mathematics Trends and Technology. doi:10.14445/22315373/ijmtt-v71i9p104\n- Jenber (2016), Advances in Pure Mathematics. doi:10.4236/apm.2016.68043\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nPhoto: kembelwong, CC BY 2.0, via Wikimedia Commons\nPhoto: unknown, CC0 1.0, via Openverse (rawpixel)\nVideo by DistillVideos on Pixabay\nVideo by adege on Pixabay\nVideo by conte_public on Pixabay",
+    "tags": [
+      "math",
+      "division",
+      "calculus",
+      "education"
+    ],
+    "hook": "Dividing by zero is impossible because no number can multiply by zero to give you a normal result.",
+    "status": "banked",
+    "narration": "Dividing by zero is impossible because no number can multiply by zero to give you a normal result. Think of it as sharing 12 cookies with your friends. Divide 12 by 3, you get 4 cookies for each friend. Smaller divisors mean more cookies. As your group size shrinks toward zero, the number of cookies blows up toward infinity. Division asks how many zeros fit into 12. It is impossible. Multiplying any number by zero always gives zero, so you can't work backward to find a single answer. So it's just not a defined operation. Try this: if you divide zero by zero, why is that even more confusing?",
+    "voice_engine": "chatterbox",
+    "voices": "one narrator (af_heart)",
+    "diagrams": 1,
+    "series": "Maths",
+    "countdown": false,
+    "length_arm": null,
+    "question": "Try this: if you divide zero by zero, why is that even more confusing?",
+    "answer_comment": "The answer: Dividing zero by zero is called an indeterminate form. While dividing a non-zero number by zero has no answer at all, zero divided by zero could technically be any number, which also makes it impossible to pin down to a single value. It's a different kind of problem than dividing a non-zero number by zero. Do you want to see how limits help us solve this?\n\nSources (open-access research):\n- Meyenburg (2025), International Journal of Mathematics Trends and Technology. doi:10.14445/22315373/ijmtt-v71i1p102\n- Ciner (2025), International Journal of Mathematics Trends and Technology. doi:10.14445/22315373/ijmtt-v71i9p104\n- Jenber (2016), Advances in Pure Mathematics. doi:10.4236/apm.2016.68043",
+    "sources": [
+      {
+        "claim": "Division by zero is undefined in standard arithmetic.",
+        "cite": "Meyenburg (2025), International Journal of Mathematics Trends and Technology. doi:10.14445/22315373/ijmtt-v71i1p102",
+        "doi": "10.14445/22315373/ijmtt-v71i1p102",
+        "title": "A Novel Algebraic Framework for Division by Zero Using Boolean Operations",
+        "why": "Division by Zero is traditionally undefined in standard arithmetic due to its inherent contradictions."
+      },
+      {
+        "claim": "Dividing a non-zero number by a value approaching zero results in a limit of infinity.",
+        "cite": "Ciner (2025), International Journal of Mathematics Trends and Technology. doi:10.14445/22315373/ijmtt-v71i9p104",
+        "doi": "10.14445/22315373/ijmtt-v71i9p104",
+        "title": "Re-Conceptualizing Zero as the Convergence of Infinity",
+        "why": "By analysing limits of the form n/m as m→0⁺ and m→0⁻, it is shown that unzero naturally serves as a pivot between divergent magnitudes."
+      },
+      {
+        "claim": "Zero divided by zero is an indeterminate form.",
+        "cite": "Jenber (2016), Advances in Pure Mathematics. doi:10.4236/apm.2016.68043",
+        "doi": "10.4236/apm.2016.68043",
+        "title": "Indeterminate Forms",
+        "why": "In this paper, I'm going to discuss on why are 0 0 , ±∞ ±∞ , ( ) ( ) ±∞ -±∞ , ( ) ⋅ ±∞ 0 , 0 0 ,"
+      }
+    ],
+    "fact_check": [
+      "Division by zero is undefined in standard arithmetic.",
+      "Dividing a non-zero number by a value approaching zero results in a limit of infinity.",
+      "Zero divided by zero is an indeterminate form.",
+      "The analogy of sharing cookies is a standard pedagogical approach for division."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        4.43
+      ],
+      [
+        4.43,
+        6.65
+      ],
+      [
+        6.65,
+        9.59
+      ],
+      [
+        9.59,
+        11.37
+      ],
+      [
+        11.37,
+        15.41
+      ],
+      [
+        15.41,
+        24.02
+      ],
+      [
+        24.02,
+        29.72
+      ]
+    ],
+    "duration": 29.72,
+    "scene_lines": [
+      "Dividing by zero is impossible because no number can multiply by zero to give you a normal result.",
+      "Think of it as sharing 12 cookies with your friends.",
+      "Divide 12 by 3, you get 4 cookies for each friend.",
+      "Smaller divisors mean more cookies.",
+      "As your group size shrinks toward zero, the number of cookies blows up toward infinity.",
+      "Division asks how many zeros fit into 12. It is impossible. Multiplying any number by zero always gives zero, so you can't work backward to find a single answer.",
+      "So it's just not a defined operation. Try this: if you divide zero by zero, why is that even more confusing?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,000 --> 00:00:01,700\nDividing by zero is impossible because no\n\n2\n00:00:01,700 --> 00:00:03,120\nnumber can multiply by zero to give\n\n3\n00:00:03,120 --> 00:00:04,110\nyou a normal result.\n\n4\n00:00:04,430 --> 00:00:06,440\nThink of it as sharing 12 cookies with your friends.\n\n5\n00:00:06,650 --> 00:00:08,230\nDivide 12 by 3, you get 4\n\n6\n00:00:08,230 --> 00:00:09,400\ncookies for each friend.\n\n7\n00:00:09,590 --> 00:00:11,100\nSmaller divisors mean more cookies.\n\n8\n00:00:11,370 --> 00:00:13,060\nAs your group size shrinks toward zero,\n\n9\n00:00:13,210 --> 00:00:15,040\nthe number of cookies blows up toward infinity.\n\n10\n00:00:15,410 --> 00:00:17,880\nDivision asks how many zeros fit into 12.\n\n11\n00:00:18,000 --> 00:00:18,690\nIt is impossible.\n\n12\n00:00:19,010 --> 00:00:21,090\nMultiplying any number by zero always gives\n\n13\n00:00:21,090 --> 00:00:22,710\nzero, so you can't work backward to\n\n14\n00:00:22,710 --> 00:00:23,700\nfind a single answer.\n\n15\n00:00:24,020 --> 00:00:25,770\nSo it's just not a defined operation.\n\n16\n00:00:26,020 --> 00:00:27,460\nTry this: if you divide zero by\n\n17\n00:00:27,460 --> 00:00:29,120\nzero, why is that even more confusing?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [],
+      "footage": [],
+      "review": [],
+      "heard": [
+        "\"fit\" heard as \"bid\"",
+        "\"it\" heard as \"and\""
+      ],
+      "scene_heard": [
+        "scene 1: 100%",
+        "scene 2: 100%",
+        "scene 3: 100%",
+        "scene 4: 100%",
+        "scene 5: 100%",
+        "scene 6: 93%",
+        "scene 7: 100%"
+      ],
+      "pass": true,
+      "duration": 29.5
+    },
+    "repairs": 2,
+    "audited": true
   }
 ]

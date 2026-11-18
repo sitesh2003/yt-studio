@@ -288,5 +288,36 @@
       "Reversing the polarity of the power supply reverses current direction, which reverses the direction of the magnetic forces and therefore the direction of rotation."
     ],
     "sources": []
+  },
+  {
+    "job": "20261118-1946-why-can-you-not-divide-by-zero",
+    "date": "2026-11-18",
+    "title": "Why Is Dividing By Zero Undefined?",
+    "topic": "Why can you not divide by zero?",
+    "series": "Maths",
+    "weekly": false,
+    "claims": [
+      "Division by zero is undefined in standard arithmetic.",
+      "Dividing a non-zero number by a value approaching zero results in a limit of infinity.",
+      "Zero divided by zero is an indeterminate form.",
+      "The analogy of sharing cookies is a standard pedagogical approach for division."
+    ],
+    "sources": [
+      {
+        "cite": "Meyenburg (2025), International Journal of Mathematics Trends and Technology. doi:10.14445/22315373/ijmtt-v71i1p102",
+        "doi": "10.14445/22315373/ijmtt-v71i1p102",
+        "claim": "Division by zero is undefined in standard arithmetic."
+      },
+      {
+        "cite": "Ciner (2025), International Journal of Mathematics Trends and Technology. doi:10.14445/22315373/ijmtt-v71i9p104",
+        "doi": "10.14445/22315373/ijmtt-v71i9p104",
+        "claim": "Dividing a non-zero number by a value approaching zero results in a limit of infinity."
+      },
+      {
+        "cite": "Jenber (2016), Advances in Pure Mathematics. doi:10.4236/apm.2016.68043",
+        "doi": "10.4236/apm.2016.68043",
+        "claim": "Zero divided by zero is an indeterminate form."
+      }
+    ]
   }
 ]

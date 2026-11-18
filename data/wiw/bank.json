@@ -70,5 +70,17 @@
     "locked": true,
     "series": "Physics",
     "stored": "2026-11-18T08:17:05.471177+00:00"
+  },
+  {
+    "job": "20261118-1946-why-can-you-not-divide-by-zero",
+    "title": "Why Is Dividing By Zero Undefined?",
+    "assets": {
+      "mp4": 764915537,
+      "jpg": 764915787,
+      "json": 764915814
+    },
+    "locked": true,
+    "series": "Maths",
+    "stored": "2026-11-18T20:38:05.854705+00:00"
   }
 ]

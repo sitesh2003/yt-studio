@@ -1,5 +1,39 @@
 [
   {
+    "topic": "Why does baking soda fizz when mixed with vinegar?",
+    "title": "Why Does Baking Soda Fizz With Vinegar",
+    "hook": "Why does baking soda fizz the moment it hits vinegar?",
+    "countdown": false,
+    "length_arm": null,
+    "duration": 35.6,
+    "publish_at": "2026-11-16T07:30:00-05:00",
+    "video": "Sxptr2TsIRI",
+    "views": 63,
+    "engagedViews": 27,
+    "averageViewPercentage": 27.839999999999996,
+    "averageViewDuration": 9,
+    "likes": 1,
+    "subscribersGained": 0,
+    "stayed_pct": 42.9
+  },
+  {
+    "topic": "Why does soap remove grease and oil when plain water cannot?",
+    "title": "How Soap Works: The Chemistry of Cleaning",
+    "hook": "You've used soap your whole life, but why does it clean grease when plain water fails?",
+    "countdown": false,
+    "length_arm": null,
+    "duration": 36.67,
+    "publish_at": "2026-11-16T16:30:00-05:00",
+    "video": "kU4gc_KAIJ4",
+    "views": 46,
+    "engagedViews": 14,
+    "averageViewPercentage": 40.18,
+    "averageViewDuration": 14,
+    "likes": 0,
+    "subscribersGained": 0,
+    "stayed_pct": 30.4
+  },
+  {
     "topic": "How do vaccines actually train your immune system to fight real viruses?",
     "title": "How Vaccines Train Your Immune System",
     "hook": "How do vaccines actually train your immune system?",
@@ -8,12 +42,12 @@
     "duration": 39.19,
     "publish_at": "2026-11-15T16:30:00-05:00",
     "video": "NS68pl6mBmI",
-    "views": 13,
-    "engagedViews": 2,
-    "averageViewPercentage": 21.28,
-    "averageViewDuration": 8,
+    "views": 26,
+    "engagedViews": 7,
+    "averageViewPercentage": 74.14,
+    "averageViewDuration": 28,
     "likes": 0,
     "subscribersGained": 0,
-    "stayed_pct": 15.4
+    "stayed_pct": 26.9
   }
 ]

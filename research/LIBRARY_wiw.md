@@ -11,6 +11,19 @@ agents/library.py; a source is listed only if its abstract was checked to suppor
 - A split-ring commutator reverses the connection between the rotating coil and external circuit every 180 degrees (half-turn), maintaining unidirectional torque and preventing the coil from stalling at the neutral plane.
 - Reversing the polarity of the power supply reverses current direction, which reverses the direction of the magnetic forces and therefore the direction of rotation.
 
+## Why Is Dividing By Zero Undefined?
+*2026-11-18 · Maths*
+
+- Division by zero is undefined in standard arithmetic.
+- Dividing a non-zero number by a value approaching zero results in a limit of infinity.
+- Zero divided by zero is an indeterminate form.
+- The analogy of sharing cookies is a standard pedagogical approach for division.
+
+Sources:
+- Meyenburg (2025), International Journal of Mathematics Trends and Technology. doi:10.14445/22315373/ijmtt-v71i1p102 — supports: Division by zero is undefined in standard arithmetic.
+- Ciner (2025), International Journal of Mathematics Trends and Technology. doi:10.14445/22315373/ijmtt-v71i9p104 — supports: Dividing a non-zero number by a value approaching zero results in a limit of infinity.
+- Jenber (2016), Advances in Pure Mathematics. doi:10.4236/apm.2016.68043 — supports: Zero divided by zero is an indeterminate form.
+
 ## How Newton's Third Law Actually Works
 *2026-11-17 · Physics*
 
