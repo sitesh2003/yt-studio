@@ -174,6 +174,13 @@ def tidy_countdown(script):
 def _fix_rule(fix):
     if not fix:
         return ""
+    if fix.get("kind") == "countdown":
+        # 19 Nov 2026, owner: the "Pause and guess... three, two, one" videos come back without the countdown
+        return f"""- THIS IS A FRESH REMAKE of "{fix.get('title', '')}", held back because it used the old
+  "Pause and guess... three, two, one" countdown (its facts were fine). Write a NEW script on the same topic:
+  a stronger hook (a surprising true statement that makes people need the answer), a different running
+  example and a different title. No countdown, no question in the middle, one closing question only.
+"""
     if fix.get("kind") == "audio":
         # 16 Nov 2026: the content was right, the old render broke the sound; the remake must not be a copy
         # (a re-upload of the same video reads as reused content)

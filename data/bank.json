@@ -1,134 +1,50 @@
 [
-  {
-    "job": "20261112-1841-why-do-zebras-have-stripes-while-horses-",
-    "title": "Why Are Horses Solid But Zebras Striped? 🐎🦓 #shorts",
-    "assets": {
-      "mp4": 740678229,
-      "jpg": 740678327,
-      "json": 740678359
-    },
-    "locked": true,
-    "series": "Animal Whys",
-    "stored": "2026-11-12T18:51:24.336591+00:00"
+ {
+  "job": "20261116-1902-scientists-just-found-a-hidden-alien-pla",
+  "title": "How James Webb Spots Hidden Planets In Plain Sight",
+  "assets": {
+   "mp4": 756157505,
+   "jpg": 756157760,
+   "json": 756157804
   },
-  {
-    "job": "20261112-1914-why-popcorn-kernels-explode-into-fluffy-",
-    "title": "Why Does Popcorn Pop And Other Corn Doesn't? 🍿🔥",
-    "assets": {
-      "mp4": 740798414,
-      "jpg": 740798542,
-      "json": 740798568
-    },
-    "locked": true,
-    "series": "Food Whys",
-    "stored": "2026-11-12T19:30:00.802875+00:00"
+  "locked": true,
+  "series": "How Things Work",
+  "stored": "2026-11-16T19:31:47.409651+00:00"
+ },
+ {
+  "job": "20261117-0407-why-does-your-leg-actually-fall-asleep-w",
+  "title": "What Actually Happens When Your Leg Falls Asleep",
+  "assets": {
+   "mp4": 757700030,
+   "jpg": 757700200,
+   "json": 757700210
   },
-  {
-    "job": "20261113-0024-why-owls-fly-in-complete-silence-while-o",
-    "title": "Why Owls Fly in Complete Silence vs Loud Pigeons 🦉🤫",
-    "assets": {
-      "mp4": 741668651,
-      "jpg": 741668761,
-      "json": 741668812
-    },
-    "locked": true,
-    "series": "Animal Whys",
-    "stored": "2026-11-13T00:38:38.270642+00:00"
+  "locked": true,
+  "series": "Body Whys",
+  "stored": "2026-11-17T04:57:55.978534+00:00"
+ },
+ {
+  "job": "20261117-0512-scientists-just-found-a-giant-hidden-wor",
+  "title": "Why Scientists Missed an Outer Kuiper Belt 🤯",
+  "assets": {
+   "mp4": 757808703,
+   "jpg": 757808877,
+   "json": 757808915
   },
-  {
-    "job": "20261116-1902-scientists-just-found-a-hidden-alien-pla",
-    "title": "How James Webb Spots Hidden Planets In Plain Sight",
-    "assets": {
-      "mp4": 756157505,
-      "jpg": 756157760,
-      "json": 756157804
-    },
-    "locked": true,
-    "series": "How Things Work",
-    "stored": "2026-11-16T19:31:47.409651+00:00"
+  "locked": true,
+  "series": "How Things Work",
+  "stored": "2026-11-17T05:43:16.560243+00:00"
+ },
+ {
+  "job": "20261118-0321-why-farmed-salmon-meat-is-naturally-gray",
+  "title": "Why Farmed Salmon Meat Is Gray 🐟",
+  "assets": {
+   "mp4": 761794214,
+   "jpg": 761794412,
+   "json": 761794459
   },
-  {
-    "job": "20261117-0407-why-does-your-leg-actually-fall-asleep-w",
-    "title": "What Actually Happens When Your Leg Falls Asleep",
-    "assets": {
-      "mp4": 757700030,
-      "jpg": 757700200,
-      "json": 757700210
-    },
-    "locked": true,
-    "series": "Body Whys",
-    "stored": "2026-11-17T04:57:55.978534+00:00"
-  },
-  {
-    "job": "20261117-0512-scientists-just-found-a-giant-hidden-wor",
-    "title": "Why Scientists Missed an Outer Kuiper Belt 🤯",
-    "assets": {
-      "mp4": 757808703,
-      "jpg": 757808877,
-      "json": 757808915
-    },
-    "locked": true,
-    "series": "How Things Work",
-    "stored": "2026-11-17T05:43:16.560243+00:00"
-  },
-  {
-    "job": "20261117-0601-why-hippos-sweat-a-red-liquid-while-huma",
-    "title": "Why Hippos Excrete Red Liquid 🤯",
-    "assets": {
-      "mp4": 757918154,
-      "jpg": 757918368,
-      "json": 757918387
-    },
-    "locked": true,
-    "series": "Animal Whys",
-    "stored": "2026-11-17T06:29:13.998182+00:00"
-  },
-  {
-    "job": "20261117-1237-why-mosquitoes-prefer-specific-people-ov",
-    "title": "How Mosquitoes Pick Their Next Meal 😮",
-    "assets": {
-      "mp4": 759116712,
-      "jpg": 759116896,
-      "json": 759116927
-    },
-    "locked": true,
-    "series": "Animal Whys",
-    "stored": "2026-11-17T13:10:05.532765+00:00"
-  },
-  {
-    "job": "20261117-2249-can-pineapples-pre-digest-meat-how-pinea",
-    "title": "Does Pineapple Juice Actually Digest Meat? 😮",
-    "assets": {
-      "mp4": 761037701,
-      "jpg": 761038321,
-      "json": 761038370
-    },
-    "locked": true,
-    "series": "Food Whys",
-    "stored": "2026-11-17T23:20:28.723535+00:00"
-  },
-  {
-    "job": "20261118-0321-why-farmed-salmon-meat-is-naturally-gray",
-    "title": "Why Farmed Salmon Meat Is Gray 🐟",
-    "assets": {
-      "mp4": 761794214,
-      "jpg": 761794412,
-      "json": 761794459
-    },
-    "locked": true,
-    "series": "Food Whys",
-    "stored": "2026-11-18T03:54:23.699075+00:00"
-  },
-  {
-    "job": "20261119-0317-why-heavy-machinery-ball-bearings-never-",
-    "title": "Why Steel Bearings Are Extremely Durable 🏗️",
-    "assets": {
-      "mp4": 766261050,
-      "jpg": 766261544,
-      "json": 766261609
-    },
-    "locked": true,
-    "series": "How Things Work",
-    "stored": "2026-11-19T04:47:03.110976+00:00"
-  }
+  "locked": true,
+  "series": "Food Whys",
+  "stored": "2026-11-18T03:54:23.699075+00:00"
+ }
 ]
