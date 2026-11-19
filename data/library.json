@@ -440,5 +440,26 @@
         "claim": "Farmed salmon are fed carotenoids (like astaxanthin) to achieve pink color."
       }
     ]
+  },
+  {
+    "job": "20261119-0317-why-heavy-machinery-ball-bearings-never-",
+    "date": "2026-11-19",
+    "title": "Why Steel Bearings Are Extremely Durable 🏗️",
+    "topic": "Why Heavy Machinery Ball Bearings Never Shatter Under Tons of Stress 🏗️",
+    "series": "How Things Work",
+    "weekly": false,
+    "claims": [
+      "Ball bearings work by distributing load across a curved surface to minimize stress concentrations.",
+      "Steel’s elastic modulus allows for slight deformation, preventing material failure under load.",
+      "The crystal lattice of steel provides the structural integrity required to support heavy mechanical loads.",
+      "Acorn-mouse-tick chain is a well-documented ecological phenomenon (Pedersen et al., 2007; Parise et al., 2019)."
+    ],
+    "sources": [
+      {
+        "cite": "Kong et al. (2018), Shock and Vibration. doi:10.1155/2018/5424875",
+        "doi": "10.1155/2018/5424875",
+        "claim": "Ball bearings work by distributing load across a curved surface to minimize stress concentrations."
+      }
+    ]
   }
 ]

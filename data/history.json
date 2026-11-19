@@ -2842,7 +2842,8 @@
     "video_id": "KlP_2pVJbjU",
     "publish_at": "2026-11-18T19:00:00-05:00",
     "thumbnail_set": true,
-    "answered": true
+    "answered": true,
+    "recapped": true
   },
   {
     "job": "20261116-0825-weekly-this-shark-can-live-for-centuries",
@@ -4396,5 +4397,124 @@
       "duration": 43.4
     },
     "repairs": 0
+  },
+  {
+    "job": "20261119-0317-why-heavy-machinery-ball-bearings-never-",
+    "topic": "Why Heavy Machinery Ball Bearings Never Shatter Under Tons of Stress 🏗️",
+    "title": "Why Steel Bearings Are Extremely Durable 🏗️",
+    "description": "Ever wonder how steel balls hold up thousands of pounds of metal without breaking? It comes down to how they distribute weight through elastic deformation. #science #engineering #shorts\n\nSources (open-access research):\n- Kong et al. (2018), Shock and Vibration. doi:10.1155/2018/5424875\n\nPhoto by Hans on Pixabay\nPhoto by ella_k on Pixabay\nPhoto: Mark Turnauckas, BY 2.0, via Openverse (flickr)\nPhoto: R. Henrik Nilsson, CC BY 4.0, via Wikimedia Commons\nPhoto: rawdonfox, BY 2.0, via Openverse (flickr)\nVideo by SamuelFJohanns on Pixabay\nVideo by federicomaderno on Pixabay\nVideo by ugac on Pixabay",
+    "tags": [
+      "science",
+      "engineering",
+      "physics",
+      "shorts",
+      "how things work"
+    ],
+    "hook": "Steel balls allow car wheels to rotate while supporting the weight of the vehicle. They don't shatter because the load is distributed across many balls trapped inside precision-engineered races.",
+    "status": "banked",
+    "narration": "Steel balls allow car wheels to rotate while supporting the weight of the vehicle. They don't shatter because the load is distributed across many balls trapped inside precision-engineered races. If you put that weight on a single point, the metal would permanently deform. But here, the weight is shared. The ball isn't just sitting there. It's trapped inside a precision-ground, curved race. Under load, steel balls and their races deform slightly, creating a tiny, flattened contact area that spreads out the force and prevents failure. Now, imagine if we replaced that steel ball with one made of soft rubber. Think about how the shape changes under load. Pause and guess... three, two, one. While steel is rigid, it undergoes elastic deformation, allowing the force to distribute across a manageable contact area. The secret is the steel's ability to undergo elastic deformation, spreading the load over a wider contact area to manage stress. Yesterday, we asked how forest webs connect to human health. Mice populations surge with acorns, bringing more ticks to humans. Nobody cracked it yet, so today is your turn. Ever thought how bearings in a skyscraper lift are designed differently than those in your car?",
+    "voice_engine": "chatterbox",
+    "voices": "one narrator (af_heart)",
+    "diagrams": 2,
+    "series": "How Things Work",
+    "countdown": true,
+    "length_arm": "long",
+    "question": "Ever thought how bearings in a skyscraper lift are designed differently than those in your car?",
+    "answer_comment": "The answer: Elevator systems often use specialized roller or plain bearings to optimize for extreme safety, longevity, and high-frequency cycles, which differs from the high-speed rotational requirements of automotive wheel bearings.\n\nSources (open-access research):\n- Kong et al. (2018), Shock and Vibration. doi:10.1155/2018/5424875",
+    "sources": [
+      {
+        "claim": "Ball bearings work by distributing load across a curved surface to minimize stress concentrations.",
+        "cite": "Kong et al. (2018), Shock and Vibration. doi:10.1155/2018/5424875",
+        "doi": "10.1155/2018/5424875",
+        "title": "A Vibration Model of Ball Bearings with a Localized Defect Based on the Hertzian Contact Stress Distribution",
+        "why": "Hertzian contact theory indicates that the contact area between the ball and the raceway is an elliptical contact surface; therefore, a new approach is used to calculate the ball‐raceway contact force in the defect area based on the stress distribution and the contact area."
+      }
+    ],
+    "fact_check": [
+      "Ball bearings work by distributing load across a curved surface to minimize stress concentrations.",
+      "Steel’s elastic modulus allows for slight deformation, preventing material failure under load.",
+      "The crystal lattice of steel provides the structural integrity required to support heavy mechanical loads.",
+      "Acorn-mouse-tick chain is a well-documented ecological phenomenon (Pedersen et al., 2007; Parise et al., 2019)."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        8.24
+      ],
+      [
+        8.24,
+        13.27
+      ],
+      [
+        13.27,
+        17.67
+      ],
+      [
+        17.67,
+        24.51
+      ],
+      [
+        24.51,
+        32.83
+      ],
+      [
+        32.83,
+        39.18
+      ],
+      [
+        39.18,
+        45.13
+      ],
+      [
+        45.13,
+        54.15
+      ],
+      [
+        54.15,
+        58.29
+      ]
+    ],
+    "duration": 58.29,
+    "scene_lines": [
+      "Steel balls allow car wheels to rotate while supporting the weight of the vehicle. They don't shatter because the load is distributed across many balls trapped inside precision-engineered races.",
+      "If you put that weight on a single point, the metal would permanently deform. But here, the weight is shared.",
+      "The ball isn't just sitting there. It's trapped inside a precision-ground, curved race.",
+      "Under load, steel balls and their races deform slightly, creating a tiny, flattened contact area that spreads out the force and prevents failure.",
+      "Now, imagine if we replaced that steel ball with one made of soft rubber. Think about how the shape changes under load. Pause and guess... three, two, one.",
+      "While steel is rigid, it undergoes elastic deformation, allowing the force to distribute across a manageable contact area.",
+      "The secret is the steel's ability to undergo elastic deformation, spreading the load over a wider contact area to manage stress.",
+      "Yesterday, we asked how forest webs connect to human health. Mice populations surge with acorns, bringing more ticks to humans. Nobody cracked it yet, so today is your turn.",
+      "Ever thought how bearings in a skyscraper lift are designed differently than those in your car?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": "KlP_2pVJbjU",
+    "captions_srt": "1\n00:00:00,000 --> 00:00:01,540\nSteel balls allow car wheels to rotate\n\n2\n00:00:01,540 --> 00:00:03,370\nwhile supporting the weight of the vehicle.\n\n3\n00:00:03,440 --> 00:00:04,600\nThey don't shatter because the load is\n\n4\n00:00:04,600 --> 00:00:07,830\ndistributed across many balls trapped inside precision-engineered races.\n\n5\n00:00:08,240 --> 00:00:09,220\nIf you put that weight on a\n\n6\n00:00:09,220 --> 00:00:11,230\nsingle point, the metal would permanently deform.\n\n7\n00:00:11,550 --> 00:00:13,100\nBut here, the weight is shared.\n\n8\n00:00:13,270 --> 00:00:14,760\nThe ball isn't just sitting there.\n\n9\n00:00:14,800 --> 00:00:17,370\nIt's trapped inside a precision-ground, curved race.\n\n10\n00:00:17,670 --> 00:00:20,380\nUnder load, steel balls and their races deform slightly,\n\n11\n00:00:20,470 --> 00:00:22,490\ncreating a tiny, flattened contact area that\n\n12\n00:00:22,490 --> 00:00:24,200\nspreads out the force and prevents failure.\n\n13\n00:00:24,510 --> 00:00:24,960\nNow,\n\n14\n00:00:25,030 --> 00:00:26,410\nimagine if we replaced that steel ball\n\n15\n00:00:26,410 --> 00:00:27,600\nwith one made of soft rubber.\n\n16\n00:00:27,730 --> 00:00:29,820\nThink about how the shape changes under load.\n\n17\n00:00:29,970 --> 00:00:30,920\nPause and guess...\n\n18\n00:00:31,090 --> 00:00:31,860\nthree, two,\n\n19\n00:00:31,910 --> 00:00:32,360\none.\n\n20\n00:00:32,830 --> 00:00:33,860\nWhile steel is rigid,\n\n21\n00:00:34,010 --> 00:00:35,620\nit undergoes elastic deformation,\n\n22\n00:00:35,820 --> 00:00:38,970\nallowing the force to distribute across a manageable contact area.\n\n23\n00:00:39,180 --> 00:00:41,910\nThe secret is the steel's ability to undergo elastic deformation,\n\n24\n00:00:42,160 --> 00:00:43,500\nspreading the load over a wider contact\n\n25\n00:00:43,500 --> 00:00:44,790\narea to manage stress.\n\n26\n00:00:45,130 --> 00:00:48,000\nYesterday, we asked how forest webs connect to human health.\n\n27\n00:00:48,090 --> 00:00:51,320\nMice populations surge with acorns, bringing more ticks to humans.\n\n28\n00:00:51,530 --> 00:00:53,940\nNobody cracked it yet, so today is your turn.\n\n29\n00:00:54,150 --> 00:00:55,670\nEver thought how bearings in a skyscraper\n\n30\n00:00:55,670 --> 00:00:57,690\nlift are designed differently than those in your car?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [],
+      "footage": [],
+      "review": [],
+      "heard": [
+        "\"secret\" heard as \"grid\""
+      ],
+      "scene_heard": [
+        "scene 1: 100%",
+        "scene 2: 100%",
+        "scene 3: 100%",
+        "scene 4: 100%",
+        "scene 5: 100%",
+        "scene 6: 100%",
+        "scene 7: 95%",
+        "scene 8: 100%",
+        "scene 9: 94%"
+      ],
+      "pass": true,
+      "duration": 57.9
+    },
+    "repairs": 2,
+    "audited": true
   }
 ]

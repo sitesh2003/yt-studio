@@ -3,6 +3,17 @@
 Every video, the claims it makes, and the open-access research behind them. Built automatically by
 agents/library.py; a source is listed only if its abstract was checked to support the claim.
 
+## Why Steel Bearings Are Extremely Durable 🏗️
+*2026-11-19 · How Things Work*
+
+- Ball bearings work by distributing load across a curved surface to minimize stress concentrations.
+- Steel’s elastic modulus allows for slight deformation, preventing material failure under load.
+- The crystal lattice of steel provides the structural integrity required to support heavy mechanical loads.
+- Acorn-mouse-tick chain is a well-documented ecological phenomenon (Pedersen et al., 2007; Parise et al., 2019).
+
+Sources:
+- Kong et al. (2018), Shock and Vibration. doi:10.1155/2018/5424875 — supports: Ball bearings work by distributing load across a curved surface to minimize stress concentrations.
+
 ## Why Farmed Salmon Meat Is Gray 🐟
 *2026-11-18 · Food Whys*
 
