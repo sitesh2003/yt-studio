@@ -194,5 +194,18 @@
   ],
   "not_drawn": {},
   "error": ""
+ },
+ {
+  "when": "2026-11-19 15:36",
+  "topic": "How does a lithium-ion battery actually charge?",
+  "drawn": [
+   2,
+   3,
+   5
+  ],
+  "not_drawn": {
+   "4": "The image shows a battery being charged, but the text 'POWER FLOW' is placed next to the battery, and the diagram implies electrons are flowing into the battery"
+  },
+  "error": ""
  }
 ]

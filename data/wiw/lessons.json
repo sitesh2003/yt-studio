@@ -18,5 +18,9 @@
   {
     "kind": "unconfirmed",
     "text": "It never crashes. -> Satellites do eventually crash due to orbital decay caused by atmospheric drag, including the ISS which requires regular re-boosts."
+  },
+  {
+    "kind": "false_line",
+    "text": "said \"When empty, most positively charged lithium ions are sitting over on the positive cathode side.\" but In a discharged lithium-ion battery, most lithium ions are actually stored within the structure of the cathode, not just sitting on its side. Charging involves these ions de-intercalating from "
   }
 ]

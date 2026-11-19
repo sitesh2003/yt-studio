@@ -1,1 +1,11 @@
-[]
+[
+  {
+    "topic": "How does a lithium-ion battery actually charge?",
+    "pulled": "",
+    "title": "How Does A Lithium-Ion Battery Actually Charge?",
+    "false_sentence": "When empty, most positively charged lithium ions are sitting over on the positive cathode side.",
+    "correct_version": "In a discharged lithium-ion battery, most lithium ions are actually stored within the structure of the cathode, not just sitting on its side. Charging involves these ions de-intercalating from the cathode and moving to the anode.",
+    "why": "The narration implies ions are sitting loosely in the electrolyte or surface of the cathode when discharged, whereas they are chemically intercalated within the cathode material lattice.",
+    "tries": 0
+  }
+]

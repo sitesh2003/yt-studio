@@ -1483,7 +1483,7 @@
       "why it works"
     ],
     "hook": "You've heard an ambulance siren drop in pitch as it speeds past. But why does that happen?",
-    "status": "scheduled",
+    "status": "public",
     "narration": "You've heard an ambulance siren drop in pitch as it speeds past. But why does that happen? Imagine a parked ambulance sending out sound waves in equal circles. Now it drives toward you, chasing its own waves and squishing them closer together. More waves reach your ear every second, making the pitch sound higher. Once it passes, it travels away from those waves, stretching them apart. That's because pitch depends on wave frequency, so bunched waves sound higher and stretched waves sound lower. Engineers use this exact wave shift in radar guns to measure car speeds. Try this: does a moving siren change the speed of sound through the air?",
     "voice_engine": "kokoro",
     "voices": "one narrator (af_bella)",
@@ -1582,7 +1582,9 @@
     "audited": true,
     "video_id": "qvYQfC6SeFE",
     "publish_at": "2026-11-19T07:30:00-05:00",
-    "thumbnail_set": true
+    "thumbnail_set": true,
+    "recapped": true,
+    "answered": true
   },
   {
     "job": "20261116-1432-why-don-t-planets-fall-into-the-sun-cele",
@@ -1797,7 +1799,7 @@
       "science education"
     ],
     "hook": "A virus attacks your body. How does a vaccine prepare your defenses before the fight starts?",
-    "status": "banked",
+    "status": "scheduled",
     "narration": "A virus attacks your body. How does a vaccine prepare your defenses before the fight starts? A single piece of viral protein blueprint (mRNA) is injected into a muscle cell. Your cells read that mRNA blueprint. They build only the harmless surface spikes of the virus. Immune cells detect those spikes. They begin a multi-day process to craft specific weapons called antibodies. What happens if the real virus shows up weeks later? Memory cells recognize the protein and signal your body to rapidly produce those exact antibodies to stop the virus. Think about this. Why wouldn't your memory cells recognize a totally different cold virus?",
     "voice_engine": "chatterbox",
     "voices": "one narrator (af_heart)",
@@ -1884,7 +1886,10 @@
       "duration": 31.3
     },
     "repairs": 1,
-    "audited": true
+    "audited": true,
+    "video_id": "UQoxFnV0kUw",
+    "publish_at": "2026-11-20T16:30:00-05:00",
+    "thumbnail_set": true
   },
   {
     "job": "20261116-2045-how-does-gps-actually-know-where-i-am",
@@ -2941,5 +2946,100 @@
     },
     "repairs": 2,
     "audited": true
+  },
+  {
+    "job": "20261119-1509-how-does-a-lithium-ion-battery-actually-",
+    "topic": "How does a lithium-ion battery actually charge?",
+    "title": "How Does A Lithium-Ion Battery Actually Charge?",
+    "description": "Ever wonder how energy moves into your battery? We break down the movement of lithium ions during charging. #shorts #physics #technology\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nPhoto by markusspiske on Pixabay\nPhoto: Miscellaneous Items in High Demand, PPOC, Library of Congres, Public domain, via Wikimedia Commons\nVideo by Matthias_Groeneveld on Pixabay\nVideo by Activedia on Pixabay",
+    "tags": [
+      "physics",
+      "batteries",
+      "science",
+      "technology",
+      "education"
+    ],
+    "hook": "Your phone battery is empty, but how does the energy actually get back inside?",
+    "status": "review",
+    "narration": "Your phone battery is empty, but how does the energy actually get back inside? Inside, your battery has two sides: a positive cathode and a negative anode, separated by a liquid. It's simple. When empty, most positively charged lithium ions are sitting over on the positive cathode side. Plugging in the charger pushes electrons through the external circuit, creating a strong negative pull. Power flows. The ions move through the liquid to the negative anode, where they get stored until you unplug. That's because the external power source forces ions to move against their natural preference, storing electrical potential energy. You see this movement every time your phone hits 100 percent. Try this: why does a battery eventually hold less charge after hundreds of cycles?",
+    "voice_engine": "chatterbox",
+    "voices": "one narrator (af_heart)",
+    "diagrams": 1,
+    "series": "Electronics",
+    "countdown": false,
+    "length_arm": null,
+    "question": "Try this: why does a battery eventually hold less charge after hundreds of cycles?",
+    "answer_comment": "The answer: Over time, the internal chemical structure degrades or develops thin layers that block the lithium ions from moving freely between the anode and cathode. This reduces the number of ions that can store energy, effectively shrinking the battery's capacity. Got questions about how battery chemistry works?",
+    "sources": [],
+    "fact_check": [
+      "Lithium ions move from cathode to anode during charging.",
+      "Electrons move through the external circuit while ions move through the electrolyte.",
+      "Charging involves storing potential energy by forcing ions to the anode.",
+      "Battery degradation is primarily due to chemical side reactions and physical structural changes."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        3.46
+      ],
+      [
+        3.46,
+        9.07
+      ],
+      [
+        9.07,
+        13.4
+      ],
+      [
+        13.4,
+        18.57
+      ],
+      [
+        18.57,
+        22.61
+      ],
+      [
+        22.61,
+        28.37
+      ],
+      [
+        28.37,
+        35.29
+      ]
+    ],
+    "duration": 35.29,
+    "scene_lines": [
+      "Your phone battery is empty, but how does the energy actually get back inside?",
+      "Inside, your battery has two sides: a positive cathode and a negative anode, separated by a liquid. It's simple.",
+      "When empty, most positively charged lithium ions are sitting over on the positive cathode side.",
+      "Plugging in the charger pushes electrons through the external circuit, creating a strong negative pull. Power flows.",
+      "The ions move through the liquid to the negative anode, where they get stored until you unplug.",
+      "That's because the external power source forces ions to move against their natural preference, storing electrical potential energy.",
+      "You see this movement every time your phone hits 100 percent. Try this: why does a battery eventually hold less charge after hundreds of cycles?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,000 --> 00:00:01,360\nYour phone battery is empty, but how\n\n2\n00:00:01,360 --> 00:00:02,850\ndoes the energy actually get back inside?\n\n3\n00:00:03,460 --> 00:00:05,320\nInside, your battery has two sides: a\n\n4\n00:00:05,320 --> 00:00:08,090\npositive cathode and a negative anode, separated by a liquid.\n\n5\n00:00:08,180 --> 00:00:08,830\nIt's simple.\n\n6\n00:00:09,070 --> 00:00:11,170\nWhen empty, most positively charged lithium ions\n\n7\n00:00:11,170 --> 00:00:13,280\nare sitting over on the positive cathode side.\n\n8\n00:00:13,400 --> 00:00:16,110\nPlugging in the charger pushes electrons through the external circuit,\n\n9\n00:00:16,170 --> 00:00:17,360\ncreating a strong negative pull.\n\n10\n00:00:17,470 --> 00:00:18,420\nPower flows.\n\n11\n00:00:18,570 --> 00:00:19,970\nThe ions move through the liquid to\n\n12\n00:00:19,970 --> 00:00:22,380\nthe negative anode, where they get stored until you unplug.\n\n13\n00:00:22,610 --> 00:00:24,570\nThat's because the external power source forces\n\n14\n00:00:24,570 --> 00:00:26,460\nions to move against their natural preference,\n\n15\n00:00:26,530 --> 00:00:28,060\nstoring electrical potential energy.\n\n16\n00:00:28,370 --> 00:00:29,870\nYou see this movement every time your\n\n17\n00:00:29,870 --> 00:00:31,050\nphone hits 100 percent.\n\n18\n00:00:31,270 --> 00:00:31,840\nTry this:\n\n19\n00:00:31,910 --> 00:00:33,330\nwhy does a battery eventually hold less\n\n20\n00:00:33,330 --> 00:00:34,690\ncharge after hundreds of cycles?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [],
+      "footage": [],
+      "review": [],
+      "scene_heard": [
+        "scene 1: 100%",
+        "scene 2: 100%",
+        "scene 3: 100%",
+        "scene 4: 100%",
+        "scene 5: 100%",
+        "scene 6: 100%",
+        "scene 7: 100%"
+      ],
+      "pass": true,
+      "duration": 35.0
+    },
+    "repairs": 2
   }
 ]
