@@ -1,5 +1,6 @@
 {
   "channel": {
+    "countdown": false,
     "niche": "the surprising science and hidden engineering behind everyday things: food, animals, the ocean, your own body, and the machines, roads and objects around you; why and how things really work, explained accurately",
     "audience": "US viewers aged 16-40, curious, scroll fast, no science background needed",
     "voice_tone": "friendly, confident, a little playful, never clickbait-false",

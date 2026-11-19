@@ -346,14 +346,14 @@ ARM = {
     False: {
         "giveaway": """- NEVER GIVE THE ANSWER AWAY BEFORE THE TURN. The hook only asks or surprises; the middle gives
   clues; the actual answer is said for the first time right after the turn question.""",
-        "middle": """- THE TURN: around the middle, include ONE scene where the host asks, plainly and briefly, the
-  question the whole video has been building to (e.g. "So what is the shell actually doing?"). NO
-  countdown: never say "pause and guess", "guess", "three, two, one" or ask the viewer to stop the video.
-  Mark that scene with "turn": true. The very next scene reveals the answer with a satisfying "here's why".
-  (This is a different question from the closing enquiry.)""",
-        "host": "asks the turn question in the middle",
-        "arc": """(3) THE TURN: the plain question
-  that everything so far has built to, first nudging which DIRECTION to think, with no countdown;""",
+        "middle": """- THE TURN: around the middle, ONE scene where the narrator STATES the twist the video has been
+  building to, as a statement, not a question to the viewer (e.g. "But the shell is not just armour. It is
+  breathing."). The ONLY question to the viewer in the whole video is the closing one (owner, 19 Nov 2026).
+  NO countdown: never say "pause and guess", "guess", "three, two, one" or ask the viewer to stop the video.
+  Mark that scene with "turn": true. The very next scene gives the satisfying "here's why".""",
+        "host": "states the twist in the middle",
+        "arc": """(3) THE TURN: the twist that
+  everything so far has built to, stated plainly, no question and no countdown;""",
     },
 }
 
@@ -411,7 +411,9 @@ Rules:
   or apply the idea to something new. Warm and curious, never a quiz or a test, no trick questions,
   no prior knowledge needed. The channel is called "Ever Thought Why?", so this closing question
   ALWAYS starts with "Ever thought why" or "Ever thought how" (the channel's signature). Example:
-  "Ever thought why a cloud that heavy doesn't just fall out of the sky? Drop your guess below."
+  "Ever thought why a cloud that heavy doesn't just fall out of the sky?" End on the question itself:
+  never add "Drop your guess below", "comment", "tell me" or anything after it (owner, 19 Nov 2026: it
+  was not working).
   The question must have ONE clear, correct answer that a curious 12-year-old can work out from what
   the video showed plus everyday experience. Never ask something whose answer needs advanced theory
   (no quantum mechanics, no equations) that the video did not explain.
