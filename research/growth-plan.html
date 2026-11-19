@@ -2,8 +2,8 @@
 <title>Channel Growth Plan</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
 <style>
-:root { --bg:#f6f7fb; --card:#fff; --fg:#141826; --muted:#474d64; --line:#d9dceb; --accent:#2b3fbf; --chip:#e7eaff;
-  --good-bg:#e3f4ea; --good:#136b3a; --mid-bg:#fff3d6; --mid:#7a4b00; color-scheme:light; }
+:root { --bg:#f6f7fb; --card:#fff; --fg:#141826; --muted:#474d64; --line:#d9dceb; --accent:#2b3fbf;
+  --good-bg:#e3f4ea; --good:#136b3a; --mid-bg:#fff3d6; --mid:#7a4b00; --bad-bg:#fbe6e6; --bad:#a12020; color-scheme:light; }
 * { box-sizing:border-box; }
 body { background:var(--bg); color:var(--fg); font:16px/1.55 Inter,"Segoe UI",system-ui,sans-serif; margin:0; }
 main { max-width:960px; margin:0 auto; padding:28px 16px 64px; display:grid; gap:24px; }
@@ -14,132 +14,150 @@ section { background:var(--card); border:1px solid var(--line); border-radius:12
 .grid3 { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:12px; }
 .ch { border:1px solid var(--line); border-radius:10px; padding:14px; display:grid; gap:8px; align-content:start; }
 .tablewrap { overflow-x:auto; }
-table { border-collapse:collapse; width:100%; font-size:.92rem; min-width:640px; }
+table { border-collapse:collapse; width:100%; font-size:.92rem; min-width:660px; }
 caption { text-align:left; color:var(--muted); font-size:.9rem; padding-bottom:6px; }
 th, td { text-align:left; padding:7px 8px; border-bottom:1px solid var(--line); vertical-align:top; }
 th { font-weight:600; background:#eef0f8; }
 .tag { display:inline-block; font-weight:600; font-size:.8rem; padding:1px 8px; border-radius:999px; white-space:nowrap; }
-.free { background:var(--good-bg); color:var(--good); } .you { background:var(--mid-bg); color:var(--mid); }
+.built { background:var(--good-bg); color:var(--good); } .build { background:var(--mid-bg); color:var(--mid); } .you { background:#e7eaff; color:var(--accent); } .no { background:var(--bad-bg); color:var(--bad); }
 .small { color:var(--muted); font-size:.9rem; }
 a { color:var(--accent); } :focus-visible { outline:3px solid var(--accent); outline-offset:2px; }
 </style></head>
 <body><main>
 <header class="lead">
   <h1>Growth plan for all three channels</h1>
-  <p>Built from the study of the 19 Shorts in the "EVER THOUGHT WHY" playlist and our own numbers (19 Nov 2026). No paid services. Two places do the work: GitHub (free, every day) and this laptop (free, graphics card, kept on).</p>
+  <p>Built from the study of the 19 Shorts in the "EVER THOUGHT WHY" playlist, our own numbers and the 13 Nov strategy (19 Nov 2026).</p>
+  <p><strong>The setup:</strong> everything runs online on GitHub, free. Free online GPU time on Kaggle takes the heavy jobs. This laptop is the last option, used only when both are busy.</p>
 </header>
 
 <section aria-labelledby="h-rules">
   <h2 id="h-rules">The five rules every video follows, on every channel</h2>
   <ol>
-    <li><strong>A story, not a fact list.</strong> A hidden thing revealed, "you are" someone, or "you" in a real situation. This is what the three explainer hits share; the eight beautiful Shorts without a story all stayed under 3,000 views.</li>
+    <li><strong>A story, not a fact list.</strong> A hidden thing revealed, "you are" someone, or "you" in a real situation. The three explainer hits all do this; the eight beautiful Shorts without a story all stayed under 3,000 views.</li>
     <li><strong>The first 2 seconds make people need the answer.</strong> A surprising true statement, or a question about something hidden. Never the title read out.</li>
-    <li><strong>Every picture shows what is being said</strong>, and changes every 3 to 4 seconds. No fillers.</li>
-    <li><strong>The voice flows.</strong> Hits pause 1 to 2 times a minute; ours about 27. Sentences run into each other.</li>
-    <li><strong>One question at the end, then a reason to come back</strong>: the last line leads back into the first (the video loops), or "part 2 tomorrow" when there is one. No countdown, no "drop your guess".</li>
+    <li><strong>Every picture shows what is being said</strong>, and changes every 3 to 4 seconds. No fillers. Only free, licensed footage; never other people's TV clips.</li>
+    <li><strong>The voice flows.</strong> Hits pause 1 to 2 times a minute; ours about 27.</li>
+    <li><strong>One question at the end, then a reason to come back</strong>: the last line leads into the first (it loops), or "part 2 tomorrow". No countdown.</li>
   </ol>
 </section>
 
-<section aria-labelledby="h-lines">
-  <h2 id="h-lines">Two production lines</h2>
+<section aria-labelledby="h-where">
+  <h2 id="h-where">Where each job runs</h2>
   <div class="grid3">
     <div class="ch">
-      <h3>Line A: 3D stories (this laptop)</h3>
+      <h3>1. GitHub (first choice)</h3>
+      <p>Free, unlimited minutes for our public repository; up to about 20 machines at once; no graphics card.</p>
       <ul>
-        <li>Blender, fully animated by script, on the RTX 4050 (0.65 s a frame, about 13 minutes for a 40-second Short).</li>
-        <li>One channel mascot (simple, round-headed, like the Jensen Short) and reusable sets: inside the body, kitchen, ocean, space, lab, road, engine room.</li>
-        <li>Free models only: Poly Haven, Kenney, Quaternius, Smithsonian 3D scans, NASA, real molecules from the Protein Data Bank.</li>
-        <li>For topics a set can show. Starts with 2 to 3 a week, more as the sets grow.</li>
+        <li>Scripts, fact checks, voices, captions, footage, editing, uploads (as now).</li>
+        <li>Manim animations and maps (already built).</li>
+        <li><strong>3D in Blender, split across machines</strong>: one GitHub machine renders a frame in about 6 seconds (measured 14 Nov), so a 40-second Short is split over 10 machines working together and done in about 15 minutes.</li>
       </ul>
     </div>
     <div class="ch">
-      <h3>Line B: real footage (GitHub)</h3>
+      <h3>2. Kaggle (free online GPU)</h3>
+      <p>About 30 hours of free graphics-card time a week; GitHub can start a Kaggle job and collect the result automatically.</p>
       <ul>
-        <li>What we have now, fixed: each line gets a clip that shows exactly that thing (Pexels, Pixabay, NASA, ESO, Smithsonian, Wikimedia), a new clip every 3 to 4 seconds, one big word on screen.</li>
-        <li>If no clip shows the thing, the line is rewritten to something we can show.</li>
-        <li>For every topic the 3D sets do not cover. Keeps the daily schedule full.</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<section aria-labelledby="h-channels">
-  <h2 id="h-channels">Each channel's place</h2>
-  <div class="grid3">
-    <div class="ch">
-      <h3>Ever Thought Why? (English, US viewers)</h3>
-      <p><strong>Hidden science in your body, kitchen and animals.</strong> Our best numbers already come from here (pruney fingers, pineapple, tuna vs cod).</p>
-      <ul>
-        <li>3D: inside-the-body and kitchen stories with the mascot.</li>
-        <li>Footage: animal and food reveals.</li>
-        <li>Voice: E2 male, flowing.</li>
+        <li>Heavy 3D renders when they need more speed.</li>
+        <li>Open-source vision models that watch our finished frames and check them.</li>
+        <li>Faster voice generation.</li>
       </ul>
     </div>
     <div class="ch">
-      <h3>Why It Works (English, STEM)</h3>
-      <p><strong>How machines and everyday tech work inside.</strong> 3D cut-aways fit this channel best: engines, locks, microwaves, phones, bridges.</p>
+      <h3>3. This laptop (last option)</h3>
+      <p>RTX 4050: a 3D frame in 0.65 seconds, about 9 times faster than one GitHub machine.</p>
       <ul>
-        <li>3D: the engine-room and machine sets, x-ray views (like the "no engine oil" Short, plus a story).</li>
-        <li>Voice: A1 female, flowing.</li>
-      </ul>
-    </div>
-    <div class="ch">
-      <h3>Aakhir Kyun? (Hindi, Indian viewers)</h3>
-      <p><strong>Real Indian situations, told as a story.</strong> Fog on highways, trains, monsoon, cricket, festivals, food: the 3D Wala Guru way (527 thousand views on a 4,400-subscriber channel).</p>
-      <ul>
-        <li>Hinglish with "तुम", opening with a real event, practical ("what to do").</li>
-        <li>3D: the road and city sets.</li>
-        <li>Voice: H14 (Swara) stays; worth one test of a lively male Hindi voice against it.</li>
+        <li>Used only if GitHub and Kaggle are both busy, or for the first hand-polished hero Shorts.</li>
       </ul>
     </div>
   </div>
 </section>
 
 <section aria-labelledby="h-brain">
-  <h2 id="h-brain">The free "brain" (instead of paid Gemini or ChatGPT)</h2>
-  <p>No single free service is enough, so the system uses several and moves to the next when one runs out. Free limits change; these were checked today.</p>
+  <h2 id="h-brain">The free AI "brain": many providers, one switch</h2>
+  <p>No single free service is enough, so the system tries them in order and moves on when one is busy or used up. Add a new free key to GitHub and it joins the list on its own. Free limits change often; these were checked today.</p>
   <div class="tablewrap" tabindex="0" role="region" aria-label="Scrollable table"><table>
-    <caption>Who does which job</caption>
-    <thead><tr><th scope="col">Job</th><th scope="col">Tool</th><th scope="col">Where</th><th scope="col">Free limit</th></tr></thead>
+    <caption>Free providers the system can use</caption>
+    <thead><tr><th scope="col">Provider</th><th scope="col">Models</th><th scope="col">Free limit (checked 19 Nov 2026)</th><th scope="col">Status</th></tr></thead>
     <tbody>
-      <tr><td>Writing and fact-checking scripts</td><td>Gemini free first, then Groq (Llama 3.3 70B), then Mistral, then OpenRouter's free models</td><td>GitHub</td><td>Gemini 20 a day; Groq about 1,000 a day; OpenRouter about 50 a day</td></tr>
-      <tr><td>Checking our finished frames and renders (does each picture show the line? does it match the hits?)</td><td>Qwen3-VL (open source vision model) through Ollama</td><td>This laptop</td><td>No limit</td></tr>
-      <tr><td>Listening check (is every word clear?)</td><td>Whisper (already in use)</td><td>Both</td><td>No limit</td></tr>
-      <tr><td>Watching the hits each week (what is working now)</td><td>Frame strips and voice measurement (built today), plus Qwen3-VL</td><td>This laptop</td><td>No limit</td></tr>
-      <tr><td>Voices</td><td>Chatterbox E2, Kokoro A1, Edge Swara H14 (fixed)</td><td>Both</td><td>No limit</td></tr>
-      <tr><td>3D</td><td>Blender 5.1, Rhubarb Lip Sync, Molecular Nodes</td><td>This laptop</td><td>No limit</td></tr>
+      <tr><td>Google Gemini</td><td>Gemini Flash</td><td>20 requests a day per model</td><td><span class="tag built">In use</span></td></tr>
+      <tr><td>Groq</td><td>Llama 3.3 70B and other open models, very fast</td><td>About 1,000 requests a day</td><td><span class="tag you">Needs your free key</span></td></tr>
+      <tr><td>OpenRouter</td><td>Free open models, including DeepSeek V4 Flash, Qwen, Llama</td><td>About 50 requests a day</td><td><span class="tag you">Needs your free key</span></td></tr>
+      <tr><td>Mistral</td><td>Mistral models</td><td>Free experiment tier</td><td><span class="tag you">Needs your free key</span></td></tr>
+      <tr><td>Cloudflare Workers AI</td><td>FLUX image model (illustrations, already built), plus open text and vision models</td><td>A daily free allowance</td><td><span class="tag you">Needs your free key</span> (asked for on 13 Nov)</td></tr>
+      <tr><td>Open models on Kaggle</td><td>Qwen3-VL (watches frames), Whisper, voices</td><td>Within the 30 GPU hours a week</td><td><span class="tag you">Needs your free key</span></td></tr>
+      <tr><td>DeepSeek's own API, ChatGPT's API</td><td>-</td><td>Paid only</td><td><span class="tag no">Not used</span></td></tr>
+      <tr><td>GitHub Models</td><td>-</td><td>Retired in July 2026</td><td><span class="tag no">Gone</span></td></tr>
     </tbody>
   </table></div>
-  <p class="small">Honest note: free open models are a little weaker than Gemini at careful fact-checking. So the fact-check keeps two different models agreeing before a line is accepted, as now.</p>
+  <p class="small">Honest note: free open models are a little weaker than the best paid ones at careful fact-checking. So two different models must agree before a fact is accepted, as now.</p>
+</section>
+
+<section aria-labelledby="h-picture">
+  <h2 id="h-picture">Every way we can make pictures, all free</h2>
+  <div class="tablewrap" tabindex="0" role="region" aria-label="Scrollable table"><table>
+    <caption>The scene router sends each line to the most accurate engine</caption>
+    <thead><tr><th scope="col">The line is about</th><th scope="col">Engine</th><th scope="col">Status</th></tr></thead>
+    <tbody>
+      <tr><td>A story with a character, inside the body, inside a machine, a road, space</td><td>Blender 3D with the channel mascot and reusable sets; free models from Poly Haven, Kenney, Quaternius, Smithsonian 3D, NASA</td><td><span class="tag build">To build (hero Short first)</span></td></tr>
+      <tr><td>A real molecule</td><td>Blender with Molecular Nodes and the Protein Data Bank</td><td><span class="tag build">To build</span></td></tr>
+      <tr><td>How something works, a force, maths</td><td>Manim animation, every step computed</td><td><span class="tag built">Built</span></td></tr>
+      <tr><td>Where on Earth</td><td>Maps from Natural Earth data</td><td><span class="tag built">Built</span></td></tr>
+      <tr><td>A number or trend</td><td>Animated chart from real data</td><td><span class="tag build">To build</span></td></tr>
+      <tr><td>An animal, food, a real process</td><td>Licensed real footage: Pexels, Pixabay, NASA, ESO, Smithsonian, Wikimedia</td><td><span class="tag built">Built</span> (matching to be made stricter)</td></tr>
+      <tr><td>A single object</td><td>FLUX illustration, checked twice for accuracy</td><td><span class="tag built">Built</span>, waits for the Cloudflare key</td></tr>
+      <tr><td>Open AI video generators (Wan, LTX-Video)</td><td>Possible on Kaggle, but they invent details and look photo-real, which breaks our accuracy and "never photo-real AI" rules</td><td><span class="tag no">Not used for explanations</span></td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section aria-labelledby="h-channels">
+  <h2 id="h-channels">Each channel's place</h2>
+  <div class="grid3">
+    <div class="ch">
+      <h3>Ever Thought Why? (English, US)</h3>
+      <p><strong>Hidden science in your body, kitchen and animals.</strong> Our best numbers already come from here.</p>
+      <ul><li>3D body and kitchen stories with the mascot; footage for animals and food.</li><li>Voice E2, flowing.</li></ul>
+    </div>
+    <div class="ch">
+      <h3>Why It Works (English, STEM)</h3>
+      <p><strong>How machines and everyday tech work inside.</strong> 3D cut-aways fit this channel best: engines, locks, microwaves, phones, bridges.</p>
+      <ul><li>3D machine sets and x-ray views, plus Manim for the physics.</li><li>Voice A1, flowing.</li></ul>
+    </div>
+    <div class="ch">
+      <h3>Aakhir Kyun? (Hindi)</h3>
+      <p><strong>Real Indian situations, told as a story.</strong> Fog on highways, trains, monsoon, cricket, festivals, food, the way 3D Wala Guru does it (527 thousand views on a 4,400-subscriber channel).</p>
+      <ul><li>Hinglish with "तुम", a real event to open, what to do.</li><li>3D road and city sets.</li><li>Voice H14 (Swara); one test of a lively male Hindi voice against it.</li></ul>
+    </div>
+  </div>
 </section>
 
 <section aria-labelledby="h-reach">
   <h2 id="h-reach">More reach, beyond the video itself</h2>
   <ul>
-    <li><strong>Series</strong>: topics with a part 2 end with "part 2 tomorrow", and each series gets its own playlist (already automatic).</li>
-    <li><strong>One look per channel</strong>: the same mascot, colours and caption style every time, so a viewer knows it is us in the first second.</li>
-    <li><strong>Posting at each audience's hour</strong>: US evening for the English channels, Indian evening (7 to 9 PM) for Hindi.</li>
-    <li><strong>Learn every week</strong>: what kept viewers in our own videos feeds the next scripts (already running), plus a weekly check of new hits in the playlist you keep adding to.</li>
-    <li><strong>Optional, needs your accounts</strong>: the same Shorts on Instagram Reels and Facebook. Only if you want; it needs you to sign in there.</li>
+    <li><strong>Series</strong> with "part 2 tomorrow" and their own playlists (playlists already automatic).</li>
+    <li><strong>One look per channel</strong>: the same mascot, colours and caption style, recognisable in the first second.</li>
+    <li><strong>Posting at each audience's hour</strong>: US evening for the English channels, 7 to 9 PM India time for Hindi.</li>
+    <li><strong>Titles and descriptions in 5 languages</strong> (already on every upload), and YouTube's own auto-dubbing (a Studio setting you can switch on).</li>
+    <li><strong>A weekly long video</strong> on the main channel (already built) for watch hours, which Shorts do not give.</li>
+    <li><strong>Learn every week</strong>: our own retention data feeds the next scripts (running), plus a weekly check of the new hits you add to the playlist.</li>
   </ul>
 </section>
 
 <section aria-labelledby="h-steps">
   <h2 id="h-steps">Order of work</h2>
   <ol>
-    <li><strong>Now, no accounts needed</strong>: voice flow (shorter gaps), matched footage with faster cuts, Hindi story style with "तुम", the end-of-video series line, and the free-brain switch (ready for the new keys).</li>
-    <li><strong>This week</strong>: Ollama with Qwen3-VL on the laptop for frame checks; the 3D hero Short ("Why fingers prune in water"), polished frame by frame and compared with the hits before you see it.</li>
-    <li><strong>Next two weeks</strong>: 3D sets for body and kitchen (Ever Thought Why?), machines (Why It Works) and road and city (Aakhir Kyun?); the laptop renders on a schedule.</li>
+    <li><strong>Now, no keys needed:</strong> voice flow (shorter gaps), stricter footage matching with faster cuts, Hindi story style, the series line at the end, and the provider switch (ready to use new keys the moment they are added).</li>
+    <li><strong>This week:</strong> 3D on GitHub split across machines; the hero 3D Short ("Why fingers prune in water"), polished frame by frame and compared with the hits before you see it.</li>
+    <li><strong>Next two weeks:</strong> 3D sets for body and kitchen, machines, and road and city, so each channel gets 3D stories; Kaggle for frame checks.</li>
   </ol>
 </section>
 
 <section aria-labelledby="h-you">
-  <h2 id="h-you">What only you can do</h2>
-  <ul>
-    <li><span class="tag you">You</span> Make free accounts (no card) at Groq, Mistral and OpenRouter, create one API key each, and paste them into GitHub: the yt-studio repository, Settings, Secrets, as GROQ_API_KEY, MISTRAL_API_KEY and OPENROUTER_API_KEY. I never see or type the keys.</li>
-    <li><span class="tag you">You</span> Say OK to installing Ollama on this laptop (free, about 1 GB) and the Qwen3-VL model (about 6 GB).</li>
-    <li><span class="tag you">You</span> Pick a time the laptop stays on each day for 3D renders.</li>
-    <li><span class="tag free">Free</span> Everything else here costs nothing.</li>
-  </ul>
+  <h2 id="h-you">What only you can do (all free, no card)</h2>
+  <ol>
+    <li>Make free accounts and create one API key at each: <strong>Groq, OpenRouter, Mistral, Cloudflare</strong> (account ID and API token), and <strong>Kaggle</strong> (Settings, then Create New Token; Kaggle asks for a phone check before giving GPU time).</li>
+    <li>Paste each key into GitHub: the yt-studio repository, then Settings, Secrets and variables, Actions, New secret, with these names: GROQ_API_KEY, OPENROUTER_API_KEY, MISTRAL_API_KEY, CLOUDFLARE_ACCOUNT_ID, CLOUDFLARE_API_TOKEN, KAGGLE_USERNAME, KAGGLE_KEY.</li>
+    <li>I never see or type the keys. Each one switches on by itself once it is there.</li>
+  </ol>
 </section>
 </main></body></html>
