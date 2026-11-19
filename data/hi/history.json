@@ -4559,5 +4559,358 @@
       "duration": 43.2
     },
     "repairs": 0
+  },
+  {
+    "job": "20261119-2133-3-hidden-engineering-features-inside-com",
+    "topic": "3 Hidden Engineering Features Inside Commercial Airplane Windows That Keep the Cabin Safe at 35,000 Feet",
+    "title": "The Secret Hole In Plane Windows 🤯",
+    "description": "Ever noticed that small hole at the bottom of your airplane window? It’s not a manufacturing defect! Discover how this clever bit of engineering keeps you safe at 35,000 feet. #shorts #science #aviation\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nPhoto by Javaistan on Pixabay\nPhoto by StockSnap on Pixabay\nPhoto: Image Catalog, CC0 1.0, via Openverse (flickr)\nPhoto: James Cridland, BY 2.0, via Openverse (flickr)\nPhoto: YVSREDDY, CC0, via Wikimedia Commons\nPhoto: unknown, Public domain, via Wikimedia Commons\nVideo by Coverr-Free-Footage on Pixabay\nVideo by wserrano on Pixabay\nVideo by Engin_Akyurt on Pixabay\n\nयह वीडियो कैसे बना: स्क्रिप्ट को AI tools की मदद से open research के आधार पर लिखा और fact-check किया गया है, आवाज़ AI voice की है, और editing open-source software से हुई है। कोई गलती दिखे तो comment में बताइए — जाँच कर सुधार करेंगे।",
+    "tags": [
+      "aviation",
+      "engineering"
+    ],
+    "hook": "Most airplane windows have a tiny hole at the bottom that feels like a mistake.",
+    "status": "review",
+    "narration": "Most airplane windows have a tiny hole at the bottom that feels like a mistake. But that hole isn't for air to pass through from the outside. Your window is made of three separate acrylic panes. When you are at 35,000 feet, the pressure outside is very low. The cabin inside is pressurized, pushing hard against the window. It actually acts as a pressure control valve, letting cabin pressure pass to the outer pane while also acting as a moisture vent to keep the view clear. It lets the middle pane breathe, preventing fog between the layers. This lets the cabin pressure pass through to the outer pane, which is the strongest one, so it handles the heavy load. Ever thought how that tiny hole protects the entire window structure from cracking under that pressure?",
+    "voice_engine": "edge-tts",
+    "voices": "one narrator (hi-IN-SwaraNeural)",
+    "diagrams": 1,
+    "series": "How Things Work",
+    "countdown": false,
+    "length_arm": "standard",
+    "question": "Ever thought how that tiny hole protects the entire window structure from cracking under that pressure?",
+    "answer_comment": "The answer: The hole lets cabin pressure pass through to the outer pane, which handles the heavy load, while the middle pane acts as a backup and stays clear of fog. Have you ever noticed this hole on a flight before?",
+    "sources": [],
+    "fact_check": [
+      "Airplane windows are typically composed of three panes: outer, middle, and inner.",
+      "The hole (breather hole) is located in the middle pane.",
+      "The hole's primary function is to regulate pressure between the middle and outer panes, ensuring the outer pane bears the main pressure load.",
+      "The hole also prevents condensation (fogging) between the panes by allowing moisture to escape.",
+      "The hole is not a safety valve for the entire cabin pressure to be vented to the atmosphere."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        4.81
+      ],
+      [
+        4.81,
+        8.09
+      ],
+      [
+        8.09,
+        11.22
+      ],
+      [
+        11.22,
+        15.24
+      ],
+      [
+        15.24,
+        19.05
+      ],
+      [
+        19.05,
+        27.01
+      ],
+      [
+        27.01,
+        30.58
+      ],
+      [
+        30.58,
+        36.91
+      ],
+      [
+        36.91,
+        42.61
+      ]
+    ],
+    "duration": 42.61,
+    "scene_lines": [
+      "Most airplane windows have a tiny hole at the bottom that feels like a mistake.",
+      "But that hole isn't for air to pass through from the outside.",
+      "Your window is made of three separate acrylic panes.",
+      "When you are at 35,000 feet, the pressure outside is very low.",
+      "The cabin inside is pressurized, pushing hard against the window.",
+      "It actually acts as a pressure control valve, letting cabin pressure pass to the outer pane while also acting as a moisture vent to keep the view clear.",
+      "It lets the middle pane breathe, preventing fog between the layers.",
+      "This lets the cabin pressure pass through to the outer pane, which is the strongest one, so it handles the heavy load.",
+      "Ever thought how that tiny hole protects the entire window structure from cracking under that pressure?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,050 --> 00:00:02,328\nMost airplane windows have a tiny hole\n\n2\n00:00:02,328 --> 00:00:04,633\nat the bottom that feels like a mistake.\n\n3\n00:00:04,810 --> 00:00:06,441\nBut that hole isn't for air to\n\n4\n00:00:06,441 --> 00:00:08,079\npass through from the outside.\n\n5\n00:00:08,090 --> 00:00:11,220\nYour window is made of three separate acrylic panes.\n\n6\n00:00:11,220 --> 00:00:13,498\nWhen you are at 35,000 feet, the\n\n7\n00:00:13,498 --> 00:00:15,240\npressure outside is very low.\n\n8\n00:00:15,240 --> 00:00:18,944\nThe cabin inside is pressurized, pushing hard against the window.\n\n9\n00:00:19,050 --> 00:00:21,137\nIt actually acts as a pressure control\n\n10\n00:00:21,137 --> 00:00:23,034\nvalve, letting cabin pressure pass to the\n\n11\n00:00:23,034 --> 00:00:24,909\nouter pane while also acting as a\n\n12\n00:00:24,909 --> 00:00:26,928\nmoisture vent to keep the view clear.\n\n13\n00:00:27,010 --> 00:00:29,173\nIt lets the middle pane breathe, preventing\n\n14\n00:00:29,173 --> 00:00:30,580\nfog between the layers.\n\n15\n00:00:30,580 --> 00:00:32,561\nThis lets the cabin pressure pass through\n\n16\n00:00:32,561 --> 00:00:33,961\nto the outer pane, which is the\n\n17\n00:00:33,961 --> 00:00:36,806\nstrongest one, so it handles the heavy load.\n\n18\n00:00:36,910 --> 00:00:39,089\nEver thought how that tiny hole protects\n\n19\n00:00:39,089 --> 00:00:42,010\nthe entire window structure from cracking under that pressure?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [
+        "phrase missing from the audio: \"lets the middle pane breathe preventing fog between the layers this lets the cabin pressure pass through to the outer pane which is the strongest one so it handles the heavy load ever thought\""
+      ],
+      "footage": [],
+      "review": [
+        "Frame 3 shows a body of water filled with plastic waste and garbage, which completely contradicts the narration about airplane windows and acrylic panes, and also depicts disturbing pollution inappropriate for a general science short."
+      ],
+      "heard": [
+        "\"most airplane\" heard as \"home state clean\"",
+        "\"hole\" heard as \"whole\"",
+        "\"through\" heard as \"threw\"",
+        "\"acrylic\" heard as \"approlic\"",
+        "\"pass\" heard as \"passed\"",
+        "\"that tiny hole protects the entire window structure from cracking under that pressure\" heard as \"सब दिं सहाँ सब 숫 करट हλαई लग हा는데요 मोल काजा है\""
+      ],
+      "scene_heard": [
+        "scene 1: 54%",
+        "scene 2: 75%",
+        "scene 3: 78%",
+        "scene 4: 100%",
+        "scene 5: 90%",
+        "scene 6: 54%",
+        "scene 7: 100%",
+        "scene 8: 100%",
+        "scene 9: 100%"
+      ],
+      "pass": false,
+      "duration": 42.0
+    },
+    "repairs": 0
+  },
+  {
+    "job": "20261119-2205-why-glacier-ice-looks-intensely-blue-ins",
+    "topic": "Why glacier ice looks intensely blue instead of white like normal ice",
+    "title": "Why Glacier Ice Is Intensely Blue 🤯",
+    "description": "Ever wondered why glacier ice is intensely blue instead of white like normal ice cubes? Let's look at the physics of light and pressure. #shorts #science #glacier\n\nSources (open-access research):\n- Vallon et al. (1976), Journal of Glaciology. doi:10.3189/s0022143000030677\n\nPhoto by Storme22k on Pixabay\nPhoto by lifeisgood on Pixabay\nPhoto: NASA's James Webb Space Telescope  from Greenbelt, MD, USA, CC BY 2.0, via Wikimedia Commons\nPhoto: Serge Melki  from Indianapolis, USA, CC BY 2.0, via Wikimedia Commons\nVideo by Kanenori on Pixabay\nVideo by Vimeo-Free-Videos on Pixabay\nVideo by SimplehadaStudio on Pixabay\nVideo by anncapictures on Pixabay\nVideo by luc_toutsimplement on Pixabay\nVideo by Kanenori on Pixabay\nVideo by max_bbb on Pixabay\n\nयह वीडियो कैसे बना: स्क्रिप्ट को AI tools की मदद से open research के आधार पर लिखा और fact-check किया गया है, आवाज़ AI voice की है, और editing open-source software से हुई है। कोई गलती दिखे तो comment में बताइए — जाँच कर सुधार करेंगे।",
+    "tags": [
+      "#shorts",
+      "#science",
+      "#glacier"
+    ],
+    "hook": "Glacier ice looks intensely blue, and it has nothing to do with reflecting the sky.",
+    "status": "review",
+    "narration": "Glacier ice looks intensely blue, and it has nothing to do with reflecting the sky. कच्ची बर्फ यानी fridge cubes हमेशा white दिखती हैं। क्योंकि उसके अंदर tiny air pockets फंसे होते हैं। ये air bubbles light को हर direction में scatter कर देते हैं। इससे सारे colors मिलकर white दिखते हैं। लेकिन glacier ice सदियों के heavy weight के नीचे दबती जाती है। And here's the weird part. जैसे-जैसे बर्फ पर परतें जमती जाती हैं, वजन बढ़ता है, अंदर की हवा कम होती जाती है और बर्फ सघन हो जाती है। turn: इस सघन (dense) block के अंदर अब कोई air pockets नहीं बचते, और ice crystals आपस में जुड़कर giant crystals बन जाते हैं। जब white light इस dense ice block के अंदर जाती है, तो ये एक giant filter की तरह काम करती है। Water molecules लाल यानी red light की wavelengths को absorb कर लेते हैं। लेकिन blue light बिना absorb हुए आर-पार निकल जाती है, क्योंकि water लाल रंग को ज्यादा सोखता है। Ever thought why deep ocean water also shows that exact same rich blue?",
+    "voice_engine": "edge-tts",
+    "voices": "one narrator (hi-IN-SwaraNeural)",
+    "diagrams": 1,
+    "series": "Ocean Whys",
+    "countdown": false,
+    "length_arm": "long",
+    "question": "Ever thought why deep ocean water also shows that exact same rich blue?",
+    "answer_comment": "The answer: Just like compressed glacier ice, deep ocean water absorbs longer wavelengths like red and yellow light, while transmitting shorter blue wavelengths back to your eyes. The deeper the water or the denser the ice, the more red light gets filtered out, leaving behind that striking blue color. Got a question about how light behaves in nature? Drop it below!\n\nSources (open-access research):\n- Vallon et al. (1976), Journal of Glaciology. doi:10.3189/s0022143000030677",
+    "sources": [
+      {
+        "claim": "Glacier ice is compressed over centuries, forcing out air and forming large ice crystals.",
+        "cite": "Vallon et al. (1976), Journal of Glaciology. doi:10.3189/s0022143000030677",
+        "doi": "10.3189/s0022143000030677",
+        "title": "Study of an Ice Core to the Bedrock in the Accumulation zone of an Alpine Glacier",
+        "why": "The average size of an ice crystal increases slowly in the firn, shows seasonal fluctuations between 30 and 50 m, then jumps freom a diameter of 1 or 2 mm to 10 or 20 mm between 50 and 80 m."
+      }
+    ],
+    "fact_check": [
+      "Normal ice is white because trapped air bubbles scatter light in all directions.",
+      "Glacier ice is compressed over centuries, forcing out air and forming large ice crystals.",
+      "Water molecules absorb red light more strongly than blue light.",
+      "The blue color of glacier ice and deep water is due to selective absorption of red light by water molecules, not reflection of the sky."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        4.78
+      ],
+      [
+        4.78,
+        11.17
+      ],
+      [
+        11.17,
+        17.23
+      ],
+      [
+        17.23,
+        21.14
+      ],
+      [
+        21.14,
+        29.92
+      ],
+      [
+        29.92,
+        37.98
+      ],
+      [
+        37.98,
+        43.72
+      ],
+      [
+        43.72,
+        47.98
+      ],
+      [
+        47.98,
+        54.01
+      ],
+      [
+        54.01,
+        58.64
+      ]
+    ],
+    "duration": 58.64,
+    "scene_lines": [
+      "Glacier ice looks intensely blue, and it has nothing to do with reflecting the sky.",
+      "कच्ची बर्फ यानी fridge cubes हमेशा white दिखती हैं। क्योंकि उसके अंदर tiny air pockets फंसे होते हैं।",
+      "ये air bubbles light को हर direction में scatter कर देते हैं। इससे सारे colors मिलकर white दिखते हैं।",
+      "लेकिन glacier ice सदियों के heavy weight के नीचे दबती जाती है।",
+      "And here's the weird part. जैसे-जैसे बर्फ पर परतें जमती जाती हैं, वजन बढ़ता है, अंदर की हवा कम होती जाती है और बर्फ सघन हो जाती है।",
+      "turn: इस सघन (dense) block के अंदर अब कोई air pockets नहीं बचते, और ice crystals आपस में जुड़कर giant crystals बन जाते हैं।",
+      "जब white light इस dense ice block के अंदर जाती है, तो ये एक giant filter की तरह काम करती है।",
+      "Water molecules लाल यानी red light की wavelengths को absorb कर लेते हैं।",
+      "लेकिन blue light बिना absorb हुए आर-पार निकल जाती है, क्योंकि water लाल रंग को ज्यादा सोखता है।",
+      "Ever thought why deep ocean water also shows that exact same rich blue?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,050 --> 00:00:02,368\nGlacier ice looks intensely blue, and it\n\n2\n00:00:02,368 --> 00:00:04,694\nhas nothing to do with reflecting the sky.\n\n3\n00:00:04,780 --> 00:00:07,206\nकच्ची बर्फ यानी fridge cubes हमेशा white\n\n4\n00:00:07,206 --> 00:00:09,654\nदिखती हैं। क्योंकि उसके अंदर tiny air\n\n5\n00:00:09,654 --> 00:00:12,039\npockets फंसे होते हैं। ये air bubbles\n\n6\n00:00:12,039 --> 00:00:13,967\nlight को हर direction में scatter कर\n\n7\n00:00:13,967 --> 00:00:16,396\nदेते हैं। इससे सारे colors मिलकर white\n\n8\n00:00:16,396 --> 00:00:18,808\nदिखते हैं। लेकिन glacier ice सदियों के\n\n9\n00:00:18,808 --> 00:00:21,071\nheavy weight के नीचे दबती जाती है।\n\n10\n00:00:21,140 --> 00:00:22,750\nAnd here's the weird part.\n\n11\n00:00:22,750 --> 00:00:25,515\nजैसे-जैसे बर्फ पर परतें जमती जाती हैं,\n\n12\n00:00:25,515 --> 00:00:27,220\nवजन बढ़ता है, अंदर की हवा कम\n\n13\n00:00:27,220 --> 00:00:29,801\nहोती जाती है और बर्फ सघन हो जाती है।\n\n14\n00:00:29,920 --> 00:00:32,456\nturn: इस सघन (dense) block के अंदर\n\n15\n00:00:32,456 --> 00:00:34,469\nअब कोई air pockets नहीं बचते, और\n\n16\n00:00:34,469 --> 00:00:36,979\nice crystals आपस में जुड़कर giant crystals\n\n17\n00:00:36,979 --> 00:00:38,997\nबन जाते हैं। जब white light इस\n\n18\n00:00:38,997 --> 00:00:41,207\ndense ice block के अंदर जाती है,\n\n19\n00:00:41,243 --> 00:00:42,666\nतो ये एक giant filter की तरह\n\n20\n00:00:42,666 --> 00:00:45,256\nकाम करती है। Water molecules लाल यानी\n\n21\n00:00:45,256 --> 00:00:47,216\nred light की wavelengths को absorb कर\n\n22\n00:00:47,216 --> 00:00:49,675\nलेते हैं। लेकिन blue light बिना absorb\n\n23\n00:00:49,675 --> 00:00:51,970\nहुए आर-पार निकल जाती है, क्योंकि water\n\n24\n00:00:51,970 --> 00:00:53,904\nलाल रंग को ज्यादा सोखता है।\n\n25\n00:00:54,010 --> 00:00:56,256\nEver thought why deep ocean water also\n\n26\n00:00:56,256 --> 00:00:58,037\nshows that exact same rich blue?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [
+        "scene 1 (0.0-4.8 s): only 13% of its words can be heard - the voice breaks up or drops out"
+      ],
+      "footage": [
+        "scene(s) [6] have weak or placeholder footage"
+      ],
+      "review": [],
+      "heard": [
+        "\"glacier ice\" heard as \"गलेसिया अईस\"",
+        "\"intensely blue and\" heard as \"यंटेन्सली ब्लूँ अगर नहीं\"",
+        "\"has nothing to do with reflecting the sky\" heard as \"दूत सकाई\"",
+        "\"fridge cubes\" heard as \"झानी क्युबस\"",
+        "\"क्योंकि\" heard as \"क्युखी\"",
+        "\"tiny\" heard as \"ताइनी\"",
+        "\"air bubbles light\" heard as \"आई भबल्स्लट्छाइत\"",
+        "\"direction में scatter कर\" heard as \"दायशन बटी\""
+      ],
+      "scene_heard": [
+        "scene 1: 13%",
+        "scene 2: 67%",
+        "scene 3: 63%",
+        "scene 4: 64%",
+        "scene 5: 76%",
+        "scene 6: 75%",
+        "scene 7: 84%",
+        "scene 8: 69%",
+        "scene 9: 69%",
+        "scene 10: 38%"
+      ],
+      "pass": false,
+      "duration": 58.1
+    },
+    "repairs": 0
+  },
+  {
+    "job": "20261119-2243-scientists-finally-discover-why-necks-di",
+    "topic": "Scientists finally discover why necks didn't evolve for the reason we thought",
+    "title": "Why Early Walking May Have Shaped The First Neck 🤯",
+    "description": "Scientists explore why necks evolved in early land animals. The real physics and biology will surprise you. #shorts #science\n\nImage: Wellcome Collection (public domain)\nPhoto by PublicDomainPictures on Pixabay\nPhoto by elvina1332 on Pixabay\nPhoto: snowpea&bokchoi, BY 2.0, via Openverse (flickr)\nPhoto: unknown, CC0 1.0, via Openverse (rawpixel)\nVideo by Coverr-Free-Footage on Pixabay\nVideo by Matthias_Groeneveld on Pixabay\n\nयह वीडियो कैसे बना: स्क्रिप्ट को AI tools की मदद से open research के आधार पर लिखा और fact-check किया गया है, आवाज़ AI voice की है, और editing open-source software से हुई है। कोई गलती दिखे तो comment में बताइए — जाँच कर सुधार करेंगे।",
+    "tags": [
+      "evolution",
+      "science"
+    ],
+    "hook": "Neck bones in land animals are linked to changes in how early animals moved.",
+    "status": "review",
+    "narration": "Neck bones in land animals are linked to changes in how early animals moved. For decades, we thought necks stretched out so animals could reach food on tall trees. But fossil records show something strange in early tetrapods. Before animals moved onto land, their shoulder girdles were firmly attached to their skulls. As they adapted to walking, that bone connection detached so the front limbs could better absorb shock. That evolutionary gap formed the basis of the neck. Ever thought about how locomotion helped shape the very first neck?",
+    "voice_engine": "edge-tts",
+    "voices": "one narrator (hi-IN-SwaraNeural)",
+    "diagrams": 1,
+    "series": "Animal Whys",
+    "countdown": false,
+    "length_arm": "long",
+    "question": "Ever thought about how locomotion helped shape the very first neck?",
+    "answer_comment": "The answer: Early water creatures had shoulder bones locked directly to their skulls for swimming power. When they moved to land, walking required flexible shoulders to absorb impact, contributing to the separation of those bones and the development of the neck.",
+    "sources": [],
+    "fact_check": [
+      "Early tetrapods had shoulder girdles attached to their skulls.",
+      "The evolution of the neck is linked to the decoupling of the pectoral girdle from the skull for terrestrial locomotion.",
+      "Necks did not primarily evolve for feeding reach, but as a morphological consequence of terrestrial adaptation."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        4.49
+      ],
+      [
+        4.49,
+        9.39
+      ],
+      [
+        9.39,
+        13.13
+      ],
+      [
+        13.13,
+        18.17
+      ],
+      [
+        18.17,
+        23.71
+      ],
+      [
+        23.71,
+        26.69
+      ],
+      [
+        26.69,
+        30.74
+      ]
+    ],
+    "duration": 30.74,
+    "scene_lines": [
+      "Neck bones in land animals are linked to changes in how early animals moved.",
+      "For decades, we thought necks stretched out so animals could reach food on tall trees.",
+      "But fossil records show something strange in early tetrapods.",
+      "Before animals moved onto land, their shoulder girdles were firmly attached to their skulls.",
+      "As they adapted to walking, that bone connection detached so the front limbs could better absorb shock.",
+      "That evolutionary gap formed the basis of the neck.",
+      "Ever thought about how locomotion helped shape the very first neck?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,050 --> 00:00:02,052\nNeck bones in land animals are linked\n\n2\n00:00:02,052 --> 00:00:04,474\nto changes in how early animals moved.\n\n3\n00:00:04,490 --> 00:00:06,693\nFor decades, we thought necks stretched out\n\n4\n00:00:06,693 --> 00:00:09,316\nso animals could reach food on tall trees.\n\n5\n00:00:09,390 --> 00:00:13,130\nBut fossil records show something strange in early tetrapods.\n\n6\n00:00:13,130 --> 00:00:15,669\nBefore animals moved onto land, their shoulder\n\n7\n00:00:15,669 --> 00:00:18,170\ngirdles were firmly attached to their skulls.\n\n8\n00:00:18,170 --> 00:00:20,241\nAs they adapted to walking, that bone\n\n9\n00:00:20,241 --> 00:00:23,710\nconnection detached so the front limbs could better absorb shock.\n\n10\n00:00:23,710 --> 00:00:26,690\nThat evolutionary gap formed the basis of the neck.\n\n11\n00:00:26,690 --> 00:00:29,046\nEver thought about how locomotion helped shape\n\n12\n00:00:29,046 --> 00:00:30,141\nthe very first neck?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [
+        "only 50% of the script is heard as written"
+      ],
+      "footage": [],
+      "review": [],
+      "heard": [
+        "\"neck bones in land animals are linked\" heard as \"तिरशिय कः सं कर मैं उझे कसाख मीरे लगी धताः झिआााा\"",
+        "\"changes in\" heard as \"कढ्वे आन्विड logo अतटा बादा आ ऐसा आद घरोन्णया कों्चाग ज youtuber तीने करेंटियां से rationale देखी質 छोंगाि devient\"",
+        "\"early animals moved for decades\" heard as \"हताली ऐसा भी\"",
+        "\"thought necks stretched out so animals could reach food on tall trees but fossil records show something strange in early tetrapods before animals moved onto land their shoulder girdles were firmly attached to their skulls as they\" heard as \"पना okay आज़े\"",
+        "\"walking that\" heard as \"वोकिं आद\"",
+        "\"connection detached so\" heard as \"कनेच्छन दिटाच्छ तो तो\"",
+        "\"limbs could better absorb\" heard as \"लिम्स कोट बेटा अबजोब\"",
+        "\"that evolutionary\" heard as \"आद एवलुशन्री\""
+      ],
+      "scene_heard": [
+        "scene 1: 100%",
+        "scene 2: 87%",
+        "scene 3: 89%",
+        "scene 4: 93%",
+        "scene 5: 94%",
+        "scene 6: 78%",
+        "scene 7: 27%"
+      ],
+      "pass": false,
+      "duration": 30.1
+    },
+    "repairs": 0
   }
 ]

@@ -1,17 +1,5 @@
 [
  {
-  "when": "2026-11-16 05:55",
-  "topic": "3 Hidden Engineering Features Built Into Train Tracks That Stop High-Speed Derailments",
-  "drawn": [
-   2,
-   3,
-   4,
-   5
-  ],
-  "not_drawn": {},
-  "error": ""
- },
- {
   "when": "2026-11-16 06:32",
   "topic": "Why Train Wheels Are Shaped Like Cones Instead of Flat Cylinders",
   "drawn": [
@@ -464,6 +452,43 @@
   ],
   "not_drawn": {
    "4": "The image uses a flexing bicep emoji for 'STRIP' and a ball of yarn for 'WIRE', which do not visually represent a pantograph strip and an overhead wire for a 12"
+  },
+  "error": ""
+ },
+ {
+  "when": "2026-11-19 21:41",
+  "topic": "3 Hidden Engineering Features Inside Commercial Airplane Windows That Keep the Cabin Safe ",
+  "drawn": [
+   2,
+   3,
+   4,
+   5
+  ],
+  "not_drawn": {},
+  "error": ""
+ },
+ {
+  "when": "2026-11-19 22:12",
+  "topic": "Why glacier ice looks intensely blue instead of white like normal ice",
+  "drawn": [
+   2,
+   3,
+   4,
+   5
+  ],
+  "not_drawn": {},
+  "error": ""
+ },
+ {
+  "when": "2026-11-19 22:51",
+  "topic": "Scientists finally discover why necks didn't evolve for the reason we thought",
+  "drawn": [
+   2,
+   3,
+   5
+  ],
+  "not_drawn": {
+   "4": "it needs 1-3 groups"
   },
   "error": ""
  }
