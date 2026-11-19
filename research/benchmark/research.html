@@ -27,7 +27,7 @@ a { color:var(--accent); } :focus-visible { outline:3px solid var(--accent); out
 <body><main>
 <header class="lead">
   <h1>What the big Shorts do, and what we change</h1>
-  <p>Research on the 18 Shorts in the "EVER THOUGHT WHY" playlist (19 Nov 2026), compared with three of our own Shorts and our three chosen voices.</p>
+  <p>Research on all 19 Shorts in the "EVER THOUGHT WHY" playlist (19 Nov 2026), checked one by one, compared with three of our own Shorts and our three chosen voices, and a plan for polished 3D explainers.</p>
   <p>How it was done: every Short was watched as a strip of frames from start to end; its sound was transcribed and measured on this laptop (speaking speed, pauses, how much the voice rises and falls). Views and lengths are from YouTube.</p>
 </header>
 
@@ -39,11 +39,12 @@ a { color:var(--accent); } :focus-visible { outline:3px solid var(--accent); out
     <li><strong>Our voice stops too often.</strong> The hits talk in one continuous stream: about 1 to 2 pauses a minute. Our male voice E2 pauses about 27 times a minute; the public videos about 21 to 22.</li>
     <li><strong>3D animation is real and it works</strong> (2.1 million, 527 thousand), but only as a <em>story</em>: a character, a place, things happening. Blender is already installed on this laptop, so a free 3D route exists.</li>
     <li><strong>The Hindi hit sounds like a friend telling a story</strong>: male, fast, very expressive, uses "तुम", tells a real event. Our Hindi voice is a calmer female voice reading an explanation with "आप".</li>
+    <li><strong>Polish alone does not bring views.</strong> Eight of the 19 are beautifully made (3D molecules, 3D computer parts, neon code graphics, flat 2D cartoons, a chalkboard) and every one of them is under 3,000 views. What the three explainer hits share is a <em>story</em>: a hidden thing revealed (Tuna), "you are" a person (Jensen), "you are" in danger (fog). Beauty is the floor, the story is what spreads.</li>
   </ol>
 </section>
 
 <section aria-labelledby="h-table">
-  <h2 id="h-table">All 18, and how each is made</h2>
+  <h2 id="h-table">All 19, and how each is made</h2>
   <div class="tablewrap" tabindex="0" role="region" aria-label="Scrollable table"><table>
     <caption>Most viewed first. Entertainment ones are marked; their views come from a different audience.</caption>
     <thead><tr><th scope="col">Short</th><th scope="col">Views</th><th scope="col">Length</th><th scope="col">How it is made</th><th scope="col">Could we make it?</th></tr></thead>
@@ -62,7 +63,10 @@ a { color:var(--accent); } :focus-visible { outline:3px solid var(--accent); out
       <tr><td>CoreByte Studio: How an SSD works</td><td class="num">1.2 K</td><td class="num">1:57</td><td>Clean 3D renders of computer parts, full-sentence captions</td><td class="small">3D alone did not help</td></tr>
       <tr><td>Inspiring stalwarts: Why magnets keep their power</td><td class="num">1.2 K</td><td class="num">0:45</td><td>AI-generated lab clips in a thin band, black above and below</td><td class="small">wastes most of the screen</td></tr>
       <tr><td>Beyond The Unknown: Ahiravana (Hindi)</td><td class="num">1.0 K</td><td class="num">1:08</td><td>Flat 2D figures, gently moving; marked as AI by YouTube</td><td class="small">our level</td></tr>
-      <tr><td>Zovik Chem (two Shorts), Score With Science: Electronegativity, the_web_brain</td><td class="num">171 to 518</td><td class="num">0:48 to 1:00</td><td>Slides, screen text, classroom diagrams</td><td class="small">what to avoid</td></tr>
+      <tr><td>Zovik Chem: Theoretical yield, Percentage yield (Hindi)</td><td class="num">171 to 518</td><td class="num">0:48 to 0:54</td><td>Cinematic 3D molecules and lab glass, but in a thin band with black above and below; small captions. (It uses the same "theory says 36 g, the lab gives 30 g" example our script writer is given; we should change ours.)</td><td class="small">beautiful, wastes the screen, exam topic</td></tr>
+      <tr><td>Score With Science: Electronegativity</td><td class="num">424</td><td class="num">0:58</td><td>Clean motion-graphic slides, a quiz at the end</td><td class="small">textbook feel</td></tr>
+      <tr><td>the_web_brain: Linked list in 60 seconds</td><td class="num">333</td><td class="num">1:00</td><td>Polished neon code graphics; ends "comment below"</td><td class="small">textbook feel</td></tr>
+      <tr><td>Brain Theory: Why some people need a cigarette to poop (added today)</td><td class="num">276</td><td class="num">0:44</td><td>Flat 2D vector motion graphics: a gut that squeezes, nerve receptors, calendar cards, a cartoon man; big two-colour captions. Clean and consistent, and a 13-subscriber channel</td><td><span class="tag yes">Yes</span> this style can be made by code; shows a new channel needs more than looks</td></tr>
     </tbody>
   </table></div>
 </section>
@@ -110,6 +114,55 @@ a { color:var(--accent); } :focus-visible { outline:3px solid var(--accent); out
     <li><strong>Hindi script style (this week):</strong> "तुम", a real event to open, told as a story.</li>
     <li><strong>A series hook at the end</strong>, like "next part tomorrow", for topics that have a part 2, alongside the one closing question.</li>
     <li><strong>3D story test (later, needs your yes):</strong> a Blender pipeline with free models and simple round-headed characters, like the 2.1 M Jensen Short. I would show it only if it truly looks as good as that one.</li>
+  </ol>
+</section>
+
+<section aria-labelledby="h-3d">
+  <h2 id="h-3d">Polished 3D explainers: how we would do it</h2>
+  <p><strong>Tested today on this laptop:</strong> Blender 5.1 renders a full phone-size frame (1080 × 1920) in 0.65 seconds on the RTX 4050 graphics card. A 40-second Short is about 1,200 frames, so about 13 minutes to render. The free GitHub machines that make our videos now have no graphics card, so 3D videos must render on this laptop.</p>
+
+  <h3>We can do (free, open source)</h3>
+  <ul>
+    <li><strong>Blender, run by script</strong>: scenes, cameras, lights, moving parts, x-ray and cut-away views, slow zooms from outside to inside, particle swarms (blood cells, molecules, raindrops), simple physics.</li>
+    <li><strong>One channel mascot</strong>: a simple round-headed character like the Jensen Short's, built once and reused, with poses and faces (happy, shocked, thinking). Mouth shapes follow the voice with Rhubarb Lip Sync (free, open source).</li>
+    <li><strong>Free 3D models with a licence we can use on a paid channel</strong>:
+      <ul>
+        <li>Poly Haven (CC0): models, lighting, surfaces</li>
+        <li>Kenney and Quaternius (CC0): low-poly props and animated characters with walk, run and wave moves</li>
+        <li>ambientCG (CC0): surfaces</li>
+        <li>Smithsonian 3D (CC0): scans of real fossils, skulls, animals</li>
+        <li>NASA 3D Resources: spacecraft and planets</li>
+        <li>RCSB Protein Data Bank with Molecular Nodes (free Blender add-on): real molecules, animated</li>
+      </ul></li>
+    <li><strong>Scene kits</strong> built once and reused: inside the body, a kitchen, the ocean, space, a lab, a road with cars, a factory line. Each kit has ready camera moves (fly-in, x-ray, side-by-side, size comparison).</li>
+    <li><strong>A frame check</strong>: every finished render is turned into a strip of frames like the ones in this study and checked against the Jensen and 3D Wala Guru frames before it can be posted.</li>
+  </ul>
+
+  <h3>We cannot do, or not well</h3>
+  <ul>
+    <li><strong>A brand-new 3D world for any topic, made fully automatically, at this quality.</strong> When an AI writes a whole Blender scene from nothing, it looks cheap. The channels that look good reuse their own sets. So 3D covers the topics our kits cover; other topics stay on real footage.</li>
+    <li>Realistic humans (and our rule says never photo-real AI anyway).</li>
+    <li>Rendering on GitHub. 3D needs this laptop switched on at a fixed time each day, or a paid cloud graphics card.</li>
+    <li>Fluids and smoke at film quality: possible, but each takes hours to calculate. We would fake them with simpler effects.</li>
+  </ul>
+
+  <h3>What you can add to make it better</h3>
+  <div class="tablewrap" tabindex="0" role="region" aria-label="Scrollable table"><table>
+    <caption>Nothing here is needed to start; the first test uses only free tools already on this laptop.</caption>
+    <thead><tr><th scope="col">Add</th><th scope="col">What it gives</th><th scope="col">Cost</th><th scope="col">When</th></tr></thead>
+    <tbody>
+      <tr><td>Keep the laptop on at one fixed time each day</td><td>3D renders run unattended</td><td>Free</td><td>Before 3D goes daily</td></tr>
+      <tr><td>Gemini paid tier with a spending cap</td><td>The free 20 requests a day ran out today; paid lets the system watch our renders and compare them with the hits automatically</td><td>Small, pay as you use (a cap of about ₹500 a month is plenty)</td><td>Recommended now</td></tr>
+      <tr><td>Mixamo (free Adobe sign-in, done by you)</td><td>Thousands of ready character movements (walking, pointing, falling, dancing)</td><td>Free</td><td>Phase 2, if the mascot needs more moves</td></tr>
+      <tr><td>A text-to-3D service (Meshy or Tripo)</td><td>A custom 3D object in minutes when no free model exists</td><td>About $16 to $20 a month</td><td>Only if the free libraries run short</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>The plan, with a quality gate</h3>
+  <ol>
+    <li><strong>One hero Short by hand, frame by frame</strong>: one topic, the "inside the body" kit, the mascot, the E2 voice. I compare its frames side by side with the Jensen and 3D Wala Guru frames. You see it only if it truly matches; if not, I tell you what is missing.</li>
+    <li><strong>Turn it into kits</strong>: the same scenes and camera moves, reusable for any body topic; then the kitchen, ocean and space kits.</li>
+    <li><strong>Connect to the daily run</strong>: the script writer marks topics a kit can show; the laptop renders them; everything else stays on matched real footage.</li>
   </ol>
 </section>
 

@@ -331,5 +331,20 @@
   "loudness_range_db": 10.5,
   "first_3s": "Your fingers wrinkle in the bath, but your elbows don't.",
   "text": "Your fingers wrinkle in the bath, but your elbows don't. Why? For years, we thought skin just soaked up water like a sponge. But here's the twist. If the nerves in a finger are cut, it never wrinkles at all. So wrinkling is your body's choice. Tiny blood vessels squeeze, and the skin folds into grooves. Those grooves push water away, like the tread on a tire. Wet things are easier to grip. So next time you're in the bath, try picking up a wet marble. Which hand wins?"
+ },
+ "hZIw8_M-5Ww": {
+  "seconds": 43.9,
+  "speech": true,
+  "language": "en",
+  "words": 115,
+  "wpm": 162,
+  "speech_starts_at": 0.0,
+  "pauses_per_min": 16.9,
+  "longest_pause": 0.52,
+  "pitch_hz": 119,
+  "pitch_range_semitones": 8.8,
+  "loudness_range_db": 9.0,
+  "first_3s": "Why do some people feel they need a cigarette",
+  "text": "Why do some people feel they need a cigarette to poop? It starts with nicotine, which reaches your gut through your blood. There, it activates gut nerves that release acetylcholine. That chemical tells your colon to squeeze, and things start moving. Over time, your body ties smoking to the toilet, making it acute. But your gut adapts, and without nicotine, things can slow to a crawl. That's why quitting can cause constipation for a few weeks. But nicotine isn't a healthy laxative. Long term, it raises the risk of ulcers, reflux and colon polyps. Coffee, exercise and fiber can get things moving"
  }
 }
