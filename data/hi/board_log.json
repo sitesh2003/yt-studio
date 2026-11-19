@@ -427,5 +427,44 @@
   ],
   "not_drawn": {},
   "error": ""
+ },
+ {
+  "when": "2026-11-19 18:22",
+  "topic": "3 Hidden Engineering Features Inside Commercial Airplane Windows That Keep the Cabin Safe ",
+  "drawn": [
+   2,
+   3,
+   5
+  ],
+  "not_drawn": {
+   "4": "it needs 1-3 groups"
+  },
+  "error": ""
+ },
+ {
+  "when": "2026-11-19 19:20",
+  "topic": "New discovery reveals what may be holding back room-temperature superconductors",
+  "drawn": [
+   3,
+   4,
+   5
+  ],
+  "not_drawn": {
+   "2": "The diagram labels lightning bolt emojis as 'ELECTRONS' (an atom/electron confusion) and fire emojis as 'HEAT LOSS', making the metaphor misleading and confusin"
+  },
+  "error": ""
+ },
+ {
+  "when": "2026-11-19 19:55",
+  "topic": "How train electricity works through overhead catenary wires",
+  "drawn": [
+   2,
+   3,
+   5
+  ],
+  "not_drawn": {
+   "4": "The image uses a flexing bicep emoji for 'STRIP' and a ball of yarn for 'WIRE', which do not visually represent a pantograph strip and an overhead wire for a 12"
+  },
+  "error": ""
  }
 ]

@@ -3566,7 +3566,7 @@
       "science facts hindi"
     ],
     "hook": "Kuch everyday objects mein secretly *radioactive* materials hote hain, jaise ki ek purani glow-in-the-dark watch aur smoke detector.",
-    "status": "scheduled",
+    "status": "public",
     "narration": "Kuch everyday objects mein secretly *radioactive* materials hote hain, jaise ki ek purani glow-in-the-dark watch aur smoke detector. Jaise aapke ghar ke smoke detector mein air ko ionize karne ke liye americium use hota hai, aur purani glow-in-the-dark watches mein radium ka istemal hota tha. Aur wo purane vintage cameras, jinke glass mein sharpness ke liye thorium mix kiya gaya tha, wo bhi usi watch ki tarah hain. So ye cheezein itni dangerous kyun nahi lagti? Turn: Toh phir ye *radiation* aapko harm kyun nahi karti? Kyunki inka amount extremely small hota hai aur casing radiation ko block kar deti hai. Kabhi socha hai ki purane glow-in-the-dark clocks mein konsa element use hota tha jo ab ban hai?",
     "voice_engine": "edge-tts",
     "voices": "one narrator (hi-IN-SwaraNeural)",
@@ -3674,7 +3674,9 @@
     "audited": true,
     "video_id": "XeQkO2M3sew",
     "publish_at": "2026-11-19T09:30:00-05:00",
-    "thumbnail_set": true
+    "thumbnail_set": true,
+    "recapped": true,
+    "answered": true
   },
   {
     "job": "20261118-2241-why-black-tea-undergoes-full-oxidation-t",
@@ -4146,5 +4148,416 @@
     "video_id": "ScH7T0hCOTA",
     "publish_at": "2026-11-20T09:30:00-05:00",
     "thumbnail_set": true
+  },
+  {
+    "job": "20261119-1815-3-hidden-engineering-features-inside-com",
+    "topic": "3 Hidden Engineering Features Inside Commercial Airplane Windows That Keep the Cabin Safe at 35,000 Feet",
+    "title": "The Hidden Engineering Inside Plane Windows 😱",
+    "description": "Discover the hidden engineering behind commercial airplane windows and why that tiny hole is so crucial at 35,000 feet! #shorts #science #engineering\n\nPhoto by Javaistan on Pixabay\nPhoto by TanteTati on Pixabay\nPhoto by finments on Pixabay\nPhoto by kirahoffmann on Pixabay\nPhoto: Unknown author Unknown author  or not provided, Public domain, via Wikimedia Commons\nVideo by BlenderTimer on Pixabay\nVideo by Coverr-Free-Footage on Pixabay\nVideo by NickyPe on Pixabay\nVideo by Trek_Jason on Pixabay\nVideo by bookministry on Pixabay\nVideo by wastedgeneration on Pixabay",
+    "tags": [
+      "airplane windows",
+      "aviation engineering"
+    ],
+    "hook": "Airplane windows 3 separate layers से बने होते हैं!",
+    "status": "review",
+    "narration": "Airplane windows 3 separate layers से बने होते हैं! 35,000 feet ki unchai par bahar ka pressure extreme low hota hai. Isi wajah se cabin ke andar artificial pressure maintain karna padta hai. Yahan teen alag panes use hote hain. Yeh panes alag-alag kaam karte hain aur safety ko double karte hain. Aur yahan ek chhota sa bleed hole bhi hota hai. turn: Yeh hole cabin aur middle pane ke beech air pressure balance karta hai. Outer pane saara structural pressure handle karta hai, jabki middle pane backup hai. Inner pane sirf scratches se bachane ke liye hota hai. Purane clocks mein radium use hota tha, jo health risks ki wajah se ban hua. Agar yeh bleed hole na ho, toh window par kya problem aa sakti hai?",
+    "voice_engine": "edge-tts",
+    "voices": "one narrator (hi-IN-SwaraNeural)",
+    "diagrams": 1,
+    "series": "How Things Work",
+    "countdown": false,
+    "length_arm": "standard",
+    "question": "Kabhi socha hai ki agar middle pane mein yeh bleed hole na ho, toh airplane ki window par achanak kya problem aa sakti hai?",
+    "answer_comment": "The answer: Agar yeh chhota bleed hole na ho, toh cabin aur panes ke beech air pressure trap ho jayega. Is pressure difference ki wajah se middle aur inner panes par excessive stress padega aur wo crack ho sakte hain, ya phir window par heavy condensation aur fog jam sakti hai jisse bahar kuch dikhai nahi dega. Aapko kya lagta hai ki aisi aur konsi aerospace technologies hain?",
+    "sources": [],
+    "fact_check": [
+      "Commercial airplane windows consist of three panes: outer, middle, and inner.",
+      "A small bleed hole is present in the middle pane to regulate pressure differentials between the cabin and the airspace between the panes.",
+      "The outer pane bears the primary structural load of cabin pressure.",
+      "Vintage glow-in-the-dark clocks used radium before it was banned due to health risks."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        3.25
+      ],
+      [
+        3.25,
+        7.6
+      ],
+      [
+        7.6,
+        11.67
+      ],
+      [
+        11.67,
+        13.85
+      ],
+      [
+        13.85,
+        17.42
+      ],
+      [
+        17.42,
+        20.38
+      ],
+      [
+        20.38,
+        24.61
+      ],
+      [
+        24.61,
+        29.2
+      ],
+      [
+        29.2,
+        32.25
+      ],
+      [
+        32.25,
+        36.94
+      ],
+      [
+        36.94,
+        41.16
+      ]
+    ],
+    "duration": 41.16,
+    "scene_lines": [
+      "Airplane windows 3 separate layers से बने होते हैं!",
+      "35,000 feet ki unchai par bahar ka pressure extreme low hota hai.",
+      "Isi wajah se cabin ke andar artificial pressure maintain karna padta hai.",
+      "Yahan teen alag panes use hote hain.",
+      "Yeh panes alag-alag kaam karte hain aur safety ko double karte hain.",
+      "Aur yahan ek chhota sa bleed hole bhi hota hai.",
+      "turn: Yeh hole cabin aur middle pane ke beech air pressure balance karta hai.",
+      "Outer pane saara structural pressure handle karta hai, jabki middle pane backup hai.",
+      "Inner pane sirf scratches se bachane ke liye hota hai.",
+      "Purane clocks mein radium use hota tha, jo health risks ki wajah se ban hua.",
+      "Agar yeh bleed hole na ho, toh window par kya problem aa sakti hai?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": "XeQkO2M3sew",
+    "captions_srt": "1\n00:00:00,050 --> 00:00:03,159\nAirplane windows 3 separate layers से बने होते हैं!\n\n2\n00:00:03,250 --> 00:00:05,835\n35,000 feet ki unchai par bahar ka\n\n3\n00:00:05,835 --> 00:00:07,600\npressure extreme low hota hai.\n\n4\n00:00:07,600 --> 00:00:09,803\nIsi wajah se cabin ke andar artificial\n\n5\n00:00:09,803 --> 00:00:11,670\npressure maintain karna padta hai.\n\n6\n00:00:11,670 --> 00:00:13,848\nYahan teen alag panes use hote hain.\n\n7\n00:00:13,850 --> 00:00:15,789\nYeh panes alag-alag kaam karte hain aur\n\n8\n00:00:15,789 --> 00:00:17,416\nsafety ko double karte hain.\n\n9\n00:00:17,420 --> 00:00:20,297\nAur yahan ek chhota sa bleed hole bhi hota hai.\n\n10\n00:00:20,380 --> 00:00:22,434\nturn: Yeh hole cabin aur middle pane\n\n11\n00:00:22,434 --> 00:00:24,527\nke beech air pressure balance karta hai.\n\n12\n00:00:24,610 --> 00:00:27,046\nOuter pane saara structural pressure handle karta\n\n13\n00:00:27,046 --> 00:00:29,200\nhai, jabki middle pane backup hai.\n\n14\n00:00:29,200 --> 00:00:32,250\nInner pane sirf scratches se bachane ke liye hota hai.\n\n15\n00:00:32,250 --> 00:00:34,573\nPurane clocks mein radium use hota tha,\n\n16\n00:00:34,573 --> 00:00:36,920\njo health risks ki wajah se ban hua.\n\n17\n00:00:36,940 --> 00:00:38,618\nAgar yeh bleed hole na ho, toh\n\n18\n00:00:38,618 --> 00:00:40,565\nwindow par kya problem aa sakti hai?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [
+        "scene 4 (11.7-13.9 s): only 0% of its words can be heard - the voice breaks up or drops out",
+        "scene 5 (13.9-17.4 s): only 0% of its words can be heard - the voice breaks up or drops out",
+        "scene 6 (17.4-20.4 s): only 0% of its words can be heard - the voice breaks up or drops out",
+        "scene 7 (20.4-24.6 s): only 0% of its words can be heard - the voice breaks up or drops out",
+        "scene 8 (24.6-29.2 s): only 0% of its words can be heard - the voice breaks up or drops out",
+        "scene 9 (29.2-32.2 s): only 0% of its words can be heard - the voice breaks up or drops out",
+        "scene 10 (32.2-36.9 s): only 0% of its words can be heard - the voice breaks up or drops out",
+        "scene 11 (36.9-41.2 s): only 0% of its words can be heard - the voice breaks up or drops out"
+      ],
+      "footage": [],
+      "review": [],
+      "heard": [
+        "\"windows 3\" heard as \"विन्दूस तीन\"",
+        "\"layers\" heard as \"लेयाख\"",
+        "\"35 000\" heard as \"तर्टी फाज्टन\"",
+        "\"unchai\" heard as \"उचाई\"",
+        "\"pressure\" heard as \"प्रेशा\"",
+        "\"low\" heard as \"लोग\"",
+        "\"artificial pressure\" heard as \"आर्टिफष्यल प्रेशा\"",
+        "\"padta\" heard as \"परता\""
+      ],
+      "scene_heard": [
+        "scene 1: 75%",
+        "scene 2: 70%",
+        "scene 3: 73%",
+        "scene 4: 0%",
+        "scene 5: 0%",
+        "scene 6: 0%",
+        "scene 7: 0%",
+        "scene 8: 0%",
+        "scene 9: 0%",
+        "scene 10: 0%",
+        "scene 11: 0%"
+      ],
+      "notes": [
+        "scene 7 footage is a loose match (score 4.0), accepted"
+      ],
+      "pass": false,
+      "duration": 40.6
+    },
+    "repairs": 2
+  },
+  {
+    "job": "20261119-1911-new-discovery-reveals-what-may-be-holdin",
+    "topic": "New discovery reveals what may be holding back room-temperature superconductors",
+    "title": "The Challenge of Room-Temperature Superconductors",
+    "description": "Scientists finally have a better idea why room-temperature superconductors have been so elusive. It comes down to how atoms dance together. #shorts #hindi #science\n\nSources (open-access research):\n- Yang et al. (2017), Physical review. B./Physical review. B. doi:10.1103/physrevb.96.064501\n- Gao et al. (2023), Physical review. B./Physical review. B. doi:10.1103/physrevb.108.064510\n- Peng et al. (2017), Physical Review Letters. doi:10.1103/physrevlett.119.107001\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nPhoto by ArtTower on Pixabay\nPhoto by LunarSeaArt on Pixabay\nPhoto by imtiaz_bronx on Pixabay\nPhoto by vinarcis on Pixabay\nVideo by BlenderTimer on Pixabay\nVideo by Jari-Lobo on Pixabay\nVideo by Vimeo-Free-Videos on Pixabay\n\nयह वीडियो कैसे बना: स्क्रिप्ट को AI tools की मदद से open research के आधार पर लिखा और fact-check किया गया है, आवाज़ AI voice की है, और editing open-source software से हुई है। कोई गलती दिखे तो comment में बताइए — जाँच कर सुधार करेंगे।",
+    "tags": [
+      "science",
+      "physics"
+    ],
+    "hook": "Most materials offer resistance to electricity, but superconductors let it flow forever without losing energy.",
+    "status": "review",
+    "narration": "Most materials offer resistance to electricity, but superconductors let it flow forever without losing energy. In normal wires, electrons bump into atoms, losing energy as heat. Superconductors avoid this by letting electrons pair up into a team. These are called Cooper pairs, and they glide past atoms like they are not even there. turn: In many superconductors, this pairing happens because of vibrations in the material’s crystal structure, though the exact cause for high-temperature superconductors is still being debated by scientists. New research shows that if the atoms vibrate too wildly, the pairs simply break apart. It’s like trying to dance on a floor that is shaking way too hard. But how could we keep those pairs together when the floor is shaking from the heat of room temperature?",
+    "voice_engine": "edge-tts",
+    "voices": "one narrator (hi-IN-SwaraNeural)",
+    "diagrams": 1,
+    "series": "How Things Work",
+    "countdown": false,
+    "length_arm": "long",
+    "question": "But how could we keep those pairs together when the floor is shaking from the heat of room temperature?",
+    "answer_comment": "The answer: To achieve room-temperature superconductivity, we need a material where electrons can form Cooper pairs without being disrupted by the high thermal energy of room temperature. Currently, we use extreme cold to 'calm' the atoms down so they don't shake the pairs apart. Finding a material that works at room temperature is an immense challenge that requires finding materials with unique electronic properties that can resist the disruptive effects of heat, often requiring extreme pressure as well. Any other questions about how electricity moves?\n\nSources (open-access research):\n- Yang et al. (2017), Physical review. B./Physical review. B. doi:10.1103/physrevb.96.064501\n- Gao et al. (2023), Physical review. B./Physical review. B. doi:10.1103/physrevb.108.064510\n- Peng et al. (2017), Physical Review Letters. doi:10.1103/physrevlett.119.107001",
+    "sources": [
+      {
+        "claim": "Electrons in superconductors form Cooper pairs.",
+        "cite": "Yang et al. (2017), Physical review. B./Physical review. B. doi:10.1103/physrevb.96.064501",
+        "doi": "10.1103/physrevb.96.064501",
+        "title": "BCS-like critical fluctuations with limited overlap of Cooper pairs in FeSe",
+        "why": "In conventional superconductors, very narrow superconducting-fluctuation regions are observed above T_c, because strong overlap of Cooper pairs occurs in a coherence volume"
+      },
+      {
+        "claim": "Cooper pairs are mediated by phonons (lattice vibrations).",
+        "cite": "Gao et al. (2023), Physical review. B./Physical review. B. doi:10.1103/physrevb.108.064510",
+        "doi": "10.1103/physrevb.108.064510",
+        "title": "Chiral phonon mediated high-temperature superconductivity",
+        "why": "Our finding on an electron-chiral phonon and the associated Cooper pair provides a path to understand the high-T_c superconductivity."
+      },
+      {
+        "claim": "The search for room-temperature superconductors focuses on materials with specific vibrational properties.",
+        "cite": "Peng et al. (2017), Physical Review Letters. doi:10.1103/physrevlett.119.107001",
+        "doi": "10.1103/physrevlett.119.107001",
+        "title": "Hydrogen Clathrate Structures in Rare Earth Hydrides at High Pressures: Possible Route to Room-Temperature Superconductivity",
+        "why": "We have found that high-temperature superconductivity is closely associated with H clathrate structures, with large H-derived electronic densities of states at the Fermi level and strong electron-phonon coupling related to the stretching and rocking motions of H atoms within the cages."
+      }
+    ],
+    "fact_check": [
+      "Superconductors allow electricity to flow without resistance.",
+      "Electrons in superconductors form Cooper pairs.",
+      "Cooper pairs are mediated by phonons (lattice vibrations).",
+      "Thermal energy (heat) causes atomic vibrations that can disrupt superconductivity.",
+      "The search for room-temperature superconductors focuses on materials with specific vibrational properties."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        6.7
+      ],
+      [
+        6.7,
+        11.44
+      ],
+      [
+        11.44,
+        15.47
+      ],
+      [
+        15.47,
+        20.12
+      ],
+      [
+        20.12,
+        31.68
+      ],
+      [
+        31.68,
+        36.74
+      ],
+      [
+        36.74,
+        40.36
+      ],
+      [
+        40.36,
+        45.97
+      ]
+    ],
+    "duration": 45.97,
+    "scene_lines": [
+      "Most materials offer resistance to electricity, but superconductors let it flow forever without losing energy.",
+      "In normal wires, electrons bump into atoms, losing energy as heat.",
+      "Superconductors avoid this by letting electrons pair up into a team.",
+      "These are called Cooper pairs, and they glide past atoms like they are not even there.",
+      "turn: In many superconductors, this pairing happens because of vibrations in the material’s crystal structure, though the exact cause for high-temperature superconductors is still being debated by scientists.",
+      "New research shows that if the atoms vibrate too wildly, the pairs simply break apart.",
+      "It’s like trying to dance on a floor that is shaking way too hard.",
+      "But how could we keep those pairs together when the floor is shaking from the heat of room temperature?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,050 --> 00:00:03,029\nMost materials offer resistance to electricity, but\n\n2\n00:00:03,029 --> 00:00:06,668\nsuperconductors let it flow forever without losing energy.\n\n3\n00:00:06,700 --> 00:00:09,810\nIn normal wires, electrons bump into atoms,\n\n4\n00:00:09,810 --> 00:00:11,440\nlosing energy as heat.\n\n5\n00:00:11,440 --> 00:00:14,321\nSuperconductors avoid this by letting electrons pair\n\n6\n00:00:14,321 --> 00:00:15,470\nup into a team.\n\n7\n00:00:15,470 --> 00:00:17,378\nThese are called Cooper pairs, and they\n\n8\n00:00:17,378 --> 00:00:20,096\nglide past atoms like they are not even there.\n\n9\n00:00:20,120 --> 00:00:23,322\nturn: In many superconductors, this pairing happens\n\n10\n00:00:23,322 --> 00:00:25,685\nbecause of vibrations in the material’s crystal\n\n11\n00:00:25,685 --> 00:00:28,299\nstructure, though the exact cause for high-temperature\n\n12\n00:00:28,299 --> 00:00:31,600\nsuperconductors is still being debated by scientists.\n\n13\n00:00:31,680 --> 00:00:33,619\nNew research shows that if the atoms\n\n14\n00:00:33,619 --> 00:00:36,740\nvibrate too wildly, the pairs simply break apart.\n\n15\n00:00:36,740 --> 00:00:38,138\nIt’s like trying to dance on a\n\n16\n00:00:38,138 --> 00:00:40,242\nfloor that is shaking way too hard.\n\n17\n00:00:40,360 --> 00:00:42,152\nBut how could we keep those pairs\n\n18\n00:00:42,152 --> 00:00:43,999\ntogether when the floor is shaking from\n\n19\n00:00:43,999 --> 00:00:45,371\nthe heat of room temperature?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [
+        "scene 6 (31.7-36.7 s): only 7% of its words can be heard - the voice breaks up or drops out",
+        "scene 7 (36.7-40.4 s): only 0% of its words can be heard - the voice breaks up or drops out",
+        "scene 8 (40.4-46.0 s): only 0% of its words can be heard - the voice breaks up or drops out"
+      ],
+      "footage": [],
+      "review": [],
+      "heard": [
+        "\"most materials\" heard as \"मieterials\"",
+        "\"but superconductors let it\" heard as \"communion lettuce\"",
+        "\"electrons bump\" heard as \"electrone is bumped\"",
+        "\"electrons pair\" heard as \"electron is paired\"",
+        "\"team\" heard as \"connected universally\"",
+        "\"are\" heard as \"\"",
+        "\"even\" heard as \"it\"",
+        "\"turn\" heard as \"\""
+      ],
+      "scene_heard": [
+        "scene 1: 80%",
+        "scene 2: 100%",
+        "scene 3: 100%",
+        "scene 4: 100%",
+        "scene 5: 53%",
+        "scene 6: 7%",
+        "scene 7: 0%",
+        "scene 8: 0%"
+      ],
+      "pass": false,
+      "duration": 45.4
+    },
+    "repairs": 0
+  },
+  {
+    "job": "20261119-1946-how-train-electricity-works-through-over",
+    "topic": "How train electricity works through overhead catenary wires",
+    "title": "Why Train Wires Make Huge Sparks ⚡",
+    "description": "Ever wondered why electric trains throw sparks from their roof wires? Here is how pantographs and high voltage actually work together at high speeds. #shorts #hindi #science\n\nSources (open-access research):\n- Zhou et al. (2022), IET Electrical Systems in Transportation. doi:10.1049/els2.12049\n- Abdulaziz et al. (2005), SAIEE Africa Research Journal. doi:10.23919/saiee.2005.9488151\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nPhoto by blackcat-kat2 on Pixabay\nPhoto: Kecko  from Eastern Switzerland, CC BY 2.0, via Wikimedia Commons\nVideo by KlausHausmann on Pixabay\nVideo by Matthias_Groeneveld on Pixabay\nVideo by MilanWulf on Pixabay\nVideo by un-perfekt on Pixabay\nVideo by NickyPe on Pixabay\nVideo by VariousPhotography on Pixabay\nVideo by xat-ch on Pixabay\n\nयह वीडियो कैसे बना: स्क्रिप्ट को AI tools की मदद से open research के आधार पर लिखा और fact-check किया गया है, आवाज़ AI voice की है, और editing open-source software से हुई है। कोई गलती दिखे तो comment में बताइए — जाँच कर सुधार करेंगे।",
+    "tags": [
+      "#shorts",
+      "#hindi",
+      "#science",
+      "#trains"
+    ],
+    "hook": "Train ke upar ye तार sparks kyun phenkte hain?",
+    "status": "review",
+    "narration": "Train ke upar ye तार sparks kyun phenkte hain? So, train ko chalne ke liye hazaaron volts electricity chahiye. Aur ye power aati hai train ke upar lage ek metal arm se, jise pantograph kehte hain. Pantograph ka upper part, jise strip bolte hain, wo wire ko continuously touch karke chalta hai. Par train jab 100 kilometre per hour ki speed se bhaagti hai, tab wire thoda vibrate karta hai. Is vibration ki wajah se pantograph ek second ke chote se fraction ke liye wire se chhoot jaata hai. But electricity itni high voltage hoti hai ki wo air gap ko jump kar deti hai. Aur wahi chhota sa air gap electric arc yaani spark ban jata hai. Ever thought why wo overhead wire straight line mein nahi balki zigzag lagayi jati hai?",
+    "voice_engine": "edge-tts",
+    "voices": "one narrator (hi-IN-SwaraNeural)",
+    "diagrams": 1,
+    "series": "How Things Work",
+    "countdown": false,
+    "length_arm": "long",
+    "question": "Ever thought why wo overhead wire straight line mein nahi balki zigzag lagayi jati hai?",
+    "answer_comment": "The answer: Overhead wires ko zigzag (stagger) isliye lagaya jata hai taaki pantograph ki strip par ghissav (wear and tear) ek hi jagah par na ho, balki poori strip par barabar ho.\n\nSources (open-access research):\n- Zhou et al. (2022), IET Electrical Systems in Transportation. doi:10.1049/els2.12049\n- Abdulaziz et al. (2005), SAIEE Africa Research Journal. doi:10.23919/saiee.2005.9488151",
+    "sources": [
+      {
+        "claim": "Sparks or electrical arcs occur when the pantograph momentarily loses physical contact with the wire due to high-speed vibrations.",
+        "cite": "Zhou et al. (2022), IET Electrical Systems in Transportation. doi:10.1049/els2.12049",
+        "doi": "10.1049/els2.12049",
+        "title": "Characteristic analysis of pantograph–catenary detachment arc based on double‐pantograph–catenary dynamics in electrified railways",
+        "why": "With the increase of train speed in electrified railways, the increasingly violent interaction of pantograph-catenary (PC) makes the PC detachment arc an extrusive phenomenon"
+      },
+      {
+        "claim": "Electric trains use high voltage electricity supplied through overhead catenary wires.",
+        "cite": "Abdulaziz et al. (2005), SAIEE Africa Research Journal. doi:10.23919/saiee.2005.9488151",
+        "doi": "10.23919/saiee.2005.9488151",
+        "title": "Application of FDTD method in induced voltage calculations in ac electrified railways",
+        "why": "The use of FDTD method has been investigated and applied for the calculation of longitudinal induced voltage caused by the high power overhead line into line-side signalling cables."
+      }
+    ],
+    "fact_check": [
+      "Electric trains use high voltage electricity supplied through overhead catenary wires.",
+      "The current collector on the train roof is called a pantograph.",
+      "Sparks or electrical arcs occur when the pantograph momentarily loses physical contact with the wire due to high-speed vibrations.",
+      "Overhead catenary wires are installed in a zigzag pattern (stagger) to ensure even wear on the pantograph carbon strip."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        3.25
+      ],
+      [
+        3.25,
+        7.06
+      ],
+      [
+        7.06,
+        12.26
+      ],
+      [
+        12.26,
+        17.84
+      ],
+      [
+        17.84,
+        23.69
+      ],
+      [
+        23.69,
+        29.61
+      ],
+      [
+        29.61,
+        34.19
+      ],
+      [
+        34.19,
+        38.39
+      ],
+      [
+        38.39,
+        43.76
+      ]
+    ],
+    "duration": 43.76,
+    "scene_lines": [
+      "Train ke upar ye तार sparks kyun phenkte hain?",
+      "So, train ko chalne ke liye hazaaron volts electricity chahiye.",
+      "Aur ye power aati hai train ke upar lage ek metal arm se, jise pantograph kehte hain.",
+      "Pantograph ka upper part, jise strip bolte hain, wo wire ko continuously touch karke chalta hai.",
+      "Par train jab 100 kilometre per hour ki speed se bhaagti hai, tab wire thoda vibrate karta hai.",
+      "Is vibration ki wajah se pantograph ek second ke chote se fraction ke liye wire se chhoot jaata hai.",
+      "But electricity itni high voltage hoti hai ki wo air gap ko jump kar deti hai.",
+      "Aur wahi chhota sa air gap electric arc yaani spark ban jata hai.",
+      "Ever thought why wo overhead wire straight line mein nahi balki zigzag lagayi jati hai?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,050 --> 00:00:03,032\nTrain ke upar ye तार sparks kyun phenkte hain?\n\n2\n00:00:03,250 --> 00:00:07,060\nSo, train ko chalne ke liye hazaaron volts electricity chahiye.\n\n3\n00:00:07,060 --> 00:00:08,808\nAur ye power aati hai train ke\n\n4\n00:00:08,808 --> 00:00:12,226\nupar lage ek metal arm se, jise pantograph kehte hain.\n\n5\n00:00:12,260 --> 00:00:15,313\nPantograph ka upper part, jise strip bolte hain,\n\n6\n00:00:15,370 --> 00:00:17,840\nwo wire ko continuously touch karke chalta hai.\n\n7\n00:00:17,840 --> 00:00:20,234\nPar train jab 100 kilometre per hour\n\n8\n00:00:20,234 --> 00:00:22,057\nki speed se bhaagti hai, tab wire\n\n9\n00:00:22,057 --> 00:00:23,663\nthoda vibrate karta hai.\n\n10\n00:00:23,690 --> 00:00:25,936\nIs vibration ki wajah se pantograph ek\n\n11\n00:00:25,936 --> 00:00:27,811\nsecond ke chote se fraction ke liye\n\n12\n00:00:27,811 --> 00:00:29,512\nwire se chhoot jaata hai.\n\n13\n00:00:29,610 --> 00:00:32,025\nBut electricity itni high voltage hoti hai\n\n14\n00:00:32,025 --> 00:00:34,190\nki wo air gap ko jump kar deti hai.\n\n15\n00:00:34,190 --> 00:00:36,319\nAur wahi chhota sa air gap electric\n\n16\n00:00:36,319 --> 00:00:38,306\narc yaani spark ban jata hai.\n\n17\n00:00:38,390 --> 00:00:40,702\nEver thought why wo overhead wire straight\n\n18\n00:00:40,702 --> 00:00:43,158\nline mein nahi balki zigzag lagayi jati hai?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [
+        "phrase missing from the audio: \"wo overhead wire straight\"",
+        "scene 1 (0.0-3.2 s): only 22% of its words can be heard - the voice breaks up or drops out",
+        "scene 2 (3.2-7.1 s): only 0% of its words can be heard - the voice breaks up or drops out",
+        "scene 3 (7.1-12.3 s): only 6% of its words can be heard - the voice breaks up or drops out",
+        "scene 4 (12.3-17.8 s): only 0% of its words can be heard - the voice breaks up or drops out",
+        "scene 5 (17.8-23.7 s): only 13% of its words can be heard - the voice breaks up or drops out"
+      ],
+      "footage": [],
+      "review": [],
+      "heard": [
+        "\"sparks kyun phenkte\" heard as \"स्पाख श्कूछ फथ\"",
+        "\"so\" heard as \"所以\"",
+        "\"ke liye hazaaron volts electricity chahiye\" heard as \"किलिए हजारो वोल्स प्र हैं चाहीे\"",
+        "\"power\" heard as \"पाव्वा\"",
+        "\"arm se\" heard as \"आम्सें\"",
+        "\"pantograph\" heard as \"पद्डोगराव\"",
+        "\"upper part\" heard as \"अपर पात\"",
+        "\"hain wo wire\" heard as \"है वाया\""
+      ],
+      "scene_heard": [
+        "scene 1: 22%",
+        "scene 2: 0%",
+        "scene 3: 6%",
+        "scene 4: 0%",
+        "scene 5: 13%",
+        "scene 6: 50%",
+        "scene 7: 50%",
+        "scene 8: 58%",
+        "scene 9: 50%"
+      ],
+      "pass": false,
+      "duration": 43.2
+    },
+    "repairs": 0
   }
 ]

@@ -6,6 +6,6 @@
     "false_sentence": "Ever thought how that tiny hole balances cabin pressure so the outer glass doesn't shatter?",
     "correct_version": "The hole does not balance pressure between the cabin and the outside; it allows the middle pane to vent, ensuring the outer pane bears the pressure load and preventing fogging/condensation.",
     "why": "The narration implies the hole is a pressure-balancing valve to prevent shattering, whereas its primary function is to manage pressure differentials between the panes to prevent condensation and ensure the outer pane handles the structural load.",
-    "tries": 0
+    "tries": 1
   }
 ]
