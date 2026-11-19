@@ -2730,7 +2730,8 @@
     "video_id": "obq6Xb4utkY",
     "publish_at": "2026-11-18T12:00:00-05:00",
     "thumbnail_set": true,
-    "answered": true
+    "answered": true,
+    "recapped": true
   },
   {
     "job": "20261116-0143-why-an-explosion-of-fallen-acorns-secret",
@@ -2746,7 +2747,7 @@
       "science"
     ],
     "hook": "Massive acorn drops trigger Lyme disease spikes two years later, driven by a hidden chain reaction.",
-    "status": "scheduled",
+    "status": "public",
     "narration": "Massive acorn drops trigger Lyme disease spikes two years later, driven by a hidden chain reaction. When oak trees drop extra acorns, white-footed mice feast and multiply rapidly. Those mice carry immature ticks, which feed safely on the surging rodent population. Think about what happens when that giant mouse food supply suddenly runs dry next season. Pause and guess... three, two, one. Those well-fed ticks grow into nymphs next year, greatly increasing the number of infected ticks in the woods. That delayed chain reaction is why heavy acorn seasons predict high Lyme disease rates. Ever thought how forest food webs secretly connect to human health right outside your door?",
     "voice_engine": "kokoro",
     "voices": "male host, female explainer",
@@ -2840,7 +2841,8 @@
     "audited": true,
     "video_id": "KlP_2pVJbjU",
     "publish_at": "2026-11-18T19:00:00-05:00",
-    "thumbnail_set": true
+    "thumbnail_set": true,
+    "answered": true
   },
   {
     "job": "20261116-0825-weekly-this-shark-can-live-for-centuries",
@@ -4141,5 +4143,258 @@
     },
     "repairs": 0,
     "audited": true
+  },
+  {
+    "job": "20261118-2237-3-animals-that-never-stop-growing-throug",
+    "topic": "3 animals that never stop growing throughout their entire lives",
+    "title": "Why These Animals Keep Growing Throughout Their Lives",
+    "description": "Most animals have a set size, but a few species keep getting bigger their entire lives. We look at the biological reasons why growth doesn't end for everyone. #shorts #science #animals\n\nSources (open-access research):\n- Burger et al. (2019), Proceedings of the National Academy of Sciences. doi:10.1073/pnas.1907702116\n\nIllustrations: drawn for this video with FLUX.2 [klein] 4B (AI, Apache 2.0) and checked for accuracy\nPhoto by surotez9 on Pixabay\nPhoto: City of Albuquerque, BY 2.0, via Openverse (flickr)\nPhoto: NOAA Photo Library, BY 2.0, via Openverse (flickr)\nPhoto: creyesk, BY 2.0, via Openverse (flickr)\nPhoto: mpfl, BY 2.0, via Openverse (flickr)\nVideo by Domka_1611 on Pixabay\nVideo by JancickaL on Pixabay\nVideo by asabovebelowloa on Pixabay",
+    "tags": [
+      "science",
+      "animals",
+      "biology"
+    ],
+    "hook": "Ever wonder why your height stops while some animals just keep getting bigger?",
+    "status": "review",
+    "narration": "Ever wonder why your height stops while some animals just keep getting bigger? Lobsters, rockfish, and crocodiles display indeterminate growth, meaning they continue to grow for most of their lives, though their growth rate typically slows significantly as they age. So, a lobster molts to expand, while rockfish and crocodiles keep adding mass as they age. Now, you might wonder why these animals don't just grow forever until they take over the world. Think about what stops a lobster, rockfish, or crocodile from growing to the size of a building. There is a trick to their biology. It comes down to scientific theory. While the reasons are still debated, scientists believe the energy costs of maintaining and moving larger bodies, combined with increased risks of injury and predation, eventually limit how big these animals can get. Ever wonder why your height stopped while these animals keep going? Drop your guess below.",
+    "voice_engine": "chatterbox",
+    "voices": "one narrator (af_heart)",
+    "diagrams": 1,
+    "series": "Animal Whys",
+    "countdown": true,
+    "length_arm": "standard",
+    "question": "Ever thought why your own height stopped changing in your teens while these animals keep going? Drop your guess below.",
+    "answer_comment": "The answer: Humans stop growing in height because our growth plates fuse once puberty ends. While these animals do not have this same structural 'off' switch, they do not grow forever. Eventually, the massive energy cost to maintain their bodies and the increased risk of disease or injury limit their size. Got a question about other weird animal traits? Drop it below!\n\nSources (open-access research):\n- Burger et al. (2019), Proceedings of the National Academy of Sciences. doi:10.1073/pnas.1907702116",
+    "sources": [
+      {
+        "claim": "Indeterminate growth is limited by metabolic costs and environmental factors.",
+        "cite": "Burger et al. (2019), Proceedings of the National Academy of Sciences. doi:10.1073/pnas.1907702116",
+        "doi": "10.1073/pnas.1907702116",
+        "title": "Toward a metabolic theory of life history",
+        "why": "These patterns are predicted by theory that highlights the effects of 2 fundamental biophysical constraints: demography on number and mortality of offspring; and mass-energy balance on allocation of energy to growth and reproduction."
+      }
+    ],
+    "fact_check": [
+      "American lobsters undergo indeterminate growth through molting.",
+      "Rougheye rockfish are among the longest-lived fish and continue to grow slowly throughout their lives.",
+      "Saltwater crocodiles exhibit indeterminate growth and can continue to grow as they age.",
+      "Indeterminate growth is limited by metabolic costs and environmental factors."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        3.33
+      ],
+      [
+        3.33,
+        10.98
+      ],
+      [
+        10.98,
+        16.19
+      ],
+      [
+        16.19,
+        20.13
+      ],
+      [
+        20.13,
+        24.81
+      ],
+      [
+        24.81,
+        26.92
+      ],
+      [
+        26.92,
+        28.72
+      ],
+      [
+        28.72,
+        37.79
+      ],
+      [
+        37.79,
+        41.99
+      ]
+    ],
+    "duration": 41.99,
+    "scene_lines": [
+      "Ever wonder why your height stops while some animals just keep getting bigger?",
+      "Lobsters, rockfish, and crocodiles display indeterminate growth, meaning they continue to grow for most of their lives, though their growth rate typically slows significantly as they age.",
+      "So, a lobster molts to expand, while rockfish and crocodiles keep adding mass as they age.",
+      "Now, you might wonder why these animals don't just grow forever until they take over the world.",
+      "Think about what stops a lobster, rockfish, or crocodile from growing to the size of a building.",
+      "There is a trick to their biology.",
+      "It comes down to scientific theory.",
+      "While the reasons are still debated, scientists believe the energy costs of maintaining and moving larger bodies, combined with increased risks of injury and predation, eventually limit how big these animals can get.",
+      "Ever wonder why your height stopped while these animals keep going? Drop your guess below."
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": "obq6Xb4utkY",
+    "captions_srt": "1\n00:00:00,000 --> 00:00:01,420\nEver wonder why your height stops while\n\n2\n00:00:01,420 --> 00:00:02,910\nsome animals just keep getting bigger?\n\n3\n00:00:03,330 --> 00:00:06,140\nLobsters, rockfish, and crocodiles display indeterminate growth,\n\n4\n00:00:06,170 --> 00:00:07,350\nmeaning they continue to grow for most\n\n5\n00:00:07,350 --> 00:00:08,710\nof their lives, though their growth rate\n\n6\n00:00:08,710 --> 00:00:10,720\ntypically slows significantly as they age.\n\n7\n00:00:10,980 --> 00:00:12,690\nSo, a lobster molts to expand,\n\n8\n00:00:12,920 --> 00:00:15,950\nwhile rockfish and crocodiles keep adding mass as they age.\n\n9\n00:00:16,190 --> 00:00:17,630\nNow, you might wonder why these animals\n\n10\n00:00:17,630 --> 00:00:19,940\ndon't just grow forever until they take over the world.\n\n11\n00:00:20,130 --> 00:00:21,460\nThink about what stops a lobster,\n\n12\n00:00:21,650 --> 00:00:23,550\nrockfish, or crocodile from growing to the\n\n13\n00:00:23,550 --> 00:00:24,580\nsize of a building.\n\n14\n00:00:24,810 --> 00:00:26,580\nThere is a trick to their biology.\n\n15\n00:00:26,920 --> 00:00:28,470\nIt comes down to scientific theory.\n\n16\n00:00:28,720 --> 00:00:30,110\nWhile the reasons are still debated,\n\n17\n00:00:30,320 --> 00:00:31,860\nscientists believe the energy costs of maintaining\n\n18\n00:00:31,860 --> 00:00:33,840\nand moving larger bodies, combined with increased\n\n19\n00:00:33,840 --> 00:00:36,220\nrisks of injury and predation, eventually limit\n\n20\n00:00:36,220 --> 00:00:37,670\nhow big these animals can get.\n\n21\n00:00:37,790 --> 00:00:39,170\nEver wonder why your height stopped while\n\n22\n00:00:39,170 --> 00:00:40,260\nthese animals keep going?\n\n23\n00:00:40,510 --> 00:00:41,390\nDrop your guess below.\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [],
+      "footage": [],
+      "review": [
+        "Frame 1: The visual is a computer screen showing a Google Analytics dashboard, which is completely unrelated to the narrator's question about human height and animal growth.",
+        "Frame 2: The visual is a close-up of a hairy crustacean, but the caption says 'LOBSTER MOLTING CYCLE', which is confusing and not clearly representative of the narrator's point about indeterminate growth.",
+        "Frame 3: The visual shows fish, but the caption 'SLOW ROCKFISH GROWTH' is poorly placed and the overall visual is dark and blurry.",
+        "Frame 4: The visual is a close-up of a crocodile's eye/skin, which is fine, but the caption 'CROCODILE SIZE ACCUMULATION' is somewhat abstract and confusing for the audience.",
+        "Frame 5: The visual is a close-up of an eye, which is not clearly a crocodile, and the caption 'BIOLOGICAL LIMIT FACTORS' is vague.",
+        "Frame 6: The visual is a large question mark, which is generic and not very engaging.",
+        "Frame 7: The visual is a close-up of a clock, which is a cliché and not directly related to the 'scientific theory' being discussed.",
+        "Frame 8: The visual is a sea turtle, but the narrator is talking about lobsters, rockfish, and crocodiles, making the visual confusing.",
+        "Frame 9: The visual is a 3D cartoon character measuring height, which is fine, but the caption 'BIOLOGICAL GROWTH TRIGGER' is not clearly explained by the narrator."
+      ],
+      "heard": [
+        "\"molts\" heard as \"molds\"",
+        "\"guess\" heard as \"guests\""
+      ],
+      "scene_heard": [
+        "scene 1: 100%",
+        "scene 2: 100%",
+        "scene 3: 94%",
+        "scene 4: 100%",
+        "scene 5: 100%",
+        "scene 6: 100%",
+        "scene 7: 100%",
+        "scene 8: 97%",
+        "scene 9: 93%"
+      ],
+      "pass": false,
+      "duration": 41.7
+    },
+    "repairs": 2
+  },
+  {
+    "job": "20261118-2343-why-quantum-gas-microscopes-can-resolve-",
+    "topic": "Why quantum-gas microscopes can resolve individual atoms in a single shot",
+    "title": "How We Use Lasers To 'See' Single Atoms",
+    "description": "We usually think of atoms as invisible, blurry clouds. See how quantum gas microscopes use light to pin them down in a single shot. #shorts #physics #science\n\nSources (open-access research):\n- Wang et al. (2017), Zhongguo kexue. Wulixue Lixue Tianwenxue. doi:10.1360/sspma2016-00387\n- Su et al. (2025), Nature Communications. doi:10.1038/s41467-025-56305-y\n\nPhoto by kaderdygnn on Pixabay\nPhoto: Department of Defense. American Forces Information Service. , Public domain, via Wikimedia Commons\nPhoto: Muffet, BY 2.0, via Openverse (flickr)\nPhoto: cogdogblog, CC0 1.0, via Openverse (flickr)\nVideo by Coverr-Free-Footage on Pixabay\nVideo by Digital_Expert on Pixabay\nVideo by tmeier1964 on Pixabay\nVideo by Engin_Akyurt on Pixabay\nVideo by Jari-Lobo on Pixabay\n\nHow this was made: the script is researched and fact-checked with AI tools against open-access research (sources above when found), narrated by an AI voice, and edited with open-source software. Corrections from viewers are checked and credited.",
+    "tags": [
+      "quantum physics",
+      "atoms",
+      "science"
+    ],
+    "hook": "Tracking a single atom is extremely difficult because they are so small and active, but lasers can hold it in place.",
+    "status": "review",
+    "narration": "Tracking a single atom is extremely difficult because they are so small and active, but lasers can hold it in place. Normally, atoms zip around at high speeds, smashing into each other constantly. To catch them, we cool a gas to nearly absolute zero, robbing them of almost all heat energy. Then, we use a grid of laser beams to create a trap, like an egg carton for individual particles. But wait, how do we spot one lonely atom inside that crowded grid? Think about what happens when you shine a high-power beam on a tiny, trapped particle. Pause and guess... three, two, one. That focused laser beam forces the atom to scatter light, making it glow bright enough for our camera to record it. By taking one quick snapshot, we map the positions of these atoms in the field. Ever thought how we could use these mapped atoms to simulate new materials? Drop your guess below.",
+    "voice_engine": "chatterbox",
+    "voices": "one narrator (af_heart)",
+    "diagrams": 1,
+    "series": "How Things Work",
+    "countdown": true,
+    "length_arm": "long",
+    "question": "Ever thought how we could use these mapped atoms to simulate new materials?",
+    "answer_comment": "The answer: By controlling the position of these atoms precisely, scientists can mimic the behavior of electrons in complex materials like superconductors. It turns the microscope into a programmable testbed for materials that don't exist yet! Have a question about how we control light?\n\nSources (open-access research):\n- Wang et al. (2017), Zhongguo kexue. Wulixue Lixue Tianwenxue. doi:10.1360/sspma2016-00387\n- Su et al. (2025), Nature Communications. doi:10.1038/s41467-025-56305-y",
+    "sources": [
+      {
+        "claim": "Laser cooling is required to reach the temperatures necessary for these traps.",
+        "cite": "Wang et al. (2017), Zhongguo kexue. Wulixue Lixue Tianwenxue. doi:10.1360/sspma2016-00387",
+        "doi": "10.1360/sspma2016-00387",
+        "title": "3D optical lattices cooling of ultracold Cs atoms",
+        "why": "Laser cooling of atoms is the basis of researches on ultracold atoms and molecules. ... In order to obtain ultracold cesium atomic sample with a lower temperature and a higher density, as the starting point to create ultracold cesium ground state molecules, we demonstrate in this article a method .."
+      },
+      {
+        "claim": "Fluorescence imaging is the standard method for resolving individual atoms in these grids.",
+        "cite": "Su et al. (2025), Nature Communications. doi:10.1038/s41467-025-56305-y",
+        "doi": "10.1038/s41467-025-56305-y",
+        "title": "Fast single atom imaging for optical lattice arrays",
+        "why": "High-resolution fluorescence imaging of ultracold atoms and molecules is paramount to performing quantum simulation and computation in optical lattices and tweezers."
+      }
+    ],
+    "fact_check": [
+      "Quantum gas microscopes use optical lattices to trap atoms at ultracold temperatures.",
+      "Laser cooling is required to reach the temperatures necessary for these traps.",
+      "Fluorescence imaging is the standard method for resolving individual atoms in these grids.",
+      "Individual atoms are trapped in individual sites of the lattice, allowing spatial resolution."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        5.32
+      ],
+      [
+        5.32,
+        9.73
+      ],
+      [
+        9.73,
+        14.7
+      ],
+      [
+        14.7,
+        19.54
+      ],
+      [
+        19.54,
+        22.96
+      ],
+      [
+        22.96,
+        29.63
+      ],
+      [
+        29.63,
+        35.03
+      ],
+      [
+        35.03,
+        38.54
+      ],
+      [
+        38.54,
+        43.65
+      ]
+    ],
+    "duration": 43.65,
+    "scene_lines": [
+      "Tracking a single atom is extremely difficult because they are so small and active, but lasers can hold it in place.",
+      "Normally, atoms zip around at high speeds, smashing into each other constantly.",
+      "To catch them, we cool a gas to nearly absolute zero, robbing them of almost all heat energy.",
+      "Then, we use a grid of laser beams to create a trap, like an egg carton for individual particles.",
+      "But wait, how do we spot one lonely atom inside that crowded grid?",
+      "Think about what happens when you shine a high-power beam on a tiny, trapped particle. Pause and guess... three, two, one.",
+      "That focused laser beam forces the atom to scatter light, making it glow bright enough for our camera to record it.",
+      "By taking one quick snapshot, we map the positions of these atoms in the field.",
+      "Ever thought how we could use these mapped atoms to simulate new materials? Drop your guess below."
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,000 --> 00:00:01,820\nTracking a single atom is extremely difficult\n\n2\n00:00:01,820 --> 00:00:03,540\nbecause they are so small and active,\n\n3\n00:00:03,540 --> 00:00:04,950\nbut lasers can hold it in place.\n\n4\n00:00:05,320 --> 00:00:06,050\nNormally,\n\n5\n00:00:06,160 --> 00:00:07,770\natoms zip around at high speeds,\n\n6\n00:00:07,880 --> 00:00:09,390\nsmashing into each other constantly.\n\n7\n00:00:09,730 --> 00:00:10,990\nTo catch them, we cool a gas\n\n8\n00:00:10,990 --> 00:00:12,480\nto nearly absolute zero,\n\n9\n00:00:12,790 --> 00:00:14,420\nrobbing them of almost all heat energy.\n\n10\n00:00:14,700 --> 00:00:15,940\nThen, we use a grid of laser\n\n11\n00:00:15,940 --> 00:00:17,500\nbeams to create a trap, like an\n\n12\n00:00:17,500 --> 00:00:19,030\negg carton for individual particles.\n\n13\n00:00:19,540 --> 00:00:20,840\nBut wait, how do we spot one\n\n14\n00:00:20,840 --> 00:00:22,610\nlonely atom inside that crowded grid?\n\n15\n00:00:22,960 --> 00:00:24,200\nThink about what happens when you shine\n\n16\n00:00:24,200 --> 00:00:26,490\na high-power beam on a tiny, trapped particle.\n\n17\n00:00:26,690 --> 00:00:27,640\nPause and guess...\n\n18\n00:00:27,810 --> 00:00:28,580\nthree, two,\n\n19\n00:00:28,630 --> 00:00:29,080\none.\n\n20\n00:00:29,630 --> 00:00:32,320\nThat focused laser beam forces the atom to scatter light,\n\n21\n00:00:32,430 --> 00:00:33,750\nmaking it glow bright enough for our\n\n22\n00:00:33,750 --> 00:00:34,900\ncamera to record it.\n\n23\n00:00:35,030 --> 00:00:36,280\nBy taking one quick snapshot,\n\n24\n00:00:36,370 --> 00:00:38,220\nwe map the positions of these atoms in the field.\n\n25\n00:00:38,540 --> 00:00:39,700\nEver thought how we could use these\n\n26\n00:00:39,700 --> 00:00:41,670\nmapped atoms to simulate new materials?\n\n27\n00:00:42,170 --> 00:00:43,050\nDrop your guess below.\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [
+        "number differs: script \"three\" but the audio says \"see\""
+      ],
+      "footage": [],
+      "review": [],
+      "heard": [
+        "\"tracking\" heard as \"racking\"",
+        "\"map\" heard as \"mapped\""
+      ],
+      "scene_heard": [
+        "scene 1: 95%",
+        "scene 2: 100%",
+        "scene 3: 100%",
+        "scene 4: 100%",
+        "scene 5: 100%",
+        "scene 6: 100%",
+        "scene 7: 100%",
+        "scene 8: 93%",
+        "scene 9: 100%"
+      ],
+      "pass": false,
+      "duration": 43.4
+    },
+    "repairs": 0
   }
 ]

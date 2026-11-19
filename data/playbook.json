@@ -1,49 +1,64 @@
 {
   "rules": [
-    "Strictly limit total word count to between 90 and 105 words to hit the 42-second runtime sweet spot.",
-    "Assign the hook, 3-2-1 pause prompt, and closing question to Narrator 1, while Narrator 2 handles the core explanation.",
-    "Keep titles under 65 characters and lead with strong curiosity triggers like 'Why' or 'How'.",
-    "Use exclusively high-definition real footage or clean animated vector diagrams, completely avoiding AI-generated imagery.",
-    "Position the 'pause and predict' banner strictly between seconds 20 and 25 with a clear 3-2-1 countdown.",
-    "Never include subscribe/like CTAs, sensationalized fear, health advice, or misleading clickbait."
+    "Keep total word count strictly between 85 and 100 words to ensure a fast-paced, high-retention delivery.",
+    "Narrator 1 handles the curiosity-inducing hook and the final question; Narrator 2 handles the dense technical explanation.",
+    "Place the pause/prediction prompt precisely at the 20-second mark to maintain rhythm.",
+    "Limit titles to 50 characters or fewer, starting with 'Why' or a 'Hidden/Secret' reveal.",
+    "Use visual transitions between scenes at least every 4 seconds to maintain active viewer engagement.",
+    "Ensure all technical explanations are delivered in plain, accessible language without jargon."
   ],
   "formats_now": [
-    "Everyday hidden engineering breakdowns because viewers are fascinated by the unseen mechanics of common objects.",
-    "Counter-intuitive physics explanations because they immediately challenge baseline assumptions and drive engagement.",
-    "Extreme animal biomechanics because unique natural adaptations consistently pull high daily view velocities."
+    "The Hidden Engineering Reveal: Explaining the function of unseen design features (e.g., road safety, architecture).",
+    "Biological 'Why' Myths: Correcting common misconceptions about body processes using real-world science.",
+    "Micro-Process Breakdowns: Showing how everyday, mass-produced objects are actually manufactured.",
+    "Surprising Animal Adaptations: Exploring specific, counter-intuitive traits in nature."
   ],
   "hook_shapes": [
-    "Why does X actually do Y when you touch/use it?",
-    "What happens if you remove X from Y completely?",
-    "Why is X secretly built completely differently from Y?"
+    "You think X does Y, but it is actually doing Z.",
+    "Ever wondered why X exists on Y? It is not for the reason you think.",
+    "This simple object X is actually a masterpiece of engineering, here is why.",
+    "Stop doing X; it is not actually helping, here is what is really happening."
   ],
   "title_shapes": [
-    "Why Do X Need Y So Badly? 🏀 #shorts",
-    "How X Is Secretly Built to Stop Y 🌊 #shorts",
-    "Why Are We Totally Wrong About X? 🧠 #shorts"
+    "Why [Object] Actually [Action] 😳",
+    "The Secret Engineering Behind [Object] 🏗️",
+    "Why [Subject] Isn't What You Think 🧐"
   ],
   "topic_areas": [
-    "Everyday sports equipment physics and hidden design mechanics",
-    "Extreme architectural and civil engineering survival features",
-    "Bizarre animal locomotion and physiological defense adaptations",
-    "Unseen material science inside common household manufactured goods",
-    "Counter-intuitive fluid dynamics in natural water bodies"
+    "Infrastructure safety features",
+    "Biological evolution oddities",
+    "Material science in daily items",
+    "Atmospheric or physics-based phenomena",
+    "Industrial manufacturing secrets"
   ],
   "stop_doing": [
-    "Dropping long-form structural pacing, as top performers heavily cluster under 50 seconds.",
-    "Using non-question formats for titles since the top data shows high retention with direct question phrasing."
+    "Avoid using any 'How-to' or instructional advice, as these perform significantly worse than 'Why' explainers in our data.",
+    "Do not exceed 50 seconds in length, as retention drops sharply after this threshold.",
+    "Stop using overly long, complex sentences in the explanation phase; split them into two distinct clips."
   ],
   "target_seconds": 42,
-  "experiment": "Test starting the hook directly with a physical sound effect instead of speech in 3 out of 10 videos this week, and we will know it worked if the 5-second viewer retention rate increases by at least 4% compared to our baseline.",
+  "experiment": "Introduce a 'visual cliffhanger' (a high-contrast, zoomed-in image) at the 18-second mark right before the pause; success will be measured by a higher 'stayed_pct' compared to videos without this visual cue.",
   "facts": {
-    "median_seconds_top20": 47.0,
-    "median_seconds_rest": 65.5,
-    "question_titles_top20": 6,
-    "why_how_what_titles_top20": 5,
-    "median_title_chars_top20": 64.0
+    "median_seconds_top20": 37.5,
+    "median_seconds_rest": 60,
+    "question_titles_top20": 4,
+    "why_how_what_titles_top20": 3,
+    "median_title_chars_top20": 51.5
   },
-  "studied": "2026-11-12T19:53:34",
+  "studied": "2026-11-19T00:25:56",
   "history": [
+    {
+      "studied": "2026-11-12T19:53:34",
+      "rules": [
+        "Strictly limit total word count to between 90 and 105 words to hit the 42-second runtime sweet spot.",
+        "Assign the hook, 3-2-1 pause prompt, and closing question to Narrator 1, while Narrator 2 handles the core explanation.",
+        "Keep titles under 65 characters and lead with strong curiosity triggers like 'Why' or 'How'.",
+        "Use exclusively high-definition real footage or clean animated vector diagrams, completely avoiding AI-generated imagery.",
+        "Position the 'pause and predict' banner strictly between seconds 20 and 25 with a clear 3-2-1 countdown.",
+        "Never include subscribe/like CTAs, sensationalized fear, health advice, or misleading clickbait."
+      ],
+      "target_seconds": 42
+    },
     {
       "studied": "2026-11-12T19:41:36",
       "rules": [

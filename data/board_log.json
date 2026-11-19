@@ -133,5 +133,30 @@
    "3": "Cranes do not represent farm pens well, and a single fish pointing to grain feels confusing for representing farm-raised fish eating grain and fish meal."
   },
   "error": ""
+ },
+ {
+  "when": "2026-11-18 22:57",
+  "topic": "3 animals that never stop growing throughout their entire lives",
+  "drawn": [
+   3,
+   4,
+   5
+  ],
+  "not_drawn": {
+   "2": "The text 'INDETERMINAT' is misspelled and cut off, and the emoji used for 'rockfish' is a generic fish emoji, which is acceptable but imprecise."
+  },
+  "error": ""
+ },
+ {
+  "when": "2026-11-19 00:02",
+  "topic": "Why quantum-gas microscopes can resolve individual atoms in a single shot",
+  "drawn": [
+   2,
+   3,
+   4,
+   5
+  ],
+  "not_drawn": {},
+  "error": ""
  }
 ]

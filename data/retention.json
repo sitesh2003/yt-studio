@@ -2,9 +2,9 @@
   "4LJjIxeP_dY": {
     "title": "Why your eyes are secretly leaking",
     "hook_line": "",
-    "kept_at_10pct": 1.0652,
-    "kept_at_50pct": 0.4493,
-    "kept_at_end": 0.2043,
+    "kept_at_10pct": 1.0651000000000002,
+    "kept_at_50pct": 0.4486,
+    "kept_at_end": 0.2041,
     "vs_similar_start": 0.34,
     "vs_similar_end": 0.56,
     "biggest_drops": [
@@ -20,7 +20,7 @@
       }
     ],
     "countdown": null,
-    "checked": "2026-11-18"
+    "checked": "2026-11-19"
   },
   "a8Kooq5Sswk": {
     "title": "Why Onions Make You Cry",
@@ -43,7 +43,7 @@
       }
     ],
     "countdown": null,
-    "checked": "2026-11-18"
+    "checked": "2026-11-19"
   },
   "yF1Dj5F1icM": {
     "title": "Why Cold Water Fails Against Spicy Food 🌶️🥛",
@@ -66,30 +66,30 @@
       }
     ],
     "countdown": null,
-    "checked": "2026-11-18"
+    "checked": "2026-11-19"
   },
   "_EnG9sUTAUY": {
     "title": "Why Maple Syrup Takes 40 Gallons 🍁🍯",
     "hook_line": "That sweet maple syrup on your pancakes?",
-    "kept_at_10pct": 0.9565,
-    "kept_at_50pct": 0.39130000000000004,
-    "kept_at_end": 0.1739,
-    "vs_similar_start": 0.32,
+    "kept_at_10pct": 0.9582999999999999,
+    "kept_at_50pct": 0.375,
+    "kept_at_end": 0.16670000000000001,
+    "vs_similar_start": 0.31,
     "vs_similar_end": 0.32,
     "biggest_drops": [
       {
         "at": 0.1,
-        "lost": 0.348,
+        "lost": 0.333,
         "line": "When maple trees wake up in spring, they pump out sap that is about ninety-eight percent water."
       },
       {
         "at": 0.52,
-        "lost": 0.087,
+        "lost": 0.083,
         "line": "Pause and guess..."
       }
     ],
     "countdown": null,
-    "checked": "2026-11-18"
+    "checked": "2026-11-19"
   },
   "EfZ-P6him7k": {
     "title": "The Only Food That Lasts Forever 🐝✨",
@@ -112,30 +112,30 @@
       }
     ],
     "countdown": null,
-    "checked": "2026-11-18"
+    "checked": "2026-11-19"
   },
   "Bxp7r8IzbiY": {
     "title": "Why Fingers Prune In Water 💧🧽",
     "hook_line": "Your fingers prune in water, but it is not because you are absorbing it like a sponge.",
-    "kept_at_10pct": 1.0275,
-    "kept_at_50pct": 0.1923,
-    "kept_at_end": 0.0659,
+    "kept_at_10pct": 1.0272,
+    "kept_at_50pct": 0.1957,
+    "kept_at_end": 0.0652,
     "vs_similar_start": 0.21,
     "vs_similar_end": 0.2,
     "biggest_drops": [
       {
         "at": 0.13,
-        "lost": 0.22,
+        "lost": 0.217,
         "line": "In fact, dead skin cells would actually swell up and smooth out if they just soaked up water."
       },
       {
         "at": 0.34,
-        "lost": 0.104,
+        "lost": 0.103,
         "line": "Now think about what happens when you lose that underlying volume inside a rigid shell."
       }
     ],
     "countdown": null,
-    "checked": "2026-11-18"
+    "checked": "2026-11-19"
   },
   "u_qOehVEHQI": {
     "title": "Why Tuna Meat Is Red Meat While Cod Is Pure White 🐟🥩",
@@ -163,15 +163,15 @@
   "80jyJN1A1y8": {
     "title": "Why Fresh Pineapples Eat You Back 🍍👅",
     "hook_line": "Fresh pineapple is literally eating you back.",
-    "kept_at_10pct": 1.0863,
-    "kept_at_50pct": 0.3822,
-    "kept_at_end": 0.2425,
+    "kept_at_10pct": 1.0892,
+    "kept_at_50pct": 0.3868,
+    "kept_at_end": 0.2455,
     "vs_similar_start": 0.38,
     "vs_similar_end": 0.74,
     "biggest_drops": [
       {
         "at": 0.11,
-        "lost": 0.201,
+        "lost": 0.202,
         "line": "Every time you bite into a fresh slice, it stings because of a clever defense weapon."
       },
       {
@@ -181,98 +181,121 @@
       }
     ],
     "countdown": null,
-    "checked": "2026-11-18"
+    "checked": "2026-11-19"
   },
   "S3s-iGcOMVY": {
     "title": "This Shark Can Live For Centuries! 🦈❄️",
     "hook_line": "This shark is older than the United States.",
-    "kept_at_10pct": 1.8507,
-    "kept_at_50pct": 1.3284,
-    "kept_at_end": 1.0896,
+    "kept_at_10pct": 1.8636000000000001,
+    "kept_at_50pct": 1.3485,
+    "kept_at_end": 1.1061,
     "vs_similar_start": 0.56,
     "vs_similar_end": 0.84,
     "biggest_drops": [
       {
         "at": 0.09,
-        "lost": 0.224,
+        "lost": 0.227,
         "line": "The Greenland shark roams the freezing Arctic depths, growing only about an inch every few years."
       },
       {
-        "at": 0.63,
-        "lost": 0.075,
-        "line": "Here is why: the intense cold forces its metabolism to crawl at an incredibly slow, energy-saving pace."
+        "at": 0.28,
+        "lost": 0.076,
+        "line": "But here is the weird part: how does it survive so long in water that should freeze its blood?"
       }
     ],
     "countdown": null,
-    "checked": "2026-11-18"
+    "checked": "2026-11-19"
   },
   "fXKlhAXJSTc": {
     "title": "Why Garlic Doesn't Make You Cry Like Onions Do 🧄😭",
     "hook_line": "Garlic usually doesn't make you cry when you chop it, because its defense chemicals work differently than the ones in onions.",
-    "kept_at_10pct": 1.1905,
-    "kept_at_50pct": 0.38689999999999997,
-    "kept_at_end": 0.2708,
+    "kept_at_10pct": 1.185,
+    "kept_at_50pct": 0.3873,
+    "kept_at_end": 0.2717,
     "vs_similar_start": 0.48,
-    "vs_similar_end": 0.77,
+    "vs_similar_end": 0.78,
     "biggest_drops": [
       {
         "at": 0.1,
-        "lost": 0.342,
+        "lost": 0.341,
         "line": "Garlic usually doesn't make you cry when you chop it, because its defense chemicals work differently than the ones in onions."
       },
       {
         "at": 0.41,
-        "lost": 0.089,
+        "lost": 0.087,
         "line": "It stores its flavor compounds and enzymes in totally separate rooms inside each cell."
       }
     ],
     "countdown": null,
-    "checked": "2026-11-18"
+    "checked": "2026-11-19"
   },
   "19fmphmc7A8": {
     "title": "Why Fruits Float In Water 🍎🍐",
     "hook_line": "Drop an apple or a pear in a bowl of water and they both float.",
-    "kept_at_10pct": 0.8667,
-    "kept_at_50pct": 0.2667,
-    "kept_at_end": 0.2,
-    "vs_similar_start": 0.23,
+    "kept_at_10pct": 1.0,
+    "kept_at_50pct": 0.2857,
+    "kept_at_end": 0.2143,
+    "vs_similar_start": 0.38,
     "vs_similar_end": 0.47,
     "biggest_drops": [
       {
-        "at": 0.09,
-        "lost": 0.333,
-        "line": "Drop an apple or a pear in a bowl of water and they both float."
+        "at": 0.13,
+        "lost": 0.321,
+        "line": "They look like similar fruits."
       },
       {
-        "at": 0.88,
-        "lost": 0.067,
-        "line": "Ever thought why a watermelon, which is way bigger and heavier, still floats on the surface?"
+        "at": 0.29,
+        "lost": 0.071,
+        "line": "About one quarter of an apple’s volume is made up of intracellular gas spaces within its cellular structure."
       }
     ],
     "countdown": null,
-    "checked": "2026-11-18"
+    "checked": "2026-11-19"
   },
   "syvvVya0Q4g": {
     "title": "Why Do Potatoes Sprout From Dents? 🥔🌱",
     "hook_line": "Why do potatoes sprout shoots from those tiny dents instead of anywhere else?",
-    "kept_at_10pct": 1.0331000000000001,
-    "kept_at_50pct": 0.27149999999999996,
-    "kept_at_end": 0.1589,
-    "vs_similar_start": 0.38,
-    "vs_similar_end": 0.73,
+    "kept_at_10pct": 0.9818000000000001,
+    "kept_at_50pct": 0.1778,
+    "kept_at_end": 0.09699999999999999,
+    "vs_similar_start": 0.28,
+    "vs_similar_end": 0.72,
     "biggest_drops": [
       {
-        "at": 0.1,
-        "lost": 0.272,
-        "line": "Those little dents are actually called nodes, and each one holds tiny backup buds waiting for the right signal."
+        "at": 0.09,
+        "lost": 0.317,
+        "line": "Why do potatoes sprout shoots from those tiny dents instead of anywhere else?"
       },
       {
         "at": 0.25,
-        "lost": 0.086,
+        "lost": 0.083,
         "line": "Those little dents are actually called nodes, and each one holds tiny backup buds waiting for the right signal."
       }
     ],
     "countdown": null,
-    "checked": "2026-11-18"
+    "checked": "2026-11-19"
+  },
+  "9naAs1wMGVY": {
+    "title": "Why Your Funny Bone Shocks You ⚡",
+    "hook_line": "You just smashed your elbow on a desk and now your entire forearm is buzzing with pain.",
+    "kept_at_10pct": 1.0537999999999998,
+    "kept_at_50pct": 0.2473,
+    "kept_at_end": 0.0645,
+    "vs_similar_start": 0.24,
+    "vs_similar_end": 0.31,
+    "biggest_drops": [
+      {
+        "at": 0.17,
+        "lost": 0.258,
+        "line": "It feels like an electric current, but there is no electricity in your arm."
+      },
+      {
+        "at": 0.32,
+        "lost": 0.065,
+        "line": "Wait, really? It feels exactly like touching a live wire."
+      }
+    ],
+    "countdown": false,
+    "checked": "2026-11-19"
   }
 }

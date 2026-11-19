@@ -1,22 +1,22 @@
 {
   "summary": [
-    "High-performing videos by views and stayed_pct rely on concise titles under 45 characters that use direct paradoxes rather than generic questions.",
-    "The first sentence of top-tier videos immediately subverts common physical assumptions with a direct, declarative statement rather than filler words.",
-    "Videos with low stayed_pct (below 35%) suffer from asking predictable questions or leaning on stale emojis instead of creating an urgent knowledge gap.",
-    "Length correlates heavily with drop-off; under-performing videos exceeding 30 seconds experienced massive audience attrition in the initial feed test.",
-    "Channel distribution stalls predictably unless the initial hook establishes a counterintuitive visual or logical contradiction within the first 3 seconds."
+    "Prioritize high-stakes, physically immediate hooks that place the viewer in an uncomfortable or surprising situation.",
+    "Use titles that frame a common experience as a secret or a failure to create an information gap.",
+    "Avoid descriptive or dry openings; start with a contrarian statement that immediately corrects a common misconception.",
+    "Maintain high stayed_pct by ensuring the first sentence connects an everyday object to an unexpected consequence or danger.",
+    "Limit titles to under 8 words; focus on using an emoji that represents the core subject to increase visual clarity in the feed."
   ],
   "winning_hooks": [
     "Your fingers prune in water, but it is not because you are absorbing it like a sponge.",
-    "Fresh pineapple is literally eating you back.",
     "Your eyes are leaking right now, and your brain is hiding it.",
-    "Ever noticed those tiny black dots fading around your car windshield? 🚗"
+    "Fresh pineapple is literally eating you back.",
+    "This shark is older than the United States."
   ],
   "avoid": [
-    "Starting a hook with a polite question like 'Have you ever wondered...'",
-    "Using long conversational introductions that delay the core paradox past the 3-second mark",
-    "Writing vague titles that do not immediately communicate the physical stakes or weirdness",
-    "Exceeding 30 seconds of runtime before establishing the payoff"
+    "Opening with questions that can be answered with a simple 'yes' or 'no' (e.g., 'Ever noticed...').",
+    "Using long, wordy descriptions in the first sentence that lack an immediate point of conflict.",
+    "Neutral, informative titles that sound like textbook headers.",
+    "Hooks that lack a direct personal benefit or a 'threat' to the viewer's current understanding of the world."
   ],
-  "next_experiment": "Test two identical topics comparing a declarative physiological contradiction hook ('Your skin does X because Y') versus a direct question hook ('Why does your skin do X?'), measuring stayed_pct at the 3-second mark."
+  "next_experiment": "A/B test two styles of hook on the same topic: 'Direct Confrontation' (e.g., 'You have been eating pineapple wrong your whole life') vs. 'Physical Discomfort' (e.g., 'Fresh pineapple is actively digesting your tongue as you eat it')."
 }

@@ -4,14 +4,14 @@
     "measure": "average view percentage",
     "arms": {
       "countdown": {
-        "videos": 0,
-        "avg_view_pct": null,
-        "avg_views": null
+        "videos": 1,
+        "avg_view_pct": 35.1,
+        "avg_views": 231
       },
       "turn": {
-        "videos": 1,
-        "avg_view_pct": 58.4,
-        "avg_views": 105
+        "videos": 2,
+        "avg_view_pct": 47.8,
+        "avg_views": 180
       }
     }
   },

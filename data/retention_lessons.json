@@ -1,21 +1,22 @@
 {
   "lessons": [
-    "Keep hooks extremely direct and concise: the highest performing retention at 10% (such as the Greenland shark video) starts immediately with a bold, high-stakes claim without fluff.",
-    "Avoid descriptive framing or lengthy multi-clause hook lines in the first 10 seconds, as clips with overly descriptive intros (e.g., Maple Syrup or Potatoes) see massive early drop-offs exceeding 30%.",
-    "Eliminate repetitive phrasing or immediate redundancy in early explanation lines; the potato video showed identical drops due to repeating text, causing immediate viewer fatigue.",
-    "Structure the core explanation without pacing lags around the 25% to 50% mark, where sharp drops consistently occur if the script slows down its delivery.",
-    "Focus topics on extreme physical contrasts or biological anomalies (like the Greenland shark or Tuna vs. Cod), which maintain significantly higher end-retention and sustained viewer engagement compared to everyday food facts."
+    "Prioritize immediate, high-stakes curiosity: The 'Greenland Shark' video, which maintained retention above 1.0 throughout, used a hook establishing extreme longevity and mystery, far outperforming purely descriptive openings.",
+    "Eliminate slow context setting: Videos with the highest drop-offs at the 10% mark (Potatoes, Garlic, Maple Syrup) all featured explanatory hooks that focused on definitions or standard scientific facts rather than an immediate 'why' or 'what if'.",
+    "Avoid redundant explanations: Drop-offs are consistently highest when the line summarizes what was already presented; for example, the Pineapple video lost 13.6% of viewers immediately after defining the enzyme it had already introduced.",
+    "Prioritize structural uniqueness: The best-performing video (Greenland Shark) focuses on a singular, extreme anomaly, whereas low-performing videos (Fingers Pruning, Funny Bone) rely on explaining a common bodily sensation, which may feel less urgent to viewers.",
+    "Avoid 'pause' or 'guess' prompts: The Maple Syrup video experienced a notable drop-off (8.3%) at the 52% mark specifically triggered by a 'Pause and guess' prompt, suggesting that forced interaction disrupts flow."
   ],
   "worst_moment_types": [
-    "Multi-clause introductory sentences that over-explain the premise before establishing high stakes",
-    "Slow transitional explanations around the 25% to 40% timeline that stall momentum",
-    "Repetitive information or redundant phrasing in early script lines",
-    "Abrupt pauses or low-energy delivery right after the hook"
+    "Slow-paced explanatory hooks focusing on definitions",
+    "Direct questions or prompts asking the viewer to 'guess' or 'pause'",
+    "Lines that summarize the technical chemistry or mechanics of a process already mentioned",
+    "Transition lines that add little new value after a high-energy intro"
   ],
   "best_hook_types": [
-    "High-stakes declarative statements about extreme biological survival or longevity",
-    "Short, punchy contrarian facts that challenge common assumptions immediately"
+    "Extreme, counter-intuitive anomalies (e.g., 'This shark is older than the United States')",
+    "Direct statements of hidden biological 'weapons' or defensive mechanisms (e.g., 'Fresh pineapple is literally eating you back')",
+    "Immediate conflict framing that pits two common things against each other (e.g., 'Tuna vs Cod' comparison)"
   ],
-  "studied": "2026-11-18",
-  "videos": 12
+  "studied": "2026-11-19",
+  "videos": 13
 }
