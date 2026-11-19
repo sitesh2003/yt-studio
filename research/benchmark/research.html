@@ -1,0 +1,125 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Shorts Benchmark Research</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+<style>
+:root { --bg:#f6f7fb; --card:#fff; --fg:#141826; --muted:#474d64; --line:#d9dceb; --accent:#2b3fbf;
+  --good-bg:#e3f4ea; --good:#136b3a; --bad-bg:#fbe6e6; --bad:#a12020; --mid-bg:#fff3d6; --mid:#7a4b00; color-scheme:light; }
+* { box-sizing:border-box; }
+body { background:var(--bg); color:var(--fg); font:16px/1.55 Inter,"Segoe UI",system-ui,sans-serif; margin:0; }
+main { max-width:960px; margin:0 auto; padding:28px 16px 64px; display:grid; gap:24px; }
+h1 { font-size:1.9rem; line-height:1.2; margin:0; } h2 { font-size:1.3rem; margin:0 0 6px; } h3 { font-size:1.05rem; margin:8px 0 0; }
+p, ul, ol { margin:0; } ul, ol { padding-left:1.25em; display:grid; gap:6px; }
+.lead { color:var(--muted); display:grid; gap:8px; }
+section { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:18px; display:grid; gap:12px; min-width:0; }
+.tablewrap { overflow-x:auto; }
+table { border-collapse:collapse; width:100%; font-size:.92rem; min-width:640px; }
+caption { text-align:left; color:var(--muted); font-size:.9rem; padding-bottom:6px; }
+th, td { text-align:left; padding:7px 8px; border-bottom:1px solid var(--line); vertical-align:top; }
+th { font-weight:600; background:#eef0f8; }
+td.num { text-align:right; white-space:nowrap; font-variant-numeric:tabular-nums; }
+tr.ours td { background:#f3f5ff; }
+.tag { display:inline-block; font-weight:600; font-size:.8rem; padding:1px 8px; border-radius:999px; white-space:nowrap; }
+.yes { background:var(--good-bg); color:var(--good); } .no { background:var(--bad-bg); color:var(--bad); } .part { background:var(--mid-bg); color:var(--mid); }
+.big { font-size:1.05rem; }
+.small { color:var(--muted); font-size:.9rem; }
+a { color:var(--accent); } :focus-visible { outline:3px solid var(--accent); outline-offset:2px; }
+</style></head>
+<body><main>
+<header class="lead">
+  <h1>What the big Shorts do, and what we change</h1>
+  <p>Research on the 18 Shorts in the "EVER THOUGHT WHY" playlist (19 Nov 2026), compared with three of our own Shorts and our three chosen voices.</p>
+  <p>How it was done: every Short was watched as a strip of frames from start to end; its sound was transcribed and measured on this laptop (speaking speed, pauses, how much the voice rises and falls). Views and lengths are from YouTube.</p>
+</header>
+
+<section aria-labelledby="h-answer">
+  <h2 id="h-answer">The answer in five lines</h2>
+  <ol class="big">
+    <li><strong>Our screen layout is already the same as the 11.9 million Tuna Short</strong> (a clip in the middle, blurred copy above and below, words in the middle). Layout is not the problem.</li>
+    <li><strong>Our pictures do not show what the voice says, and stay too long.</strong> In "Fingers prune" an old 1914 photo plays under "rigid shell", a paper fan under "collapses inward", and one clip of a child drinking water stays for about 16 seconds over unrelated words. In the Tuna Short every word has its own matching clip: "tuna" shows tuna, "cans" shows cans.</li>
+    <li><strong>Our voice stops too often.</strong> The hits talk in one continuous stream: about 1 to 2 pauses a minute. Our male voice E2 pauses about 27 times a minute; the public videos about 21 to 22.</li>
+    <li><strong>3D animation is real and it works</strong> (2.1 million, 527 thousand), but only as a <em>story</em>: a character, a place, things happening. Blender is already installed on this laptop, so a free 3D route exists.</li>
+    <li><strong>The Hindi hit sounds like a friend telling a story</strong>: male, fast, very expressive, uses "तुम", tells a real event. Our Hindi voice is a calmer female voice reading an explanation with "आप".</li>
+  </ol>
+</section>
+
+<section aria-labelledby="h-table">
+  <h2 id="h-table">All 18, and how each is made</h2>
+  <div class="tablewrap" tabindex="0" role="region" aria-label="Scrollable table"><table>
+    <caption>Most viewed first. Entertainment ones are marked; their views come from a different audience.</caption>
+    <thead><tr><th scope="col">Short</th><th scope="col">Views</th><th scope="col">Length</th><th scope="col">How it is made</th><th scope="col">Could we make it?</th></tr></thead>
+    <tbody>
+      <tr><td>The Ranking Dude: funniest CS2 moments</td><td class="num">20.9 M</td><td class="num">1:46</td><td>Game clips with a voice (entertainment)</td><td class="small">not our audience</td></tr>
+      <tr><td>TakaJoki: Grandma never stops feeding me</td><td class="num">15.3 M</td><td class="num">0:46</td><td>Cat meme clips, music, no voice (entertainment)</td><td class="small">not our audience</td></tr>
+      <tr><td>Explain Station: Why tuna has almost no parasites</td><td class="num">11.9 M</td><td class="num">2:26</td><td>Real process footage that matches every word (fish, microscope, factory, cans); one big word on screen; AI voice (viewers joke about it in the comments)</td><td><span class="tag yes">Yes</span> same layout as ours; needs better-matched, faster-changing clips</td></tr>
+      <tr><td>Afterhour Theory: Jensen Huang story</td><td class="num">2.1 M</td><td class="num">2:30</td><td>3D cartoon: simple round-headed characters in low-poly rooms, a new set every few seconds, told as "You are Jensen Huang…"</td><td><span class="tag part">Possible</span> Blender with free models; a real build, weeks not days</td></tr>
+      <tr><td>Mr Booplesnoot: The heart</td><td class="num">1.7 M</td><td class="num">0:06</td><td>A post card with one striking real photo and a song; no voice</td><td><span class="tag part">Partly</span> a 6-second format, not for explanations</td></tr>
+      <tr><td>3D Wala Guru: 86 cars in fog (Hindi), added today</td><td class="num">527 K</td><td class="num">1:25</td><td>Realistic 3D cars and roads in fog, an x-ray car, a top-down map, numbered tips (big blue 1 to 5), real news clips marked "Source: Reuters", Roman-script Hinglish captions, a visibility meter. Ends "agli reel mein" (next part) and "family group mein bhejo" (send to family)</td><td><span class="tag part">Possible</span> 3D scenes in Blender; news clips need a licence</td></tr>
+      <tr><td>Daily Info Time: Some talk, some do</td><td class="num">19 K</td><td class="num">0:15</td><td>White line-drawn stick figures on black, split screen "talks about it / does it", day counter; music only</td><td><span class="tag yes">Yes</span> simple, but a motivation format</td></tr>
+      <tr><td>Maina Explains: State flowers (Hindi)</td><td class="num">5.6 K</td><td class="num">1:11</td><td>Satellite map of India with flowers placed on it</td><td class="small">our level</td></tr>
+      <tr><td>biggerthanyouthink: Driving with no engine oil</td><td class="num">2.0 K</td><td class="num">0:28</td><td>Polished 3D inside the engine, a cute oil-drop character, a game-style "engine health" bar, loops back to its start. Very good, but a 56-subscriber channel</td><td><span class="tag part">Possible</span> shows quality alone does not bring views on a new channel</td></tr>
+      <tr><td>Small Wins Stories: Salary expectations</td><td class="num">1.3 K</td><td class="num">1:18</td><td>Flat 2D cartoon people in a room, labels like "Before the interview"</td><td class="small">our level of views</td></tr>
+      <tr><td>Score With Science: Copper refining</td><td class="num">1.2 K</td><td class="num">0:58</td><td>Slides and diagrams with a voice</td><td class="small">our level</td></tr>
+      <tr><td>CoreByte Studio: How an SSD works</td><td class="num">1.2 K</td><td class="num">1:57</td><td>Clean 3D renders of computer parts, full-sentence captions</td><td class="small">3D alone did not help</td></tr>
+      <tr><td>Inspiring stalwarts: Why magnets keep their power</td><td class="num">1.2 K</td><td class="num">0:45</td><td>AI-generated lab clips in a thin band, black above and below</td><td class="small">wastes most of the screen</td></tr>
+      <tr><td>Beyond The Unknown: Ahiravana (Hindi)</td><td class="num">1.0 K</td><td class="num">1:08</td><td>Flat 2D figures, gently moving; marked as AI by YouTube</td><td class="small">our level</td></tr>
+      <tr><td>Zovik Chem (two Shorts), Score With Science: Electronegativity, the_web_brain</td><td class="num">171 to 518</td><td class="num">0:48 to 1:00</td><td>Slides, screen text, classroom diagrams</td><td class="small">what to avoid</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section aria-labelledby="h-voice">
+  <h2 id="h-voice">The voices, measured</h2>
+  <div class="tablewrap" tabindex="0" role="region" aria-label="Scrollable table"><table>
+    <caption>Speed in words a minute; pauses are silences of a third of a second or more; "rise and fall" is how far the voice's pitch moves (bigger = more expressive, smaller = flatter).</caption>
+    <thead><tr><th scope="col">Voice</th><th scope="col">Views</th><th scope="col">Words a minute</th><th scope="col">Pauses a minute</th><th scope="col">Rise and fall</th></tr></thead>
+    <tbody>
+      <tr><td>Tuna (English, AI voice)</td><td class="num">11.9 M</td><td class="num">223</td><td class="num">2</td><td class="num">10.6</td></tr>
+      <tr><td>Jensen story (English)</td><td class="num">2.1 M</td><td class="num">171</td><td class="num">19</td><td class="num">26.9</td></tr>
+      <tr><td>3D Wala Guru (Hindi)</td><td class="num">527 K</td><td class="num">219</td><td class="num">1</td><td class="num">21.9</td></tr>
+      <tr><td>Small channels, average of 11</td><td class="num">under 6 K</td><td class="num">about 150</td><td class="num">about 10</td><td class="num">about 14</td></tr>
+      <tr class="ours"><td>Ours: E2 male (chosen)</td><td class="num">new</td><td class="num">195</td><td class="num">27</td><td class="num">12.9</td></tr>
+      <tr class="ours"><td>Ours: A1 female (back-up)</td><td class="num">new</td><td class="num">206</td><td class="num">28</td><td class="num">7.7</td></tr>
+      <tr class="ours"><td>Ours: H14 Hindi (Swara)</td><td class="num">new</td><td class="num">192</td><td class="num">0</td><td class="num">12.2</td></tr>
+      <tr class="ours"><td>Ours on YouTube now (Fingers, Pineapple)</td><td class="num">1.3 to 1.5 K</td><td class="num">163 to 174</td><td class="num">21 to 22</td><td class="num">about 10.5</td></tr>
+    </tbody>
+  </table></div>
+  <h3>What this means</h3>
+  <ul>
+    <li><strong>English:</strong> E2's speed is fine. What separates it from the 11.9 M Short is the stopping: it breaks after almost every sentence. The hits run sentences into each other. Fix: shorter gaps between sentences (the voice step already has a setting for this) and scripts written as one flowing story, not separate facts.</li>
+    <li><strong>Expressive voices win stories</strong>: the Jensen and 3D Wala Guru narrators rise and fall about twice as much as ours. For a story format, E2's liveliness setting can go up a step; check it stays clear.</li>
+    <li><strong>Hindi:</strong> Swara flows well (no stops) but is flatter and calmer than the Hindi hit, and it is a female voice where the hit is a male storyteller. Script changes that cost nothing: use "तुम", open with a real event ("बुल्गारिया के हाईवे पर 86 गाड़ियाँ…"), and tell it as a story. Hindi words read badly in our sample (for example "fingers" came out close to "फिंगल्स") also need a pronunciation check.</li>
+  </ul>
+</section>
+
+<section aria-labelledby="h-hooks">
+  <h2 id="h-hooks">How the hits open</h2>
+  <ul>
+    <li>Tuna: "Ever wonder exactly what's hiding inside the fish we eat all the time?" A question, but about something <em>hidden</em> the viewer wants to see, not the title repeated.</li>
+    <li>Jensen: "You are Jensen Huang, the CEO of NVIDIA…" Puts the viewer inside the story.</li>
+    <li>3D Wala Guru: "In fog you follow the red light of the car ahead…" Puts the viewer in a real danger they know.</li>
+    <li>Ours (best): "Fresh pineapple is literally eating you back." Strong. Ours (weak): "Why do potatoes sprout shoots from those tiny dents?" The title read out again.</li>
+  </ul>
+  <p class="small">Matches the rule set today: a strong opening that makes people need the answer; a question only when it points at something hidden, never the title repeated.</p>
+</section>
+
+<section aria-labelledby="h-plan">
+  <h2 id="h-plan">What to change, in order</h2>
+  <ol>
+    <li><strong>Voice flow (this week):</strong> cut the gap between sentences for E2 and A1 to close to the hits' level; check every video still passes the listening check.</li>
+    <li><strong>Pictures that match the words (this week):</strong> a new clip at least every 3 to 4 seconds; each clip must show the thing being said, or the line is rewritten; no old photos or unrelated objects as fillers.</li>
+    <li><strong>Hindi script style (this week):</strong> "तुम", a real event to open, told as a story.</li>
+    <li><strong>A series hook at the end</strong>, like "next part tomorrow", for topics that have a part 2, alongside the one closing question.</li>
+    <li><strong>3D story test (later, needs your yes):</strong> a Blender pipeline with free models and simple round-headed characters, like the 2.1 M Jensen Short. I would show it only if it truly looks as good as that one.</li>
+  </ol>
+</section>
+
+<section aria-labelledby="h-done">
+  <h2 id="h-done">Already done today</h2>
+  <ul>
+    <li>No "Pause and guess, three, two, one" on any channel; no question in the middle; one closing question with nothing after it.</li>
+    <li>The first line must be a strong, surprising true statement or a question about something hidden; the title read out again is sent back.</li>
+    <li>The guardrail Short was taken off today's schedule; 7 banked countdown videos are held back and queued to be made again without the countdown.</li>
+  </ul>
+  <p class="small">The downloaded sound and 360p copies of other channels' Shorts stay on this laptop only, for this study, and are never uploaded or used in our videos.</p>
+</section>
+</main></body></html>

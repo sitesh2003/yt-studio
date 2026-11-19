@@ -19,3 +19,6 @@ data/*
 assets/voice/owner.wav
 .voice-key.secret.txt
 research/voice_lab/mine/
+
+# benchmark media: other channels' audio, local analysis only, never committed
+research/benchmark/media/
