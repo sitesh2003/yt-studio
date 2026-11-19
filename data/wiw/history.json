@@ -1382,7 +1382,7 @@
       "lenses"
     ],
     "hook": "Have you ever noticed that a magnifying glass can make things look huge and upright, but if you pull it away, the world suddenly flips upside down? It’s simple physics.",
-    "status": "scheduled",
+    "status": "public",
     "narration": "Have you ever noticed that a magnifying glass can make things look huge and upright, but if you pull it away, the world suddenly flips upside down? It’s simple physics. Let’s track light from the top tip of this paper arrow. The lens bends these light rays inward. The rays are redirected by the lens so they cross over each other before reaching your eye. Because the light from the top of the object is bent to the bottom of the image path, the entire view is flipped. This is the same principle that allows a camera to focus an image onto a sensor. Try this: why does the lens stop flipping the image if you hold it really close to the object?",
     "voice_engine": "kokoro",
     "voices": "one narrator (af_bella)",
@@ -1464,7 +1464,8 @@
     "audited": true,
     "video_id": "RAyXuV7D0F0",
     "publish_at": "2026-11-18T16:30:00-05:00",
-    "thumbnail_set": true
+    "thumbnail_set": true,
+    "answered": true
   },
   {
     "job": "20261116-1409-why-does-a-siren-change-pitch-as-it-pass",
