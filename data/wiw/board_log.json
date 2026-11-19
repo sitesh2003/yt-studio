@@ -207,5 +207,18 @@
    "4": "The image shows a battery being charged, but the text 'POWER FLOW' is placed next to the battery, and the diagram implies electrons are flowing into the battery"
   },
   "error": ""
+ },
+ {
+  "when": "2026-11-19 19:32",
+  "topic": "How does a lithium-ion battery actually charge?",
+  "drawn": [
+   3,
+   4,
+   5
+  ],
+  "not_drawn": {
+   "2": "Red construction bricks are used to represent a crystal structure, and a full green battery is shown for 'zero battery'."
+  },
+  "error": ""
  }
 ]

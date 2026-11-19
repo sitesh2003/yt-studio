@@ -3041,5 +3041,104 @@
       "duration": 35.0
     },
     "repairs": 2
+  },
+  {
+    "job": "20261119-1912-how-does-a-lithium-ion-battery-actually-",
+    "topic": "How does a lithium-ion battery actually charge?",
+    "title": "How Do Lithium-Ion Batteries Actually Charge?",
+    "description": "Ever wondered where those ions go when you plug in your phone? It's not magic—it's a physical dance between two electrodes. #shorts #physics #technology\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nVideo by Coverr-Free-Footage on Pixabay\nVideo by Jari-Lobo on Pixabay\nVideo by crew_jak on Pixabay",
+    "tags": [
+      "battery",
+      "lithium",
+      "physics",
+      "technology",
+      "science"
+    ],
+    "hook": "Your phone battery is empty, but where do the lithium ions actually go while it charges?",
+    "status": "banked",
+    "narration": "Your phone battery is empty, but where do the lithium ions actually go while it charges? Zero battery. The lithium ions are trapped inside the crystal structure of the cathode. As you plug in the charger, electrical force pulls these ions out of the cathode. They travel across. Through the liquid electrolyte to the anode. Here's why: the ions settle into the anode's structure, which stores the electrical potential energy. That's it. Charging is just moving ions between two solid storage sites. Try this: why does a battery get warm if you charge it too fast?",
+    "voice_engine": "chatterbox",
+    "voices": "one narrator (af_heart)",
+    "diagrams": 2,
+    "series": "Electronics",
+    "countdown": false,
+    "length_arm": null,
+    "question": "why does a battery get warm if you charge it too fast?",
+    "answer_comment": "The answer: Rapid charging forces ions to move quickly and causes internal resistance, which releases energy as heat. Think of it like traffic—the faster the ions flow, the more friction they generate inside the battery. Do you have a question about battery capacity next?",
+    "sources": [],
+    "fact_check": [
+      "Lithium ions are intercalated in the cathode when discharged.",
+      "Charging involves ions de-intercalating from the cathode and moving to the anode.",
+      "The process involves the movement of ions through the electrolyte.",
+      "Rapid charging generates heat due to internal resistance."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        4.23
+      ],
+      [
+        4.23,
+        8.34
+      ],
+      [
+        8.34,
+        11.95
+      ],
+      [
+        11.95,
+        15.44
+      ],
+      [
+        15.44,
+        20.03
+      ],
+      [
+        20.03,
+        24.12
+      ],
+      [
+        24.12,
+        27.46
+      ]
+    ],
+    "duration": 27.46,
+    "scene_lines": [
+      "Your phone battery is empty, but where do the lithium ions actually go while it charges?",
+      "Zero battery. The lithium ions are trapped inside the crystal structure of the cathode.",
+      "As you plug in the charger, electrical force pulls these ions out of the cathode.",
+      "They travel across. Through the liquid electrolyte to the anode.",
+      "Here's why: the ions settle into the anode's structure, which stores the electrical potential energy.",
+      "That's it. Charging is just moving ions between two solid storage sites.",
+      "Try this: why does a battery get warm if you charge it too fast?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,000 --> 00:00:01,250\nYour phone battery is empty,\n\n2\n00:00:01,380 --> 00:00:02,660\nbut where do the lithium ions actually\n\n3\n00:00:02,660 --> 00:00:03,670\ngo while it charges?\n\n4\n00:00:04,230 --> 00:00:04,900\nZero battery.\n\n5\n00:00:05,140 --> 00:00:06,780\nThe lithium ions are trapped inside the\n\n6\n00:00:06,780 --> 00:00:08,230\ncrystal structure of the cathode.\n\n7\n00:00:08,340 --> 00:00:09,330\nAs you plug in the charger,\n\n8\n00:00:09,460 --> 00:00:11,850\nelectrical force pulls these ions out of the cathode.\n\n9\n00:00:11,950 --> 00:00:12,980\nThey travel across.\n\n10\n00:00:13,190 --> 00:00:15,200\nThrough the liquid electrolyte to the anode.\n\n11\n00:00:15,440 --> 00:00:17,100\nHere's why: the ions settle into the\n\n12\n00:00:17,100 --> 00:00:19,750\nanode's structure, which stores the electrical potential energy.\n\n13\n00:00:20,030 --> 00:00:20,640\nThat's it.\n\n14\n00:00:20,690 --> 00:00:23,900\nCharging is just moving ions between two solid storage sites.\n\n15\n00:00:24,120 --> 00:00:24,830\nTry this:\n\n16\n00:00:24,880 --> 00:00:26,120\nwhy does a battery get warm if\n\n17\n00:00:26,120 --> 00:00:26,860\nyou charge it too fast?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [],
+      "footage": [],
+      "review": [],
+      "heard": [
+        "\"anode's\" heard as \"anode\""
+      ],
+      "scene_heard": [
+        "scene 1: 100%",
+        "scene 2: 100%",
+        "scene 3: 100%",
+        "scene 4: 100%",
+        "scene 5: 93%",
+        "scene 6: 100%",
+        "scene 7: 100%"
+      ],
+      "pass": true,
+      "duration": 27.2
+    },
+    "repairs": 2,
+    "audited": true
   }
 ]

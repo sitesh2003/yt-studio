@@ -346,5 +346,20 @@
         "claim": "Martian sunsets appear blue due to Mie scattering by fine atmospheric dust particles."
       }
     ]
+  },
+  {
+    "job": "20261119-1912-how-does-a-lithium-ion-battery-actually-",
+    "date": "2026-11-19",
+    "title": "How Do Lithium-Ion Batteries Actually Charge?",
+    "topic": "How does a lithium-ion battery actually charge?",
+    "series": "Electronics",
+    "weekly": false,
+    "claims": [
+      "Lithium ions are intercalated in the cathode when discharged.",
+      "Charging involves ions de-intercalating from the cathode and moving to the anode.",
+      "The process involves the movement of ions through the electrolyte.",
+      "Rapid charging generates heat due to internal resistance."
+    ],
+    "sources": []
   }
 ]

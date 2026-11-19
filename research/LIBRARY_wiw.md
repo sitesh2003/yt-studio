@@ -16,6 +16,14 @@ Sources:
 - Mitra et al. (2020), Minerals. doi:10.3390/min10090729 — supports: Iron reacts with water and oxidizing chemicals to form iron(III) oxide (rust).
 - Ehlers et al. (2014), Applied Optics. doi:10.1364/ao.53.001808 — supports: Martian sunsets appear blue due to Mie scattering by fine atmospheric dust particles.
 
+## How Do Lithium-Ion Batteries Actually Charge?
+*2026-11-19 · Electronics*
+
+- Lithium ions are intercalated in the cathode when discharged.
+- Charging involves ions de-intercalating from the cathode and moving to the anode.
+- The process involves the movement of ions through the electrolyte.
+- Rapid charging generates heat due to internal resistance.
+
 ## How Does an Electric Motor Spin?
 *2026-11-18 · Physics*
 

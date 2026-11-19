@@ -70,5 +70,17 @@
     "locked": true,
     "series": "Earth and Space",
     "stored": "2026-11-19T08:51:27.685161+00:00"
+  },
+  {
+    "job": "20261119-1912-how-does-a-lithium-ion-battery-actually-",
+    "title": "How Do Lithium-Ion Batteries Actually Charge?",
+    "assets": {
+      "mp4": 769083391,
+      "jpg": 769083575,
+      "json": 769083610
+    },
+    "locked": true,
+    "series": "Electronics",
+    "stored": "2026-11-19T20:05:24.659871+00:00"
   }
 ]

@@ -1,0 +1,19 @@
+{
+  "summary": [
+    "Replace abstract 'Why' questions with specific, visual scenarios or counter-intuitive physical demonstrations.",
+    "Eliminate preamble that references the viewer's past experience (e.g., 'You've seen/used...') as these cause immediate swipe-offs.",
+    "Front-load the conflict: describe the result (e.g., objects falling) before stating the principle (e.g., gravity) to create immediate curiosity.",
+    "Shorten hook length: successful videos get straight to the 'what' or 'how' without setting context.",
+    "Use high-contrast visual indicators in titles (emojis or specific measurements) to signal a concrete explanation rather than a lecture."
+  ],
+  "winning_hooks": [
+    "Why does baking soda fizz the moment it hits vinegar?",
+    "A 10kg lead sphere and a 1kg lead sphere dropped from the same height in a vacuum. Why don't they hit the ground at different moments?"
+  ],
+  "avoid": [
+    "Starting with 'You've seen/used X, but why does it do Y?' format.",
+    "Vague, textbook-style titles like 'How Soap Works: The Chemistry of Cleaning'.",
+    "Slow-burn introductions that delay the core question beyond the first three seconds."
+  ],
+  "next_experiment": "Test the 'Direct Demonstration' hook style: start the video mid-action (e.g., the sound of a fizz or a visual drop) followed by a 3-word question, removing all introductory 'Why' or 'How' phrasing."
+}

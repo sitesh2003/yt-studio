@@ -1,5 +1,22 @@
 [
   {
+    "topic": "Why does soap remove grease and oil when plain water cannot?",
+    "title": "How Soap Works: The Chemistry of Cleaning",
+    "hook": "You've used soap your whole life, but why does it clean grease when plain water fails?",
+    "countdown": false,
+    "length_arm": null,
+    "duration": 36.67,
+    "publish_at": "2026-11-16T16:30:00-05:00",
+    "video": "kU4gc_KAIJ4",
+    "views": 82,
+    "engagedViews": 21,
+    "averageViewPercentage": 46.72,
+    "averageViewDuration": 16,
+    "likes": 0,
+    "subscribersGained": 0,
+    "stayed_pct": 25.6
+  },
+  {
     "topic": "Why does baking soda fizz when mixed with vinegar?",
     "title": "Why Does Baking Soda Fizz With Vinegar",
     "hook": "Why does baking soda fizz the moment it hits vinegar?",
@@ -17,21 +34,21 @@
     "stayed_pct": 42.9
   },
   {
-    "topic": "Why does soap remove grease and oil when plain water cannot?",
-    "title": "How Soap Works: The Chemistry of Cleaning",
-    "hook": "You've used soap your whole life, but why does it clean grease when plain water fails?",
+    "topic": "Why does salt melt ice on frozen roads? The chemistry of freezing point depression",
+    "title": "How Salt Melts Ice: Chemistry Explained",
+    "hook": "You've seen trucks dump salt on frozen roads, but how does it actually melt the ice?",
     "countdown": false,
     "length_arm": null,
-    "duration": 36.67,
-    "publish_at": "2026-11-16T16:30:00-05:00",
-    "video": "kU4gc_KAIJ4",
-    "views": 46,
-    "engagedViews": 14,
-    "averageViewPercentage": 40.18,
-    "averageViewDuration": 14,
-    "likes": 0,
+    "duration": 39.8,
+    "publish_at": "2026-11-17T16:30:00-05:00",
+    "video": "uh9aaSIkMiI",
+    "views": 61,
+    "engagedViews": 21,
+    "averageViewPercentage": 44.76,
+    "averageViewDuration": 17,
+    "likes": 1,
     "subscribersGained": 0,
-    "stayed_pct": 30.4
+    "stayed_pct": 34.4
   },
   {
     "topic": "How do vaccines actually train your immune system to fight real viruses?",
@@ -49,5 +66,22 @@
     "likes": 0,
     "subscribersGained": 0,
     "stayed_pct": 26.9
+  },
+  {
+    "topic": "Why do heavy and light objects fall at the same speed? The physics of gravity",
+    "title": "Why Do Objects Fall At The Same Rate? 😲",
+    "hook": "A 10kg lead sphere and a 1kg lead sphere dropped from the same height in a vacuum. Why don't they hit the ground at different moments?",
+    "countdown": false,
+    "length_arm": null,
+    "duration": 57.63,
+    "publish_at": "2026-11-17T07:30:00-05:00",
+    "video": "ib9znstwvhE",
+    "views": 16,
+    "engagedViews": 5,
+    "averageViewPercentage": 55.98,
+    "averageViewDuration": 31,
+    "likes": 0,
+    "subscribersGained": 0,
+    "stayed_pct": 31.2
   }
 ]
