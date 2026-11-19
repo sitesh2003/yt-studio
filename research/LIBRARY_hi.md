@@ -3,6 +3,16 @@
 Every video, the claims it makes, and the open-access research behind them. Built automatically by
 agents/library.py; a source is listed only if its abstract was checked to support the claim.
 
+## Why Onion Tears Are Not Sad Tears 😭
+*2026-11-19 · Body Whys*
+
+- Reflex tears are mostly water, electrolytes, and proteins designed to flush irritants.
+- Emotional tears contain higher concentrations of stress hormones like ACTH and leucine enkephalin (a natural painkiller).
+- Onion gas (syn-propanethial-S-oxide) stimulates lacrimal glands to produce reflex tears.
+
+Sources:
+- Gautier et al. (2022), Molecular Therapy — Methods & Clinical Development. doi:10.1016/j.omtm.2022.08.006 — supports: Reflex tears are mostly water, electrolytes, and proteins designed to flush irritants.
+
 ## Common Household Items That Contain Radioactive Materials
 *2026-11-18 · Everyday Whys*
 

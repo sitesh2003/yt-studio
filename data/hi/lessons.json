@@ -30,5 +30,9 @@
   {
     "kind": "unconfirmed",
     "text": "If this water were somehow released, it would significantly raise sea levels! -> The answer comment fails to answer the question posed in the video and title about how high sea levels would rise, using vague language instead of available scientific estimates (such as equivalent to several oceans)."
+  },
+  {
+    "kind": "false_line",
+    "text": "said \"Ever thought how that tiny hole balances cabin pressure so the outer glass doesn't shatter?\" but The hole does not balance pressure between the cabin and the outside; it allows the middle pane to vent, ensuring the outer pane bears the pressure load and preventing fogging/condensation."
   }
 ]

@@ -150,5 +150,25 @@
         "claim": "Old glow-in-the-dark watches and clocks used radium-226 before it was banned for safety."
       }
     ]
+  },
+  {
+    "job": "20261119-1056-why-emotional-tears-from-sadness-contain",
+    "date": "2026-11-19",
+    "title": "Why Onion Tears Are Not Sad Tears 😭",
+    "topic": "Why emotional tears from sadness contain high stress hormones while reflex tears from chopping onions are almost pure water",
+    "series": "Body Whys",
+    "weekly": false,
+    "claims": [
+      "Reflex tears are mostly water, electrolytes, and proteins designed to flush irritants.",
+      "Emotional tears contain higher concentrations of stress hormones like ACTH and leucine enkephalin (a natural painkiller).",
+      "Onion gas (syn-propanethial-S-oxide) stimulates lacrimal glands to produce reflex tears."
+    ],
+    "sources": [
+      {
+        "cite": "Gautier et al. (2022), Molecular Therapy — Methods & Clinical Development. doi:10.1016/j.omtm.2022.08.006",
+        "doi": "10.1016/j.omtm.2022.08.006",
+        "claim": "Reflex tears are mostly water, electrolytes, and proteins designed to flush irritants."
+      }
+    ]
   }
 ]
