@@ -1,22 +1,23 @@
 {
   "lessons": [
-    "Prioritize immediate, surprising visual or physical comparisons: videos like 'This Shark Can Live For Centuries' and 'Why Tuna Meat Is Red Meat' show that high-stakes, comparative, or extreme subject matter correlates with the highest long-term retention.",
-    "Avoid meta-commentary and procedural pauses: the drop-off in 'Why Maple Syrup Takes 40 Gallons' during the 'Pause and guess...' segment confirms that direct viewer engagement prompts often act as friction points rather than hooks.",
-    "Front-load the core conflict immediately: high-retention videos consistently avoid slow setups, whereas videos with significant early drop-offs (e.g., 'Why Fruits Float In Water', 'Why Do Potatoes Sprout') often spend the first 10% of the video on generic descriptive statements.",
-    "Leverage the '10% drop' to refine phrasing: nearly every video in the dataset experiences its largest drop-off at or before the 15% mark; keep the first line punchy and devoid of filler or redundant scientific explanations to maintain the initial viewer base.",
-    "Avoid long, descriptive scientific definitions early on: the retention data shows that lines detailing internal cellular structure or chemical processes often trigger immediate exits (e.g., 'Why Fingers Prune In Water'), suggesting that 'how' explanations should be saved for the second half of the video.",
-    "Don't rely on 'questions' as hooks: generic questions like 'Why do potatoes sprout shoots from those tiny dents instead of anywhere else?' show high churn, whereas descriptive, provocative statements (e.g., 'Fresh pineapple is literally eating you back') hold viewers better."
+    "Prioritize immediate, high-contrast comparisons: Videos with the highest retention (e.g., 'Shark' and 'Tuna') establish a clear, startling contrast within the first 10 seconds rather than setting up a standard 'science facts' premise.",
+    "Avoid descriptive setup lines: Lines that describe the topic (e.g., 'They look like similar fruits') result in double-digit drop-offs; hooks must be active or provocative rather than purely observational.",
+    "Eliminate 'Pause and guess' prompts: Mid-video pauses, as seen in the Maple Syrup video, directly correlate with immediate audience attrition; keep the narrative flow continuous.",
+    "Keep biological explanations punchy: Technical explanations involving cellular structures or enzymes are high-risk zones; these sections must be kept short or anchored to a relatable physical experience to prevent audience loss.",
+    "Target the 10-15% mark for critical engagement: Data shows the most significant drops consistently occur here (avg ~20-30% loss); this is the moment where the initial hook must transition into the core 'payoff' or 'reveal' immediately.",
+    "High-retention content requires a 'mystery' or 'counter-intuitive' premise: The top-performing 'Greenland Shark' video relies on a paradoxical hook ('older than the US') that sustains interest throughout the entire duration."
   ],
   "worst_moment_types": [
-    "Direct prompts to 'pause and guess' the answer",
-    "Detailed, technical explanations of internal cellular or chemical structures in the first 25% of the video",
-    "Generic rhetorical questions that do not immediately present a physical conflict",
-    "Statements that re-describe the obvious visual setup without adding a new piece of information"
+    "Abstract or purely descriptive lines ('They look like similar fruits')",
+    "Interactive pauses or explicit requests for the viewer to guess or wait",
+    "Detailed technical explanations of internal biology that lack a clear, sensory-driven outcome",
+    "Slow-paced setups that delay the core mystery of the video beyond the first 10% of the duration"
   ],
   "best_hook_types": [
-    "Extreme, provocative assertions (e.g., 'Fresh pineapple is literally eating you back')",
-    "Comparative statements highlighting a stark, counter-intuitive difference between two common objects (e.g., Tuna vs. Cod)",
-    "Statements focusing on 'impossible' or record-breaking biological longevity or endurance (e.g., Greenland Shark)"
+    "High-stakes/Long-duration curiosity (e.g., 'Older than the United States')",
+    "Direct sensory paradoxes (e.g., 'Fresh pineapple is eating you back')",
+    "Comparative anomalies (e.g., 'Tuna vs. Cod meat comparison')",
+    "Counter-intuitive debunking of common knowledge (e.g., 'Ice water doesn't stop spicy food')"
   ],
   "studied": "2026-11-19",
   "videos": 13

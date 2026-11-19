@@ -1,22 +1,22 @@
 {
   "summary": [
-    "Prioritize bodily curiosities (fingers, eyes, taste) over mechanical/industrial trivia to maximize initial retention.",
-    "Hooks must lead with a counter-intuitive fact or a 'secret' about the viewer's own body to cross the 50% stayed_pct threshold.",
-    "Titles should use direct 'Why X' structures paired with active, high-impact verbs like 'Eat', 'Leak', or 'Sprout'.",
-    "Avoid descriptive or passive hook openings; begin immediately with the anomaly or the specific physical sensation.",
-    "Ensure the first sentence directly contradicts a common assumption rather than providing a neutral premise."
+    "High-performing hooks prioritize counter-intuitive conflict ('it is not absorption') or a relatable personal sensation ('eyes leaking') over simple descriptive questions.",
+    "The top third of videos by stayed_pct exclusively use hooks that frame the status quo as a mystery or a deception, whereas bottom-performers use generic observational statements.",
+    "Titles that emphasize a strong verb or a surprising transformation (e.g., 'Eat You Back', 'Secretly Leaking') outperform descriptive 'Why' questions.",
+    "There is a direct correlation between high stayed_pct and tight, punchy syntax; longer, expository sentences in the first 3 seconds cause immediate viewer drop-off.",
+    "Avoid starting hooks with 'Ever noticed...' or 'You just...', as these perform significantly worse than starting with the scientific or physical anomaly directly."
   ],
   "winning_hooks": [
     "Your fingers prune in water, but it is not because you are absorbing it like a sponge.",
     "Your eyes are leaking right now, and your brain is hiding it.",
-    "This shark is older than the United States.",
-    "Fresh pineapple is literally eating you back."
+    "Fresh pineapple is literally eating you back.",
+    "This shark is older than the United States."
   ],
   "avoid": [
-    "Starting with observational questions like 'Ever noticed...?' which lead to low engagement.",
-    "Topics centered on inanimate objects (windshields, guardrails, syrup) which correlate with the bottom 33% of performance.",
-    "Hooks that provide context before the conflict (e.g., 'Honey is famous for being...').",
-    "Over-using emojis in titles, which may be signaling low-value content to the algorithm."
+    "Starting with 'Ever noticed...' (Passive engagement).",
+    "Starting with a scenario-based setup like 'You just smashed your elbow...' (Too slow to reach the 'Why').",
+    "Using 'Why' at the start of a title for topics that lack an immediate physical hook.",
+    "Long, multi-clause explanations in the first 3 seconds."
   ],
-  "next_experiment": "A/B test the same topic using a 'Body-centric' hook (e.g., 'Your tongue is being destroyed by pineapple') versus a 'Fact-centric' hook (e.g., 'Why fresh pineapple burns your tongue') to measure the gap in stayed_pct."
+  "next_experiment": "A/B test the 'Direct Anomaly' vs 'Relatable Mystery' hook types: Test one video starting with the core surprising fact (e.g., 'Pineapple contains an enzyme that digests human skin') against a control starting with the feeling/observation (e.g., 'Fresh pineapple burns your tongue when you eat it')."
 }

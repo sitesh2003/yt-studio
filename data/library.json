@@ -461,5 +461,31 @@
         "claim": "Ball bearings work by distributing load across a curved surface to minimize stress concentrations."
       }
     ]
+  },
+  {
+    "job": "20261119-0503-3-animals-that-have-natural-built-in-bod",
+    "date": "2026-11-19",
+    "title": "How These Animals Use Natural Armor 🛡️",
+    "topic": "3 animals that have natural built-in body armor",
+    "series": "Animal Whys",
+    "weekly": false,
+    "claims": [
+      "Pangolin scales are composed of keratin, the same protein as human fingernails.",
+      "Pangolins curl into a ball to protect their soft underbelly.",
+      "Overlapping scales provide a defensive shield against predators.",
+      "Keratin is a structural protein found in hair, nails, and claws."
+    ],
+    "sources": [
+      {
+        "cite": "Blecher et al. (2021), MethodsX. doi:10.1016/j.mex.2021.101229",
+        "doi": "10.1016/j.mex.2021.101229",
+        "claim": "Pangolin scales are composed of keratin, the same protein as human fingernails."
+      },
+      {
+        "cite": "Pantano et al. (2025), Biomimetics. doi:10.3390/biomimetics10020075",
+        "doi": "10.3390/biomimetics10020075",
+        "claim": "Overlapping scales provide a defensive shield against predators."
+      }
+    ]
   }
 ]

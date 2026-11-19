@@ -14,6 +14,18 @@ agents/library.py; a source is listed only if its abstract was checked to suppor
 Sources:
 - Kong et al. (2018), Shock and Vibration. doi:10.1155/2018/5424875 — supports: Ball bearings work by distributing load across a curved surface to minimize stress concentrations.
 
+## How These Animals Use Natural Armor 🛡️
+*2026-11-19 · Animal Whys*
+
+- Pangolin scales are composed of keratin, the same protein as human fingernails.
+- Pangolins curl into a ball to protect their soft underbelly.
+- Overlapping scales provide a defensive shield against predators.
+- Keratin is a structural protein found in hair, nails, and claws.
+
+Sources:
+- Blecher et al. (2021), MethodsX. doi:10.1016/j.mex.2021.101229 — supports: Pangolin scales are composed of keratin, the same protein as human fingernails.
+- Pantano et al. (2025), Biomimetics. doi:10.3390/biomimetics10020075 — supports: Overlapping scales provide a defensive shield against predators.
+
 ## Why Farmed Salmon Meat Is Gray 🐟
 *2026-11-18 · Food Whys*
 
