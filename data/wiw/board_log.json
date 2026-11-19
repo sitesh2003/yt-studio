@@ -182,5 +182,17 @@
    "2": "The picture shows 6 cookies instead of 12 cookies."
   },
   "error": ""
+ },
+ {
+  "when": "2026-11-19 08:20",
+  "topic": "Why is Mars red?",
+  "drawn": [
+   2,
+   3,
+   4,
+   5
+  ],
+  "not_drawn": {},
+  "error": ""
  }
 ]

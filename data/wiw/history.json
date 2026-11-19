@@ -1465,7 +1465,8 @@
     "video_id": "RAyXuV7D0F0",
     "publish_at": "2026-11-18T16:30:00-05:00",
     "thumbnail_set": true,
-    "answered": true
+    "answered": true,
+    "recapped": true
   },
   {
     "job": "20261116-1409-why-does-a-siren-change-pitch-as-it-pass",
@@ -1696,7 +1697,7 @@
       "education"
     ],
     "hook": "Why does a pinch of baking soda erupt when it hits vinegar?",
-    "status": "banked",
+    "status": "scheduled",
     "narration": "Why does a pinch of baking soda erupt when it hits vinegar? Drop a small 2-gram spoonful into 50 milliliters of vinegar. Watch closely now. The vinegar, an acid, immediately attacks the baking soda, a base. They react to quickly form carbon dioxide gas and water. They react to quickly form carbon dioxide gas and water. That gas is what pushes the liquid into a massive, frothy foam. Try this! If you used double the vinegar, would you get double the fizz, or just more leftover liquid?",
     "voice_engine": "chatterbox",
     "voices": "one narrator (af_heart)",
@@ -1779,7 +1780,10 @@
       "duration": 25.4
     },
     "repairs": 1,
-    "audited": true
+    "audited": true,
+    "video_id": "1n80HUJ83zQ",
+    "publish_at": "2026-11-20T07:30:00-05:00",
+    "thumbnail_set": true
   },
   {
     "job": "20261116-1731-how-do-vaccines-actually-train-your-immu",
@@ -2820,6 +2824,120 @@
       ],
       "pass": true,
       "duration": 29.5
+    },
+    "repairs": 2,
+    "audited": true
+  },
+  {
+    "job": "20261119-0751-why-is-mars-red",
+    "topic": "Why is Mars red?",
+    "title": "Ever Thought Why Mars Is Red?",
+    "description": "Ever wondered why the Red Planet is actually red? It all comes down to a chemical reaction you see every day on Earth. #shorts #chemistry #mars\n\nSources (open-access research):\n- Mitra et al. (2020), Minerals. doi:10.3390/min10090729\n- Ehlers et al. (2014), Applied Optics. doi:10.1364/ao.53.001808\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nImage: NASA (public domain)\nPhoto by Hans on Pixabay\nPhoto by WikiImages on Pixabay\nPhoto: James St. John, BY 2.0, via Openverse (flickr)\nVideo by ugac on Pixabay\nVideo by AlfLucio on Pixabay",
+    "tags": [
+      "Mars",
+      "Why is Mars red",
+      "Science",
+      "Chemistry",
+      "Rust",
+      "Space",
+      "Physics"
+    ],
+    "hook": "Mars looks bright red, but its original volcanic rocks were much darker in color. Think about that.",
+    "status": "banked",
+    "narration": "Mars looks bright red, but its original volcanic rocks were much darker in color. Think about that. Billions of years ago, volcanoes covered Mars in rocks rich in iron. As the iron was exposed to water and oxidizing chemicals over time, it turned into iron-rich rust creating a layer of iron oxide dust. Winds then ground rust compounds. Winds then crushed that rust into fine dust, spreading it everywhere. This is largely because the iron oxide dust absorbs shorter blue wavelengths and reflects the longer red ones. You see this same red iron oxide on a rusty bicycle chain on Earth. Right here. Try this: why is a sunset on Mars blue if the ground dust is red?",
+    "voice_engine": "chatterbox",
+    "voices": "one narrator (af_heart)",
+    "diagrams": 1,
+    "series": "Earth and Space",
+    "countdown": false,
+    "length_arm": null,
+    "question": "Try this: why is a sunset on Mars blue if the ground dust is red?",
+    "answer_comment": "The answer: The fine dust particles in the Martian atmosphere preferentially scatter blue light toward you when the sun is low on the horizon, creating a blue glow near the sunset.\n\nSources (open-access research):\n- Mitra et al. (2020), Minerals. doi:10.3390/min10090729\n- Ehlers et al. (2014), Applied Optics. doi:10.1364/ao.53.001808",
+    "sources": [
+      {
+        "claim": "Iron reacts with water and oxidizing chemicals to form iron(III) oxide (rust).",
+        "cite": "Mitra et al. (2020), Minerals. doi:10.3390/min10090729",
+        "doi": "10.3390/min10090729",
+        "title": "Capacity of Chlorate to Oxidize Ferrous Iron: Implications for Iron Oxide Formation on Mars",
+        "why": "We thus evaluated the capacity of chlorate to produce Fe(III) minerals in Mars-relevant fluids, via oxidation of dissolved Fe(II)."
+      },
+      {
+        "claim": "Martian sunsets appear blue due to Mie scattering by fine atmospheric dust particles.",
+        "cite": "Ehlers et al. (2014), Applied Optics. doi:10.1364/ao.53.001808",
+        "doi": "10.1364/ao.53.001808",
+        "title": "Blue moons and Martian sunsets",
+        "why": "Our findings show that while wavelength selective extinction can cause the sun's disk to appear blue, the color of the glow surrounding the sun as observed from Mars is due to the dominance of near-forward scattering of blue light by dust particles and cannot be explained by a simple, Rayleigh-like "
+      }
+    ],
+    "fact_check": [
+      "Mars' crust contains high amounts of iron from ancient volcanic activity.",
+      "Iron reacts with water and oxidizing chemicals to form iron(III) oxide (rust).",
+      "Iron oxide absorbs blue light wavelengths and reflects red wavelengths.",
+      "Dust storms on Mars distribute fine particles of iron oxide across the entire planet.",
+      "Martian sunsets appear blue due to Mie scattering by fine atmospheric dust particles."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        5.08
+      ],
+      [
+        5.08,
+        9.49
+      ],
+      [
+        9.49,
+        16.11
+      ],
+      [
+        16.11,
+        21.68
+      ],
+      [
+        21.68,
+        26.91
+      ],
+      [
+        26.91,
+        31.31
+      ],
+      [
+        31.31,
+        35.25
+      ]
+    ],
+    "duration": 35.25,
+    "scene_lines": [
+      "Mars looks bright red, but its original volcanic rocks were much darker in color. Think about that.",
+      "Billions of years ago, volcanoes covered Mars in rocks rich in iron.",
+      "As the iron was exposed to water and oxidizing chemicals over time, it turned into iron-rich rust creating a layer of iron oxide dust.",
+      "Winds then ground rust compounds. Winds then crushed that rust into fine dust, spreading it everywhere.",
+      "This is largely because the iron oxide dust absorbs shorter blue wavelengths and reflects the longer red ones.",
+      "You see this same red iron oxide on a rusty bicycle chain on Earth. Right here.",
+      "Try this: why is a sunset on Mars blue if the ground dust is red?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,000 --> 00:00:01,130\nMars looks bright red,\n\n2\n00:00:01,200 --> 00:00:03,810\nbut its original volcanic rocks were much darker in color.\n\n3\n00:00:03,920 --> 00:00:04,850\nThink about that.\n\n4\n00:00:05,080 --> 00:00:06,330\nBillions of years ago,\n\n5\n00:00:06,420 --> 00:00:09,250\nvolcanoes covered Mars in rocks rich in iron.\n\n6\n00:00:09,490 --> 00:00:10,630\nAs the iron was exposed to water\n\n7\n00:00:10,630 --> 00:00:12,750\nand oxidizing chemicals over time, it turned\n\n8\n00:00:12,750 --> 00:00:15,940\ninto iron-rich rust creating a layer of iron oxide dust.\n\n9\n00:00:16,110 --> 00:00:17,740\nWinds then ground rust compounds.\n\n10\n00:00:17,920 --> 00:00:20,290\nWinds then crushed that rust into fine dust,\n\n11\n00:00:20,340 --> 00:00:21,330\nspreading it everywhere.\n\n12\n00:00:21,680 --> 00:00:23,180\nThis is largely because the iron oxide\n\n13\n00:00:23,180 --> 00:00:25,500\ndust absorbs shorter blue wavelengths and reflects\n\n14\n00:00:25,500 --> 00:00:26,670\nthe longer red ones.\n\n15\n00:00:26,910 --> 00:00:28,430\nYou see this same red iron oxide\n\n16\n00:00:28,430 --> 00:00:30,420\non a rusty bicycle chain on Earth.\n\n17\n00:00:30,490 --> 00:00:31,080\nRight here.\n\n18\n00:00:31,310 --> 00:00:31,980\nTry this:\n\n19\n00:00:32,150 --> 00:00:33,530\nwhy is a sunset on Mars blue\n\n20\n00:00:33,530 --> 00:00:34,650\nif the ground dust is red?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [],
+      "footage": [],
+      "review": [],
+      "scene_heard": [
+        "scene 1: 100%",
+        "scene 2: 100%",
+        "scene 3: 100%",
+        "scene 4: 100%",
+        "scene 5: 100%",
+        "scene 6: 94%",
+        "scene 7: 100%"
+      ],
+      "pass": true,
+      "duration": 34.9
     },
     "repairs": 2,
     "audited": true

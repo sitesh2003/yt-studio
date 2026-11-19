@@ -3,6 +3,19 @@
 Every video, the claims it makes, and the open-access research behind them. Built automatically by
 agents/library.py; a source is listed only if its abstract was checked to support the claim.
 
+## Ever Thought Why Mars Is Red?
+*2026-11-19 · Earth and Space*
+
+- Mars' crust contains high amounts of iron from ancient volcanic activity.
+- Iron reacts with water and oxidizing chemicals to form iron(III) oxide (rust).
+- Iron oxide absorbs blue light wavelengths and reflects red wavelengths.
+- Dust storms on Mars distribute fine particles of iron oxide across the entire planet.
+- Martian sunsets appear blue due to Mie scattering by fine atmospheric dust particles.
+
+Sources:
+- Mitra et al. (2020), Minerals. doi:10.3390/min10090729 — supports: Iron reacts with water and oxidizing chemicals to form iron(III) oxide (rust).
+- Ehlers et al. (2014), Applied Optics. doi:10.1364/ao.53.001808 — supports: Martian sunsets appear blue due to Mie scattering by fine atmospheric dust particles.
+
 ## How Does an Electric Motor Spin?
 *2026-11-18 · Physics*
 
