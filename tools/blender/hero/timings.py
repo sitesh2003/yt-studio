@@ -18,7 +18,7 @@ norm = lambda w: re.sub(r"[^a-z]", "", w.lower())
 
 for i, (shot, (a, b)) in enumerate(zip(spec["shots"], scenes)):
     shot["seconds"] = round(b - a, 3)
-    if shot["kind"] == "xray_scan":
+    if shot["kind"] == "xray_scan" or (shot["kind"] == "xray_jaw" and shot.get("reveal") is not None):
         inside = [w for w in words if a <= w["start"] < b]
         first = lambda key: next((w["start"] - a for w in inside if norm(w["text"]).startswith(key)), None)
         tb, tm = first("bone"), first("muscle")

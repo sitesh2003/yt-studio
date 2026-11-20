@@ -1,0 +1,48 @@
+{
+  "title_options": [
+    "How Hard Could A T. rex Bite? 🦖"
+  ],
+  "facts": [
+    "Gignac & Erickson 2017, Scientific Reports 7:2012 (doi:10.1038/s41598-017-02161-w): adult T. rex bite force up to 34,522 N at the posterior teeth; tooth pressures up to 2,974 MPa; jaw muscles reconstructed using its closest living relatives (crocodylians and birds).",
+    "Erickson et al. 2012, PLoS ONE 7:e31781 (doi:10.1371/journal.pone.0031781): saltwater crocodile 16,414 N, the highest bite force measured in a living animal.",
+    "Chin et al. 1998, Nature 393:680 (doi:10.1038/31461): a king-sized theropod coprolite, most likely from T. rex, 30-50% bone fragments.",
+    "34,522 N = about 3,520 kg-force, roughly three small cars of ~1,200 kg."
+  ],
+  "description": "One T. rex bite pressed down like three small cars stacked on its teeth. Here's how scientists worked it out, and the fossil poop that proves it crushed bone. #shorts #dinosaurs #TRex #Science",
+  "sources": "Gignac & Erickson 2017, Scientific Reports (doi:10.1038/s41598-017-02161-w); Erickson et al. 2012, PLoS ONE (doi:10.1371/journal.pone.0031781); Chin et al. 1998, Nature (doi:10.1038/31461).",
+  "tags": [
+    "T. rex",
+    "T. rex bite",
+    "bite force",
+    "dinosaurs",
+    "paleontology",
+    "science",
+    "3D animation"
+  ],
+  "scenes": [
+    {
+      "narration": "One T. rex bite pressed down like three small cars stacked on its teeth.",
+      "shot": "cars"
+    },
+    {
+      "narration": "Scientists rebuilt its jaw muscles from its closest living relatives, crocodiles and birds.",
+      "shot": "jaw"
+    },
+    {
+      "narration": "Their estimate: up to 34,500 newtons at the back teeth. More than twice the strongest bite ever measured, a saltwater crocodile's.",
+      "shot": "compare"
+    },
+    {
+      "narration": "Its pointed teeth focused all that force onto tiny tips, hard enough to shatter bone.",
+      "shot": "teeth"
+    },
+    {
+      "narration": "We know it did. A giant fossil poop, likely from a T. rex, is up to half crushed bone.",
+      "shot": "poop"
+    },
+    {
+      "narration": "So why would a giant hunter bother eating the bones?",
+      "shot": "end"
+    }
+  ]
+}

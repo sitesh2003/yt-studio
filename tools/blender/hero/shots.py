@@ -504,7 +504,7 @@ def _blen(arm, name):
     return (pb.tail - pb.head).length * arm.matrix_world.to_scale()[0]
 
 
-def piece(arm, bone, shape, dims, offset=(0, 0, 0), along=0.5, material=None, name="Part"):
+def piece(arm, bone, shape, dims, offset=(0, 0, 0), along=0.5, material=None, name="Part", turn_x=0.0):
     """One anatomical piece: a primitive sized dims (x lateral, y up, z along the bone), moved by offset
     in the bone's own frame, parented to the bone. Object scale stays 1, so a reveal can grow it from 0."""
     if shape == "cyl":
@@ -522,7 +522,8 @@ def piece(arm, bone, shape, dims, offset=(0, 0, 0), along=0.5, material=None, na
         bpy.ops.mesh.primitive_uv_sphere_add(segments=20, ring_count=12, radius=0.5)
     o = bpy.context.object
     o.name = name
-    o.data.transform(mathutils.Matrix.Translation(offset) @ mathutils.Matrix.Diagonal((*dims, 1)))
+    o.data.transform(mathutils.Matrix.Translation(offset) @ mathutils.Matrix.Rotation(math.radians(turn_x), 4, "X")
+                     @ mathutils.Matrix.Diagonal((*dims, 1)))
     if shape == "box":
         bev = o.modifiers.new("B", "BEVEL")
         bev.width, bev.segments = min(dims) * 0.25, 2
@@ -557,7 +558,7 @@ def _vertebrae(arm, bone, size, mat_, nm, spine_h=0.0, chevron=0.0):
     return out
 
 
-def skeleton(arm, c, stress_legs=False):
+def skeleton(arm, c, stress_legs=False, stress_group=None):
     """The whole skeleton as named groups, in the order the spec reveals them (bone by bone)."""
     still = bone_mat(stress=False)
     hot = bone_mat(stress=True) if stress_legs else still
@@ -593,11 +594,10 @@ def skeleton(arm, c, stress_legs=False):
                            name="fenestra"))
         for k in range(7):               # teeth along the upper jaw, pointing down
             a = 0.4 + k * 0.085
-            skull.append(piece(arm, "Head", "cone", (0.07, 0.07, 0.2, 0.05), (x * 0.62 * (1 - (a - 0.4) * 0.8), -0.22, 0),
-                               along=a, material=still, name="tooth"))
-    for o in skull:
-        if o.name.startswith("tooth"):   # turn each tooth to point down instead of along the bone
-            o.data.transform(mathutils.Matrix.Rotation(math.radians(90), 4, "X"))
+            # each tooth points down (turned first, then placed along the upper jaw's edge)
+            skull.append(piece(arm, "Head", "cone", (0.11, 0.11, 0.32, 0.05),
+                               (x * 0.62 * (1 - (a - 0.4) * 0.8), -0.32, 0), along=a, material=still,
+                               name="tooth", turn_x=90))
     g["SKULL"] = skull
     tail = []
     for k, b in enumerate(("Tail1", "Tail2", "Tail3", "Tail4", "Tail5")):
@@ -607,6 +607,12 @@ def skeleton(arm, c, stress_legs=False):
     g["TAIL"] = tail
     g["ARMS"] = sum((_long_bone(arm, b + s, 0.045, still, "arm") for s in sides
                      for b in ("FrontUpLeg", "FrontLowLeg", "FrontFoot")), [])
+    if stress_group:                     # e.g. the teeth glow yellow then red under the bite
+        hotm = bone_mat(stress=True)
+        for o in g.get(stress_group, []):
+            if o.name.startswith("tooth"):   # only the teeth, not the whole skull
+                o.data.materials.clear()
+                o.data.materials.append(hotm)
     return g
 
 
@@ -673,7 +679,8 @@ def build():
     c = SPEC["creature"]
     look = SHOT.get("world", {"run_at_camera": "day", "size_tower": "day", "xray_scan": "sim",
                               "stress_run": "sim", "muscle_needed": "sim", "speed_track": "day",
-                              "race_pass": "day", "closeup_roar": "dusk"}[kind])
+                              "race_pass": "day", "closeup_roar": "dusk", "xray_jaw": "sim",
+                              "coprolite": "sim"}[kind])
     world(look)
     ground("sim" if look == "sim" else "road")
     if look == "day":
@@ -708,7 +715,7 @@ def build():
             ad.nla_tracks[0].strips[0].frame_end_ui = stop if hasattr(ad.nla_tracks[0].strips[0], "frame_end_ui") else stop
 
     elif kind == "size_tower":
-        play(arm, c.get("idle", walk), 1, N, 1.0)
+        play(arm, c.get(SHOT.get("anim", "idle"), walk), 1, N, SHOT.get("anim_rate", 1.0))
         arm.location = (0, 0, 0)
         arm.rotation_euler = (0, 0, math.radians(-25))
         cars = SHOT.get("cars", 6)
@@ -765,6 +772,88 @@ def build():
             key_path(cam, [(1, Vector((19, d / 2 - 4, 4.5))), (N, Vector((15, -d / 2 - 6, 3.5)))])
             key_path(tgt, [(1, Vector((0, d / 2, H * 0.45))), (N, Vector((0, -d / 2, H * 0.4)))])
 
+    elif kind == "xray_jaw":
+        # close on the head in x-ray: jaw muscles (and optionally the teeth turning red) while it bites
+        xray_skin(mesh, H)
+        bones = skeleton(arm, c, stress_group="SKULL" if SHOT.get("teeth_stress") else None)
+        key_prop([(1, 0.05), (int(N * 0.3), 1.0)], "xr")
+        play(arm, c.get("roar", walk), 1, N, SHOT.get("anim_rate", 0.7))
+        mus = muscle_groups(arm)
+        if SHOT.get("reveal"):
+            rv = SHOT["reveal"]
+            when = schedule(c["bone_groups"], *rv["bones"])
+            for nm in c["bone_groups"]:
+                reveal(bones[nm], when[nm])
+            when = schedule(c["muscle_groups"], *rv["muscles"])
+            for nm in c["muscle_groups"]:
+                reveal(mus[nm], when[nm])
+        if SHOT.get("teeth_stress"):
+            key_prop([(1, 0.0), (int(N * 0.25), 0.1), (int(N * 0.75), 1.0), (N, 1.0)], "stress")
+        else:
+            key_prop([(1, 0.0)], "stress")
+        key_path(cam, [(1, Vector((6.5, -8.5, 5.6))), (N, Vector((4.8, -7.6, 5.4)))])
+        key_path(tgt, [(1, Vector((0, -4.4, 4.9))), (N, Vector((0, -4.5, 4.9)))])
+        smooth_keys(cam)
+
+    elif kind == "coprolite":
+        # the fossil poop: a lumpy brown stone on a stand, slowly turning, with bone shards inside
+        arm.location = (0, 0, -100)                       # the T. rex is not in this shot
+        bpy.ops.mesh.primitive_ico_sphere_add(subdivisions=5, radius=1.0, location=(0, 0, 1.6))
+        rock = bpy.context.object
+        rock.scale = (1.6, 0.75, 0.7)
+        tex = bpy.data.textures.new("Lumps", "CLOUDS")
+        tex.noise_scale = 0.45
+        dsp = rock.modifiers.new("D", "DISPLACE")
+        dsp.texture, dsp.strength = tex, 0.35
+        rm = bpy.data.materials.new("Coprolite")
+        rm.use_nodes = True
+        rm.surface_render_method = "BLENDED"
+        b = rm.node_tree.nodes["Principled BSDF"]
+        b.inputs["Base Color"].default_value = (0.32, 0.2, 0.11, 1)
+        b.inputs["Roughness"].default_value = 0.85
+        b.inputs["Alpha"].default_value = 1.0
+        rock.data.materials.append(rm)
+        bpy.ops.object.shade_smooth()
+        pivot = bpy.data.objects.new("Pivot", None)
+        bpy.context.collection.objects.link(pivot)
+        pivot.location = (0, 0, 1.6)
+        rock.parent = pivot
+        rock.location = (0, 0, 0)
+        shard_m = bone_mat(stress=False)
+        import random
+        rnd = random.Random(7)
+        for i in range(38):                              # bone fragments, seen as the stone turns clear
+            bpy.ops.mesh.primitive_cube_add(size=1)
+            sh = bpy.context.object
+            sh.scale = (rnd.uniform(0.05, 0.22), rnd.uniform(0.03, 0.07), rnd.uniform(0.03, 0.06))
+            sh.rotation_euler = (rnd.uniform(0, 3), rnd.uniform(0, 3), rnd.uniform(0, 3))
+            sh.location = (rnd.uniform(-1.1, 1.1), rnd.uniform(-0.4, 0.4), rnd.uniform(-0.38, 0.38))
+            sh.data.materials.append(shard_m)
+            sh.parent = pivot
+        # the stone turns half see-through partway, showing the bone inside
+        mix_in = rm.node_tree.nodes.new("ShaderNodeBsdfTransparent")
+        mixs = rm.node_tree.nodes.new("ShaderNodeMixShader")
+        outn = [n for n in rm.node_tree.nodes if n.type == "OUTPUT_MATERIAL"][0]
+        xr_ = _attr(rm.node_tree, "xr", (-300, -300))
+        mul = rm.node_tree.nodes.new("ShaderNodeMath")
+        mul.operation = "MULTIPLY"
+        mul.inputs[1].default_value = 0.72
+        rm.node_tree.links.new(xr_.outputs["Fac"], mul.inputs[0])
+        rm.node_tree.links.new(mul.outputs[0], mixs.inputs[0])
+        rm.node_tree.links.new(b.outputs[0], mixs.inputs[1])
+        rm.node_tree.links.new(mix_in.outputs[0], mixs.inputs[2])
+        rm.node_tree.links.new(mixs.outputs[0], outn.inputs["Surface"])
+        key_prop([(1, 0.0), (int(N * 0.35), 0.0), (int(N * 0.6), 1.0)], "xr")
+        pivot.rotation_euler = (0, 0, 0)
+        pivot.keyframe_insert("rotation_euler", frame=1)
+        pivot.rotation_euler = (0, 0, math.radians(150))
+        pivot.keyframe_insert("rotation_euler", frame=N)
+        bpy.ops.mesh.primitive_cylinder_add(vertices=32, radius=1.3, depth=0.6, location=(0, 0, 0.3))
+        bpy.context.object.data.materials.append(mat("Stand", (0.05, 0.07, 0.1), 0.4))
+        key_path(cam, [(1, Vector((0, -6.5, 2.6))), (N, Vector((0, -5.2, 2.3)))])
+        key_path(tgt, [(1, Vector((0, 0, 1.55))), (N, Vector((0, 0, 1.55)))])
+        smooth_keys(cam)
+
     elif kind == "speed_track":
         rate = SHOT["kmh"] / 3.6 / v_walk
         play(arm, walk, 1, N, rate)
@@ -806,6 +895,13 @@ def build():
         arm.animation_data.nla_tracks["idle"].strips[0].extrapolation = "NOTHING" if False else "HOLD"
         key_path(cam, [(1, Vector((3.5, -13, 2.0))), (N, Vector((2.2, -9.5, 2.6)))])
         key_path(tgt, [(1, Vector((0, -3.5, H * 0.8))), (N, Vector((0, -3.5, H * 0.85)))])
+        smooth_keys(cam)
+    if SHOT.get("cam"):                 # a shot can set its own camera start/end (relative to the scene)
+        for o in (cam, tgt):
+            if o.animation_data:
+                o.animation_data_clear()
+        key_path(cam, [(1, Vector(SHOT["cam"][0])), (N, Vector(SHOT["cam"][1]))])
+        key_path(tgt, [(1, Vector(SHOT["tgt"][0])), (N, Vector(SHOT["tgt"][1]))])
         smooth_keys(cam)
     return arm
 

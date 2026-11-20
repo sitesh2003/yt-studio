@@ -189,6 +189,58 @@ def g_closeup_roar(d, f, n, shot):
     pass
 
 
+def g_none(d, f, n, shot):
+    pass
+
+
+def g_cars_force(d, f, n, shot):
+    """'like three small cars stacked on its teeth': the count as each car lands, then the bite force."""
+    g_size_tower(d, f, n, shot)
+    if f > n * 0.8:
+        s = pop(f, int(n * 0.8), 6)
+        text(d, (W / 2, H * 0.62), "ONE BITE", int(110 * s), RED, stroke=12)
+
+
+def g_bite_compare(d, f, n, shot):
+    """Bars: the strongest bite ever measured (saltwater crocodile) against the T. rex estimate."""
+    rows = shot["bars"]                    # [[label, newtons, colour-name], ...]
+    top = max(v for _, v, _ in rows)
+    text(d, (W / 2, 300), "BITE FORCE", 80, WHITE, stroke=10)
+    for k, (lbl, v, col) in enumerate(rows):
+        y = 430 + k * 210
+        t0 = 6 + k * int(n * 0.28)
+        grow = ease((f - t0) / (FPS * 0.9))
+        if f < t0:
+            continue
+        colr = {"cyan": CYAN, "red": RED, "yellow": YEL}[col]
+        text(d, (90, y), lbl, 54, colr, anchor="lm", stroke=8)
+        d.rounded_rectangle([90, y + 45, 90 + int((W - 180) * v / top * grow), y + 125], 18, fill=colr)
+        text(d, (W - 90, y + 85), f"{int(v * grow):,} N", 58, WHITE, anchor="rm", stroke=8)
+    if f > n * 0.7:
+        s = pop(f, int(n * 0.7), 6)
+        text(d, (W / 2, 430 + len(rows) * 210 + 40), "MORE THAN 2x", int(96 * s), YEL, stroke=11)
+
+
+def g_tooth_pressure(d, f, n, shot):
+    st = lerp(0.1, 1.0, (f - n * 0.25) / (n * 0.5))
+    x0, y0, x1 = 90, 330, W - 90
+    text(d, (W / 2, y0 - 70), "PRESSURE AT THE TOOTH TIP", 58, WHITE, stroke=9)
+    d.rounded_rectangle([x0 - 8, y0 - 8, x1 + 8, y0 + 78], 20, fill=BLACK)
+    col = GREEN if st < 0.45 else YEL if st < 0.8 else RED
+    d.rounded_rectangle([x0, y0, x0 + int((x1 - x0) * st), y0 + 70], 14, fill=col)
+    if st > 0.85:
+        blink = (f // 4) % 2 == 0
+        text(d, (W / 2, y0 + 170), "SHATTERS BONE", 96, RED if blink else WHITE, stroke=12)
+
+
+def g_coprolite(d, f, n, shot):
+    text(d, (W / 2, 320), "FOSSIL POOP", 96, YEL, stroke=12)
+    text(d, (W / 2, 420), "likely from a T. rex", 52, WHITE, stroke=8)
+    if f > n * 0.6:
+        s = pop(f, int(n * 0.6), 6)
+        text(d, (W / 2, H * 0.64), "30-50% BONE", int(110 * s), WHITE, stroke=12)
+
+
 # ---------------------------------------------------------------- assembly
 def run(cmd, cwd):
     subprocess.run(cmd, cwd=cwd, check=True)
@@ -216,7 +268,7 @@ def main():
              "-frames:v", str(n), "-c:v", "libx264", "-crf", "12", "-preset", "medium", "-pix_fmt", "yuv420p",
              f"shot{i}.mp4"], job)
         segs.append(f"shot{i}.mp4")
-        draw = globals()[f"g_{shot['kind']}"]
+        draw = globals()[f"g_{shot.get('overlay') or shot['kind']}"]
         for f in range(1, n + 1):          # 2) the graphics, frame by frame, in step with the 3D
             im = Image.new("RGBA", (W, H), (0, 0, 0, 0))
             draw(ImageDraw.Draw(im), f, n, shot)
