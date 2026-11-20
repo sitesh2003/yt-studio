@@ -1599,7 +1599,7 @@
       "gravity"
     ],
     "hook": "If the Sun pulls the Earth, why don't we just crash into it?",
-    "status": "scheduled",
+    "status": "public",
     "narration": "If the Sun pulls the Earth, why don't we just crash into it? Imagine throwing a ball sideways at 30 kilometers per second. It's fast. Gravity pulls the ball down, but its sideways speed keeps it moving forward. If you throw it fast enough, the curve of the fall matches the curve of the Earth. It's perfect. That's because the Earth is essentially in a constant state of falling around the Sun. It’s a perfect balance of speed and gravity that keeps us safe in orbit. Try this: why would the Earth crash into the Sun if it suddenly stopped moving sideways?",
     "voice_engine": "kokoro",
     "voices": "one narrator (af_bella)",
@@ -1684,7 +1684,8 @@
     "audited": true,
     "video_id": "Lu5BW3Ip8vo",
     "publish_at": "2026-11-19T16:30:00-05:00",
-    "thumbnail_set": true
+    "thumbnail_set": true,
+    "answered": true
   },
   {
     "job": "20261116-1645-why-does-baking-soda-fizz-when-mixed-wit",
