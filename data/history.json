@@ -3117,7 +3117,7 @@
       "biology"
     ],
     "hook": "Fossilized bones can last millions of years, but sometimes they hide more than just minerals.",
-    "status": "public",
+    "status": "pulled",
     "narration": "Fossilized bones can last millions of years, but sometimes they hide more than just minerals. Researchers studying a fossilized dinosaur bone found microscopic, flexible structures that resemble ancient blood vessels. Deep inside, they spotted flexible, dark structures that looked like remnants of vessels. But wait, how can something so delicate survive geological time? So, is it really liquid blood sitting inside that ancient stone? turn: true. Not exactly liquid, but potentially ancient protein fragments. Some scientists have hypothesized that iron from the blood might have played a role in preservation, though this remains an active subject of debate. Ever thought how a material that rots in days stays locked in stone for eons? Drop your guess below.",
     "voice_engine": "chatterbox",
     "voices": "one narrator (af_heart)",
@@ -3211,7 +3211,8 @@
     "publish_at": "2026-11-19T19:00:00-05:00",
     "thumbnail_set": true,
     "recapped": true,
-    "answered": true
+    "answered": true,
+    "pulled_why": "a script label was spoken aloud ('Turn? True.') and it ended on 'Drop your guess below' (owner OK 20 Nov 2026)"
   },
   {
     "job": "20261116-1902-scientists-just-found-a-hidden-alien-pla",
@@ -4990,5 +4991,35 @@
     },
     "repairs": 0,
     "audited": true
+  },
+  {
+    "job": "hero_trex",
+    "topic": "Could a T. rex outrun a car?",
+    "title": "Could A T. rex Outrun Your Car? 🦖",
+    "description": "Movies show a T. rex chasing cars. Studies of its bones and muscles say it probably couldn't even run. #shorts #dinosaurs #TRex #Science\n\nSources: Sellers et al. 2017, PeerJ 5:e3420 (doi:10.7717/peerj.3420); Hutchinson & Garcia 2002, Nature 415:1018 (doi:10.1038/4151018a).\n3D models: Quaternius, Animated LowPoly Dinosaurs (CC0); Kenney, Car Kit (CC0). Animated in Blender.\n\nHow this was made: the script is researched and fact-checked against published research (sources above), narrated by an AI voice, and animated and edited with open-source software. Corrections from viewers are checked and credited.",
+    "tags": [
+      "T. rex",
+      "Tyrannosaurus",
+      "dinosaurs",
+      "dinosaur speed",
+      "paleontology",
+      "science",
+      "3D animation"
+    ],
+    "hook": "The real T. rex probably couldn't run. Not even a jog.",
+    "status": "scheduled",
+    "narration": "The real T. rex probably couldn't run. Not even a jog. It weighed about eight tonnes. That's six cars, balanced on two legs. Scientists rebuilt it in a computer, bone by bone and muscle by muscle, then asked it to sprint. At every running speed, its leg bones took so much force they would likely have broken. A fast runner that size needs more than forty percent of its body in leg muscle. T. rex had nowhere near that. So its top speed was a fast walk. About twenty kilometres an hour. A car on a city road, at fifty, leaves it behind in seconds. So how did a giant that couldn't run catch anything at all?",
+    "voice_engine": "chatterbox",
+    "series": "What If",
+    "countdown": false,
+    "hero_3d": true,
+    "question": "So how did a giant that couldn't run catch anything at all?",
+    "sources": [
+      "doi:10.7717/peerj.3420",
+      "doi:10.1038/4151018a"
+    ],
+    "video_id": "9ao7Zj5FgJo",
+    "publish_at": "2026-11-21T19:00:00-05:00",
+    "thumbnail_set": true
   }
 ]
