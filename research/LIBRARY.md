@@ -22,6 +22,29 @@ Sources:
 - Guessasma et al. (2018), Lubricants. doi:10.3390/lubricants6020046 — supports: Ball bearings operate on the principle of elastohydrodynamic lubrication.
 - Chong et al. (2011), Journal of Physics D Applied Physics. doi:10.1088/0022-3727/44/16/165302 — supports: The lubricant forms a thin film that prevents surface-to-surface contact.
 
+## Why Fresh Pineapple Eats Meat 😳
+*2026-11-20 · Food Whys*
+
+- Pineapple contains bromelain, a protease enzyme mixture that breaks down protein chains.
+- Bromelain breaks down collagen and muscle tissue in meat, functioning as a natural tenderizer.
+- Pasteurization and canning heat treatments heat pineapple juice high enough to denature bromelain, deactivating its protease function.
+- Prolonged exposure to fresh bromelain turns meat mushy as structural proteins lose integrity.
+
+Sources:
+- Yulastri et al. (2024), Jurnal Penelitian Pendidikan IPA. doi:10.29303/jppipa.v10i8.6976 — supports: Pineapple contains bromelain, a protease enzyme mixture that breaks down protein chains.
+- Matsumoto et al. (2025), Animal Science Journal. doi:10.1111/asj.70104 — supports: Bromelain breaks down collagen and muscle tissue in meat, functioning as a natural tenderizer.
+- Kumar et al. (2025), Journal of Food Process Engineering. doi:10.1111/jfpe.70093 — supports: Pasteurization and canning heat treatments heat pineapple juice high enough to denature bromelain, deactivating its protease function.
+
+## Do Mosquitoes Really Care About Your Blood Type?
+*2026-11-20 · Body Whys*
+
+- Mosquitoes do not feed on blood types directly through skin as blood is internal.
+- Skin microbes metabolize sweat secretions into carboxylic acids which attract mosquitoes.
+- Genetic variations in skin microbiota and acid production explain individual mosquito preference.
+
+Sources:
+- Ray et al. (2023), PLoS neglected tropical diseases. doi:10.1371/journal.pntd.0011402 — supports: Skin microbes metabolize sweat secretions into carboxylic acids which attract mosquitoes.
+
 ## Why Steel Bearings Are Extremely Durable 🏗️
 *2026-11-19 · How Things Work*
 

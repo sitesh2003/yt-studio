@@ -3638,7 +3638,7 @@
       "outer space"
     ],
     "hook": "Pluto seemed like our solar system's edge, yet astronomers are investigating evidence that the Kuiper Belt extends much further than we once thought.",
-    "status": "banked",
+    "status": "scheduled",
     "narration": "Pluto seemed like our solar system's edge, yet astronomers are investigating evidence that the Kuiper Belt extends much further than we once thought. We long believed the Kuiper Belt density dropped off significantly around fifty astronomical units away from the Sun. That meant we were unsure what existed in the vast darkness beyond that point. So why were these distant candidate worlds so hard to detect until now? Here's why. Out at sixty astronomical units, sunlight is so dim these icy rocks reflect very little light, making them incredibly difficult to detect. And because their orbits are enormous, they shift across the night sky at a tiny crawl. Ever thought how telescopic cameras can spot something creeping significantly slower than Pluto?",
     "voice_engine": "chatterbox",
     "voices": "one narrator (af_heart)",
@@ -3722,7 +3722,10 @@
       "duration": 34.1
     },
     "repairs": 0,
-    "audited": true
+    "audited": true,
+    "video_id": "ZBu29NHzbYo",
+    "publish_at": "2026-11-21T12:00:00-05:00",
+    "thumbnail_set": true
   },
   {
     "job": "20261117-0601-why-hippos-sweat-a-red-liquid-while-huma",
@@ -4740,6 +4743,250 @@
       ],
       "pass": true,
       "duration": 37.5
+    },
+    "repairs": 0,
+    "audited": true
+  },
+  {
+    "job": "20261120-1215-can-pineapples-pre-digest-meat-how-pinea",
+    "topic": "Can Pineapples Pre-Digest Meat? (How Pineapple Juice Makes Steaks Tender)",
+    "title": "Why Fresh Pineapple Eats Meat 😳",
+    "description": "Ever wonder why raw pineapple makes your tongue prickle? The biological secret comes down to active enzymes dissolving protein. #science #food #shorts\n\nSources (open-access research):\n- Yulastri et al. (2024), Jurnal Penelitian Pendidikan IPA. doi:10.29303/jppipa.v10i8.6976\n- Matsumoto et al. (2025), Animal Science Journal. doi:10.1111/asj.70104\n- Kumar et al. (2025), Journal of Food Process Engineering. doi:10.1111/jfpe.70093\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nIllustrations: drawn for this video with FLUX.2 [klein] 4B (AI, Apache 2.0) and checked for accuracy\nPhoto: J Doll, CC BY 3.0, via Wikimedia Commons\nVideo by Bichhong on Pixabay\nVideo by Pixabay on Pixabay\nVideo by StefWithAnF on Pixabay\n\nHow this was made: the script is researched and fact-checked with AI tools against open-access research (sources above when found), narrated by an AI voice, and edited with open-source software. Corrections from viewers are checked and credited.",
+    "tags": [
+      "pineapple",
+      "science",
+      "cooking",
+      "food science",
+      "steak tenderizer",
+      "bromelain",
+      "enzymes"
+    ],
+    "hook": "Fresh pineapple is actually digesting your mouth while you eat it.",
+    "status": "banked",
+    "narration": "Fresh pineapple is actually digesting your mouth while you eat it. That sting is real. Bromelain chops proteins. Pour fresh pineapple juice over raw steak, and those enzymes start eating the meat fibers immediately. Canned juice fails. Canning uses high heat, which permanently warps the enzyme's shape so it can't cut proteins anymore. So fresh juice turns meat tender fast. But leave it too long, and your steak turns to mush. Ever thought why cooked pineapple slices never tingle on your tongue like fresh pineapple?",
+    "voice_engine": "chatterbox",
+    "voices": "one narrator (af_heart)",
+    "diagrams": 1,
+    "series": "Food Whys",
+    "countdown": false,
+    "length_arm": "standard",
+    "question": "Ever thought why cooked pineapple slices never tingle on your tongue like fresh pineapple?",
+    "answer_comment": "The answer: Cooking pineapple heats the fruit above 150°F (65°C), which denatures the bromelain enzyme. Once heated, the enzyme loses its shape and can no longer break down the proteins on your tongue or in meat. That's why grilled or canned pineapple tastes sweet without the prickling bite!\n\nSources (open-access research):\n- Yulastri et al. (2024), Jurnal Penelitian Pendidikan IPA. doi:10.29303/jppipa.v10i8.6976\n- Matsumoto et al. (2025), Animal Science Journal. doi:10.1111/asj.70104\n- Kumar et al. (2025), Journal of Food Process Engineering. doi:10.1111/jfpe.70093",
+    "sources": [
+      {
+        "claim": "Pineapple contains bromelain, a protease enzyme mixture that breaks down protein chains.",
+        "cite": "Yulastri et al. (2024), Jurnal Penelitian Pendidikan IPA. doi:10.29303/jppipa.v10i8.6976",
+        "doi": "10.29303/jppipa.v10i8.6976",
+        "title": "Innovation in Bromelain Enzyme Production from Pineapple and Honey and Its Characteristics",
+        "why": "Bromelain enzyme can be found in pineapple (Ananas comosus) which consists of 95% cysteine protease mixture."
+      },
+      {
+        "claim": "Bromelain breaks down collagen and muscle tissue in meat, functioning as a natural tenderizer.",
+        "cite": "Matsumoto et al. (2025), Animal Science Journal. doi:10.1111/asj.70104",
+        "doi": "10.1111/asj.70104",
+        "title": "Estimating the Textural Properties of Bromelain‐Tenderized Beef by Impedance Measurement",
+        "why": "Bromelain, found in pineapples, is an enzyme that degrades collagen, a factor that affects meat hardness."
+      },
+      {
+        "claim": "Pasteurization and canning heat treatments heat pineapple juice high enough to denature bromelain, deactivating its protease function.",
+        "cite": "Kumar et al. (2025), Journal of Food Process Engineering. doi:10.1111/jfpe.70093",
+        "doi": "10.1111/jfpe.70093",
+        "title": "Continuous Ohmic Heating Assisted Isothermal Treatment of Standardized Pineapple Juice: Its Effect on Bromelain Inactivation, Vitamin C Degradation, and Their Kinetic Modeling",
+        "why": "The current work investigated the effect of COH parameters like electric field strength (EFS: 30–40 V/cm), temperature (70°C–90°C), and isothermal holding (0–60 s) on bromelain activity and vitamin C in standardized pineapple juice"
+      }
+    ],
+    "fact_check": [
+      "Pineapple contains bromelain, a protease enzyme mixture that breaks down protein chains.",
+      "Bromelain breaks down collagen and muscle tissue in meat, functioning as a natural tenderizer.",
+      "Pasteurization and canning heat treatments heat pineapple juice high enough to denature bromelain, deactivating its protease function.",
+      "Prolonged exposure to fresh bromelain turns meat mushy as structural proteins lose integrity."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        3.16
+      ],
+      [
+        3.16,
+        6.25
+      ],
+      [
+        6.25,
+        10.76
+      ],
+      [
+        10.76,
+        12.53
+      ],
+      [
+        12.53,
+        17.07
+      ],
+      [
+        17.07,
+        22.18
+      ],
+      [
+        22.18,
+        25.98
+      ]
+    ],
+    "duration": 25.98,
+    "scene_lines": [
+      "Fresh pineapple is actually digesting your mouth while you eat it.",
+      "That sting is real. Bromelain chops proteins.",
+      "Pour fresh pineapple juice over raw steak, and those enzymes start eating the meat fibers immediately.",
+      "Canned juice fails.",
+      "Canning uses high heat, which permanently warps the enzyme's shape so it can't cut proteins anymore.",
+      "So fresh juice turns meat tender fast. But leave it too long, and your steak turns to mush.",
+      "Ever thought why cooked pineapple slices never tingle on your tongue like fresh pineapple?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,000 --> 00:00:02,060\nFresh pineapple is actually digesting your mouth\n\n2\n00:00:02,060 --> 00:00:02,970\nwhile you eat it.\n\n3\n00:00:03,160 --> 00:00:04,570\nThat sting is real.\n\n4\n00:00:04,790 --> 00:00:06,140\nBromelain chops proteins.\n\n5\n00:00:06,250 --> 00:00:08,170\nPour fresh pineapple juice over raw steak,\n\n6\n00:00:08,170 --> 00:00:10,420\nand those enzymes start eating the meat fibers immediately.\n\n7\n00:00:10,760 --> 00:00:12,130\nCanned juice fails.\n\n8\n00:00:12,530 --> 00:00:13,780\nCanning uses high heat,\n\n9\n00:00:13,830 --> 00:00:15,490\nwhich permanently warps the enzyme's shape so\n\n10\n00:00:15,490 --> 00:00:16,820\nit can't cut proteins anymore.\n\n11\n00:00:17,070 --> 00:00:19,340\nSo fresh juice turns meat tender fast.\n\n12\n00:00:19,610 --> 00:00:20,850\nBut leave it too long, and your\n\n13\n00:00:20,850 --> 00:00:21,900\nsteak turns to mush.\n\n14\n00:00:22,180 --> 00:00:23,960\nEver thought why cooked pineapple slices never\n\n15\n00:00:23,960 --> 00:00:25,380\ntingle on your tongue like fresh pineapple?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [],
+      "footage": [],
+      "review": [],
+      "heard": [
+        "\"bromelain chops\" heard as \"romulinschots\"",
+        "\"pour\" heard as \"or\"",
+        "\"canning\" heard as \"tanning\"",
+        "\"enzyme's\" heard as \"enzyme\"",
+        "\"tingle on\" heard as \"tingling along\""
+      ],
+      "scene_heard": [
+        "scene 1: 100%",
+        "scene 2: 71%",
+        "scene 3: 94%",
+        "scene 4: 100%",
+        "scene 5: 88%",
+        "scene 6: 100%",
+        "scene 7: 86%"
+      ],
+      "pass": true,
+      "duration": 25.8
+    },
+    "repairs": 0,
+    "audited": true
+  },
+  {
+    "job": "20261120-1233-why-mosquitoes-prefer-specific-people-ov",
+    "topic": "Why mosquitoes prefer specific people over others based on skin chemistry",
+    "title": "Do Mosquitoes Really Care About Your Blood Type?",
+    "description": "Stop blaming your blood type for mosquito bites. The real reason relies entirely on your skin microbiome and invisible acids. #shorts #science #biology\n\nSources (open-access research):\n- Ray et al. (2023), PLoS neglected tropical diseases. doi:10.1371/journal.pntd.0011402\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nIllustrations: drawn for this video with FLUX.2 [klein] 4B (AI, Apache 2.0) and checked for accuracy\nPhoto by Hans on Pixabay\nPhoto by jeluning on Pixabay\nVideo by Roque_dg on Pixabay\nVideo by lumosajans on Pixabay\nVideo by Vimeo-Free-Videos on Pixabay\nVideo by allinonemovie on Pixabay\n\nHow this was made: the script is researched and fact-checked with AI tools against open-access research (sources above when found), narrated by an AI voice, and edited with open-source software. Corrections from viewers are checked and credited.",
+    "tags": [
+      "mosquitoes",
+      "skin chemistry",
+      "biology",
+      "science facts"
+    ],
+    "hook": "Most people blame their blood type for mosquito bites.",
+    "status": "banked",
+    "narration": "Most people blame their blood type for mosquito bites. Because skin chemistry starts with what microbes do to your sweat on human skin. Blood cells stay locked safely inside your veins where insects can't reach them. So surface fluid isn't what's drawing skin chemistry toward them across the bedroom. Instead, microscopic skin microbes feast on your sweat compounds right on human skin. They break down skin chemistry molecules into a very specific scent. Carboxylic acids coat your outer layer as part of human skin chemistry. That pungent chemical cloud from human skin chemistry is what makes certain people total magnets. Ever thought why your friend with different skin chemistry sitting right next to you seems to get bitten way less?",
+    "voice_engine": "chatterbox",
+    "voices": "one narrator (af_heart)",
+    "diagrams": 1,
+    "series": "Body Whys",
+    "countdown": false,
+    "length_arm": "standard",
+    "question": "Ever thought why your friend sitting right next to you seems to get bitten way less?",
+    "answer_comment": "The answer: Mosquitoes rely on carboxylic acids produced when your skin bacteria digest your sweat. People who get bitten less naturally produce different acid balances that mask their scent from mosquito receptors.\n\nSources (open-access research):\n- Ray et al. (2023), PLoS neglected tropical diseases. doi:10.1371/journal.pntd.0011402",
+    "sources": [
+      {
+        "claim": "Skin microbes metabolize sweat secretions into carboxylic acids which attract mosquitoes.",
+        "cite": "Ray et al. (2023), PLoS neglected tropical diseases. doi:10.1371/journal.pntd.0011402",
+        "doi": "10.1371/journal.pntd.0011402",
+        "title": "Carboxylic acids that drive mosquito attraction to humans activate ionotropic receptors",
+        "why": "Importantly, carboxylic acids are major constituents of human sweat and volatiles generated by skin microbes."
+      }
+    ],
+    "fact_check": [
+      "Mosquitoes do not feed on blood types directly through skin as blood is internal.",
+      "Skin microbes metabolize sweat secretions into carboxylic acids which attract mosquitoes.",
+      "Genetic variations in skin microbiota and acid production explain individual mosquito preference."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        2.38
+      ],
+      [
+        2.38,
+        6.54
+      ],
+      [
+        6.54,
+        10.34
+      ],
+      [
+        10.34,
+        14.19
+      ],
+      [
+        14.19,
+        18.92
+      ],
+      [
+        18.92,
+        22.09
+      ],
+      [
+        22.09,
+        25.7
+      ],
+      [
+        25.7,
+        30.37
+      ],
+      [
+        30.37,
+        34.89
+      ]
+    ],
+    "duration": 34.89,
+    "scene_lines": [
+      "Most people blame their blood type for mosquito bites.",
+      "Because skin chemistry starts with what microbes do to your sweat on human skin.",
+      "Blood cells stay locked safely inside your veins where insects can't reach them.",
+      "So surface fluid isn't what's drawing skin chemistry toward them across the bedroom.",
+      "Instead, microscopic skin microbes feast on your sweat compounds right on human skin.",
+      "They break down skin chemistry molecules into a very specific scent.",
+      "Carboxylic acids coat your outer layer as part of human skin chemistry.",
+      "That pungent chemical cloud from human skin chemistry is what makes certain people total magnets.",
+      "Ever thought why your friend with different skin chemistry sitting right next to you seems to get bitten way less?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,000 --> 00:00:02,010\nMost people blame their blood type for mosquito bites.\n\n2\n00:00:02,380 --> 00:00:04,400\nBecause skin chemistry starts with what microbes\n\n3\n00:00:04,400 --> 00:00:06,290\ndo to your sweat on human skin.\n\n4\n00:00:06,540 --> 00:00:08,300\nBlood cells stay locked safely inside your\n\n5\n00:00:08,300 --> 00:00:10,090\nveins where insects can't reach them.\n\n6\n00:00:10,340 --> 00:00:12,220\nSo surface fluid isn't what's drawing skin\n\n7\n00:00:12,220 --> 00:00:13,970\nchemistry toward them across the bedroom.\n\n8\n00:00:14,190 --> 00:00:14,760\nInstead,\n\n9\n00:00:14,930 --> 00:00:16,990\nmicroscopic skin microbes feast on your sweat\n\n10\n00:00:16,990 --> 00:00:18,680\ncompounds right on human skin.\n\n11\n00:00:18,920 --> 00:00:20,540\nThey break down skin chemistry molecules into\n\n12\n00:00:20,540 --> 00:00:21,870\na very specific scent.\n\n13\n00:00:22,090 --> 00:00:23,950\nCarboxylic acids coat your outer layer as\n\n14\n00:00:23,950 --> 00:00:25,320\npart of human skin chemistry.\n\n15\n00:00:25,700 --> 00:00:27,460\nThat pungent chemical cloud from human skin\n\n16\n00:00:27,460 --> 00:00:30,030\nchemistry is what makes certain people total magnets.\n\n17\n00:00:30,370 --> 00:00:31,490\nEver thought why your friend with different\n\n18\n00:00:31,490 --> 00:00:33,010\nskin chemistry sitting right next to you\n\n19\n00:00:33,010 --> 00:00:34,290\nseems to get bitten way less?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [],
+      "footage": [],
+      "review": [],
+      "heard": [
+        "\"why\" heard as \"while\""
+      ],
+      "scene_heard": [
+        "scene 1: 100%",
+        "scene 2: 100%",
+        "scene 3: 100%",
+        "scene 4: 100%",
+        "scene 5: 100%",
+        "scene 6: 100%",
+        "scene 7: 100%",
+        "scene 8: 100%",
+        "scene 9: 95%"
+      ],
+      "pass": true,
+      "duration": 34.6
     },
     "repairs": 0,
     "audited": true

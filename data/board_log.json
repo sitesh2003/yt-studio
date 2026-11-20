@@ -209,5 +209,30 @@
    "5": "Label 'FLOATING BAL' is misspelled; image does not clearly show oil or slipping/sliding motion."
   },
   "error": ""
+ },
+ {
+  "when": "2026-11-20 12:26",
+  "topic": "Can Pineapples Pre-Digest Meat? (How Pineapple Juice Makes Steaks Tender)",
+  "drawn": [
+   2,
+   3,
+   6
+  ],
+  "not_drawn": {
+   "5": "A microscope is used instead of a protein or enzyme."
+  },
+  "error": ""
+ },
+ {
+  "when": "2026-11-20 12:40",
+  "topic": "Why mosquitoes prefer specific people over others based on skin chemistry",
+  "drawn": [
+   2,
+   3,
+   4,
+   5
+  ],
+  "not_drawn": {},
+  "error": ""
  }
 ]

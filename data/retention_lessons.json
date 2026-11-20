@@ -1,21 +1,20 @@
 {
   "lessons": [
-    "Prioritize immediate information density; the highest retention videos (Tuna, Greenland Shark) avoid filler and dive directly into the core premise, whereas videos with lower retention often use abstract or slow-building hooks.",
-    "Eliminate redundant exposition immediately after the hook; drop-off is highest when a script re-states the hook's premise (e.g., 'Instead of impaling your vehicle' repeated in Guardrails, or redundant descriptions in Fruits Float).",
-    "Avoid meta-commentary or slow-paced questions; lines like 'Pause and guess' or 'Why the gradient dots instead of a solid line?' correlate with sharp mid-video exit spikes.",
-    "Structure facts as high-stakes physical conflicts; the 'Greenland Shark' and 'Tuna' videos hold viewers significantly better by focusing on extreme biological survival or intense physical comparisons, contrasting with the 'Fingers Prune' video which struggled with a more abstract, process-heavy explanation.",
-    "Keep definitions and setup brief; drops consistently occur at the 0.10-0.15 mark when the script spends too long setting the stage before introducing the actual mechanism or resolution."
+    "Hook lines that immediately establish a shocking anomaly or physical contradiction (e.g., Greenland sharks, tuna vs cod) drive exceptional start retention above 1.1x and outperform typical YouTube baselines.",
+    "Generic introductory filler lines, vague context (e.g., 'They look like similar fruits'), or slow restatements within the first 10-14% of the video trigger massive viewer drop-offs of 20% to 34%.",
+    "Transition lines that overly slow down the narrative pacing or repeat information already stated in the hook (such as duplicated guardrail collision descriptions) cause immediate audience attrition.",
+    "Videos with high end-retention (like the Greenland shark at 1.08x) sustain engagement through continuous, surprising mechanism reveals rather than pauses or slow countdowns.",
+    "Not enough data to definitively isolate countdown mechanics as a positive or negative driver, though explicit countdown flags show mixed retention outcomes."
   ],
   "worst_moment_types": [
-    "Redundant phrasing or repeating the hook's core point shortly after the intro.",
-    "Instructional pauses (e.g., 'Pause and guess').",
-    "Vague setup sentences that delay the scientific 'why' (e.g., 'They look like similar fruits').",
-    "Abstract procedural descriptions that lack a concrete 'what happens to the viewer/object' connection."
+    "Vague or purely descriptive scene-setters lacking immediate tension",
+    "Redundant sentences that restate the hook or previous premise",
+    "Abrupt transitions or pauses that break the narrative momentum early in the video"
   ],
   "best_hook_types": [
-    "High-contrast, surprising biological comparisons (e.g., Tuna vs. Cod).",
-    "Counter-intuitive survival facts (e.g., Greenland Shark's lifespan).",
-    "Direct, urgent problem-solution framing without filler adjectives or conversational throat-clearing."
+    "Direct statements of extreme biological or physical anomalies",
+    "Contrasts between familiar objects with wildly different underlying mechanics",
+    "Immediate high-stakes or counter-intuitive declarations"
   ],
   "studied": "2026-11-20",
   "videos": 16

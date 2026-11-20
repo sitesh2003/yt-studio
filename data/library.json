@@ -527,5 +527,56 @@
         "claim": "The lubricant forms a thin film that prevents surface-to-surface contact."
       }
     ]
+  },
+  {
+    "job": "20261120-1215-can-pineapples-pre-digest-meat-how-pinea",
+    "date": "2026-11-20",
+    "title": "Why Fresh Pineapple Eats Meat 😳",
+    "topic": "Can Pineapples Pre-Digest Meat? (How Pineapple Juice Makes Steaks Tender)",
+    "series": "Food Whys",
+    "weekly": false,
+    "claims": [
+      "Pineapple contains bromelain, a protease enzyme mixture that breaks down protein chains.",
+      "Bromelain breaks down collagen and muscle tissue in meat, functioning as a natural tenderizer.",
+      "Pasteurization and canning heat treatments heat pineapple juice high enough to denature bromelain, deactivating its protease function.",
+      "Prolonged exposure to fresh bromelain turns meat mushy as structural proteins lose integrity."
+    ],
+    "sources": [
+      {
+        "cite": "Yulastri et al. (2024), Jurnal Penelitian Pendidikan IPA. doi:10.29303/jppipa.v10i8.6976",
+        "doi": "10.29303/jppipa.v10i8.6976",
+        "claim": "Pineapple contains bromelain, a protease enzyme mixture that breaks down protein chains."
+      },
+      {
+        "cite": "Matsumoto et al. (2025), Animal Science Journal. doi:10.1111/asj.70104",
+        "doi": "10.1111/asj.70104",
+        "claim": "Bromelain breaks down collagen and muscle tissue in meat, functioning as a natural tenderizer."
+      },
+      {
+        "cite": "Kumar et al. (2025), Journal of Food Process Engineering. doi:10.1111/jfpe.70093",
+        "doi": "10.1111/jfpe.70093",
+        "claim": "Pasteurization and canning heat treatments heat pineapple juice high enough to denature bromelain, deactivating its protease function."
+      }
+    ]
+  },
+  {
+    "job": "20261120-1233-why-mosquitoes-prefer-specific-people-ov",
+    "date": "2026-11-20",
+    "title": "Do Mosquitoes Really Care About Your Blood Type?",
+    "topic": "Why mosquitoes prefer specific people over others based on skin chemistry",
+    "series": "Body Whys",
+    "weekly": false,
+    "claims": [
+      "Mosquitoes do not feed on blood types directly through skin as blood is internal.",
+      "Skin microbes metabolize sweat secretions into carboxylic acids which attract mosquitoes.",
+      "Genetic variations in skin microbiota and acid production explain individual mosquito preference."
+    ],
+    "sources": [
+      {
+        "cite": "Ray et al. (2023), PLoS neglected tropical diseases. doi:10.1371/journal.pntd.0011402",
+        "doi": "10.1371/journal.pntd.0011402",
+        "claim": "Skin microbes metabolize sweat secretions into carboxylic acids which attract mosquitoes."
+      }
+    ]
   }
 ]

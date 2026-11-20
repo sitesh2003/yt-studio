@@ -1,17 +1,5 @@
 [
   {
-    "job": "20261117-0512-scientists-just-found-a-giant-hidden-wor",
-    "title": "Why Scientists Missed an Outer Kuiper Belt 🤯",
-    "assets": {
-      "mp4": 757808703,
-      "jpg": 757808877,
-      "json": 757808915
-    },
-    "locked": true,
-    "series": "How Things Work",
-    "stored": "2026-11-17T05:43:16.560243+00:00"
-  },
-  {
     "job": "20261118-0321-why-farmed-salmon-meat-is-naturally-gray",
     "title": "Why Farmed Salmon Meat Is Gray 🐟",
     "assets": {
@@ -46,5 +34,29 @@
     "locked": true,
     "series": "How Things Work",
     "stored": "2026-11-20T08:31:06.658878+00:00"
+  },
+  {
+    "job": "20261120-1215-can-pineapples-pre-digest-meat-how-pinea",
+    "title": "Why Fresh Pineapple Eats Meat 😳",
+    "assets": {
+      "mp4": 771762027,
+      "jpg": 771762224,
+      "json": 771762253
+    },
+    "locked": true,
+    "series": "Food Whys",
+    "stored": "2026-11-20T12:32:49.360600+00:00"
+  },
+  {
+    "job": "20261120-1233-why-mosquitoes-prefer-specific-people-ov",
+    "title": "Do Mosquitoes Really Care About Your Blood Type?",
+    "assets": {
+      "mp4": 771807769,
+      "jpg": 771808133,
+      "json": 771808190
+    },
+    "locked": true,
+    "series": "Body Whys",
+    "stored": "2026-11-20T12:48:32.997934+00:00"
   }
 ]
