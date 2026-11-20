@@ -21,6 +21,9 @@ print(f"engine {voice.last_engine}; {len(words)} words; {words[-1]['end']:.1f}s"
 text = " ".join(s["narration"] for s in script["scenes"])
 issues, notes, ratio = listen.compare(text, listen.transcribe(job / "voice.mp3"))
 print(f"listen: {ratio:.0%} heard; issues {issues}; notes {notes[:4]}")
+if voice.last_engine != "chatterbox" or issues:   # never keep a narration in the wrong voice
+    print("NOT SAVED: the narration must be the channel's voice (Chatterbox E2) with nothing missing")
+    sys.exit(1)
 shutil.copy(job / "voice.mp3", d / "voice.mp3")
 (d / "words.json").write_text(json.dumps(words, indent=2, ensure_ascii=False), encoding="utf-8")
 (d / "scenes.json").write_text(json.dumps(voice.scene_times(script, words), indent=2), encoding="utf-8")

@@ -22,7 +22,26 @@
       "BackUpLeg.R"
     ],
     "bone_radius": 0.12,
-    "muscle_radius": 0.42
+    "muscle_radius": 0.42,
+    "bone_groups": [
+      "FEET",
+      "SHINS",
+      "THIGHS",
+      "HIPS",
+      "SPINE",
+      "RIBS",
+      "NECK",
+      "SKULL",
+      "TAIL",
+      "ARMS"
+    ],
+    "muscle_groups": [
+      "THIGH",
+      "CALF",
+      "TAIL-TO-THIGH",
+      "NECK",
+      "JAW"
+    ]
   },
   "props": {
     "car": "cars/sedan.glb"
@@ -30,41 +49,51 @@
   "shots": [
     {
       "kind": "run_at_camera",
-      "seconds": 3.73,
+      "seconds": 3.445,
       "lens": 32,
       "freeze_s": 0.9
     },
     {
       "kind": "size_tower",
-      "seconds": 4.48,
+      "seconds": 4.355,
       "cars": 6,
       "lens": 24
     },
     {
       "kind": "xray_scan",
-      "seconds": 5.69,
-      "lens": 28
+      "seconds": 4.988,
+      "lens": 28,
+      "reveal": {
+        "bones": [
+          0.3,
+          2.16
+        ],
+        "muscles": [
+          2.26,
+          3.59
+        ]
+      }
     },
     {
       "kind": "stress_run",
-      "seconds": 3.86,
+      "seconds": 4.51,
       "lens": 32
     },
     {
       "kind": "muscle_needed",
-      "seconds": 5.24,
+      "seconds": 6.642,
       "muscle_scale": 2.6,
       "lens": 28
     },
     {
       "kind": "speed_track",
-      "seconds": 3.82,
+      "seconds": 3.873,
       "kmh": 20,
       "lens": 22
     },
     {
       "kind": "race_pass",
-      "seconds": 3.68,
+      "seconds": 3.67,
       "kmh": 20,
       "car_kmh": 50,
       "lens": 22,
@@ -72,12 +101,13 @@
     },
     {
       "kind": "closeup_roar",
-      "seconds": 4.18,
+      "seconds": 3.737,
       "lens": 32
     }
   ],
   "credits": [
     "T. rex model: Quaternius, Animated LowPoly Dinosaurs (CC0)",
     "Car model: Kenney, Car Kit (CC0)"
-  ]
+  ],
+  "end_beat_s": 0.6
 }

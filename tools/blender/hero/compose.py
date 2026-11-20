@@ -84,12 +84,41 @@ def g_size_tower(d, f, n, shot):
             text(d, (W * 0.70, H * 0.20 + 150), "T. REX", int(100 * s), YEL)
 
 
+SPEC = {}
+NICE = {"TAIL-TO-THIGH": "TAIL-TO-THIGH MUSCLE", "THIGH": "THIGH MUSCLES", "CALF": "CALF MUSCLES",
+        "NECK": "NECK", "JAW": "JAW MUSCLES"}
+
+
+def _groups_now(f, names, t0, t1):
+    """The group that appeared last at frame f, on the same timetable shots.py uses."""
+    n = len(names)
+    cur = None
+    for i, nm in enumerate(names):
+        if f >= int(round((t0 + (t1 - t0) * i / max(1, n)) * FPS)) + 1:
+            cur = (i, nm)
+    return cur
+
+
 def g_xray_scan(d, f, n, shot):
+    c = SPEC["creature"]
+    rv = shot.get("reveal") or {"bones": [0.3, n / FPS * 0.5], "muscles": [n / FPS * 0.5, n / FPS * 0.85]}
     text(d, (W / 2, 330), "COMPUTER MODEL", 72, CYAN, stroke=9)
-    p = ease((f - 1) / (n * 0.5))
-    d.rounded_rectangle([W / 2 - 300, 395, W / 2 + 300, 415], 10, fill=(20, 40, 60))
-    d.rounded_rectangle([W / 2 - 300, 395, W / 2 - 300 + int(600 * p), 415], 10, fill=CYAN)
-    text(d, (W / 2, 465), "BONES + MUSCLES" if p >= 1 else "SCANNING...", 50, WHITE, stroke=8)
+    mus = _groups_now(f, c["muscle_groups"], *rv["muscles"])
+    bone = _groups_now(f, c["bone_groups"], *rv["bones"])
+    if mus:
+        i, nm = mus
+        head, col, total = "MUSCLE BY MUSCLE", (255, 110, 120), len(c["muscle_groups"])
+    elif bone:
+        i, nm = bone
+        head, col, total = "BONE BY BONE", WHITE, len(c["bone_groups"])
+    else:
+        return
+    text(d, (W / 2, 420), head, 58, col, stroke=8)
+    p = (i + 1) / total                   # progress through this list
+    d.rounded_rectangle([W / 2 - 300, 470, W / 2 + 300, 486], 8, fill=(20, 40, 60))
+    d.rounded_rectangle([W / 2 - 300, 470, W / 2 - 300 + int(600 * p), 486], 8, fill=col)
+    label = "SKULL + TEETH" if nm == "SKULL" else NICE.get(nm, nm) if mus else nm
+    text(d, (W / 2, 545), label, 64 if len(label) < 16 else 52, YEL, stroke=9)
 
 
 def g_stress_run(d, f, n, shot):
@@ -169,6 +198,7 @@ def main():
     name, frames = sys.argv[1], Path(sys.argv[2])
     d = ROOT / "research" / "hero" / name
     spec = json.loads((d / "spec.json").read_text(encoding="utf-8"))
+    SPEC.update(spec)
     words = json.loads((d / "words.json").read_text(encoding="utf-8"))
     job = ROOT / "jobs" / f"_hero_compose_{name}"
     shutil.rmtree(job, ignore_errors=True)
@@ -199,18 +229,20 @@ def main():
     editor.captions(words, job / "captions.ass")
     shutil.copytree(ROOT / "assets" / "fonts", job / "fonts", dirs_exist_ok=True)
     # 4) sound on its own: polished voice + ducked music, levelled
+    total = gf / FPS
     music = sorted((ROOT / "assets" / "music").glob("*.mp3"))
     vol = config()["music"]["volume"]
     voice_s = editor._dur(job / "voice.mp3")
     if music:
         random.seed(name)
-        audio = (f"[0:a]{editor.VOICE_POLISH},asplit=2[vo][key];[1:a]volume={vol}[m0];"
+        audio = (f"[0:a]{editor.VOICE_POLISH},apad,asplit=2[vo][key];[1:a]volume={vol}[m0];"
                  f"[m0][key]sidechaincompress=threshold=0.02:ratio=8:attack=20:release=450[m];"
-                 f"[vo][m]amix=inputs=2:duration=first:dropout_transition=0:normalize=0,{editor.LOUDNESS}[a]")
+                 f"[vo][m]amix=inputs=2:duration=shortest:dropout_transition=0:normalize=0,"
+                 f"atrim=0:{{total:.3f}},afade=t=out:st={{fade:.3f}}:d=0.9,{editor.LOUDNESS}[a]")
         ains = ["-i", "voice.mp3", "-stream_loop", "-1", "-i", str(random.choice(music))]
+        audio = audio.format(total=total, fade=max(0.0, total - 0.9))
     else:
         audio, ains = f"[0:a]{editor.VOICE_POLISH},{editor.LOUDNESS}[a]", ["-i", "voice.mp3"]
-    total = gf / FPS
     run(["ffmpeg", "-y", "-loglevel", "error"] + ains + ["-filter_complex", audio + ";[a]apad[ap]", "-map", "[ap]",
          "-t", f"{total:.3f}", "-c:a", "aac", "-b:a", "160k", "sound.m4a"], job)
     # 5) picture: 3D + graphics, scaled to 2K, captions and logo drawn crisp at full size

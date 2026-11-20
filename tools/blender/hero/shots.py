@@ -423,9 +423,9 @@ def xray_skin(mesh, height):
         nt.links.new(mix2.outputs[0], out.inputs["Surface"])
 
 
-def bone_mat():
-    """Bones glow ivory-cyan, turning yellow then red as scene['stress'] rises, flickering near the top."""
-    m = bpy.data.materials.new("Bone")
+def bone_mat(stress=True):
+    """Bones glow ivory-cyan; with stress=True they turn yellow then red as scene['stress'] rises."""
+    m = bpy.data.materials.new("Bone" if stress else "BoneStill")
     m.use_nodes = True
     nt = m.node_tree
     nt.nodes.clear()
@@ -439,7 +439,8 @@ def bone_mat():
     mid.color = (1.0, 0.75, 0.1, 1)
     em = node(nt, "ShaderNodeEmission", (200, 0))
     em.inputs["Strength"].default_value = 4.0
-    nt.links.new(st.outputs["Fac"], ramp.inputs[0])
+    if stress:
+        nt.links.new(st.outputs["Fac"], ramp.inputs[0])
     nt.links.new(ramp.outputs[0], em.inputs["Color"])
     nt.links.new(em.outputs[0], out.inputs[0])
     return m
@@ -456,18 +457,26 @@ def muscle_mat():
     lw.inputs["Blend"].default_value = 0.5
     em = node(nt, "ShaderNodeEmission", (0, -150))
     em.inputs["Color"].default_value = (1.0, 0.12, 0.18, 1)
-    em.inputs["Strength"].default_value = 2.5
+    em.inputs["Strength"].default_value = 3.2
     tr = node(nt, "ShaderNodeBsdfTransparent", (0, 100))
     mix = node(nt, "ShaderNodeMixShader", (300, 0))
     add = node(nt, "ShaderNodeMath", (-100, 200))
     add.operation = "ADD"
-    add.inputs[1].default_value = 0.25
+    add.inputs[1].default_value = 0.6
     nt.links.new(lw.outputs["Facing"], add.inputs[0])
     nt.links.new(add.outputs[0], mix.inputs[0])
     nt.links.new(tr.outputs[0], mix.inputs[1])
     nt.links.new(em.outputs[0], mix.inputs[2])
     nt.links.new(mix.outputs[0], out.inputs[0])
     return m
+
+
+def _frame(axis):
+    """Local z along the bone, local y as close to world-up as possible (forward for upright bones)."""
+    ref = Vector((0, 0, 1)) if abs(axis.z) < 0.9 else Vector((0, -1, 0))
+    x = ref.cross(axis).normalized()
+    y = axis.cross(x).normalized()
+    return mathutils.Matrix((x, y, axis)).transposed().to_4x4()
 
 
 def attach(arm, bone_name, obj, along=0.5):
@@ -478,8 +487,7 @@ def attach(arm, bone_name, obj, along=0.5):
     h = arm.matrix_world @ pb.head
     t = arm.matrix_world @ pb.tail
     mid = h.lerp(t, along)
-    axis = (t - h).normalized()
-    rot = Vector((0, 0, 1)).rotation_difference(axis).to_matrix().to_4x4()
+    rot = _frame((t - h).normalized())
     mw = mathutils.Matrix.Translation(mid) @ rot @ mathutils.Matrix.Diagonal((*obj.scale, 1))
     obj.parent = arm
     obj.parent_type = "BONE"
@@ -491,38 +499,147 @@ def attach(arm, bone_name, obj, along=0.5):
     return (t - h).length
 
 
-def skeleton_legs(arm, bones, radius):
-    m = bone_mat()
-    for name in bones:
-        pb = arm.pose.bones[name]
-        L = (arm.matrix_world @ pb.tail - arm.matrix_world @ pb.head).length
-        bpy.ops.mesh.primitive_cylinder_add(vertices=10, radius=radius, depth=L * 0.92)
-        o = bpy.context.object
-        o.name = "Bone_" + name
-        o.data.materials.append(m)
-        bpy.ops.object.shade_smooth()
-        attach(arm, name, o)
-        for end in (0.04, 0.96):      # knobbly joint ends, like a real long bone
-            bpy.ops.mesh.primitive_uv_sphere_add(segments=12, ring_count=8, radius=radius * 1.6)
-            k = bpy.context.object
-            k.data.materials.append(m)
-            attach(arm, name, k, along=end)
+def _blen(arm, name):
+    pb = arm.pose.bones[name]
+    return (pb.tail - pb.head).length * arm.matrix_world.to_scale()[0]
 
 
-def muscles(arm, bones, radius):
+def piece(arm, bone, shape, dims, offset=(0, 0, 0), along=0.5, material=None, name="Part"):
+    """One anatomical piece: a primitive sized dims (x lateral, y up, z along the bone), moved by offset
+    in the bone's own frame, parented to the bone. Object scale stays 1, so a reveal can grow it from 0."""
+    if shape == "cyl":
+        bpy.ops.mesh.primitive_cylinder_add(vertices=12, radius=0.5, depth=1)
+    elif shape == "box":
+        bpy.ops.mesh.primitive_cube_add(size=1)
+    elif shape == "cone":           # wide end at the bone's head, narrow toward its tail
+        bpy.ops.mesh.primitive_cone_add(vertices=14, radius1=0.5, radius2=0.5 * dims[3], depth=1)
+        dims = dims[:3]
+    elif shape == "ring":
+        bpy.ops.mesh.primitive_torus_add(major_radius=0.5, minor_radius=0.5 * dims[2], major_segments=28,
+                                         minor_segments=8)
+        dims = (dims[0], dims[1], 1.0)
+    else:
+        bpy.ops.mesh.primitive_uv_sphere_add(segments=20, ring_count=12, radius=0.5)
+    o = bpy.context.object
+    o.name = name
+    o.data.transform(mathutils.Matrix.Translation(offset) @ mathutils.Matrix.Diagonal((*dims, 1)))
+    if shape == "box":
+        bev = o.modifiers.new("B", "BEVEL")
+        bev.width, bev.segments = min(dims) * 0.25, 2
+    if material:
+        o.data.materials.append(material)
+    bpy.ops.object.shade_smooth()
+    attach(arm, bone, o, along)
+    return o
+
+
+def _long_bone(arm, bone, r, mat_, nm):
+    L = _blen(arm, bone)
+    out = [piece(arm, bone, "cyl", (2 * r, 2 * r, L * 0.9), material=mat_, name=nm)]
+    for end in (0.05, 0.95):             # knobbly joint ends, like a real long bone
+        out.append(piece(arm, bone, "sph", (3.2 * r, 3.2 * r, 3.2 * r), along=end, material=mat_, name=nm + "_end"))
+    return out
+
+
+def _vertebrae(arm, bone, size, mat_, nm, spine_h=0.0, chevron=0.0):
+    L = _blen(arm, bone)
+    n = max(2, round(L / 0.3))
+    out = []
+    for i in range(n):
+        a = (i + 0.5) / n
+        out.append(piece(arm, bone, "box", (size, size, L / n * 0.72), along=a, material=mat_, name=nm))
+        if spine_h:
+            out.append(piece(arm, bone, "box", (size * 0.3, spine_h, L / n * 0.45),
+                             (0, size * 0.5 + spine_h * 0.5, 0), along=a, material=mat_, name=nm + "_spine"))
+        if chevron:
+            out.append(piece(arm, bone, "box", (size * 0.25, chevron, L / n * 0.35),
+                             (0, -size * 0.5 - chevron * 0.5, 0), along=a, material=mat_, name=nm + "_chevron"))
+    return out
+
+
+def skeleton(arm, c, stress_legs=False):
+    """The whole skeleton as named groups, in the order the spec reveals them (bone by bone)."""
+    still = bone_mat(stress=False)
+    hot = bone_mat(stress=True) if stress_legs else still
+    sides = (".L", ".R")
+    g = {}
+    g["FEET"] = sum((_long_bone(arm, "BackFoot" + s, 0.09, hot, "foot") for s in sides), [])
+    g["SHINS"] = sum((_long_bone(arm, "BackLowLeg" + s, 0.10, hot, "shin") for s in sides), [])
+    g["THIGHS"] = sum((_long_bone(arm, "BackUpLeg" + s, 0.13, hot, "femur") for s in sides), [])
+    hips = [piece(arm, "BackLeg" + s, "cyl", (0.16, 0.16, _blen(arm, "BackLeg" + s) * 0.9), material=still,
+                  name="socket") for s in sides]
+    for x in (-0.3, 0.3):                # ilium plates, and the pubis that ends in a "boot"
+        hips.append(piece(arm, "Hips", "box", (0.12, 0.75, 1.3), (x, 0.2, 0), material=still, name="ilium"))
+    hips.append(piece(arm, "Hips", "box", (0.3, 1.5, 0.22), (0, -0.85, 0.15), material=still, name="pubis"))
+    hips.append(piece(arm, "Hips", "box", (0.32, 0.18, 0.7), (0, -1.6, 0.0), material=still, name="pubic_boot"))
+    g["HIPS"] = hips
+    g["SPINE"] = sum((_vertebrae(arm, b, 0.24, still, "vert", spine_h=0.34)
+                      for b in ("Back", "Hips", "Torso", "Shoulders")), [])
+    ribs = []
+    for b, n, r0, r1 in (("Torso", 5, 1.5, 1.25), ("Shoulders", 2, 1.1, 0.9)):
+        for i in range(n):
+            r = r0 + (r1 - r0) * i / max(1, n - 1)
+            ribs.append(piece(arm, b, "ring", (r * 0.8, r, 0.06), (0, -r * 0.5, 0), along=(i + 0.5) / n,
+                              material=still, name="rib"))
+    g["RIBS"] = ribs
+    g["NECK"] = _vertebrae(arm, "Neck", 0.2, still, "neck", spine_h=0.15)
+    L = _blen(arm, "Head")
+    dark = mat("Socket", (0.01, 0.02, 0.04), 0.5)
+    skull = [piece(arm, "Head", "cone", (0.8, 0.95, L * 0.95, 0.38), (0, 0.1, 0), material=still, name="skull"),
+             piece(arm, "Head", "cone", (0.62, 0.26, L * 0.9, 0.35), (0, -0.4, 0.04), material=still, name="jaw")]
+    for x in (-0.33, 0.33):              # eye sockets, and the big openings behind them
+        skull.append(piece(arm, "Head", "sph", (0.16, 0.2, 0.22), (x, 0.28, 0), along=0.28, material=dark, name="orbit"))
+        skull.append(piece(arm, "Head", "sph", (0.12, 0.26, 0.3), (x * 1.05, 0.05, 0), along=0.12, material=dark,
+                           name="fenestra"))
+        for k in range(7):               # teeth along the upper jaw, pointing down
+            a = 0.4 + k * 0.085
+            skull.append(piece(arm, "Head", "cone", (0.07, 0.07, 0.2, 0.05), (x * 0.62 * (1 - (a - 0.4) * 0.8), -0.22, 0),
+                               along=a, material=still, name="tooth"))
+    for o in skull:
+        if o.name.startswith("tooth"):   # turn each tooth to point down instead of along the bone
+            o.data.transform(mathutils.Matrix.Rotation(math.radians(90), 4, "X"))
+    g["SKULL"] = skull
+    tail = []
+    for k, b in enumerate(("Tail1", "Tail2", "Tail3", "Tail4", "Tail5")):
+        sz = 0.24 * (1 - k * 0.15)
+        tail += _vertebrae(arm, b, sz, still, "tailvert", spine_h=0.25 * (1 - k * 0.18),
+                           chevron=0.25 * (1 - k * 0.2) if k < 4 else 0)
+    g["TAIL"] = tail
+    g["ARMS"] = sum((_long_bone(arm, b + s, 0.045, still, "arm") for s in sides
+                     for b in ("FrontUpLeg", "FrontLowLeg", "FrontFoot")), [])
+    return g
+
+
+def muscle_groups(arm):
+    """Real T. rex muscles as named groups, in the order the spec reveals them (muscle by muscle)."""
     m = muscle_mat()
-    objs = []
-    for name in bones:
-        pb = arm.pose.bones[name]
-        L = (arm.matrix_world @ pb.tail - arm.matrix_world @ pb.head).length
-        bpy.ops.mesh.primitive_uv_sphere_add(segments=24, ring_count=16, radius=1)
-        o = bpy.context.object
-        o.scale = (radius, radius, L * 0.55)
-        o.data.materials.append(m)
-        bpy.ops.object.shade_smooth()
-        attach(arm, name, o, along=0.45)
-        objs.append(o)
-    return objs
+    sides = ((".L", 1), (".R", -1))
+    g = {}
+    g["THIGH"] = [piece(arm, "BackUpLeg" + s, "sph", (0.9, 1.0, _blen(arm, "BackUpLeg" + s) * 0.85), along=0.42,
+                        material=m, name="thigh") for s, _ in sides]
+    g["CALF"] = [piece(arm, "BackLowLeg" + s, "sph", (0.45, 0.5, _blen(arm, "BackLowLeg" + s) * 0.8),
+                       (0, -0.12, 0), along=0.35, material=m, name="calf") for s, _ in sides]
+    # M. caudofemoralis longus: from the tail to the thigh bone, the big muscle that pulled each leg back
+    g["TAIL-TO-THIGH"] = [piece(arm, "Tail1", "sph", (0.55, 0.65, _blen(arm, "Tail1") * 1.6), (k * 0.3, -0.35, 0),
+                                along=0.45, material=m, name="caudofemoralis") for _, k in sides]
+    g["NECK"] = [piece(arm, "Neck", "sph", (0.8, 0.9, _blen(arm, "Neck") * 1.4), (0, 0.05, 0), material=m,
+                       name="neck_m")]
+    g["JAW"] = [piece(arm, "Head", "sph", (0.55, 0.5, 0.6), (0, 0.15, 0), along=0.12, material=m, name="jaw_m")]
+    return g
+
+
+def reveal(objs, f):
+    """Grow from nothing at frame f, with a little overshoot."""
+    for o in objs:
+        for fr, k in ((1, 0.0), (max(1, f - 1), 0.0), (f + 3, 1.18), (f + 6, 1.0)):
+            o.scale = (k, k, k)
+            o.keyframe_insert("scale", frame=fr)
+
+
+def schedule(names, t0, t1):
+    """Frame each named group appears at, evenly from t0 to t1 seconds into the shot (compose.py uses the same)."""
+    n = len(names)
+    return {nm: int(round((t0 + (t1 - t0) * i / max(1, n)) * FPS)) + 1 for i, nm in enumerate(names)}
 
 
 # ---------------------------------------------------------------- camera
@@ -609,8 +726,7 @@ def build():
 
     elif kind in ("xray_scan", "stress_run", "muscle_needed"):
         xray_skin(mesh, H)
-        legs = c["leg_bones"]
-        skeleton_legs(arm, legs, c.get("bone_radius", 0.13))
+        bones = skeleton(arm, c, stress_legs=(kind == "stress_run"))
         rate = 1.0
         if kind == "stress_run":
             play(arm, run, 1, N, 1.0)
@@ -621,16 +737,23 @@ def build():
             play(arm, walk, 1, N, rate)
             speed = v_walk * rate
             if kind == "xray_scan":
-                key_prop([(1, 0.12), (int(N * 0.5), 1.0)], "xr")
+                rv = SHOT["reveal"]
+                key_prop([(1, 0.05), (int(rv["bones"][0] * FPS) + 1, 1.0)], "xr")
+                when = schedule(c["bone_groups"], *rv["bones"])
+                for nm in c["bone_groups"]:
+                    reveal(bones[nm], when[nm])
+                mus = muscle_groups(arm)
+                when = schedule(c["muscle_groups"], *rv["muscles"])
+                for nm in c["muscle_groups"]:
+                    reveal(mus[nm], when[nm])
             else:
                 key_prop([(1, 1.0)], "xr")
-                ms = muscles(arm, c["muscle_bones"], c.get("muscle_radius", 0.35))
+                mus = muscle_groups(arm)
                 g0, g1, g2, g3 = (int(N * p) for p in (0.08, 0.35, 0.68, 0.88))
                 big = SHOT.get("muscle_scale", 2.6)
-                for o in ms:
-                    s0 = o.scale.copy()
+                for o in mus["THIGH"]:      # the muscle a fast runner would need, then what it had
                     for fr, k in ((1, 1.0), (g0, 1.0), (g1, big), (g2, big), (g3, 1.0)):
-                        o.scale = (s0.x * k, s0.y * k, s0.z * (1 + (k - 1) * 0.4))
+                        o.scale = (k, k * 0.95, 1 + (k - 1) * 0.35)
                         o.keyframe_insert("scale", frame=fr)
             key_prop([(1, 0.0)], "stress")
         d = speed * T

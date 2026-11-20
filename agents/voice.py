@@ -250,6 +250,37 @@ def _norm_w(w):
     return re.sub(r"[^\w]", "", (w or "").lower())
 
 
+_ONES = "zero one two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen " \
+        "seventeen eighteen nineteen".split()
+_TENS = "_ _ twenty thirty forty fifty sixty seventy eighty ninety".split()
+
+
+def _say_number(n):
+    if n < 20:
+        return [_ONES[n]]
+    if n < 100:
+        return [_TENS[n // 10]] + ([_ONES[n % 10]] if n % 10 else [])
+    if n < 1000:
+        return [_ONES[n // 100], "hundred"] + (_say_number(n % 100) if n % 100 else [])
+    if n < 1000000:
+        return _say_number(n // 1000) + ["thousand"] + (_say_number(n % 1000) if n % 1000 else [])
+    return [str(n)]
+
+
+def _heard_words(token):
+    """What a heard token stands for as spoken words. 20 Nov 2026: the listener writes "forty percent" as
+    "40%" and "eight" as "8", so good takes were counted as dropping words, re-made three times, and the
+    T. rex narration fell back to the back-up voice."""
+    t = (token or "").lower().strip(".,!?;:\"'")
+    out = []
+    m = re.fullmatch(r"(\d{1,3}(?:,\d{3})*|\d+)(%|km|kg)?", t)
+    if m:
+        out += _say_number(int(m.group(1).replace(",", "")))
+        out += {"%": ["percent"], "km": ["kilometres", "kilometers"], "kg": ["kilograms"]}.get(m.group(2), [])
+        return out
+    return [t]
+
+
 def _align(text, heard, norm=None):
     """The script's own words on the times the listener heard them (captions keep the script's spelling).
     Unmatched script words are spread evenly between their matched neighbours."""
@@ -341,6 +372,8 @@ def _chatterbox_speak(text, v, rate, path, tries=3):
         segs, _ = ear.transcribe(str(path), language=lang, beam_size=5, word_timestamps=True)
         heard = [{"start": w.start, "end": w.end, "text": w.word.strip()} for s in segs for w in (s.words or [])]
         got = {norm(h["text"]) for h in heard}
+        if lang == "en":   # digits the listener wrote ("40%", "8") count as the words we asked for
+            got |= {norm(w) for h in heard for w in _heard_words(h["text"])}
         # spelling is not a dropped word: "tyre" heard as "tire", "colour" as "color" (the 16 Nov test re-made
         # three good takes for that), so a word counts as said if anything heard is close to it
         import difflib
