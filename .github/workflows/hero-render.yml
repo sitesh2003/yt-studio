@@ -106,12 +106,9 @@ jobs:
           for d in frames/piece-*; do s=$(echo "$d" | cut -d- -f2); mkdir -p "frames/s$s"; mv "$d"/*.png "frames/s$s/"; rmdir "$d"; done
           N="${{ needs.plan.outputs.name }}"; CH=main; case "$N" in *_hi) CH=hi;; *_wiw) CH=wiw;; esac
           STUDIO_CHANNEL=$CH python tools/blender/hero/compose.py "$N" frames
-      - name: Save the video
-        run: |
-          git config user.name "yt-studio-bot"
-          git config user.email "actions@users.noreply.github.com"
-          git add -f "research/hero/${{ needs.plan.outputs.name }}/${{ needs.plan.outputs.name }}.mp4"
-          git diff --cached --quiet || git commit -q -m "hero: 3D render of ${{ needs.plan.outputs.name }}"
-          git pull --rebase -X theirs -q || true
-          python tools/json_guard.py || exit 1
-          git push -q || true
+      - name: Keep the video as a download (videos are never committed: too large for the repo)
+        uses: actions/upload-artifact@v4
+        with:
+          name: hero-${{ needs.plan.outputs.name }}
+          path: research/hero/${{ needs.plan.outputs.name }}/${{ needs.plan.outputs.name }}.mp4
+          retention-days: 14

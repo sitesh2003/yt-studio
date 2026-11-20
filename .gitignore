@@ -22,3 +22,6 @@ research/voice_lab/mine/
 
 # benchmark media: other channels' audio, local analysis only, never committed
 research/benchmark/media/
+
+# hero 3D videos are large: kept as files/artifacts, never committed (20 Nov 2026)
+research/hero/*/*.mp4
