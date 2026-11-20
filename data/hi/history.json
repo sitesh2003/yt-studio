@@ -891,7 +891,7 @@
       "engineering"
     ],
     "hook": "Objects in mirror are closer than they appear. But why does your passenger mirror say that?",
-    "status": "review",
+    "status": "rejected",
     "narration": "Objects in mirror are closer than they appear. But why does your passenger mirror say that? If your passenger mirror were completely flat, it would show true sizes but create a massive blind spot. You wouldn't see a car changing lanes right next to your passenger side. So engineers give that passenger mirror a convex curve, bending outward to capture a wider road view. turn: But why does that curved passenger mirror make cars look farther away than they are? The outward curve shrinks the reflected cars to fit more lane view onto the mirror surface. recap: Smaller reflections trick your brain into perceiving that trailing car on your passenger side as farther away. How would you design a passenger mirror to balance wide field of view with accurate distance judgment?",
     "voice_engine": "edge-tts",
     "voices": "one narrator (hi-IN-SwaraNeural)",
@@ -980,7 +980,8 @@
       "pass": false,
       "duration": 43.4
     },
-    "repairs": 0
+    "repairs": 0,
+    "rejected_why": "'Turn:' label spoken aloud; remade instead (20 Nov 2026)"
   },
   {
     "job": "20261116-2011-mysterious-gas-leaks-suggest-mars-may-st",
@@ -1116,7 +1117,7 @@
       "physics"
     ],
     "hook": "Aapka mirror kabhi bhi left ko right nahi karta, fir bhi image flip dikhti hai.",
-    "status": "review",
+    "status": "rejected",
     "narration": "Aapka mirror kabhi bhi left ko right nahi karta, fir bhi image flip dikhti hai. Sochiye aap ek paper par apna naam likh kar mirror ke saamne khade hain. Mirror light ko reflect karta hai, jis wajah se image aisi lagti hai jaise woh mirror ke piche bani ho. Turn: Toh agar mirror sirf light reflect kar raha hai, toh left-right flip ka illusion kyun hota hai? Actually, mirror sirf front-to-back axis reverse karta hai. Humein left-right flip isliye lagta hai kyunki hum reflection ko ek aise insaan par map karte hain jo humein face kar raha hai, jiske liye mental 180-degree turn chahiye. Hum imagine karte hain ki hum ghoom kar mirror ke piche gaye hain, isliye left right lagta hai. Think about it: if you hold a piece of paper with text, you have to rotate it to face the mirror, which is why the text appears reversed. Toh agli baar mirror dekhein, toh yaad rakhein ki woh flip nahi, sirf aapki depth ko reverse kar raha hai.",
     "voice_engine": "edge-tts",
     "voices": "one narrator (hi-IN-SwaraNeural)",
@@ -1220,7 +1221,8 @@
       "pass": false,
       "duration": 51.4
     },
-    "repairs": 0
+    "repairs": 0,
+    "rejected_why": "'Turn:' label spoken aloud; remade instead (20 Nov 2026)"
   },
   {
     "job": "20261116-2300-why-raw-honey-never-spoils-while-fresh-f",
@@ -2256,7 +2258,7 @@
       "engineering"
     ],
     "hook": "Train tracks par patthar kyun bichhaye jaate hain? 😱",
-    "status": "review",
+    "status": "rejected",
     "narration": "Train tracks par patthar kyun bichhaye jaate hain? 😱 Ye pathar, जिन्हें ballast kehte hain, sirf raaste par nahi pade hain। Train ka weight hazaron tons hota hai। Jab ye patri se guzarti hai, to vibration paida hoti hai। Agar ye patthar na ho, to patri niche ki mitti mein dhas jayegi। Turn: So, ye patthar sirf weight sambhalte hain, ya kuch aur bhi karte hain? Inka asli kaam hai drainage। Barish ka pani in pattharon ke beech se nikal jata hai, jisse track ke neeche ki mitti dry aur mazboot rehti hai। Aur ye patthar noise aur vibration ko bhi absorb kar lete hain, taaki track apni jagah se hile nahi। Ever thought why some high-speed bullet trains don't use these stones at all? Drop your guess below.",
     "voice_engine": "edge-tts",
     "voices": "one narrator (hi-IN-SwaraNeural)",
@@ -2370,7 +2372,8 @@
       "pass": false,
       "duration": 41.5
     },
-    "repairs": 0
+    "repairs": 0,
+    "rejected_why": "'Turn:' label spoken aloud; remade instead (20 Nov 2026)"
   },
   {
     "job": "20261117-2001-why-bananas-ripen-in-days-when-stored-ne",
@@ -2382,7 +2385,7 @@
       "food"
     ],
     "hook": "Ek apple aapke paas rakhe kuch doosre fruits ke pakne ki prakriya ko tez kar sakta hai.",
-    "status": "review",
+    "status": "rejected",
     "narration": "Ek apple aapke paas rakhe kuch doosre fruits ke pakne ki prakriya ko tez kar sakta hai. Lekin oranges par iska asar thoda alag hota hai, aur ye mainly unka hara rang hatane mein madad karta hai. Fruits hawa mein invisible ethylene gas chhodte hain. So kya ye gas har fruit par same asar daalti hai? turn: true. Bananas isse absorb karke jaldi pakte hain. Oranges ethylene ke prati kam sensitive hote hain, par unka rang isse badal sakta hai. Why does putting a banana in a paper bag with an apple make it ripen faster?",
     "voice_engine": "edge-tts",
     "voices": "one narrator (hi-IN-SwaraNeural)",
@@ -2500,7 +2503,8 @@
       "pass": false,
       "duration": 31.3
     },
-    "repairs": 0
+    "repairs": 0,
+    "rejected_why": "'Turn:' label spoken aloud; remade instead (20 Nov 2026)"
   },
   {
     "job": "20261117-2200-why-this-entire-carton-of-eggs-has-2-yol",
@@ -2513,7 +2517,7 @@
       "science"
     ],
     "hook": "Agar ek special carton mein lagbhag sabhi eggs ke 2 yolks niklein, toh kya hoga? 😱",
-    "status": "review",
+    "status": "rejected",
     "narration": "Agar ek special carton mein lagbhag sabhi eggs ke 2 yolks niklein, toh kya hoga? 😱 Yeh koi magic nahi hai, balki ek natural biological timing ka result hai. Jab ek young hen ka reproductive system abhi develop ho raha hota hai, toh woh kabhi-kabhi ek sath do yolks release kar deti hai. So agar ek poore carton mein sabhi eggs ke 2 yolks hain, toh kya woh ek hi hen se aaye hain? turn: So ek hi carton mein sabhi eggs double yolk wale kaise milte hain? Yeh grading machines ka kamaal hai! Candling process mein light se eggs ka andar ka size check hota hai. Heavy double yolk eggs ko alag sort karke ek hi carton mein pack kar diya jata hai. Kabhi socha hai, agar young hens hamesha double yolks nahi deti, toh yeh batch specially market mein kaise aata hai?",
     "voice_engine": "edge-tts",
     "voices": "one narrator (hi-IN-SwaraNeural)",
@@ -2623,7 +2627,8 @@
       "pass": false,
       "duration": 43.8
     },
-    "repairs": 0
+    "repairs": 0,
+    "rejected_why": "'Turn:' label spoken aloud; remade instead (20 Nov 2026)"
   },
   {
     "job": "20261117-2226-why-tuna-has-almost-no-parasites-while-s",
@@ -2762,7 +2767,7 @@
       "#brain"
     ],
     "hook": "Stanford scientists are studying brain signals that might help spot signs of Alzheimer's years before symptoms start.",
-    "status": "review",
+    "status": "rejected",
     "narration": "Stanford scientists are studying brain signals that might help spot signs of Alzheimer's years before symptoms start. When a 55-year-old sits down for an EEG scan, their brain waves usually look completely normal on the surface. But researchers looked closer at hidden electrical patterns deep inside the neural network. So how can a simple scan read what's happening years in advance? Turn: What is the brain actually doing differently long before memory loss begins? Here's why. Tiny disruptions in resting-state connectivity appear years early, around the time early brain changes begin. Ever thought how early detection of neural signals like this could change modern medicine?",
     "voice_engine": "edge-tts",
     "voices": "one narrator (hi-IN-SwaraNeural)",
@@ -2846,7 +2851,8 @@
       "pass": false,
       "duration": 39.4
     },
-    "repairs": 0
+    "repairs": 0,
+    "rejected_why": "'Turn:' label spoken aloud; remade instead (20 Nov 2026)"
   },
   {
     "job": "20261118-0949-why-cockroaches-can-easily-survive-massi",
@@ -2859,7 +2865,7 @@
       "#science"
     ],
     "hook": "Ek cockroach high radiation ko humse behtar jhel sakta hai. Kyun?",
-    "status": "review",
+    "status": "rejected",
     "narration": "Ek cockroach high radiation ko humse behtar jhel sakta hai. Kyun? Radiation humari cells ke DNA ko tabah karti hai. Humari cells constant divide hoti rehti hain, isliye nuksan jaldi failta hai. Turn: Toh cockroach ki cells mein aisa kya alag hai jo ye high radiation jhel leta hai? Inki cells humari cells ke muqable radiation ko behtar jhel sakti hain kyunki unka cell division pattern alag hota hai. Inki cells aksar tabhi divide hoti hain jab ye molt karte hain, jisse DNA repair ke liye zyada waqt mil jata hai. Molting ke dauran active cell division ki wajah se inpar radiation ka asar sabse zyada hota hai. Ever wondered why cockroaches can withstand radiation levels that would be lethal to humans? Drop your guess below.",
     "voice_engine": "edge-tts",
     "voices": "one narrator (hi-IN-SwaraNeural)",
@@ -2959,7 +2965,8 @@
       "pass": false,
       "duration": 42.9
     },
-    "repairs": 0
+    "repairs": 0,
+    "rejected_why": "'Turn:' label spoken aloud; remade instead (20 Nov 2026)"
   },
   {
     "job": "20261118-1019-why-fresh-rainwater-smells-wonderful-aft",
@@ -2973,7 +2980,7 @@
       "#rain"
     ],
     "hook": "कभी सोचा है कि dry spell के बाद पहली बारिश में मिट्टी से इतनी amazing खुशबू क्यों आती है?",
-    "status": "review",
+    "status": "rejected",
     "narration": "कभी सोचा है कि dry spell के बाद पहली बारिश में मिट्टी से इतनी amazing खुशबू क्यों आती है? जब लंबी गर्मी के बाद soil सूखती है, तो कुछ खास bacteria एक oil release करते हैं। साथ ही, पौधों से कुछ aromatic compounds भी पत्थरों और मिट्टी के बीच जमा हो जाते हैं। जब water की पहली बूंद उस सूखी surface पर गिरती है, तो air में tiny bubbles बनते हैं। तो क्या ये सारे chemicals सीधे हवा में उड़कर आपकी nose तक पहुँच जाते हैं? Turn: नहीं, असल में ये tiny bubbles ऊपर हवा में aerosol बनकर उड़ते हैं और geosmin chemical release करते हैं। इसी geosmin को हमारी nose तुरंत catch करती है, जिसकी बहुत कम मात्रा कभी-कभी नल के पानी में भी आ जाती है। कभी सोचा है कि human nose सिर्फ एक part per trillion की concentration में भी geosmin को क्यों सूंघ सकती है?",
     "voice_engine": "edge-tts",
     "voices": "one narrator (hi-IN-SwaraNeural)",
@@ -3098,7 +3105,8 @@
       "pass": false,
       "duration": 46.8
     },
-    "repairs": 1
+    "repairs": 1,
+    "rejected_why": "'Turn:' label spoken aloud; remade instead (20 Nov 2026)"
   },
   {
     "job": "20261118-1802-why-yogurt-stops-bad-bacteria-from-growi",
@@ -3110,7 +3118,7 @@
       "food"
     ],
     "hook": "Your fresh milk spoils in just 3 days, but yogurt can last for weeks in your fridge.",
-    "status": "review",
+    "status": "rejected",
     "narration": "Your fresh milk spoils in just 3 days, but yogurt can last for weeks in your fridge. In fresh milk, bacteria like to throw a party, multiplying until the milk is completely ruined. But yogurt starts with a different guest list: friendly bacteria that actually eat the milk's sugar, lactose. So, how do these tiny bugs keep the bad guys out? turn: true. Here's why. These friendly bacteria create lactic acid, which makes the whole yogurt super acidic. Most bad bacteria can't handle that acid and they simply can't survive in it. Ever thought why this natural pump matters so much for our climate? Marine snow effectively transports carbon into the deep ocean. Nobody got that one right yet, so here is your chance. Ever thought why some cheeses can last even longer than yogurt in your kitchen? Drop your guess below.",
     "voice_engine": "edge-tts",
     "voices": "one narrator (hi-IN-SwaraNeural)",
@@ -3220,7 +3228,8 @@
       "pass": false,
       "duration": 48.8
     },
-    "repairs": 0
+    "repairs": 0,
+    "rejected_why": "'Turn:' label spoken aloud; remade instead (20 Nov 2026)"
   },
   {
     "job": "20261118-1838-scientists-just-found-nasa-s-ozone-hole-",
@@ -3566,7 +3575,7 @@
       "science facts hindi"
     ],
     "hook": "Kuch everyday objects mein secretly *radioactive* materials hote hain, jaise ki ek purani glow-in-the-dark watch aur smoke detector.",
-    "status": "public",
+    "status": "pulled",
     "narration": "Kuch everyday objects mein secretly *radioactive* materials hote hain, jaise ki ek purani glow-in-the-dark watch aur smoke detector. Jaise aapke ghar ke smoke detector mein air ko ionize karne ke liye americium use hota hai, aur purani glow-in-the-dark watches mein radium ka istemal hota tha. Aur wo purane vintage cameras, jinke glass mein sharpness ke liye thorium mix kiya gaya tha, wo bhi usi watch ki tarah hain. So ye cheezein itni dangerous kyun nahi lagti? Turn: Toh phir ye *radiation* aapko harm kyun nahi karti? Kyunki inka amount extremely small hota hai aur casing radiation ko block kar deti hai. Kabhi socha hai ki purane glow-in-the-dark clocks mein konsa element use hota tha jo ab ban hai?",
     "voice_engine": "edge-tts",
     "voices": "one narrator (hi-IN-SwaraNeural)",
@@ -3676,7 +3685,8 @@
     "publish_at": "2026-11-19T09:30:00-05:00",
     "thumbnail_set": true,
     "recapped": true,
-    "answered": true
+    "answered": true,
+    "pulled_why": "a script label ('Turn:') was spoken aloud (owner OK 20 Nov 2026)"
   },
   {
     "job": "20261118-2241-why-black-tea-undergoes-full-oxidation-t",
@@ -3812,7 +3822,7 @@
       "biology"
     ],
     "hook": "Giant plant-eating dinosaurs were actually eating ocean seaweed 100 million years ago.",
-    "status": "review",
+    "status": "rejected",
     "narration": "Giant plant-eating dinosaurs were actually eating ocean seaweed 100 million years ago. Scientists found this out by looking inside fossilized droppings, or coprolites, left behind by massive herbivores. When researchers dissolved these ancient rock samples, they didn't just find land ferns or tree leaves. They found microscopic fragments of marine algae and coastal seaweed preserved in stone. But here's the weird part. These massive creatures lived hundreds of miles inland away from any beach. So how did coastal ocean plants end up inside landlocked giant dinosaurs? turn: Dinosaurs didn't visit the beach daily; seasonal river systems flushed huge amounts of drift-kelp far inland. Or these giant herbivores made massive seasonal migrations right down to the ocean shores. Ever thought how a giant land dinosaur digested heavy salt-water seaweed before modern coastal grasses evolved?",
     "voice_engine": "edge-tts",
     "voices": "one narrator (hi-IN-SwaraNeural)",
@@ -3922,7 +3932,8 @@
       "pass": false,
       "duration": 52.7
     },
-    "repairs": 0
+    "repairs": 0,
+    "rejected_why": "'Turn:' label spoken aloud; remade instead (20 Nov 2026)"
   },
   {
     "job": "20261119-1010-3-hidden-engineering-features-inside-com",
@@ -4040,7 +4051,7 @@
       "#bodywhys"
     ],
     "hook": "Jab aap pyaaz kat-te ho, toh aane wale tears bilkul alag hote hain jab aap sad hone par rote ho.",
-    "status": "scheduled",
+    "status": "pulled",
     "narration": "Jab aap pyaaz kat-te ho, toh aane wale tears bilkul alag hote hain jab aap sad hone par rote ho. So, jab aap onion chop karte ho, aapki eyes me ek gas release hoti hai jo reflex create kartੀ hai. Ye reflex tears almost pure water hote hain, sath me thoda sa mucus aur salts. Inka kaam simple hai. Eye ko wash karke us irritant gas ko flush out karna. But emotional tears bilkul alag story hain. Turn: Emotional tears me high level ke stress hormones hote hain. Yani body stress release karne ke liye in specific chemicals ko tears ke zariye bahar fenkti hai. Kabhi socha hai jab dono tears hi eyes se nikalte hain, toh body unka chemical makeup alag kyun rakhti hai jabki pyaaz katne par bhi hume dukh nahi hota?",
     "voice_engine": "edge-tts",
     "voices": "one narrator (hi-IN-SwaraNeural)",
@@ -4147,7 +4158,8 @@
     "audited": true,
     "video_id": "ScH7T0hCOTA",
     "publish_at": "2026-11-20T09:30:00-05:00",
-    "thumbnail_set": true
+    "thumbnail_set": true,
+    "pulled_why": "a script label ('Turn:') was spoken aloud (owner OK 20 Nov 2026)"
   },
   {
     "job": "20261119-1815-3-hidden-engineering-features-inside-com",
@@ -4159,7 +4171,7 @@
       "aviation engineering"
     ],
     "hook": "Airplane windows 3 separate layers से बने होते हैं!",
-    "status": "review",
+    "status": "rejected",
     "narration": "Airplane windows 3 separate layers से बने होते हैं! 35,000 feet ki unchai par bahar ka pressure extreme low hota hai. Isi wajah se cabin ke andar artificial pressure maintain karna padta hai. Yahan teen alag panes use hote hain. Yeh panes alag-alag kaam karte hain aur safety ko double karte hain. Aur yahan ek chhota sa bleed hole bhi hota hai. turn: Yeh hole cabin aur middle pane ke beech air pressure balance karta hai. Outer pane saara structural pressure handle karta hai, jabki middle pane backup hai. Inner pane sirf scratches se bachane ke liye hota hai. Purane clocks mein radium use hota tha, jo health risks ki wajah se ban hua. Agar yeh bleed hole na ho, toh window par kya problem aa sakti hai?",
     "voice_engine": "edge-tts",
     "voices": "one narrator (hi-IN-SwaraNeural)",
@@ -4285,7 +4297,8 @@
       "pass": false,
       "duration": 40.6
     },
-    "repairs": 2
+    "repairs": 2,
+    "rejected_why": "'Turn:' label spoken aloud; remade instead (20 Nov 2026)"
   },
   {
     "job": "20261119-1911-new-discovery-reveals-what-may-be-holdin",
@@ -4297,7 +4310,7 @@
       "physics"
     ],
     "hook": "Most materials offer resistance to electricity, but superconductors let it flow forever without losing energy.",
-    "status": "review",
+    "status": "rejected",
     "narration": "Most materials offer resistance to electricity, but superconductors let it flow forever without losing energy. In normal wires, electrons bump into atoms, losing energy as heat. Superconductors avoid this by letting electrons pair up into a team. These are called Cooper pairs, and they glide past atoms like they are not even there. turn: In many superconductors, this pairing happens because of vibrations in the material’s crystal structure, though the exact cause for high-temperature superconductors is still being debated by scientists. New research shows that if the atoms vibrate too wildly, the pairs simply break apart. It’s like trying to dance on a floor that is shaking way too hard. But how could we keep those pairs together when the floor is shaking from the heat of room temperature?",
     "voice_engine": "edge-tts",
     "voices": "one narrator (hi-IN-SwaraNeural)",
@@ -4420,7 +4433,8 @@
       "pass": false,
       "duration": 45.4
     },
-    "repairs": 0
+    "repairs": 0,
+    "rejected_why": "'Turn:' label spoken aloud; remade instead (20 Nov 2026)"
   },
   {
     "job": "20261119-1946-how-train-electricity-works-through-over",
@@ -4688,7 +4702,7 @@
       "#glacier"
     ],
     "hook": "Glacier ice looks intensely blue, and it has nothing to do with reflecting the sky.",
-    "status": "review",
+    "status": "rejected",
     "narration": "Glacier ice looks intensely blue, and it has nothing to do with reflecting the sky. कच्ची बर्फ यानी fridge cubes हमेशा white दिखती हैं। क्योंकि उसके अंदर tiny air pockets फंसे होते हैं। ये air bubbles light को हर direction में scatter कर देते हैं। इससे सारे colors मिलकर white दिखते हैं। लेकिन glacier ice सदियों के heavy weight के नीचे दबती जाती है। And here's the weird part. जैसे-जैसे बर्फ पर परतें जमती जाती हैं, वजन बढ़ता है, अंदर की हवा कम होती जाती है और बर्फ सघन हो जाती है। turn: इस सघन (dense) block के अंदर अब कोई air pockets नहीं बचते, और ice crystals आपस में जुड़कर giant crystals बन जाते हैं। जब white light इस dense ice block के अंदर जाती है, तो ये एक giant filter की तरह काम करती है। Water molecules लाल यानी red light की wavelengths को absorb कर लेते हैं। लेकिन blue light बिना absorb हुए आर-पार निकल जाती है, क्योंकि water लाल रंग को ज्यादा सोखता है। Ever thought why deep ocean water also shows that exact same rich blue?",
     "voice_engine": "edge-tts",
     "voices": "one narrator (hi-IN-SwaraNeural)",
@@ -4808,7 +4822,8 @@
       "pass": false,
       "duration": 58.1
     },
-    "repairs": 0
+    "repairs": 0,
+    "rejected_why": "'Turn:' label spoken aloud; remade instead (20 Nov 2026)"
   },
   {
     "job": "20261119-2243-scientists-finally-discover-why-necks-di",
@@ -4924,7 +4939,7 @@
       "#kitchenhacks"
     ],
     "hook": "Tu ne kitchen mein ek stainless steel spoon microwave mein daali, aur kuch nahi jala.",
-    "status": "review",
+    "status": "rejected",
     "narration": "Tu ne kitchen mein ek stainless steel spoon microwave mein daali, aur kuch nahi jala. Sabko lagta hai ki metal daalte hi sparks udne lagte hain. Par har metal ki shape alag hoti hai aur energy ko alag tarike se leti hai. Smooth aur round spoons mein aam taur par sparks nahi aate, lekin agar metal mein sharp edges ho toh khatra ho sakta hai. Turn: Lekin wahi agar spoon par sharp edges ya foil ho, toh charge ek point par concentrate ho jaata hai. Isi concentrated charge ki wajah se air ionize hoti hai aur aag ya sparks dikhte hain. Microwave ke andar metal rakhna aam taur par avoid karna chahiye kyunki kuch situations mein yeh dangerous ho sakta hai. Ever thought why metal shape matters when placed inside a microwave?",
     "voice_engine": "edge-tts",
     "voices": "one narrator (hi-IN-SwaraNeural)",
@@ -5030,7 +5045,8 @@
       "pass": false,
       "duration": 41.8
     },
-    "repairs": 0
+    "repairs": 0,
+    "rejected_why": "'Turn:' label spoken aloud; remade instead (20 Nov 2026)"
   },
   {
     "job": "20261120-0925-scientists-just-found-mit-discovered-agi",
@@ -5043,7 +5059,7 @@
       "health"
     ],
     "hook": "Jab tum sote ho, tumhara dimag actually tumhari safai kar raha hota hai.",
-    "status": "review",
+    "status": "rejected",
     "narration": "Jab tum sote ho, tumhara dimag actually tumhari safai kar raha hota hai. Din bhar kaam karne ke baad, tumhare brain cells kuch waste materials chhod dete hain. Is kachre ko saaf karne ke liye, tumhari body ek fluid ka use karti hai. Lekin MIT ki ek nayi study ne bataya ki aging ke sath ye system weak ho jata hai. Turn: Ye process sirf safai nahi, balki memory aur focus ke liye bhi zaroori hai. Jab cleaning slow hoti hai, toh toksin brain mein jama hone lagte hain. Ever thought how tumhari neend ki quality tumhari umra ke sath tumhare dimag ko kaise badal deti hai?",
     "voice_engine": "edge-tts",
     "voices": "one narrator (hi-IN-SwaraNeural)",
@@ -5159,6 +5175,7 @@
       "pass": false,
       "duration": 33.4
     },
-    "repairs": 0
+    "repairs": 0,
+    "rejected_why": "'Turn:' label spoken aloud; remade instead (20 Nov 2026)"
   }
 ]

@@ -139,6 +139,9 @@ _LABEL = None
 _ASK = None
 
 
+_LABEL2 = None
+
+
 def strip_labels(script):
     """Words that must never be SPOKEN, removed from every scene before the voice is made (20 Nov 2026):
     - a script field leaking into the narration: the published "Dinosaur Blood" Short said "Turn? True."
@@ -153,11 +156,17 @@ def strip_labels(script):
                                   r"^\s*(turn|predict)\s*[:=]\s*(true|false)\b\s*|"
                                   r"^\s*(speaker|key_idea|visual_query|narration)\s*[:=]\s*(host|explainer)?\s*[.,;:]?\s*",
                                   re.I)
+    # 20 Nov 2026: Hindi scripts said "Turn: Lekin wahi agar..." aloud - a label word with a colon at the
+    # START of a sentence, followed by ordinary words. The label goes, the sentence stays.
+    global _LABEL2
+    _LABEL2 = _LABEL2 or re.compile(r"(^|(?<=[.!?\u0964]))\s*(turn|predict|twist|hook|\u091f\u0930\u094d\u0928)\s*[:\-\u2013]\s+",
+                                    re.I)
     _ASK = _ASK or re.compile(r"\s*(drop|tell me|share|leave|comment)\s+(your|a|me your)?\s*(guess|answer|thoughts?)"
                               r"(\s+(below|in the comments|down below))?[.!]*\s*$", re.I)
     for k, sc in enumerate(script.get("scenes", [])):
         t = sc.get("narration", "")
         new = _LABEL.sub("", t)
+        new = _LABEL2.sub(lambda m: m.group(1) + " ", new)
         new = _ASK.sub("", new)
         new = re.sub(r"\s{2,}", " ", new).strip()
         if new and new[0].islower():

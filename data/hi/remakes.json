@@ -7,5 +7,141 @@
     "correct_version": "The hole does not balance pressure between the cabin and the outside; it allows the middle pane to vent, ensuring the outer pane bears the pressure load and preventing fogging/condensation.",
     "why": "The narration implies the hole is a pressure-balancing valve to prevent shattering, whereas its primary function is to manage pressure differentials between the panes to prevent condensation and ensure the outer pane handles the structural load.",
     "tries": 2
+  },
+  {
+    "topic": "Why Do Car Wing Mirrors Say 'Objects in Mirror Are Closer Than They Appear'?",
+    "pulled": "20261116-1937-why-do-car-wing-mirrors-say-objects-in-m",
+    "title": "Why Your Car Mirror Lies To You 🤯",
+    "kind": "countdown",
+    "why": "remake properly: the label 'Turn:' was spoken aloud; story style with tum, one closing question, nothing after it",
+    "tries": 0
+  },
+  {
+    "topic": "Why are mirror images flipped horizontally but not vertically?",
+    "pulled": "20261116-2045-why-are-mirror-images-flipped-horizontal",
+    "title": "Why Mirrors Actually Don't Flip Left-Right 🤯",
+    "kind": "countdown",
+    "why": "remake properly: the label 'Turn:' was spoken aloud; story style with tum, one closing question, nothing after it",
+    "tries": 0
+  },
+  {
+    "topic": "3 Hidden reasons why train tracks are packed with tons of rough crushed stones",
+    "pulled": "20261117-1931-3-hidden-reasons-why-train-tracks-are-pa",
+    "title": "Why Train Tracks Have So Many Stones 😱",
+    "kind": "countdown",
+    "why": "remake properly: the label 'Turn:' was spoken aloud; story style with tum, one closing question, nothing after it",
+    "tries": 0
+  },
+  {
+    "topic": "Why bananas ripen in days when stored near apples, while oranges stay completely unchanged",
+    "pulled": "20261117-2001-why-bananas-ripen-in-days-when-stored-ne",
+    "title": "The Hidden Gas In Your Fruit Bowl 🍎",
+    "kind": "countdown",
+    "why": "remake properly: the label 'Turn:' was spoken aloud; story style with tum, one closing question, nothing after it",
+    "tries": 0
+  },
+  {
+    "topic": "Why this entire carton of eggs has 2 yolks each",
+    "pulled": "20261117-2200-why-this-entire-carton-of-eggs-has-2-yol",
+    "title": "How Sorting Machines Create Special Double Yolk Cartons 😱",
+    "kind": "countdown",
+    "why": "remake properly: the label 'Turn:' was spoken aloud; story style with tum, one closing question, nothing after it",
+    "tries": 0
+  },
+  {
+    "topic": "How Stanford scientists discovered hidden brain signals that predict Alzheimer's years before symptoms appear",
+    "pulled": "20261118-0920-how-stanford-scientists-discovered-hidde",
+    "title": "How Scientists Are Trying to Spot Alzheimer's Early 🤯",
+    "kind": "countdown",
+    "why": "remake properly: the label 'Turn:' was spoken aloud; story style with tum, one closing question, nothing after it",
+    "tries": 0
+  },
+  {
+    "topic": "Why cockroaches can easily survive massive doses of ionizing radiation that would kill humans",
+    "pulled": "20261118-0949-why-cockroaches-can-easily-survive-massi",
+    "title": "Why Cockroaches Can Survive Higher Radiation Doses Than Humans",
+    "kind": "countdown",
+    "why": "remake properly: the label 'Turn:' was spoken aloud; story style with tum, one closing question, nothing after it",
+    "tries": 0
+  },
+  {
+    "topic": "Why fresh rainwater smells wonderful after a dry spell, unlike water straight from the tap",
+    "pulled": "20261118-1019-why-fresh-rainwater-smells-wonderful-aft",
+    "title": "Why Rain Smells So Good After A Dry Spell",
+    "kind": "countdown",
+    "why": "remake properly: the label 'Turn:' was spoken aloud; story style with tum, one closing question, nothing after it",
+    "tries": 0
+  },
+  {
+    "topic": "Why yogurt stops bad bacteria from growing while fresh milk spoils in days",
+    "pulled": "20261118-1802-why-yogurt-stops-bad-bacteria-from-growi",
+    "title": "Why Fresh Milk Spoils While Yogurt Lasts 🤯",
+    "kind": "countdown",
+    "why": "remake properly: the label 'Turn:' was spoken aloud; story style with tum, one closing question, nothing after it",
+    "tries": 0
+  },
+  {
+    "topic": "3 strange everyday objects like smoke detectors, old camera lenses, and vintage glow-in-the-dark clocks that secretly contain radioactive materials",
+    "pulled": "20261118-2207-3-strange-everyday-objects-like-smoke-de",
+    "title": "Common Household Items That Contain Radioactive Materials",
+    "kind": "countdown",
+    "why": "remake properly: the label 'Turn:' was spoken aloud; story style with tum, one closing question, nothing after it",
+    "tries": 0
+  },
+  {
+    "topic": "Scientists just discovered 100-million-year-old fossilized dinosaur droppings proving giant plant-eating dinosaurs regularly ate ocean seaweed",
+    "pulled": "20261119-0939-scientists-just-discovered-100-million-y",
+    "title": "When Dinosaurs Ate Ocean Seaweed 🤯",
+    "kind": "countdown",
+    "why": "remake properly: the label 'Turn:' was spoken aloud; story style with tum, one closing question, nothing after it",
+    "tries": 0
+  },
+  {
+    "topic": "Why emotional tears from sadness contain high stress hormones while reflex tears from chopping onions are almost pure water",
+    "pulled": "20261119-1056-why-emotional-tears-from-sadness-contain",
+    "title": "Why Onion Tears Are Not Sad Tears 😭",
+    "kind": "countdown",
+    "why": "remake properly: the label 'Turn:' was spoken aloud; story style with tum, one closing question, nothing after it",
+    "tries": 0
+  },
+  {
+    "topic": "3 Hidden Engineering Features Inside Commercial Airplane Windows That Keep the Cabin Safe at 35,000 Feet",
+    "pulled": "20261119-1815-3-hidden-engineering-features-inside-com",
+    "title": "The Hidden Engineering Inside Plane Windows 😱",
+    "kind": "countdown",
+    "why": "remake properly: the label 'Turn:' was spoken aloud; story style with tum, one closing question, nothing after it",
+    "tries": 0
+  },
+  {
+    "topic": "New discovery reveals what may be holding back room-temperature superconductors",
+    "pulled": "20261119-1911-new-discovery-reveals-what-may-be-holdin",
+    "title": "The Challenge of Room-Temperature Superconductors",
+    "kind": "countdown",
+    "why": "remake properly: the label 'Turn:' was spoken aloud; story style with tum, one closing question, nothing after it",
+    "tries": 0
+  },
+  {
+    "topic": "Why glacier ice looks intensely blue instead of white like normal ice",
+    "pulled": "20261119-2205-why-glacier-ice-looks-intensely-blue-ins",
+    "title": "Why Glacier Ice Is Intensely Blue 🤯",
+    "kind": "countdown",
+    "why": "remake properly: the label 'Turn:' was spoken aloud; story style with tum, one closing question, nothing after it",
+    "tries": 0
+  },
+  {
+    "topic": "Why microwaving a stainless steel spoon didn't set your kitchen on fire",
+    "pulled": "20261120-0914-why-microwaving-a-stainless-steel-spoon-",
+    "title": "Why Microwaving Metal Can Sometimes Cause Sparks 🤯",
+    "kind": "countdown",
+    "why": "remake properly: the label 'Turn:' was spoken aloud; story style with tum, one closing question, nothing after it",
+    "tries": 0
+  },
+  {
+    "topic": "Scientists just found MIT discovered aging weakens the brain's nighttime cleaning system",
+    "pulled": "20261120-0925-scientists-just-found-mit-discovered-agi",
+    "title": "The Secret Cleaning System Inside You 🧠",
+    "kind": "countdown",
+    "why": "remake properly: the label 'Turn:' was spoken aloud; story style with tum, one closing question, nothing after it",
+    "tries": 0
   }
 ]

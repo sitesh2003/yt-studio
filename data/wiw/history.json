@@ -2314,7 +2314,7 @@
       "stem"
     ],
     "hook": "You’ve used electric motors your whole life, but how do they actually spin?",
-    "status": "banked",
+    "status": "rejected",
     "narration": "You’ve used electric motors your whole life, but how do they actually spin? Send battery current through this flat copper wire loop placed between two magnets. Watch it turn. The magnetic field pushes the left wire up and the right wire down, twisting it halfway. Now pause and predict: why doesn't the loop just balance upright and stop? A split metal ring flips the current's direction every half-turn, reversing the forces to keep it turning. That's because a current-carrying wire makes its own magnetic field, which gets deflected by the permanent magnets. It's pure physics. You rely on this continuous twist in cordless drills, cooling fans, and electric cars. Try this: what happens to the loop's spin if you flip the battery backwards?",
     "voice_engine": "chatterbox",
     "voices": "one narrator (af_heart)",
@@ -2408,7 +2408,8 @@
       "duration": 34.6
     },
     "repairs": 0,
-    "audited": true
+    "audited": true,
+    "rejected_why": "mid-video 'pause and predict' (owner: no mid-video guess); remade (20 Nov 2026)"
   },
   {
     "job": "20261118-1451-why-do-enzymes-speed-up-biological-react",
