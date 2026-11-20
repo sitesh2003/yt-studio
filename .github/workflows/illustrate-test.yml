@@ -52,4 +52,5 @@ jobs:
           git add -f data/illustrate_usage.json 2>/dev/null || true
           git diff --cached --quiet || git commit -m "test: illustration samples $(date -u +%F)"
           git pull --rebase -X theirs -q || true
+          python tools/json_guard.py || exit 1
           git push -q || true

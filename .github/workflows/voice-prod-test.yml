@@ -80,4 +80,5 @@ jobs:
           git add -f research/voice_lab/prod_test*.mp3 research/voice_lab/prod_test*.enc research/voice_lab/prod_test.txt || true
           git diff --cached --quiet || git commit -q -m "test: Chatterbox narrator in the production setup"
           git pull --rebase -X theirs -q || true
+          python tools/json_guard.py || exit 1
           git push -q || true

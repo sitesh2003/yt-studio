@@ -59,4 +59,5 @@ jobs:
           git add -f research/voice_test || true
           git diff --cached --quiet || git commit -m "test: narrator sample $(date -u +%F)"
           git pull --rebase -X theirs -q || true
+          python tools/json_guard.py || exit 1
           git push -q || true

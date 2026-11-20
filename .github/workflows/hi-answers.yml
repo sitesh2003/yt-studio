@@ -69,4 +69,5 @@ jobs:
           git add -f data/hi/*.json 2>/dev/null || true
           git diff --cached --quiet || git commit -m "state: hi answers $(date -u +%FT%H%M)"
           git pull --rebase -X theirs -q || { git rebase --abort; git pull --no-rebase -X ours -q --no-edit; } || true
+          python tools/json_guard.py || exit 1
           git push -q || true

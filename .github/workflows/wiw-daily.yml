@@ -153,4 +153,5 @@ jobs:
           git add -f research/LIBRARY_wiw.md 2>/dev/null || true
           git diff --cached --quiet || git commit -m "state: wiw daily run $(date -u +%F)"
           git pull --rebase -X theirs -q || { git rebase --abort; git pull --no-rebase -X ours -q --no-edit; } || true
+          python tools/json_guard.py || exit 1
           git push -q || true

@@ -112,4 +112,5 @@ jobs:
           git add -f research/voice_lab || true
           git diff --cached --quiet || git commit -m "lab: narrator emotion samples $(date -u +%F)"
           git pull --rebase -X theirs -q || true
+          python tools/json_guard.py || exit 1
           git push -q || true

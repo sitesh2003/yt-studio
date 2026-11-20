@@ -9,6 +9,9 @@ on:
     - cron: "47 3 * * *"       # 9:17 AM IST
     - cron: "17 7 * * *"       # 12:47 PM IST
   workflow_dispatch: {}         # "Run workflow" button for a manual run
+  push:                         # or change kick/daily.txt (no browser click needed)
+    branches: [main]
+    paths: ["kick/daily.txt"]
 
 permissions:
   contents: write
@@ -149,4 +152,5 @@ jobs:
           git add -f data/*.json STATUS.md research/LIBRARY.md 2>/dev/null || true
           git diff --cached --quiet || git commit -m "state: daily run $(date -u +%F)"
           git pull --rebase -X theirs -q || { git rebase --abort; git pull --no-rebase -X ours -q --no-edit; } || true
+          python tools/json_guard.py || exit 1
           git push -q || true

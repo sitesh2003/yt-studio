@@ -60,4 +60,5 @@ jobs:
           git add -f research/manim_test
           git diff --cached --quiet || git commit -m "test: manim sample $(date -u +%F)"
           git pull --rebase -X theirs -q || true
+          python tools/json_guard.py || exit 1
           git push -q || true
