@@ -21,12 +21,14 @@ print(f"engine {voice.last_engine}; {len(words)} words; {words[-1]['end']:.1f}s"
 text = " ".join(s["narration"] for s in script["scenes"])
 issues, notes, ratio = listen.compare(text, listen.transcribe(job / "voice.mp3"))
 print(f"listen: {ratio:.0%} heard; issues {issues}; notes {notes[:4]}")
-if voice.last_engine != "chatterbox" or issues:   # never keep a narration in the wrong voice
-    print("NOT SAVED: the narration must be the channel's voice (Chatterbox E2) with nothing missing")
+from agents.core import config   # noqa: E402
+want = config()["voice"].get("engine")          # each channel's own fixed voice (main: Chatterbox E2, hi: Swara)
+if voice.last_engine != want or issues:   # never keep a narration in the wrong voice
+    print(f"NOT SAVED: the narration must be the channel's voice ({want}) with nothing missing")
     sys.exit(1)
 shutil.copy(job / "voice.mp3", d / "voice.mp3")
 (d / "words.json").write_text(json.dumps(words, indent=2, ensure_ascii=False), encoding="utf-8")
 (d / "scenes.json").write_text(json.dumps(voice.scene_times(script, words), indent=2), encoding="utf-8")
 (d / "voice_meta.json").write_text(json.dumps({"engine": voice.last_engine, "heard": round(ratio, 3),
                                                "issues": issues}, indent=2), encoding="utf-8")
-sys.exit(0 if voice.last_engine == "chatterbox" and not issues else 1)
+sys.exit(0)

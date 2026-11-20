@@ -1,0 +1,44 @@
+{
+  "title_options": [
+    "क्या T. rex तुम्हारी Car से तेज़ दौड़ सकता था? 🦖"
+  ],
+  "facts": [
+    "Sellers et al. 2017, PeerJ 5:e3420 (doi 10.7717/peerj.3420): a multibody computer model of T. rex with skeletal stress analysis; running gaits gave unacceptably high bone loads, limiting it to walking; top speed about 20 km/h (5.6 m/s).",
+    "Hutchinson & Garcia 2002, Nature 415:1018: fast running would need an implausibly large share of body mass as leg extensor muscle (reported as 43% per leg / 86% total at ~20 m/s).",
+    "Mass about 8 tonnes for large adults (e.g. FMNH PR 2081 'Sue', estimates ~8.4 t)."
+  ],
+  "scenes": [
+    {
+      "narration": "Movies में T. rex गाड़ी का पीछा करता है। पर असली T. rex शायद दौड़ ही नहीं सकता था।",
+      "shot": "hook"
+    },
+    {
+      "narration": "उसका वज़न करीब 8 tonne था। मतलब 6 cars, सिर्फ दो पैरों पर।",
+      "shot": "weight"
+    },
+    {
+      "narration": "Scientists ने computer में उसे bone by bone, muscle by muscle दोबारा बनाया, और फिर उसे दौड़ाया।",
+      "shot": "xray"
+    },
+    {
+      "narration": "हर running speed पर उसकी leg bones पर इतना force पड़ा, कि वो शायद टूट जातीं।",
+      "shot": "stress"
+    },
+    {
+      "narration": "इतना बड़ा जानवर तेज़ दौड़े, तो उसकी body का 40% से ज़्यादा हिस्सा leg muscles होना चाहिए। T. rex के पास उसके आस-पास भी नहीं था।",
+      "shot": "muscle"
+    },
+    {
+      "narration": "तो उसकी top speed थी बस एक तेज़ walk। करीब 20 kilometre per hour।",
+      "shot": "speed"
+    },
+    {
+      "narration": "शहर की सड़क पर 50 की speed वाली car, उसे कुछ ही seconds में पीछे छोड़ देगी।",
+      "shot": "car"
+    },
+    {
+      "narration": "कभी सोचा है, जो दौड़ ही नहीं सकता था, वो शिकार कैसे करता था?",
+      "shot": "end"
+    }
+  ]
+}

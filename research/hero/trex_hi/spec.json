@@ -1,0 +1,113 @@
+{
+  "assets_dir": "assets/3d",
+  "creature": {
+    "file": "dinos/Trex.fbx",
+    "length_m": 12.0,
+    "height_m": 5.2,
+    "walk": "TRex_Walk",
+    "run": "TRex_Run",
+    "idle": "TRex_Idle",
+    "roar": "TRex_Attack",
+    "foot_bone": "BackFoot.L",
+    "leg_bones": [
+      "BackUpLeg.L",
+      "BackLowLeg.L",
+      "BackFoot.L",
+      "BackUpLeg.R",
+      "BackLowLeg.R",
+      "BackFoot.R"
+    ],
+    "muscle_bones": [
+      "BackUpLeg.L",
+      "BackUpLeg.R"
+    ],
+    "bone_radius": 0.12,
+    "muscle_radius": 0.42,
+    "bone_groups": [
+      "FEET",
+      "SHINS",
+      "THIGHS",
+      "HIPS",
+      "SPINE",
+      "RIBS",
+      "NECK",
+      "SKULL",
+      "TAIL",
+      "ARMS"
+    ],
+    "muscle_groups": [
+      "THIGH",
+      "CALF",
+      "TAIL-TO-THIGH",
+      "NECK",
+      "JAW"
+    ]
+  },
+  "props": {
+    "car": "cars/sedan.glb"
+  },
+  "shots": [
+    {
+      "kind": "run_at_camera",
+      "seconds": 6.3,
+      "lens": 32,
+      "freeze_s": 3.77
+    },
+    {
+      "kind": "size_tower",
+      "seconds": 4.868,
+      "cars": 6,
+      "lens": 24
+    },
+    {
+      "kind": "xray_scan",
+      "seconds": 5.977,
+      "lens": 28,
+      "reveal": {
+        "bones": [
+          0.3,
+          1.78
+        ],
+        "muscles": [
+          1.88,
+          5.58
+        ]
+      }
+    },
+    {
+      "kind": "stress_run",
+      "seconds": 5.004,
+      "lens": 32
+    },
+    {
+      "kind": "muscle_needed",
+      "seconds": 9.079,
+      "muscle_scale": 2.6,
+      "lens": 28
+    },
+    {
+      "kind": "speed_track",
+      "seconds": 4.584,
+      "kmh": 20,
+      "lens": 22
+    },
+    {
+      "kind": "race_pass",
+      "seconds": 5.641,
+      "kmh": 20,
+      "car_kmh": 50,
+      "lens": 22,
+      "car_behind_m": 9
+    },
+    {
+      "kind": "closeup_roar",
+      "seconds": 4.102,
+      "lens": 32
+    }
+  ],
+  "credits": [
+    "T. rex model: Quaternius, Animated LowPoly Dinosaurs (CC0)",
+    "Car model: Kenney, Car Kit (CC0)"
+  ],
+  "end_beat_s": 0.6
+}

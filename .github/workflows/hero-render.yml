@@ -1,8 +1,9 @@
 name: Hero Short 3D render (split across machines)
 
-# 20 Nov 2026: renders a hand-made 3D hero Short fully online. Each shot of research/hero/<name>/spec.json
-# renders on its own machine at the same time (GitHub runners have no graphics card: EEVEE ~6 s a frame,
-# so 8 shots x ~120 frames finish in ~15 min side by side instead of ~2 h on one). A last job joins the
+# 20 Nov 2026: renders a hand-made 3D hero Short fully online at the SAME quality as the laptop (1080x1920,
+# motion blur; never lowered, owner). GitHub machines have no graphics card: ~50 s a frame, so a whole shot
+# on one machine hit the 2-hour limit. Each shot is cut into 15-frame pieces, one machine each (~13 min),
+# GitHub runs 20 at a time, so a 35 s Short takes about an hour. A last job joins the
 # frames, draws the graphics and captions, mixes the sound and saves research/hero/<name>/<name>.mp4.
 # Blender is the official 5.1 build (the same version the laptop renders with), so both give the same picture.
 on:
@@ -27,23 +28,31 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       name: ${{ steps.p.outputs.name }}
-      shots: ${{ steps.p.outputs.shots }}
+      pieces: ${{ steps.p.outputs.pieces }}
     steps:
       - uses: actions/checkout@v4
       - id: p
         run: |
           N="${{ github.event.inputs.name }}"; [ -z "$N" ] && N="$(head -1 kick/hero-render.txt | tr -d '\r')"
           echo "name=$N" >> "$GITHUB_OUTPUT"
-          echo "shots=$(python -c "import json;print(json.dumps(list(range(len(json.load(open('research/hero/$N/spec.json'))['shots'])))))")" >> "$GITHUB_OUTPUT"
+          python - "$N" >> "$GITHUB_OUTPUT" <<'PY'
+          import json, sys
+          sp = json.load(open(f"research/hero/{sys.argv[1]}/spec.json"))
+          out = []
+          for i, sh in enumerate(sp["shots"]):
+              n = int(round(sh["seconds"] * 30))
+              out += [{"shot": i, "a": a, "b": min(n, a + 14)} for a in range(1, n + 1, 15)]
+          print("pieces=" + json.dumps(out))
+          PY
 
   render:
     needs: plan
     runs-on: ubuntu-latest
-    timeout-minutes: 120
+    timeout-minutes: 60
     strategy:
       fail-fast: false
       matrix:
-        shot: ${{ fromJson(needs.plan.outputs.shots) }}
+        p: ${{ fromJson(needs.plan.outputs.pieces) }}
     steps:
       - uses: actions/checkout@v4
       - name: Keep Blender between runs
@@ -93,8 +102,10 @@ jobs:
           path: frames
       - name: Join, graphics, captions, sound
         run: |
-          for d in frames/shot-*; do mv "$d" "frames/s${d##*-}"; done
-          python tools/blender/hero/compose.py "${{ needs.plan.outputs.name }}" frames
+          # piece-<shot>-<first frame> folders -> frames/s<shot>/ (frame files are numbered, so pieces just merge)
+          for d in frames/piece-*; do s=$(echo "$d" | cut -d- -f2); mkdir -p "frames/s$s"; mv "$d"/*.png "frames/s$s/"; rmdir "$d"; done
+          N="${{ needs.plan.outputs.name }}"; CH=main; case "$N" in *_hi) CH=hi;; *_wiw) CH=wiw;; esac
+          STUDIO_CHANNEL=$CH python tools/blender/hero/compose.py "$N" frames
       - name: Save the video
         run: |
           git config user.name "yt-studio-bot"
