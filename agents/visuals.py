@@ -633,7 +633,8 @@ def pick_scene(i, scene, a, b, job_dir, used, note="", extra_queries=()):
                 second = out.with_name(out.stem + "_b.mp4")
                 second.unlink(missing_ok=True)
                 ru = _runner_up
-                if (config().get("visuals", {}).get("two_shots", True) and b - a >= 3.6 and score >= 7
+                # 20 Nov 2026 (benchmark of 31 hits: a new view every 2-4 s): from 3 s and a 6+ match, not 3.6 s and 7+
+                if (config().get("visuals", {}).get("two_shots", True) and b - a >= 3.0 and score >= 6
                         and ru and ru["kind"] == "video" and ru["id"] not in used and ru["id"][0] not in ("nv", "cv", "sv")
                         and ru.get("url")):
                     try:
@@ -716,6 +717,15 @@ def gather(script, times, job_dir):
         picks.append(pick)
         credits.append(credit)
     last_scores, last_picks, last_credits, last_used = scores, picks, credits, used
+    # 20 Nov 2026: every picture must show what is being said. A weak match (under 6 of 10) gets one more
+    # try with new search words before the video is assembled, instead of keeping a near miss
+    # ("Fingers prune" showed an old 1914 photo under "rigid shell" and a paper fan under "collapses").
+    weak = {i: "the first picture did not clearly show what the line says; find footage of exactly that thing"
+            for i, s in enumerate(scores) if s < 6 and (picks[i] or {}).get("kind") not in ("draw", "illustration")}
+    if weak and config().get("visuals", {}).get("repick_weak", True):
+        log(f"visuals: {len(weak)} weak scene(s) {sorted(k + 1 for k in weak)}: searching again")
+        repick(script, times, job_dir, weak)
+        scores, picks, credits = last_scores, last_picks, last_credits
     clips = [job_dir / f"raw_{i:02d}.mp4" for i in range(len(scores))]
     log(f"visuals: {len(clips)} clips, {sum(s >= 6 for s in scores)} strong matches, scores {[round(s) for s in scores]}")
     return clips, sorted({c for c in credits if c})
