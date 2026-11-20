@@ -21,8 +21,11 @@ PROVIDERS = [
      ["llama-3.3-70b-versatile", "openai/gpt-oss-120b", "qwen/qwen3-32b"],
      ["meta-llama/llama-4-scout-17b-16e-instruct", "meta-llama/llama-4-maverick-17b-128e-instruct"]),
     ("openrouter", "OPENROUTER_API_KEY", "https://openrouter.ai/api/v1",
-     ["deepseek", "qwen3", "llama-3.3-70b", "gpt-oss", "gemma"],      # matched against live ":free" ids
-     ["qwen2.5-vl", "qwen3-vl", "llama-4", "gemma-3"]),
+     # matched against the live ":free" list, best first; the free list changes often (20 Nov 2026 it had
+     # NVIDIA Nemotron, Gemma 4, ERNIE and others, and no DeepSeek), so any other free model is tried last
+     ["deepseek", "nemotron-3-ultra", "qwen3", "llama-3.3-70b", "gpt-oss", "nemotron-3.5-super", "gemma-4",
+      "ernie", "gemma"],
+     ["nemotron-3.5-super-vl", "qwen3-vl", "qwen2.5-vl", "omni", "llama-4", "gemma-4", "gemma-3"]),
     ("mistral", "MISTRAL_API_KEY", "https://api.mistral.ai/v1",
      ["mistral-large-latest", "mistral-medium-latest", "mistral-small-latest"],
      ["pixtral-large-latest", "mistral-medium-latest"]),
@@ -57,7 +60,9 @@ def _pick(name, live, wanted):
         out = []
         for frag in wanted:
             out += [i for i in live if frag in i.lower() and i not in out]
-        return out[:4]
+        small = ("1.7b", "nano", "-3b", "-1b", "lightning")       # too small to trust with facts
+        out += [i for i in live if i not in out and not any(s in i.lower() for s in small)]
+        return out[:6]
     return [m for m in wanted if (not live or m in live)][:3]
 
 
