@@ -1,0 +1,6 @@
+Secrets present: GEMINI_API_KEY, GROQ_API_KEY, OPENROUTER_API_KEY, CLOUDFLARE_ACCOUNT_ID, CLOUDFLARE_API_TOKEN, KAGGLE_USERNAME, KAGGLE_KEY
+groq: OK {'ok': True, 'capital_of_france': 'Paris'}; 11 models offered
+openrouter: FAIL (no answer); 12 models offered (free ones only)
+mistral: no key (skipped)
+cloudflare: OK Alright
+kaggle: FAIL ModuleNotFoundError: No module named 'six'
