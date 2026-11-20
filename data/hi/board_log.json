@@ -1,65 +1,5 @@
 [
  {
-  "when": "2026-11-16 08:27",
-  "topic": "The hidden engineering of why airport runways are grooved",
-  "drawn": [
-   2,
-   3,
-   4,
-   5
-  ],
-  "not_drawn": {},
-  "error": ""
- },
- {
-  "when": "2026-11-16 09:04",
-  "topic": "How physicists use laser light to unlock a crystal's hidden electrical powers",
-  "drawn": [
-   2,
-   3,
-   4,
-   5
-  ],
-  "not_drawn": {},
-  "error": ""
- },
- {
-  "when": "2026-11-16 09:34",
-  "topic": "3 strange everyday objects that secretly contain radioactive materials",
-  "drawn": [
-   2,
-   3,
-   4,
-   5
-  ],
-  "not_drawn": {},
-  "error": ""
- },
- {
-  "when": "2026-11-16 10:13",
-  "topic": "Why some foods taste significantly better the next day after sitting in the fridge",
-  "drawn": [
-   2,
-   3,
-   4,
-   5
-  ],
-  "not_drawn": {},
-  "error": ""
- },
- {
-  "when": "2026-11-16 19:48",
-  "topic": "Why Do Car Wing Mirrors Say 'Objects in Mirror Are Closer Than They Appear'?",
-  "drawn": [
-   2,
-   3,
-   4,
-   5
-  ],
-  "not_drawn": {},
-  "error": ""
- },
- {
   "when": "2026-11-16 20:21",
   "topic": "Mysterious gas leaks suggest Mars may still be volcanically alive",
   "drawn": [
@@ -482,6 +422,67 @@
  {
   "when": "2026-11-20 09:26",
   "topic": "Scientists just found MIT discovered aging weakens the brain's nighttime cleaning system",
+  "drawn": [
+   2,
+   3,
+   4,
+   5
+  ],
+  "not_drawn": {},
+  "error": ""
+ },
+ {
+  "when": "2026-11-20 17:51",
+  "topic": "Scientists just found MIT discovered aging weakens the brain's nighttime cleaning system",
+  "drawn": [
+   2,
+   3,
+   4,
+   5
+  ],
+  "not_drawn": {},
+  "error": ""
+ },
+ {
+  "when": "2026-11-20 18:06",
+  "topic": "Why glacier ice looks intensely blue instead of white like normal ice",
+  "drawn": [
+   2,
+   3,
+   4,
+   5
+  ],
+  "not_drawn": {},
+  "error": ""
+ },
+ {
+  "when": "2026-11-20 18:28",
+  "topic": "New discovery reveals what may be holding back room-temperature superconductors",
+  "drawn": [
+   2,
+   3,
+   4,
+   5
+  ],
+  "not_drawn": {},
+  "error": ""
+ },
+ {
+  "when": "2026-11-20 18:42",
+  "topic": "3 Hidden Engineering Features Inside Commercial Airplane Windows That Keep the Cabin Safe ",
+  "drawn": [
+   2,
+   3,
+   4
+  ],
+  "not_drawn": {
+   "5": "The image shows a balloon and an air vent, which are unrelated to the concept of pressure management between layers in a scientific context."
+  },
+  "error": ""
+ },
+ {
+  "when": "2026-11-20 19:09",
+  "topic": "Why emotional tears from sadness contain high stress hormones while reflex tears from chop",
   "drawn": [
    2,
    3,

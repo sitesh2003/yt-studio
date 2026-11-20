@@ -170,5 +170,20 @@
         "claim": "Reflex tears are mostly water, electrolytes, and proteins designed to flush irritants."
       }
     ]
+  },
+  {
+    "job": "20261120-1803-why-glacier-ice-looks-intensely-blue-ins",
+    "date": "2026-11-20",
+    "title": "Why Glacier Ice Is Intensely Blue 🤯",
+    "topic": "Why glacier ice looks intensely blue instead of white like normal ice",
+    "series": "Everyday Whys",
+    "weekly": false,
+    "claims": [
+      "Glacier ice appears blue because the intense pressure of overlying snow layers expels air bubbles.",
+      "Dense ice absorbs red and yellow light wavelengths.",
+      "The 'white' appearance of standard ice is due to internal air bubbles scattering all visible light.",
+      "The thickness of the ice determines the intensity of the blue color."
+    ],
+    "sources": []
   }
 ]

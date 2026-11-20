@@ -3,6 +3,14 @@
 Every video, the claims it makes, and the open-access research behind them. Built automatically by
 agents/library.py; a source is listed only if its abstract was checked to support the claim.
 
+## Why Glacier Ice Is Intensely Blue 🤯
+*2026-11-20 · Everyday Whys*
+
+- Glacier ice appears blue because the intense pressure of overlying snow layers expels air bubbles.
+- Dense ice absorbs red and yellow light wavelengths.
+- The 'white' appearance of standard ice is due to internal air bubbles scattering all visible light.
+- The thickness of the ice determines the intensity of the blue color.
+
 ## Why Onion Tears Are Not Sad Tears 😭
 *2026-11-19 · Body Whys*
 

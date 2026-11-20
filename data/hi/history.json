@@ -5229,5 +5229,639 @@
     "publish_at": "2026-11-21T09:30:00-05:00",
     "thumbnail_set": true,
     "replaces": "EKCja6wKbek"
+  },
+  {
+    "job": "20261120-1747-scientists-just-found-mit-discovered-agi",
+    "topic": "Scientists just found MIT discovered aging weakens the brain's nighttime cleaning system",
+    "title": "What Your Brain Does While You Sleep 🧠",
+    "description": "Scientists are studying a system in the brain that helps transport metabolic waste during sleep. Here is how aging impacts this process. #shorts #science #brain\n\nSources (open-access research):\n- Harrison et al. (2020), Brain. doi:10.1093/brain/awaa179\n- Kress et al. (2014), Annals of Neurology. doi:10.1002/ana.24271\n- Bojarskaite et al. (2023), Nature Communications. doi:10.1038/s41467-023-36643-5\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nPhoto by Pexels on Pixabay\nPhoto by marvinsikanyika on Pixabay\nPhoto: unknown, CC0 1.0, via Openverse (rawpixel)\nVideo by NeuroPixels on Pixabay\nVideo by ghasoub on Pixabay\n\nयह वीडियो कैसे बना: स्क्रिप्ट को AI tools की मदद से open research के आधार पर लिखा और fact-check किया गया है, आवाज़ AI voice की है, और editing open-source software से हुई है। कोई गलती दिखे तो comment में बताइए — जाँच कर सुधार करेंगे।",
+    "tags": [
+      "science",
+      "brain",
+      "sleep"
+    ],
+    "hook": "Most adults sleep for hours, but your brain uses that time to manage metabolic waste.",
+    "status": "review",
+    "narration": "Most adults sleep for hours, but your brain uses that time to manage metabolic waste. When you sleep, the space between your brain cells increases, allowing for better circulation. Cerebrospinal fluid then moves through these gaps, assisting in the transport of metabolic byproducts. But here is the twist: as we get older, the efficiency of these pathways tends to change. This shift may lead to a slower clearance rate for certain metabolic waste products in brain tissue. Ever thought why consistent, high-quality sleep is considered vital for long-term brain health?",
+    "voice_engine": "edge-tts",
+    "voices": "one narrator (hi-IN-SwaraNeural)",
+    "diagrams": 1,
+    "series": "Body Whys",
+    "countdown": false,
+    "length_arm": "standard",
+    "question": "Ever thought why consistent, high-quality sleep is considered vital for long-term brain health?",
+    "answer_comment": "The answer: While the exact relationship is still being researched, scientists believe that deep sleep allows the glymphatic system to function at its peak, potentially aiding in the clearance of metabolic waste. Consistent sleep helps maintain the cycles necessary for this process, which is why researchers link quality sleep to overall brain health. Ever thought why your brain needs different phases of sleep?\n\nSources (open-access research):\n- Harrison et al. (2020), Brain. doi:10.1093/brain/awaa179\n- Kress et al. (2014), Annals of Neurology. doi:10.1002/ana.24271\n- Bojarskaite et al. (2023), Nature Communications. doi:10.1038/s41467-023-36643-5",
+    "sources": [
+      {
+        "claim": "Research confirms the glymphatic system's role in assisting waste clearance.",
+        "cite": "Harrison et al. (2020), Brain. doi:10.1093/brain/awaa179",
+        "doi": "10.1093/brain/awaa179",
+        "title": "Impaired glymphatic function and clearance of tau in an Alzheimer’s disease model",
+        "why": "As such, we show that this system presents as a novel druggable target for the treatment of Alzheimer's disease, and possibly other neurodegenerative diseases alike... we establish the central role of AQP4 in the glymphatic clearance of tau from the brain"
+      },
+      {
+        "claim": "Aging is linked to a decrease in the efficiency of the glymphatic system.",
+        "cite": "Kress et al. (2014), Annals of Neurology. doi:10.1002/ana.24271",
+        "doi": "10.1002/ana.24271",
+        "title": "Impairment of paravascular clearance pathways in the aging brain",
+        "why": "Advancing age was associated with a dramatic decline in the efficiency of exchange between the subarachnoid CSF and the brain parenchyma."
+      },
+      {
+        "claim": "Cerebrospinal fluid flow is modulated by sleep cycles.",
+        "cite": "Bojarskaite et al. (2023), Nature Communications. doi:10.1038/s41467-023-36643-5",
+        "doi": "10.1038/s41467-023-36643-5",
+        "title": "Sleep cycle-dependent vascular dynamics in male mice and the predicted effects on perivascular cerebrospinal fluid flow and solute transport",
+        "why": "Using two-photon imaging of naturally sleeping male mice we demonstrate sleep cycle-dependent vascular dynamics of pial arteries and penetrating arterioles... which are mirrored by changes in the size of the perivascular spaces... to enhance fluid flow and solute transport in perivascular spaces"
+      }
+    ],
+    "fact_check": [
+      "Research confirms the glymphatic system's role in assisting waste clearance.",
+      "Aging is linked to a decrease in the efficiency of the glymphatic system.",
+      "Cerebrospinal fluid flow is modulated by sleep cycles.",
+      "The brain does not have a traditional lymphatic system, hence the term glymphatic."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        5.11
+      ],
+      [
+        5.11,
+        10.19
+      ],
+      [
+        10.19,
+        16.19
+      ],
+      [
+        16.19,
+        21.66
+      ],
+      [
+        21.66,
+        27.3
+      ],
+      [
+        27.3,
+        33.07
+      ]
+    ],
+    "duration": 33.07,
+    "scene_lines": [
+      "Most adults sleep for hours, but your brain uses that time to manage metabolic waste.",
+      "When you sleep, the space between your brain cells increases, allowing for better circulation.",
+      "Cerebrospinal fluid then moves through these gaps, assisting in the transport of metabolic byproducts.",
+      "But here is the twist: as we get older, the efficiency of these pathways tends to change.",
+      "This shift may lead to a slower clearance rate for certain metabolic waste products in brain tissue.",
+      "Ever thought why consistent, high-quality sleep is considered vital for long-term brain health?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,050 --> 00:00:02,042\nMost adults sleep for hours, but your\n\n2\n00:00:02,042 --> 00:00:05,025\nbrain uses that time to manage metabolic waste.\n\n3\n00:00:05,110 --> 00:00:06,910\nWhen you sleep, the space between your\n\n4\n00:00:06,910 --> 00:00:10,190\nbrain cells increases, allowing for better circulation.\n\n5\n00:00:10,190 --> 00:00:13,156\nCerebrospinal fluid then moves through these gaps,\n\n6\n00:00:13,156 --> 00:00:16,023\nassisting in the transport of metabolic byproducts.\n\n7\n00:00:16,190 --> 00:00:17,840\nBut here is the twist: as we\n\n8\n00:00:17,840 --> 00:00:21,574\nget older, the efficiency of these pathways tends to change.\n\n9\n00:00:21,660 --> 00:00:23,249\nThis shift may lead to a slower\n\n10\n00:00:23,249 --> 00:00:27,185\nclearance rate for certain metabolic waste products in brain tissue.\n\n11\n00:00:27,300 --> 00:00:30,099\nEver thought why consistent, high-quality sleep is\n\n12\n00:00:30,099 --> 00:00:32,466\nconsidered vital for long-term brain health?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [
+        "scene 3 (10.2-16.2 s): only 0% of its words can be heard - the voice breaks up or drops out",
+        "scene 4 (16.2-21.7 s): only 0% of its words can be heard - the voice breaks up or drops out",
+        "scene 5 (21.7-27.3 s): only 0% of its words can be heard - the voice breaks up or drops out",
+        "scene 6 (27.3-33.1 s): only 0% of its words can be heard - the voice breaks up or drops out"
+      ],
+      "footage": [],
+      "review": [],
+      "heard": [
+        "\"adults\" heard as \"अडल्\"",
+        "\"hours\" heard as \"आज\"",
+        "\"your\" heard as \"यो\"",
+        "\"uses that\" heard as \"यूज जाड\"",
+        "\"manage\" heard as \"मैंज\"",
+        "\"you\" heard as \"यूज\"",
+        "\"space between your\" heard as \"स्पेस बटुन यो\"",
+        "\"cells\" heard as \"सेल्स\""
+      ],
+      "scene_heard": [
+        "scene 1: 60%",
+        "scene 2: 43%",
+        "scene 3: 0%",
+        "scene 4: 0%",
+        "scene 5: 0%",
+        "scene 6: 0%"
+      ],
+      "pass": false,
+      "duration": 32.4
+    },
+    "repairs": 0
+  },
+  {
+    "job": "20261120-1803-why-glacier-ice-looks-intensely-blue-ins",
+    "topic": "Why glacier ice looks intensely blue instead of white like normal ice",
+    "title": "Why Glacier Ice Is Intensely Blue 🤯",
+    "description": "Ever wondered why a thick piece of glacier ice looks blue while a small ice cube looks white? It's all about how light is absorbed and scattered through dense matter. #shorts #science #glacier\n\nIllustrations: drawn for this video with FLUX.2 [klein] 4B (AI, Apache 2.0) and checked for accuracy\nPhoto: James St. John, BY 2.0, via Openverse (flickr)\nPhoto: Jynto, BY 2.0, via Openverse (flickr)\nPhoto: National Photo Company Collection, Public domain, via Wikimedia Commons\nPhoto: Personal Creations, CC BY 2.0, via Wikimedia Commons\nPhoto: jenny downing, BY 2.0, via Openverse (flickr)\nVideo by anncapictures on Pixabay\nVideo by Vimeo-Free-Videos on Pixabay\n\nयह वीडियो कैसे बना: स्क्रिप्ट को AI tools की मदद से open research के आधार पर लिखा और fact-check किया गया है, आवाज़ AI voice की है, और editing open-source software से हुई है। कोई गलती दिखे तो comment में बताइए — जाँच कर सुधार करेंगे।",
+    "tags": [
+      "science",
+      "glacier"
+    ],
+    "hook": "Usual ice cubes in your freezer are white, but a massive block of glacier ice can appear deep blue.",
+    "status": "scheduled",
+    "narration": "Usual ice cubes in your freezer are white, but a massive block of glacier ice can appear deep blue. Jab tum chota ice cube banate ho, usme hawa ke bubbles trap ho jaate hain. Ye bubbles light ko scatter karte hain, isliye wo white dikhta hai. Lekin glacier ke saath aisa nahi hai. Saalon tak padne wali barf ki pressure se air bubbles nikal jaate hain, making the ice very clear. Iska matlab ye ice ki density badh jaati hai, lekin blue rang ke liye mukhya kaaran ice ka structure aur uski motai hai. But wait, light ka blue dikhna sirf ek illusion nahi hai. Jaise-jaise light ice mein deep travel karti hai, ice ke molecules red aur yellow colors ko absorb kar lete hain. 3... 2... 1... guess karo, kya ye blue light bas ice ke aar-paar ja rahi hai? Actually, it's a bit more complex than that. Ye light ice ke andar scatter hokar wapis tumhari aankhon tak aati hai, jisme se red wavelengths pehle hi absorb ho chuki hoti hain. Isliye sirf blue light bachti hai. Ever thought why it only happens in thick blocks? Kyunki jitni zyada ice hogi, utna zyada red light absorb hoga aur blue rang utna gehra dikhega.",
+    "voice_engine": "edge-tts",
+    "voices": "one narrator (hi-IN-SwaraNeural)",
+    "diagrams": 1,
+    "series": "Everyday Whys",
+    "countdown": false,
+    "length_arm": "long",
+    "question": "Ever wondered why a thick piece of glacier ice looks blue while a small ice cube looks white?",
+    "answer_comment": "The blue color occurs because, in thick ice, the water molecules absorb red and yellow wavelengths of light more effectively than blue ones. The remaining blue light is scattered back to our eyes.",
+    "sources": [],
+    "fact_check": [
+      "Glacier ice appears blue because the intense pressure of overlying snow layers expels air bubbles.",
+      "Dense ice absorbs red and yellow light wavelengths.",
+      "The 'white' appearance of standard ice is due to internal air bubbles scattering all visible light.",
+      "The thickness of the ice determines the intensity of the blue color."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        5.88
+      ],
+      [
+        5.88,
+        14.08
+      ],
+      [
+        14.08,
+        22.01
+      ],
+      [
+        22.01,
+        29.22
+      ],
+      [
+        29.22,
+        38.97
+      ],
+      [
+        38.97,
+        46.99
+      ],
+      [
+        46.99,
+        56.71
+      ],
+      [
+        56.71,
+        66.39
+      ]
+    ],
+    "duration": 66.39,
+    "scene_lines": [
+      "Usual ice cubes in your freezer are white, but a massive block of glacier ice can appear deep blue.",
+      "Jab tum chota ice cube banate ho, usme hawa ke bubbles trap ho jaate hain. Ye bubbles light ko scatter karte hain, isliye wo white dikhta hai.",
+      "Lekin glacier ke saath aisa nahi hai. Saalon tak padne wali barf ki pressure se air bubbles nikal jaate hain, making the ice very clear.",
+      "Iska matlab ye ice ki density badh jaati hai, lekin blue rang ke liye mukhya kaaran ice ka structure aur uski motai hai.",
+      "But wait, light ka blue dikhna sirf ek illusion nahi hai. Jaise-jaise light ice mein deep travel karti hai, ice ke molecules red aur yellow colors ko absorb kar lete hain.",
+      "3... 2... 1... guess karo, kya ye blue light bas ice ke aar-paar ja rahi hai? Actually, it's a bit more complex than that.",
+      "Ye light ice ke andar scatter hokar wapis tumhari aankhon tak aati hai, jisme se red wavelengths pehle hi absorb ho chuki hoti hain. Isliye sirf blue light bachti hai.",
+      "Ever thought why it only happens in thick blocks? Kyunki jitni zyada ice hogi, utna zyada red light absorb hoga aur blue rang utna gehra dikhega."
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,050 --> 00:00:02,084\nUsual ice cubes in your freezer are\n\n2\n00:00:02,084 --> 00:00:04,117\nwhite, but a massive block of glacier\n\n3\n00:00:04,117 --> 00:00:05,755\nice can appear deep blue.\n\n4\n00:00:05,880 --> 00:00:08,263\nJab tum chota ice cube banate ho,\n\n5\n00:00:08,263 --> 00:00:10,380\nusme hawa ke bubbles trap ho jaate hain.\n\n6\n00:00:10,380 --> 00:00:12,573\nYe bubbles light ko scatter karte hain,\n\n7\n00:00:12,573 --> 00:00:14,080\nisliye wo white dikhta hai.\n\n8\n00:00:14,080 --> 00:00:16,310\nLekin glacier ke saath aisa nahi hai.\n\n9\n00:00:16,310 --> 00:00:18,460\nSaalon tak padne wali barf ki pressure\n\n10\n00:00:18,460 --> 00:00:20,627\nse air bubbles nikal jaate hain, making\n\n11\n00:00:20,627 --> 00:00:21,979\nthe ice very clear.\n\n12\n00:00:22,010 --> 00:00:24,213\nIska matlab ye ice ki density badh\n\n13\n00:00:24,213 --> 00:00:25,940\njaati hai, lekin blue rang ke liye\n\n14\n00:00:25,940 --> 00:00:29,050\nmukhya kaaran ice ka structure aur uski motai hai.\n\n15\n00:00:29,220 --> 00:00:31,391\nBut wait, light ka blue dikhna sirf\n\n16\n00:00:31,391 --> 00:00:32,710\nek illusion nahi hai.\n\n17\n00:00:32,710 --> 00:00:35,062\nJaise-jaise light ice mein deep travel karti\n\n18\n00:00:35,062 --> 00:00:37,018\nhai, ice ke molecules red aur yellow\n\n19\n00:00:37,018 --> 00:00:38,878\ncolors ko absorb kar lete hain.\n\n20\n00:00:38,970 --> 00:00:39,383\n3...\n\n21\n00:00:39,383 --> 00:00:39,960\n2...\n\n22\n00:00:39,960 --> 00:00:40,369\n1...\n\n23\n00:00:40,369 --> 00:00:42,198\nguess karo, kya ye blue light bas\n\n24\n00:00:42,198 --> 00:00:44,030\nice ke aar-paar ja rahi hai?\n\n25\n00:00:44,120 --> 00:00:46,990\nActually, it's a bit more complex than that.\n\n26\n00:00:46,990 --> 00:00:48,992\nYe light ice ke andar scatter hokar\n\n27\n00:00:48,992 --> 00:00:51,246\nwapis tumhari aankhon tak aati hai, jisme\n\n28\n00:00:51,246 --> 00:00:54,500\nse red wavelengths pehle hi absorb ho chuki hoti hain.\n\n29\n00:00:54,500 --> 00:00:56,604\nIsliye sirf blue light bachti hai.\n\n30\n00:00:56,710 --> 00:00:59,648\nEver thought why it only happens in thick blocks?\n\n31\n00:00:59,700 --> 00:01:02,428\nKyunki jitni zyada ice hogi, utna zyada\n\n32\n00:01:02,428 --> 00:01:05,786\nred light absorb hoga aur blue rang utna gehra dikhega.\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [],
+      "footage": [],
+      "review": [],
+      "heard": [
+        "\"usual ice cubes\" heard as \"यूश्वल आईस कुबज\"",
+        "\"your\" heard as \"यो\"",
+        "\"are\" heard as \"आ\"",
+        "\"a massive\" heard as \"अम आस्व\"",
+        "\"glacier ice\" heard as \"गलेस्यर आईस\"",
+        "\"appear\" heard as \"अप्यर\"",
+        "\"blue\" heard as \"ब्लूँ\"",
+        "\"ice\" heard as \"आईस\""
+      ],
+      "scene_heard": [
+        "scene 1: 44%",
+        "scene 2: 54%",
+        "scene 3: 42%",
+        "scene 4: 67%",
+        "scene 5: 67%",
+        "scene 6: 45%",
+        "scene 7: 58%",
+        "scene 8: 73%"
+      ],
+      "pass": true,
+      "duration": 65.8
+    },
+    "repairs": 0,
+    "audited": true,
+    "video_id": "eIoWGRMy-0E",
+    "publish_at": "2026-11-21T02:30:00-05:00",
+    "thumbnail_set": true
+  },
+  {
+    "job": "20261120-1826-new-discovery-reveals-what-may-be-holdin",
+    "topic": "New discovery reveals what may be holding back room-temperature superconductors",
+    "title": "Why Charging Cables Get Warm",
+    "description": "We lose energy as heat in our daily devices. What if we could stop the electrons from bumping into everything? Let's look at the science of superconductors. #shorts #science #physics\n\nSources (open-access research):\n- Tamangdorji (2022), Advance Physics Letter. doi:10.65521/apl.v11i2.2189\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nIllustrations: drawn for this video with FLUX.2 [klein] 4B (AI, Apache 2.0) and checked for accuracy\nPhoto by Mylene2401 on Pixabay\nPhoto: brendan-c, BY 2.0, via Openverse (flickr)\nVideo by Coverr-Free-Footage on Pixabay\nVideo by Jari-Lobo on Pixabay\nVideo by SamuelFJohanns on Pixabay\n\nयह वीडियो कैसे बना: स्क्रिप्ट को AI tools की मदद से open research के आधार पर लिखा और fact-check किया गया है, आवाज़ AI voice की है, और editing open-source software से हुई है। कोई गलती दिखे तो comment में बताइए — जाँच कर सुधार करेंगे।",
+    "tags": [
+      "superconductors",
+      "physics"
+    ],
+    "hook": "Energy loss is a major challenge in modern technology.",
+    "status": "review",
+    "narration": "Energy loss is a major challenge in modern technology. When you charge your phone, the wire gets warm. This heat happens because electrons bump into atoms inside the metal. It’s like running through a crowded Delhi bazaar, constantly bumping into people. But scientists found materials that let electrons pass with zero resistance. But these superconductors typically work when cooled to extreme, freezing temperatures. Scientists are working to understand how materials can achieve superconductivity at higher temperatures, which could revolutionize our power grids by eliminating resistance. Achieving this would mean electricity could travel through the grid without losing energy as heat. Ever thought how room-temperature superconductors would change the way we use electricity every day?",
+    "voice_engine": "edge-tts",
+    "voices": "one narrator (hi-IN-SwaraNeural)",
+    "diagrams": 1,
+    "series": "Everyday Whys",
+    "countdown": false,
+    "length_arm": "long",
+    "question": "Ever thought how room-temperature superconductors would change the way we use electricity every day?",
+    "answer_comment": "The answer: Room-temperature superconductors would allow electricity to travel without losing energy as heat in the transmission lines. While this would solve massive inefficiencies in the power grid, keep in mind that most of the energy used by your phone is currently lost inside the phone's internal charging circuitry, not just the cord.\n\nSources (open-access research):\n- Tamangdorji (2022), Advance Physics Letter. doi:10.65521/apl.v11i2.2189",
+    "sources": [
+      {
+        "claim": "Superconductors exhibit zero electrical resistance below a critical temperature.",
+        "cite": "Tamangdorji (2022), Advance Physics Letter. doi:10.65521/apl.v11i2.2189",
+        "doi": "10.65521/apl.v11i2.2189",
+        "title": "Superconductivity: Materials, Mechanisms, and Technological Applications",
+        "why": "Superconductivity is a quantum phenomenon characterized by zero electrical resistance and the expulsion of magnetic fields (Meissner effect) below a critical temperature."
+      }
+    ],
+    "fact_check": [
+      "Electrical resistance in copper wires causes heat loss due to electron-atom collisions.",
+      "Superconductors exhibit zero electrical resistance below a critical temperature.",
+      "Room-temperature superconductivity remains a major goal in condensed matter physics.",
+      "Atomic vibrations are a limiting factor in conventional superconductivity."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        3.5
+      ],
+      [
+        3.5,
+        6.23
+      ],
+      [
+        6.23,
+        10.51
+      ],
+      [
+        10.51,
+        14.92
+      ],
+      [
+        14.92,
+        19.5
+      ],
+      [
+        19.5,
+        24.43
+      ],
+      [
+        24.43,
+        33.84
+      ],
+      [
+        33.84,
+        39.03
+      ],
+      [
+        39.03,
+        44.9
+      ]
+    ],
+    "duration": 44.9,
+    "scene_lines": [
+      "Energy loss is a major challenge in modern technology.",
+      "When you charge your phone, the wire gets warm.",
+      "This heat happens because electrons bump into atoms inside the metal.",
+      "It’s like running through a crowded Delhi bazaar, constantly bumping into people.",
+      "But scientists found materials that let electrons pass with zero resistance.",
+      "But these superconductors typically work when cooled to extreme, freezing temperatures.",
+      "Scientists are working to understand how materials can achieve superconductivity at higher temperatures, which could revolutionize our power grids by eliminating resistance.",
+      "Achieving this would mean electricity could travel through the grid without losing energy as heat.",
+      "Ever thought how room-temperature superconductors would change the way we use electricity every day?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,050 --> 00:00:03,446\nEnergy loss is a major challenge in modern technology.\n\n2\n00:00:03,500 --> 00:00:06,230\nWhen you charge your phone, the wire gets warm.\n\n3\n00:00:06,230 --> 00:00:08,868\nThis heat happens because electrons bump into\n\n4\n00:00:08,868 --> 00:00:10,510\natoms inside the metal.\n\n5\n00:00:10,510 --> 00:00:12,290\nIt’s like running through a crowded Delhi\n\n6\n00:00:12,290 --> 00:00:14,786\nbazaar, constantly bumping into people.\n\n7\n00:00:14,920 --> 00:00:17,526\nBut scientists found materials that let electrons\n\n8\n00:00:17,526 --> 00:00:19,386\npass with zero resistance.\n\n9\n00:00:19,500 --> 00:00:22,233\nBut these superconductors typically work when cooled\n\n10\n00:00:22,233 --> 00:00:24,430\nto extreme, freezing temperatures.\n\n11\n00:00:24,430 --> 00:00:27,205\nScientists are working to understand how materials\n\n12\n00:00:27,205 --> 00:00:30,305\ncan achieve superconductivity at higher temperatures, which\n\n13\n00:00:30,305 --> 00:00:33,840\ncould revolutionize our power grids by eliminating resistance.\n\n14\n00:00:33,840 --> 00:00:36,245\nAchieving this would mean electricity could travel\n\n15\n00:00:36,245 --> 00:00:39,005\nthrough the grid without losing energy as heat.\n\n16\n00:00:39,030 --> 00:00:42,149\nEver thought how room-temperature superconductors would change\n\n17\n00:00:42,149 --> 00:00:44,296\nthe way we use electricity every day?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [
+        "scene 7 (24.4-33.8 s): only 0% of its words can be heard - the voice breaks up or drops out",
+        "scene 8 (33.8-39.0 s): only 0% of its words can be heard - the voice breaks up or drops out",
+        "scene 9 (39.0-44.9 s): only 0% of its words can be heard - the voice breaks up or drops out"
+      ],
+      "footage": [],
+      "review": [],
+      "heard": [
+        "\"energy loss\" heard as \"अनर्जी लोस लोस\"",
+        "\"charge your\" heard as \"चाज यो\"",
+        "\"happens\" heard as \"हापन्स\"",
+        "\"it\" heard as \"\"",
+        "\"constantly bumping\" heard as \"कुनस्टिन्टली बूम्पिण\"",
+        "\"scientists found materials\" heard as \"साँन्टिस्स फाँन्टेर्याल्स\"",
+        "\"cooled\" heard as \"cool\"",
+        "\"scientists are working to understand how materials can achieve superconductivity\" heard as \"ठावे बी अब लगी\""
+      ],
+      "scene_heard": [
+        "scene 1: 75%",
+        "scene 2: 78%",
+        "scene 3: 91%",
+        "scene 4: 75%",
+        "scene 5: 73%",
+        "scene 6: 91%",
+        "scene 7: 0%",
+        "scene 8: 0%",
+        "scene 9: 0%"
+      ],
+      "pass": false,
+      "duration": 44.3
+    },
+    "repairs": 0
+  },
+  {
+    "job": "20261120-1841-3-hidden-engineering-features-inside-com",
+    "topic": "3 Hidden Engineering Features Inside Commercial Airplane Windows That Keep the Cabin Safe at 35,000 Feet",
+    "title": "Why Plane Windows Have Tiny Holes 😱",
+    "description": "Ever wondered why there's a small hole in your airplane window? It’s not a defect; it’s a brilliant engineering hack. Discover the 3-layer system keeping you safe at 35,000 feet. #shorts #science #engineering\n\nSources (open-access research):\n- Mangini et al. (2018), Meteorological Applications. doi:10.1002/met.1733\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nPhoto by Javaistan on Pixabay\nPhoto by StockSnap on Pixabay\nPhoto: Horia Varlan, BY 2.0, via Openverse (flickr)\nPhoto: McCormick Photography, BY 2.0, via Openverse (flickr)\nPhoto: ToastyKen, BY 2.0, via Openverse (flickr)\nPhoto: waitscm, BY 2.0, via Openverse (flickr)\nVideo by Coverr-Free-Footage on Pixabay\nVideo by Engin_Akyurt on Pixabay\n\nयह वीडियो कैसे बना: स्क्रिप्ट को AI tools की मदद से open research के आधार पर लिखा और fact-check किया गया है, आवाज़ AI voice की है, और editing open-source software से हुई है। कोई गलती दिखे तो comment में बताइए — जाँच कर सुधार करेंगे।",
+    "tags": [
+      "science",
+      "engineering"
+    ],
+    "hook": "Airplane windows are rounded for a reason, but that's not the wildest part of this three-layered acrylic window at 35,000 feet.",
+    "status": "review",
+    "narration": "Airplane windows are rounded for a reason, but that's not the wildest part of this three-layered acrylic window at 35,000 feet. You might think this window is just one piece of thick glass, but it's actually three separate layers of strong acrylic. The middle and outer panes are both structural, but the outer pane handles the pressure during normal flight. If the outer pane is damaged, the middle pane serves as a backup to maintain cabin pressure. But wait, how does the system manage the pressure between these layers? Look closely at the window and you'll see a tiny 'breather hole' drilled through the middle layer. This hole allows air to flow between the cabin and the gap between the middle and outer panes. By letting air pass through, the hole balances the pressure so the outer pane bears the load during normal flight, leaving the middle pane as a secondary safeguard. This equalization manages pressure and helps prevent the window from fogging up while you're cruising at 35,000 feet. It’s a simple engineering hack that keeps every passenger safe in the sky.",
+    "voice_engine": "edge-tts",
+    "voices": "one narrator (hi-IN-SwaraNeural)",
+    "diagrams": 1,
+    "series": "How Things Work",
+    "countdown": false,
+    "length_arm": "standard",
+    "question": "Ever thought how that tiny hole helps keep your window clear while you're at 35,000 feet?",
+    "answer_comment": "That tiny hole is a breather hole. It allows air to pass between the cabin and the gap between the middle and outer panes, balancing the pressure for moisture control and ensuring the outer pane bears the flight load. Do you have any other questions about how planes stay safe?\n\nSources (open-access research):\n- Mangini et al. (2018), Meteorological Applications. doi:10.1002/met.1733",
+    "sources": [
+      {
+        "claim": "Cruising altitude for commercial jets is typically around 35,000 feet.",
+        "cite": "Mangini et al. (2018), Meteorological Applications. doi:10.1002/met.1733",
+        "doi": "10.1002/met.1733",
+        "title": "The dependence of minimum‐time routes over the North Atlantic on cruise altitude",
+        "why": "The abstract explicitly states: 'It is found that eastbound routes, which take advantage of the jet stream, are on average faster at 250 hPa (FL340) than at 300 hPa (FL300) or 200 hPa (FL390)', where FL340 is 34,000 feet, directly supporting the range mentioned in the claim."
+      }
+    ],
+    "fact_check": [
+      "Plane windows consist of three acrylic panes (outer, middle, inner).",
+      "The outer pane is the primary load-bearing component.",
+      "The middle pane acts as a redundancy/backup.",
+      "The small hole is a 'breather hole' used for pressure equalization between the panes to prevent condensation and manage load.",
+      "Cruising altitude for commercial jets is typically around 35,000 feet."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        7.43
+      ],
+      [
+        7.43,
+        13.8
+      ],
+      [
+        13.8,
+        19.53
+      ],
+      [
+        19.53,
+        24.76
+      ],
+      [
+        24.76,
+        28.96
+      ],
+      [
+        28.96,
+        33.79
+      ],
+      [
+        33.79,
+        38.79
+      ],
+      [
+        38.79,
+        47.48
+      ],
+      [
+        47.48,
+        54.34
+      ],
+      [
+        54.34,
+        58.8
+      ]
+    ],
+    "duration": 58.8,
+    "scene_lines": [
+      "Airplane windows are rounded for a reason, but that's not the wildest part of this three-layered acrylic window at 35,000 feet.",
+      "You might think this window is just one piece of thick glass, but it's actually three separate layers of strong acrylic.",
+      "The middle and outer panes are both structural, but the outer pane handles the pressure during normal flight.",
+      "If the outer pane is damaged, the middle pane serves as a backup to maintain cabin pressure.",
+      "But wait, how does the system manage the pressure between these layers?",
+      "Look closely at the window and you'll see a tiny 'breather hole' drilled through the middle layer.",
+      "This hole allows air to flow between the cabin and the gap between the middle and outer panes.",
+      "By letting air pass through, the hole balances the pressure so the outer pane bears the load during normal flight, leaving the middle pane as a secondary safeguard.",
+      "This equalization manages pressure and helps prevent the window from fogging up while you're cruising at 35,000 feet.",
+      "It’s a simple engineering hack that keeps every passenger safe in the sky."
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,050 --> 00:00:02,497\nAirplane windows are rounded for a reason,\n\n2\n00:00:02,497 --> 00:00:03,852\nbut that's not the wildest part of\n\n3\n00:00:03,852 --> 00:00:07,396\nthis three-layered acrylic window at 35,000 feet.\n\n4\n00:00:07,430 --> 00:00:09,305\nYou might think this window is just\n\n5\n00:00:09,305 --> 00:00:11,067\none piece of thick glass, but it's\n\n6\n00:00:11,067 --> 00:00:13,800\nactually three separate layers of strong acrylic.\n\n7\n00:00:13,800 --> 00:00:15,569\nThe middle and outer panes are both\n\n8\n00:00:15,569 --> 00:00:17,637\nstructural, but the outer pane handles the\n\n9\n00:00:17,637 --> 00:00:19,507\npressure during normal flight.\n\n10\n00:00:19,530 --> 00:00:21,290\nIf the outer pane is damaged, the\n\n11\n00:00:21,290 --> 00:00:24,569\nmiddle pane serves as a backup to maintain cabin pressure.\n\n12\n00:00:24,760 --> 00:00:26,885\nBut wait, how does the system manage\n\n13\n00:00:26,885 --> 00:00:28,772\nthe pressure between these layers?\n\n14\n00:00:28,960 --> 00:00:30,803\nLook closely at the window and you'll\n\n15\n00:00:30,803 --> 00:00:33,765\nsee a tiny breather hole drilled through the middle layer.\n\n16\n00:00:33,790 --> 00:00:35,665\nThis hole allows air to flow between\n\n17\n00:00:35,665 --> 00:00:37,095\nthe cabin and the gap between the\n\n18\n00:00:37,095 --> 00:00:38,786\nmiddle and outer panes.\n\n19\n00:00:38,790 --> 00:00:40,672\nBy letting air pass through, the hole\n\n20\n00:00:40,672 --> 00:00:42,727\nbalances the pressure so the outer pane\n\n21\n00:00:42,727 --> 00:00:45,014\nbears the load during normal flight, leaving\n\n22\n00:00:45,014 --> 00:00:47,467\nthe middle pane as a secondary safeguard.\n\n23\n00:00:47,480 --> 00:00:50,372\nThis equalization manages pressure and helps prevent\n\n24\n00:00:50,372 --> 00:00:51,993\nthe window from fogging up while you're\n\n25\n00:00:51,993 --> 00:00:54,287\ncruising at 35,000 feet.\n\n26\n00:00:54,340 --> 00:00:56,374\nIt’s a simple engineering hack that keeps\n\n27\n00:00:56,374 --> 00:00:58,196\nevery passenger safe in the sky.\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [
+        "scene 1 (0.0-7.4 s): only 5% of its words can be heard - the voice breaks up or drops out",
+        "scene 2 (7.4-13.8 s): only 5% of its words can be heard - the voice breaks up or drops out",
+        "scene 3 (13.8-19.5 s): only 6% of its words can be heard - the voice breaks up or drops out",
+        "scene 4 (19.5-24.8 s): only 0% of its words can be heard - the voice breaks up or drops out",
+        "scene 5 (24.8-29.0 s): only 0% of its words can be heard - the voice breaks up or drops out"
+      ],
+      "footage": [
+        "scene(s) [6] have weak or placeholder footage"
+      ],
+      "review": [
+        "Frame 8 shows a person playing a violin, which is completely unrelated to the narration about airplane windows and pressure loads."
+      ],
+      "heard": [
+        "\"airplane\" heard as \"homeware\"",
+        "\"three layered\" heard as \"3 tyle\"",
+        "\"window\" heard as \"windows\"",
+        "\"three\" heard as \"3\"",
+        "\"closely\" heard as \"क्लोस्ली\"",
+        "\"and\" heard as \"अन\"",
+        "\"by\" heard as \"बाई\"",
+        "\"leaving\" heard as \"लीविं\""
+      ],
+      "scene_heard": [
+        "scene 1: 5%",
+        "scene 2: 5%",
+        "scene 3: 6%",
+        "scene 4: 0%",
+        "scene 5: 0%",
+        "scene 6: 75%",
+        "scene 7: 100%",
+        "scene 8: 100%",
+        "scene 9: 100%",
+        "scene 10: 85%"
+      ],
+      "pass": false,
+      "duration": 58.2
+    },
+    "repairs": 0
+  },
+  {
+    "job": "20261120-1908-why-emotional-tears-from-sadness-contain",
+    "topic": "Why emotional tears from sadness contain high stress hormones while reflex tears from chopping onions are almost pure water",
+    "title": "Why Onion Tears & Sad Tears Are Different 🤔",
+    "description": "Ever wonder why chopping onions makes you cry water, but a sad movie leaves you with heavy eyes? The answer lies in what your tears carry. Watch to find out. #shorts #hindi #tears #science\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nPhoto: anonymous, Public domain, via Wikimedia Commons\nVideo by DespiertaYa on Pixabay\nVideo by XiaosKitchen on Pixabay\nVideo by klimkin on Pixabay\nVideo by AlekseiyPovar on Pixabay\n\nयह वीडियो कैसे बना: स्क्रिप्ट को AI tools की मदद से open research के आधार पर लिखा और fact-check किया गया है, आवाज़ AI voice की है, और editing open-source software से हुई है। कोई गलती दिखे तो comment में बताइए — जाँच कर सुधार करेंगे।",
+    "tags": [
+      "tears",
+      "science"
+    ],
+    "hook": "प्याज काटने पर आँसू 98% पानी होते हैं — लेकिन गम के आँसू की बनावट अलग होती है।",
+    "status": "review",
+    "narration": "प्याज काटने पर आँसू 98% पानी होते हैं — लेकिन गम के आँसू की बनावट अलग होती है। प्याज काटते समय आँखों में जलन होती है, जिससे आँसू निकलते हैं। कल रात dinner के लिए प्याज काटते वक्त आँसू आए, ये reflex tears थे। वो ही आँसू, जो हमने कल रात देखा, 98% पानी थे, थोड़ा सा salt और enzymes के साथ। फिर वही रात एक sad movie देखी, आँसू अलग थे। इमोशनल आँसू में कुछ हार्मोन, जैसे प्रोलैक्टिन, अधिक पाए गए हैं, हालांकि प्रोलैक्टिन मुख्य रूप से तनाव हार्मोन नहीं माना जाता। साथ में प्रोटीन थोड़े ज्यादा होते हैं, जिससे ये थोड़े गाढ़े हो सकते हैं। एक थ्योरी है कि आँसू कुछ स्ट्रेस केमिकल्स निकाल देते हैं, मगर यह पक्का नहीं है और न ही मुख्य तरीका है। तो अगली बार जब रोओ, याद रखो: body खुद को heal कर रहा है। कभी सोचा है क्यों emotional tears के बाद आँखें भारी लगती हैं, onion tears के बाद नहीं?",
+    "voice_engine": "edge-tts",
+    "voices": "one narrator (hi-IN-SwaraNeural)",
+    "diagrams": 1,
+    "series": "Body Whys",
+    "countdown": false,
+    "length_arm": "long",
+    "question": "कभी सोचा है क्यों emotional tears के बाद आँखें भारी लगती हैं, onion tears के बाद नहीं?",
+    "answer_comment": "The answer: Emotional tears have more protein and some stress-related chemicals, but the heavy feeling comes from muscle tension and sinus pressure, not tear thickness. Onion tears are mostly water to flush the irritant. Tears' main job is to protect and clean the eye.",
+    "sources": [],
+    "fact_check": [
+      "Reflex tears are approximately 98% water.",
+      "Emotional tears contain higher levels of some hormones (e.g., prolactin) compared to reflex tears.",
+      "Emotional tears have higher protein content than reflex tears.",
+      "Emotional tears are more viscous due to higher protein and hormone levels.",
+      "Crying can reduce stress by excreting stress hormones through tears.",
+      "Onion tears are reflex tears triggered by the irritant syn-propanethial-S-oxide.",
+      "Emotional tears are triggered by the limbic system and involve different neural pathways."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        6.64
+      ],
+      [
+        6.64,
+        10.8
+      ],
+      [
+        10.8,
+        15.22
+      ],
+      [
+        15.22,
+        21.68
+      ],
+      [
+        21.68,
+        25.48
+      ],
+      [
+        25.48,
+        33.34
+      ],
+      [
+        33.34,
+        37.72
+      ],
+      [
+        37.72,
+        44.24
+      ],
+      [
+        44.24,
+        48.49
+      ],
+      [
+        48.49,
+        54.13
+      ]
+    ],
+    "duration": 54.13,
+    "scene_lines": [
+      "प्याज काटने पर आँसू 98% पानी होते हैं — लेकिन गम के आँसू की बनावट अलग होती है।",
+      "प्याज काटते समय आँखों में जलन होती है, जिससे आँसू निकलते हैं।",
+      "कल रात dinner के लिए प्याज काटते वक्त आँसू आए, ये reflex tears थे।",
+      "वो ही आँसू, जो हमने कल रात देखा, 98% पानी थे, थोड़ा सा salt और enzymes के साथ।",
+      "फिर वही रात एक sad movie देखी, आँसू अलग थे।",
+      "इमोशनल आँसू में कुछ हार्मोन, जैसे प्रोलैक्टिन, अधिक पाए गए हैं, हालांकि प्रोलैक्टिन मुख्य रूप से तनाव हार्मोन नहीं माना जाता।",
+      "साथ में प्रोटीन थोड़े ज्यादा होते हैं, जिससे ये थोड़े गाढ़े हो सकते हैं।",
+      "एक थ्योरी है कि आँसू कुछ स्ट्रेस केमिकल्स निकाल देते हैं, मगर यह पक्का नहीं है और न ही मुख्य तरीका है।",
+      "तो अगली बार जब रोओ, याद रखो: body खुद को heal कर रहा है।",
+      "कभी सोचा है क्यों emotional tears के बाद आँखें भारी लगती हैं, onion tears के बाद नहीं?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,050 --> 00:00:02,995\nप्याज काटने पर आँसू 98% होते हैं\n\n2\n00:00:02,995 --> 00:00:06,099\n— लेकिन गम के आँसू की बनावट अलग होती है।\n\n3\n00:00:06,240 --> 00:00:08,581\nप्याज काटते समय आँखों में जलन होती\n\n4\n00:00:08,581 --> 00:00:11,060\nहै, जिससे आँसू निकलते हैं। कल रात\n\n5\n00:00:11,060 --> 00:00:13,147\ndinner के लिए प्याज काटते वक्त आँसू\n\n6\n00:00:13,147 --> 00:00:15,427\nआए, ये reflex tears थे। वो ही\n\n7\n00:00:15,427 --> 00:00:18,321\nआँसू, जो हमने कल रात देखा, 98%\n\n8\n00:00:18,321 --> 00:00:20,524\nपानी थे, थोड़ा सा salt और enzymes\n\n9\n00:00:20,524 --> 00:00:22,716\nके साथ। फिर वही रात एक sad\n\n10\n00:00:22,716 --> 00:00:24,735\nmovie देखी, आँसू अलग थे।\n\n11\n00:00:24,800 --> 00:00:28,109\nइमोशनल आँसू में कुछ हार्मोन, जैसे प्रोलैक्टिन,\n\n12\n00:00:28,109 --> 00:00:30,372\nअधिक पाए गए हैं, हालांकि प्रोलैक्टिन मुख्य\n\n13\n00:00:30,372 --> 00:00:32,805\nरूप से तनाव हार्मोन नहीं माना जाता।\n\n14\n00:00:32,830 --> 00:00:35,330\nसाथ में प्रोटीन थोड़े ज्यादा होते हैं,\n\n15\n00:00:35,330 --> 00:00:37,430\nजिससे ये थोड़े गाढ़े हो सकते हैं।\n\n16\n00:00:37,430 --> 00:00:39,453\nएक थ्योरी है कि आँसू कुछ स्ट्रेस\n\n17\n00:00:39,453 --> 00:00:41,671\nकेमिकल्स निकाल देते हैं, मगर यह पक्का\n\n18\n00:00:41,671 --> 00:00:43,889\nनहीं है और न ही मुख्य तरीका है।\n\n19\n00:00:44,010 --> 00:00:46,320\nतो अगली बार जब रोओ, याद रखो:\n\n20\n00:00:46,320 --> 00:00:48,115\nbody खुद को heal कर रहा है।\n\n21\n00:00:48,140 --> 00:00:50,330\nकभी सोचा है क्यों emotional tears के\n\n22\n00:00:50,330 --> 00:00:53,533\nबाद आँखें भारी लगती हैं, onion tears के बाद नहीं?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [
+        "phrase missing from the audio: \"आँसू में कुछ हार्मोन जैसे प्रोलैक्टिन अधिक पाए गए हैं हालांकि प्रोलैक्टिन मुख्य रूप से तनाव हार्मोन नहीं माना जाता। साथ में प्रोटीन\"",
+        "phrase missing from the audio: \"ज्यादा होते हैं जिससे ये थोड़े गाढ़े\"",
+        "phrase missing from the audio: \"सकते हैं। एक थ्योरी है कि आँसू कुछ स्ट्रेस केमिकल्स निकाल देते हैं\"",
+        "scene 9 (44.2-48.5 s): only 0% of its words can be heard - the voice breaks up or drops out",
+        "scene 10 (48.5-54.1 s): only 0% of its words can be heard - the voice breaks up or drops out"
+      ],
+      "footage": [
+        "scene(s) [6, 7, 10] have weak or placeholder footage"
+      ],
+      "review": [
+        "AI review unavailable: LLM call failed on every model and provider: None"
+      ],
+      "heard": [
+        "\"प्याज\" heard as \"प्यास\"",
+        "\"आँसू 98\" heard as \"आजु अट्फाणवे पर्शेंट\"",
+        "\"हैं\" heard as \"है\"",
+        "\"आँसू\" heard as \"आजु\"",
+        "\"प्याज काटते\" heard as \"प्यास काटने\"",
+        "\"आँखों\" heard as \"आखू\"",
+        "\"जिससे आँसू\" heard as \"जिस से आजू प्याश\"",
+        "\"dinner\" heard as \"दिना\""
+      ],
+      "scene_heard": [
+        "scene 1: 67%",
+        "scene 2: 45%",
+        "scene 3: 46%",
+        "scene 4: 81%",
+        "scene 5: 80%",
+        "scene 6: 81%",
+        "scene 7: 77%",
+        "scene 8: 72%",
+        "scene 9: 0%",
+        "scene 10: 0%"
+      ],
+      "pass": false,
+      "duration": 53.5
+    },
+    "repairs": 0
   }
 ]

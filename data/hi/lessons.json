@@ -34,5 +34,13 @@
   {
     "kind": "false_line",
     "text": "said \"Ever thought how that tiny hole balances cabin pressure so the outer glass doesn't shatter?\" but The hole does not balance pressure between the cabin and the outside; it allows the middle pane to vent, ensuring the outer pane bears the pressure load and preventing fogging/condensation."
+  },
+  {
+    "kind": "unconfirmed",
+    "text": "Maine tumhare kitchen ka stainless steel spoon microwave mein daala aur dekha kuch nahi hua. -> This is anecdotal and encourages dangerous behavior. While a spoon might not spark, metal can still reflect waves back into the magnetron and overheat, causing long-term damage."
+  },
+  {
+    "kind": "unconfirmed",
+    "text": "Spoon ki shape hi hero hai, kyunki iska surface smooth aur rounded hai. -> The shape helps, but the primary reason the spoon is 'safe' is its thickness and lack of sharp points. Suggesting the shape makes it safe encourages users to test other 'smooth' metal objects which may still cause damage."
   }
 ]
