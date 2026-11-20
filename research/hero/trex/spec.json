@@ -67,7 +67,8 @@
       "seconds": 3.68,
       "kmh": 20,
       "car_kmh": 50,
-      "lens": 22
+      "lens": 22,
+      "car_behind_m": 9
     },
     {
       "kind": "closeup_roar",

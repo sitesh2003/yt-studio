@@ -583,10 +583,10 @@ def build():
         stop = N - hold
         play(arm, run, 1, stop, 1.0)
         d = v_run * (stop / FPS)
-        key_path(arm, [(1, Vector((0, d * 0.5 + 8, 0))), (stop, Vector((0, -d * 0.5 + 8, 0)))])
+        key_path(arm, [(1, Vector((0, d * 0.5, 0))), (stop, Vector((0, -d * 0.5, 0)))])
         # camera backs away slower than the runner, so it closes in; it stops dead on the freeze
-        key_path(cam, [(1, Vector((2.0, -d * 0.5 - 10, 1.0))), (stop, Vector((1.2, -d * 0.5 - 1.5, 0.7)))])
-        key_path(tgt, [(1, Vector((0, d * 0.5 + 8, H * 0.55))), (stop, Vector((0, -d * 0.5 + 8, H * 0.6)))])
+        key_path(cam, [(1, Vector((1.8, d * 0.5 - 15, 0.8))), (stop, Vector((1.2, -d * 0.5 - 7.5, 0.6)))])
+        key_path(tgt, [(1, Vector((0, d * 0.5, H * 0.6))), (stop, Vector((0, -d * 0.5, H * 0.62)))])
         for ad in (arm.animation_data,):
             ad.nla_tracks[0].strips[0].frame_end_ui = stop if hasattr(ad.nla_tracks[0].strips[0], "frame_end_ui") else stop
 
@@ -621,7 +621,7 @@ def build():
             play(arm, walk, 1, N, rate)
             speed = v_walk * rate
             if kind == "xray_scan":
-                key_prop([(1, 0.0), (int(N * 0.15), 0.0), (int(N * 0.6), 1.0)], "xr")
+                key_prop([(1, 0.12), (int(N * 0.5), 1.0)], "xr")
             else:
                 key_prop([(1, 1.0)], "xr")
                 ms = muscles(arm, c["muscle_bones"], c.get("muscle_radius", 0.35))
@@ -675,7 +675,7 @@ def build():
                         k.interpolation = "LINEAR"
         # camera rides with the T. rex, front-left, so the car comes past and pulls away down the road
         key_path(cam, [(1, Vector((11, -16, 2.6))), (N, Vector((11, -16 - dt, 2.6)))])
-        key_path(tgt, [(1, Vector((0, -2, 2.4))), (N, Vector((0, -2 - dt * 1.25, 2.2)))])
+        key_path(tgt, [(1, Vector((0, -3, 2.4))), (N, Vector((0, -6 - dt * 1.4, 2.2)))])
 
     elif kind == "closeup_roar":
         play(arm, c.get("roar", walk), int(N * 0.12), N, 0.85)

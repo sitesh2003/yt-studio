@@ -36,6 +36,8 @@ def font(size):
 
 
 def text(d, xy, s, size, fill=WHITE, anchor="mm", stroke=10):
+    if size < 4:
+        return
     d.text(xy, s, font=font(size), fill=fill, anchor=anchor, stroke_width=stroke, stroke_fill=BLACK)
 
 
@@ -83,11 +85,11 @@ def g_size_tower(d, f, n, shot):
 
 
 def g_xray_scan(d, f, n, shot):
-    text(d, (60, 230), "COMPUTER MODEL", 56, CYAN, anchor="lm", stroke=8)
-    p = ease((f - n * 0.15) / (n * 0.45))
-    d.rectangle([60, 290, 60 + 500, 306], fill=(20, 40, 60))
-    d.rectangle([60, 290, 60 + int(500 * p), 306], fill=CYAN)
-    text(d, (60, 345), "BONES + MUSCLES" if p >= 1 else "SCANNING...", 44, WHITE, anchor="lm", stroke=7)
+    text(d, (W / 2, 330), "COMPUTER MODEL", 72, CYAN, stroke=9)
+    p = ease((f - 1) / (n * 0.5))
+    d.rounded_rectangle([W / 2 - 300, 395, W / 2 + 300, 415], 10, fill=(20, 40, 60))
+    d.rounded_rectangle([W / 2 - 300, 395, W / 2 - 300 + int(600 * p), 415], 10, fill=CYAN)
+    text(d, (W / 2, 465), "BONES + MUSCLES" if p >= 1 else "SCANNING...", 50, WHITE, stroke=8)
 
 
 def g_stress_run(d, f, n, shot):
