@@ -30,6 +30,7 @@ PROVIDERS = [
 
 _LIVE = {}      # provider -> list of model ids it offers right now
 _DEAD = set()   # (provider, model) that failed for good this run
+ERRS = []       # why each try failed (the keys check prints these; never a key)
 
 
 def available():
@@ -92,6 +93,8 @@ def ask_json(prompt, images=None, temperature=0.9):
             try:
                 r = requests.post(f"{base}/chat/completions", json=body, timeout=120,
                                   headers={"Authorization": f"Bearer {k}", "Content-Type": "application/json"})
+                if r.status_code >= 400:
+                    ERRS.append(f"{name}/{model}: HTTP {r.status_code} {r.text[:160]}")
                 if r.status_code in (401, 403, 404):
                     _DEAD.add((name, model))
                     log(f"free_llm: {name}/{model} refused ({r.status_code}); skipped for this run")
@@ -105,5 +108,6 @@ def ask_json(prompt, images=None, temperature=0.9):
                 log(f"free_llm: answered by {name}/{model}")
                 return out
             except Exception as e:
+                ERRS.append(f"{name}/{model}: {type(e).__name__}: {str(e)[:160]}")
                 log(f"free_llm: {name}/{model} failed ({type(e).__name__}: {str(e)[:80]})")
     return None

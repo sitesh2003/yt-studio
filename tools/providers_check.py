@@ -39,6 +39,10 @@ for p in free_llm.PROVIDERS:
         live = free_llm._LIVE.get(name) or []
         say(f"{name}: {'OK ' + str(out) if out else 'FAIL (no answer)'}; {len(live)} models offered"
             + (" (free ones only)" if name == "openrouter" else ""))
+        if not out:
+            say("  models: " + ", ".join(live[:12]))
+            for e in free_llm.ERRS[-6:]:
+                say("  " + e)
     except Exception as e:
         say(f"{name}: FAIL {type(e).__name__}: {str(e)[:120]}")
     free_llm.PROVIDERS[:] = saved
@@ -59,8 +63,9 @@ else:
 # Kaggle: the official CLI, with the new-style token (or the legacy username + key)
 if k("KAGGLE_API_TOKEN") or k("KAGGLE_KEY"):
     env = dict(os.environ)
-    if not k("KAGGLE_API_TOKEN") and k("KAGGLE_KEY"):
-        env["KAGGLE_API_TOKEN"] = k("KAGGLE_KEY") if k("KAGGLE_KEY").startswith("KGAT_") else ""
+    if not k("KAGGLE_API_TOKEN") and k("KAGGLE_KEY").startswith("KGAT_"):
+        env["KAGGLE_API_TOKEN"] = k("KAGGLE_KEY")      # a new-style token saved under the old name
+        env.pop("KAGGLE_KEY", None)
     try:
         r = subprocess.run(["kaggle", "kernels", "list", "--mine", "--page-size", "1"], capture_output=True, text=True,
                            env=env, timeout=90)
