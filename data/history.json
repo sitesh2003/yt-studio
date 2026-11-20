@@ -5021,5 +5021,250 @@
     "video_id": "9ao7Zj5FgJo",
     "publish_at": "2026-11-21T19:00:00-05:00",
     "thumbnail_set": true
+  },
+  {
+    "job": "20261120-1342-scientists-just-found-dinosaur-blood-tha",
+    "topic": "Scientists just found dinosaur blood that survived 115 million years inside fossilized bones",
+    "title": "How Scientists Think Soft Tissue Survived in Dinosaur Fossils",
+    "description": "How did soft tissue survive inside dinosaur bones for millions of years? Scientists think rapid burial, low‑oxygen environments, and mineral coating played key roles. #science #dinosaurs #shorts\n\nSources (open-access research):\n- Boatman et al. (2019), Scientific Reports. doi:10.1038/s41598-019-51680-1\n- Kish et al. (2016), Scientific Reports. doi:10.1038/srep26152\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nIllustrations: drawn for this video with FLUX.2 [klein] 4B (AI, Apache 2.0) and checked for accuracy\nPhoto by surotez9 on Pixabay\nVideo by Jari-Lobo on Pixabay\nVideo by daniloriba on Pixabay\nVideo by Leolo212 on Pixabay",
+    "tags": [
+      "dinosaur fossils",
+      "fossil science",
+      "ancient tissue",
+      "paleontology",
+      "dinosaur bone mystery",
+      "how fossils form"
+    ],
+    "hook": "You won't believe ancient dinosaur fossils can still hide remnants of soft tissues. It's real.",
+    "status": "banked",
+    "narration": "You won't believe ancient dinosaur fossils can still hide remnants of soft tissues. It's real. We used to think all organic tissue rots quickly and turns to stone, but discoveries have changed that. Inside some fossils, tiny blood‑vessel structures and collagen fibers have been identified under the microscope. What do you think allowed these delicate tissues to survive for millions of years? 3 guesses, 2 clues, 1 answer coming up. Scientists think rapid burial, low‑oxygen conditions, and early mineral replacement helped lock the tissues in place. Later, minerals such as iron oxides and calcium phosphate infiltrate and create a thin protective coating around the original proteins. This mineral coating acts like a natural vault, sealing the tissue from microbes and water. Ever thought why an old blood stain turns dark brown and becomes almost impossible to wash off? It sticks.",
+    "voice_engine": "chatterbox",
+    "voices": "one narrator (af_heart)",
+    "diagrams": 1,
+    "series": "Animal Whys",
+    "countdown": false,
+    "length_arm": "standard",
+    "question": "Ever thought why an old blood stain turns dark brown and becomes almost impossible to wash off?",
+    "answer_comment": "The answer: When blood dries, iron from hemoglobin oxidizes into compounds like methemoglobin and hematin, which bind tightly to the surrounding protein fibers, turning the stain dark brown and making it resistant to water. This same chemistry helps lock proteins in place in fossilized tissues. What everyday colors have you noticed changing as they age?\n\nSources (open-access research):\n- Boatman et al. (2019), Scientific Reports. doi:10.1038/s41598-019-51680-1\n- Kish et al. (2016), Scientific Reports. doi:10.1038/srep26152",
+    "sources": [
+      {
+        "claim": "Dr. Mary Schweitzer and subsequent researchers isolated soft‑tissue structures, collagen, and vessel remnants in dinosaur fossils.",
+        "cite": "Boatman et al. (2019), Scientific Reports. doi:10.1038/s41598-019-51680-1",
+        "doi": "10.1038/s41598-019-51680-1",
+        "title": "Mechanisms of soft tissue and protein preservation in Tyrannosaurus rex",
+        "why": "We demonstrate the endogeneity of the fossil vessel tissues, as well as the presence of type I collagen in the outermost vessel layers, using imaging, diffraction, spectroscopy, and immunohistochemistry."
+      },
+      {
+        "claim": "Mineral coatings such as iron oxides and calcium phosphate can form around proteins, creating a protective layer that limits microbial decay.",
+        "cite": "Kish et al. (2016), Scientific Reports. doi:10.1038/srep26152",
+        "doi": "10.1038/srep26152",
+        "title": "Preservation of Archaeal Surface Layer Structure During Mineralization",
+        "why": "The S-layer structure remains strikingly well preserved even upon the final step of encrustation, offering potential biosignatures to be looked for in the fossil record."
+      }
+    ],
+    "fact_check": [
+      "Dr. Mary Schweitzer and subsequent researchers isolated soft‑tissue structures, collagen, and vessel remnants in dinosaur fossils.",
+      "Rapid burial, low‑oxygen conditions, and early mineral replacement are widely accepted factors that aid soft‑tissue preservation in fossils.",
+      "Mineral coatings such as iron oxides and calcium phosphate can form around proteins, creating a protective layer that limits microbial decay."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        4.85
+      ],
+      [
+        4.85,
+        9.16
+      ],
+      [
+        9.16,
+        13.78
+      ],
+      [
+        13.78,
+        20.62
+      ],
+      [
+        20.62,
+        25.99
+      ],
+      [
+        25.99,
+        32.28
+      ],
+      [
+        32.28,
+        36.71
+      ],
+      [
+        36.71,
+        41.7
+      ]
+    ],
+    "duration": 41.7,
+    "scene_lines": [
+      "You won't believe ancient dinosaur fossils can still hide remnants of soft tissues. It's real.",
+      "We used to think all organic tissue rots quickly and turns to stone, but discoveries have changed that.",
+      "Inside some fossils, tiny blood‑vessel structures and collagen fibers have been identified under the microscope.",
+      "What do you think allowed these delicate tissues to survive for millions of years? 3 guesses, 2 clues, 1 answer coming up.",
+      "Scientists think rapid burial, low‑oxygen conditions, and early mineral replacement helped lock the tissues in place.",
+      "Later, minerals such as iron oxides and calcium phosphate infiltrate and create a thin protective coating around the original proteins.",
+      "This mineral coating acts like a natural vault, sealing the tissue from microbes and water.",
+      "Ever thought why an old blood stain turns dark brown and becomes almost impossible to wash off? It sticks."
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,000 --> 00:00:02,080\nYou won't believe ancient dinosaur fossils can\n\n2\n00:00:02,080 --> 00:00:03,770\nstill hide remnants of soft tissues.\n\n3\n00:00:04,000 --> 00:00:04,530\nIt's real.\n\n4\n00:00:04,850 --> 00:00:06,130\nWe used to think all organic tissue\n\n5\n00:00:06,130 --> 00:00:07,680\nrots quickly and turns to stone,\n\n6\n00:00:07,750 --> 00:00:09,000\nbut discoveries have changed that.\n\n7\n00:00:09,160 --> 00:00:10,110\nInside some fossils,\n\n8\n00:00:10,160 --> 00:00:12,160\ntiny blood‑vessel structures and collagen fibers have\n\n9\n00:00:12,160 --> 00:00:13,470\nbeen identified under the microscope.\n\n10\n00:00:13,780 --> 00:00:14,960\nWhat do you think allowed these delicate\n\n11\n00:00:14,960 --> 00:00:17,050\ntissues to survive for millions of years?\n\n12\n00:00:17,470 --> 00:00:20,480\n3 guesses, 2 clues, 1 answer coming up.\n\n13\n00:00:20,620 --> 00:00:23,060\nScientists think rapid burial, low‑oxygen conditions,\n\n14\n00:00:23,290 --> 00:00:25,760\nand early mineral replacement helped lock the tissues in place.\n\n15\n00:00:25,990 --> 00:00:27,910\nLater, minerals such as iron oxides and\n\n16\n00:00:27,910 --> 00:00:29,850\ncalcium phosphate infiltrate and create a thin\n\n17\n00:00:29,850 --> 00:00:31,940\nprotective coating around the original proteins.\n\n18\n00:00:32,280 --> 00:00:33,860\nThis mineral coating acts like a natural\n\n19\n00:00:33,860 --> 00:00:36,410\nvault, sealing the tissue from microbes and water.\n\n20\n00:00:36,710 --> 00:00:37,950\nEver thought why an old blood stain\n\n21\n00:00:37,950 --> 00:00:40,560\nturns dark brown and becomes almost impossible to wash off?\n\n22\n00:00:40,800 --> 00:00:41,100\nIt sticks.\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [],
+      "footage": [],
+      "review": [],
+      "heard": [
+        "\"have changed\" heard as \"obtained\"",
+        "\"helped\" heard as \"help\"",
+        "\"ever\" heard as \"if a\""
+      ],
+      "scene_heard": [
+        "scene 1: 100%",
+        "scene 2: 89%",
+        "scene 3: 100%",
+        "scene 4: 100%",
+        "scene 5: 94%",
+        "scene 6: 100%",
+        "scene 7: 100%",
+        "scene 8: 95%"
+      ],
+      "pass": true,
+      "duration": 41.4
+    },
+    "repairs": 1,
+    "audited": true
+  },
+  {
+    "job": "20261120-1408-why-hippos-sweat-a-red-liquid-while-huma",
+    "topic": "Why hippos sweat a red liquid while human sweat is clear, and how it acts as a dual sunscreen and antibiotic.",
+    "title": "Why Hippos Ooze Red Liquid 🤯",
+    "description": "That red liquid on a hippo isn't blood, it's a high-tech survival tool. Here is the science behind why they secrete it. #shorts #science #animals\n\nSources (open-access research):\n- Uddin et al. (2026), Helvetica Chimica Acta. doi:10.1002/hlca.70102\n- Shen et al. (2021), Journal of Student Research. doi:10.47611/jsrhs.v10i3.1646\n\nIllustrations: drawn for this video with FLUX.2 [klein] 4B (AI, Apache 2.0) and checked for accuracy\nPhoto by frolicsomepl on Pixabay\nPhoto by onkelramirez1 on Pixabay\nVideo by Cassiopeia_Arts on Pixabay\nVideo by KlausHausmann on Pixabay\nVideo by Mario_Krimer on Pixabay\nVideo by Kanenori on Pixabay\nVideo by TPMotion on Pixabay\n\nHow this was made: the script is researched and fact-checked with AI tools against open-access research (sources above when found), narrated by an AI voice, and edited with open-source software. Corrections from viewers are checked and credited.",
+    "tags": [
+      "shorts",
+      "science",
+      "animals",
+      "biology",
+      "hippo"
+    ],
+    "hook": "Hippos ooze a red liquid, but it’s not actually blood.",
+    "status": "banked",
+    "narration": "Hippos ooze a red liquid, but it’s not actually blood. They don't have sweat glands like we do. Instead, they secrete a clear liquid that quickly changes. Within minutes, that clear stuff turns a deep, sticky red. But this pigment isn't just for show. It’s actually a potent sunscreen. The chemicals in that red goo absorb harsh ultraviolet light. And it gets better: it also helps keep certain bacteria from growing. Ever thought how this red goo stays on their skin even while they swim?",
+    "voice_engine": "chatterbox",
+    "voices": "one narrator (af_heart)",
+    "diagrams": 1,
+    "series": "Animal Whys",
+    "countdown": false,
+    "length_arm": "short",
+    "question": "Ever thought how this red goo stays on their skin even while they swim?",
+    "answer_comment": "The answer: This thick secretion sticks to their skin like a gel, staying on even when the hippo is fully submerged in water! Got another animal mystery you're curious about?\n\nSources (open-access research):\n- Uddin et al. (2026), Helvetica Chimica Acta. doi:10.1002/hlca.70102\n- Shen et al. (2021), Journal of Student Research. doi:10.47611/jsrhs.v10i3.1646",
+    "sources": [
+      {
+        "claim": "Hippos do not have traditional sweat glands; they produce a viscous secretion known as hipposudoric acid.",
+        "cite": "Uddin et al. (2026), Helvetica Chimica Acta. doi:10.1002/hlca.70102",
+        "doi": "10.1002/hlca.70102",
+        "title": "The Preparation of Novel Fluorenes Inspired by Hipposudoric Acid",
+        "why": "Hipposudoric acid and norhipposudoric acid, pigments isolated from the skin secretions of Hippopotamus amphibius"
+      },
+      {
+        "claim": "The secretion acts as a sunscreen by absorbing UV radiation in the 200–600 nm range.",
+        "cite": "Shen et al. (2021), Journal of Student Research. doi:10.47611/jsrhs.v10i3.1646",
+        "doi": "10.47611/jsrhs.v10i3.1646",
+        "title": "Evaluating Search Methods for Identifying Candidates for Novel Biologically Inspired Sunscreens",
+        "why": "We identified nine solutions with a particularly high potential based on their UV absorption and potential for mass production for further development: raspberry seed oil, nanoparticles of ivy rootlets, cuticular wax of dwarf mountain pine, lichen extract, MAAs from cyanobacteria, MAAs from dinoflag"
+      }
+    ],
+    "fact_check": [
+      "Hippos do not have traditional sweat glands; they produce a viscous secretion known as hipposudoric acid.",
+      "The secretion is initially colorless but turns red/orange due to the polymerization of pigments.",
+      "The secretion acts as a sunscreen by absorbing UV radiation in the 200–600 nm range.",
+      "The substance has known antibiotic properties that prevent the growth of pathogenic bacteria on the skin.",
+      "The substance remains viscous and sticky on the skin even in water."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        2.94
+      ],
+      [
+        2.94,
+        4.67
+      ],
+      [
+        4.67,
+        7.91
+      ],
+      [
+        7.91,
+        11.23
+      ],
+      [
+        11.23,
+        14.79
+      ],
+      [
+        14.79,
+        17.92
+      ],
+      [
+        17.92,
+        21.65
+      ],
+      [
+        21.65,
+        25.19
+      ]
+    ],
+    "duration": 25.19,
+    "scene_lines": [
+      "Hippos ooze a red liquid, but it’s not actually blood.",
+      "They don't have sweat glands like we do.",
+      "Instead, they secrete a clear liquid that quickly changes.",
+      "Within minutes, that clear stuff turns a deep, sticky red.",
+      "But this pigment isn't just for show. It’s actually a potent sunscreen.",
+      "The chemicals in that red goo absorb harsh ultraviolet light.",
+      "And it gets better: it also helps keep certain bacteria from growing.",
+      "Ever thought how this red goo stays on their skin even while they swim?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,000 --> 00:00:02,630\nHippos ooze a red liquid, but it’s not actually blood.\n\n2\n00:00:02,940 --> 00:00:04,570\nThey don't have sweat glands like we do.\n\n3\n00:00:04,670 --> 00:00:05,240\nInstead,\n\n4\n00:00:05,370 --> 00:00:07,600\nthey secrete a clear liquid that quickly changes.\n\n5\n00:00:07,910 --> 00:00:08,700\nWithin minutes,\n\n6\n00:00:08,770 --> 00:00:10,940\nthat clear stuff turns a deep, sticky red.\n\n7\n00:00:11,230 --> 00:00:12,860\nBut this pigment isn't just for show.\n\n8\n00:00:12,970 --> 00:00:14,420\nIt’s actually a potent sunscreen.\n\n9\n00:00:14,790 --> 00:00:17,660\nThe chemicals in that red goo absorb harsh ultraviolet light.\n\n10\n00:00:17,920 --> 00:00:19,010\nAnd it gets better:\n\n11\n00:00:19,080 --> 00:00:21,250\nit also helps keep certain bacteria from growing.\n\n12\n00:00:21,650 --> 00:00:23,130\nEver thought how this red goo stays\n\n13\n00:00:23,130 --> 00:00:24,590\non their skin even while they swim?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [],
+      "footage": [],
+      "review": [],
+      "heard": [
+        "\"hippos\" heard as \"hippo's\"",
+        "\"it s\" heard as \"it's\"",
+        "\"it s\" heard as \"it's\""
+      ],
+      "scene_heard": [
+        "scene 1: 73%",
+        "scene 2: 100%",
+        "scene 3: 100%",
+        "scene 4: 100%",
+        "scene 5: 85%",
+        "scene 6: 100%",
+        "scene 7: 100%",
+        "scene 8: 100%"
+      ],
+      "pass": true,
+      "duration": 24.9
+    },
+    "repairs": 0,
+    "audited": true
   }
 ]

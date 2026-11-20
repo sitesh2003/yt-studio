@@ -1,22 +1,16 @@
 {
-  "summary": [
-    "Prioritize immediate 'counter-intuitive' claims in the first sentence; high-stayed videos debunk common assumptions rather than just asking questions.",
-    "Eliminate 'Ever noticed' or 'How X works' openers; these produce the lowest stayed_pct (25-37%) because they feel like slow introductions.",
-    "Use titles that frame the topic as a secret or a conflict (e.g., 'eating you back', 'secretly leaking') rather than a neutral educational prompt.",
-    "Keep the hook under 15 words; videos with concise, punchy first sentences achieved a minimum 50% stayed_pct.",
-    "Avoid countdowns or generic 'thought' emojis in titles, as they correlate with the bottom-performing videos in this dataset."
-  ],
+  "summary": "1. Keep videos short (17-26 seconds); videos over 30 seconds consistently drop stayed_pct below 40% and stall at <400 views.\n2. Open hooks with direct, counter-intuitive statements about the viewer's body or extreme paradoxes rather than descriptive setups.\n3. Completely ban hypothetical scenario openings ('Your car swerves...', 'You just smashed...') and generic rhetorical questions ('Ever noticed...').\n4. Write titles with active, visceral threat or surprise verbs (e.g., 'Pineapples Eat You Back', 'Secretly Leaking') instead of dry explanatory topics.\n5. State the myth or surprising counter-fact in the very first sentence within 8 words to prevent immediate swiping.",
   "winning_hooks": [
-    "Your fingers prune in water, but it is not because you are absorbing it like a sponge.",
-    "Your eyes are leaking right now, and your brain is hiding it.",
-    "Fresh pineapple is literally eating you back.",
-    "This shark is older than the United States."
+    "Direct bodily paradox/myth-bust: 'Your fingers prune in water, but it is not because you are absorbing it like a sponge.' (65.6% stayed)",
+    "Active threat/personification: 'Fresh pineapple is literally eating you back.' (57.6% stayed)",
+    "Extreme comparative stat anchor: 'This shark is older than the United States.' (56.2% stayed)",
+    "Direct personal callout with tension: 'Your eyes are leaking right now, and your brain is hiding it.' (51.9% stayed)"
   ],
   "avoid": [
-    "Starting with a question ('Ever noticed...?', 'Why do...?')",
-    "Using 'thinking' or 'question' emojis in titles.",
-    "Slow, descriptive openers that explain the context before the hook.",
-    "Countdowns in the video intro."
+    "Hypothetical situation roleplay hooks: 'Your car swerves off the highway...' (29.8% stayed)",
+    "Generic engagement questions: 'Ever noticed those tiny black dots...?' (37.3% stayed)",
+    "Fact-stating dictionary openings: 'Honey is famous for being one of the only natural foods...' (38.6% stayed)",
+    "Factually confusing or contradicting setups: 'Drop an apple or a pear... and they both float' when the title says pears sink (27.0% stayed)"
   ],
-  "next_experiment": "Create two versions of the same topic: Version A starts with an immediate, counter-intuitive statement (e.g., 'You are holding a parasite right now'), and Version B starts with a question (e.g., 'Do you know why you have this in your hand?'), measuring the difference in stayed_pct."
+  "next_experiment": "A/B test a 20-second script about body science using a Paradox Hook ('Your stomach acids can dissolve metal, but your body rebuilds its lining every 3 days') vs a Roleplay Hook ('Imagine swallowing a razor blade...'), keeping title and visual graphics identical."
 }

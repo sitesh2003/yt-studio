@@ -578,5 +578,57 @@
         "claim": "Skin microbes metabolize sweat secretions into carboxylic acids which attract mosquitoes."
       }
     ]
+  },
+  {
+    "job": "20261120-1342-scientists-just-found-dinosaur-blood-tha",
+    "date": "2026-11-20",
+    "title": "How Scientists Think Soft Tissue Survived in Dinosaur Fossils",
+    "topic": "Scientists just found dinosaur blood that survived 115 million years inside fossilized bones",
+    "series": "Animal Whys",
+    "weekly": false,
+    "claims": [
+      "Dr. Mary Schweitzer and subsequent researchers isolated soft‑tissue structures, collagen, and vessel remnants in dinosaur fossils.",
+      "Rapid burial, low‑oxygen conditions, and early mineral replacement are widely accepted factors that aid soft‑tissue preservation in fossils.",
+      "Mineral coatings such as iron oxides and calcium phosphate can form around proteins, creating a protective layer that limits microbial decay."
+    ],
+    "sources": [
+      {
+        "cite": "Boatman et al. (2019), Scientific Reports. doi:10.1038/s41598-019-51680-1",
+        "doi": "10.1038/s41598-019-51680-1",
+        "claim": "Dr. Mary Schweitzer and subsequent researchers isolated soft‑tissue structures, collagen, and vessel remnants in dinosaur fossils."
+      },
+      {
+        "cite": "Kish et al. (2016), Scientific Reports. doi:10.1038/srep26152",
+        "doi": "10.1038/srep26152",
+        "claim": "Mineral coatings such as iron oxides and calcium phosphate can form around proteins, creating a protective layer that limits microbial decay."
+      }
+    ]
+  },
+  {
+    "job": "20261120-1408-why-hippos-sweat-a-red-liquid-while-huma",
+    "date": "2026-11-20",
+    "title": "Why Hippos Ooze Red Liquid 🤯",
+    "topic": "Why hippos sweat a red liquid while human sweat is clear, and how it acts as a dual sunscreen and antibiotic.",
+    "series": "Animal Whys",
+    "weekly": false,
+    "claims": [
+      "Hippos do not have traditional sweat glands; they produce a viscous secretion known as hipposudoric acid.",
+      "The secretion is initially colorless but turns red/orange due to the polymerization of pigments.",
+      "The secretion acts as a sunscreen by absorbing UV radiation in the 200–600 nm range.",
+      "The substance has known antibiotic properties that prevent the growth of pathogenic bacteria on the skin.",
+      "The substance remains viscous and sticky on the skin even in water."
+    ],
+    "sources": [
+      {
+        "cite": "Uddin et al. (2026), Helvetica Chimica Acta. doi:10.1002/hlca.70102",
+        "doi": "10.1002/hlca.70102",
+        "claim": "Hippos do not have traditional sweat glands; they produce a viscous secretion known as hipposudoric acid."
+      },
+      {
+        "cite": "Shen et al. (2021), Journal of Student Research. doi:10.47611/jsrhs.v10i3.1646",
+        "doi": "10.47611/jsrhs.v10i3.1646",
+        "claim": "The secretion acts as a sunscreen by absorbing UV radiation in the 200–600 nm range."
+      }
+    ]
   }
 ]

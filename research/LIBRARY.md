@@ -45,6 +45,30 @@ Sources:
 Sources:
 - Ray et al. (2023), PLoS neglected tropical diseases. doi:10.1371/journal.pntd.0011402 — supports: Skin microbes metabolize sweat secretions into carboxylic acids which attract mosquitoes.
 
+## How Scientists Think Soft Tissue Survived in Dinosaur Fossils
+*2026-11-20 · Animal Whys*
+
+- Dr. Mary Schweitzer and subsequent researchers isolated soft‑tissue structures, collagen, and vessel remnants in dinosaur fossils.
+- Rapid burial, low‑oxygen conditions, and early mineral replacement are widely accepted factors that aid soft‑tissue preservation in fossils.
+- Mineral coatings such as iron oxides and calcium phosphate can form around proteins, creating a protective layer that limits microbial decay.
+
+Sources:
+- Boatman et al. (2019), Scientific Reports. doi:10.1038/s41598-019-51680-1 — supports: Dr. Mary Schweitzer and subsequent researchers isolated soft‑tissue structures, collagen, and vessel remnants in dinosaur fossils.
+- Kish et al. (2016), Scientific Reports. doi:10.1038/srep26152 — supports: Mineral coatings such as iron oxides and calcium phosphate can form around proteins, creating a protective layer that limits microbial decay.
+
+## Why Hippos Ooze Red Liquid 🤯
+*2026-11-20 · Animal Whys*
+
+- Hippos do not have traditional sweat glands; they produce a viscous secretion known as hipposudoric acid.
+- The secretion is initially colorless but turns red/orange due to the polymerization of pigments.
+- The secretion acts as a sunscreen by absorbing UV radiation in the 200–600 nm range.
+- The substance has known antibiotic properties that prevent the growth of pathogenic bacteria on the skin.
+- The substance remains viscous and sticky on the skin even in water.
+
+Sources:
+- Uddin et al. (2026), Helvetica Chimica Acta. doi:10.1002/hlca.70102 — supports: Hippos do not have traditional sweat glands; they produce a viscous secretion known as hipposudoric acid.
+- Shen et al. (2021), Journal of Student Research. doi:10.47611/jsrhs.v10i3.1646 — supports: The secretion acts as a sunscreen by absorbing UV radiation in the 200–600 nm range.
+
 ## Why Steel Bearings Are Extremely Durable 🏗️
 *2026-11-19 · How Things Work*
 
