@@ -1803,7 +1803,7 @@
       "science education"
     ],
     "hook": "A virus attacks your body. How does a vaccine prepare your defenses before the fight starts?",
-    "status": "scheduled",
+    "status": "public",
     "narration": "A virus attacks your body. How does a vaccine prepare your defenses before the fight starts? A single piece of viral protein blueprint (mRNA) is injected into a muscle cell. Your cells read that mRNA blueprint. They build only the harmless surface spikes of the virus. Immune cells detect those spikes. They begin a multi-day process to craft specific weapons called antibodies. What happens if the real virus shows up weeks later? Memory cells recognize the protein and signal your body to rapidly produce those exact antibodies to stop the virus. Think about this. Why wouldn't your memory cells recognize a totally different cold virus?",
     "voice_engine": "chatterbox",
     "voices": "one narrator (af_heart)",
@@ -1893,7 +1893,8 @@
     "audited": true,
     "video_id": "UQoxFnV0kUw",
     "publish_at": "2026-11-20T16:30:00-05:00",
-    "thumbnail_set": true
+    "thumbnail_set": true,
+    "answered": true
   },
   {
     "job": "20261116-2045-how-does-gps-actually-know-where-i-am",
