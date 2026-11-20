@@ -1,12 +1,13 @@
 {
-  "summary": "1. Jump immediately into the action or question within the first 3 words instead of using warm-up fluff like 'You've used soap your whole life'. 2. High-stayed hooks (up to 42.9% stayed) ask direct, visually descriptive questions ('Why does baking soda fizz the moment it hits vinegar?') rather than abstract setups. 3. Video titles that state a direct, relatable curiosity question perform better on retention than titles padded with textbook jargon like ': Chemistry Explained'. 4. Keep videos focused under 40 seconds, as the 57-second video had the lowest views (16 views) despite decent retention. 5. Avoid long wordy setups with complex scenarios (e.g., comparing 10kg vs 1kg spheres in a vacuum) which stall audience momentum immediately.",
+  "summary": "1. Keep total video duration under 40 seconds, as longer videos over 50s severely drop initial reach and total views. 2. Eliminate conversational preambles like 'You've used...' or 'You've seen...' in the first sentence to raise stayed_pct above 40%. 3. Start the script immediately with a direct 'Why does [everyday chemical reaction] happen?' question to hook curiosity instantly. 4. Use straightforward titles that explicitly state the phenomenon rather than adding distracting emojis or wordy setups. 5. Focus on tangible, immediate visual reactions (e.g., fizzing, melting) rather than abstract, text-heavy thought experiments.",
   "winning_hooks": [
-    "Direct action-focused questions starting immediately with 'Why' or immediate phenomenon ('Why does baking soda fizz the moment it hits vinegar?')"
+    "Direct question hooks with immediate action verbs: 'Why does baking soda fizz the moment it hits vinegar?'",
+    "Plausible mechanism questions without fluff: 'How does salt actually melt ice on frozen roads?'"
   ],
   "avoid": [
-    "Preamble statements before the question ('You've used...', 'You've seen...')",
-    "Academic subtitle titles like ': The Chemistry of Cleaning' or ': Chemistry Explained'",
-    "Complex, multi-sentence hypothetical setups in the first 5 seconds"
+    "Warm-up fluff intros: 'You've used soap your whole life, but why...'",
+    "Complex word-problem setups: 'A 10kg lead sphere and a 1kg lead sphere dropped from the same height...'",
+    "Videos over 45 seconds that dilute immediate pacing"
   ],
-  "next_experiment": "Test a direct question hook starting at second 0 ('Why does X do Y?') against a preamble hook ('You see X every day, but why does Y happen?') using identical visual B-roll and script length (~35s)."
+  "next_experiment": "A/B test the first 3 seconds: Test a direct hook ('Why does salt melt ice?') vs. a conversational setup ('You've seen trucks dump salt on roads, but why does it melt ice?') on the same 35-second topic to measure stayed_pct impact."
 }

@@ -3689,5 +3689,106 @@
       "duration": 28.2
     },
     "repairs": 2
+  },
+  {
+    "job": "20261120-1843-why-doesn-t-the-moon-crash-into-the-eart",
+    "topic": "Why doesn't the Moon crash into the Earth?",
+    "title": "Why Doesn't The Moon Crash Into Earth?",
+    "description": "The Moon is falling, but it never hits the ground. Discover the simple physics of why orbital velocity keeps us in the sky. #shorts #physics #space\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nImage: NASA (public domain)\nImage: The Metropolitan Museum of Art (CC0)\nPhoto by WILFRIDO-06 on Pixabay\nVideo by Kaffeesüchtig on Pixabay\nVideo by Vimeo-Free-Videos on Pixabay\nVideo by agus252 on Pixabay\nVideo by u_sajylqtz0q on Pixabay",
+    "tags": [
+      "physics",
+      "space",
+      "orbit",
+      "gravity",
+      "science",
+      "moon"
+    ],
+    "hook": "What if you threw a ball so fast it never hit the ground? It's the secret to why the Moon stays in orbit.",
+    "status": "banked",
+    "narration": "What if you threw a ball so fast it never hit the ground? It's the secret to why the Moon stays in orbit. Imagine throwing a ball. It curves downward and hits the ground. Throw it faster, and it lands further away because the Earth curves beneath it. Imagine throwing a ball in a world with no air resistance; throw it fast enough, and the curve of the fall matches the curve of the Earth. It never lands. The Moon is just like that ball. It moves sideways fast enough to constantly miss the Earth while falling. We see this with satellites. They need regular boosts to stay up because air molecules eventually slow them down. Try this: if the Moon suddenly stopped moving sideways, what would happen to its orbit?",
+    "voice_engine": "chatterbox",
+    "voices": "one narrator (af_heart)",
+    "diagrams": 1,
+    "series": "Physics",
+    "countdown": false,
+    "length_arm": null,
+    "question": "Try this: if the Moon suddenly stopped moving sideways, what would happen to its orbit?",
+    "answer_comment": "The answer: The Moon would fall straight toward the Earth due to gravity. Without that sideways 'orbital velocity' to keep it missing the surface, the balance is lost, and it would crash. Keep in mind, this would take a few days of falling! Does this mean the Moon is basically a projectile that keeps missing the Earth?",
+    "sources": [],
+    "fact_check": [
+      "The Moon is in freefall toward Earth but maintains orbit due to its tangential velocity.",
+      "Orbits are a balance between tangential velocity and gravitational pull.",
+      "Satellites in low Earth orbit eventually decay due to atmospheric drag, requiring re-boosts, unlike the Moon which is far enough away to be unaffected by this specific drag."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        5.0
+      ],
+      [
+        5.0,
+        8.32
+      ],
+      [
+        8.32,
+        12.15
+      ],
+      [
+        12.15,
+        18.97
+      ],
+      [
+        18.97,
+        24.22
+      ],
+      [
+        24.22,
+        29.23
+      ],
+      [
+        29.23,
+        33.65
+      ]
+    ],
+    "duration": 33.65,
+    "scene_lines": [
+      "What if you threw a ball so fast it never hit the ground? It's the secret to why the Moon stays in orbit.",
+      "Imagine throwing a ball. It curves downward and hits the ground.",
+      "Throw it faster, and it lands further away because the Earth curves beneath it.",
+      "Imagine throwing a ball in a world with no air resistance; throw it fast enough, and the curve of the fall matches the curve of the Earth. It never lands.",
+      "The Moon is just like that ball. It moves sideways fast enough to constantly miss the Earth while falling.",
+      "We see this with satellites. They need regular boosts to stay up because air molecules eventually slow them down.",
+      "Try this: if the Moon suddenly stopped moving sideways, what would happen to its orbit?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,000 --> 00:00:01,000\nWhat if you threw a ball so\n\n2\n00:00:01,000 --> 00:00:02,410\nfast it never hit the ground?\n\n3\n00:00:02,730 --> 00:00:04,780\nIt's the secret to why the Moon stays in orbit.\n\n4\n00:00:05,000 --> 00:00:06,290\nImagine throwing a ball.\n\n5\n00:00:06,400 --> 00:00:08,110\nIt curves downward and hits the ground.\n\n6\n00:00:08,320 --> 00:00:09,130\nThrow it faster,\n\n7\n00:00:09,240 --> 00:00:10,740\nand it lands further away because the\n\n8\n00:00:10,740 --> 00:00:12,070\nEarth curves beneath it.\n\n9\n00:00:12,150 --> 00:00:13,470\nImagine throwing a ball in a world\n\n10\n00:00:13,470 --> 00:00:14,600\nwith no air resistance;\n\n11\n00:00:14,710 --> 00:00:16,030\nthrow it fast enough, and the curve\n\n12\n00:00:16,030 --> 00:00:17,820\nof the fall matches the curve of the Earth.\n\n13\n00:00:17,950 --> 00:00:18,740\nIt never lands.\n\n14\n00:00:18,970 --> 00:00:20,640\nThe Moon is just like that ball.\n\n15\n00:00:20,800 --> 00:00:22,520\nIt moves sideways fast enough to constantly\n\n16\n00:00:22,520 --> 00:00:23,990\nmiss the Earth while falling.\n\n17\n00:00:24,220 --> 00:00:25,430\nWe see this with satellites.\n\n18\n00:00:25,780 --> 00:00:27,040\nThey need regular boosts to stay up\n\n19\n00:00:27,040 --> 00:00:29,050\nbecause air molecules eventually slow them down.\n\n20\n00:00:29,230 --> 00:00:30,020\nTry this:\n\n21\n00:00:30,090 --> 00:00:31,900\nif the Moon suddenly stopped moving sideways,\n\n22\n00:00:32,130 --> 00:00:33,050\nwhat would happen to its orbit?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [],
+      "footage": [],
+      "review": [],
+      "heard": [
+        "\"threw\" heard as \"throw\"",
+        "\"boosts\" heard as \"boost\"",
+        "\"slow\" heard as \"slowed\""
+      ],
+      "scene_heard": [
+        "scene 1: 96%",
+        "scene 2: 100%",
+        "scene 3: 100%",
+        "scene 4: 100%",
+        "scene 5: 100%",
+        "scene 6: 89%",
+        "scene 7: 93%"
+      ],
+      "pass": true,
+      "duration": 33.4
+    },
+    "repairs": 1,
+    "audited": true
   }
 ]

@@ -406,5 +406,19 @@
         "claim": "Insulin resistance prevents this translocation, leaving glucose in the blood."
       }
     ]
+  },
+  {
+    "job": "20261120-1843-why-doesn-t-the-moon-crash-into-the-eart",
+    "date": "2026-11-20",
+    "title": "Why Doesn't The Moon Crash Into Earth?",
+    "topic": "Why doesn't the Moon crash into the Earth?",
+    "series": "Physics",
+    "weekly": false,
+    "claims": [
+      "The Moon is in freefall toward Earth but maintains orbit due to its tangential velocity.",
+      "Orbits are a balance between tangential velocity and gravitational pull.",
+      "Satellites in low Earth orbit eventually decay due to atmospheric drag, requiring re-boosts, unlike the Moon which is far enough away to be unaffected by this specific drag."
+    ],
+    "sources": []
   }
 ]

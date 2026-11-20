@@ -23,6 +23,13 @@ Sources:
 - Querio et al. (2024), International Journal of Molecular Sciences. doi:10.3390/ijms25158197 — supports: Binding triggers a signaling cascade causing GLUT4 storage vesicles to fuse with the plasma membrane.
 - Liu et al. (2009), American Journal of Physiology-Endocrinology and Metabolism. doi:10.1152/ajpendo.00467.2009 — supports: Insulin resistance prevents this translocation, leaving glucose in the blood.
 
+## Why Doesn't The Moon Crash Into Earth?
+*2026-11-20 · Physics*
+
+- The Moon is in freefall toward Earth but maintains orbit due to its tangential velocity.
+- Orbits are a balance between tangential velocity and gravitational pull.
+- Satellites in low Earth orbit eventually decay due to atmospheric drag, requiring re-boosts, unlike the Moon which is far enough away to be unaffected by this specific drag.
+
 ## Ever Thought Why Mars Is Red?
 *2026-11-19 · Earth and Space*
 

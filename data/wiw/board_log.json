@@ -284,5 +284,17 @@
    "3": "The middle row shows five separate Earths strung out in a line with a detached water droplet, which visually misrepresents the scientific concept of tidal stret"
   },
   "error": ""
+ },
+ {
+  "when": "2026-11-20 18:50",
+  "topic": "Why doesn't the Moon crash into the Earth?",
+  "drawn": [
+   2,
+   3,
+   4,
+   5
+  ],
+  "not_drawn": {},
+  "error": ""
  }
 ]
