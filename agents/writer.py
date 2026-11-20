@@ -135,11 +135,47 @@ Return JSON: {{"topics": [{{"topic": "...", "why_it_will_work": "...", "pattern"
     return topics
 
 
+_LABEL = None
+_ASK = None
+
+
+def strip_labels(script):
+    """Words that must never be SPOKEN, removed from every scene before the voice is made (20 Nov 2026):
+    - a script field leaking into the narration: the published "Dinosaur Blood" Short said "Turn? True."
+      because the writer put "turn: true." at the start of a line instead of in the scene's "turn" field;
+    - the "Drop your guess below" / "Tell me your guess" tag after the closing question (owner, 19 Nov:
+      one closing question, nothing after it)."""
+    import re
+    global _LABEL, _ASK
+    # a field name only counts with its value (turn: true) or at the very start of the line (speaker: ...),
+    # so ordinary sentences like "the cell takes a turn: it splits" are left alone
+    _LABEL = _LABEL or re.compile(r"\b(turn|predict)\s*[:=]\s*(true|false)\s*[.,;:]\s*|"
+                                  r"^\s*(turn|predict)\s*[:=]\s*(true|false)\b\s*|"
+                                  r"^\s*(speaker|key_idea|visual_query|narration)\s*[:=]\s*(host|explainer)?\s*[.,;:]?\s*",
+                                  re.I)
+    _ASK = _ASK or re.compile(r"\s*(drop|tell me|share|leave|comment)\s+(your|a|me your)?\s*(guess|answer|thoughts?)"
+                              r"(\s+(below|in the comments|down below))?[.!]*\s*$", re.I)
+    for k, sc in enumerate(script.get("scenes", [])):
+        t = sc.get("narration", "")
+        new = _LABEL.sub("", t)
+        new = _ASK.sub("", new)
+        new = re.sub(r"\s{2,}", " ", new).strip()
+        if new and new[0].islower():
+            new = new[0].upper() + new[1:]
+        if new != t:
+            if re.search(r"\bturn\s*[:=]\s*true", t, re.I):
+                sc["turn"] = True
+            log(f"writer: removed words that must not be spoken from scene {k + 1}: {t[:60]!r}")
+            sc["narration"] = new
+    return script
+
+
 def tidy_countdown(script):
     """"Pause and guess" is said ONCE, straight before "three, two, one" (the maple-syrup Short said
     it twice: once before the question and again before the count). Any extra "Pause and guess" and
     any extra countdown are removed from the spoken lines, whatever the writer produced."""
     import re
+    strip_labels(script)
     pg = re.compile(r"\s*pause and guess[.…!,:]*\s*", re.I)
     count = re.compile(r"three[,.…]*\s*two[,.…]*\s*one[.…!]*", re.I)
     scenes = script.get("scenes", [])
