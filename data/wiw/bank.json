@@ -1,17 +1,5 @@
 [
   {
-    "job": "20261117-0811-why-does-anything-move-if-action-equals-",
-    "title": "How Newton's Third Law Actually Works",
-    "assets": {
-      "mp4": 758264442,
-      "jpg": 758264593,
-      "json": 758264612
-    },
-    "locked": true,
-    "series": "Physics",
-    "stored": "2026-11-17T08:33:49.594618+00:00"
-  },
-  {
     "job": "20261117-1504-why-does-a-sound-wave-change-pitch-with-",
     "title": "Why Does A Guitar String Change Pitch?",
     "assets": {
@@ -70,5 +58,17 @@
     "locked": true,
     "series": "Chemistry",
     "stored": "2026-11-20T09:27:06.456010+00:00"
+  },
+  {
+    "job": "20261120-1519-how-does-insulin-actually-remove-glucose",
+    "title": "The Science Of How Insulin Clears Sugar",
+    "assets": {
+      "mp4": 772350365,
+      "jpg": 772350693,
+      "json": 772350780
+    },
+    "locked": true,
+    "series": "Biology",
+    "stored": "2026-11-20T15:37:53.501234+00:00"
   }
 ]

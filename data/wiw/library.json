@@ -375,5 +375,36 @@
       "Solid sodium chloride (salt) does not conduct electricity because its ions and electrons are locked in a rigid ionic crystal lattice."
     ],
     "sources": []
+  },
+  {
+    "job": "20261120-1519-how-does-insulin-actually-remove-glucose",
+    "date": "2026-11-20",
+    "title": "The Science Of How Insulin Clears Sugar",
+    "topic": "How does insulin actually remove glucose from your bloodstream?",
+    "series": "Biology",
+    "weekly": false,
+    "claims": [
+      "Insulin binds to receptor tyrosine kinases on the cell surface.",
+      "Binding triggers a signaling cascade causing GLUT4 storage vesicles to fuse with the plasma membrane.",
+      "GLUT4 channels allow glucose to enter via facilitated diffusion.",
+      "Insulin resistance prevents this translocation, leaving glucose in the blood."
+    ],
+    "sources": [
+      {
+        "cite": "MARUYAMA (2014), Cells. doi:10.3390/cells3020304",
+        "doi": "10.3390/cells3020304",
+        "claim": "Insulin binds to receptor tyrosine kinases on the cell surface."
+      },
+      {
+        "cite": "Querio et al. (2024), International Journal of Molecular Sciences. doi:10.3390/ijms25158197",
+        "doi": "10.3390/ijms25158197",
+        "claim": "Binding triggers a signaling cascade causing GLUT4 storage vesicles to fuse with the plasma membrane."
+      },
+      {
+        "cite": "Liu et al. (2009), American Journal of Physiology-Endocrinology and Metabolism. doi:10.1152/ajpendo.00467.2009",
+        "doi": "10.1152/ajpendo.00467.2009",
+        "claim": "Insulin resistance prevents this translocation, leaving glucose in the blood."
+      }
+    ]
   }
 ]

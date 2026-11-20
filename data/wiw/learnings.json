@@ -1,17 +1,12 @@
 {
-  "summary": [
-    "Prioritize everyday chemical phenomena over abstract biological or physical mechanics to drive immediate viewer retention.",
-    "Formulate hooks that immediately challenge common assumptions rather than asking generic open-ended questions.",
-    "Eliminate overly wordy hypothetical scenarios from the opening sentence to reduce friction in the critical swipe-away window.",
-    "Keep video durations under 40 seconds to prevent natural drop-off points from ruining the average view percentage.",
-    "Incorporate specific physical actions or visual triggers into the title instead of generic academic labels."
-  ],
+  "summary": "1. Jump immediately into the action or question within the first 3 words instead of using warm-up fluff like 'You've used soap your whole life'. 2. High-stayed hooks (up to 42.9% stayed) ask direct, visually descriptive questions ('Why does baking soda fizz the moment it hits vinegar?') rather than abstract setups. 3. Video titles that state a direct, relatable curiosity question perform better on retention than titles padded with textbook jargon like ': Chemistry Explained'. 4. Keep videos focused under 40 seconds, as the 57-second video had the lowest views (16 views) despite decent retention. 5. Avoid long wordy setups with complex scenarios (e.g., comparing 10kg vs 1kg spheres in a vacuum) which stall audience momentum immediately.",
   "winning_hooks": [
-    "Why does baking soda fizz the moment it hits vinegar?"
+    "Direct action-focused questions starting immediately with 'Why' or immediate phenomenon ('Why does baking soda fizz the moment it hits vinegar?')"
   ],
   "avoid": [
-    "You've used soap your whole life, but why does it clean grease when plain water fails?",
-    "A 10kg lead sphere and a 1kg lead sphere dropped from the same height in a vacuum. Why don't they hit the ground at different moments?"
+    "Preamble statements before the question ('You've used...', 'You've seen...')",
+    "Academic subtitle titles like ': The Chemistry of Cleaning' or ': Chemistry Explained'",
+    "Complex, multi-sentence hypothetical setups in the first 5 seconds"
   ],
-  "next_experiment": "Test if starting a physics video with a direct, single-sentence question ('Why do heavy things fall at the same speed as light things?') increases stayed_pct above 40% compared to using a complex hypothetical scenario."
+  "next_experiment": "Test a direct question hook starting at second 0 ('Why does X do Y?') against a preamble hook ('You see X every day, but why does Y happen?') using identical visual B-roll and script length (~35s)."
 }

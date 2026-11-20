@@ -246,5 +246,43 @@
    "5": "it needs 1-3 groups"
   },
   "error": ""
+ },
+ {
+  "when": "2026-11-20 14:48",
+  "topic": "How an electric motor spins: The physics of electromagnetism explained",
+  "drawn": [
+   3,
+   4,
+   6
+  ],
+  "not_drawn": {
+   "5": "The diagram uses abstract icons (gear, lightning bolt, ball of yarn, galaxy) that do not clearly or accurately represent a split-ring commutator or current dire"
+  },
+  "error": ""
+ },
+ {
+  "when": "2026-11-20 15:28",
+  "topic": "How does insulin actually remove glucose from your bloodstream?",
+  "drawn": [
+   2,
+   4,
+   5
+  ],
+  "not_drawn": {
+   "3": "The picture uses a brick instead of a receptor or channel symbol, which does not clearly represent a cellular receptor."
+  },
+  "error": ""
+ },
+ {
+  "when": "2026-11-20 15:47",
+  "topic": "Why does the Moon cause two high tides on opposite sides of Earth?",
+  "drawn": [
+   2,
+   4
+  ],
+  "not_drawn": {
+   "3": "The middle row shows five separate Earths strung out in a line with a detached water droplet, which visually misrepresents the scientific concept of tidal stret"
+  },
+  "error": ""
  }
 ]

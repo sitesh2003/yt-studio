@@ -10,6 +10,19 @@ agents/library.py; a source is listed only if its abstract was checked to suppor
 - Voltage applied across a metal causes a drift of these free electrons.
 - Solid sodium chloride (salt) does not conduct electricity because its ions and electrons are locked in a rigid ionic crystal lattice.
 
+## The Science Of How Insulin Clears Sugar
+*2026-11-20 · Biology*
+
+- Insulin binds to receptor tyrosine kinases on the cell surface.
+- Binding triggers a signaling cascade causing GLUT4 storage vesicles to fuse with the plasma membrane.
+- GLUT4 channels allow glucose to enter via facilitated diffusion.
+- Insulin resistance prevents this translocation, leaving glucose in the blood.
+
+Sources:
+- MARUYAMA (2014), Cells. doi:10.3390/cells3020304 — supports: Insulin binds to receptor tyrosine kinases on the cell surface.
+- Querio et al. (2024), International Journal of Molecular Sciences. doi:10.3390/ijms25158197 — supports: Binding triggers a signaling cascade causing GLUT4 storage vesicles to fuse with the plasma membrane.
+- Liu et al. (2009), American Journal of Physiology-Endocrinology and Metabolism. doi:10.1152/ajpendo.00467.2009 — supports: Insulin resistance prevents this translocation, leaving glucose in the blood.
+
 ## Ever Thought Why Mars Is Red?
 *2026-11-19 · Earth and Space*
 
