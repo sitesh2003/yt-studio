@@ -648,6 +648,43 @@ def schedule(names, t0, t1):
     return {nm: int(round((t0 + (t1 - t0) * i / max(1, n)) * FPS)) + 1 for i, nm in enumerate(names)}
 
 
+
+def crumple_lattice(parts, front_axis_sign=1.0):
+    """A lattice round a car body; its shape key 'crushed' pushes the front back ~0.65 m and bulges the
+    bonnet up, as a crumple zone folds. Returns the lattice's shape key to animate (0 -> 1)."""
+    body = [o for o in parts if o.type == "MESH" and "wheel" not in o.name.lower()]
+    meshes = [o for o in parts if o.type == "MESH"]     # wheels ride along with the folding front
+    bpy.context.view_layer.update()
+    pts = [o.matrix_world @ Vector(v) for o in body for v in o.bound_box]
+    lo = Vector((min(p[0] for p in pts), min(p[1] for p in pts), min(p[2] for p in pts)))
+    hi = Vector((max(p[0] for p in pts), max(p[1] for p in pts), max(p[2] for p in pts)))
+    ld = bpy.data.lattices.new("Crumple")
+    ld.points_u, ld.points_v, ld.points_w = 6, 2, 3
+    lat = bpy.data.objects.new("Crumple", ld)
+    bpy.context.collection.objects.link(lat)
+    lat.location = (lo + hi) / 2
+    lat.scale = (hi - lo) * 1.04
+    for o in meshes:
+        m = o.modifiers.new("Crumple", "LATTICE")
+        m.object = lat
+    lat.shape_key_add(name="Basis")
+    sk = lat.shape_key_add(name="crushed")
+    L = (hi - lo).x
+    push = 0.65 / L                          # front pushed back 0.65 m, in lattice units
+    for i, pt in enumerate(ld.points):
+        u = pt.co[0] * front_axis_sign        # -0.5 (back) .. 0.5 (front)
+        k = max(0.0, (u - 0.05) / 0.45)       # only the front ~45% folds
+        co = sk.data[i].co
+        co.x = pt.co[0] - front_axis_sign * push * k
+        co.z = pt.co[2] + (0.06 * k if pt.co[2] > 0 else -0.01 * k)
+    return sk
+
+
+def key_value(sk, frames_vals):
+    for fr, v in frames_vals:
+        sk.value = v
+        sk.keyframe_insert("value", frame=fr)
+
 # ---------------------------------------------------------------- camera
 def camera(lens=32):
     cd = bpy.data.cameras.new("Cam")
@@ -680,7 +717,7 @@ def build():
     look = SHOT.get("world", {"run_at_camera": "day", "size_tower": "day", "xray_scan": "sim",
                               "stress_run": "sim", "muscle_needed": "sim", "speed_track": "day",
                               "race_pass": "day", "closeup_roar": "dusk", "xray_jaw": "sim",
-                              "coprolite": "sim"}[kind])
+                              "coprolite": "sim", "crash_compare": "day"}[kind])
     world(look)
     ground("sim" if look == "sim" else "road")
     if look == "day":
@@ -852,6 +889,51 @@ def build():
         bpy.context.object.data.materials.append(mat("Stand", (0.05, 0.07, 0.1), 0.4))
         key_path(cam, [(1, Vector((0, -6.5, 2.6))), (N, Vector((0, -5.2, 2.3)))])
         key_path(tgt, [(1, Vector((0, 0, 1.55))), (N, Vector((0, 0, 1.55)))])
+        smooth_keys(cam)
+
+    elif kind == "crash_compare":
+        # two identical cars hit concrete barriers side by side, in slow motion: the stiff one stops in a
+        # blink, the crumpling one folds its front and takes longer to stop. Same speed, same mass.
+        arm.location = (0, 0, -100)                      # no creature in this shot
+        slow = SHOT.get("slowmo", 4.0)
+        v = SHOT.get("kmh", 50) / 3.6 / slow             # on-screen speed
+        hit = int(N * SHOT.get("hit_at", 0.45))
+        concrete = mat("Concrete", (0.55, 0.55, 0.52), 0.9)
+        stripe = mat("Stripe", (0.95, 0.75, 0.1), 0.5)
+        lanes = SHOT.get("lanes", ["rigid", "crumple"])
+        for k, mode in enumerate(lanes):
+            y = (k - (len(lanes) - 1) / 2) * 4.2
+            box("Barrier", (1.2, 3.2, 1.6), (0.6, y, 0.8), concrete)
+            box("Stripe", (0.05, 3.2, 0.3), (-0.01, y, 1.1), stripe)
+            car, parts = glb(SPEC["props"]["car"], 4.5, (0, y, 0), math.radians(-90))
+            bpy.context.view_layer.update()
+            front = max((o.matrix_world @ Vector(c_))[0] for o in parts if o.type == "MESH" for c_ in o.bound_box)
+            gap = -front                                  # car origin x so its nose touches x=0
+            run_in = v * (hit - 1) / FPS
+            if mode == "rigid":
+                stop_frames = max(2, int(0.012 * FPS * slow))       # ~0.01 s: a blink
+                travel = 0.08
+            else:
+                stop_frames = max(6, int(0.1 * FPS * slow))         # ~0.1 s spread over the fold
+                travel = 0.65
+            key_path(car, [(1, Vector((gap - run_in, y, 0))), (hit, Vector((gap, y, 0)))])
+            car.location = (gap + travel, y, 0)
+            car.keyframe_insert("location", frame=hit + stop_frames)
+            for fc in _fcurves(car.animation_data.action):            # decelerate through the stop
+                for kp in fc.keyframe_points:
+                    if abs(kp.co[0] - (hit + stop_frames)) < 0.5:
+                        kp.interpolation = "LINEAR"
+                    if abs(kp.co[0] - hit) < 0.5:
+                        kp.interpolation = "QUAD"
+                        kp.easing = "EASE_OUT"
+            if mode == "crumple":
+                sk = crumple_lattice(parts)
+                key_value(sk, [(1, 0.0), (hit, 0.0), (hit + stop_frames, 1.0)])
+            else:                                        # a stiff car barely dents, but jolts
+                sk = crumple_lattice(parts)
+                key_value(sk, [(1, 0.0), (hit, 0.0), (hit + stop_frames, 0.08)])
+        key_path(cam, [(1, Vector((-1.5, -15.5, 11.0))), (N, Vector((-0.8, -13.0, 9.5)))])
+        key_path(tgt, [(1, Vector((-2.6, 0, 0.4))), (N, Vector((-1.4, 0, 0.4)))])
         smooth_keys(cam)
 
     elif kind == "speed_track":

@@ -1,0 +1,51 @@
+{
+  "title_options": [
+    "Why Cars Are Built To Crumple 🚗"
+  ],
+  "facts": [
+    "Newton's second law: average force = change in momentum / stopping time. Same car, same speed, so the same change in momentum; a longer stop means a smaller average force on the people inside.",
+    "Crumple zone: Bela Barenyi, Daimler-Benz patent DBP 854 157, filed 23 Jan 1951, granted 28 Aug 1952; first series-production car with crumple zones: Mercedes-Benz W 111, 1959 (German Patent and Trade Mark Office; Mercedes-Benz history).",
+    "Rigid passenger cell between soft front and rear zones (Barenyi's design)."
+  ],
+  "description": "A car that folds up in a crash keeps you safer than one that doesn't. Here's the physics: the same stop, spread over more time, needs less force. #shorts #physics #science #cars",
+  "sources": "Newton's second law (impulse); Bela Barenyi crumple-zone patent DBP 854 157 (filed 1951, granted 1952), German Patent and Trade Mark Office; Mercedes-Benz W 111 (1959), Mercedes-Benz history.",
+  "tags": [
+    "crumple zone",
+    "car safety",
+    "physics",
+    "Newton's second law",
+    "impulse",
+    "science",
+    "3D animation"
+  ],
+  "scenes": [
+    {
+      "narration": "A car that folds up in a crash keeps you safer than one that doesn't.",
+      "shot": "hook"
+    },
+    {
+      "narration": "Both of these cars hit the wall at the same speed, and both of them stop.",
+      "shot": "both"
+    },
+    {
+      "narration": "The stiff car stops almost instantly, so the people inside get hit with a huge force.",
+      "shot": "rigid"
+    },
+    {
+      "narration": "The folding front makes the stop last longer, so the force on the people inside drops.",
+      "shot": "fold"
+    },
+    {
+      "narration": "That's Newton's second law: the same change in speed, spread over more time, needs less force.",
+      "shot": "law"
+    },
+    {
+      "narration": "The idea was patented in 1952, and Mercedes-Benz first built it into a production car in 1959.",
+      "shot": "history"
+    },
+    {
+      "narration": "So why is the middle of the car built to be as strong as possible?",
+      "shot": "end"
+    }
+  ]
+}

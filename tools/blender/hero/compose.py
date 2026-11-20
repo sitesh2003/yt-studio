@@ -193,6 +193,69 @@ def g_none(d, f, n, shot):
     pass
 
 
+def _graph(d, f, n, curves, hit):
+    """Force on the people inside against time. Both curves hold the same area (same change in speed):
+    a stiff stop is a tall, narrow spike; a folding stop is low and wide."""
+    x0, y0, x1, y1 = 110, 300, W - 90, 880
+    d.rounded_rectangle([x0 - 30, y0 - 90, x1 + 30, y1 + 70], 26, fill=(0, 0, 0, 200))
+    d.line([x0, y1, x1, y1], fill=WHITE, width=5)
+    d.line([x0, y0, x0, y1], fill=WHITE, width=5)
+    text(d, (x0 + 10, y0 - 50), "FORCE ON YOU", 46, WHITE, anchor="lm", stroke=0)
+    text(d, (x1, y1 + 40), "TIME", 42, WHITE, anchor="rm", stroke=0)
+    t = max(0.0, (f - hit) / (FPS * 1.2))          # the graph draws itself after the hit
+    for width, colr, lbl in curves:
+        height = 0.08 / width                        # area = height x width stays the same
+        pts = []
+        for i in range(0, 101):
+            u = i / 100
+            if u > t:
+                break
+            g = math.sin(math.pi * (u - 0.12) / width) if 0.12 <= u <= 0.12 + width else 0.0   # both start at impact
+            pts.append((x0 + (x1 - x0) * u, y1 - (y1 - y0) * min(1.0, height) * g))
+        if len(pts) > 1:
+            d.line(pts, fill=colr, width=12, joint="curve")
+        if t > 0.6:
+            ly = max(y0 + 60, y1 - (y1 - y0) * min(1.0, height) * 0.6)
+            text(d, (x0 + (x1 - x0) * (0.14 + width) + 20, ly), lbl, 46, colr, anchor="lm", stroke=7)
+
+
+def g_same_speed(d, f, n, shot):
+    s = pop(f, 4, 6)
+    text(d, (W / 2, 330), "SAME CAR", int(90 * s), WHITE, stroke=11)
+    text(d, (W / 2, 450), "SAME SPEED", int(90 * s), YEL, stroke=11)
+    text(d, (W / 2, H * 0.62), "STIFF", 70, RED, stroke=10)
+    text(d, (W / 2, H * 0.62 + 90), "vs FOLDING", 70, CYAN, stroke=10)
+
+
+def g_force_graph_rigid(d, f, n, shot):
+    _graph(d, f, n, [(0.08, RED, "STIFF")], int(n * shot.get("hit_at", 0.25)))
+
+
+def g_force_graph_both(d, f, n, shot):
+    _graph(d, f, n, [(0.08, (120, 60, 60), "STIFF"), (0.5, CYAN, "FOLDING")], int(n * shot.get("hit_at", 0.25)) - 30)
+
+
+def g_newton(d, f, n, shot):
+    text(d, (W / 2, 300), "NEWTON'S SECOND LAW", 66, WHITE, stroke=9)
+    s = pop(f, 10, 6)
+    text(d, (W / 2, 450), "FORCE =", int(96 * s), YEL, stroke=11)
+    text(d, (W / 2, 570), "CHANGE IN SPEED x MASS", int(58 * s), WHITE, stroke=9)
+    d.line([160, 625, W - 160, 625], fill=WHITE, width=8)
+    text(d, (W / 2, 690), "TIME TO STOP", int(64 * s), CYAN, stroke=9)
+    if f > n * 0.55:
+        s2 = pop(f, int(n * 0.55), 6)
+        text(d, (W / 2, H * 0.64), "MORE TIME = LESS FORCE", int(70 * s2), YEL, stroke=10)
+
+
+def g_history(d, f, n, shot):
+    s = pop(f, 6, 6)
+    text(d, (W / 2, 330), "PATENTED 1952", int(88 * s), WHITE, stroke=11)
+    text(d, (W / 2, 440), "Bela Barenyi", int(58 * s), CYAN, stroke=8)
+    if f > n * 0.5:
+        s2 = pop(f, int(n * 0.5), 6)
+        text(d, (W / 2, 590), "FIRST PRODUCTION CAR: 1959", int(60 * s2), YEL, stroke=9)
+
+
 def g_cars_force(d, f, n, shot):
     """'like three small cars stacked on its teeth': the count as each car lands, then the bite force."""
     g_size_tower(d, f, n, shot)
