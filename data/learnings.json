@@ -1,16 +1,17 @@
 {
-  "summary": "1. Keep videos short (17-26 seconds); videos over 30 seconds consistently drop stayed_pct below 40% and stall at <400 views.\n2. Open hooks with direct, counter-intuitive statements about the viewer's body or extreme paradoxes rather than descriptive setups.\n3. Completely ban hypothetical scenario openings ('Your car swerves...', 'You just smashed...') and generic rhetorical questions ('Ever noticed...').\n4. Write titles with active, visceral threat or surprise verbs (e.g., 'Pineapples Eat You Back', 'Secretly Leaking') instead of dry explanatory topics.\n5. State the myth or surprising counter-fact in the very first sentence within 8 words to prevent immediate swiping.",
+  "summary": "1. Prioritize topics focused on direct body phenomena and sensory bodily mechanics over inanimate object trivia or infrastructure mechanics.\n2. Open the first sentence with an active, shocking present-tense assertion about the viewer ('Your eyes are leaking right now') rather than passive setups or rhetorical questions.\n3. Instantly state a strong counter-intuitive fact or debunk a common belief in sentence one ('...it is not because you are absorbing it like a sponge').\n4. Write short titles using active verbs and distinct subject emojis (e.g., 🍍👅, 💧🧽), avoiding generic curiosity emojis like '🤔' which dominate the bottom third.\n5. Keep hook wording strictly under 15 words without conversational fluff like 'Ever noticed...' or hypothetical roleplay scenarios ('Your car swerves...').",
   "winning_hooks": [
-    "Direct bodily paradox/myth-bust: 'Your fingers prune in water, but it is not because you are absorbing it like a sponge.' (65.6% stayed)",
-    "Active threat/personification: 'Fresh pineapple is literally eating you back.' (57.6% stayed)",
-    "Extreme comparative stat anchor: 'This shark is older than the United States.' (56.2% stayed)",
-    "Direct personal callout with tension: 'Your eyes are leaking right now, and your brain is hiding it.' (51.9% stayed)"
+    "Direct personal bodily reality + hidden action: 'Your eyes are leaking right now, and your brain is hiding it.'",
+    "Visceral, shocking active reversal: 'Fresh pineapple is literally eating you back.'",
+    "Immediate myth debunking with direct address: 'Your fingers prune in water, but it is not because you are absorbing it like a sponge.'",
+    "Hyperbolic scale comparison fact: 'This shark is older than the United States.'"
   ],
   "avoid": [
-    "Hypothetical situation roleplay hooks: 'Your car swerves off the highway...' (29.8% stayed)",
-    "Generic engagement questions: 'Ever noticed those tiny black dots...?' (37.3% stayed)",
-    "Fact-stating dictionary openings: 'Honey is famous for being one of the only natural foods...' (38.6% stayed)",
-    "Factually confusing or contradicting setups: 'Drop an apple or a pear... and they both float' when the title says pears sink (27.0% stayed)"
+    "Rhetorical opening questions: 'Ever noticed those tiny black dots fading around your car windshield?'",
+    "Wikipedia-style introductory generalizations: 'Honey is famous for being one of the only natural foods that never truly spoils.'",
+    "Hypothetical roleplay scenario setups: 'Your car swerves off the highway right toward a steel guardrail.' or 'You just smashed your elbow...'",
+    "Inanimate object / civil engineering trivia (guardrails, car windshield frit pattern, maple syrup sap boiling).",
+    "Generic titles ending with the thinking emoji '🤔' (correlated with <38% stayed_pct)."
   ],
-  "next_experiment": "A/B test a 20-second script about body science using a Paradox Hook ('Your stomach acids can dissolve metal, but your body rebuilds its lining every 3 days') vs a Roleplay Hook ('Imagine swallowing a razor blade...'), keeping title and visual graphics identical."
+  "next_experiment": "A/B test the first 3 seconds on the same body trivia topic: Test 'Direct Visceral Fact' ('Your stomach acid can dissolve steel blade edges, but your body rebuilds its lining every 3 days.') vs 'Conversational Question' ('Have you ever wondered why your stomach acid doesn't digest your own insides?'). Measure if stayed_pct stays above 55% with the direct fact."
 }

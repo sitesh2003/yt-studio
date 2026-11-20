@@ -46,5 +46,45 @@
   {
     "kind": "unconfirmed",
     "text": "Nobody cracked it yet, so here is your turn. -> The MIT study explicitly concluded that the distribution is caused by the manufacturing process where one wafer is applied before the other."
+  },
+  {
+    "kind": "unconfirmed",
+    "text": "The wing edges create aerodynamic noise rather than a cracking sound. -> Wing edges do generate aerodynamic noise, but the statement that they produce no cracking sound is oversimplified; some birds can produce brief popping noises from wing feathers."
+  },
+  {
+    "kind": "unconfirmed",
+    "text": "That outer hull is incredibly strong. -> The hull is relatively strong compared with other grains, but \"incredibly\" is an exaggeration."
+  },
+  {
+    "kind": "unconfirmed",
+    "text": "Other grains like wheat or oats have a porous hull. -> Wheat and oats have a less airtight, more permeable hull rather than a truly porous one."
+  },
+  {
+    "kind": "unconfirmed",
+    "text": "When they heat up, the steam escapes slowly through these pores instead of building up pressure. -> Moisture can escape because the hull is more permeable and the grains have lower internal moisture (~10% or less)."
+  },
+  {
+    "kind": "unconfirmed",
+    "text": "Zebras and horses split about two to three million years ago from a common ancestor. -> Genetic evidence suggests the divergence occurred significantly earlier, typically cited between 4 and 5 million years ago."
+  },
+  {
+    "kind": "unconfirmed",
+    "text": "Only the zebra kept its distinct stripes. -> This implies stripes were the ancestral state for both, but it is more likely that stripes evolved specifically within the zebra lineage after the split."
+  },
+  {
+    "kind": "unconfirmed",
+    "text": "Ever thought why donkeys kept leg stripes while horses lost them? -> The question implies horses once had stripes and lost them. There is no evidence that the ancestor of the modern horse possessed zebra-like body stripes."
+  },
+  {
+    "kind": "unconfirmed",
+    "text": "Most stars like this pulse in seconds. -> Most detected pulsars have periods measured in milliseconds to a few seconds; stating they 'pulse in seconds' implies a slow rate and ignores the vast majority of millisecond pulsars."
+  },
+  {
+    "kind": "unconfirmed",
+    "text": "Current models suggest it shouldn't have enough power to produce these waves. -> This is ambiguous. Models (like the 'death line' theory) suggest pulsars should stop emitting when they slow down, but this is a specific theoretical boundary, not a lack of general 'power'."
+  },
+  {
+    "kind": "unconfirmed",
+    "text": "The leading theory is that this pulsar has an exceptionally strong magnetic field. -> For long-period pulsars, the leading theory is often the opposite: that they have unusually high magnetic fields, but the phrasing implies this is a universal consensus on all 'slow' emitters, which is still an are"
   }
 ]

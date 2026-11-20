@@ -69,6 +69,22 @@ Sources:
 - Uddin et al. (2026), Helvetica Chimica Acta. doi:10.1002/hlca.70102 — supports: Hippos do not have traditional sweat glands; they produce a viscous secretion known as hipposudoric acid.
 - Shen et al. (2021), Journal of Student Research. doi:10.47611/jsrhs.v10i3.1646 — supports: The secretion acts as a sunscreen by absorbing UV radiation in the 200–600 nm range.
 
+## The Logic Behind Pasta Shapes
+*2026-11-20 · Food Whys*
+
+- Pasta shapes are designed for various culinary purposes including tradition.
+- Ridges (rigate) increase surface area for sauce contact.
+- Hollow shapes can help retain thicker sauces.
+- Pairing is often guided by how well a shape interacts with sauce consistency.
+
+## Why Your Hair Grows Different Lengths 😳
+*2026-11-20 · Body Whys*
+
+- Scalp hair growth phase (anagen) lasts 2-7 years.
+- Body hair growth phase (anagen) lasts 30-45 days.
+- Scalp follicles are located in the subcutaneous fat layer, which is deeper than body hair follicles.
+- Higher blood supply supports longer, thicker hair growth on the scalp.
+
 ## Why Steel Bearings Are Extremely Durable 🏗️
 *2026-11-19 · How Things Work*
 

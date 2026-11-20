@@ -258,5 +258,31 @@
   ],
   "not_drawn": {},
   "error": ""
+ },
+ {
+  "when": "2026-11-20 16:46",
+  "topic": "Why Pasta Comes in So Many Different Shapes",
+  "drawn": [
+   3,
+   4,
+   5
+  ],
+  "not_drawn": {
+   "2": "Text labels are cut off on the right edge"
+  },
+  "error": ""
+ },
+ {
+  "when": "2026-11-20 17:00",
+  "topic": "3 Reasons Why You Grow More Hair on Your Head Than Your Body",
+  "drawn": [
+   2,
+   4
+  ],
+  "not_drawn": {
+   "3": "The image uses a ball of yarn to represent hair follicles, which is confusing and inaccurate for a 12-year-old; the hourglass represents time, but the overall v",
+   "5": "The image depicts DNA and construction, which does not relate to the concept of 'timing' mentioned in the audio."
+  },
+  "error": ""
  }
 ]

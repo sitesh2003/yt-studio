@@ -3226,7 +3226,7 @@
       "Space Science"
     ],
     "hook": "Most James Webb images hold secrets.",
-    "status": "scheduled",
+    "status": "public",
     "narration": "Most James Webb images hold secrets. It was right there. Most exoplanets are found when they cross in front of their star and briefly block a tiny fraction of its light. Too far to block light. So how did researchers pick it out from billions of background galaxies? By using infrared light to spot the faint heat glow of a young world. Ever thought how many more uncharted worlds are sitting in plain sight in our space archives?",
     "voice_engine": "chatterbox",
     "voices": "one narrator (af_heart)",
@@ -3304,7 +3304,8 @@
     "audited": true,
     "video_id": "I9iv5BWMDLA",
     "publish_at": "2026-11-20T12:00:00-05:00",
-    "thumbnail_set": true
+    "thumbnail_set": true,
+    "answered": true
   },
   {
     "job": "20261116-1933-why-mosquitoes-choose-some-people-over-o",
@@ -5293,5 +5294,213 @@
     "publish_at": "2026-11-21T19:00:00-05:00",
     "thumbnail_set": true,
     "replaces": "9ao7Zj5FgJo"
+  },
+  {
+    "job": "20261120-1636-why-pasta-comes-in-so-many-different-sha",
+    "topic": "Why Pasta Comes in So Many Different Shapes",
+    "title": "The Logic Behind Pasta Shapes",
+    "description": "It turns out pasta shapes have evolved for many reasons, from regional tradition to how they interact with different sauces. #pasta #foodscience #culinaryhistory\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nPhoto by RitaE on Pixabay\nPhoto by TanteTati on Pixabay\nPhoto by moritz320 on Pixabay\nPhoto: orsorama, BY 2.0, via Openverse (flickr)\nPhoto: unknown, CC0 1.0, via Openverse (rawpixel)\nPhoto: vidalia_11, BY 2.0, via Openverse (flickr)\nVideo by Pana68 on Pixabay\n\nHow this was made: the script is researched and fact-checked with AI tools against open-access research (sources above when found), narrated by an AI voice, and edited with open-source software. Corrections from viewers are checked and credited.",
+    "tags": [
+      "pasta",
+      "science",
+      "culinary",
+      "shorts",
+      "food"
+    ],
+    "hook": "Many pasta shapes are designed to hold sauce.",
+    "status": "banked",
+    "narration": "Many pasta shapes are designed to hold sauce. They aren't just for looking good in a photo; they play a role in how we experience texture. Ridges and holes help trap sauce, though not every shape was deliberately engineered for that. They can help capture and hold sauce, but some shapes are more about tradition or texture. But the shape isn't just about holding sauce. One factor is the surface area that contacts sauce. Shapes with more texture and ridges provide a distinct mouthfeel and interact differently with toppings. Thin spaghetti is often paired with lighter sauces, while chunky sauces are usually served with ridged or tube-shaped pasta. 3, 2, 1...",
+    "voice_engine": "chatterbox",
+    "voices": "one narrator (af_heart)",
+    "diagrams": 1,
+    "series": "Food Whys",
+    "countdown": false,
+    "length_arm": "short",
+    "question": "Thin spaghetti is often paired with lighter sauces, while chunky sauces are usually served with ridged or tube-shaped pasta. Ever thought why?",
+    "answer_comment": "Thin, smooth pasta like spaghetti lacks the ridges and indentations needed to effectively hold chunky ingredients, which tend to slide off. Meanwhile, ridged or tubular pasta provides better structure for heavy, chunky sauces to cling to. It’s a balance of texture and culinary tradition! Do you have a favorite pairing?",
+    "sources": [],
+    "fact_check": [
+      "Pasta shapes are designed for various culinary purposes including tradition.",
+      "Ridges (rigate) increase surface area for sauce contact.",
+      "Hollow shapes can help retain thicker sauces.",
+      "Pairing is often guided by how well a shape interacts with sauce consistency."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        2.59
+      ],
+      [
+        2.59,
+        6.45
+      ],
+      [
+        6.45,
+        10.24
+      ],
+      [
+        10.24,
+        14.66
+      ],
+      [
+        14.66,
+        16.89
+      ],
+      [
+        16.89,
+        19.87
+      ],
+      [
+        19.87,
+        24.45
+      ],
+      [
+        24.45,
+        31.06
+      ]
+    ],
+    "duration": 31.06,
+    "scene_lines": [
+      "Many pasta shapes are designed to hold sauce.",
+      "They aren't just for looking good in a photo; they play a role in how we experience texture.",
+      "Ridges and holes help trap sauce, though not every shape was deliberately engineered for that.",
+      "They can help capture and hold sauce, but some shapes are more about tradition or texture.",
+      "But the shape isn't just about holding sauce.",
+      "One factor is the surface area that contacts sauce.",
+      "Shapes with more texture and ridges provide a distinct mouthfeel and interact differently with toppings.",
+      "Thin spaghetti is often paired with lighter sauces, while chunky sauces are usually served with ridged or tube-shaped pasta. 3, 2, 1..."
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,000 --> 00:00:02,190\nMany pasta shapes are designed to hold sauce.\n\n2\n00:00:02,590 --> 00:00:04,140\nThey aren't just for looking good in a photo;\n\n3\n00:00:04,310 --> 00:00:06,120\nthey play a role in how we experience texture.\n\n4\n00:00:06,450 --> 00:00:07,800\nRidges and holes help trap sauce,\n\n5\n00:00:07,910 --> 00:00:10,130\nthough not every shape was deliberately engineered for that.\n\n6\n00:00:10,240 --> 00:00:11,650\nThey can help capture and hold sauce,\n\n7\n00:00:11,840 --> 00:00:14,250\nbut some shapes are more about tradition or texture.\n\n8\n00:00:14,660 --> 00:00:16,570\nBut the shape isn't just about holding sauce.\n\n9\n00:00:16,890 --> 00:00:19,560\nOne factor is the surface area that contacts sauce.\n\n10\n00:00:19,870 --> 00:00:21,450\nShapes with more texture and ridges provide\n\n11\n00:00:21,450 --> 00:00:24,220\na distinct mouthfeel and interact differently with toppings.\n\n12\n00:00:24,450 --> 00:00:25,790\nThin spaghetti is often paired with lighter\n\n13\n00:00:25,790 --> 00:00:27,590\nsauces, while chunky sauces are usually served\n\n14\n00:00:27,590 --> 00:00:29,120\nwith ridged or tube-shaped pasta.\n\n15\n00:00:29,340 --> 00:00:30,460\n3, 2, 1...\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [],
+      "footage": [],
+      "review": [],
+      "heard": [
+        "\"thin\" heard as \"then\""
+      ],
+      "scene_heard": [
+        "scene 1: 100%",
+        "scene 2: 100%",
+        "scene 3: 100%",
+        "scene 4: 100%",
+        "scene 5: 100%",
+        "scene 6: 100%",
+        "scene 7: 93%",
+        "scene 8: 96%"
+      ],
+      "pass": true,
+      "duration": 30.7
+    },
+    "repairs": 0,
+    "audited": true
+  },
+  {
+    "job": "20261120-1652-3-reasons-why-you-grow-more-hair-on-your",
+    "topic": "3 Reasons Why You Grow More Hair on Your Head Than Your Body",
+    "title": "Why Your Hair Grows Different Lengths 😳",
+    "description": "Ever wonder why your head hair grows inches while your arm hair stays short? It comes down to a deep biological difference in your follicles. #shorts #science #bodywhys\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nIllustrations: drawn for this video with FLUX.2 [klein] 4B (AI, Apache 2.0) and checked for accuracy\nPhoto: Mel B., BY 2.0, via Openverse (flickr)\nPhoto: Roger Blackwell, BY 2.0, via Openverse (flickr)\nVideo by adege on Pixabay\nVideo by allinonemovie on Pixabay",
+    "tags": [
+      "science",
+      "body",
+      "biology"
+    ],
+    "hook": "Your scalp hair grows for much longer than your arm hair.",
+    "status": "banked",
+    "narration": "Your scalp hair grows for much longer than your arm hair. It starts with the length of the growth phase. Scalp follicles stay active for years at a time. But body hair follicles hit 'pause' much sooner, typically after a few months. But it's not just the timing that's different. Scalp follicles are genetically programmed to stay in the growth phase for years, whereas body hair follicles are programmed to switch to a resting phase much sooner. This core difference is what dictates their unique growth potential. Ever thought why your eyebrows reach a maximum length, while your head hair keeps going?",
+    "voice_engine": "chatterbox",
+    "voices": "one narrator (af_heart)",
+    "diagrams": 1,
+    "series": "Body Whys",
+    "countdown": false,
+    "length_arm": "short",
+    "question": "Ever thought why your eyebrows reach a maximum length, while your head hair keeps going?",
+    "answer_comment": "The answer: Eyebrows and body hair have a genetically programmed 'anagen' (growth) phase that is very short, so the hair reaches its limit and eventually sheds after a much shorter time. Scalp hair follicles have a much longer growth phase, sometimes lasting up to seven years, allowing them to reach much greater lengths before the cycle resets. Do you have a question about how other body parts grow?",
+    "sources": [],
+    "fact_check": [
+      "Scalp hair growth phase (anagen) lasts 2-7 years.",
+      "Body hair growth phase (anagen) lasts 30-45 days.",
+      "Scalp follicles are located in the subcutaneous fat layer, which is deeper than body hair follicles.",
+      "Higher blood supply supports longer, thicker hair growth on the scalp."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        2.5
+      ],
+      [
+        2.5,
+        4.39
+      ],
+      [
+        4.39,
+        7.09
+      ],
+      [
+        7.09,
+        10.8
+      ],
+      [
+        10.8,
+        12.67
+      ],
+      [
+        12.67,
+        19.02
+      ],
+      [
+        19.02,
+        22.25
+      ],
+      [
+        22.25,
+        26.19
+      ]
+    ],
+    "duration": 26.19,
+    "scene_lines": [
+      "Your scalp hair grows for much longer than your arm hair.",
+      "It starts with the length of the growth phase.",
+      "Scalp follicles stay active for years at a time.",
+      "But body hair follicles hit 'pause' much sooner, typically after a few months.",
+      "But it's not just the timing that's different.",
+      "Scalp follicles are genetically programmed to stay in the growth phase for years, whereas body hair follicles are programmed to switch to a resting phase much sooner.",
+      "This core difference is what dictates their unique growth potential.",
+      "Ever thought why your eyebrows reach a maximum length, while your head hair keeps going?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,000 --> 00:00:01,400\nYour scalp hair grows for much longer\n\n2\n00:00:01,400 --> 00:00:02,250\nthan your arm hair.\n\n3\n00:00:02,500 --> 00:00:04,150\nIt starts with the length of the growth phase.\n\n4\n00:00:04,390 --> 00:00:06,820\nScalp follicles stay active for years at a time.\n\n5\n00:00:07,090 --> 00:00:09,120\nBut body hair follicles hit 'pause' much sooner,\n\n6\n00:00:09,190 --> 00:00:10,440\ntypically after a few months.\n\n7\n00:00:10,800 --> 00:00:12,490\nBut it's not just the timing that's different.\n\n8\n00:00:12,670 --> 00:00:14,430\nScalp follicles are genetically programmed to stay\n\n9\n00:00:14,430 --> 00:00:15,810\nin the growth phase for years, whereas\n\n10\n00:00:15,810 --> 00:00:17,290\nbody hair follicles are programmed to switch\n\n11\n00:00:17,290 --> 00:00:18,800\nto a resting phase much sooner.\n\n12\n00:00:19,020 --> 00:00:21,870\nThis core difference is what dictates their unique growth potential.\n\n13\n00:00:22,250 --> 00:00:23,650\nEver thought why your eyebrows reach a\n\n14\n00:00:23,650 --> 00:00:25,590\nmaximum length, while your head hair keeps going?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [],
+      "footage": [],
+      "review": [],
+      "heard": [
+        "\"'pause'\" heard as \"pause\""
+      ],
+      "scene_heard": [
+        "scene 1: 100%",
+        "scene 2: 100%",
+        "scene 3: 100%",
+        "scene 4: 92%",
+        "scene 5: 100%",
+        "scene 6: 100%",
+        "scene 7: 100%",
+        "scene 8: 100%"
+      ],
+      "pass": true,
+      "duration": 25.8
+    },
+    "repairs": 1,
+    "audited": true
   }
 ]

@@ -1,21 +1,21 @@
 {
   "lessons": [
-    "Start hooks immediately with high-stakes mysteries or visceral contrasts, as shown by the shark video achieving a 1.85 retention rate at 10% by presenting an extreme age claim ('older than the United States').",
-    "Avoid redundant repetition in early drops; scripts that repeat phrases within the first 30% (such as the guardrail video repeating 'Instead of impaling your vehicle') trigger steep viewer loss.",
-    "Eliminate meta-pauses and filler transition lines like 'Pause and guess...' which directly correlate with early drop-offs around the 50% mark in explanatory segments.",
-    "Anchor biological and physical comparisons to familiar, high-contrast visuals early on, evidenced by the tuna vs. cod video outperforming peers with 0.86 relative end retention.",
-    "Do not rely solely on countdowns or abstract mechanics without immediate stakes, as low-performing videos show steep drop-offs at the 10% and 50% marks when explanations feel overly academic."
+    "Never repeat the title/hook question immediately after the opening; restating the setup (e.g. Potatoes, Guardrails, Ponds) causes drop-offs of 27-32% at the 10% mark.",
+    "Avoid filler transition phrases like 'They look like similar fruits' or 'They are not just there to look cool', which triggered major drops in Fruits (32.1%) and Car Windshields (31.0%).",
+    "Hook with extreme comparative claims or striking visual contrasts (e.g., 'older than the United States' or 'tuna red meat vs cod white meat'), which yielded the highest initial retention (1.21-1.85) and top benchmark scores.",
+    "Do not prompt the audience to pause or guess (e.g., 'Pause and guess...' lost 8.3% retention); keep the narrative moving forward without stopping the flow.",
+    "Deliver immediate narrative momentum right after the hook instead of diving into dry background statistics (e.g., stating sap is 98% water lost 33.3% of viewers at 10%)."
   ],
   "worst_moment_types": [
-    "Redundant phrasing repeating the exact same concept or line back-to-back",
-    "Slow narrative pauses or guessing prompts (e.g., 'Pause and guess...')",
-    "Academic or abstract definitions occurring before the viewer understands the physical stakes",
-    "Vague transition lines that lack concrete imagery ('They look like similar fruits')"
+    "Restating the title question or verbatim line early in the video",
+    "Generic fluff statements that add no new information (e.g., 'not just there to look cool')",
+    "Interactive pauses or explicit prompts asking the viewer to guess",
+    "Dense background explanation or technical preamble right after the hook"
   ],
   "best_hook_types": [
-    "Extreme comparative statements ('This shark is older than the United States')",
-    "Visceral physical paradoxes ('Fresh pineapple is literally eating you back')",
-    "Counter-intuitive everyday mysteries ('Why Onions Make You Cry')"
+    "Bold historical or scale comparisons (e.g., 'older than the United States')",
+    "Direct visual counter-intuitive contrasts (e.g., red tuna meat vs. white cod meat)",
+    "Strong personification or provocative danger statements (e.g., 'pineapple is literally eating you back')"
   ],
   "studied": "2026-11-20",
   "videos": 16

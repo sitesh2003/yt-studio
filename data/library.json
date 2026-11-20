@@ -630,5 +630,35 @@
         "claim": "The secretion acts as a sunscreen by absorbing UV radiation in the 200–600 nm range."
       }
     ]
+  },
+  {
+    "job": "20261120-1636-why-pasta-comes-in-so-many-different-sha",
+    "date": "2026-11-20",
+    "title": "The Logic Behind Pasta Shapes",
+    "topic": "Why Pasta Comes in So Many Different Shapes",
+    "series": "Food Whys",
+    "weekly": false,
+    "claims": [
+      "Pasta shapes are designed for various culinary purposes including tradition.",
+      "Ridges (rigate) increase surface area for sauce contact.",
+      "Hollow shapes can help retain thicker sauces.",
+      "Pairing is often guided by how well a shape interacts with sauce consistency."
+    ],
+    "sources": []
+  },
+  {
+    "job": "20261120-1652-3-reasons-why-you-grow-more-hair-on-your",
+    "date": "2026-11-20",
+    "title": "Why Your Hair Grows Different Lengths 😳",
+    "topic": "3 Reasons Why You Grow More Hair on Your Head Than Your Body",
+    "series": "Body Whys",
+    "weekly": false,
+    "claims": [
+      "Scalp hair growth phase (anagen) lasts 2-7 years.",
+      "Body hair growth phase (anagen) lasts 30-45 days.",
+      "Scalp follicles are located in the subcutaneous fat layer, which is deeper than body hair follicles.",
+      "Higher blood supply supports longer, thicker hair growth on the scalp."
+    ],
+    "sources": []
   }
 ]
