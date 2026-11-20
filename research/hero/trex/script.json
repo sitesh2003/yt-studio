@@ -1,0 +1,18 @@
+{
+  "title_options": ["Could A T. rex Outrun Your Car?"],
+  "facts": [
+    "Sellers et al. 2017, PeerJ 5:e3420 (doi 10.7717/peerj.3420): a multibody computer model of T. rex with skeletal stress analysis; running gaits gave unacceptably high bone loads, limiting it to walking; top speed about 20 km/h (5.6 m/s).",
+    "Hutchinson & Garcia 2002, Nature 415:1018: fast running would need an implausibly large share of body mass as leg extensor muscle (reported as 43% per leg / 86% total at ~20 m/s).",
+    "Mass about 8 tonnes for large adults (e.g. FMNH PR 2081 'Sue', estimates ~8.4 t)."
+  ],
+  "scenes": [
+    {"narration": "The real T. rex probably couldn't run. Not even a jog.", "shot": "hook"},
+    {"narration": "It weighed about eight tonnes. That's six cars, balanced on two legs.", "shot": "weight"},
+    {"narration": "Scientists rebuilt it in a computer, bone by bone and muscle by muscle, then asked it to sprint.", "shot": "xray"},
+    {"narration": "At every running speed, its leg bones took so much force they would likely have broken.", "shot": "stress"},
+    {"narration": "A fast runner that size needs more than forty percent of its body in leg muscle. T. rex had nowhere near that.", "shot": "muscle"},
+    {"narration": "So its top speed was a fast walk. About twenty kilometres an hour.", "shot": "speed"},
+    {"narration": "A car on a city road, at fifty, leaves it behind in seconds.", "shot": "car"},
+    {"narration": "So how did a giant that couldn't run catch anything at all?", "shot": "end"}
+  ]
+}

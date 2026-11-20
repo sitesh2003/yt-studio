@@ -1,0 +1,58 @@
+name: Hero Short voice (Chatterbox E2)
+
+# 20 Nov 2026: narrates a hand-made 3D hero Short with the production narrator; the animation is cut to it.
+on:
+  workflow_dispatch: {}
+  push:
+    branches: [main]
+    paths: ["kick/hero-voice.txt"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: hero-voice
+  cancel-in-progress: false
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - name: Install FFmpeg
+        run: |
+          pip install -q imageio-ffmpeg==0.7.0
+          sudo cp "$(python -c 'import imageio_ffmpeg; print(imageio_ffmpeg.get_ffmpeg_exe())')" /usr/local/bin/ffmpeg
+          sudo chmod +x /usr/local/bin/ffmpeg
+      - name: Daily packages, Kokoro and Chatterbox (the same steps the daily runs will use)
+        run: |
+          pip install -q -r requirements.txt
+          pip install -q "faster-whisper==1.2.1"
+          pip install -q torch==2.6.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cpu
+          pip install -q "kokoro==0.9.4" soundfile en-core-web-sm@https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl
+          pip install -q chatterbox-tts --extra-index-url https://download.pytorch.org/whl/cpu
+          pip list 2>/dev/null | grep -i -E "^(torch|torchaudio|numpy|transformers|chatterbox-tts|kokoro|manim) "
+      - name: Keep voice models between runs
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/huggingface
+          key: voice-prod-test-v1
+      - name: Narrate the hero script
+        run: python tools/hero_voice.py "$(head -1 kick/hero-voice.txt)" 2>&1 | tee research/hero/hero_voice_log.txt; exit ${PIPESTATUS[0]}
+      - name: Save the result
+        if: always()
+        run: |
+          git config user.name "yt-studio-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -f research/hero || true
+          git diff --cached --quiet || git commit -q -m "hero: narration for $(head -1 kick/hero-voice.txt)"
+          git pull --rebase -X theirs -q || true
+          python tools/json_guard.py || exit 1
+          git push -q || true
