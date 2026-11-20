@@ -1,29 +1,5 @@
 [
   {
-    "job": "20261116-1902-scientists-just-found-a-hidden-alien-pla",
-    "title": "How James Webb Spots Hidden Planets In Plain Sight",
-    "assets": {
-      "mp4": 756157505,
-      "jpg": 756157760,
-      "json": 756157804
-    },
-    "locked": true,
-    "series": "How Things Work",
-    "stored": "2026-11-16T19:31:47.409651+00:00"
-  },
-  {
-    "job": "20261117-0407-why-does-your-leg-actually-fall-asleep-w",
-    "title": "What Actually Happens When Your Leg Falls Asleep",
-    "assets": {
-      "mp4": 757700030,
-      "jpg": 757700200,
-      "json": 757700210
-    },
-    "locked": true,
-    "series": "Body Whys",
-    "stored": "2026-11-17T04:57:55.978534+00:00"
-  },
-  {
     "job": "20261117-0512-scientists-just-found-a-giant-hidden-wor",
     "title": "Why Scientists Missed an Outer Kuiper Belt 🤯",
     "assets": {
@@ -46,5 +22,29 @@
     "locked": true,
     "series": "Food Whys",
     "stored": "2026-11-18T03:54:23.699075+00:00"
+  },
+  {
+    "job": "20261120-0757-why-the-steel-box-at-a-highway-guardrail",
+    "title": "How Guardrail Ends Are Designed to Save Lives",
+    "assets": {
+      "mp4": 771006387,
+      "jpg": 771006569,
+      "json": 771006588
+    },
+    "locked": true,
+    "series": "How Things Work",
+    "stored": "2026-11-20T08:12:56.894531+00:00"
+  },
+  {
+    "job": "20261120-0813-why-heavy-machinery-ball-bearings-never-",
+    "title": "How Oil Films Help Ball Bearings Last Longer 😳",
+    "assets": {
+      "mp4": 771055641,
+      "jpg": 771055936,
+      "json": 771055965
+    },
+    "locked": true,
+    "series": "How Things Work",
+    "stored": "2026-11-20T08:31:06.658878+00:00"
   }
 ]

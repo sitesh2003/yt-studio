@@ -184,5 +184,30 @@
    "2": "The image uses a lizard emoji to represent a pangolin, which is a mammal, and the text 'NOT STONE/BO' is cut off."
   },
   "error": ""
+ },
+ {
+  "when": "2026-11-20 08:05",
+  "topic": "Why the steel box at a highway guardrail's end is not welded to the rail",
+  "drawn": [
+   2,
+   3,
+   4,
+   5
+  ],
+  "not_drawn": {},
+  "error": ""
+ },
+ {
+  "when": "2026-11-20 08:22",
+  "topic": "Why Heavy Machinery Ball Bearings Never Shatter Under Tons of Stress 🏗️",
+  "drawn": [
+   3,
+   4
+  ],
+  "not_drawn": {
+   "2": "The icon labeled HOUSING is a crane, which is not housing.",
+   "5": "Label 'FLOATING BAL' is misspelled; image does not clearly show oil or slipping/sliding motion."
+  },
+  "error": ""
  }
 ]

@@ -3117,7 +3117,7 @@
       "biology"
     ],
     "hook": "Fossilized bones can last millions of years, but sometimes they hide more than just minerals.",
-    "status": "scheduled",
+    "status": "public",
     "narration": "Fossilized bones can last millions of years, but sometimes they hide more than just minerals. Researchers studying a fossilized dinosaur bone found microscopic, flexible structures that resemble ancient blood vessels. Deep inside, they spotted flexible, dark structures that looked like remnants of vessels. But wait, how can something so delicate survive geological time? So, is it really liquid blood sitting inside that ancient stone? turn: true. Not exactly liquid, but potentially ancient protein fragments. Some scientists have hypothesized that iron from the blood might have played a role in preservation, though this remains an active subject of debate. Ever thought how a material that rots in days stays locked in stone for eons? Drop your guess below.",
     "voice_engine": "chatterbox",
     "voices": "one narrator (af_heart)",
@@ -3209,7 +3209,9 @@
     "audited": true,
     "video_id": "G3nRCuOkhG8",
     "publish_at": "2026-11-19T19:00:00-05:00",
-    "thumbnail_set": true
+    "thumbnail_set": true,
+    "recapped": true,
+    "answered": true
   },
   {
     "job": "20261116-1902-scientists-just-found-a-hidden-alien-pla",
@@ -3223,7 +3225,7 @@
       "Space Science"
     ],
     "hook": "Most James Webb images hold secrets.",
-    "status": "banked",
+    "status": "scheduled",
     "narration": "Most James Webb images hold secrets. It was right there. Most exoplanets are found when they cross in front of their star and briefly block a tiny fraction of its light. Too far to block light. So how did researchers pick it out from billions of background galaxies? By using infrared light to spot the faint heat glow of a young world. Ever thought how many more uncharted worlds are sitting in plain sight in our space archives?",
     "voice_engine": "chatterbox",
     "voices": "one narrator (af_heart)",
@@ -3298,7 +3300,10 @@
       "duration": 20.2
     },
     "repairs": 0,
-    "audited": true
+    "audited": true,
+    "video_id": "I9iv5BWMDLA",
+    "publish_at": "2026-11-20T12:00:00-05:00",
+    "thumbnail_set": true
   },
   {
     "job": "20261116-1933-why-mosquitoes-choose-some-people-over-o",
@@ -3523,7 +3528,7 @@
       "human body"
     ],
     "hook": "Your leg doesn't actually fall asleep because of blood loss. It's not blood.",
-    "status": "banked",
+    "status": "scheduled",
     "narration": "Your leg doesn't actually fall asleep because of blood loss. It's not blood. You feel that pins-and-needles sensation when you sit wrong for too long. Most people blame their circulation, but your heart is still pumping fine. While blood flow to the nerve itself is restricted by the pressure, your overall circulation is not actually stopped. So, if the blood is still flowing, why does your leg feel totally dead? It’s actually a nerve being compressed, often against a bone or hard surface. It's compressed. That pressure prevents the nerve from sending clear signals to your brain. When you move, the pressure is released, but the nerve signals begin to misfire as they reconnect, which creates that characteristic pins-and-needles sensation. Have you ever woken up with a numb arm after sleeping on it?",
     "voice_engine": "chatterbox",
     "voices": "one narrator (af_heart)",
@@ -3613,7 +3618,10 @@
       "duration": 36.1
     },
     "repairs": 1,
-    "audited": true
+    "audited": true,
+    "video_id": "omCteTHNw_Q",
+    "publish_at": "2026-11-20T19:00:00-05:00",
+    "thumbnail_set": true
   },
   {
     "job": "20261117-0512-scientists-just-found-a-giant-hidden-wor",
@@ -4516,6 +4524,224 @@
       "duration": 57.9
     },
     "repairs": 2,
+    "audited": true
+  },
+  {
+    "job": "20261120-0757-why-the-steel-box-at-a-highway-guardrail",
+    "topic": "Why the steel box at a highway guardrail's end is not welded to the rail",
+    "title": "How Guardrail Ends Are Designed to Save Lives",
+    "description": "That steel box isn't a bumper; it's a kinetic energy trap. See how engineers use geometry to save lives. #engineering #science #shorts\n\nIllustrations: drawn for this video with FLUX.2 [klein] 4B (AI, Apache 2.0) and checked for accuracy\nPhoto by WikiImages on Pixabay\nPhoto: Kalispera Dell, CC BY 3.0, via Wikimedia Commons\nVideo by Kmeel_com on Pixabay\nVideo by MabelAmber on Pixabay\n\nHow this was made: the script is researched and fact-checked with AI tools against open-access research (sources above when found), narrated by an AI voice, and edited with open-source software. Corrections from viewers are checked and credited.",
+    "tags": [
+      "engineering",
+      "science",
+      "physics"
+    ],
+    "hook": "What if that steel box on a guardrail end is actually there to save your life?",
+    "status": "banked",
+    "narration": "What if that steel box on a guardrail end is actually there to save your life? If it were welded or bolted tight, it would act like a solid wall. Directly hitting the end of a rigid rail at highway speeds would be catastrophic. Instead, the guardrail is designed to move backward through the box during an impact. It moves. But the box is doing more than just sliding. It often peels the steel rail like a banana to soak up vehicle energy. The rail flows through the box. Momentum becomes heat and bent steel. Ever thought how that steel box on the end of the guardrail helps turn a high-speed impact into a safer outcome?",
+    "voice_engine": "chatterbox",
+    "voices": "one narrator (af_heart)",
+    "diagrams": 1,
+    "series": "How Things Work",
+    "countdown": false,
+    "length_arm": "long",
+    "question": "Ever thought how that steel box on the end of the guardrail helps turn a high-speed impact into a safer outcome?",
+    "answer_comment": "The answer: The guardrail end terminal is designed to act as an extruder or gating device. When a vehicle hits it, the box slides backward and forces the rigid steel guardrail through a channel, or moves it aside. This physical deformation or redirection helps by slowing the vehicle or guiding it away from a dangerous, direct hit. Have a question about other road safety tech?",
+    "sources": [],
+    "fact_check": [
+      "Guardrail end terminals (like the ET-PLUS) are designed to extrude or deform the guardrail beam during end-on collisions.",
+      "Welding the box to the rail would prevent the movement process, causing the terminal to act as an impact wall.",
+      "The energy dissipation occurs through the physical deformation of the steel beam as it is forced through the terminal head."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        3.91
+      ],
+      [
+        3.91,
+        6.7
+      ],
+      [
+        6.7,
+        10.07
+      ],
+      [
+        10.07,
+        13.76
+      ],
+      [
+        13.76,
+        16.83
+      ],
+      [
+        16.83,
+        19.91
+      ],
+      [
+        19.91,
+        23.93
+      ],
+      [
+        23.93,
+        28.89
+      ]
+    ],
+    "duration": 28.89,
+    "scene_lines": [
+      "What if that steel box on a guardrail end is actually there to save your life?",
+      "If it were welded or bolted tight, it would act like a solid wall.",
+      "Directly hitting the end of a rigid rail at highway speeds would be catastrophic.",
+      "Instead, the guardrail is designed to move backward through the box during an impact.",
+      "It moves. But the box is doing more than just sliding.",
+      "It often peels the steel rail like a banana to soak up vehicle energy.",
+      "The rail flows through the box. Momentum becomes heat and bent steel.",
+      "Ever thought how that steel box on the end of the guardrail helps turn a high-speed impact into a safer outcome?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": "G3nRCuOkhG8",
+    "captions_srt": "1\n00:00:00,000 --> 00:00:01,300\nWhat if that steel box on a\n\n2\n00:00:01,300 --> 00:00:03,530\nguardrail end is actually there to save your life?\n\n3\n00:00:03,910 --> 00:00:05,330\nIf it were welded or bolted tight,\n\n4\n00:00:05,330 --> 00:00:06,500\nit would act like a solid wall.\n\n5\n00:00:06,700 --> 00:00:07,860\nDirectly hitting the end of a rigid\n\n6\n00:00:07,860 --> 00:00:09,650\nrail at highway speeds would be catastrophic.\n\n7\n00:00:10,070 --> 00:00:11,790\nInstead, the guardrail is designed to move\n\n8\n00:00:11,790 --> 00:00:13,480\nbackward through the box during an impact.\n\n9\n00:00:13,760 --> 00:00:14,410\nIt moves.\n\n10\n00:00:14,770 --> 00:00:16,560\nBut the box is doing more than just sliding.\n\n11\n00:00:16,830 --> 00:00:18,130\nIt often peels the steel rail like\n\n12\n00:00:18,130 --> 00:00:19,700\na banana to soak up vehicle energy.\n\n13\n00:00:19,910 --> 00:00:21,360\nThe rail flows through the box.\n\n14\n00:00:21,560 --> 00:00:23,650\nMomentum becomes heat and bent steel.\n\n15\n00:00:23,930 --> 00:00:25,330\nEver thought how that steel box on\n\n16\n00:00:25,330 --> 00:00:26,590\nthe end of the guardrail helps turn\n\n17\n00:00:26,590 --> 00:00:28,290\na high-speed impact into a safer outcome?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [],
+      "footage": [],
+      "review": [],
+      "scene_heard": [
+        "scene 1: 100%",
+        "scene 2: 100%",
+        "scene 3: 100%",
+        "scene 4: 100%",
+        "scene 5: 100%",
+        "scene 6: 100%",
+        "scene 7: 100%",
+        "scene 8: 100%"
+      ],
+      "pass": true,
+      "duration": 28.5
+    },
+    "repairs": 0,
+    "audited": true
+  },
+  {
+    "job": "20261120-0813-why-heavy-machinery-ball-bearings-never-",
+    "topic": "Why Heavy Machinery Ball Bearings Never Shatter Under Tons of Stress 🏗️",
+    "title": "How Oil Films Help Ball Bearings Last Longer 😳",
+    "description": "Heavy machinery relies on steel balls to carry massive weight, but they aren't touching the metal at all. Discover the liquid trick that prevents a total mechanical collapse. #engineering #science #shorts\n\nSources (open-access research):\n- Guessasma et al. (2018), Lubricants. doi:10.3390/lubricants6020046\n- Chong et al. (2011), Journal of Physics D Applied Physics. doi:10.1088/0022-3727/44/16/165302\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nImage: NASA (public domain)\nPhoto by DavidReed on Pixabay\nPhoto by wal_172619 on Pixabay\nPhoto: R. Henrik Nilsson, CC BY 4.0, via Wikimedia Commons\nPhoto: Unknown author Unknown author, Public domain, via Wikimedia Commons\nVideo by StefWithAnF on Pixabay\nVideo by TungArt7 on Pixabay\n\nHow this was made: the script is researched and fact-checked with AI tools against open-access research (sources above when found), narrated by an AI voice, and edited with open-source software. Corrections from viewers are checked and credited.",
+    "tags": [
+      "engineering",
+      "physics",
+      "science",
+      "machinery"
+    ],
+    "hook": "Did you know those steel ball bearings in machines often avoid direct contact while moving at speed? It is true.",
+    "status": "banked",
+    "narration": "Did you know those steel ball bearings in machines often avoid direct contact while moving at speed? It is true. If a steel ball hit the housing directly, the pressure would cause significant wear over time. Instead, a thin film of lubricant creates a microscopic barrier between the ball and the race. The speed of the rotation actually forces the oil to lift the load off the surface. But wait, if the ball is floating on oil, why don't they just slip and slide everywhere? The extreme pressure in that tiny space causes the oil to temporarily thicken significantly, acting as a high-pressure support cushion. This is called elastohydrodynamic lubrication. It keeps the metal separated while the ball rolls. Ever thought how this same oil-film trick keeps the internal bearings in your car from failing prematurely?",
+    "voice_engine": "chatterbox",
+    "voices": "one narrator (af_heart)",
+    "diagrams": 1,
+    "series": "How Things Work",
+    "countdown": false,
+    "length_arm": "long",
+    "question": "Ever thought how this same oil-film trick keeps the internal bearings in your car from failing prematurely?",
+    "answer_comment": "The answer: The extreme pressure in the tiny space causes the oil to temporarily thicken significantly, which supports the load and prevents metal-on-metal contact. Got a question about how other parts of your car stay lubricated?\n\nSources (open-access research):\n- Guessasma et al. (2018), Lubricants. doi:10.3390/lubricants6020046\n- Chong et al. (2011), Journal of Physics D Applied Physics. doi:10.1088/0022-3727/44/16/165302",
+    "sources": [
+      {
+        "claim": "Ball bearings operate on the principle of elastohydrodynamic lubrication.",
+        "cite": "Guessasma et al. (2018), Lubricants. doi:10.3390/lubricants6020046",
+        "doi": "10.3390/lubricants6020046",
+        "title": "Three-Dimensional DEM Modelling of Ball Bearing with Lubrication Regime Prediction",
+        "why": "By means of an elastohydrodynamic lubrication formulation depending on parameters related to the size of contact area, mechanical properties of materials, roughness and fluid viscosity, the lubricant film thickness is predicted and used to take into consideration the fluid film damping effect and fr"
+      },
+      {
+        "claim": "The lubricant forms a thin film that prevents surface-to-surface contact.",
+        "cite": "Chong et al. (2011), Journal of Physics D Applied Physics. doi:10.1088/0022-3727/44/16/165302",
+        "doi": "10.1088/0022-3727/44/16/165302",
+        "title": "Effect of lubricant molecular rheology on formation and shear of ultra-thin surface films",
+        "why": "The physics of molecularly thin fluid films formed between surface features at close range is investigated. It is found that the interplay between discrete lubricant drainage from such contacts and localized contact deflection plays an important role both on the load carrying capacity of these asper"
+      }
+    ],
+    "fact_check": [
+      "Ball bearings operate on the principle of elastohydrodynamic lubrication.",
+      "The lubricant forms a thin film that prevents surface-to-surface contact.",
+      "Under extreme pressure, the lubricant viscosity increases significantly, acting as a load-bearing medium.",
+      "Direct contact would lead to extreme wear and catastrophic failure."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        5.26
+      ],
+      [
+        5.26,
+        9.16
+      ],
+      [
+        9.16,
+        13.89
+      ],
+      [
+        13.89,
+        17.89
+      ],
+      [
+        17.89,
+        21.87
+      ],
+      [
+        21.87,
+        28.0
+      ],
+      [
+        28.0,
+        32.85
+      ],
+      [
+        32.85,
+        37.73
+      ]
+    ],
+    "duration": 37.73,
+    "scene_lines": [
+      "Did you know those steel ball bearings in machines often avoid direct contact while moving at speed? It is true.",
+      "If a steel ball hit the housing directly, the pressure would cause significant wear over time.",
+      "Instead, a thin film of lubricant creates a microscopic barrier between the ball and the race.",
+      "The speed of the rotation actually forces the oil to lift the load off the surface.",
+      "But wait, if the ball is floating on oil, why don't they just slip and slide everywhere?",
+      "The extreme pressure in that tiny space causes the oil to temporarily thicken significantly, acting as a high-pressure support cushion.",
+      "This is called elastohydrodynamic lubrication. It keeps the metal separated while the ball rolls.",
+      "Ever thought how this same oil-film trick keeps the internal bearings in your car from failing prematurely?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,000 --> 00:00:01,340\nDid you know those steel ball bearings\n\n2\n00:00:01,340 --> 00:00:03,990\nin machines often avoid direct contact while moving at speed?\n\n3\n00:00:04,290 --> 00:00:05,040\nIt is true.\n\n4\n00:00:05,260 --> 00:00:06,950\nIf a steel ball hit the housing directly,\n\n5\n00:00:07,120 --> 00:00:08,990\nthe pressure would cause significant wear over time.\n\n6\n00:00:09,160 --> 00:00:09,710\nInstead,\n\n7\n00:00:09,800 --> 00:00:11,240\na thin film of lubricant creates a\n\n8\n00:00:11,240 --> 00:00:13,650\nmicroscopic barrier between the ball and the race.\n\n9\n00:00:13,890 --> 00:00:15,470\nThe speed of the rotation actually forces\n\n10\n00:00:15,470 --> 00:00:17,420\nthe oil to lift the load off the surface.\n\n11\n00:00:17,890 --> 00:00:18,420\nBut wait,\n\n12\n00:00:18,510 --> 00:00:19,820\nif the ball is floating on oil,\n\n13\n00:00:19,830 --> 00:00:21,460\nwhy don't they just slip and slide everywhere?\n\n14\n00:00:21,870 --> 00:00:23,530\nThe extreme pressure in that tiny space\n\n15\n00:00:23,530 --> 00:00:25,880\ncauses the oil to temporarily thicken significantly,\n\n16\n00:00:26,140 --> 00:00:27,750\nacting as a high-pressure support cushion.\n\n17\n00:00:28,000 --> 00:00:30,510\nThis is called elastohydrodynamic lubrication.\n\n18\n00:00:30,630 --> 00:00:32,460\nIt keeps the metal separated while the ball rolls.\n\n19\n00:00:32,850 --> 00:00:34,530\nEver thought how this same oil-film trick\n\n20\n00:00:34,530 --> 00:00:37,130\nkeeps the internal bearings in your car from failing prematurely?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [],
+      "footage": [],
+      "review": [],
+      "heard": [
+        "\"in\" heard as \"and\""
+      ],
+      "scene_heard": [
+        "scene 1: 95%",
+        "scene 2: 100%",
+        "scene 3: 100%",
+        "scene 4: 100%",
+        "scene 5: 100%",
+        "scene 6: 100%",
+        "scene 7: 86%",
+        "scene 8: 100%"
+      ],
+      "pass": true,
+      "duration": 37.5
+    },
+    "repairs": 0,
     "audited": true
   }
 ]

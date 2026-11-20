@@ -3,6 +3,25 @@
 Every video, the claims it makes, and the open-access research behind them. Built automatically by
 agents/library.py; a source is listed only if its abstract was checked to support the claim.
 
+## How Guardrail Ends Are Designed to Save Lives
+*2026-11-20 · How Things Work*
+
+- Guardrail end terminals (like the ET-PLUS) are designed to extrude or deform the guardrail beam during end-on collisions.
+- Welding the box to the rail would prevent the movement process, causing the terminal to act as an impact wall.
+- The energy dissipation occurs through the physical deformation of the steel beam as it is forced through the terminal head.
+
+## How Oil Films Help Ball Bearings Last Longer 😳
+*2026-11-20 · How Things Work*
+
+- Ball bearings operate on the principle of elastohydrodynamic lubrication.
+- The lubricant forms a thin film that prevents surface-to-surface contact.
+- Under extreme pressure, the lubricant viscosity increases significantly, acting as a load-bearing medium.
+- Direct contact would lead to extreme wear and catastrophic failure.
+
+Sources:
+- Guessasma et al. (2018), Lubricants. doi:10.3390/lubricants6020046 — supports: Ball bearings operate on the principle of elastohydrodynamic lubrication.
+- Chong et al. (2011), Journal of Physics D Applied Physics. doi:10.1088/0022-3727/44/16/165302 — supports: The lubricant forms a thin film that prevents surface-to-surface contact.
+
 ## Why Steel Bearings Are Extremely Durable 🏗️
 *2026-11-19 · How Things Work*
 

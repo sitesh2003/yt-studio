@@ -1,22 +1,21 @@
 {
   "summary": [
-    "High-performing hooks prioritize counter-intuitive conflict ('it is not absorption') or a relatable personal sensation ('eyes leaking') over simple descriptive questions.",
-    "The top third of videos by stayed_pct exclusively use hooks that frame the status quo as a mystery or a deception, whereas bottom-performers use generic observational statements.",
-    "Titles that emphasize a strong verb or a surprising transformation (e.g., 'Eat You Back', 'Secretly Leaking') outperform descriptive 'Why' questions.",
-    "There is a direct correlation between high stayed_pct and tight, punchy syntax; longer, expository sentences in the first 3 seconds cause immediate viewer drop-off.",
-    "Avoid starting hooks with 'Ever noticed...' or 'You just...', as these perform significantly worse than starting with the scientific or physical anomaly directly."
+    "Prioritize everyday biological mysteries and body/food science over mechanical engineering topics, as biological anomalies consistently capture higher viewer retention and algorithmic reach.",
+    "Draft titles that invoke a bold biological paradox or use active verbs ('Eat You Back', 'Secretly Leaking') rather than passive descriptive titles.",
+    "Formulate first sentences as direct contradictions or shocking state-of-fact statements ('Your eyes are leaking right now') instead of setting up hypothetical scenarios.",
+    "Keep hooks punchy, brief, and immediately disorienting to maintain a high stayed_pct above the 50% baseline required to break out of the initial view stall.",
+    "Avoid starting sentences with generic instructional markers, filler context, or conversational throat-clearing that invites users to swipe away in the first seconds."
   ],
   "winning_hooks": [
     "Your fingers prune in water, but it is not because you are absorbing it like a sponge.",
     "Your eyes are leaking right now, and your brain is hiding it.",
     "Fresh pineapple is literally eating you back.",
-    "This shark is older than the United States."
+    "A bluefin tuna and a cod are both fish, but their meat looks like two completely different animals."
   ],
   "avoid": [
-    "Starting with 'Ever noticed...' (Passive engagement).",
-    "Starting with a scenario-based setup like 'You just smashed your elbow...' (Too slow to reach the 'Why').",
-    "Using 'Why' at the start of a title for topics that lack an immediate physical hook.",
-    "Long, multi-clause explanations in the first 3 seconds."
+    "Hypothetical driver or physical emergency scenarios like 'Your car swerves off the highway' or 'You just smashed your elbow'",
+    "Descriptive titles ending with generic thinking emojis like 'Why Car Windshields Have Black Dots 🤔'",
+    "Starting hooks with weak framing words like 'Drop an apple or a pear' or 'Honey is famous for'"
   ],
-  "next_experiment": "A/B test the 'Direct Anomaly' vs 'Relatable Mystery' hook types: Test one video starting with the core surprising fact (e.g., 'Pineapple contains an enzyme that digests human skin') against a control starting with the feeling/observation (e.g., 'Fresh pineapple burns your tongue when you eat it')."
+  "next_experiment": "A/B test two videos on obscure biological facts: one starting with a direct sensory contradiction ('Your skin is doing X right now') versus a question-based hook ('Have you ever wondered why your skin does X?'), measuring which achieves a higher stayed_pct above 60%."
 }

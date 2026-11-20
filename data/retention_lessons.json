@@ -1,24 +1,22 @@
 {
   "lessons": [
-    "Prioritize immediate, high-contrast comparisons: Videos with the highest retention (e.g., 'Shark' and 'Tuna') establish a clear, startling contrast within the first 10 seconds rather than setting up a standard 'science facts' premise.",
-    "Avoid descriptive setup lines: Lines that describe the topic (e.g., 'They look like similar fruits') result in double-digit drop-offs; hooks must be active or provocative rather than purely observational.",
-    "Eliminate 'Pause and guess' prompts: Mid-video pauses, as seen in the Maple Syrup video, directly correlate with immediate audience attrition; keep the narrative flow continuous.",
-    "Keep biological explanations punchy: Technical explanations involving cellular structures or enzymes are high-risk zones; these sections must be kept short or anchored to a relatable physical experience to prevent audience loss.",
-    "Target the 10-15% mark for critical engagement: Data shows the most significant drops consistently occur here (avg ~20-30% loss); this is the moment where the initial hook must transition into the core 'payoff' or 'reveal' immediately.",
-    "High-retention content requires a 'mystery' or 'counter-intuitive' premise: The top-performing 'Greenland Shark' video relies on a paradoxical hook ('older than the US') that sustains interest throughout the entire duration."
+    "Prioritize immediate information density; the highest retention videos (Tuna, Greenland Shark) avoid filler and dive directly into the core premise, whereas videos with lower retention often use abstract or slow-building hooks.",
+    "Eliminate redundant exposition immediately after the hook; drop-off is highest when a script re-states the hook's premise (e.g., 'Instead of impaling your vehicle' repeated in Guardrails, or redundant descriptions in Fruits Float).",
+    "Avoid meta-commentary or slow-paced questions; lines like 'Pause and guess' or 'Why the gradient dots instead of a solid line?' correlate with sharp mid-video exit spikes.",
+    "Structure facts as high-stakes physical conflicts; the 'Greenland Shark' and 'Tuna' videos hold viewers significantly better by focusing on extreme biological survival or intense physical comparisons, contrasting with the 'Fingers Prune' video which struggled with a more abstract, process-heavy explanation.",
+    "Keep definitions and setup brief; drops consistently occur at the 0.10-0.15 mark when the script spends too long setting the stage before introducing the actual mechanism or resolution."
   ],
   "worst_moment_types": [
-    "Abstract or purely descriptive lines ('They look like similar fruits')",
-    "Interactive pauses or explicit requests for the viewer to guess or wait",
-    "Detailed technical explanations of internal biology that lack a clear, sensory-driven outcome",
-    "Slow-paced setups that delay the core mystery of the video beyond the first 10% of the duration"
+    "Redundant phrasing or repeating the hook's core point shortly after the intro.",
+    "Instructional pauses (e.g., 'Pause and guess').",
+    "Vague setup sentences that delay the scientific 'why' (e.g., 'They look like similar fruits').",
+    "Abstract procedural descriptions that lack a concrete 'what happens to the viewer/object' connection."
   ],
   "best_hook_types": [
-    "High-stakes/Long-duration curiosity (e.g., 'Older than the United States')",
-    "Direct sensory paradoxes (e.g., 'Fresh pineapple is eating you back')",
-    "Comparative anomalies (e.g., 'Tuna vs. Cod meat comparison')",
-    "Counter-intuitive debunking of common knowledge (e.g., 'Ice water doesn't stop spicy food')"
+    "High-contrast, surprising biological comparisons (e.g., Tuna vs. Cod).",
+    "Counter-intuitive survival facts (e.g., Greenland Shark's lifespan).",
+    "Direct, urgent problem-solution framing without filler adjectives or conversational throat-clearing."
   ],
-  "studied": "2026-11-19",
-  "videos": 13
+  "studied": "2026-11-20",
+  "videos": 16
 }

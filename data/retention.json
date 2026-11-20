@@ -20,7 +20,7 @@
       }
     ],
     "countdown": null,
-    "checked": "2026-11-19"
+    "checked": "2026-11-20"
   },
   "a8Kooq5Sswk": {
     "title": "Why Onions Make You Cry",
@@ -43,7 +43,7 @@
       }
     ],
     "countdown": null,
-    "checked": "2026-11-19"
+    "checked": "2026-11-20"
   },
   "yF1Dj5F1icM": {
     "title": "Why Cold Water Fails Against Spicy Food 🌶️🥛",
@@ -66,7 +66,7 @@
       }
     ],
     "countdown": null,
-    "checked": "2026-11-19"
+    "checked": "2026-11-20"
   },
   "_EnG9sUTAUY": {
     "title": "Why Maple Syrup Takes 40 Gallons 🍁🍯",
@@ -89,7 +89,7 @@
       }
     ],
     "countdown": null,
-    "checked": "2026-11-19"
+    "checked": "2026-11-20"
   },
   "EfZ-P6him7k": {
     "title": "The Only Food That Lasts Forever 🐝✨",
@@ -112,7 +112,7 @@
       }
     ],
     "countdown": null,
-    "checked": "2026-11-19"
+    "checked": "2026-11-20"
   },
   "Bxp7r8IzbiY": {
     "title": "Why Fingers Prune In Water 💧🧽",
@@ -135,7 +135,7 @@
       }
     ],
     "countdown": null,
-    "checked": "2026-11-19"
+    "checked": "2026-11-20"
   },
   "u_qOehVEHQI": {
     "title": "Why Tuna Meat Is Red Meat While Cod Is Pure White 🐟🥩",
@@ -158,7 +158,7 @@
       }
     ],
     "countdown": null,
-    "checked": "2026-11-19"
+    "checked": "2026-11-20"
   },
   "80jyJN1A1y8": {
     "title": "Why Fresh Pineapples Eat You Back 🍍👅",
@@ -181,30 +181,30 @@
       }
     ],
     "countdown": null,
-    "checked": "2026-11-19"
+    "checked": "2026-11-20"
   },
   "S3s-iGcOMVY": {
     "title": "This Shark Can Live For Centuries! 🦈❄️",
     "hook_line": "This shark is older than the United States.",
-    "kept_at_10pct": 1.8636000000000001,
-    "kept_at_50pct": 1.3485,
-    "kept_at_end": 1.1061,
+    "kept_at_10pct": 1.8507,
+    "kept_at_50pct": 1.3284,
+    "kept_at_end": 1.0896,
     "vs_similar_start": 0.56,
     "vs_similar_end": 0.84,
     "biggest_drops": [
       {
         "at": 0.09,
-        "lost": 0.227,
+        "lost": 0.224,
         "line": "The Greenland shark roams the freezing Arctic depths, growing only about an inch every few years."
       },
       {
-        "at": 0.28,
-        "lost": 0.076,
-        "line": "But here is the weird part: how does it survive so long in water that should freeze its blood?"
+        "at": 0.63,
+        "lost": 0.075,
+        "line": "Here is why: the intense cold forces its metabolism to crawl at an incredibly slow, energy-saving pace."
       }
     ],
     "countdown": null,
-    "checked": "2026-11-19"
+    "checked": "2026-11-20"
   },
   "fXKlhAXJSTc": {
     "title": "Why Garlic Doesn't Make You Cry Like Onions Do 🧄😭",
@@ -227,7 +227,7 @@
       }
     ],
     "countdown": null,
-    "checked": "2026-11-19"
+    "checked": "2026-11-20"
   },
   "19fmphmc7A8": {
     "title": "Why Fruits Float In Water 🍎🍐",
@@ -250,52 +250,121 @@
       }
     ],
     "countdown": null,
-    "checked": "2026-11-19"
+    "checked": "2026-11-20"
   },
   "syvvVya0Q4g": {
     "title": "Why Do Potatoes Sprout From Dents? 🥔🌱",
     "hook_line": "Why do potatoes sprout shoots from those tiny dents instead of anywhere else?",
-    "kept_at_10pct": 0.9818000000000001,
-    "kept_at_50pct": 0.1778,
-    "kept_at_end": 0.09699999999999999,
+    "kept_at_10pct": 0.98,
+    "kept_at_50pct": 0.17600000000000002,
+    "kept_at_end": 0.096,
     "vs_similar_start": 0.28,
     "vs_similar_end": 0.72,
     "biggest_drops": [
       {
         "at": 0.09,
-        "lost": 0.317,
+        "lost": 0.318,
         "line": "Why do potatoes sprout shoots from those tiny dents instead of anywhere else?"
       },
       {
         "at": 0.25,
-        "lost": 0.083,
+        "lost": 0.088,
         "line": "Those little dents are actually called nodes, and each one holds tiny backup buds waiting for the right signal."
       }
     ],
     "countdown": null,
-    "checked": "2026-11-19"
+    "checked": "2026-11-20"
   },
   "9naAs1wMGVY": {
     "title": "Why Your Funny Bone Shocks You ⚡",
     "hook_line": "You just smashed your elbow on a desk and now your entire forearm is buzzing with pain.",
-    "kept_at_10pct": 1.0537999999999998,
-    "kept_at_50pct": 0.2473,
-    "kept_at_end": 0.0645,
-    "vs_similar_start": 0.24,
-    "vs_similar_end": 0.31,
+    "kept_at_10pct": 1.0325,
+    "kept_at_50pct": 0.23379999999999998,
+    "kept_at_end": 0.0649,
+    "vs_similar_start": 0.21,
+    "vs_similar_end": 0.29,
     "biggest_drops": [
       {
-        "at": 0.17,
-        "lost": 0.258,
-        "line": "It feels like an electric current, but there is no electricity in your arm."
+        "at": 0.11,
+        "lost": 0.234,
+        "line": "You just smashed your elbow on a desk and now your entire forearm is buzzing with pain."
       },
       {
-        "at": 0.32,
-        "lost": 0.065,
-        "line": "Wait, really? It feels exactly like touching a live wire."
+        "at": 0.23,
+        "lost": 0.117,
+        "line": "It feels like an electric current, but there is no electricity in your arm."
       }
     ],
     "countdown": false,
-    "checked": "2026-11-19"
+    "checked": "2026-11-20"
+  },
+  "3HaBsuVSlmA": {
+    "title": "Why Highway Guardrails Have Heavy End Boxes 🤯",
+    "hook_line": "Your car swerves off the highway right toward a steel guardrail.",
+    "kept_at_10pct": 1.0290000000000001,
+    "kept_at_50pct": 0.2754,
+    "kept_at_end": 0.1304,
+    "vs_similar_start": 0.32,
+    "vs_similar_end": 0.34,
+    "biggest_drops": [
+      {
+        "at": 0.14,
+        "lost": 0.304,
+        "line": "Instead of impaling your vehicle, your car hits a heavy steel box on the end of the rail."
+      },
+      {
+        "at": 0.29,
+        "lost": 0.116,
+        "line": "Instead of impaling your vehicle, your car hits a heavy steel box on the end of the rail."
+      }
+    ],
+    "countdown": false,
+    "checked": "2026-11-20"
+  },
+  "nnxCKv3odg4": {
+    "title": "Why Car Windshields Have Black Dots 🤔",
+    "hook_line": "Ever noticed those tiny black dots fading around your car windshield? 🚗",
+    "kept_at_10pct": 1.1034,
+    "kept_at_50pct": 0.3103,
+    "kept_at_end": 0.2414,
+    "vs_similar_start": 0.43,
+    "vs_similar_end": 0.92,
+    "biggest_drops": [
+      {
+        "at": 0.11,
+        "lost": 0.31,
+        "line": "They are not just there to look cool."
+      },
+      {
+        "at": 0.27,
+        "lost": 0.138,
+        "line": "Why the gradient dots instead of a solid line?"
+      }
+    ],
+    "countdown": true,
+    "checked": "2026-11-20"
+  },
+  "7CxPpDW31G0": {
+    "title": "Why Ponds Don't Freeze Solid 🤔",
+    "hook_line": "Your frozen pond is secretly keeping fish alive.",
+    "kept_at_10pct": 1.1207,
+    "kept_at_50pct": 0.37929999999999997,
+    "kept_at_end": 0.2414,
+    "vs_similar_start": 0.44,
+    "vs_similar_end": 0.81,
+    "biggest_drops": [
+      {
+        "at": 0.12,
+        "lost": 0.276,
+        "line": "At negative fifteen degrees, why doesn't it freeze solid?"
+      },
+      {
+        "at": 0.29,
+        "lost": 0.103,
+        "line": "Many liquids shrink when cold, but water does something strange."
+      }
+    ],
+    "countdown": false,
+    "checked": "2026-11-20"
   }
 }

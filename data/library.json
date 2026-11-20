@@ -487,5 +487,45 @@
         "claim": "Overlapping scales provide a defensive shield against predators."
       }
     ]
+  },
+  {
+    "job": "20261120-0757-why-the-steel-box-at-a-highway-guardrail",
+    "date": "2026-11-20",
+    "title": "How Guardrail Ends Are Designed to Save Lives",
+    "topic": "Why the steel box at a highway guardrail's end is not welded to the rail",
+    "series": "How Things Work",
+    "weekly": false,
+    "claims": [
+      "Guardrail end terminals (like the ET-PLUS) are designed to extrude or deform the guardrail beam during end-on collisions.",
+      "Welding the box to the rail would prevent the movement process, causing the terminal to act as an impact wall.",
+      "The energy dissipation occurs through the physical deformation of the steel beam as it is forced through the terminal head."
+    ],
+    "sources": []
+  },
+  {
+    "job": "20261120-0813-why-heavy-machinery-ball-bearings-never-",
+    "date": "2026-11-20",
+    "title": "How Oil Films Help Ball Bearings Last Longer 😳",
+    "topic": "Why Heavy Machinery Ball Bearings Never Shatter Under Tons of Stress 🏗️",
+    "series": "How Things Work",
+    "weekly": false,
+    "claims": [
+      "Ball bearings operate on the principle of elastohydrodynamic lubrication.",
+      "The lubricant forms a thin film that prevents surface-to-surface contact.",
+      "Under extreme pressure, the lubricant viscosity increases significantly, acting as a load-bearing medium.",
+      "Direct contact would lead to extreme wear and catastrophic failure."
+    ],
+    "sources": [
+      {
+        "cite": "Guessasma et al. (2018), Lubricants. doi:10.3390/lubricants6020046",
+        "doi": "10.3390/lubricants6020046",
+        "claim": "Ball bearings operate on the principle of elastohydrodynamic lubrication."
+      },
+      {
+        "cite": "Chong et al. (2011), Journal of Physics D Applied Physics. doi:10.1088/0022-3727/44/16/165302",
+        "doi": "10.1088/0022-3727/44/16/165302",
+        "claim": "The lubricant forms a thin film that prevents surface-to-surface contact."
+      }
+    ]
   }
 ]
