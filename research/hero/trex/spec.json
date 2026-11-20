@@ -1,0 +1,82 @@
+{
+  "assets_dir": "assets/3d",
+  "creature": {
+    "file": "dinos/Trex.fbx",
+    "length_m": 12.0,
+    "height_m": 5.2,
+    "walk": "TRex_Walk",
+    "run": "TRex_Run",
+    "idle": "TRex_Idle",
+    "roar": "TRex_Attack",
+    "foot_bone": "BackFoot.L",
+    "leg_bones": [
+      "BackUpLeg.L",
+      "BackLowLeg.L",
+      "BackFoot.L",
+      "BackUpLeg.R",
+      "BackLowLeg.R",
+      "BackFoot.R"
+    ],
+    "muscle_bones": [
+      "BackUpLeg.L",
+      "BackUpLeg.R"
+    ],
+    "bone_radius": 0.12,
+    "muscle_radius": 0.42
+  },
+  "props": {
+    "car": "cars/sedan.glb"
+  },
+  "shots": [
+    {
+      "kind": "run_at_camera",
+      "seconds": 3.73,
+      "lens": 32,
+      "freeze_s": 0.9
+    },
+    {
+      "kind": "size_tower",
+      "seconds": 4.48,
+      "cars": 6,
+      "lens": 24
+    },
+    {
+      "kind": "xray_scan",
+      "seconds": 5.69,
+      "lens": 28
+    },
+    {
+      "kind": "stress_run",
+      "seconds": 3.86,
+      "lens": 32
+    },
+    {
+      "kind": "muscle_needed",
+      "seconds": 5.24,
+      "muscle_scale": 2.6,
+      "lens": 28
+    },
+    {
+      "kind": "speed_track",
+      "seconds": 3.82,
+      "kmh": 20,
+      "lens": 22
+    },
+    {
+      "kind": "race_pass",
+      "seconds": 3.68,
+      "kmh": 20,
+      "car_kmh": 50,
+      "lens": 22
+    },
+    {
+      "kind": "closeup_roar",
+      "seconds": 4.18,
+      "lens": 32
+    }
+  ],
+  "credits": [
+    "T. rex model: Quaternius, Animated LowPoly Dinosaurs (CC0)",
+    "Car model: Kenney, Car Kit (CC0)"
+  ]
+}

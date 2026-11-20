@@ -1,0 +1,106 @@
+name: Hero Short 3D render (split across machines)
+
+# 20 Nov 2026: renders a hand-made 3D hero Short fully online. Each shot of research/hero/<name>/spec.json
+# renders on its own machine at the same time (GitHub runners have no graphics card: EEVEE ~6 s a frame,
+# so 8 shots x ~120 frames finish in ~15 min side by side instead of ~2 h on one). A last job joins the
+# frames, draws the graphics and captions, mixes the sound and saves research/hero/<name>/<name>.mp4.
+# Blender is the official 5.1 build (the same version the laptop renders with), so both give the same picture.
+on:
+  workflow_dispatch:
+    inputs:
+      name:
+        description: "hero folder under research/hero"
+        default: "trex"
+  push:
+    branches: [main]
+    paths: ["kick/hero-render.txt"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: hero-render
+  cancel-in-progress: false
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      name: ${{ steps.p.outputs.name }}
+      shots: ${{ steps.p.outputs.shots }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: p
+        run: |
+          N="${{ github.event.inputs.name }}"; [ -z "$N" ] && N="$(head -1 kick/hero-render.txt | tr -d '\r')"
+          echo "name=$N" >> "$GITHUB_OUTPUT"
+          echo "shots=$(python -c "import json;print(json.dumps(list(range(len(json.load(open('research/hero/$N/spec.json'))['shots'])))))")" >> "$GITHUB_OUTPUT"
+
+  render:
+    needs: plan
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    strategy:
+      fail-fast: false
+      matrix:
+        shot: ${{ fromJson(needs.plan.outputs.shots) }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Keep Blender between runs
+        id: bl
+        uses: actions/cache@v4
+        with:
+          path: ~/blender
+          key: blender-5.1.0-linux
+      - name: Official Blender 5.1.0
+        if: steps.bl.outputs.cache-hit != 'true'
+        run: |
+          mkdir -p ~/blender
+          curl -sL https://download.blender.org/release/Blender5.1/blender-5.1.0-linux-x64.tar.xz | tar -xJ -C ~/blender --strip-components=1
+      - name: Libraries Blender needs on a bare machine
+        run: timeout 600 bash -c 'sudo apt-get update -q && sudo apt-get install -y -q xvfb libxi6 libxxf86vm1 libxfixes3 libxrender1 libgl1 libegl1 libxkbcommon0 libsm6' || true
+      - name: Render shot ${{ matrix.shot }}
+        run: |
+          xvfb-run -a ~/blender/blender -b --disable-autoexec --python tools/blender/hero/shots.py -- \
+            --spec research/hero/${{ needs.plan.outputs.name }}/spec.json --shot ${{ matrix.shot }} \
+            --out frames/s${{ matrix.shot }} 2>&1 | grep -E "natural|rendered|Error|Traceback|line [0-9]+" ; test -n "$(ls frames/s${{ matrix.shot }})"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: shot-${{ matrix.shot }}
+          path: frames/s${{ matrix.shot }}
+          retention-days: 3
+
+  compose:
+    needs: [plan, render]
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - name: FFmpeg with captions (libass)
+        run: |
+          pip install -q imageio-ffmpeg==0.7.0
+          sudo cp "$(python -c 'import imageio_ffmpeg; print(imageio_ffmpeg.get_ffmpeg_exe())')" /usr/local/bin/ffmpeg
+          sudo chmod +x /usr/local/bin/ffmpeg
+          pip install -q -r requirements.txt
+      - uses: actions/download-artifact@v4
+        with:
+          path: frames
+      - name: Join, graphics, captions, sound
+        run: |
+          for d in frames/shot-*; do mv "$d" "frames/s${d##*-}"; done
+          python tools/blender/hero/compose.py "${{ needs.plan.outputs.name }}" frames
+      - name: Save the video
+        run: |
+          git config user.name "yt-studio-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -f "research/hero/${{ needs.plan.outputs.name }}/${{ needs.plan.outputs.name }}.mp4"
+          git diff --cached --quiet || git commit -q -m "hero: 3D render of ${{ needs.plan.outputs.name }}"
+          git pull --rebase -X theirs -q || true
+          python tools/json_guard.py || exit 1
+          git push -q || true
