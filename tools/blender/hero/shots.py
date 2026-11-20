@@ -676,7 +676,7 @@ def crumple_lattice(parts, front_axis_sign=1.0):
         k = max(0.0, (u - 0.05) / 0.45)       # only the front ~45% folds
         co = sk.data[i].co
         co.x = pt.co[0] - front_axis_sign * push * k
-        co.z = pt.co[2] + (0.06 * k if pt.co[2] > 0 else -0.01 * k)
+        co.z = pt.co[2] + (0.16 * k if pt.co[2] > 0 else -0.01 * k)    # the bonnet buckles up
     return sk
 
 
@@ -818,12 +818,18 @@ def build():
         mus = muscle_groups(arm)
         if SHOT.get("reveal"):
             rv = SHOT["reveal"]
-            when = schedule(c["bone_groups"], *rv["bones"])
+            bg = SHOT.get("bone_groups") or c["bone_groups"]
+            mg = SHOT.get("muscle_groups") or c["muscle_groups"]
+            when = schedule(bg, *rv["bones"])
             for nm in c["bone_groups"]:
-                reveal(bones[nm], when[nm])
-            when = schedule(c["muscle_groups"], *rv["muscles"])
+                reveal(bones[nm], when.get(nm, 1))
+            when = schedule(mg, *rv["muscles"])
             for nm in c["muscle_groups"]:
-                reveal(mus[nm], when[nm])
+                if nm in when:
+                    reveal(mus[nm], when[nm])
+                else:                       # muscles this shot is not about stay hidden
+                    for o in mus[nm]:
+                        o.hide_render = True
         if SHOT.get("teeth_stress"):
             key_prop([(1, 0.0), (int(N * 0.25), 0.1), (int(N * 0.75), 1.0), (N, 1.0)], "stress")
         else:
@@ -905,6 +911,14 @@ def build():
             y = (k - (len(lanes) - 1) / 2) * 4.2
             box("Barrier", (1.2, 3.2, 1.6), (0.6, y, 0.8), concrete)
             box("Stripe", (0.05, 3.2, 0.3), (-0.01, y, 1.1), stripe)
+            bpy.ops.object.text_add(location=(0.6, y, 1.62))   # name on the barrier top, reading across the screen
+            lbl = bpy.context.object
+            lbl.data.align_x, lbl.data.align_y = "CENTER", "CENTER"
+            lbl.data.body = "STIFF" if mode == "rigid" else "FOLDS"
+            lbl.data.size = 0.42
+            lbl.data.extrude = 0.01
+            lbl.data.materials.append(mat("Lbl" + mode, (1, 1, 1), 0.5, emit=(1.0, 0.25, 0.2) if mode == "rigid"
+                                          else (0.3, 0.85, 1.0), emit_strength=2.5))
             car, parts = glb(SPEC["props"]["car"], 4.5, (0, y, 0), math.radians(-90))
             bpy.context.view_layer.update()
             front = max((o.matrix_world @ Vector(c_))[0] for o in parts if o.type == "MESH" for c_ in o.bound_box)
@@ -932,8 +946,11 @@ def build():
             else:                                        # a stiff car barely dents, but jolts
                 sk = crumple_lattice(parts)
                 key_value(sk, [(1, 0.0), (hit, 0.0), (hit + stop_frames, 0.08)])
-        key_path(cam, [(1, Vector((-1.5, -15.5, 11.0))), (N, Vector((-0.8, -13.0, 9.5)))])
-        key_path(tgt, [(1, Vector((-2.6, 0, 0.4))), (N, Vector((-1.4, 0, 0.4)))])
+        # from nearly straight above: the folding car visibly gets shorter; cars sit low in the frame,
+        # under the captions, so graphs and cards have the top
+        lift = SHOT.get("frame_lift", 3.0)
+        key_path(cam, [(1, Vector((-2.2, -3.5 + lift, 17.0))), (N, Vector((-1.8, -3.0 + lift, 15.5)))])
+        key_path(tgt, [(1, Vector((-2.2, lift, 0))), (N, Vector((-1.8, lift, 0)))])
         smooth_keys(cam)
 
     elif kind == "speed_track":

@@ -119,7 +119,22 @@
         ]
       ],
       "lens": 32,
-      "anim": "idle"
+      "anim": "idle",
+      "muscle_groups": [
+        "JAW"
+      ],
+      "bone_groups": [
+        "SKULL",
+        "NECK",
+        "SPINE",
+        "RIBS",
+        "HIPS",
+        "THIGHS",
+        "SHINS",
+        "FEET",
+        "TAIL",
+        "ARMS"
+      ]
     },
     {
       "kind": "closeup_roar",

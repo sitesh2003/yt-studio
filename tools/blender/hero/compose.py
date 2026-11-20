@@ -104,14 +104,16 @@ def g_xray_scan(d, f, n, shot):
     c = SPEC["creature"]
     rv = shot.get("reveal") or {"bones": [0.3, n / FPS * 0.5], "muscles": [n / FPS * 0.5, n / FPS * 0.85]}
     text(d, (W / 2, 330), "COMPUTER MODEL", 72, CYAN, stroke=9)
-    mus = _groups_now(f, c["muscle_groups"], *rv["muscles"])
-    bone = _groups_now(f, c["bone_groups"], *rv["bones"])
+    mg = shot.get("muscle_groups") or c["muscle_groups"]
+    bg = shot.get("bone_groups") or c["bone_groups"]
+    mus = _groups_now(f, mg, *rv["muscles"])
+    bone = _groups_now(f, bg, *rv["bones"])
     if mus:
         i, nm = mus
-        head, col, total = "MUSCLE BY MUSCLE", (255, 110, 120), len(c["muscle_groups"])
+        head, col, total = ("JAW MUSCLES" if mg == ["JAW"] else "MUSCLE BY MUSCLE"), (255, 110, 120), len(mg)
     elif bone:
         i, nm = bone
-        head, col, total = "BONE BY BONE", WHITE, len(c["bone_groups"])
+        head, col, total = "BONE BY BONE", WHITE, len(bg)
     else:
         return
     text(d, (W / 2, 420), head, 58, col, stroke=8)
