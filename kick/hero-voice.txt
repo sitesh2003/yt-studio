@@ -1,2 +1,2 @@
 trex_bite
-2026-11-20
+2026-11-20 number in words

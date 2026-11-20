@@ -1,0 +1,46 @@
+{
+  "title_options": [
+    "T. rex का Bite कितना ताकतवर था? 🦖"
+  ],
+  "facts": [
+    "Gignac & Erickson 2017, Scientific Reports 7:2012 (doi:10.1038/s41598-017-02161-w): adult T. rex bite force up to 34,522 N at the posterior teeth; tooth pressures up to 2,974 MPa; jaw muscles reconstructed using its closest living relatives (crocodylians and birds).",
+    "Erickson et al. 2012, PLoS ONE 7:e31781 (doi:10.1371/journal.pone.0031781): saltwater crocodile 16,414 N, the highest bite force measured in a living animal.",
+    "Chin et al. 1998, Nature 393:680 (doi:10.1038/31461): a king-sized theropod coprolite, most likely from T. rex, 30-50% bone fragments.",
+    "34,522 N = about 3,520 kg-force, roughly three small cars of ~1,200 kg."
+  ],
+  "description": "सोचो, तुम्हारे दांतों पर 3 छोटी cars रख दी जाएं, इतने ज़ोर से T. rex काटता था। Scientists ने ये कैसे पता किया, और वो fossil potty जो साबित करती है कि वो bones तोड़ता था। #shorts #hindi #dinosaur #science",
+  "sources": "Gignac & Erickson 2017, Scientific Reports (doi:10.1038/s41598-017-02161-w); Erickson et al. 2012, PLoS ONE (doi:10.1371/journal.pone.0031781); Chin et al. 1998, Nature (doi:10.1038/31461).",
+  "tags": [
+    "T. rex",
+    "dinosaur hindi",
+    "bite force",
+    "science hindi",
+    "3D animation"
+  ],
+  "scenes": [
+    {
+      "narration": "सोचो, तुम्हारे दांतों पर 3 छोटी cars एक के ऊपर एक रख दी जाएं। इतने ज़ोर से T. rex काटता था।",
+      "shot": "cars"
+    },
+    {
+      "narration": "Scientists ने उसके jaw muscles उसके सबसे करीबी ज़िंदा रिश्तेदारों से समझकर बनाए, मगरमच्छ और birds।",
+      "shot": "jaw"
+    },
+    {
+      "narration": "उनका estimate, पीछे के दांतों पर 34,500 newton तक। ये अब तक नापे गए सबसे ताकतवर bite, खारे पानी के मगरमच्छ से दोगुने से भी ज़्यादा है।",
+      "shot": "compare"
+    },
+    {
+      "narration": "उसके नुकीले दांत ये सारी force एक छोटी सी नोक पर डालते थे, इतनी कि bone टूट जाए।",
+      "shot": "teeth"
+    },
+    {
+      "narration": "और हमें पता है उसने ऐसा किया। एक बड़ी fossil potty, जो शायद T. rex की है, उसमें आधे तक टूटी हुई bones हैं।",
+      "shot": "poop"
+    },
+    {
+      "narration": "कभी सोचा है, इतना बड़ा शिकारी हड्डियां भी क्यों खा जाता था?",
+      "shot": "end"
+    }
+  ]
+}
