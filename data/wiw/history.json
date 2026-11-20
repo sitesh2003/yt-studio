@@ -1701,7 +1701,7 @@
       "education"
     ],
     "hook": "Why does a pinch of baking soda erupt when it hits vinegar?",
-    "status": "scheduled",
+    "status": "public",
     "narration": "Why does a pinch of baking soda erupt when it hits vinegar? Drop a small 2-gram spoonful into 50 milliliters of vinegar. Watch closely now. The vinegar, an acid, immediately attacks the baking soda, a base. They react to quickly form carbon dioxide gas and water. They react to quickly form carbon dioxide gas and water. That gas is what pushes the liquid into a massive, frothy foam. Try this! If you used double the vinegar, would you get double the fizz, or just more leftover liquid?",
     "voice_engine": "chatterbox",
     "voices": "one narrator (af_heart)",
@@ -1787,7 +1787,8 @@
     "audited": true,
     "video_id": "1n80HUJ83zQ",
     "publish_at": "2026-11-20T07:30:00-05:00",
-    "thumbnail_set": true
+    "thumbnail_set": true,
+    "answered": true
   },
   {
     "job": "20261116-1731-how-do-vaccines-actually-train-your-immu",
