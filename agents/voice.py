@@ -33,6 +33,10 @@ def clean(text):
     text = re.sub(r"\s*(\.\s*){2,}|…", ". ", text)                       # ellipses -> one full stop
     text = re.sub(r"(?i)\bthree[,.\s]+two[,.\s]+one\b[.,!]?", "Three. Two. One.", text)
     text = re.sub(r"(?<!\d):(?!\d)", ",", text)   # "Step one:" -> "Step one," (not 3:30)
+    # 20 Nov 2026: "T. rex" was read as "T." + a long pause + "rex" (the full stop ended a sentence).
+    # A lone capital with a full stop before a lowercase word is one name: "T-rex", "E-coli".
+    # ("U.S. army" is left alone: the S follows another full stop.)
+    text = re.sub(r"(?<![.\w])([A-Z])\.\s+(?=[a-z])", r"\1-", text)
     text = re.sub(r"\s+([.,!?])", r"\1", text)
     return re.sub(r"\s{2,}", " ", text).strip()
 
