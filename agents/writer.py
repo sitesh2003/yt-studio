@@ -338,7 +338,7 @@ def _language_rule():
                 "and connecting words in Devanagari, but everyday and science words in English letters the way people "
                 "say them: fingers, skin, body, blood vessels, decision, simple, easy, next time, actually, train, "
                 "oxygen, battery, engine. Never a formal or bookish Hindi word where people would say the English one "
-                "(say 'blood vessels', not 'रक्त नलिकाएं'; 'decision', not 'निर्णय'). Example: 'मतलब ये आपकी body का "
+                "(say 'blood vessels', not 'रक्त नलिकाएं'; 'decision', not 'निर्णय'). Example: 'मतलब ये तुम्हारी body का "
                 "decision है। छोटी blood vessels सिकुड़ती हैं, और skin में grooves बन जाते हैं।' "
                 "TELL IT AS A STORY TO A FRIEND (20 Nov 2026, from the Hindi hits: 3D Wala Guru 897K, DevMonk 531K): talk "
                 "to the viewer as 'तुम' (never 'आप'), and OPEN WITH A REAL MOMENT FROM INDIAN LIFE OR A REAL EVENT the "
