@@ -4912,5 +4912,253 @@
       "duration": 30.1
     },
     "repairs": 0
+  },
+  {
+    "job": "20261120-0914-why-microwaving-a-stainless-steel-spoon-",
+    "topic": "Why microwaving a stainless steel spoon didn't set your kitchen on fire",
+    "title": "Why Microwaving Metal Can Sometimes Cause Sparks 🤯",
+    "description": "Tu sochta hoga ki microwave mein metal daalte hi aag lag jaayegi, par ek smooth stainless steel spoon kaise bach gayi? Jaano iska hidden science! #shorts #science #kitchenhacks\n\nSources (open-access research):\n- Bourdon et al. (2020), Journal of Physics D Applied Physics. doi:10.1088/1361-6463/abbc3a\n\nPhoto by rtaillon on Pixabay\nPhoto: Federal Bureau of Investigation, Public domain, via Wikimedia Commons\nPhoto: Savannah River Site, Public domain, via Wikimedia Commons\nPhoto: http://images-of-elements.com/, CC BY 3.0, via Wikimedia Commons\nVideo by 753tomas753 on Pixabay\nVideo by Engin_Akyurt on Pixabay\nVideo by Christopher_OToole_Images on Pixabay\nVideo by Hepner on Pixabay\nVideo by PHNguyen on Pixabay\nVideo by wastedgeneration on Pixabay\nVideo by Coverr-Free-Footage on Pixabay\n\nयह वीडियो कैसे बना: स्क्रिप्ट को AI tools की मदद से open research के आधार पर लिखा और fact-check किया गया है, आवाज़ AI voice की है, और editing open-source software से हुई है। कोई गलती दिखे तो comment में बताइए — जाँच कर सुधार करेंगे।",
+    "tags": [
+      "#shorts",
+      "#science",
+      "#kitchenhacks"
+    ],
+    "hook": "Tu ne kitchen mein ek stainless steel spoon microwave mein daali, aur kuch nahi jala.",
+    "status": "review",
+    "narration": "Tu ne kitchen mein ek stainless steel spoon microwave mein daali, aur kuch nahi jala. Sabko lagta hai ki metal daalte hi sparks udne lagte hain. Par har metal ki shape alag hoti hai aur energy ko alag tarike se leti hai. Smooth aur round spoons mein aam taur par sparks nahi aate, lekin agar metal mein sharp edges ho toh khatra ho sakta hai. Turn: Lekin wahi agar spoon par sharp edges ya foil ho, toh charge ek point par concentrate ho jaata hai. Isi concentrated charge ki wajah se air ionize hoti hai aur aag ya sparks dikhte hain. Microwave ke andar metal rakhna aam taur par avoid karna chahiye kyunki kuch situations mein yeh dangerous ho sakta hai. Ever thought why metal shape matters when placed inside a microwave?",
+    "voice_engine": "edge-tts",
+    "voices": "one narrator (hi-IN-SwaraNeural)",
+    "diagrams": 1,
+    "series": "Everyday Whys",
+    "countdown": false,
+    "length_arm": "standard",
+    "question": "Ever thought why metal shape matters when placed inside a microwave?",
+    "answer_comment": "The answer: Smooth stainless steel spoons have rounded edges that do not allow electric charges to concentrate into tiny points. Sharp edges or foil concentrate the electrical field, ionizing the air and causing sparks, but a smooth spoon spreads the current safely.\n\nSources (open-access research):\n- Bourdon et al. (2020), Journal of Physics D Applied Physics. doi:10.1088/1361-6463/abbc3a",
+    "sources": [
+      {
+        "claim": "Sharp points concentrate electric fields leading to arcing and ionization of air.",
+        "cite": "Bourdon et al. (2020), Journal of Physics D Applied Physics. doi:10.1088/1361-6463/abbc3a",
+        "doi": "10.1088/1361-6463/abbc3a",
+        "title": "Study of the electric field in a diffuse nanosecond positive ionization wave generated in a pin-to-plane geometry in atmospheric pressure air",
+        "why": "For a 16 mm gap and a sharp pin electrode, the plateau of the applied voltage is varied between 40 and 60 kV and the rise time is varied between 0.5 and 1.5 ns or a DC voltage is applied."
+      }
+    ],
+    "fact_check": [
+      "Smooth stainless steel spoons do not always cause sparks in modern microwaves if they lack sharp points and edges.",
+      "Sharp points concentrate electric fields leading to arcing and ionization of air.",
+      "Microwaves interact with the geometry of metal objects; smooth curves reduce charge concentration."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        4.84
+      ],
+      [
+        4.84,
+        8.42
+      ],
+      [
+        8.42,
+        12.91
+      ],
+      [
+        12.91,
+        19.73
+      ],
+      [
+        19.73,
+        25.89
+      ],
+      [
+        25.89,
+        31.25
+      ],
+      [
+        31.25,
+        38.18
+      ],
+      [
+        38.18,
+        42.38
+      ]
+    ],
+    "duration": 42.38,
+    "scene_lines": [
+      "Tu ne kitchen mein ek stainless steel spoon microwave mein daali, aur kuch nahi jala.",
+      "Sabko lagta hai ki metal daalte hi sparks udne lagte hain.",
+      "Par har metal ki shape alag hoti hai aur energy ko alag tarike se leti hai.",
+      "Smooth aur round spoons mein aam taur par sparks nahi aate, lekin agar metal mein sharp edges ho toh khatra ho sakta hai.",
+      "Turn: Lekin wahi agar spoon par sharp edges ya foil ho, toh charge ek point par concentrate ho jaata hai.",
+      "Isi concentrated charge ki wajah se air ionize hoti hai aur aag ya sparks dikhte hain.",
+      "Microwave ke andar metal rakhna aam taur par avoid karna chahiye kyunki kuch situations mein yeh dangerous ho sakta hai.",
+      "Ever thought why metal shape matters when placed inside a microwave?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,050 --> 00:00:01,999\nTu ne kitchen mein ek stainless steel\n\n2\n00:00:01,999 --> 00:00:04,783\nspoon microwave mein daali, aur kuch nahi jala.\n\n3\n00:00:04,840 --> 00:00:06,874\nSabko lagta hai ki metal daalte hi\n\n4\n00:00:06,874 --> 00:00:08,406\nsparks udne lagte hain.\n\n5\n00:00:08,420 --> 00:00:10,221\nPar har metal ki shape alag hoti\n\n6\n00:00:10,221 --> 00:00:12,907\nhai aur energy ko alag tarike se leti hai.\n\n7\n00:00:12,910 --> 00:00:15,018\nSmooth aur round spoons mein aam taur\n\n8\n00:00:15,018 --> 00:00:17,243\npar sparks nahi aate, lekin agar metal\n\n9\n00:00:17,243 --> 00:00:19,664\nmein sharp edges ho toh khatra ho sakta hai.\n\n10\n00:00:19,730 --> 00:00:22,091\nTurn: Lekin wahi agar spoon par sharp\n\n11\n00:00:22,091 --> 00:00:23,782\nedges ya foil ho, toh charge ek\n\n12\n00:00:23,782 --> 00:00:25,843\npoint par concentrate ho jaata hai.\n\n13\n00:00:25,890 --> 00:00:28,231\nIsi concentrated charge ki wajah se air\n\n14\n00:00:28,231 --> 00:00:31,246\nionize hoti hai aur aag ya sparks dikhte hain.\n\n15\n00:00:31,250 --> 00:00:33,676\nMicrowave ke andar metal rakhna aam taur\n\n16\n00:00:33,676 --> 00:00:36,261\npar avoid karna chahiye kyunki kuch situations\n\n17\n00:00:36,261 --> 00:00:38,047\nmein yeh dangerous ho sakta hai.\n\n18\n00:00:38,180 --> 00:00:40,249\nEver thought why metal shape matters when\n\n19\n00:00:40,249 --> 00:00:41,775\nplaced inside a microwave?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [
+        "phrase missing from the audio: \"aur aag ya sparks dikhte hain microwave\"",
+        "scene 8 (38.2-42.4 s): only 20% of its words can be heard - the voice breaks up or drops out"
+      ],
+      "footage": [],
+      "review": [],
+      "heard": [
+        "\"tu ne kitchen\" heard as \"तूने किचन\"",
+        "\"stainless\" heard as \"स्टेनले\"",
+        "\"nahi\" heard as \"नहीं\"",
+        "\"sparks\" heard as \"स्पाक्स\"",
+        "\"hain\" heard as \"है\"",
+        "\"energy\" heard as \"एनरजी\"",
+        "\"sparks nahi\" heard as \"श्पाक्स नहीं\"",
+        "\"sharp edges ho\" heard as \"शाप अजस\""
+      ],
+      "scene_heard": [
+        "scene 1: 67%",
+        "scene 2: 67%",
+        "scene 3: 93%",
+        "scene 4: 65%",
+        "scene 5: 71%",
+        "scene 6: 47%",
+        "scene 7: 72%",
+        "scene 8: 20%"
+      ],
+      "pass": false,
+      "duration": 41.8
+    },
+    "repairs": 0
+  },
+  {
+    "job": "20261120-0925-scientists-just-found-mit-discovered-agi",
+    "topic": "Scientists just found MIT discovered aging weakens the brain's nighttime cleaning system",
+    "title": "The Secret Cleaning System Inside You 🧠",
+    "description": "Ever wonder what happens inside your head while you sleep? It turns out, your brain is doing a massive cleanup job, but aging might be changing the game. #shorts #science #brain\n\nSources (open-access research):\n- Murdock et al. (2024), Nature. doi:10.1038/s41586-024-07132-6\n- Smyth et al. (2024), Cold Spring Harbor Perspectives in Biology. doi:10.1101/cshperspect.a041370\n- Watson et al. (2015), Daedalus. doi:10.1162/daed_a_00318\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nIllustrations: drawn for this video with FLUX.2 [klein] 4B (AI, Apache 2.0) and checked for accuracy\nImage: Wellcome Collection (CC BY 4.0)\nPhoto: Dr Anatoly, CC BY 4.0, via Wikimedia Commons\nVideo by NeuroPixels on Pixabay\nVideo by Vimeo-Free-Videos on Pixabay\nVideo by zillurrahman1 on Pixabay\n\nयह वीडियो कैसे बना: स्क्रिप्ट को AI tools की मदद से open research के आधार पर लिखा और fact-check किया गया है, आवाज़ AI voice की है, और editing open-source software से हुई है। कोई गलती दिखे तो comment में बताइए — जाँच कर सुधार करेंगे।",
+    "tags": [
+      "science",
+      "brain",
+      "health"
+    ],
+    "hook": "Jab tum sote ho, tumhara dimag actually tumhari safai kar raha hota hai.",
+    "status": "review",
+    "narration": "Jab tum sote ho, tumhara dimag actually tumhari safai kar raha hota hai. Din bhar kaam karne ke baad, tumhare brain cells kuch waste materials chhod dete hain. Is kachre ko saaf karne ke liye, tumhari body ek fluid ka use karti hai. Lekin MIT ki ek nayi study ne bataya ki aging ke sath ye system weak ho jata hai. Turn: Ye process sirf safai nahi, balki memory aur focus ke liye bhi zaroori hai. Jab cleaning slow hoti hai, toh toksin brain mein jama hone lagte hain. Ever thought how tumhari neend ki quality tumhari umra ke sath tumhare dimag ko kaise badal deti hai?",
+    "voice_engine": "edge-tts",
+    "voices": "one narrator (hi-IN-SwaraNeural)",
+    "diagrams": 1,
+    "series": "Body Whys",
+    "countdown": false,
+    "length_arm": "standard",
+    "question": "Ever thought how tumhari neend ki quality tumhari umra ke sath tumhare dimag ko kaise badal deti hai?",
+    "answer_comment": "The answer: During deep sleep, the glymphatic system flushes out metabolic waste from the brain. As we age, this system slows down, meaning the brain doesn't get fully cleaned, which can impact memory and focus over time. Ever thought how different sleeping positions might affect this flow?\n\nSources (open-access research):\n- Murdock et al. (2024), Nature. doi:10.1038/s41586-024-07132-6\n- Smyth et al. (2024), Cold Spring Harbor Perspectives in Biology. doi:10.1101/cshperspect.a041370\n- Watson et al. (2015), Daedalus. doi:10.1162/daed_a_00318",
+    "sources": [
+      {
+        "claim": "MIT study on glymphatic system and aging",
+        "cite": "Murdock et al. (2024), Nature. doi:10.1038/s41586-024-07132-6",
+        "doi": "10.1038/s41586-024-07132-6",
+        "title": "Multisensory gamma stimulation promotes glymphatic clearance of amyloid",
+        "why": "Noninvasive 40 Hz stimulation promotes 40 Hz neural activity in multiple brain regions and attenuates pathology in mouse models of Alzheimer’s disease."
+      },
+      {
+        "claim": "Role of cerebrospinal fluid in brain waste clearance",
+        "cite": "Smyth et al. (2024), Cold Spring Harbor Perspectives in Biology. doi:10.1101/cshperspect.a041370",
+        "doi": "10.1101/cshperspect.a041370",
+        "title": "Cellular Contributions to Glymphatic and Lymphatic Waste Clearance in the Brain",
+        "why": "Cerebrospinal fluid (CSF) bathes and cushions the brain; however, it also serves a major role in the clearance of metabolic wastes and in the distribution of glucose, lipids, and amino acids."
+      },
+      {
+        "claim": "Impact of sleep on memory and cognitive function",
+        "cite": "Watson et al. (2015), Daedalus. doi:10.1162/daed_a_00318",
+        "doi": "10.1162/daed_a_00318",
+        "title": "Sleep, Memory & Brain Rhythms",
+        "why": "Existing data point most strongly to its role in memory and homeostasis: that sleep helps maintain basic brain functioning via a homeostatic mechanism that loosens connections between overworked synapses, and that sleep helps consolidate and re-form important memories."
+      }
+    ],
+    "fact_check": [
+      "MIT study on glymphatic system and aging",
+      "Role of cerebrospinal fluid in brain waste clearance",
+      "Impact of sleep on memory and cognitive function"
+    ],
+    "scene_times": [
+      [
+        0.0,
+        4.63
+      ],
+      [
+        4.63,
+        9.39
+      ],
+      [
+        9.39,
+        13.68
+      ],
+      [
+        13.68,
+        18.6
+      ],
+      [
+        18.6,
+        23.51
+      ],
+      [
+        23.51,
+        27.51
+      ],
+      [
+        27.51,
+        33.97
+      ]
+    ],
+    "duration": 33.97,
+    "scene_lines": [
+      "Jab tum sote ho, tumhara dimag actually tumhari safai kar raha hota hai.",
+      "Din bhar kaam karne ke baad, tumhare brain cells kuch waste materials chhod dete hain.",
+      "Is kachre ko saaf karne ke liye, tumhari body ek fluid ka use karti hai.",
+      "Lekin MIT ki ek nayi study ne bataya ki aging ke sath ye system weak ho jata hai.",
+      "Turn: Ye process sirf safai nahi, balki memory aur focus ke liye bhi zaroori hai.",
+      "Jab cleaning slow hoti hai, toh toksin brain mein jama hone lagte hain.",
+      "Ever thought how tumhari neend ki quality tumhari umra ke sath tumhare dimag ko kaise badal deti hai?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,050 --> 00:00:02,542\nJab tum sote ho, tumhara dimag actually\n\n2\n00:00:02,542 --> 00:00:04,540\ntumhari safai kar raha hota hai.\n\n3\n00:00:04,630 --> 00:00:06,618\nDin bhar kaam karne ke baad, tumhare\n\n4\n00:00:06,618 --> 00:00:09,390\nbrain cells kuch waste materials chhod dete hain.\n\n5\n00:00:09,390 --> 00:00:11,339\nIs kachre ko saaf karne ke liye,\n\n6\n00:00:11,339 --> 00:00:13,615\ntumhari body ek fluid ka use karti hai.\n\n7\n00:00:13,680 --> 00:00:15,396\nLekin MIT ki ek nayi study ne\n\n8\n00:00:15,396 --> 00:00:17,366\nbataya ki aging ke sath ye system\n\n9\n00:00:17,366 --> 00:00:18,485\nweak ho jata hai.\n\n10\n00:00:18,600 --> 00:00:21,100\nTurn: Ye process sirf safai nahi, balki\n\n11\n00:00:21,100 --> 00:00:23,500\nmemory aur focus ke liye bhi zaroori hai.\n\n12\n00:00:23,510 --> 00:00:25,695\nJab cleaning slow hoti hai, toh toksin\n\n13\n00:00:25,695 --> 00:00:27,396\nbrain mein jama hone lagte hain.\n\n14\n00:00:27,510 --> 00:00:29,744\nEver thought how tumhari neend ki quality\n\n15\n00:00:29,744 --> 00:00:32,156\ntumhari umra ke sath tumhare dimag ko\n\n16\n00:00:32,156 --> 00:00:33,373\nkaise badal deti hai?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [
+        "phrase missing from the audio: \"liye tumhari body ek fluid\"",
+        "phrase missing from the audio: \"lekin mit ki ek nayi study ne bataya ki aging ke sath ye system weak ho jata hai turn ye process sirf safai nahi balki memory aur focus ke liye bhi zaroori hai jab cleaning slow hoti hai toh toksin brain mein jama hone lagte hain ever thought how tumhari neend ki quality\"",
+        "only 62% of the script is heard as written",
+        "scene 4 (13.7-18.6 s): only 0% of its words can be heard - the voice breaks up or drops out",
+        "scene 5 (18.6-23.5 s): only 0% of its words can be heard - the voice breaks up or drops out",
+        "scene 6 (23.5-27.5 s): only 0% of its words can be heard - the voice breaks up or drops out"
+      ],
+      "footage": [],
+      "review": [],
+      "heard": [
+        "\"actually\" heard as \"अक्छोली\"",
+        "\"cells\" heard as \"सेल्स\"",
+        "\"hain\" heard as \"है\"",
+        "\"kachre\" heard as \"कच्च्रे\"",
+        "\"saaf\" heard as \"साव\"",
+        "\"\" heard as \"किलिए तुमहारी बोडी\""
+      ],
+      "scene_heard": [
+        "scene 1: 91%",
+        "scene 2: 87%",
+        "scene 3: 50%",
+        "scene 4: 0%",
+        "scene 5: 0%",
+        "scene 6: 0%",
+        "scene 7: 59%"
+      ],
+      "pass": false,
+      "duration": 33.4
+    },
+    "repairs": 0
   }
 ]
