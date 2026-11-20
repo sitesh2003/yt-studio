@@ -57,7 +57,7 @@ def reset():
             setattr(ee, k, v)
         except Exception:
             pass
-    sc.render.use_motion_blur = not args.preview
+    sc.render.use_motion_blur = not args.preview and not os.environ.get("HERO_NO_BLUR")
     try:
         sc.render.motion_blur_shutter = 0.35
     except Exception:

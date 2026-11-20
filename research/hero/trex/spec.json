@@ -49,51 +49,51 @@
   "shots": [
     {
       "kind": "run_at_camera",
-      "seconds": 3.445,
+      "seconds": 3.44,
       "lens": 32,
       "freeze_s": 0.9
     },
     {
       "kind": "size_tower",
-      "seconds": 4.355,
+      "seconds": 4.52,
       "cars": 6,
       "lens": 24
     },
     {
       "kind": "xray_scan",
-      "seconds": 4.988,
+      "seconds": 5.43,
       "lens": 28,
       "reveal": {
         "bones": [
           0.3,
-          2.16
+          2.34
         ],
         "muscles": [
-          2.26,
-          3.59
+          2.44,
+          3.66
         ]
       }
     },
     {
       "kind": "stress_run",
-      "seconds": 4.51,
+      "seconds": 3.86,
       "lens": 32
     },
     {
       "kind": "muscle_needed",
-      "seconds": 6.642,
+      "seconds": 5.34,
       "muscle_scale": 2.6,
       "lens": 28
     },
     {
       "kind": "speed_track",
-      "seconds": 3.873,
+      "seconds": 3.74,
       "kmh": 20,
       "lens": 22
     },
     {
       "kind": "race_pass",
-      "seconds": 3.67,
+      "seconds": 3.98,
       "kmh": 20,
       "car_kmh": 50,
       "lens": 22,
@@ -101,7 +101,7 @@
     },
     {
       "kind": "closeup_roar",
-      "seconds": 3.737,
+      "seconds": 3.04,
       "lens": 32
     }
   ],
