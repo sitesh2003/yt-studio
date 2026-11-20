@@ -1,17 +1,5 @@
 [
   {
-    "job": "20261116-2121-why-do-i-actually-need-a-resistor-for-an",
-    "title": "Why Does An LED Need A Resistor?",
-    "assets": {
-      "mp4": 756571187,
-      "jpg": 756571506,
-      "json": 756571531
-    },
-    "locked": true,
-    "series": "Electronics",
-    "stored": "2026-11-16T21:47:38.199452+00:00"
-  },
-  {
     "job": "20261117-0811-why-does-anything-move-if-action-equals-",
     "title": "How Newton's Third Law Actually Works",
     "assets": {
@@ -82,5 +70,17 @@
     "locked": true,
     "series": "Electronics",
     "stored": "2026-11-19T20:05:24.659871+00:00"
+  },
+  {
+    "job": "20261120-0900-why-do-metals-conduct-electricity-the-ch",
+    "title": "How Metals Conduct Electricity: The Chemistry Explained",
+    "assets": {
+      "mp4": 771210953,
+      "jpg": 771211136,
+      "json": 771211178
+    },
+    "locked": true,
+    "series": "Chemistry",
+    "stored": "2026-11-20T09:27:06.456010+00:00"
   }
 ]

@@ -1685,7 +1685,8 @@
     "video_id": "Lu5BW3Ip8vo",
     "publish_at": "2026-11-19T16:30:00-05:00",
     "thumbnail_set": true,
-    "answered": true
+    "answered": true,
+    "recapped": true
   },
   {
     "job": "20261116-1645-why-does-baking-soda-fizz-when-mixed-wit",
@@ -2011,7 +2012,7 @@
       "resistors"
     ],
     "hook": "Why does your LED need a resistor? Without one, current can quickly spiral out of control.",
-    "status": "banked",
+    "status": "scheduled",
     "narration": "Why does your LED need a resistor? Without one, current can quickly spiral out of control. Connect a 3-volt coin battery to a red LED. If the battery voltage exceeds the LED's forward voltage, the current can rise significantly. The LED lacks internal current limiting. If too much current flows through it, the heat damages the internal structure of the semiconductor. Adding a resistor is key. It acts like a narrow pipe, limiting how many electrons flow through the circuit at once. A resistor uses resistance to turn excess energy into heat. Safety first. This is a common practice to ensure the LED operates within its safe current limits. If you used a larger resistor, what would happen to the LED's brightness?",
     "voice_engine": "chatterbox",
     "voices": "one narrator (af_heart)",
@@ -2081,7 +2082,10 @@
       "duration": 35.6
     },
     "repairs": 0,
-    "audited": true
+    "audited": true,
+    "video_id": "18sTrFz1ylg",
+    "publish_at": "2026-11-21T07:30:00-05:00",
+    "thumbnail_set": true
   },
   {
     "job": "20261117-0811-why-does-anything-move-if-action-equals-",
@@ -3140,6 +3144,220 @@
       "duration": 27.2
     },
     "repairs": 2,
+    "audited": true
+  },
+  {
+    "job": "20261120-0744-why-does-pythagoras-theorem-work-a-visua",
+    "topic": "Why does Pythagoras' theorem work? A visual proof explained",
+    "title": "Why Does Pythagoras Theorem Work Visualized",
+    "description": "Ever wondered why Pythagoras’ theorem works? We use a simple visual proof to show how areas add up. #math #geometry #shorts\n\nSources (open-access research):\n- Asyalı et al. (2006), Journal of Yaşar University. doi:10.19168/jyu.08186\n- Padmavathi et al. (2025), International Journal of Zoological Investigations. doi:10.33745/ijzi.2025.v11i01.080\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nPhoto by Angeleses on Pixabay\nPhoto by Irina_Amsterdam on Pixabay\nPhoto: Unknown author Unknown author, Public domain, via Wikimedia Commons",
+    "tags": [
+      "math",
+      "geometry",
+      "Pythagoras",
+      "education",
+      "shorts"
+    ],
+    "hook": "You’ve seen a^2 + b^2 = c^2 on a 3-4-5 triangle. But why does it work?",
+    "status": "review",
+    "narration": "You’ve seen a^2 + b^2 = c^2 on a 3-4-5 triangle. But why does it work? Take four identical 3-4-5 right triangles. Arrange them inside a frame. They form a tilted square with side five. Look at that middle square. Its area is five squared, or twenty-five. Now slide those four 3-4-5 triangles. They form two rectangles. You leave two empty squares. One is three squared, one is four squared. Rearranging changes no area. So three squared plus four squared equals five squared! Now try this. If sides are 6 and 8, what is the hypotenuse square area?",
+    "voice_engine": "kokoro",
+    "voices": "one narrator (af_heart)",
+    "diagrams": 3,
+    "series": "Maths",
+    "countdown": false,
+    "length_arm": null,
+    "question": "Try this: if the sides are 6 and 8, what is the area of the square on the hypotenuse?",
+    "answer_comment": "The answer: 100. Using the theorem a^2 + b^2 = c^2, we calculate 6 squared (36) plus 8 squared (64), which equals 100. This is the area of the square built on the hypotenuse.\n\nSources (open-access research):\n- Asyalı et al. (2006), Journal of Yaşar University. doi:10.19168/jyu.08186\n- Padmavathi et al. (2025), International Journal of Zoological Investigations. doi:10.33745/ijzi.2025.v11i01.080",
+    "sources": [
+      {
+        "claim": "Pythagoras' theorem states a^2 + b^2 = c^2 for right triangles.",
+        "cite": "Asyalı et al. (2006), Journal of Yaşar University. doi:10.19168/jyu.08186",
+        "doi": "10.19168/jyu.08186",
+        "title": "A NEW PROOF OF PYTHAGOREAN THEOREM",
+        "why": "The PT states that the sum of squares of short legs of a right triangle is equal to the square of the hypotenuse [1]... Equating (1) and (2) we find that 2 2 2 c a b = + which completes the proof."
+      },
+      {
+        "claim": "The rearrangement proof is a standard geometric demonstration of the theorem.",
+        "cite": "Padmavathi et al. (2025), International Journal of Zoological Investigations. doi:10.33745/ijzi.2025.v11i01.080",
+        "doi": "10.33745/ijzi.2025.v11i01.080",
+        "title": "Zoological Evidence for Pythagorean Theorem in Animal Morphological Design",
+        "why": "An Indian mathematician Bhaskaracharya provided an early visual proof of the Pythagorean Theorem through the rearrangement of triangles and squares."
+      }
+    ],
+    "fact_check": [
+      "Pythagoras' theorem states a^2 + b^2 = c^2 for right triangles.",
+      "The rearrangement proof is a standard geometric demonstration of the theorem.",
+      "For sides 6 and 8, 36 + 64 = 100, which is the area of the hypotenuse square."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        6.56
+      ],
+      [
+        6.56,
+        9.66
+      ],
+      [
+        9.66,
+        13.17
+      ],
+      [
+        13.17,
+        17.38
+      ],
+      [
+        17.38,
+        21.58
+      ],
+      [
+        21.58,
+        26.18
+      ],
+      [
+        26.18,
+        30.64
+      ],
+      [
+        30.64,
+        35.27
+      ]
+    ],
+    "duration": 35.27,
+    "scene_lines": [
+      "You’ve seen a^2 + b^2 = c^2 on a 3-4-5 triangle. But why does it work?",
+      "Take four identical 3-4-5 right triangles.",
+      "Arrange them inside a frame. They form a tilted square with side five.",
+      "Look at that middle square. Its area is five squared, or twenty-five.",
+      "Now slide those four 3-4-5 triangles. They form two rectangles.",
+      "You leave two empty squares. One is three squared, one is four squared.",
+      "Rearranging changes no area. So three squared plus four squared equals five squared!",
+      "Now try this. If sides are 6 and 8, what is the hypotenuse square area?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,050 --> 00:00:04,440\nYou’ve seen a^2 b^2 c^2 on a 3-4-5 triangle.\n\n2\n00:00:04,440 --> 00:00:05,865\nBut why does it work?\n\n3\n00:00:05,970 --> 00:00:09,110\nTake four identical 3-4-5 right triangles.\n\n4\n00:00:09,110 --> 00:00:10,730\nArrange them inside a frame.\n\n5\n00:00:10,730 --> 00:00:12,940\nThey form a tilted square with side five.\n\n6\n00:00:12,940 --> 00:00:14,300\nLook at that middle square.\n\n7\n00:00:14,300 --> 00:00:16,880\nIts area is five squared, or twenty-five.\n\n8\n00:00:16,880 --> 00:00:19,540\nNow slide those four 3-4-5 triangles.\n\n9\n00:00:19,540 --> 00:00:21,220\nThey form two rectangles.\n\n10\n00:00:21,220 --> 00:00:22,840\nYou leave two empty squares.\n\n11\n00:00:22,840 --> 00:00:25,170\nOne is three squared, one is four squared.\n\n12\n00:00:25,170 --> 00:00:27,100\nRearranging changes no area.\n\n13\n00:00:27,100 --> 00:00:30,190\nSo three squared plus four squared equals five squared!\n\n14\n00:00:30,190 --> 00:00:31,240\nNow try this.\n\n15\n00:00:31,240 --> 00:00:32,820\nIf sides are 6 and 8, what\n\n16\n00:00:32,820 --> 00:00:34,670\nis the hypotenuse square area?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [],
+      "footage": [],
+      "review": [
+        "Frame 3 background uses a blurry, out-of-focus image with a wooden border at the top and bottom, which looks like glitches or poor quality footage compared to the clean design of the other frames."
+      ],
+      "heard": [
+        "\"you ve\" heard as \"you've\"",
+        "extra \"plus\"",
+        "extra \"equals\""
+      ],
+      "scene_heard": [
+        "scene 1: 90%",
+        "scene 2: 75%",
+        "scene 3: 85%",
+        "scene 4: 100%",
+        "scene 5: 83%",
+        "scene 6: 92%",
+        "scene 7: 85%",
+        "scene 8: 87%"
+      ],
+      "pass": false,
+      "duration": 34.5
+    },
+    "repairs": 2
+  },
+  {
+    "job": "20261120-0900-why-do-metals-conduct-electricity-the-ch",
+    "topic": "Why do metals conduct electricity? The chemistry of metallic bonding",
+    "title": "How Metals Conduct Electricity: The Chemistry Explained",
+    "description": "Ever wondered why metals conduct electricity so easily? Let's look inside the atomic structure of copper to see the free electrons in action. #shorts #chemistry #science\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nPhoto by vinarcis on Pixabay\nVideo by JustYøu on Pixabay\nVideo by Vimeo-Free-Videos on Pixabay\nVideo by sharaed on Pixabay\n\nHow this was made: the script is researched and fact-checked with AI tools against open-access research and textbooks, narrated by an AI voice, and every diagram, number and graph is drawn by code from the real values. Spot a mistake? Tell us in the comments - corrections are checked and credited.",
+    "tags": [
+      "metallic bonding",
+      "chemistry",
+      "electricity",
+      "physics",
+      "science shorts"
+    ],
+    "hook": "Most wires carry power extremely fast, but why do metals actually conduct electricity?",
+    "status": "banked",
+    "narration": "Most wires carry power extremely fast, but why do metals actually conduct electricity? Look inside. A regular grid of metal atoms. Each atom gives up its outer electrons, leaving a sea of loose negative charges. When you push voltage from a battery, these free electrons flow in one direction. Pure physics. Valence electrons are delocalized and free to move throughout the whole structure. Think about it. Why doesn't pure solid salt conduct electricity the same way?",
+    "voice_engine": "chatterbox",
+    "voices": "one narrator (af_heart)",
+    "diagrams": 1,
+    "series": "Chemistry",
+    "countdown": false,
+    "length_arm": null,
+    "question": "Try this: why doesn't pure solid salt conduct electricity the same way?",
+    "answer_comment": "The answer: Salt forms an ionic lattice where the ions themselves are locked in place and cannot move freely, unlike metals where electrons are free to roam. Because salt ions cannot drift freely in a solid, no current can flow. Want to know what happens when you dissolve that salt in water? Drop a question below.",
+    "sources": [],
+    "fact_check": [
+      "Metals conduct electricity due to delocalized valence electrons forming a sea of negative charge.",
+      "Voltage applied across a metal causes a drift of these free electrons.",
+      "Solid sodium chloride (salt) does not conduct electricity because its ions and electrons are locked in a rigid ionic crystal lattice."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        4.57
+      ],
+      [
+        4.57,
+        7.45
+      ],
+      [
+        7.45,
+        11.27
+      ],
+      [
+        11.27,
+        15.15
+      ],
+      [
+        15.15,
+        20.12
+      ],
+      [
+        20.12,
+        26.11
+      ]
+    ],
+    "duration": 26.11,
+    "scene_lines": [
+      "Most wires carry power extremely fast, but why do metals actually conduct electricity?",
+      "Look inside. A regular grid of metal atoms.",
+      "Each atom gives up its outer electrons, leaving a sea of loose negative charges.",
+      "When you push voltage from a battery, these free electrons flow in one direction.",
+      "Pure physics. Valence electrons are delocalized and free to move throughout the whole structure.",
+      "Think about it. Why doesn't pure solid salt conduct electricity the same way?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,000 --> 00:00:02,180\nMost wires carry power extremely fast, but\n\n2\n00:00:02,180 --> 00:00:04,050\nwhy do metals actually conduct electricity?\n\n3\n00:00:04,570 --> 00:00:05,300\nLook inside.\n\n4\n00:00:05,420 --> 00:00:07,170\nA regular grid of metal atoms.\n\n5\n00:00:07,450 --> 00:00:09,200\nEach atom gives up its outer electrons,\n\n6\n00:00:09,210 --> 00:00:10,980\nleaving a sea of loose negative charges.\n\n7\n00:00:11,270 --> 00:00:12,820\nWhen you push voltage from a battery,\n\n8\n00:00:12,890 --> 00:00:14,840\nthese free electrons flow in one direction.\n\n9\n00:00:15,150 --> 00:00:16,040\nPure physics.\n\n10\n00:00:16,300 --> 00:00:18,400\nValence electrons are delocalized and free to\n\n11\n00:00:18,400 --> 00:00:19,810\nmove throughout the whole structure.\n\n12\n00:00:20,120 --> 00:00:21,090\nThink about it.\n\n13\n00:00:22,750 --> 00:00:25,510\nWhy doesn't pure solid salt conduct electricity the same way?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [],
+      "footage": [],
+      "review": [],
+      "heard": [
+        "extra \"this dapped i wrecked dapped\""
+      ],
+      "scene_heard": [
+        "scene 1: 100%",
+        "scene 2: 100%",
+        "scene 3: 100%",
+        "scene 4: 100%",
+        "scene 5: 100%",
+        "scene 6: 100%"
+      ],
+      "pass": true,
+      "duration": 25.8
+    },
+    "repairs": 0,
     "audited": true
   }
 ]

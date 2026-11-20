@@ -3,6 +3,13 @@
 Every video, the claims it makes, and the open-access research behind them. Built automatically by
 agents/library.py; a source is listed only if its abstract was checked to support the claim.
 
+## How Metals Conduct Electricity: The Chemistry Explained
+*2026-11-20 · Chemistry*
+
+- Metals conduct electricity due to delocalized valence electrons forming a sea of negative charge.
+- Voltage applied across a metal causes a drift of these free electrons.
+- Solid sodium chloride (salt) does not conduct electricity because its ions and electrons are locked in a rigid ionic crystal lattice.
+
 ## Ever Thought Why Mars Is Red?
 *2026-11-19 · Earth and Space*
 

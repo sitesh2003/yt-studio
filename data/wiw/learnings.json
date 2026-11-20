@@ -1,19 +1,17 @@
 {
   "summary": [
-    "Replace abstract 'Why' questions with specific, visual scenarios or counter-intuitive physical demonstrations.",
-    "Eliminate preamble that references the viewer's past experience (e.g., 'You've seen/used...') as these cause immediate swipe-offs.",
-    "Front-load the conflict: describe the result (e.g., objects falling) before stating the principle (e.g., gravity) to create immediate curiosity.",
-    "Shorten hook length: successful videos get straight to the 'what' or 'how' without setting context.",
-    "Use high-contrast visual indicators in titles (emojis or specific measurements) to signal a concrete explanation rather than a lecture."
+    "Prioritize everyday chemical phenomena over abstract biological or physical mechanics to drive immediate viewer retention.",
+    "Formulate hooks that immediately challenge common assumptions rather than asking generic open-ended questions.",
+    "Eliminate overly wordy hypothetical scenarios from the opening sentence to reduce friction in the critical swipe-away window.",
+    "Keep video durations under 40 seconds to prevent natural drop-off points from ruining the average view percentage.",
+    "Incorporate specific physical actions or visual triggers into the title instead of generic academic labels."
   ],
   "winning_hooks": [
-    "Why does baking soda fizz the moment it hits vinegar?",
-    "A 10kg lead sphere and a 1kg lead sphere dropped from the same height in a vacuum. Why don't they hit the ground at different moments?"
+    "Why does baking soda fizz the moment it hits vinegar?"
   ],
   "avoid": [
-    "Starting with 'You've seen/used X, but why does it do Y?' format.",
-    "Vague, textbook-style titles like 'How Soap Works: The Chemistry of Cleaning'.",
-    "Slow-burn introductions that delay the core question beyond the first three seconds."
+    "You've used soap your whole life, but why does it clean grease when plain water fails?",
+    "A 10kg lead sphere and a 1kg lead sphere dropped from the same height in a vacuum. Why don't they hit the ground at different moments?"
   ],
-  "next_experiment": "Test the 'Direct Demonstration' hook style: start the video mid-action (e.g., the sound of a fizz or a visual drop) followed by a 3-word question, removing all introductory 'Why' or 'How' phrasing."
+  "next_experiment": "Test if starting a physics video with a direct, single-sentence question ('Why do heavy things fall at the same speed as light things?') increases stayed_pct above 40% compared to using a complex hypothetical scenario."
 }
