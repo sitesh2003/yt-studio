@@ -135,16 +135,16 @@ def llm_json(prompt, retries=3, images=None):
     """Ask the configured LLM for JSON. Gemini free tier by default."""
     cfg = config()["llm"]
     api_key = key("GEMINI_API_KEY")
-    if not api_key:
-        raise RuntimeError("GEMINI_API_KEY is missing in .env (free at aistudio.google.com/apikey)")
-    from google import genai
-    client = genai.Client(api_key=api_key, http_options={"timeout": 90000})
+    from . import free_llm
     last = None
     models = [cfg["model"]] + cfg.get("fallback_models", [])
-    dead = set()
+    client = None
+    if api_key:
+        from google import genai
+        client = genai.Client(api_key=api_key, http_options={"timeout": 90000})
     for round_ in range(4):                      # free models get busy; go round the list a few times
-        for model in models:
-            if model in dead:
+        for model in (models if client else []):
+            if model in _GEMINI_DEAD:
                 continue
             try:
                 resp = client.models.generate_content(
@@ -157,11 +157,23 @@ def llm_json(prompt, retries=3, images=None):
             except Exception as e:
                 last, msg = e, str(e)
                 if "404" in msg or "NOT_FOUND" in msg:
-                    dead.add(model)               # retired: never try it again this run
+                    _GEMINI_DEAD.add(model)       # retired: never try it again this run
+                elif "PerDay" in msg or "per day" in msg.lower():
+                    _GEMINI_DEAD.add(model)       # daily free quota gone: no point retrying today
                 elif "429" in msg or "RESOURCE_EXHAUSTED" in msg:
                     time.sleep(10)                # per-minute free quota: short pause, next model
+        # 19 Nov 2026: Gemini's free tier is 20 requests a day per model; when it is busy or used up,
+        # the other free providers (Groq, OpenRouter's free models) answer instead (agents/free_llm.py)
+        out = free_llm.ask_json(prompt, images=images, temperature=0.2 if images else 0.9)
+        if out is not None:
+            return _shape(out)
+        if not client and not free_llm.available():
+            raise RuntimeError("no AI key: set GEMINI_API_KEY, GROQ_API_KEY or OPENROUTER_API_KEY")
         time.sleep(20 * (round_ + 1))             # everything busy: wait, then try the list again
-    raise RuntimeError(f"LLM call failed on every model: {last}")
+    raise RuntimeError(f"LLM call failed on every model and provider: {last}")
+
+
+_GEMINI_DEAD = set()
 
 
 def add_lesson(kind, text):
