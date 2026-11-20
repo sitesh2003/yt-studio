@@ -814,7 +814,7 @@ def build():
         xray_skin(mesh, H)
         bones = skeleton(arm, c, stress_group="SKULL" if SHOT.get("teeth_stress") else None)
         key_prop([(1, 0.05), (int(N * 0.3), 1.0)], "xr")
-        play(arm, c.get("roar", walk), 1, N, SHOT.get("anim_rate", 0.7))
+        play(arm, c.get(SHOT.get("anim", "roar"), walk), 1, N, SHOT.get("anim_rate", 0.7))
         mus = muscle_groups(arm)
         if SHOT.get("reveal"):
             rv = SHOT["reveal"]

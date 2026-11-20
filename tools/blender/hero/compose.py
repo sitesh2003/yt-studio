@@ -25,6 +25,7 @@ from agents.core import config     # noqa: E402
 FPS = 30
 W, H = 1080, 1920
 YEL, WHITE, BLACK, RED, CYAN, GREEN = (255, 222, 0), (255, 255, 255), (0, 0, 0), (255, 50, 40), (80, 220, 255), (90, 230, 120)
+CLEAR = 800   # graphics stay above this line; the captions own the band around 0.62 x height
 FONT = str(ROOT / "assets" / "fonts" / "ArchivoBlack-Regular.ttf")
 _F = {}
 
@@ -151,8 +152,8 @@ def g_muscle_needed(d, f, n, shot):
         text(d, (W / 2, y + 150), "of its whole body", 54, WHITE, stroke=8)
     if f >= g2 + (g3 - g2) * 0.5:
         s = pop(f, g2 + (g3 - g2) * 0.5, 6)
-        text(d, (W / 2, H * 0.62), "T. REX HAD", int(90 * s), WHITE, stroke=11)
-        text(d, (W / 2, H * 0.62 + 110), "FAR LESS", int(120 * s), YEL, stroke=12)
+        text(d, (W / 2, 600), "T. REX HAD", int(84 * s), WHITE, stroke=11)
+        text(d, (W / 2, 705), "FAR LESS", int(110 * s), YEL, stroke=12)
 
 
 def g_speed_track(d, f, n, shot):
@@ -223,8 +224,7 @@ def g_same_speed(d, f, n, shot):
     s = pop(f, 4, 6)
     text(d, (W / 2, 330), "SAME CAR", int(90 * s), WHITE, stroke=11)
     text(d, (W / 2, 450), "SAME SPEED", int(90 * s), YEL, stroke=11)
-    text(d, (W / 2, H * 0.62), "STIFF", 70, RED, stroke=10)
-    text(d, (W / 2, H * 0.62 + 90), "vs FOLDING", 70, CYAN, stroke=10)
+    text(d, (W / 2, 590), "STIFF vs FOLDING", 66, CYAN, stroke=10)
 
 
 def g_force_graph_rigid(d, f, n, shot):
@@ -244,7 +244,7 @@ def g_newton(d, f, n, shot):
     text(d, (W / 2, 690), "TIME TO STOP", int(64 * s), CYAN, stroke=9)
     if f > n * 0.55:
         s2 = pop(f, int(n * 0.55), 6)
-        text(d, (W / 2, H * 0.64), "MORE TIME = LESS FORCE", int(70 * s2), YEL, stroke=10)
+        text(d, (W / 2, 780), "MORE TIME = LESS FORCE", int(66 * s2), YEL, stroke=10)
 
 
 def g_history(d, f, n, shot):
@@ -257,11 +257,16 @@ def g_history(d, f, n, shot):
 
 
 def g_cars_force(d, f, n, shot):
-    """'like three small cars stacked on its teeth': the count as each car lands, then the bite force."""
-    g_size_tower(d, f, n, shot)
-    if f > n * 0.8:
+    """'like three small cars stacked on its teeth': the count as each car lands, then ONE BITE."""
+    cars = shot.get("cars", 3)
+    step = max(4, int((n * 0.75) / cars))
+    landed = sum(1 for i in range(cars) if f >= 1 + i * step + 6)
+    if landed:
+        s = pop(f, 1 + (landed - 1) * step + 6, 5)
+        text(d, (W / 2, 330), f"{landed} SMALL CAR{'S' if landed > 1 else ''}", int(96 * s), YEL, stroke=12)
+    if landed == cars and f > n * 0.8:
         s = pop(f, int(n * 0.8), 6)
-        text(d, (W / 2, H * 0.62), "ONE BITE", int(110 * s), RED, stroke=12)
+        text(d, (W / 2, 460), "= ONE BITE", int(110 * s), RED, stroke=12)
 
 
 def g_bite_compare(d, f, n, shot):
@@ -301,7 +306,7 @@ def g_coprolite(d, f, n, shot):
     text(d, (W / 2, 420), "likely from a T. rex", 52, WHITE, stroke=8)
     if f > n * 0.6:
         s = pop(f, int(n * 0.6), 6)
-        text(d, (W / 2, H * 0.64), "30-50% BONE", int(110 * s), WHITE, stroke=12)
+        text(d, (W / 2, 560), "30-50% BONE", int(110 * s), WHITE, stroke=12)
 
 
 # ---------------------------------------------------------------- assembly

@@ -54,7 +54,7 @@
       "anim_rate": 0.8,
       "overlay": "cars_force",
       "lens": 24,
-      "seconds": 4,
+      "seconds": 3.58,
       "cam": [
         [
           7.5,
@@ -82,41 +82,51 @@
     },
     {
       "kind": "xray_jaw",
-      "reveal": {},
+      "reveal": {
+        "bones": [
+          0.3,
+          0.7
+        ],
+        "muscles": [
+          0.8,
+          4.02
+        ]
+      },
       "overlay": "xray_scan",
-      "seconds": 5,
+      "seconds": 4.42,
       "cam": [
         [
-          7.0,
-          -12.5,
-          5.6
+          9.5,
+          -15.5,
+          6.6
         ],
         [
-          5.8,
-          -11.0,
-          5.4
+          8.0,
+          -13.5,
+          6.3
         ]
       ],
       "tgt": [
         [
           0,
-          -4.8,
-          5.0
+          -4.6,
+          5.4
         ],
         [
           0,
-          -4.8,
-          5.0
+          -4.6,
+          5.4
         ]
       ],
-      "lens": 30
+      "lens": 32,
+      "anim": "idle"
     },
     {
       "kind": "closeup_roar",
       "overlay": "bite_compare",
       "bars": [
         [
-          "SALTWATER CROCODILE (measured)",
+          "SALTWATER CROC (measured)",
           16414,
           "cyan"
         ],
@@ -126,48 +136,48 @@
           "red"
         ]
       ],
-      "seconds": 6
+      "seconds": 6.87
     },
     {
       "kind": "xray_jaw",
       "teeth_stress": true,
       "overlay": "tooth_pressure",
-      "seconds": 5,
+      "seconds": 4.2,
       "cam": [
         [
-          7.0,
-          -12.5,
-          5.6
+          9.5,
+          -15.5,
+          6.6
         ],
         [
-          5.8,
-          -11.0,
-          5.4
+          8.0,
+          -13.5,
+          6.3
         ]
       ],
       "tgt": [
         [
           0,
-          -4.8,
-          5.0
+          -4.6,
+          5.4
         ],
         [
           0,
-          -4.8,
-          5.0
+          -4.6,
+          5.4
         ]
       ],
-      "lens": 30
+      "lens": 32
     },
     {
       "kind": "coprolite",
       "overlay": "coprolite",
-      "seconds": 5
+      "seconds": 4.74
     },
     {
       "kind": "closeup_roar",
       "overlay": "none",
-      "seconds": 4
+      "seconds": 2.56
     }
   ],
   "credits": [
