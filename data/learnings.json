@@ -1,17 +1,17 @@
 {
-  "summary": "1. Anchor topics to intimate human sensory experiences (bodily sensations, food eating you, hidden biology) rather than inanimate physical objects or roadside engineering. 2. Open with an immediate, declarative paradox under 14 words that challenges intuition rather than explaining the answer in line one. 3. Stop using questions as opening hooks ('Why do...' or 'Ever noticed...'), which tank stayed percentage below 40%. 4. Eliminate generic reaction emojis (🤯, 🤔) and academic title phrasing; use two visceral, concrete nouns with topic-specific emojis (e.g., 🍍👅, 💧🧽). 5. Kill countdown timers and lengthy explanatory clauses ('...because it stores very little heat'), which leak viewers before the 3-second mark.",
+  "summary": "1. Focus exclusively on direct bodily phenomena and visceral human experiences rather than cold engineering or niche environmental topics.\n2. Keep opening sentences under 12 words and deliver an immediate myth-bust or startling statement in present tense using second-person ('Your...').\n3. Eliminate scenario roleplay setups ('You swerve off...') and rhetorical openings ('Ever noticed...'), which plummet stayed_pct below 37%.\n4. Keep video duration strictly under 25 seconds, as longer videos (30-50s) suffer heavy viewer drop-off and fail to reach the 1,200 view threshold.\n5. Write titles using visceral, active phrasing ('Eat You Back', 'Secretly Leaking') rather than descriptive academic summaries.",
   "winning_hooks": [
-    "Your fingers prune in water, but it is not because you are absorbing it like a sponge.",
-    "Fresh pineapple is literally eating you back.",
-    "Your eyes are leaking right now, and your brain is hiding it.",
-    "This shark is older than the United States."
+    "Present-tense body horror/curiosity: 'Your eyes are leaking right now, and your brain is hiding it.' (stayed_pct: 51.9%)",
+    "Direct punchy myth-buster: 'Your fingers prune in water, but it is not because you are absorbing it like a sponge.' (stayed_pct: 65.6%)",
+    "Visceral anthropomorphism (<8 words): 'Fresh pineapple is literally eating you back.' (stayed_pct: 57.6%)",
+    "Extreme relatable baseline contrast: 'This shark is older than the United States.' (stayed_pct: 56.2%)"
   ],
   "avoid": [
-    "Opening by asking a rhetorical question: 'Why do car windows shatter into tiny cubes?'",
-    "Casual conversational setups: 'Ever noticed those tiny black dots fading around your car windshield?'",
-    "Giving the scientific explanation away inside the first sentence: '...because it stores very little heat' or '...because its defense chemicals work differently'",
-    "Abstract or passive title formats: 'How Acorns Indirectly Affect Lyme Disease Rates 🤯'",
-    "Overlay countdown timers on Shorts under 45 seconds (strongly correlated with sub-40% stayed rates)"
+    "Rhetorical question openings: 'Ever noticed those tiny black dots fading around your car windshield?' (stayed_pct: 36.8%)",
+    "Fictional roleplay/narrative scenarios: 'Your car swerves off the highway right toward a steel guardrail.' (stayed_pct: 30.4%)",
+    "Wordy academic explanations: 'Massive acorn drops trigger Lyme disease spikes two years later...' (stayed_pct: 44.7%, views: 47)",
+    "Contradictory/Confusing setup statements: 'Drop an apple or a pear in a bowl of water and they both float.' (stayed_pct: 27.2%)",
+    "Longer durations (30-50 seconds): All videos in this length band failed to reach 600 views."
   ],
-  "next_experiment": "A/B test an identical 25-second script on bodily phenomena (e.g., 'Brain Freeze') using Hook A (Declarative Paradox: 'Your brain freeze has nothing to do with your brain.') vs Hook B (Curiosity Question: 'Why does ice cream give you sudden brain freeze?') to isolate whether question-based phrasing is the primary driver swiping viewers away."
+  "next_experiment": "A/B test a 20-second body-science topic with Hook A (Direct Myth-Bust: 'Your stomach isn't digesting food the way you think it is.') vs Hook B (Visceral Statement: 'Your stomach acid is strong enough to dissolve metal right now.'). Measure stayed_pct against the 55% threshold."
 }
