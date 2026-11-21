@@ -2015,7 +2015,7 @@
       "resistors"
     ],
     "hook": "Why does your LED need a resistor? Without one, current can quickly spiral out of control.",
-    "status": "scheduled",
+    "status": "public",
     "narration": "Why does your LED need a resistor? Without one, current can quickly spiral out of control. Connect a 3-volt coin battery to a red LED. If the battery voltage exceeds the LED's forward voltage, the current can rise significantly. The LED lacks internal current limiting. If too much current flows through it, the heat damages the internal structure of the semiconductor. Adding a resistor is key. It acts like a narrow pipe, limiting how many electrons flow through the circuit at once. A resistor uses resistance to turn excess energy into heat. Safety first. This is a common practice to ensure the LED operates within its safe current limits. If you used a larger resistor, what would happen to the LED's brightness?",
     "voice_engine": "chatterbox",
     "voices": "one narrator (af_heart)",
@@ -2088,7 +2088,8 @@
     "audited": true,
     "video_id": "18sTrFz1ylg",
     "publish_at": "2026-11-21T07:30:00-05:00",
-    "thumbnail_set": true
+    "thumbnail_set": true,
+    "answered": true
   },
   {
     "job": "20261117-0811-why-does-anything-move-if-action-equals-",
