@@ -1,0 +1,203 @@
+{
+  "assets_dir": "assets/3d",
+  "creature": {
+    "file": "dinos/Trex.fbx",
+    "length_m": 12.0,
+    "height_m": 5.2,
+    "walk": "TRex_Walk",
+    "run": "TRex_Run",
+    "idle": "TRex_Idle",
+    "roar": "TRex_Attack",
+    "foot_bone": "BackFoot.L",
+    "leg_bones": [
+      "BackUpLeg.L",
+      "BackLowLeg.L",
+      "BackFoot.L",
+      "BackUpLeg.R",
+      "BackLowLeg.R",
+      "BackFoot.R"
+    ],
+    "muscle_bones": [
+      "BackUpLeg.L",
+      "BackUpLeg.R"
+    ],
+    "bone_radius": 0.12,
+    "muscle_radius": 0.42,
+    "bone_groups": [
+      "FEET",
+      "SHINS",
+      "THIGHS",
+      "HIPS",
+      "SPINE",
+      "RIBS",
+      "NECK",
+      "SKULL",
+      "TAIL",
+      "ARMS"
+    ],
+    "muscle_groups": [
+      "THIGH",
+      "CALF",
+      "TAIL-TO-THIGH",
+      "NECK",
+      "JAW"
+    ]
+  },
+  "props": {
+    "car": "cars/sedan.glb"
+  },
+  "shots": [
+    {
+      "speeds": [
+        50,
+        50
+      ],
+      "decels": [
+        7.0,
+        3.5
+      ],
+      "wet_lane": 1,
+      "lane_names": [
+        "DRY",
+        "WET"
+      ],
+      "kind": "brake_compare",
+      "overlay": "brake_speeds",
+      "brake_at": 0.12,
+      "seconds": 4
+    },
+    {
+      "speeds": [
+        50,
+        50
+      ],
+      "decels": [
+        7.0,
+        3.5
+      ],
+      "wet_lane": 1,
+      "lane_names": [
+        "DRY",
+        "WET"
+      ],
+      "kind": "brake_compare",
+      "overlay": "brake_speeds",
+      "brake_at": 0.2,
+      "seconds": 5
+    },
+    {
+      "speeds": [
+        50,
+        50
+      ],
+      "decels": [
+        7.0,
+        3.5
+      ],
+      "wet_lane": 1,
+      "lane_names": [
+        "DRY",
+        "WET"
+      ],
+      "kind": "brake_compare",
+      "overlay": "brake_result",
+      "result_text": "2x THE DISTANCE",
+      "brake_at": 0.12,
+      "seconds": 5
+    },
+    {
+      "speeds": [
+        50,
+        50
+      ],
+      "decels": [
+        7.0,
+        3.5
+      ],
+      "wet_lane": 1,
+      "lane_names": [
+        "DRY",
+        "WET"
+      ],
+      "kind": "brake_compare",
+      "overlay": "label",
+      "label": [
+        "LESS GRIP",
+        "water gets between tyre and road"
+      ],
+      "brake_at": 0.1,
+      "seconds": 5
+    },
+    {
+      "speeds": [
+        50,
+        50
+      ],
+      "decels": [
+        7.0,
+        3.5
+      ],
+      "wet_lane": 1,
+      "lane_names": [
+        "DRY",
+        "WET"
+      ],
+      "kind": "brake_compare",
+      "overlay": "label",
+      "label": [
+        "HALF THE GRIP",
+        "= TWICE THE DISTANCE"
+      ],
+      "brake_at": 0.1,
+      "seconds": 5
+    },
+    {
+      "speeds": [
+        50,
+        50
+      ],
+      "decels": [
+        7.0,
+        3.5
+      ],
+      "wet_lane": 1,
+      "lane_names": [
+        "DRY",
+        "WET"
+      ],
+      "kind": "brake_compare",
+      "overlay": "label",
+      "label": [
+        "WORN TYRES",
+        "can't push the water away"
+      ],
+      "brake_at": 0.15,
+      "seconds": 4
+    },
+    {
+      "speeds": [
+        50,
+        50
+      ],
+      "decels": [
+        7.0,
+        3.5
+      ],
+      "wet_lane": 1,
+      "lane_names": [
+        "DRY",
+        "WET"
+      ],
+      "kind": "brake_compare",
+      "overlay": "none",
+      "brake_at": 0.12,
+      "seconds": 4,
+      "cam_h": 29
+    }
+  ],
+  "credits": [
+    "Car model: Kenney, Car Kit (CC0)",
+    "Sky: Poly Haven (CC0)"
+  ],
+  "end_beat_s": 0.6
+}

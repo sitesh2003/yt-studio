@@ -787,7 +787,7 @@ def build():
                               "stress_run": "sim", "muscle_needed": "sim", "speed_track": "day",
                               "race_pass": "day", "closeup_roar": "dusk", "xray_jaw": "sim",
                               "coprolite": "sim", "crash_compare": "day", "grow": "day",
-                              "brake_compare": "day"}[kind])
+                              "brake_compare": "day", "vision_cone": "day"}[kind])
     world(look)
     ground("sim" if look == "sim" else "road")
     if look == "day":
@@ -1071,9 +1071,18 @@ def build():
             t_.data.materials.append(white)
         lead = SHOT.get("lead_s", 1.0)                   # seconds of driving before the brake line
         brake_at = int(N * SHOT.get("brake_at", 0.3))
+        decels = SHOT.get("decels") or [decel] * len(speeds)
+        if SHOT.get("wet_lane") is not None:              # the wet lane: dark, glossy road
+            wm = bpy.data.materials.new("Wet")
+            wm.use_nodes = True
+            bw = wm.node_tree.nodes["Principled BSDF"]
+            bw.inputs["Base Color"].default_value = (0.015, 0.018, 0.025, 1)
+            bw.inputs["Roughness"].default_value = 0.05
+            box("WetLane", (4.0, 60, 0.02), (-2.2 + 4.4 * SHOT["wet_lane"], 12, 0.045), wm)
         for k, kmh in enumerate(speeds):
             x = -2.2 + 4.4 * k
             v = kmh / 3.6
+            decel = decels[k]
             car, parts = glb(SPEC["props"]["car"], 4.5, (x, 0, 0), 0.0)
             bpy.context.view_layer.update()
             front = max((o.matrix_world @ Vector(c_))[1] for o in parts if o.type == "MESH" for c_ in o.bound_box)
@@ -1104,6 +1113,44 @@ def build():
         hi_ = SHOT.get("cam_h", 25.0)
         key_path(cam, [(1, Vector((0.0, -14.0, hi_))), (N, Vector((0.0, -13.0, hi_ - 2)))])
         key_path(tgt, [(1, Vector((0.0, 9.0, 0))), (N, Vector((0.0, 10.0, 0)))])
+
+    elif kind == "vision_cone":
+        # where both eyes overlap: a glowing cone forward from the eyes, SHOT['deg'] wide (binocular field)
+        play(arm, c.get("idle", walk), 1, N, 1.0)
+        deg = SHOT.get("deg", 55)
+        L = SHOT.get("cone_len", 9.0)
+        cm = bpy.data.materials.new("Cone")
+        cm.use_nodes = True
+        cm.surface_render_method = "BLENDED"
+        nt = cm.node_tree
+        nt.nodes.clear()
+        o_ = node(nt, "ShaderNodeOutputMaterial", (400, 0))
+        em = node(nt, "ShaderNodeEmission", (0, -100))
+        em.inputs["Color"].default_value = (1.0, 0.85, 0.15, 1)
+        em.inputs["Strength"].default_value = 2.0
+        tr = node(nt, "ShaderNodeBsdfTransparent", (0, 100))
+        mx = node(nt, "ShaderNodeMixShader", (200, 0))
+        mx.inputs[0].default_value = 0.22
+        nt.links.new(tr.outputs[0], mx.inputs[1])
+        nt.links.new(em.outputs[0], mx.inputs[2])
+        nt.links.new(mx.outputs[0], o_.inputs[0])
+        r = L * math.tan(math.radians(deg / 2))
+        hb = _blen(arm, "Head")
+        # apex just in front of the eyes, opening along the snout direction and beyond
+        cone = piece(arm, "Head", "cone", (2 * r, 2 * r, L, 0.0), (0, 0.25, L / 2 + hb * 0.3), along=0.0,
+                     material=cm, name="vision", turn_x=180)
+        g0 = int(N * 0.15)
+        for fr, k in ((1, 0.0), (g0, 0.0), (g0 + 12, 1.0)):
+            cone.scale = (k, k, k)
+            cone.keyframe_insert("scale", frame=fr)
+        view = SHOT.get("view", "side")
+        if view == "behind":                 # over the shoulder, looking down the cone
+            key_path(cam, [(1, Vector((2.2, 3.5, 7.2))), (N, Vector((1.6, 2.0, 6.8)))])
+            key_path(tgt, [(1, Vector((0, -10, 4.5))), (N, Vector((0, -11, 4.5)))])
+        else:
+            key_path(cam, [(1, Vector((19.0, -6.5, 6.5))), (N, Vector((17.5, -7.0, 6.2)))])
+            key_path(tgt, [(1, Vector((0, -8.0, 4.4))), (N, Vector((0, -8.2, 4.4)))])
+        smooth_keys(cam)
 
     elif kind == "speed_track":
         rate = SHOT["kmh"] / 3.6 / v_walk

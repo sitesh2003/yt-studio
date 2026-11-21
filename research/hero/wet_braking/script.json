@@ -1,0 +1,51 @@
+{
+  "title_options": [
+    "Why Rain Doubles Your Braking Distance 🌧️"
+  ],
+  "facts": [
+    "UK Highway Code rule 227: in wet weather stopping distances will be at least double those required on dry roads, because tyres have less grip; rule 231: in snow and ice braking distances can be ten times greater.",
+    "Braking distance d = v^2 / (2a); braking deceleration is limited by tyre grip, so half the grip -> twice the distance. Worked: 50 km/h, dry 7 m/s^2 -> ~14 m; wet 3.5 m/s^2 -> ~28 m.",
+    "Tyre tread grooves channel water out from under the tyre; worn tyres clear less water."
+  ],
+  "description": "On a wet road your car needs at least twice as far to stop. Here's why, with two cars braking side by side. #shorts #physics #science #cars",
+  "sources": "UK Highway Code rules 227 and 231 (gov.uk); braking distance = speed^2 / (2 x deceleration) (GCSE physics).",
+  "tags": [
+    "wet road braking",
+    "stopping distance",
+    "physics",
+    "friction",
+    "road safety",
+    "science",
+    "3D animation"
+  ],
+  "scenes": [
+    {
+      "narration": "On a wet road, your car can need at least twice as far to stop.",
+      "shot": "hook"
+    },
+    {
+      "narration": "Both of these cars brake at fifty kilometres an hour. One on a dry road, one on a wet road.",
+      "shot": "both"
+    },
+    {
+      "narration": "The dry car stops in about fourteen metres. The wet one slides on to about twenty-eight.",
+      "shot": "result"
+    },
+    {
+      "narration": "Braking works by grip between the tyre and the road, and water gets in between and cuts that grip.",
+      "shot": "grip"
+    },
+    {
+      "narration": "Half the grip means half the braking force, so the same speed takes twice the distance.",
+      "shot": "half"
+    },
+    {
+      "narration": "Worn tyres make it worse, because their grooves can't push the water away.",
+      "shot": "tyres"
+    },
+    {
+      "narration": "So how much farther do you think a car needs on ice?",
+      "shot": "end"
+    }
+  ]
+}

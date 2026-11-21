@@ -1,0 +1,145 @@
+{
+  "assets_dir": "assets/3d",
+  "creature": {
+    "file": "dinos/Trex.fbx",
+    "length_m": 12.0,
+    "height_m": 5.2,
+    "walk": "TRex_Walk",
+    "run": "TRex_Run",
+    "idle": "TRex_Idle",
+    "roar": "TRex_Attack",
+    "foot_bone": "BackFoot.L",
+    "leg_bones": [
+      "BackUpLeg.L",
+      "BackLowLeg.L",
+      "BackFoot.L",
+      "BackUpLeg.R",
+      "BackLowLeg.R",
+      "BackFoot.R"
+    ],
+    "muscle_bones": [
+      "BackUpLeg.L",
+      "BackUpLeg.R"
+    ],
+    "bone_radius": 0.12,
+    "muscle_radius": 0.42,
+    "bone_groups": [
+      "FEET",
+      "SHINS",
+      "THIGHS",
+      "HIPS",
+      "SPINE",
+      "RIBS",
+      "NECK",
+      "SKULL",
+      "TAIL",
+      "ARMS"
+    ],
+    "muscle_groups": [
+      "THIGH",
+      "CALF",
+      "TAIL-TO-THIGH",
+      "NECK",
+      "JAW"
+    ]
+  },
+  "props": {
+    "car": "cars/sedan.glb"
+  },
+  "shots": [
+    {
+      "kind": "vision_cone",
+      "overlay": "label",
+      "label": [
+        "STANDING STILL?",
+        "probably won't hide you"
+      ],
+      "seconds": 4,
+      "lens": 24
+    },
+    {
+      "kind": "xray_jaw",
+      "overlay": "label",
+      "label": [
+        "REBUILT HEAD",
+        "where each eye can look"
+      ],
+      "seconds": 5,
+      "anim": "idle",
+      "cam": [
+        [
+          9.5,
+          -15.5,
+          6.6
+        ],
+        [
+          8.0,
+          -13.5,
+          6.3
+        ]
+      ],
+      "tgt": [
+        [
+          0,
+          -4.6,
+          5.4
+        ],
+        [
+          0,
+          -4.6,
+          5.4
+        ]
+      ]
+    },
+    {
+      "kind": "vision_cone",
+      "overlay": "label",
+      "label": [
+        "55\u00b0 OVERLAP",
+        "wider than a hawk's"
+      ],
+      "seconds": 6,
+      "lens": 24
+    },
+    {
+      "kind": "vision_cone",
+      "view": "behind",
+      "overlay": "label",
+      "label": [
+        "DEPTH VISION",
+        "how far away you are"
+      ],
+      "seconds": 5
+    },
+    {
+      "kind": "speed_track",
+      "kmh": 12,
+      "overlay": "bars",
+      "title": "HOW FAR IT MAY HAVE SEEN",
+      "bars": [
+        [
+          "T. REX (estimate)",
+          6,
+          "yellow"
+        ],
+        [
+          "PEOPLE",
+          1.6,
+          "cyan"
+        ]
+      ],
+      "unit": "km",
+      "seconds": 6
+    },
+    {
+      "kind": "closeup_roar",
+      "overlay": "none",
+      "seconds": 4
+    }
+  ],
+  "credits": [
+    "T. rex model: Quaternius, Animated LowPoly Dinosaurs (CC0)",
+    "Car model: Kenney, Car Kit (CC0)"
+  ],
+  "end_beat_s": 0.6
+}

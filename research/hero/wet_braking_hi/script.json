@@ -1,0 +1,49 @@
+{
+  "title_options": [
+    "बारिश में Car को रुकने में दोगुनी दूरी क्यों लगती है? 🌧️"
+  ],
+  "facts": [
+    "UK Highway Code rule 227: in wet weather stopping distances will be at least double those required on dry roads, because tyres have less grip; rule 231: in snow and ice braking distances can be ten times greater.",
+    "Braking distance d = v^2 / (2a); braking deceleration is limited by tyre grip, so half the grip -> twice the distance. Worked: 50 km/h, dry 7 m/s^2 -> ~14 m; wet 3.5 m/s^2 -> ~28 m.",
+    "Tyre tread grooves channel water out from under the tyre; worn tyres clear less water."
+  ],
+  "description": "गीली सड़क पर car को रुकने के लिए कम से कम दोगुनी दूरी चाहिए। वजह है grip. #shorts #hindi #physics #science",
+  "sources": "UK Highway Code rules 227 and 231 (gov.uk); braking distance = speed^2 / (2 x deceleration) (GCSE physics).",
+  "tags": [
+    "wet road braking",
+    "physics hindi",
+    "car safety hindi",
+    "friction",
+    "science hindi"
+  ],
+  "scenes": [
+    {
+      "narration": "Monsoon में गीली सड़क पर, तुम्हारी car को रुकने के लिए कम से कम दोगुनी दूरी चाहिए।",
+      "shot": "hook"
+    },
+    {
+      "narration": "ये दोनों cars पचास की speed पर brake लगाती हैं। एक सूखी सड़क पर, एक गीली सड़क पर।",
+      "shot": "both"
+    },
+    {
+      "narration": "सूखी सड़क वाली car करीब चौदह मीटर में रुक जाती है। गीली वाली करीब अट्ठाईस मीटर तक फिसलती है।",
+      "shot": "result"
+    },
+    {
+      "narration": "Brake लगते हैं tyre और सड़क की grip से, और पानी बीच में आकर ये grip कम कर देता है।",
+      "shot": "grip"
+    },
+    {
+      "narration": "आधी grip का मतलब आधी braking force, तो उसी speed पर दोगुनी दूरी।",
+      "shot": "half"
+    },
+    {
+      "narration": "घिसे हुए tyre और बुरे हैं, क्योंकि उनकी grooves पानी को बाहर नहीं धकेल पातीं।",
+      "shot": "tyres"
+    },
+    {
+      "narration": "कभी सोचा है, बर्फ़ पर car को कितनी ज़्यादा दूरी चाहिए होगी?",
+      "shot": "end"
+    }
+  ]
+}

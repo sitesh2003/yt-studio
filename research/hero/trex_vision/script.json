@@ -1,0 +1,45 @@
+{
+  "title_options": [
+    "Could A T. rex See You Standing Still? 🦖"
+  ],
+  "facts": [
+    "Stevens 2006, Journal of Vertebrate Paleontology 26(2):321-330, 'Binocular vision in theropod dinosaurs': from sculpted head reconstructions, Tyrannosaurus had a binocular field of about 55 degrees, wider than modern hawks (press reports of the study); acuity and far point estimated from reptile and bird models: objects possibly visible at about 6 km versus about 1.6 km for people (model estimate)."
+  ],
+  "description": "The famous movie line says stand still and a T. rex can't see you. A study of its skull says it probably could. #shorts #dinosaurs #TRex #Science",
+  "sources": "Stevens 2006, 'Binocular vision in theropod dinosaurs', Journal of Vertebrate Paleontology 26(2):321-330.",
+  "tags": [
+    "T. rex",
+    "T. rex vision",
+    "dinosaurs",
+    "binocular vision",
+    "paleontology",
+    "science",
+    "3D animation"
+  ],
+  "scenes": [
+    {
+      "narration": "Standing still probably wouldn't hide you from a T. rex.",
+      "shot": "hook"
+    },
+    {
+      "narration": "Scientists rebuilt its head and traced where each eye could look.",
+      "shot": "head"
+    },
+    {
+      "narration": "Its eyes faced forward, overlapping across about fifty-five degrees, wider than a hawk's.",
+      "shot": "overlap"
+    },
+    {
+      "narration": "That overlap gives depth vision, perfect for judging exactly how far away you are.",
+      "shot": "depth"
+    },
+    {
+      "narration": "It may have spotted things about six kilometres away. People manage about one and a half.",
+      "shot": "far"
+    },
+    {
+      "narration": "So if standing still won't work, what would you do?",
+      "shot": "end"
+    }
+  ]
+}

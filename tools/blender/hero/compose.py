@@ -376,12 +376,14 @@ def g_grow(d, f, n, shot):
 
 def _brake_chips(d, shot, show_dist):
     sp = shot.get("speeds", [30, 60])
+    dec = shot.get("decels") or [shot.get("decel", 7.0)] * len(sp)
+    names = shot.get("lane_names") or [f"{kmh} km/h" for kmh in sp]
     for k, kmh in enumerate(sp):
         x = W * (0.27 + 0.46 * k)
         d.rounded_rectangle([x - 220, 255, x + 220, 395], 28, fill=BLACK)
-        text(d, (x, 300), f"{kmh} km/h", 62, YEL if k == 0 else RED, stroke=0)
+        text(d, (x, 300), names[k], 62, YEL if k == 0 else CYAN if shot.get("lane_names") else RED, stroke=0)
         if show_dist:
-            dist = (kmh / 3.6) ** 2 / (2 * shot.get("decel", 7.0))
+            dist = (kmh / 3.6) ** 2 / (2 * dec[k])
             text(d, (x, 360), f"stops in ~{dist:.0f} m", 44, WHITE, stroke=0)
 
 
@@ -390,12 +392,30 @@ def g_brake_speeds(d, f, n, shot):
 
 
 def g_brake_result(d, f, n, shot):
-    v_hi = shot.get("speeds", [30, 60])[-1] / 3.6
-    t_end = int(n * shot.get("brake_at", 0.3)) + int(v_hi / shot.get("decel", 7.0) * FPS)
+    sp = shot.get("speeds", [30, 60])
+    dec = shot.get("decels") or [shot.get("decel", 7.0)] * len(sp)
+    t_end = int(n * shot.get("brake_at", 0.3)) + int(max(v / 3.6 / a for v, a in zip(sp, dec)) * FPS)
     _brake_chips(d, shot, f > int(n * shot.get("brake_at", 0.3)) + 8)
     if f > t_end:
         s = pop(f, t_end, 6)
-        text(d, (W / 2, 500), "4x THE DISTANCE", int(96 * s), RED, stroke=12)
+        text(d, (W / 2, 500), shot.get("result_text", "4x THE DISTANCE"), int(96 * s), RED, stroke=12)
+
+
+def g_bars(d, f, n, shot):
+    """Generic comparison bars: shot['bars'] = [[label, value, colour], ...], shot['unit'], shot['title']."""
+    rows = shot["bars"]
+    top = max(v for _, v, _ in rows)
+    text(d, (W / 2, 300), shot.get("title", ""), 76, WHITE, stroke=10)
+    for k, (lbl, v, col) in enumerate(rows):
+        y = 420 + k * 190
+        t0 = 6 + k * int(n * 0.25)
+        if f < t0:
+            continue
+        grow = ease((f - t0) / (FPS * 0.9))
+        colr = {"cyan": CYAN, "red": RED, "yellow": YEL, "white": WHITE}[col]
+        text(d, (90, y), lbl, 52, colr, anchor="lm", stroke=8)
+        d.rounded_rectangle([90, y + 40, 90 + int((W - 180) * v / top * grow), y + 115], 18, fill=colr)
+        text(d, (W - 90, y + 78), f"~{v:g} {shot.get('unit', '')}", 56, WHITE, anchor="rm", stroke=8)
 
 
 def g_energy(d, f, n, shot):

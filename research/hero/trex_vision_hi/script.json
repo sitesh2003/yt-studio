@@ -1,0 +1,43 @@
+{
+  "title_options": [
+    "क्या खड़े रहने से T. rex तुम्हें नहीं देख पाता? 🦖"
+  ],
+  "facts": [
+    "Stevens 2006, Journal of Vertebrate Paleontology 26(2):321-330, 'Binocular vision in theropod dinosaurs': from sculpted head reconstructions, Tyrannosaurus had a binocular field of about 55 degrees, wider than modern hawks (press reports of the study); acuity and far point estimated from reptile and bird models: objects possibly visible at about 6 km versus about 1.6 km for people (model estimate)."
+  ],
+  "description": "Movie में कहा गया कि खड़े रहो तो T. rex तुम्हें नहीं देख पाएगा। उसकी skull की research कहती है कि शायद देख लेता। #shorts #hindi #dinosaur #science",
+  "sources": "Stevens 2006, 'Binocular vision in theropod dinosaurs', Journal of Vertebrate Paleontology 26(2):321-330.",
+  "tags": [
+    "T. rex",
+    "dinosaur hindi",
+    "T. rex vision",
+    "science hindi",
+    "3D animation"
+  ],
+  "scenes": [
+    {
+      "narration": "सोचो, तुम T. rex के सामने बिल्कुल खड़े रह जाओ। शायद फिर भी वो तुम्हें देख लेता।",
+      "shot": "hook"
+    },
+    {
+      "narration": "Scientists ने उसका सिर दोबारा बनाया, और देखा कि हर आंख कहां तक देख सकती है।",
+      "shot": "head"
+    },
+    {
+      "narration": "उसकी आंखें आगे की तरफ थीं, और करीब पचपन degree तक overlap करती थीं, बाज़ से भी ज़्यादा।",
+      "shot": "overlap"
+    },
+    {
+      "narration": "इसी overlap से depth दिखती है, यानी वो ठीक-ठीक समझ लेता कि तुम कितनी दूर हो।",
+      "shot": "depth"
+    },
+    {
+      "narration": "शायद वो करीब छह किलोमीटर दूर तक चीज़ें देख लेता था। हम लोग बस डेढ़ किलोमीटर तक।",
+      "shot": "far"
+    },
+    {
+      "narration": "कभी सोचा है, अगर खड़े रहना काम नहीं करता, तो तुम क्या करते?",
+      "shot": "end"
+    }
+  ]
+}
