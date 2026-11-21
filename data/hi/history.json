@@ -5191,7 +5191,7 @@
       "3D animation"
     ],
     "hook": "Movies में T. rex गाड़ी का पीछा करता है। पर असली T. rex शायद दौड़ ही नहीं सकता था।",
-    "status": "replaced",
+    "status": "deleted",
     "narration": "Movies में T. rex गाड़ी का पीछा करता है। पर असली T. rex शायद दौड़ ही नहीं सकता था। उसका वज़न करीब 8 tonne था। मतलब 6 cars, सिर्फ दो पैरों पर। Scientists ने computer में उसे bone by bone, muscle by muscle दोबारा बनाया, और फिर उसे दौड़ाया। हर running speed पर उसकी leg bones पर इतना force पड़ा, कि वो शायद टूट जातीं। इतना बड़ा जानवर तेज़ दौड़े, तो उसकी body का 40% से ज़्यादा हिस्सा leg muscles होना चाहिए। T. rex के पास उसके आस-पास भी नहीं था। तो उसकी top speed थी बस एक तेज़ walk। करीब 20 kilometre per hour। शहर की सड़क पर 50 की speed वाली car, उसे कुछ ही seconds में पीछे छोड़ देगी। कभी सोचा है, जो दौड़ ही नहीं सकता था, वो शिकार कैसे करता था?",
     "voice_engine": "edge-tts",
     "countdown": false,
@@ -5204,7 +5204,8 @@
     "video_id": "EKCja6wKbek",
     "publish_at": "2026-11-21T09:30:00-05:00",
     "thumbnail_set": true,
-    "replaced_why": "graphics overlapped the captions for a second; fixed version uploaded in the same slot (20 Nov 2026)"
+    "replaced_why": "graphics overlapped the captions for a second; fixed version uploaded in the same slot (20 Nov 2026)",
+    "deleted_why": "replaced copy of a 3D Short, never public (owner OK 21 Nov 2026)"
   },
   {
     "job": "hero_trex_hi",
@@ -5223,13 +5224,14 @@
     "voice_engine": "edge-tts",
     "countdown": false,
     "question": "कभी सोचा है, जो दौड़ ही नहीं सकता था, वो शिकार कैसे करता था?",
-    "status": "replaced",
+    "status": "deleted",
     "hero_3d": false,
     "video_id": "7UaRpOMoO5U",
     "publish_at": "2026-11-21T09:30:00-05:00",
     "thumbnail_set": true,
     "replaces": "EKCja6wKbek",
-    "replaced_why": "graphics overlapped the captions for a second; fixed version uploaded in the same slot (20 Nov 2026)"
+    "replaced_why": "graphics overlapped the captions for a second; fixed version uploaded in the same slot (20 Nov 2026)",
+    "deleted_why": "replaced copy of a 3D Short, never public (owner OK 21 Nov 2026)"
   },
   {
     "job": "20261120-1747-scientists-just-found-mit-discovered-agi",
@@ -6027,13 +6029,14 @@
     "voice_engine": "edge-tts",
     "countdown": false,
     "question": "कभी सोचा है, जो दौड़ ही नहीं सकता था, वो शिकार कैसे करता था?",
-    "status": "replaced",
+    "status": "deleted",
     "hero_3d": false,
     "video_id": "ONLgJLVA5TI",
     "publish_at": "2026-11-21T09:30:00-05:00",
     "thumbnail_set": true,
     "replaces": "7UaRpOMoO5U",
-    "replaced_why": "graphics overlapped the captions for a second; fixed version uploaded in the same slot (20 Nov 2026)"
+    "replaced_why": "graphics overlapped the captions for a second; fixed version uploaded in the same slot (20 Nov 2026)",
+    "deleted_why": "replaced copy of a 3D Short, never public (owner OK 21 Nov 2026)"
   },
   {
     "job": "hero_trex_hi",

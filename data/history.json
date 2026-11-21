@@ -5014,7 +5014,7 @@
       "3D animation"
     ],
     "hook": "The real T. rex probably couldn't run. Not even a jog.",
-    "status": "replaced",
+    "status": "deleted",
     "narration": "The real T. rex probably couldn't run. Not even a jog. It weighed about eight tonnes. That's six cars, balanced on two legs. Scientists rebuilt it in a computer, bone by bone and muscle by muscle, then asked it to sprint. At every running speed, its leg bones took so much force they would likely have broken. A fast runner that size needs more than forty percent of its body in leg muscle. T. rex had nowhere near that. So its top speed was a fast walk. About twenty kilometres an hour. A car on a city road, at fifty, leaves it behind in seconds. So how did a giant that couldn't run catch anything at all?",
     "voice_engine": "chatterbox",
     "series": "What If",
@@ -5028,7 +5028,8 @@
     "video_id": "9ao7Zj5FgJo",
     "publish_at": "2026-11-21T19:00:00-05:00",
     "thumbnail_set": true,
-    "replaced_why": "graphics overlapped the captions for a second; fixed version uploaded in the same slot (20 Nov 2026)"
+    "replaced_why": "graphics overlapped the captions for a second; fixed version uploaded in the same slot (20 Nov 2026)",
+    "deleted_why": "replaced copy of a 3D Short, never public (owner OK 21 Nov 2026)"
   },
   {
     "job": "20261120-1342-scientists-just-found-dinosaur-blood-tha",
@@ -5294,13 +5295,14 @@
     "voice_engine": "chatterbox",
     "countdown": false,
     "question": "So how did a giant that couldn't run catch anything at all?",
-    "status": "replaced",
+    "status": "deleted",
     "hero_3d": false,
     "video_id": "7VLVufQHH00",
     "publish_at": "2026-11-21T19:00:00-05:00",
     "thumbnail_set": true,
     "replaces": "9ao7Zj5FgJo",
-    "replaced_why": "graphics overlapped the captions for a second; fixed version uploaded in the same slot (20 Nov 2026)"
+    "replaced_why": "graphics overlapped the captions for a second; fixed version uploaded in the same slot (20 Nov 2026)",
+    "deleted_why": "replaced copy of a 3D Short, never public (owner OK 21 Nov 2026)"
   },
   {
     "job": "20261120-1636-why-pasta-comes-in-so-many-different-sha",
