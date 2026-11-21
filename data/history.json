@@ -5290,12 +5290,13 @@
     "voice_engine": "chatterbox",
     "countdown": false,
     "question": "So how did a giant that couldn't run catch anything at all?",
-    "status": "scheduled",
-    "hero_3d": true,
+    "status": "replaced",
+    "hero_3d": false,
     "video_id": "7VLVufQHH00",
     "publish_at": "2026-11-21T19:00:00-05:00",
     "thumbnail_set": true,
-    "replaces": "9ao7Zj5FgJo"
+    "replaces": "9ao7Zj5FgJo",
+    "replaced_why": "graphics overlapped the captions for a second; fixed version uploaded in the same slot (20 Nov 2026)"
   },
   {
     "job": "20261120-1636-why-pasta-comes-in-so-many-different-sha",
@@ -5637,5 +5638,56 @@
       "duration": 34.7
     },
     "repairs": 0
+  },
+  {
+    "job": "hero_trex",
+    "topic": "Could a T. rex outrun a car?",
+    "title": "Could A T. rex Outrun Your Car? 🦖",
+    "description": "Movies show a T. rex chasing cars. Studies of its bones and muscles say it probably couldn't even run. #shorts #dinosaurs #TRex #Science\n\nSources: Sellers et al. 2017, PeerJ 5:e3420 (doi:10.7717/peerj.3420); Hutchinson & Garcia 2002, Nature 415:1018 (doi:10.1038/4151018a).\n3D models: Quaternius, Animated LowPoly Dinosaurs (CC0); Kenney, Car Kit (CC0). Animated in Blender.\n\nHow this was made: the script is researched and fact-checked against published research (sources above), narrated by an AI voice, and animated and edited with open-source software. Corrections from viewers are checked and credited.",
+    "tags": [
+      "T. rex",
+      "Tyrannosaurus",
+      "dinosaurs",
+      "dinosaur speed",
+      "paleontology",
+      "science",
+      "3D animation"
+    ],
+    "hook": "The real T. rex probably couldn't run. Not even a jog.",
+    "narration": "The real T. rex probably couldn't run. Not even a jog. It weighed about eight tonnes. That's six cars, balanced on two legs. Scientists rebuilt it in a computer, bone by bone and muscle by muscle, then asked it to sprint. At every running speed, its leg bones took so much force they would likely have broken. A fast runner that size needs more than forty percent of its body in leg muscle. T. rex had nowhere near that. So its top speed was a fast walk. About twenty kilometres an hour. A car on a city road, at fifty, leaves it behind in seconds. So how did a giant that couldn't run catch anything at all?",
+    "voice_engine": "chatterbox",
+    "countdown": false,
+    "question": "So how did a giant that couldn't run catch anything at all?",
+    "status": "scheduled",
+    "hero_3d": true,
+    "video_id": "fRhw3NBA-FY",
+    "publish_at": "2026-11-21T19:00:00-05:00",
+    "thumbnail_set": true,
+    "replaces": "7VLVufQHH00"
+  },
+  {
+    "job": "hero_trex_bite",
+    "topic": "How Hard Could A T. rex Bite? 🦖",
+    "title": "How Hard Could A T. rex Bite? 🦖",
+    "description": "One T. rex bite pressed down like three small cars stacked on its teeth. Here's how scientists worked it out, and the fossil poop that proves it crushed bone. #shorts #dinosaurs #TRex #Science\n\nSources: Gignac & Erickson 2017, Scientific Reports (doi:10.1038/s41598-017-02161-w); Erickson et al. 2012, PLoS ONE (doi:10.1371/journal.pone.0031781); Chin et al. 1998, Nature (doi:10.1038/31461).\n3D models: Quaternius, Animated LowPoly Dinosaurs (CC0); Kenney, Car Kit (CC0). Animated in Blender.\n\nHow this was made: the script is researched and fact-checked against published research (sources above), narrated by an AI voice, and animated and edited with open-source software.",
+    "tags": [
+      "T. rex",
+      "T. rex bite",
+      "bite force",
+      "dinosaurs",
+      "paleontology",
+      "science",
+      "3D animation"
+    ],
+    "hook": "One T. rex bite pressed down like three small cars stacked on its teeth.",
+    "status": "scheduled",
+    "narration": "One T. rex bite pressed down like three small cars stacked on its teeth. Scientists rebuilt its jaw muscles from its closest living relatives, crocodiles and birds. Their estimate: up to thirty-four thousand five hundred newtons at the back teeth. More than twice the strongest bite ever measured, a saltwater crocodile's. Its pointed teeth focused all that force onto tiny tips, hard enough to shatter bone. We know it did. A giant fossil poop, likely from a T. rex, is up to half crushed bone. So why would a giant hunter bother eating the bones?",
+    "voice_engine": "chatterbox",
+    "countdown": false,
+    "hero_3d": true,
+    "question": "So why would a giant hunter bother eating the bones?",
+    "video_id": "DZJ8Lw4NZhc",
+    "publish_at": "2026-11-22T19:00:00-05:00",
+    "thumbnail_set": true
   }
 ]
