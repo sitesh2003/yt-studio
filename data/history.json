@@ -3643,7 +3643,7 @@
       "outer space"
     ],
     "hook": "Pluto seemed like our solar system's edge, yet astronomers are investigating evidence that the Kuiper Belt extends much further than we once thought.",
-    "status": "scheduled",
+    "status": "public",
     "narration": "Pluto seemed like our solar system's edge, yet astronomers are investigating evidence that the Kuiper Belt extends much further than we once thought. We long believed the Kuiper Belt density dropped off significantly around fifty astronomical units away from the Sun. That meant we were unsure what existed in the vast darkness beyond that point. So why were these distant candidate worlds so hard to detect until now? Here's why. Out at sixty astronomical units, sunlight is so dim these icy rocks reflect very little light, making them incredibly difficult to detect. And because their orbits are enormous, they shift across the night sky at a tiny crawl. Ever thought how telescopic cameras can spot something creeping significantly slower than Pluto?",
     "voice_engine": "chatterbox",
     "voices": "one narrator (af_heart)",
@@ -3730,7 +3730,8 @@
     "audited": true,
     "video_id": "ZBu29NHzbYo",
     "publish_at": "2026-11-21T12:00:00-05:00",
-    "thumbnail_set": true
+    "thumbnail_set": true,
+    "answered": true
   },
   {
     "job": "20261117-0601-why-hippos-sweat-a-red-liquid-while-huma",
