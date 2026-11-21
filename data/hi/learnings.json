@@ -1,19 +1,15 @@
 {
-  "summary": [
-    "Prioritize tangible, everyday curiosity topics over abstract scientific phenomena.",
-    "Use English or Hinglish phrasing with visual emojis in titles to immediately capture attention on the feed.",
-    "Ensure hook sentences start with a dramatic, high-stakes question or statement rather than a dry explanatory premise.",
-    "Keep video lengths structured around the 40-45 second mark to optimize retention pacing.",
-    "Eliminate low-energy, purely academic hook openings that cause immediate swipe-away rates above 70%."
-  ],
+  "summary": "1. Lead hooks with extreme contrast or high-stakes survival (e.g., a thin sheet saving astronauts' lives reached 59.4% stayed) instead of academic curiosity. 2. Never reveal list items or answers in sentence one; listing the smoke detector and watch immediately dropped retention to 6.7%. 3. Replace passive rhetorical questions like 'Ever thought why...' with active mystery framing, as weak rhetorical intros bottomed out at 11.1% stayed. 4. Maintain a 42-45 second video length; cutting under 35 seconds correlated with lowest views (9) and instant swiping. 5. Write curiosity-gap titles ending with '🤯' and active problem-solving phrasing ('कैसे बचता है', 'Will Insulate') rather than flat descriptive labels.",
   "winning_hooks": [
-    "Space missions mein astronauts ke liye sirf ek thin plastic sheet jaan bacha sakti hai 🤯",
-    "250 km/h ki speed se गीली runway पर plane hydroplaning से कैसे बचता है?",
-    "राजमा रात भर फ्रिज में रखने के बाद अक्सर अलग स्वाद क्यों देता है?"
+    "High-stakes paradox: 'Space missions mein astronauts ke liye sirf ek thin plastic sheet jaan bacha sakti hai 🤯' (59.4% stayed)",
+    "High-velocity concrete dilemma: '250 km/h की speed से गीली runway पर plane hydroplaning से कैसे बचता है?' (Highest views: 72)",
+    "Bizarre physical discovery: 'डायनासोर के जीवाश्मों में वैज्ञानिकों को ऐसी सूक्ष्म आकृतियां क्यों मिली हैं...' (37.0% stayed)"
   ],
   "avoid": [
-    "Ever thought why deep ocean snow helps cycle carbon?",
-    "डायनासोर के जीवाश्मों में वैज्ञानिकों को ऐसी सूक्ष्म आकृतियां क्यों मिली हैं जो खून की कोशिकाओं जैसी दिखती हैं?"
+    "Lazy rhetorical prompts like 'Ever thought why...' (produced lowest view count: 9 views, 11.1% stayed)",
+    "Immediate payoff spoilers that list the examples in the hook (e.g., naming smoke detectors and vintage watches upfront sank stayed rate to 6.7%)",
+    "Textbook encyclopedic titles without stakes (e.g., 'How Deep Ocean Snow Moves Carbon' or 'Common Household Items That Contain Radioactive Materials')",
+    "Sub-35 second durations that lack sufficient narrative build-up before the drop-off"
   ],
-  "next_experiment": "Test an English-only versus a Hinglish hook on the exact same everyday science topic to determine which drives a higher stayed_pct above the 50% threshold."
+  "next_experiment": "A/B test the Radioactive Items video hook: Arm A tests the original spoiler hook ('Kuch everyday objects secretly radioactive hote hain jaise watch aur smoke detector'), Arm B tests a blind curiosity gap ('Aapke bedroom mein rakhi ek aam cheez subtle radiation emit kar rahi hai, aur aapko pata bhi nahi'). Measure if hiding the item name triples stayed_pct above 50%."
 }

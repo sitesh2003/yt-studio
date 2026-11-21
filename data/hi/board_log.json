@@ -1,68 +1,5 @@
 [
  {
-  "when": "2026-11-17 22:08",
-  "topic": "Why this entire carton of eggs has 2 yolks each",
-  "drawn": [
-   2,
-   3,
-   4,
-   5
-  ],
-  "not_drawn": {},
-  "error": ""
- },
- {
-  "when": "2026-11-17 22:35",
-  "topic": "Why Tuna Has Almost No Parasites While Salmon Is Full of Them",
-  "drawn": [
-   3,
-   4,
-   5
-  ],
-  "not_drawn": {
-   "2": "The sushi is labeled SALMON, but the red fish on top is tuna nigiri, and the arrow points to a fish labeled TUNA. The labels and food items are mismatched."
-  },
-  "error": ""
- },
- {
-  "when": "2026-11-18 09:28",
-  "topic": "How Stanford scientists discovered hidden brain signals that predict Alzheimer's years bef",
-  "drawn": [
-   2,
-   3
-  ],
-  "not_drawn": {
-   "4": "The image shows a laptop, hourglasses, and a brain, which do not clearly or accurately depict 'how a simple scan reads what's happening years in advance' for a ",
-   "5": "The image shows a calm brain leading to multiple lightning bolts and the text 'HIDDEN SHIFT', which does not visually represent memory loss or the long-term pro"
-  },
-  "error": ""
- },
- {
-  "when": "2026-11-18 10:01",
-  "topic": "Why cockroaches can easily survive massive doses of ionizing radiation that would kill hum",
-  "drawn": [
-   2,
-   3,
-   4
-  ],
-  "not_drawn": {
-   "5": "Cockroaches are used to represent 'inki cells' (which refers to insects/cockroaches scientifically, but the general viewer might be confused by insect emojis re"
-  },
-  "error": ""
- },
- {
-  "when": "2026-11-18 10:27",
-  "topic": "Why fresh rainwater smells wonderful after a dry spell, unlike water straight from the tap",
-  "drawn": [
-   2,
-   3,
-   4,
-   5
-  ],
-  "not_drawn": {},
-  "error": ""
- },
- {
   "when": "2026-11-18 18:12",
   "topic": "Why yogurt stops bad bacteria from growing while fresh milk spoils in days",
   "drawn": [
@@ -493,6 +430,68 @@
   "not_drawn": {
    "3": "The image uses a train emoji to represent a train, but the context of the sentence is about soil compression, making the train irrelevant and confusing; the tex"
   },
+  "error": ""
+ },
+ {
+  "when": "2026-11-21 20:13",
+  "topic": "क्या तुम T. rex से पैदल भागकर अपनी जान बचा सकते हो?",
+  "drawn": [
+   2,
+   3,
+   4,
+   5
+  ],
+  "not_drawn": {},
+  "error": ""
+ },
+ {
+  "when": "2026-11-21 20:26",
+  "topic": "Why yogurt stops bad bacteria from growing while fresh milk spoils in days",
+  "drawn": [
+   2,
+   3,
+   4,
+   5
+  ],
+  "not_drawn": {},
+  "error": ""
+ },
+ {
+  "when": "2026-11-21 21:03",
+  "topic": "Why this entire carton of eggs has 2 yolks each",
+  "drawn": [
+   2,
+   3,
+   5
+  ],
+  "not_drawn": {
+   "4": "The image shows 1 egg leading to a lightbulb, then 3 eggs, which contradicts the 'single yolk' vs 'two yolks' comparison in the narration."
+  },
+  "error": ""
+ },
+ {
+  "when": "2026-11-21 21:16",
+  "topic": "3 Hidden reasons why train tracks are packed with tons of rough crushed stones",
+  "drawn": [
+   3,
+   4,
+   5
+  ],
+  "not_drawn": {
+   "2": "The image uses bricks to represent railway sleepers, which is misleading as sleepers are typically made of wood, concrete, or steel, not standard red building b"
+  },
+  "error": ""
+ },
+ {
+  "when": "2026-11-21 21:32",
+  "topic": "Why are mirror images flipped horizontally but not vertically?",
+  "drawn": [
+   2,
+   3,
+   4,
+   5
+  ],
+  "not_drawn": {},
   "error": ""
  }
 ]

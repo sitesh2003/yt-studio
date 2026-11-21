@@ -7670,5 +7670,607 @@
       "duration": 43.9
     },
     "repairs": 0
+  },
+  {
+    "job": "20261121-2013-t-rex",
+    "topic": "क्या तुम T. rex से पैदल भागकर अपनी जान बचा सकते हो?",
+    "title": "Can You Actually Outrun A T. Rex? 😱",
+    "description": "Movies show T. rex chasing cars, but what are the actual physics of its massive body? Watch to find out! #shorts #hindi #science\n\nPhoto by ImageParty on Pixabay\nPhoto by KeithJJ on Pixabay\nPhoto by kumarsaswat6660 on Pixabay\nPhoto by matthiasboeckel on Pixabay\nPhoto by mrganso on Pixabay\nPhoto by sgrunden on Pixabay\nVideo by MountainDweller on Pixabay\nVideo by StefWithAnF on Pixabay\nVideo by athletechbrand on Pixabay\nVideo by Matthias_Groeneveld on Pixabay\n\nयह वीडियो कैसे बना: स्क्रिप्ट को AI tools की मदद से open research के आधार पर लिखा और fact-check किया गया है, आवाज़ AI voice की है, और editing open-source software से हुई है। कोई गलती दिखे तो comment में बताइए — जाँच कर सुधार करेंगे।",
+    "tags": [
+      "#shorts",
+      "#hindi",
+      "#science",
+      "#animals"
+    ],
+    "hook": "क्या तुम T. rex से पैदल भागकर अपनी जान बचा सकते हो?",
+    "status": "review",
+    "narration": "क्या तुम T. rex से पैदल भागकर अपनी जान बचा सकते हो? Movies में लगता है कि वो car से भी तेज़ भाग सकता है। पर असलियत बिल्कुल अलग है, और इसका कारण है उसकी body weight। Science कहती है कि T. rex का वजन about 8 ton था। इतनी भारी body को संभालने के लिए उसके legs की muscles पर 엄청 pressure पड़ता। अगर वो 40 km/h से दौड़े, तो उसकी हड्डियां उसका वजन खुद नहीं झेल पातीं और टूट जातीं। मतलब उसकी top speed actually about 20 से 25 km/h ही थी। और एक तेज़ दौड़ने वाला इंसान या एथलीट इस रफ़्तार से आगे निकल सकता है। कभी सोचा है कि T. rex जैसा giant predator अपनी शिकार को पकड़ने के लिए अपनी speed की बजाय किस चीज़ पर depend करता था?",
+    "voice_engine": "edge-tts",
+    "voices": "one narrator (hi-IN-SwaraNeural)",
+    "diagrams": 1,
+    "series": "Animal Whys",
+    "countdown": false,
+    "length_arm": "standard",
+    "question": "कभी सोचा है कि T. rex जैसा giant predator अपनी शिकार को पकड़ने के लिए अपनी speed की बजाय किस चीज़ पर depend करता था?",
+    "answer_comment": "The answer: T. rex relied heavily on surprise attacks and ambush rather than high-speed sprinting, because running too fast would have fractured its heavy leg bones. Got a question about how other ancient animals moved? Drop it below!",
+    "sources": [],
+    "fact_check": [
+      "T. rex weight is estimated around 8 metric tons based on biomechanical models.",
+      "Biomechanical studies published in journals like Royal Society Open Science show that running faster than 20-25 km/h would have placed excessive bending loads on T. rex leg bones, risking fracture.",
+      "An average fit human can sprint up to 25-30 km/h for short bursts, meaning a human could potentially outrun or escape a T. rex in a short sprint."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        4.38
+      ],
+      [
+        4.38,
+        7.65
+      ],
+      [
+        7.65,
+        11.81
+      ],
+      [
+        11.81,
+        15.63
+      ],
+      [
+        15.63,
+        21.29
+      ],
+      [
+        21.29,
+        27.8
+      ],
+      [
+        27.8,
+        33.09
+      ],
+      [
+        33.09,
+        38.07
+      ],
+      [
+        38.07,
+        44.57
+      ]
+    ],
+    "duration": 44.57,
+    "scene_lines": [
+      "क्या तुम T. rex से पैदल भागकर अपनी जान बचा सकते हो?",
+      "Movies में लगता है कि वो car से भी तेज़ भाग सकता है।",
+      "पर असलियत बिल्कुल अलग है, और इसका कारण है उसकी body weight।",
+      "Science कहती है कि T. rex का वजन about 8 ton था।",
+      "इतनी भारी body को संभालने के लिए उसके legs की muscles पर 엄청 pressure पड़ता।",
+      "अगर वो 40 km/h से दौड़े, तो उसकी हड्डियां उसका वजन खुद नहीं झेल पातीं और टूट जातीं।",
+      "मतलब उसकी top speed actually about 20 से 25 km/h ही थी।",
+      "और एक तेज़ दौड़ने वाला इंसान या एथलीट इस रफ़्तार से आगे निकल सकता है।",
+      "कभी सोचा है कि T. rex जैसा giant predator अपनी शिकार को पकड़ने के लिए अपनी speed की बजाय किस चीज़ पर depend करता था?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,050 --> 00:00:02,318\nक्या तुम T-rex से पैदल भागकर अपनी\n\n2\n00:00:02,318 --> 00:00:03,762\nजान बचा सकते हो?\n\n3\n00:00:03,910 --> 00:00:05,637\nMovies में लगता है कि वो car\n\n4\n00:00:05,637 --> 00:00:07,655\nसे भी तेज़ भाग सकता है। पर\n\n5\n00:00:07,655 --> 00:00:09,787\nअसलियत बिल्कुल अलग है, और इसका कारण\n\n6\n00:00:09,787 --> 00:00:12,373\nहै उसकी body weight। Science कहती है\n\n7\n00:00:12,373 --> 00:00:14,386\nकि T-rex का वजन about 8 ton\n\n8\n00:00:14,386 --> 00:00:16,753\nथा। इतनी भारी body को संभालने के\n\n9\n00:00:16,753 --> 00:00:18,659\nलिए उसके legs की muscles पर pressure\n\n10\n00:00:18,659 --> 00:00:22,092\nपड़ता। अगर वो 40 km/h से दौड़े, तो\n\n11\n00:00:22,092 --> 00:00:24,550\nउसकी हड्डियां उसका वजन खुद नहीं झेल\n\n12\n00:00:24,550 --> 00:00:27,378\nपातीं और टूट जातीं। मतलब उसकी top\n\n13\n00:00:27,378 --> 00:00:30,916\nspeed actually about 20 से 25 km/h ही\n\n14\n00:00:30,916 --> 00:00:33,500\nथी। और एक तेज़ दौड़ने वाला इंसान\n\n15\n00:00:33,500 --> 00:00:35,576\nया एथलीट इस रफ़्तार से आगे निकल\n\n16\n00:00:35,576 --> 00:00:38,069\nसकता है। कभी सोचा है कि T-rex\n\n17\n00:00:38,069 --> 00:00:40,580\nजैसा giant predator अपनी शिकार को पकड़ने\n\n18\n00:00:40,580 --> 00:00:42,549\nके लिए अपनी speed की बजाय किस\n\n19\n00:00:42,549 --> 00:00:43,965\nचीज़ पर depend करता था?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [
+        "scene 5 (15.6-21.3 s): only 7% of its words can be heard - the voice breaks up or drops out",
+        "scene 7 (27.8-33.1 s): only 22% of its words can be heard - the voice breaks up or drops out",
+        "scene 8 (33.1-38.1 s): only 0% of its words can be heard - the voice breaks up or drops out",
+        "scene 9 (38.1-44.6 s): only 0% of its words can be heard - the voice breaks up or drops out"
+      ],
+      "footage": [],
+      "review": [
+        "Frame 5: The caption contains a non-Devanagari character ('엄청') which is inappropriate for a Hindi-language video and likely a placeholder error."
+      ],
+      "heard": [
+        "\"तेज़\" heard as \"तेस\"",
+        "\"body weight। science\" heard as \"बोडी वेट सायंस\"",
+        "\"about 8\" heard as \"अब आब आप\"",
+        "\"body\" heard as \"बोडी\"",
+        "\"muscles\" heard as \"मुसल्स\"",
+        "\"엄청 pressure पड़ता।\" heard as \"प्रशषा परता\"",
+        "\"40 km h\" heard as \"चालीस किलोमीटर पर अवर\"",
+        "\"हड्डियां\" heard as \"हड्द्या\""
+      ],
+      "scene_heard": [
+        "scene 1: 55%",
+        "scene 2: 82%",
+        "scene 3: 89%",
+        "scene 4: 60%",
+        "scene 5: 7%",
+        "scene 6: 65%",
+        "scene 7: 22%",
+        "scene 8: 0%",
+        "scene 9: 0%"
+      ],
+      "pass": false,
+      "duration": 44.0
+    },
+    "repairs": 0
+  },
+  {
+    "job": "20261121-2025-why-yogurt-stops-bad-bacteria-from-growi",
+    "topic": "Why yogurt stops bad bacteria from growing while fresh milk spoils in days",
+    "title": "Doodh Kyun Phat Jata Hai Aur Dahi Nahi? 🤯",
+    "description": "Doodh aur dahi ka jhagda! Janne ke liye dekhiye ki dahi kaise bad bacteria se ladta hai. #shorts #science #foodscience\n\nSources (open-access research):\n- Grossiord et al. (1998), Le Lait. doi:10.1051/lait:1998110\n- Suganthi et al. (2020), Applied Water Science. doi:10.1007/s13201-020-1162-y\n- Laursen et al. (2023), Food Research International. doi:10.1016/j.foodres.2023.112846\n\nIllustrations: drawn for this video with FLUX.2 [klein] 4B (AI, Apache 2.0) and checked for accuracy\nPhoto: ljguitar, BY 2.0, via Openverse (flickr)\nVideo by Cassiopeia_Arts on Pixabay\nVideo by Kaffeesüchtig on Pixabay\nVideo by XiaosKitchen on Pixabay\nVideo by bottlein on Pixabay\nVideo by Dx21 on Pixabay",
+    "tags": [
+      "science",
+      "foodscience"
+    ],
+    "hook": "Dahi ko agar sahi se fridge mein rakha jaye, toh wo jaldi kharab nahi hota.",
+    "status": "review",
+    "narration": "Dahi ko agar sahi se fridge mein rakha jaye, toh wo jaldi kharab nahi hota. Doodh mein sugar hota hai, jise lactose bolte hain. Doodh mein kai tarah ke bacteria panapne lagte hain jo sugar ko acid mein badal dete hain, jisse doodh ka swad aur texture bigad jata hai aur wo kharab ho jata hai. Lekin jab tum thoda sa purana dahi doodh mein daalte ho, toh game badal jata hai. Dahi ke andar maujood bacteria doodh ke lactose ko acid mein badal dete hain. Ye acidic environment zyada tar bad bacteria ki growth ko slow kar deta hai, isliye dahi doodh ke muqable zyada din tak chalta hai. Dahi khud hi apna suraksha kawach bana leta hai. Ever thought why, agar hum garam doodh mein nimbu daal dein toh uska taste dahi se itna alag kyun hota hai?",
+    "voice_engine": "edge-tts",
+    "voices": "one narrator (hi-IN-SwaraNeural)",
+    "diagrams": 1,
+    "series": "Food Whys",
+    "countdown": false,
+    "length_arm": "long",
+    "question": "Ever thought why, agar hum garam doodh mein nimbu daal dein toh uska taste dahi se itna alag kyun hota hai?",
+    "answer_comment": "The answer: Lemon juice se milk phat kar 'paneer' banta hai, lekin dahi 'fermentation' se banta hai. Dahi mein beneficial bacteria (Lactobacillus) lactose ko lactic acid mein badalte hain, jo dudh ke proteins ko jama kar (coagulate kar) dahi ka texture banate hain. Lemon sirf acid hai, wo fermentation nahi karta, isliye taste aur texture alag hote hain. Aur koi sawaal?\n\nSources (open-access research):\n- Grossiord et al. (1998), Le Lait. doi:10.1051/lait:1998110\n- Suganthi et al. (2020), Applied Water Science. doi:10.1007/s13201-020-1162-y\n- Laursen et al. (2023), Food Research International. doi:10.1016/j.foodres.2023.112846",
+    "sources": [
+      {
+        "claim": "Lactic acid bacteria (LAB) ferment lactose into lactic acid.",
+        "cite": "Grossiord et al. (1998), Le Lait. doi:10.1051/lait:1998110",
+        "doi": "10.1051/lait:1998110",
+        "title": "Genetics of galactose utilisation via the Leloir pathway in lactic acid bacteria",
+        "why": "Lactic acid bacteria (LAB) are used in industrial dairy fermentations mainly for the conversion of lactose into lactic acid."
+      },
+      {
+        "claim": "Lactic acid lowers the pH, inhibiting the growth of harmful bacteria (pathogens).",
+        "cite": "Suganthi et al. (2020), Applied Water Science. doi:10.1007/s13201-020-1162-y",
+        "doi": "10.1007/s13201-020-1162-y",
+        "title": "Fabrication of PVA polymer films with improved antibacterial activity by fine-tuning via organic acids for food packaging applications",
+        "why": "Among the considered films, PVA/LA exhibited the highest bacterial inhibition, which was largely due to its capacity to modify the local pH and alter the permeability of the microbial layer by disrupting bacteria–substrate interaction."
+      },
+      {
+        "claim": "Lemon juice (citric acid) causes casein coagulation but does not involve biological fermentation.",
+        "cite": "Laursen et al. (2023), Food Research International. doi:10.1016/j.foodres.2023.112846",
+        "doi": "10.1016/j.foodres.2023.112846",
+        "title": "Effect of coagulation temperature on cooking integrity of heat and acid-induced milk gels",
+        "why": "The cooking integrity of gels produced by rapidly acidifying milk using citric acid at temperatures of 60, 75, and 90 °C, was determined by analyzing composition, texture, and spatial water distribution before and after cooking."
+      }
+    ],
+    "fact_check": [
+      "Milk contains lactose which spoils via bacterial growth.",
+      "Lactic acid bacteria (LAB) ferment lactose into lactic acid.",
+      "Lactic acid lowers the pH, inhibiting the growth of harmful bacteria (pathogens).",
+      "Lemon juice (citric acid) causes casein coagulation but does not involve biological fermentation."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        4.37
+      ],
+      [
+        4.37,
+        7.39
+      ],
+      [
+        7.39,
+        16.44
+      ],
+      [
+        16.44,
+        21.15
+      ],
+      [
+        21.15,
+        25.84
+      ],
+      [
+        25.84,
+        33.38
+      ],
+      [
+        33.38,
+        36.53
+      ],
+      [
+        36.53,
+        43.04
+      ]
+    ],
+    "duration": 43.04,
+    "scene_lines": [
+      "Dahi ko agar sahi se fridge mein rakha jaye, toh wo jaldi kharab nahi hota.",
+      "Doodh mein sugar hota hai, jise lactose bolte hain.",
+      "Doodh mein kai tarah ke bacteria panapne lagte hain jo sugar ko acid mein badal dete hain, jisse doodh ka swad aur texture bigad jata hai aur wo kharab ho jata hai.",
+      "Lekin jab tum thoda sa purana dahi doodh mein daalte ho, toh game badal jata hai.",
+      "Dahi ke andar maujood bacteria doodh ke lactose ko acid mein badal dete hain.",
+      "Ye acidic environment zyada tar bad bacteria ki growth ko slow kar deta hai, isliye dahi doodh ke muqable zyada din tak chalta hai.",
+      "Dahi khud hi apna suraksha kawach bana leta hai.",
+      "Ever thought why, agar hum garam doodh mein nimbu daal dein toh uska taste dahi se itna alag kyun hota hai?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,050 --> 00:00:01,830\nDahi ko agar sahi se fridge mein\n\n2\n00:00:01,830 --> 00:00:04,309\nrakha jaye, toh wo jaldi kharab nahi hota.\n\n3\n00:00:04,370 --> 00:00:07,357\nDoodh mein sugar hota hai, jise lactose bolte hain.\n\n4\n00:00:07,390 --> 00:00:09,466\nDoodh mein kai tarah ke bacteria panapne\n\n5\n00:00:09,466 --> 00:00:11,214\nlagte hain jo sugar ko acid mein\n\n6\n00:00:11,214 --> 00:00:13,286\nbadal dete hain, jisse doodh ka swad\n\n7\n00:00:13,286 --> 00:00:15,119\naur texture bigad jata hai aur wo\n\n8\n00:00:15,119 --> 00:00:16,397\nkharab ho jata hai.\n\n9\n00:00:16,440 --> 00:00:18,559\nLekin jab tum thoda sa purana dahi\n\n10\n00:00:18,559 --> 00:00:21,125\ndoodh mein daalte ho, toh game badal jata hai.\n\n11\n00:00:21,150 --> 00:00:23,481\nDahi ke andar maujood bacteria doodh ke\n\n12\n00:00:23,481 --> 00:00:25,839\nlactose ko acid mein badal dete hain.\n\n13\n00:00:25,840 --> 00:00:28,541\nYe acidic environment zyada tar bad bacteria\n\n14\n00:00:28,541 --> 00:00:30,401\nki growth ko slow kar deta hai,\n\n15\n00:00:30,437 --> 00:00:33,343\nisliye dahi doodh ke muqable zyada din tak chalta hai.\n\n16\n00:00:33,380 --> 00:00:36,448\nDahi khud hi apna suraksha kawach bana leta hai.\n\n17\n00:00:36,530 --> 00:00:38,668\nEver thought why, agar hum garam doodh\n\n18\n00:00:38,668 --> 00:00:40,527\nmein nimbu daal dein toh uska taste\n\n19\n00:00:40,527 --> 00:00:42,440\ndahi se itna alag kyun hota hai?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [],
+      "footage": [
+        "scene(s) [8] have weak or placeholder footage"
+      ],
+      "review": [],
+      "heard": [
+        "\"fridge\" heard as \"फ्रेज\"",
+        "\"jaye\" heard as \"जाए\"",
+        "\"nahi\" heard as \"नहीं\"",
+        "\"hain\" heard as \"है\"",
+        "\"\" heard as \"कटरा\"",
+        "\"tarah ke bacteria\" heard as \"बाक्तिर्या\"",
+        "\"hain\" heard as \"है\"",
+        "\"acid\" heard as \"आसिट\""
+      ],
+      "scene_heard": [
+        "scene 1: 80%",
+        "scene 2: 88%",
+        "scene 3: 69%",
+        "scene 4: 100%",
+        "scene 5: 79%",
+        "scene 6: 59%",
+        "scene 7: 86%",
+        "scene 8: 70%"
+      ],
+      "pass": false,
+      "duration": 42.5
+    },
+    "repairs": 2
+  },
+  {
+    "job": "20261121-2101-why-this-entire-carton-of-eggs-has-2-yol",
+    "topic": "Why this entire carton of eggs has 2 yolks each",
+    "title": "Why Some Eggs Have Two Yolks 🤯",
+    "description": "Ever wondered why you sometimes find double-yolk eggs? It's not magic—it's industrial-grade engineering at work. #shorts #science #food\n\nSources (open-access research):\n- Curtis (1914), Biological Bulletin. doi:10.2307/1536071\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nPhoto by Majik114 on Pixabay\nPhoto by ds_30 on Pixabay\nPhoto by monicore on Pixabay\nPhoto: Content Provider(s): CDC / Dr. Joseph McDade, Public domain, via Wikimedia Commons\nPhoto: maveric2003, BY 2.0, via Openverse (flickr)\n\nयह वीडियो कैसे बना: स्क्रिप्ट को AI tools की मदद से open research के आधार पर लिखा और fact-check किया गया है, आवाज़ AI voice की है, और editing open-source software से हुई है। कोई गलती दिखे तो comment में बताइए — जाँच कर सुधार करेंगे।",
+    "tags": [
+      "science",
+      "food"
+    ],
+    "hook": "Kya kabhi tumne egg tode aur usme do yolks nikle?",
+    "status": "review",
+    "narration": "Kya kabhi tumne egg tode aur usme do yolks nikle? Ye eggs artificial nahi, balki naturally hote hain jinhein sorting process se pehchana jaata hai. Egg ko strong light ke saamne rakha jaata hai. Light shell ke aar-paar jaati hai. Ek single yolk light ko ek tarah se block karta hai. Lekin do yolks zyada shadow banate hain. Machine weight aur light sensors dono ka upyog karti hai, taaki egg ke andar ki density aur shadow pattern ko scan kiya ja sake. Double-yolk eggs are typically removed during the grading process and are rarely sold in standard retail cartons, often being sent to industrial food processing instead. Ever thought how, bina shell tode, light ki reading ek egg ke andar do yolks ka pata laga leti hai?",
+    "voice_engine": "edge-tts",
+    "voices": "one narrator (hi-IN-SwaraNeural)",
+    "diagrams": 1,
+    "series": "Food Whys",
+    "countdown": false,
+    "length_arm": "long",
+    "question": "Ever thought how, bina shell tode, light ki reading ek egg ke andar do yolks ka pata laga leti hai?",
+    "answer_comment": "Double yolks are larger and create a more significant shadow when light passes through the egg during candling. Automated scanners use light sensors and weight to detect this specific pattern, allowing them to be diverted from retail lines.\n\nSources (open-access research):\n- Curtis (1914), Biological Bulletin. doi:10.2307/1536071",
+    "sources": [
+      {
+        "claim": "Double yolks usually occur in young hens whose reproductive systems are still maturing, or as a genetic quirk.",
+        "cite": "Curtis (1914), Biological Bulletin. doi:10.2307/1536071",
+        "doi": "10.2307/1536071",
+        "title": "STUDIES ON THE PHYSIOLOGY OF REPRODUCTION IN THE DOMESTIC FOWL: VI. DOUBLE- AND TRIPLE-YOLKED EGGS",
+        "why": "Young pullets also show a decided tendency to produce double-yolked eggs when they first begin to lay."
+      }
+    ],
+    "fact_check": [
+      "Double yolk eggs are identified through candling by observing the denser opacity inside the shell.",
+      "Commercial farms use high-speed automated sensors that replicate the manual candling process to sort by size and internal contents.",
+      "Double yolks usually occur in young hens whose reproductive systems are still maturing, or as a genetic quirk.",
+      "Candling is a standard industry practice to inspect egg quality and internal consistency."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        3.41
+      ],
+      [
+        3.41,
+        9.09
+      ],
+      [
+        9.09,
+        13.77
+      ],
+      [
+        13.77,
+        19.23
+      ],
+      [
+        19.23,
+        26.51
+      ],
+      [
+        26.51,
+        35.44
+      ],
+      [
+        35.44,
+        41.58
+      ]
+    ],
+    "duration": 41.58,
+    "scene_lines": [
+      "Kya kabhi tumne egg tode aur usme do yolks nikle?",
+      "Ye eggs artificial nahi, balki naturally hote hain jinhein sorting process se pehchana jaata hai.",
+      "Egg ko strong light ke saamne rakha jaata hai. Light shell ke aar-paar jaati hai.",
+      "Ek single yolk light ko ek tarah se block karta hai. Lekin do yolks zyada shadow banate hain.",
+      "Machine weight aur light sensors dono ka upyog karti hai, taaki egg ke andar ki density aur shadow pattern ko scan kiya ja sake.",
+      "Double-yolk eggs are typically removed during the grading process and are rarely sold in standard retail cartons, often being sent to industrial food processing instead.",
+      "Ever thought how, bina shell tode, light ki reading ek egg ke andar do yolks ka pata laga leti hai?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,050 --> 00:00:03,187\nKya kabhi tumne egg tode aur usme do yolks nikle?\n\n2\n00:00:03,410 --> 00:00:06,187\nYe eggs artificial nahi, balki naturally hote\n\n3\n00:00:06,187 --> 00:00:09,086\nhain jinhein sorting process se pehchana jaata hai.\n\n4\n00:00:09,090 --> 00:00:11,690\nEgg ko strong light ke saamne rakha jaata hai.\n\n5\n00:00:11,690 --> 00:00:13,770\nLight shell ke aar-paar jaati hai.\n\n6\n00:00:13,770 --> 00:00:15,581\nEk single yolk light ko ek tarah\n\n7\n00:00:15,581 --> 00:00:16,750\nse block karta hai.\n\n8\n00:00:16,750 --> 00:00:19,203\nLekin do yolks zyada shadow banate hain.\n\n9\n00:00:19,230 --> 00:00:21,359\nMachine weight aur light sensors dono ka\n\n10\n00:00:21,359 --> 00:00:23,368\nupyog karti hai, taaki egg ke andar\n\n11\n00:00:23,368 --> 00:00:26,478\nki density aur shadow pattern ko scan kiya ja sake.\n\n12\n00:00:26,510 --> 00:00:28,819\nDouble-yolk eggs are typically removed during the\n\n13\n00:00:28,819 --> 00:00:30,768\ngrading process and are rarely sold in\n\n14\n00:00:30,768 --> 00:00:33,216\nstandard retail cartons, often being sent to\n\n15\n00:00:33,216 --> 00:00:35,288\nindustrial food processing instead.\n\n16\n00:00:35,440 --> 00:00:37,894\nEver thought how, bina shell tode, light\n\n17\n00:00:37,894 --> 00:00:39,498\nki reading ek egg ke andar do\n\n18\n00:00:39,498 --> 00:00:40,981\nyolks ka pata laga leti hai?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [
+        "scene 6 (26.5-35.4 s): only 0% of its words can be heard - the voice breaks up or drops out"
+      ],
+      "footage": [],
+      "review": [],
+      "heard": [
+        "\"kya\" heard as \"या\"",
+        "\"egg\" heard as \"एक\"",
+        "\"usme do yolks\" heard as \"उस में दूयोग्स\"",
+        "\"eggs artificial nahi\" heard as \"एक से अर्टिफिशल नहीं\"",
+        "\"naturally\" heard as \"नाच्छरली\"",
+        "\"hain jinhein sorting process\" heard as \"है जिने सोटिंग प्रोसेस\"",
+        "\"egg\" heard as \"एक\"",
+        "\"light\" heard as \"लाइट\""
+      ],
+      "scene_heard": [
+        "scene 1: 50%",
+        "scene 2: 43%",
+        "scene 3: 57%",
+        "scene 4: 53%",
+        "scene 5: 57%",
+        "scene 6: 0%",
+        "scene 7: 42%"
+      ],
+      "pass": false,
+      "duration": 41.0
+    },
+    "repairs": 0
+  },
+  {
+    "job": "20261121-2114-3-hidden-reasons-why-train-tracks-are-pa",
+    "topic": "3 Hidden reasons why train tracks are packed with tons of rough crushed stones",
+    "title": "Why Train Tracks Are Packed With Stones 😱",
+    "description": "Ever wondered why train tracks are always filled with crushed stones? It isn't just for show. Discover the engineering secret behind these ballast rocks. #shorts #science #engineering\n\nSources (open-access research):\n- Fattah et al. (2024), Railway Sciences. doi:10.1108/rs-11-2023-0042\n- Charoenwong et al. (2024), Transportation Geotechnics. doi:10.1016/j.trgeo.2024.101193\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nIllustrations: drawn for this video with FLUX.2 [klein] 4B (AI, Apache 2.0) and checked for accuracy\nPhoto by ClickerHappy on Pixabay\nPhoto: amanderson2, BY 2.0, via Openverse (flickr)\nVideo by Amirirani on Pixabay\nVideo by GreenCardShow on Pixabay\nVideo by MUPHFI on Pixabay\nVideo by ghasoub on Pixabay\nVideo by Johanna84 on Pixabay\nVideo by superanton on Pixabay\n\nयह वीडियो कैसे बना: स्क्रिप्ट को AI tools की मदद से open research के आधार पर लिखा और fact-check किया गया है, आवाज़ AI voice की है, और editing open-source software से हुई है। कोई गलती दिखे तो comment में बताइए — जाँच कर सुधार करेंगे।",
+    "tags": [
+      "#shorts",
+      "#science",
+      "#engineering"
+    ],
+    "hook": "Indian Railways ke tracks par ye hazaron patthar sirf decoration ke liye nahi, balki ek massive freight train ka bojh uthane ke liye dale gaye hain.",
+    "status": "review",
+    "narration": "Indian Railways ke tracks par ye hazaron patthar sirf decoration ke liye nahi, balki ek massive freight train ka bojh uthane ke liye dale gaye hain. Jab ek heavy train track par daudti hai, toh ye patthar sleepers ke zariye us heavy weight ko sub-grade par distribute kar dete hain. Agar niche sirf mitti hoti, toh heavy train ka load sahne ki jagah wo phisal jati aur track dhans jata. Ye patthar, jinhe 'ballast' kehte hain, asli mein heavy train ke liye ek flexible foundation ka kaam karte hain. Inka rough shape heavy train ke vibration ke beech ek-dusre mein lock ho jata hai aur weight ko distribute kar deta hai. Saath hi, ye heavy train ke track ke neeche jama baarish ke pani ko drainage ke liye nikal dete hain. Bina inke, heavy train ki vibration se track apni jagah se hil sakta hai, jisse track ki alignment aur safety par khatra badh jata hai. Ever thought how tracks stay stable despite the massive force and vibration of heavy freight trains?",
+    "voice_engine": "edge-tts",
+    "voices": "one narrator (hi-IN-SwaraNeural)",
+    "diagrams": 1,
+    "series": "Everyday Whys",
+    "countdown": false,
+    "length_arm": "long",
+    "question": "Ever thought how tracks stay stable despite the massive force and vibration of heavy freight trains?",
+    "answer_comment": "The answer: These stones are shaped to interlock, which creates friction that keeps the track from shifting under extreme weight. They also help dampen vibrations and provide drainage so water drains away from the tracks. Any other track mysteries you're curious about?\n\nSources (open-access research):\n- Fattah et al. (2024), Railway Sciences. doi:10.1108/rs-11-2023-0042\n- Charoenwong et al. (2024), Transportation Geotechnics. doi:10.1016/j.trgeo.2024.101193",
+    "sources": [
+      {
+        "claim": "Ballast distributes the load of the train to the ground to prevent track settlement.",
+        "cite": "Fattah et al. (2024), Railway Sciences. doi:10.1108/rs-11-2023-0042",
+        "doi": "10.1108/rs-11-2023-0042",
+        "title": "Experimental and numerical settlement analysis of railway track over geogrid reinforced ballast",
+        "why": "The abstract mentions: 'experimental tests work consists of laboratory model tests to investigate the reduction in the compressibility and stress distribution induced in soft clay under a ballast railway' which implies the function of the ballast in distributing stress/load to the subgrade (ground)."
+      },
+      {
+        "claim": "Ballast facilitates drainage to prevent soil erosion around the tracks.",
+        "cite": "Charoenwong et al. (2024), Transportation Geotechnics. doi:10.1016/j.trgeo.2024.101193",
+        "doi": "10.1016/j.trgeo.2024.101193",
+        "title": "The effect of ballast moisture content and fouling index on railway track settlement",
+        "why": "A primary function of railway ballast is to maintain vertical track geometry, however over time it becomes contaminated with fines which reduce its ability to free-drain."
+      }
+    ],
+    "fact_check": [
+      "Ballast provides stability through interlocking friction.",
+      "Ballast distributes the load of the train to the ground to prevent track settlement.",
+      "Ballast facilitates drainage to prevent soil erosion around the tracks.",
+      "Ballast helps dampen vibrations caused by passing trains."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        8.01
+      ],
+      [
+        8.01,
+        14.99
+      ],
+      [
+        14.99,
+        21.06
+      ],
+      [
+        21.06,
+        27.16
+      ],
+      [
+        27.16,
+        33.72
+      ],
+      [
+        33.72,
+        39.4
+      ],
+      [
+        39.4,
+        47.43
+      ],
+      [
+        47.43,
+        53.3
+      ]
+    ],
+    "duration": 53.3,
+    "scene_lines": [
+      "Indian Railways ke tracks par ye hazaron patthar sirf decoration ke liye nahi, balki ek massive freight train ka bojh uthane ke liye dale gaye hain.",
+      "Jab ek heavy train track par daudti hai, toh ye patthar sleepers ke zariye us heavy weight ko sub-grade par distribute kar dete hain.",
+      "Agar niche sirf mitti hoti, toh heavy train ka load sahne ki jagah wo phisal jati aur track dhans jata.",
+      "Ye patthar, jinhe 'ballast' kehte hain, asli mein heavy train ke liye ek flexible foundation ka kaam karte hain.",
+      "Inka rough shape heavy train ke vibration ke beech ek-dusre mein lock ho jata hai aur weight ko distribute kar deta hai.",
+      "Saath hi, ye heavy train ke track ke neeche jama baarish ke pani ko drainage ke liye nikal dete hain.",
+      "Bina inke, heavy train ki vibration se track apni jagah se hil sakta hai, jisse track ki alignment aur safety par khatra badh jata hai.",
+      "Ever thought how tracks stay stable despite the massive force and vibration of heavy freight trains?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,050 --> 00:00:02,317\nIndian Railways ke tracks par ye hazaron\n\n2\n00:00:02,317 --> 00:00:04,616\npatthar sirf decoration ke liye nahi, balki\n\n3\n00:00:04,616 --> 00:00:06,576\nek massive freight train ka bojh uthane\n\n4\n00:00:06,576 --> 00:00:07,896\nke liye dale gaye hain.\n\n5\n00:00:08,010 --> 00:00:09,980\nJab ek heavy train track par daudti\n\n6\n00:00:09,980 --> 00:00:11,860\nhai, toh ye patthar sleepers ke zariye\n\n7\n00:00:11,860 --> 00:00:14,949\nus heavy weight ko sub-grade par distribute kar dete hain.\n\n8\n00:00:14,990 --> 00:00:17,083\nAgar niche sirf mitti hoti, toh heavy\n\n9\n00:00:17,083 --> 00:00:18,778\ntrain ka load sahne ki jagah wo\n\n10\n00:00:18,778 --> 00:00:21,019\nphisal jati aur track dhans jata.\n\n11\n00:00:21,060 --> 00:00:23,584\nYe patthar, jinhe ballast kehte hain, asli\n\n12\n00:00:23,584 --> 00:00:25,385\nmein heavy train ke liye ek flexible\n\n13\n00:00:25,385 --> 00:00:27,129\nfoundation ka kaam karte hain.\n\n14\n00:00:27,160 --> 00:00:29,363\nInka rough shape heavy train ke vibration\n\n15\n00:00:29,363 --> 00:00:31,238\nke beech ek-dusre mein lock ho jata\n\n16\n00:00:31,238 --> 00:00:33,681\nhai aur weight ko distribute kar deta hai.\n\n17\n00:00:33,720 --> 00:00:35,700\nSaath hi, ye heavy train ke track\n\n18\n00:00:35,700 --> 00:00:37,554\nke neeche jama baarish ke pani ko\n\n19\n00:00:37,554 --> 00:00:39,350\ndrainage ke liye nikal dete hain.\n\n20\n00:00:39,400 --> 00:00:41,814\nBina inke, heavy train ki vibration se\n\n21\n00:00:41,814 --> 00:00:43,827\ntrack apni jagah se hil sakta hai,\n\n22\n00:00:43,827 --> 00:00:45,919\njisse track ki alignment aur safety par\n\n23\n00:00:45,919 --> 00:00:47,303\nkhatra badh jata hai.\n\n24\n00:00:47,430 --> 00:00:49,786\nEver thought how tracks stay stable despite\n\n25\n00:00:49,786 --> 00:00:52,695\nthe massive force and vibration of heavy freight trains?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [
+        "scene 8 (47.4-53.3 s): only 6% of its words can be heard - the voice breaks up or drops out"
+      ],
+      "footage": [],
+      "review": [],
+      "heard": [
+        "\"indian railways\" heard as \"इंट्यान रेलवेस\"",
+        "\"tracks par\" heard as \"ट्राक स्पा\"",
+        "\"hazaron patthar sirf decoration ke liye nahi\" heard as \"हजारो पष्चः स्वर्फ द्करेशन किलिये नहीं\"",
+        "\"massive freight\" heard as \"मैसर्फ प्रेट\"",
+        "\"ke liye dale\" heard as \"किलिये ड्यल\"",
+        "\"hain\" heard as \"है\"",
+        "\"heavy\" heard as \"हवी\"",
+        "\"track par\" heard as \"ट्रेन पा\""
+      ],
+      "scene_heard": [
+        "scene 1: 38%",
+        "scene 2: 71%",
+        "scene 3: 90%",
+        "scene 4: 68%",
+        "scene 5: 80%",
+        "scene 6: 68%",
+        "scene 7: 57%",
+        "scene 8: 6%"
+      ],
+      "pass": false,
+      "duration": 52.6
+    },
+    "repairs": 0
+  },
+  {
+    "job": "20261121-2131-why-are-mirror-images-flipped-horizontal",
+    "topic": "Why are mirror images flipped horizontally but not vertically?",
+    "title": "Why We Think Mirrors Flip Left-Right",
+    "description": "Mirror image left aur right nahi flip karta, toh asliyat kya hai? Chalo science se samajhte hain kyun ye sirf hamare dimaag ka khel hai. #shorts #science #physics\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nImage: Wellcome Collection (CC BY 4.0)\nPhoto: Shixart1985, CC BY 2.0, via Wikimedia Commons\nPhoto: unknown, CC0 1.0, via Openverse (rawpixel)\nVideo by KM007_ on Pixabay\nVideo by Marsel_beijing on Pixabay\nVideo by SYG_Anime on Pixabay\n\nयह वीडियो कैसे बना: स्क्रिप्ट को AI tools की मदद से open research के आधार पर लिखा और fact-check किया गया है, आवाज़ AI voice की है, और editing open-source software से हुई है। कोई गलती दिखे तो comment में बताइए — जाँच कर सुधार करेंगे।",
+    "tags": [
+      "physics",
+      "science"
+    ],
+    "hook": "People think mirrors flip left and right, but that is an illusion. Mirrors actually just swap front and back.",
+    "status": "review",
+    "narration": "People think mirrors flip left and right, but that is an illusion. Mirrors actually just swap front and back. Socho tum ek book mirror ke saamne khol kar pakde ho. Tumhe lagta hai ki letters mirror mein ulte dikh rahe hain. Agar tum kisi transparent sheet par likh kar use mirror ke saamne rakho, toh mirror use left-right flip nahi karta; wo bas image ko piche ki taraf reflect karta hai. Mirror aslında front aur back ko swap karta hai, left-right ko nahi. Tumhara right hand mirror mein left side par dikhta hai. Ye isliye hota hai kyunki mirror tumhari depth axis (front-to-back) ko reverse karta hai, jiske karan left aur right ka reversal dikhta hai. Humein lagta hai ki image left-right flip hui hai kyunki hum apne aap ko mirror ki jagah rakh kar mentally rotate karte hain. Ever thought why we perceive mirrors as flipping left-to-right?",
+    "voice_engine": "edge-tts",
+    "voices": "one narrator (hi-IN-SwaraNeural)",
+    "diagrams": 1,
+    "series": "Everyday Whys",
+    "countdown": false,
+    "length_arm": "standard",
+    "question": "Ever thought why we perceive mirrors as flipping left-to-right?",
+    "answer_comment": "Mirrors flip the Z-axis (front-to-back). Because the mirror preserves vertical orientation but reverses the depth, the human brain perceives this as a left-right reversal.",
+    "sources": [],
+    "fact_check": [
+      "Mirrors perform a front-back reflection (inversion along the normal axis).",
+      "The perception of left-right reversal is a psychological consequence of the viewer mentally rotating themselves to face the mirror.",
+      "Mirrors do not distinguish between left-right and up-down; they treat the axis perpendicular to the mirror surface as the one to invert."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        6.22
+      ],
+      [
+        6.22,
+        9.64
+      ],
+      [
+        9.64,
+        12.71
+      ],
+      [
+        12.71,
+        21.56
+      ],
+      [
+        21.56,
+        25.64
+      ],
+      [
+        25.64,
+        36.22
+      ],
+      [
+        36.22,
+        42.73
+      ],
+      [
+        42.73,
+        46.57
+      ]
+    ],
+    "duration": 46.57,
+    "scene_lines": [
+      "People think mirrors flip left and right, but that is an illusion. Mirrors actually just swap front and back.",
+      "Socho tum ek book mirror ke saamne khol kar pakde ho.",
+      "Tumhe lagta hai ki letters mirror mein ulte dikh rahe hain.",
+      "Agar tum kisi transparent sheet par likh kar use mirror ke saamne rakho, toh mirror use left-right flip nahi karta; wo bas image ko piche ki taraf reflect karta hai.",
+      "Mirror aslında front aur back ko swap karta hai, left-right ko nahi.",
+      "Tumhara right hand mirror mein left side par dikhta hai. Ye isliye hota hai kyunki mirror tumhari depth axis (front-to-back) ko reverse karta hai, jiske karan left aur right ka reversal dikhta hai.",
+      "Humein lagta hai ki image left-right flip hui hai kyunki hum apne aap ko mirror ki jagah rakh kar mentally rotate karte hain.",
+      "Ever thought why we perceive mirrors as flipping left-to-right?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,050 --> 00:00:02,328\nPeople think mirrors flip left and right,\n\n2\n00:00:02,328 --> 00:00:03,540\nbut that is an illusion.\n\n3\n00:00:03,540 --> 00:00:06,220\nMirrors actually just swap front and back.\n\n4\n00:00:06,220 --> 00:00:08,317\nSocho tum ek book mirror ke saamne\n\n5\n00:00:08,317 --> 00:00:09,640\nkhol kar pakde ho.\n\n6\n00:00:09,640 --> 00:00:11,483\nTumhe lagta hai ki letters mirror mein\n\n7\n00:00:11,483 --> 00:00:12,708\nulte dikh rahe hain.\n\n8\n00:00:12,710 --> 00:00:14,871\nAgar tum kisi transparent sheet par likh\n\n9\n00:00:14,871 --> 00:00:16,590\nkar use mirror ke saamne rakho, toh\n\n10\n00:00:16,590 --> 00:00:18,732\nmirror use left-right flip nahi karta; wo\n\n11\n00:00:18,732 --> 00:00:21,514\nbas image ko piche ki taraf reflect karta hai.\n\n12\n00:00:21,560 --> 00:00:23,774\nMirror aslında front aur back ko swap\n\n13\n00:00:23,774 --> 00:00:25,640\nkarta hai, left-right ko nahi.\n\n14\n00:00:25,640 --> 00:00:28,540\nTumhara right hand mirror mein left side par dikhta hai.\n\n15\n00:00:28,540 --> 00:00:30,807\nYe isliye hota hai kyunki mirror tumhari\n\n16\n00:00:30,807 --> 00:00:33,466\ndepth axis (front-to-back) ko reverse karta hai,\n\n17\n00:00:33,466 --> 00:00:36,198\njiske karan left aur right ka reversal dikhta hai.\n\n18\n00:00:36,220 --> 00:00:38,243\nHumein lagta hai ki image left-right flip\n\n19\n00:00:38,243 --> 00:00:39,949\nhui hai kyunki hum apne aap ko\n\n20\n00:00:39,949 --> 00:00:42,614\nmirror ki jagah rakh kar mentally rotate karte hain.\n\n21\n00:00:42,730 --> 00:00:45,971\nEver thought why we perceive mirrors as flipping left-to-right?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [
+        "phrase missing from the audio: \"left right ko nahi tumhara right hand mirror mein left side par dikhta hai ye isliye hota hai kyunki mirror tumhari depth axis front to back ko reverse karta hai jiske karan left aur right ka reversal dikhta hai humein lagta hai ki image left right flip hui hai kyunki hum apne aap ko mirror ki jagah rakh kar mentally rotate karte hain ever thought why we perceive mirrors as flipping left to right\"",
+        "only 60% of the script is heard as written"
+      ],
+      "footage": [],
+      "review": [],
+      "heard": [
+        "\"mirrors flip\" heard as \"मिरर स्प्लिप\"",
+        "\"and right\" heard as \"लेफ्ट\"",
+        "\"illusion mirrors actually just\" heard as \"इलुजन मिररर\"",
+        "\"and\" heard as \"अन\"",
+        "\"mirror\" heard as \"मिरर\"",
+        "\"pakde\" heard as \"पक्रे\"",
+        "\"letters mirror\" heard as \"लेटर स्मिरर\"",
+        "\"hain\" heard as \"है\""
+      ],
+      "scene_heard": [
+        "scene 1: 53%",
+        "scene 2: 80%",
+        "scene 3: 70%",
+        "scene 4: 70%",
+        "scene 5: 58%",
+        "scene 6: 61%",
+        "scene 7: 67%",
+        "scene 8: 100%"
+      ],
+      "pass": false,
+      "duration": 46.0
+    },
+    "repairs": 0
   }
 ]
