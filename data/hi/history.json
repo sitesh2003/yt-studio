@@ -6717,5 +6717,28 @@
     "video_id": "4j7Nm4rsIUU",
     "publish_at": "2026-11-23T02:30:00-05:00",
     "thumbnail_set": true
+  },
+  {
+    "job": "hero_trex_baby_hi",
+    "topic": "तुम एक Baby T. rex हो, कैसे बचोगे? 🦖",
+    "title": "तुम एक Baby T. rex हो, कैसे बचोगे? 🦖",
+    "description": "एक छोटे कुत्ते जितने बच्चे से, कई tonne के T. rex तक। Fossils बताते हैं छोटे T. rex कैसे बचते थे। #shorts #hindi #dinosaur #science\n\nSources: Funston et al. 2021, Canadian Journal of Earth Sciences; Schroeder et al. 2021, Science; Woodward et al. 2020, Science Advances; Erickson et al. 2004, Nature (corrigendum 2016).\n3D models: Quaternius, Animated LowPoly Dinosaurs (CC0); Kenney, Car Kit (CC0). Animated in Blender.\n\nHow this was made: the script is researched and fact-checked against published research (sources above), narrated by an AI voice, and animated and edited with open-source software.",
+    "tags": [
+      "T. rex",
+      "baby T. rex",
+      "dinosaur hindi",
+      "science hindi",
+      "3D animation"
+    ],
+    "hook": "सोचो, तुम एक baby tyrannosaur हो, बस एक छोटे कुत्ते जितने।",
+    "status": "scheduled",
+    "narration": "सोचो, तुम एक baby tyrannosaur हो, बस एक छोटे कुत्ते जितने। तो तुम लड़ते नहीं, भागते हो। छोटे T. rex की टांगें लंबी और पतली थीं, speed के लिए बनी। पर तुम्हारा bite अभी बड़ों की तरह bone नहीं तोड़ सकता। तो तुम छोटे, तेज़ जानवरों का शिकार करते हो, जिन्हें बड़े T. rex छोड़ देते थे। फिर करीब चौदह साल की उम्र में growth spurt आता है, हर दिन करीब दो किलो वज़न बढ़ता है। चार साल बाद तुम्हारा वज़न कई tonne होता है, और अब कोई तुम्हारा शिकार नहीं करता। कभी सोचा है, तुम क्या बनना चाहोगे, तेज़ teenager, या विशाल T. rex?",
+    "voice_engine": "edge-tts",
+    "countdown": false,
+    "hero_3d": true,
+    "question": "कभी सोचा है, तुम क्या बनना चाहोगे, तेज़ teenager, या विशाल T. rex?",
+    "video_id": "oQ1IlqrSlTs",
+    "publish_at": "2026-11-24T02:30:00-05:00",
+    "thumbnail_set": true
   }
 ]
