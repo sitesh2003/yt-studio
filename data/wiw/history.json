@@ -3820,5 +3820,30 @@
     "video_id": "-jePzYeWNIQ",
     "publish_at": "2026-11-22T16:30:00-05:00",
     "thumbnail_set": true
+  },
+  {
+    "job": "hero_braking",
+    "topic": "Why Double Speed Means 4x Braking Distance 🚗",
+    "title": "Why Double Speed Means 4x Braking Distance 🚗",
+    "description": "Drive twice as fast and your car needs four times as far to stop. Here's the physics, with two cars braking side by side. #shorts #physics #science #cars\n\nSources: Braking distance = speed^2 / (2 x deceleration), kinetic energy = 1/2 m v^2 (GCSE physics, e.g. Save My Exams); UK Highway Code braking distances (14 m at 30 mph, 55 m at 60 mph).\n3D models: Quaternius, Animated LowPoly Dinosaurs (CC0); Kenney, Car Kit (CC0). Animated in Blender.\n\nHow this was made: the script is researched and fact-checked against published research (sources above), narrated by an AI voice, and animated and edited with open-source software.",
+    "tags": [
+      "braking distance",
+      "stopping distance",
+      "physics",
+      "kinetic energy",
+      "road safety",
+      "science",
+      "3D animation"
+    ],
+    "hook": "Drive twice as fast, and your car needs four times as far to stop.",
+    "status": "scheduled",
+    "narration": "Drive twice as fast, and your car needs four times as far to stop. Both of these cars brake hard at the same line. One is doing thirty kilometres an hour, the other sixty. On a dry road, the slow car stops in about five metres. The fast one needs about twenty. That's because the brakes have to get rid of the car's moving energy, and that energy grows with speed squared. Double the speed, and there's four times the energy to burn off as heat. And that's before you add the moment it takes you to react. So how much farther would a car doing ninety need to stop?",
+    "voice_engine": "chatterbox",
+    "countdown": false,
+    "hero_3d": true,
+    "question": "So how much farther would a car doing ninety need to stop?",
+    "video_id": "kiS1JeSIxDk",
+    "publish_at": "2026-11-23T16:30:00-05:00",
+    "thumbnail_set": true
   }
 ]
