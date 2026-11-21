@@ -10,6 +10,7 @@ and sound and picture are made separately then joined by copying, as editor.rend
 import json
 import math
 import random
+import re
 import shutil
 import subprocess
 import sys
@@ -311,6 +312,46 @@ def g_coprolite(d, f, n, shot):
         text(d, (W / 2, 560), "30-50% BONE", int(110 * s), WHITE, stroke=12)
 
 
+
+STOP = set("a an the and or but so of to in on at by for from with as is are was were be been it its it's that this "
+           "then than up out about into onto over".split())
+
+
+def hero_captions(words, path):
+    """21 Nov 2026, owner: the captions looked like they kept re-writing. Each card is at most TWO words,
+    shown once for exactly as long as they are spoken (no word-by-word recolouring), the key word in yellow.
+    Uses the channel's own caption style (font, outline, position), so Hindi keeps its font and shaping."""
+    editor.captions([], path)                       # the channel's header and styles, no events
+    head = path.read_text(encoding="utf-8")
+    c, f = config()["captions"], config()["format"]
+    norm = lambda w: re.sub(r"[^\w']", "", w.lower())
+    cards, cur = [], []
+    for i, w in enumerate(words):
+        cur.append(w)
+        gap = words[i + 1]["start"] - w["end"] if i + 1 < len(words) else 9
+        long_word = len(w["text"]) >= 9
+        if len(cur) >= 2 or long_word or gap > 0.18 or w["text"].rstrip().endswith((".", ",", "?", "!", ";", ":", "\u0964")):
+            cards.append(cur)
+            cur = []
+    if cur:
+        cards.append(cur)
+    lines = []
+    for k, card in enumerate(cards):
+        a = card[0]["start"]
+        nxt = cards[k + 1][0]["start"] if k + 1 < len(cards) else card[-1]["end"] + 0.5
+        b = nxt if nxt - card[-1]["end"] < 0.3 else card[-1]["end"] + 0.2
+        keys = [g for g in card if norm(g["text"]) not in STOP]
+        key = max(keys, key=lambda g: len(g["text"])) if keys else None
+        txt = " ".join(("{\\c" + c["highlight"] + "}" + g["text"].upper() + "{\\c" + c["color"] + "}") if g is key
+                       else g["text"].upper() for g in card)
+        chars = sum(len(g["text"]) for g in card) + len(card) - 1
+        size = int(c["size"] * 1.2)
+        if chars > 11:
+            size = max(int(c["size"] * 1.2 * 11 / chars), int(c["size"] * 0.75))
+        lines.append(f"Dialogue: 0,{editor._ass_time(a)},{editor._ass_time(b)},Cap,,0,0,0,,"
+                     f"{{\\pos({f['width'] // 2},{c['position_y']})\\fs{size}}}{txt}")
+    path.write_text(head.rstrip("\n") + "\n" + "\n".join(lines) + "\n", encoding="utf-8")
+
 # ---------------------------------------------------------------- assembly
 def run(cmd, cwd):
     subprocess.run(cmd, cwd=cwd, check=True)
@@ -348,7 +389,7 @@ def main():
     run(["ffmpeg", "-y", "-loglevel", "error", "-f", "concat", "-safe", "0", "-i", "list.txt", "-c", "copy",
          "visual.mp4"], job)
     # 3) captions in the channel's own style
-    editor.captions(words, job / "captions.ass")
+    hero_captions(words, job / "captions.ass")
     shutil.copytree(ROOT / "assets" / "fonts", job / "fonts", dirs_exist_ok=True)
     # 4) sound on its own: polished voice + ducked music, levelled
     total = gf / FPS

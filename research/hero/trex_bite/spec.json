@@ -54,7 +54,7 @@
       "anim_rate": 0.8,
       "overlay": "cars_force",
       "lens": 24,
-      "seconds": 3.58,
+      "seconds": 4.262,
       "cam": [
         [
           7.5,
@@ -85,15 +85,15 @@
       "reveal": {
         "bones": [
           0.3,
-          0.7
+          0.87
         ],
         "muscles": [
-          0.8,
-          4.02
+          0.97,
+          4.86
         ]
       },
       "overlay": "xray_scan",
-      "seconds": 4.42,
+      "seconds": 5.262,
       "cam": [
         [
           9.5,
@@ -151,13 +151,13 @@
           "red"
         ]
       ],
-      "seconds": 6.87
+      "seconds": 8.178
     },
     {
       "kind": "xray_jaw",
       "teeth_stress": true,
       "overlay": "tooth_pressure",
-      "seconds": 4.2,
+      "seconds": 5.0,
       "cam": [
         [
           9.5,
@@ -187,12 +187,12 @@
     {
       "kind": "coprolite",
       "overlay": "coprolite",
-      "seconds": 4.74
+      "seconds": 5.643
     },
     {
       "kind": "closeup_roar",
       "overlay": "none",
-      "seconds": 2.56
+      "seconds": 2.934
     }
   ],
   "credits": [

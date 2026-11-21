@@ -1,5 +1,6 @@
 {
   "engine": "chatterbox",
   "heard": 0.99,
-  "issues": []
+  "issues": [],
+  "speed": 0.86
 }

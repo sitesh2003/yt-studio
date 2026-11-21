@@ -87,7 +87,9 @@
     "bank_days": 7,
     "max_uploads_per_day": 5,
     "bank_note": "finished, audited videos wait in the GitHub 'video-bank' release; 7 days are kept ready (14 Nov 2026, user: time is never a concern, stack videos ahead), so slow high-quality renders never cost a slot; the publisher uploads only the next day's slots",
-    "_quality_note": "2 a day since 13 Nov 2026: the fastest-growing channels in our genre post 2-6 strong videos a week; a weak video to fill a slot costs more than it earns"
+    "_quality_note": "2 a day since 13 Nov 2026: the fastest-growing channels in our genre post 2-6 strong videos a week; a weak video to fill a slot costs more than it earns",
+    "upload_captions": false,
+    "_captions_note": "21 Nov 2026, owner: captions looked doubled - YouTube showed its caption track on top of the burned-in captions. Off on every channel (wiw and hi were already off)."
   },
   "community": {
     "mode": "auto",

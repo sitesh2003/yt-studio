@@ -66,7 +66,7 @@ desc = (script.get("description", "") + "\n\nSources: " + script.get("sources", 
         "How this was made: the script is researched and fact-checked against published research (sources above), "
         "narrated by an AI voice, and animated and edited with open-source software.")
 meta = {"title": script["title_options"][0], "description": desc, "tags": script.get("tags", []),
-        "thumbnail": "thumbnail.jpg", "captions_srt": subtitles.build(words, script), "scene_lines": lines}
+        "thumbnail": "thumbnail.jpg", "scene_lines": lines}   # captions are burned in: no second track
 write_json(job / "meta.json", meta)
 vid, when = youtube.upload(job, meta, slot)
 print(f"UPLOADED {CHANNEL} {vid} private, goes public {when}; thumbnail: {meta.get('thumbnail_set')}")
