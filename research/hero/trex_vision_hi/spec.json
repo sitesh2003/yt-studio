@@ -54,7 +54,7 @@
         "STANDING STILL?",
         "probably won't hide you"
       ],
-      "seconds": 4,
+      "seconds": 6.521,
       "lens": 24
     },
     {
@@ -64,7 +64,7 @@
         "REBUILT HEAD",
         "where each eye can look"
       ],
-      "seconds": 5,
+      "seconds": 4.855,
       "anim": "idle",
       "cam": [
         [
@@ -98,7 +98,7 @@
         "55\u00b0 OVERLAP",
         "wider than a hawk's"
       ],
-      "seconds": 6,
+      "seconds": 6.045,
       "lens": 24
     },
     {
@@ -109,7 +109,7 @@
         "DEPTH VISION",
         "how far away you are"
       ],
-      "seconds": 5
+      "seconds": 5.469
     },
     {
       "kind": "speed_track",
@@ -129,12 +129,12 @@
         ]
       ],
       "unit": "km",
-      "seconds": 6
+      "seconds": 5.844
     },
     {
       "kind": "closeup_roar",
       "overlay": "none",
-      "seconds": 4
+      "seconds": 4.731
     }
   ],
   "credits": [
