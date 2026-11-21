@@ -6085,5 +6085,30 @@
     },
     "repairs": 0,
     "audited": true
+  },
+  {
+    "job": "hero_trex_baby",
+    "topic": "You're A Baby T. rex. How Do You Survive? 🦖",
+    "title": "You're A Baby T. rex. How Do You Survive? 🦖",
+    "description": "Start life the size of a small dog, end up a giant. Here's how a young T. rex survived, step by step, from the fossils. #shorts #dinosaurs #TRex #Science\n\nSources: Funston et al. 2021, Canadian Journal of Earth Sciences; Schroeder et al. 2021, Science; Woodward et al. 2020, Science Advances; Erickson et al. 2004, Nature (corrigendum 2016).\n3D models: Quaternius, Animated LowPoly Dinosaurs (CC0); Kenney, Car Kit (CC0). Animated in Blender.\n\nHow this was made: the script is researched and fact-checked against published research (sources above), narrated by an AI voice, and animated and edited with open-source software.",
+    "tags": [
+      "T. rex",
+      "baby T. rex",
+      "dinosaurs",
+      "dinosaur growth",
+      "paleontology",
+      "science",
+      "3D animation"
+    ],
+    "hook": "You're a baby tyrannosaur, no bigger than a small dog.",
+    "status": "scheduled",
+    "narration": "You're a baby tyrannosaur, no bigger than a small dog. So you don't fight. You run. Young T. rex had long, slim legs, built for speed. But your bite can't crush bone like an adult's. So you hunt smaller, quicker animals that the giants ignore. Then, around age fourteen, you hit a growth spurt, about two kilos heavier every single day. Four years later, you weigh several tonnes, and nothing hunts you anymore. So would you rather be the fast teenager, or the giant adult?",
+    "voice_engine": "chatterbox",
+    "countdown": false,
+    "hero_3d": true,
+    "question": "So would you rather be the fast teenager, or the giant adult?",
+    "video_id": "z0CKlJTp69A",
+    "publish_at": "2026-11-23T19:00:00-05:00",
+    "thumbnail_set": true
   }
 ]
