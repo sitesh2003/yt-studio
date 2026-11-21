@@ -1,19 +1,15 @@
 {
-  "summary": [
-    "Prioritize specific, counter-intuitive visual scenarios (e.g., 'A 10kg lead sphere') over abstract 'Why does...' questions in the first 3 seconds.",
-    "Shift the hook structure from 'Have you ever wondered...' or 'You've used [X] your whole life...' to a 'What happens if...' narrative.",
-    "Eliminate academic titles that list the full topic; use high-arousal punctuation and specific questions instead.",
-    "Aim for a tighter hook-to-explanation transition; long setups cause viewer drop-off even when engagement is high.",
-    "Focus on 'Immediate Visual Proof' in the first 5 seconds to boost stayed_pct above the 40% barrier."
-  ],
+  "summary": "1. Cut conversational wind-ups like 'You've seen...' or 'Ever wondered...' and start the hook immediately with the core action or trigger within the first 6 words.\n2. Frame titles as direct question hooks ('Why Does X Do Y?') rather than academic textbook titles featuring words like 'Chemistry Explained' or 'Biology of Cone Cells'.\n3. Keep script lengths target near ~35 seconds, as wordier 40-57 second setups severely degrade the early stayed percentage.\n4. Avoid complex hypothetical setups requiring setup time (e.g., lead spheres in a vacuum); focus on immediate, everyday physical reactions.\n5. Ensure the visual on screen matches the first spoken sentence instantaneously to prevent viewers from swiping away in the first 2 seconds.",
   "winning_hooks": [
-    "A 10kg lead sphere and a 1kg lead sphere dropped from the same height in a vacuum. Why don't they hit the ground at different moments?",
-    "Why does baking soda fizz the moment it hits vinegar?"
+    "Direct action-question hook: 'Why does [everyday substance A] react the moment it hits [substance B]?'",
+    "Immediate visual mystery without preamble: 'When does a lens actually flip the image upside down?'",
+    "High visual context opening: 'How does salt melt road ice on contact?'"
   ],
   "avoid": [
-    "Starting with 'You've seen/used/done [X] your whole life, but why...'",
-    "Explaining common household chemical reactions with purely linguistic setups.",
-    "Lengthy, multi-sentence hook preambles that exceed 15 words before addressing the core phenomenon."
+    "Conversational fluff openers ('You've used soap your whole life, but why...')",
+    "Academic sub-titles ('The Chemistry of...', 'The Biology of Cone Cells Explained')",
+    "Wordy multi-sentence scenario setups before stating the question ('A 10kg lead sphere and a 1kg lead sphere...')",
+    "Passive setup statements ending with 'It's simple physics'"
   ],
-  "next_experiment": "A/B test the current 'Why' question format against a 'Stop doing [common action] or [result] happens' format to see if fear/urgency increases the stayed_pct."
+  "next_experiment": "Test Hook Length & Directness: A/B test the same topic (e.g., Soap/Grease) using a long conversational preamble ('You've used soap your whole life...') versus a direct 4-word visual action hook ('Why does soap dissolve oil instantly?') keeping the rest of the video identical."
 }
