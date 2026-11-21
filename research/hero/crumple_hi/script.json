@@ -1,0 +1,49 @@
+{
+  "title_options": [
+    "Crash में Car का पिचकना क्यों ज़रूरी है? 🚗"
+  ],
+  "facts": [
+    "Newton's second law: average force = change in momentum / stopping time. Same car, same speed, so the same change in momentum; a longer stop means a smaller average force on the people inside.",
+    "Crumple zone: Bela Barenyi, Daimler-Benz patent DBP 854 157, filed 23 Jan 1951, granted 28 Aug 1952; first series-production car with crumple zones: Mercedes-Benz W 111, 1959 (German Patent and Trade Mark Office; Mercedes-Benz history).",
+    "Rigid passenger cell between soft front and rear zones (Barenyi's design)."
+  ],
+  "description": "जो car crash में पिचक जाती है, वो तुम्हें ज़्यादा बचाती है। Physics सीधी है: उतना ही रुकना, ज़्यादा time में, तो कम force. #shorts #hindi #physics #science",
+  "sources": "Newton's second law (impulse); Bela Barenyi crumple-zone patent DBP 854 157 (filed 1951, granted 1952), German Patent and Trade Mark Office; Mercedes-Benz W 111 (1959), Mercedes-Benz history.",
+  "tags": [
+    "crumple zone",
+    "car safety hindi",
+    "physics hindi",
+    "Newton's second law",
+    "science hindi"
+  ],
+  "scenes": [
+    {
+      "narration": "जो car crash में पिचक जाती है, वो तुम्हें ज़्यादा बचाती है।",
+      "shot": "hook"
+    },
+    {
+      "narration": "ये दोनों cars एक ही speed से दीवार से टकराती हैं, और दोनों रुक जाती हैं।",
+      "shot": "both"
+    },
+    {
+      "narration": "सख़्त car लगभग एक पल में रुक जाती है, तो अंदर बैठे लोगों पर बहुत बड़ी force पड़ती है।",
+      "shot": "rigid"
+    },
+    {
+      "narration": "पिचकने वाला front रुकने का time बढ़ा देता है, तो अंदर वालों पर force कम हो जाती है।",
+      "shot": "fold"
+    },
+    {
+      "narration": "यही है Newton का second law. Speed का उतना ही बदलाव, ज़्यादा time में हो, तो कम force लगती है।",
+      "shot": "law"
+    },
+    {
+      "narration": "ये idea 1952 में patent हुआ, और Mercedes-Benz ने 1959 में इसे पहली बार एक production car में लगाया।",
+      "shot": "history"
+    },
+    {
+      "narration": "कभी सोचा है, फिर car का बीच वाला हिस्सा सबसे मज़बूत क्यों बनाया जाता है?",
+      "shot": "end"
+    }
+  ]
+}

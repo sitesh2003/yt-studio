@@ -1,0 +1,47 @@
+{
+  "title_options": [
+    "You're A Baby T. rex. How Do You Survive? 🦖"
+  ],
+  "facts": [
+    "Funston et al. 2021, Canadian Journal of Earth Sciences: first tyrannosaur embryo/hatchling fossils (not T. rex; a related tyrannosaur), hatchlings about the size of a small dog (~0.7-0.9 m).",
+    "Schroeder et al. 2021, Science: juvenile giant theropods were light and fleet-footed and took the place of medium-sized predators; Woodward et al. 2020, Science Advances: juvenile T. rex fast and knife-toothed.",
+    "Erickson et al. 2004, Nature (corrigendum 2016): T. rex growth spurt from about age 14 to 18, peak about 2.1 kg a day (~767 kg a year); maximum age in the sample ~28 years."
+  ],
+  "description": "Start life the size of a small dog, end up a giant. Here's how a young T. rex survived, step by step, from the fossils. #shorts #dinosaurs #TRex #Science",
+  "sources": "Funston et al. 2021, Canadian Journal of Earth Sciences; Schroeder et al. 2021, Science; Woodward et al. 2020, Science Advances; Erickson et al. 2004, Nature (corrigendum 2016).",
+  "tags": [
+    "T. rex",
+    "baby T. rex",
+    "dinosaurs",
+    "dinosaur growth",
+    "paleontology",
+    "science",
+    "3D animation"
+  ],
+  "scenes": [
+    {
+      "narration": "You're a baby tyrannosaur, no bigger than a small dog.",
+      "shot": "tiny"
+    },
+    {
+      "narration": "So you don't fight. You run. Young T. rex had long, slim legs, built for speed.",
+      "shot": "run"
+    },
+    {
+      "narration": "But your bite can't crush bone like an adult's. So you hunt smaller, quicker animals that the giants ignore.",
+      "shot": "hunt"
+    },
+    {
+      "narration": "Then, around age fourteen, you hit a growth spurt, about two kilos heavier every single day.",
+      "shot": "grow"
+    },
+    {
+      "narration": "Four years later, you weigh several tonnes, and nothing hunts you anymore.",
+      "shot": "giant"
+    },
+    {
+      "narration": "So would you rather be the fast teenager, or the giant adult?",
+      "shot": "end"
+    }
+  ]
+}

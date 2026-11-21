@@ -45,14 +45,19 @@ jobs:
           path: ~/.cache/huggingface
           key: voice-prod-test-v1
       - name: Narrate the hero script
-        run: python tools/hero_voice.py "$(head -1 kick/hero-voice.txt)" 2>&1 | tee research/hero/hero_voice_log.txt; exit ${PIPESTATUS[0]}
+        # every name on the kick file's first line (space-separated) is narrated in turn
+        run: |
+          rc=0; : > research/hero/hero_voice_log.txt
+          for n in $(head -1 kick/hero-voice.txt | tr -d ''); do
+            python tools/hero_voice.py "$n" 2>&1 | tee -a research/hero/hero_voice_log.txt; [ ${PIPESTATUS[0]} -eq 0 ] || rc=1
+          done; exit $rc
       - name: Save the result
         if: always()
         run: |
           git config user.name "yt-studio-bot"
           git config user.email "actions@users.noreply.github.com"
           git add -f research/hero || true
-          git diff --cached --quiet || git commit -q -m "hero: narration for $(head -1 kick/hero-voice.txt)"
+          git diff --cached --quiet || git commit -q -m "hero: narration for $(head -1 kick/hero-voice.txt | tr -d '')"
           git pull --rebase -X theirs -q || true
           python tools/json_guard.py || exit 1
           git push -q || true

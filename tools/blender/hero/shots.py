@@ -710,6 +710,69 @@ def smooth_keys(obj):
                 k.easing = "EASE_IN_OUT"
 
 
+
+FILM = os.environ.get("HERO_QUALITY") == "film"     # Cycles on the laptop's graphics card (owner, 21 Nov 2026)
+
+
+def film_setup():
+    """Film look: Cycles path tracing on the RTX card (OptiX, denoised), soft bounced light."""
+    sc = bpy.context.scene
+    sc.render.engine = "CYCLES"
+    try:
+        prefs = bpy.context.preferences.addons["cycles"].preferences
+        for kind in ("OPTIX", "CUDA"):
+            try:
+                prefs.compute_device_type = kind
+                prefs.get_devices()
+                if any(d.type == kind for d in prefs.devices):
+                    break
+            except Exception:
+                continue
+        for d in prefs.devices:
+            d.use = d.type != "CPU"
+        sc.cycles.device = "GPU"
+    except Exception as e:
+        print("film: no GPU, CPU render", e)
+    sc.cycles.samples = 24 if args.preview else 96
+    sc.cycles.use_denoising = True
+    try:
+        sc.cycles.denoiser = "OPTIX"
+    except Exception:
+        pass
+    sc.cycles.max_bounces = 6
+    sc.render.film_transparent = False
+
+
+def film_world(look):
+    """Light from a real sky photo (Poly Haven, CC0) for day shots; keeps the painted dusk/sim skies."""
+    hdr = os.path.abspath(os.path.join(ASSETS, "hdri", "sky_day.hdr"))
+    if look != "day" or not os.path.exists(hdr):
+        return
+    w = bpy.context.scene.world
+    nt = w.node_tree
+    nt.nodes.clear()
+    out = node(nt, "ShaderNodeOutputWorld", (400, 0))
+    bg = node(nt, "ShaderNodeBackground", (200, 0))
+    env = nt.nodes.new("ShaderNodeTexEnvironment")
+    env.image = bpy.data.images.load(hdr)
+    nt.links.new(env.outputs[0], bg.inputs[0])
+    nt.links.new(bg.outputs[0], out.inputs[0])
+    bg.inputs["Strength"].default_value = 1.1
+
+
+def film_creature(mesh):
+    """Smooth, rounded characters instead of hard facets."""
+    for poly in mesh.data.polygons:
+        poly.use_smooth = True
+    sub = mesh.modifiers.new("Smooth", "SUBSURF")
+    sub.levels, sub.render_levels = 1, 2
+
+
+def film_camera(cam, tgt):
+    cam.data.dof.use_dof = True
+    cam.data.dof.focus_object = tgt
+    cam.data.dof.aperture_fstop = 2.8
+
 # ---------------------------------------------------------------- the templates
 def build():
     kind = SHOT["kind"]
@@ -730,12 +793,19 @@ def build():
         area((-10, 6, 8), (60, 0, -120), 3000, (0.2, 0.6, 1.0), 12)
         area((10, -6, 6), (60, 0, 60), 1500, (1.0, 0.4, 0.6), 10)
     arm, mesh, f = creature()
+    if FILM and (look in ("day", "dusk") or os.environ.get("HERO_FILM_ALL")):
+        # film look where it shows most (outdoor light); the dark x-ray 'computer model' shots stay EEVEE
+        film_setup()
+        film_world(look)
+        film_creature(mesh)
     H = c["height_m"]
     walk, run = c["walk"], c["run"]
     v_walk = natural_speed(arm, action(walk), c["foot_bone"])
     v_run = natural_speed(arm, action(run), c["foot_bone"])
     print(f"natural speeds: walk {v_walk * 3.6:.1f} km/h, run {v_run * 3.6:.1f} km/h")
     cam, tgt = camera(SHOT.get("lens", 32))
+    if FILM and bpy.context.scene.render.engine == "CYCLES":
+        film_camera(cam, tgt)
     fwd = Vector((0, -1, 0))                                    # the creature faces -Y
     T = N / FPS
 
