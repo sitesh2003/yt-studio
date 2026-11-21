@@ -1,17 +1,5 @@
 [
  {
-  "when": "2026-11-16 20:21",
-  "topic": "Mysterious gas leaks suggest Mars may still be volcanically alive",
-  "drawn": [
-   2,
-   3,
-   4,
-   5
-  ],
-  "not_drawn": {},
-  "error": ""
- },
- {
   "when": "2026-11-16 20:47",
   "topic": "Why are mirror images flipped horizontally but not vertically?",
   "drawn": [
@@ -490,6 +478,19 @@
    5
   ],
   "not_drawn": {},
+  "error": ""
+ },
+ {
+  "when": "2026-11-20 21:21",
+  "topic": "Scientists just found MIT discovered aging weakens the brain's nighttime cleaning system",
+  "drawn": [
+   2,
+   3
+  ],
+  "not_drawn": {
+   "4": "LLM call failed on every model and provider: None",
+   "5": "LLM call failed on every model and provider: None"
+  },
   "error": ""
  }
 ]

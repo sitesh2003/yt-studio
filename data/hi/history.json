@@ -5863,5 +5863,148 @@
       "duration": 53.5
     },
     "repairs": 0
+  },
+  {
+    "job": "20261120-2107-scientists-just-found-mit-discovered-agi",
+    "topic": "Scientists just found MIT discovered aging weakens the brain's nighttime cleaning system",
+    "title": "How Scientists Think Your Brain Cleans Itself While You Sleep 🤯",
+    "description": "Discover the incredible nighttime processes inside your brain studied by scientists! Learn how sleep helps clear daily waste and why age affects it. #shorts #hindi #science\n\nSources (open-access research):\n- Jing (2026), Theoretical and Natural Science. doi:10.54254/2753-8818/2026.hz37634\n- Naaz et al. (2022), Journal of Anaesthesiology Clinical Pharmacology. doi:10.4103/joacp.joacp_337_19\n- Winer et al. (2021), JAMA Neurology. doi:10.1001/jamaneurol.2021.2876\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nVideo by Engin_Akyurt on Pixabay\nVideo by NeuroPixels on Pixabay\nVideo by NickyPe on Pixabay",
+    "tags": [
+      "shorts",
+      "hindi",
+      "brain science",
+      "sleep research",
+      "health facts"
+    ],
+    "hook": "शोधकर्ताओं के अनुसार, नींद हमारे दिमाग को तरोताजा रखने में बड़ी भूमिका निभाती है।",
+    "status": "review",
+    "narration": "शोधकर्ताओं के अनुसार, नींद हमारे दिमाग को तरोताजा रखने में बड़ी भूमिका निभाती है। वैज्ञानिकों का मानना है कि गहरी नींद के दौरान दिमाग की गतिविधि बदल जाती है। इस दौरान सेरेब्रॉस्पाइनल फ्लूइड दिमाग के ऊतकों के बीच से बहता है। यह प्रक्रिया दिनभर की मेटाबॉलिक गतिविधियों से बने अवशेषों को हटाने में मदद करती है। लेकिन उम्र बढ़ने पर यह सफाई का सिस्टम थोड़ा धीमा होने लगता है। उम्र के साथ गहरी नींद में आने वाली स्लो ब्रेन वेव्स कम हो जाती हैं। वेव्स कम होने से फ्लूइड का यह बहाव भी कमजोर पड़ जाता है। जिससे अवशेष लंबे समय तक बने रह सकते हैं और सेहत पर असर पड़ता है। क्या तुम्हें भी कम सोने के बाद अगले दिन थकान महसूस होती है?",
+    "voice_engine": "edge-tts",
+    "voices": "one narrator (hi-IN-SwaraNeural)",
+    "diagrams": 1,
+    "series": "Body Whys",
+    "countdown": false,
+    "length_arm": "standard",
+    "question": "कभी सोचा है कम सोने के बाद सुबह थकान क्यों महसूस होती है और क्या नींद के दौरान दिमाग अपनी सफाई करता है?",
+    "answer_comment": "The answer: जब नींद पूरी नहीं होती, तो शरीर और दिमाग को रिकवर होने का पूरा समय नहीं मिलता। नींद की कमी से सुस्ती, थकान और ध्यान केंद्रित करने में परेशानी हो सकती है! what's your bedtime routine like?\n\nSources (open-access research):\n- Jing (2026), Theoretical and Natural Science. doi:10.54254/2753-8818/2026.hz37634\n- Naaz et al. (2022), Journal of Anaesthesiology Clinical Pharmacology. doi:10.4103/joacp.joacp_337_19\n- Winer et al. (2021), JAMA Neurology. doi:10.1001/jamaneurol.2021.2876",
+    "sources": [
+      {
+        "claim": "Researchers study how glymphatic clearance relates to sleep and aging.",
+        "cite": "Jing (2026), Theoretical and Natural Science. doi:10.54254/2753-8818/2026.hz37634",
+        "doi": "10.54254/2753-8818/2026.hz37634",
+        "title": "Analysis of the Influence Between Glymphatic System and Sleep Disorder",
+        "why": "This review synthesizes current evidence on the bidirectional relationship between the glymphatic system, sleep, and aging, examining the structural components, sleep-dependent activation mechanisms, and the pathological consequences of glymphatic dysfunction."
+      },
+      {
+        "claim": "Cerebrospinal fluid movement during sleep assists in clearing metabolic waste.",
+        "cite": "Naaz et al. (2022), Journal of Anaesthesiology Clinical Pharmacology. doi:10.4103/joacp.joacp_337_19",
+        "doi": "10.4103/joacp.joacp_337_19",
+        "title": "Does modulation of glymphatic system reduce delirium via waste clearance?",
+        "why": "The NREM stage of sleep upregulates the glymphatic-associated waste clearance and the REM stage, or awake condition, downregulates its activity."
+      },
+      {
+        "claim": "Aging can affect sleep architecture, including slow-wave sleep duration.",
+        "cite": "Winer et al. (2021), JAMA Neurology. doi:10.1001/jamaneurol.2021.2876",
+        "doi": "10.1001/jamaneurol.2021.2876",
+        "title": "Association of Short and Long Sleep Duration With Amyloid-β Burden and Cognition in Aging",
+        "why": "Disrupted sleep is common in aging and is associated with cognition. Age-related changes to sleep are associated with multiple causes"
+      }
+    ],
+    "fact_check": [
+      "Researchers study how glymphatic clearance relates to sleep and aging.",
+      "Cerebrospinal fluid movement during sleep assists in clearing metabolic waste.",
+      "Aging can affect sleep architecture, including slow-wave sleep duration."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        5.49
+      ],
+      [
+        5.49,
+        10.38
+      ],
+      [
+        10.38,
+        14.67
+      ],
+      [
+        14.67,
+        19.72
+      ],
+      [
+        19.72,
+        23.82
+      ],
+      [
+        23.82,
+        28.02
+      ],
+      [
+        28.02,
+        32.01
+      ],
+      [
+        32.01,
+        36.7
+      ],
+      [
+        36.7,
+        41.02
+      ]
+    ],
+    "duration": 41.02,
+    "scene_lines": [
+      "शोधकर्ताओं के अनुसार, नींद हमारे दिमाग को तरोताजा रखने में बड़ी भूमिका निभाती है।",
+      "वैज्ञानिकों का मानना है कि गहरी नींद के दौरान दिमाग की गतिविधि बदल जाती है।",
+      "इस दौरान सेरेब्रॉस्पाइनल फ्लूइड दिमाग के ऊतकों के बीच से बहता है।",
+      "यह प्रक्रिया दिनभर की मेटाबॉलिक गतिविधियों से बने अवशेषों को हटाने में मदद करती है।",
+      "लेकिन उम्र बढ़ने पर यह सफाई का सिस्टम थोड़ा धीमा होने लगता है।",
+      "उम्र के साथ गहरी नींद में आने वाली स्लो ब्रेन वेव्स कम हो जाती हैं।",
+      "वेव्स कम होने से फ्लूइड का यह बहाव भी कमजोर पड़ जाता है।",
+      "जिससे अवशेष लंबे समय तक बने रह सकते हैं और सेहत पर असर पड़ता है।",
+      "क्या तुम्हें भी कम सोने के बाद अगले दिन थकान महसूस होती है?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,050 --> 00:00:02,773\nशोधकर्ताओं के अनुसार, नींद हमारे दिमाग को\n\n2\n00:00:02,773 --> 00:00:05,427\nतरोताजा रखने में बड़ी भूमिका निभाती है।\n\n3\n00:00:05,490 --> 00:00:07,725\nवैज्ञानिकों का मानना है कि गहरी नींद\n\n4\n00:00:07,725 --> 00:00:09,907\nके दौरान दिमाग की गतिविधि बदल जाती\n\n5\n00:00:09,907 --> 00:00:12,869\nहै। इस दौरान सेरेब्रॉस्पाइनल फ्लूइड दिमाग के\n\n6\n00:00:12,869 --> 00:00:14,988\nऊतकों के बीच से बहता है। यह\n\n7\n00:00:14,988 --> 00:00:17,456\nप्रक्रिया दिनभर की मेटाबॉलिक गतिविधियों से बने\n\n8\n00:00:17,456 --> 00:00:19,720\nअवशेषों को हटाने में मदद करती है।\n\n9\n00:00:19,720 --> 00:00:21,754\nलेकिन उम्र बढ़ने पर यह सफाई का\n\n10\n00:00:21,754 --> 00:00:24,159\nसिस्टम थोड़ा धीमा होने लगता है। उम्र\n\n11\n00:00:24,159 --> 00:00:26,045\nके साथ गहरी नींद में आने वाली\n\n12\n00:00:26,045 --> 00:00:28,020\nस्लो ब्रेन वेव्स कम हो जाती हैं।\n\n13\n00:00:28,020 --> 00:00:29,990\nवेव्स कम होने से फ्लूइड का यह\n\n14\n00:00:29,990 --> 00:00:32,540\nबहाव भी कमजोर पड़ जाता है। जिससे\n\n15\n00:00:32,540 --> 00:00:34,531\nअवशेष लंबे समय तक बने रह सकते\n\n16\n00:00:34,531 --> 00:00:36,620\nहैं और सेहत पर असर पड़ता है।\n\n17\n00:00:36,700 --> 00:00:38,503\nक्या तुम्हें भी कम सोने के बाद\n\n18\n00:00:38,503 --> 00:00:40,417\nअगले दिन थकान महसूस होती है?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [],
+      "footage": [
+        "scene(s) [1, 4, 5] have weak or placeholder footage"
+      ],
+      "review": [
+        "Frame 2: Hindi caption 'नीद' is misspelled (should be नींद)",
+        "Frame 3: English header 'BRAIN WAVE' is cut off at the top right edge"
+      ],
+      "heard": [
+        "\"शोधकर्ताओं\" heard as \"शोद करताओ\"",
+        "\"वैज्ञानिकों\" heard as \"वैग्यानिको\"",
+        "\"गतिविधि\" heard as \"गती विदिदी\"",
+        "\"ऊतकों\" heard as \"उत्को\"",
+        "\"गतिविधियों\" heard as \"गती विदियो\"",
+        "\"अवशेषों\" heard as \"अव्षेशो\"",
+        "\"लेकिन\" heard as \"लेकि\"",
+        "\"हैं।\" heard as \"है\""
+      ],
+      "scene_heard": [
+        "scene 1: 92%",
+        "scene 2: 85%",
+        "scene 3: 73%",
+        "scene 4: 86%",
+        "scene 5: 100%",
+        "scene 6: 86%",
+        "scene 7: 92%",
+        "scene 8: 79%",
+        "scene 9: 83%"
+      ],
+      "pass": false,
+      "duration": 40.4
+    },
+    "repairs": 2
   }
 ]
