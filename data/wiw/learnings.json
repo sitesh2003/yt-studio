@@ -1,15 +1,13 @@
 {
-  "summary": "1. Cut conversational wind-ups like 'You've seen...' or 'Ever wondered...' and start the hook immediately with the core action or trigger within the first 6 words.\n2. Frame titles as direct question hooks ('Why Does X Do Y?') rather than academic textbook titles featuring words like 'Chemistry Explained' or 'Biology of Cone Cells'.\n3. Keep script lengths target near ~35 seconds, as wordier 40-57 second setups severely degrade the early stayed percentage.\n4. Avoid complex hypothetical setups requiring setup time (e.g., lead spheres in a vacuum); focus on immediate, everyday physical reactions.\n5. Ensure the visual on screen matches the first spoken sentence instantaneously to prevent viewers from swiping away in the first 2 seconds.",
+  "summary": "1. Start hooks immediately with a specific visual action or direct question, skipping conversational preambles like 'You've used X your whole life.' 2. Focus on visible everyday household phenomena (e.g., baking soda fizz, salt on ice) rather than abstract biological systems or theoretical physics. 3. Keep titles short and clear without textbook subtitles like 'The Biology of Cone Cells Explained.' 4. Keep script length under 36 seconds; longer complex setups (50s+) cause early swipe-aways. 5. Frontload the physical mechanism in sentence one to boost the stayed rate above the channel's 40% threshold.",
   "winning_hooks": [
-    "Direct action-question hook: 'Why does [everyday substance A] react the moment it hits [substance B]?'",
-    "Immediate visual mystery without preamble: 'When does a lens actually flip the image upside down?'",
-    "High visual context opening: 'How does salt melt road ice on contact?'"
+    "Immediate, direct questions about visible reactions (e.g., 'Why does baking soda fizz the moment it hits vinegar?')",
+    "Concrete, everyday visual triggers (e.g., 'You've seen trucks dump salt on frozen roads...')"
   ],
   "avoid": [
-    "Conversational fluff openers ('You've used soap your whole life, but why...')",
-    "Academic sub-titles ('The Chemistry of...', 'The Biology of Cone Cells Explained')",
-    "Wordy multi-sentence scenario setups before stating the question ('A 10kg lead sphere and a 1kg lead sphere...')",
-    "Passive setup statements ending with 'It's simple physics'"
+    "Wordy conversational setups before reaching the actual question (e.g., 'You've used soap your whole life, but why...')",
+    "Abstract or theoretical concepts that lack immediate visual context (e.g., immune system training, lead spheres in a vacuum)",
+    "Long titles with academic/technical subtitles"
   ],
-  "next_experiment": "Test Hook Length & Directness: A/B test the same topic (e.g., Soap/Grease) using a long conversational preamble ('You've used soap your whole life...') versus a direct 4-word visual action hook ('Why does soap dissolve oil instantly?') keeping the rest of the video identical."
+  "next_experiment": "A/B test a 30-second Short on a household science topic: Version A starts instantly with a 7-word direct action question, while Version B starts with a 15-word situational setup sentence."
 }
