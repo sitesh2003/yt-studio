@@ -3625,7 +3625,8 @@
     "video_id": "omCteTHNw_Q",
     "publish_at": "2026-11-20T19:00:00-05:00",
     "thumbnail_set": true,
-    "answered": true
+    "answered": true,
+    "recapped": true
   },
   {
     "job": "20261117-0512-scientists-just-found-a-giant-hidden-wor",
@@ -4068,7 +4069,7 @@
       "marine biology"
     ],
     "hook": "That fresh farm salmon you bought is actually completely gray under its skin.",
-    "status": "banked",
+    "status": "scheduled",
     "narration": "That fresh farm salmon you bought is actually completely gray under its skin. Wild fish get their bright pink color from eating tiny ocean crustaceans full of red pigment. Farm pens sit away from natural wild food sources, so penned fish eat grain and fish meal instead. Without those specific marine pigments, their flesh grows in dull, drab shades of gray. So how do grocery store fillets get that vibrant pink look? Farmers mix precise natural carotenoids into the feed pellets to dye the meat. Ever thought why wild populations stay vibrant while farm fish need that exact color added?",
     "voice_engine": "chatterbox",
     "voices": "one narrator (af_heart)",
@@ -4159,7 +4160,10 @@
       "duration": 27.2
     },
     "repairs": 0,
-    "audited": true
+    "audited": true,
+    "video_id": "U4jbYRwloHM",
+    "publish_at": "2026-11-22T12:00:00-05:00",
+    "thumbnail_set": true
   },
   {
     "job": "20261118-2237-3-animals-that-never-stop-growing-throug",
@@ -5691,28 +5695,395 @@
     "thumbnail_set": true
   },
   {
-    "job": "hero_trex_baby",
-    "topic": "You're A Baby T. rex. How Do You Survive? 🦖",
-    "title": "You're A Baby T. rex. How Do You Survive? 🦖",
-    "description": "Start life the size of a small dog, end up a giant. Here's how a young T. rex survived, step by step, from the fossils. #shorts #dinosaurs #TRex #Science\n\nSources: Funston et al. 2021, Canadian Journal of Earth Sciences; Schroeder et al. 2021, Science; Woodward et al. 2020, Science Advances; Erickson et al. 2004, Nature (corrigendum 2016).\n3D models: Quaternius, Animated LowPoly Dinosaurs (CC0); Kenney, Car Kit (CC0). Animated in Blender.\n\nHow this was made: the script is researched and fact-checked against published research (sources above), narrated by an AI voice, and animated and edited with open-source software.",
+    "job": "20261121-1153-how-scientists-figured-out-this-shark-li",
+    "topic": "How scientists figured out this shark lives 400 years using nuclear bomb tests",
+    "title": "How Scientists Dated Ancient Greenland Sharks 🤯",
+    "description": "Discover how Cold War nuclear bomb tests accidentally helped scientists reveal the true four-hundred-year lifespan of the Greenland shark. #shorts #science #ocean\n\nSources (open-access research):\n- Nielsen et al. (2016), Science. doi:10.1126/science.aaf1703\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nPhoto by 12019 on Pixabay\nPhoto by PublicDomainPictures on Pixabay\nPhoto by WOKANDAPIX on Pixabay\nPhoto by paulbr75 on Pixabay\nPhoto: Department of Energy. Lawrence Berkeley National Laboratory., Public domain, via Wikimedia Commons\nVideo by AlexAntropov86 on Pixabay\nVideo by Engin_Akyurt on Pixabay\nVideo by FDJAL on Pixabay\nVideo by Republica on Pixabay",
     "tags": [
-      "T. rex",
-      "baby T. rex",
-      "dinosaurs",
-      "dinosaur growth",
-      "paleontology",
-      "science",
-      "3D animation"
+      "Greenland shark",
+      "marine biology",
+      "nuclear testing",
+      "carbon dating",
+      "animal lifespan"
     ],
-    "hook": "You're a baby tyrannosaur, no bigger than a small dog.",
-    "status": "scheduled",
-    "narration": "You're a baby tyrannosaur, no bigger than a small dog. So you don't fight. You run. Young T. rex had long, slim legs, built for speed. But your bite can't crush bone like an adult's. So you hunt smaller, quicker animals that the giants ignore. Then, around age fourteen, you hit a growth spurt, about two kilos heavier every single day. Four years later, you weigh several tonnes, and nothing hunts you anymore. So would you rather be the fast teenager, or the giant adult?",
+    "hook": "This shark lived for hundreds of years, and scientists used the legacy of nuclear bombs to prove it.",
+    "status": "review",
+    "narration": "This shark lived for hundreds of years, and scientists used the legacy of nuclear bombs to prove it. A Greenland shark grows less than a centimeter each year. Freezing Arctic water slows that growing shark's entire biology down. These sharks have cartilage instead of bones, which doesn't preserve well over centuries. So biologists checked that growing shark's eye lens instead. Protein layers build inside that growing shark's lens over centuries. Studying their tissues required a brand new biochemical approach. That is when researchers used the lasting fallout of past nuclear bomb tests to determine the shark's age. Atomic blasts flooded the growing shark's ocean with radioactive carbon. That carbon marked this growing shark's tissues for centuries. Matching that pulse to this growing shark's eye lens locked time. Ever thought how scientists date creatures that outlive human history?",
     "voice_engine": "chatterbox",
+    "voices": "one narrator (af_heart)",
+    "diagrams": 1,
+    "series": "Animal Whys",
     "countdown": false,
-    "hero_3d": true,
-    "question": "So would you rather be the fast teenager, or the giant adult?",
-    "video_id": "z0CKlJTp69A",
-    "publish_at": "2026-11-23T19:00:00-05:00",
-    "thumbnail_set": true
+    "length_arm": "long",
+    "question": "Ever thought how scientists date creatures that outlive human history?",
+    "answer_comment": "The answer: Nuclear bomb tests in the mid-twentieth century doubled the amount of radioactive carbon-14 in Earth's atmosphere. This pulse absorbed into ocean food webs and became trapped inside the inert protein layers of Greenland shark eye lenses, acting like an atomic timestamp. By measuring this carbon marker, researchers proved these sharks can live for centuries. Ever thought what other historical events might leave traces in animal biology?\n\nSources (open-access research):\n- Nielsen et al. (2016), Science. doi:10.1126/science.aaf1703",
+    "sources": [
+      {
+        "claim": "Researchers used radiocarbon dating of the eye lens nuclei to determine their lifespan.",
+        "cite": "Nielsen et al. (2016), Science. doi:10.1126/science.aaf1703",
+        "doi": "10.1126/science.aaf1703",
+        "title": "Eye lens radiocarbon reveals centuries of longevity in the Greenland shark ( Somniosus microcephalus )",
+        "why": "Radiocarbon dating of eye lens nuclei from 28 female Greenland sharks (81 to 502 cm in total length) revealed a life span of at least 272 years."
+      }
+    ],
+    "fact_check": [
+      "Greenland sharks are estimated to live for at least 250 to 400 years, making them the longest-lived vertebrates known.",
+      "Researchers used radiocarbon dating of the eye lens nuclei to determine their lifespan.",
+      "The radiocarbon spike from mid-20th-century thermonuclear bomb tests (the 'bomb pulse') provided the chronological marker used for calibration."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        5.0
+      ],
+      [
+        5.0,
+        7.72
+      ],
+      [
+        7.72,
+        11.45
+      ],
+      [
+        11.45,
+        14.98
+      ],
+      [
+        14.98,
+        17.77
+      ],
+      [
+        17.77,
+        21.06
+      ],
+      [
+        21.06,
+        24.74
+      ],
+      [
+        24.74,
+        29.61
+      ],
+      [
+        29.61,
+        33.27
+      ],
+      [
+        33.27,
+        36.57
+      ],
+      [
+        36.57,
+        39.68
+      ],
+      [
+        39.68,
+        43.14
+      ]
+    ],
+    "duration": 43.14,
+    "scene_lines": [
+      "This shark lived for hundreds of years, and scientists used the legacy of nuclear bombs to prove it.",
+      "A Greenland shark grows less than a centimeter each year.",
+      "Freezing Arctic water slows that growing shark's entire biology down.",
+      "These sharks have cartilage instead of bones, which doesn't preserve well over centuries.",
+      "So biologists checked that growing shark's eye lens instead.",
+      "Protein layers build inside that growing shark's lens over centuries.",
+      "Studying their tissues required a brand new biochemical approach.",
+      "That is when researchers used the lasting fallout of past nuclear bomb tests to determine the shark's age.",
+      "Atomic blasts flooded the growing shark's ocean with radioactive carbon.",
+      "That carbon marked this growing shark's tissues for centuries.",
+      "Matching that pulse to this growing shark's eye lens locked time.",
+      "Ever thought how scientists date creatures that outlive human history?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": "omCteTHNw_Q",
+    "captions_srt": "1\n00:00:00,000 --> 00:00:01,850\nThis shark lived for hundreds of years,\n\n2\n00:00:01,900 --> 00:00:03,480\nand scientists used the legacy of nuclear\n\n3\n00:00:03,480 --> 00:00:04,750\nbombs to prove it.\n\n4\n00:00:05,000 --> 00:00:07,570\nA Greenland shark grows less than a centimeter each year.\n\n5\n00:00:07,720 --> 00:00:11,250\nFreezing Arctic water slows that growing shark's entire biology down.\n\n6\n00:00:11,450 --> 00:00:13,150\nThese sharks have cartilage instead of bones,\n\n7\n00:00:13,150 --> 00:00:14,500\nwhich doesn't preserve well over centuries.\n\n8\n00:00:14,980 --> 00:00:17,570\nSo biologists checked that growing shark's eye lens instead.\n\n9\n00:00:17,770 --> 00:00:20,640\nProtein layers build inside that growing shark's lens over centuries.\n\n10\n00:00:21,060 --> 00:00:24,430\nStudying their tissues required a brand new biochemical approach.\n\n11\n00:00:24,740 --> 00:00:26,320\nThat is when researchers used the lasting\n\n12\n00:00:26,320 --> 00:00:28,120\nfallout of past nuclear bomb tests to\n\n13\n00:00:28,120 --> 00:00:29,290\ndetermine the shark's age.\n\n14\n00:00:29,610 --> 00:00:33,020\nAtomic blasts flooded the growing shark's ocean with radioactive carbon.\n\n15\n00:00:33,270 --> 00:00:36,080\nThat carbon marked this growing shark's tissues for centuries.\n\n16\n00:00:36,570 --> 00:00:38,190\nMatching that pulse to this growing shark's\n\n17\n00:00:38,190 --> 00:00:39,420\neye lens locked time.\n\n18\n00:00:39,680 --> 00:00:42,540\nEver thought how scientists date creatures that outlive human history?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [],
+      "footage": [
+        "scene(s) [4, 9] have weak or placeholder footage"
+      ],
+      "review": [
+        "Frame 1: Captions read 'SHARK FOUR HUNDRED YEARS' which cuts off the narrator's sentence 'This shark lived for hundreds of years, and scientists used the legacy of nuclear bombs to prove it.' but more importantly the image shown is of jellyfish, completely unrelated to a Greenland shark.",
+        "Frame 6: The visual shows a stack of blue glass, which is an obscure and potentially confusing analogy for protein layers in an eye lens, and the caption 'SHARK'S LENS OVER' is ungrammatical and incomplete.",
+        "Frame 8: The image shows a nuclear explosion over New York City (a real historical/scenic photo), but the caption and context talk about Greenland sharks in Arctic waters, making the imagery somewhat misleading or incongruous for a simple science short."
+      ],
+      "heard": [
+        "\"shark's\" heard as \"sharks'\"",
+        "\"checked\" heard as \"check\"",
+        "\"lens\" heard as \"lends\"",
+        "\"used\" heard as \"use\""
+      ],
+      "scene_heard": [
+        "scene 1: 100%",
+        "scene 2: 100%",
+        "scene 3: 90%",
+        "scene 4: 100%",
+        "scene 5: 78%",
+        "scene 6: 100%",
+        "scene 7: 100%",
+        "scene 8: 94%",
+        "scene 9: 90%",
+        "scene 10: 100%",
+        "scene 11: 91%",
+        "scene 12: 100%"
+      ],
+      "pass": false,
+      "duration": 42.9
+    },
+    "repairs": 2
+  },
+  {
+    "job": "20261121-1232-3-animals-that-can-survive-extreme-vacuu",
+    "topic": "3 animals that can survive extreme vacuum-like space conditions",
+    "title": "Why Tardigrades Survive Outer Space 🥶",
+    "description": "Tardigrades can survive the freezing vacuum of space by turning into a tun. Find out how this tiny animal defies physics.\n\n#shorts #science #animals\n\nSources (open-access research):\n- A (2014), Journal of Astrobiology & Outreach. doi:10.4172/2332-2519.1000121\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nIllustrations: drawn for this video with FLUX.2 [klein] 4B (AI, Apache 2.0) and checked for accuracy\nImage: NASA (public domain)\nPhoto: Consumerist Dot Com, BY 2.0, via Openverse (flickr)\nPhoto: Philippe Garcelon, BY 2.0, via Openverse (flickr)\nPhoto: mountainamoeba, BY 2.0, via Openverse (flickr)\nVideo by Nerd_Nonsense on Pixabay\nVideo by Sachingh on Pixabay",
+    "tags": [
+      "tardigrade",
+      "space",
+      "animals",
+      "science",
+      "survival"
+    ],
+    "hook": "Tardigrades survive the freezing vacuum of outer space like it is nothing.",
+    "status": "banked",
+    "narration": "Tardigrades survive the freezing vacuum of outer space like it is nothing. When exposed to the void of space, our tardigrade doesn't pop or freeze. Instead, the tardigrade squeezes every drop of water out of its body. This tardigrade curls up into a tiny, indestructible barrel called a tun. And here is the weird part. The tardigrade's metabolism drops to nearly zero. To survive the vacuum, the tardigrade's shell acts as a biological shield. Special proteins inside the tardigrade replace the lost water and lock its cells in place. Ever thought why a tiny creature needs to survive the vacuum of space?",
+    "voice_engine": "chatterbox",
+    "voices": "one narrator (af_heart)",
+    "diagrams": 1,
+    "series": "Animal Whys",
+    "countdown": false,
+    "length_arm": "standard",
+    "question": "Ever thought why a tiny creature needs to survive the vacuum of space?",
+    "answer_comment": "The answer: Tardigrades don't actually need to survive space in nature, since space is not their natural habitat. Instead, their incredible ability to dry out and form a protective tun evolved to help them survive severe droughts in moss patches right here on Earth. Space just happens to test those exact same survival traits! Got another extreme adaptation you're curious about?\n\nSources (open-access research):\n- A (2014), Journal of Astrobiology & Outreach. doi:10.4172/2332-2519.1000121",
+    "sources": [
+      {
+        "claim": "Tardigrades can survive exposure to the vacuum of outer space.",
+        "cite": "A (2014), Journal of Astrobiology & Outreach. doi:10.4172/2332-2519.1000121",
+        "doi": "10.4172/2332-2519.1000121",
+        "title": "Tardigrade Exposure to Outer Space Conditions - An Experimental Validation",
+        "why": "Tardigrades (Phylum Tardigrada -extreme-tolerant, microscopic invertebrate animals) exposed to desiccation and radiation treatment combinations in a laboratory setting yielded survivorship curves similar to survivorship curves yielded in 2007 by Tardigrades exposed to outer space conditions in the B"
+      }
+    ],
+    "fact_check": [
+      "Tardigrades can survive exposure to the vacuum of outer space.",
+      "Tardigrades enter a dehydrated state called cryptobiosis or forming a tun.",
+      "Tardigrades replace water with trehalose or specialized protectant proteins.",
+      "Their metabolism drops to less than one percent of normal during cryptobiosis."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        3.61
+      ],
+      [
+        3.61,
+        6.91
+      ],
+      [
+        6.91,
+        10.11
+      ],
+      [
+        10.11,
+        13.94
+      ],
+      [
+        13.94,
+        18.21
+      ],
+      [
+        18.21,
+        21.71
+      ],
+      [
+        21.71,
+        25.73
+      ],
+      [
+        25.73,
+        28.85
+      ]
+    ],
+    "duration": 28.85,
+    "scene_lines": [
+      "Tardigrades survive the freezing vacuum of outer space like it is nothing.",
+      "When exposed to the void of space, our tardigrade doesn't pop or freeze.",
+      "Instead, the tardigrade squeezes every drop of water out of its body.",
+      "This tardigrade curls up into a tiny, indestructible barrel called a tun.",
+      "And here is the weird part. The tardigrade's metabolism drops to nearly zero.",
+      "To survive the vacuum, the tardigrade's shell acts as a biological shield.",
+      "Special proteins inside the tardigrade replace the lost water and lock its cells in place.",
+      "Ever thought why a tiny creature needs to survive the vacuum of space?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,000 --> 00:00:02,000\nTardigrades survive the freezing vacuum of outer\n\n2\n00:00:02,000 --> 00:00:03,330\nspace like it is nothing.\n\n3\n00:00:03,610 --> 00:00:04,960\nWhen exposed to the void of space,\n\n4\n00:00:05,070 --> 00:00:06,660\nour tardigrade doesn't pop or freeze.\n\n5\n00:00:06,910 --> 00:00:08,830\nInstead, the tardigrade squeezes every drop of\n\n6\n00:00:08,830 --> 00:00:09,920\nwater out of its body.\n\n7\n00:00:10,110 --> 00:00:11,880\nThis tardigrade curls up into a tiny,\n\n8\n00:00:11,930 --> 00:00:13,640\nindestructible barrel called a tun.\n\n9\n00:00:13,940 --> 00:00:15,550\nAnd here is the weird part.\n\n10\n00:00:15,660 --> 00:00:18,050\nThe tardigrade's metabolism drops to nearly zero.\n\n11\n00:00:18,210 --> 00:00:19,200\nTo survive the vacuum,\n\n12\n00:00:19,370 --> 00:00:21,520\nthe tardigrade's shell acts as a biological shield.\n\n13\n00:00:21,710 --> 00:00:23,750\nSpecial proteins inside the tardigrade replace the\n\n14\n00:00:23,750 --> 00:00:25,420\nlost water and lock its cells in place.\n\n15\n00:00:25,730 --> 00:00:27,070\nEver thought why a tiny creature needs\n\n16\n00:00:27,070 --> 00:00:28,250\nto survive the vacuum of space?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [],
+      "footage": [],
+      "review": [],
+      "heard": [
+        "\"tardigrades survive\" heard as \"tardigrade survived\"",
+        "\"tun\" heard as \"ton\"",
+        "\"tardigrade's\" heard as \"tardigrade\"",
+        "\"tardigrade's\" heard as \"tardigrade\""
+      ],
+      "scene_heard": [
+        "scene 1: 83%",
+        "scene 2: 100%",
+        "scene 3: 100%",
+        "scene 4: 92%",
+        "scene 5: 92%",
+        "scene 6: 92%",
+        "scene 7: 100%",
+        "scene 8: 100%"
+      ],
+      "pass": true,
+      "duration": 28.6
+    },
+    "repairs": 1,
+    "audited": true
+  },
+  {
+    "job": "20261121-1258-nasa-s-hera-mission-reveals-asteroid-dim",
+    "topic": "NASA’s Hera mission reveals asteroid Dimorphos is not what we thought",
+    "title": "Why This Asteroid Is Actually a Giant Pile of Rubble 😳",
+    "description": "NASA expected a solid rock when they slammed a probe into asteroid Dimorphos. But the Hera mission revealed a bizarre reality. #shorts #nasa #space\n\nSources (open-access research):\n- Rożek et al. (2023), The Planetary Science Journal. doi:10.3847/psj/ad0a64\n- Tortora et al. (2025), Space Science Reviews. doi:10.1007/s11214-025-01253-8\n- Raducan et al. (2024), Nature Astronomy. doi:10.1038/s41550-024-02200-3\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nIllustrations: drawn for this video with FLUX.2 [klein] 4B (AI, Apache 2.0) and checked for accuracy\nPhoto by kart_r on Pixabay\nPhoto: H o l l y., BY 2.0, via Openverse (flickr)\nPhoto: James Webb Space Telescope, BY 2.0, via Openverse (flickr)\nVideo by Mario_Krimer on Pixabay\nVideo by NASA-Imagery on Pixabay\nVideo by choxyltd on Pixabay\n\nHow this was made: the script is researched and fact-checked with AI tools against open-access research (sources above when found), narrated by an AI voice, and edited with open-source software. Corrections from viewers are checked and credited.",
+    "tags": [
+      "NASA",
+      "Asteroid",
+      "Hera Mission",
+      "Dimorphos",
+      "Space Science"
+    ],
+    "hook": "What if a giant asteroid wasn't a solid rock, but a floating pile of gravel?",
+    "status": "banked",
+    "narration": "What if a giant asteroid wasn't a solid rock, but a floating pile of gravel? The spacecraft slammed into Dimorphos at high speed. Researchers measured the crater to see how much material shifted. Then the European Space Agency's Hera mission was launched to take a closer look. And what they found helped confirm scientists' theories about how these asteroids are built. Dimorphos isn't a solid rock at all. It is a loose swarm of boulders and debris held together by barely any gravity. The probe hit. The asteroid acted like a giant pile of rubble. It absorbed the blow and reshaped itself. Why does it behave like loose gravel?",
+    "voice_engine": "chatterbox",
+    "voices": "one narrator (af_heart)",
+    "diagrams": 1,
+    "series": "How Things Work",
+    "countdown": false,
+    "length_arm": "standard",
+    "question": "Ever thought why an asteroid that big behaves more like loose gravel than a mountain?",
+    "answer_comment": "The answer: Dimorphos formed from loose debris and boulders that drifted together over millions of years, held together by very weak gravity. Because there is no strong internal structure, it acts more like a loose pile of rubble than a solid mountain when struck.\n\nSources (open-access research):\n- Rożek et al. (2023), The Planetary Science Journal. doi:10.3847/psj/ad0a64\n- Tortora et al. (2025), Space Science Reviews. doi:10.1007/s11214-025-01253-8\n- Raducan et al. (2024), Nature Astronomy. doi:10.1038/s41550-024-02200-3",
+    "sources": [
+      {
+        "claim": "NASA's DART mission impacted Dimorphos on September 26, 2022.",
+        "cite": "Rożek et al. (2023), The Planetary Science Journal. doi:10.3847/psj/ad0a64",
+        "doi": "10.3847/psj/ad0a64",
+        "title": "Optical Monitoring of the Didymos–Dimorphos Asteroid System with the Danish Telescope around the DART Mission Impact",
+        "why": "The main spacecraft of the DART mission impacted the target asteroid Dimorphos, a small moon orbiting the asteroid Didymos (65803), on 2022 September 26."
+      },
+      {
+        "claim": "ESA's Hera mission was launched to survey the aftermath of the DART impact.",
+        "cite": "Tortora et al. (2025), Space Science Reviews. doi:10.1007/s11214-025-01253-8",
+        "doi": "10.1007/s11214-025-01253-8",
+        "title": "The Radio Science Experiment on Hera, Juventas and Milani",
+        "why": "Its primary objective is to conduct a detailed post-impact analysis of the Didymos binary asteroid system, with a focus on Dimorphos, the smaller moon impacted by DART."
+      },
+      {
+        "claim": "Data from the missions revealed Dimorphos is a rubble pile structure rather than a solid monolithic rock.",
+        "cite": "Raducan et al. (2024), Nature Astronomy. doi:10.1038/s41550-024-02200-3",
+        "doi": "10.1038/s41550-024-02200-3",
+        "title": "Physical properties of asteroid Dimorphos as derived from the DART impact",
+        "why": "These findings suggest that Dimorphos is a rubble pile that might have formed through rotational mass shedding and reaccumulation from Didymos."
+      }
+    ],
+    "fact_check": [
+      "NASA's DART mission impacted Dimorphos on September 26, 2022.",
+      "ESA's Hera mission was launched to survey the aftermath of the DART impact.",
+      "Data from the missions revealed Dimorphos is a rubble pile structure rather than a solid monolithic rock."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        4.23
+      ],
+      [
+        4.23,
+        7.05
+      ],
+      [
+        7.05,
+        9.87
+      ],
+      [
+        9.87,
+        14.23
+      ],
+      [
+        14.23,
+        18.4
+      ],
+      [
+        18.4,
+        20.43
+      ],
+      [
+        20.43,
+        24.08
+      ],
+      [
+        24.08,
+        29.32
+      ],
+      [
+        29.32,
+        31.28
+      ]
+    ],
+    "duration": 31.28,
+    "scene_lines": [
+      "What if a giant asteroid wasn't a solid rock, but a floating pile of gravel?",
+      "The spacecraft slammed into Dimorphos at high speed.",
+      "Researchers measured the crater to see how much material shifted.",
+      "Then the European Space Agency's Hera mission was launched to take a closer look.",
+      "And what they found helped confirm scientists' theories about how these asteroids are built.",
+      "Dimorphos isn't a solid rock at all.",
+      "It is a loose swarm of boulders and debris held together by barely any gravity.",
+      "The probe hit. The asteroid acted like a giant pile of rubble. It absorbed the blow and reshaped itself.",
+      "Why does it behave like loose gravel?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,000 --> 00:00:01,640\nWhat if a giant asteroid wasn't a\n\n2\n00:00:01,640 --> 00:00:03,690\nsolid rock, but a floating pile of gravel?\n\n3\n00:00:04,230 --> 00:00:06,840\nThe spacecraft slammed into Dimorphos at high speed.\n\n4\n00:00:07,050 --> 00:00:09,640\nResearchers measured the crater to see how much material shifted.\n\n5\n00:00:09,870 --> 00:00:12,090\nThen the European Space Agency's Hera mission\n\n6\n00:00:12,090 --> 00:00:14,020\nwas launched to take a closer look.\n\n7\n00:00:14,230 --> 00:00:16,150\nAnd what they found helped confirm scientists'\n\n8\n00:00:16,150 --> 00:00:18,080\ntheories about how these asteroids are built.\n\n9\n00:00:18,400 --> 00:00:20,250\nDimorphos isn't a solid rock at all.\n\n10\n00:00:20,430 --> 00:00:21,690\nIt is a loose swarm of boulders\n\n11\n00:00:21,690 --> 00:00:23,780\nand debris held together by barely any gravity.\n\n12\n00:00:24,080 --> 00:00:24,890\nThe probe hit.\n\n13\n00:00:24,980 --> 00:00:27,130\nThe asteroid acted like a giant pile of rubble.\n\n14\n00:00:27,270 --> 00:00:29,060\nIt absorbed the blow and reshaped itself.\n\n15\n00:00:29,320 --> 00:00:30,680\nWhy does it behave like loose gravel?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [],
+      "footage": [],
+      "review": [],
+      "heard": [
+        "extra \"a\""
+      ],
+      "scene_heard": [
+        "scene 1: 100%",
+        "scene 2: 100%",
+        "scene 3: 100%",
+        "scene 4: 100%",
+        "scene 5: 100%",
+        "scene 6: 100%",
+        "scene 7: 100%",
+        "scene 8: 100%",
+        "scene 9: 86%"
+      ],
+      "pass": true,
+      "duration": 31.0
+    },
+    "repairs": 0,
+    "audited": true
   }
 ]

@@ -3,6 +3,29 @@
 Every video, the claims it makes, and the open-access research behind them. Built automatically by
 agents/library.py; a source is listed only if its abstract was checked to support the claim.
 
+## Why Tardigrades Survive Outer Space 🥶
+*2026-11-21 · Animal Whys*
+
+- Tardigrades can survive exposure to the vacuum of outer space.
+- Tardigrades enter a dehydrated state called cryptobiosis or forming a tun.
+- Tardigrades replace water with trehalose or specialized protectant proteins.
+- Their metabolism drops to less than one percent of normal during cryptobiosis.
+
+Sources:
+- A (2014), Journal of Astrobiology & Outreach. doi:10.4172/2332-2519.1000121 — supports: Tardigrades can survive exposure to the vacuum of outer space.
+
+## Why This Asteroid Is Actually a Giant Pile of Rubble 😳
+*2026-11-21 · How Things Work*
+
+- NASA's DART mission impacted Dimorphos on September 26, 2022.
+- ESA's Hera mission was launched to survey the aftermath of the DART impact.
+- Data from the missions revealed Dimorphos is a rubble pile structure rather than a solid monolithic rock.
+
+Sources:
+- Rożek et al. (2023), The Planetary Science Journal. doi:10.3847/psj/ad0a64 — supports: NASA's DART mission impacted Dimorphos on September 26, 2022.
+- Tortora et al. (2025), Space Science Reviews. doi:10.1007/s11214-025-01253-8 — supports: ESA's Hera mission was launched to survey the aftermath of the DART impact.
+- Raducan et al. (2024), Nature Astronomy. doi:10.1038/s41550-024-02200-3 — supports: Data from the missions revealed Dimorphos is a rubble pile structure rather than a solid monolithic rock.
+
 ## How Guardrail Ends Are Designed to Save Lives
 *2026-11-20 · How Things Work*
 

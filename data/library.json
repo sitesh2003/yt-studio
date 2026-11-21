@@ -660,5 +660,56 @@
       "Higher blood supply supports longer, thicker hair growth on the scalp."
     ],
     "sources": []
+  },
+  {
+    "job": "20261121-1232-3-animals-that-can-survive-extreme-vacuu",
+    "date": "2026-11-21",
+    "title": "Why Tardigrades Survive Outer Space 🥶",
+    "topic": "3 animals that can survive extreme vacuum-like space conditions",
+    "series": "Animal Whys",
+    "weekly": false,
+    "claims": [
+      "Tardigrades can survive exposure to the vacuum of outer space.",
+      "Tardigrades enter a dehydrated state called cryptobiosis or forming a tun.",
+      "Tardigrades replace water with trehalose or specialized protectant proteins.",
+      "Their metabolism drops to less than one percent of normal during cryptobiosis."
+    ],
+    "sources": [
+      {
+        "cite": "A (2014), Journal of Astrobiology & Outreach. doi:10.4172/2332-2519.1000121",
+        "doi": "10.4172/2332-2519.1000121",
+        "claim": "Tardigrades can survive exposure to the vacuum of outer space."
+      }
+    ]
+  },
+  {
+    "job": "20261121-1258-nasa-s-hera-mission-reveals-asteroid-dim",
+    "date": "2026-11-21",
+    "title": "Why This Asteroid Is Actually a Giant Pile of Rubble 😳",
+    "topic": "NASA’s Hera mission reveals asteroid Dimorphos is not what we thought",
+    "series": "How Things Work",
+    "weekly": false,
+    "claims": [
+      "NASA's DART mission impacted Dimorphos on September 26, 2022.",
+      "ESA's Hera mission was launched to survey the aftermath of the DART impact.",
+      "Data from the missions revealed Dimorphos is a rubble pile structure rather than a solid monolithic rock."
+    ],
+    "sources": [
+      {
+        "cite": "Rożek et al. (2023), The Planetary Science Journal. doi:10.3847/psj/ad0a64",
+        "doi": "10.3847/psj/ad0a64",
+        "claim": "NASA's DART mission impacted Dimorphos on September 26, 2022."
+      },
+      {
+        "cite": "Tortora et al. (2025), Space Science Reviews. doi:10.1007/s11214-025-01253-8",
+        "doi": "10.1007/s11214-025-01253-8",
+        "claim": "ESA's Hera mission was launched to survey the aftermath of the DART impact."
+      },
+      {
+        "cite": "Raducan et al. (2024), Nature Astronomy. doi:10.1038/s41550-024-02200-3",
+        "doi": "10.1038/s41550-024-02200-3",
+        "claim": "Data from the missions revealed Dimorphos is a rubble pile structure rather than a solid monolithic rock."
+      }
+    ]
   }
 ]

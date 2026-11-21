@@ -1,21 +1,21 @@
 {
   "lessons": [
-    "Never open with a rhetorical question: Question-based hooks were the only videos with sub-1.0 retention at 10% ('Why do potatoes...' at 0.98, 'Maple syrup...' at 0.96, 'Drop an apple...' at 0.93), whereas bold declarative statements consistently drove high rewatches (Shark at 1.85, Foil at 1.30, Tuna at 1.22).",
-    "Cut interactive pauses and countdowns: Viewer retention drops sharply during 'Pause and guess' prompts (Foil lost 13.0% at 36%, Maple Syrup lost 8.3% at 52%).",
-    "Eliminate low-information filler lines right after the hook: Obvious or stalling setup lines produced the steepest drops in the dataset ('They look like similar fruits' shed 30.0% at 13%; 'They are not just there to look cool' shed 30.6% at 10%).",
-    "Lead with visual paradoxes and extreme comparisons: The highest-holding videos framed their topic around stark visual contrasts ('Tuna meat is red while cod is pure white' held 65.8% at midpoint and beat 86% of similar videos; 'Shark older than the United States' held 132.8% at midpoint).",
-    "Delay technical jargon until the core concept is understood: Dropping biological or chemical terminology too early caused significant secondary exits ('bromelain' in Pineapples lost 13.6% at 27%; 'intracellular gas spaces' in Fruits lost 6.7% at 29%)."
+    "Never repeat the video title word-for-word as the hook line—repeating the prompt (e.g., in the Potato video) caused an immediate 31.8% viewer drop.",
+    "Avoid empty filler statements like 'They are not just there to look cool' or 'They look like similar fruits'; viewers leave instantly when explanation is delayed.",
+    "Do not include interactive pauses or countdowns ('Pause and guess'); both instances in the dataset triggered immediate drops in retention.",
+    "Hooks that state a mind-bending counter-intuitive fact or stark visual contrast (e.g., 'older than the United States' or 'tuna vs cod meat') yield over 1.0 retention at 10% and significantly outperform baseline.",
+    "Avoid line duplication or repeating concepts across consecutive sentences; duplicated lines in guardrail scripts caused repeated viewer exits."
   ],
   "worst_moment_types": [
-    "Interactive stalling lines (e.g., 'Pause and guess...', 'three, two, one')",
-    "Low-value filler/stalling lines immediately following the hook (e.g., 'They look like similar fruits', 'They are not just there to look cool')",
-    "Early technical jargon dumps (e.g., enzyme names like 'bromelain', cellular mechanics like 'intracellular gas spaces')",
-    "Mid-script rhetorical questions (e.g., 'At negative fifteen degrees, why doesn't it freeze solid?', 'Wait, doesn't all glass snap the exact same way...?')"
+    "Verbatim title repetition at the start of the video",
+    "Empty filler tease sentences that delay explaining the mechanism",
+    "Interactive pauses and explicit countdown prompts ('Pause and guess... three, two, one')",
+    "Repeating the exact same phrase or explanation line twice"
   ],
   "best_hook_types": [
-    "Bold, hyperbolic historical/scale comparisons (e.g., 'This shark is older than the United States.')",
-    "Direct visual side-by-side contradictions (e.g., 'A bluefin tuna and a cod are both fish, but their meat looks like two completely different animals.')",
-    "Counter-intuitive sensory claims stated as absolute facts (e.g., 'You can touch hot foil briefly just as it comes out of the oven because it stores very little heat.')"
+    "Extreme historical/scale contrast statements ('This shark is older than the United States')",
+    "Direct visual comparison between two common items ('A bluefin tuna and a cod are both fish, but their meat looks like two completely different animals')",
+    "Everyday counter-intuitive science facts ('You can touch hot foil briefly just as it comes out of the oven')"
   ],
   "studied": "2026-11-21",
   "videos": 18

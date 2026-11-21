@@ -309,5 +309,42 @@
    "2": "LLM call failed on every model and provider: None"
   },
   "error": ""
+ },
+ {
+  "when": "2026-11-21 12:04",
+  "topic": "How scientists figured out this shark lives 400 years using nuclear bomb tests",
+  "drawn": [
+   2,
+   3,
+   4,
+   5
+  ],
+  "not_drawn": {},
+  "error": ""
+ },
+ {
+  "when": "2026-11-21 12:41",
+  "topic": "3 animals that can survive extreme vacuum-like space conditions",
+  "drawn": [
+   3,
+   5
+  ],
+  "not_drawn": {
+   "2": "The tardigrade is depicted as a single-celled green bacterium-like microorganism rather than a multicellular micro-animal, and the word 'TARDIGRADE' is placed t",
+   "4": "The image uses a green amoeba-like microbe emoji instead of a tardigrade, which can mislead a viewer about what a tardigrade actually looks like."
+  },
+  "error": ""
+ },
+ {
+  "when": "2026-11-21 13:05",
+  "topic": "NASA’s Hera mission reveals asteroid Dimorphos is not what we thought",
+  "drawn": [
+   2,
+   3,
+   4,
+   5
+  ],
+  "not_drawn": {},
+  "error": ""
  }
 ]

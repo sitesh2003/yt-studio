@@ -1,17 +1,5 @@
 [
   {
-    "job": "20261118-0321-why-farmed-salmon-meat-is-naturally-gray",
-    "title": "Why Farmed Salmon Meat Is Gray 🐟",
-    "assets": {
-      "mp4": 761794214,
-      "jpg": 761794412,
-      "json": 761794459
-    },
-    "locked": true,
-    "series": "Food Whys",
-    "stored": "2026-11-18T03:54:23.699075+00:00"
-  },
-  {
     "job": "20261120-0757-why-the-steel-box-at-a-highway-guardrail",
     "title": "How Guardrail Ends Are Designed to Save Lives",
     "assets": {
@@ -106,5 +94,29 @@
     "locked": true,
     "series": "Body Whys",
     "stored": "2026-11-20T17:18:37.796131+00:00"
+  },
+  {
+    "job": "20261121-1232-3-animals-that-can-survive-extreme-vacuu",
+    "title": "Why Tardigrades Survive Outer Space 🥶",
+    "assets": {
+      "mp4": 775592856,
+      "jpg": 775593080,
+      "json": 775593133
+    },
+    "locked": true,
+    "series": "Animal Whys",
+    "stored": "2026-11-21T12:58:15.418222+00:00"
+  },
+  {
+    "job": "20261121-1258-nasa-s-hera-mission-reveals-asteroid-dim",
+    "title": "Why This Asteroid Is Actually a Giant Pile of Rubble 😳",
+    "assets": {
+      "mp4": 775635826,
+      "jpg": 775636064,
+      "json": 775636089
+    },
+    "locked": true,
+    "series": "How Things Work",
+    "stored": "2026-11-21T13:14:34.823876+00:00"
   }
 ]

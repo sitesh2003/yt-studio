@@ -1,17 +1,15 @@
 {
-  "summary": "1. Focus exclusively on direct bodily phenomena and visceral human experiences rather than cold engineering or niche environmental topics.\n2. Keep opening sentences under 12 words and deliver an immediate myth-bust or startling statement in present tense using second-person ('Your...').\n3. Eliminate scenario roleplay setups ('You swerve off...') and rhetorical openings ('Ever noticed...'), which plummet stayed_pct below 37%.\n4. Keep video duration strictly under 25 seconds, as longer videos (30-50s) suffer heavy viewer drop-off and fail to reach the 1,200 view threshold.\n5. Write titles using visceral, active phrasing ('Eat You Back', 'Secretly Leaking') rather than descriptive academic summaries.",
+  "summary": "1. High-performing hooks open with an immediate, surprising direct assertion about the viewer's own body or physical reality ('Your eyes are leaking right now') rather than passive questions or scenario setups. 2. Topics focused on universal sensory experiences and human biology (pruning fingers, pineapple tongue burn, leaking eyes) consistently outperform niche engineering and ecological mechanisms (guardrails, windshield frit patterns, acorn cycles). 3. High-stayed titles use dramatic personification or vivid sensory language ('Why Fresh Pineapples Eat You Back') instead of academic descriptions ('How Acorns Indirectly Affect Lyme Disease Rates'). 4. Low-stayed videos fail in the first 2 seconds by using weak conversational starters like 'Ever noticed...' or slow hypothetical scenarios ('Your car swerves off...'). 5. Winning scripts combine direct myth-busting within the first 5 words with short, punchy durations under 25 seconds.",
   "winning_hooks": [
-    "Present-tense body horror/curiosity: 'Your eyes are leaking right now, and your brain is hiding it.' (stayed_pct: 51.9%)",
-    "Direct punchy myth-buster: 'Your fingers prune in water, but it is not because you are absorbing it like a sponge.' (stayed_pct: 65.6%)",
-    "Visceral anthropomorphism (<8 words): 'Fresh pineapple is literally eating you back.' (stayed_pct: 57.6%)",
-    "Extreme relatable baseline contrast: 'This shark is older than the United States.' (stayed_pct: 56.2%)"
+    "Direct bodily assertions with an immediate twist: 'Your eyes are leaking right now, and your brain is hiding it.'",
+    "Immediate myth-busting of common misconceptions: 'Your fingers prune in water, but it is not because you are absorbing it like a sponge.'",
+    "Provocative personification or extreme scale comparison: 'Fresh pineapple is literally eating you back.' / 'This shark is older than the United States.'"
   ],
   "avoid": [
-    "Rhetorical question openings: 'Ever noticed those tiny black dots fading around your car windshield?' (stayed_pct: 36.8%)",
-    "Fictional roleplay/narrative scenarios: 'Your car swerves off the highway right toward a steel guardrail.' (stayed_pct: 30.4%)",
-    "Wordy academic explanations: 'Massive acorn drops trigger Lyme disease spikes two years later...' (stayed_pct: 44.7%, views: 47)",
-    "Contradictory/Confusing setup statements: 'Drop an apple or a pear in a bowl of water and they both float.' (stayed_pct: 27.2%)",
-    "Longer durations (30-50 seconds): All videos in this length band failed to reach 600 views."
+    "Passive question openers (e.g., 'Ever noticed those tiny black dots fading around your car windshield?')",
+    "Slow hypothetical narrative setups (e.g., 'Your car swerves off the highway right toward a steel guardrail')",
+    "Academic titles with abstract multi-step topics (e.g., 'How Acorns Indirectly Affect Lyme Disease Rates')",
+    "Stating widely known facts slowly (e.g., 'Honey is famous for being one of the only natural foods...')"
   ],
-  "next_experiment": "A/B test a 20-second body-science topic with Hook A (Direct Myth-Bust: 'Your stomach isn't digesting food the way you think it is.') vs Hook B (Visceral Statement: 'Your stomach acid is strong enough to dissolve metal right now.'). Measure stayed_pct against the 55% threshold."
+  "next_experiment": "A/B test a single topic (e.g., muscle twitches) using two different hook formats: Version A opens with a direct bodily command/assertion ('Your muscles are twitching right now because your nervous system misfired'), and Version B opens with a passive question ('Ever wonder why your eyelid twitches?'), keeping visual cues, title, and script length identical."
 }
