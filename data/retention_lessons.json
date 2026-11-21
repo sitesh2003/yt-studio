@@ -1,21 +1,21 @@
 {
   "lessons": [
-    "Never repeat the video title word-for-word as the hook line—repeating the prompt (e.g., in the Potato video) caused an immediate 31.8% viewer drop.",
-    "Avoid empty filler statements like 'They are not just there to look cool' or 'They look like similar fruits'; viewers leave instantly when explanation is delayed.",
-    "Do not include interactive pauses or countdowns ('Pause and guess'); both instances in the dataset triggered immediate drops in retention.",
-    "Hooks that state a mind-bending counter-intuitive fact or stark visual contrast (e.g., 'older than the United States' or 'tuna vs cod meat') yield over 1.0 retention at 10% and significantly outperform baseline.",
-    "Avoid line duplication or repeating concepts across consecutive sentences; duplicated lines in guardrail scripts caused repeated viewer exits."
+    "Keep hooks concise and direct: the top-performing video ('Why Tuna Meat Is Red Meat While Cod Is Pure White') used an immediate, striking contrast at 8% into the video that retained an impressive 0.57 start metric.",
+    "Eliminate empty filler lines early: videos with vague hook lines or placeholder text (e.g., 'Why your eyes are secretly leaking') suffered early drop-offs exceeding 13% within the first 15% of the runtime.",
+    "Avoid redundant explanations: 'Why Highway Guardrails Have Heavy End Boxes' repeated the exact same line ('Instead of impaling your vehicle...') for consecutive drop points, resulting in poor end-retention (0.125).",
+    "Rethink pauses and countdowns: elements involving explicit pauses or countdown timers (e.g., in 'How 400 Degree Foil Stays Safe' and 'Why Car Windshields Have Black Dots') frequently coincided with the biggest viewer drop-off points.",
+    "Incorporate rare, extreme natural facts: the 'This Shark Can Live For Centuries!' video leveraged a uniquely extreme premise ('older than the United States'), achieving massive rewatch metrics (1.85 at 10%, 1.08 at end)."
   ],
   "worst_moment_types": [
-    "Verbatim title repetition at the start of the video",
-    "Empty filler tease sentences that delay explaining the mechanism",
-    "Interactive pauses and explicit countdown prompts ('Pause and guess... three, two, one')",
-    "Repeating the exact same phrase or explanation line twice"
+    "Repeated or duplicated explanation lines",
+    "Vague filler statements (e.g., 'They are not just there to look cool')",
+    "Slow-paced pauses or countdown mechanics (e.g., 'Pause and guess... three, two, one')",
+    "Abstract definitions before concrete visuals"
   ],
   "best_hook_types": [
-    "Extreme historical/scale contrast statements ('This shark is older than the United States')",
-    "Direct visual comparison between two common items ('A bluefin tuna and a cod are both fish, but their meat looks like two completely different animals')",
-    "Everyday counter-intuitive science facts ('You can touch hot foil briefly just as it comes out of the oven')"
+    "Immediate startling contrasts or biological oddities (e.g., fish meat comparisons, extreme lifespans)",
+    "Direct, high-stakes physical phenomena tied to everyday objects",
+    "Action-driven physical danger or bodily reactions (spicy food, shark aging, fresh pineapple enzymes)"
   ],
   "studied": "2026-11-21",
   "videos": 18

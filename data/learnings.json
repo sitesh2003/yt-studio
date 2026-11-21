@@ -1,15 +1,14 @@
 {
-  "summary": "1. High-performing hooks open with an immediate, surprising direct assertion about the viewer's own body or physical reality ('Your eyes are leaking right now') rather than passive questions or scenario setups. 2. Topics focused on universal sensory experiences and human biology (pruning fingers, pineapple tongue burn, leaking eyes) consistently outperform niche engineering and ecological mechanisms (guardrails, windshield frit patterns, acorn cycles). 3. High-stayed titles use dramatic personification or vivid sensory language ('Why Fresh Pineapples Eat You Back') instead of academic descriptions ('How Acorns Indirectly Affect Lyme Disease Rates'). 4. Low-stayed videos fail in the first 2 seconds by using weak conversational starters like 'Ever noticed...' or slow hypothetical scenarios ('Your car swerves off...'). 5. Winning scripts combine direct myth-busting within the first 5 words with short, punchy durations under 25 seconds.",
+  "summary": "1. Focus strictly on immediate bodily, sensory, or visceral phenomena (e.g., pruning fingers, pineapple burning, leaking eyes) rather than distant engineering or abstract ecological chains. 2. Start the first sentence with an aggressive counter-intuitive claim or direct bodily confrontation (e.g., 'Fresh pineapple is literally eating you back') instead of setting up a hypothetical scenario ('Your car swerves off...'). 3. Immediately debunk a common misconception in sentence one using a contrast word like 'but' or 'not' (e.g., 'it is not because you are absorbing it like a sponge'). 4. Craft titles using action-driven or provocative phrasing ('Eat You Back', 'Secretly Leaking') rather than passive explanatory questions or technical jargon ('Heavy End Boxes', 'Lyme Disease Rates'). 5. Keep voiceover duration under 25 seconds of punchy pacing, eliminating cliché opener questions ('Ever noticed...?') that invite viewers to swipe away.",
   "winning_hooks": [
-    "Direct bodily assertions with an immediate twist: 'Your eyes are leaking right now, and your brain is hiding it.'",
-    "Immediate myth-busting of common misconceptions: 'Your fingers prune in water, but it is not because you are absorbing it like a sponge.'",
-    "Provocative personification or extreme scale comparison: 'Fresh pineapple is literally eating you back.' / 'This shark is older than the United States.'"
+    "State an active bodily disruption occurring right now ('Your eyes are leaking right now, and your brain is hiding it')",
+    "Debunk a universally accepted myth in the first 8 words ('Your fingers prune in water, but it is not because...')",
+    "Use extreme historical or visceral comparisons ('This shark is older than the United States' / 'Fresh pineapple is literally eating you back')"
   ],
   "avoid": [
-    "Passive question openers (e.g., 'Ever noticed those tiny black dots fading around your car windshield?')",
-    "Slow hypothetical narrative setups (e.g., 'Your car swerves off the highway right toward a steel guardrail')",
-    "Academic titles with abstract multi-step topics (e.g., 'How Acorns Indirectly Affect Lyme Disease Rates')",
-    "Stating widely known facts slowly (e.g., 'Honey is famous for being one of the only natural foods...')"
+    "Cliché observational question openings like 'Ever noticed those tiny black dots...?'",
+    "Long situational story setups like 'You just smashed your elbow on a desk and now...'",
+    "Dry Wikipedia-style fact declarations like 'Honey is famous for being one of the only natural foods...'"
   ],
-  "next_experiment": "A/B test a single topic (e.g., muscle twitches) using two different hook formats: Version A opens with a direct bodily command/assertion ('Your muscles are twitching right now because your nervous system misfired'), and Version B opens with a passive question ('Ever wonder why your eyelid twitches?'), keeping visual cues, title, and script length identical."
+  "next_experiment": "Test Hook Frame: Compare a direct myth-busting contrast ('Topic X happens, but NOT because of Y') against an extreme personal confrontation ('Your body is currently doing X right now without you knowing') on the exact same topic."
 }
