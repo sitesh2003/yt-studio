@@ -6694,5 +6694,28 @@
     "video_id": "IKxuhUWfoXs",
     "publish_at": "2026-11-22T09:30:00-05:00",
     "thumbnail_set": true
+  },
+  {
+    "job": "hero_crumple_hi",
+    "topic": "Crash में Car का पिचकना क्यों ज़रूरी है? 🚗",
+    "title": "Crash में Car का पिचकना क्यों ज़रूरी है? 🚗",
+    "description": "जो car crash में पिचक जाती है, वो तुम्हें ज़्यादा बचाती है। Physics सीधी है: उतना ही रुकना, ज़्यादा time में, तो कम force. #shorts #hindi #physics #science\n\nSources: Newton's second law (impulse); Bela Barenyi crumple-zone patent DBP 854 157 (filed 1951, granted 1952), German Patent and Trade Mark Office; Mercedes-Benz W 111 (1959), Mercedes-Benz history.\n3D models: Quaternius, Animated LowPoly Dinosaurs (CC0); Kenney, Car Kit (CC0). Animated in Blender.\n\nHow this was made: the script is researched and fact-checked against published research (sources above), narrated by an AI voice, and animated and edited with open-source software.",
+    "tags": [
+      "crumple zone",
+      "car safety hindi",
+      "physics hindi",
+      "Newton's second law",
+      "science hindi"
+    ],
+    "hook": "जो car crash में पिचक जाती है, वो तुम्हें ज़्यादा बचाती है।",
+    "status": "scheduled",
+    "narration": "जो car crash में पिचक जाती है, वो तुम्हें ज़्यादा बचाती है। ये दोनों cars एक ही speed से दीवार से टकराती हैं, और दोनों रुक जाती हैं। सख़्त car लगभग एक पल में रुक जाती है, तो अंदर बैठे लोगों पर बहुत बड़ी force पड़ती है। पिचकने वाला front रुकने का time बढ़ा देता है, तो अंदर वालों पर force कम हो जाती है। यही है Newton का second law. Speed का उतना ही बदलाव, ज़्यादा time में हो, तो कम force लगती है। ये idea 1952 में patent हुआ, और Mercedes-Benz ने 1959 में इसे पहली बार एक production car में लगाया। कभी सोचा है, फिर car का बीच वाला हिस्सा सबसे मज़बूत क्यों बनाया जाता है?",
+    "voice_engine": "edge-tts",
+    "countdown": false,
+    "hero_3d": true,
+    "question": "कभी सोचा है, फिर car का बीच वाला हिस्सा सबसे मज़बूत क्यों बनाया जाता है?",
+    "video_id": "4j7Nm4rsIUU",
+    "publish_at": "2026-11-23T02:30:00-05:00",
+    "thumbnail_set": true
   }
 ]

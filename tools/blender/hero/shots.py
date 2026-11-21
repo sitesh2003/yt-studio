@@ -745,6 +745,7 @@ def film_setup():
     except Exception:
         pass
     sc.cycles.max_bounces = 4
+    sc.render.use_motion_blur = False      # Cycles blur re-evaluates every frame several times; ~2x slower
     sc.render.film_transparent = False
 
 
