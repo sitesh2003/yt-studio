@@ -1,14 +1,18 @@
 {
-  "summary": "1. Replace passive rhetorical questions with high-stakes declarative statements featuring extreme contrasts (e.g., high-tech astronaut survival vs. a single cheap plastic sheet). 2. Script hooks in conversational Romanized Hinglish instead of formal Devanagari Hindi or dry academic English. 3. Target concrete, high-tension engineering or space survival angles rather than abstract biological or carbon-cycle topics. 4. Keep titles under 55 characters in English/Hinglish with a curiosity trigger (e.g., 'Moon Bases', 'Hydroplaning') and avoid textbook-style subclauses. 5. Maintain video duration tightly between 40–44 seconds, as longer durations (>50s) fail to convert retention despite high initial watch time.",
+  "summary": [
+    "Prioritize immediate, tangible survival or human-interest stakes over abstract scientific concepts to maximize stayed_pct.",
+    "Structure titles and hooks as 'Solution-First' queries, focusing on the mechanism ('how' or 'why') rather than just naming the subject.",
+    "Use high-contrast, relatable examples (e.g., life/death, food, home life) in the first sentence to bypass the 'educational content' barrier.",
+    "Avoid academic or passive framing in the hook; the highest performing video uses a specific threat (survival) to drive retention.",
+    "Keep hooks under 15 words and ensure the visual transition happens within 2 seconds to maintain the 60%+ threshold required for algorithm growth."
+  ],
   "winning_hooks": [
-    "High-stakes counterintuitive statements: 'Space missions mein astronauts ke liye sirf ek thin plastic sheet jaan bacha sakti hai 🤯'",
-    "Specific high-velocity danger metrics framed with immediate physical action: '250 km/h की speed से गीली runway पर plane hydroplaning से कैसे बचता है?'"
+    "Space missions mein astronauts ke liye sirf ek thin plastic sheet jaan bacha sakti hai 🤯"
   ],
   "avoid": [
-    "Passive rhetorical questions like 'Ever thought why...' that give viewers an immediate reason to swipe away.",
-    "Abstract, school-curriculum concepts that lack human or survival stakes (e.g., 'deep ocean snow moves carbon').",
-    "Overly long, formal Devanagari titles and hooks that read like newspaper articles rather than dynamic Shorts feeds.",
-    "Low-stakes domestic observations (e.g., leftover rajma in the fridge) that fail to generate immediate urgency in the first 2 seconds."
+    "Avoid passive, broad scientific introductions like 'Ever thought why...'",
+    "Avoid long-form academic descriptions in the title that do not promise a clear, specific answer to a mystery.",
+    "Avoid overly technical jargon in the first three seconds that makes the viewer feel like they are in a classroom."
   ],
-  "next_experiment": "Test Hook Syntax on the same engineering topic: A (Declarative shocker: 'Ye 2-millimeter ke grooves 250 km/h ke plane ko crash hone se bachaate hain') vs. B (Standard question: 'Wet runway par plane hydroplaning se kaise bachta hai?'), keeping title, visuals, and length identical at 42 seconds."
+  "next_experiment": "A/B test the 'Survival/Risk' frame: Compare a video explaining a complex phenomenon by starting with the potential catastrophe (e.g., 'If this tiny part fails, the plane crashes') versus starting with the technical term for the phenomenon."
 }

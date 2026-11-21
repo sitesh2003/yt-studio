@@ -81,20 +81,12 @@
     "tries": 0
   },
   {
-    "topic": "3 strange everyday objects like smoke detectors, old camera lenses, and vintage glow-in-the-dark clocks that secretly contain radioactive materials",
-    "pulled": "20261118-2207-3-strange-everyday-objects-like-smoke-de",
-    "title": "Common Household Items That Contain Radioactive Materials",
-    "kind": "countdown",
-    "why": "remake properly: the label 'Turn:' was spoken aloud; story style with tum, one closing question, nothing after it",
-    "tries": 0
-  },
-  {
     "topic": "Scientists just discovered 100-million-year-old fossilized dinosaur droppings proving giant plant-eating dinosaurs regularly ate ocean seaweed",
     "pulled": "20261119-0939-scientists-just-discovered-100-million-y",
     "title": "When Dinosaurs Ate Ocean Seaweed 🤯",
     "kind": "countdown",
     "why": "remake properly: the label 'Turn:' was spoken aloud; story style with tum, one closing question, nothing after it",
-    "tries": 0
+    "tries": 1
   },
   {
     "topic": "Why emotional tears from sadness contain high stress hormones while reflex tears from chopping onions are almost pure water",
@@ -102,7 +94,7 @@
     "title": "Why Onion Tears Are Not Sad Tears 😭",
     "kind": "countdown",
     "why": "remake properly: the label 'Turn:' was spoken aloud; story style with tum, one closing question, nothing after it",
-    "tries": 1
+    "tries": 2
   },
   {
     "topic": "3 Hidden Engineering Features Inside Commercial Airplane Windows That Keep the Cabin Safe at 35,000 Feet",
@@ -110,15 +102,7 @@
     "title": "The Hidden Engineering Inside Plane Windows 😱",
     "kind": "countdown",
     "why": "remake properly: the label 'Turn:' was spoken aloud; story style with tum, one closing question, nothing after it",
-    "tries": 1
-  },
-  {
-    "topic": "New discovery reveals what may be holding back room-temperature superconductors",
-    "pulled": "20261119-1911-new-discovery-reveals-what-may-be-holdin",
-    "title": "The Challenge of Room-Temperature Superconductors",
-    "kind": "countdown",
-    "why": "remake properly: the label 'Turn:' was spoken aloud; story style with tum, one closing question, nothing after it",
-    "tries": 1
+    "tries": 2
   },
   {
     "topic": "Why microwaving a stainless steel spoon didn't set your kitchen on fire",
@@ -126,7 +110,7 @@
     "title": "Why Microwaving Metal Can Sometimes Cause Sparks 🤯",
     "kind": "countdown",
     "why": "remake properly: the label 'Turn:' was spoken aloud; story style with tum, one closing question, nothing after it",
-    "tries": 1
+    "tries": 2
   },
   {
     "topic": "Scientists just found MIT discovered aging weakens the brain's nighttime cleaning system",

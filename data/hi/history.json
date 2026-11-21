@@ -5365,7 +5365,7 @@
       "glacier"
     ],
     "hook": "Usual ice cubes in your freezer are white, but a massive block of glacier ice can appear deep blue.",
-    "status": "scheduled",
+    "status": "public",
     "narration": "Usual ice cubes in your freezer are white, but a massive block of glacier ice can appear deep blue. Jab tum chota ice cube banate ho, usme hawa ke bubbles trap ho jaate hain. Ye bubbles light ko scatter karte hain, isliye wo white dikhta hai. Lekin glacier ke saath aisa nahi hai. Saalon tak padne wali barf ki pressure se air bubbles nikal jaate hain, making the ice very clear. Iska matlab ye ice ki density badh jaati hai, lekin blue rang ke liye mukhya kaaran ice ka structure aur uski motai hai. But wait, light ka blue dikhna sirf ek illusion nahi hai. Jaise-jaise light ice mein deep travel karti hai, ice ke molecules red aur yellow colors ko absorb kar lete hain. 3... 2... 1... guess karo, kya ye blue light bas ice ke aar-paar ja rahi hai? Actually, it's a bit more complex than that. Ye light ice ke andar scatter hokar wapis tumhari aankhon tak aati hai, jisme se red wavelengths pehle hi absorb ho chuki hoti hain. Isliye sirf blue light bachti hai. Ever thought why it only happens in thick blocks? Kyunki jitni zyada ice hogi, utna zyada red light absorb hoga aur blue rang utna gehra dikhega.",
     "voice_engine": "edge-tts",
     "voices": "one narrator (hi-IN-SwaraNeural)",
@@ -5465,7 +5465,9 @@
     "audited": true,
     "video_id": "eIoWGRMy-0E",
     "publish_at": "2026-11-21T02:30:00-05:00",
-    "thumbnail_set": true
+    "thumbnail_set": true,
+    "recapped": true,
+    "answered": true
   },
   {
     "job": "20261120-1826-new-discovery-reveals-what-may-be-holdin",
@@ -6058,26 +6060,639 @@
     "replaces": "ONLgJLVA5TI"
   },
   {
-    "job": "hero_trex_bite_hi",
-    "topic": "T. rex का Bite कितना ताकतवर था? 🦖",
-    "title": "T. rex का Bite कितना ताकतवर था? 🦖",
-    "description": "सोचो, तुम्हारे दांतों पर 3 छोटी cars रख दी जाएं, इतने ज़ोर से T. rex काटता था। Scientists ने ये कैसे पता किया, और वो fossil potty जो साबित करती है कि वो bones तोड़ता था। #shorts #hindi #dinosaur #science\n\nSources: Gignac & Erickson 2017, Scientific Reports (doi:10.1038/s41598-017-02161-w); Erickson et al. 2012, PLoS ONE (doi:10.1371/journal.pone.0031781); Chin et al. 1998, Nature (doi:10.1038/31461).\n3D models: Quaternius, Animated LowPoly Dinosaurs (CC0); Kenney, Car Kit (CC0). Animated in Blender.\n\nHow this was made: the script is researched and fact-checked against published research (sources above), narrated by an AI voice, and animated and edited with open-source software.",
+    "job": "20261121-0906-why-microwaving-a-stainless-steel-spoon-",
+    "topic": "Why microwaving a stainless steel spoon didn't set your kitchen on fire",
+    "title": "Why Some Metal Objects Spark in the Microwave While Others Don't",
+    "description": "Ever wondered why a stainless steel spoon doesn't spark while a fork can cause sparks? Let's look at the hidden physics behind metal shapes and electrical fields.\n\n#shorts #science #kitchen\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nIllustrations: drawn for this video with FLUX.2 [klein] 4B (AI, Apache 2.0) and checked for accuracy\nPhoto by HHbaoan on Pixabay\nPhoto by wal_172619 on Pixabay\nPhoto: Incase., BY 2.0, via Openverse (flickr)\nPhoto: ~jar{}, BY 2.0, via Openverse (flickr)\nVideo by wastedgeneration on Pixabay\n\nयह वीडियो कैसे बना: स्क्रिप्ट को AI tools की मदद से open research के आधार पर लिखा और fact-check किया गया है, आवाज़ AI voice की है, और editing open-source software से हुई है। कोई गलती दिखे तो comment में बताइए — जाँच कर सुधार करेंगे।",
     "tags": [
-      "T. rex",
-      "dinosaur hindi",
-      "bite force",
-      "science hindi",
-      "3D animation"
+      "science facts",
+      "microwave physics"
     ],
-    "hook": "सोचो, तुम्हारे दांतों पर 3 छोटी cars एक के ऊपर एक रख दी जाएं। इतने ज़ोर से T. rex काटता था।",
-    "status": "scheduled",
-    "narration": "सोचो, तुम्हारे दांतों पर 3 छोटी cars एक के ऊपर एक रख दी जाएं। इतने ज़ोर से T. rex काटता था। Scientists ने उसके jaw muscles उसके सबसे करीबी ज़िंदा रिश्तेदारों से समझकर बनाए, मगरमच्छ और birds। उनका estimate, पीछे के दांतों पर 34,500 newton तक। ये अब तक नापे गए सबसे ताकतवर bite, खारे पानी के मगरमच्छ से दोगुने से भी ज़्यादा है। उसके नुकीले दांत ये सारी force एक छोटी सी नोक पर डालते थे, इतनी कि bone टूट जाए। और हमें पता है उसने ऐसा किया। एक बड़ी fossil potty, जो शायद T. rex की है, उसमें आधे तक टूटी हुई bones हैं। कभी सोचा है, इतना बड़ा शिकारी हड्डियां भी क्यों खा जाता था?",
+    "hook": "Microwaving metal is generally unsafe, but thick, smooth spoons are less likely to spark than thin forks or foil.",
+    "status": "review",
+    "narration": "Microwaving metal is generally unsafe, but thick, smooth spoons are less likely to spark than thin forks or foil. Everyone thinks metal always creates instant lightning inside the machine. That happens with thin forks or crumpled foil edges. Those sharp points concentrate electrical fields until air breaks down. But here's the twist. The spoon is thick and completely rounded. Its smooth curves spread the electrical charge evenly across the surface. So the voltage never gets high enough to jump through the air. Ever wondered why frozen water expands instead of shrinking like most other liquids? Ever thought why a stainless steel spoon doesn't spark while a fork can cause sparks?",
     "voice_engine": "edge-tts",
+    "voices": "one narrator (hi-IN-SwaraNeural)",
+    "diagrams": 1,
+    "series": "How Things Work",
     "countdown": false,
-    "hero_3d": true,
-    "question": "कभी सोचा है, इतना बड़ा शिकारी हड्डियां भी क्यों खा जाता था?",
-    "video_id": "af394fizUAk",
-    "publish_at": "2026-11-22T02:30:00-05:00",
+    "length_arm": "standard",
+    "question": "Ever thought why a stainless steel spoon doesn't spark while a fork can cause sparks?",
+    "answer_comment": "The answer: A thick, smooth stainless steel spoon distributes electrical charges evenly across its rounded surface, preventing voltage from concentrating enough to arc. Thin forks or foil have sharp points where charge builds up rapidly, creating sparks. Got a question about everyday items? Drop it below!",
+    "sources": [],
+    "fact_check": [
+      "Microwaving certain smooth, thick stainless steel objects (like spoons) often does not cause arcing because the thickness and lack of sharp edges prevent charge concentration.",
+      "Thin metal objects with sharp points (like forks or crumpled foil) concentrate electromagnetic fields, leading to dielectric breakdown of air and visible sparks.",
+      "Yesterday's answer: Water expands upon freezing due to hydrogen bonding creating an open crystal lattice structure."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        6.77
+      ],
+      [
+        6.77,
+        10.95
+      ],
+      [
+        10.95,
+        14.31
+      ],
+      [
+        14.31,
+        18.56
+      ],
+      [
+        18.56,
+        22.38
+      ],
+      [
+        22.38,
+        26.66
+      ],
+      [
+        26.66,
+        29.87
+      ],
+      [
+        29.87,
+        34.95
+      ],
+      [
+        34.95,
+        40.25
+      ]
+    ],
+    "duration": 40.25,
+    "scene_lines": [
+      "Microwaving metal is generally unsafe, but thick, smooth spoons are less likely to spark than thin forks or foil.",
+      "Everyone thinks metal always creates instant lightning inside the machine.",
+      "That happens with thin forks or crumpled foil edges.",
+      "Those sharp points concentrate electrical fields until air breaks down.",
+      "But here's the twist. The spoon is thick and completely rounded.",
+      "Its smooth curves spread the electrical charge evenly across the surface.",
+      "So the voltage never gets high enough to jump through the air.",
+      "Ever wondered why frozen water expands instead of shrinking like most other liquids?",
+      "Ever thought why a stainless steel spoon doesn't spark while a fork can cause sparks?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": "eIoWGRMy-0E",
+    "captions_srt": "1\n00:00:00,050 --> 00:00:02,999\nMicrowaving metal is generally unsafe, but thick,\n\n2\n00:00:02,999 --> 00:00:04,867\nsmooth spoons are less likely to spark\n\n3\n00:00:04,867 --> 00:00:06,631\nthan thin forks or foil.\n\n4\n00:00:06,770 --> 00:00:10,939\nEveryone thinks metal always creates instant lightning inside the machine.\n\n5\n00:00:10,950 --> 00:00:14,310\nThat happens with thin forks or crumpled foil edges.\n\n6\n00:00:14,310 --> 00:00:18,501\nThose sharp points concentrate electrical fields until air breaks down.\n\n7\n00:00:18,560 --> 00:00:19,920\nBut here's the twist.\n\n8\n00:00:19,920 --> 00:00:22,380\nThe spoon is thick and completely rounded.\n\n9\n00:00:22,380 --> 00:00:24,774\nIts smooth curves spread the electrical charge\n\n10\n00:00:24,774 --> 00:00:26,634\nevenly across the surface.\n\n11\n00:00:26,660 --> 00:00:28,567\nSo the voltage never gets high enough\n\n12\n00:00:28,567 --> 00:00:29,844\nto jump through the air.\n\n13\n00:00:29,870 --> 00:00:32,414\nEver wondered why frozen water expands instead\n\n14\n00:00:32,414 --> 00:00:34,733\nof shrinking like most other liquids?\n\n15\n00:00:34,950 --> 00:00:37,173\nEver thought why a stainless steel spoon\n\n16\n00:00:37,173 --> 00:00:39,651\ndoesn't spark while a fork can cause sparks?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [
+        "only 54% of the script is heard as written",
+        "scene 1 (0.0-6.8 s): only 5% of its words can be heard - the voice breaks up or drops out",
+        "scene 2 (6.8-11.0 s): only 20% of its words can be heard - the voice breaks up or drops out",
+        "scene 3 (11.0-14.3 s): only 0% of its words can be heard - the voice breaks up or drops out",
+        "scene 4 (14.3-18.6 s): only 0% of its words can be heard - the voice breaks up or drops out",
+        "scene 5 (18.6-22.4 s): only 0% of its words can be heard - the voice breaks up or drops out",
+        "scene 6 (22.4-26.7 s): only 0% of its words can be heard - the voice breaks up or drops out",
+        "scene 7 (26.7-29.9 s): only 0% of its words can be heard - the voice breaks up or drops out"
+      ],
+      "footage": [
+        "scene(s) [1, 7] have weak or placeholder footage"
+      ],
+      "review": [],
+      "heard": [
+        "\"microwaving metal is generally unsafe\" heard as \"माच्रो विग्ट्टाल दूई किरे था\"",
+        "\"thick smooth spoons are less likely to spark\" heard as \"लेगऻा क्या क्रम्पत मेंत्र क्रम्ट्ट्टाल्चिर्ई\"",
+        "\"forks\" heard as \"folks\"",
+        "\"forks\" heard as \"folks\"",
+        "\"those\" heard as \"टी lags\"",
+        "\"but here's the twist the spoon is thick and completely rounded its smooth curves spread the electrical charge evenly across the surface so the voltage never\" heard as \"कुज़े में सेल मदblack प gibi बल़ के आचा कोप sistam आजा म kennedyúlt dibey में वो सके रब\"",
+        "\"high\" heard as \"करज़े। समु miles मो\"",
+        "\"to jump through the air ever wondered why frozen water expands instead of shrinking like most other liquids ever thought why a stainless steel spoon doesn't spark while a fork can cause sparks\" heard as \"में पतर tina dip वहुचकिज जी। सें बताдержगल में वो\""
+      ],
+      "scene_heard": [
+        "scene 1: 5%",
+        "scene 2: 20%",
+        "scene 3: 0%",
+        "scene 4: 0%",
+        "scene 5: 0%",
+        "scene 6: 0%",
+        "scene 7: 0%",
+        "scene 8: 92%",
+        "scene 9: 100%"
+      ],
+      "pass": false,
+      "duration": 39.7
+    },
+    "repairs": 0
+  },
+  {
+    "job": "20261121-0924-new-discovery-reveals-what-may-be-holdin",
+    "topic": "New discovery reveals what may be holding back room-temperature superconductors",
+    "title": "Why Power Lines Lose Energy As Heat 🤯",
+    "description": "Electricity loses power to heat in everyday wires, but room-temperature superconductors remain a difficult challenge for modern physics. #shorts #science #physics\n\nSources (open-access research):\n- Sadyk (2020), Suleyman Demirel University Bulletin Natural and Technical Sciences. doi:10.47344/ct4aer83\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nImage: NASA (public domain)\nPhoto by AJS1 on Pixabay\nPhoto: José A. Flores-Livas, Lilia Boeri, Antonio Sanna, Gianni Pro, CC BY 4.0, via Wikimedia Commons\nPhoto: frankieleon, BY 2.0, via Openverse (flickr)\nVideo by Jari-Lobo on Pixabay\nVideo by anncapictures on Pixabay\nVideo by Werni on Pixabay\nVideo by cipnt on Pixabay\n\nयह वीडियो कैसे बना: स्क्रिप्ट को AI tools की मदद से open research के आधार पर लिखा और fact-check किया गया है, आवाज़ AI voice की है, और editing open-source software से हुई है। कोई गलती दिखे तो comment में बताइए — जाँच कर सुधार करेंगे।",
+    "tags": [
+      "superconductors",
+      "physics"
+    ],
+    "hook": "Batteries slowly lose their charge over time due to internal chemical reactions.",
+    "status": "withdrawn",
+    "narration": "Batteries slowly lose their charge over time due to internal chemical reactions. When electrons travel through the metal power lines that stretch across the country, they constantly bump into the atoms in the metal. These collisions inside the wire generate heat, turning valuable electricity into wasted energy along the journey. If we used special materials and cooled them to near absolute zero, electrons would pair up and slide through without resistance. That cooled segment becomes a superconductor, meaning the electricity in the cable experiences zero energy loss. But maintaining such extreme cold over miles of power lines would cost a fortune. Scientists have tried to make these materials work at room temperature by squeezing them under massive pressure. The challenge is that material impurities and atomic defects often disrupt the fragile states needed for room-temperature superconductivity. Ever thought how electricity flows through your phone charger without melting it?",
+    "voice_engine": "edge-tts",
+    "voices": "one narrator (hi-IN-SwaraNeural)",
+    "diagrams": 1,
+    "series": "How Things Work",
+    "countdown": false,
+    "length_arm": "long",
+    "question": "Ever thought how electricity flows through your phone charger without melting it?",
+    "answer_comment": "The answer: Electricity generates heat because moving electrons constantly collide with the atoms inside a normal wire. In a superconductor, electrons form pairs called Cooper pairs that move smoothly past those atoms without crashing into them, completely eliminating electrical resistance and heat loss!\n\nSources (open-access research):\n- Sadyk (2020), Suleyman Demirel University Bulletin Natural and Technical Sciences. doi:10.47344/ct4aer83",
+    "sources": [
+      {
+        "claim": "Superconductivity allows electrical current to flow without resistance when cooled below a critical temperature.",
+        "cite": "Sadyk (2020), Suleyman Demirel University Bulletin Natural and Technical Sciences. doi:10.47344/ct4aer83",
+        "doi": "10.47344/ct4aer83",
+        "title": "SUPERCONDUCTIVITY",
+        "why": "Superconductivity is the weird phenomenon of zero electrical resistance that occurs when some materials are cooled below a critical temperature."
+      }
+    ],
+    "fact_check": [
+      "Electrical resistance in normal conductors causes energy loss through heat due to electron-atom collisions.",
+      "Superconductivity allows electrical current to flow without resistance when cooled below a critical temperature.",
+      "Material imperfections and lattice defects are recognized barriers to achieving stable ambient superconductivity."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        4.59
+      ],
+      [
+        4.59,
+        11.28
+      ],
+      [
+        11.28,
+        17.92
+      ],
+      [
+        17.92,
+        24.94
+      ],
+      [
+        24.94,
+        31.73
+      ],
+      [
+        31.73,
+        36.51
+      ],
+      [
+        36.51,
+        42.41
+      ],
+      [
+        42.41,
+        50.35
+      ],
+      [
+        50.35,
+        55.04
+      ]
+    ],
+    "duration": 55.04,
+    "scene_lines": [
+      "Batteries slowly lose their charge over time due to internal chemical reactions.",
+      "When electrons travel through the metal power lines that stretch across the country, they constantly bump into the atoms in the metal.",
+      "These collisions inside the wire generate heat, turning valuable electricity into wasted energy along the journey.",
+      "If we used special materials and cooled them to near absolute zero, electrons would pair up and slide through without resistance.",
+      "That cooled segment becomes a superconductor, meaning the electricity in the cable experiences zero energy loss.",
+      "But maintaining such extreme cold over miles of power lines would cost a fortune.",
+      "Scientists have tried to make these materials work at room temperature by squeezing them under massive pressure.",
+      "The challenge is that material impurities and atomic defects often disrupt the fragile states needed for room-temperature superconductivity.",
+      "Ever thought how electricity flows through your phone charger without melting it?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,050 --> 00:00:02,349\nBatteries slowly lose their charge over time\n\n2\n00:00:02,349 --> 00:00:04,548\ndue to internal chemical reactions.\n\n3\n00:00:04,590 --> 00:00:06,677\nWhen electrons travel through the metal power\n\n4\n00:00:06,677 --> 00:00:08,654\nlines that stretch across the country, they\n\n5\n00:00:08,654 --> 00:00:11,266\nconstantly bump into the atoms in the metal.\n\n6\n00:00:11,280 --> 00:00:14,278\nThese collisions inside the wire generate heat,\n\n7\n00:00:14,278 --> 00:00:17,920\nturning valuable electricity into wasted energy along the journey.\n\n8\n00:00:17,920 --> 00:00:19,996\nIf we used special materials and cooled\n\n9\n00:00:19,996 --> 00:00:22,366\nthem to near absolute zero, electrons would\n\n10\n00:00:22,366 --> 00:00:24,940\npair up and slide through without resistance.\n\n11\n00:00:24,940 --> 00:00:27,929\nThat cooled segment becomes a superconductor, meaning\n\n12\n00:00:27,929 --> 00:00:31,664\nthe electricity in the cable experiences zero energy loss.\n\n13\n00:00:31,730 --> 00:00:34,230\nBut maintaining such extreme cold over miles\n\n14\n00:00:34,230 --> 00:00:36,482\nof power lines would cost a fortune.\n\n15\n00:00:36,510 --> 00:00:38,840\nScientists have tried to make these materials\n\n16\n00:00:38,840 --> 00:00:42,353\nwork at room temperature by squeezing them under massive pressure.\n\n17\n00:00:42,410 --> 00:00:44,878\nThe challenge is that material impurities and\n\n18\n00:00:44,878 --> 00:00:47,548\natomic defects often disrupt the fragile states\n\n19\n00:00:47,548 --> 00:00:50,192\nneeded for room-temperature superconductivity.\n\n20\n00:00:50,350 --> 00:00:52,607\nEver thought how electricity flows through your\n\n21\n00:00:52,607 --> 00:00:54,443\nphone charger without melting it?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [],
+      "footage": [],
+      "review": [],
+      "heard": [
+        "\"batteries slowly\" heard as \"बाट्री श्लोली\"",
+        "\"charge\" heard as \"चाज\"",
+        "\"travel through\" heard as \"चागल तुछ\"",
+        "\"they constantly\" heard as \"दे कोन्स्तिन्तली\"",
+        "\"collisions inside\" heard as \"कोलिजन्स इन्चाज\"",
+        "\"turning\" heard as \"तुन्निंग\"",
+        "\"used special materials\" heard as \"उस्पष्यल मतेरिals\"",
+        "\"cooled\" heard as \"cool\""
+      ],
+      "scene_heard": [
+        "scene 1: 75%",
+        "scene 2: 82%",
+        "scene 3: 81%",
+        "scene 4: 81%",
+        "scene 5: 93%",
+        "scene 6: 92%",
+        "scene 7: 94%",
+        "scene 8: 89%",
+        "scene 9: 33%"
+      ],
+      "pass": true,
+      "duration": 54.5
+    },
+    "repairs": 0,
+    "audited": true,
+    "withdrawn_reason": "final audio check: only 59% of the script is heard as written"
+  },
+  {
+    "job": "20261121-0939-3-hidden-engineering-features-inside-com",
+    "topic": "3 Hidden Engineering Features Inside Commercial Airplane Windows That Keep the Cabin Safe at 35,000 Feet",
+    "title": "Why Plane Windows Have A Tiny Hole 😱",
+    "description": "Ever noticed that weird hole in your airplane window? It looks like a mistake, but it's actually the most important piece of engineering keeping the cabin safe. #shorts #science #aviation\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nPhoto by Javaistan on Pixabay\nPhoto by This_is_Engineering on Pixabay\nPhoto: Frankie Roberto, BY 2.0, via Openverse (flickr)\nPhoto: unknown, CC BY 4.0, via Wikimedia Commons\nPhoto: waitscm, BY 2.0, via Openverse (flickr)\nPhoto: İlke.bahceci, CC0, via Wikimedia Commons\nVideo by Coverr-Free-Footage on Pixabay\nVideo by Iconikmg on Pixabay\n\nयह वीडियो कैसे बना: स्क्रिप्ट को AI tools की मदद से open research के आधार पर लिखा और fact-check किया गया है, आवाज़ AI voice की है, और editing open-source software से हुई है। कोई गलती दिखे तो comment में बताइए — जाँच कर सुधार करेंगे।",
+    "tags": [
+      "aviation",
+      "engineering"
+    ],
+    "hook": "Plane windows have a tiny hole at the bottom that sounds like a massive security flaw.",
+    "status": "review",
+    "narration": "Plane windows have a tiny hole at the bottom that sounds like a massive security flaw. When you are at 35,000 feet, the air outside is freezing and super thin. Inside, the cabin is pressurized to keep you comfortable. This creates a huge pressure difference between the inside and the outside. But wait, the window is actually made of multiple layers of acrylic. But that tiny hole isn't there to leak cabin air; it is there to balance the pressure between the panes. Without this hole, the inner panes would take the pressure load instead of the outer pane. The hole lets the air vent so only the outer pane has to take the pressure load. Ever thought how that tiny hole stops your window from fogging up during a long flight?",
+    "voice_engine": "edge-tts",
+    "voices": "one narrator (hi-IN-SwaraNeural)",
+    "diagrams": 1,
+    "series": "Everyday Whys",
+    "countdown": false,
+    "length_arm": "standard",
+    "question": "Ever thought how that tiny hole stops your window from fogging up during a long flight?",
+    "answer_comment": "The answer: That hole allows air to move between the cabin and the middle pane. By equalizing the pressure, it ensures the outer pane bears the load. More importantly, it keeps moisture out of the space between the layers, preventing fog or ice from building up inside the window. Got a question about how planes stay safe? Ask away!",
+    "sources": [],
+    "fact_check": [
+      "Airplane windows consist of three panes: outer, middle, and inner.",
+      "The tiny hole is a breather hole in the middle pane.",
+      "The breather hole equalizes pressure between the cabin and the space between the middle and outer panes.",
+      "The outer pane is designed to withstand the full pressure differential.",
+      "The hole prevents condensation and fogging by venting moisture between the panes."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        5.02
+      ],
+      [
+        5.02,
+        9.67
+      ],
+      [
+        9.67,
+        12.97
+      ],
+      [
+        12.97,
+        17.05
+      ],
+      [
+        17.05,
+        21.14
+      ],
+      [
+        21.14,
+        26.75
+      ],
+      [
+        26.75,
+        31.55
+      ],
+      [
+        31.55,
+        36.0
+      ],
+      [
+        36.0,
+        41.2
+      ]
+    ],
+    "duration": 41.2,
+    "scene_lines": [
+      "Plane windows have a tiny hole at the bottom that sounds like a massive security flaw.",
+      "When you are at 35,000 feet, the air outside is freezing and super thin.",
+      "Inside, the cabin is pressurized to keep you comfortable.",
+      "This creates a huge pressure difference between the inside and the outside.",
+      "But wait, the window is actually made of multiple layers of acrylic.",
+      "But that tiny hole isn't there to leak cabin air; it is there to balance the pressure between the panes.",
+      "Without this hole, the inner panes would take the pressure load instead of the outer pane.",
+      "The hole lets the air vent so only the outer pane has to take the pressure load.",
+      "Ever thought how that tiny hole stops your window from fogging up during a long flight?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,050 --> 00:00:01,967\nPlane windows have a tiny hole at\n\n2\n00:00:01,967 --> 00:00:04,897\nthe bottom that sounds like a massive security flaw.\n\n3\n00:00:05,020 --> 00:00:07,384\nWhen you are at 35,000 feet, the\n\n4\n00:00:07,384 --> 00:00:09,636\nair outside is freezing and super thin.\n\n5\n00:00:09,670 --> 00:00:12,936\nInside, the cabin is pressurized to keep you comfortable.\n\n6\n00:00:12,970 --> 00:00:15,258\nThis creates a huge pressure difference between\n\n7\n00:00:15,258 --> 00:00:16,938\nthe inside and the outside.\n\n8\n00:00:17,050 --> 00:00:19,189\nBut wait, the window is actually made\n\n9\n00:00:19,189 --> 00:00:21,070\nof multiple layers of acrylic.\n\n10\n00:00:21,140 --> 00:00:22,920\nBut that tiny hole isn't there to\n\n11\n00:00:22,920 --> 00:00:24,452\nleak cabin air; it is there to\n\n12\n00:00:24,452 --> 00:00:26,640\nbalance the pressure between the panes.\n\n13\n00:00:26,750 --> 00:00:28,888\nWithout this hole, the inner panes would\n\n14\n00:00:28,888 --> 00:00:31,511\ntake the pressure load instead of the outer pane.\n\n15\n00:00:31,550 --> 00:00:33,160\nThe hole lets the air vent so\n\n16\n00:00:33,160 --> 00:00:35,900\nonly the outer pane has to take the pressure load.\n\n17\n00:00:36,000 --> 00:00:38,135\nEver thought how that tiny hole stops\n\n18\n00:00:38,135 --> 00:00:40,602\nyour window from fogging up during a long flight?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [
+        "phrase missing from the audio: \"outer pane the hole lets the air vent so only the outer pane has to take the pressure load ever thought\"",
+        "scene 8 (31.6-36.0 s): only 0% of its words can be heard - the voice breaks up or drops out"
+      ],
+      "footage": [],
+      "review": [],
+      "heard": [
+        "\"plane windows\" heard as \"प 서 quanto स fian stitches\"",
+        "\"flaw\" heard as \"floor\"",
+        "\"thin\" heard as \"thing\"",
+        "\"pressurized\" heard as \"pressed rice\"",
+        "\"wait\" heard as \"weight\"",
+        "\"that tiny hole\" heard as \"the whole\"",
+        "\"hole\" heard as \"whole\"",
+        "\"\" heard as \"श्एक\""
+      ],
+      "scene_heard": [
+        "scene 1: 64%",
+        "scene 2: 77%",
+        "scene 3: 89%",
+        "scene 4: 100%",
+        "scene 5: 100%",
+        "scene 6: 100%",
+        "scene 7: 50%",
+        "scene 8: 0%",
+        "scene 9: 53%"
+      ],
+      "pass": false,
+      "duration": 40.6
+    },
+    "repairs": 0
+  },
+  {
+    "job": "20261121-0958-scientists-just-discovered-100-million-y",
+    "topic": "Scientists just discovered 100-million-year-old fossilized dinosaur droppings proving giant plant-eating dinosaurs regularly ate ocean seaweed",
+    "title": "What Did Giant Dinosaurs Actually Eat? 🤯",
+    "description": "Scientists study fossilized droppings to learn more about the diverse diets of giant plant-eating dinosaurs. Here is what research reveals about prehistoric foraging. #shorts #science #dinosaurs\n\nSources (open-access research):\n- Barbacka et al. (2022), Papers in Palaeontology. doi:10.1002/spp2.1425\n- Button et al. (2014), Proceedings of the Royal Society B Biological Sciences. doi:10.1098/rspb.2014.2114\n- Boast et al. (2018), Proceedings of the National Academy of Sciences. doi:10.1073/pnas.1712337115\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nIllustrations: drawn for this video with FLUX.2 [klein] 4B (AI, Apache 2.0) and checked for accuracy\nPhoto by PublicDomainPictures on Pixabay\nPhoto by heimseiten_WebdesignKoeln on Pixabay\nPhoto: Miscellaneous Items in High Demand, PPOC, Library of Congres, Public domain, via Wikimedia Commons\nVideo by Nature-Stock-Footage on Pixabay\nVideo by Matthias_Groeneveld on Pixabay\n\nयह वीडियो कैसे बना: स्क्रिप्ट को AI tools की मदद से open research के आधार पर लिखा और fact-check किया गया है, आवाज़ AI voice की है, और editing open-source software से हुई है। कोई गलती दिखे तो comment में बताइए — जाँच कर सुधार करेंगे।",
+    "tags": [
+      "dinosaurs",
+      "science",
+      "paleontology"
+    ],
+    "hook": "Some sauropods might have occasionally consumed coastal plants, according to recent studies of fossilized droppings.",
+    "status": "review",
+    "narration": "Some sauropods might have occasionally consumed coastal plants, according to recent studies of fossilized droppings. Researchers analyzing fossilized droppings from giant herbivores look closely at what plants they consumed. Inside some specimens, scientists have identified microscopic traces of various plant materials. These massive land giants were capable of roaming across various regional zones for food. This suggests their foraging wasn't strictly limited to a single type of inland forest. Studies on herbivorous dinosaur coprolites continue to offer new insights into prehistoric ecosystems. Scientists analyze these clues to better understand how giant herbivores met their massive nutritional needs. Why might land-dwelling dinosaurs have ingested coastal vegetation?",
+    "voice_engine": "edge-tts",
+    "voices": "one narrator (hi-IN-SwaraNeural)",
+    "diagrams": 1,
+    "series": "Animal Whys",
+    "countdown": false,
+    "length_arm": "long",
+    "question": "Why might land-dwelling dinosaurs have ingested coastal vegetation?",
+    "answer_comment": "Researchers suggest that sauropods feeding near coastal zones might have ingested various plants or salt-tolerant vegetation, potentially as part of a diverse diet, though more research is needed to understand specific nutritional habits.\n\nSources (open-access research):\n- Barbacka et al. (2022), Papers in Palaeontology. doi:10.1002/spp2.1425\n- Button et al. (2014), Proceedings of the Royal Society B Biological Sciences. doi:10.1098/rspb.2014.2114\n- Boast et al. (2018), Proceedings of the National Academy of Sciences. doi:10.1073/pnas.1712337115",
+    "sources": [
+      {
+        "claim": "Fossilized dung (coprolites) analysis is a recognized method used by paleontologists to study herbivorous dinosaur diets.",
+        "cite": "Barbacka et al. (2022), Papers in Palaeontology. doi:10.1002/spp2.1425",
+        "doi": "10.1002/spp2.1425",
+        "title": "Early Jurassic coprolites: insights into palaeobotany and the feeding behaviour of dinosaurs",
+        "why": "Analyses of coprolites provide important data on animal feeding and food quality... The coprolites probably originated from herbivorous sauropodomorphs, ornithischians and large carnivorous theropods..."
+      },
+      {
+        "claim": "Sauropods were massive herbivores that required vast quantities of vegetation, making diverse foraging common.",
+        "cite": "Button et al. (2014), Proceedings of the Royal Society B Biological Sciences. doi:10.1098/rspb.2014.2114",
+        "doi": "10.1098/rspb.2014.2114",
+        "title": "Cranial biomechanics underpins high sauropod diversity in resource-poor environments",
+        "why": "High megaherbivore species richness is documented in both fossil and contemporary ecosystems despite their high individual energy requirements."
+      },
+      {
+        "claim": "Dietary studies of prehistoric animals rely on direct fossil evidence like coprolites and plant fossils.",
+        "cite": "Boast et al. (2018), Proceedings of the National Academy of Sciences. doi:10.1073/pnas.1712337115",
+        "doi": "10.1073/pnas.1712337115",
+        "title": "Coprolites reveal ecological interactions lost with the extinction of New Zealand birds",
+        "why": "Coprolites are a source of uniquely detailed information about trophic interactions and the behaviors, gut parasite communities, and microbiotas of prehistoric animal species."
+      }
+    ],
+    "fact_check": [
+      "Fossilized dung (coprolites) analysis is a recognized method used by paleontologists to study herbivorous dinosaur diets.",
+      "Sauropods were massive herbivores that required vast quantities of vegetation, making diverse foraging common.",
+      "Dietary studies of prehistoric animals rely on direct fossil evidence like coprolites and plant fossils."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        6.57
+      ],
+      [
+        6.57,
+        12.82
+      ],
+      [
+        12.82,
+        18.84
+      ],
+      [
+        18.84,
+        23.78
+      ],
+      [
+        23.78,
+        28.66
+      ],
+      [
+        28.66,
+        34.83
+      ],
+      [
+        34.83,
+        41.01
+      ],
+      [
+        41.01,
+        45.39
+      ]
+    ],
+    "duration": 45.39,
+    "scene_lines": [
+      "Some sauropods might have occasionally consumed coastal plants, according to recent studies of fossilized droppings.",
+      "Researchers analyzing fossilized droppings from giant herbivores look closely at what plants they consumed.",
+      "Inside some specimens, scientists have identified microscopic traces of various plant materials.",
+      "These massive land giants were capable of roaming across various regional zones for food.",
+      "This suggests their foraging wasn't strictly limited to a single type of inland forest.",
+      "Studies on herbivorous dinosaur coprolites continue to offer new insights into prehistoric ecosystems.",
+      "Scientists analyze these clues to better understand how giant herbivores met their massive nutritional needs.",
+      "Why might land-dwelling dinosaurs have ingested coastal vegetation?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,050 --> 00:00:02,942\nSome sauropods might have occasionally consumed coastal\n\n2\n00:00:02,942 --> 00:00:06,475\nplants, according to recent studies of fossilized droppings.\n\n3\n00:00:06,570 --> 00:00:10,278\nResearchers analyzing fossilized droppings from giant herbivores\n\n4\n00:00:10,278 --> 00:00:12,816\nlook closely at what plants they consumed.\n\n5\n00:00:12,820 --> 00:00:16,579\nInside some specimens, scientists have identified microscopic\n\n6\n00:00:16,579 --> 00:00:18,840\ntraces of various plant materials.\n\n7\n00:00:18,840 --> 00:00:21,075\nThese massive land giants were capable of\n\n8\n00:00:21,075 --> 00:00:23,780\nroaming across various regional zones for food.\n\n9\n00:00:23,780 --> 00:00:26,471\nThis suggests their foraging wasn't strictly limited\n\n10\n00:00:26,471 --> 00:00:28,660\nto a single type of inland forest.\n\n11\n00:00:28,660 --> 00:00:31,711\nStudies on herbivorous dinosaur coprolites continue to\n\n12\n00:00:31,711 --> 00:00:34,830\noffer new insights into prehistoric ecosystems.\n\n13\n00:00:34,830 --> 00:00:37,616\nScientists analyze these clues to better understand\n\n14\n00:00:37,616 --> 00:00:40,927\nhow giant herbivores met their massive nutritional needs.\n\n15\n00:00:41,010 --> 00:00:44,793\nWhy might land-dwelling dinosaurs have ingested coastal vegetation?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [
+        "only 15% of the script is heard as written",
+        "scene 1 (0.0-6.6 s): only 0% of its words can be heard - the voice breaks up or drops out",
+        "scene 2 (6.6-12.8 s): only 0% of its words can be heard - the voice breaks up or drops out",
+        "scene 3 (12.8-18.8 s): only 0% of its words can be heard - the voice breaks up or drops out",
+        "scene 4 (18.8-23.8 s): only 7% of its words can be heard - the voice breaks up or drops out",
+        "scene 5 (23.8-28.7 s): only 15% of its words can be heard - the voice breaks up or drops out",
+        "scene 6 (28.7-34.8 s): only 15% of its words can be heard - the voice breaks up or drops out",
+        "scene 7 (34.8-41.0 s): only 7% of its words can be heard - the voice breaks up or drops out",
+        "scene 8 (41.0-45.4 s): only 0% of its words can be heard - the voice breaks up or drops out"
+      ],
+      "footage": [],
+      "review": [],
+      "heard": [
+        "\"sauropods might have occasionally consumed coastal plants according\" heard as \"शवरोपोदँ मद केशने कोजटल प्लान्सू अगर कोडएई चाुटिई मननी से लिए मुझे घर्पंझानीखाआ करेअ। वोस्ँलेईसा प्लाईनीगा घर्पंझानीखा मुझे तुम्उस्गें अब आऴ्ाहत्रे मुआशक्वार्वार करबिवार और लो मजडी आय्द परईपडीश मूँ मुँआशकि की के नहींगवार अस्द्टाने तेर्क्ष्ट्टे टमझदूम न\"",
+        "\"recent studies of fossilized droppings researchers analyzing fossilized droppings from giant herbivores look closely at what plants they consumed inside some specimens scientists have identified microscopic traces of various plant materials these massive land giants were capable of roaming across various regional zones\" heard as \"करमनान्या वेराने रूमारे मूरीे साही ज लोगaiserं शोंच कोग 應該 दींचा vagine pantis आपका है\"",
+        "\"food this suggests their foraging wasn't strictly limited to a single type of inland forest studies on herbivorous dinosaur coprolites continue to offer new insights into prehistoric ecosystems scientists analyze these clues to better understand how giant herbivores met their massive nutritional needs why might land dwelling dinosaurs have ingested coastal vegetation\" heard as \"लिए onr\""
+      ],
+      "scene_heard": [
+        "scene 1: 0%",
+        "scene 2: 0%",
+        "scene 3: 0%",
+        "scene 4: 7%",
+        "scene 5: 15%",
+        "scene 6: 15%",
+        "scene 7: 7%",
+        "scene 8: 0%"
+      ],
+      "pass": false,
+      "duration": 44.8
+    },
+    "repairs": 0
+  },
+  {
+    "job": "20261121-1016-3-strange-everyday-objects-like-smoke-de",
+    "topic": "3 strange everyday objects like smoke detectors, old camera lenses, and vintage glow-in-the-dark clocks that secretly contain radioactive materials",
+    "title": "Why Your Smoke Detector Is Radioactive 😱",
+    "description": "Discover why everyday objects like smoke detectors and old clocks secretly contain radioactive materials. #shorts #science #engineering\n\nSources (open-access research):\n- Kostecka (2008), Bulletin for the history of chemistry. doi:10.70359/bhc2008v033p089\n- Martínez et al. (2024), Medical Physics. doi:10.1002/mp.17133\n- Qadr (2022), GAZI UNIVERSITY JOURNAL OF SCIENCE. doi:10.35378/gujs.850883\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nPhoto: Georg Pik, CC0, via Wikimedia Commons\nPhoto: Murphy Karen, U.S. Fish and Wildlife Service, Public domain, via Wikimedia Commons\nVideo by NickyPe on Pixabay\nVideo by NickyPe on Pixabay\nVideo by wastedgeneration on Pixabay\nVideo by TH-DARK-Media on Pixabay\nVideo by Gylfi on Pixabay\nVideo by nanoslavic on Pixabay\nVideo by wastedgeneration on Pixabay\n\nयह वीडियो कैसे बना: स्क्रिप्ट को AI tools की मदद से open research के आधार पर लिखा और fact-check किया गया है, आवाज़ AI voice की है, और editing open-source software से हुई है। कोई गलती दिखे तो comment में बताइए — जाँच कर सुधार करेंगे।",
+    "tags": [
+      "#shorts",
+      "#hindi",
+      "#science",
+      "#engineering"
+    ],
+    "hook": "Tumhare ghar ke smoke detector ke andar ek radioactive element چھپا hota hai 😱",
+    "status": "scheduled",
+    "narration": "Tumhare ghar ke smoke detector ke andar ek radioactive element چھپا hota hai 😱 Yeh sunne mein thoda scary lagta hai, par iske peeche ek simple physics reason hai. Iske andar americium-241 naam ka ek chhota sa radioactive source hota hai. Yeh material continuously air particles ko ionize karke ek chhota sa electric current banata rehta hai. Jab smoke particles andar aate hain, toh yeh current disturb ho jata hai aur alarm baj padta hai. But wait, yeh radiation tumhein nuksan nahi pahuncha sakti kyunki yeh alpha rays chhodta hai jo paper ya plastic se hi block ho jaati hain. Radioactive materials ka istemal purane jamane mein aur cheezon mein bhi hota tha, jaise ki kuch purane camera lenses mein ya glow-in-the-dark watches mein, lekin har jagah radioactive substance alag hota tha. Kabhi socha hai ki smoke detector mein radioactive material hone ke baad bhi yeh completely safe kaise maana jata hai?",
+    "voice_engine": "edge-tts",
+    "voices": "one narrator (hi-IN-SwaraNeural)",
+    "diagrams": 1,
+    "series": "Everyday Whys",
+    "countdown": false,
+    "length_arm": "standard",
+    "question": "Kabhi socha hai ki smoke detector mein radioactive material hone ke baad bhi yeh completely safe kaise maana jata hai?",
+    "answer_comment": "The answer: Smoke detectors use alpha-emitting americium-241, but alpha particles have very low penetration power and are blocked by the casing or a few centimeters of air. The sealed radioactive source poses a negligible health risk under normal use unless it is damaged or swallowed.\n\nSources (open-access research):\n- Kostecka (2008), Bulletin for the history of chemistry. doi:10.70359/bhc2008v033p089\n- Martínez et al. (2024), Medical Physics. doi:10.1002/mp.17133\n- Qadr (2022), GAZI UNIVERSITY JOURNAL OF SCIENCE. doi:10.35378/gujs.850883",
+    "sources": [
+      {
+        "claim": "Smoke detectors contain a tiny amount of americium-241.",
+        "cite": "Kostecka (2008), Bulletin for the history of chemistry. doi:10.70359/bhc2008v033p089",
+        "doi": "10.70359/bhc2008v033p089",
+        "title": "Americium - From the discovery to the smoke detector and beyond",
+        "why": "The article discusses the discovery, announcement of and naming of americium, its characteristics, isotopes, applications [including in smoke detectors], use as a portable gamma ray source, and as a fuel for spacecraft will be described."
+      },
+      {
+        "claim": "Americium-241 emits alpha particles.",
+        "cite": "Martínez et al. (2024), Medical Physics. doi:10.1002/mp.17133",
+        "doi": "10.1002/mp.17133",
+        "title": "Investigation of dosimetric characteristics of radiochromic film in response to alpha particles emitted from Americium‐241",
+        "why": "Purpose This study aimed to develop a dose‐calibration protocol for the ‐particle emitting radionuclide 241Am, using Monte Carlo (MC) simulations and measurements with unlaminated EBT3 films."
+      },
+      {
+        "claim": "Alpha particles are blocked by a few centimeters of air or thin plastic.",
+        "cite": "Qadr (2022), GAZI UNIVERSITY JOURNAL OF SCIENCE. doi:10.35378/gujs.850883",
+        "doi": "10.35378/gujs.850883",
+        "title": "Experimental Study of the Pressure Effects on Stopping Power for Alpha Particles in Air",
+        "why": "It was found that the energy of the passed α-particles has been decreased in a small vacuum chamber with increasing pressure. It is also studied that the amount of α-particles reaching the detector follows a decreasing behavior as the distance increases."
+      }
+    ],
+    "fact_check": [
+      "Smoke detectors contain a tiny amount of americium-241.",
+      "Americium-241 emits alpha particles.",
+      "Alpha particles are blocked by a few centimeters of air or thin plastic.",
+      "Vintage camera lenses and clocks sometimes used radioactive thorium or radium."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        5.95
+      ],
+      [
+        5.95,
+        10.94
+      ],
+      [
+        10.94,
+        15.78
+      ],
+      [
+        15.78,
+        21.89
+      ],
+      [
+        21.89,
+        27.16
+      ],
+      [
+        27.16,
+        35.53
+      ],
+      [
+        35.53,
+        46.81
+      ],
+      [
+        46.81,
+        53.61
+      ]
+    ],
+    "duration": 53.61,
+    "scene_lines": [
+      "Tumhare ghar ke smoke detector ke andar ek radioactive element چھپا hota hai 😱",
+      "Yeh sunne mein thoda scary lagta hai, par iske peeche ek simple physics reason hai.",
+      "Iske andar americium-241 naam ka ek chhota sa radioactive source hota hai.",
+      "Yeh material continuously air particles ko ionize karke ek chhota sa electric current banata rehta hai.",
+      "Jab smoke particles andar aate hain, toh yeh current disturb ho jata hai aur alarm baj padta hai.",
+      "But wait, yeh radiation tumhein nuksan nahi pahuncha sakti kyunki yeh alpha rays chhodta hai jo paper ya plastic se hi block ho jaati hain.",
+      "Radioactive materials ka istemal purane jamane mein aur cheezon mein bhi hota tha, jaise ki kuch purane camera lenses mein ya glow-in-the-dark watches mein, lekin har jagah radioactive substance alag hota tha.",
+      "Kabhi socha hai ki smoke detector mein radioactive material hone ke baad bhi yeh completely safe kaise maana jata hai?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,050 --> 00:00:02,211\nTumhare ghar ke smoke detector ke andar\n\n2\n00:00:02,211 --> 00:00:05,954\nek radioactive element hota hai 😱 Yeh\n\n3\n00:00:05,954 --> 00:00:07,892\nsunne mein thoda scary lagta hai, par\n\n4\n00:00:07,892 --> 00:00:10,526\niske peeche ek simple physics reason hai.\n\n5\n00:00:10,540 --> 00:00:13,601\nIske andar americium-241 naam ka ek chhota\n\n6\n00:00:13,601 --> 00:00:15,515\nsa radioactive source hota hai.\n\n7\n00:00:15,520 --> 00:00:18,401\nYeh material continuously air particles ko ionize\n\n8\n00:00:18,401 --> 00:00:21,520\nkarke ek chhota sa electric current banata rehta hai.\n\n9\n00:00:21,520 --> 00:00:23,642\nJab smoke particles andar aate hain, toh\n\n10\n00:00:23,642 --> 00:00:25,443\nyeh current disturb ho jata hai aur\n\n11\n00:00:25,443 --> 00:00:26,774\nalarm baj padta hai.\n\n12\n00:00:26,870 --> 00:00:29,321\nBut wait, yeh radiation tumhein nuksan nahi\n\n13\n00:00:29,321 --> 00:00:31,737\npahuncha sakti kyunki yeh alpha rays chhodta\n\n14\n00:00:31,737 --> 00:00:33,506\nhai jo paper ya plastic se hi\n\n15\n00:00:33,506 --> 00:00:34,720\nblock ho jaati hain.\n\n16\n00:00:34,740 --> 00:00:37,770\nRadioactive materials ka istemal purane jamane mein\n\n17\n00:00:37,770 --> 00:00:39,707\naur cheezon mein bhi hota tha, jaise\n\n18\n00:00:39,707 --> 00:00:41,613\nki kuch purane camera lenses mein ya\n\n19\n00:00:41,613 --> 00:00:44,649\nglow-in-the-dark watches mein, lekin har jagah radioactive\n\n20\n00:00:44,649 --> 00:00:46,393\nsubstance alag hota tha.\n\n21\n00:00:46,460 --> 00:00:48,639\nKabhi socha hai ki smoke detector mein\n\n22\n00:00:48,639 --> 00:00:50,874\nradioactive material hone ke baad bhi yeh\n\n23\n00:00:50,874 --> 00:00:53,009\ncompletely safe kaise maana jata hai?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [],
+      "footage": [],
+      "review": [],
+      "heard": [
+        "\"detector\" heard as \"देटेक्टा\"",
+        "\"radioactive\" heard as \"रेटियो अक्तिव\"",
+        "\"\" heard as \"दर से चलाता चहरा\"",
+        "\"scary\" heard as \"सकेरी\"",
+        "\"physics reason\" heard as \"फिजिक्स रीजन\"",
+        "\"americium 241\" heard as \"आमरिश्यम तो फोटी वान\"",
+        "\"radioactive source\" heard as \"रेटियो अक्तिव सोस\"",
+        "\"continuously\" heard as \"कंतिनुसली\""
+      ],
+      "scene_heard": [
+        "scene 1: 82%",
+        "scene 2: 77%",
+        "scene 3: 64%",
+        "scene 4: 73%",
+        "scene 5: 40%",
+        "scene 6: 73%",
+        "scene 7: 71%",
+        "scene 8: 83%"
+      ],
+      "pass": true,
+      "duration": 53.0
+    },
+    "repairs": 0,
+    "audited": true,
+    "video_id": "IKxuhUWfoXs",
+    "publish_at": "2026-11-22T09:30:00-05:00",
     "thumbnail_set": true
   }
 ]

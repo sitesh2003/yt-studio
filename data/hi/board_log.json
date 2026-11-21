@@ -1,66 +1,5 @@
 [
  {
-  "when": "2026-11-16 20:47",
-  "topic": "Why are mirror images flipped horizontally but not vertically?",
-  "drawn": [
-   2,
-   3,
-   4,
-   5
-  ],
-  "not_drawn": {},
-  "error": ""
- },
- {
-  "when": "2026-11-16 23:09",
-  "topic": "Why Raw Honey Never Spoils While Fresh Fruit Decays in Days",
-  "drawn": [
-   2,
-   3,
-   4,
-   5
-  ],
-  "not_drawn": {},
-  "error": ""
- },
- {
-  "when": "2026-11-16 23:48",
-  "topic": "Why Vitamin C Can Block Cancer-Causing Nitrosamines From Forming In Your Stomach",
-  "drawn": [
-   2,
-   3,
-   4,
-   5
-  ],
-  "not_drawn": {},
-  "error": ""
- },
- {
-  "when": "2026-11-17 00:19",
-  "topic": "What Actually Happens Inside Your Body When Your Leg 'Falls Asleep'",
-  "drawn": [
-   2,
-   3,
-   4,
-   5
-  ],
-  "not_drawn": {},
-  "error": ""
- },
- {
-  "when": "2026-11-17 10:01",
-  "topic": "Why the blinding flash of lightning actually shoots from the ground UP to the sky instead ",
-  "drawn": [
-   2,
-   5,
-   6
-  ],
-  "not_drawn": {
-   "3": "The picture shows an arrow pointing DOWN from the Earth, which contradicts the sentence describing positive charges moving UP from the ground."
-  },
-  "error": ""
- },
- {
   "when": "2026-11-17 10:30",
   "topic": "3 hidden physical fail-safes inside modern elevators that make a catastrophic free-fall im",
   "drawn": [
@@ -491,6 +430,66 @@
    "4": "LLM call failed on every model and provider: None",
    "5": "LLM call failed on every model and provider: None"
   },
+  "error": ""
+ },
+ {
+  "when": "2026-11-21 09:10",
+  "topic": "Why microwaving a stainless steel spoon didn't set your kitchen on fire",
+  "drawn": [
+   2,
+   3,
+   4,
+   5
+  ],
+  "not_drawn": {},
+  "error": ""
+ },
+ {
+  "when": "2026-11-21 09:25",
+  "topic": "New discovery reveals what may be holding back room-temperature superconductors",
+  "drawn": [
+   2,
+   3,
+   4,
+   5
+  ],
+  "not_drawn": {},
+  "error": ""
+ },
+ {
+  "when": "2026-11-21 09:41",
+  "topic": "3 Hidden Engineering Features Inside Commercial Airplane Windows That Keep the Cabin Safe ",
+  "drawn": [
+   2,
+   3,
+   4,
+   5
+  ],
+  "not_drawn": {},
+  "error": ""
+ },
+ {
+  "when": "2026-11-21 10:00",
+  "topic": "Scientists just discovered 100-million-year-old fossilized dinosaur droppings proving gian",
+  "drawn": [
+   2,
+   3,
+   4,
+   5
+  ],
+  "not_drawn": {},
+  "error": ""
+ },
+ {
+  "when": "2026-11-21 10:17",
+  "topic": "3 strange everyday objects like smoke detectors, old camera lenses, and vintage glow-in-th",
+  "drawn": [
+   2,
+   3,
+   4,
+   5
+  ],
+  "not_drawn": {},
   "error": ""
  }
 ]

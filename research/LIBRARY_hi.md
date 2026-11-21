@@ -3,6 +3,29 @@
 Every video, the claims it makes, and the open-access research behind them. Built automatically by
 agents/library.py; a source is listed only if its abstract was checked to support the claim.
 
+## Why Power Lines Lose Energy As Heat 🤯
+*2026-11-21 · How Things Work*
+
+- Electrical resistance in normal conductors causes energy loss through heat due to electron-atom collisions.
+- Superconductivity allows electrical current to flow without resistance when cooled below a critical temperature.
+- Material imperfections and lattice defects are recognized barriers to achieving stable ambient superconductivity.
+
+Sources:
+- Sadyk (2020), Suleyman Demirel University Bulletin Natural and Technical Sciences. doi:10.47344/ct4aer83 — supports: Superconductivity allows electrical current to flow without resistance when cooled below a critical temperature.
+
+## Why Your Smoke Detector Is Radioactive 😱
+*2026-11-21 · Everyday Whys*
+
+- Smoke detectors contain a tiny amount of americium-241.
+- Americium-241 emits alpha particles.
+- Alpha particles are blocked by a few centimeters of air or thin plastic.
+- Vintage camera lenses and clocks sometimes used radioactive thorium or radium.
+
+Sources:
+- Kostecka (2008), Bulletin for the history of chemistry. doi:10.70359/bhc2008v033p089 — supports: Smoke detectors contain a tiny amount of americium-241.
+- Martínez et al. (2024), Medical Physics. doi:10.1002/mp.17133 — supports: Americium-241 emits alpha particles.
+- Qadr (2022), GAZI UNIVERSITY JOURNAL OF SCIENCE. doi:10.35378/gujs.850883 — supports: Alpha particles are blocked by a few centimeters of air or thin plastic.
+
 ## Why Glacier Ice Is Intensely Blue 🤯
 *2026-11-20 · Everyday Whys*
 

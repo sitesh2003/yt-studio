@@ -185,5 +185,56 @@
       "The thickness of the ice determines the intensity of the blue color."
     ],
     "sources": []
+  },
+  {
+    "job": "20261121-0924-new-discovery-reveals-what-may-be-holdin",
+    "date": "2026-11-21",
+    "title": "Why Power Lines Lose Energy As Heat 🤯",
+    "topic": "New discovery reveals what may be holding back room-temperature superconductors",
+    "series": "How Things Work",
+    "weekly": false,
+    "claims": [
+      "Electrical resistance in normal conductors causes energy loss through heat due to electron-atom collisions.",
+      "Superconductivity allows electrical current to flow without resistance when cooled below a critical temperature.",
+      "Material imperfections and lattice defects are recognized barriers to achieving stable ambient superconductivity."
+    ],
+    "sources": [
+      {
+        "cite": "Sadyk (2020), Suleyman Demirel University Bulletin Natural and Technical Sciences. doi:10.47344/ct4aer83",
+        "doi": "10.47344/ct4aer83",
+        "claim": "Superconductivity allows electrical current to flow without resistance when cooled below a critical temperature."
+      }
+    ]
+  },
+  {
+    "job": "20261121-1016-3-strange-everyday-objects-like-smoke-de",
+    "date": "2026-11-21",
+    "title": "Why Your Smoke Detector Is Radioactive 😱",
+    "topic": "3 strange everyday objects like smoke detectors, old camera lenses, and vintage glow-in-the-dark clocks that secretly contain radioactive materials",
+    "series": "Everyday Whys",
+    "weekly": false,
+    "claims": [
+      "Smoke detectors contain a tiny amount of americium-241.",
+      "Americium-241 emits alpha particles.",
+      "Alpha particles are blocked by a few centimeters of air or thin plastic.",
+      "Vintage camera lenses and clocks sometimes used radioactive thorium or radium."
+    ],
+    "sources": [
+      {
+        "cite": "Kostecka (2008), Bulletin for the history of chemistry. doi:10.70359/bhc2008v033p089",
+        "doi": "10.70359/bhc2008v033p089",
+        "claim": "Smoke detectors contain a tiny amount of americium-241."
+      },
+      {
+        "cite": "Martínez et al. (2024), Medical Physics. doi:10.1002/mp.17133",
+        "doi": "10.1002/mp.17133",
+        "claim": "Americium-241 emits alpha particles."
+      },
+      {
+        "cite": "Qadr (2022), GAZI UNIVERSITY JOURNAL OF SCIENCE. doi:10.35378/gujs.850883",
+        "doi": "10.35378/gujs.850883",
+        "claim": "Alpha particles are blocked by a few centimeters of air or thin plastic."
+      }
+    ]
   }
 ]
