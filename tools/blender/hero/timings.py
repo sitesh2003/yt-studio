@@ -16,6 +16,35 @@ scenes = json.loads((d / "scenes.json").read_text(encoding="utf-8"))
 words = json.loads((d / "words.json").read_text(encoding="utf-8"))
 norm = lambda w: re.sub(r"[^a-z]", "", w.lower())
 
+def _first_word_starts(script, words):
+    """Each scene's start = when its opening words are actually spoken, found in order through the heard
+    words by matching its first THREE words in a row (one common word like "a" or "so" can occur earlier).
+    (21 Nov 2026: counting words drifted up to 0.8 s in Hindi - 105 words written, 102 heard - so cuts came late.)"""
+    key = lambda t: norm(t) or t.strip("।,.?!-")
+    heard = [key(w["text"]) for w in words]
+    starts, j = [], 0
+    for k, sc in enumerate(script["scenes"]):
+        want = [key(t) for t in sc["narration"].split()[:3]]
+        found = None
+        for i in range(j, len(heard)):
+            got = heard[i:i + len(want)]
+            if got == want:                    # all three opening words, in order
+                found = i
+                break
+        if found is None:
+            return None
+        starts.append(0.0 if k == 0 else words[found]["start"])
+        j = found + 1
+    return starts
+
+
+script = json.loads((d / "script.json").read_text(encoding="utf-8"))
+fw = _first_word_starts(script, words)
+if fw:
+    end = scenes[-1][1]
+    scenes = [[fw[k], fw[k + 1] if k + 1 < len(fw) else end] for k in range(len(fw))]
+    (d / "scenes.json").write_text(json.dumps(scenes, indent=2), encoding="utf-8")
+
 for i, (shot, (a, b)) in enumerate(zip(spec["shots"], scenes)):
     shot["seconds"] = round(b - a, 3)
     if shot["kind"] == "xray_scan" or (shot["kind"] == "xray_jaw" and shot.get("reveal") is not None):
