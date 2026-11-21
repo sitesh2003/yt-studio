@@ -6025,11 +6025,36 @@
     "voice_engine": "edge-tts",
     "countdown": false,
     "question": "कभी सोचा है, जो दौड़ ही नहीं सकता था, वो शिकार कैसे करता था?",
-    "status": "scheduled",
-    "hero_3d": true,
+    "status": "replaced",
+    "hero_3d": false,
     "video_id": "ONLgJLVA5TI",
     "publish_at": "2026-11-21T09:30:00-05:00",
     "thumbnail_set": true,
-    "replaces": "7UaRpOMoO5U"
+    "replaces": "7UaRpOMoO5U",
+    "replaced_why": "graphics overlapped the captions for a second; fixed version uploaded in the same slot (20 Nov 2026)"
+  },
+  {
+    "job": "hero_trex_hi",
+    "topic": "क्या T. rex car से तेज़ दौड़ सकता था?",
+    "title": "क्या T. rex तुम्हारी Car से तेज़ दौड़ सकता था? 🦖",
+    "description": "Movies में T. rex गाड़ी का पीछा करता है। पर उसकी bones और muscles की research कहती है कि वो शायद दौड़ ही नहीं सकता था। #shorts #hindi #dinosaur #science\n\nSources: Sellers et al. 2017, PeerJ 5:e3420 (doi:10.7717/peerj.3420); Hutchinson & Garcia 2002, Nature 415:1018 (doi:10.1038/4151018a).\n3D models: Quaternius, Animated LowPoly Dinosaurs (CC0); Kenney, Car Kit (CC0). Animated in Blender.\n\nHow this was made: the script is researched and fact-checked against published research (sources above), narrated by an AI voice, and animated and edited with open-source software.",
+    "tags": [
+      "T. rex",
+      "dinosaur",
+      "dinosaur hindi",
+      "science hindi",
+      "3D animation"
+    ],
+    "hook": "Movies में T. rex गाड़ी का पीछा करता है। पर असली T. rex शायद दौड़ ही नहीं सकता था।",
+    "narration": "Movies में T. rex गाड़ी का पीछा करता है। पर असली T. rex शायद दौड़ ही नहीं सकता था। उसका वज़न करीब 8 tonne था। मतलब 6 cars, सिर्फ दो पैरों पर। Scientists ने computer में उसे bone by bone, muscle by muscle दोबारा बनाया, और फिर उसे दौड़ाया। हर running speed पर उसकी leg bones पर इतना force पड़ा, कि वो शायद टूट जातीं। इतना बड़ा जानवर तेज़ दौड़े, तो उसकी body का 40% से ज़्यादा हिस्सा leg muscles होना चाहिए। T. rex के पास उसके आस-पास भी नहीं था। तो उसकी top speed थी बस एक तेज़ walk। करीब 20 kilometre per hour। शहर की सड़क पर 50 की speed वाली car, उसे कुछ ही seconds में पीछे छोड़ देगी। कभी सोचा है, जो दौड़ ही नहीं सकता था, वो शिकार कैसे करता था?",
+    "voice_engine": "edge-tts",
+    "countdown": false,
+    "question": "कभी सोचा है, जो दौड़ ही नहीं सकता था, वो शिकार कैसे करता था?",
+    "status": "scheduled",
+    "hero_3d": true,
+    "video_id": "wBAmoqMBEeg",
+    "publish_at": "2026-11-21T09:30:00-05:00",
+    "thumbnail_set": true,
+    "replaces": "ONLgJLVA5TI"
   }
 ]

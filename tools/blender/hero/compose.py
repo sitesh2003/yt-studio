@@ -389,7 +389,13 @@ def main():
     run(["ffmpeg", "-y", "-loglevel", "error", "-f", "concat", "-safe", "0", "-i", "list.txt", "-c", "copy",
          "visual.mp4"], job)
     # 3) captions in the channel's own style
-    hero_captions(words, job / "captions.ass")
+    # 21 Nov 2026, owner: keep the channel's own caption lines (same wording and grouping), just SMALLER
+    from agents.core import set_override
+    cap = dict(config()["captions"])
+    cap["size"] = int(cap["size"] * float(spec.get("caption_scale", 0.8)))
+    set_override({"captions": cap})
+    editor.captions(words, job / "captions.ass")
+    set_override({})
     shutil.copytree(ROOT / "assets" / "fonts", job / "fonts", dirs_exist_ok=True)
     # 4) sound on its own: polished voice + ducked music, levelled
     total = gf / FPS
