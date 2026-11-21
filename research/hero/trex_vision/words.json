@@ -1,367 +1,367 @@
 [
   {
     "start": 0.0,
-    "end": 0.22,
+    "end": 0.25,
     "text": "Standing"
   },
   {
-    "start": 0.22,
-    "end": 0.58,
+    "start": 0.25,
+    "end": 0.659,
     "text": "still"
   },
   {
-    "start": 0.58,
-    "end": 0.84,
+    "start": 0.659,
+    "end": 0.955,
     "text": "probably"
   },
   {
-    "start": 0.84,
-    "end": 1.28,
+    "start": 0.955,
+    "end": 1.455,
     "text": "wouldn't"
   },
   {
-    "start": 1.28,
-    "end": 1.44,
+    "start": 1.455,
+    "end": 1.636,
     "text": "hide"
   },
   {
-    "start": 1.44,
-    "end": 1.58,
+    "start": 1.636,
+    "end": 1.795,
     "text": "you"
   },
   {
-    "start": 1.58,
-    "end": 1.7,
+    "start": 1.795,
+    "end": 1.932,
     "text": "from"
   },
   {
-    "start": 1.7,
-    "end": 1.78,
+    "start": 1.932,
+    "end": 2.023,
     "text": "a"
   },
   {
-    "start": 1.78,
-    "end": 2.14,
+    "start": 2.023,
+    "end": 2.432,
     "text": "T-rex."
   },
   {
-    "start": 2.61,
-    "end": 2.9299999999999997,
+    "start": 2.966,
+    "end": 3.33,
     "text": "Scientists"
   },
   {
-    "start": 2.9299999999999997,
-    "end": 3.19,
+    "start": 3.33,
+    "end": 3.625,
     "text": "rebuilt"
   },
   {
-    "start": 3.19,
-    "end": 3.4299999999999997,
+    "start": 3.625,
+    "end": 3.898,
     "text": "its"
   },
   {
-    "start": 3.4299999999999997,
-    "end": 3.63,
+    "start": 3.898,
+    "end": 4.125,
     "text": "head"
   },
   {
-    "start": 3.63,
-    "end": 3.83,
+    "start": 4.125,
+    "end": 4.352,
     "text": "and"
   },
   {
-    "start": 3.83,
-    "end": 4.029999999999999,
+    "start": 4.352,
+    "end": 4.58,
     "text": "traced"
   },
   {
-    "start": 4.029999999999999,
-    "end": 4.29,
+    "start": 4.58,
+    "end": 4.875,
     "text": "where"
   },
   {
-    "start": 4.29,
-    "end": 4.45,
+    "start": 4.875,
+    "end": 5.057,
     "text": "each"
   },
   {
-    "start": 4.45,
-    "end": 4.67,
+    "start": 5.057,
+    "end": 5.307,
     "text": "eye"
   },
   {
-    "start": 4.67,
-    "end": 4.83,
+    "start": 5.307,
+    "end": 5.489,
     "text": "could"
   },
   {
-    "start": 4.83,
-    "end": 5.029999999999999,
+    "start": 5.489,
+    "end": 5.716,
     "text": "look."
   },
   {
-    "start": 5.39,
-    "end": 5.529999999999999,
+    "start": 6.125,
+    "end": 6.284,
     "text": "Its"
   },
   {
-    "start": 5.529999999999999,
-    "end": 5.75,
+    "start": 6.284,
+    "end": 6.534,
     "text": "eyes"
   },
   {
-    "start": 5.75,
-    "end": 6.05,
+    "start": 6.534,
+    "end": 6.875,
     "text": "faced"
   },
   {
-    "start": 6.05,
-    "end": 6.41,
+    "start": 6.875,
+    "end": 7.284,
     "text": "forward,"
   },
   {
-    "start": 6.789999999999999,
-    "end": 7.08,
+    "start": 7.716,
+    "end": 8.045,
     "text": "overlapping"
   },
   {
-    "start": 7.08,
-    "end": 7.48,
+    "start": 8.045,
+    "end": 8.5,
     "text": "across"
   },
   {
-    "start": 7.48,
-    "end": 7.72,
+    "start": 8.5,
+    "end": 8.773,
     "text": "about"
   },
   {
-    "start": 7.72,
-    "end": 8.1,
+    "start": 8.773,
+    "end": 9.205,
     "text": "fifty-five"
   },
   {
-    "start": 8.1,
-    "end": 8.6,
+    "start": 9.205,
+    "end": 9.773,
     "text": "degrees,"
   },
   {
-    "start": 8.96,
-    "end": 9.18,
+    "start": 10.182,
+    "end": 10.432,
     "text": "wider"
   },
   {
-    "start": 9.18,
-    "end": 9.42,
+    "start": 10.432,
+    "end": 10.705,
     "text": "than"
   },
   {
-    "start": 9.42,
-    "end": 9.48,
+    "start": 10.705,
+    "end": 10.773,
     "text": "a"
   },
   {
-    "start": 9.48,
-    "end": 9.879999999999999,
+    "start": 10.773,
+    "end": 11.227,
     "text": "hawk's."
   },
   {
-    "start": 10.25,
-    "end": 10.43,
+    "start": 11.648,
+    "end": 11.852,
     "text": "That"
   },
   {
-    "start": 10.43,
-    "end": 10.69,
+    "start": 11.852,
+    "end": 12.148,
     "text": "overlap"
   },
   {
-    "start": 10.69,
-    "end": 11.11,
+    "start": 12.148,
+    "end": 12.625,
     "text": "gives"
   },
   {
-    "start": 11.11,
-    "end": 11.29,
+    "start": 12.625,
+    "end": 12.83,
     "text": "depth"
   },
   {
-    "start": 11.29,
-    "end": 11.629999999999999,
+    "start": 12.83,
+    "end": 13.216,
     "text": "vision,"
   },
   {
-    "start": 11.99,
-    "end": 12.11,
+    "start": 13.625,
+    "end": 13.761,
     "text": "perfect"
   },
   {
-    "start": 12.11,
-    "end": 12.41,
+    "start": 13.761,
+    "end": 14.102,
     "text": "for"
   },
   {
-    "start": 12.41,
-    "end": 12.59,
+    "start": 14.102,
+    "end": 14.307,
     "text": "judging"
   },
   {
-    "start": 12.59,
-    "end": 12.99,
+    "start": 14.307,
+    "end": 14.761,
     "text": "exactly"
   },
   {
-    "start": 12.99,
-    "end": 13.31,
+    "start": 14.761,
+    "end": 15.125,
     "text": "how"
   },
   {
-    "start": 13.31,
-    "end": 13.45,
+    "start": 15.125,
+    "end": 15.284,
     "text": "far"
   },
   {
-    "start": 13.45,
-    "end": 13.65,
+    "start": 15.284,
+    "end": 15.511,
     "text": "away"
   },
   {
-    "start": 13.65,
-    "end": 13.81,
+    "start": 15.511,
+    "end": 15.693,
     "text": "you"
   },
   {
-    "start": 13.81,
-    "end": 13.99,
+    "start": 15.693,
+    "end": 15.898,
     "text": "are."
   },
   {
-    "start": 14.3,
-    "end": 14.42,
+    "start": 16.25,
+    "end": 16.386,
     "text": "It"
   },
   {
-    "start": 14.42,
-    "end": 14.540000000000001,
+    "start": 16.386,
+    "end": 16.523,
     "text": "may"
   },
   {
-    "start": 14.540000000000001,
-    "end": 14.64,
+    "start": 16.523,
+    "end": 16.636,
     "text": "have"
   },
   {
-    "start": 14.64,
-    "end": 14.860000000000001,
+    "start": 16.636,
+    "end": 16.886,
     "text": "spotted"
   },
   {
-    "start": 14.860000000000001,
-    "end": 15.08,
+    "start": 16.886,
+    "end": 17.136,
     "text": "things"
   },
   {
-    "start": 15.08,
-    "end": 15.280000000000001,
+    "start": 17.136,
+    "end": 17.364,
     "text": "about"
   },
   {
-    "start": 15.280000000000001,
-    "end": 15.520000000000001,
+    "start": 17.364,
+    "end": 17.636,
     "text": "six"
   },
   {
-    "start": 15.520000000000001,
-    "end": 15.780000000000001,
+    "start": 17.636,
+    "end": 17.932,
     "text": "kilometres"
   },
   {
-    "start": 15.780000000000001,
-    "end": 16.22,
+    "start": 17.932,
+    "end": 18.432,
     "text": "away."
   },
   {
-    "start": 16.68,
-    "end": 16.9,
+    "start": 18.955,
+    "end": 19.205,
     "text": "People"
   },
   {
-    "start": 16.9,
-    "end": 17.12,
+    "start": 19.205,
+    "end": 19.455,
     "text": "manage"
   },
   {
-    "start": 17.12,
-    "end": 17.34,
+    "start": 19.455,
+    "end": 19.705,
     "text": "about"
   },
   {
-    "start": 17.34,
-    "end": 17.54,
+    "start": 19.705,
+    "end": 19.932,
     "text": "one"
   },
   {
-    "start": 17.54,
-    "end": 17.66,
+    "start": 19.932,
+    "end": 20.068,
     "text": "and"
   },
   {
-    "start": 17.66,
-    "end": 17.7,
+    "start": 20.068,
+    "end": 20.114,
     "text": "a"
   },
   {
-    "start": 17.7,
-    "end": 17.9,
+    "start": 20.114,
+    "end": 20.341,
     "text": "half."
   },
   {
-    "start": 18.43,
-    "end": 18.63,
+    "start": 20.943,
+    "end": 21.17,
     "text": "So"
   },
   {
-    "start": 18.79,
-    "end": 18.87,
+    "start": 21.352,
+    "end": 21.443,
     "text": "if"
   },
   {
-    "start": 18.87,
-    "end": 19.09,
+    "start": 21.443,
+    "end": 21.693,
     "text": "standing"
   },
   {
-    "start": 19.09,
-    "end": 19.43,
+    "start": 21.693,
+    "end": 22.08,
     "text": "still"
   },
   {
-    "start": 19.43,
-    "end": 19.71,
+    "start": 22.08,
+    "end": 22.398,
     "text": "won't"
   },
   {
-    "start": 19.71,
-    "end": 19.93,
+    "start": 22.398,
+    "end": 22.648,
     "text": "work,"
   },
   {
-    "start": 20.19,
-    "end": 20.29,
+    "start": 22.943,
+    "end": 23.057,
     "text": "what"
   },
   {
-    "start": 20.29,
-    "end": 20.41,
+    "start": 23.057,
+    "end": 23.193,
     "text": "would"
   },
   {
-    "start": 20.41,
-    "end": 20.53,
+    "start": 23.193,
+    "end": 23.33,
     "text": "you"
   },
   {
-    "start": 20.53,
-    "end": 20.689999999999998,
+    "start": 23.33,
+    "end": 23.511,
     "text": "do?"
   }
 ]

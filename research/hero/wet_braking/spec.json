@@ -64,7 +64,7 @@
       "kind": "brake_compare",
       "overlay": "brake_speeds",
       "brake_at": 0.12,
-      "seconds": 4
+      "seconds": 3.872
     },
     {
       "speeds": [
@@ -83,7 +83,7 @@
       "kind": "brake_compare",
       "overlay": "brake_speeds",
       "brake_at": 0.2,
-      "seconds": 5
+      "seconds": 6.91
     },
     {
       "speeds": [
@@ -103,7 +103,7 @@
       "overlay": "brake_result",
       "result_text": "2x THE DISTANCE",
       "brake_at": 0.12,
-      "seconds": 5
+      "seconds": 5.974
     },
     {
       "speeds": [
@@ -126,7 +126,7 @@
         "water gets between tyre and road"
       ],
       "brake_at": 0.1,
-      "seconds": 5
+      "seconds": 6.013
     },
     {
       "speeds": [
@@ -149,7 +149,7 @@
         "= TWICE THE DISTANCE"
       ],
       "brake_at": 0.1,
-      "seconds": 5
+      "seconds": 4.834
     },
     {
       "speeds": [
@@ -172,7 +172,7 @@
         "can't push the water away"
       ],
       "brake_at": 0.15,
-      "seconds": 4
+      "seconds": 4.128
     },
     {
       "speeds": [
@@ -191,7 +191,7 @@
       "kind": "brake_compare",
       "overlay": "none",
       "brake_at": 0.12,
-      "seconds": 4,
+      "seconds": 3.984,
       "cam_h": 29
     }
   ],

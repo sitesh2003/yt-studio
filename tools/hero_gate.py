@@ -38,6 +38,10 @@ def canon(t):
         from agents.voice import _say_number
         t = re.sub(r"\d[\d,]*", lambda m: " ".join(_say_number(int(m.group(0).replace(",", "")))), t)
         t = t.replace("-", " ")
+        for uk, us in (("metres", "meters"), ("metre", "meter"), ("kilometres", "kilometers"), ("tyres", "tires"),
+                       ("tyre", "tire"), ("colour", "color"), ("grey", "gray"), ("centre", "center"), ("litre", "liter"),
+                       ("brake", "break"), ("braking", "breaking"), ("onto", "on to")):   # spelling, same-sound words
+            t = re.sub(r"[.,?!]", " ", " " + t + " ").replace(" " + uk + " ", " " + us + " ")
     else:
         for w_, dg in HI_NUM.items():
             t = re.sub(rf"(?<!\S){w_}(?!\S)", dg, t)
