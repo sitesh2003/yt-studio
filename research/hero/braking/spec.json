@@ -1,0 +1,99 @@
+{
+  "assets_dir": "assets/3d",
+  "creature": {
+    "file": "dinos/Trex.fbx",
+    "length_m": 12.0,
+    "height_m": 5.2,
+    "walk": "TRex_Walk",
+    "run": "TRex_Run",
+    "idle": "TRex_Idle",
+    "roar": "TRex_Attack",
+    "foot_bone": "BackFoot.L",
+    "leg_bones": [
+      "BackUpLeg.L",
+      "BackLowLeg.L",
+      "BackFoot.L",
+      "BackUpLeg.R",
+      "BackLowLeg.R",
+      "BackFoot.R"
+    ],
+    "muscle_bones": [
+      "BackUpLeg.L",
+      "BackUpLeg.R"
+    ],
+    "bone_radius": 0.12,
+    "muscle_radius": 0.42,
+    "bone_groups": [
+      "FEET",
+      "SHINS",
+      "THIGHS",
+      "HIPS",
+      "SPINE",
+      "RIBS",
+      "NECK",
+      "SKULL",
+      "TAIL",
+      "ARMS"
+    ],
+    "muscle_groups": [
+      "THIGH",
+      "CALF",
+      "TAIL-TO-THIGH",
+      "NECK",
+      "JAW"
+    ]
+  },
+  "props": {
+    "car": "cars/sedan.glb"
+  },
+  "shots": [
+    {
+      "kind": "brake_compare",
+      "overlay": "brake_speeds",
+      "brake_at": 0.45,
+      "seconds": 4
+    },
+    {
+      "kind": "brake_compare",
+      "overlay": "brake_speeds",
+      "brake_at": 0.35,
+      "seconds": 4
+    },
+    {
+      "kind": "brake_compare",
+      "overlay": "brake_result",
+      "brake_at": 0.15,
+      "seconds": 5
+    },
+    {
+      "kind": "brake_compare",
+      "overlay": "energy",
+      "brake_at": 0.1,
+      "seconds": 5
+    },
+    {
+      "kind": "brake_compare",
+      "overlay": "four",
+      "brake_at": 0.1,
+      "seconds": 4
+    },
+    {
+      "kind": "brake_compare",
+      "overlay": "react",
+      "brake_at": 0.5,
+      "seconds": 4
+    },
+    {
+      "kind": "brake_compare",
+      "overlay": "none",
+      "brake_at": 0.2,
+      "seconds": 4,
+      "cam_h": 34
+    }
+  ],
+  "credits": [
+    "Car model: Kenney, Car Kit (CC0)",
+    "Sky: Poly Haven (CC0)"
+  ],
+  "end_beat_s": 0.6
+}

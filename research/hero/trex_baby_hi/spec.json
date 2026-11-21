@@ -1,0 +1,192 @@
+{
+  "assets_dir": "assets/3d",
+  "creature": {
+    "file": "dinos/Trex.fbx",
+    "length_m": 12.0,
+    "height_m": 5.2,
+    "walk": "TRex_Walk",
+    "run": "TRex_Run",
+    "idle": "TRex_Idle",
+    "roar": "TRex_Attack",
+    "foot_bone": "BackFoot.L",
+    "leg_bones": [
+      "BackUpLeg.L",
+      "BackLowLeg.L",
+      "BackFoot.L",
+      "BackUpLeg.R",
+      "BackLowLeg.R",
+      "BackFoot.R"
+    ],
+    "muscle_bones": [
+      "BackUpLeg.L",
+      "BackUpLeg.R"
+    ],
+    "bone_radius": 0.12,
+    "muscle_radius": 0.42,
+    "bone_groups": [
+      "FEET",
+      "SHINS",
+      "THIGHS",
+      "HIPS",
+      "SPINE",
+      "RIBS",
+      "NECK",
+      "SKULL",
+      "TAIL",
+      "ARMS"
+    ],
+    "muscle_groups": [
+      "THIGH",
+      "CALF",
+      "TAIL-TO-THIGH",
+      "NECK",
+      "JAW"
+    ]
+  },
+  "props": {
+    "car": "cars/sedan.glb"
+  },
+  "shots": [
+    {
+      "kind": "speed_track",
+      "length_m": 1.0,
+      "kmh": 7,
+      "overlay": "label",
+      "label": [
+        "SMALL DOG SIZE",
+        "a baby tyrannosaur"
+      ],
+      "seconds": 4,
+      "scale_prop": {
+        "file": "cars/sedan.glb",
+        "length_m": 4.5,
+        "at": [
+          -5.2,
+          0.0,
+          0
+        ]
+      },
+      "cam": [
+        [
+          2.8,
+          2.5,
+          1.6
+        ],
+        [
+          2.8,
+          -2.0,
+          1.6
+        ]
+      ],
+      "tgt": [
+        [
+          -2.6,
+          1.5,
+          0.5
+        ],
+        [
+          -2.6,
+          -3.0,
+          0.5
+        ]
+      ],
+      "lens": 32
+    },
+    {
+      "kind": "speed_track",
+      "length_m": 5.0,
+      "kmh": 30,
+      "overlay": "label",
+      "label": [
+        "LONG, SLIM LEGS",
+        "built for speed"
+      ],
+      "seconds": 5,
+      "cam": [
+        [
+          7.5,
+          4,
+          1.6
+        ],
+        [
+          7.0,
+          -5,
+          1.5
+        ]
+      ],
+      "tgt": [
+        [
+          -2.6,
+          3,
+          1.2
+        ],
+        [
+          -2.6,
+          -6,
+          1.2
+        ]
+      ]
+    },
+    {
+      "kind": "speed_track",
+      "length_m": 5.0,
+      "kmh": 25,
+      "overlay": "label",
+      "label": [
+        "SMALLER, QUICKER PREY",
+        "the giants ignored"
+      ],
+      "seconds": 6,
+      "cam": [
+        [
+          -6,
+          -9,
+          1.8
+        ],
+        [
+          -5,
+          -15,
+          1.6
+        ]
+      ],
+      "tgt": [
+        [
+          -2.6,
+          -2,
+          1.2
+        ],
+        [
+          -2.6,
+          -9,
+          1.2
+        ]
+      ]
+    },
+    {
+      "kind": "grow",
+      "from_m": 5.0,
+      "ages": [
+        14,
+        18
+      ],
+      "overlay": "grow",
+      "seconds": 6
+    },
+    {
+      "kind": "closeup_roar",
+      "overlay": "none",
+      "seconds": 5
+    },
+    {
+      "kind": "run_at_camera",
+      "overlay": "none",
+      "freeze_s": 0.0,
+      "seconds": 4
+    }
+  ],
+  "credits": [
+    "T. rex model: Quaternius, Animated LowPoly Dinosaurs (CC0)",
+    "Car model: Kenney, Car Kit (CC0)"
+  ],
+  "end_beat_s": 0.6
+}

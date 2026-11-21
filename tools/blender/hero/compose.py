@@ -352,6 +352,69 @@ def hero_captions(words, path):
                      f"{{\\pos({f['width'] // 2},{c['position_y']})\\fs{size}}}{txt}")
     path.write_text(head.rstrip("\n") + "\n" + "\n".join(lines) + "\n", encoding="utf-8")
 
+
+def g_label(d, f, n, shot):
+    """One or two lines of text from the spec, popped in: shot['label'] = ["LINE 1", "LINE 2"]."""
+    s = pop(f, 4, 6)
+    for k, line in enumerate(shot.get("label", [])):
+        text(d, (W / 2, 330 + k * 115), line, int((96 if k == 0 else 70) * s), YEL if k == 0 else WHITE, stroke=11)
+
+
+def g_grow(d, f, n, shot):
+    a0, a1 = shot.get("ages", [14, 18])
+    g0, g1 = n * 0.12, n * 0.85
+    age = a0 + (a1 - a0) * ease((f - g0) / (g1 - g0))
+    text(d, (W / 2, 320), f"AGE {age:.0f}", 120, YEL, stroke=13)
+    text(d, (W / 2, 450), "+2 kg EVERY DAY", 80, WHITE, stroke=10)
+    if f > g1:
+        s = pop(f, int(g1), 6)
+        text(d, (W / 2, 570), "SEVERAL TONNES", int(80 * s), CYAN, stroke=10)
+
+
+def _brake_chips(d, shot, show_dist):
+    sp = shot.get("speeds", [30, 60])
+    for k, kmh in enumerate(sp):
+        x = W * (0.27 + 0.46 * k)
+        d.rounded_rectangle([x - 220, 255, x + 220, 395], 28, fill=BLACK)
+        text(d, (x, 300), f"{kmh} km/h", 62, YEL if k == 0 else RED, stroke=0)
+        if show_dist:
+            dist = (kmh / 3.6) ** 2 / (2 * shot.get("decel", 7.0))
+            text(d, (x, 360), f"stops in ~{dist:.0f} m", 44, WHITE, stroke=0)
+
+
+def g_brake_speeds(d, f, n, shot):
+    _brake_chips(d, shot, False)
+
+
+def g_brake_result(d, f, n, shot):
+    v_hi = shot.get("speeds", [30, 60])[-1] / 3.6
+    t_end = int(n * shot.get("brake_at", 0.3)) + int(v_hi / shot.get("decel", 7.0) * FPS)
+    _brake_chips(d, shot, f > int(n * shot.get("brake_at", 0.3)) + 8)
+    if f > t_end:
+        s = pop(f, t_end, 6)
+        text(d, (W / 2, 500), "4x THE DISTANCE", int(96 * s), RED, stroke=12)
+
+
+def g_energy(d, f, n, shot):
+    text(d, (W / 2, 300), "MOVING ENERGY", 84, WHITE, stroke=10)
+    s = pop(f, 10, 6)
+    text(d, (W / 2, 420), "= 1/2 x MASS x SPEED\u00b2", int(72 * s), YEL, stroke=10)
+
+
+def g_four(d, f, n, shot):
+    rows = [("2x SPEED", WHITE), ("4x ENERGY", YEL), ("4x BRAKING DISTANCE", RED)]
+    for k, (t_, col) in enumerate(rows):
+        f0 = 6 + k * int(n * 0.22)
+        if f >= f0:
+            s = pop(f, f0, 6)
+            text(d, (W / 2, 320 + k * 120), t_, int(84 * s), col, stroke=11)
+
+
+def g_react(d, f, n, shot):
+    s = pop(f, 6, 6)
+    text(d, (W / 2, 320), "+ THINKING DISTANCE", int(80 * s), YEL, stroke=11)
+    text(d, (W / 2, 430), "the car keeps going while you react", int(48 * s), WHITE, stroke=8)
+
 # ---------------------------------------------------------------- assembly
 def run(cmd, cwd):
     subprocess.run(cmd, cwd=cwd, check=True)

@@ -234,7 +234,7 @@ def creature():
     bpy.context.view_layer.update()
     bb = [mesh.matrix_world @ Vector(v) for v in mesh.bound_box]
     span = max(v[1] for v in bb) - min(v[1] for v in bb)
-    f = c["length_m"] / span
+    f = SHOT.get("length_m", c["length_m"]) / span
     arm.scale = [s * f for s in arm.scale]
     arm.location = (0, 0, 0)
     for m in mesh.data.materials:      # flat game look, a little sheen
@@ -733,13 +733,18 @@ def film_setup():
         sc.cycles.device = "GPU"
     except Exception as e:
         print("film: no GPU, CPU render", e)
-    sc.cycles.samples = 24 if args.preview else 96
+    sc.cycles.samples = 16 if args.preview else 40       # the OptiX denoiser cleans the rest
+    try:
+        sc.cycles.use_adaptive_sampling = True
+        sc.cycles.adaptive_threshold = 0.04
+    except Exception:
+        pass
     sc.cycles.use_denoising = True
     try:
         sc.cycles.denoiser = "OPTIX"
     except Exception:
         pass
-    sc.cycles.max_bounces = 6
+    sc.cycles.max_bounces = 4
     sc.render.film_transparent = False
 
 
@@ -780,7 +785,8 @@ def build():
     look = SHOT.get("world", {"run_at_camera": "day", "size_tower": "day", "xray_scan": "sim",
                               "stress_run": "sim", "muscle_needed": "sim", "speed_track": "day",
                               "race_pass": "day", "closeup_roar": "dusk", "xray_jaw": "sim",
-                              "coprolite": "sim", "crash_compare": "day"}[kind])
+                              "coprolite": "sim", "crash_compare": "day", "grow": "day",
+                              "brake_compare": "day"}[kind])
     world(look)
     ground("sim" if look == "sim" else "road")
     if look == "day":
@@ -798,7 +804,7 @@ def build():
         film_setup()
         film_world(look)
         film_creature(mesh)
-    H = c["height_m"]
+    H = c["height_m"] * SHOT.get("length_m", c["length_m"]) / c["length_m"]
     walk, run = c["walk"], c["run"]
     v_walk = natural_speed(arm, action(walk), c["foot_bone"])
     v_run = natural_speed(arm, action(run), c["foot_bone"])
@@ -808,6 +814,9 @@ def build():
         film_camera(cam, tgt)
     fwd = Vector((0, -1, 0))                                    # the creature faces -Y
     T = N / FPS
+
+    if SHOT.get("scale_prop"):               # something everyone knows the size of, beside a small animal
+        prop, _ = glb(SHOT["scale_prop"]["file"], SHOT["scale_prop"]["length_m"], tuple(SHOT["scale_prop"]["at"]), 0.0)
 
     if kind == "run_at_camera":
         hold = int(SHOT.get("freeze_s", 0.5) * FPS)
@@ -1022,6 +1031,78 @@ def build():
         key_path(cam, [(1, Vector((-2.2, -3.5 + lift, 17.0))), (N, Vector((-1.8, -3.0 + lift, 15.5)))])
         key_path(tgt, [(1, Vector((-2.2, lift, 0))), (N, Vector((-1.8, lift, 0)))])
         smooth_keys(cam)
+
+    elif kind == "grow":
+        # the growth spurt: the animal grows from SHOT['from_m'] to SHOT['to_m'] long while standing,
+        # trees and the road for scale (ages and the kg-a-day counter are drawn by compose.g_grow)
+        play(arm, c.get("idle", walk), 1, N, 1.0)
+        base = arm.scale.copy()
+        k0 = SHOT.get("from_m", 4.0) / SHOT.get("length_m", c["length_m"])
+        g0, g1 = int(N * 0.12), int(N * 0.85)
+        for fr, k in ((1, k0), (g0, k0), (g1, 1.0)):
+            arm.scale = base * k
+            arm.keyframe_insert("scale", frame=fr)
+        if arm.animation_data and arm.animation_data.action:
+            for fc in _fcurves(arm.animation_data.action):
+                for kp in fc.keyframe_points:
+                    kp.interpolation = "BEZIER"
+        arm.location = (-2.6, 0, 0)
+        arm.rotation_euler = (0, 0, math.radians(-15))
+        key_path(cam, [(1, Vector((17.0, -17.0, 4.0))), (N, Vector((19.0, -19.5, 5.2)))])
+        key_path(tgt, [(1, Vector((-2.6, -1.0, 2.0))), (N, Vector((-2.6, -1.0, H * 0.45)))])
+        smooth_keys(cam)
+
+    elif kind == "brake_compare":
+        # two cars brake hard at the same line, from SHOT['speeds'] km/h, at a dry-road deceleration; from above
+        arm.location = (0, 0, -100)
+        decel = SHOT.get("decel", 7.0)
+        speeds = SHOT.get("speeds", [30, 60])
+        white = mat("Mark", (0.95, 0.95, 0.95), 0.5)
+        red = mat("BrakeLine", (0.9, 0.1, 0.05), 0.5, emit=(1, 0.2, 0.1), emit_strength=1.5)
+        skid = mat("Skid", (0.02, 0.02, 0.02), 0.9)
+        box("BrakeLine", (9.0, 0.35, 0.03), (0, 0, 0.05), red)
+        for m_ in range(5, 30, 5):                       # distance markers every 5 m past the brake line
+            box("Mark", (9.0, 0.12, 0.03), (0, m_, 0.05), white)
+            bpy.ops.object.text_add(location=(5.7, m_ - 0.6, 0.06))
+            t_ = bpy.context.object
+            t_.data.body = f"{m_} m"
+            t_.data.size = 1.5
+            t_.data.materials.append(white)
+        lead = SHOT.get("lead_s", 1.0)                   # seconds of driving before the brake line
+        brake_at = int(N * SHOT.get("brake_at", 0.3))
+        for k, kmh in enumerate(speeds):
+            x = -2.2 + 4.4 * k
+            v = kmh / 3.6
+            car, parts = glb(SPEC["props"]["car"], 4.5, (x, 0, 0), 0.0)
+            bpy.context.view_layer.update()
+            front = max((o.matrix_world @ Vector(c_))[1] for o in parts if o.type == "MESH" for c_ in o.bound_box)
+            nose = front                                  # car origin to nose
+            t_stop = v / decel
+            for fr in range(1, N + 1):
+                t = (fr - brake_at) / FPS
+                if t < 0:
+                    y = v * t
+                elif t < t_stop:
+                    y = v * t - 0.5 * decel * t * t
+                else:
+                    y = v * v / (2 * decel)
+                car.location = (x, y - nose, 0)
+                car.keyframe_insert("location", frame=fr)
+            # skid marks grow behind the wheels while it brakes
+            for wx in (-0.75, 0.75):
+                bpy.ops.mesh.primitive_cube_add(size=1)
+                sk = bpy.context.object
+                sk.data.transform(mathutils.Matrix.Translation((0, 0.5, 0)))
+                sk.location = (x + wx, 0, 0.045)
+                sk.data.materials.append(skid)
+                for fr in range(1, N + 1, 2):
+                    t = (fr - brake_at) / FPS
+                    L_ = 0.001 if t <= 0 else (v * min(t, t_stop) - 0.5 * decel * min(t, t_stop) ** 2)
+                    sk.scale = (0.25, max(0.001, L_), 0.01)
+                    sk.keyframe_insert("scale", frame=fr)
+        hi_ = SHOT.get("cam_h", 25.0)
+        key_path(cam, [(1, Vector((0.0, -14.0, hi_))), (N, Vector((0.0, -13.0, hi_ - 2)))])
+        key_path(tgt, [(1, Vector((0.0, 9.0, 0))), (N, Vector((0.0, 10.0, 0)))])
 
     elif kind == "speed_track":
         rate = SHOT["kmh"] / 3.6 / v_walk
