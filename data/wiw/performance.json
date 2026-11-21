@@ -1,5 +1,22 @@
 [
   {
+    "topic": "Why does salt melt ice on frozen roads? The chemistry of freezing point depression",
+    "title": "How Salt Melts Ice: Chemistry Explained",
+    "hook": "You've seen trucks dump salt on frozen roads, but how does it actually melt the ice?",
+    "countdown": false,
+    "length_arm": null,
+    "duration": 39.8,
+    "publish_at": "2026-11-17T16:30:00-05:00",
+    "video": "uh9aaSIkMiI",
+    "views": 101,
+    "engagedViews": 34,
+    "averageViewPercentage": 43.23,
+    "averageViewDuration": 16,
+    "likes": 1,
+    "subscribersGained": 0,
+    "stayed_pct": 33.7
+  },
+  {
     "topic": "Why does soap remove grease and oil when plain water cannot?",
     "title": "How Soap Works: The Chemistry of Cleaning",
     "hook": "You've used soap your whole life, but why does it clean grease when plain water fails?",
@@ -8,13 +25,13 @@
     "duration": 36.67,
     "publish_at": "2026-11-16T16:30:00-05:00",
     "video": "kU4gc_KAIJ4",
-    "views": 82,
+    "views": 92,
     "engagedViews": 21,
     "averageViewPercentage": 46.72,
     "averageViewDuration": 16,
     "likes": 0,
     "subscribersGained": 0,
-    "stayed_pct": 25.6
+    "stayed_pct": 22.8
   },
   {
     "topic": "Why does baking soda fizz when mixed with vinegar?",
@@ -32,23 +49,6 @@
     "likes": 1,
     "subscribersGained": 0,
     "stayed_pct": 42.9
-  },
-  {
-    "topic": "Why does salt melt ice on frozen roads? The chemistry of freezing point depression",
-    "title": "How Salt Melts Ice: Chemistry Explained",
-    "hook": "You've seen trucks dump salt on frozen roads, but how does it actually melt the ice?",
-    "countdown": false,
-    "length_arm": null,
-    "duration": 39.8,
-    "publish_at": "2026-11-17T16:30:00-05:00",
-    "video": "uh9aaSIkMiI",
-    "views": 61,
-    "engagedViews": 21,
-    "averageViewPercentage": 44.76,
-    "averageViewDuration": 17,
-    "likes": 1,
-    "subscribersGained": 0,
-    "stayed_pct": 34.4
   },
   {
     "topic": "How do vaccines actually train your immune system to fight real viruses?",
@@ -76,12 +76,46 @@
     "duration": 57.63,
     "publish_at": "2026-11-17T07:30:00-05:00",
     "video": "ib9znstwvhE",
-    "views": 16,
-    "engagedViews": 5,
-    "averageViewPercentage": 55.98,
-    "averageViewDuration": 31,
+    "views": 21,
+    "engagedViews": 6,
+    "averageViewPercentage": 77.88,
+    "averageViewDuration": 44,
     "likes": 0,
     "subscribersGained": 0,
-    "stayed_pct": 31.2
+    "stayed_pct": 28.6
+  },
+  {
+    "topic": "Why does a lens flip the image I see?",
+    "title": "When Does A Lens Flip The Image?",
+    "hook": "Have you ever noticed that a magnifying glass can make things look huge and upright, but if you pull it away, the world suddenly flips upside down? It’s simple physics.",
+    "countdown": false,
+    "length_arm": null,
+    "duration": 35.91,
+    "publish_at": "2026-11-18T16:30:00-05:00",
+    "video": "RAyXuV7D0F0",
+    "views": 16,
+    "engagedViews": 6,
+    "averageViewPercentage": 25.72,
+    "averageViewDuration": 9,
+    "likes": 0,
+    "subscribersGained": 0,
+    "stayed_pct": 37.5
+  },
+  {
+    "topic": "How colour vision works: The biology of cone cells explained",
+    "title": "How Colour Vision Works: The Biology of Cone Cells Explained",
+    "hook": "Ever wondered how your eyes actually see a red apple?",
+    "countdown": false,
+    "length_arm": null,
+    "duration": 38.31,
+    "publish_at": "2026-11-18T07:30:00-05:00",
+    "video": "bZeFlqbrdf4",
+    "views": 9,
+    "engagedViews": 3,
+    "averageViewPercentage": 32.36,
+    "averageViewDuration": 12,
+    "likes": 0,
+    "subscribersGained": 0,
+    "stayed_pct": 33.3
   }
 ]

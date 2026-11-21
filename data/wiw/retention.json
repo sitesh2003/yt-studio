@@ -1,1 +1,25 @@
-{}
+{
+  "uh9aaSIkMiI": {
+    "title": "How Salt Melts Ice: Chemistry Explained",
+    "hook_line": "You've seen trucks dump salt on frozen roads, but how does it actually melt the ice?",
+    "kept_at_10pct": 1.1471,
+    "kept_at_50pct": 0.3235,
+    "kept_at_end": 0.1765,
+    "vs_similar_start": 0.45,
+    "vs_similar_end": 0.7,
+    "biggest_drops": [
+      {
+        "at": 0.16,
+        "lost": 0.353,
+        "line": "First, water molecules on the ice surface are constantly shifting back and forth between solid and liquid."
+      },
+      {
+        "at": 0.3,
+        "lost": 0.088,
+        "line": "Step two: when you add salt, the sodium and chloride ions dissolve into that thin liquid layer."
+      }
+    ],
+    "countdown": false,
+    "checked": "2026-11-21"
+  }
+}

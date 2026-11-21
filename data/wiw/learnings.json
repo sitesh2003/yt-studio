@@ -1,13 +1,19 @@
 {
-  "summary": "1. Keep total video duration under 40 seconds, as longer videos over 50s severely drop initial reach and total views. 2. Eliminate conversational preambles like 'You've used...' or 'You've seen...' in the first sentence to raise stayed_pct above 40%. 3. Start the script immediately with a direct 'Why does [everyday chemical reaction] happen?' question to hook curiosity instantly. 4. Use straightforward titles that explicitly state the phenomenon rather than adding distracting emojis or wordy setups. 5. Focus on tangible, immediate visual reactions (e.g., fizzing, melting) rather than abstract, text-heavy thought experiments.",
+  "summary": [
+    "Prioritize specific, counter-intuitive visual scenarios (e.g., 'A 10kg lead sphere') over abstract 'Why does...' questions in the first 3 seconds.",
+    "Shift the hook structure from 'Have you ever wondered...' or 'You've used [X] your whole life...' to a 'What happens if...' narrative.",
+    "Eliminate academic titles that list the full topic; use high-arousal punctuation and specific questions instead.",
+    "Aim for a tighter hook-to-explanation transition; long setups cause viewer drop-off even when engagement is high.",
+    "Focus on 'Immediate Visual Proof' in the first 5 seconds to boost stayed_pct above the 40% barrier."
+  ],
   "winning_hooks": [
-    "Direct question hooks with immediate action verbs: 'Why does baking soda fizz the moment it hits vinegar?'",
-    "Plausible mechanism questions without fluff: 'How does salt actually melt ice on frozen roads?'"
+    "A 10kg lead sphere and a 1kg lead sphere dropped from the same height in a vacuum. Why don't they hit the ground at different moments?",
+    "Why does baking soda fizz the moment it hits vinegar?"
   ],
   "avoid": [
-    "Warm-up fluff intros: 'You've used soap your whole life, but why...'",
-    "Complex word-problem setups: 'A 10kg lead sphere and a 1kg lead sphere dropped from the same height...'",
-    "Videos over 45 seconds that dilute immediate pacing"
+    "Starting with 'You've seen/used/done [X] your whole life, but why...'",
+    "Explaining common household chemical reactions with purely linguistic setups.",
+    "Lengthy, multi-sentence hook preambles that exceed 15 words before addressing the core phenomenon."
   ],
-  "next_experiment": "A/B test the first 3 seconds: Test a direct hook ('Why does salt melt ice?') vs. a conversational setup ('You've seen trucks dump salt on roads, but why does it melt ice?') on the same 35-second topic to measure stayed_pct impact."
+  "next_experiment": "A/B test the current 'Why' question format against a 'Stop doing [common action] or [result] happens' format to see if fear/urgency increases the stayed_pct."
 }

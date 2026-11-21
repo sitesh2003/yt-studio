@@ -9,9 +9,9 @@
         "avg_views": null
       },
       "turn": {
-        "videos": 0,
-        "avg_view_pct": null,
-        "avg_views": null
+        "videos": 1,
+        "avg_view_pct": 43.2,
+        "avg_views": 101
       }
     }
   },

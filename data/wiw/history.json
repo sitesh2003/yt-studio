@@ -2201,7 +2201,7 @@
       "education"
     ],
     "hook": "Why does a guitar string change pitch when you press it?",
-    "status": "banked",
+    "status": "scheduled",
     "narration": "Why does a guitar string change pitch when you press it? When you pluck the open string, it vibrates across its full length, creating a low, slow wave. It's vibrating. Press your finger down, and you physically shorten the part of the string that's free to move. With less string, the wave completes its cycle much faster, hitting the ends more often. It moves fast. That's because a shorter string restricts the wave to a smaller space, which forces a higher frequency. This is how every fret on your guitar creates a precise new note. Try this: why does a longer straw produce a deeper sound than a short one?",
     "voice_engine": "chatterbox",
     "voices": "one narrator (af_heart)",
@@ -2301,7 +2301,10 @@
       "duration": 28.2
     },
     "repairs": 1,
-    "audited": true
+    "audited": true,
+    "video_id": "1hv2XbsRQ20",
+    "publish_at": "2026-11-22T07:30:00-05:00",
+    "thumbnail_set": true
   },
   {
     "job": "20261118-0748-how-an-electric-motor-spins-the-physics-",
