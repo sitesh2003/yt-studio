@@ -1058,7 +1058,7 @@ def build():
         arm.location = (0, 0, -100)
         decel = SHOT.get("decel", 7.0)
         speeds = SHOT.get("speeds", [30, 60])
-        white = mat("Mark", (0.95, 0.95, 0.95), 0.5)
+        white = mat("Mark", (0.95, 0.95, 0.95), 0.5, emit=(1.0, 0.85, 0.1), emit_strength=2.0)   # reads in film light
         red = mat("BrakeLine", (0.9, 0.1, 0.05), 0.5, emit=(1, 0.2, 0.1), emit_strength=1.5)
         skid = mat("Skid", (0.02, 0.02, 0.02), 0.9)
         box("BrakeLine", (9.0, 0.35, 0.03), (0, 0, 0.05), red)
@@ -1111,7 +1111,13 @@ def build():
         d = SHOT["kmh"] / 3.6 * T
         x = -2.6
         key_path(arm, [(1, Vector((x, d / 2, 0))), (N, Vector((x, -d / 2, 0)))])
-        key_path(cam, [(1, Vector((13, d / 2 + 9, 2.6))), (N, Vector((12.5, -d / 2 - 3, 2.4)))])
+        # the camera rides alongside at a distance that suits the animal's size (cam_dist), so it is in
+        # frame from the first frame to the last
+        cd_ = SHOT.get("cam_dist", 15.6)
+        ch_ = SHOT.get("cam_h", 2.6)
+        side = SHOT.get("cam_side", 1)            # 1 = from the side, -1 = slightly behind
+        key_path(cam, [(1, Vector((x + cd_, d / 2 + 0.55 * cd_ * side, ch_))),
+                       (N, Vector((x + cd_ * 0.97, -d / 2 - 0.2 * cd_ * side, ch_ * 0.95)))])
         key_path(tgt, [(1, Vector((x, d / 2, H * 0.45))), (N, Vector((x, -d / 2, H * 0.45)))])
 
     elif kind == "race_pass":

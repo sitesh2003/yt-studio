@@ -357,7 +357,10 @@ def g_label(d, f, n, shot):
     """One or two lines of text from the spec, popped in: shot['label'] = ["LINE 1", "LINE 2"]."""
     s = pop(f, 4, 6)
     for k, line in enumerate(shot.get("label", [])):
-        text(d, (W / 2, 330 + k * 115), line, int((96 if k == 0 else 70) * s), YEL if k == 0 else WHITE, stroke=11)
+        size = 96 if k == 0 else 70
+        while size > 40 and font(size).getlength(line) > W - 140:     # always fits the width
+            size -= 4
+        text(d, (W / 2, 330 + k * 115), line, int(size * s), YEL if k == 0 else WHITE, stroke=11)
 
 
 def g_grow(d, f, n, shot):
@@ -412,8 +415,9 @@ def g_four(d, f, n, shot):
 
 def g_react(d, f, n, shot):
     s = pop(f, 6, 6)
-    text(d, (W / 2, 320), "+ THINKING DISTANCE", int(80 * s), YEL, stroke=11)
-    text(d, (W / 2, 430), "the car keeps going while you react", int(48 * s), WHITE, stroke=8)
+    text(d, (W / 2, 320), "+ THINKING DISTANCE", int(66 * s), YEL, stroke=10)
+    text(d, (W / 2, 420), "the car keeps going", int(52 * s), WHITE, stroke=8)
+    text(d, (W / 2, 485), "while you react", int(52 * s), WHITE, stroke=8)
 
 # ---------------------------------------------------------------- assembly
 def run(cmd, cwd):

@@ -56,7 +56,7 @@
         "SMALL DOG SIZE",
         "a baby tyrannosaur"
       ],
-      "seconds": 4,
+      "seconds": 4.35,
       "scale_prop": {
         "file": "cars/sedan.glb",
         "length_m": 4.5,
@@ -101,31 +101,9 @@
         "LONG, SLIM LEGS",
         "built for speed"
       ],
-      "seconds": 5,
-      "cam": [
-        [
-          7.5,
-          4,
-          1.6
-        ],
-        [
-          7.0,
-          -5,
-          1.5
-        ]
-      ],
-      "tgt": [
-        [
-          -2.6,
-          3,
-          1.2
-        ],
-        [
-          -2.6,
-          -6,
-          1.2
-        ]
-      ]
+      "seconds": 6.616,
+      "cam_dist": 7.5,
+      "cam_h": 1.5
     },
     {
       "kind": "speed_track",
@@ -136,31 +114,9 @@
         "SMALLER, QUICKER PREY",
         "the giants ignored"
       ],
-      "seconds": 6,
-      "cam": [
-        [
-          -6,
-          -9,
-          1.8
-        ],
-        [
-          -5,
-          -15,
-          1.6
-        ]
-      ],
-      "tgt": [
-        [
-          -2.6,
-          -2,
-          1.2
-        ],
-        [
-          -2.6,
-          -9,
-          1.2
-        ]
-      ]
+      "seconds": 8.661,
+      "cam_dist": 7.5,
+      "cam_h": 1.5
     },
     {
       "kind": "grow",
@@ -170,18 +126,18 @@
         18
       ],
       "overlay": "grow",
-      "seconds": 6
+      "seconds": 5.394
     },
     {
       "kind": "closeup_roar",
       "overlay": "none",
-      "seconds": 5
+      "seconds": 5.193
     },
     {
       "kind": "run_at_camera",
       "overlay": "none",
       "freeze_s": 0.0,
-      "seconds": 4
+      "seconds": 4.949
     }
   ],
   "credits": [
