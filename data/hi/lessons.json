@@ -42,5 +42,9 @@
   {
     "kind": "unconfirmed",
     "text": "Spoon ki shape hi hero hai, kyunki iska surface smooth aur rounded hai. -> The shape helps, but the primary reason the spoon is 'safe' is its thickness and lack of sharp points. Suggesting the shape makes it safe encourages users to test other 'smooth' metal objects which may still cause damage."
+  },
+  {
+    "kind": "unconfirmed",
+    "text": "Ever thought why radiation utni asar nahi karti jab cockroach grow hi nahi kar raha? -> This phrasing is misleading. Cockroaches do grow (they molt and undergo metamorphosis). They are not static, but their cells divide significantly more slowly than human cells during their intermolt periods."
   }
 ]

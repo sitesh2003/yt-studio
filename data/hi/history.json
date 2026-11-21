@@ -6055,12 +6055,13 @@
     "voice_engine": "edge-tts",
     "countdown": false,
     "question": "कभी सोचा है, जो दौड़ ही नहीं सकता था, वो शिकार कैसे करता था?",
-    "status": "scheduled",
+    "status": "public",
     "hero_3d": true,
     "video_id": "wBAmoqMBEeg",
     "publish_at": "2026-11-21T09:30:00-05:00",
     "thumbnail_set": true,
-    "replaces": "ONLgJLVA5TI"
+    "replaces": "ONLgJLVA5TI",
+    "recapped": true
   },
   {
     "job": "20261121-0906-why-microwaving-a-stainless-steel-spoon-",
@@ -6766,5 +6767,908 @@
     "video_id": "af394fizUAk",
     "publish_at": "2026-11-22T02:30:00-05:00",
     "thumbnail_set": true
+  },
+  {
+    "job": "20261121-1649-scientists-just-discovered-100-million-y",
+    "topic": "Scientists just discovered 100-million-year-old fossilized dinosaur droppings proving giant plant-eating dinosaurs regularly ate ocean seaweed",
+    "title": "Did Dinosaurs Eat Diverse Plants? 🤯",
+    "description": "Scientists examined fossilized dinosaur droppings and discovered giant titanosaurs may have eaten a wide variety of plants!\n\n#shorts #hindi #science\n\nSources (open-access research):\n- Barbacka et al. (2022), Papers in Palaeontology. doi:10.1002/spp2.1425\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nImage: Smithsonian (NMNHEDUCATION), CC0\nMaps: Natural Earth (public domain)\nPhoto by Icewall42 on Pixabay\nPhoto by jmrockeman on Pixabay\nPhoto by paulbr75 on Pixabay\nVideo by AlexKopeykin on Pixabay\nVideo by Roque_dg on Pixabay\nVideo by TonyDias7 on Pixabay\nVideo by Vimeo-Free-Videos on Pixabay\n\nयह वीडियो कैसे बना: स्क्रिप्ट को AI tools की मदद से open research के आधार पर लिखा और fact-check किया गया है, आवाज़ AI voice की है, और editing open-source software से हुई है। कोई गलती दिखे तो comment में बताइए — जाँच कर सुधार करेंगे।",
+    "tags": [
+      "dinosaurs",
+      "fossils",
+      "sciencefacts",
+      "hinglish"
+    ],
+    "hook": "करोड़ों साल पुराना dinosaur poop देखकर scientists दंग रह गए।",
+    "status": "review",
+    "narration": "करोड़ों साल पुराना dinosaur poop देखकर scientists दंग रह गए। Utah की चट्टानों में एक titanosaur का fossilized poop मिला। Scientists ने जब इसे high-tech scanner से scan किया, तो अंदर पचा हुआ खाना दिखा। ये विशाल dinosaurs सिर्फ जंगल के पेड़-पौधे और पत्तियां नहीं खाते थे, कुछ और भी था। पेट के उस fossilized poop में क्या मिला, जानने के लिए रुकिए 3 सेकंड! वहां अलग-अलग तरह के पौधे और घास के अंश मिले। इससे वैज्ञानिकों को सुराग मिला कि ये विशाल जीव विभिन्न प्रकार की वनस्पति खाते थे। कल का जवाब: न दौड़ पाने वाला hunter ambush यानी घात लगाकर हमला करता था, किसी का सही नहीं था! कभी सोचा है, ocean water इतना salty होने के बावजूद समुद्र की fish कभी प्यासी क्यों नहीं मरतीं?",
+    "voice_engine": "edge-tts",
+    "voices": "one narrator (hi-IN-SwaraNeural)",
+    "diagrams": 1,
+    "series": "Everyday Whys",
+    "countdown": false,
+    "length_arm": "long",
+    "question": "कभी सोचा है, ocean water इतना salty होने के बावजूद समुद्र की fish कभी प्यासी क्यों नहीं मरतीं?",
+    "answer_comment": "The answer: Ocean fish have specialized gills and kidneys that actively pump out excess salt from their bodies while retaining fresh water. Land animals would dehydrate from drinking saltwater, but fish are natural salt-filtering machines! What ocean question should we explore next?\n\nSources (open-access research):\n- Barbacka et al. (2022), Papers in Palaeontology. doi:10.1002/spp2.1425",
+    "sources": [
+      {
+        "claim": "Fossilized dinosaur droppings (coprolites) revealed evidence of diverse plant ingestion.",
+        "cite": "Barbacka et al. (2022), Papers in Palaeontology. doi:10.1002/spp2.1425",
+        "doi": "10.1002/spp2.1425",
+        "title": "Early Jurassic coprolites: insights into palaeobotany and the feeding behaviour of dinosaurs",
+        "why": "Coprolites assigned to large predators contained more diverse plant remains, although they also belonged to the gymnosperms."
+      }
+    ],
+    "fact_check": [
+      "Fossilized dinosaur droppings (coprolites) revealed evidence of diverse plant ingestion.",
+      "Giant sauropods like titanosaurs visited various environments to supplement their diets.",
+      "Plant matter provided essential nutrients vital for giant dinosaur skeletal strength.",
+      "Marine bony fish use specialized ion transport cells in their gills and specialized kidneys to excrete excess salt and stay hydrated."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        4.16
+      ],
+      [
+        4.16,
+        8.03
+      ],
+      [
+        8.03,
+        13.07
+      ],
+      [
+        13.07,
+        18.54
+      ],
+      [
+        18.54,
+        22.99
+      ],
+      [
+        22.99,
+        26.29
+      ],
+      [
+        26.29,
+        31.57
+      ],
+      [
+        31.57,
+        37.48
+      ],
+      [
+        37.48,
+        44.11
+      ]
+    ],
+    "duration": 44.11,
+    "scene_lines": [
+      "करोड़ों साल पुराना dinosaur poop देखकर scientists दंग रह गए।",
+      "Utah की चट्टानों में एक titanosaur का fossilized poop मिला।",
+      "Scientists ने जब इसे high-tech scanner से scan किया, तो अंदर पचा हुआ खाना दिखा।",
+      "ये विशाल dinosaurs सिर्फ जंगल के पेड़-पौधे और पत्तियां नहीं खाते थे, कुछ और भी था।",
+      "पेट के उस fossilized poop में क्या मिला, जानने के लिए रुकिए 3 सेकंड!",
+      "वहां अलग-अलग तरह के पौधे और घास के अंश मिले।",
+      "इससे वैज्ञानिकों को सुराग मिला कि ये विशाल जीव विभिन्न प्रकार की वनस्पति खाते थे।",
+      "कल का जवाब: न दौड़ पाने वाला hunter ambush यानी घात लगाकर हमला करता था, किसी का सही नहीं था!",
+      "कभी सोचा है, ocean water इतना salty होने के बावजूद समुद्र की fish कभी प्यासी क्यों नहीं मरतीं?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": "wBAmoqMBEeg",
+    "captions_srt": "1\n00:00:00,050 --> 00:00:04,092\nकरोड़ों साल पुराना dinosaur poop देखकर scientists दंग रह गए।\n\n2\n00:00:04,160 --> 00:00:06,618\nUtah की चट्टानों में एक titanosaur का\n\n3\n00:00:06,618 --> 00:00:09,397\nfossilized poop मिला। Scientists ने जब इसे\n\n4\n00:00:09,397 --> 00:00:11,521\nhigh-tech scanner से scan किया, तो अंदर\n\n5\n00:00:11,521 --> 00:00:14,352\nपचा हुआ खाना दिखा। ये विशाल dinosaurs\n\n6\n00:00:14,352 --> 00:00:16,693\nसिर्फ जंगल के पेड़-पौधे और पत्तियां नहीं\n\n7\n00:00:16,693 --> 00:00:18,909\nखाते थे, कुछ और भी था। पेट\n\n8\n00:00:18,909 --> 00:00:20,818\nके उस fossilized poop में क्या मिला,\n\n9\n00:00:20,818 --> 00:00:22,984\nजानने के लिए रुकिए 3 सेकंड!\n\n10\n00:00:22,990 --> 00:00:25,215\nवहां अलग-अलग तरह के पौधे और घास\n\n11\n00:00:25,215 --> 00:00:27,847\nके अंश मिले। इससे वैज्ञानिकों को सुराग\n\n12\n00:00:27,847 --> 00:00:29,955\nमिला कि ये विशाल जीव विभिन्न प्रकार\n\n13\n00:00:29,955 --> 00:00:32,415\nकी वनस्पति खाते थे। कल का जवाब:\n\n14\n00:00:32,415 --> 00:00:34,464\nन दौड़ पाने वाला hunter ambush यानी\n\n15\n00:00:34,464 --> 00:00:37,480\nघात लगाकर हमला करता था, किसी का सही नहीं था!\n\n16\n00:00:37,480 --> 00:00:40,015\nकभी सोचा है, ocean water इतना salty\n\n17\n00:00:40,015 --> 00:00:42,128\nहोने के बावजूद समुद्र की fish कभी\n\n18\n00:00:42,128 --> 00:00:43,510\nप्यासी क्यों नहीं मरतीं?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [
+        "scene 3 (8.0-13.1 s): only 7% of its words can be heard - the voice breaks up or drops out"
+      ],
+      "footage": [],
+      "review": [],
+      "heard": [
+        "\"करोड़ों\" heard as \"करोडो\"",
+        "\"देखकर scientists\" heard as \"देख कर साईन्तिस्ट्स\"",
+        "\"रह\" heard as \"रहेगैं यूटा\"",
+        "\"utah की चट्टानों\" heard as \"चट्तानो\"",
+        "\"fossilized\" heard as \"फोसलाइस्ट\"",
+        "\"scientists\" heard as \"साईन्तिस्ट्स\"",
+        "\"high tech scanner\" heard as \"हाटिक सकना\"",
+        "\"dinosaurs\" heard as \"डीनोसोर\""
+      ],
+      "scene_heard": [
+        "scene 1: 40%",
+        "scene 2: 40%",
+        "scene 3: 7%",
+        "scene 4: 76%",
+        "scene 5: 85%",
+        "scene 6: 91%",
+        "scene 7: 80%",
+        "scene 8: 80%",
+        "scene 9: 71%"
+      ],
+      "pass": false,
+      "duration": 43.6
+    },
+    "repairs": 0
+  },
+  {
+    "job": "20261121-1657-why-yogurt-stops-bad-bacteria-from-growi",
+    "topic": "Why yogurt stops bad bacteria from growing while fresh milk spoils in days",
+    "title": "Why Yogurt Survives While Fresh Milk Spoils 🤯",
+    "description": "Fresh milk spoils in days on the kitchen counter, but yogurt stays fresh for much longer. Discover the surprising science of good bacteria and acid barriers! #shorts #science #food\n\nSources (open-access research):\n- Suliman et al. (2009), Pakistan Journal of Nutrition. doi:10.3923/pjn.2009.1404.1410\n- El-Garhi et al. (2025), Probiotics and Antimicrobial Proteins. doi:10.1007/s12602-025-10622-2\n\nPhoto by NIL-Foto on Pixabay\nPhoto by RitaE on Pixabay\nPhoto by tookapic on Pixabay\nPhoto: Benoît Prieur, CC0, via Wikimedia Commons\nPhoto: HHAFOL Moratim LUNG, CC0, via Wikimedia Commons\nVideo by Cassiopeia_Arts on Pixabay\nVideo by Dx21 on Pixabay\nVideo by EqualStock on Pixabay\nVideo by PrakashChavda on Pixabay\nVideo by bottlein on Pixabay\nVideo by choxyltd on Pixabay\n\nयह वीडियो कैसे बना: स्क्रिप्ट को AI tools की मदद से open research के आधार पर लिखा और fact-check किया गया है, आवाज़ AI voice की है, और editing open-source software से हुई है। कोई गलती दिखे तो comment में बताइए — जाँच कर सुधार करेंगे।",
+    "tags": [
+      "yogurt science",
+      "milk spoiling",
+      "food microbiology",
+      "lactic acid",
+      "fermentation"
+    ],
+    "hook": "Fresh milk spoiled in 2 days, par yogurt fridge mein weeks tak theek rehta hai?",
+    "status": "review",
+    "narration": "Fresh milk spoiled in 2 days, par yogurt fridge mein weeks tak theek rehta hai? So, tumhare fridge mein milk rakha hai jo bacteria ka sabse favourite food hai. In harmful bacteria ko milta hai sugar jo lactose kehlata hai, aur ye tezi se multiply hone lagte hain. Yehi waja hai ki milk room temperature par jaldi kharab ho jata hai aur kharab ho jata hai. Par turn ye hai ki yogurt mein bhi wahi milk aur wahi lactose hota hai! Yogurt spoil nahi hota kyunki wahan good bacteria, yani Lactobacillus, pehle se hi kabza karke baithe hote hain. Ye good bacteria lactose ko consume karke lactic acid produce karte hain, jo ek acid barrier bana deta hai. Is high acidity ki wajah se bad bacteria survive nahi kar pate aur milk ki tarah yogurt fatne se bach jata hai. Ever thought why other fermented foods like cheese and pickles also last much longer than fresh produce?",
+    "voice_engine": "edge-tts",
+    "voices": "one narrator (hi-IN-SwaraNeural)",
+    "diagrams": 1,
+    "series": "Food Whys",
+    "countdown": false,
+    "length_arm": "long",
+    "question": "Ever thought why other fermented foods like cheese and pickles also last much longer than fresh produce?",
+    "answer_comment": "The answer: Fermented foods like yogurt and cheese are packed with friendly bacteria that consume the milk sugar and turn it into lactic acid. This creates an acidic environment that bad bacteria simply cannot survive in, protecting the food from spoiling like fresh milk does. Got a question about how your food stays safe? Drop it below!\n\nSources (open-access research):\n- Suliman et al. (2009), Pakistan Journal of Nutrition. doi:10.3923/pjn.2009.1404.1410\n- El-Garhi et al. (2025), Probiotics and Antimicrobial Proteins. doi:10.1007/s12602-025-10622-2",
+    "sources": [
+      {
+        "claim": "Yogurt contains lactic acid bacteria (such as Lactobacillus) that ferment lactose into lactic acid.",
+        "cite": "Suliman et al. (2009), Pakistan Journal of Nutrition. doi:10.3923/pjn.2009.1404.1410",
+        "doi": "10.3923/pjn.2009.1404.1410",
+        "title": "The Benefits of Lactic Acid Bacteria in Yogurt on the Gastrointestinal Function and Health",
+        "why": "Both Lactobacillus bulgaricus and Streptococcus thermophilus (LAB) species, contribute to the formation of yogurt as a result of anaerobic fermentation of lactic acid in the milk."
+      },
+      {
+        "claim": "The production of lactic acid lowers the pH, creating an acidic environment that inhibits the growth of harmful bacteria and preserves the food.",
+        "cite": "El-Garhi et al. (2025), Probiotics and Antimicrobial Proteins. doi:10.1007/s12602-025-10622-2",
+        "doi": "10.1007/s12602-025-10622-2",
+        "title": "Effect of Organic Acids on Pathogenic and Lactic Acid Bacteria in Directly Raw Milk Cheddar Cheese",
+        "why": "The acids effectively inhibited key pathogenic strains, including Salmonella Enteritidis, Staphylococcus aureus, Bacillus cereus, Escherichia coli, and Pseudomonas aeruginosa, while largely preserving the viability of beneficial LAB"
+      }
+    ],
+    "fact_check": [
+      "Fresh milk spoils rapidly due to the proliferation of spoilage bacteria feeding on lactose.",
+      "Yogurt contains lactic acid bacteria (such as Lactobacillus) that ferment lactose into lactic acid.",
+      "The production of lactic acid lowers the pH, creating an acidic environment that inhibits the growth of harmful bacteria and preserves the food."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        4.51
+      ],
+      [
+        4.51,
+        9.2
+      ],
+      [
+        9.2,
+        15.36
+      ],
+      [
+        15.36,
+        20.76
+      ],
+      [
+        20.76,
+        24.69
+      ],
+      [
+        24.69,
+        31.51
+      ],
+      [
+        31.51,
+        37.8
+      ],
+      [
+        37.8,
+        44.47
+      ],
+      [
+        44.47,
+        50.63
+      ]
+    ],
+    "duration": 50.63,
+    "scene_lines": [
+      "Fresh milk spoiled in 2 days, par yogurt fridge mein weeks tak theek rehta hai?",
+      "So, tumhare fridge mein milk rakha hai jo bacteria ka sabse favourite food hai.",
+      "In harmful bacteria ko milta hai sugar jo lactose kehlata hai, aur ye tezi se multiply hone lagte hain.",
+      "Yehi waja hai ki milk room temperature par jaldi kharab ho jata hai aur kharab ho jata hai.",
+      "Par turn ye hai ki yogurt mein bhi wahi milk aur wahi lactose hota hai!",
+      "Yogurt spoil nahi hota kyunki wahan good bacteria, yani Lactobacillus, pehle se hi kabza karke baithe hote hain.",
+      "Ye good bacteria lactose ko consume karke lactic acid produce karte hain, jo ek acid barrier bana deta hai.",
+      "Is high acidity ki wajah se bad bacteria survive nahi kar pate aur milk ki tarah yogurt fatne se bach jata hai.",
+      "Ever thought why other fermented foods like cheese and pickles also last much longer than fresh produce?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,050 --> 00:00:01,981\nFresh milk spoiled in 2 days, par\n\n2\n00:00:01,981 --> 00:00:04,311\nyogurt fridge mein weeks tak theek rehta hai?\n\n3\n00:00:04,510 --> 00:00:06,683\nSo, tumhare fridge mein milk rakha hai\n\n4\n00:00:06,683 --> 00:00:09,200\njo bacteria ka sabse favourite food hai.\n\n5\n00:00:09,200 --> 00:00:11,435\nIn harmful bacteria ko milta hai sugar\n\n6\n00:00:11,435 --> 00:00:13,523\njo lactose kehlata hai, aur ye tezi\n\n7\n00:00:13,523 --> 00:00:15,299\nse multiply hone lagte hain.\n\n8\n00:00:15,360 --> 00:00:17,468\nYehi waja hai ki milk room temperature\n\n9\n00:00:17,468 --> 00:00:19,311\npar jaldi kharab ho jata hai aur\n\n10\n00:00:19,311 --> 00:00:20,621\nkharab ho jata hai.\n\n11\n00:00:20,760 --> 00:00:22,328\nPar turn ye hai ki yogurt mein\n\n12\n00:00:22,328 --> 00:00:24,586\nbhi wahi milk aur wahi lactose hota hai!\n\n13\n00:00:24,690 --> 00:00:27,042\nYogurt spoil nahi hota kyunki wahan good\n\n14\n00:00:27,042 --> 00:00:30,004\nbacteria, yani Lactobacillus, pehle se hi kabza\n\n15\n00:00:30,004 --> 00:00:31,441\nkarke baithe hote hain.\n\n16\n00:00:31,510 --> 00:00:33,904\nYe good bacteria lactose ko consume karke\n\n17\n00:00:33,904 --> 00:00:36,029\nlactic acid produce karte hain, jo ek\n\n18\n00:00:36,029 --> 00:00:37,772\nacid barrier bana deta hai.\n\n19\n00:00:37,800 --> 00:00:39,675\nIs high acidity ki wajah se bad\n\n20\n00:00:39,675 --> 00:00:41,953\nbacteria survive nahi kar pate aur milk\n\n21\n00:00:41,953 --> 00:00:44,353\nki tarah yogurt fatne se bach jata hai.\n\n22\n00:00:44,470 --> 00:00:46,760\nEver thought why other fermented foods like\n\n23\n00:00:46,760 --> 00:00:50,034\ncheese and pickles also last much longer than fresh produce?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [
+        "phrase missing from the audio: \"weeks tak theek rehta hai so tumhare fridge mein milk rakha hai jo bacteria\"",
+        "scene 1 (0.0-4.5 s): only 0% of its words can be heard - the voice breaks up or drops out",
+        "scene 2 (4.5-9.2 s): only 17% of its words can be heard - the voice breaks up or drops out",
+        "scene 4 (15.4-20.8 s): only 15% of its words can be heard - the voice breaks up or drops out",
+        "scene 5 (20.8-24.7 s): only 0% of its words can be heard - the voice breaks up or drops out",
+        "scene 6 (24.7-31.5 s): only 0% of its words can be heard - the voice breaks up or drops out",
+        "scene 7 (31.5-37.8 s): only 0% of its words can be heard - the voice breaks up or drops out",
+        "scene 8 (37.8-44.5 s): only 14% of its words can be heard - the voice breaks up or drops out"
+      ],
+      "footage": [],
+      "review": [],
+      "heard": [
+        "\"fresh milk spoiled in 2 days par yogurt fridge\" heard as \"तुम्हारे फ्रूज्\"",
+        "\"favourite\" heard as \"पूड़ोग\"",
+        "\"\" heard as \"तुम्हारे म्लक लगत्रिया का सब सब सबसे फुडद है ये।\"",
+        "\"harmful bacteria\" heard as \"ल्हाम फुल बक्तीरिया\"",
+        "\"multiply\" heard as \"मल्तिप्ला mechanic of the by him estiver it is\"",
+        "\"lagte hain\" heard as \"a sheer tone वाजा एक रून देके है\"",
+        "\"milk room temperature par\" heard as \"मिल कॉम तेमथरेचा पा\"",
+        "\"kharab\" heard as \"क्सराब\""
+      ],
+      "scene_heard": [
+        "scene 1: 0%",
+        "scene 2: 17%",
+        "scene 3: 71%",
+        "scene 4: 15%",
+        "scene 5: 0%",
+        "scene 6: 0%",
+        "scene 7: 0%",
+        "scene 8: 14%",
+        "scene 9: 47%"
+      ],
+      "pass": false,
+      "duration": 50.0
+    },
+    "repairs": 0
+  },
+  {
+    "job": "20261121-1711-why-fresh-rainwater-smells-wonderful-aft",
+    "topic": "Why fresh rainwater smells wonderful after a dry spell, unlike water straight from the tap",
+    "title": "Why Rain Actually Smells So Good 🤯",
+    "description": "Kabhi socha hai ki barish ke baad wo mitti ki mehak kahan se aati hai? Ye tap water mein kyun nahi hoti? Janiye iska science #shorts #science #monsoon\n\nSources (open-access research):\n- Joung et al. (2015), Nature Communications. doi:10.1038/ncomms7083\n\nPhoto by nearshit17 on Pixabay\nPhoto: Dennis Wong, BY 2.0, via Openverse (flickr)\nPhoto: unknown, CC0 1.0, via Openverse (rawpixel)\nVideo by GeunGoh on Pixabay\nVideo by GreenCardShow on Pixabay\nVideo by lawlaw91 on Pixabay\nVideo by Roque_dg on Pixabay\nVideo by estivejovem on Pixabay\nVideo by Vimeo-Free-Videos on Pixabay\nVideo by ghasoub on Pixabay\nVideo by livemedia_7 on Pixabay\n\nयह वीडियो कैसे बना: स्क्रिप्ट को AI tools की मदद से open research के आधार पर लिखा और fact-check किया गया है, आवाज़ AI voice की है, और editing open-source software से हुई है। कोई गलती दिखे तो comment में बताइए — जाँच कर सुधार करेंगे।",
+    "tags": [
+      "shorts",
+      "hindi",
+      "science",
+      "rain"
+    ],
+    "hook": "Barish ki pehli boond dry mitti par padte hi jo mehak aati hai, wo mitti mein maujood compounds se aati hai!",
+    "status": "review",
+    "narration": "Barish ki pehli boond dry mitti par padte hi jo mehak aati hai, wo mitti mein maujood compounds se aati hai! Jab lambe dry spell ke baad mitti par water drops padte hain, toh ek magical change shuru hota hai. Sukhe mausam mein kuch specific bacteria aur plants kuch oily compounds release karte hain jo mitti mein absorb ho jaate hain. Aur yahi par aati hai ek interesting twist, kyunki ye oils sirf tabhi bahar aate hain jab... Ye khushboo ek chemical ki wajah se hoti hai jise geosmin kehte hain, jise soil microbes banate hain. Jab barish ki boond mitti par hit karti hai, toh tiny air bubbles bante hain jo is geosmin ko हवा mein aerosol ki tarah spread kar dete hain. Hmara nose is geosmin ke liye itna sensitive hai ki hum iski extremely low amount ko bhi easily smell kar sakte hain. Kya aapne socha hai ki barish ke baad aane wali ye mitti ki mehak itni refreshing kyun hoti hai?",
+    "voice_engine": "edge-tts",
+    "voices": "one narrator (hi-IN-SwaraNeural)",
+    "diagrams": 1,
+    "series": "Everyday Whys",
+    "countdown": false,
+    "length_arm": "short",
+    "question": "Kya aapne socha hai ki barish ke baad aane wali ye mitti ki mehak itni refreshing kyun hoti hai?",
+    "answer_comment": "The answer: Wo mehak geosmin aur plant oils ki wajah se hoti hai jo barish ki boondo se hawa mein failti hai. Some animals like camels isko water sources dhoondne ke liye use karte hain! Agar koi aur sawaal ho toh zaroor poochho.\n\nSources (open-access research):\n- Joung et al. (2015), Nature Communications. doi:10.1038/ncomms7083",
+    "sources": [
+      {
+        "claim": "Raindrops trap air bubbles when hitting porous soil, which shoot upward and aerosolize into the air.",
+        "cite": "Joung et al. (2015), Nature Communications. doi:10.1038/ncomms7083",
+        "doi": "10.1038/ncomms7083",
+        "title": "Aerosol generation by raindrop impact on soil",
+        "why": "Here, Joung and Buie report another mechanism of aerosol generation from rainfall impact on porous soil surfaces, whereby elements can be delivered to the air."
+      }
+    ],
+    "fact_check": [
+      "The smell of rain after a dry spell is called petrichor.",
+      "It is caused by the release of geosmin (produced by actinide bacteria) and plant oils trapped in the soil.",
+      "Raindrops trap air bubbles when hitting porous soil, which shoot upward and aerosolize into the air.",
+      "Human noses are extremely sensitive to geosmin, detecting parts per trillion."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        6.07
+      ],
+      [
+        6.07,
+        11.86
+      ],
+      [
+        11.86,
+        19.03
+      ],
+      [
+        19.03,
+        24.42
+      ],
+      [
+        24.42,
+        30.44
+      ],
+      [
+        30.44,
+        38.3
+      ],
+      [
+        38.3,
+        45.11
+      ],
+      [
+        45.11,
+        51.26
+      ]
+    ],
+    "duration": 51.26,
+    "scene_lines": [
+      "Barish ki pehli boond dry mitti par padte hi jo mehak aati hai, wo mitti mein maujood compounds se aati hai!",
+      "Jab lambe dry spell ke baad mitti par water drops padte hain, toh ek magical change shuru hota hai.",
+      "Sukhe mausam mein kuch specific bacteria aur plants kuch oily compounds release karte hain jo mitti mein absorb ho jaate hain.",
+      "Aur yahi par aati hai ek interesting twist, kyunki ye oils sirf tabhi bahar aate hain jab...",
+      "Ye khushboo ek chemical ki wajah se hoti hai jise geosmin kehte hain, jise soil microbes banate hain.",
+      "Jab barish ki boond mitti par hit karti hai, toh tiny air bubbles bante hain jo is geosmin ko हवा mein aerosol ki tarah spread kar dete hain.",
+      "Hmara nose is geosmin ke liye itna sensitive hai ki hum iski extremely low amount ko bhi easily smell kar sakte hain.",
+      "Kya aapne socha hai ki barish ke baad aane wali ye mitti ki mehak itni refreshing kyun hoti hai?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,050 --> 00:00:02,058\nBarish ki pehli boond dry mitti par\n\n2\n00:00:02,058 --> 00:00:03,632\npadte hi jo mehak aati hai, wo\n\n3\n00:00:03,632 --> 00:00:06,003\nmitti mein maujood compounds se aati hai!\n\n4\n00:00:06,070 --> 00:00:08,125\nJab lambe dry spell ke baad mitti\n\n5\n00:00:08,125 --> 00:00:09,977\npar water drops padte hain, toh ek\n\n6\n00:00:09,977 --> 00:00:11,795\nmagical change shuru hota hai.\n\n7\n00:00:11,860 --> 00:00:14,371\nSukhe mausam mein kuch specific bacteria aur\n\n8\n00:00:14,371 --> 00:00:16,754\nplants kuch oily compounds release karte hain\n\n9\n00:00:16,754 --> 00:00:18,890\njo mitti mein absorb ho jaate hain.\n\n10\n00:00:19,030 --> 00:00:21,074\nAur yahi par aati hai ek interesting\n\n11\n00:00:21,074 --> 00:00:24,340\ntwist, kyunki ye oils sirf tabhi bahar aate hain jab...\n\n12\n00:00:24,420 --> 00:00:26,295\nYe khushboo ek chemical ki wajah se\n\n13\n00:00:26,295 --> 00:00:28,693\nhoti hai jise geosmin kehte hain, jise\n\n14\n00:00:28,693 --> 00:00:30,384\nsoil microbes banate hain.\n\n15\n00:00:30,440 --> 00:00:32,294\nJab barish ki boond mitti par hit\n\n16\n00:00:32,294 --> 00:00:34,270\nkarti hai, toh tiny air bubbles bante\n\n17\n00:00:34,270 --> 00:00:36,134\nhain jo is geosmin ko हवा mein\n\n18\n00:00:36,134 --> 00:00:38,259\naerosol ki tarah spread kar dete hain.\n\n19\n00:00:38,300 --> 00:00:40,440\nHmara nose is geosmin ke liye itna\n\n20\n00:00:40,440 --> 00:00:42,633\nsensitive hai ki hum iski extremely low\n\n21\n00:00:42,633 --> 00:00:44,991\namount ko bhi easily smell kar sakte hain.\n\n22\n00:00:45,110 --> 00:00:47,101\nKya aapne socha hai ki barish ke\n\n23\n00:00:47,101 --> 00:00:49,015\nbaad aane wali ye mitti ki mehak\n\n24\n00:00:49,015 --> 00:00:50,663\nitni refreshing kyun hoti hai?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [
+        "scene 6 (30.4-38.3 s): only 22% of its words can be heard - the voice breaks up or drops out"
+      ],
+      "footage": [],
+      "review": [],
+      "heard": [
+        "\"boond dry\" heard as \"बून ड़ाई\"",
+        "\"padte\" heard as \"पर परते\"",
+        "\"mehak\" heard as \"महेंक\"",
+        "\"compounds se\" heard as \"कुमपाून्से\"",
+        "\"lambe dry spell\" heard as \"लंबे ड़ाई स्पल\"",
+        "\"drops padte hain\" heard as \"ड़ोप्स परते है\"",
+        "\"magical change\" heard as \"माजिकल चेंच\"",
+        "\"specific bacteria\" heard as \"स्पलस्टिक बाक्तिर्या\""
+      ],
+      "scene_heard": [
+        "scene 1: 67%",
+        "scene 2: 56%",
+        "scene 3: 55%",
+        "scene 4: 69%",
+        "scene 5: 59%",
+        "scene 6: 22%",
+        "scene 7: 48%",
+        "scene 8: 94%"
+      ],
+      "pass": false,
+      "duration": 50.7
+    },
+    "repairs": 0
+  },
+  {
+    "job": "20261121-1724-how-stanford-scientists-discovered-hidde",
+    "topic": "How Stanford scientists discovered hidden brain signals that predict Alzheimer's years before symptoms appear",
+    "title": "Can We Spot Alzheimer’s Before Symptoms Start?",
+    "description": "Scientists at Stanford are studying brain patterns that may indicate Alzheimer's years before memory loss starts. Here is how they analyze these hidden signals. #shorts #science #brain\n\nSources (open-access research):\n- Ereira et al. (2024), Nature Mental Health. doi:10.1038/s44220-024-00259-5\n- Arunagiri et al. (2010), International Journal of Alzheimer s Disease. doi:10.4061/2010/606802\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nIllustrations: drawn for this video with FLUX.2 [klein] 4B (AI, Apache 2.0) and checked for accuracy\nPhoto by Maximilianovich on Pixabay\nPhoto: Brian L. Edlow, Azma Mareyam, Andreas Horn, Jonathan R. Poli, CC BY 4.0, via Wikimedia Commons\nVideo by AlexKopeykin on Pixabay\nVideo by Coverr-Free-Footage on Pixabay\nVideo by NeuroPixels on Pixabay\nVideo by Vimeo-Free-Videos on Pixabay\n\nयह वीडियो कैसे बना: स्क्रिप्ट को AI tools की मदद से open research के आधार पर लिखा और fact-check किया गया है, आवाज़ AI voice की है, और editing open-source software से हुई है। कोई गलती दिखे तो comment में बताइए — जाँच कर सुधार करेंगे।",
+    "tags": [
+      "science",
+      "brain",
+      "alzheimers",
+      "stanford"
+    ],
+    "hook": "Tumhara brain Alzheimer’s symptoms dikhne se pehle kai saal tak subtle signals dene lag sakta hai, jaise kuch research suggest karti hai.",
+    "status": "review",
+    "narration": "Tumhara brain Alzheimer’s symptoms dikhne se pehle kai saal tak subtle signals dene lag sakta hai, jaise kuch research suggest karti hai. Hum aksar memory loss hone par hi doctor ke paas jaate hain. Stanford ke researchers ne dekha hai ki brain ke networks mein hone wale subtle badlav, Alzheimer’s ke shuru hone se pehle ke sanket ho sakte hain. Ye patterns itne subtle hote hain ki routine clinical tests inhe pakad nahi paate. Ye signals 'default mode network' mein dekhe gaye, jo tab active hota hai jab hum kisi specific task par focus nahi kar rahe hote. Research dikhati hai ki is network mein disruption aksar protein accumulation ke saath judte hain. Iska matlab hai ki researchers hope this could one day lead to better understanding of early brain changes. Socho, tumhara brain tab active kyun hota hai jab tum kuch nahi kar rahe hote?",
+    "voice_engine": "edge-tts",
+    "voices": "one narrator (hi-IN-SwaraNeural)",
+    "diagrams": 1,
+    "series": "Body Whys",
+    "countdown": false,
+    "length_arm": "standard",
+    "question": "Ever thought why tumhara brain tab bhi kafi active rehta hai jab tum actually kuch nahi kar rahe hote?",
+    "answer_comment": "The answer: Even when you aren't doing a task, your brain's 'Default Mode Network' is busy processing internal thoughts and memories. Because it is constantly active, researchers are exploring whether monitoring this ‘resting’ activity could help spot early network hiccups before symptoms appear. Ever thought how else your brain stays busy while you sleep?\n\nSources (open-access research):\n- Ereira et al. (2024), Nature Mental Health. doi:10.1038/s44220-024-00259-5\n- Arunagiri et al. (2010), International Journal of Alzheimer s Disease. doi:10.4061/2010/606802",
+    "sources": [
+      {
+        "claim": "Stanford Medicine researchers identified that Alzheimer's-related changes in the brain's default mode network can be detected years before symptoms.",
+        "cite": "Ereira et al. (2024), Nature Mental Health. doi:10.1038/s44220-024-00259-5",
+        "doi": "10.1038/s44220-024-00259-5",
+        "title": "Early detection of dementia with default-mode network effective connectivity",
+        "why": "Altered functional connectivity precedes structural brain changes and symptoms in dementia. ... We investigated whether a neurobiological model of DMN effective connectivity could predict a future dementia diagnosis at the single-participant level. ... including 81 undiagnosed individuals who develo"
+      },
+      {
+        "claim": "Early detection of Alzheimer's biomarkers is a major focus of current clinical research.",
+        "cite": "Arunagiri et al. (2010), International Journal of Alzheimer s Disease. doi:10.4061/2010/606802",
+        "doi": "10.4061/2010/606802",
+        "title": "CSF Biomarkers for Alzheimer's Disease Diagnosis",
+        "why": "Biomarkers are useful in detecting the preclinical as well as symptomatic stages of AD... with particular emphasis on CSF biomarkers for monitoring the early development of AD before significant cognitive dysfunction."
+      }
+    ],
+    "fact_check": [
+      "Stanford Medicine researchers identified that Alzheimer's-related changes in the brain's default mode network can be detected years before symptoms.",
+      "The Default Mode Network (DMN) is a network of interacting brain regions that are active when a person is not focused on the outside world.",
+      "Early detection of Alzheimer's biomarkers is a major focus of current clinical research."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        7.83
+      ],
+      [
+        7.83,
+        11.18
+      ],
+      [
+        11.18,
+        19.5
+      ],
+      [
+        19.5,
+        24.36
+      ],
+      [
+        24.36,
+        32.07
+      ],
+      [
+        32.07,
+        37.51
+      ],
+      [
+        37.51,
+        43.34
+      ],
+      [
+        43.34,
+        48.52
+      ]
+    ],
+    "duration": 48.52,
+    "scene_lines": [
+      "Tumhara brain Alzheimer’s symptoms dikhne se pehle kai saal tak subtle signals dene lag sakta hai, jaise kuch research suggest karti hai.",
+      "Hum aksar memory loss hone par hi doctor ke paas jaate hain.",
+      "Stanford ke researchers ne dekha hai ki brain ke networks mein hone wale subtle badlav, Alzheimer’s ke shuru hone se pehle ke sanket ho sakte hain.",
+      "Ye patterns itne subtle hote hain ki routine clinical tests inhe pakad nahi paate.",
+      "Ye signals 'default mode network' mein dekhe gaye, jo tab active hota hai jab hum kisi specific task par focus nahi kar rahe hote.",
+      "Research dikhati hai ki is network mein disruption aksar protein accumulation ke saath judte hain.",
+      "Iska matlab hai ki researchers hope this could one day lead to better understanding of early brain changes.",
+      "Socho, tumhara brain tab active kyun hota hai jab tum kuch nahi kar rahe hote?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,050 --> 00:00:02,857\nTumhara brain Alzheimer’s symptoms dikhne se pehle\n\n2\n00:00:02,857 --> 00:00:04,870\nkai saal tak subtle signals dene lag\n\n3\n00:00:04,870 --> 00:00:07,714\nsakta hai, jaise kuch research suggest karti hai.\n\n4\n00:00:07,830 --> 00:00:09,631\nHum aksar memory loss hone par hi\n\n5\n00:00:09,631 --> 00:00:11,180\ndoctor ke paas jaate hain.\n\n6\n00:00:11,180 --> 00:00:13,436\nStanford ke researchers ne dekha hai ki\n\n7\n00:00:13,436 --> 00:00:15,470\nbrain ke networks mein hone wale subtle\n\n8\n00:00:15,470 --> 00:00:17,942\nbadlav, Alzheimer’s ke shuru hone se pehle\n\n9\n00:00:17,942 --> 00:00:19,473\nke sanket ho sakte hain.\n\n10\n00:00:19,500 --> 00:00:21,534\nYe patterns itne subtle hote hain ki\n\n11\n00:00:21,534 --> 00:00:24,252\nroutine clinical tests inhe pakad nahi paate.\n\n12\n00:00:24,360 --> 00:00:26,765\nYe signals default mode network mein dekhe\n\n13\n00:00:26,765 --> 00:00:28,682\ngaye, jo tab active hota hai jab\n\n14\n00:00:28,682 --> 00:00:31,919\nhum kisi specific task par focus nahi kar rahe hote.\n\n15\n00:00:32,070 --> 00:00:34,189\nResearch dikhati hai ki is network mein\n\n16\n00:00:34,189 --> 00:00:37,510\ndisruption aksar protein accumulation ke saath judte hain.\n\n17\n00:00:37,510 --> 00:00:39,682\nIska matlab hai ki researchers hope this\n\n18\n00:00:39,682 --> 00:00:41,620\ncould one day lead to better understanding\n\n19\n00:00:41,620 --> 00:00:43,258\nof early brain changes.\n\n20\n00:00:43,340 --> 00:00:46,037\nSocho, tumhara brain tab active kyun hota\n\n21\n00:00:46,037 --> 00:00:47,918\nhai jab tum kuch nahi kar rahe hote?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [
+        "phrase missing from the audio: \"hain stanford ke researchers ne dekha\"",
+        "phrase missing from the audio: \"ki brain ke networks mein hone wale subtle badlav alzheimer s ke shuru hone se pehle ke sanket ho sakte hain ye patterns itne subtle hote hain ki routine clinical tests inhe pakad nahi paate ye signals 'default mode network' mein dekhe gaye jo tab active hota hai jab hum kisi specific task par focus nahi kar rahe hote research dikhati hai ki is network mein disruption aksar protein accumulation ke saath judte hain iska matlab hai ki researchers hope this could one day lead to better understanding of early brain changes socho\"",
+        "only 42% of the script is heard as written",
+        "scene 7 (37.5-43.3 s): only 0% of its words can be heard - the voice breaks up or drops out",
+        "scene 8 (43.3-48.5 s): only 0% of its words can be heard - the voice breaks up or drops out"
+      ],
+      "footage": [],
+      "review": [],
+      "heard": [
+        "\"alzheimer s symptoms\" heard as \"अल्स्टाईमर्स सिम्टम्स\"",
+        "\"subtle signals\" heard as \"सटल सिएंज्टार्स\"",
+        "\"suggest\" heard as \"सजच्ट\"",
+        "\"memory loss\" heard as \"मेमरी लोस\"",
+        "\"active kyun\" heard as \"अक्तिप कुछ\"",
+        "\"nahi\" heard as \"नहीं\""
+      ],
+      "scene_heard": [
+        "scene 1: 52%",
+        "scene 2: 73%",
+        "scene 3: 32%",
+        "scene 4: 50%",
+        "scene 5: 83%",
+        "scene 6: 71%",
+        "scene 7: 0%",
+        "scene 8: 0%"
+      ],
+      "pass": false,
+      "duration": 48.0
+    },
+    "repairs": 0
+  },
+  {
+    "job": "20261121-1739-why-this-entire-carton-of-eggs-has-2-yol",
+    "topic": "Why this entire carton of eggs has 2 yolks each",
+    "title": "Why Do Some Eggs Have Two Yolks?",
+    "description": "Ever wondered why you sometimes find a double-yolk egg? It is usually a biological quirk from young hens that slips through sorting. #shorts #science #food\n\nSources (open-access research):\n- Barroa et al. (2026), International Journal of Science and Management Studies (IJSMS). doi:10.51386/25815946/ijsms-v9i1p125\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nIllustrations: drawn for this video with FLUX.2 [klein] 4B (AI, Apache 2.0) and checked for accuracy\nPhoto by Lolame on Pixabay\nPhoto by congerdesign on Pixabay\nPhoto by ds_30 on Pixabay\nPhoto: U.S. Department of Agriculture, CC0 1.0, via Openverse (rawpixel)\nPhoto: normanack, BY 2.0, via Openverse (flickr)\n\nयह वीडियो कैसे बना: स्क्रिप्ट को AI tools की मदद से open research के आधार पर लिखा और fact-check किया गया है, आवाज़ AI voice की है, और editing open-source software से हुई है। कोई गलती दिखे तो comment में बताइए — जाँच कर सुधार करेंगे।",
+    "tags": [
+      "science",
+      "food"
+    ],
+    "hook": "Maine abhi grocery se egg ka carton khola aur ek egg mein do yolks nikle.",
+    "status": "review",
+    "narration": "Maine abhi grocery se egg ka carton khola aur ek egg mein do yolks nikle. Ye normal nahi hai, lekin random bhi nahi hai. Young hens jab pehli baar eggs dena shuru karti hain, toh unka hormones balance hone mein time lagta hai. Kabhi kabhi ovaries ek ke baad ek do yolks release kar deti hain. Lekin supermarket cartons mein double-yolk eggs ka aana aksar ek sanyog hota hai, kyunki sorting machines kabhi-kabhi inhe normal eggs ke saath hi chhodd deti hain. Candling process mein light ka use karke eggs ko check kiya jata hai, par double-yolk ki pehchan karna mushkil hota hai. Double-yolk eggs aksar size mein bade hote hain, isliye industrial weighers inhe kabhi-kabhi extra large category mein dal dete hain. Isi wajah se kabhi-kabhi ek hi carton mein humein aise unique eggs mil jate hain. Ever thought how you can tell if an egg has two yolks without even cracking it open?",
+    "voice_engine": "edge-tts",
+    "voices": "one narrator (hi-IN-SwaraNeural)",
+    "diagrams": 1,
+    "series": "Food Whys",
+    "countdown": false,
+    "length_arm": "long",
+    "question": "Ever thought how you can tell if an egg has two yolks without even cracking it open?",
+    "answer_comment": "The answer: You can try candling by holding the egg up to a strong light in a dark room. A double-yolk egg may show two distinct silhouettes inside when held against a strong light, though it can be difficult to confirm.\n\nSources (open-access research):\n- Barroa et al. (2026), International Journal of Science and Management Studies (IJSMS). doi:10.51386/25815946/ijsms-v9i1p125",
+    "sources": [
+      {
+        "claim": "Candling is a standard process used to inspect egg contents for quality.",
+        "cite": "Barroa et al. (2026), International Journal of Science and Management Studies (IJSMS). doi:10.51386/25815946/ijsms-v9i1p125",
+        "doi": "10.51386/25815946/ijsms-v9i1p125",
+        "title": "Classification of Fertile Egg (Balut Egg) and Non-Fertile Egg (Penoy Egg) using Euclidean Filtering Algorithm",
+        "why": "The study also highlights Euclidean filtering's potential as an effective replacement for deeper learning-based models in applications pertaining to food quality evaluation and agricultural automation, in the context of it being a substitute for traditional manual candling."
+      }
+    ],
+    "fact_check": [
+      "Double yolks occur frequently in young hens due to asynchronous ovulation.",
+      "Candling is a standard process used to inspect egg contents for quality.",
+      "Weight-based sorting machines often group larger double-yolk eggs with standard jumbo eggs."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        4.69
+      ],
+      [
+        4.69,
+        7.44
+      ],
+      [
+        7.44,
+        13.16
+      ],
+      [
+        13.16,
+        17.0
+      ],
+      [
+        17.0,
+        25.93
+      ],
+      [
+        25.93,
+        32.24
+      ],
+      [
+        32.24,
+        39.29
+      ],
+      [
+        39.29,
+        43.97
+      ],
+      [
+        43.97,
+        48.74
+      ]
+    ],
+    "duration": 48.74,
+    "scene_lines": [
+      "Maine abhi grocery se egg ka carton khola aur ek egg mein do yolks nikle.",
+      "Ye normal nahi hai, lekin random bhi nahi hai.",
+      "Young hens jab pehli baar eggs dena shuru karti hain, toh unka hormones balance hone mein time lagta hai.",
+      "Kabhi kabhi ovaries ek ke baad ek do yolks release kar deti hain.",
+      "Lekin supermarket cartons mein double-yolk eggs ka aana aksar ek sanyog hota hai, kyunki sorting machines kabhi-kabhi inhe normal eggs ke saath hi chhodd deti hain.",
+      "Candling process mein light ka use karke eggs ko check kiya jata hai, par double-yolk ki pehchan karna mushkil hota hai.",
+      "Double-yolk eggs aksar size mein bade hote hain, isliye industrial weighers inhe kabhi-kabhi extra large category mein dal dete hain.",
+      "Isi wajah se kabhi-kabhi ek hi carton mein humein aise unique eggs mil jate hain.",
+      "Ever thought how you can tell if an egg has two yolks without even cracking it open?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,050 --> 00:00:02,253\nMaine abhi grocery se egg ka carton\n\n2\n00:00:02,253 --> 00:00:04,622\nkhola aur ek egg mein do yolks nikle.\n\n3\n00:00:04,690 --> 00:00:07,436\nYe normal nahi hai, lekin random bhi nahi hai.\n\n4\n00:00:07,440 --> 00:00:09,537\nYoung hens jab pehli baar eggs dena\n\n5\n00:00:09,537 --> 00:00:11,673\nshuru karti hain, toh unka hormones balance\n\n6\n00:00:11,673 --> 00:00:13,120\nhone mein time lagta hai.\n\n7\n00:00:13,160 --> 00:00:15,226\nKabhi kabhi ovaries ek ke baad ek\n\n8\n00:00:15,226 --> 00:00:17,000\ndo yolks release kar deti hain.\n\n9\n00:00:17,000 --> 00:00:19,786\nLekin supermarket cartons mein double-yolk eggs ka\n\n10\n00:00:19,786 --> 00:00:21,826\naana aksar ek sanyog hota hai,\n\n11\n00:00:21,894 --> 00:00:24,247\nkyunki sorting machines kabhi-kabhi inhe normal eggs\n\n12\n00:00:24,247 --> 00:00:25,884\nke saath hi chhodd deti hain.\n\n13\n00:00:25,930 --> 00:00:28,070\nCandling process mein light ka use karke\n\n14\n00:00:28,070 --> 00:00:29,674\neggs ko check kiya jata hai, par\n\n15\n00:00:29,674 --> 00:00:32,212\ndouble-yolk ki pehchan karna mushkil hota hai.\n\n16\n00:00:32,240 --> 00:00:34,969\nDouble-yolk eggs aksar size mein bade hote hain,\n\n17\n00:00:35,058 --> 00:00:37,726\nisliye industrial weighers inhe kabhi-kabhi extra large\n\n18\n00:00:37,726 --> 00:00:39,257\ncategory mein dal dete hain.\n\n19\n00:00:39,290 --> 00:00:41,483\nIsi wajah se kabhi-kabhi ek hi carton\n\n20\n00:00:41,483 --> 00:00:43,883\nmein humein aise unique eggs mil jate hain.\n\n21\n00:00:43,970 --> 00:00:45,485\nEver thought how you can tell if\n\n22\n00:00:45,485 --> 00:00:48,140\nan egg has two yolks without even cracking it open?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [
+        "phrase missing from the audio: \"do yolks release kar deti hain lekin supermarket cartons mein double yolk eggs ka aana aksar ek sanyog hota hai kyunki sorting machines kabhi kabhi inhe normal eggs ke saath hi chhodd deti hain candling process mein light ka use karke eggs ko check kiya jata hai par double yolk\"",
+        "phrase missing from the audio: \"hain ever thought how you can tell if an egg has two yolks without even cracking it open\"",
+        "only 65% of the script is heard as written"
+      ],
+      "footage": [],
+      "review": [],
+      "heard": [
+        "\"maine\" heard as \"मैंने\"",
+        "\"grocery\" heard as \"ग्रोसरी\"",
+        "\"egg\" heard as \"\"",
+        "\"carton\" heard as \"का काटन\"",
+        "\"egg\" heard as \"एक\"",
+        "\"yolks\" heard as \"योख्स\"",
+        "\"normal nahi\" heard as \"नोमल नहीं\"",
+        "\"nahi\" heard as \"नहीं\""
+      ],
+      "scene_heard": [
+        "scene 1: 60%",
+        "scene 2: 57%",
+        "scene 3: 78%",
+        "scene 4: 85%",
+        "scene 5: 62%",
+        "scene 6: 70%",
+        "scene 7: 55%",
+        "scene 8: 73%",
+        "scene 9: 94%"
+      ],
+      "pass": false,
+      "duration": 48.2
+    },
+    "repairs": 0
+  },
+  {
+    "job": "20261121-1752-why-bananas-ripen-in-days-when-stored-ne",
+    "topic": "Why bananas ripen in days when stored near apples, while oranges stay completely unchanged",
+    "title": "How Apples Make Other Fruits Ripen Faster 🍎",
+    "description": "Apples are natural sources of ethylene gas in your kitchen! Find out why they trigger ripening in some fruits but leave others like oranges completely alone. #shorts #science #kitchenhacks\n\nSources (open-access research):\n- Cao et al. (2020), The Plant Journal. doi:10.1111/tpj.15021\n- Saltveit (1996), HortScience. doi:10.21273/hortsci.31.4.690e\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nIllustrations: drawn for this video with FLUX.2 [klein] 4B (AI, Apache 2.0) and checked for accuracy\nPhoto by BRRT on Pixabay\nPhoto by Daria-Yakovleva on Pixabay\nVideo by Coverr-Free-Footage on Pixabay\nVideo by u_849jclgk06 on Pixabay\nVideo by danielcuzma on Pixabay\n\nयह वीडियो कैसे बना: स्क्रिप्ट को AI tools की मदद से open research के आधार पर लिखा और fact-check किया गया है, आवाज़ AI voice की है, और editing open-source software से हुई है। कोई गलती दिखे तो comment में बताइए — जाँच कर सुधार करेंगे।",
+    "tags": [
+      "science",
+      "food hacks",
+      "biology"
+    ],
+    "hook": "Kya tumne notice kiya hai ki apple ke saath rakhe kachche kele aksar jaldi pak jaate hain?",
+    "status": "banked",
+    "narration": "Kya tumne notice kiya hai ki apple ke saath rakhe kachche kele aksar jaldi pak jaate hain? Kele aur baaki fruits jab pakte hain, toh wo 'Ethylene' naam ki ek natural gas release karte hain. Apple kafi ethylene produce karta hai, jo surrounding fruits ke ripening process ko speed up kar sakta hai. Lekin wait, agar tum bowl mein orange rakh do, toh wo apple ke sath hone par bhi nahi pakta. Asal mein, ethylene gas sirf unhi fruits par asar karti hai jo 'climacteric' hote hain. Kele jaise fruits is gas ko detect karke apne cells ko soft aur sweet banane ka signal lete hain. Orange jaise fruits par ethylene ka ye asar nahi hota, kyunki wo non-climacteric hote hain. Ever thought why, agar tum apne kachche aam ko paper bag mein apple ke saath rakh do, toh wo jaldi sweet ho jaate hain?",
+    "voice_engine": "edge-tts",
+    "voices": "one narrator (hi-IN-SwaraNeural)",
+    "diagrams": 1,
+    "series": "Food Whys",
+    "countdown": false,
+    "length_arm": "short",
+    "question": "Ever thought why, agar tum apne kachche aam ko paper bag mein apple ke saath rakh do, toh wo jaldi sweet ho jaate hain?",
+    "answer_comment": "The answer: Paper bags trap the Ethylene gas released by the fruits, creating a concentrated environment. Since bananas and mangoes are climacteric, this trapped gas accelerates the softening and sugar development process. Have you ever tried this trick?\n\nSources (open-access research):\n- Cao et al. (2020), The Plant Journal. doi:10.1111/tpj.15021\n- Saltveit (1996), HortScience. doi:10.21273/hortsci.31.4.690e",
+    "sources": [
+      {
+        "claim": "Ethylene is a natural plant hormone that triggers ripening in climacteric fruits.",
+        "cite": "Cao et al. (2020), The Plant Journal. doi:10.1111/tpj.15021",
+        "doi": "10.1111/tpj.15021",
+        "title": "Tomato transcriptional repressor MYB70 directly regulates ethylene‐dependent fruit ripening",
+        "why": "Ethylene is a key plant hormone controlling the ripening of climacteric fruits"
+      },
+      {
+        "claim": "Bananas are climacteric; oranges are non-climacteric and do not respond to ethylene in the same way.",
+        "cite": "Saltveit (1996), HortScience. doi:10.21273/hortsci.31.4.690e",
+        "doi": "10.21273/hortsci.31.4.690e",
+        "title": "Climacteric Fruit Produce a Diminished Respiratory Climacteric When Ripened on the Plant",
+        "why": "This group includes many horticulturally important fruit crops, such as apples, avocados, bananas, melons, peaches, pears, and tomatoes. Other fruit, which includes cherries, citrus, and strawberries, do not exhibit an increase in respiration as they ripen and are called nonclimacteric."
+      }
+    ],
+    "fact_check": [
+      "Ethylene is a natural plant hormone that triggers ripening in climacteric fruits.",
+      "Bananas are climacteric; oranges are non-climacteric and do not respond to ethylene in the same way.",
+      "Apples are high producers of ethylene gas.",
+      "Trapping ethylene (like in a paper bag) accelerates the ripening of climacteric fruits."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        5.59
+      ],
+      [
+        5.59,
+        10.98
+      ],
+      [
+        10.98,
+        16.91
+      ],
+      [
+        16.91,
+        22.53
+      ],
+      [
+        22.53,
+        27.42
+      ],
+      [
+        27.42,
+        33.21
+      ],
+      [
+        33.21,
+        38.56
+      ],
+      [
+        38.56,
+        45.65
+      ]
+    ],
+    "duration": 45.65,
+    "scene_lines": [
+      "Kya tumne notice kiya hai ki apple ke saath rakhe kachche kele aksar jaldi pak jaate hain?",
+      "Kele aur baaki fruits jab pakte hain, toh wo 'Ethylene' naam ki ek natural gas release karte hain.",
+      "Apple kafi ethylene produce karta hai, jo surrounding fruits ke ripening process ko speed up kar sakta hai.",
+      "Lekin wait, agar tum bowl mein orange rakh do, toh wo apple ke sath hone par bhi nahi pakta.",
+      "Asal mein, ethylene gas sirf unhi fruits par asar karti hai jo 'climacteric' hote hain.",
+      "Kele jaise fruits is gas ko detect karke apne cells ko soft aur sweet banane ka signal lete hain.",
+      "Orange jaise fruits par ethylene ka ye asar nahi hota, kyunki wo non-climacteric hote hain.",
+      "Ever thought why, agar tum apne kachche aam ko paper bag mein apple ke saath rakh do, toh wo jaldi sweet ho jaate hain?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,050 --> 00:00:02,096\nKya tumne notice kiya hai ki apple\n\n2\n00:00:02,096 --> 00:00:05,400\nke saath rakhe kachche kele aksar jaldi pak jaate hain?\n\n3\n00:00:05,590 --> 00:00:07,969\nKele aur baaki fruits jab pakte hain,\n\n4\n00:00:07,995 --> 00:00:09,556\ntoh wo Ethylene naam ki ek natural\n\n5\n00:00:09,556 --> 00:00:10,929\ngas release karte hain.\n\n6\n00:00:10,980 --> 00:00:13,311\nApple kafi ethylene produce karta hai, jo\n\n7\n00:00:13,311 --> 00:00:15,673\nsurrounding fruits ke ripening process ko speed\n\n8\n00:00:15,673 --> 00:00:16,802\nup kar sakta hai.\n\n9\n00:00:16,910 --> 00:00:19,125\nLekin wait, agar tum bowl mein orange\n\n10\n00:00:19,125 --> 00:00:20,838\nrakh do, toh wo apple ke sath\n\n11\n00:00:20,838 --> 00:00:22,433\nhone par bhi nahi pakta.\n\n12\n00:00:22,530 --> 00:00:24,700\nAsal mein, ethylene gas sirf unhi fruits\n\n13\n00:00:24,700 --> 00:00:27,418\npar asar karti hai jo climacteric hote hain.\n\n14\n00:00:27,420 --> 00:00:29,507\nKele jaise fruits is gas ko detect\n\n15\n00:00:29,507 --> 00:00:31,498\nkarke apne cells ko soft aur sweet\n\n16\n00:00:31,498 --> 00:00:33,178\nbanane ka signal lete hain.\n\n17\n00:00:33,210 --> 00:00:35,371\nOrange jaise fruits par ethylene ka ye\n\n18\n00:00:35,371 --> 00:00:38,477\nasar nahi hota, kyunki wo non-climacteric hote hain.\n\n19\n00:00:38,560 --> 00:00:40,788\nEver thought why, agar tum apne kachche\n\n20\n00:00:40,788 --> 00:00:42,558\naam ko paper bag mein apple ke\n\n21\n00:00:42,558 --> 00:00:45,045\nsaath rakh do, toh wo jaldi sweet ho jaate hain?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [],
+      "footage": [],
+      "review": [],
+      "heard": [
+        "\"tumne notice\" heard as \"तुम ने नोटिस\"",
+        "\"hain\" heard as \"है\"",
+        "\"hain\" heard as \"है\"",
+        "\"'ethylene'\" heard as \"एखलीन\"",
+        "\"natural\" heard as \"नाच्रल\"",
+        "\"hain\" heard as \"है\"",
+        "\"ethylene produce\" heard as \"एखलीन प्रदुस\"",
+        "\"surrounding\" heard as \"सराूंडिंग\""
+      ],
+      "scene_heard": [
+        "scene 1: 81%",
+        "scene 2: 78%",
+        "scene 3: 69%",
+        "scene 4: 74%",
+        "scene 5: 71%",
+        "scene 6: 84%",
+        "scene 7: 62%",
+        "scene 8: 87%"
+      ],
+      "pass": true,
+      "duration": 45.1
+    },
+    "repairs": 0,
+    "audited": true
+  },
+  {
+    "job": "20261121-1805-3-hidden-reasons-why-train-tracks-are-pa",
+    "topic": "3 Hidden reasons why train tracks are packed with tons of rough crushed stones",
+    "title": "Why Train Tracks Need Thousands of Tons of Stones 🤯",
+    "description": "Ever wondered why train tracks are always filled with sharp, rough stones? It is not for show. See how engineering handles thousands of tons of steel. #shorts #science #engineering\n\nSources (open-access research):\n- Rahman et al. (2024), International Journal of Rail Transportation. doi:10.1080/23248378.2024.2363919\n- Sysyn et al. (2021), Reports in Mechanical Engineering. doi:10.31181/rme200102065s\n- Navarro et al. (2014), Proceedings of the Institution of Mechanical Engineers Part F Journal of Rail and Rapid Transit. doi:10.1177/0954409713518039\n\nPhoto by denfran on Pixabay\nVideo by Amirirani on Pixabay\nVideo by GreenCardShow on Pixabay\nVideo by Bonaparcik on Pixabay\nVideo by Mario_Krimer on Pixabay\nVideo by BlenderTimer on Pixabay\nVideo by superanton on Pixabay\nVideo by svetjekolem on Pixabay\nVideo by xat-ch on Pixabay\nVideo by 43552051 on Pixabay\n\nयह वीडियो कैसे बना: स्क्रिप्ट को AI tools की मदद से open research के आधार पर लिखा और fact-check किया गया है, आवाज़ AI voice की है, और editing open-source software से हुई है। कोई गलती दिखे तो comment में बताइए — जाँच कर सुधार करेंगे।",
+    "tags": [
+      "train",
+      "engineering",
+      "science",
+      "hindi"
+    ],
+    "hook": "Train tracks par ye stones sirf decoration nahi, ek engineering necessity hain.",
+    "status": "review",
+    "narration": "Train tracks par ye stones sirf decoration nahi, ek engineering necessity hain. Jab ek heavy train 100 kmph ki speed se guzarti hai, toh ground vibrate karta hai. Agar niche sirf mitti hoti, toh wo pressure se compress ho jati. But wait, ye pathar sharp-edged aur rough kyun hote hain? While stones are the most common, note that some modern high-speed or urban lines use solid concrete slabs instead of ballast. Ye pathar ek-dusre mein lock ho jate hain, jaise koi jigsaw puzzle. Isse poora track stiff ho jata hai, aur heavy load fail jata hai. Saath hi, ye gaps pani ko drain kar dete hain, varna pani track ke neeche ki mitti ko kamzor kar dega, jisse track dhans sakta hai. Ever wondered how train tracks stay stable under such heavy loads?",
+    "voice_engine": "edge-tts",
+    "voices": "one narrator (hi-IN-SwaraNeural)",
+    "diagrams": 1,
+    "series": "Everyday Whys",
+    "countdown": false,
+    "length_arm": "long",
+    "question": "Ever wondered how train tracks stay stable under such heavy loads?",
+    "answer_comment": "The answer: These stones, called ballast, interlock because of their rough, sharp edges. This creates a stable, solid base that distributes the massive weight of a train over a wide area, preventing the track from sinking. Plus, the gaps between stones provide excellent drainage to stop water from weakening the foundation. Have a question about how planes land or why bridges sway? Ask away!\n\nSources (open-access research):\n- Rahman et al. (2024), International Journal of Rail Transportation. doi:10.1080/23248378.2024.2363919\n- Sysyn et al. (2021), Reports in Mechanical Engineering. doi:10.31181/rme200102065s\n- Navarro et al. (2014), Proceedings of the Institution of Mechanical Engineers Part F Journal of Rail and Rapid Transit. doi:10.1177/0954409713518039",
+    "sources": [
+      {
+        "claim": "Railway ballast provides load distribution, drainage, and track stability.",
+        "cite": "Rahman et al. (2024), International Journal of Rail Transportation. doi:10.1080/23248378.2024.2363919",
+        "doi": "10.1080/23248378.2024.2363919",
+        "title": "Fouling conditions and associated deformation characteristics of railway ballast",
+        "why": "Ballast is an essential component of the railway track substructure to facilitate load distribution and drainage."
+      },
+      {
+        "claim": "Ballast is typically crushed stone with sharp edges to allow interlocking.",
+        "cite": "Sysyn et al. (2021), Reports in Mechanical Engineering. doi:10.31181/rme200102065s",
+        "doi": "10.31181/rme200102065s",
+        "title": "Investigation of interlocking effect of crushed stone ballast during dynamic loading",
+        "why": "The relationship of the residual stress and interlocking effect to ballast particles angularity is analyzed."
+      },
+      {
+        "claim": "Ballast helps prevent the track from buckling under heat and load.",
+        "cite": "Navarro et al. (2014), Proceedings of the Institution of Mechanical Engineers Part F Journal of Rail and Rapid Transit. doi:10.1177/0954409713518039",
+        "doi": "10.1177/0954409713518039",
+        "title": "Analytical model for predicting the buckling load of continuous welded rail tracks",
+        "why": "This model accounts for the contributions of base, crib and shoulder ballast and includes the effect of vertical loading on each of these components. Moreover, a parametric study based on this model is developed, in order to understand how and the extent to which the considered factors affect track "
+      }
+    ],
+    "fact_check": [
+      "Railway ballast provides load distribution, drainage, and track stability.",
+      "Ballast is typically crushed stone with sharp edges to allow interlocking.",
+      "Ballast helps prevent the track from buckling under heat and load."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        4.54
+      ],
+      [
+        4.54,
+        9.8
+      ],
+      [
+        9.8,
+        13.7
+      ],
+      [
+        13.7,
+        24.61
+      ],
+      [
+        24.61,
+        28.71
+      ],
+      [
+        28.71,
+        32.55
+      ],
+      [
+        32.55,
+        40.33
+      ],
+      [
+        40.33,
+        44.51
+      ]
+    ],
+    "duration": 44.51,
+    "scene_lines": [
+      "Train tracks par ye stones sirf decoration nahi, ek engineering necessity hain.",
+      "Jab ek heavy train 100 kmph ki speed se guzarti hai, toh ground vibrate karta hai.",
+      "Agar niche sirf mitti hoti, toh wo pressure se compress ho jati.",
+      "But wait, ye pathar sharp-edged aur rough kyun hote hain? While stones are the most common, note that some modern high-speed or urban lines use solid concrete slabs instead of ballast.",
+      "Ye pathar ek-dusre mein lock ho jate hain, jaise koi jigsaw puzzle.",
+      "Isse poora track stiff ho jata hai, aur heavy load fail jata hai.",
+      "Saath hi, ye gaps pani ko drain kar dete hain, varna pani track ke neeche ki mitti ko kamzor kar dega, jisse track dhans sakta hai.",
+      "Ever wondered how train tracks stay stable under such heavy loads?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,050 --> 00:00:02,359\nTrain tracks par ye stones sirf decoration\n\n2\n00:00:02,359 --> 00:00:04,467\nnahi, ek engineering necessity hain.\n\n3\n00:00:04,540 --> 00:00:06,892\nJab ek heavy train 100 kmph ki\n\n4\n00:00:06,892 --> 00:00:09,800\nspeed se guzarti hai, toh ground vibrate karta hai.\n\n5\n00:00:09,800 --> 00:00:11,785\nAgar niche sirf mitti hoti, toh wo\n\n6\n00:00:11,785 --> 00:00:13,581\npressure se compress ho jati.\n\n7\n00:00:13,700 --> 00:00:17,163\nBut wait, ye pathar sharp-edged aur rough kyun hote hain?\n\n8\n00:00:17,270 --> 00:00:19,404\nWhile stones are the most common, note\n\n9\n00:00:19,404 --> 00:00:21,713\nthat some modern high-speed or urban lines\n\n10\n00:00:21,713 --> 00:00:24,610\nuse solid concrete slabs instead of ballast.\n\n11\n00:00:24,610 --> 00:00:26,707\nYe pathar ek-dusre mein lock ho jate\n\n12\n00:00:26,707 --> 00:00:28,710\nhain, jaise koi jigsaw puzzle.\n\n13\n00:00:28,710 --> 00:00:30,871\nIsse poora track stiff ho jata hai,\n\n14\n00:00:30,871 --> 00:00:32,550\naur heavy load fail jata hai.\n\n15\n00:00:32,550 --> 00:00:34,678\nSaath hi, ye gaps pani ko drain\n\n16\n00:00:34,678 --> 00:00:36,505\nkar dete hain, varna pani track ke\n\n17\n00:00:36,505 --> 00:00:38,698\nneeche ki mitti ko kamzor kar dega,\n\n18\n00:00:38,698 --> 00:00:40,214\njisse track dhans sakta hai.\n\n19\n00:00:40,330 --> 00:00:42,620\nEver wondered how train tracks stay stable\n\n20\n00:00:42,620 --> 00:00:43,914\nunder such heavy loads?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [
+        "scene 4 (13.7-24.6 s): only 15% of its words can be heard - the voice breaks up or drops out",
+        "scene 5 (24.6-28.7 s): only 0% of its words can be heard - the voice breaks up or drops out",
+        "scene 6 (28.7-32.6 s): only 0% of its words can be heard - the voice breaks up or drops out",
+        "scene 7 (32.6-40.3 s): only 0% of its words can be heard - the voice breaks up or drops out",
+        "scene 8 (40.3-44.5 s): only 0% of its words can be heard - the voice breaks up or drops out"
+      ],
+      "footage": [
+        "scene(s) [6] have weak or placeholder footage"
+      ],
+      "review": [],
+      "heard": [
+        "\"par\" heard as \"पा\"",
+        "\"stones\" heard as \"श्टोन\"",
+        "\"decoration nahi\" heard as \"देकरेशिन नहीं\"",
+        "\"engineering necessity\" heard as \"एंजनरिंग निसेस्टी\"",
+        "\"heavy\" heard as \"हवी\"",
+        "\"100 kmph\" heard as \"एक सो क्यमप्यच\"",
+        "\"hai\" heard as \"हैं\"",
+        "\"ground\" heard as \"ग्राउन\""
+      ],
+      "scene_heard": [
+        "scene 1: 33%",
+        "scene 2: 77%",
+        "scene 3: 64%",
+        "scene 4: 15%",
+        "scene 5: 0%",
+        "scene 6: 0%",
+        "scene 7: 0%",
+        "scene 8: 0%"
+      ],
+      "pass": false,
+      "duration": 43.9
+    },
+    "repairs": 0
   }
 ]

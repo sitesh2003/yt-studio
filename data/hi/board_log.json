@@ -1,89 +1,5 @@
 [
  {
-  "when": "2026-11-17 10:30",
-  "topic": "3 hidden physical fail-safes inside modern elevators that make a catastrophic free-fall im",
-  "drawn": [
-   2,
-   3,
-   4,
-   5
-  ],
-  "not_drawn": {},
-  "error": ""
- },
- {
-  "when": "2026-11-17 10:57",
-  "topic": "Scientists discover why deep ocean 'snow' traps six times more carbon than previously beli",
-  "drawn": [
-   2,
-   3,
-   4,
-   5
-  ],
-  "not_drawn": {},
-  "error": ""
- },
- {
-  "when": "2026-11-17 11:24",
-  "topic": "Why 120-ton freight locomotives carry hidden boxes of sand to spray onto the rails while m",
-  "drawn": [
-   2,
-   3,
-   4,
-   5
-  ],
-  "not_drawn": {},
-  "error": ""
- },
- {
-  "when": "2026-11-17 18:51",
-  "topic": "What actually happens under your skin during a mosquito bite that causes hours of itching",
-  "drawn": [
-   2,
-   3,
-   4,
-   5
-  ],
-  "not_drawn": {},
-  "error": ""
- },
- {
-  "when": "2026-11-17 19:19",
-  "topic": "How ultra-thin emergency blankets could hold the secret to insulating future bases on the ",
-  "drawn": [
-   2,
-   3,
-   4,
-   5
-  ],
-  "not_drawn": {},
-  "error": ""
- },
- {
-  "when": "2026-11-17 19:41",
-  "topic": "3 Hidden reasons why train tracks are packed with tons of rough crushed stones",
-  "drawn": [
-   2,
-   3,
-   4,
-   5
-  ],
-  "not_drawn": {},
-  "error": ""
- },
- {
-  "when": "2026-11-17 20:08",
-  "topic": "Why bananas ripen in days when stored near apples, while oranges stay completely unchanged",
-  "drawn": [
-   2,
-   3,
-   4,
-   5
-  ],
-  "not_drawn": {},
-  "error": ""
- },
- {
   "when": "2026-11-17 22:08",
   "topic": "Why this entire carton of eggs has 2 yolks each",
   "drawn": [
@@ -490,6 +406,93 @@
    5
   ],
   "not_drawn": {},
+  "error": ""
+ },
+ {
+  "when": "2026-11-21 16:50",
+  "topic": "Scientists just discovered 100-million-year-old fossilized dinosaur droppings proving gian",
+  "drawn": [
+   2,
+   3,
+   4,
+   5
+  ],
+  "not_drawn": {},
+  "error": ""
+ },
+ {
+  "when": "2026-11-21 16:58",
+  "topic": "Why yogurt stops bad bacteria from growing while fresh milk spoils in days",
+  "drawn": [
+   2,
+   3,
+   4
+  ],
+  "not_drawn": {
+   "5": "The image uses beer mugs to represent yogurt, which is confusing and inaccurate, and the text 'SAME MILK' is placed next to a honey pot, which is misleading."
+  },
+  "error": ""
+ },
+ {
+  "when": "2026-11-21 17:12",
+  "topic": "Why fresh rainwater smells wonderful after a dry spell, unlike water straight from the tap",
+  "drawn": [
+   2,
+   3,
+   4,
+   5
+  ],
+  "not_drawn": {},
+  "error": ""
+ },
+ {
+  "when": "2026-11-21 17:26",
+  "topic": "How Stanford scientists discovered hidden brain signals that predict Alzheimer's years bef",
+  "drawn": [
+   2,
+   3,
+   4,
+   5
+  ],
+  "not_drawn": {},
+  "error": ""
+ },
+ {
+  "when": "2026-11-21 17:40",
+  "topic": "Why this entire carton of eggs has 2 yolks each",
+  "drawn": [
+   2,
+   3,
+   4,
+   5
+  ],
+  "not_drawn": {},
+  "error": ""
+ },
+ {
+  "when": "2026-11-21 17:54",
+  "topic": "Why bananas ripen in days when stored near apples, while oranges stay completely unchanged",
+  "drawn": [
+   2,
+   3,
+   4
+  ],
+  "not_drawn": {
+   "5": "The image incorrectly labels oranges as 'NON-CLIMACTI' (non-climacteric) while showing a downward arrow implying a causal link from climacteric fruits to non-cl"
+  },
+  "error": ""
+ },
+ {
+  "when": "2026-11-21 18:06",
+  "topic": "3 Hidden reasons why train tracks are packed with tons of rough crushed stones",
+  "drawn": [
+   2,
+   4,
+   5
+  ],
+  "not_drawn": {
+   "3": "The image uses a train emoji to represent a train, but the context of the sentence is about soil compression, making the train irrelevant and confusing; the tex"
+  },
   "error": ""
  }
 ]

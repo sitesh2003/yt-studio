@@ -1,18 +1,19 @@
 {
   "summary": [
-    "Prioritize immediate, tangible survival or human-interest stakes over abstract scientific concepts to maximize stayed_pct.",
-    "Structure titles and hooks as 'Solution-First' queries, focusing on the mechanism ('how' or 'why') rather than just naming the subject.",
-    "Use high-contrast, relatable examples (e.g., life/death, food, home life) in the first sentence to bypass the 'educational content' barrier.",
-    "Avoid academic or passive framing in the hook; the highest performing video uses a specific threat (survival) to drive retention.",
-    "Keep hooks under 15 words and ensure the visual transition happens within 2 seconds to maintain the 60%+ threshold required for algorithm growth."
+    "Prioritize tangible, everyday curiosity topics over abstract scientific phenomena.",
+    "Use English or Hinglish phrasing with visual emojis in titles to immediately capture attention on the feed.",
+    "Ensure hook sentences start with a dramatic, high-stakes question or statement rather than a dry explanatory premise.",
+    "Keep video lengths structured around the 40-45 second mark to optimize retention pacing.",
+    "Eliminate low-energy, purely academic hook openings that cause immediate swipe-away rates above 70%."
   ],
   "winning_hooks": [
-    "Space missions mein astronauts ke liye sirf ek thin plastic sheet jaan bacha sakti hai 🤯"
+    "Space missions mein astronauts ke liye sirf ek thin plastic sheet jaan bacha sakti hai 🤯",
+    "250 km/h ki speed se गीली runway पर plane hydroplaning से कैसे बचता है?",
+    "राजमा रात भर फ्रिज में रखने के बाद अक्सर अलग स्वाद क्यों देता है?"
   ],
   "avoid": [
-    "Avoid passive, broad scientific introductions like 'Ever thought why...'",
-    "Avoid long-form academic descriptions in the title that do not promise a clear, specific answer to a mystery.",
-    "Avoid overly technical jargon in the first three seconds that makes the viewer feel like they are in a classroom."
+    "Ever thought why deep ocean snow helps cycle carbon?",
+    "डायनासोर के जीवाश्मों में वैज्ञानिकों को ऐसी सूक्ष्म आकृतियां क्यों मिली हैं जो खून की कोशिकाओं जैसी दिखती हैं?"
   ],
-  "next_experiment": "A/B test the 'Survival/Risk' frame: Compare a video explaining a complex phenomenon by starting with the potential catastrophe (e.g., 'If this tiny part fails, the plane crashes') versus starting with the technical term for the phenomenon."
+  "next_experiment": "Test an English-only versus a Hinglish hook on the exact same everyday science topic to determine which drives a higher stayed_pct above the 50% threshold."
 }

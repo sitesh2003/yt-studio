@@ -236,5 +236,31 @@
         "claim": "Alpha particles are blocked by a few centimeters of air or thin plastic."
       }
     ]
+  },
+  {
+    "job": "20261121-1752-why-bananas-ripen-in-days-when-stored-ne",
+    "date": "2026-11-21",
+    "title": "How Apples Make Other Fruits Ripen Faster 🍎",
+    "topic": "Why bananas ripen in days when stored near apples, while oranges stay completely unchanged",
+    "series": "Food Whys",
+    "weekly": false,
+    "claims": [
+      "Ethylene is a natural plant hormone that triggers ripening in climacteric fruits.",
+      "Bananas are climacteric; oranges are non-climacteric and do not respond to ethylene in the same way.",
+      "Apples are high producers of ethylene gas.",
+      "Trapping ethylene (like in a paper bag) accelerates the ripening of climacteric fruits."
+    ],
+    "sources": [
+      {
+        "cite": "Cao et al. (2020), The Plant Journal. doi:10.1111/tpj.15021",
+        "doi": "10.1111/tpj.15021",
+        "claim": "Ethylene is a natural plant hormone that triggers ripening in climacteric fruits."
+      },
+      {
+        "cite": "Saltveit (1996), HortScience. doi:10.21273/hortsci.31.4.690e",
+        "doi": "10.21273/hortsci.31.4.690e",
+        "claim": "Bananas are climacteric; oranges are non-climacteric and do not respond to ethylene in the same way."
+      }
+    ]
   }
 ]

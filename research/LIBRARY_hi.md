@@ -26,6 +26,18 @@ Sources:
 - Martínez et al. (2024), Medical Physics. doi:10.1002/mp.17133 — supports: Americium-241 emits alpha particles.
 - Qadr (2022), GAZI UNIVERSITY JOURNAL OF SCIENCE. doi:10.35378/gujs.850883 — supports: Alpha particles are blocked by a few centimeters of air or thin plastic.
 
+## How Apples Make Other Fruits Ripen Faster 🍎
+*2026-11-21 · Food Whys*
+
+- Ethylene is a natural plant hormone that triggers ripening in climacteric fruits.
+- Bananas are climacteric; oranges are non-climacteric and do not respond to ethylene in the same way.
+- Apples are high producers of ethylene gas.
+- Trapping ethylene (like in a paper bag) accelerates the ripening of climacteric fruits.
+
+Sources:
+- Cao et al. (2020), The Plant Journal. doi:10.1111/tpj.15021 — supports: Ethylene is a natural plant hormone that triggers ripening in climacteric fruits.
+- Saltveit (1996), HortScience. doi:10.21273/hortsci.31.4.690e — supports: Bananas are climacteric; oranges are non-climacteric and do not respond to ethylene in the same way.
+
 ## Why Glacier Ice Is Intensely Blue 🤯
 *2026-11-20 · Everyday Whys*
 
