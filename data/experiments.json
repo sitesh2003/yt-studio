@@ -4,14 +4,14 @@
     "measure": "average view percentage",
     "arms": {
       "countdown": {
-        "videos": 2,
-        "avg_view_pct": 41.4,
-        "avg_views": 301
+        "videos": 3,
+        "avg_view_pct": 42.4,
+        "avg_views": 312
       },
       "turn": {
         "videos": 3,
-        "avg_view_pct": 43.1,
-        "avg_views": 309
+        "avg_view_pct": 43.0,
+        "avg_views": 410
       }
     }
   },
@@ -20,15 +20,15 @@
     "measure": "views per video",
     "arms": {
       "short": {
-        "videos": 1,
-        "avg_views": 226,
-        "avg_view_pct": 48.0,
-        "avg_seconds": 32.3
+        "videos": 2,
+        "avg_views": 296,
+        "avg_view_pct": 46.4,
+        "avg_seconds": 39.9
       },
       "standard": {
         "videos": 1,
-        "avg_views": 272,
-        "avg_view_pct": 44.9,
+        "avg_views": 321,
+        "avg_view_pct": 47.4,
         "avg_seconds": 40.3
       },
       "long": {

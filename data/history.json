@@ -3305,7 +3305,8 @@
     "video_id": "I9iv5BWMDLA",
     "publish_at": "2026-11-20T12:00:00-05:00",
     "thumbnail_set": true,
-    "answered": true
+    "answered": true,
+    "recapped": true
   },
   {
     "job": "20261116-1933-why-mosquitoes-choose-some-people-over-o",
@@ -3530,7 +3531,7 @@
       "human body"
     ],
     "hook": "Your leg doesn't actually fall asleep because of blood loss. It's not blood.",
-    "status": "scheduled",
+    "status": "public",
     "narration": "Your leg doesn't actually fall asleep because of blood loss. It's not blood. You feel that pins-and-needles sensation when you sit wrong for too long. Most people blame their circulation, but your heart is still pumping fine. While blood flow to the nerve itself is restricted by the pressure, your overall circulation is not actually stopped. So, if the blood is still flowing, why does your leg feel totally dead? It’s actually a nerve being compressed, often against a bone or hard surface. It's compressed. That pressure prevents the nerve from sending clear signals to your brain. When you move, the pressure is released, but the nerve signals begin to misfire as they reconnect, which creates that characteristic pins-and-needles sensation. Have you ever woken up with a numb arm after sleeping on it?",
     "voice_engine": "chatterbox",
     "voices": "one narrator (af_heart)",
@@ -3623,7 +3624,8 @@
     "audited": true,
     "video_id": "omCteTHNw_Q",
     "publish_at": "2026-11-20T19:00:00-05:00",
-    "thumbnail_set": true
+    "thumbnail_set": true,
+    "answered": true
   },
   {
     "job": "20261117-0512-scientists-just-found-a-giant-hidden-wor",
@@ -5502,5 +5504,138 @@
     },
     "repairs": 1,
     "audited": true
+  },
+  {
+    "job": "20261120-2204-why-owls-fly-in-complete-silence-while-o",
+    "topic": "Why Owls Fly in Complete Silence While Other Birds Make Loud Wing Flaps",
+    "title": "Why Owls Fly Almost Silently 🦉",
+    "description": "Discover the hidden engineering behind a barn owl's silent flight and how microscopic feather combs trick the air. #AnimalScience #Physics #Shorts\n\nSources (open-access research):\n- Nafi et al. (2023), Physics of Fluids. doi:10.1063/5.0174145\n- Liu et al. (2025), Journal of Experimental Biology. doi:10.1242/jeb.246234\n\nPhoto: Deman, BY 2.0, via Openverse (flickr)\nPhoto: Shaun's Wildlife Photography, CC BY 2.0, via Wikimedia Commons\nVideo by KIMDAEJEUNG on Pixabay\nVideo by Trek_Jason on Pixabay\nVideo by bookministry on Pixabay\nVideo by kieutruongphoto on Pixabay\nVideo by deoleoroberto626 on Pixabay\n\nHow this was made: the script is researched and fact-checked with AI tools against open-access research (sources above when found), narrated by an AI voice, and edited with open-source software. Corrections from viewers are checked and credited.",
+    "tags": [
+      "barn owl flight",
+      "silent flight physics",
+      "animal adaptations",
+      "how things work"
+    ],
+    "hook": "One silent predator flies past with barely any sound. Pigeons make cooing sounds that are much louder than an owl’s flight.",
+    "status": "review",
+    "narration": "One silent predator flies past with barely any sound. Pigeons make cooing sounds that are much louder than an owl’s flight. Birds can make wing noise when turbulent air flows over their feathers, especially around stiff wing tips. The turbulent airflow creates pressure fluctuations that can produce a whistling sound. But look closely at this owl feather. The front edge isn't smooth. It’s lined with tiny serrations on the leading‑edge feathers that break up the airflow. These serrations break up the airflow, reducing turbulence and the resulting noise. A soft fringe of downy feathers on the wing edges helps absorb any remaining sound. Why don’t commercial airplane wings use a similar serrated‑feather design to reduce aerodynamic noise?",
+    "voice_engine": "chatterbox",
+    "voices": "one narrator (af_heart)",
+    "diagrams": 2,
+    "series": "Animal Whys",
+    "countdown": false,
+    "length_arm": "short",
+    "question": "Why don’t commercial airplane wings use a similar serrated‑feather design to reduce aerodynamic noise?",
+    "answer_comment": "The answer: Airplane wings operate at high speeds and carry heavy loads, so adding the kind of rough, feather‑like textures seen on owl wings would increase drag and could be damaged by the forces on a jet wing. Owls fly slowly and rely on silent flight, while commercial jets need strong, smooth wings for speed and efficiency. Note: The owl feather design reduces aerodynamic noise, not interior cabin noise. Ever thought what other animal traits engineers have tried to copy for machines?\n\nSources (open-access research):\n- Nafi et al. (2023), Physics of Fluids. doi:10.1063/5.0174145\n- Liu et al. (2025), Journal of Experimental Biology. doi:10.1242/jeb.246234",
+    "sources": [
+      {
+        "claim": "Barn owls have serrated comb-like structures on the leading edge of their primary feathers to break up airflow.",
+        "cite": "Nafi et al. (2023), Physics of Fluids. doi:10.1063/5.0174145",
+        "doi": "10.1063/5.0174145",
+        "title": "Numerical study of owls' leading-edge serrations",
+        "why": "\"leading-edge serrations: rigid miniature hook-like patterns found at the primaries of the wings' leading-edge\" and \"Our findings suggest that the serrations improve suction surface flow by promoting sustained flow reattachment via streamwise vorticity generation... serrations increase turbulence le"
+      },
+      {
+        "claim": "Pigeons and many other birds lack these specialized serrations and velvety coatings, resulting in audible wing swishing.",
+        "cite": "Liu et al. (2025), Journal of Experimental Biology. doi:10.1242/jeb.246234",
+        "doi": "10.1242/jeb.246234",
+        "title": "Acoustics of rubbing feathers: the velvet of owl feathers reduces frictional noise",
+        "why": "Species with velvet produced rubbing sounds that were 20.9 dB quieter than species without velvet, indicating that birds lacking velvet (e.g., pigeons) have louder audible wing swishing."
+      }
+    ],
+    "fact_check": [
+      "Barn owls have serrated comb-like structures on the leading edge of their primary feathers to break up airflow.",
+      "Owl feathers feature a velvety down surface that absorbs sound frequencies produced by wing flapping.",
+      "Pigeons and many other birds lack these specialized serrations and velvety coatings, resulting in audible wing swishing."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        6.2
+      ],
+      [
+        6.2,
+        10.77
+      ],
+      [
+        10.77,
+        14.91
+      ],
+      [
+        14.91,
+        17.05
+      ],
+      [
+        17.05,
+        18.65
+      ],
+      [
+        18.65,
+        22.39
+      ],
+      [
+        22.39,
+        26.16
+      ],
+      [
+        26.16,
+        30.09
+      ],
+      [
+        30.09,
+        34.97
+      ]
+    ],
+    "duration": 34.97,
+    "scene_lines": [
+      "One silent predator flies past with barely any sound. Pigeons make cooing sounds that are much louder than an owl’s flight.",
+      "Birds can make wing noise when turbulent air flows over their feathers, especially around stiff wing tips.",
+      "The turbulent airflow creates pressure fluctuations that can produce a whistling sound.",
+      "But look closely at this owl feather.",
+      "The front edge isn't smooth.",
+      "It’s lined with tiny serrations on the leading‑edge feathers that break up the airflow.",
+      "These serrations break up the airflow, reducing turbulence and the resulting noise.",
+      "A soft fringe of downy feathers on the wing edges helps absorb any remaining sound.",
+      "Why don’t commercial airplane wings use a similar serrated‑feather design to reduce aerodynamic noise?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": "I9iv5BWMDLA",
+    "captions_srt": "1\n00:00:00,000 --> 00:00:02,790\nOne silent predator flies past with barely any sound.\n\n2\n00:00:02,930 --> 00:00:04,490\nPigeons make cooing sounds that are much\n\n3\n00:00:04,490 --> 00:00:05,960\nlouder than an owl’s flight.\n\n4\n00:00:06,200 --> 00:00:07,560\nBirds can make wing noise when turbulent\n\n5\n00:00:07,560 --> 00:00:10,510\nair flows over their feathers, especially around stiff wing tips.\n\n6\n00:00:10,770 --> 00:00:13,190\nThe turbulent airflow creates pressure fluctuations that\n\n7\n00:00:13,190 --> 00:00:14,640\ncan produce a whistling sound.\n\n8\n00:00:14,910 --> 00:00:16,860\nBut look closely at this owl feather.\n\n9\n00:00:17,050 --> 00:00:18,400\nThe front edge isn't smooth.\n\n10\n00:00:18,650 --> 00:00:20,210\nIt’s lined with tiny serrations on the\n\n11\n00:00:20,210 --> 00:00:21,940\nleading‑edge feathers that break up the airflow.\n\n12\n00:00:22,390 --> 00:00:23,840\nThese serrations break up the airflow,\n\n13\n00:00:23,990 --> 00:00:25,920\nreducing turbulence and the resulting noise.\n\n14\n00:00:26,160 --> 00:00:27,620\nA soft fringe of downy feathers on\n\n15\n00:00:27,620 --> 00:00:29,830\nthe wing edges helps absorb any remaining sound.\n\n16\n00:00:30,090 --> 00:00:31,710\nWhy don’t commercial airplane wings use a\n\n17\n00:00:31,710 --> 00:00:34,370\nsimilar serrated‑feather design to reduce aerodynamic noise?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [
+        "meaning flips: script \"don t\" but the audio says \"don't\""
+      ],
+      "footage": [
+        "scene(s) [2, 3] have weak or placeholder footage"
+      ],
+      "review": [
+        "Frame 4 clearly contradicts the narration: the narrator says 'look closely at this owl feather' and the caption says 'MICROSCOPIC FEATHER VIEW', but the visual shows a whole non-owl bird perched on a branch."
+      ],
+      "heard": [
+        "\"predator\" heard as \"pettager\"",
+        "\"owl s\" heard as \"owl's\"",
+        "\"it s\" heard as \"it's\"",
+        "\"edge\" heard as \"hedge\"",
+        "extra \"to\""
+      ],
+      "scene_heard": [
+        "scene 1: 86%",
+        "scene 2: 100%",
+        "scene 3: 100%",
+        "scene 4: 100%",
+        "scene 5: 100%",
+        "scene 6: 81%",
+        "scene 7: 100%",
+        "scene 8: 100%",
+        "scene 9: 81%"
+      ],
+      "pass": false,
+      "duration": 34.7
+    },
+    "repairs": 0
   }
 ]

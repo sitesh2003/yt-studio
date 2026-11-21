@@ -1,17 +1,17 @@
 {
-  "summary": "1. Prioritize topics focused on direct body phenomena and sensory bodily mechanics over inanimate object trivia or infrastructure mechanics.\n2. Open the first sentence with an active, shocking present-tense assertion about the viewer ('Your eyes are leaking right now') rather than passive setups or rhetorical questions.\n3. Instantly state a strong counter-intuitive fact or debunk a common belief in sentence one ('...it is not because you are absorbing it like a sponge').\n4. Write short titles using active verbs and distinct subject emojis (e.g., 🍍👅, 💧🧽), avoiding generic curiosity emojis like '🤔' which dominate the bottom third.\n5. Keep hook wording strictly under 15 words without conversational fluff like 'Ever noticed...' or hypothetical roleplay scenarios ('Your car swerves...').",
+  "summary": "1. Anchor topics to intimate human sensory experiences (bodily sensations, food eating you, hidden biology) rather than inanimate physical objects or roadside engineering. 2. Open with an immediate, declarative paradox under 14 words that challenges intuition rather than explaining the answer in line one. 3. Stop using questions as opening hooks ('Why do...' or 'Ever noticed...'), which tank stayed percentage below 40%. 4. Eliminate generic reaction emojis (🤯, 🤔) and academic title phrasing; use two visceral, concrete nouns with topic-specific emojis (e.g., 🍍👅, 💧🧽). 5. Kill countdown timers and lengthy explanatory clauses ('...because it stores very little heat'), which leak viewers before the 3-second mark.",
   "winning_hooks": [
-    "Direct personal bodily reality + hidden action: 'Your eyes are leaking right now, and your brain is hiding it.'",
-    "Visceral, shocking active reversal: 'Fresh pineapple is literally eating you back.'",
-    "Immediate myth debunking with direct address: 'Your fingers prune in water, but it is not because you are absorbing it like a sponge.'",
-    "Hyperbolic scale comparison fact: 'This shark is older than the United States.'"
+    "Your fingers prune in water, but it is not because you are absorbing it like a sponge.",
+    "Fresh pineapple is literally eating you back.",
+    "Your eyes are leaking right now, and your brain is hiding it.",
+    "This shark is older than the United States."
   ],
   "avoid": [
-    "Rhetorical opening questions: 'Ever noticed those tiny black dots fading around your car windshield?'",
-    "Wikipedia-style introductory generalizations: 'Honey is famous for being one of the only natural foods that never truly spoils.'",
-    "Hypothetical roleplay scenario setups: 'Your car swerves off the highway right toward a steel guardrail.' or 'You just smashed your elbow...'",
-    "Inanimate object / civil engineering trivia (guardrails, car windshield frit pattern, maple syrup sap boiling).",
-    "Generic titles ending with the thinking emoji '🤔' (correlated with <38% stayed_pct)."
+    "Opening by asking a rhetorical question: 'Why do car windows shatter into tiny cubes?'",
+    "Casual conversational setups: 'Ever noticed those tiny black dots fading around your car windshield?'",
+    "Giving the scientific explanation away inside the first sentence: '...because it stores very little heat' or '...because its defense chemicals work differently'",
+    "Abstract or passive title formats: 'How Acorns Indirectly Affect Lyme Disease Rates 🤯'",
+    "Overlay countdown timers on Shorts under 45 seconds (strongly correlated with sub-40% stayed rates)"
   ],
-  "next_experiment": "A/B test the first 3 seconds on the same body trivia topic: Test 'Direct Visceral Fact' ('Your stomach acid can dissolve steel blade edges, but your body rebuilds its lining every 3 days.') vs 'Conversational Question' ('Have you ever wondered why your stomach acid doesn't digest your own insides?'). Measure if stayed_pct stays above 55% with the direct fact."
+  "next_experiment": "A/B test an identical 25-second script on bodily phenomena (e.g., 'Brain Freeze') using Hook A (Declarative Paradox: 'Your brain freeze has nothing to do with your brain.') vs Hook B (Curiosity Question: 'Why does ice cream give you sudden brain freeze?') to isolate whether question-based phrasing is the primary driver swiping viewers away."
 }

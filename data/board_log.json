@@ -284,5 +284,17 @@
    "5": "The image depicts DNA and construction, which does not relate to the concept of 'timing' mentioned in the audio."
   },
   "error": ""
+ },
+ {
+  "when": "2026-11-20 22:36",
+  "topic": "Why Owls Fly in Complete Silence While Other Birds Make Loud Wing Flaps",
+  "drawn": [],
+  "not_drawn": {
+   "2": "LLM call failed on every model and provider: None",
+   "3": "LLM call failed on every model and provider: None",
+   "4": "LLM call failed on every model and provider: None",
+   "6": "LLM call failed on every model and provider: None"
+  },
+  "error": ""
  }
 ]
