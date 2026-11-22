@@ -3817,15 +3817,16 @@
       "3D animation"
     ],
     "hook": "A car that folds up in a crash keeps you safer than one that doesn't.",
-    "status": "scheduled",
+    "status": "held",
     "narration": "A car that folds up in a crash keeps you safer than one that doesn't. Both of these cars hit the wall at the same speed, and both of them stop. The stiff car stops almost instantly, so the people inside get hit with a huge force. The folding front makes the stop last longer, so the force on the people inside drops. That's Newton's second law: the same change in speed, spread over more time, needs less force. The idea was patented in 1952, and Mercedes-Benz first built it into a production car in 1959. So why is the middle of the car built to be as strong as possible?",
     "voice_engine": "chatterbox",
     "countdown": false,
     "hero_3d": true,
     "question": "So why is the middle of the car built to be as strong as possible?",
     "video_id": "-jePzYeWNIQ",
-    "publish_at": "2026-11-22T16:30:00-05:00",
-    "thumbnail_set": true
+    "publish_at": null,
+    "thumbnail_set": true,
+    "held_why": "22 Nov 2026: Why It Works paused 60 days; this 3D Short moved to Ever Thought Why? as vfAuBGc5cVA"
   },
   {
     "job": "hero_braking",
@@ -3842,15 +3843,16 @@
       "3D animation"
     ],
     "hook": "Drive twice as fast, and your car needs four times as far to stop.",
-    "status": "scheduled",
+    "status": "held",
     "narration": "Drive twice as fast, and your car needs four times as far to stop. Both of these cars brake hard at the same line. One is doing thirty kilometres an hour, the other sixty. On a dry road, the slow car stops in about five metres. The fast one needs about twenty. That's because the brakes have to get rid of the car's moving energy, and that energy grows with speed squared. Double the speed, and there's four times the energy to burn off as heat. And that's before you add the moment it takes you to react. So how much farther would a car doing ninety need to stop?",
     "voice_engine": "chatterbox",
     "countdown": false,
     "hero_3d": true,
     "question": "So how much farther would a car doing ninety need to stop?",
     "video_id": "kiS1JeSIxDk",
-    "publish_at": "2026-11-23T16:30:00-05:00",
-    "thumbnail_set": true
+    "publish_at": null,
+    "thumbnail_set": true,
+    "held_why": "22 Nov 2026: Why It Works paused 60 days; this 3D Short moved to Ever Thought Why? as Z5c8Kt8Br9Q"
   },
   {
     "job": "hero_wet_braking",
@@ -3867,15 +3869,16 @@
       "3D animation"
     ],
     "hook": "On a wet road, your car can need at least twice as far to stop.",
-    "status": "scheduled",
+    "status": "held",
     "narration": "On a wet road, your car can need at least twice as far to stop. Both of these cars brake at fifty kilometres an hour. One on a dry road, one on a wet road. The dry car stops in about fourteen metres. The wet one slides on to about twenty-eight. Braking works by grip between the tyre and the road, and water gets in between and cuts that grip. Half the grip means half the braking force, so the same speed takes twice the distance. Worn tyres make it worse, because their grooves can't push the water away. So how much farther do you think a car needs on ice?",
     "voice_engine": "chatterbox",
     "countdown": false,
     "hero_3d": true,
     "question": "So how much farther do you think a car needs on ice?",
     "video_id": "ez33f0NKxb8",
-    "publish_at": "2026-11-24T16:30:00-05:00",
-    "thumbnail_set": true
+    "publish_at": null,
+    "thumbnail_set": true,
+    "held_why": "22 Nov 2026: Why It Works paused 60 days; this 3D Short moved to Ever Thought Why? as ky6h_4si4bw"
   },
   {
     "job": "20261122-1345-the-nasal-cycle-explained",

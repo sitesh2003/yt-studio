@@ -60,6 +60,9 @@ for day in range(1, 40):
     if slot:
         break
 
+import os   # noqa: E402
+if os.environ.get("HERO_AT"):   # a fixed slot (e.g. to place a Short between others), ISO time with offset
+    slot = dt.datetime.fromisoformat(os.environ["HERO_AT"])
 lines = [s["narration"] for s in script["scenes"]]
 desc = (script.get("description", "") + "\n\nSources: " + script.get("sources", "") + "\n" +
         "3D models: Quaternius, Animated LowPoly Dinosaurs (CC0); Kenney, Car Kit (CC0). Animated in Blender.\n\n"
@@ -79,10 +82,10 @@ write_json(DATA / "history.json", hist)
 qf = DATA.parent / "hero_queue.json" if CHANNEL != "main" else DATA / "hero_queue.json"
 q = read_json(qf, {}) or {}
 for it in q.get("queue", []):
-    if it.get("name") == name:
+    if it.get("name") == os.environ.get("HERO_QNAME", name):
         it.update(status="uploaded", video_id=vid, public_at=when)
         break
 else:
-    q.setdefault("queue", []).append({"name": name, "channel": CHANNEL, "title": meta["title"], "status": "uploaded",
+    q.setdefault("queue", []).append({"name": os.environ.get("HERO_QNAME", name), "channel": CHANNEL, "title": meta["title"], "status": "uploaded",
                                       "video_id": vid, "public_at": when})
 write_json(qf, q)
