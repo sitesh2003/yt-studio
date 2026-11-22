@@ -1,13 +1,15 @@
 {
-  "summary": "1. Start hooks immediately with a specific visual action or direct question, skipping conversational preambles like 'You've used X your whole life.' 2. Focus on visible everyday household phenomena (e.g., baking soda fizz, salt on ice) rather than abstract biological systems or theoretical physics. 3. Keep titles short and clear without textbook subtitles like 'The Biology of Cone Cells Explained.' 4. Keep script length under 36 seconds; longer complex setups (50s+) cause early swipe-aways. 5. Frontload the physical mechanism in sentence one to boost the stayed rate above the channel's 40% threshold.",
+  "summary": "1. High-stayed videos (38.7%-45.8%) get straight to a high-contrast physical contradiction in the very first 4 words without conversational filler like 'Ever wondered' or 'You've seen'. 2. Top-performing titles pose direct, short tension-driven questions ('Why Don't Planets Fall Into The Sun?') rather than academic textbook labels with subtitles ('How Colour Vision Works: The Biology of...'). 3. Shorter video durations under 36 seconds significantly correlate with higher stayed percentages compared to 38-57 second videos. 4. Videos about intuitive physical mechanics (space gravity, optics) dramatically outperform abstract microscopic biology (vaccines, cone cells). 5. Hooks asking 'Why don't we crash?' create immediate existential stakes, whereas passive open-ended questions ('How do vaccines train...?') fail to retain initial swipers.",
   "winning_hooks": [
-    "Immediate, direct questions about visible reactions (e.g., 'Why does baking soda fizz the moment it hits vinegar?')",
-    "Concrete, everyday visual triggers (e.g., 'You've seen trucks dump salt on frozen roads...')"
+    "If the Sun pulls the Earth, why don't we just crash into it?",
+    "Why does baking soda fizz the moment it hits vinegar?",
+    "Have you ever noticed that a magnifying glass can make things look huge, but pull it away and the world flips upside down?"
   ],
   "avoid": [
-    "Wordy conversational setups before reaching the actual question (e.g., 'You've used soap your whole life, but why...')",
-    "Abstract or theoretical concepts that lack immediate visual context (e.g., immune system training, lead spheres in a vacuum)",
-    "Long titles with academic/technical subtitles"
+    "Conversational fluff openings: 'Ever wondered...', 'You've used soap your whole life...'",
+    "Academic titles containing secondary descriptors like 'The chemistry of...' or 'explained'",
+    "Durations over 37 seconds that dilute the core payoff",
+    "Generic explanation questions lacking conflict, like 'How do vaccines actually train your immune system?'"
   ],
-  "next_experiment": "A/B test a 30-second Short on a household science topic: Version A starts instantly with a 7-word direct action question, while Version B starts with a 15-word situational setup sentence."
+  "next_experiment": "Test Hook Velocity: Compare a 30-second script starting immediately with a high-stakes contradiction ('If heavy objects fall at the same speed, why does a feather drift?') against an opening stating 'You've seen objects fall...'"
 }

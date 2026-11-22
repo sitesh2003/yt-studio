@@ -20,6 +20,29 @@
       }
     ],
     "countdown": false,
-    "checked": "2026-11-21"
+    "checked": "2026-11-22"
+  },
+  "Lu5BW3Ip8vo": {
+    "title": "Why Don't Planets Fall Into The Sun?",
+    "hook_line": "If the Sun pulls the Earth, why don't we just crash into it?",
+    "kept_at_10pct": 1.1455,
+    "kept_at_50pct": 0.4424,
+    "kept_at_end": 0.2303,
+    "vs_similar_start": 0.45,
+    "vs_similar_end": 0.72,
+    "biggest_drops": [
+      {
+        "at": 0.14,
+        "lost": 0.206,
+        "line": "Imagine throwing a ball sideways at 30 kilometers per second. It's fast."
+      },
+      {
+        "at": 0.33,
+        "lost": 0.073,
+        "line": "Gravity pulls the ball down, but its sideways speed keeps it moving forward."
+      }
+    ],
+    "countdown": false,
+    "checked": "2026-11-22"
   }
 }

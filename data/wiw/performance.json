@@ -1,5 +1,22 @@
 [
   {
+    "topic": "Why don't planets fall into the Sun? Celestial orbits explained",
+    "title": "Why Don't Planets Fall Into The Sun?",
+    "hook": "If the Sun pulls the Earth, why don't we just crash into it?",
+    "countdown": false,
+    "length_arm": null,
+    "duration": 31.58,
+    "publish_at": "2026-11-19T16:30:00-05:00",
+    "video": "Lu5BW3Ip8vo",
+    "views": 360,
+    "engagedViews": 165,
+    "averageViewPercentage": 55.05,
+    "averageViewDuration": 17,
+    "likes": 3,
+    "subscribersGained": 1,
+    "stayed_pct": 45.8
+  },
+  {
     "topic": "Why does salt melt ice on frozen roads? The chemistry of freezing point depression",
     "title": "How Salt Melts Ice: Chemistry Explained",
     "hook": "You've seen trucks dump salt on frozen roads, but how does it actually melt the ice?",
@@ -8,13 +25,13 @@
     "duration": 39.8,
     "publish_at": "2026-11-17T16:30:00-05:00",
     "video": "uh9aaSIkMiI",
-    "views": 101,
+    "views": 104,
     "engagedViews": 34,
     "averageViewPercentage": 43.23,
     "averageViewDuration": 16,
     "likes": 1,
     "subscribersGained": 0,
-    "stayed_pct": 33.7
+    "stayed_pct": 32.7
   },
   {
     "topic": "Why does soap remove grease and oil when plain water cannot?",
@@ -25,13 +42,13 @@
     "duration": 36.67,
     "publish_at": "2026-11-16T16:30:00-05:00",
     "video": "kU4gc_KAIJ4",
-    "views": 92,
+    "views": 97,
     "engagedViews": 21,
     "averageViewPercentage": 46.72,
     "averageViewDuration": 16,
     "likes": 0,
     "subscribersGained": 0,
-    "stayed_pct": 22.8
+    "stayed_pct": 21.6
   },
   {
     "topic": "Why does baking soda fizz when mixed with vinegar?",
@@ -49,6 +66,40 @@
     "likes": 1,
     "subscribersGained": 0,
     "stayed_pct": 42.9
+  },
+  {
+    "topic": "Why does a siren change pitch as it passes? The Doppler effect explained",
+    "title": "Why Does a Siren Change Pitch? The Doppler Effect",
+    "hook": "You've heard an ambulance siren drop in pitch as it speeds past. But why does that happen?",
+    "countdown": false,
+    "length_arm": null,
+    "duration": 37.05,
+    "publish_at": "2026-11-19T07:30:00-05:00",
+    "video": "qvYQfC6SeFE",
+    "views": 53,
+    "engagedViews": 17,
+    "averageViewPercentage": 38.15,
+    "averageViewDuration": 14,
+    "likes": 0,
+    "subscribersGained": 0,
+    "stayed_pct": 32.1
+  },
+  {
+    "topic": "Why does a lens flip the image I see?",
+    "title": "When Does A Lens Flip The Image?",
+    "hook": "Have you ever noticed that a magnifying glass can make things look huge and upright, but if you pull it away, the world suddenly flips upside down? It’s simple physics.",
+    "countdown": false,
+    "length_arm": null,
+    "duration": 35.91,
+    "publish_at": "2026-11-18T16:30:00-05:00",
+    "video": "RAyXuV7D0F0",
+    "views": 31,
+    "engagedViews": 12,
+    "averageViewPercentage": 26.85,
+    "averageViewDuration": 9,
+    "likes": 1,
+    "subscribersGained": 0,
+    "stayed_pct": 38.7
   },
   {
     "topic": "How do vaccines actually train your immune system to fight real viruses?",
@@ -76,30 +127,13 @@
     "duration": 57.63,
     "publish_at": "2026-11-17T07:30:00-05:00",
     "video": "ib9znstwvhE",
-    "views": 21,
-    "engagedViews": 6,
-    "averageViewPercentage": 77.88,
-    "averageViewDuration": 44,
-    "likes": 0,
+    "views": 23,
+    "engagedViews": 7,
+    "averageViewPercentage": 73.72,
+    "averageViewDuration": 42,
+    "likes": 1,
     "subscribersGained": 0,
-    "stayed_pct": 28.6
-  },
-  {
-    "topic": "Why does a lens flip the image I see?",
-    "title": "When Does A Lens Flip The Image?",
-    "hook": "Have you ever noticed that a magnifying glass can make things look huge and upright, but if you pull it away, the world suddenly flips upside down? It’s simple physics.",
-    "countdown": false,
-    "length_arm": null,
-    "duration": 35.91,
-    "publish_at": "2026-11-18T16:30:00-05:00",
-    "video": "RAyXuV7D0F0",
-    "views": 16,
-    "engagedViews": 6,
-    "averageViewPercentage": 25.72,
-    "averageViewDuration": 9,
-    "likes": 0,
-    "subscribersGained": 0,
-    "stayed_pct": 37.5
+    "stayed_pct": 30.4
   },
   {
     "topic": "How colour vision works: The biology of cone cells explained",
@@ -110,12 +144,12 @@
     "duration": 38.31,
     "publish_at": "2026-11-18T07:30:00-05:00",
     "video": "bZeFlqbrdf4",
-    "views": 9,
-    "engagedViews": 3,
-    "averageViewPercentage": 32.36,
-    "averageViewDuration": 12,
+    "views": 14,
+    "engagedViews": 4,
+    "averageViewPercentage": 28.550000000000004,
+    "averageViewDuration": 10,
     "likes": 0,
     "subscribersGained": 0,
-    "stayed_pct": 33.3
+    "stayed_pct": 28.6
   }
 ]

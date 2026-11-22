@@ -2741,7 +2741,7 @@
       "education"
     ],
     "hook": "Dividing by zero is impossible because no number can multiply by zero to give you a normal result.",
-    "status": "banked",
+    "status": "scheduled",
     "narration": "Dividing by zero is impossible because no number can multiply by zero to give you a normal result. Think of it as sharing 12 cookies with your friends. Divide 12 by 3, you get 4 cookies for each friend. Smaller divisors mean more cookies. As your group size shrinks toward zero, the number of cookies blows up toward infinity. Division asks how many zeros fit into 12. It is impossible. Multiplying any number by zero always gives zero, so you can't work backward to find a single answer. So it's just not a defined operation. Try this: if you divide zero by zero, why is that even more confusing?",
     "voice_engine": "chatterbox",
     "voices": "one narrator (af_heart)",
@@ -2848,7 +2848,10 @@
       "duration": 29.5
     },
     "repairs": 2,
-    "audited": true
+    "audited": true,
+    "video_id": "jckcMFbyT9M",
+    "publish_at": "2026-11-23T07:30:00-05:00",
+    "thumbnail_set": true
   },
   {
     "job": "20261119-0751-why-is-mars-red",
