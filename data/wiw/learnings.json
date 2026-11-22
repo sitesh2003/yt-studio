@@ -1,15 +1,19 @@
 {
-  "summary": "1. High-stayed videos (38.7%-45.8%) get straight to a high-contrast physical contradiction in the very first 4 words without conversational filler like 'Ever wondered' or 'You've seen'. 2. Top-performing titles pose direct, short tension-driven questions ('Why Don't Planets Fall Into The Sun?') rather than academic textbook labels with subtitles ('How Colour Vision Works: The Biology of...'). 3. Shorter video durations under 36 seconds significantly correlate with higher stayed percentages compared to 38-57 second videos. 4. Videos about intuitive physical mechanics (space gravity, optics) dramatically outperform abstract microscopic biology (vaccines, cone cells). 5. Hooks asking 'Why don't we crash?' create immediate existential stakes, whereas passive open-ended questions ('How do vaccines train...?') fail to retain initial swipers.",
+  "summary": [
+    "Prioritize cosmic and macro-physics topics like planetary orbits which significantly outperform molecular chemistry or biology in initial view attraction.",
+    "Formulate hooks that jump straight into a direct paradox or counter-intuitive question within the first 5 words, avoiding preamble phrases like 'You've used...'.",
+    "Keep video durations strictly under 35 seconds to prevent steep audience drop-off and maintain higher average view percentages.",
+    "Draft titles that state a direct, high-stakes curiosity gap without appending lengthy explanatory subtitles.",
+    "Eliminate conversational filler at the beginning of the first sentence, ensuring immediate cognitive engagement for the Shorts feed test window."
+  ],
   "winning_hooks": [
     "If the Sun pulls the Earth, why don't we just crash into it?",
-    "Why does baking soda fizz the moment it hits vinegar?",
-    "Have you ever noticed that a magnifying glass can make things look huge, but pull it away and the world flips upside down?"
+    "A 10kg lead sphere and a 1kg lead sphere dropped from the same height in a vacuum. Why don't they hit the ground at different moments?"
   ],
   "avoid": [
-    "Conversational fluff openings: 'Ever wondered...', 'You've used soap your whole life...'",
-    "Academic titles containing secondary descriptors like 'The chemistry of...' or 'explained'",
-    "Durations over 37 seconds that dilute the core payoff",
-    "Generic explanation questions lacking conflict, like 'How do vaccines actually train your immune system?'"
+    "Opening hooks with familiar observations like 'You've seen...' or 'You've used...' which yield low stayed percentages.",
+    "Exceeding 40 seconds in duration for explanatory science topics.",
+    "Complex multi-clause opening sentences that delay the core question past the 3-second retention window."
   ],
-  "next_experiment": "Test Hook Velocity: Compare a 30-second script starting immediately with a high-stakes contradiction ('If heavy objects fall at the same speed, why does a feather drift?') against an opening stating 'You've seen objects fall...'"
+  "next_experiment": "Test an astrophysics topic under 30 seconds using an extreme direct-question hook ('Why doesn't the moon crash into Earth?') versus a longer narrative hook to isolate length and topic impact on stayed_pct."
 }

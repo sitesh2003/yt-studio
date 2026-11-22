@@ -2203,7 +2203,7 @@
       "education"
     ],
     "hook": "Why does a guitar string change pitch when you press it?",
-    "status": "scheduled",
+    "status": "public",
     "narration": "Why does a guitar string change pitch when you press it? When you pluck the open string, it vibrates across its full length, creating a low, slow wave. It's vibrating. Press your finger down, and you physically shorten the part of the string that's free to move. With less string, the wave completes its cycle much faster, hitting the ends more often. It moves fast. That's because a shorter string restricts the wave to a smaller space, which forces a higher frequency. This is how every fret on your guitar creates a precise new note. Try this: why does a longer straw produce a deeper sound than a short one?",
     "voice_engine": "chatterbox",
     "voices": "one narrator (af_heart)",
@@ -2306,7 +2306,9 @@
     "audited": true,
     "video_id": "1hv2XbsRQ20",
     "publish_at": "2026-11-22T07:30:00-05:00",
-    "thumbnail_set": true
+    "thumbnail_set": true,
+    "recapped": true,
+    "answered": true
   },
   {
     "job": "20261118-0748-how-an-electric-motor-spins-the-physics-",
@@ -3874,5 +3876,120 @@
     "video_id": "ez33f0NKxb8",
     "publish_at": "2026-11-24T16:30:00-05:00",
     "thumbnail_set": true
+  },
+  {
+    "job": "20261122-1345-the-nasal-cycle-explained",
+    "topic": "The Nasal Cycle Explained",
+    "title": "How The Nasal Cycle Works",
+    "description": "Ever wonder why one nostril feels more open than the other? Discover the hidden biological mechanism behind the nasal cycle.\n\n#shorts #biology #science\n\nSources (open-access research):\n- Karaoglu (2026), Bulletin of Cardiovasculer Academy. doi:10.4274/kvbulten.galenos.2026.57338\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nPhoto by katja on Pixabay\nVideo by Marsel_beijing on Pixabay\nVideo by allinonemovie on Pixabay",
+    "tags": [
+      "nasal cycle",
+      "nose breathing",
+      "human biology",
+      "respiratory system",
+      "why it works",
+      "science shorts"
+    ],
+    "hook": "Most of your breathing comes from just one nostril right now. One pushes significantly more air.",
+    "status": "banked",
+    "narration": "Most of your breathing comes from just one nostril right now. One pushes significantly more air. You think both work equally. They don't share work. Your body constantly shifts the load. Inside your nose, blood vessels swell on one side. That narrows the passage. Meanwhile, tissue on the other side shrinks. That opens the pathway wide. Every few hours, your nervous system flips the switch. It swaps sides. Resting a nostril lets its lining regain moisture. This may help keep the nasal lining healthy. It also improves smell. Slow air catches certain scents, fast air catches others. Block one nostril and breathe on a mirror. Which side leaves more fog?",
+    "voice_engine": "chatterbox",
+    "voices": "one narrator (af_heart)",
+    "diagrams": 3,
+    "series": "Biology",
+    "countdown": false,
+    "length_arm": null,
+    "question": "Block one nostril and breathe on a mirror. Which side leaves more fog?",
+    "answer_comment": "The answer: The side leaving the larger fog patch is your currently dominant nostril, which has decongested nasal tissues allowing for easier airflow. The side leaving less fog is in its rest phase, where the nasal tissues are temporarily swollen, which reduces airflow and helps the lining recover moisture. This switch happens automatically, typically every few hours!\n\nSources (open-access research):\n- Karaoglu (2026), Bulletin of Cardiovasculer Academy. doi:10.4274/kvbulten.galenos.2026.57338",
+    "sources": [
+      {
+        "claim": "The nasal cycle is an alternating congestion and decongestion pattern of the nasal cavities regulated by the autonomic nervous system.",
+        "cite": "Karaoglu (2026), Bulletin of Cardiovasculer Academy. doi:10.4274/kvbulten.galenos.2026.57338",
+        "doi": "10.4274/kvbulten.galenos.2026.57338",
+        "title": "Ultradian Nasal Cycle as a Potential Peripheral Reflection of Cardiovascular Autonomic Regulation: The Neurocardiological Potential of Acoustic Rhinometry",
+        "why": "Bu doğrultuda, otonom sinir sisteminin dual kontrolü altında olan yoğun vasküler yapısıyla nazal mukoza ve burun boşluğundaki periyodik hacim değişimleri (ultradiyen nazal siklus), santral otonomik çıktıların periferdeki yansımalarını incelemek adına elverişli bir mikrosirkülasyon modeli sunabilir."
+      }
+    ],
+    "fact_check": [
+      "The nasal cycle is an alternating congestion and decongestion pattern of the nasal cavities regulated by the autonomic nervous system.",
+      "Erectile tissue (venous plexuses) in the nasal mucosa swells on one side via parasympathetic stimulation and constricts on the other via sympathetic tone.",
+      "The cycle prevents drying out of the nasal epithelium, maintains humidity/filtration, and optimizes scent detection across different flow speeds."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        4.81
+      ],
+      [
+        4.81,
+        9.41
+      ],
+      [
+        9.41,
+        13.45
+      ],
+      [
+        13.45,
+        17.1
+      ],
+      [
+        17.1,
+        20.96
+      ],
+      [
+        20.96,
+        25.78
+      ],
+      [
+        25.78,
+        30.05
+      ],
+      [
+        30.05,
+        33.92
+      ]
+    ],
+    "duration": 33.92,
+    "scene_lines": [
+      "Most of your breathing comes from just one nostril right now. One pushes significantly more air.",
+      "You think both work equally. They don't share work. Your body constantly shifts the load.",
+      "Inside your nose, blood vessels swell on one side. That narrows the passage.",
+      "Meanwhile, tissue on the other side shrinks. That opens the pathway wide.",
+      "Every few hours, your nervous system flips the switch. It swaps sides.",
+      "Resting a nostril lets its lining regain moisture. This may help keep the nasal lining healthy.",
+      "It also improves smell. Slow air catches certain scents, fast air catches others.",
+      "Block one nostril and breathe on a mirror. Which side leaves more fog?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,000 --> 00:00:01,200\nMost of your breathing comes from just\n\n2\n00:00:01,200 --> 00:00:02,390\none nostril right now.\n\n3\n00:00:02,440 --> 00:00:04,530\nOne pushes significantly more air.\n\n4\n00:00:04,810 --> 00:00:06,160\nYou think both work equally.\n\n5\n00:00:06,340 --> 00:00:07,410\nThey don't share work.\n\n6\n00:00:07,530 --> 00:00:09,240\nYour body constantly shifts the load.\n\n7\n00:00:09,410 --> 00:00:11,960\nInside your nose, blood vessels swell on one side.\n\n8\n00:00:12,090 --> 00:00:13,180\nThat narrows the passage.\n\n9\n00:00:13,450 --> 00:00:15,380\nMeanwhile, tissue on the other side shrinks.\n\n10\n00:00:15,520 --> 00:00:16,970\nThat opens the pathway wide.\n\n11\n00:00:17,100 --> 00:00:19,790\nEvery few hours, your nervous system flips the switch.\n\n12\n00:00:19,970 --> 00:00:20,800\nIt swaps sides.\n\n13\n00:00:20,960 --> 00:00:23,150\nResting a nostril lets its lining regain moisture.\n\n14\n00:00:23,370 --> 00:00:25,600\nThis may help keep the nasal lining healthy.\n\n15\n00:00:25,780 --> 00:00:26,990\nIt also improves smell.\n\n16\n00:00:27,140 --> 00:00:29,730\nSlow air catches certain scents, fast air catches others.\n\n17\n00:00:30,050 --> 00:00:32,060\nBlock one nostril and breathe on a mirror.\n\n18\n00:00:32,180 --> 00:00:33,320\nWhich side leaves more fog?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [],
+      "footage": [],
+      "review": [],
+      "heard": [
+        "\"it swaps sides\" heard as \"swapsides\"",
+        "\"scents\" heard as \"sense\"",
+        "\"block\" heard as \"lock\""
+      ],
+      "scene_heard": [
+        "scene 1: 100%",
+        "scene 2: 100%",
+        "scene 3: 100%",
+        "scene 4: 100%",
+        "scene 5: 75%",
+        "scene 6: 100%",
+        "scene 7: 92%",
+        "scene 8: 92%"
+      ],
+      "pass": true,
+      "duration": 33.7
+    },
+    "repairs": 1,
+    "audited": true
   }
 ]

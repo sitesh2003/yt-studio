@@ -420,5 +420,25 @@
       "Satellites in low Earth orbit eventually decay due to atmospheric drag, requiring re-boosts, unlike the Moon which is far enough away to be unaffected by this specific drag."
     ],
     "sources": []
+  },
+  {
+    "job": "20261122-1345-the-nasal-cycle-explained",
+    "date": "2026-11-22",
+    "title": "How The Nasal Cycle Works",
+    "topic": "The Nasal Cycle Explained",
+    "series": "Biology",
+    "weekly": false,
+    "claims": [
+      "The nasal cycle is an alternating congestion and decongestion pattern of the nasal cavities regulated by the autonomic nervous system.",
+      "Erectile tissue (venous plexuses) in the nasal mucosa swells on one side via parasympathetic stimulation and constricts on the other via sympathetic tone.",
+      "The cycle prevents drying out of the nasal epithelium, maintains humidity/filtration, and optimizes scent detection across different flow speeds."
+    ],
+    "sources": [
+      {
+        "cite": "Karaoglu (2026), Bulletin of Cardiovasculer Academy. doi:10.4274/kvbulten.galenos.2026.57338",
+        "doi": "10.4274/kvbulten.galenos.2026.57338",
+        "claim": "The nasal cycle is an alternating congestion and decongestion pattern of the nasal cavities regulated by the autonomic nervous system."
+      }
+    ]
   }
 ]

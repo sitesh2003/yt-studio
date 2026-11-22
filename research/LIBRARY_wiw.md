@@ -3,6 +3,16 @@
 Every video, the claims it makes, and the open-access research behind them. Built automatically by
 agents/library.py; a source is listed only if its abstract was checked to support the claim.
 
+## How The Nasal Cycle Works
+*2026-11-22 · Biology*
+
+- The nasal cycle is an alternating congestion and decongestion pattern of the nasal cavities regulated by the autonomic nervous system.
+- Erectile tissue (venous plexuses) in the nasal mucosa swells on one side via parasympathetic stimulation and constricts on the other via sympathetic tone.
+- The cycle prevents drying out of the nasal epithelium, maintains humidity/filtration, and optimizes scent detection across different flow speeds.
+
+Sources:
+- Karaoglu (2026), Bulletin of Cardiovasculer Academy. doi:10.4274/kvbulten.galenos.2026.57338 — supports: The nasal cycle is an alternating congestion and decongestion pattern of the nasal cavities regulated by the autonomic nervous system.
+
 ## How Metals Conduct Electricity: The Chemistry Explained
 *2026-11-20 · Chemistry*
 
