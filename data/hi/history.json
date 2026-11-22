@@ -8840,5 +8840,28 @@
     "video_id": "Jy_-bSh-CUM",
     "publish_at": "2026-11-28T02:30:00-05:00",
     "thumbnail_set": true
+  },
+  {
+    "job": "hero_apato_weight_hi",
+    "topic": "एक अपैटोसॉरस का वज़न कितनी Cars के बराबर था? 🦕",
+    "title": "एक अपैटोसॉरस का वज़न कितनी Cars के बराबर था? 🦕",
+    "description": "Scientists साठ साल से Apatosaurus का वज़न निकाल रहे हैं, और अब भी सहमत नहीं: करीब 18 से 34 टन, यानी डेढ़ टन वाली 12 से 23 cars। #shorts #hindi #dinosaur #science\n\nSources: Sander et al. 2011, Biological Reviews 86: 117-155 (Table 1, compiled Apatosaurus louisae mass estimates: Foster 2007, 34,035 kg from long-bone circumference; Packard et al. 2009, 18,000 kg; Colbert 1962, 32,420 kg); Wedel 2003, Paleobiology 29: 243-255 (air spaces in sauropod vertebrae).\n3D models: Quaternius, Animated LowPoly Dinosaurs (CC0); Kenney, Car Kit (CC0). Animated in Blender.\n\nHow this was made: the script is researched and fact-checked against published research (sources above), narrated by an AI voice, and animated and edited with open-source software.",
+    "tags": [
+      "Apatosaurus",
+      "dinosaur hindi",
+      "science hindi",
+      "dinosaur weight",
+      "3D animation"
+    ],
+    "hook": "एक अपैटोसॉरस को तराज़ू पर बराबर करने के लिए, कितनी कारें चाहिए?",
+    "status": "scheduled",
+    "narration": "एक अपैटोसॉरस को तराज़ू पर बराबर करने के लिए, कितनी कारें चाहिए? साठ साल से scientists उसका वज़न निकाल रहे हैं, और अब भी सहमत नहीं हैं। उसकी पैर की हड्डियां नापने पर करीब चौंतीस टन आता है, यानी डेढ़ टन वाली तेईस कारें। एक दूसरी study कहती है, सिर्फ़ अठारह टन, यानी बस बारह कारें। हड्डियां ढांचा बताती हैं, मांस नहीं। और उसकी गर्दन और पीठ की हड्डियों में, पक्षियों की तरह, हवा भरी जगहें थीं। सबसे हल्का अंदाज़ा भी बारह कारें हैं। तुम किस नंबर पर भरोसा करोगे?",
+    "voice_engine": "edge-tts",
+    "countdown": false,
+    "hero_3d": true,
+    "question": "सबसे हल्का अंदाज़ा भी बारह कारें हैं। तुम किस नंबर पर भरोसा करोगे?",
+    "video_id": "91w1D5T6cDI",
+    "publish_at": "2026-11-29T02:30:00-05:00",
+    "thumbnail_set": true
   }
 ]
