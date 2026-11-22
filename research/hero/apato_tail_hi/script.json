@@ -1,0 +1,42 @@
+{
+  "title_options": [
+    "क्या Apatosaurus की पूंछ आवाज़ से तेज़ चलती थी? 🦕"
+  ],
+  "facts": [
+    "Myhrvold & Currie 1997 (Paleobiology): a computer model in which a hypothetical 'popper' at the tip of a diplodocid tail reached about 560 m/s, faster than sound (343 m/s).",
+    "Conti et al. 2022 (Sci Rep 12:19245): a multibody model of a 12.44 m apatosaurine tail, checked against five specimens incl. CM 3018, peaked at 32.7 m/s (73 mph, 118 km/h) with air drag; that is more than ten times slower than sound.",
+    "Conti et al. 2022: no hypothesised soft-tissue tip structure could withstand 340 m/s; the tip would fail. Using the tail as a defensive weapon remains plausible."
+  ],
+  "sources": "Myhrvold & Currie 1997, Paleobiology 23(4): 393-409 (tail-tip model: about 560 m/s); Conti et al. 2022, Scientific Reports 12: 19245, doi:10.1038/s41598-022-21633-2 (multibody model of a 12.44 m apatosaurine tail: peak tip speed 32.7 m/s; a supersonic tip would fail).",
+  "description": "1997 में एक computer model ने कहा था कि Apatosaurus अपनी पूंछ आवाज़ से भी तेज़ चला सकता था। 2022 में नए model ने पूरी पूंछ दोबारा बनाई, और जवाब कुछ और निकला। #shorts #hindi #dinosaur #science",
+  "tags": [
+    "Apatosaurus",
+    "dinosaur hindi",
+    "science hindi",
+    "dinosaur tail",
+    "3D animation"
+  ],
+  "scenes": [
+    {
+      "narration": "क्या एक Apatosaurus अपनी पूंछ को आवाज़ से भी तेज़ चला सकता था?"
+    },
+    {
+      "narration": "उन्नीस सौ सत्तानवे में एक computer model ने कहा, हां, पूंछ का सिरा चाबुक की तरह, दो हज़ार किलोमीटर प्रति घंटे से भी तेज़ चल सकता था।"
+    },
+    {
+      "narration": "फिर दो हज़ार बाईस में scientists ने पूरी बारह मीटर लंबी पूंछ, हिस्सा हिस्सा करके, computer में दोबारा बनाई।"
+    },
+    {
+      "narration": "उसका सिरा सबसे तेज़, करीब एक सौ अठारह किलोमीटर प्रति घंटे तक पहुंचा, यानी highway पर दौड़ती car जितना।"
+    },
+    {
+      "narration": "ये आवाज़ से दस गुना से भी ज़्यादा धीमा है।"
+    },
+    {
+      "narration": "और चाबुक जैसा कोई सिरा अगर आवाज़ से तेज़ चलता, तो वो टूटकर बिखर जाता।"
+    },
+    {
+      "narration": "फिर भी, car जितनी तेज़ घूमती पूंछ, क्या तुम उसके पीछे खड़े होते?"
+    }
+  ]
+}

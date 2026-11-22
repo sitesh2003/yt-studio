@@ -1,0 +1,175 @@
+{
+  "assets_dir": "assets/3d",
+  "creature": {
+    "file": "dinos/Apatosaurus.fbx",
+    "length_m": 22.0,
+    "height_m": 9.0,
+    "walk": "Apatosaurus_Walk",
+    "run": "Apatosaurus_Run",
+    "idle": "Apatosaurus_Idle",
+    "roar": "Apatosaurus_Attack",
+    "foot_bone": "BackFoot.L",
+    "leg_bones": [
+      "BackUpLeg.L",
+      "BackLowLeg.L",
+      "BackFoot.L",
+      "BackUpLeg.R",
+      "BackLowLeg.R",
+      "BackFoot.R"
+    ],
+    "muscle_bones": [
+      "BackUpLeg.L",
+      "BackUpLeg.R"
+    ],
+    "bone_radius": 0.2,
+    "muscle_radius": 0.6,
+    "bone_groups": [
+      "TAIL",
+      "SPINE",
+      "HIPS"
+    ],
+    "muscle_groups": []
+  },
+  "props": {
+    "car": "cars/sedan.glb"
+  },
+  "shots": [
+    {
+      "kind": "tail_whip",
+      "whips": [
+        0.8
+      ],
+      "car_kmh": 118,
+      "seconds": 4.5,
+      "overlay": "label",
+      "label": [
+        "FASTER THAN SOUND?",
+        ""
+      ]
+    },
+    {
+      "kind": "tail_whip",
+      "whips": [
+        1.3
+      ],
+      "cam_scale": 0.75,
+      "seconds": 6.0,
+      "overlay": "bars",
+      "title": "1997 COMPUTER MODEL",
+      "bars": [
+        [
+          "TAIL TIP (claimed)",
+          2016,
+          "red"
+        ],
+        [
+          "SOUND",
+          1235,
+          "cyan"
+        ]
+      ],
+      "unit": "km/h"
+    },
+    {
+      "kind": "tail_whip",
+      "world": "sim",
+      "xray": true,
+      "whips": [
+        3.2
+      ],
+      "bones_s": [
+        0.2,
+        2.6
+      ],
+      "seconds": 5.0,
+      "overlay": "label",
+      "label": [
+        "2022: REBUILT",
+        "12 m of tail, section by section"
+      ],
+      "bone_groups": [
+        "TAIL",
+        "SPINE"
+      ]
+    },
+    {
+      "kind": "tail_whip",
+      "whips": [
+        1.0
+      ],
+      "car_kmh": 118,
+      "seconds": 5.0,
+      "overlay": "bars",
+      "title": "FASTEST TAIL TIP (2022)",
+      "bars": [
+        [
+          "TAIL TIP",
+          118,
+          "yellow"
+        ],
+        [
+          "HIGHWAY CAR",
+          100,
+          "cyan"
+        ]
+      ],
+      "unit": "km/h"
+    },
+    {
+      "kind": "tail_whip",
+      "whips": [
+        0.7
+      ],
+      "cam_scale": 1.25,
+      "seconds": 3.0,
+      "overlay": "bars",
+      "title": "10x SLOWER",
+      "bars": [
+        [
+          "TAIL TIP",
+          118,
+          "yellow"
+        ],
+        [
+          "SPEED OF SOUND",
+          1235,
+          "red"
+        ]
+      ],
+      "unit": "km/h"
+    },
+    {
+      "kind": "tail_whip",
+      "world": "sim",
+      "xray": true,
+      "bones_s": [
+        0.0,
+        0.1
+      ],
+      "whips": [
+        1.0
+      ],
+      "cam_scale": 0.75,
+      "seconds": 4.0,
+      "overlay": "label",
+      "label": [
+        "A WHIP TIP",
+        "would tear apart"
+      ],
+      "bone_groups": [
+        "TAIL",
+        "SPINE"
+      ]
+    },
+    {
+      "kind": "tail_whip",
+      "whips": [
+        0.6,
+        2.9
+      ],
+      "car_kmh": 118,
+      "seconds": 4.5,
+      "overlay": "none"
+    }
+  ]
+}

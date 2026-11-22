@@ -1,0 +1,44 @@
+{
+  "title_options": [
+    "Could An Apatosaurus Tail Break The Sound Barrier? 🦕"
+  ],
+  "facts": [
+    "Myhrvold & Currie 1997 (Paleobiology): a computer model in which a hypothetical 'popper' at the tip of a diplodocid tail reached about 560 m/s, faster than sound (343 m/s).",
+    "Conti et al. 2022 (Sci Rep 12:19245): a multibody model of a 12.44 m apatosaurine tail, checked against five specimens incl. CM 3018, peaked at 32.7 m/s (73 mph, 118 km/h) with air drag; that is more than ten times slower than sound.",
+    "Conti et al. 2022: no hypothesised soft-tissue tip structure could withstand 340 m/s; the tip would fail. Using the tail as a defensive weapon remains plausible."
+  ],
+  "sources": "Myhrvold & Currie 1997, Paleobiology 23(4): 393-409 (tail-tip model: about 560 m/s); Conti et al. 2022, Scientific Reports 12: 19245, doi:10.1038/s41598-022-21633-2 (multibody model of a 12.44 m apatosaurine tail: peak tip speed 32.7 m/s; a supersonic tip would fail).",
+  "description": "In 1997 a computer model said an Apatosaurus could crack its tail faster than sound. In 2022, a new model rebuilt the tail section by section and found something very different. #shorts #dinosaurs #science #physics",
+  "tags": [
+    "Apatosaurus",
+    "dinosaur tail",
+    "sound barrier",
+    "dinosaurs",
+    "paleontology",
+    "science",
+    "3D animation"
+  ],
+  "scenes": [
+    {
+      "narration": "Could an Apatosaurus crack its tail faster than the speed of sound?"
+    },
+    {
+      "narration": "In 1997, a computer model said yes: the tip could snap like a whip, at over twelve hundred miles an hour."
+    },
+    {
+      "narration": "In 2022, scientists rebuilt the tail in a computer, all twelve meters of it, section by section."
+    },
+    {
+      "narration": "Its fastest tip reached about seventy-three miles an hour. That's a car on the highway."
+    },
+    {
+      "narration": "More than ten times slower than sound."
+    },
+    {
+      "narration": "And any whip tip pushed past the speed of sound would have torn apart."
+    },
+    {
+      "narration": "Still, a tail swinging as fast as a car. Would you stand behind it?"
+    }
+  ]
+}

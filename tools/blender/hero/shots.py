@@ -18,7 +18,7 @@ import sys
 
 import bpy
 import mathutils
-from mathutils import Vector
+from mathutils import Vector, Quaternion
 
 FPS = 30
 A = argparse.ArgumentParser()
@@ -880,6 +880,73 @@ def toonify_scene():
         world = 0.03 * max(1.0, max(o.dimensions) / 4)                 # outline width in metres
         toon_outline(o, world / max(1e-6, o.matrix_world.to_scale()[0]))
 
+
+TAIL_BONES = ("Tail1", "Tail2", "Tail3", "Tail4", "Tail5")
+
+
+def _whip_value(t, start, dur):
+    """Side of the tail (+1 right ... -1 left) at time t for one whip starting at `start`:
+    a slow wind-up, a fast swing across, then a slow settle back to the middle."""
+    wind, settle = 0.7, 1.4
+    def ease(x):
+        x = min(1.0, max(0.0, x))
+        return x * x * (3 - 2 * x)
+    if t < start - wind:
+        return 0.0
+    if t < start:
+        return 0.55 * ease((t - (start - wind)) / wind)
+    if t < start + dur:
+        x = (t - start) / dur
+        return 0.55 - 1.55 * (x * x * x * (x * (x * 6 - 15) + 10))      # smootherstep: fastest mid-swing
+    return -1.0 + ease((t - start - dur) / settle)
+
+
+def tail_whip(arm, starts, dur, amp_deg, n_frames):
+    """Swing the tail sideways (about the world vertical) as a whip: each bone a little later and further
+    than the one before it, so the tip moves fastest. Layered on top of the body's own animation."""
+    ad = arm.animation_data or arm.animation_data_create()
+    act = bpy.data.actions.new("TailWhip")
+    ad.action = act
+    up_arm = (arm.matrix_world.to_3x3().inverted() @ Vector((0, 0, 1))).normalized()
+    weights = (0.10, 0.15, 0.2, 0.25, 0.3)
+    lag = dur * 0.10
+    for k, nm in enumerate(TAIL_BONES):
+        pb = arm.pose.bones[nm]
+        pb.rotation_mode = "QUATERNION"
+        axis = (pb.bone.matrix_local.to_3x3().inverted() @ up_arm).normalized()
+        for fr in range(1, n_frames + 1):
+            t = (fr - 1) / FPS
+            v = sum(_whip_value(t, st + k * lag, dur) for st in starts)
+            pb.rotation_quaternion = Quaternion(axis, math.radians(amp_deg * weights[k] * v))
+            pb.keyframe_insert("rotation_quaternion", frame=fr)
+    ad.action = None
+    tr = ad.nla_tracks.new()
+    tr.name = "whip"
+    st = tr.strips.new("TailWhip", 1, act)
+    try:
+        st.action_slot = act.slots[0]
+    except Exception:
+        pass
+    st.blend_type = "COMBINE"
+    st.extrapolation = "HOLD"
+
+
+def tip_speed(arm, n_frames):
+    """Fastest speed of the tail tip in the scene (m/s), measured frame to frame: the picture must match the
+    number the narration says."""
+    sc = bpy.context.scene
+    prev, best = None, (0.0, 0)
+    for fr in range(1, n_frames + 1):
+        sc.frame_set(fr)
+        p = arm.matrix_world @ arm.pose.bones["Tail5"].tail
+        if prev is not None:
+            v = (p - prev).length * FPS
+            if v > best[0]:
+                best = (v, fr)
+        prev = p.copy()
+    sc.frame_set(1)
+    return best
+
 # ---------------------------------------------------------------- the templates
 def build():
     kind = SHOT["kind"]
@@ -888,7 +955,7 @@ def build():
                               "stress_run": "sim", "muscle_needed": "sim", "speed_track": "day",
                               "race_pass": "day", "closeup_roar": "dusk", "xray_jaw": "sim",
                               "coprolite": "sim", "crash_compare": "day", "grow": "day",
-                              "brake_compare": "day", "vision_cone": "day"}[kind])
+                              "brake_compare": "day", "vision_cone": "day", "tail_whip": "day"}[kind])
     world(look)
     ground("sim" if look == "sim" else "road")
     if look == "day":
@@ -1301,6 +1368,64 @@ def build():
         key_path(cam, [(1, Vector((11, -16, 2.6))), (N, Vector((11, -16 - dt, 2.6)))])
         key_path(tgt, [(1, Vector((0, -3, 2.4))), (N, Vector((0, -6 - dt * 1.4, 2.2)))])
 
+    elif kind == "tail_whip":
+        # the 2022 model's whip (Conti et al., Sci Rep): the tail tip at its peak speed, a car beside it at the
+        # same speed; the swing is tuned so the measured tip speed in the scene matches the study's figure
+        play(arm, c.get(SHOT.get("anim", "idle"), walk), 1, N, SHOT.get("anim_rate", 1.0))
+        x0 = SHOT.get("x", -5.0)
+        arm.location = (x0, 0, 0)
+        if SHOT.get("xray"):               # the "rebuilt in a computer" look: skin see-through, tail bones appear
+            xray_skin(mesh, H)
+            bones = skeleton(arm, c)
+            key_prop([(1, 1.0)], "xr")
+            key_prop([(1, 0.0)], "stress")
+            keep = SHOT.get("bone_groups", ["TAIL", "SPINE", "HIPS"])
+            for nm, objs in bones.items():
+                if nm not in keep:
+                    for o in objs:
+                        o.hide_render = True
+            t0, t1 = SHOT.get("bones_s", [0.2, 2.0])
+            tail = bones.get("TAIL", [])
+            for i, o in enumerate(tail):    # section by section, from the hips to the tip
+                reveal([o], int((t0 + (t1 - t0) * i / max(1, len(tail))) * FPS) + 1)
+        starts = SHOT.get("whips", [1.0])
+        dur = SHOT.get("whip_s", 0.55)
+        target = SHOT.get("tip_ms", 33.0)
+        amp = 70.0
+        for _ in range(4):          # tune the swing to the speed the study found
+            for tr in [t for t in arm.animation_data.nla_tracks if t.name == "whip"]:
+                arm.animation_data.nla_tracks.remove(tr)
+            tail_whip(arm, starts, dur, amp, N)
+            v, fr_ = tip_speed(arm, N)
+            if v <= 0:
+                break
+            amp *= target / v
+            amp = min(amp, 160.0)
+        v, fr_ = tip_speed(arm, N)
+        print(f"tail tip peak {v:.1f} m/s ({v * 3.6:.0f} km/h) at frame {fr_}, swing {amp:.0f} deg")
+        if SHOT.get("car_kmh"):
+            v_c = SHOT["car_kmh"] / 3.6
+            car, parts = glb(SPEC["props"]["car"], 4.5, (4.0, 0, 0), math.radians(180))
+            meet = fr_ / FPS                      # the car passes the tail tip at the moment of peak speed
+            sc_ = bpy.context.scene
+            sc_.frame_set(fr_)
+            ty = (arm.matrix_world @ arm.pose.bones["Tail5"].tail).y
+            sc_.frame_set(1)
+            lane = SHOT.get("car_x", 1.5)
+            key_path(car, [(1, Vector((lane, ty + v_c * meet, 0))), (N, Vector((lane, ty + v_c * (meet - T), 0)))])
+            for p in parts:
+                if "wheel" in p.name.lower():
+                    p.rotation_mode = "XYZ"
+                    p.keyframe_insert("rotation_euler", index=0, frame=1)
+                    p.rotation_euler[0] -= v_c * T / 0.35
+                    p.keyframe_insert("rotation_euler", index=0, frame=N)
+                    for fc in _fcurves(p.animation_data.action):
+                        for k in fc.keyframe_points:
+                            k.interpolation = "LINEAR"
+        cs = SHOT.get("cam_scale", 1.12)        # 1 = the whole animal; smaller = closer on the tail
+        key_path(cam, [(1, Vector((x0 + 19 * cs, 4 + 22 * cs, 13 * cs))), (N, Vector((x0 + 17.5 * cs, 4 + 20 * cs, 12 * cs)))])
+        key_path(tgt, [(1, Vector((x0 + 1.8, 4.5, 2.2))), (N, Vector((x0 + 1.8, 4.5, 2.2)))])
+        smooth_keys(cam)
     elif kind == "closeup_roar":
         play(arm, c.get("roar", walk), int(N * 0.12), N, 0.85)
         play(arm, c.get("idle", walk), 1, int(N * 0.12), 1.0, track="idle")
