@@ -219,7 +219,7 @@ SC = [
   "फिर आसमान से करीब दस किलोमीटर चौड़ी एक चट्टान आई।",
   {"kind": "asteroid", "phase": "streak", "overlay": "none", "seconds": 7, "source": S_SCH}),
  ("It struck what is now the Yucatán Peninsula in Mexico, and blasted a crater roughly one hundred and eighty kilometres wide.",
-  "वो आज के Mexico के Yucatán इलाक़े में गिरी, और करीब एक सौ अस्सी किलोमीटर चौड़ा गड्ढा बना दिया।",
+  "वो आज के Mexico के युकाटन इलाक़े में गिरी, और करीब एक सौ अस्सी किलोमीटर चौड़ा गड्ढा बना दिया।",
   {"kind": "asteroid", "phase": "flash", "flash_s": 0.6, "overlay": "none", "seconds": 8, "source": S_SCH}),
  ("Within hours, shock waves, wildfires and giant waves spread out from the impact.",
   "कुछ ही घंटों में, उस टक्कर से झटके, जंगल की आग और विशाल लहरें चारों ओर फैल गईं।",
