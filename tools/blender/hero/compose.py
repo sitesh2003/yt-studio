@@ -27,6 +27,12 @@ FPS = 30
 W, H = 1080, 1920
 YEL, WHITE, BLACK, RED, CYAN, GREEN = (255, 222, 0), (255, 255, 255), (0, 0, 0), (255, 50, 40), (80, 220, 255), (90, 230, 120)
 CLEAR = 800   # graphics stay above this line; the captions own the band around 0.62 x height
+# LONG VIDEOS (16:9): the graphics are drawn on the same tall canvas as a Short, then set as a side panel on the
+# left of the wide frame (scaled PANEL[0], cropped from portrait y PANEL[1], placed at x PANEL[2]); every layout
+# that passed its checks in the Shorts stays exactly as it was
+LAND = {"on": False}
+OW, OH = W, H
+PANEL = (0.6, 60, 30)
 FONT = str(ROOT / "assets" / "fonts" / "ArchivoBlack-Regular.ttf")
 _F = {}
 
@@ -126,8 +132,13 @@ def hindi_label_events():
                 if b_ is not None:
                     start = b_
         for f0, f1 in runs:
+            sz = v['size'] * (1.3 if len(txt) <= 16 else 1.12 if len(txt) <= 24 else 1.0)
+            px, py = x, y
+            if LAND["on"]:                 # same place in the side panel as the drawn graphics
+                ps, cy_, x_ = PANEL
+                px, py, sz = x * ps + x_, y * ps - cy_, sz * ps
             out.append(f"Dialogue: 2,{editor._ass_time((f0 - 1) / FPS)},{editor._ass_time(f1 / FPS)},Cap,,0,0,0,,"
-                       f"{{\\an{an.get(anc, 5)}\\pos({int(x)},{int(y)})\\fn{font}\\fs{int(v['size'] * (1.3 if len(txt) <= 16 else 1.12 if len(txt) <= 24 else 1.0))}"
+                       f"{{\\an{an.get(anc, 5)}\\pos({int(px)},{int(py)})\\fn{font}\\fs{int(sz)}"
                        f"\\c{_ass_colour(col)}\\bord6\\shad0}}{txt}")
     return out
 
@@ -571,6 +582,10 @@ def main():
     spec = json.loads((d / "spec.json").read_text(encoding="utf-8"))
     SPEC.update(spec)
     HINDI["on"] = (config()["channel"].get("language") or "en")[:2] == "hi"
+    global OW, OH
+    if spec.get("aspect") == "landscape":
+        LAND["on"] = True
+        OW, OH = 1920, 1080
     words = json.loads((d / "words.json").read_text(encoding="utf-8"))
     job = ROOT / "jobs" / f"_hero_compose_{name}"
     shutil.rmtree(job, ignore_errors=True)
@@ -594,6 +609,11 @@ def main():
             CUR_FRAME["f"] = f
             im = Image.new("RGBA", (W, H), (0, 0, 0, 0))
             draw(ImageDraw.Draw(im), f, n, shot)
+            if LAND["on"]:
+                ps, cy_, x_ = PANEL
+                sm = im.resize((int(W * ps), int(H * ps)), Image.LANCZOS).crop((0, cy_, int(W * ps), cy_ + OH))
+                im = Image.new("RGBA", (OW, OH), (0, 0, 0, 0))
+                im.paste(sm, (x_, 0), sm)
             im.save(job / "ov" / f"{gf + f:05d}.png", optimize=False, compress_level=1)
         gf += n
     (job / "list.txt").write_text("".join(f"file '{s}'\n" for s in segs), encoding="utf-8")
@@ -604,7 +624,11 @@ def main():
     from agents.core import set_override
     cap = dict(config()["captions"])
     cap["size"] = int(cap["size"] * float(spec.get("caption_scale", 0.8)))
-    set_override({"captions": cap})
+    ov_ = {"captions": cap}
+    if LAND["on"]:          # the long-video caption band (as the weekly episodes had it)
+        cap.update(size=int(70 * float(spec.get("caption_scale", 1.0))), position_y=955, words_per_line=5, outline=5)
+        ov_["format"] = {"width": OW, "height": OH, "type": "long"}
+    set_override(ov_)
     # the Hindi voice service sometimes reports a word starting before the previous one: keep times in order
     for i_ in range(1, len(words)):
         words[i_]["start"] = max(words[i_]["start"], words[i_ - 1]["start"] + 0.02)
@@ -637,7 +661,7 @@ def main():
     # 5) picture: 3D + graphics, scaled to 2K, captions and logo drawn crisp at full size
     f = config()["format"]
     k = max(1.0, float(f.get("upload_short_side", 1080)) / 1080)
-    UW, UH = int(W * k) // 2 * 2, int(H * k) // 2 * 2
+    UW, UH = int(OW * k) // 2 * 2, int(OH * k) // 2 * 2
     own = config()["channel"].get("logo")
     logo = ROOT / own if own else ROOT / "assets" / "brand" / "logo-800.png"
     vin = ["-i", "visual.mp4", "-framerate", str(FPS), "-i", "ov/%05d.png"]
@@ -646,7 +670,11 @@ def main():
     if logo.exists():
         vin += ["-i", str(logo)]
         size, pad = int(UW * 0.11), int(UW * 0.045)
-        chain += f";[2:v]scale={size}:-1,format=rgba,colorchannelmixer=aa=0.85[lg];[c][lg]overlay={pad}:{int(UH * 0.06)}[v]"
+        pos = f"{pad}:{int(UH * 0.06)}"
+        if LAND["on"]:                     # the left side is the graphics panel: the mark goes top right
+            size = int(UW * 0.055)
+            pos = f"{UW - size - int(UW * 0.025)}:{int(UH * 0.04)}"
+        chain += f";[2:v]scale={size}:-1,format=rgba,colorchannelmixer=aa=0.85[lg];[c][lg]overlay={pos}[v]"
     else:
         chain = chain.replace("[c]", "[v]")
     run(["ffmpeg", "-y", "-loglevel", "error"] + vin + ["-filter_complex", chain, "-map", "[v]", "-an",

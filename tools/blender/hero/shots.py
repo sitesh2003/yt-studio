@@ -42,6 +42,8 @@ def reset():
     sc.render.engine = "BLENDER_EEVEE"
     sc.render.fps = FPS
     sc.render.resolution_x, sc.render.resolution_y = (540, 960) if args.preview else (1080, 1920)
+    if SPEC.get("aspect") == "landscape":      # long videos (owner, 23 Nov 2026): 16:9, same pixel count
+        sc.render.resolution_x, sc.render.resolution_y = (960, 540) if args.preview else (1920, 1080)
     sc.render.resolution_percentage = 100
     sc.render.image_settings.file_format = "PNG"
     sc.render.image_settings.color_mode = "RGB"
