@@ -2105,7 +2105,7 @@
       "action and reaction"
     ],
     "hook": "Every force has an equal opposite reaction. So why does anything ever move?",
-    "status": "scheduled",
+    "status": "public",
     "narration": "Every force has an equal opposite reaction. So why does anything ever move? Imagine you're on a skateboard. You kick backward against the sidewalk with 40 newtons of force. That action triggers an instant reaction: the ground shoves you forward just as hard. Wait, don't those two opposite forces cancel out to zero? That's because action and reaction forces act on two entirely different objects, so they never cancel. The backward force acts on Earth, but the forward force acts on you, accelerating you forward. Try this: when you jump, your legs push Earth downward, so why doesn't Earth noticeably move?",
     "voice_engine": "chatterbox",
     "voices": "one narrator (af_heart)",
@@ -2187,7 +2187,8 @@
     "audited": true,
     "video_id": "G7TAJTgrCQw",
     "publish_at": "2026-11-21T16:30:00-05:00",
-    "thumbnail_set": true
+    "thumbnail_set": true,
+    "answered": true
   },
   {
     "job": "20261117-1504-why-does-a-sound-wave-change-pitch-with-",
