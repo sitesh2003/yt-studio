@@ -1,0 +1,213 @@
+{
+  "assets_dir": "assets/3d",
+  "creature": {
+    "file": "dinos/Trex.fbx",
+    "length_m": 12.0,
+    "height_m": 5.2,
+    "walk": "TRex_Walk",
+    "run": "TRex_Run",
+    "idle": "TRex_Idle",
+    "roar": "TRex_Attack",
+    "foot_bone": "BackFoot.L",
+    "leg_bones": [
+      "BackUpLeg.L",
+      "BackLowLeg.L",
+      "BackFoot.L",
+      "BackUpLeg.R",
+      "BackLowLeg.R",
+      "BackFoot.R"
+    ],
+    "muscle_bones": [
+      "BackUpLeg.L",
+      "BackUpLeg.R"
+    ],
+    "bone_radius": 0.12,
+    "muscle_radius": 0.42,
+    "bone_groups": [
+      "FEET",
+      "SHINS",
+      "THIGHS",
+      "HIPS",
+      "SPINE",
+      "RIBS",
+      "NECK",
+      "SKULL",
+      "TAIL",
+      "ARMS"
+    ],
+    "muscle_groups": [
+      "THIGH",
+      "CALF",
+      "TAIL-TO-THIGH",
+      "NECK",
+      "JAW"
+    ]
+  },
+  "props": {
+    "car": "cars/sedan.glb"
+  },
+  "shots": [
+    {
+      "kind": "xray_jaw",
+      "anim": "idle",
+      "reveal": {},
+      "muscle_groups": [
+        "ARM"
+      ],
+      "bone_groups": [
+        "ARMS",
+        "NECK",
+        "SKULL"
+      ],
+      "overlay": "label",
+      "label": [
+        "~200 kg",
+        "per tiny arm (estimate)"
+      ],
+      "seconds": 4,
+      "cam": [
+        [
+          4.6,
+          -2.6,
+          3.3
+        ],
+        [
+          4.0,
+          -2.4,
+          3.2
+        ]
+      ],
+      "tgt": [
+        [
+          0,
+          -2.3,
+          3.1
+        ],
+        [
+          0,
+          -2.3,
+          3.1
+        ]
+      ],
+      "lens": 36
+    },
+    {
+      "kind": "closeup_roar",
+      "overlay": "bars",
+      "title": "WHAT ONE ARM MAY CURL",
+      "bars": [
+        [
+          "T. REX ARM (estimate)",
+          200,
+          "yellow"
+        ],
+        [
+          "ONE ADULT",
+          70,
+          "cyan"
+        ]
+      ],
+      "unit": "kg",
+      "seconds": 5
+    },
+    {
+      "kind": "xray_jaw",
+      "anim": "idle",
+      "reveal": {},
+      "muscle_groups": [
+        "ARM"
+      ],
+      "bone_groups": [
+        "ARMS",
+        "NECK",
+        "SKULL"
+      ],
+      "overlay": "label",
+      "label": [
+        "BICEPS",
+        "worked out from the bones"
+      ],
+      "seconds": 5,
+      "cam": [
+        [
+          4.6,
+          -2.6,
+          3.3
+        ],
+        [
+          4.0,
+          -2.4,
+          3.2
+        ]
+      ],
+      "tgt": [
+        [
+          0,
+          -2.3,
+          3.1
+        ],
+        [
+          0,
+          -2.3,
+          3.1
+        ]
+      ],
+      "lens": 36
+    },
+    {
+      "kind": "closeup_roar",
+      "overlay": "label",
+      "label": [
+        "ONE IDEA",
+        "long arms get bitten"
+      ],
+      "seconds": 6
+    },
+    {
+      "kind": "xray_jaw",
+      "anim": "roar",
+      "anim_rate": 0.6,
+      "overlay": "label",
+      "label": [
+        "SHORT + STRONG",
+        "out of the way of the teeth"
+      ],
+      "seconds": 5,
+      "cam": [
+        [
+          4.6,
+          -2.6,
+          3.3
+        ],
+        [
+          4.0,
+          -2.4,
+          3.2
+        ]
+      ],
+      "tgt": [
+        [
+          0,
+          -2.3,
+          3.1
+        ],
+        [
+          0,
+          -2.3,
+          3.1
+        ]
+      ],
+      "lens": 36
+    },
+    {
+      "kind": "closeup_roar",
+      "overlay": "none",
+      "seconds": 4
+    }
+  ],
+  "credits": [
+    "T. rex model: Quaternius, Animated LowPoly Dinosaurs (CC0)",
+    "Car model: Kenney, Car Kit (CC0)"
+  ],
+  "end_beat_s": 0.6
+}

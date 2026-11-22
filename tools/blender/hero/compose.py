@@ -73,7 +73,11 @@ HI_LABELS = {
     "how far away you are": "तुम कितनी दूर हो", "LESS GRIP": "कम grip",
     "water gets between tyre and road": "tyre और सड़क के बीच पानी", "HALF THE GRIP": "आधी grip",
     "= TWICE THE DISTANCE": "= दोगुनी दूरी", "WORN TYRES": "घिसे हुए tyre", "can't push the water away": "पानी हटा नहीं पाते",
-    "DRY": "सूखी", "WET": "गीली", "STIFF": "सख़्त", "FOLDING": "पिचकने वाली",
+    "DRY": "सूखी", "WET": "गीली", "per tiny arm (estimate)": "हर छोटे हाथ में (अनुमान)",
+    "WHAT ONE ARM MAY CURL": "एक हाथ कितना उठा पाता", "T. REX ARM (estimate)": "T. rex का हाथ (अनुमान)",
+    "ONE ADULT": "एक बड़ा इंसान", "BICEPS": "Biceps", "worked out from the bones": "हड्डियों से पता चला",
+    "ONE IDEA": "एक idea", "long arms get bitten": "लंबे हाथ काटे जाते", "SHORT + STRONG": "छोटे + मज़बूत",
+    "out of the way of the teeth": "दांतों के रास्ते से दूर", "ARM MUSCLES": "हाथ की muscles", "STIFF": "सख़्त", "FOLDING": "पिचकने वाली",
 }
 HI_PATTERNS = [
     (r"^AGE (\d+)$", lambda m: f"उम्र {m.group(1)}"),
@@ -179,7 +183,7 @@ def g_size_tower(d, f, n, shot):
 
 
 SPEC = {}
-NICE = {"TAIL-TO-THIGH": "TAIL-TO-THIGH MUSCLE", "THIGH": "THIGH MUSCLES", "CALF": "CALF MUSCLES",
+NICE = {"ARM": "ARM MUSCLES", "TAIL-TO-THIGH": "TAIL-TO-THIGH MUSCLE", "THIGH": "THIGH MUSCLES", "CALF": "CALF MUSCLES",
         "NECK": "NECK", "JAW": "JAW MUSCLES"}
 
 

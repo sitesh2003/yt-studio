@@ -631,6 +631,9 @@ def muscle_groups(arm):
     g["NECK"] = [piece(arm, "Neck", "sph", (0.8, 0.9, _blen(arm, "Neck") * 1.4), (0, 0.05, 0), material=m,
                        name="neck_m")]
     g["JAW"] = [piece(arm, "Head", "sph", (0.55, 0.5, 0.6), (0, 0.15, 0), along=0.12, material=m, name="jaw_m")]
+    # the biceps on each little arm (Carpenter & Smith 2001 estimated its strength)
+    g["ARM"] = [piece(arm, "FrontUpLeg" + s_, "sph", (0.3, 0.32, _blen(arm, "FrontUpLeg" + s_) * 0.95), (0, 0.05, 0),
+                      along=0.5, material=m, name="biceps") for s_, _ in sides]
     return g
 
 
@@ -896,13 +899,17 @@ def build():
         key_prop([(1, 0.05), (int(N * 0.3), 1.0)], "xr")
         play(arm, c.get(SHOT.get("anim", "roar"), walk), 1, N, SHOT.get("anim_rate", 0.7))
         mus = muscle_groups(arm)
-        if SHOT.get("reveal"):
-            rv = SHOT["reveal"]
+        if SHOT.get("reveal") is not None:
+            rv = SHOT["reveal"] or {"bones": [0.3, 1.2], "muscles": [1.3, 2.5]}
             bg = SHOT.get("bone_groups") or c["bone_groups"]
             mg = SHOT.get("muscle_groups") or c["muscle_groups"]
             when = schedule(bg, *rv["bones"])
             for nm in c["bone_groups"]:
-                reveal(bones[nm], when.get(nm, 1))
+                if nm in when:
+                    reveal(bones[nm], when[nm])
+                elif SHOT.get("bone_groups"):      # bones this shot is not about stay hidden
+                    for o in bones[nm]:
+                        o.hide_render = True
             when = schedule(mg, *rv["muscles"])
             for nm in c["muscle_groups"]:
                 if nm in when:
