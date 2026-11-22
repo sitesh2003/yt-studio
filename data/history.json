@@ -4564,7 +4564,7 @@
       "physics"
     ],
     "hook": "What if that steel box on a guardrail end is actually there to save your life?",
-    "status": "banked",
+    "status": "scheduled",
     "narration": "What if that steel box on a guardrail end is actually there to save your life? If it were welded or bolted tight, it would act like a solid wall. Directly hitting the end of a rigid rail at highway speeds would be catastrophic. Instead, the guardrail is designed to move backward through the box during an impact. It moves. But the box is doing more than just sliding. It often peels the steel rail like a banana to soak up vehicle energy. The rail flows through the box. Momentum becomes heat and bent steel. Ever thought how that steel box on the end of the guardrail helps turn a high-speed impact into a safer outcome?",
     "voice_engine": "chatterbox",
     "voices": "one narrator (af_heart)",
@@ -4650,7 +4650,10 @@
       "duration": 28.5
     },
     "repairs": 0,
-    "audited": true
+    "audited": true,
+    "video_id": "1E7ANCuuH6Y",
+    "publish_at": "2026-11-23T12:00:00-05:00",
+    "thumbnail_set": true
   },
   {
     "job": "20261120-0813-why-heavy-machinery-ball-bearings-never-",
