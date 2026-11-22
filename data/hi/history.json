@@ -6600,7 +6600,7 @@
       "#engineering"
     ],
     "hook": "Tumhare ghar ke smoke detector ke andar ek radioactive element چھپا hota hai 😱",
-    "status": "scheduled",
+    "status": "public",
     "narration": "Tumhare ghar ke smoke detector ke andar ek radioactive element چھپا hota hai 😱 Yeh sunne mein thoda scary lagta hai, par iske peeche ek simple physics reason hai. Iske andar americium-241 naam ka ek chhota sa radioactive source hota hai. Yeh material continuously air particles ko ionize karke ek chhota sa electric current banata rehta hai. Jab smoke particles andar aate hain, toh yeh current disturb ho jata hai aur alarm baj padta hai. But wait, yeh radiation tumhein nuksan nahi pahuncha sakti kyunki yeh alpha rays chhodta hai jo paper ya plastic se hi block ho jaati hain. Radioactive materials ka istemal purane jamane mein aur cheezon mein bhi hota tha, jaise ki kuch purane camera lenses mein ya glow-in-the-dark watches mein, lekin har jagah radioactive substance alag hota tha. Kabhi socha hai ki smoke detector mein radioactive material hone ke baad bhi yeh completely safe kaise maana jata hai?",
     "voice_engine": "edge-tts",
     "voices": "one narrator (hi-IN-SwaraNeural)",
