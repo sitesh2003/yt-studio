@@ -422,6 +422,16 @@ def _speak_retry(text, v, rate, path):
     raise RuntimeError(f"voice: no audio after retries: {last}")
 
 
+def _exact_dur(path):
+    """Seconds of audio as the join will actually decode it (24 kHz mono samples counted). The MP3 header
+    estimate is off by a few hundredths per clip; over the ~100 sentences of a long film that drifted the
+    captions and cuts by 4-6 s (23 Nov 2026)."""
+    import subprocess
+    pcm = subprocess.run(["ffmpeg", "-v", "error", "-i", str(path), "-f", "s16le", "-ac", "1", "-ar", "24000", "-"],
+                         capture_output=True).stdout
+    return len(pcm) / 2 / 24000 if pcm else _dur(path)
+
+
 def _dur(path):
     import subprocess
     err = subprocess.run(["ffmpeg", "-hide_banner", "-i", str(path)], capture_output=True, text=True,
@@ -493,7 +503,7 @@ def _say_sentence(sent, nxt, nxt_scene, sv, v, who, script, k, m, job_dir, words
         if last and k + 1 < scenes_n and (script["scenes"][k + 1].get("speaker") or who) != who:
             gap += 0.08   # a quick hand-over between the two narrators
     parts.append((part, gap))
-    return t + _dur(part) + gap, n_sent + 1   # exactly what is joined, so the captions never drift
+    return t + _exact_dur(part) + gap, n_sent + 1   # exactly what is joined, so the captions never drift
 
 
 def narrate(script, job_dir, engine=None):
@@ -562,7 +572,7 @@ def _narrate(script, job_dir, v):
     inputs, chain = [], []
     for k, (part, gap) in enumerate(parts):
         inputs += ["-i", str(part)]
-        chain.append(f"[{k}:a]aresample=24000,aformat=channel_layouts=mono,apad=pad_dur={gap:.2f}[a{k}]")
+        chain.append(f"[{k}:a]aresample=24000,aformat=channel_layouts=mono,apad=pad_dur={gap:.4f}[a{k}]")
     cat = "".join(f"[a{k}]" for k in range(len(parts))) + f"concat=n={len(parts)}:v=0:a=1[out]"
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error"] + inputs +
                    ["-filter_complex", ";".join(chain) + ";" + cat, "-map", "[out]",
