@@ -41,9 +41,9 @@
       "start_cars": 0,
       "drop_s": [
         0.6,
-        3.6
+        2.39
       ],
-      "seconds": 4.5,
+      "seconds": 3.387,
       "overlay": "none",
       "cam_y": 0
     },
@@ -53,7 +53,7 @@
       "cars": 12,
       "start_cars": 12,
       "cam_y": 10,
-      "seconds": 4.5,
+      "seconds": 4.237,
       "overlay": "label",
       "label": [
         "SAME ANIMAL",
@@ -70,7 +70,7 @@
         0.4,
         3.8
       ],
-      "seconds": 5.5,
+      "seconds": 5.322,
       "overlay": "label",
       "label": [
         "LEG BONES SAY",
@@ -85,9 +85,9 @@
       "start_cars": 0,
       "drop_s": [
         0.5,
-        3.2
+        3.73
       ],
-      "seconds": 4.5,
+      "seconds": 4.731,
       "overlay": "label",
       "label": [
         "ANOTHER STUDY",
@@ -109,9 +109,9 @@
         2.2
       ],
       "whips": [
-        4.0
+        3.4
       ],
-      "seconds": 6.0,
+      "seconds": 5.699,
       "overlay": "label",
       "label": [
         "AIR SPACES",
@@ -124,7 +124,7 @@
       "cars": 12,
       "start_cars": 12,
       "cam_y": -15,
-      "seconds": 4.5,
+      "seconds": 4.794,
       "overlay": "none",
       "cam_scale": 0.55
     }
