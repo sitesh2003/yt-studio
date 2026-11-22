@@ -320,6 +320,8 @@ def publish_due(hours=30):
     """Fill YouTube's public slots for the next `hours` from the bank - three a day, oldest first.
     Each video was audited before it was banked, so nothing uploaded here is ever deleted."""
     from agents import bank, youtube
+    if not config()["publish"].get("make_2d", True):   # 2D bank stays where it is; nothing new goes up
+        return 0
     try:
         pull_requested()
     except Exception as e:
@@ -420,6 +422,10 @@ def daily():
     # run never leaves the channel empty: the bank covers it, and the next run refills it.
     import os
     p = config()["publish"]
+    if not p.get("make_2d", True):   # owner + council, 22 Nov 2026: 3D Blender Shorts only (made on the laptop)
+        log("2D production is OFF (config publish.make_2d = false): only the light jobs run")
+        hourly()
+        return
     from agents import youtube as _yt
     try:
         waiting, quota_left = _yt.bank()

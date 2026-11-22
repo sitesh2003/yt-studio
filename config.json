@@ -89,7 +89,9 @@
     "bank_note": "finished, audited videos wait in the GitHub 'video-bank' release; 7 days are kept ready (14 Nov 2026, user: time is never a concern, stack videos ahead), so slow high-quality renders never cost a slot; the publisher uploads only the next day's slots",
     "_quality_note": "2 a day since 13 Nov 2026: the fastest-growing channels in our genre post 2-6 strong videos a week; a weak video to fill a slot costs more than it earns",
     "upload_captions": false,
-    "_captions_note": "21 Nov 2026, owner: captions looked doubled - YouTube showed its caption track on top of the burned-in captions. Off on every channel (wiw and hi were already off)."
+    "_captions_note": "21 Nov 2026, owner: captions looked doubled - YouTube showed its caption track on top of the burned-in captions. Off on every channel (wiw and hi were already off).",
+    "make_2d": false,
+    "_make_2d_note": "22 Nov 2026, owner + council round 5-6: stop the 2D AI-slide bot on every channel for 30 days (review 22 Dec 2026); only 3D Blender Shorts, rendered on the laptop and uploaded with tools/hero_publish.py."
   },
   "community": {
     "mode": "auto",
