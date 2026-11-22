@@ -67,3 +67,8 @@ Every lesson here came from a real mistake. The fix is in the code; the check is
 - The small Hindi listener's "phrase missing" was false again; the medium model (CPU int8 works when CUDA libs are
   missing) heard every word. Always confirm with the medium model before re-voicing.
 - T. rex skeleton parts (hip plates, skull) do not fit other animals: per-shot bone_groups keep only TAIL + SPINE.
+- **A vertical frame is narrow:** a 62 m see-saw became a thin strip. Shrink the set (equal arms, short car platform,
+  cars stacked as a tower so the count reads as layers), then mix close-ups of each end with the wide levelling shot.
+- **Units are part of accuracy:** US viewers hear "tonnes" as "tons" (short tons, 0.907 t). English = pounds/mph,
+  Hindi = टन/km/h, with separate specs so the on-screen numbers match what is said.
+- Held the first Hindi weight render (subject too small, frame 1 no payoff) and re-rendered; never upload "good enough".
