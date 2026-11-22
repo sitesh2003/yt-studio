@@ -6722,7 +6722,8 @@
     "audited": true,
     "video_id": "IKxuhUWfoXs",
     "publish_at": "2026-11-22T09:30:00-05:00",
-    "thumbnail_set": true
+    "thumbnail_set": true,
+    "answered": true
   },
   {
     "job": "hero_crumple_hi",
