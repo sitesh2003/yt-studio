@@ -31,6 +31,31 @@ CLEAR = 800   # graphics stay above this line; the captions own the band around 
 # left of the wide frame (scaled PANEL[0], cropped from portrait y PANEL[1], placed at x PANEL[2]); every layout
 # that passed its checks in the Shorts stays exactly as it was
 LAND = {"on": False}
+CARD_EVENTS = []     # (start_s, end_s, ass_text): chapter cards and source lines, added to the caption file
+
+
+def g_chapter(d, f, n, shot):
+    """Chapter card: the words are drawn by libass (see card_events); nothing in the picture layer."""
+    return
+
+
+def card_events(shot, t0, t1):
+    """A chapter card (shot['chapter'] = [small line, title]) and a source line (shot['source']) for one shot."""
+    font_ = config()["captions"]["font"]
+    fw, fh = OW, OH
+    big = fh / 1080.0
+    out = []
+    if shot.get("chapter"):
+        small, title = shot["chapter"]
+        end = min(t1, t0 + float(shot.get("card_s", 3.2)))
+        out.append((t0, end, f"{{\\an5\\pos({fw // 2},{int(fh * 0.36)})\\fn{font_}\\fs{int(46 * big)}\\c&H0000E5FF&"
+                             f"\\bord5\\shad0\\fad(350,350)}}{small}"))
+        out.append((t0, end, f"{{\\an5\\pos({fw // 2},{int(fh * 0.47)})\\fn{font_}\\fs{int(104 * big)}\\c&H00FFFFFF&"
+                             f"\\bord7\\shad0\\fad(350,350)}}{title}"))
+    if shot.get("source"):
+        out.append((t0 + 0.3, t1, f"{{\\an1\\pos({int(fw * 0.02)},{int(fh * 0.985)})\\fn{font_}\\fs{int(26 * big)}"
+                                  f"\\c&H00FFFFFF&\\bord3\\shad0\\alpha&H30&\\fad(300,300)}}Source: {shot['source']}"))
+    return out
 OW, OH = W, H
 PANEL = (0.6, 60, 30)
 FONT = str(ROOT / "assets" / "fonts" / "ArchivoBlack-Regular.ttf")
@@ -603,6 +628,7 @@ def main():
              "-frames:v", str(n), "-c:v", "libx264", "-crf", "12", "-preset", "medium", "-pix_fmt", "yuv420p",
              f"shot{i}.mp4"], job)
         segs.append(f"shot{i}.mp4")
+        CARD_EVENTS.extend(card_events(shot, gf / FPS, (gf + n) / FPS))
         draw = globals()[f"g_{shot.get('overlay') or shot['kind']}"]
         FRAME_OFF["v"] = gf
         for f in range(1, n + 1):          # 2) the graphics, frame by frame, in step with the 3D
@@ -636,6 +662,10 @@ def main():
     editor.captions(words, job / "captions.ass")
     set_override({})
     _no_overlap(job / "captions.ass")
+    if CARD_EVENTS:
+        cap = job / "captions.ass"
+        lines_ = [f"Dialogue: 3,{editor._ass_time(a_)},{editor._ass_time(b_)},Cap,,0,0,0,,{t_}" for a_, b_, t_ in CARD_EVENTS]
+        cap.write_text(cap.read_text(encoding="utf-8").rstrip("\n") + "\n" + "\n".join(lines_) + "\n", encoding="utf-8")
     if HINDI["on"] and HI_EVENTS:
         cap = job / "captions.ass"
         cap.write_text(cap.read_text(encoding="utf-8").rstrip("\n") + "\n" + "\n".join(hindi_label_events()) + "\n",

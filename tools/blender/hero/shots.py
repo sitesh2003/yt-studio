@@ -194,6 +194,31 @@ def ground(kind):
         g.data.materials.append(m)
         return g
     g.data.materials.append(mat("Grass", (0.20, 0.42, 0.14), 0.9))
+    if kind == "plain":            # the Cretaceous: no road, ferns-and-conifer clumps scattered at random
+        import random as _r
+        _r.seed(7)
+        trunk = mat("Trunk", (0.25, 0.15, 0.08))
+        leaf = mat("Leaf", (0.10, 0.30, 0.09), 0.8)
+        fern = mat("Fern", (0.18, 0.40, 0.10), 0.85)
+        for _ in range(160):
+            x, y = _r.uniform(-140, 140), _r.uniform(-140, 140)
+            if abs(x) < 9 and abs(y) < 30:
+                continue           # keep the stage clear
+            h_ = _r.uniform(4, 9)
+            bpy.ops.mesh.primitive_cylinder_add(vertices=6, radius=0.3, depth=h_, location=(x, y, h_ / 2))
+            bpy.context.object.data.materials.append(trunk)
+            bpy.ops.mesh.primitive_cone_add(vertices=7, radius1=_r.uniform(1.8, 3.0), depth=h_ * 0.9,
+                                            location=(x, y, h_ * 0.85))
+            bpy.context.object.data.materials.append(leaf)
+        for _ in range(220):
+            x, y = _r.uniform(-60, 60), _r.uniform(-60, 60)
+            if abs(x) < 6 and abs(y) < 20:
+                continue
+            bpy.ops.mesh.primitive_ico_sphere_add(subdivisions=1, radius=_r.uniform(0.4, 1.0), location=(x, y, 0.2))
+            o = bpy.context.object
+            o.scale = (1.4, 1.4, 0.6)
+            o.data.materials.append(fern)
+        return g
     if kind == "road":
         asphalt = mat("Asphalt", (0.05, 0.05, 0.055), 0.8)
         white = mat("Line", (0.9, 0.9, 0.85), 0.5)
@@ -957,9 +982,9 @@ def build():
                               "stress_run": "sim", "muscle_needed": "sim", "speed_track": "day",
                               "race_pass": "day", "closeup_roar": "dusk", "xray_jaw": "sim",
                               "coprolite": "sim", "crash_compare": "day", "grow": "day",
-                              "brake_compare": "day", "vision_cone": "day", "tail_whip": "day", "balance": "day"}[kind])
+                              "brake_compare": "day", "vision_cone": "day", "tail_whip": "day", "balance": "day", "hatch": "dusk", "asteroid": "dusk"}[kind])
     world(look)
-    ground("sim" if look == "sim" else "road")
+    ground("sim" if look == "sim" else SHOT.get("ground", "plain" if kind in ("hatch", "asteroid") else "road"))
     if look == "day":
         sun(4.5, (50, 0, 35))
     elif look == "dusk":
@@ -1493,6 +1518,119 @@ def build():
         # the beam runs INTO the picture (cars near, the animal far): a vertical frame holds both ends big
         key_path(cam, [(1, Vector((60 * cs, cy - 4 * cs, 17 * cs))), (N, Vector((57 * cs, cy - 3.5 * cs, 16 * cs)))])
         key_path(tgt, [(1, Vector((0, cy + 3.0, 7.5))), (N, Vector((0, cy + 3.0, 7.5)))])
+        smooth_keys(cam)
+    elif kind == "hatch":
+        # a nest of eggs; one splits and a dog-sized hatchling rises out of it (Funston et al. 2021 estimated
+        # tyrannosaur hatchlings at about 0.9 m from embryo fossils of T. rex's relatives)
+        shell = mat("Shell", (0.82, 0.76, 0.62), 0.55)
+        twig = mat("Twig", (0.30, 0.20, 0.10), 0.9)
+        import random as _r
+        _r.seed(3)
+        for k in range(36):                      # the nest: a ring of sticks and mud
+            a = k / 36 * 2 * math.pi
+            bpy.ops.mesh.primitive_cylinder_add(vertices=5, radius=0.05, depth=0.9,
+                                                location=(math.cos(a) * 0.95, math.sin(a) * 0.95, 0.12))
+            o = bpy.context.object
+            o.rotation_euler = (math.radians(80), _r.uniform(-0.4, 0.4), a + math.pi / 2)
+            o.data.materials.append(twig)
+        bpy.ops.mesh.primitive_torus_add(major_radius=0.95, minor_radius=0.22, location=(0, 0, 0.08))
+        bpy.context.object.data.materials.append(twig)
+        eggs = [(0.05, -0.32), (-0.38, 0.22), (0.36, 0.28), (-0.05, 0.42)]      # the one that hatches is in front
+        crack_f = int(SHOT.get("crack_s", 1.2) * FPS) + 1
+        for i, (ex, ey) in enumerate(eggs):
+            if i == 0:
+                for half, sgn in (("lo", -1), ("hi", 1)):
+                    bpy.ops.mesh.primitive_uv_sphere_add(segments=24, ring_count=12, radius=0.17, location=(ex, ey, 0.3))
+                    o = bpy.context.object
+                    o.scale = (1.0, 1.0, 1.35)
+                    bpy.ops.object.mode_set(mode="EDIT")
+                    import bmesh
+                    bm = bmesh.from_edit_mesh(o.data)
+                    bmesh.ops.delete(bm, geom=[v for v in bm.verts if (v.co.z > 0.01) == (sgn < 0)], context="VERTS")
+                    bmesh.update_edit_mesh(o.data)
+                    bpy.ops.object.mode_set(mode="OBJECT")
+                    o.data.materials.append(shell)
+                    if sgn > 0:                  # the top half lifts and tips away as it cracks
+                        for fr, loc, rot in ((1, (ex, ey, 0.3), 0.0), (crack_f, (ex, ey, 0.3), 0.0),
+                                             (crack_f + 6, (ex + 0.12, ey, 0.42), 35.0),
+                                             (crack_f + 16, (ex + 0.38, ey + 0.1, 0.08), 110.0)):
+                            o.location, o.rotation_euler = loc, (0, math.radians(rot), 0)
+                            o.keyframe_insert("location", frame=fr)
+                            o.keyframe_insert("rotation_euler", frame=fr)
+                    else:                        # the bottom half wobbles just before
+                        for fr, r_ in ((1, 0), (crack_f - 14, 0), (crack_f - 10, 6), (crack_f - 6, -6), (crack_f - 2, 4), (crack_f, 0)):
+                            o.rotation_euler = (math.radians(r_), 0, 0)
+                            o.keyframe_insert("rotation_euler", frame=fr)
+            else:
+                bpy.ops.mesh.primitive_uv_sphere_add(segments=24, ring_count=12, radius=0.17, location=(ex, ey, 0.3))
+                o = bpy.context.object
+                o.scale = (1.0, 1.0, 1.35)
+                o.rotation_euler = (_r.uniform(-0.3, 0.3), _r.uniform(-0.3, 0.3), 0)
+                o.data.materials.append(shell)
+        # the hatchling (the creature at hatchling length), small and curled, rising out of the open egg
+        play(arm, c.get("idle", walk), 1, N, 1.0)
+        ex, ey = eggs[0]
+        arm.rotation_euler = (0, 0, math.radians(SHOT.get("face", 25)))
+        base = list(arm.scale)
+        for fr, k, z in ((1, 0.001, 0.25), (crack_f, 0.001, 0.25), (crack_f + 8, 0.55, 0.2), (crack_f + 24, 1.0, 0.12)):
+            arm.scale = [b * k for b in base]
+            arm.location = (ex, ey, z)
+            arm.keyframe_insert("scale", frame=fr)
+            arm.keyframe_insert("location", frame=fr)
+        key_path(cam, [(1, Vector((0.9, -2.4, 0.75))), (N, Vector((0.6, -1.9, 0.6)))])
+        key_path(tgt, [(1, Vector((0.0, -0.15, 0.32))), (N, Vector((0.02, -0.25, 0.36)))])
+        smooth_keys(cam)
+
+    elif kind == "asteroid":
+        # Chicxulub: a streak across a dusk sky, the flash on the horizon, then the light failing (Schulte et al.
+        # 2010, Science). phase: "streak" (rock crossing the sky), "flash" (impact light), "dark" (dust)
+        phase = SHOT.get("phase", "streak")
+        play(arm, c.get(SHOT.get("anim", "idle"), walk), 1, N, SHOT.get("anim_rate", 1.0))
+        arm.rotation_euler = (0, 0, math.radians(SHOT.get("face", 140)))
+        arm.location = (0, 0, 0)
+        hot = mat("Rock", (0.05, 0.03, 0.02), 0.9, emit=(1.0, 0.42, 0.10), emit_strength=SHOT.get("glow", 9.0))
+        trail = mat("Trail", (0.0, 0.0, 0.0), 1.0, emit=(1.0, 0.55, 0.2), emit_strength=SHOT.get("trail_glow", 4.0))
+        far = Vector((-250, 560, 0))
+        right = Vector((0.91, 0.41, 0))
+        if phase == "streak":
+            bpy.ops.mesh.primitive_ico_sphere_add(subdivisions=3, radius=14.0, location=(0, 0, 0))
+            rock = bpy.context.object
+            rock.data.materials.append(hot)
+            bpy.ops.mesh.primitive_cone_add(vertices=24, radius1=12.0, radius2=0.5, depth=260, location=(0, 0, 0))
+            tail = bpy.context.object
+            tail.data.materials.append(trail)
+            tail.parent = rock
+            tail.location = (0, 0, 130)
+            p0, p1 = far + right * 300 + Vector((0, 0, 190)), far + Vector((0, 0, 12))
+            d_ = (p1 - p0).normalized()
+            rock.rotation_mode = "QUATERNION"
+            rock.rotation_quaternion = Vector((0, 0, -1)).rotation_difference(d_)
+            key_path(rock, [(1, p0), (N, p1)])
+        flash_f = int(SHOT.get("flash_s", 0.4) * FPS) + 1
+        w = bpy.context.scene.world
+        bg = [n_ for n_ in w.node_tree.nodes if n_.type == "BACKGROUND"][0]
+        sun_ = [o for o in bpy.context.scene.objects if o.type == "LIGHT" and o.data.type == "SUN"]
+        if phase == "flash":
+            bpy.ops.object.light_add(type="POINT", location=far + Vector((0, 0, 30)))
+            fl = bpy.context.object
+            fl.data.shadow_soft_size = 40
+            fl.data.color = (1.0, 0.85, 0.6)
+            for fr, e in ((1, 0.0), (flash_f, 0.0), (flash_f + 3, 8e8), (flash_f + 30, 2e8), (N, 3e7)):
+                fl.data.energy = e
+                fl.data.keyframe_insert("energy", frame=fr)
+            for fr, st in ((1, 0.9), (flash_f, 0.9), (flash_f + 3, 4.0), (N, 1.2)):
+                bg.inputs["Strength"].default_value = st
+                bg.inputs["Strength"].keyframe_insert("default_value", frame=fr)
+        if phase == "dark":
+            for fr, st in ((1, 0.9), (int(N * 0.8), 0.05), (N, 0.03)):
+                bg.inputs["Strength"].default_value = st
+                bg.inputs["Strength"].keyframe_insert("default_value", frame=fr)
+            for o in sun_:
+                for fr, e in ((1, o.data.energy), (int(N * 0.8), o.data.energy * 0.04), (N, o.data.energy * 0.02)):
+                    o.data.energy = e
+                    o.data.keyframe_insert("energy", frame=fr)
+        key_path(cam, [(1, Vector((7.5, -15.0, 2.2))), (N, Vector((6.8, -13.8, 2.3)))])
+        key_path(tgt, [(1, Vector((-2.0, 6.0, H * 1.25))), (N, Vector((-2.5, 8.0, H * 1.35)))])
         smooth_keys(cam)
     elif kind == "closeup_roar":
         play(arm, c.get("roar", walk), int(N * 0.12), N, 0.85)
