@@ -6785,15 +6785,16 @@
       "3D animation"
     ],
     "hook": "सोचो, तुम्हारे दांतों पर 3 छोटी cars एक के ऊपर एक रख दी जाएं। इतने ज़ोर से T. rex काटता था।",
-    "status": "scheduled",
+    "status": "deleted",
     "narration": "सोचो, तुम्हारे दांतों पर 3 छोटी cars एक के ऊपर एक रख दी जाएं। इतने ज़ोर से T. rex काटता था। Scientists ने उसके jaw muscles उसके सबसे करीबी ज़िंदा रिश्तेदारों से समझकर बनाए, मगरमच्छ और birds। उनका estimate, पीछे के दांतों पर 34,500 newton तक। ये अब तक नापे गए सबसे ताकतवर bite, खारे पानी के मगरमच्छ से दोगुने से भी ज़्यादा है। उसके नुकीले दांत ये सारी force एक छोटी सी नोक पर डालते थे, इतनी कि bone टूट जाए। और हमें पता है उसने ऐसा किया। एक बड़ी fossil potty, जो शायद T. rex की है, उसमें आधे तक टूटी हुई bones हैं। कभी सोचा है, इतना बड़ा शिकारी हड्डियां भी क्यों खा जाता था?",
     "voice_engine": "edge-tts",
     "countdown": false,
-    "hero_3d": true,
+    "hero_3d": false,
     "question": "कभी सोचा है, इतना बड़ा शिकारी हड्डियां भी क्यों खा जाता था?",
     "video_id": "af394fizUAk",
     "publish_at": "2026-11-22T02:30:00-05:00",
-    "thumbnail_set": true
+    "thumbnail_set": true,
+    "replaced_why": "graphics overlapped the captions for a second; fixed version uploaded in the same slot (20 Nov 2026)"
   },
   {
     "job": "20261121-1649-scientists-just-discovered-100-million-y",
@@ -8404,5 +8405,29 @@
     "video_id": "HJpUKOH_mKs",
     "publish_at": "2026-11-26T02:30:00-05:00",
     "thumbnail_set": true
+  },
+  {
+    "job": "hero_trex_bite_hi",
+    "topic": "T. rex का Bite कितना ताकतवर था? 🦖",
+    "title": "T. rex का Bite कितना ताकतवर था? 🦖",
+    "description": "सोचो, तुम्हारे दांतों पर 3 छोटी cars रख दी जाएं, इतने ज़ोर से T. rex काटता था। Scientists ने ये कैसे पता किया, और वो fossil potty जो साबित करती है कि वो bones तोड़ता था। #shorts #hindi #dinosaur #science\n\nSources: Gignac & Erickson 2017, Scientific Reports (doi:10.1038/s41598-017-02161-w); Erickson et al. 2012, PLoS ONE (doi:10.1371/journal.pone.0031781); Chin et al. 1998, Nature (doi:10.1038/31461).\n3D models: Quaternius, Animated LowPoly Dinosaurs (CC0); Kenney, Car Kit (CC0). Animated in Blender.\n\nHow this was made: the script is researched and fact-checked against published research (sources above), narrated by an AI voice, and animated and edited with open-source software.",
+    "tags": [
+      "T. rex",
+      "dinosaur hindi",
+      "bite force",
+      "science hindi",
+      "3D animation"
+    ],
+    "hook": "सोचो, तुम्हारे दांतों पर 3 छोटी cars एक के ऊपर एक रख दी जाएं। इतने ज़ोर से T. rex काटता था।",
+    "narration": "सोचो, तुम्हारे दांतों पर 3 छोटी cars एक के ऊपर एक रख दी जाएं। इतने ज़ोर से T. rex काटता था। Scientists ने उसके jaw muscles उसके सबसे करीबी ज़िंदा रिश्तेदारों से समझकर बनाए, मगरमच्छ और birds। उनका estimate, पीछे के दांतों पर 34,500 newton तक। ये अब तक नापे गए सबसे ताकतवर bite, खारे पानी के मगरमच्छ से दोगुने से भी ज़्यादा है। उसके नुकीले दांत ये सारी force एक छोटी सी नोक पर डालते थे, इतनी कि bone टूट जाए। और हमें पता है उसने ऐसा किया। एक बड़ी fossil potty, जो शायद T. rex की है, उसमें आधे तक टूटी हुई bones हैं। कभी सोचा है, इतना बड़ा शिकारी हड्डियां भी क्यों खा जाता था?",
+    "voice_engine": "edge-tts",
+    "countdown": false,
+    "question": "कभी सोचा है, इतना बड़ा शिकारी हड्डियां भी क्यों खा जाता था?",
+    "status": "scheduled",
+    "hero_3d": true,
+    "video_id": "WxMPmmfvdrk",
+    "publish_at": "2026-11-22T02:30:00-05:00",
+    "thumbnail_set": true,
+    "replaces": "af394fizUAk"
   }
 ]
