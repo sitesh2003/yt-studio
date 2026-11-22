@@ -20,7 +20,7 @@
       }
     ],
     "countdown": null,
-    "checked": "2026-11-21"
+    "checked": "2026-11-22"
   },
   "a8Kooq5Sswk": {
     "title": "Why Onions Make You Cry",
@@ -43,7 +43,7 @@
       }
     ],
     "countdown": null,
-    "checked": "2026-11-21"
+    "checked": "2026-11-22"
   },
   "yF1Dj5F1icM": {
     "title": "Why Cold Water Fails Against Spicy Food 🌶️🥛",
@@ -66,7 +66,7 @@
       }
     ],
     "countdown": null,
-    "checked": "2026-11-21"
+    "checked": "2026-11-22"
   },
   "_EnG9sUTAUY": {
     "title": "Why Maple Syrup Takes 40 Gallons 🍁🍯",
@@ -89,7 +89,7 @@
       }
     ],
     "countdown": null,
-    "checked": "2026-11-21"
+    "checked": "2026-11-22"
   },
   "EfZ-P6him7k": {
     "title": "The Only Food That Lasts Forever 🐝✨",
@@ -112,7 +112,7 @@
       }
     ],
     "countdown": null,
-    "checked": "2026-11-21"
+    "checked": "2026-11-22"
   },
   "Bxp7r8IzbiY": {
     "title": "Why Fingers Prune In Water 💧🧽",
@@ -135,7 +135,7 @@
       }
     ],
     "countdown": null,
-    "checked": "2026-11-21"
+    "checked": "2026-11-22"
   },
   "u_qOehVEHQI": {
     "title": "Why Tuna Meat Is Red Meat While Cod Is Pure White 🐟🥩",
@@ -158,7 +158,7 @@
       }
     ],
     "countdown": null,
-    "checked": "2026-11-21"
+    "checked": "2026-11-22"
   },
   "80jyJN1A1y8": {
     "title": "Why Fresh Pineapples Eat You Back 🍍👅",
@@ -181,7 +181,7 @@
       }
     ],
     "countdown": null,
-    "checked": "2026-11-21"
+    "checked": "2026-11-22"
   },
   "S3s-iGcOMVY": {
     "title": "This Shark Can Live For Centuries! 🦈❄️",
@@ -204,7 +204,7 @@
       }
     ],
     "countdown": null,
-    "checked": "2026-11-21"
+    "checked": "2026-11-22"
   },
   "fXKlhAXJSTc": {
     "title": "Why Garlic Doesn't Make You Cry Like Onions Do 🧄😭",
@@ -227,7 +227,7 @@
       }
     ],
     "countdown": null,
-    "checked": "2026-11-21"
+    "checked": "2026-11-22"
   },
   "19fmphmc7A8": {
     "title": "Why Fruits Float In Water 🍎🍐",
@@ -250,20 +250,20 @@
       }
     ],
     "countdown": null,
-    "checked": "2026-11-21"
+    "checked": "2026-11-22"
   },
   "syvvVya0Q4g": {
     "title": "Why Do Potatoes Sprout From Dents? 🥔🌱",
     "hook_line": "Why do potatoes sprout shoots from those tiny dents instead of anywhere else?",
     "kept_at_10pct": 0.98,
-    "kept_at_50pct": 0.17600000000000002,
-    "kept_at_end": 0.096,
+    "kept_at_50pct": 0.17559999999999998,
+    "kept_at_end": 0.0958,
     "vs_similar_start": 0.28,
     "vs_similar_end": 0.72,
     "biggest_drops": [
       {
         "at": 0.09,
-        "lost": 0.318,
+        "lost": 0.319,
         "line": "Why do potatoes sprout shoots from those tiny dents instead of anywhere else?"
       },
       {
@@ -273,7 +273,7 @@
       }
     ],
     "countdown": null,
-    "checked": "2026-11-21"
+    "checked": "2026-11-22"
   },
   "9naAs1wMGVY": {
     "title": "Why Your Funny Bone Shocks You ⚡",
@@ -296,7 +296,7 @@
       }
     ],
     "countdown": false,
-    "checked": "2026-11-21"
+    "checked": "2026-11-22"
   },
   "3HaBsuVSlmA": {
     "title": "Why Highway Guardrails Have Heavy End Boxes 🤯",
@@ -319,98 +319,98 @@
       }
     ],
     "countdown": false,
-    "checked": "2026-11-21"
+    "checked": "2026-11-22"
   },
   "nnxCKv3odg4": {
     "title": "Why Car Windshields Have Black Dots 🤔",
     "hook_line": "Ever noticed those tiny black dots fading around your car windshield? 🚗",
-    "kept_at_10pct": 1.0278,
-    "kept_at_50pct": 0.19440000000000002,
-    "kept_at_end": 0.09720000000000001,
+    "kept_at_10pct": 1.0273999999999999,
+    "kept_at_50pct": 0.1918,
+    "kept_at_end": 0.0959,
     "vs_similar_start": 0.25,
     "vs_similar_end": 0.79,
     "biggest_drops": [
       {
-        "at": 0.1,
-        "lost": 0.306,
+        "at": 0.11,
+        "lost": 0.315,
         "line": "They are not just there to look cool."
       },
       {
         "at": 0.37,
-        "lost": 0.111,
+        "lost": 0.11,
         "line": "It gets hot at the edge."
       }
     ],
     "countdown": true,
-    "checked": "2026-11-21"
+    "checked": "2026-11-22"
   },
   "7CxPpDW31G0": {
     "title": "Why Ponds Don't Freeze Solid 🤔",
     "hook_line": "Your frozen pond is secretly keeping fish alive.",
-    "kept_at_10pct": 1.1176000000000001,
-    "kept_at_50pct": 0.3824,
-    "kept_at_end": 0.2451,
+    "kept_at_10pct": 1.1038,
+    "kept_at_50pct": 0.3774,
+    "kept_at_end": 0.24530000000000002,
     "vs_similar_start": 0.44,
     "vs_similar_end": 0.78,
     "biggest_drops": [
       {
         "at": 0.14,
-        "lost": 0.314,
+        "lost": 0.321,
         "line": "At negative fifteen degrees, why doesn't it freeze solid?"
       },
       {
         "at": 0.29,
-        "lost": 0.088,
+        "lost": 0.085,
         "line": "Many liquids shrink when cold, but water does something strange."
       }
     ],
     "countdown": false,
-    "checked": "2026-11-21"
+    "checked": "2026-11-22"
   },
   "qAcYz-fodfU": {
     "title": "How 400 Degree Foil Stays Safe 🤔",
     "hook_line": "You can touch hot foil briefly just as it comes out of the oven because it stores very little heat.",
-    "kept_at_10pct": 1.3043,
-    "kept_at_50pct": 0.4783,
-    "kept_at_end": 0.3043,
-    "vs_similar_start": 0.52,
-    "vs_similar_end": 0.86,
+    "kept_at_10pct": 1.2121,
+    "kept_at_50pct": 0.4545,
+    "kept_at_end": 0.2727,
+    "vs_similar_start": 0.5,
+    "vs_similar_end": 0.8,
     "biggest_drops": [
       {
         "at": 0.19,
-        "lost": 0.304,
+        "lost": 0.242,
         "line": "It came straight from a hot oven, yet it holds a surprisingly small amount of total thermal energy."
       },
       {
-        "at": 0.36,
-        "lost": 0.13,
+        "at": 0.37,
+        "lost": 0.152,
         "line": "Think about what happens when you touch that thin metal. Pause and guess... three, two, one."
       }
     ],
     "countdown": true,
-    "checked": "2026-11-21"
+    "checked": "2026-11-22"
   },
   "obq6Xb4utkY": {
     "title": "Why Car Windows Shatter Into Cubes 🤯",
     "hook_line": "Why do car windows shatter into tiny cubes?",
-    "kept_at_10pct": 1.0533,
-    "kept_at_50pct": 0.30670000000000003,
-    "kept_at_end": 0.1867,
-    "vs_similar_start": 0.4,
-    "vs_similar_end": 0.61,
+    "kept_at_10pct": 1.1436,
+    "kept_at_50pct": 0.3795,
+    "kept_at_end": 0.25129999999999997,
+    "vs_similar_start": 0.48,
+    "vs_similar_end": 0.73,
     "biggest_drops": [
       {
         "at": 0.09,
-        "lost": 0.24,
+        "lost": 0.282,
         "line": "Regular glass breaks into jagged knives. Car side glass takes a totally different path."
       },
       {
         "at": 0.23,
-        "lost": 0.173,
+        "lost": 0.128,
         "line": "Wait, doesn't all glass snap the exact same way under a heavy blow?"
       }
     ],
     "countdown": true,
-    "checked": "2026-11-21"
+    "checked": "2026-11-22"
   }
 }

@@ -346,5 +346,18 @@
   ],
   "not_drawn": {},
   "error": ""
+ },
+ {
+  "when": "2026-11-22 00:50",
+  "topic": "Why Strawberries Mold So Fast (and Scientists' New Fix)",
+  "drawn": [
+   2,
+   4,
+   6
+  ],
+  "not_drawn": {
+   "3": "Shows a chair instead of a kitchen counter."
+  },
+  "error": ""
  }
 ]

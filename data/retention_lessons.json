@@ -1,22 +1,23 @@
 {
   "lessons": [
-    "Keep hooks concise and direct: the top-performing video ('Why Tuna Meat Is Red Meat While Cod Is Pure White') used an immediate, striking contrast at 8% into the video that retained an impressive 0.57 start metric.",
-    "Eliminate empty filler lines early: videos with vague hook lines or placeholder text (e.g., 'Why your eyes are secretly leaking') suffered early drop-offs exceeding 13% within the first 15% of the runtime.",
-    "Avoid redundant explanations: 'Why Highway Guardrails Have Heavy End Boxes' repeated the exact same line ('Instead of impaling your vehicle...') for consecutive drop points, resulting in poor end-retention (0.125).",
-    "Rethink pauses and countdowns: elements involving explicit pauses or countdown timers (e.g., in 'How 400 Degree Foil Stays Safe' and 'Why Car Windshields Have Black Dots') frequently coincided with the biggest viewer drop-off points.",
-    "Incorporate rare, extreme natural facts: the 'This Shark Can Live For Centuries!' video leveraged a uniquely extreme premise ('older than the United States'), achieving massive rewatch metrics (1.85 at 10%, 1.08 at end)."
+    "Prioritize immediate, high-impact statements over descriptive context; lines like 'Fresh pineapple is literally eating you back' outperform slower setup sentences.",
+    "Eliminate repetitive script pacing; retention drops significantly when content is restated (e.g., Highway Guardrails and Tuna videos), suggesting viewers leave if they hear a point twice.",
+    "Ensure technical explanations are concise; long scientific explanations, even if interesting, cause sharp drops at the 20-30% mark in almost all videos.",
+    "Strategic use of countdowns/pauses may actually help, as seen in the high retention of '400 Degree Foil' and 'Car Windows', but only if the call to action is immediate.",
+    "Avoid filler transitions or 'Pause and guess' prompts unless the video has high pre-existing momentum; these often correlate with the second major drop-off point.",
+    "Leverage the 'Greenland Shark' model: establish extreme, counter-intuitive facts early to sustain retention deep into the video."
   ],
   "worst_moment_types": [
-    "Repeated or duplicated explanation lines",
-    "Vague filler statements (e.g., 'They are not just there to look cool')",
-    "Slow-paced pauses or countdown mechanics (e.g., 'Pause and guess... three, two, one')",
-    "Abstract definitions before concrete visuals"
+    "Redundant narration where a point is repeated within 10-15 seconds.",
+    "Slow-paced scientific setup that delays the 'why' (seen in the 0.10-0.15 drop-off in most samples).",
+    "Transition lines that ask the viewer to pause or wait, which disrupts the flow of a short-form video.",
+    "Technical jargon-heavy explanations delivered without immediate relatable context."
   ],
   "best_hook_types": [
-    "Immediate startling contrasts or biological oddities (e.g., fish meat comparisons, extreme lifespans)",
-    "Direct, high-stakes physical phenomena tied to everyday objects",
-    "Action-driven physical danger or bodily reactions (spicy food, shark aging, fresh pineapple enzymes)"
+    "Direct, aggressive claims (e.g., 'Fresh pineapple is literally eating you back').",
+    "Unexpected, high-stakes scenarios (e.g., 'This shark is older than the United States').",
+    "Immediate focus on physical sensations or personal interactions (e.g., 'biting into a fresh slice', 'smashed your elbow')."
   ],
-  "studied": "2026-11-21",
+  "studied": "2026-11-22",
   "videos": 18
 }

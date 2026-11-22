@@ -5670,7 +5670,8 @@
     "video_id": "fRhw3NBA-FY",
     "publish_at": "2026-11-21T19:00:00-05:00",
     "thumbnail_set": true,
-    "replaces": "7VLVufQHH00"
+    "replaces": "7VLVufQHH00",
+    "recapped": true
   },
   {
     "job": "hero_trex_bite",
@@ -6113,5 +6114,122 @@
     "video_id": "z0CKlJTp69A",
     "publish_at": "2026-11-23T19:00:00-05:00",
     "thumbnail_set": true
+  },
+  {
+    "job": "20261122-0044-why-strawberries-mold-so-fast-and-scient",
+    "topic": "Why Strawberries Mold So Fast (and Scientists' New Fix)",
+    "title": "Why Strawberries Mold So Fast 😳",
+    "description": "Discover the surprising truth about how strawberry mold actually forms in your kitchen. #shorts #science #food\n\nSources (open-access research):\n- Rhouma et al. (2022), Egyptian Journal of Phytopathology. doi:10.21608/ejp.2022.161763.1070\n- Dai et al. (2018), Plant Disease. doi:10.1094/pdis-05-18-0734-re\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nIllustrations: drawn for this video with FLUX.2 [klein] 4B (AI, Apache 2.0) and checked for accuracy\nPhoto: John Lodder, CC BY 2.0, via Wikimedia Commons\nPhoto: Neeta Lind, BY 2.0, via Openverse (flickr)\nPhoto: Ramy algayar, CC BY 4.0, via Wikimedia Commons\nVideo by Engin_Akyurt on Pixabay\nVideo by Kaffeesüchtig on Pixabay\nVideo by adege on Pixabay\n\nHow this was made: the script is researched and fact-checked with AI tools against open-access research (sources above when found), narrated by an AI voice, and edited with open-source software. Corrections from viewers are checked and credited.",
+    "tags": [
+      "strawberry mold",
+      "food science",
+      "why things mold",
+      "everyday science"
+    ],
+    "hook": "Most grocery strawberries start rotting on your kitchen counter from the outside.",
+    "status": "banked",
+    "narration": "Most grocery strawberries start rotting on your kitchen counter from the outside. Those grey spores on that single fresh strawberry sitting on your kitchen counter are already present or floating in the air. They ride invisible air currents right past your window to reach that single fresh strawberry sitting on your kitchen counter. They land on the softest sugar spot they can find on that single fresh strawberry sitting on your kitchen counter. Look closely. Microscopic cracks in that single fresh strawberry sitting on your kitchen counter leak sweet juice that feeds the fungus instantly. So the mold grows outward, building a visible fuzzy mold in just a few days on that single fresh strawberry sitting on your kitchen counter. Ever thought why dry berries still grow mold so fast?",
+    "voice_engine": "chatterbox",
+    "voices": "one narrator (af_heart)",
+    "diagrams": 1,
+    "series": "Food Whys",
+    "countdown": false,
+    "length_arm": "short",
+    "question": "Ever thought why dry berries still grow mold so fast?",
+    "answer_comment": "The answer: Even dry berries carry invisible fungal spores on their skin from the field. When tiny amounts of moisture escape the fruit, those spores wake up and feed on the natural sugars right on the surface. Got a question about how other foods spoil so fast?\n\nSources (open-access research):\n- Rhouma et al. (2022), Egyptian Journal of Phytopathology. doi:10.21608/ejp.2022.161763.1070\n- Dai et al. (2018), Plant Disease. doi:10.1094/pdis-05-18-0734-re",
+    "sources": [
+      {
+        "claim": "Strawberry mold (Botrytis cinerea) is primarily caused by airborne spores landing on the fruit.",
+        "cite": "Rhouma et al. (2022), Egyptian Journal of Phytopathology. doi:10.21608/ejp.2022.161763.1070",
+        "doi": "10.21608/ejp.2022.161763.1070",
+        "title": "Strawberry Grey Mould, a Devastating Disease Caused by the Airborne Fungal Pathogen Botrytis cinerea",
+        "why": "This airborne pathogen has the ability to kill strawberry cells through the production of reactive oxygen species and toxins causing massive production losses at all development stages and even post-harvest."
+      },
+      {
+        "claim": "Microscopic cracks in the fruit skin release juices that stimulate spore germination.",
+        "cite": "Dai et al. (2018), Plant Disease. doi:10.1094/pdis-05-18-0734-re",
+        "doi": "10.1094/pdis-05-18-0734-re",
+        "title": "High Humidity and Age-Dependent Fruit Susceptibility Promote Development of Trichothecium Black Spot on Apple",
+        "why": "Germ tubes penetrated fruit via natural openings including stomata, lenticels, and surface cracks."
+      }
+    ],
+    "fact_check": [
+      "Strawberry mold (Botrytis cinerea) is primarily caused by airborne spores landing on the fruit.",
+      "Microscopic cracks in the fruit skin release juices that stimulate spore germination.",
+      "Fungal growth appears on the outside rather than originating deep inside the healthy interior."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        3.32
+      ],
+      [
+        3.32,
+        8.84
+      ],
+      [
+        8.84,
+        14.28
+      ],
+      [
+        14.28,
+        19.07
+      ],
+      [
+        19.07,
+        20.14
+      ],
+      [
+        20.14,
+        26.32
+      ],
+      [
+        26.32,
+        32.64
+      ],
+      [
+        32.64,
+        35.46
+      ]
+    ],
+    "duration": 35.46,
+    "scene_lines": [
+      "Most grocery strawberries start rotting on your kitchen counter from the outside.",
+      "Those grey spores on that single fresh strawberry sitting on your kitchen counter are already present or floating in the air.",
+      "They ride invisible air currents right past your window to reach that single fresh strawberry sitting on your kitchen counter.",
+      "They land on the softest sugar spot they can find on that single fresh strawberry sitting on your kitchen counter.",
+      "Look closely.",
+      "Microscopic cracks in that single fresh strawberry sitting on your kitchen counter leak sweet juice that feeds the fungus instantly.",
+      "So the mold grows outward, building a visible fuzzy mold in just a few days on that single fresh strawberry sitting on your kitchen counter.",
+      "Ever thought why dry berries still grow mold so fast?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": "fRhw3NBA-FY",
+    "captions_srt": "1\n00:00:00,000 --> 00:00:01,740\nMost grocery strawberries start rotting on your\n\n2\n00:00:01,740 --> 00:00:02,930\nkitchen counter from the outside.\n\n3\n00:00:03,320 --> 00:00:05,000\nThose grey spores on that single fresh\n\n4\n00:00:05,000 --> 00:00:06,820\nstrawberry sitting on your kitchen counter are\n\n5\n00:00:06,820 --> 00:00:08,650\nalready present or floating in the air.\n\n6\n00:00:08,840 --> 00:00:10,760\nThey ride invisible air currents right past\n\n7\n00:00:10,760 --> 00:00:12,180\nyour window to reach that single fresh\n\n8\n00:00:12,180 --> 00:00:14,010\nstrawberry sitting on your kitchen counter.\n\n9\n00:00:14,280 --> 00:00:15,660\nThey land on the softest sugar spot\n\n10\n00:00:15,660 --> 00:00:17,060\nthey can find on that single fresh\n\n11\n00:00:17,060 --> 00:00:18,770\nstrawberry sitting on your kitchen counter.\n\n12\n00:00:19,070 --> 00:00:19,780\nLook closely.\n\n13\n00:00:20,140 --> 00:00:22,360\nMicroscopic cracks in that single fresh strawberry\n\n14\n00:00:22,360 --> 00:00:24,140\nsitting on your kitchen counter leak sweet\n\n15\n00:00:24,140 --> 00:00:25,930\njuice that feeds the fungus instantly.\n\n16\n00:00:26,320 --> 00:00:27,510\nSo the mold grows outward,\n\n17\n00:00:27,700 --> 00:00:29,070\nbuilding a visible fuzzy mold in just\n\n18\n00:00:29,070 --> 00:00:30,510\na few days on that single fresh\n\n19\n00:00:30,510 --> 00:00:32,320\nstrawberry sitting on your kitchen counter.\n\n20\n00:00:32,640 --> 00:00:34,860\nEver thought why dry berries still grow mold so fast?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [],
+      "footage": [],
+      "review": [],
+      "heard": [
+        "\"sweet\" heard as \"suite\""
+      ],
+      "scene_heard": [
+        "scene 1: 100%",
+        "scene 2: 100%",
+        "scene 3: 100%",
+        "scene 4: 100%",
+        "scene 6: 95%",
+        "scene 7: 100%",
+        "scene 8: 100%"
+      ],
+      "pass": true,
+      "duration": 35.2
+    },
+    "repairs": 0,
+    "audited": true
   }
 ]

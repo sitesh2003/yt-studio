@@ -3,6 +3,17 @@
 Every video, the claims it makes, and the open-access research behind them. Built automatically by
 agents/library.py; a source is listed only if its abstract was checked to support the claim.
 
+## Why Strawberries Mold So Fast 😳
+*2026-11-22 · Food Whys*
+
+- Strawberry mold (Botrytis cinerea) is primarily caused by airborne spores landing on the fruit.
+- Microscopic cracks in the fruit skin release juices that stimulate spore germination.
+- Fungal growth appears on the outside rather than originating deep inside the healthy interior.
+
+Sources:
+- Rhouma et al. (2022), Egyptian Journal of Phytopathology. doi:10.21608/ejp.2022.161763.1070 — supports: Strawberry mold (Botrytis cinerea) is primarily caused by airborne spores landing on the fruit.
+- Dai et al. (2018), Plant Disease. doi:10.1094/pdis-05-18-0734-re — supports: Microscopic cracks in the fruit skin release juices that stimulate spore germination.
+
 ## Why Tardigrades Survive Outer Space 🥶
 *2026-11-21 · Animal Whys*
 

@@ -1,14 +1,21 @@
 {
-  "summary": "1. Focus strictly on immediate bodily, sensory, or visceral phenomena (e.g., pruning fingers, pineapple burning, leaking eyes) rather than distant engineering or abstract ecological chains. 2. Start the first sentence with an aggressive counter-intuitive claim or direct bodily confrontation (e.g., 'Fresh pineapple is literally eating you back') instead of setting up a hypothetical scenario ('Your car swerves off...'). 3. Immediately debunk a common misconception in sentence one using a contrast word like 'but' or 'not' (e.g., 'it is not because you are absorbing it like a sponge'). 4. Craft titles using action-driven or provocative phrasing ('Eat You Back', 'Secretly Leaking') rather than passive explanatory questions or technical jargon ('Heavy End Boxes', 'Lyme Disease Rates'). 5. Keep voiceover duration under 25 seconds of punchy pacing, eliminating cliché opener questions ('Ever noticed...?') that invite viewers to swipe away.",
+  "summary": [
+    "Prioritize punchy, counterintuitive declarative statements for the first sentence instead of descriptive setups.",
+    "Use dramatic, high-stakes phrasing in titles combined with relevant emojis to immediately communicate the core mystery.",
+    "Target shorter, direct hooks that challenge common assumptions within the first 3 seconds to maximize the stayed_pct metric.",
+    "Avoid passive or instructional opening lines like 'Ever noticed' or 'Drop an object into' which severely lower retention.",
+    "Focus topics on biological or everyday chemical anomalies where the mechanism defies immediate common sense."
+  ],
   "winning_hooks": [
-    "State an active bodily disruption occurring right now ('Your eyes are leaking right now, and your brain is hiding it')",
-    "Debunk a universally accepted myth in the first 8 words ('Your fingers prune in water, but it is not because...')",
-    "Use extreme historical or visceral comparisons ('This shark is older than the United States' / 'Fresh pineapple is literally eating you back')"
+    "Your fingers prune in water, but it is not because you are absorbing it like a sponge.",
+    "Your eyes are leaking right now, and your brain is hiding it.",
+    "Fresh pineapple is literally eating you back.",
+    "This shark is older than the United States."
   ],
   "avoid": [
-    "Cliché observational question openings like 'Ever noticed those tiny black dots...?'",
-    "Long situational story setups like 'You just smashed your elbow on a desk and now...'",
-    "Dry Wikipedia-style fact declarations like 'Honey is famous for being one of the only natural foods...'"
+    "Ever noticed those tiny black dots fading around your car windshield? 🚗",
+    "Drop an apple or a pear in a bowl of water and they both float.",
+    "Your frozen pond is secretly keeping fish alive."
   ],
-  "next_experiment": "Test Hook Frame: Compare a direct myth-busting contrast ('Topic X happens, but NOT because of Y') against an extreme personal confrontation ('Your body is currently doing X right now without you knowing') on the exact same topic."
+  "next_experiment": "Test two variations of a hook for the same topic: Variation A using a direct challenge to a known fact ('You are doing X completely wrong') versus Variation B using a shocking outcome ('X will destroy your internal organs'), measuring which achieves a higher stayed_pct past the 3-second mark."
 }
