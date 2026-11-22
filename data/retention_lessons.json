@@ -1,22 +1,19 @@
 {
   "lessons": [
-    "Prioritize immediate, high-impact statements over descriptive context; lines like 'Fresh pineapple is literally eating you back' outperform slower setup sentences.",
-    "Eliminate repetitive script pacing; retention drops significantly when content is restated (e.g., Highway Guardrails and Tuna videos), suggesting viewers leave if they hear a point twice.",
-    "Ensure technical explanations are concise; long scientific explanations, even if interesting, cause sharp drops at the 20-30% mark in almost all videos.",
-    "Strategic use of countdowns/pauses may actually help, as seen in the high retention of '400 Degree Foil' and 'Car Windows', but only if the call to action is immediate.",
-    "Avoid filler transitions or 'Pause and guess' prompts unless the video has high pre-existing momentum; these often correlate with the second major drop-off point.",
-    "Leverage the 'Greenland Shark' model: establish extreme, counter-intuitive facts early to sustain retention deep into the video."
+    "Hook lines that directly state a relatable bodily reaction or surprising natural phenomenon (such as 'Fresh pineapple is literally eating you back') achieve strong start retention above 1.0.",
+    "Generic introductory filler phrases like 'They are not just there to look cool' or 'They look like similar fruits' trigger immediate drop-offs, often losing over 30% of viewers.",
+    "Pause prompts and explicit countdowns ('three, two, one') do not inherently retain viewers better; videos relying on them still experience steep early losses unless the premise is deeply engaging.",
+    "Complex historical or metabolic explanations introduced mid-video (e.g., Greenland shark metabolism or deep cellular structures) successfully hold late-stage audiences when the initial hook is exceptionally strong.",
+    "Repetitive phrasing or stating the exact same mechanism twice in succession (seen in the guardrail video) results in heavy viewer abandonment at the drop points."
   ],
   "worst_moment_types": [
-    "Redundant narration where a point is repeated within 10-15 seconds.",
-    "Slow-paced scientific setup that delays the 'why' (seen in the 0.10-0.15 drop-off in most samples).",
-    "Transition lines that ask the viewer to pause or wait, which disrupts the flow of a short-form video.",
-    "Technical jargon-heavy explanations delivered without immediate relatable context."
+    "Vague descriptive statements or filler sentences that fail to advance the core explanation",
+    "Redundant restatements of a mechanism already explained in the hook",
+    "Abrupt transitions into dense technical or biological details without a clear bridge"
   ],
   "best_hook_types": [
-    "Direct, aggressive claims (e.g., 'Fresh pineapple is literally eating you back').",
-    "Unexpected, high-stakes scenarios (e.g., 'This shark is older than the United States').",
-    "Immediate focus on physical sensations or personal interactions (e.g., 'biting into a fresh slice', 'smashed your elbow')."
+    "Direct, high-stakes declarations that challenge common assumptions (e.g., animal or bodily defenses targeting the human body)",
+    "Immediate framing of a counter-intuitive physical anomaly (such as extreme longevity or temperature resistance)"
   ],
   "studied": "2026-11-22",
   "videos": 18
