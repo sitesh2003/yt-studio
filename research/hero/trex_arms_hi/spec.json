@@ -50,7 +50,16 @@
     {
       "kind": "xray_jaw",
       "anim": "idle",
-      "reveal": {},
+      "reveal": {
+        "bones": [
+          0.3,
+          2.55
+        ],
+        "muscles": [
+          2.65,
+          5.01
+        ]
+      },
       "muscle_groups": [
         "ARM"
       ],
@@ -64,7 +73,7 @@
         "~200 kg",
         "per tiny arm (estimate)"
       ],
-      "seconds": 4,
+      "seconds": 5.41,
       "cam": [
         [
           4.6,
@@ -89,7 +98,8 @@
           3.1
         ]
       ],
-      "lens": 36
+      "lens": 36,
+      "xr_start": true
     },
     {
       "kind": "closeup_roar",
@@ -108,12 +118,21 @@
         ]
       ],
       "unit": "kg",
-      "seconds": 5
+      "seconds": 3.35
     },
     {
       "kind": "xray_jaw",
       "anim": "idle",
-      "reveal": {},
+      "reveal": {
+        "bones": [
+          0.3,
+          2.46
+        ],
+        "muscles": [
+          2.56,
+          4.83
+        ]
+      },
       "muscle_groups": [
         "ARM"
       ],
@@ -127,7 +146,7 @@
         "BICEPS",
         "worked out from the bones"
       ],
-      "seconds": 5,
+      "seconds": 5.23,
       "cam": [
         [
           4.6,
@@ -152,7 +171,8 @@
           3.1
         ]
       ],
-      "lens": 36
+      "lens": 36,
+      "xr_start": true
     },
     {
       "kind": "closeup_roar",
@@ -161,18 +181,17 @@
         "ONE IDEA",
         "long arms get bitten"
       ],
-      "seconds": 6
+      "seconds": 6.85
     },
     {
       "kind": "xray_jaw",
-      "anim": "roar",
-      "anim_rate": 0.6,
+      "anim": "idle",
       "overlay": "label",
       "label": [
         "SHORT + STRONG",
         "out of the way of the teeth"
       ],
-      "seconds": 5,
+      "seconds": 5.2,
       "cam": [
         [
           4.6,
@@ -197,12 +216,31 @@
           3.1
         ]
       ],
-      "lens": 36
+      "lens": 36,
+      "xr_start": true,
+      "reveal": {
+        "bones": [
+          0.3,
+          2.45
+        ],
+        "muscles": [
+          2.55,
+          4.8
+        ]
+      },
+      "muscle_groups": [
+        "ARM"
+      ],
+      "bone_groups": [
+        "ARMS",
+        "NECK",
+        "SKULL"
+      ]
     },
     {
       "kind": "closeup_roar",
       "overlay": "none",
-      "seconds": 4
+      "seconds": 4.626
     }
   ],
   "credits": [

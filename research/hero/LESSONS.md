@@ -52,3 +52,5 @@ Every lesson here came from a real mistake. The fix is in the code; the check is
 - Gate false alarms are bugs too: British/American spelling, "onto"/"on to", digits vs number words, Latin vs Devanagari spelling of the same English word (compare Hindi by sound).
 - Patches written through the shell turned `\n` and `\b` into real control characters twice → write patch scripts to files; parse-check (`ast.parse`) after every code patch.
 - Hook shots: a big face on frame 1 beats a wide shot with a small animal at the edge.
+- Gates passing is not the video being right: a roaring body sweeping through a close camera made a skeleton jumble, and an x-ray shot opened on a dark skin blob. Only looking at frames catches these → the frame check is compulsory; close x-ray shots use the idle action and start already in x-ray (`xr_start`).
+- Toon look (HERO_QUALITY=toon): ~1 s a frame vs ~4–5 s film; outline width must be set in metres (divide by the object's scale) or it vanishes; lift and saturate the model's linear colours or everything turns grey.

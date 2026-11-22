@@ -6274,5 +6274,29 @@
     "video_id": "WYNZ5UNtfjY",
     "publish_at": "2026-11-24T19:00:00-05:00",
     "thumbnail_set": true
+  },
+  {
+    "job": "hero_trex_arms",
+    "topic": "How Strong Were T. rex's Tiny Arms? 🦖",
+    "title": "How Strong Were T. rex's Tiny Arms? 🦖",
+    "description": "Those tiny T. rex arms may have curled about 200 kilos each. Here's how scientists worked it out, and one idea for why they were so short. #shorts #dinosaurs #TRex #Science\n\nSources: Carpenter & Smith 2001, in Mesozoic Vertebrate Life (Indiana University Press); Padian 2022, Acta Palaeontologica Polonica 67 (doi:10.4202/app.00921.2021).\n3D models: Quaternius, Animated LowPoly Dinosaurs (CC0); Kenney, Car Kit (CC0). Animated in Blender.\n\nHow this was made: the script is researched and fact-checked against published research (sources above), narrated by an AI voice, and animated and edited with open-source software.",
+    "tags": [
+      "T. rex",
+      "T. rex arms",
+      "dinosaurs",
+      "paleontology",
+      "science",
+      "3D animation"
+    ],
+    "hook": "Those tiny T. rex arms may have curled about two hundred kilos each.",
+    "status": "scheduled",
+    "narration": "Those tiny T. rex arms may have curled about two hundred kilos each. That's like lifting three grown adults with one small arm. Scientists worked it out from the arm bones and the marks where its biceps attached. So why were they so short? One idea: when several T. rex fed together, long arms would get bitten. Short, strong arms could still grip, while staying out of the way of all those teeth. So what do you think those little arms were really for?",
+    "voice_engine": "chatterbox",
+    "countdown": false,
+    "hero_3d": true,
+    "question": "So what do you think those little arms were really for?",
+    "video_id": "rY4YZhgYYGE",
+    "publish_at": "2026-11-25T19:00:00-05:00",
+    "thumbnail_set": true
   }
 ]

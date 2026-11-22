@@ -782,6 +782,104 @@ def film_camera(cam, tgt):
     cam.data.dof.focus_object = tgt
     cam.data.dof.aperture_fstop = 2.8
 
+
+TOON = os.environ.get("HERO_QUALITY") == "toon"     # cartoon look on EEVEE (council, 22 Nov 2026)
+
+
+def toon_material(base_rgb):
+    """Cel shading: light is cut into 3 flat bands (Shader to RGB -> constant ColorRamp) times the base colour,
+    plus a soft rim highlight. EEVEE only."""
+    m = bpy.data.materials.new("Toon")
+    m.use_nodes = True
+    nt = m.node_tree
+    nt.nodes.clear()
+    out = node(nt, "ShaderNodeOutputMaterial", (900, 0))
+    dif = node(nt, "ShaderNodeBsdfDiffuse", (-600, 0))
+    s2r = nt.nodes.new("ShaderNodeShaderToRGB")
+    ramp = node(nt, "ShaderNodeValToRGB", (-200, 0))
+    ramp.color_ramp.interpolation = "CONSTANT"
+    e = ramp.color_ramp.elements
+    e[0].position, e[0].color = 0.0, (0.38, 0.40, 0.55, 1)      # shadow band, a little blue
+    e[1].position, e[1].color = 0.65, (1.0, 1.0, 1.0, 1)
+    mid = e.new(0.3)
+    mid.color = (0.7, 0.7, 0.78, 1)
+    mul = nt.nodes.new("ShaderNodeMix")
+    mul.data_type = "RGBA"
+    mul.blend_type = "MULTIPLY"
+    mul.inputs[0].default_value = 1.0
+    mul.inputs[6].default_value = (*base_rgb, 1)
+    lw = node(nt, "ShaderNodeLayerWeight", (-200, -300))
+    lw.inputs["Blend"].default_value = 0.22
+    rim = nt.nodes.new("ShaderNodeMath")
+    rim.operation = "GREATER_THAN"
+    rim.inputs[1].default_value = 0.72
+    add = nt.nodes.new("ShaderNodeMix")
+    add.data_type = "RGBA"
+    add.blend_type = "ADD"
+    add.inputs[7].default_value = (0.25, 0.25, 0.25, 1)
+    em = node(nt, "ShaderNodeEmission", (700, 0))
+    for a_, b_ in ((dif.outputs[0], s2r.inputs[0]), (s2r.outputs["Color"], ramp.inputs[0]),
+                   (ramp.outputs[0], mul.inputs[7]), (lw.outputs["Facing"], rim.inputs[0]),
+                   (rim.outputs[0], add.inputs[0]), (mul.outputs[2], add.inputs[6]),
+                   (add.outputs[2], em.inputs["Color"]), (em.outputs[0], out.inputs[0])):
+        nt.links.new(a_, b_)
+    return m
+
+
+def toon_outline(obj, thickness):
+    """Ink outline by the inverted-hull trick: a solidified, flipped shell drawn black from behind."""
+    ol = bpy.data.materials.get("Outline")
+    if ol is None:
+        ol = bpy.data.materials.new("Outline")
+        ol.use_nodes = True
+        ol.use_backface_culling = True
+        b = ol.node_tree.nodes["Principled BSDF"]
+        b.inputs["Base Color"].default_value = (0.02, 0.02, 0.03, 1)
+        b.inputs["Roughness"].default_value = 1.0
+    obj.data.materials.append(ol)
+    sol = obj.modifiers.new("Outline", "SOLIDIFY")
+    sol.thickness = thickness
+    sol.offset = 1.0
+    sol.use_flip_normals = True
+    sol.material_offset = len(obj.data.materials) - 1
+
+
+def toonify_scene():
+    """Every object (not the ground, road or sky) gets cel shading in its own colour, and an outline."""
+    sc = bpy.context.scene
+    try:
+        sc.eevee.taa_render_samples = 16
+    except Exception:
+        pass
+    sc.render.use_motion_blur = False
+    for o in list(sc.objects):
+        if o.type != "MESH" or o.name.startswith(("Plane", "Road", "Edge", "Dash", "Mark", "BrakeLine", "WetLane",
+                                                     "Text")) or max(o.dimensions) > 300:
+            continue
+        mats = [m for m in o.data.materials if m]
+        if not mats or any(m.name.startswith(("Bone", "Muscle", "Cone", "Socket", "Outline")) for m in mats):
+            continue
+        new = []
+        for m in mats:
+            col = (0.6, 0.6, 0.6)
+            if m.use_nodes:
+                b = m.node_tree.nodes.get("Principled BSDF")
+                if b:
+                    col = tuple(b.inputs["Base Color"].default_value[:3])
+                    if b.inputs["Base Color"].is_linked:      # textured (Kenney colormap): keep its material
+                        new.append(m)
+                        continue
+            # flat toon colour shows the stored (linear) value as it is: lift it the way film light did
+            import colorsys
+            h_, s_, v_ = colorsys.rgb_to_hsv(*[c_ ** 0.6 for c_ in col])
+            col = colorsys.hsv_to_rgb(h_, min(1.0, s_ * 1.7 + 0.08), min(0.95, max(0.35, v_ * 1.25)))   # cartoon: bold
+            new.append(toon_material(col))
+        o.data.materials.clear()
+        for m in new:
+            o.data.materials.append(m)
+        world = 0.03 * max(1.0, max(o.dimensions) / 4)                 # outline width in metres
+        toon_outline(o, world / max(1e-6, o.matrix_world.to_scale()[0]))
+
 # ---------------------------------------------------------------- the templates
 def build():
     kind = SHOT["kind"]
@@ -896,7 +994,10 @@ def build():
         # close on the head in x-ray: jaw muscles (and optionally the teeth turning red) while it bites
         xray_skin(mesh, H)
         bones = skeleton(arm, c, stress_group="SKULL" if SHOT.get("teeth_stress") else None)
-        key_prop([(1, 0.05), (int(N * 0.3), 1.0)], "xr")
+        if SHOT.get("xr_start"):            # already in x-ray on frame 1 (a hook frame must show the subject)
+            key_prop([(1, 1.0)], "xr")
+        else:
+            key_prop([(1, 0.05), (int(N * 0.3), 1.0)], "xr")
         play(arm, c.get(SHOT.get("anim", "roar"), walk), 1, N, SHOT.get("anim_rate", 0.7))
         mus = muscle_groups(arm)
         if SHOT.get("reveal") is not None:
@@ -1207,6 +1308,8 @@ def build():
         key_path(cam, [(1, Vector((3.5, -13, 2.0))), (N, Vector((2.2, -9.5, 2.6)))])
         key_path(tgt, [(1, Vector((0, -3.5, H * 0.8))), (N, Vector((0, -3.5, H * 0.85)))])
         smooth_keys(cam)
+    if TOON and look != "sim":           # the x-ray "computer model" shots keep their own look
+        toonify_scene()
     if SHOT.get("cam"):                 # a shot can set its own camera start/end (relative to the scene)
         for o in (cam, tgt):
             if o.animation_data:
