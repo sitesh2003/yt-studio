@@ -1,0 +1,135 @@
+{
+  "assets_dir": "assets/3d",
+  "creature": {
+    "file": "dinos/Apatosaurus.fbx",
+    "length_m": 22.0,
+    "height_m": 9.0,
+    "walk": "Apatosaurus_Walk",
+    "run": "Apatosaurus_Run",
+    "idle": "Apatosaurus_Idle",
+    "roar": "Apatosaurus_Attack",
+    "foot_bone": "BackFoot.L",
+    "leg_bones": [
+      "BackUpLeg.L",
+      "BackLowLeg.L",
+      "BackFoot.L",
+      "BackUpLeg.R",
+      "BackLowLeg.R",
+      "BackFoot.R"
+    ],
+    "muscle_bones": [
+      "BackUpLeg.L",
+      "BackUpLeg.R"
+    ],
+    "bone_radius": 0.2,
+    "muscle_radius": 0.6,
+    "bone_groups": [
+      "TAIL",
+      "SPINE",
+      "HIPS"
+    ],
+    "muscle_groups": []
+  },
+  "props": {
+    "car": "cars/sedan.glb"
+  },
+  "shots": [
+    {
+      "kind": "balance",
+      "tonnes": 34,
+      "cars": 23,
+      "start_cars": 0,
+      "drop_s": [
+        0.6,
+        3.6
+      ],
+      "seconds": 4.5,
+      "overlay": "none",
+      "cam_scale": 1.25,
+      "cam_y": 2.0
+    },
+    {
+      "kind": "balance",
+      "tonnes": 34,
+      "cars": 12,
+      "start_cars": 12,
+      "cam_scale": 0.6,
+      "cam_y": 17,
+      "seconds": 4.5,
+      "overlay": "label",
+      "label": [
+        "SAME ANIMAL",
+        "very different weights"
+      ]
+    },
+    {
+      "kind": "balance",
+      "tonnes": 34,
+      "cars": 23,
+      "start_cars": 12,
+      "drop_s": [
+        0.4,
+        3.8
+      ],
+      "seconds": 5.5,
+      "overlay": "label",
+      "label": [
+        "LEG BONES SAY",
+        "~34 tonnes = 23 cars"
+      ],
+      "cam_scale": 1.25,
+      "cam_y": 2.0
+    },
+    {
+      "kind": "balance",
+      "tonnes": 18,
+      "cars": 12,
+      "start_cars": 0,
+      "drop_s": [
+        0.5,
+        3.2
+      ],
+      "seconds": 4.5,
+      "overlay": "label",
+      "label": [
+        "ANOTHER STUDY",
+        "~18 tonnes = 12 cars"
+      ],
+      "cam_scale": 1.25,
+      "cam_y": 2.0
+    },
+    {
+      "kind": "tail_whip",
+      "world": "sim",
+      "xray": true,
+      "bone_groups": [
+        "SPINE",
+        "NECK",
+        "TAIL"
+      ],
+      "bones_s": [
+        0.2,
+        2.2
+      ],
+      "whips": [
+        4.0
+      ],
+      "seconds": 6.0,
+      "overlay": "label",
+      "label": [
+        "AIR SPACES",
+        "in neck and back bones"
+      ]
+    },
+    {
+      "kind": "balance",
+      "tonnes": 18,
+      "cars": 12,
+      "start_cars": 12,
+      "cam_scale": 0.6,
+      "cam_y": -17,
+      "seconds": 4.5,
+      "overlay": "none"
+    }
+  ]
+}

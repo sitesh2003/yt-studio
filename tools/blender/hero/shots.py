@@ -955,7 +955,7 @@ def build():
                               "stress_run": "sim", "muscle_needed": "sim", "speed_track": "day",
                               "race_pass": "day", "closeup_roar": "dusk", "xray_jaw": "sim",
                               "coprolite": "sim", "crash_compare": "day", "grow": "day",
-                              "brake_compare": "day", "vision_cone": "day", "tail_whip": "day"}[kind])
+                              "brake_compare": "day", "vision_cone": "day", "tail_whip": "day", "balance": "day"}[kind])
     world(look)
     ground("sim" if look == "sim" else "road")
     if look == "day":
@@ -1425,6 +1425,71 @@ def build():
         cs = SHOT.get("cam_scale", 1.12)        # 1 = the whole animal; smaller = closer on the tail
         key_path(cam, [(1, Vector((x0 + 19 * cs, 4 + 22 * cs, 13 * cs))), (N, Vector((x0 + 17.5 * cs, 4 + 20 * cs, 12 * cs)))])
         key_path(tgt, [(1, Vector((x0 + 1.8, 4.5, 2.2))), (N, Vector((x0 + 1.8, 4.5, 2.2)))])
+        smooth_keys(cam)
+    elif kind == "balance":
+        # a giant see-saw: the animal on one end, family cars dropped on the other until the beam levels at the
+        # published mass (SHOT tonnes / car_t tonnes per car); the beam swings like a real damped balance
+        M = float(SHOT["tonnes"])
+        car_t = SHOT.get("car_t", 1.5)
+        n = int(SHOT["cars"])
+        pre = int(SHOT.get("start_cars", 0))
+        piv_z, half = 5.5, 18.0
+        pivot = bpy.data.objects.new("Beam", None)
+        bpy.context.collection.objects.link(pivot)
+        pivot.location = (0, 0, piv_z)
+        steel = mat("Steel", (0.22, 0.24, 0.28), 0.35)
+        paint = mat("ScaleYellow", (0.95, 0.68, 0.05), 0.45)
+        def on_beam(o, loc):
+            o.parent = pivot
+            o.matrix_parent_inverse.identity()
+            o.location = loc
+        on_beam(box("BeamBar", (1.6, 2 * half + 28, 0.9), (0, 0, 0), steel), (0, 0, 0))
+        on_beam(box("PlatDino", (9.0, 27.0, 0.5), (0, 0, 0), paint), (0, half, 0.65))
+        on_beam(box("PlatCars", (9.0, 27.0, 0.5), (0, 0, 0), paint), (0, -half, 0.65))
+        bpy.ops.mesh.primitive_cone_add(vertices=4, radius1=4.0, radius2=0.6, depth=piv_z, location=(0, 0, piv_z / 2))
+        bpy.context.object.data.materials.append(steel)
+        arm.parent = pivot
+        arm.matrix_parent_inverse.identity()
+        arm.location = (0, half - 1.0, 0.9)
+        play(arm, c.get(SHOT.get("anim", "idle"), walk), 1, N, 1.0)
+        t0, t1 = SHOT.get("drop_s", [0.3, T - 1.2])
+        land = []
+        for i in range(n):
+            layer, idx = divmod(i, 10)
+            col, row = idx % 2, idx // 2
+            loc = Vector(((col - 0.5) * 2.6, -half + (row - 2) * 4.9, 0.9 + layer * 1.5))
+            car, _ = glb(SPEC["props"]["car"], 4.4, (0, 0, 0), 0.0)
+            on_beam(car, loc)
+            if i < pre:
+                land.append(1)
+                continue
+            k = i - pre
+            f_ = 1 + int((t0 + (t1 - t0) * k / max(1, n - pre - 1)) * FPS)
+            land.append(f_)
+            up = loc + Vector((0, 0, 70))
+            for fr, z in ((1, 70), (max(1, f_ - 9), 70), (max(1, f_ - 8), 14), (f_, 0), (f_ + 3, 0.5), (f_ + 6, 0)):
+                car.location = loc + Vector((0, 0, z))
+                car.keyframe_insert("location", frame=fr)
+            for o in [car] + list(car.children_recursive):     # unseen (and no shadow) until it falls
+                for fr, hid in ((1, True), (max(1, f_ - 8), False)):
+                    o.hide_render = hid
+                    o.keyframe_insert("hide_render", frame=fr)
+        # the balance: a damped spring toward the angle the loads ask for
+        tilt = math.radians(SHOT.get("max_tilt", 9.0))
+        th, w = None, 0.0
+        for fr in range(1, N + 1):
+            mass = sum(1 for f_ in land if f_ <= fr) * car_t
+            target = tilt * math.tanh((mass - M) / (0.18 * M))
+            if th is None:
+                th = target
+            w += (38.0 * (target - th) - 7.5 * w) / FPS
+            th += w / FPS
+            pivot.rotation_euler = (th, 0, 0)
+            pivot.keyframe_insert("rotation_euler", index=0, frame=fr)
+        cs = SHOT.get("cam_scale", 1.0)
+        cy = SHOT.get("cam_y", 0.0)
+        key_path(cam, [(1, Vector((62 * cs, cy - 30 * cs, 22 * cs))), (N, Vector((58 * cs, cy - 27 * cs, 21 * cs)))])
+        key_path(tgt, [(1, Vector((0, cy + 1, 6.5))), (N, Vector((0, cy + 1, 6.5)))])
         smooth_keys(cam)
     elif kind == "closeup_roar":
         play(arm, c.get("roar", walk), int(N * 0.12), N, 0.85)
