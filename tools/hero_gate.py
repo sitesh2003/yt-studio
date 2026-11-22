@@ -73,6 +73,10 @@ if stage == "voice":
         # Hindi spelling varies (digits vs words, nukta, anusvara), so its bar is lower; English must be near-exact
         bar = 0.6 if hindi else 0.8
         (notes if best >= bar else fails).append(f"scene {k + 1} heard {best:.0%}: {sc['narration'][:50]}")
+    if hindi:   # Devanagari Hindi; English only as single words (owner, 22 Nov 2026)
+        from agents.writer import hindi_script_issues
+        for iss in hindi_script_issues(script["scenes"]):
+            fails.append(iss)
     for num in re.findall(r"\b\d[\d,]*\b", " ".join(s["narration"] for s in script["scenes"])):
         notes.append(f"digits '{num}' in the script: check it is read as intended (words are safer)")
 

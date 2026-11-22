@@ -282,6 +282,31 @@ def spoken_issues(scenes):
     return issues
 
 
+def hindi_script_issues(scenes):
+    """22 Nov 2026, owner: the Hindi channel was 'adding English sentences, then Hindi, then English again'.
+    Scripts came back as Hindi typed in English letters ('Barish ki pehli boond...') or as whole English sentences;
+    the Hindi voice reads Latin letters with an English accent. Hindi = Devanagari grammar; English only as single
+    words (at most 3 in a row), never a phrase or a sentence."""
+    import re as _re
+    out = []
+    for k, sc in enumerate(scenes):
+        text = sc.get("narration", "")
+        for sent in [x for x in _re.split(r"(?<=[\u0964.?!])\s+", text) if x.strip()]:
+            toks = _re.findall(r"[A-Za-z][A-Za-z'\-]*|[\u0900-\u097f]+|\d[\d,.%]*", sent)
+            if not toks:
+                continue
+            dev = sum(1 for t in toks if _re.match(r"[\u0900-\u097f]", t))
+            run, longest = 0, 0
+            for t in toks:
+                run = run + 1 if _re.match(r"[A-Za-z]", t) else 0
+                longest = max(longest, run)
+            if dev < len(toks) * 0.5:
+                out.append(f"scene {k + 1}: write this sentence in Devanagari Hindi (English only as single words): \"{sent[:80]}\"")
+            elif longest > 3:
+                out.append(f"scene {k + 1}: {longest} English words in a row; keep English to single words: \"{sent[:80]}\"")
+    return out
+
+
 def lint(s, words):
     """Problems a reader would notice that the fact-checker does not look for."""
     issues = []
@@ -308,6 +333,8 @@ def lint(s, words):
             issues += spoken_issues(scenes)
     except Exception:
         pass
+    if (config()["channel"].get("language") or "en")[:2] == "hi":
+        issues += hindi_script_issues(scenes)
     ex = _content_words(s.get("running_example", ""))
     if not ex:
         issues.append("no running_example: pick one concrete example and carry it through every scene")
@@ -342,7 +369,8 @@ def _language_rule():
     everyday Hinglish the way the fastest-growing Hindi science channels do (15 Nov niche scan; Hinglish 17 Nov)."""
     lang = (config()["channel"].get("language") or "en-US")[:2]
     if lang == "hi":
-        return ("LANGUAGE: write the narration, title, description, question and answer in HINGLISH, the "
+        return ("LANGUAGE: write the NARRATION in DEVANAGARI Hindi (never Hindi typed in English letters, never a whole English "
+                "phrase or sentence; English only as single everyday words, at most 3 in a row). Write it in HINGLISH, the "
                 "Hindi-English mix people in India really speak (17 Nov 2026, owner: not pure Hindi). Hindi grammar "
                 "and connecting words in Devanagari, but everyday and science words in English letters the way people "
                 "say them: fingers, skin, body, blood vessels, decision, simple, easy, next time, actually, train, "
