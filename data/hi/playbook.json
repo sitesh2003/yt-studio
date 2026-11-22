@@ -1,46 +1,62 @@
 {
   "rules": [
-    "Keep total video length strictly between 30 and 50 seconds to match top performing pacing.",
-    "Open every video with an on-screen hook title in the first 3 seconds.",
-    "Maintain the strict narrator split: host handles hooks and prediction prompts, explainer delivers the science.",
-    "Use real-world footage or clean drawn diagrams/maps; never use photo-real AI images.",
-    "End every video with the signature closing 'Ever thought why...' question to drive loops."
+    "Keep total video duration strictly between 40 and 48 seconds to balance platform pacing with our required enquiry arc.",
+    "Ensure both narrators maintain a sharp conversational cadence with no dead air between speaker handoffs.",
+    "Use real-world archival footage or clear 2D animated diagrams exclusively; never use photo-real AI generation.",
+    "Never include calls to action like subscribing or liking, allowing the natural loop ending to drive retention.",
+    "Open every video with a bold, high-contrast on-screen hook title in the first 3 seconds.",
+    "Formulate every script around an accurate, surprising physical or biological mechanism rather than generic trivia."
   ],
   "formats_now": [
-    "Transportation danger/survival mechanics: high views on train and aviation safety because the physical stakes are instantly clear.",
-    "Industrial scale creation: viewers engage heavily with 'how X is made in factories' due to satisfying mechanical repetition.",
-    "Counter-intuitive physics phenomena: breaking down hidden forces in everyday objects drives high retention."
+    "Hidden infrastructure engineering breakdowns: revealing the invisible design choices behind everyday public structures like tunnels, runways, or tracks.",
+    "Counter-intuitive everyday physics: explaining why common household or travel situations behave completely opposite to what people expect.",
+    "Material science micro-mysteries: exploring how specific chemical reactions or material compositions alter physical properties overnight.",
+    "Extreme environment survival mechanics: analyzing exact physical forces at play during high-stress scenarios like rapid pressure changes or structural impacts."
   ],
   "hook_shapes": [
-    "Why you should never X inside a Y 😱",
-    "What happens if X happens while you are Y?",
-    "How to actually survive X! ☢️"
+    "Why does X happen every time Y occurs under specific conditions?",
+    "What would actually happen to your body if X occurred inside Y?",
+    "Why is it physically dangerous to do X inside a seemingly safe environment like Y?",
+    "How does X prevent Y from failing catastrophically at high speeds?"
   ],
   "title_shapes": [
-    "Why You Should Never X Inside a Y! 😱 #shorts #science",
-    "What Happens If X Opens Mid-Flight 🤯 #facts",
-    "How X Actually Works: The Secret Engineering Behind Y ⚙️"
+    "The Secret Engineering Behind X 😳🏺 #shorts",
+    "Why You Should Never Do X Inside Y 😱 #shorts",
+    "What Happens When X Meets Y? 🤯 #shorts"
   ],
   "topic_areas": [
-    "Aviation and emergency flight mechanics",
-    "Heavy railway engineering and physics",
-    "Extreme environment survival science",
-    "Industrial manufacturing and material science",
-    "Hidden biomechanical reflexes of the human body"
+    "Transportation infrastructure engineering (runways, tracks, tunnels, and specialized vehicles)",
+    "Everyday chemical and biological paradoxes (food preservation, material aging, and everyday reactions)",
+    "Extreme industrial manufacturing processes (precision engineering, massive scale assembly)",
+    "Unusual physical phenomena in built environments (acoustics, airflow, and thermal distribution)",
+    "Historical engineering failures and how modern physics solved them"
   ],
   "stop_doing": [
-    "Producing scripts over 70 seconds that slow down the narrative momentum",
-    "Using sensationalized medical advice or fear-mongering health claims"
+    "Using foreign-language primary hook text on a channel designed for US viewers.",
+    "Creating scripts shorter than 40 seconds which truncate the mandatory pause-and-predict enquiry arc.",
+    "Relying on sensationalist medical claims or personal health advice."
   ],
   "target_seconds": 45,
-  "experiment": "Test starting the hook directly with a first-person danger scenario instead of a third-person question, measuring audience retention at the 10-second mark.",
+  "experiment": "Test starting the hook directly with a moving physical object or action on screen in the first 1 second rather than a static text card, and we will know it worked if the 30-second retention percentage increases by at least 4% compared to baseline.",
   "facts": {
-    "median_seconds_top20": 63.5,
-    "median_seconds_rest": 48.5,
-    "question_titles_top20": 3,
+    "median_seconds_top20": 74.0,
+    "median_seconds_rest": 57.0,
+    "question_titles_top20": 4,
     "why_how_what_titles_top20": 5,
-    "median_title_chars_top20": 66.5
+    "median_title_chars_top20": 67.0
   },
-  "studied": "2026-11-16T04:19:51",
-  "history": []
+  "studied": "2026-11-22T09:46:30",
+  "history": [
+    {
+      "studied": "2026-11-16T04:19:51",
+      "rules": [
+        "Keep total video length strictly between 30 and 50 seconds to match top performing pacing.",
+        "Open every video with an on-screen hook title in the first 3 seconds.",
+        "Maintain the strict narrator split: host handles hooks and prediction prompts, explainer delivers the science.",
+        "Use real-world footage or clean drawn diagrams/maps; never use photo-real AI images.",
+        "End every video with the signature closing 'Ever thought why...' question to drive loops."
+      ],
+      "target_seconds": 45
+    }
+  ]
 }

@@ -262,5 +262,47 @@
         "claim": "Bananas are climacteric; oranges are non-climacteric and do not respond to ethylene in the same way."
       }
     ]
+  },
+  {
+    "job": "20261122-0857-why-are-mirror-images-flipped-horizontal",
+    "date": "2026-11-22",
+    "title": "Mirror सच में Left-Right Flip क्यों नहीं करता? 🤔",
+    "topic": "Why are mirror images flipped horizontally but not vertically?",
+    "series": "Everyday Whys",
+    "weekly": false,
+    "claims": [
+      "Flat mirrors reflect light along the axis perpendicular to the mirror plane (z-axis, front-to-back inversion).",
+      "Mirrors do not invert horizontally (left-right) or vertically (top-bottom).",
+      "Perception of left-right flipping is due to human mental rotation around the vertical axis to face back toward ourselves.",
+      "Text written on a transparent sheet facing a mirror remains un-reversed when viewed without physical 180-degree rotation.",
+      "Bone marrow and calcium are the primary dietary reasons apex predators and scavengers consume bones."
+    ],
+    "sources": []
+  },
+  {
+    "job": "20261122-0932-why-this-entire-carton-of-eggs-has-2-yol",
+    "date": "2026-11-22",
+    "title": "Why Some Eggs Have Two Yolks 🤯",
+    "topic": "Why this entire carton of eggs has 2 yolks each",
+    "series": "Food Whys",
+    "weekly": false,
+    "claims": [
+      "Double yolks occur due to a hiccup in a young hen's ovulation cycle where two yolks are released in rapid succession.",
+      "Young hens (pullets) are much more likely to lay double-yolk eggs because their reproductive system is not yet perfectly synchronized.",
+      "Commercial farms can sort eggs by weight, making it more likely to find a full carton of double-yolk eggs as they are consistently heavier than standard eggs.",
+      "Two chicks in a double-yolk egg almost never hatch successfully due to physical space and resource limitations."
+    ],
+    "sources": [
+      {
+        "cite": "Lee et al. (1990), Reproduction. doi:10.1530/jrf.0.0890085",
+        "doi": "10.1530/jrf.0.0890085",
+        "claim": "Double yolks occur due to a hiccup in a young hen's ovulation cycle where two yolks are released in rapid succession."
+      },
+      {
+        "cite": "Banaszewska et al. (2023), Animals. doi:10.3390/ani13182931",
+        "doi": "10.3390/ani13182931",
+        "claim": "Two chicks in a double-yolk egg almost never hatch successfully due to physical space and resource limitations."
+      }
+    ]
   }
 ]

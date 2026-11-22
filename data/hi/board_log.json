@@ -1,41 +1,5 @@
 [
  {
-  "when": "2026-11-18 18:12",
-  "topic": "Why yogurt stops bad bacteria from growing while fresh milk spoils in days",
-  "drawn": [
-   2,
-   3,
-   4,
-   5
-  ],
-  "not_drawn": {},
-  "error": ""
- },
- {
-  "when": "2026-11-18 18:47",
-  "topic": "Scientists just found NASA's ozone hole has grown to a size not seen in a decade",
-  "drawn": [
-   2,
-   3,
-   4,
-   5
-  ],
-  "not_drawn": {},
-  "error": ""
- },
- {
-  "when": "2026-11-18 19:36",
-  "topic": "Why are toasters actually electrified inside their slots and how do they avoid shocking yo",
-  "drawn": [
-   2,
-   3,
-   4,
-   5
-  ],
-  "not_drawn": {},
-  "error": ""
- },
- {
   "when": "2026-11-18 21:46",
   "topic": "Why the emergency space blankets used by trekkers and astronauts can keep you warm by refl",
   "drawn": [
@@ -492,6 +456,43 @@
    5
   ],
   "not_drawn": {},
+  "error": ""
+ },
+ {
+  "when": "2026-11-22 09:05",
+  "topic": "Why are mirror images flipped horizontally but not vertically?",
+  "drawn": [
+   2,
+   3,
+   4,
+   5
+  ],
+  "not_drawn": {},
+  "error": ""
+ },
+ {
+  "when": "2026-11-22 09:18",
+  "topic": "3 Hidden reasons why train tracks are packed with tons of rough crushed stones",
+  "drawn": [
+   2,
+   3,
+   4,
+   5
+  ],
+  "not_drawn": {},
+  "error": ""
+ },
+ {
+  "when": "2026-11-22 09:33",
+  "topic": "Why this entire carton of eggs has 2 yolks each",
+  "drawn": [
+   2,
+   3,
+   4
+  ],
+  "not_drawn": {
+   "5": "The image shows 3 yolks (yellow circles) pointing to 1 egg, but the text on the right says '2 YOLKS' and '1 EGG', and the sentence mentions two yolks releasing "
+  },
   "error": ""
  }
 ]

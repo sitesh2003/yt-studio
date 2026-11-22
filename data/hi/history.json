@@ -8428,6 +8428,370 @@
     "video_id": "WxMPmmfvdrk",
     "publish_at": "2026-11-22T02:30:00-05:00",
     "thumbnail_set": true,
-    "replaces": "af394fizUAk"
+    "replaces": "af394fizUAk",
+    "recapped": true
+  },
+  {
+    "job": "20261122-0857-why-are-mirror-images-flipped-horizontal",
+    "topic": "Why are mirror images flipped horizontally but not vertically?",
+    "title": "Mirror सच में Left-Right Flip क्यों नहीं करता? 🤔",
+    "description": "Mirrors don't actually flip left and right—physics reveals they reverse something completely different! Here is the optical secret behind mirror reflections.\n#shorts #hindi #science\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nIllustrations: drawn for this video with FLUX.2 [klein] 4B (AI, Apache 2.0) and checked for accuracy\nPhoto by anaterate on Pixabay\nPhoto: tseenster, BY 2.0, via Openverse (flickr)\nPhoto: unknown, CC BY 4.0, via Wikimedia Commons\nPhoto: zoofanatic, BY 2.0, via Openverse (flickr)\nVideo by JoshuaWoroniecki on Pixabay\nVideo by Marsel_beijing on Pixabay\nVideo by Thomas-Ritter on Pixabay\n\nयह वीडियो कैसे बना: स्क्रिप्ट को AI tools की मदद से open research के आधार पर लिखा और fact-check किया गया है, आवाज़ AI voice की है, और editing open-source software से हुई है। कोई गलती दिखे तो comment में बताइए — जाँच कर सुधार करेंगे।",
+    "tags": [
+      "physics",
+      "optics",
+      "mirror",
+      "science facts"
+    ],
+    "hook": "Mirror तुम्हारी left और right side को कभी flip ही नहीं करता।",
+    "status": "scheduled",
+    "narration": "Mirror तुम्हारी left और right side को कभी flip ही नहीं करता। जब तुम right hand उठाते हो, तो reflection का हाथ भी उसी side रहता है। फिर उल्टा क्यों दिखता है? इसे समझने के लिए transparent sheet पर text लिखो। बिना sheet घुमाए देखोगे, तो mirror में शब्द बिल्कुल सीधे दिखेंगे। अगर mirror left-right या top-bottom flip नहीं करता, तो फिर कौन-सी direction बदलती है? जब तुम mirror की तरफ बढ़ते हो, reflection तुम्हारी तरफ बढ़ता है—ये सिर्फ front-back बदलना है! बाकी का उल्टा दिखना हमारा brain खुद 180 degree mental flip करके सोचता है। कल का जवाब: शिकारी जानवर bone marrow और calcium के लिए हड्डियां खाते थे। सोचो, ambulance पर शब्द उल्टा क्यों लिखते हैं, जब mirror left-right flip ही नहीं करता?",
+    "voice_engine": "edge-tts",
+    "voices": "one narrator (hi-IN-SwaraNeural)",
+    "diagrams": 1,
+    "series": "Everyday Whys",
+    "countdown": false,
+    "length_arm": "standard",
+    "question": "सोचो, ambulance पर शब्द उल्टा क्यों लिखते हैं, जब mirror left-right flip ही नहीं करता?",
+    "answer_comment": "The answer: Ambulance text is reversed on the car bonnet so drivers in front can read 'AMBULANCE' correctly in their rear-view mirrors! Because looking into a mirror flips the z-axis (front-to-back), looking back at a standard word would reverse its readable sequence relative to your sightline. Writing it reversed beforehand makes the double inversion look completely normal to the driver ahead!",
+    "sources": [],
+    "fact_check": [
+      "Flat mirrors reflect light along the axis perpendicular to the mirror plane (z-axis, front-to-back inversion).",
+      "Mirrors do not invert horizontally (left-right) or vertically (top-bottom).",
+      "Perception of left-right flipping is due to human mental rotation around the vertical axis to face back toward ourselves.",
+      "Text written on a transparent sheet facing a mirror remains un-reversed when viewed without physical 180-degree rotation.",
+      "Bone marrow and calcium are the primary dietary reasons apex predators and scavengers consume bones."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        3.63
+      ],
+      [
+        3.63,
+        7.98
+      ],
+      [
+        7.98,
+        13.0
+      ],
+      [
+        13.0,
+        17.25
+      ],
+      [
+        17.25,
+        22.44
+      ],
+      [
+        22.44,
+        27.42
+      ],
+      [
+        27.42,
+        32.79
+      ],
+      [
+        32.79,
+        37.5
+      ],
+      [
+        37.5,
+        43.64
+      ]
+    ],
+    "duration": 43.64,
+    "scene_lines": [
+      "Mirror तुम्हारी left और right side को कभी flip ही नहीं करता।",
+      "जब तुम right hand उठाते हो, तो reflection का हाथ भी उसी side रहता है।",
+      "फिर उल्टा क्यों दिखता है? इसे समझने के लिए transparent sheet पर text लिखो।",
+      "बिना sheet घुमाए देखोगे, तो mirror में शब्द बिल्कुल सीधे दिखेंगे।",
+      "अगर mirror left-right या top-bottom flip नहीं करता, तो फिर कौन-सी direction बदलती है?",
+      "जब तुम mirror की तरफ बढ़ते हो, reflection तुम्हारी तरफ बढ़ता है—ये सिर्फ front-back बदलना है!",
+      "बाकी का उल्टा दिखना हमारा brain खुद 180 degree mental flip करके सोचता है।",
+      "कल का जवाब: शिकारी जानवर bone marrow और calcium के लिए हड्डियां खाते थे।",
+      "सोचो, ambulance पर शब्द उल्टा क्यों लिखते हैं, जब mirror left-right flip ही नहीं करता?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": "WxMPmmfvdrk",
+    "captions_srt": "1\n00:00:00,050 --> 00:00:02,031\nMirror तुम्हारी left और right side को\n\n2\n00:00:02,031 --> 00:00:03,573\nकभी flip ही नहीं करता।\n\n3\n00:00:03,630 --> 00:00:05,412\nजब तुम right hand उठाते हो, तो\n\n4\n00:00:05,412 --> 00:00:07,488\nreflection का हाथ भी उसी side रहता\n\n5\n00:00:07,488 --> 00:00:09,746\nहै। फिर उल्टा क्यों दिखता है?\n\n6\n00:00:09,830 --> 00:00:12,055\nइसे समझने के लिए transparent sheet पर\n\n7\n00:00:12,055 --> 00:00:14,837\ntext लिखो। बिना sheet घुमाए देखोगे, तो\n\n8\n00:00:14,837 --> 00:00:17,604\nmirror में शब्द बिल्कुल सीधे दिखेंगे। अगर\n\n9\n00:00:17,604 --> 00:00:20,041\nmirror left-right या top-bottom flip नहीं करता,\n\n10\n00:00:20,041 --> 00:00:22,304\nतो फिर कौन-सी direction बदलती है?\n\n11\n00:00:22,440 --> 00:00:24,206\nजब तुम mirror की तरफ बढ़ते हो,\n\n12\n00:00:24,206 --> 00:00:27,885\nreflection तुम्हारी तरफ बढ़ता है—ये सिर्फ सिर्फ front-back बदलना है!\n\n13\n00:00:27,900 --> 00:00:30,315\nबाकी का उल्टा दिखना हमारा brain खुद\n\n14\n00:00:30,315 --> 00:00:33,280\n180 degree mental flip करके सोचता है।\n\n15\n00:00:33,280 --> 00:00:35,710\nकल का जवाब: शिकारी जानवर bone marrow\n\n16\n00:00:35,710 --> 00:00:38,036\nऔर calcium के लिए हड्डियां खाते थे।\n\n17\n00:00:38,110 --> 00:00:40,729\nसोचो, ambulance पर शब्द उल्टा क्यों लिखते\n\n18\n00:00:40,729 --> 00:00:43,035\nहैं, जब mirror left-right flip ही नहीं करता?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [],
+      "footage": [],
+      "review": [],
+      "heard": [
+        "\"mirror\" heard as \"मिरे\"",
+        "\"right\" heard as \"राइट\"",
+        "\"right hand\" heard as \"राइट हैं\"",
+        "\"reflection\" heard as \"रिफलेक्षन\"",
+        "\"क्यों\" heard as \"क्यो\"",
+        "\"transparent\" heard as \"ट्रान्स्पेरन\"",
+        "\"text\" heard as \"टेक्स\"",
+        "\"mirror\" heard as \"मिरे\""
+      ],
+      "scene_heard": [
+        "scene 1: 82%",
+        "scene 2: 77%",
+        "scene 3: 77%",
+        "scene 4: 73%",
+        "scene 5: 56%",
+        "scene 6: 73%",
+        "scene 7: 100%",
+        "scene 8: 71%",
+        "scene 9: 47%"
+      ],
+      "pass": true,
+      "duration": 43.1
+    },
+    "repairs": 0,
+    "audited": true,
+    "video_id": "MUomUH96kYM",
+    "publish_at": "2026-11-23T09:30:00-05:00",
+    "thumbnail_set": true
+  },
+  {
+    "job": "20261122-0917-3-hidden-reasons-why-train-tracks-are-pa",
+    "topic": "3 Hidden reasons why train tracks are packed with tons of rough crushed stones",
+    "title": "Why Train Tracks Use Heavy Stones 🤯",
+    "description": "Ever wondered why train tracks are filled with crushed stones? It's not just for looks, it's critical engineering.\n#shorts #science #trains\n\nSources (open-access research):\n- Chalabii et al. (2025), Scientific Reports. doi:10.1038/s41598-025-31965-4\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nPhoto: James St. John, BY 2.0, via Openverse (flickr)\nPhoto: Madansekarmohan, CC BY 4.0, via Wikimedia Commons\nPhoto: Massachusetts. Metropolitan Water and Sewerage Board, Public domain, via Wikimedia Commons\nPhoto: andres musta, BY 2.0, via Openverse (flickr)\nPhoto: jnyemb, BY 2.0, via Openverse (flickr)\nVideo by Life-Of-Vids on Pixabay\nVideo by superanton on Pixabay\n\nयह वीडियो कैसे बना: स्क्रिप्ट को AI tools की मदद से open research के आधार पर लिखा और fact-check किया गया है, आवाज़ AI voice की है, और editing open-source software से हुई है। कोई गलती दिखे तो comment में बताइए — जाँच कर सुधार करेंगे।",
+    "tags": [
+      "shorts",
+      "science",
+      "trains"
+    ],
+    "hook": "Train tracks par ye chote patthar decoration ke liye nahi hote, chahe lakho kilo ka weight ho.",
+    "status": "review",
+    "narration": "Train tracks par ye chote patthar decoration ke liye nahi hote, chahe lakho kilo ka weight ho. Jab ek bhaari train speed mein track se guzarti hai, toh zameen kaafi vibrate karti hai. Ye patthar, जिन्हें ballast kehte hain, train ka bhari load zameen par barabar baant dete hain aur track ko apni jagah par pakde rakhte hain. Aur inka shape irregular hota hai, taaki ye ek dusre mein lock ho jayein. But wait, ye sirf vibration ke liye nahi hain. Track ke niche pani jama hona khatarnak hota hai. Ye patthar আসলে ek drainage system hain. Ye pani ko seedha niche drain kar dete hain, taaki track ki neeche ki mitti soft na ho. Ever thought how tracks are designed to maintain their alignment even during heavy monsoon with this simple engineering?",
+    "voice_engine": "edge-tts",
+    "voices": "one narrator (hi-IN-SwaraNeural)",
+    "diagrams": 1,
+    "series": "Everyday Whys",
+    "countdown": false,
+    "length_arm": "long",
+    "question": "Ever thought how tracks are designed to maintain their alignment even during heavy monsoon with this simple engineering?",
+    "answer_comment": "The answer: These stones, called ballast, create a stable, flexible base that distributes the load of trains while providing excellent drainage to prevent the track from sinking or shifting in wet conditions. Do you have a question about other hidden engineering designs?\n\nSources (open-access research):\n- Chalabii et al. (2025), Scientific Reports. doi:10.1038/s41598-025-31965-4",
+    "sources": [
+      {
+        "claim": "The angular shape of ballast is essential for the rocks to lock together and provide lateral stability.",
+        "cite": "Chalabii et al. (2025), Scientific Reports. doi:10.1038/s41598-025-31965-4",
+        "doi": "10.1038/s41598-025-31965-4",
+        "title": "Discrete element modeling of the effect of real-shape ballast angularity on sleeper lateral resistance",
+        "why": "The importance of angularity in stabilising ballast layers under lateral loads was validated by regression analysis."
+      }
+    ],
+    "fact_check": [
+      "Railway ballast is primarily used to distribute the load from the sleepers and provide drainage.",
+      "Ballast helps in reducing noise and vibration caused by moving trains.",
+      "The angular shape of ballast is essential for the rocks to lock together and provide lateral stability.",
+      "High-speed lines sometimes use slab tracks without ballast, confirming ballast is not the only way to build a track, but it is standard for most rail infrastructure."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        5.55
+      ],
+      [
+        5.55,
+        10.52
+      ],
+      [
+        10.52,
+        18.25
+      ],
+      [
+        18.25,
+        22.58
+      ],
+      [
+        22.58,
+        28.42
+      ],
+      [
+        28.42,
+        30.88
+      ],
+      [
+        30.88,
+        36.18
+      ],
+      [
+        36.18,
+        42.35
+      ]
+    ],
+    "duration": 42.35,
+    "scene_lines": [
+      "Train tracks par ye chote patthar decoration ke liye nahi hote, chahe lakho kilo ka weight ho.",
+      "Jab ek bhaari train speed mein track se guzarti hai, toh zameen kaafi vibrate karti hai.",
+      "Ye patthar, जिन्हें ballast kehte hain, train ka bhari load zameen par barabar baant dete hain aur track ko apni jagah par pakde rakhte hain.",
+      "Aur inka shape irregular hota hai, taaki ye ek dusre mein lock ho jayein.",
+      "But wait, ye sirf vibration ke liye nahi hain. Track ke niche pani jama hona khatarnak hota hai.",
+      "Ye patthar আসলে ek drainage system hain.",
+      "Ye pani ko seedha niche drain kar dete hain, taaki track ki neeche ki mitti soft na ho.",
+      "Ever thought how tracks are designed to maintain their alignment even during heavy monsoon with this simple engineering?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,050 --> 00:00:02,476\nTrain tracks par ye chote patthar decoration\n\n2\n00:00:02,476 --> 00:00:05,494\nke liye nahi hote, chahe lakho kilo ka weight ho.\n\n3\n00:00:05,550 --> 00:00:07,584\nJab ek bhaari train speed mein track\n\n4\n00:00:07,584 --> 00:00:10,499\nse guzarti hai, toh zameen kaafi vibrate karti hai.\n\n5\n00:00:10,520 --> 00:00:13,030\nYe patthar, जिन्हें ballast kehte hain, train\n\n6\n00:00:13,030 --> 00:00:14,979\nka bhari load zameen par barabar baant\n\n7\n00:00:14,979 --> 00:00:16,897\ndete hain aur track ko apni jagah\n\n8\n00:00:16,897 --> 00:00:18,206\npar pakde rakhte hain.\n\n9\n00:00:18,250 --> 00:00:20,565\nAur inka shape irregular hota hai, taaki\n\n10\n00:00:20,565 --> 00:00:22,580\nye ek dusre mein lock ho jayein.\n\n11\n00:00:22,580 --> 00:00:25,320\nBut wait, ye sirf vibration ke liye nahi hain.\n\n12\n00:00:25,320 --> 00:00:28,409\nTrack ke niche pani jama hona khatarnak hota hai.\n\n13\n00:00:28,420 --> 00:00:30,566\nYe patthar ek drainage system hain.\n\n14\n00:00:30,590 --> 00:00:32,518\nYe pani ko seedha niche drain kar\n\n15\n00:00:32,518 --> 00:00:34,367\ndete hain, taaki track ki neeche ki\n\n16\n00:00:34,367 --> 00:00:35,840\nmitti soft na ho.\n\n17\n00:00:35,840 --> 00:00:37,709\nEver thought how tracks are designed to\n\n18\n00:00:37,709 --> 00:00:40,386\nmaintain their alignment even during heavy monsoon\n\n19\n00:00:40,386 --> 00:00:41,747\nwith this simple engineering?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [
+        "phrase missing from the audio: \"ek drainage system hain\"",
+        "phrase missing from the audio: \"ever thought how tracks are designed to maintain their alignment even during heavy monsoon with this simple engineering\"",
+        "scene 8 (36.2-42.3 s): only 0% of its words can be heard - the voice breaks up or drops out"
+      ],
+      "footage": [],
+      "review": [
+        "Frame 6 contains non-Hindi/non-English text ('আসলে') in the middle caption which violates the expected language consistency for a hi-IN target audience."
+      ],
+      "heard": [
+        "\"train tracks par ye\" heard as \"तरेई तराख सबा येख\"",
+        "\"patthar decoration ke liye nahi\" heard as \"पत्ठा डेकूरेशन किलिये नहीं\"",
+        "\"weight\" heard as \"वेट\"",
+        "\"patthar\" heard as \"पत्ठ़\"",
+        "\"ballast\" heard as \"बालास्ट\"",
+        "\"hain\" heard as \"है\"",
+        "\"irregular\" heard as \"इरेगिला\"",
+        "\"jayein\" heard as \"जाए\""
+      ],
+      "scene_heard": [
+        "scene 1: 56%",
+        "scene 2: 100%",
+        "scene 3: 88%",
+        "scene 4: 83%",
+        "scene 5: 65%",
+        "scene 6: 50%",
+        "scene 7: 94%",
+        "scene 8: 0%"
+      ],
+      "pass": false,
+      "duration": 41.7
+    },
+    "repairs": 0
+  },
+  {
+    "job": "20261122-0932-why-this-entire-carton-of-eggs-has-2-yol",
+    "topic": "Why this entire carton of eggs has 2 yolks each",
+    "title": "Why Some Eggs Have Two Yolks 🤯",
+    "description": "Ever wondered why you sometimes find double yolks in every single egg? It's not just luck—it's biology in action. Find out what's really happening inside the shell. #shorts #science #food\n\nSources (open-access research):\n- Lee et al. (1990), Reproduction. doi:10.1530/jrf.0.0890085\n- Banaszewska et al. (2023), Animals. doi:10.3390/ani13182931\n\nBoard icons: Twemoji by Twitter and contributors, CC BY 4.0\nIllustrations: drawn for this video with FLUX.2 [klein] 4B (AI, Apache 2.0) and checked for accuracy\nPhoto by Couleur on Pixabay\nPhoto by Lolame on Pixabay\nPhoto by congerdesign on Pixabay\nVideo by BenjaminNelan on Pixabay\nVideo by fh_media_e-motion on Pixabay\nVideo by Kaffeesüchtig on Pixabay\n\nयह वीडियो कैसे बना: स्क्रिप्ट को AI tools की मदद से open research के आधार पर लिखा और fact-check किया गया है, आवाज़ AI voice की है, और editing open-source software से हुई है। कोई गलती दिखे तो comment में बताइए — जाँच कर सुधार करेंगे।",
+    "tags": [
+      "science",
+      "food",
+      "eggs"
+    ],
+    "hook": "तुमने शायद कभी 1 egg के अंदर 2 yolks देखे होंगे, लेकिन पूरा का पूरा carton ही double yolk वाला होना, ये इत्तेफाक नहीं है।",
+    "status": "banked",
+    "narration": "तुमने शायद कभी 1 egg के अंदर 2 yolks देखे होंगे, लेकिन पूरा का पूरा carton ही double yolk वाला होना, ये इत्तेफाक नहीं है। आमतौर पर, एक hen के शरीर में ovulation cycle बहुत precise होता है। ये process एक yolk को release करता है, जो आगे चलकर shell के साथ cover हो जाता है। लेकिन, जब hen बहुत young होती है, उसका internal timing सिस्टम पूरी तरह set नहीं होता। यहाँ असल में दो yolks एक साथ release हो जाते हैं, और एक ही shell में बंद हो जाते हैं। तो जब तुम एक ही उम्र की young hens का एक batch चुनते हो, तो ये double yolk अंडे common हो जाते हैं। Ever thought why, अगर egg double yolk वाला है, तो क्या उससे दो chicks निकल सकते हैं?",
+    "voice_engine": "edge-tts",
+    "voices": "one narrator (hi-IN-SwaraNeural)",
+    "diagrams": 1,
+    "series": "Food Whys",
+    "countdown": false,
+    "length_arm": "long",
+    "question": "Ever thought why, अगर egg double yolk वाला है, तो क्या उससे दो chicks निकल सकते हैं?",
+    "answer_comment": "The answer: While it is possible for two embryos to start developing in a double-yolk egg, they rarely both hatch successfully. Because the egg shell only has enough space and nutrients for one chick, they usually run out of room or oxygen before they can fully grow. It’s a tight squeeze in there! Any other egg mysteries you're curious about?\n\nSources (open-access research):\n- Lee et al. (1990), Reproduction. doi:10.1530/jrf.0.0890085\n- Banaszewska et al. (2023), Animals. doi:10.3390/ani13182931",
+    "sources": [
+      {
+        "claim": "Double yolks occur due to a hiccup in a young hen's ovulation cycle where two yolks are released in rapid succession.",
+        "cite": "Lee et al. (1990), Reproduction. doi:10.1530/jrf.0.0890085",
+        "doi": "10.1530/jrf.0.0890085",
+        "title": "Euploid chicken embryos from eggs containing one, two or several yolks",
+        "why": "Double and multiple-yolk eggs are a manifestation of an irregular ovulatory pattern."
+      },
+      {
+        "claim": "Two chicks in a double-yolk egg almost never hatch successfully due to physical space and resource limitations.",
+        "cite": "Banaszewska et al. (2023), Animals. doi:10.3390/ani13182931",
+        "doi": "10.3390/ani13182931",
+        "title": "Development of Chicken Embryos in Double-Yolk Eggs: Fertility, Hatchability, Embryo Malposition and Time of Embryonic Mortality",
+        "why": "Following a 21-day incubation, chicks were obtained from DY1F and SY eggs. No chicks were obtained from DY2F eggs, although the embryos in these eggs developed up to the late stage of incubation."
+      }
+    ],
+    "fact_check": [
+      "Double yolks occur due to a hiccup in a young hen's ovulation cycle where two yolks are released in rapid succession.",
+      "Young hens (pullets) are much more likely to lay double-yolk eggs because their reproductive system is not yet perfectly synchronized.",
+      "Commercial farms can sort eggs by weight, making it more likely to find a full carton of double-yolk eggs as they are consistently heavier than standard eggs.",
+      "Two chicks in a double-yolk egg almost never hatch successfully due to physical space and resource limitations."
+    ],
+    "scene_times": [
+      [
+        0.0,
+        8.1
+      ],
+      [
+        8.1,
+        12.7
+      ],
+      [
+        12.7,
+        17.72
+      ],
+      [
+        17.72,
+        23.27
+      ],
+      [
+        23.27,
+        28.42
+      ],
+      [
+        28.42,
+        34.29
+      ],
+      [
+        34.29,
+        39.7
+      ]
+    ],
+    "duration": 39.7,
+    "scene_lines": [
+      "तुमने शायद कभी 1 egg के अंदर 2 yolks देखे होंगे, लेकिन पूरा का पूरा carton ही double yolk वाला होना, ये इत्तेफाक नहीं है।",
+      "आमतौर पर, एक hen के शरीर में ovulation cycle बहुत precise होता है।",
+      "ये process एक yolk को release करता है, जो आगे चलकर shell के साथ cover हो जाता है।",
+      "लेकिन, जब hen बहुत young होती है, उसका internal timing सिस्टम पूरी तरह set नहीं होता।",
+      "यहाँ असल में दो yolks एक साथ release हो जाते हैं, और एक ही shell में बंद हो जाते हैं।",
+      "तो जब तुम एक ही उम्र की young hens का एक batch चुनते हो, तो ये double yolk अंडे common हो जाते हैं।",
+      "Ever thought why, अगर egg double yolk वाला है, तो क्या उससे दो chicks निकल सकते हैं?"
+    ],
+    "fact_ok": true,
+    "weekly": false,
+    "recap_source": null,
+    "captions_srt": "1\n00:00:00,050 --> 00:00:02,052\nतुमने शायद कभी 1 egg के अंदर\n\n2\n00:00:02,052 --> 00:00:04,279\n2 yolks देखे होंगे, लेकिन पूरा का\n\n3\n00:00:04,279 --> 00:00:06,446\nपूरा carton ही double yolk वाला होना,\n\n4\n00:00:06,446 --> 00:00:09,222\nये इत्तेफाक नहीं है। आमतौर पर, एक\n\n5\n00:00:09,222 --> 00:00:11,510\nhen के शरीर में ovulation cycle बहुत\n\n6\n00:00:11,510 --> 00:00:13,812\nprecise होता है। ये process एक yolk\n\n7\n00:00:13,812 --> 00:00:15,759\nको release करता है, जो आगे चलकर\n\n8\n00:00:15,759 --> 00:00:17,682\nshell के साथ cover हो जाता है।\n\n9\n00:00:17,720 --> 00:00:19,869\nलेकिन, जब hen बहुत young होती है,\n\n10\n00:00:19,869 --> 00:00:22,412\nउसका internal timing सिस्टम पूरी तरह set\n\n11\n00:00:22,412 --> 00:00:24,690\nनहीं होता। यहाँ असल में दो yolks\n\n12\n00:00:24,690 --> 00:00:26,451\nएक साथ release हो जाते हैं, और\n\n13\n00:00:26,451 --> 00:00:27,881\nएक ही shell में बंद हो जाते\n\n14\n00:00:27,881 --> 00:00:29,776\nहैं। तो जब तुम एक ही उम्र\n\n15\n00:00:29,776 --> 00:00:31,450\nकी young hens का एक batch चुनते\n\n16\n00:00:31,450 --> 00:00:34,186\nहो, तो ये double yolk अंडे common हो जाते हैं।\n\n17\n00:00:34,290 --> 00:00:37,156\nEver thought why, अगर egg double yolk वाला है,\n\n18\n00:00:37,271 --> 00:00:39,099\nतो क्या उससे दो chicks निकल सकते हैं?\n",
+    "qa": {
+      "facts": [],
+      "technical": [],
+      "sync": [],
+      "spoken": [],
+      "footage": [],
+      "review": [],
+      "heard": [
+        "\"2 yolks\" heard as \"दो योख्स\"",
+        "\"carton\" heard as \"काँटन\"",
+        "\"yolk\" heard as \"योख\"",
+        "\"ovulation cycle\" heard as \"अव्दिलेशन साइकल\"",
+        "\"precise\" heard as \"प्रसाइस\"",
+        "\"process\" heard as \"प्रोसेस\"",
+        "\"yolk\" heard as \"योख\"",
+        "\"चलकर shell\" heard as \"चल कर शेल\""
+      ],
+      "scene_heard": [
+        "scene 1: 81%",
+        "scene 2: 67%",
+        "scene 3: 67%",
+        "scene 4: 93%",
+        "scene 5: 88%",
+        "scene 6: 80%",
+        "scene 7: 81%"
+      ],
+      "pass": true,
+      "duration": 39.1
+    },
+    "repairs": 0,
+    "audited": true
   }
 ]

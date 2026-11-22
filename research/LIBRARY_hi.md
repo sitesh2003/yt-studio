@@ -3,6 +3,27 @@
 Every video, the claims it makes, and the open-access research behind them. Built automatically by
 agents/library.py; a source is listed only if its abstract was checked to support the claim.
 
+## Mirror सच में Left-Right Flip क्यों नहीं करता? 🤔
+*2026-11-22 · Everyday Whys*
+
+- Flat mirrors reflect light along the axis perpendicular to the mirror plane (z-axis, front-to-back inversion).
+- Mirrors do not invert horizontally (left-right) or vertically (top-bottom).
+- Perception of left-right flipping is due to human mental rotation around the vertical axis to face back toward ourselves.
+- Text written on a transparent sheet facing a mirror remains un-reversed when viewed without physical 180-degree rotation.
+- Bone marrow and calcium are the primary dietary reasons apex predators and scavengers consume bones.
+
+## Why Some Eggs Have Two Yolks 🤯
+*2026-11-22 · Food Whys*
+
+- Double yolks occur due to a hiccup in a young hen's ovulation cycle where two yolks are released in rapid succession.
+- Young hens (pullets) are much more likely to lay double-yolk eggs because their reproductive system is not yet perfectly synchronized.
+- Commercial farms can sort eggs by weight, making it more likely to find a full carton of double-yolk eggs as they are consistently heavier than standard eggs.
+- Two chicks in a double-yolk egg almost never hatch successfully due to physical space and resource limitations.
+
+Sources:
+- Lee et al. (1990), Reproduction. doi:10.1530/jrf.0.0890085 — supports: Double yolks occur due to a hiccup in a young hen's ovulation cycle where two yolks are released in rapid succession.
+- Banaszewska et al. (2023), Animals. doi:10.3390/ani13182931 — supports: Two chicks in a double-yolk egg almost never hatch successfully due to physical space and resource limitations.
+
 ## Why Power Lines Lose Energy As Heat 🤯
 *2026-11-21 · How Things Work*
 
