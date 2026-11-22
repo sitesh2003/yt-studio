@@ -4085,7 +4085,7 @@
       "marine biology"
     ],
     "hook": "That fresh farm salmon you bought is actually completely gray under its skin.",
-    "status": "scheduled",
+    "status": "public",
     "narration": "That fresh farm salmon you bought is actually completely gray under its skin. Wild fish get their bright pink color from eating tiny ocean crustaceans full of red pigment. Farm pens sit away from natural wild food sources, so penned fish eat grain and fish meal instead. Without those specific marine pigments, their flesh grows in dull, drab shades of gray. So how do grocery store fillets get that vibrant pink look? Farmers mix precise natural carotenoids into the feed pellets to dye the meat. Ever thought why wild populations stay vibrant while farm fish need that exact color added?",
     "voice_engine": "chatterbox",
     "voices": "one narrator (af_heart)",
@@ -4179,7 +4179,8 @@
     "audited": true,
     "video_id": "U4jbYRwloHM",
     "publish_at": "2026-11-22T12:00:00-05:00",
-    "thumbnail_set": true
+    "thumbnail_set": true,
+    "answered": true
   },
   {
     "job": "20261118-2237-3-animals-that-never-stop-growing-throug",
