@@ -358,7 +358,7 @@
       "science"
     ],
     "hook": "डायनासोर के जीवाश्मों में वैज्ञानिकों को ऐसी सूक्ष्म आकृतियां क्यों मिली हैं जो खून की कोशिकाओं जैसी दिखती हैं?",
-    "status": "public",
+    "status": "hidden",
     "narration": "डायनासोर के जीवाश्मों में वैज्ञानिकों को ऐसी सूक्ष्म आकृतियां क्यों मिली हैं जो खून की कोशिकाओं जैसी दिखती हैं? आमतौर पर, मौत के बाद सारा सॉफ्ट टिश्यू मिट्टी में मिल जाता है और अवशेष नहीं बचते। लेकिन यहाँ हड्डी के अंदर के खाली स्थानों में खनिजों का जमाव हो गया, जिससे कोशिका जैसी आकृतियां बन गईं। तो क्या ये कोशिकाएं आज भी वैसी ही हैं जैसे करोड़ों साल पहले थीं? नहीं, ये असली कोशिकाएं नहीं हैं। वैज्ञानिक मानते हैं कि ये खनिजों के जमाव से बनी आकृतियां हैं, न कि जैविक सेल्स। ये संरचनाएं इतनी बारीक हैं कि ऐसा लगता है मानो इन्होंने कोशिका की दीवार का आकार ले लिया हो, पर ये केवल मिनरल कास्ट हैं। कभी सोचा है, क्या पत्थरों में कैद इन निशानों से हम कभी डायनासोर का DNA वापस ला पाएंगे?",
     "voice_engine": "edge-tts",
     "voices": "one narrator (hi-IN-SwaraNeural)",
@@ -450,7 +450,8 @@
     "video_id": "2PhLJl6N1R8",
     "publish_at": "2026-11-16T09:30:00-05:00",
     "answered": true,
-    "recapped": true
+    "recapped": true,
+    "hidden_why": "22 Nov 2026 owner + council: below the bar (under 150 views and under 40% viewed, or wrong language) or 2D after the 2D stop; private, never auto-published"
   },
   {
     "job": "20261116-0818-the-hidden-engineering-of-why-airport-ru",
@@ -463,7 +464,7 @@
       "physics"
     ],
     "hook": "250 km/h की speed से गीली runway पर plane hydroplaning से कैसे बचता है?",
-    "status": "public",
+    "status": "hidden",
     "narration": "250 km/h की speed से गीली runway पर plane hydroplaning से कैसे बचता है? तेज rain में जब plane land करता है, तो tires और ground के बीच पानी जमा हो जाता है। इसे hydroplaning कहते हैं, यानी tire पानी पर तैरने लगता है और friction खत्म हो जाता है। तो फिर 200 ton का plane safely कैसे रुकता है? Secret hidden है runway पर बनी 6 mm गहरी grooves में। Plane का heavy weight पानी को इन grooves में दबा देता है, जिससे पानी तुरंत किनारे बह जाता है। Rubber tire directly road surface के contact में आ जाता है और hydroplaning का risk बहुत कम ہو जाता है। कभी सोचा है कार के tires पर भी धागे जैसी tread lines क्यों बनी होती हैं?",
     "voice_engine": "edge-tts",
     "voices": "one narrator (hi-IN-SwaraNeural)",
@@ -561,7 +562,8 @@
     "video_id": "WXx_iDFI9BA",
     "publish_at": "2026-11-17T09:30:00-05:00",
     "recapped": true,
-    "answered": true
+    "answered": true,
+    "hidden_why": "22 Nov 2026 owner + council: below the bar (under 150 views and under 40% viewed, or wrong language) or 2D after the 2D stop; private, never auto-published"
   },
   {
     "job": "20261116-0854-how-physicists-use-laser-light-to-unlock",
@@ -794,7 +796,7 @@
       "leftover food"
     ],
     "hook": "राजमा रात भर फ्रिज में रखने के बाद अक्सर अलग स्वाद क्यों देता है?",
-    "status": "public",
+    "status": "hidden",
     "narration": "राजमा रात भर फ्रिज में रखने के बाद अक्सर अलग स्वाद क्यों देता है? जब आप खाना बनाते हैं, तो मसाले और पानी पूरी तरह आपस में नहीं मिलते। लेकिन जब बर्तन ठंडा होता है, तो एक कमाल की केमिस्ट्री शुरू होती है। सारे फ्लेवर मॉलिक्यूल्स धीरे-धीरे राजमा के दाने के अंदर तक पहुंच जाते हैं। तो क्या सिर्फ समय बीतने से ऐसा होता है? नहीं, असली खेल मसालों के अंदर तक रचने और स्टार्च के ठंडा होकर सेट होने का है। ठंडा होने पर ग्रेवी गाढ़ी होती है और मसालों का स्वाद आपस में अच्छी तरह मिल जाता है। कभी सोचा है कि फ्रिज में रखा कुछ खाना दोबारा गर्म करने पर कई बार ज्यादा स्वादिष्ट क्यों लग सकता है?",
     "voice_engine": "edge-tts",
     "voices": "one narrator (hi-IN-SwaraNeural)",
@@ -881,7 +883,8 @@
     "video_id": "gdPezFuHclY",
     "publish_at": "2026-11-17T02:30:00-05:00",
     "recapped": true,
-    "answered": true
+    "answered": true,
+    "hidden_why": "22 Nov 2026 owner + council: below the bar (under 150 views and under 40% viewed, or wrong language) or 2D after the 2D stop; private, never auto-published"
   },
   {
     "job": "20261116-1937-why-do-car-wing-mirrors-say-objects-in-m",
@@ -6600,7 +6603,7 @@
       "#engineering"
     ],
     "hook": "Tumhare ghar ke smoke detector ke andar ek radioactive element چھپا hota hai 😱",
-    "status": "public",
+    "status": "hidden",
     "narration": "Tumhare ghar ke smoke detector ke andar ek radioactive element چھپا hota hai 😱 Yeh sunne mein thoda scary lagta hai, par iske peeche ek simple physics reason hai. Iske andar americium-241 naam ka ek chhota sa radioactive source hota hai. Yeh material continuously air particles ko ionize karke ek chhota sa electric current banata rehta hai. Jab smoke particles andar aate hain, toh yeh current disturb ho jata hai aur alarm baj padta hai. But wait, yeh radiation tumhein nuksan nahi pahuncha sakti kyunki yeh alpha rays chhodta hai jo paper ya plastic se hi block ho jaati hain. Radioactive materials ka istemal purane jamane mein aur cheezon mein bhi hota tha, jaise ki kuch purane camera lenses mein ya glow-in-the-dark watches mein, lekin har jagah radioactive substance alag hota tha. Kabhi socha hai ki smoke detector mein radioactive material hone ke baad bhi yeh completely safe kaise maana jata hai?",
     "voice_engine": "edge-tts",
     "voices": "one narrator (hi-IN-SwaraNeural)",
@@ -6723,7 +6726,8 @@
     "video_id": "IKxuhUWfoXs",
     "publish_at": "2026-11-22T09:30:00-05:00",
     "thumbnail_set": true,
-    "answered": true
+    "answered": true,
+    "hidden_why": "22 Nov 2026 owner + council: below the bar (under 150 views and under 40% viewed, or wrong language) or 2D after the 2D stop; private, never auto-published"
   },
   {
     "job": "hero_crumple_hi",
@@ -8444,7 +8448,7 @@
       "science facts"
     ],
     "hook": "Mirror तुम्हारी left और right side को कभी flip ही नहीं करता।",
-    "status": "scheduled",
+    "status": "hidden",
     "narration": "Mirror तुम्हारी left और right side को कभी flip ही नहीं करता। जब तुम right hand उठाते हो, तो reflection का हाथ भी उसी side रहता है। फिर उल्टा क्यों दिखता है? इसे समझने के लिए transparent sheet पर text लिखो। बिना sheet घुमाए देखोगे, तो mirror में शब्द बिल्कुल सीधे दिखेंगे। अगर mirror left-right या top-bottom flip नहीं करता, तो फिर कौन-सी direction बदलती है? जब तुम mirror की तरफ बढ़ते हो, reflection तुम्हारी तरफ बढ़ता है—ये सिर्फ front-back बदलना है! बाकी का उल्टा दिखना हमारा brain खुद 180 degree mental flip करके सोचता है। कल का जवाब: शिकारी जानवर bone marrow और calcium के लिए हड्डियां खाते थे। सोचो, ambulance पर शब्द उल्टा क्यों लिखते हैं, जब mirror left-right flip ही नहीं करता?",
     "voice_engine": "edge-tts",
     "voices": "one narrator (hi-IN-SwaraNeural)",
@@ -8551,7 +8555,8 @@
     "audited": true,
     "video_id": "MUomUH96kYM",
     "publish_at": "2026-11-23T09:30:00-05:00",
-    "thumbnail_set": true
+    "thumbnail_set": true,
+    "hidden_why": "22 Nov 2026 owner + council: below the bar (under 150 views and under 40% viewed, or wrong language) or 2D after the 2D stop; private, never auto-published"
   },
   {
     "job": "20261122-0917-3-hidden-reasons-why-train-tracks-are-pa",

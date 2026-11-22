@@ -1087,7 +1087,7 @@
       "why it works"
     ],
     "hook": "Ever wondered how your eyes actually see a red apple?",
-    "status": "public",
+    "status": "hidden",
     "narration": "Ever wondered how your eyes actually see a red apple? Light bounces off. When light hits the apple, it reflects mostly long light wavelengths toward your retina. There, three types of cone cells absorb overlapping ranges of light wavelengths. The apple strongly activates long-wavelength cones, while medium and short cones activate much less. That's because your brain decodes color by comparing the relative ratio of signals from all three cones. It compares them. Phone screens use this exact trick, tweaking three pixel brightnesses to match those cone ratios. Try this: if your long-wavelength cones didn't work, which color would look much darker?",
     "voice_engine": "kokoro",
     "voices": "one narrator (af_bella)",
@@ -1166,7 +1166,8 @@
     "publish_at": "2026-11-18T07:30:00-05:00",
     "thumbnail_set": true,
     "recapped": true,
-    "answered": true
+    "answered": true,
+    "hidden_why": "22 Nov 2026 owner + council: below the bar (under 150 views and under 40% viewed, or wrong language) or 2D after the 2D stop; private, never auto-published"
   },
   {
     "job": "20261116-0402-how-does-a-capacitor-store-charge",
@@ -1382,7 +1383,7 @@
       "lenses"
     ],
     "hook": "Have you ever noticed that a magnifying glass can make things look huge and upright, but if you pull it away, the world suddenly flips upside down? It’s simple physics.",
-    "status": "public",
+    "status": "hidden",
     "narration": "Have you ever noticed that a magnifying glass can make things look huge and upright, but if you pull it away, the world suddenly flips upside down? It’s simple physics. Let’s track light from the top tip of this paper arrow. The lens bends these light rays inward. The rays are redirected by the lens so they cross over each other before reaching your eye. Because the light from the top of the object is bent to the bottom of the image path, the entire view is flipped. This is the same principle that allows a camera to focus an image onto a sensor. Try this: why does the lens stop flipping the image if you hold it really close to the object?",
     "voice_engine": "kokoro",
     "voices": "one narrator (af_bella)",
@@ -1466,7 +1467,8 @@
     "publish_at": "2026-11-18T16:30:00-05:00",
     "thumbnail_set": true,
     "answered": true,
-    "recapped": true
+    "recapped": true,
+    "hidden_why": "22 Nov 2026 owner + council: below the bar (under 150 views and under 40% viewed, or wrong language) or 2D after the 2D stop; private, never auto-published"
   },
   {
     "job": "20261116-1409-why-does-a-siren-change-pitch-as-it-pass",
@@ -1483,7 +1485,7 @@
       "why it works"
     ],
     "hook": "You've heard an ambulance siren drop in pitch as it speeds past. But why does that happen?",
-    "status": "public",
+    "status": "hidden",
     "narration": "You've heard an ambulance siren drop in pitch as it speeds past. But why does that happen? Imagine a parked ambulance sending out sound waves in equal circles. Now it drives toward you, chasing its own waves and squishing them closer together. More waves reach your ear every second, making the pitch sound higher. Once it passes, it travels away from those waves, stretching them apart. That's because pitch depends on wave frequency, so bunched waves sound higher and stretched waves sound lower. Engineers use this exact wave shift in radar guns to measure car speeds. Try this: does a moving siren change the speed of sound through the air?",
     "voice_engine": "kokoro",
     "voices": "one narrator (af_bella)",
@@ -1584,7 +1586,8 @@
     "publish_at": "2026-11-19T07:30:00-05:00",
     "thumbnail_set": true,
     "recapped": true,
-    "answered": true
+    "answered": true,
+    "hidden_why": "22 Nov 2026 owner + council: below the bar (under 150 views and under 40% viewed, or wrong language) or 2D after the 2D stop; private, never auto-published"
   },
   {
     "job": "20261116-1432-why-don-t-planets-fall-into-the-sun-cele",
@@ -2743,7 +2746,7 @@
       "education"
     ],
     "hook": "Dividing by zero is impossible because no number can multiply by zero to give you a normal result.",
-    "status": "scheduled",
+    "status": "hidden",
     "narration": "Dividing by zero is impossible because no number can multiply by zero to give you a normal result. Think of it as sharing 12 cookies with your friends. Divide 12 by 3, you get 4 cookies for each friend. Smaller divisors mean more cookies. As your group size shrinks toward zero, the number of cookies blows up toward infinity. Division asks how many zeros fit into 12. It is impossible. Multiplying any number by zero always gives zero, so you can't work backward to find a single answer. So it's just not a defined operation. Try this: if you divide zero by zero, why is that even more confusing?",
     "voice_engine": "chatterbox",
     "voices": "one narrator (af_heart)",
@@ -2853,7 +2856,8 @@
     "audited": true,
     "video_id": "jckcMFbyT9M",
     "publish_at": "2026-11-23T07:30:00-05:00",
-    "thumbnail_set": true
+    "thumbnail_set": true,
+    "hidden_why": "22 Nov 2026 owner + council: below the bar (under 150 views and under 40% viewed, or wrong language) or 2D after the 2D stop; private, never auto-published"
   },
   {
     "job": "20261119-0751-why-is-mars-red",

@@ -4085,7 +4085,7 @@
       "marine biology"
     ],
     "hook": "That fresh farm salmon you bought is actually completely gray under its skin.",
-    "status": "public",
+    "status": "hidden",
     "narration": "That fresh farm salmon you bought is actually completely gray under its skin. Wild fish get their bright pink color from eating tiny ocean crustaceans full of red pigment. Farm pens sit away from natural wild food sources, so penned fish eat grain and fish meal instead. Without those specific marine pigments, their flesh grows in dull, drab shades of gray. So how do grocery store fillets get that vibrant pink look? Farmers mix precise natural carotenoids into the feed pellets to dye the meat. Ever thought why wild populations stay vibrant while farm fish need that exact color added?",
     "voice_engine": "chatterbox",
     "voices": "one narrator (af_heart)",
@@ -4180,7 +4180,8 @@
     "video_id": "U4jbYRwloHM",
     "publish_at": "2026-11-22T12:00:00-05:00",
     "thumbnail_set": true,
-    "answered": true
+    "answered": true,
+    "hidden_why": "22 Nov 2026 owner + council: below the bar (under 150 views and under 40% viewed, or wrong language) or 2D after the 2D stop; private, never auto-published"
   },
   {
     "job": "20261118-2237-3-animals-that-never-stop-growing-throug",
@@ -4565,7 +4566,7 @@
       "physics"
     ],
     "hook": "What if that steel box on a guardrail end is actually there to save your life?",
-    "status": "scheduled",
+    "status": "hidden",
     "narration": "What if that steel box on a guardrail end is actually there to save your life? If it were welded or bolted tight, it would act like a solid wall. Directly hitting the end of a rigid rail at highway speeds would be catastrophic. Instead, the guardrail is designed to move backward through the box during an impact. It moves. But the box is doing more than just sliding. It often peels the steel rail like a banana to soak up vehicle energy. The rail flows through the box. Momentum becomes heat and bent steel. Ever thought how that steel box on the end of the guardrail helps turn a high-speed impact into a safer outcome?",
     "voice_engine": "chatterbox",
     "voices": "one narrator (af_heart)",
@@ -4654,7 +4655,8 @@
     "audited": true,
     "video_id": "1E7ANCuuH6Y",
     "publish_at": "2026-11-23T12:00:00-05:00",
-    "thumbnail_set": true
+    "thumbnail_set": true,
+    "hidden_why": "22 Nov 2026 owner + council: below the bar (under 150 views and under 40% viewed, or wrong language) or 2D after the 2D stop; private, never auto-published"
   },
   {
     "job": "20261120-0813-why-heavy-machinery-ball-bearings-never-",
