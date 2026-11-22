@@ -1785,7 +1785,7 @@
       "marine science"
     ],
     "hook": "Ever thought why deep ocean snow helps cycle carbon?",
-    "status": "public",
+    "status": "deleted",
     "narration": "Ever thought why deep ocean snow helps cycle carbon? Ye ocean snow aslında dead plankton aur organic waste ke tiny flakes hain jo surface se sink karte hain. Jaise hi ye particles deep ocean me sink karte hain, ye apne andar organic carbon ko carry karte hain. So how are scientists measuring this carbon movement? Wo deep sea traps aur underwater sensors use karke actual sinking rate calculate karte hain. Aur data batata hai ki ye process surface ocean se carbon ko deep waters tak export karta hai. Ever thought why this natural pump matters so much for our climate?",
     "voice_engine": "edge-tts",
     "voices": "one narrator (hi-IN-SwaraNeural)",
@@ -1885,7 +1885,8 @@
     "publish_at": "2026-11-18T09:30:00-05:00",
     "thumbnail_set": true,
     "recapped": true,
-    "answered": true
+    "answered": true,
+    "deleted_why": "English script on the Hindi channel (owner chose delete, 22 Nov 2026)"
   },
   {
     "job": "20261117-1114-why-120-ton-freight-locomotives-carry-hi",
@@ -2137,7 +2138,7 @@
       "#space"
     ],
     "hook": "Space missions mein astronauts ke liye sirf ek thin plastic sheet jaan bacha sakti hai 🤯",
-    "status": "public",
+    "status": "deleted",
     "narration": "Space missions mein astronauts ke liye sirf ek thin plastic sheet jaan bacha sakti hai 🤯 Yeh ultra-thin mylar blanket sirf kuch grams ki hoti hai. Lekin yeh aapki body ki radiant heat ko seedha wapas reflect kar deti hai. Toh kya yahi technology Moon par hamare future bases ko insulate kar sakti hai? Actually, Moon par extreme temperatures minus 170 se plus 120 degrees Celsius ya usse bhi zyada badalte hain. Yahan multiple reflective layers vacuum ke sath milkar heat transfer ko rok deti hain. Isi principle ko MLI yaani multi-layer insulation kehte hain jo satellites mein bhi use hoti hai. Ever thought, agar space ke vacuum mein hawa nahi hai toh heat kaise escape hoti hai?",
     "voice_engine": "edge-tts",
     "voices": "one narrator (hi-IN-SwaraNeural)",
@@ -2246,7 +2247,8 @@
     "publish_at": "2026-11-18T02:30:00-05:00",
     "thumbnail_set": true,
     "recapped": true,
-    "answered": true
+    "answered": true,
+    "deleted_why": "English script on the Hindi channel (owner chose delete, 22 Nov 2026)"
   },
   {
     "job": "20261117-1931-3-hidden-reasons-why-train-tracks-are-pa",
@@ -5367,7 +5369,7 @@
       "glacier"
     ],
     "hook": "Usual ice cubes in your freezer are white, but a massive block of glacier ice can appear deep blue.",
-    "status": "public",
+    "status": "deleted",
     "narration": "Usual ice cubes in your freezer are white, but a massive block of glacier ice can appear deep blue. Jab tum chota ice cube banate ho, usme hawa ke bubbles trap ho jaate hain. Ye bubbles light ko scatter karte hain, isliye wo white dikhta hai. Lekin glacier ke saath aisa nahi hai. Saalon tak padne wali barf ki pressure se air bubbles nikal jaate hain, making the ice very clear. Iska matlab ye ice ki density badh jaati hai, lekin blue rang ke liye mukhya kaaran ice ka structure aur uski motai hai. But wait, light ka blue dikhna sirf ek illusion nahi hai. Jaise-jaise light ice mein deep travel karti hai, ice ke molecules red aur yellow colors ko absorb kar lete hain. 3... 2... 1... guess karo, kya ye blue light bas ice ke aar-paar ja rahi hai? Actually, it's a bit more complex than that. Ye light ice ke andar scatter hokar wapis tumhari aankhon tak aati hai, jisme se red wavelengths pehle hi absorb ho chuki hoti hain. Isliye sirf blue light bachti hai. Ever thought why it only happens in thick blocks? Kyunki jitni zyada ice hogi, utna zyada red light absorb hoga aur blue rang utna gehra dikhega.",
     "voice_engine": "edge-tts",
     "voices": "one narrator (hi-IN-SwaraNeural)",
@@ -5469,7 +5471,8 @@
     "publish_at": "2026-11-21T02:30:00-05:00",
     "thumbnail_set": true,
     "recapped": true,
-    "answered": true
+    "answered": true,
+    "deleted_why": "English script on the Hindi channel (owner chose delete, 22 Nov 2026)"
   },
   {
     "job": "20261120-1826-new-discovery-reveals-what-may-be-holdin",
