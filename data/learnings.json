@@ -1,14 +1,14 @@
 {
-  "summary": "1. High-performing hooks directly target the viewer's body or daily sensory experiences using second-person pronouns in the first 3 words.\n2. Winning titles use simple, curiosity-gap phrasing ('Why [Universal Everyday Phenomenon] [Action]') without relying on clickbait emojis.\n3. Universal human/everyday biology topics significantly beat niche engineering or outdoor scenario topics in swipe resistance (stayed_pct >47% vs <30%).\n4. Low-stayed hooks waste the critical first second on hypothetical story setups ('Your car swerves...') or passive preamble ('Fossilized bones can...').\n5. Shorter, punchy scripts that deliver immediate present-tense facts sustain higher swipe-away retention than narrative setups exceeding 30 seconds.",
+  "summary": "1. Start hooks with immediate, second-person direct actions or states about the viewer's body or daily life (e.g., 'Your eyes are leaking right now') rather than passive setup statements. 2. Keep titles concise and intrigue-focused without relies on heavy emoji filler or overly broad questions. 3. Eliminate scenario-building setups like 'Your car swerves off...' which cause immediate swiping (>70% drop-off). 4. Focus topics on universal human/everyday phenomena over niche infrastructure or passive historical trivia. 5. State the provocative core conflict in the very first 4 words of the spoken audio.",
   "winning_hooks": [
-    "Start immediately with present-tense direct address about the viewer's body ('Your eyes are... right now').",
-    "State a rapid, counter-intuitive assertion about an everyday action ('You are not sad when...').",
-    "Keep opening hook sentences under 10 words to deliver the core curiosity trigger instantly."
+    "Direct personal confrontation: Using 'Your' + present bodily/everyday state ('Your eyes are leaking right now')",
+    "Subverting obvious assumptions in under 8 words ('You are not sad when you chop an onion')",
+    "Short, punchy title framing that clearly states a relatable mystery ('Why your eyes are secretly leaking')"
   ],
   "avoid": [
-    "Avoid hypothetical roleplay scenarios ('Your car swerves off...') that take too long to establish context.",
-    "Avoid niche topics that apply only to specific viewers ('Your frozen pond...').",
-    "Avoid passive background statements that delay the main surprise ('Fossilized bones can last millions of years...')."
+    "Hypothetical scenario setups that delay the core topic ('Your car swerves off the highway right toward...')",
+    "Generic background preamble ('Fossilized bones can last millions of years, but sometimes...')",
+    "Abstract or passive environmental topics that viewers do not feel personally connected to in the first 2 seconds (e.g., backyard pond freezing dynamics)"
   ],
-  "next_experiment": "A/B test a standard body-focused direct hook ('Your skin is shedding thousands of cells right now') against a hypothetical scenario hook ('If you collected all the skin you shed in a year...') on the exact same topic and duration (<25s) to measure stayed_pct impact."
+  "next_experiment": "Test scenario-building vs. direct personal impact on the same topic: A) 'Your car swerves off the highway toward a steel wall...' vs B) 'Your car's guardrail is engineered to crumple like paper to save your life.'"
 }
