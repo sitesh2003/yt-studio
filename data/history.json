@@ -6399,5 +6399,30 @@
     "video_id": "fo0JA3Ej1X4",
     "publish_at": "2026-11-29T19:00:00-05:00",
     "thumbnail_set": true
+  },
+  {
+    "job": "hero_apato_weight",
+    "topic": "How Many Cars Does One Apatosaurus Weigh? 🦕",
+    "title": "How Many Cars Does One Apatosaurus Weigh? 🦕",
+    "description": "Scientists have weighed Apatosaurus for over sixty years and still disagree: from about 40,000 to 75,000 pounds (18 to 34 metric tonnes), or 12 to 23 family cars of about 3,300 pounds each. Here's why. #shorts #dinosaurs #science\n\nSources: Sander et al. 2011, Biological Reviews 86: 117-155 (Table 1, compiled Apatosaurus louisae mass estimates: Foster 2007, 34,035 kg from long-bone circumference; Packard et al. 2009, 18,000 kg; Colbert 1962, 32,420 kg); Wedel 2003, Paleobiology 29: 243-255 (air spaces in sauropod vertebrae).\n3D models: Quaternius, Animated LowPoly Dinosaurs (CC0); Kenney, Car Kit (CC0). Animated in Blender.\n\nHow this was made: the script is researched and fact-checked against published research (sources above), narrated by an AI voice, and animated and edited with open-source software.",
+    "tags": [
+      "Apatosaurus",
+      "Brontosaurus",
+      "dinosaur weight",
+      "dinosaurs",
+      "paleontology",
+      "science",
+      "3D animation"
+    ],
+    "hook": "How many family cars would it take to balance one Apatosaurus?",
+    "status": "scheduled",
+    "narration": "How many family cars would it take to balance one Apatosaurus? Scientists have argued about its weight for over sixty years, and they still don't agree. Measuring its leg bones gives about seventy-five thousand pounds. That's twenty-three family cars. Another study says as little as forty thousand pounds. Just twelve cars. Bones show the frame, not the flesh. And its neck and back bones were full of air spaces, like a bird's. Even the lightest estimate is twelve cars. Which number would you trust?",
+    "voice_engine": "chatterbox",
+    "countdown": false,
+    "hero_3d": true,
+    "question": "Even the lightest estimate is twelve cars. Which number would you trust?",
+    "video_id": "tq-EV3XRopM",
+    "publish_at": "2026-11-30T19:00:00-05:00",
+    "thumbnail_set": true
   }
 ]
