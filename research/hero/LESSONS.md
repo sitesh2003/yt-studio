@@ -72,3 +72,20 @@ Every lesson here came from a real mistake. The fix is in the code; the check is
 - **Units are part of accuracy:** US viewers hear "tonnes" as "tons" (short tons, 0.907 t). English = pounds/mph,
   Hindi = टन/km/h, with separate specs so the on-screen numbers match what is said.
 - Held the first Hindi weight render (subject too small, frame 1 no payoff) and re-rendered; never upload "good enough".
+
+## 23 Nov 2026: the first long films
+- **A book, not stitched Shorts** (owner): one story spine, chapter cards, varied chapter lengths, a question carried
+  through, the climax longest. Council rounds 7-8 shaped both films; ChatGPT's suggested ending ("its descendants")
+  was itself wrong and was rejected; Gemini caught a real maths slip (30 vs 33.2 km/h). Ask, but check the answers.
+- **Long-film timing traps:** (1) the voice timeline summed MP3-header durations: a few hundredths per clip drifted a
+  7-minute film by 4-6 s; now each clip's decoded samples are counted (voice._exact_dur). (2) scenes.json from
+  counting words drifts when the voice service splits words differently (numbers, Latin); timings.py's first-three-
+  words match is the truth, so run it BEFORE the gate. (3) one whisper pass over a long file drops 30 s chunks; the
+  gate now hears each scene on its own slice.
+- **One render, two languages:** render each shot ~15% longer than the longer language needs; compose takes the first
+  frames each language needs (frames dir is an argument). Saves ~8 h per film.
+- **Landscape without redesign:** graphics drawn on the tall canvas, scaled into a left side panel; chapter cards and
+  source lines drawn by libass in the channel font (Hindi shapes correctly); logo top right; output 2560x1440.
+- **The picture must show the claim:** a "43 km/h with reaction time" line needs a scene that models reaction time
+  (brake_compare react_s), not the same-instant scene with a different label.
+- Spot-render one frame of every NEW shot before an 8-hour render (Sue's skull was far away and not yet in x-ray).
