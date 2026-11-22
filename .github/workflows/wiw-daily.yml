@@ -4,15 +4,17 @@ name: Why It Works - daily
 # memory (data/wiw/), bank (the "video-bank-wiw" release) and sign-in (TOKEN_JSON_WIW secret).
 # Until that secret exists it still makes, checks and banks videos; publishing starts once it is set.
 # Runs at hours the main channel does not use, so the two never compete for the free AI models.
+# PAUSED 22 Nov 2026 (owner + council): no new Why It Works production for 60 days, review 21 Jan 2027.
+# To resume, put the schedule lines back. Manual runs still work.
 on:
-  schedule:
-    - cron: "23 0 * * *"       # 5:53 AM IST
-    - cron: "53 5 * * *"       # 11:23 AM IST
-    - cron: "23 10 * * *"      # 3:53 PM IST
+  # schedule:
+  # - cron: "23 0 * * *"       # 5:53 AM IST
+  # - cron: "53 5 * * *"       # 11:23 AM IST
+  # - cron: "23 10 * * *"      # 3:53 PM IST
   workflow_dispatch: {}
-  push:   # a start button with no browser: change kick/wiw.txt (GitHub sometimes skips a schedule)
-    branches: [main]
-    paths: ["kick/wiw.txt"]
+  # push:   # a start button with no browser: change kick/wiw.txt (GitHub sometimes skips a schedule)
+  #   branches: [main]
+  #   paths: ["kick/wiw.txt"]
 
 permissions:
   contents: write

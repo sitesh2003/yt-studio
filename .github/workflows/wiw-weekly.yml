@@ -1,8 +1,10 @@
 name: Why It Works - weekly long video
 
+# PAUSED 22 Nov 2026 (owner + council): no new Why It Works production for 60 days, review 21 Jan 2027.
+# To resume, put the schedule lines back. Manual runs still work.
 on:
-  schedule:
-    - cron: "37 3 * * 0"       # Sunday 03:37 UTC = 9:07 AM IST; goes public Sunday 10 AM US Eastern
+  # schedule:
+  # - cron: "37 3 * * 0"       # Sunday 03:37 UTC = 9:07 AM IST; goes public Sunday 10 AM US Eastern
   workflow_dispatch: {}
 
 permissions:
