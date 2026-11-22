@@ -1,16 +1,14 @@
 {
-  "summary": "1. Prioritize personal human biology and active bodily phenomena over passive external physics or general engineering objects. 2. Hook the viewer in sentence one using second-person active confrontation ('Your eyes are leaking right now') rather than hypothetical scenarios or rhetorical setup questions. 3. Frame titles and hooks around a clear myth-bust or paradoxical subversion rather than explaining a standard factual process. 4. Eliminate all narrative warm-up; state the immediate visceral contradiction within the first 7 words. 5. Keep script duration tight, aiming for 18-25 seconds of punchy explanation to maintain retention.",
+  "summary": "1. High-performing hooks directly target the viewer's body or daily sensory experiences using second-person pronouns in the first 3 words.\n2. Winning titles use simple, curiosity-gap phrasing ('Why [Universal Everyday Phenomenon] [Action]') without relying on clickbait emojis.\n3. Universal human/everyday biology topics significantly beat niche engineering or outdoor scenario topics in swipe resistance (stayed_pct >47% vs <30%).\n4. Low-stayed hooks waste the critical first second on hypothetical story setups ('Your car swerves...') or passive preamble ('Fossilized bones can...').\n5. Shorter, punchy scripts that deliver immediate present-tense facts sustain higher swipe-away retention than narrative setups exceeding 30 seconds.",
   "winning_hooks": [
-    "Your fingers prune in water, but it is not because you are absorbing it like a sponge.",
-    "Your eyes are leaking right now, and your brain is hiding it.",
-    "Fresh pineapple is literally eating you back.",
-    "This shark is older than the United States."
+    "Start immediately with present-tense direct address about the viewer's body ('Your eyes are... right now').",
+    "State a rapid, counter-intuitive assertion about an everyday action ('You are not sad when...').",
+    "Keep opening hook sentences under 10 words to deliver the core curiosity trigger instantly."
   ],
   "avoid": [
-    "Opening hooks with passive rhetorical questions like 'Ever noticed those tiny black dots...?' (stayed_pct: 36.9%).",
-    "Hypothetical storytelling setups like 'Your car swerves off the highway...' (stayed_pct: 30.4%).",
-    "Topics focused on ambient outdoor/material physics rather than human-centric biological mechanisms (e.g., pond ice at 23.7%, guardrails at 30.4%).",
-    "Reciting well-known trivia as the main hook without a surprising counter-twist (e.g., 'Honey never spoils' at 38.6%)."
+    "Avoid hypothetical roleplay scenarios ('Your car swerves off...') that take too long to establish context.",
+    "Avoid niche topics that apply only to specific viewers ('Your frozen pond...').",
+    "Avoid passive background statements that delay the main surprise ('Fossilized bones can last millions of years...')."
   ],
-  "next_experiment": "A/B test a biological myth topic strictly under 25 seconds using the formula: '[Body reaction] isn't caused by [popular belief], it's actually [surprising biological mechanism]' (e.g., 'Your stomach growling isn't caused by hunger...') to target a stayed_pct above 60%."
+  "next_experiment": "A/B test a standard body-focused direct hook ('Your skin is shedding thousands of cells right now') against a hypothetical scenario hook ('If you collected all the skin you shed in a year...') on the exact same topic and duration (<25s) to measure stayed_pct impact."
 }

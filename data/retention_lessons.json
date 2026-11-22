@@ -1,19 +1,21 @@
 {
   "lessons": [
-    "Hook lines that directly state a relatable bodily reaction or surprising natural phenomenon (such as 'Fresh pineapple is literally eating you back') achieve strong start retention above 1.0.",
-    "Generic introductory filler phrases like 'They are not just there to look cool' or 'They look like similar fruits' trigger immediate drop-offs, often losing over 30% of viewers.",
-    "Pause prompts and explicit countdowns ('three, two, one') do not inherently retain viewers better; videos relying on them still experience steep early losses unless the premise is deeply engaging.",
-    "Complex historical or metabolic explanations introduced mid-video (e.g., Greenland shark metabolism or deep cellular structures) successfully hold late-stage audiences when the initial hook is exceptionally strong.",
-    "Repetitive phrasing or stating the exact same mechanism twice in succession (seen in the guardrail video) results in heavy viewer abandonment at the drop points."
+    "Never repeat the video title word-for-word as the opening hook line (e.g., repeating the title lost 34.0% in Garlic and 31.9% in Potatoes right at the start).",
+    "Cut generic filler sentences immediately following the hook (e.g., 'They are not just there to look cool' lost 31.5% in Windshield Dots; 'They look like similar fruits' lost 30.0% in Fruits Float).",
+    "Avoid interactive delays like 'Pause and guess' or countdowns (e.g., 'Pause and guess...' caused drops of 15.2% in Foil and 8.3% in Maple Syrup).",
+    "Lead with extreme claims or stark visual contrasts to maximize retention (e.g., 'older than the United States' achieved 1.85 10% retention; comparing tuna red meat to cod white meat achieved 0.86 vs similar at the end).",
+    "Delay complex jargon and technical explanations until after the hook is payoff-oriented (e.g., introducing sap percentage math early dropped 33.3% in Maple Syrup; abstract skin volume loss dropped 10.3% in Pruning Fingers)."
   ],
   "worst_moment_types": [
-    "Vague descriptive statements or filler sentences that fail to advance the core explanation",
-    "Redundant restatements of a mechanism already explained in the hook",
-    "Abrupt transitions into dense technical or biological details without a clear bridge"
+    "Verbatim repetition of the title in the opening line",
+    "Generic filler transitions that add no new information",
+    "Explicit user interruptions (e.g., 'Pause and guess' prompts and countdowns)",
+    "Dense technical setup or dry background math presented too early"
   ],
   "best_hook_types": [
-    "Direct, high-stakes declarations that challenge common assumptions (e.g., animal or bodily defenses targeting the human body)",
-    "Immediate framing of a counter-intuitive physical anomaly (such as extreme longevity or temperature resistance)"
+    "Extreme historical or numerical scale comparisons (e.g., 'older than the United States')",
+    "Direct visual or categorical paradoxes (e.g., tuna vs. cod meat color)",
+    "Counter-intuitive everyday physical sensory facts (e.g., touching 400-degree hot foil)"
   ],
   "studied": "2026-11-22",
   "videos": 18
