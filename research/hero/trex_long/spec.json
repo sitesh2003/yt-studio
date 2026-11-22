@@ -365,12 +365,12 @@
       "kind": "xray_jaw",
       "reveal": {
         "bones": [
-          0.3,
-          5.0
+          0.2,
+          2.5
         ],
         "muscles": [
-          6.5,
-          7.0
+          30.0,
+          31.0
         ]
       },
       "overlay": "label",
@@ -379,34 +379,41 @@
         "~1.4 m long"
       ],
       "anim": "idle",
-      "muscle_groups": [],
+      "muscle_groups": [
+        "JAW"
+      ],
       "seconds": 8,
       "source": "Field Museum, Chicago",
       "cam": [
         [
-          9.5,
-          -15.5,
-          6.6
+          4.8,
+          -10.5,
+          6.4
         ],
         [
-          8.0,
-          -13.5,
-          6.3
+          4.0,
+          -9.4,
+          6.2
         ]
       ],
       "tgt": [
         [
           0,
-          -4.6,
-          5.4
+          -4.8,
+          5.0
         ],
         [
           0,
-          -4.6,
-          5.4
+          -4.8,
+          5.0
         ]
       ],
-      "lens": 32
+      "lens": 35,
+      "xr_start": true,
+      "bone_groups": [
+        "SKULL",
+        "NECK"
+      ]
     },
     {
       "kind": "size_tower",

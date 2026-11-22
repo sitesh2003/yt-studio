@@ -58,7 +58,7 @@
     {
       "kind": "closeup_roar",
       "overlay": "none",
-      "seconds": 6,
+      "seconds": 7.905,
       "ground": "plain",
       "cam": [
         [
@@ -88,7 +88,7 @@
     {
       "kind": "stress_run",
       "overlay": "none",
-      "seconds": 6,
+      "seconds": 7.178,
       "lens": 32,
       "source": "Sellers et al. 2017, PeerJ"
     },
@@ -99,13 +99,13 @@
       "lens": 22,
       "car_behind_m": 9,
       "overlay": "none",
-      "seconds": 6
+      "seconds": 6.457
     },
     {
       "kind": "run_at_camera",
       "overlay": "none",
       "freeze_s": 0.0,
-      "seconds": 8,
+      "seconds": 10.252,
       "ground": "plain"
     },
     {
@@ -117,14 +117,14 @@
         "अध्याय 1",
         "ख़तरनाक जन्म"
       ],
-      "seconds": 3.5
+      "seconds": 2.421
     },
     {
       "kind": "hatch",
       "length_m": 0.9,
       "crack_s": 5.5,
       "overlay": "none",
-      "seconds": 9,
+      "seconds": 12.679,
       "source": "Funston et al. 2021, Canadian Journal of Earth Sciences"
     },
     {
@@ -136,7 +136,7 @@
         "SMALL DOG SIZE",
         "a baby tyrannosaur"
       ],
-      "seconds": 7,
+      "seconds": 6.992,
       "source": "Funston et al. 2021, Canadian Journal of Earth Sciences"
     },
     {
@@ -144,7 +144,7 @@
       "length_m": 1.0,
       "kmh": 7,
       "overlay": "none",
-      "seconds": 7,
+      "seconds": 6.727,
       "scale_prop": {
         "file": "cars/sedan.glb",
         "length_m": 4.5,
@@ -185,7 +185,7 @@
       "length_m": 5.0,
       "kmh": 30,
       "overlay": "none",
-      "seconds": 7,
+      "seconds": 7.555,
       "cam_dist": 7.5,
       "cam_h": 1.5,
       "ground": "plain"
@@ -199,7 +199,7 @@
         "अध्याय 2",
         "जवानी के साल"
       ],
-      "seconds": 3.5,
+      "seconds": 2.672,
       "cam_dist": 7.5,
       "cam_h": 1.5,
       "ground": "plain"
@@ -213,7 +213,7 @@
         "LONG, SLIM LEGS",
         "built for speed"
       ],
-      "seconds": 7,
+      "seconds": 6.375,
       "cam_dist": 7.5,
       "cam_h": 1.5,
       "source": "Woodward et al. 2020, Science Advances; Schroeder et al. 2021, Science",
@@ -228,7 +228,7 @@
         "SMALLER, QUICKER PREY",
         "the giants ignored"
       ],
-      "seconds": 8,
+      "seconds": 8.17,
       "cam_dist": 7.5,
       "cam_h": 1.5,
       "source": "Woodward et al. 2020, Science Advances; Schroeder et al. 2021, Science",
@@ -242,7 +242,7 @@
         14
       ],
       "overlay": "none",
-      "seconds": 9,
+      "seconds": 10.519,
       "source": "Erickson et al. 2004, Nature",
       "ground": "plain"
     },
@@ -255,7 +255,7 @@
         "JANE AND PETEY",
         "about 13 and 15 years old"
       ],
-      "seconds": 10,
+      "seconds": 13.353,
       "cam_dist": 10.0,
       "cam_h": 2.0,
       "source": "Woodward et al. 2020, Science Advances",
@@ -269,14 +269,14 @@
         18
       ],
       "overlay": "grow",
-      "seconds": 9,
+      "seconds": 9.848,
       "source": "Erickson et al. 2004, Nature",
       "ground": "plain"
     },
     {
       "kind": "closeup_roar",
       "overlay": "none",
-      "seconds": 6,
+      "seconds": 6.786,
       "ground": "plain",
       "cam": [
         [
@@ -319,7 +319,7 @@
         "अध्याय 3",
         "जीता-जागता bulldozer"
       ],
-      "seconds": 3.5
+      "seconds": 2.965
     },
     {
       "kind": "xray_scan",
@@ -327,11 +327,11 @@
       "reveal": {
         "bones": [
           0.3,
-          5.0
+          4.07
         ],
         "muscles": [
-          5.2,
-          7.5
+          4.17,
+          8.04
         ]
       },
       "overlay": "label",
@@ -339,7 +339,7 @@
         "SUE",
         "about 12 m long"
       ],
-      "seconds": 9,
+      "seconds": 8.442,
       "source": "Field Museum (FMNH PR 2081); Hutchinson et al. 2011, PLoS ONE"
     },
     {
@@ -358,19 +358,19 @@
         "~8 TONNES",
         "= about 6 small cars"
       ],
-      "seconds": 9,
+      "seconds": 10.909,
       "source": "Field Museum (FMNH PR 2081); Hutchinson et al. 2011, PLoS ONE"
     },
     {
       "kind": "xray_jaw",
       "reveal": {
         "bones": [
-          0.3,
-          5.0
+          0.2,
+          2.5
         ],
         "muscles": [
-          6.5,
-          7.0
+          30.0,
+          31.0
         ]
       },
       "overlay": "label",
@@ -379,41 +379,48 @@
         "~1.4 m long"
       ],
       "anim": "idle",
-      "muscle_groups": [],
-      "seconds": 8,
+      "muscle_groups": [
+        "JAW"
+      ],
+      "seconds": 5.476,
       "source": "Field Museum, Chicago",
       "cam": [
         [
-          9.5,
-          -15.5,
-          6.6
+          4.8,
+          -10.5,
+          6.4
         ],
         [
-          8.0,
-          -13.5,
-          6.3
+          4.0,
+          -9.4,
+          6.2
         ]
       ],
       "tgt": [
         [
           0,
-          -4.6,
-          5.4
+          -4.8,
+          5.0
         ],
         [
           0,
-          -4.6,
-          5.4
+          -4.8,
+          5.0
         ]
       ],
-      "lens": 32
+      "lens": 35,
+      "xr_start": true,
+      "bone_groups": [
+        "SKULL",
+        "NECK"
+      ]
     },
     {
       "kind": "size_tower",
       "cars": 6,
       "lens": 24,
       "overlay": "none",
-      "seconds": 8
+      "seconds": 7.508
     },
     {
       "kind": "closeup_roar",
@@ -422,7 +429,7 @@
         "SCALY SKIN",
         "neck, hips and tail"
       ],
-      "seconds": 9,
+      "seconds": 9.673,
       "cam": [
         [
           8.5,
@@ -453,7 +460,7 @@
     {
       "kind": "closeup_roar",
       "overlay": "none",
-      "seconds": 6,
+      "seconds": 5.759,
       "ground": "plain",
       "cam": [
         [
@@ -488,7 +495,7 @@
         "अध्याय 4",
         "दौड़ने का भ्रम"
       ],
-      "seconds": 3.5
+      "seconds": 2.657
     },
     {
       "kind": "xray_scan",
@@ -496,15 +503,15 @@
       "reveal": {
         "bones": [
           0.3,
-          4.5
+          6.33
         ],
         "muscles": [
-          4.7,
-          7.5
+          6.43,
+          8.99
         ]
       },
       "overlay": "xray_scan",
-      "seconds": 9,
+      "seconds": 9.392,
       "source": "Sellers et al. 2017, PeerJ"
     },
     {
@@ -512,23 +519,23 @@
       "lens": 28,
       "reveal": {
         "bones": [
-          0.1,
+          0.3,
           0.5
         ],
         "muscles": [
           0.6,
-          2.0
+          5.05
         ]
       },
       "overlay": "none",
-      "seconds": 6,
+      "seconds": 5.451,
       "source": "Sellers et al. 2017, PeerJ"
     },
     {
       "kind": "stress_run",
       "lens": 32,
       "overlay": "stress",
-      "seconds": 9,
+      "seconds": 8.893,
       "source": "Sellers et al. 2017, PeerJ"
     },
     {
@@ -536,7 +543,7 @@
       "muscle_scale": 2.6,
       "lens": 28,
       "overlay": "muscle_needed",
-      "seconds": 11,
+      "seconds": 12.315,
       "source": "Hutchinson & Garcia 2002, Nature"
     },
     {
@@ -544,7 +551,7 @@
       "kmh": 20,
       "lens": 22,
       "overlay": "speed_track",
-      "seconds": 9,
+      "seconds": 8.649,
       "source": "Sellers et al. 2017, PeerJ"
     },
     {
@@ -556,7 +563,7 @@
         "LIKE AN ELEPHANT",
         "fast, but never airborne"
       ],
-      "seconds": 9,
+      "seconds": 9.888,
       "source": "Hutchinson et al. 2003, Nature",
       "ground": "plain"
     },
@@ -567,12 +574,12 @@
       "lens": 22,
       "car_behind_m": 9,
       "overlay": "race_pass",
-      "seconds": 6
+      "seconds": 5.171
     },
     {
       "kind": "closeup_roar",
       "overlay": "none",
-      "seconds": 7,
+      "seconds": 8.126,
       "ground": "plain",
       "cam": [
         [
@@ -607,7 +614,7 @@
         "अध्याय 5",
         "सामने देखती आंखें"
       ],
-      "seconds": 3.5
+      "seconds": 3.048
     },
     {
       "kind": "xray_jaw",
@@ -617,7 +624,7 @@
         "where each eye can look"
       ],
       "anim": "idle",
-      "seconds": 7,
+      "seconds": 7.535,
       "source": "Stevens 2006, Journal of Vertebrate Paleontology",
       "cam": [
         [
@@ -653,7 +660,7 @@
         "55° OVERLAP",
         "wider than a hawk's"
       ],
-      "seconds": 8,
+      "seconds": 8.651,
       "source": "Stevens 2006, Journal of Vertebrate Paleontology"
     },
     {
@@ -664,7 +671,7 @@
         "DEPTH VISION",
         "how far away you are"
       ],
-      "seconds": 7
+      "seconds": 6.863
     },
     {
       "kind": "speed_track",
@@ -684,7 +691,7 @@
         ]
       ],
       "unit": "km",
-      "seconds": 11,
+      "seconds": 10.424,
       "source": "Stevens 2006, Journal of Vertebrate Paleontology"
     },
     {
@@ -694,7 +701,7 @@
         "BIG SMELL LOBES",
         "a nose for food"
       ],
-      "seconds": 8,
+      "seconds": 9.981,
       "cam": [
         [
           2.6,
@@ -729,7 +736,7 @@
         "LOW SOUNDS",
         "heard from far away"
       ],
-      "seconds": 7,
+      "seconds": 6.785,
       "cam": [
         [
           -6.5,
@@ -765,7 +772,7 @@
         "अध्याय 6",
         "हड्डियां चबाने वाला"
       ],
-      "seconds": 3.5,
+      "seconds": 2.714,
       "cam": [
         [
           9.5,
@@ -797,11 +804,11 @@
       "reveal": {
         "bones": [
           0.3,
-          1.5
+          7.76
         ],
         "muscles": [
-          1.7,
-          6.0
+          7.86,
+          9.2
         ]
       },
       "overlay": "xray_scan",
@@ -821,7 +828,7 @@
         "TAIL",
         "ARMS"
       ],
-      "seconds": 8,
+      "seconds": 9.603,
       "source": "Gignac & Erickson 2017, Scientific Reports; Erickson et al. 2012, PLoS ONE",
       "cam": [
         [
@@ -864,7 +871,7 @@
           "red"
         ]
       ],
-      "seconds": 11,
+      "seconds": 11.461,
       "source": "Gignac & Erickson 2017, Scientific Reports; Erickson et al. 2012, PLoS ONE",
       "cam": [
         [
@@ -895,7 +902,7 @@
       "kind": "xray_jaw",
       "teeth_stress": true,
       "overlay": "tooth_pressure",
-      "seconds": 7,
+      "seconds": 6.411,
       "source": "Gignac & Erickson 2017, Scientific Reports; Erickson et al. 2012, PLoS ONE",
       "cam": [
         [
@@ -930,7 +937,7 @@
         "~30 cm TEETH",
         "root and all"
       ],
-      "seconds": 7,
+      "seconds": 5.961,
       "source": "Field Museum (Sue)",
       "ground": "plain",
       "cam": [
@@ -966,7 +973,7 @@
         "BITE MARKS",
         "on a Triceratops hip"
       ],
-      "seconds": 8,
+      "seconds": 8.878,
       "source": "Erickson & Olson 1996, Journal of Vertebrate Paleontology",
       "cam": [
         [
@@ -997,13 +1004,13 @@
     {
       "kind": "coprolite",
       "overlay": "coprolite",
-      "seconds": 8,
+      "seconds": 7.082,
       "source": "Chin et al. 1998, Nature"
     },
     {
       "kind": "closeup_roar",
       "overlay": "none",
-      "seconds": 8,
+      "seconds": 8.418,
       "ground": "plain",
       "cam": [
         [
@@ -1035,11 +1042,11 @@
       "reveal": {
         "bones": [
           0.3,
-          1.5
+          1.4
         ],
         "muscles": [
-          1.7,
-          3.0
+          1.5,
+          2.71
         ]
       },
       "overlay": "chapter",
@@ -1047,7 +1054,7 @@
         "अध्याय 7",
         "छोटे हाथों का रहस्य"
       ],
-      "seconds": 3.5,
+      "seconds": 3.105,
       "cam": [
         [
           4.6,
@@ -1089,11 +1096,11 @@
       "reveal": {
         "bones": [
           0.3,
-          3.0
+          7.97
         ],
         "muscles": [
-          3.2,
-          6.5
+          8.07,
+          9.02
         ]
       },
       "overlay": "label",
@@ -1101,7 +1108,7 @@
         "BICEPS",
         "worked out from the bones"
       ],
-      "seconds": 9,
+      "seconds": 9.42,
       "source": "Carpenter & Smith 2001, Mesozoic Vertebrate Life",
       "cam": [
         [
@@ -1143,12 +1150,12 @@
       "kind": "xray_jaw",
       "reveal": {
         "bones": [
-          0.2,
-          1.0
+          0.3,
+          2.16
         ],
         "muscles": [
-          6.0,
-          6.5
+          2.26,
+          4.23
         ]
       },
       "overlay": "label",
@@ -1156,7 +1163,7 @@
         "ABOUT 1 m",
         "two clawed fingers"
       ],
-      "seconds": 8,
+      "seconds": 4.627,
       "source": "Carpenter & Smith 2001",
       "cam": [
         [
@@ -1211,7 +1218,7 @@
         ]
       ],
       "unit": "kg",
-      "seconds": 9,
+      "seconds": 5.952,
       "source": "Carpenter & Smith 2001, Mesozoic Vertebrate Life",
       "cam": [
         [
@@ -1245,7 +1252,7 @@
         "ONE IDEA",
         "long arms get bitten"
       ],
-      "seconds": 12,
+      "seconds": 12.408,
       "source": "Padian 2022, Acta Palaeontologica Polonica",
       "cam": [
         [
@@ -1280,19 +1287,19 @@
         "अध्याय 8",
         "आख़िरी दुनिया"
       ],
-      "seconds": 3.5
+      "seconds": 2.377
     },
     {
       "kind": "asteroid",
       "phase": "calm",
       "overlay": "none",
-      "seconds": 7
+      "seconds": 5.326
     },
     {
       "kind": "asteroid",
       "phase": "streak",
       "overlay": "none",
-      "seconds": 7,
+      "seconds": 3.785,
       "source": "Schulte et al. 2010, Science; Renne et al. 2013, Science"
     },
     {
@@ -1300,7 +1307,7 @@
       "phase": "flash",
       "flash_s": 0.6,
       "overlay": "none",
-      "seconds": 8,
+      "seconds": 6.267,
       "source": "Schulte et al. 2010, Science; Renne et al. 2013, Science"
     },
     {
@@ -1308,27 +1315,27 @@
       "phase": "flash",
       "flash_s": 0.1,
       "overlay": "none",
-      "seconds": 7,
+      "seconds": 5.729,
       "source": "Schulte et al. 2010, Science; Renne et al. 2013, Science"
     },
     {
       "kind": "asteroid",
       "phase": "dark",
       "overlay": "none",
-      "seconds": 9,
+      "seconds": 7.432,
       "source": "Schulte et al. 2010, Science; Renne et al. 2013, Science"
     },
     {
       "kind": "asteroid",
       "phase": "dark",
       "overlay": "none",
-      "seconds": 8,
+      "seconds": 5.059,
       "source": "Schulte et al. 2010, Science; Renne et al. 2013, Science"
     },
     {
       "kind": "closeup_roar",
       "overlay": "none",
-      "seconds": 10,
+      "seconds": 8.666,
       "ground": "plain",
       "cam": [
         [
@@ -1358,7 +1365,7 @@
     {
       "kind": "closeup_roar",
       "overlay": "none",
-      "seconds": 12,
+      "seconds": 13.98,
       "ground": "plain",
       "cam": [
         [

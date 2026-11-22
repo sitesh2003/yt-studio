@@ -1,0 +1,1364 @@
+{
+  "assets_dir": "assets/3d",
+  "creature": {
+    "file": "dinos/Trex.fbx",
+    "length_m": 12.0,
+    "height_m": 5.2,
+    "walk": "TRex_Walk",
+    "run": "TRex_Run",
+    "idle": "TRex_Idle",
+    "roar": "TRex_Attack",
+    "foot_bone": "BackFoot.L",
+    "leg_bones": [
+      "BackUpLeg.L",
+      "BackLowLeg.L",
+      "BackFoot.L",
+      "BackUpLeg.R",
+      "BackLowLeg.R",
+      "BackFoot.R"
+    ],
+    "muscle_bones": [
+      "BackUpLeg.L",
+      "BackUpLeg.R"
+    ],
+    "bone_radius": 0.12,
+    "muscle_radius": 0.42,
+    "bone_groups": [
+      "FEET",
+      "SHINS",
+      "THIGHS",
+      "HIPS",
+      "SPINE",
+      "RIBS",
+      "NECK",
+      "SKULL",
+      "TAIL",
+      "ARMS"
+    ],
+    "muscle_groups": [
+      "THIGH",
+      "CALF",
+      "TAIL-TO-THIGH",
+      "NECK",
+      "JAW"
+    ]
+  },
+  "props": {
+    "car": "cars/sedan.glb"
+  },
+  "credits": [
+    "T. rex model: Quaternius, Animated LowPoly Dinosaurs (CC0)",
+    "Car model: Kenney, Car Kit (CC0)"
+  ],
+  "end_beat_s": 0.6,
+  "aspect": "landscape",
+  "long": true,
+  "caption_scale": 1.0,
+  "shots": [
+    {
+      "kind": "closeup_roar",
+      "overlay": "none",
+      "seconds": 9.691,
+      "ground": "plain",
+      "cam": [
+        [
+          4.5,
+          -12.5,
+          1.4
+        ],
+        [
+          2.6,
+          -9.0,
+          1.6
+        ]
+      ],
+      "tgt": [
+        [
+          0,
+          -3.5,
+          4.6
+        ],
+        [
+          0,
+          -3.5,
+          4.9
+        ]
+      ]
+    },
+    {
+      "kind": "stress_run",
+      "overlay": "none",
+      "seconds": 8.855,
+      "lens": 32,
+      "source": "Sellers et al. 2017, PeerJ"
+    },
+    {
+      "kind": "race_pass",
+      "kmh": 20,
+      "car_kmh": 50,
+      "lens": 22,
+      "car_behind_m": 9,
+      "overlay": "none",
+      "seconds": 8.026
+    },
+    {
+      "kind": "run_at_camera",
+      "overlay": "none",
+      "freeze_s": 0.0,
+      "seconds": 12.39,
+      "ground": "plain"
+    },
+    {
+      "kind": "hatch",
+      "length_m": 0.9,
+      "crack_s": 5.0,
+      "overlay": "chapter",
+      "seconds": 3.384
+    },
+    {
+      "kind": "hatch",
+      "length_m": 0.9,
+      "crack_s": 5.5,
+      "overlay": "none",
+      "seconds": 15.181,
+      "source": "Funston et al. 2021, Canadian Journal of Earth Sciences"
+    },
+    {
+      "kind": "hatch",
+      "length_m": 0.9,
+      "crack_s": 0.8,
+      "overlay": "label",
+      "label": [
+        "SMALL DOG SIZE",
+        "a baby tyrannosaur"
+      ],
+      "seconds": 8.641,
+      "source": "Funston et al. 2021, Canadian Journal of Earth Sciences"
+    },
+    {
+      "kind": "speed_track",
+      "length_m": 1.0,
+      "kmh": 7,
+      "overlay": "none",
+      "seconds": 8.336,
+      "scale_prop": {
+        "file": "cars/sedan.glb",
+        "length_m": 4.5,
+        "at": [
+          -5.2,
+          0.0,
+          0
+        ]
+      },
+      "cam": [
+        [
+          2.8,
+          2.5,
+          1.6
+        ],
+        [
+          2.8,
+          -2.0,
+          1.6
+        ]
+      ],
+      "tgt": [
+        [
+          -2.6,
+          1.5,
+          0.5
+        ],
+        [
+          -2.6,
+          -3.0,
+          0.5
+        ]
+      ],
+      "lens": 32
+    },
+    {
+      "kind": "speed_track",
+      "length_m": 5.0,
+      "kmh": 30,
+      "overlay": "none",
+      "seconds": 9.288,
+      "cam_dist": 7.5,
+      "cam_h": 1.5,
+      "ground": "plain"
+    },
+    {
+      "kind": "speed_track",
+      "length_m": 5.0,
+      "kmh": 30,
+      "overlay": "chapter",
+      "seconds": 3.673,
+      "cam_dist": 7.5,
+      "cam_h": 1.5,
+      "ground": "plain"
+    },
+    {
+      "kind": "speed_track",
+      "length_m": 5.0,
+      "kmh": 30,
+      "overlay": "label",
+      "label": [
+        "LONG, SLIM LEGS",
+        "built for speed"
+      ],
+      "seconds": 7.931,
+      "cam_dist": 7.5,
+      "cam_h": 1.5,
+      "source": "Woodward et al. 2020, Science Advances; Schroeder et al. 2021, Science",
+      "ground": "plain"
+    },
+    {
+      "kind": "speed_track",
+      "length_m": 5.0,
+      "kmh": 25,
+      "overlay": "label",
+      "label": [
+        "SMALLER, QUICKER PREY",
+        "the giants ignored"
+      ],
+      "seconds": 9.995,
+      "cam_dist": 7.5,
+      "cam_h": 1.5,
+      "source": "Woodward et al. 2020, Science Advances; Schroeder et al. 2021, Science",
+      "ground": "plain"
+    },
+    {
+      "kind": "grow",
+      "from_m": 5.0,
+      "ages": [
+        12,
+        14
+      ],
+      "overlay": "none",
+      "seconds": 12.697,
+      "source": "Erickson et al. 2004, Nature",
+      "ground": "plain"
+    },
+    {
+      "kind": "speed_track",
+      "length_m": 7.0,
+      "kmh": 18,
+      "overlay": "label",
+      "label": [
+        "JANE AND PETEY",
+        "about 13 and 15 years old"
+      ],
+      "seconds": 15.956,
+      "cam_dist": 10.0,
+      "cam_h": 2.0,
+      "source": "Woodward et al. 2020, Science Advances",
+      "ground": "plain"
+    },
+    {
+      "kind": "grow",
+      "from_m": 5.0,
+      "ages": [
+        14,
+        18
+      ],
+      "overlay": "grow",
+      "seconds": 11.925,
+      "source": "Erickson et al. 2004, Nature",
+      "ground": "plain"
+    },
+    {
+      "kind": "closeup_roar",
+      "overlay": "none",
+      "seconds": 8.404,
+      "ground": "plain",
+      "cam": [
+        [
+          10.0,
+          -6.0,
+          3.0
+        ],
+        [
+          9.0,
+          -4.8,
+          3.2
+        ]
+      ],
+      "tgt": [
+        [
+          0,
+          -3.0,
+          4.0
+        ],
+        [
+          0,
+          -3.0,
+          4.2
+        ]
+      ]
+    },
+    {
+      "kind": "balance",
+      "tonnes": 8.4,
+      "car_t": 1.4,
+      "cars": 6,
+      "start_cars": 0,
+      "drop_s": [
+        5.0,
+        6.0
+      ],
+      "cam_scale": 0.8,
+      "overlay": "chapter",
+      "seconds": 4.01
+    },
+    {
+      "kind": "xray_scan",
+      "lens": 28,
+      "reveal": {
+        "bones": [
+          0.3,
+          4.07
+        ],
+        "muscles": [
+          4.17,
+          8.04
+        ]
+      },
+      "overlay": "label",
+      "label": [
+        "SUE",
+        "about 12 m long"
+      ],
+      "seconds": 10.308,
+      "source": "Field Museum (FMNH PR 2081); Hutchinson et al. 2011, PLoS ONE"
+    },
+    {
+      "kind": "balance",
+      "tonnes": 8.4,
+      "car_t": 1.4,
+      "cars": 6,
+      "start_cars": 0,
+      "drop_s": [
+        2.5,
+        6.5
+      ],
+      "cam_scale": 0.8,
+      "overlay": "label",
+      "label": [
+        "~8 TONNES",
+        "= about 6 small cars"
+      ],
+      "seconds": 13.145,
+      "source": "Field Museum (FMNH PR 2081); Hutchinson et al. 2011, PLoS ONE"
+    },
+    {
+      "kind": "xray_jaw",
+      "reveal": {
+        "bones": [
+          0.2,
+          2.5
+        ],
+        "muscles": [
+          30.0,
+          31.0
+        ]
+      },
+      "overlay": "label",
+      "label": [
+        "SUE'S SKULL",
+        "~1.4 m long"
+      ],
+      "anim": "idle",
+      "muscle_groups": [
+        "JAW"
+      ],
+      "seconds": 6.897,
+      "source": "Field Museum, Chicago",
+      "cam": [
+        [
+          4.8,
+          -10.5,
+          6.4
+        ],
+        [
+          4.0,
+          -9.4,
+          6.2
+        ]
+      ],
+      "tgt": [
+        [
+          0,
+          -4.8,
+          5.0
+        ],
+        [
+          0,
+          -4.8,
+          5.0
+        ]
+      ],
+      "lens": 35,
+      "xr_start": true,
+      "bone_groups": [
+        "SKULL",
+        "NECK"
+      ]
+    },
+    {
+      "kind": "size_tower",
+      "cars": 6,
+      "lens": 24,
+      "overlay": "none",
+      "seconds": 9.234
+    },
+    {
+      "kind": "closeup_roar",
+      "overlay": "label",
+      "label": [
+        "SCALY SKIN",
+        "neck, hips and tail"
+      ],
+      "seconds": 11.724,
+      "cam": [
+        [
+          8.5,
+          -1.0,
+          3.0
+        ],
+        [
+          7.8,
+          0.5,
+          3.2
+        ]
+      ],
+      "tgt": [
+        [
+          0,
+          0.5,
+          3.0
+        ],
+        [
+          0,
+          1.5,
+          3.0
+        ]
+      ],
+      "source": "Bell et al. 2017, Biology Letters",
+      "ground": "plain"
+    },
+    {
+      "kind": "closeup_roar",
+      "overlay": "none",
+      "seconds": 7.223,
+      "ground": "plain",
+      "cam": [
+        [
+          5.0,
+          -14.0,
+          8.5
+        ],
+        [
+          3.8,
+          -11.0,
+          7.5
+        ]
+      ],
+      "tgt": [
+        [
+          0,
+          -3.5,
+          4.0
+        ],
+        [
+          0,
+          -3.5,
+          4.4
+        ]
+      ]
+    },
+    {
+      "kind": "stress_run",
+      "lens": 32,
+      "overlay": "chapter",
+      "seconds": 3.656
+    },
+    {
+      "kind": "xray_scan",
+      "lens": 28,
+      "reveal": {
+        "bones": [
+          0.3,
+          6.33
+        ],
+        "muscles": [
+          6.43,
+          8.99
+        ]
+      },
+      "overlay": "xray_scan",
+      "seconds": 11.401,
+      "source": "Sellers et al. 2017, PeerJ"
+    },
+    {
+      "kind": "xray_scan",
+      "lens": 28,
+      "reveal": {
+        "bones": [
+          0.3,
+          0.5
+        ],
+        "muscles": [
+          0.6,
+          5.05
+        ]
+      },
+      "overlay": "none",
+      "seconds": 6.869,
+      "source": "Sellers et al. 2017, PeerJ"
+    },
+    {
+      "kind": "stress_run",
+      "lens": 32,
+      "overlay": "stress",
+      "seconds": 10.827,
+      "source": "Sellers et al. 2017, PeerJ"
+    },
+    {
+      "kind": "muscle_needed",
+      "muscle_scale": 2.6,
+      "lens": 28,
+      "overlay": "muscle_needed",
+      "seconds": 14.762,
+      "source": "Hutchinson & Garcia 2002, Nature"
+    },
+    {
+      "kind": "speed_track",
+      "kmh": 20,
+      "lens": 22,
+      "overlay": "speed_track",
+      "seconds": 10.546,
+      "source": "Sellers et al. 2017, PeerJ"
+    },
+    {
+      "kind": "speed_track",
+      "kmh": 15,
+      "lens": 24,
+      "overlay": "label",
+      "label": [
+        "LIKE AN ELEPHANT",
+        "fast, but never airborne"
+      ],
+      "seconds": 11.971,
+      "source": "Hutchinson et al. 2003, Nature",
+      "ground": "plain"
+    },
+    {
+      "kind": "race_pass",
+      "kmh": 20,
+      "car_kmh": 50,
+      "lens": 22,
+      "car_behind_m": 9,
+      "overlay": "race_pass",
+      "seconds": 6.547
+    },
+    {
+      "kind": "closeup_roar",
+      "overlay": "none",
+      "seconds": 9.945,
+      "ground": "plain",
+      "cam": [
+        [
+          -8.0,
+          -10.0,
+          2.6
+        ],
+        [
+          -3.0,
+          -12.5,
+          2.8
+        ]
+      ],
+      "tgt": [
+        [
+          0,
+          -3.5,
+          4.6
+        ],
+        [
+          0,
+          -3.5,
+          4.8
+        ]
+      ]
+    },
+    {
+      "kind": "vision_cone",
+      "lens": 24,
+      "overlay": "chapter",
+      "seconds": 4.105
+    },
+    {
+      "kind": "xray_jaw",
+      "overlay": "label",
+      "label": [
+        "REBUILT HEAD",
+        "where each eye can look"
+      ],
+      "anim": "idle",
+      "seconds": 9.265,
+      "source": "Stevens 2006, Journal of Vertebrate Paleontology",
+      "cam": [
+        [
+          9.5,
+          -15.5,
+          6.6
+        ],
+        [
+          8.0,
+          -13.5,
+          6.3
+        ]
+      ],
+      "tgt": [
+        [
+          0,
+          -4.6,
+          5.4
+        ],
+        [
+          0,
+          -4.6,
+          5.4
+        ]
+      ],
+      "lens": 32
+    },
+    {
+      "kind": "vision_cone",
+      "lens": 24,
+      "overlay": "label",
+      "label": [
+        "55° OVERLAP",
+        "wider than a hawk's"
+      ],
+      "seconds": 10.549,
+      "source": "Stevens 2006, Journal of Vertebrate Paleontology"
+    },
+    {
+      "kind": "vision_cone",
+      "view": "behind",
+      "overlay": "label",
+      "label": [
+        "DEPTH VISION",
+        "how far away you are"
+      ],
+      "seconds": 8.492
+    },
+    {
+      "kind": "speed_track",
+      "kmh": 12,
+      "overlay": "bars",
+      "title": "HOW FAR IT MAY HAVE SEEN",
+      "bars": [
+        [
+          "T. REX (estimate)",
+          6,
+          "yellow"
+        ],
+        [
+          "PEOPLE",
+          1.6,
+          "cyan"
+        ]
+      ],
+      "unit": "km",
+      "seconds": 12.588,
+      "source": "Stevens 2006, Journal of Vertebrate Paleontology"
+    },
+    {
+      "kind": "closeup_roar",
+      "overlay": "label",
+      "label": [
+        "BIG SMELL LOBES",
+        "a nose for food"
+      ],
+      "seconds": 12.078,
+      "cam": [
+        [
+          2.6,
+          -9.0,
+          4.6
+        ],
+        [
+          2.0,
+          -7.6,
+          4.8
+        ]
+      ],
+      "tgt": [
+        [
+          0,
+          -4.6,
+          4.6
+        ],
+        [
+          0,
+          -4.6,
+          4.7
+        ]
+      ],
+      "source": "Zelenitsky et al. 2009, Proceedings of the Royal Society B",
+      "ground": "plain"
+    },
+    {
+      "kind": "closeup_roar",
+      "overlay": "label",
+      "label": [
+        "LOW SOUNDS",
+        "heard from far away"
+      ],
+      "seconds": 8.403,
+      "cam": [
+        [
+          -6.5,
+          -9.0,
+          5.2
+        ],
+        [
+          -5.6,
+          -8.2,
+          5.0
+        ]
+      ],
+      "tgt": [
+        [
+          0,
+          -3.8,
+          4.8
+        ],
+        [
+          0,
+          -3.8,
+          4.8
+        ]
+      ],
+      "source": "Witmer & Ridgely 2009, The Anatomical Record",
+      "ground": "plain"
+    },
+    {
+      "kind": "xray_jaw",
+      "anim": "idle",
+      "overlay": "chapter",
+      "seconds": 3.721,
+      "cam": [
+        [
+          9.5,
+          -15.5,
+          6.6
+        ],
+        [
+          8.0,
+          -13.5,
+          6.3
+        ]
+      ],
+      "tgt": [
+        [
+          0,
+          -4.6,
+          5.4
+        ],
+        [
+          0,
+          -4.6,
+          5.4
+        ]
+      ],
+      "lens": 32
+    },
+    {
+      "kind": "xray_jaw",
+      "reveal": {
+        "bones": [
+          0.3,
+          7.76
+        ],
+        "muscles": [
+          7.86,
+          9.2
+        ]
+      },
+      "overlay": "xray_scan",
+      "anim": "idle",
+      "muscle_groups": [
+        "JAW"
+      ],
+      "bone_groups": [
+        "SKULL",
+        "NECK",
+        "SPINE",
+        "RIBS",
+        "HIPS",
+        "THIGHS",
+        "SHINS",
+        "FEET",
+        "TAIL",
+        "ARMS"
+      ],
+      "seconds": 11.643,
+      "source": "Gignac & Erickson 2017, Scientific Reports; Erickson et al. 2012, PLoS ONE",
+      "cam": [
+        [
+          9.5,
+          -15.5,
+          6.6
+        ],
+        [
+          8.0,
+          -13.5,
+          6.3
+        ]
+      ],
+      "tgt": [
+        [
+          0,
+          -4.6,
+          5.4
+        ],
+        [
+          0,
+          -4.6,
+          5.4
+        ]
+      ],
+      "lens": 32
+    },
+    {
+      "kind": "closeup_roar",
+      "overlay": "bite_compare",
+      "bars": [
+        [
+          "SALTWATER CROC (measured)",
+          16414,
+          "cyan"
+        ],
+        [
+          "T. REX (estimate)",
+          34522,
+          "red"
+        ]
+      ],
+      "seconds": 13.78,
+      "source": "Gignac & Erickson 2017, Scientific Reports; Erickson et al. 2012, PLoS ONE",
+      "cam": [
+        [
+          2.0,
+          -8.0,
+          4.4
+        ],
+        [
+          1.4,
+          -6.6,
+          4.6
+        ]
+      ],
+      "tgt": [
+        [
+          0,
+          -4.0,
+          4.6
+        ],
+        [
+          0,
+          -4.0,
+          4.8
+        ]
+      ]
+    },
+    {
+      "kind": "xray_jaw",
+      "teeth_stress": true,
+      "overlay": "tooth_pressure",
+      "seconds": 7.973,
+      "source": "Gignac & Erickson 2017, Scientific Reports; Erickson et al. 2012, PLoS ONE",
+      "cam": [
+        [
+          9.5,
+          -15.5,
+          6.6
+        ],
+        [
+          8.0,
+          -13.5,
+          6.3
+        ]
+      ],
+      "tgt": [
+        [
+          0,
+          -4.6,
+          5.4
+        ],
+        [
+          0,
+          -4.6,
+          5.4
+        ]
+      ],
+      "lens": 32
+    },
+    {
+      "kind": "closeup_roar",
+      "overlay": "label",
+      "label": [
+        "~30 cm TEETH",
+        "root and all"
+      ],
+      "seconds": 7.455,
+      "source": "Field Museum (Sue)",
+      "ground": "plain",
+      "cam": [
+        [
+          4.5,
+          -12.5,
+          1.4
+        ],
+        [
+          2.6,
+          -9.0,
+          1.6
+        ]
+      ],
+      "tgt": [
+        [
+          0,
+          -3.5,
+          4.6
+        ],
+        [
+          0,
+          -3.5,
+          4.9
+        ]
+      ]
+    },
+    {
+      "kind": "xray_jaw",
+      "teeth_stress": true,
+      "overlay": "label",
+      "label": [
+        "BITE MARKS",
+        "on a Triceratops hip"
+      ],
+      "seconds": 10.81,
+      "source": "Erickson & Olson 1996, Journal of Vertebrate Paleontology",
+      "cam": [
+        [
+          9.5,
+          -15.5,
+          6.6
+        ],
+        [
+          8.0,
+          -13.5,
+          6.3
+        ]
+      ],
+      "tgt": [
+        [
+          0,
+          -4.6,
+          5.4
+        ],
+        [
+          0,
+          -4.6,
+          5.4
+        ]
+      ],
+      "lens": 32
+    },
+    {
+      "kind": "coprolite",
+      "overlay": "coprolite",
+      "seconds": 8.744,
+      "source": "Chin et al. 1998, Nature"
+    },
+    {
+      "kind": "closeup_roar",
+      "overlay": "none",
+      "seconds": 10.281,
+      "ground": "plain",
+      "cam": [
+        [
+          10.0,
+          -6.0,
+          3.0
+        ],
+        [
+          9.0,
+          -4.8,
+          3.2
+        ]
+      ],
+      "tgt": [
+        [
+          0,
+          -3.0,
+          4.0
+        ],
+        [
+          0,
+          -3.0,
+          4.2
+        ]
+      ]
+    },
+    {
+      "kind": "xray_jaw",
+      "reveal": {
+        "bones": [
+          0.3,
+          1.4
+        ],
+        "muscles": [
+          1.5,
+          2.71
+        ]
+      },
+      "overlay": "chapter",
+      "seconds": 4.171,
+      "cam": [
+        [
+          4.6,
+          -2.6,
+          3.3
+        ],
+        [
+          4.0,
+          -2.4,
+          3.2
+        ]
+      ],
+      "tgt": [
+        [
+          0,
+          -2.3,
+          3.1
+        ],
+        [
+          0,
+          -2.3,
+          3.1
+        ]
+      ],
+      "lens": 36,
+      "xr_start": true,
+      "anim": "idle",
+      "muscle_groups": [
+        "ARM"
+      ],
+      "bone_groups": [
+        "ARMS",
+        "NECK",
+        "SKULL"
+      ]
+    },
+    {
+      "kind": "xray_jaw",
+      "reveal": {
+        "bones": [
+          0.3,
+          7.97
+        ],
+        "muscles": [
+          8.07,
+          9.02
+        ]
+      },
+      "overlay": "label",
+      "label": [
+        "BICEPS",
+        "worked out from the bones"
+      ],
+      "seconds": 11.433,
+      "source": "Carpenter & Smith 2001, Mesozoic Vertebrate Life",
+      "cam": [
+        [
+          4.6,
+          -2.6,
+          3.3
+        ],
+        [
+          4.0,
+          -2.4,
+          3.2
+        ]
+      ],
+      "tgt": [
+        [
+          0,
+          -2.3,
+          3.1
+        ],
+        [
+          0,
+          -2.3,
+          3.1
+        ]
+      ],
+      "lens": 36,
+      "xr_start": true,
+      "anim": "idle",
+      "muscle_groups": [
+        "ARM"
+      ],
+      "bone_groups": [
+        "ARMS",
+        "NECK",
+        "SKULL"
+      ]
+    },
+    {
+      "kind": "xray_jaw",
+      "reveal": {
+        "bones": [
+          0.3,
+          2.16
+        ],
+        "muscles": [
+          2.26,
+          4.23
+        ]
+      },
+      "overlay": "label",
+      "label": [
+        "ABOUT 1 m",
+        "two clawed fingers"
+      ],
+      "seconds": 5.921,
+      "source": "Carpenter & Smith 2001",
+      "cam": [
+        [
+          4.6,
+          -2.6,
+          3.3
+        ],
+        [
+          4.0,
+          -2.4,
+          3.2
+        ]
+      ],
+      "tgt": [
+        [
+          0,
+          -2.3,
+          3.1
+        ],
+        [
+          0,
+          -2.3,
+          3.1
+        ]
+      ],
+      "lens": 36,
+      "xr_start": true,
+      "anim": "idle",
+      "muscle_groups": [
+        "ARM"
+      ],
+      "bone_groups": [
+        "ARMS",
+        "NECK",
+        "SKULL"
+      ]
+    },
+    {
+      "kind": "closeup_roar",
+      "overlay": "bars",
+      "title": "WHAT ONE ARM MAY CURL",
+      "bars": [
+        [
+          "T. REX ARM (estimate)",
+          200,
+          "yellow"
+        ],
+        [
+          "ONE ADULT",
+          70,
+          "cyan"
+        ]
+      ],
+      "unit": "kg",
+      "seconds": 7.445,
+      "source": "Carpenter & Smith 2001, Mesozoic Vertebrate Life",
+      "cam": [
+        [
+          5.0,
+          -14.0,
+          8.5
+        ],
+        [
+          3.8,
+          -11.0,
+          7.5
+        ]
+      ],
+      "tgt": [
+        [
+          0,
+          -3.5,
+          4.0
+        ],
+        [
+          0,
+          -3.5,
+          4.4
+        ]
+      ]
+    },
+    {
+      "kind": "closeup_roar",
+      "overlay": "label",
+      "label": [
+        "ONE IDEA",
+        "long arms get bitten"
+      ],
+      "seconds": 14.869,
+      "source": "Padian 2022, Acta Palaeontologica Polonica",
+      "cam": [
+        [
+          -8.0,
+          -10.0,
+          2.6
+        ],
+        [
+          -3.0,
+          -12.5,
+          2.8
+        ]
+      ],
+      "tgt": [
+        [
+          0,
+          -3.5,
+          4.6
+        ],
+        [
+          0,
+          -3.5,
+          4.8
+        ]
+      ]
+    },
+    {
+      "kind": "asteroid",
+      "phase": "calm",
+      "overlay": "chapter",
+      "seconds": 3.334
+    },
+    {
+      "kind": "asteroid",
+      "phase": "calm",
+      "overlay": "none",
+      "seconds": 6.725
+    },
+    {
+      "kind": "asteroid",
+      "phase": "streak",
+      "overlay": "none",
+      "seconds": 4.953,
+      "source": "Schulte et al. 2010, Science; Renne et al. 2013, Science"
+    },
+    {
+      "kind": "asteroid",
+      "phase": "flash",
+      "flash_s": 0.6,
+      "overlay": "none",
+      "seconds": 7.807,
+      "source": "Schulte et al. 2010, Science; Renne et al. 2013, Science"
+    },
+    {
+      "kind": "asteroid",
+      "phase": "flash",
+      "flash_s": 0.1,
+      "overlay": "none",
+      "seconds": 7.188,
+      "source": "Schulte et al. 2010, Science; Renne et al. 2013, Science"
+    },
+    {
+      "kind": "asteroid",
+      "phase": "dark",
+      "overlay": "none",
+      "seconds": 9.147,
+      "source": "Schulte et al. 2010, Science; Renne et al. 2013, Science"
+    },
+    {
+      "kind": "asteroid",
+      "phase": "dark",
+      "overlay": "none",
+      "seconds": 6.418,
+      "source": "Schulte et al. 2010, Science; Renne et al. 2013, Science"
+    },
+    {
+      "kind": "closeup_roar",
+      "overlay": "none",
+      "seconds": 10.566,
+      "ground": "plain",
+      "cam": [
+        [
+          2.0,
+          -8.0,
+          4.4
+        ],
+        [
+          1.4,
+          -6.6,
+          4.6
+        ]
+      ],
+      "tgt": [
+        [
+          0,
+          -4.0,
+          4.6
+        ],
+        [
+          0,
+          -4.0,
+          4.8
+        ]
+      ]
+    },
+    {
+      "kind": "closeup_roar",
+      "overlay": "none",
+      "seconds": 16.677,
+      "ground": "plain",
+      "cam": [
+        [
+          4.5,
+          -12.5,
+          1.4
+        ],
+        [
+          2.6,
+          -9.0,
+          1.6
+        ]
+      ],
+      "tgt": [
+        [
+          0,
+          -3.5,
+          4.6
+        ],
+        [
+          0,
+          -3.5,
+          4.9
+        ]
+      ]
+    }
+  ]
+}
