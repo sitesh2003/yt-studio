@@ -6373,5 +6373,30 @@
     "video_id": "ky6h_4si4bw",
     "publish_at": "2026-11-27T19:00:00-05:00",
     "thumbnail_set": true
+  },
+  {
+    "job": "hero_apato_tail",
+    "topic": "Could An Apatosaurus Tail Break The Sound Barrier? 🦕",
+    "title": "Could An Apatosaurus Tail Break The Sound Barrier? 🦕",
+    "description": "In 1997 a computer model said an Apatosaurus could crack its tail faster than sound. In 2022, a new model rebuilt the tail section by section and found something very different. #shorts #dinosaurs #science #physics\n\nSources: Myhrvold & Currie 1997, Paleobiology 23(4): 393-409 (tail-tip model: about 560 m/s); Conti et al. 2022, Scientific Reports 12: 19245, doi:10.1038/s41598-022-21633-2 (multibody model of a 12.44 m apatosaurine tail: peak tip speed 32.7 m/s; a supersonic tip would fail).\n3D models: Quaternius, Animated LowPoly Dinosaurs (CC0); Kenney, Car Kit (CC0). Animated in Blender.\n\nHow this was made: the script is researched and fact-checked against published research (sources above), narrated by an AI voice, and animated and edited with open-source software.",
+    "tags": [
+      "Apatosaurus",
+      "dinosaur tail",
+      "sound barrier",
+      "dinosaurs",
+      "paleontology",
+      "science",
+      "3D animation"
+    ],
+    "hook": "Could an Apatosaurus crack its tail faster than the speed of sound?",
+    "status": "scheduled",
+    "narration": "Could an Apatosaurus crack its tail faster than the speed of sound? In 1997, a computer model said yes: the tip could snap like a whip, at more than one and a half times the speed of sound. In 2022, scientists rebuilt the tail in a computer, all twelve meters of it, section by section. Its fastest tip reached about seventy-three miles an hour. That's a car on the highway. More than ten times slower than sound. And any whip tip pushed past the speed of sound would have torn apart. Still, a tail swinging as fast as a car. Would you stand behind it?",
+    "voice_engine": "chatterbox",
+    "countdown": false,
+    "hero_3d": true,
+    "question": "Still, a tail swinging as fast as a car. Would you stand behind it?",
+    "video_id": "fo0JA3Ej1X4",
+    "publish_at": "2026-11-29T19:00:00-05:00",
+    "thumbnail_set": true
   }
 ]
