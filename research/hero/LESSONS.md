@@ -54,3 +54,16 @@ Every lesson here came from a real mistake. The fix is in the code; the check is
 - Hook shots: a big face on frame 1 beats a wide shot with a small animal at the edge.
 - Gates passing is not the video being right: a roaring body sweeping through a close camera made a skeleton jumble, and an x-ray shot opened on a dark skin blob. Only looking at frames catches these → the frame check is compulsory; close x-ray shots use the idle action and start already in x-ray (`xr_start`).
 - Toon look (HERO_QUALITY=toon): ~1 s a frame vs ~4–5 s film; outline width must be set in metres (divide by the object's scale) or it vanishes; lift and saturate the model's linear colours or everything turns grey.
+
+## 22 Nov 2026 (evening): council rounds 5–6 and the Apatosaurus tail
+- **Hide, don't delete.** Both advisors: deleting low performers does not help the algorithm and loses watch time. Rule:
+  under 150 views AND under 40% viewed after a week, or wrong language → PRIVATE. 2D bot off everywhere (publish.make_2d).
+- **Make the picture match the number.** The tail_whip template measures the tail tip's speed in the scene frame by
+  frame and tunes the swing until it equals the paper's figure (32.7 m/s, Conti et al. 2022). A 71° swing does it.
+- **Fact-checking finds better stories.** "Supersonic tail" (1997) vs "33 m/s, a car on the highway" (2022) is a
+  myth-vs-model story with a built-in everyday comparison. Always read the newest paper before scripting the famous claim.
+- **Latin names in Hindi narration:** Swara reads "Apatosaurus" as "aparosorus". Write the SPOKEN form in Devanagari,
+  tested by listening (अपैटोसॉरस comes back as "apatosaurus"); captions show what is spoken. Keep the Latin in the title.
+- The small Hindi listener's "phrase missing" was false again; the medium model (CPU int8 works when CUDA libs are
+  missing) heard every word. Always confirm with the medium model before re-voicing.
+- T. rex skeleton parts (hip plates, skull) do not fit other animals: per-shot bone_groups keep only TAIL + SPINE.

@@ -40,7 +40,7 @@
         0.8
       ],
       "car_kmh": 118,
-      "seconds": 4.5,
+      "seconds": 4.7,
       "overlay": "label",
       "label": [
         "FASTER THAN SOUND?",
@@ -50,10 +50,11 @@
     {
       "kind": "tail_whip",
       "whips": [
-        1.3
+        1.3,
+        6.2
       ],
       "cam_scale": 0.75,
-      "seconds": 6.0,
+      "seconds": 8.6,
       "overlay": "bars",
       "title": "1997 COMPUTER MODEL",
       "bars": [
@@ -81,7 +82,7 @@
         0.2,
         2.6
       ],
-      "seconds": 5.0,
+      "seconds": 6.94,
       "overlay": "label",
       "label": [
         "2022: REBUILT",
@@ -95,10 +96,11 @@
     {
       "kind": "tail_whip",
       "whips": [
-        1.0
+        1.0,
+        4.71
       ],
       "car_kmh": 118,
-      "seconds": 5.0,
+      "seconds": 7.11,
       "overlay": "bars",
       "title": "FASTEST TAIL TIP (2022)",
       "bars": [
@@ -121,7 +123,7 @@
         0.7
       ],
       "cam_scale": 1.25,
-      "seconds": 3.0,
+      "seconds": 3.02,
       "overlay": "bars",
       "title": "10x SLOWER",
       "bars": [
@@ -150,7 +152,7 @@
         1.0
       ],
       "cam_scale": 0.75,
-      "seconds": 4.0,
+      "seconds": 5.02,
       "overlay": "label",
       "label": [
         "A WHIP TIP",
@@ -168,7 +170,7 @@
         2.9
       ],
       "car_kmh": 118,
-      "seconds": 4.5,
+      "seconds": 5.563,
       "overlay": "none"
     }
   ]
