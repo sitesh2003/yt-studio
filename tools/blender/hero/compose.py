@@ -116,7 +116,7 @@ def hindi_label_events():
                     start = b_
         for f0, f1 in runs:
             out.append(f"Dialogue: 2,{editor._ass_time((f0 - 1) / FPS)},{editor._ass_time(f1 / FPS)},Cap,,0,0,0,,"
-                       f"{{\\an{an.get(anc, 5)}\\pos({int(x)},{int(y)})\\fn{font}\\fs{int(v['size'] * 0.92)}"
+                       f"{{\\an{an.get(anc, 5)}\\pos({int(x)},{int(y)})\\fn{font}\\fs{int(v['size'] * (1.3 if len(txt) <= 16 else 1.12 if len(txt) <= 24 else 1.0))}"
                        f"\\c{_ass_colour(col)}\\bord6\\shad0}}{txt}")
     return out
 
@@ -544,6 +544,8 @@ def _no_overlap(path):
         if tt(pb[1]) < tt(pa[2]):
             pa[2] = pb[1]
             lines[a_] = ",".join(pa)
+    lines = [l for l in lines if not (l.startswith("Dialogue: 0,")
+                                     and tt(l.split(",", 9)[2]) <= tt(l.split(",", 9)[1]))]   # no empty captions
     path.write_text(chr(10).join(lines) + chr(10), encoding="utf-8")
 
 
@@ -592,6 +594,10 @@ def main():
     cap = dict(config()["captions"])
     cap["size"] = int(cap["size"] * float(spec.get("caption_scale", 0.8)))
     set_override({"captions": cap})
+    # the Hindi voice service sometimes reports a word starting before the previous one: keep times in order
+    for i_ in range(1, len(words)):
+        words[i_]["start"] = max(words[i_]["start"], words[i_ - 1]["start"] + 0.02)
+        words[i_]["end"] = max(words[i_]["end"], words[i_]["start"] + 0.05)
     editor.captions(words, job / "captions.ass")
     set_override({})
     _no_overlap(job / "captions.ass")

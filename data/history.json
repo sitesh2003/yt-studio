@@ -6246,5 +6246,30 @@
     },
     "repairs": 0,
     "audited": true
+  },
+  {
+    "job": "hero_trex_vision",
+    "topic": "Could A T. rex See You Standing Still? 🦖",
+    "title": "Could A T. rex See You Standing Still? 🦖",
+    "description": "The famous movie line says stand still and a T. rex can't see you. A study of its skull says it probably could. #shorts #dinosaurs #TRex #Science\n\nSources: Stevens 2006, 'Binocular vision in theropod dinosaurs', Journal of Vertebrate Paleontology 26(2):321-330.\n3D models: Quaternius, Animated LowPoly Dinosaurs (CC0); Kenney, Car Kit (CC0). Animated in Blender.\n\nHow this was made: the script is researched and fact-checked against published research (sources above), narrated by an AI voice, and animated and edited with open-source software.",
+    "tags": [
+      "T. rex",
+      "T. rex vision",
+      "dinosaurs",
+      "binocular vision",
+      "paleontology",
+      "science",
+      "3D animation"
+    ],
+    "hook": "Standing still probably wouldn't hide you from a T. rex.",
+    "status": "scheduled",
+    "narration": "Standing still probably wouldn't hide you from a T. rex. Scientists rebuilt its head and traced where each eye could look. Its eyes faced forward, overlapping across about fifty-five degrees, wider than a hawk's. That overlap gives depth vision, perfect for judging exactly how far away you are. It may have spotted things about six kilometres away. People manage about one and a half. So if standing still won't work, what would you do?",
+    "voice_engine": "chatterbox",
+    "countdown": false,
+    "hero_3d": true,
+    "question": "So if standing still won't work, what would you do?",
+    "video_id": "WYNZ5UNtfjY",
+    "publish_at": "2026-11-24T19:00:00-05:00",
+    "thumbnail_set": true
   }
 ]
