@@ -48,9 +48,9 @@ def card_events(shot, t0, t1):
     if shot.get("chapter"):
         small, title = shot["chapter"]
         end = min(t1, t0 + float(shot.get("card_s", 3.2)))
-        out.append((t0, end, f"{{\\an5\\pos({fw // 2},{int(fh * 0.36)})\\fn{font_}\\fs{int(46 * big)}\\c&H0000E5FF&"
+        out.append((t0, end, f"{{\\an5\\pos({fw // 2},{int(fh * 0.13)})\\fn{font_}\\fs{int(46 * big)}\\c&H0000E5FF&"
                              f"\\bord5\\shad0\\fad(350,350)}}{small}"))
-        out.append((t0, end, f"{{\\an5\\pos({fw // 2},{int(fh * 0.47)})\\fn{font_}\\fs{int(104 * big)}\\c&H00FFFFFF&"
+        out.append((t0, end, f"{{\\an5\\pos({fw // 2},{int(fh * 0.23)})\\fn{font_}\\fs{int(104 * big)}\\c&H00FFFFFF&"
                              f"\\bord7\\shad0\\fad(350,350)}}{title}"))
     if shot.get("source"):
         out.append((t0 + 0.3, t1, f"{{\\an1\\pos({int(fw * 0.02)},{int(fh * 0.985)})\\fn{font_}\\fs{int(26 * big)}"

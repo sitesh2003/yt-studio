@@ -44,7 +44,8 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
     for idx, w in enumerate(words):
         cur.append(w)
         gap = (words[idx + 1]["start"] - w["end"]) if idx + 1 < len(words) else 9
-        if len(cur) >= n or gap > 0.15 or w["text"].rstrip().endswith((".", ",", "?", "!", ";", ":")):
+        initial = re.fullmatch(r"[A-Z]\.", w["text"].strip())     # "T." in "T. rex" is not a sentence end
+        if len(cur) >= n or gap > 0.15 or (w["text"].rstrip().endswith((".", ",", "?", "!", ";", ":")) and not initial):
             groups.append(cur)
             cur = []
     if cur:
