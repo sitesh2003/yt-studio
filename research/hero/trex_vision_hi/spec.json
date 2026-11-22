@@ -48,14 +48,13 @@
   },
   "shots": [
     {
-      "kind": "vision_cone",
+      "kind": "closeup_roar",
       "overlay": "label",
       "label": [
         "STANDING STILL?",
         "probably won't hide you"
       ],
-      "seconds": 6.521,
-      "lens": 24
+      "seconds": 5.79
     },
     {
       "kind": "xray_jaw",
@@ -64,7 +63,7 @@
         "REBUILT HEAD",
         "where each eye can look"
       ],
-      "seconds": 4.855,
+      "seconds": 5.12,
       "anim": "idle",
       "cam": [
         [
@@ -98,7 +97,7 @@
         "55\u00b0 OVERLAP",
         "wider than a hawk's"
       ],
-      "seconds": 6.045,
+      "seconds": 6.13,
       "lens": 24
     },
     {
@@ -109,7 +108,7 @@
         "DEPTH VISION",
         "how far away you are"
       ],
-      "seconds": 5.469
+      "seconds": 5.31
     },
     {
       "kind": "speed_track",
@@ -129,12 +128,12 @@
         ]
       ],
       "unit": "km",
-      "seconds": 5.844
+      "seconds": 6.03
     },
     {
       "kind": "closeup_roar",
       "overlay": "none",
-      "seconds": 4.731
+      "seconds": 5.085
     }
   ],
   "credits": [

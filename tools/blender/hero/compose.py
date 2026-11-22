@@ -37,9 +37,101 @@ def font(size):
     return _F[size]
 
 
+# ---------------------------------------------------------------- Hindi labels (owner, 22 Nov 2026)
+# "Hindi means only Hindi: English words in between, never a phrase or a sentence." On the Hindi channel every
+# on-screen label is Hindi (Devanagari; single English words allowed). PIL here cannot shape Devanagari (no raqm),
+# so Hindi labels are written into the caption file and drawn by libass in the channel's own Hindi font.
+HI_LABELS = {
+    "+ THINKING DISTANCE": "+ सोचने की दूरी", "+2 kg EVERY DAY": "हर दिन +2 kg", "30-50% BONE": "30-50% हड्डी",
+    "= 1/2 x MASS x SPEED\u00b2": "= 1/2 × वज़न × speed\u00b2", "= ONE BITE": "= एक bite", "BITE FORCE": "Bite की ताकत",
+    "BONE": "हड्डी पर", "STRESS": "दबाव", "Bela Barenyi": "बेला बारेनी", "CAR": "गाड़ी", "CARS": "गाड़ियां",
+    "CHANGE IN SPEED x MASS": "speed का बदलाव × वज़न", "COMPUTER MODEL": "कंप्यूटर मॉडल", "COULDN'T": "दौड़ नहीं",
+    "RUN?": "सकता था?", "FAR LESS": "बहुत कम", "FIRST PRODUCTION CAR: 1959": "पहली production car: 1959",
+    "FORCE =": "force =", "FORCE ON YOU": "तुम पर force", "FOSSIL POOP": "Fossil potty",
+    "LEG MUSCLE NEEDED": "ज़रूरी leg muscle", "MORE TIME = LESS FORCE": "ज़्यादा time = कम force",
+    "MOVING ENERGY": "चलने की energy", "NEWTON'S SECOND LAW": "Newton का second law", "PATENTED 1952": "1952 में patent",
+    "PRESSURE AT THE TOOTH TIP": "दांत की नोक पर दबाव", "SAME CAR": "वही car", "SAME SPEED": "वही speed",
+    "SEVERAL TONNES": "कई tonne", "SHATTERS BONE": "हड्डी चूर", "STIFF vs FOLDING": "सख़्त vs पिचकने वाली",
+    "T. REX HAD": "T. rex के पास था", "T. REX": "T. rex", "TIME TO STOP": "रुकने का time", "TIME": "time",
+    "TOP SPEED": "Top speed", "likely from a T. rex": "शायद T. rex की", "of its whole body": "पूरे शरीर का",
+    "the car keeps going": "car चलती रहती है", "while you react": "जब तक तुम react करते हो",
+    "BONE BY BONE": "हड्डी दर हड्डी", "MUSCLE BY MUSCLE": "मांसपेशी दर मांसपेशी", "JAW MUSCLES": "जबड़े की muscles",
+    "FEET": "पैर", "SHINS": "पिंडलियां", "THIGHS": "जांघें", "HIPS": "कूल्हे", "SPINE": "रीढ़", "RIBS": "पसलियां",
+    "NECK": "गर्दन", "SKULL + TEETH": "खोपड़ी + दांत", "TAIL": "पूंछ", "ARMS": "हाथ", "THIGH MUSCLES": "जांघ की muscles",
+    "CALF MUSCLES": "पिंडली की muscles", "TAIL-TO-THIGH MUSCLE": "पूंछ से जांघ तक muscle",
+    "SCANNING...": "Scan हो रहा है...", "BONES + MUSCLES": "हड्डियां + muscles",
+    "MORE THAN 2x": "2 गुना से ज़्यादा", "4x THE DISTANCE": "4 गुना दूरी", "2x THE DISTANCE": "2 गुना दूरी",
+    "2x SPEED": "2 गुना speed", "4x ENERGY": "4 गुना energy", "4x BRAKING DISTANCE": "4 गुना braking दूरी",
+    "HOW FAR IT MAY HAVE SEEN": "वो कितनी दूर देख पाता", "T. REX (estimate)": "T. rex (अनुमान)", "PEOPLE": "इंसान",
+    "SALTWATER CROC (measured)": "खारे पानी का मगरमच्छ (नापा)", "T. REX (estimate)": "T. rex (अनुमान)",
+    "SMALL DOG SIZE": "छोटे कुत्ते जितना", "a baby tyrannosaur": "एक baby tyrannosaur",
+    "LONG, SLIM LEGS": "लंबी, पतली टांगें", "built for speed": "speed के लिए बनी",
+    "SMALLER, QUICKER PREY": "छोटे, तेज़ शिकार", "the giants ignored": "जिन्हें बड़े छोड़ देते",
+    "STANDING STILL?": "खड़े रहोगे?", "probably won't hide you": "शायद फिर भी दिख जाओगे",
+    "REBUILT HEAD": "दोबारा बना सिर", "where each eye can look": "हर आंख कहां तक देखे",
+    "55\u00b0 OVERLAP": "55\u00b0 overlap", "wider than a hawk's": "बाज़ से भी ज़्यादा", "DEPTH VISION": "Depth vision",
+    "how far away you are": "तुम कितनी दूर हो", "LESS GRIP": "कम grip",
+    "water gets between tyre and road": "tyre और सड़क के बीच पानी", "HALF THE GRIP": "आधी grip",
+    "= TWICE THE DISTANCE": "= दोगुनी दूरी", "WORN TYRES": "घिसे हुए tyre", "can't push the water away": "पानी हटा नहीं पाते",
+    "DRY": "सूखी", "WET": "गीली", "STIFF": "सख़्त", "FOLDING": "पिचकने वाली",
+}
+HI_PATTERNS = [
+    (r"^AGE (\d+)$", lambda m: f"उम्र {m.group(1)}"),
+    (r"^stops in ~(\d+) m$", lambda m: f"~{m.group(1)} m में रुकी"),
+    (r"^(\d+) SMALL CARS?$", lambda m: f"{m.group(1)} छोटी गाड़ी" if m.group(1) == "1" else f"{m.group(1)} छोटी गाड़ियां"),
+]
+HINDI = {"on": False}
+CUR_FRAME = {"f": 0}
+HI_EVENTS = {}      # (text, x, y, colour, anchor) -> {"frames": set, "size": max size}
+FRAME_OFF = {"v": 0}
+
+
+def _hindi_of(s_):
+    if s_ in HI_LABELS:
+        return HI_LABELS[s_]
+    for pat, fn in HI_PATTERNS:
+        m = re.match(pat, s_)
+        if m:
+            return fn(m)
+    return None
+
+
+def _ass_colour(rgb):
+    r, g, b = rgb[:3]
+    return f"&H00{b:02X}{g:02X}{r:02X}"
+
+
+def hindi_label_events():
+    """The Hindi labels as caption-file lines: one line per unbroken run of frames."""
+    out = []
+    an = {"mm": 5, "lm": 4, "rm": 6}
+    font = config()["captions"]["font"]
+    for (txt, x, y, col, anc), v in HI_EVENTS.items():
+        fr = sorted(v["frames"])
+        runs, start = [], fr[0]
+        for a_, b_ in zip(fr, fr[1:] + [None]):
+            if b_ is None or b_ != a_ + 1:
+                runs.append((start, a_))
+                if b_ is not None:
+                    start = b_
+        for f0, f1 in runs:
+            out.append(f"Dialogue: 2,{editor._ass_time((f0 - 1) / FPS)},{editor._ass_time(f1 / FPS)},Cap,,0,0,0,,"
+                       f"{{\\an{an.get(anc, 5)}\\pos({int(x)},{int(y)})\\fn{font}\\fs{int(v['size'] * 0.92)}"
+                       f"\\c{_ass_colour(col)}\\bord6\\shad0}}{txt}")
+    return out
+
+
 def text(d, xy, s, size, fill=WHITE, anchor="mm", stroke=10):
     if size < 4:
         return
+    if HINDI["on"] and re.search(r"[A-Za-z]{2,}", s) and not re.fullmatch(r"[\d\s~.,+%x=\-]*(km/h|km|kg|m|N|%)?", s):
+        h_ = _hindi_of(s)
+        if h_ is not None:                # drawn later by libass, in the Hindi font
+            k_ = (h_, xy[0], xy[1], tuple(fill), anchor)
+            v_ = HI_EVENTS.setdefault(k_, {"frames": set(), "size": 0})
+            v_["frames"].add(CUR_FRAME["f"] + FRAME_OFF["v"])
+            v_["size"] = max(v_["size"], size)
+            return
     d.text(xy, s, font=font(size), fill=fill, anchor=anchor, stroke_width=stroke, stroke_fill=BLACK)
 
 
@@ -405,7 +497,10 @@ def g_bars(d, f, n, shot):
     """Generic comparison bars: shot['bars'] = [[label, value, colour], ...], shot['unit'], shot['title']."""
     rows = shot["bars"]
     top = max(v for _, v, _ in rows)
-    text(d, (W / 2, 300), shot.get("title", ""), 76, WHITE, stroke=10)
+    ttl, ts = shot.get("title", ""), 76
+    while ts > 40 and font(ts).getlength(ttl) > W - 140:     # always fits the width
+        ts -= 4
+    text(d, (W / 2, 300), ttl, ts, WHITE, stroke=10)
     for k, (lbl, v, col) in enumerate(rows):
         y = 420 + k * 190
         t0 = 6 + k * int(n * 0.25)
@@ -439,6 +534,19 @@ def g_react(d, f, n, shot):
     text(d, (W / 2, 420), "the car keeps going", int(52 * s), WHITE, stroke=8)
     text(d, (W / 2, 485), "while you react", int(52 * s), WHITE, stroke=8)
 
+def _no_overlap(path):
+    """A caption ends no later than the next one starts (two lines were on screen together for 0.06 s)."""
+    lines = path.read_text(encoding="utf-8").splitlines()
+    idx = [i for i, l in enumerate(lines) if l.startswith("Dialogue: 0,")]
+    tt = lambda x: sum(float(p_) * m for p_, m in zip(x.split(":"), (3600, 60, 1)))
+    for a_, b_ in zip(idx, idx[1:]):
+        pa, pb = lines[a_].split(",", 9), lines[b_].split(",", 9)
+        if tt(pb[1]) < tt(pa[2]):
+            pa[2] = pb[1]
+            lines[a_] = ",".join(pa)
+    path.write_text(chr(10).join(lines) + chr(10), encoding="utf-8")
+
+
 # ---------------------------------------------------------------- assembly
 def run(cmd, cwd):
     subprocess.run(cmd, cwd=cwd, check=True)
@@ -449,6 +557,7 @@ def main():
     d = ROOT / "research" / "hero" / name
     spec = json.loads((d / "spec.json").read_text(encoding="utf-8"))
     SPEC.update(spec)
+    HINDI["on"] = (config()["channel"].get("language") or "en")[:2] == "hi"
     words = json.loads((d / "words.json").read_text(encoding="utf-8"))
     job = ROOT / "jobs" / f"_hero_compose_{name}"
     shutil.rmtree(job, ignore_errors=True)
@@ -467,7 +576,9 @@ def main():
              f"shot{i}.mp4"], job)
         segs.append(f"shot{i}.mp4")
         draw = globals()[f"g_{shot.get('overlay') or shot['kind']}"]
+        FRAME_OFF["v"] = gf
         for f in range(1, n + 1):          # 2) the graphics, frame by frame, in step with the 3D
+            CUR_FRAME["f"] = f
             im = Image.new("RGBA", (W, H), (0, 0, 0, 0))
             draw(ImageDraw.Draw(im), f, n, shot)
             im.save(job / "ov" / f"{gf + f:05d}.png", optimize=False, compress_level=1)
@@ -483,6 +594,11 @@ def main():
     set_override({"captions": cap})
     editor.captions(words, job / "captions.ass")
     set_override({})
+    _no_overlap(job / "captions.ass")
+    if HINDI["on"] and HI_EVENTS:
+        cap = job / "captions.ass"
+        cap.write_text(cap.read_text(encoding="utf-8").rstrip("\n") + "\n" + "\n".join(hindi_label_events()) + "\n",
+                       encoding="utf-8")
     shutil.copytree(ROOT / "assets" / "fonts", job / "fonts", dirs_exist_ok=True)
     # 4) sound on its own: polished voice + ducked music, levelled
     total = gf / FPS

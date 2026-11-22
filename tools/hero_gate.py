@@ -86,7 +86,8 @@ elif stage == "video":
     heard = [key(w["text"]) for w in words]
     j = 0
     for k, sc in enumerate(script["scenes"]):
-        want = [key(t) for t in sc["narration"].split()[:3]]
+        from agents.voice import clean
+        want = [key(t) for t in clean(sc["narration"]).split()[:3]]
         for i in range(j, len(heard)):
             if heard[i:i + 3] == want:
                 lag = scenes[k][0] - (0 if k == 0 else words[i]["start"])

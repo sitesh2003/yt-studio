@@ -43,3 +43,12 @@ Every lesson here came from a real mistake. The fix is in the code; the check is
 - The bot's daily save rewrote whole history files and dropped laptop-made entries → `json_guard` restores entries the remote has.
 - Replace a scheduled video by unscheduling the old one (stays private) and uploading the new one in the same slot; delete old copies only when the owner says so.
 - Never push a workflow without validating its YAML first.
+
+## 22 Nov 2026
+- **Hindi = Devanagari.** Daily Hindi scripts came out as Hindi in English letters or whole English sentences (the voice reads Latin letters with an English accent) → `writer.hindi_script_issues` sends them back; English only as single words, at most 3 in a row.
+- **On-screen labels are language too.** Hindi videos had English phrase labels ("water gets between tyre and road") → `compose.HI_LABELS`: every label in Hindi, drawn by libass in the Hindi font (PIL cannot shape Devanagari).
+- The cut matcher must read the script the way the voice read it (`voice.clean`: "T. rex" → "T-rex"), or it silently falls back to word counting.
+- Two captions overlapped for 0.06 s → `_no_overlap` ends each caption at the next one's start.
+- Gate false alarms are bugs too: British/American spelling, "onto"/"on to", digits vs number words, Latin vs Devanagari spelling of the same English word (compare Hindi by sound).
+- Patches written through the shell turned `\n` and `\b` into real control characters twice → write patch scripts to files; parse-check (`ast.parse`) after every code patch.
+- Hook shots: a big face on frame 1 beats a wide shot with a small animal at the edge.

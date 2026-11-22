@@ -3846,5 +3846,30 @@
     "video_id": "kiS1JeSIxDk",
     "publish_at": "2026-11-23T16:30:00-05:00",
     "thumbnail_set": true
+  },
+  {
+    "job": "hero_wet_braking",
+    "topic": "Why Rain Doubles Your Braking Distance 🌧️",
+    "title": "Why Rain Doubles Your Braking Distance 🌧️",
+    "description": "On a wet road your car needs at least twice as far to stop. Here's why, with two cars braking side by side. #shorts #physics #science #cars\n\nSources: UK Highway Code rules 227 and 231 (gov.uk); braking distance = speed^2 / (2 x deceleration) (GCSE physics).\n3D models: Quaternius, Animated LowPoly Dinosaurs (CC0); Kenney, Car Kit (CC0). Animated in Blender.\n\nHow this was made: the script is researched and fact-checked against published research (sources above), narrated by an AI voice, and animated and edited with open-source software.",
+    "tags": [
+      "wet road braking",
+      "stopping distance",
+      "physics",
+      "friction",
+      "road safety",
+      "science",
+      "3D animation"
+    ],
+    "hook": "On a wet road, your car can need at least twice as far to stop.",
+    "status": "scheduled",
+    "narration": "On a wet road, your car can need at least twice as far to stop. Both of these cars brake at fifty kilometres an hour. One on a dry road, one on a wet road. The dry car stops in about fourteen metres. The wet one slides on to about twenty-eight. Braking works by grip between the tyre and the road, and water gets in between and cuts that grip. Half the grip means half the braking force, so the same speed takes twice the distance. Worn tyres make it worse, because their grooves can't push the water away. So how much farther do you think a car needs on ice?",
+    "voice_engine": "chatterbox",
+    "countdown": false,
+    "hero_3d": true,
+    "question": "So how much farther do you think a car needs on ice?",
+    "video_id": "ez33f0NKxb8",
+    "publish_at": "2026-11-24T16:30:00-05:00",
+    "thumbnail_set": true
   }
 ]

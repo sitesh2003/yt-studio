@@ -9,6 +9,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[3]
+sys.path.insert(0, str(ROOT))
 name = sys.argv[1]
 d = ROOT / "research" / "hero" / name
 spec = json.loads((d / "spec.json").read_text(encoding="utf-8"))
@@ -24,7 +25,11 @@ def _first_word_starts(script, words):
     heard = [key(w["text"]) for w in words]
     starts, j = [], 0
     for k, sc in enumerate(script["scenes"]):
-        want = [key(t) for t in sc["narration"].split()[:3]]
+        if k == 0:                         # the first scene always starts at 0
+            starts.append(0.0)
+            continue
+        from agents.voice import clean     # the text as the voice read it ("T. rex" -> "T-rex")
+        want = [key(t) for t in clean(sc["narration"]).split()[:3]]
         found = None
         for i in range(j, len(heard)):
             got = heard[i:i + len(want)]

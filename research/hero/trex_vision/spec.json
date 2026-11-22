@@ -48,14 +48,13 @@
   },
   "shots": [
     {
-      "kind": "vision_cone",
+      "kind": "closeup_roar",
       "overlay": "label",
       "label": [
         "STANDING STILL?",
         "probably won't hide you"
       ],
-      "seconds": 2.966,
-      "lens": 24
+      "seconds": 2.966
     },
     {
       "kind": "xray_jaw",
