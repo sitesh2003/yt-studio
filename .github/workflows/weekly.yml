@@ -1,8 +1,9 @@
 name: Weekly long video
 
+# PAUSED 23 Nov 2026 (owner): the stock-footage weekly is replaced by 3D long videos made on the laptop.
 on:
-  schedule:
-    - cron: "37 3 * * 6"       # Saturday 03:37 UTC = 9:07 AM IST (odd minute: fewer skipped runs); it goes public Saturday 10 AM US Eastern
+  # schedule:
+  # - cron: "37 3 * * 6"       # Saturday 03:37 UTC = 9:07 AM IST (odd minute: fewer skipped runs); it goes public Saturday 10 AM US Eastern
   workflow_dispatch: {}
   push:                       # the start button: edit kick/weekly.txt (no browser needed)
     branches: [main]
