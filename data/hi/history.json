@@ -8816,5 +8816,28 @@
     "video_id": "SCHsg9YgRDc",
     "publish_at": "2026-11-27T02:30:00-05:00",
     "thumbnail_set": true
+  },
+  {
+    "job": "hero_apato_tail_hi",
+    "topic": "क्या Apatosaurus की पूंछ आवाज़ से तेज़ चलती थी? 🦕",
+    "title": "क्या Apatosaurus की पूंछ आवाज़ से तेज़ चलती थी? 🦕",
+    "description": "1997 में एक computer model ने कहा था कि Apatosaurus अपनी पूंछ आवाज़ से भी तेज़ चला सकता था। 2022 में नए model ने पूरी पूंछ दोबारा बनाई, और जवाब कुछ और निकला। #shorts #hindi #dinosaur #science\n\nSources: Myhrvold & Currie 1997, Paleobiology 23(4): 393-409 (tail-tip model: about 560 m/s); Conti et al. 2022, Scientific Reports 12: 19245, doi:10.1038/s41598-022-21633-2 (multibody model of a 12.44 m apatosaurine tail: peak tip speed 32.7 m/s; a supersonic tip would fail).\n3D models: Quaternius, Animated LowPoly Dinosaurs (CC0); Kenney, Car Kit (CC0). Animated in Blender.\n\nHow this was made: the script is researched and fact-checked against published research (sources above), narrated by an AI voice, and animated and edited with open-source software.",
+    "tags": [
+      "Apatosaurus",
+      "dinosaur hindi",
+      "science hindi",
+      "dinosaur tail",
+      "3D animation"
+    ],
+    "hook": "क्या एक अपैटोसॉरस अपनी पूंछ को आवाज़ से भी तेज़ चला सकता था?",
+    "status": "scheduled",
+    "narration": "क्या एक अपैटोसॉरस अपनी पूंछ को आवाज़ से भी तेज़ चला सकता था? उन्नीस सौ सत्तानवे में एक computer model ने कहा, हां, पूंछ का सिरा चाबुक की तरह, दो हज़ार किलोमीटर प्रति घंटे से भी तेज़ चल सकता था। फिर दो हज़ार बाईस में scientists ने पूरी बारह मीटर लंबी पूंछ, हिस्सा हिस्सा करके, computer में दोबारा बनाई। उसका सिरा सबसे तेज़, करीब एक सौ अठारह किलोमीटर प्रति घंटे तक पहुंचा, यानी highway पर दौड़ती car जितना। ये आवाज़ से दस गुना से भी ज़्यादा धीमा है। और चाबुक जैसा कोई सिरा अगर आवाज़ से तेज़ चलता, तो वो टूटकर बिखर जाता। फिर भी, car जितनी तेज़ घूमती पूंछ, क्या तुम उसके पीछे खड़े होते?",
+    "voice_engine": "edge-tts",
+    "countdown": false,
+    "hero_3d": true,
+    "question": "फिर भी, car जितनी तेज़ घूमती पूंछ, क्या तुम उसके पीछे खड़े होते?",
+    "video_id": "Jy_-bSh-CUM",
+    "publish_at": "2026-11-28T02:30:00-05:00",
+    "thumbnail_set": true
   }
 ]
