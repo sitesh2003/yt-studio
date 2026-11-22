@@ -56,11 +56,30 @@ if stage == "voice":
     from faster_whisper import WhisperModel
     m = WhisperModel("medium" if hindi else "medium.en", device="cpu", compute_type="int8")
     # no carry-over between segments: with mixed Hindi-English the model otherwise starts inventing translations
-    segs, _ = m.transcribe(str(d / "voice.mp3"), language="hi" if hindi else "en", beam_size=5,
-                           condition_on_previous_text=False, vad_filter=True)
-    heard = canon(" ".join(s.text for s in segs))
+    # 23 Nov 2026: each scene is heard on its OWN slice of audio (scenes.json, timed by its first words). One pass
+    # over a whole long film drops chunks (the model skips or loops on 30 s windows), which failed scenes that
+    # were spoken perfectly. Fallback for old jobs without scenes.json: one pass over the whole file.
+    import subprocess, tempfile
+    spans = json.loads((d / "scenes.json").read_text(encoding="utf-8")) if (d / "scenes.json").exists() else None
+    if spans and len(spans) != len(script["scenes"]):
+        spans = None
+    if not spans:
+        segs, _ = m.transcribe(str(d / "voice.mp3"), language="hi" if hindi else "en", beam_size=5,
+                               condition_on_previous_text=False, vad_filter=True)
+        heard_all = canon(" ".join(s.text for s in segs))
+    tmp = Path(tempfile.mkdtemp())
     for k, sc in enumerate(script["scenes"]):
         want = canon(sc["narration"])
+        if spans:
+            a_, b_ = spans[k]
+            clip = tmp / f"s{k}.wav"
+            subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-ss", f"{max(0.0, a_ - 0.25):.3f}", "-to",
+                            f"{b_ + 0.35:.3f}", "-i", str(d / "voice.mp3"), "-ar", "16000", "-ac", "1", str(clip)], check=True)
+            segs, _ = m.transcribe(str(clip), language="hi" if hindi else "en", beam_size=5,
+                                   condition_on_previous_text=False)
+            heard = canon(" ".join(s_.text for s_ in segs))
+        else:
+            heard = heard_all
         # best matching window of the heard text for this scene
         hw, ww = heard.split(), want.split()
         if hindi:   # compare by SOUND: "overlap" and "ओवलाब" are the same word said aloud

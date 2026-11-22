@@ -982,7 +982,7 @@ def build():
                               "stress_run": "sim", "muscle_needed": "sim", "speed_track": "day",
                               "race_pass": "day", "closeup_roar": "dusk", "xray_jaw": "sim",
                               "coprolite": "sim", "crash_compare": "day", "grow": "day",
-                              "brake_compare": "day", "vision_cone": "day", "tail_whip": "day", "balance": "day", "hatch": "dusk", "asteroid": "dusk"}[kind])
+                              "brake_compare": "day", "vision_cone": "day", "tail_whip": "day", "balance": "day", "hatch": "dusk", "asteroid": "dusk", "cabin": "day"}[kind])
     world(look)
     ground("sim" if look == "sim" else SHOT.get("ground", "plain" if kind in ("hatch", "asteroid") else "road"))
     if look == "day":
@@ -1264,7 +1264,10 @@ def build():
         red = mat("BrakeLine", (0.9, 0.1, 0.05), 0.5, emit=(1, 0.2, 0.1), emit_strength=1.5)
         skid = mat("Skid", (0.02, 0.02, 0.02), 0.9)
         box("BrakeLine", (9.0, 0.35, 0.03), (0, 0, 0.05), red)
-        for m_ in range(5, 30, 5):                       # distance markers every 5 m past the brake line
+        react = float(SHOT.get("react_s", 0.0))          # both see the hazard at the line, then think this long
+        far_ = max((k_ / 3.6) * react + (k_ / 3.6) ** 2 / (2 * d_) for k_, d_ in
+                   zip(SHOT.get("speeds", [30, 60]), SHOT.get("decels") or [decel] * len(SHOT.get("speeds", [30, 60]))))
+        for m_ in range(5, max(30, int(far_ // 5) * 5 + 10), 5):   # distance markers every 5 m past the line
             box("Mark", (9.0, 0.12, 0.03), (0, m_, 0.05), white)
             bpy.ops.object.text_add(location=(5.7, m_ - 0.6, 0.06))
             t_ = bpy.context.object
@@ -1290,14 +1293,15 @@ def build():
             front = max((o.matrix_world @ Vector(c_))[1] for o in parts if o.type == "MESH" for c_ in o.bound_box)
             nose = front                                  # car origin to nose
             t_stop = v / decel
+            yb = v * react                                # where this car's brakes come on
             for fr in range(1, N + 1):
-                t = (fr - brake_at) / FPS
+                t = (fr - brake_at) / FPS - react
                 if t < 0:
-                    y = v * t
+                    y = yb + v * t
                 elif t < t_stop:
-                    y = v * t - 0.5 * decel * t * t
+                    y = yb + v * t - 0.5 * decel * t * t
                 else:
-                    y = v * v / (2 * decel)
+                    y = yb + v * v / (2 * decel)
                 car.location = (x, y - nose, 0)
                 car.keyframe_insert("location", frame=fr)
             # skid marks grow behind the wheels while it brakes
@@ -1305,16 +1309,17 @@ def build():
                 bpy.ops.mesh.primitive_cube_add(size=1)
                 sk = bpy.context.object
                 sk.data.transform(mathutils.Matrix.Translation((0, 0.5, 0)))
-                sk.location = (x + wx, 0, 0.045)
+                sk.location = (x + wx, yb, 0.045)
                 sk.data.materials.append(skid)
                 for fr in range(1, N + 1, 2):
-                    t = (fr - brake_at) / FPS
+                    t = (fr - brake_at) / FPS - react
                     L_ = 0.001 if t <= 0 else (v * min(t, t_stop) - 0.5 * decel * min(t, t_stop) ** 2)
                     sk.scale = (0.25, max(0.001, L_), 0.01)
                     sk.keyframe_insert("scale", frame=fr)
-        hi_ = SHOT.get("cam_h", 25.0)
-        key_path(cam, [(1, Vector((0.0, -14.0, hi_))), (N, Vector((0.0, -13.0, hi_ - 2)))])
-        key_path(tgt, [(1, Vector((0.0, 9.0, 0))), (N, Vector((0.0, 10.0, 0)))])
+        hi_ = SHOT.get("cam_h", 25.0 if not react else 40.0)
+        ty = SHOT.get("tgt_y", 9.0 if not react else 20.0)
+        key_path(cam, [(1, Vector((0.0, ty - 23.0, hi_))), (N, Vector((0.0, ty - 22.0, hi_ - 2)))])
+        key_path(tgt, [(1, Vector((0.0, ty, 0))), (N, Vector((0.0, ty + 1.0, 0)))])
 
     elif kind == "vision_cone":
         # where both eyes overlap: a glowing cone forward from the eyes, SHOT['deg'] wide (binocular field)
@@ -1632,6 +1637,171 @@ def build():
         key_path(cam, [(1, Vector((7.5, -15.0, 2.2))), (N, Vector((6.8, -13.8, 2.3)))])
         key_path(tgt, [(1, Vector((-2.0, 6.0, H * 1.25))), (N, Vector((-2.5, 8.0, H * 1.35)))])
         smooth_keys(cam)
+    elif kind == "cabin":
+        # the "second collision", in slow motion (SHOT slowmo x): a cut-away cabin runs at v, stops in stop_s (the
+        # crumple zone's time); a belted crash dummy rides the stop with the cabin; an unbelted ghost dummy keeps
+        # going at v (Newton's first law) until the steering wheel stops it; the airbag fills in ~30 ms
+        arm.location = (0, 0, -100)
+        slow = float(SHOT.get("slowmo", 12.0))
+        v = float(SHOT.get("kmh", 33.0)) / 3.6
+        stop_s = float(SHOT.get("stop_s", 0.1))
+        hit_f = int(SHOT.get("hit_s", 1.4) * FPS) + 1
+        def sim_t(fr):                       # real seconds since the hit at frame fr
+            return (fr - hit_f) / FPS / slow
+        def cabin_x(t):
+            if t < 0:
+                return v * t
+            if t < stop_s:                   # constant deceleration over the crumple time
+                a_ = v / stop_s
+                return v * t - 0.5 * a_ * t * t
+            return v * stop_s / 2
+        grey = mat("Cabin", (0.55, 0.58, 0.62), 0.4)
+        dark = mat("Trim", (0.05, 0.05, 0.06), 0.6)
+        glass = mat("Glass", (0.6, 0.8, 0.95), 0.05)
+        yel = mat("Dummy", (0.95, 0.72, 0.10), 0.45)
+        blk = mat("DummyJoint", (0.03, 0.03, 0.03), 0.5)
+        belt_m = mat("Belt", (0.10, 0.10, 0.12), 0.7, emit=(0.9, 0.2, 0.1), emit_strength=0.6)
+        ghost_m = bpy.data.materials.new("Ghost")
+        ghost_m.use_nodes = True
+        gb = ghost_m.node_tree.nodes["Principled BSDF"]
+        gb.inputs["Base Color"].default_value = (0.3, 0.7, 1.0, 1)
+        gb.inputs["Alpha"].default_value = 0.35
+        gb.inputs["Emission Color"].default_value = (0.2, 0.6, 1.0, 1)
+        gb.inputs["Emission Strength"].default_value = 0.8
+        try:
+            ghost_m.surface_render_method = "BLENDED"
+        except Exception:
+            pass
+        cab = bpy.data.objects.new("CabinRoot", None)
+        bpy.context.collection.objects.link(cab)
+        def part(o, m_):
+            o.data.materials.append(m_)
+            o.parent = cab
+            return o
+        # floor, seat, dashboard, steering wheel, windscreen frame (a cut-away, seen from the side)
+        part(box("Floor", (4.2, 1.8, 0.12), (0, 0, 0.35), grey), grey)
+        part(box("SeatBase", (0.6, 0.6, 0.18), (-0.45, 0, 0.62), dark), dark)
+        part(box("SeatBack", (0.14, 0.6, 0.85), (-0.82, 0, 1.08), dark), dark)
+        part(box("Dash", (0.5, 1.6, 0.45), (1.05, 0, 1.0), dark), dark)
+        bpy.ops.mesh.primitive_torus_add(major_radius=0.19, minor_radius=0.025, location=(0.52, 0, 1.12),
+                                         rotation=(0, math.radians(65), 0))
+        wheel = part(bpy.context.object, dark)
+        bpy.ops.mesh.primitive_cylinder_add(radius=0.03, depth=0.5, location=(0.75, 0, 1.03), rotation=(0, math.radians(65), 0))
+        part(bpy.context.object, dark)
+        ws = part(box("Screen", (0.04, 1.5, 0.75), (1.35, 0, 1.55), glass), glass)
+        ws.rotation_euler = (0, math.radians(-35), 0)
+        for o in (box("Edge", (4.2, 0.05, 0.06), (0, 0.9, 0.42), grey), box("Edge", (4.2, 0.05, 0.06), (0, -0.9, 0.42), grey)):
+            part(o, grey)
+        def dummy(name, m_):
+            root = bpy.data.objects.new(name, None)
+            bpy.context.collection.objects.link(root)
+            def cap(loc, r, ln, rot):
+                bpy.ops.mesh.primitive_cylinder_add(radius=r, depth=ln, location=loc, rotation=rot)
+                o = bpy.context.object
+                o.data.materials.append(m_)
+                o.parent = root
+                for e in (-1, 1):
+                    bpy.ops.mesh.primitive_uv_sphere_add(radius=r * 1.02, location=(0, 0, e * ln / 2))
+                    j = bpy.context.object
+                    j.data.materials.append(m_ if m_.name.startswith("Ghost") else blk)
+                    j.parent = o
+                return o
+            torso = cap((0, 0, 0.32), 0.17, 0.42, (0, 0, 0))                       # pivot at the hips
+            bpy.ops.mesh.primitive_uv_sphere_add(radius=0.12, location=(0, 0, 0.66))
+            head = bpy.context.object
+            head.data.materials.append(m_)
+            head.parent = torso
+            for sgn in (-1, 1):
+                cap((0.25, sgn * 0.11, 0.0), 0.075, 0.45, (0, math.radians(90), 0))   # thighs
+                cap((0.48, sgn * 0.11, -0.25), 0.06, 0.45, (0, 0, 0))                 # shins
+                a_ = cap((0.2, sgn * 0.24, 0.42), 0.05, 0.42, (0, math.radians(70), 0))  # arms reaching the wheel
+                a_.parent = torso
+            return root, torso, head
+        hip = Vector((-0.45, 0, 0.78))
+        d1, t1, h1 = dummy("Belted", yel if SHOT.get("belt", True) else ghost_m)
+        d1.parent = cab
+        d1.location = hip
+        ghost = None
+        both = SHOT.get("ghost") and SHOT.get("belt", True)
+        gy = 2.4 if both else 0.0                     # with both, the unbelted ghost rides its own cabin alongside
+        cab2 = None
+        if both:
+            cab2 = bpy.data.objects.new("CabinRoot2", None)
+            bpy.context.collection.objects.link(cab2)
+            for o in [c_ for c_ in cab.children if c_.type == "MESH"]:
+                o2 = o.copy()
+                bpy.context.collection.objects.link(o2)
+                o2.parent = cab2
+            cab2.location = (0, gy, 0)
+        if SHOT.get("ghost"):
+            ghost, tg, hg = dummy("Unbelted", ghost_m)
+            ghost.location = hip + Vector((0, gy, 0))
+        if not SHOT.get("belt", True):                # no belted dummy in this shot: only the ghost
+            for o in [d1] + list(d1.children_recursive):
+                o.hide_render = True
+        if SHOT.get("belt", True):
+            for a0, a1 in (((-0.62, -0.19, 1.30), (-0.22, -0.19, 0.84)), ((-0.62, -0.2, 0.86), (-0.12, -0.2, 0.86))):
+                p0, p1 = Vector(a0), Vector(a1)
+                mid, dv = (p0 + p1) / 2, (p1 - p0)
+                bpy.ops.mesh.primitive_cube_add(size=1, location=mid)
+                st = bpy.context.object
+                st.scale = (0.035, 0.06, dv.length / 2 * 2)
+                st.rotation_mode = "QUATERNION"
+                st.rotation_quaternion = Vector((0, 0, 1)).rotation_difference(dv.normalized())
+                st.data.materials.append(belt_m)
+                st.parent = cab
+                if a0[2] > 1.0:                        # the shoulder strap leans with the chest
+                    bpy.context.view_layer.update()
+                    mw = st.matrix_world.copy()
+                    st.parent = t1
+                    st.matrix_world = mw
+        bag = None
+        if SHOT.get("airbag"):
+            bpy.ops.mesh.primitive_uv_sphere_add(radius=0.32, location=(0.42, 0, 1.18))
+            bag = bpy.context.object
+            bag.data.materials.append(mat("Airbag", (0.92, 0.92, 0.9), 0.7))
+            bag.parent = cab
+        reach = 0.42                                   # how far the unbelted body travels before the wheel stops it
+        for fr in range(1, N + 1):
+            t = sim_t(fr)
+            cx = cabin_x(t)
+            cab.location = (cx, 0, 0)
+            cab.keyframe_insert("location", frame=fr)
+            if cab2 is not None:
+                cab2.location = (cx, gy, 0)
+                cab2.keyframe_insert("location", frame=fr)
+            # belted: a small forward pitch into the belt during the stop, then back
+            if t <= 0:
+                pitch = 0.0
+            else:
+                pitch = 26.0 * math.sin(min(1.0, t / (stop_s * 1.6)) * math.pi) if t < stop_s * 1.6 else 0.0
+            if not SHOT.get("belt", True):
+                pitch = 0.0
+            t1.rotation_euler = (0, math.radians(pitch), 0)
+            t1.keyframe_insert("rotation_euler", frame=fr)
+            if ghost is not None:                     # keeps going at v until it meets the wheel
+                gx_free = hip.x + v * t
+                gx_cap = cx + hip.x + reach
+                ghost.location = (min(gx_free, gx_cap) if t > 0 else hip.x + v * t, gy, hip.z)
+                ghost.keyframe_insert("location", frame=fr)
+                hit_w = t > 0 and gx_free >= gx_cap
+                tg.rotation_euler = (0, math.radians(38.0 if hit_w else 0.0), 0)
+                tg.keyframe_insert("rotation_euler", frame=fr)
+            if bag is not None:
+                k = 0.0 if t <= 0.008 else min(1.0, (t - 0.008) / 0.03)
+                bag.scale = (max(0.001, k),) * 3
+                bag.keyframe_insert("scale", frame=fr)
+        # camera rides beside the cabin, from the side
+        for fr in (1, N):
+            cx = cabin_x(sim_t(fr))
+            if both:                                   # three-quarter view that holds both cabins
+                cam.location = (cx - 2.6, -5.2, 3.0)
+                tgt.location = (cx + 0.3, gy / 2, 0.95)
+            else:
+                cam.location = (cx - 0.2, -4.6, 1.5)
+                tgt.location = (cx + 0.15, 0, 1.0)
+            cam.keyframe_insert("location", frame=fr)
+            tgt.keyframe_insert("location", frame=fr)
     elif kind == "closeup_roar":
         play(arm, c.get("roar", walk), int(N * 0.12), N, 0.85)
         play(arm, c.get("idle", walk), 1, int(N * 0.12), 1.0, track="idle")

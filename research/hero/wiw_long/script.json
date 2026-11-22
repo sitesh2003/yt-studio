@@ -1,0 +1,145 @@
+{
+  "title_options": [
+    "Why Just 10 km/h Can Turn a Stop Into a Crash"
+  ],
+  "facts": [
+    "Why It Works long film (23 Nov 2026): \"Why Just 10 km/h Can Turn a Stop Into a Crash\".\nCouncil rounds 8: a five-second crash investigation (impact first, freeze, rewind, replay); every number computed\nhere or taken from a named source; idealised-simulation labels where the physics is simplified.\n\nWorked physics (equal braking a = 7 m/s^2 on a dry road, from the same instant):\n  50 km/h = 13.89 m/s stops in v^2/2a = 13.8 m.  60 km/h = 16.67 m/s at that point: sqrt(60^2 - 50^2) = 33.2 km/h.\n  Energy ratio (60/50)^2 = 1.44 -> 44% more.  Double speed -> 4x energy and 4x braking distance.\n  Reaction 1.5 s: 50 km/h -> 20.8 m, 60 km/h -> 25.0 m (FHWA: typical perception-reaction 0.75-1.5 s).\n  With 1.5 s reaction at both: 50 car stops at 34.6 m; 60 car has braked 9.6 m there -> 43 km/h.\n  Wet: UK Highway Code rule 227 - allow at least double. Half the grip (3.5 m/s^2) -> 2x braking distance.\n  Impulse: 1,500 kg at 33 km/h (9.2 m/s): change in momentum 13,800 kg m/s; stopped in 0.1 s -> ~138 kN average,\n  in 0.02 s -> ~690 kN (illustrative stopping times).\n"
+  ],
+  "sources": "OpenStax University Physics, Ch. 7 (kinetic energy); US Federal Highway Administration: perception-reaction time 0.75-1.5 s; UK Highway Code, rule 227; Newton's second law: average force = change in momentum / time; Barenyi patent DBP 854 157 (filed 1951, granted 1952); Mercedes-Benz W 111 (1959); NHTSA: seat belts cut the risk of fatal injury to front-seat car occupants by 45%; UK Highway Code stopping distances; IIHS, NHTSA (airbags supplement belts)",
+  "description": "Two identical cars brake at the same moment: one at 50 km/h, one at 60. One stops; the other is still doing 33 km/h at the same spot. We freeze the crash and rewind five seconds to find out why, in 3D: energy, reaction time, braking, grip, crumple zones, belts and airbags.",
+  "tags": [
+    "physics",
+    "braking distance",
+    "kinetic energy",
+    "crumple zone",
+    "seat belt",
+    "car safety",
+    "3D animation",
+    "STEM"
+  ],
+  "scenes": [
+    {
+      "narration": "Two identical cars. Same brakes, same road, same driver reaction. One is doing fifty kilometres an hour. The other, sixty."
+    },
+    {
+      "narration": "Both brake at exactly the same moment. The slower car stops. The faster one is still doing more than thirty kilometres an hour, at the very same spot."
+    },
+    {
+      "narration": "If there's a wall there, one car is fine. The other crashes. Ten kilometres an hour, about six miles an hour, made all the difference."
+    },
+    {
+      "narration": "So let's investigate. We'll freeze this crash, rewind the last five seconds, and find out exactly where that extra speed did its damage."
+    },
+    {
+      "narration": "Rewind one. The energy you carry."
+    },
+    {
+      "narration": "A moving car carries kinetic energy: half its mass times its speed squared. That squared is the whole story."
+    },
+    {
+      "narration": "Go from fifty to sixty, just twenty percent faster, and the energy goes up by forty-four percent."
+    },
+    {
+      "narration": "Double your speed, and you carry four times the energy. And every bit of it has to go somewhere before the car can stop."
+    },
+    {
+      "narration": "Here's a way to feel it. Hitting a wall at fifty takes the same energy as the car falling about ten metres, roughly from a third-floor window. At sixty, it's about fourteen metres, nearly the fifth floor."
+    },
+    {
+      "narration": "Rewind two. The thinking gap."
+    },
+    {
+      "narration": "Before the brakes do anything, a driver has to see the danger, decide, and move a foot. That usually takes somewhere between three quarters of a second and one and a half seconds."
+    },
+    {
+      "narration": "At fifty, a second and a half of thinking covers about twenty-one metres. At sixty, twenty-five. The faster car reaches the brakes later, and further down the road."
+    },
+    {
+      "narration": "That's nearly five car lengths, travelled at full speed, before your foot even touches the pedal. Anything that slows your reaction, like a phone or tiredness, stretches it further."
+    },
+    {
+      "narration": "Add that thinking gap to our test, and where the slower car stops, the faster one is now doing around forty-three kilometres an hour."
+    },
+    {
+      "narration": "Rewind three. Turning speed into heat."
+    },
+    {
+      "narration": "Brakes don't destroy energy. Friction turns the car's motion into heat, in the brakes and the tyres."
+    },
+    {
+      "narration": "With the same grip, the braking distance grows with the square of speed. Twice as fast means four times as far."
+    },
+    {
+      "narration": "On a dry road with good brakes, a car at fifty needs about fourteen metres to brake to a stop. At sixty, about twenty. Six extra metres, from ten extra kilometres an hour."
+    },
+    {
+      "narration": "That's why a small bump in speed hurts so much more than it feels like it should."
+    },
+    {
+      "narration": "Rewind four. The road itself."
+    },
+    {
+      "narration": "All of this assumed a dry road. Water gets between the tyre and the road, and grip drops."
+    },
+    {
+      "narration": "The UK Highway Code tells drivers to allow at least double the stopping distance in the wet. In our model, half the grip means twice the braking distance."
+    },
+    {
+      "narration": "Tyre grooves exist to pump that water out of the way. Worn tyres can't clear as much, and at higher speeds a tyre can ride up on the water and lose contact. That's hydroplaning."
+    },
+    {
+      "narration": "That's why tyres have a legal minimum tread depth. In the UK, it's one point six millimetres, about the thickness of a one-penny coin."
+    },
+    {
+      "narration": "Rewind five. The impact."
+    },
+    {
+      "narration": "Now the crash itself. Whatever happens, the car has to go from thirty-three kilometres an hour to zero. What matters is how quickly."
+    },
+    {
+      "narration": "Newton's second law: the average force equals the change in momentum, divided by the time it takes. Stretch the time, and the force falls."
+    },
+    {
+      "narration": "A stiff car stops in a blink, and the force spikes. A car that folds takes longer to stop, so the peak force is much lower."
+    },
+    {
+      "narration": "Some rough numbers. Stop a family car from thirty-three kilometres an hour in a tenth of a second, and the average force is about one hundred and forty thousand newtons. Stop it five times faster, and the force is five times bigger."
+    },
+    {
+      "narration": "That's the crumple zone, patented by engineer Béla Barényi in the early nineteen-fifties: soft ends that fold, around a strong cabin that doesn't."
+    },
+    {
+      "narration": "Rewind six. The second collision."
+    },
+    {
+      "narration": "When the car stops, you don't. Your body keeps moving at the speed the car was doing. That's Newton's first law."
+    },
+    {
+      "narration": "Without a belt, you fly forward at the car's old speed until something stops you: the steering wheel, the dashboard, the windscreen. Engineers call it the second collision."
+    },
+    {
+      "narration": "A seat belt holds you to the car, so you slow down with the cabin, spreading the force across your hips and chest, the strongest parts of your body."
+    },
+    {
+      "narration": "An airbag adds a cushion that gives you a little more time, and a little more area, to stop. It works with the belt, not instead of it."
+    },
+    {
+      "narration": "In the United States, safety officials estimate that seat belts cut the risk of death for people in the front seats of cars by forty-five percent."
+    },
+    {
+      "narration": "Replay. Everything at once."
+    },
+    {
+      "narration": "Same two cars. The faster one carries forty-four percent more energy, reacts further down the road, and needs more room to brake."
+    },
+    {
+      "narration": "Go back through the evidence: forty-four percent more energy, about four more metres of thinking, about six more metres of braking. Every piece pushes the same way."
+    },
+    {
+      "narration": "So where the slower car stops, the faster one arrives with real speed left over. Add rain, and the gap gets wider still."
+    },
+    {
+      "narration": "That's why ten kilometres an hour is never just ten. Which part of the physics surprised you most?"
+    }
+  ]
+}

@@ -522,7 +522,7 @@ def _brake_chips(d, shot, show_dist):
         d.rounded_rectangle([x - 220, 255, x + 220, 395], 28, fill=BLACK)
         text(d, (x, 300), names[k], 62, YEL if k == 0 else CYAN if shot.get("lane_names") else RED, stroke=0)
         if show_dist:
-            dist = (kmh / 3.6) ** 2 / (2 * dec[k])
+            dist = (kmh / 3.6) ** 2 / (2 * dec[k]) + kmh / 3.6 * float(shot.get("react_s", 0.0))   # + thinking distance
             text(d, (x, 360), f"stops in ~{dist:.0f} m", 44, WHITE, stroke=0)
 
 
@@ -533,7 +533,7 @@ def g_brake_speeds(d, f, n, shot):
 def g_brake_result(d, f, n, shot):
     sp = shot.get("speeds", [30, 60])
     dec = shot.get("decels") or [shot.get("decel", 7.0)] * len(sp)
-    t_end = int(n * shot.get("brake_at", 0.3)) + int(max(v / 3.6 / a for v, a in zip(sp, dec)) * FPS)
+    t_end = int(n * shot.get("brake_at", 0.3)) + int((max(v / 3.6 / a for v, a in zip(sp, dec)) + float(shot.get("react_s", 0.0))) * FPS)
     _brake_chips(d, shot, f > int(n * shot.get("brake_at", 0.3)) + 8)
     if f > t_end:
         s = pop(f, t_end, 6)
