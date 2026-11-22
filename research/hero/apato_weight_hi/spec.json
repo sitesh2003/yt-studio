@@ -45,22 +45,21 @@
       ],
       "seconds": 4.55,
       "overlay": "none",
-      "cam_scale": 1.25,
-      "cam_y": 2.0
+      "cam_y": 0
     },
     {
       "kind": "balance",
       "tonnes": 34,
       "cars": 12,
       "start_cars": 12,
-      "cam_scale": 0.6,
-      "cam_y": 17,
+      "cam_y": 10,
       "seconds": 4.79,
       "overlay": "label",
       "label": [
         "SAME ANIMAL",
         "very different weights"
-      ]
+      ],
+      "cam_scale": 0.55
     },
     {
       "kind": "balance",
@@ -77,8 +76,7 @@
         "LEG BONES SAY",
         "~34 tonnes = 23 cars"
       ],
-      "cam_scale": 1.25,
-      "cam_y": 2.0
+      "cam_y": 0
     },
     {
       "kind": "balance",
@@ -95,8 +93,7 @@
         "ANOTHER STUDY",
         "~18 tonnes = 12 cars"
       ],
-      "cam_scale": 1.25,
-      "cam_y": 2.0
+      "cam_y": 0
     },
     {
       "kind": "tail_whip",
@@ -126,10 +123,10 @@
       "tonnes": 18,
       "cars": 12,
       "start_cars": 12,
-      "cam_scale": 0.6,
-      "cam_y": -17,
+      "cam_y": -15,
       "seconds": 5.878,
-      "overlay": "none"
+      "overlay": "none",
+      "cam_scale": 0.55
     }
   ]
 }

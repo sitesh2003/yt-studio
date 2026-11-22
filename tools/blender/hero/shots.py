@@ -1433,7 +1433,7 @@ def build():
         car_t = SHOT.get("car_t", 1.5)
         n = int(SHOT["cars"])
         pre = int(SHOT.get("start_cars", 0))
-        piv_z, half = 5.5, 18.0
+        piv_z, half = 5.5, 12.0
         pivot = bpy.data.objects.new("Beam", None)
         bpy.context.collection.objects.link(pivot)
         pivot.location = (0, 0, piv_z)
@@ -1443,9 +1443,9 @@ def build():
             o.parent = pivot
             o.matrix_parent_inverse.identity()
             o.location = loc
-        on_beam(box("BeamBar", (1.6, 2 * half + 28, 0.9), (0, 0, 0), steel), (0, 0, 0))
-        on_beam(box("PlatDino", (9.0, 27.0, 0.5), (0, 0, 0), paint), (0, half, 0.65))
-        on_beam(box("PlatCars", (9.0, 27.0, 0.5), (0, 0, 0), paint), (0, -half, 0.65))
+        on_beam(box("BeamBar", (1.6, 2 * half + 19, 0.9), (0, 0, 0), steel), (0, 3.5, 0))
+        on_beam(box("PlatDino", (8.0, 25.0, 0.5), (0, 0, 0), paint), (0, half + 1.0, 0.65))
+        on_beam(box("PlatCars", (6.6, 11.0, 0.5), (0, 0, 0), paint), (0, -half, 0.65))
         bpy.ops.mesh.primitive_cone_add(vertices=4, radius1=4.0, radius2=0.6, depth=piv_z, location=(0, 0, piv_z / 2))
         bpy.context.object.data.materials.append(steel)
         arm.parent = pivot
@@ -1455,9 +1455,9 @@ def build():
         t0, t1 = SHOT.get("drop_s", [0.3, T - 1.2])
         land = []
         for i in range(n):
-            layer, idx = divmod(i, 10)
+            layer, idx = divmod(i, 4)            # a tower: 4 cars a layer, so the count reads as layers
             col, row = idx % 2, idx // 2
-            loc = Vector(((col - 0.5) * 2.6, -half + (row - 2) * 4.9, 0.9 + layer * 1.5))
+            loc = Vector(((col - 0.5) * 2.7, -half + (row - 0.5) * 4.95, 0.9 + layer * 1.5))
             car, _ = glb(SPEC["props"]["car"], 4.4, (0, 0, 0), 0.0)
             on_beam(car, loc)
             if i < pre:
@@ -1475,7 +1475,7 @@ def build():
                     o.hide_render = hid
                     o.keyframe_insert("hide_render", frame=fr)
         # the balance: a damped spring toward the angle the loads ask for
-        tilt = math.radians(SHOT.get("max_tilt", 9.0))
+        tilt = math.radians(SHOT.get("max_tilt", 12.0))
         th, w = None, 0.0
         for fr in range(1, N + 1):
             mass = sum(1 for f_ in land if f_ <= fr) * car_t
@@ -1486,10 +1486,11 @@ def build():
             th += w / FPS
             pivot.rotation_euler = (th, 0, 0)
             pivot.keyframe_insert("rotation_euler", index=0, frame=fr)
-        cs = SHOT.get("cam_scale", 1.0)
+        cs = SHOT.get("cam_scale", 1.35)
         cy = SHOT.get("cam_y", 0.0)
-        key_path(cam, [(1, Vector((62 * cs, cy - 30 * cs, 22 * cs))), (N, Vector((58 * cs, cy - 27 * cs, 21 * cs)))])
-        key_path(tgt, [(1, Vector((0, cy + 1, 6.5))), (N, Vector((0, cy + 1, 6.5)))])
+        # the beam runs INTO the picture (cars near, the animal far): a vertical frame holds both ends big
+        key_path(cam, [(1, Vector((60 * cs, cy - 4 * cs, 17 * cs))), (N, Vector((57 * cs, cy - 3.5 * cs, 16 * cs)))])
+        key_path(tgt, [(1, Vector((0, cy + 3.0, 7.5))), (N, Vector((0, cy + 3.0, 7.5)))])
         smooth_keys(cam)
     elif kind == "closeup_roar":
         play(arm, c.get("roar", walk), int(N * 0.12), N, 0.85)
