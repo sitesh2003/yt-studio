@@ -1,23 +1,23 @@
 {
   "lessons": [
-    "Keep the opening hook under 10 words and make it a surprising, vivid statement – videos like “This shark is older than the United States” and “A blue‑fin tuna looks like deep‑red beef” held >1.2 × viewers at 10 % and beat similar videos at start and end.",
-    "Avoid dense, multi‑clause explanations as the first line – the biggest early drops (0.13‑0.34 loss) occur when the hook is a long factual sentence such as the garlic or windshield explanations.",
-    "Use sensory or paradoxical imagery (e.g., “Fresh pineapple is literally eating you back”, “Gulping ice water after a hot pepper feels like relief”) – these videos kept >1.0 × at 10 % and had the smallest early loss fractions.",
-    "If you employ a countdown or pause, place it after the hook and keep it brief – videos with a later drop around 0.6 (the shark) showed viewers leaving when the pacing slowed after the hook.",
-    "Repeat key ideas only after the hook has secured attention – videos that repeated the same line in the second biggest drop (e.g., guardrail “instead of impaling your vehicle…”) lost ~0.12‑0.13 of the audience.",
-    "End with a teaser or unanswered question to sustain retention to the end – the highest kept_at_end ratios (e.g., James Webb, shark) all finished with a curiosity‑driving line."
+    "Start with a vivid, surprising hook line – videos with non‑empty hook_line keep >1.0 of viewers at 10% while empty hooks drop below 0.5",
+    "Keep the hook concise; avoid long explanatory sentences in the first 10‑20% – biggest drops at 0.1‑0.2 are almost always plain facts",
+    "Use visual or sensory contrast (e.g., “older than the United States”, “looks like beef”) to sustain mid‑video retention – top videos with >0.6 at 50% use such hooks",
+    "Limit countdown or pause cues unless they build clear tension – the countdown flag shows mixed results and no consistent retention boost",
+    "Pose a curiosity‑driven question or paradox before the first factual block – high‑retention videos frame the hook as a question or mystery",
+    "Maintain a steady narrative pace after the hook; avoid inserting another dense fact block around 0.3‑0.4 where many drops occur"
   ],
   "worst_moment_types": [
-    "Long, dense explanatory sentence as the first spoken line",
-    "Repeated phrasing of the same idea within the first 30 %",
-    "Late‑mid‑video pause or countdown that slows pacing",
-    "Overly technical detail without visual hook"
+    "early straight factual explanation (0‑0.2)",
+    "repetition of the same idea without new visual",
+    "dense technical detail without visual cue",
+    "countdown or pause without added tension"
   ],
   "best_hook_types": [
-    "Short, surprising fact or paradox (e.g., “older than the United States”)",
-    "Vivid sensory description that creates a mental picture",
-    "Provocative question that promises a counter‑intuitive answer",
-    "Bold comparison that contrasts two familiar things (e.g., tuna vs. beef)"
+    "surprising contrast or paradox (e.g., older than US, red‑meat fish)",
+    "vivid sensory image (e.g., ice water vs pepper fire)",
+    "question that challenges expectation (e.g., why do potatoes sprout in dents?)",
+    "short curiosity‑driven statement hinting at hidden mechanism"
   ],
   "studied": "2026-11-23",
   "videos": 19

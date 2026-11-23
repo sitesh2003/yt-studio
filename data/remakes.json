@@ -19,5 +19,14 @@
     "title": "Why Owls Fly in Complete Silence vs Loud Pigeons 🦉🤫",
     "kind": "countdown",
     "tries": 2
+  },
+  {
+    "topic": "Was The Real T. rex As Terrifying As The Movies?",
+    "pulled": "m4nqMI5n2ZQ",
+    "title": "Was The Real T. rex As Terrifying As The Movies?",
+    "false_sentence": "In the 2017 model, that was around twenty kilometres an hour, about twelve miles an hour.",
+    "correct_version": "The 2017 biomechanical model estimated a maximum speed of about 7–8 km/h (4–5 mph), far slower than 20 km/h.",
+    "why": "The cited speed contradicts the actual results of the 2017 study.",
+    "tries": 0
   }
 ]

@@ -1,16 +1,12 @@
 {
-  "summary": "- Open with a direct second‑person hook that reveals a hidden fact about the viewer’s own body or daily life.\n- Keep the title under 6 words, start with “Why” or “What”, and omit emojis.\n- Use present‑tense language and avoid countdown timers or on‑screen timers.\n- Limit video length to 20‑30 seconds to maintain high stayed_pct.\n- Focus on relatable, everyday topics rather than abstract science or niche phenomena.",
+  "summary": "- Use everyday, body‑related mysteries (eyes, onions, leg numbness) as topics because they consistently keep viewers past the first seconds. - Write hooks in second‑person, stating a surprising claim about the viewer’s own experience (e.g., “Your eyes are leaking right now…”). - Keep titles under eight words, start with “Why” or a direct question, and add a single emoji for visual punch. - Limit video length to 15‑20 seconds for optimal stay‑through; avoid exceeding 30 seconds unless the hook is exceptionally strong. - Drop generic countdown timers or overly technical intros that don’t immediately promise a personal revelation.",
   "winning_hooks": [
     "Your eyes are leaking right now, and your brain is hiding it.",
-    "You’re crying right now even if you don’t feel it – here’s why onions do it.",
-    "Your leg isn’t asleep because of blood loss – it’s something else."
+    "You are not sad when you chop an onion – it’s something else.",
+    "Your leg doesn’t actually fall asleep because of blood loss."
   ],
   "avoid": [
-    "Emojis in titles or hooks",
-    "Long, multi‑clause titles",
-    "Countdown overlays or timers",
-    "Highly technical or distant topics (e.g., space, geology)",
-    "Hooks that don’t address the viewer directly"
+    "Opening with a generic “Did you know…”, long pre‑amble before the hook, countdown timers that delay the core claim, titles longer than eight words without a clear curiosity trigger"
   ],
-  "next_experiment": "A/B test two versions of a new video on a common bodily sensation: version A uses a 5‑word “Why…” title without emojis and a second‑person present‑tense hook; version B uses a longer title with emojis and a third‑person hook. Measure stayed_pct and view growth."
+  "next_experiment": "Create two versions of the same video: Version A uses a second‑person hook (“Your X is doing Y”) and Version B uses a third‑person hook (“People think X does Y”). Keep title, length, and thumbnail identical, then compare stayed_pct to see which phrasing drives higher retention."
 }
