@@ -1,22 +1,24 @@
 {
   "lessons": [
-    "Prioritize immediate, high-stakes curiosity over context; hooks that pose a direct, counter-intuitive question (e.g., 'Why do potatoes sprout from dents?') perform better than descriptive statements.",
-    "Eliminate 'Pause and guess' prompts; they consistently correlate with significant viewer drop-offs, as seen in the 'Maple Syrup' and 'Foil' videos.",
-    "Avoid redundant explanations; 'Highway Guardrails' suffered a major drop when repeating the exact same phrasing in the second drop-line, signaling to viewers that they have already heard the core point.",
-    "Keep technical definitions brief; long-winded chemical or biological explanations (as seen in the 'Fingers Prune' and 'Potatoes' drops) cause viewers to disengage before the midpoint.",
-    "Maintain high energy through the first 15% of the video; drops are most severe (20-34% loss) when the script transitions into slow setup or complex chemical terminology too early."
+    "Lead immediately with a shocking fact or vivid contrast rather than asking rhetorical questions or stating what something is NOT (e.g., 'Shark older than US' achieved >100% end retention).",
+    "Avoid filler setup lines right after the hook; stating obvious observations like 'They are not just there to look cool' or 'They look like similar fruits' lost up to 31.5% of viewers instantly.",
+    "Do not repeat the video title or main question in the first sentence of the script; repeating the hook word-for-word caused immediate drops of 31.9%.",
+    "Never pause momentum for audience participation gimmicks like 'Pause and guess...'; these create sharp retention drops midway through.",
+    "Deliver immediate explanatory value—videos that delayed the core scientific mechanism with slow background preambles suffered massive early dropoffs."
   ],
   "worst_moment_types": [
-    "Interactive pauses ('Pause and guess')",
-    "Literal repetition of information provided seconds earlier",
-    "Transitioning from a hook into a dense, multi-sentence technical or chemical definition",
-    "Self-evident statements that state the obvious rather than building on the hook"
+    "Empty fluff or filler lines following the hook (e.g., 'They are not just there to look cool', 'They look like similar fruits')",
+    "Literal repetition of the video title or question as the opening line",
+    "Mid-video pauses or callouts asking viewers to stop and guess",
+    "Slow background setups and preambles before introducing the core topic mechanism",
+    "Negative framing hooks focusing on debunking what something is NOT rather than revealing what it IS"
   ],
   "best_hook_types": [
-    "Direct questions about everyday objects that contradict common assumptions (e.g., 'Why fresh pineapple eats you back')",
-    "High-contrast comparisons that frame two common things as fundamentally different (e.g., 'Tuna vs. Cod')",
-    "Extreme scenarios that create immediate stakes (e.g., 'Shark older than the US')"
+    "Bold historical or scale comparisons (e.g., 'This shark is older than the United States')",
+    "Direct visual and sensory contrasts between familiar items (e.g., 'Tuna steak looks like deep red beef while cod is bright white')",
+    "Counter-intuitive everyday physical paradoxes presented as direct statements (e.g., 'You can touch hot foil briefly just as it comes out of the oven')",
+    "Intriguing mystery claims about famous scientific topics (e.g., 'Most James Webb images hold secrets')"
   ],
-  "studied": "2026-11-22",
-  "videos": 18
+  "studied": "2026-11-23",
+  "videos": 19
 }

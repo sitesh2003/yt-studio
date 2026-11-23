@@ -20,7 +20,7 @@
       }
     ],
     "countdown": null,
-    "checked": "2026-11-22"
+    "checked": "2026-11-23"
   },
   "a8Kooq5Sswk": {
     "title": "Why Onions Make You Cry",
@@ -43,7 +43,7 @@
       }
     ],
     "countdown": null,
-    "checked": "2026-11-22"
+    "checked": "2026-11-23"
   },
   "yF1Dj5F1icM": {
     "title": "Why Cold Water Fails Against Spicy Food 🌶️🥛",
@@ -319,7 +319,7 @@
       }
     ],
     "countdown": false,
-    "checked": "2026-11-22"
+    "checked": "2026-11-23"
   },
   "nnxCKv3odg4": {
     "title": "Why Car Windshields Have Black Dots 🤔",
@@ -347,25 +347,25 @@
   "7CxPpDW31G0": {
     "title": "Why Ponds Don't Freeze Solid 🤔",
     "hook_line": "Your frozen pond is secretly keeping fish alive.",
-    "kept_at_10pct": 1.1038,
-    "kept_at_50pct": 0.3774,
-    "kept_at_end": 0.24530000000000002,
+    "kept_at_10pct": 1.1028,
+    "kept_at_50pct": 0.3738,
+    "kept_at_end": 0.243,
     "vs_similar_start": 0.44,
     "vs_similar_end": 0.78,
     "biggest_drops": [
       {
         "at": 0.14,
-        "lost": 0.321,
+        "lost": 0.327,
         "line": "At negative fifteen degrees, why doesn't it freeze solid?"
       },
       {
         "at": 0.29,
-        "lost": 0.085,
+        "lost": 0.084,
         "line": "Many liquids shrink when cold, but water does something strange."
       }
     ],
     "countdown": false,
-    "checked": "2026-11-22"
+    "checked": "2026-11-23"
   },
   "qAcYz-fodfU": {
     "title": "How 400 Degree Foil Stays Safe 🤔",
@@ -412,5 +412,28 @@
     ],
     "countdown": true,
     "checked": "2026-11-22"
+  },
+  "I9iv5BWMDLA": {
+    "title": "How James Webb Spots Hidden Planets In Plain Sight",
+    "hook_line": "Most James Webb images hold secrets.",
+    "kept_at_10pct": 1.4054,
+    "kept_at_50pct": 0.7837999999999999,
+    "kept_at_end": 0.4595,
+    "vs_similar_start": 0.55,
+    "vs_similar_end": 0.68,
+    "biggest_drops": [
+      {
+        "at": 0.29,
+        "lost": 0.189,
+        "line": "Most exoplanets are found when they cross in front of their star and briefly block a tiny fraction of its light."
+      },
+      {
+        "at": 0.62,
+        "lost": 0.108,
+        "line": "By using infrared light to spot the faint heat glow of a young world."
+      }
+    ],
+    "countdown": false,
+    "checked": "2026-11-23"
   }
 }

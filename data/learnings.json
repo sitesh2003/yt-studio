@@ -1,14 +1,14 @@
 {
-  "summary": "1. Start hooks with immediate, second-person direct actions or states about the viewer's body or daily life (e.g., 'Your eyes are leaking right now') rather than passive setup statements. 2. Keep titles concise and intrigue-focused without relies on heavy emoji filler or overly broad questions. 3. Eliminate scenario-building setups like 'Your car swerves off...' which cause immediate swiping (>70% drop-off). 4. Focus topics on universal human/everyday phenomena over niche infrastructure or passive historical trivia. 5. State the provocative core conflict in the very first 4 words of the spoken audio.",
+  "summary": "High-stayed videos (47–52% stayed_pct) focus on immediate human body/everyday experiences rather than distant science or engineering topics. Winning hooks use immediate second-person statements ('Your eyes', 'Your leg') that instantly correct a common misconception or state a strange fact happening *right now*. Low-stayed videos (<31% stayed_pct) use slow narrative setups ('Your car swerves...'), vague generalizations ('Most James Webb images hold secrets'), or multi-clause passive introductory sentences. Titles for top performers are concise, direct 5-8 word question/fact statements without unnecessary emoji padding. Keep topic focus strictly anchored to personal, relatable body curiosity to consistently break the 1,200 view threshold.",
   "winning_hooks": [
-    "Direct personal confrontation: Using 'Your' + present bodily/everyday state ('Your eyes are leaking right now')",
-    "Subverting obvious assumptions in under 8 words ('You are not sad when you chop an onion')",
-    "Short, punchy title framing that clearly states a relatable mystery ('Why your eyes are secretly leaking')"
+    "Your eyes are leaking right now, and your brain is hiding it.",
+    "Your leg doesn't actually fall asleep because of blood loss. It's not blood.",
+    "You are not sad when you chop an onion."
   ],
   "avoid": [
-    "Hypothetical scenario setups that delay the core topic ('Your car swerves off the highway right toward...')",
-    "Generic background preamble ('Fossilized bones can last millions of years, but sometimes...')",
-    "Abstract or passive environmental topics that viewers do not feel personally connected to in the first 2 seconds (e.g., backyard pond freezing dynamics)"
+    "Vague third-person generalizations about distant science (e.g., 'Most James Webb images hold secrets.')",
+    "Hypothetical story setups in place of direct facts (e.g., 'Your car swerves off the highway...')",
+    "Slow introductory exposition with multi-clause sentences (e.g., 'Fossilized bones can last millions of years, but sometimes...')"
   ],
-  "next_experiment": "Test scenario-building vs. direct personal impact on the same topic: A) 'Your car swerves off the highway toward a steel wall...' vs B) 'Your car's guardrail is engineered to crumple like paper to save your life.'"
+  "next_experiment": "A/B test a body-phenomenon topic using a direct misconception hook ('Your stomach isn't actually growling because it's empty') versus an abstract science topic ('Why your stomach acid is strong enough to melt metal') using identical 30-35s lengths and minimal titles."
 }
