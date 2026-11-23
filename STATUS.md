@@ -1,10 +1,9 @@
 # Ever Thought Why? - status
 
-Updated Tue 24 Nov, 12:48 AM IST by the health agent (every 2 hours, and after every production run).
+Updated Tue 24 Nov, 02:01 AM IST by the health agent (every 2 hours, and after every production run).
 
 - Video bank: 18 of 14 videos ready (10 waiting in the bank, 8 scheduled on YouTube); YouTube schedule covers until Tue 01 Dec, 05:30 AM IST.
-- Next production run: Tue 24 Nov, 03:13 AM IST (one is running now).
-- Deleted before going public: 'Was The Real T. rex As Terrifying As The Movies?'. Wrong line: "In the 2017 model, that was around twenty kilometres an hour, about twelve miles an hour.". Correct: The 2017 biomechanical model estimated a maximum speed of about 7–8 km/h (4–5 mph), far slower than 20 km/h. A corrected remake is queued.
+- Next production run: Tue 24 Nov, 03:13 AM IST.
 
 ## Videos waiting to go public
 
