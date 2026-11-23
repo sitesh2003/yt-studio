@@ -27,8 +27,11 @@ words = json.loads((d / "words.json").read_text(encoding="utf-8"))
 job = ROOT / "jobs" / f"hero_{name}"
 job.mkdir(parents=True, exist_ok=True)
 shutil.copy(d / f"{name}.mp4", job / "final.mp4")
+spec = json.loads((d / "spec.json").read_text(encoding="utf-8")) if (d / "spec.json").exists() else {}
+LONG = spec.get("aspect") == "landscape"      # 24 Nov 2026: long films (16:9, chapters), not Shorts
 subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-ss", str(thumb_t), "-i", str(job / "final.mp4"),
-                "-frames:v", "1", "-vf", "scale=720:1280", "-q:v", "3", str(job / "thumbnail.jpg")], check=True)
+                "-frames:v", "1", "-vf", "scale=1280:720" if LONG else "scale=720:1280", "-q:v", "3",
+                str(job / "thumbnail.jpg")], check=True)
 
 hist = read_json(DATA / "history.json", []) or []
 if any(h.get("job") == f"hero_{name}" and h.get("video_id") for h in hist):
@@ -64,7 +67,17 @@ import os   # noqa: E402
 if os.environ.get("HERO_AT"):   # a fixed slot (e.g. to place a Short between others), ISO time with offset
     slot = dt.datetime.fromisoformat(os.environ["HERO_AT"])
 lines = [s["narration"] for s in script["scenes"]]
-desc = (script.get("description", "") + "\n\nSources: " + script.get("sources", "") + "\n" +
+chapters = ""
+if LONG:   # YouTube chapters: 0:00 first, then each chapter card's cut (voice times = the cuts, gated)
+    spans = json.loads((d / "scenes.json").read_text(encoding="utf-8"))
+    hindi = CHANNEL == "hi"
+    rows = [(0, "शुरुआत" if hindi else "Intro")]
+    for i, sh in enumerate(spec["shots"]):
+        if sh.get("chapter"):
+            nm = sh["chapter"][1]
+            rows.append((int(spans[i][0]), nm if hindi else nm.title().replace("T. Rex", "T. rex")))
+    chapters = "\n\n" + "\n".join(f"{t // 60}:{t % 60:02d} {nm}" for t, nm in rows)
+desc = (script.get("description", "") + chapters + "\n\nSources: " + script.get("sources", "") + "\n" +
         "3D models: Quaternius, Animated LowPoly Dinosaurs (CC0); Kenney, Car Kit (CC0). Animated in Blender.\n\n"
         "How this was made: the script is researched and fact-checked against published research (sources above), "
         "narrated by an AI voice, and animated and edited with open-source software.")
