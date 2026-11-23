@@ -85,12 +85,31 @@ if stage == "voice":
         if hindi:   # compare by SOUND: "overlap" and "ओवलाब" are the same word said aloud
             from agents.listen import skeleton
             hw, ww = [skeleton(x) for x in hw], [skeleton(x) for x in ww]
-        best = 0.0
-        for i in range(0, max(1, len(hw) - len(ww) + 1)):
-            r = SequenceMatcher(None, ww, hw[i:i + len(ww) + 2]).ratio()
-            best = max(best, r)
+        def score(hw_):
+            b_ = 0.0
+            for i in range(0, max(1, len(hw_) - len(ww) + 1)):
+                b_ = max(b_, SequenceMatcher(None, ww, hw_[i:i + len(ww) + 2]).ratio())
+            return b_
+        best = score(hw)
         # Hindi spelling varies (digits vs words, nukta, anusvara), so its bar is lower; English must be near-exact
         bar = 0.6 if hindi else 0.8
+        if best < bar and spans:
+            # 23 Nov 2026: a second, larger listener on a TIGHT slice before failing. Medium heard "Chapter 80" and
+            # "Rewind 4, the road itself, all of this" (the next scene bleeding in) where large-v3 heard the words.
+            global _big
+            if "_big" not in globals():
+                from faster_whisper import WhisperModel
+                _big = WhisperModel("large-v3", device="cpu", compute_type="int8")
+            clip2 = tmp / f"t{k}.wav"
+            subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-ss", f"{max(0.0, a_ - 0.1):.3f}", "-to",
+                            f"{b_ + 0.1:.3f}", "-i", str(d / "voice.mp3"), "-ar", "16000", "-ac", "1", str(clip2)], check=True)
+            segs2, _ = _big.transcribe(str(clip2), language="hi" if hindi else "en", beam_size=5,
+                                       condition_on_previous_text=False)
+            hw2 = canon(" ".join(s_.text for s_ in segs2)).split()
+            if hindi:
+                hw2 = [skeleton(x) for x in hw2]
+            if score(hw2) > best:
+                best = score(hw2)
         (notes if best >= bar else fails).append(f"scene {k + 1} heard {best:.0%}: {sc['narration'][:50]}")
     if hindi:   # Devanagari Hindi; English only as single words (owner, 22 Nov 2026)
         from agents.writer import hindi_script_issues

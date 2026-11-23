@@ -207,9 +207,11 @@ def ground(kind):
             h_ = _r.uniform(4, 9)
             bpy.ops.mesh.primitive_cylinder_add(vertices=6, radius=0.3, depth=h_, location=(x, y, h_ / 2))
             bpy.context.object.data.materials.append(trunk)
+            bpy.context.object["tree"] = 3.2
             bpy.ops.mesh.primitive_cone_add(vertices=7, radius1=_r.uniform(1.8, 3.0), depth=h_ * 0.9,
                                             location=(x, y, h_ * 0.85))
             bpy.context.object.data.materials.append(leaf)
+            bpy.context.object["tree"] = 3.2
         for _ in range(220):
             x, y = _r.uniform(-60, 60), _r.uniform(-60, 60)
             if abs(x) < 6 and abs(y) < 20:
@@ -1836,8 +1838,40 @@ def render():
     print(f"rendered shot {args.shot} frames {f0}-{f1} of {N}")
 
 
+def clear_sightline():
+    """23 Nov 2026: a random tree stood between the camera and the dinosaur in two long-film shots (a green cone
+    filling the frame). Any tagged tree within its radius of the camera-to-target line, on any frame, is hidden."""
+    sc = bpy.context.scene
+    cam = sc.camera
+    tgt = next((c_.target for c_ in cam.constraints if c_.type == "TRACK_TO"), None) if cam else None
+    trees = [o for o in sc.objects if "tree" in o.keys()]
+    if not tgt or not trees:
+        return
+    pairs = []
+    for fr in range(1, N + 1, 6):
+        sc.frame_set(fr)
+        pairs.append((cam.matrix_world.translation.copy(), tgt.matrix_world.translation.copy()))
+    hid = 0
+    for o in trees:
+        p = o.location
+        for a_, b_ in pairs:
+            ab = Vector((b_.x - a_.x, b_.y - a_.y))
+            ap = Vector((p.x - a_.x, p.y - a_.y))
+            L2 = ab.length_squared or 1e-6
+            t = ap.dot(ab) / L2
+            if -0.05 <= t <= 1.0 and (ap - ab * t).length < float(o["tree"]):
+                o.hide_render = True
+                o.hide_viewport = True
+                hid += 1
+                break
+    sc.frame_set(1)
+    if hid:
+        print(f"sightline: hid {hid} tree parts")
+
+
 reset()
 build()
+clear_sightline()
 if os.environ.get("HERO_SAVE_BLEND"):
     bpy.ops.wm.save_as_mainfile(filepath=os.environ["HERO_SAVE_BLEND"])
 render()

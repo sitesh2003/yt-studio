@@ -73,6 +73,29 @@ def font(size):
 # on-screen label is Hindi (Devanagari; single English words allowed). PIL here cannot shape Devanagari (no raqm),
 # so Hindi labels are written into the caption file and drawn by libass in the channel's own Hindi font.
 HI_LABELS = {
+    # long film (23 Nov 2026)
+    'JANE AND PETEY': 'Jane और Petey',
+    'about 13 and 15 years old': 'क़रीब 13 और 15 साल के',
+    'SUE': 'Sue',
+    'about 12 m long': 'क़रीब 12 m लंबा',
+    '~8 TONNES': '~8 tonne',
+    '= about 6 small cars': '= क़रीब 6 छोटी गाड़ियां',
+    "SUE'S SKULL": 'Sue की खोपड़ी',
+    '~1.4 m long': '~1.4 m लंबी',
+    'SCALY SKIN': 'पपड़ीदार खाल',
+    'neck, hips and tail': 'गर्दन, कूल्हे और पूंछ',
+    'LIKE AN ELEPHANT': 'हाथी जैसी चाल',
+    'fast, but never airborne': 'तेज़, पर कभी हवा में नहीं',
+    'BIG SMELL LOBES': 'सूंघने का बड़ा हिस्सा',
+    'a nose for food': 'खाना सूंघने वाली नाक',
+    'LOW SOUNDS': 'गहरी आवाज़ें',
+    'heard from far away': 'दूर से सुनाई देतीं',
+    '~30 cm TEETH': '~30 cm के दांत',
+    'root and all': 'जड़ समेत',
+    'BITE MARKS': 'दांतों के निशान',
+    'on a Triceratops hip': 'Triceratops के कूल्हे पर',
+    'ABOUT 1 m': 'क़रीब 1 m',
+    'two clawed fingers': 'पंजे वाली दो उंगलियां',
     "+ THINKING DISTANCE": "+ सोचने की दूरी", "+2 kg EVERY DAY": "हर दिन +2 kg", "30-50% BONE": "30-50% हड्डी",
     "= 1/2 x MASS x SPEED\u00b2": "= 1/2 × वज़न × speed\u00b2", "= ONE BITE": "= एक bite", "BITE FORCE": "Bite की ताकत",
     "BONE": "हड्डी पर", "STRESS": "दबाव", "Bela Barenyi": "बेला बारेनी", "CAR": "गाड़ी", "CARS": "गाड़ियां",
@@ -278,6 +301,9 @@ def g_stress_run(d, f, n, shot):
     if st > 0.85:
         blink = (f // 4) % 2 == 0
         text(d, (x0 - 230, y0 + (y1 - y0) * 0.15), "BREAK!", 110, RED if blink else WHITE, stroke=12)
+
+
+g_stress = g_stress_run          # long-film spec names the overlay "stress"
 
 
 def g_muscle_needed(d, f, n, shot):

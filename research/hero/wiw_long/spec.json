@@ -59,7 +59,7 @@
       "kind": "brake_compare",
       "overlay": "brake_speeds",
       "brake_at": 0.55,
-      "seconds": 7,
+      "seconds": 9.012,
       "speeds": [
         50,
         60
@@ -78,8 +78,8 @@
       "overlay": "brake_result",
       "result_text": "STILL AT 33 km/h",
       "brake_at": 0.1,
-      "seconds": 9,
-      "source": "Kinematics v² = u² - 2as (idealised: same car, same braking from the same instant)",
+      "seconds": 8.854,
+      "source": "Kinematics v\u00b2 = u\u00b2 - 2as (idealised: same car, same braking from the same instant)",
       "speeds": [
         50,
         60
@@ -97,13 +97,13 @@
       "kind": "crash_compare",
       "overlay": "none",
       "hit_at": 0.45,
-      "seconds": 8
+      "seconds": 9.324
     },
     {
       "kind": "brake_compare",
       "overlay": "none",
       "brake_at": 0.9,
-      "seconds": 8,
+      "seconds": 7.836,
       "cam_h": 34,
       "speeds": [
         50,
@@ -126,7 +126,7 @@
         "THE ENERGY YOU CARRY"
       ],
       "brake_at": 0.95,
-      "seconds": 3.5,
+      "seconds": 2.761,
       "speeds": [
         50,
         60
@@ -144,7 +144,7 @@
       "kind": "brake_compare",
       "overlay": "energy",
       "brake_at": 0.95,
-      "seconds": 8,
+      "seconds": 6.859,
       "source": "OpenStax University Physics, Ch. 7 (kinetic energy)",
       "speeds": [
         50,
@@ -177,7 +177,7 @@
       ],
       "unit": "%",
       "brake_at": 0.95,
-      "seconds": 8,
+      "seconds": 5.713,
       "source": "OpenStax University Physics, Ch. 7 (kinetic energy)",
       "speeds": [
         50,
@@ -196,7 +196,7 @@
       "kind": "brake_compare",
       "overlay": "four",
       "brake_at": 0.95,
-      "seconds": 9,
+      "seconds": 6.578,
       "source": "OpenStax University Physics, Ch. 7 (kinetic energy)"
     },
     {
@@ -217,8 +217,8 @@
       ],
       "unit": "m",
       "brake_at": 0.95,
-      "seconds": 11,
-      "source": "Energy: height = v² / 2g",
+      "seconds": 11.384,
+      "source": "Energy: height = v\u00b2 / 2g",
       "speeds": [
         50,
         60
@@ -240,7 +240,7 @@
         "THE THINKING GAP"
       ],
       "brake_at": 0.95,
-      "seconds": 3.5,
+      "seconds": 2.633,
       "speeds": [
         50,
         60
@@ -259,7 +259,7 @@
       "overlay": "react",
       "brake_at": 0.25,
       "react_s": 1.5,
-      "seconds": 11,
+      "seconds": 8.929,
       "source": "US Federal Highway Administration: perception-reaction time 0.75-1.5 s",
       "speeds": [
         50,
@@ -292,7 +292,7 @@
       ],
       "unit": "m",
       "brake_at": 0.75,
-      "seconds": 11,
+      "seconds": 9.677,
       "source": "US Federal Highway Administration: perception-reaction time 0.75-1.5 s",
       "speeds": [
         50,
@@ -312,7 +312,7 @@
       "overlay": "react",
       "brake_at": 0.6,
       "react_s": 1.5,
-      "seconds": 10,
+      "seconds": 9.983,
       "source": "US Federal Highway Administration: perception-reaction time 0.75-1.5 s",
       "speeds": [
         50,
@@ -333,8 +333,8 @@
       "result_text": "NOW 43 km/h",
       "brake_at": 0.2,
       "react_s": 1.5,
-      "seconds": 11,
-      "source": "Same model with a 1.5 s reaction and 7 m/s² braking (idealised)",
+      "seconds": 7.459,
+      "source": "Same model with a 1.5 s reaction and 7 m/s\u00b2 braking (idealised)",
       "speeds": [
         50,
         60
@@ -356,7 +356,7 @@
         "TURNING SPEED INTO HEAT"
       ],
       "brake_at": 0.2,
-      "seconds": 3.5,
+      "seconds": 3.425,
       "speeds": [
         50,
         60
@@ -378,7 +378,7 @@
         "motion becomes heat"
       ],
       "brake_at": 0.15,
-      "seconds": 8,
+      "seconds": 6.387,
       "speeds": [
         50,
         60
@@ -397,8 +397,8 @@
       "overlay": "brake_result",
       "result_text": "4x THE DISTANCE",
       "brake_at": 0.12,
-      "seconds": 9,
-      "source": "Braking distance = v² / 2a"
+      "seconds": 7.027,
+      "source": "Braking distance = v\u00b2 / 2a"
     },
     {
       "kind": "brake_compare",
@@ -418,8 +418,8 @@
       ],
       "unit": "m",
       "brake_at": 0.15,
-      "seconds": 11,
-      "source": "v² / 2a with a = 7 m/s² (idealised dry road)",
+      "seconds": 10.814,
+      "source": "v\u00b2 / 2a with a = 7 m/s\u00b2 (idealised dry road)",
       "speeds": [
         50,
         60
@@ -437,7 +437,7 @@
       "kind": "brake_compare",
       "overlay": "none",
       "brake_at": 0.15,
-      "seconds": 7,
+      "seconds": 3.87,
       "cam_h": 30,
       "speeds": [
         50,
@@ -460,7 +460,7 @@
         "THE ROAD ITSELF"
       ],
       "brake_at": 0.2,
-      "seconds": 3.5,
+      "seconds": 2.283,
       "speeds": [
         50,
         50
@@ -483,7 +483,7 @@
         "water gets between tyre and road"
       ],
       "brake_at": 0.12,
-      "seconds": 8,
+      "seconds": 5.684,
       "speeds": [
         50,
         50
@@ -503,7 +503,7 @@
       "overlay": "brake_result",
       "result_text": "2x THE DISTANCE",
       "brake_at": 0.12,
-      "seconds": 10,
+      "seconds": 8.441,
       "source": "UK Highway Code, rule 227",
       "speeds": [
         50,
@@ -527,7 +527,7 @@
         "can't push the water away"
       ],
       "brake_at": 0.15,
-      "seconds": 11,
+      "seconds": 10.399,
       "speeds": [
         50,
         50
@@ -550,7 +550,7 @@
         "UK legal minimum tread"
       ],
       "brake_at": 0.15,
-      "seconds": 9,
+      "seconds": 7.872,
       "source": "UK government: tyre tread depth rules",
       "speeds": [
         50,
@@ -574,20 +574,20 @@
         "THE IMPACT"
       ],
       "hit_at": 0.85,
-      "seconds": 3.5
+      "seconds": 2.763
     },
     {
       "kind": "crash_compare",
       "overlay": "same_speed",
       "hit_at": 0.55,
-      "seconds": 9,
+      "seconds": 8.435,
       "frame_lift": 4.0
     },
     {
       "kind": "crash_compare",
       "overlay": "newton",
       "hit_at": 0.25,
-      "seconds": 10,
+      "seconds": 8.44,
       "frame_lift": 4.0,
       "source": "Newton's second law: average force = change in momentum / time"
     },
@@ -595,7 +595,7 @@
       "kind": "crash_compare",
       "overlay": "force_graph_both",
       "hit_at": 0.25,
-      "seconds": 9,
+      "seconds": 7.86,
       "frame_lift": 4.0,
       "source": "Newton's second law: average force = change in momentum / time"
     },
@@ -617,7 +617,7 @@
       ],
       "unit": "kN",
       "hit_at": 0.3,
-      "seconds": 12,
+      "seconds": 12.313,
       "frame_lift": 4.0,
       "source": "Newton's second law: average force = change in momentum / time"
     },
@@ -625,7 +625,7 @@
       "kind": "crash_compare",
       "overlay": "history",
       "hit_at": 0.3,
-      "seconds": 10,
+      "seconds": 8.141,
       "frame_lift": 4.0,
       "source": "Barenyi patent DBP 854 157 (filed 1951, granted 1952); Mercedes-Benz W 111 (1959)"
     },
@@ -639,7 +639,7 @@
         "REWIND 6",
         "THE SECOND COLLISION"
       ],
-      "seconds": 3.5
+      "seconds": 2.793
     },
     {
       "kind": "cabin",
@@ -652,7 +652,7 @@
         "NEWTON'S FIRST LAW",
         "you keep moving"
       ],
-      "seconds": 9
+      "seconds": 7.002
     },
     {
       "kind": "cabin",
@@ -665,7 +665,7 @@
         "SECOND COLLISION",
         "you hit the inside of the car"
       ],
-      "seconds": 10
+      "seconds": 9.862
     },
     {
       "kind": "cabin",
@@ -678,7 +678,7 @@
         "SEAT BELT",
         "slow down with the car"
       ],
-      "seconds": 10
+      "seconds": 7.573
     },
     {
       "kind": "cabin",
@@ -692,7 +692,7 @@
         "AIRBAG",
         "works WITH the belt"
       ],
-      "seconds": 10
+      "seconds": 7.86
     },
     {
       "kind": "cabin",
@@ -716,7 +716,7 @@
         ]
       ],
       "unit": "%",
-      "seconds": 10,
+      "seconds": 7.659,
       "source": "NHTSA: seat belts cut the risk of fatal injury to front-seat car occupants by 45%"
     },
     {
@@ -727,7 +727,7 @@
         "EVERYTHING AT ONCE"
       ],
       "brake_at": 0.6,
-      "seconds": 3.5,
+      "seconds": 1.958,
       "speeds": [
         50,
         60
@@ -745,7 +745,7 @@
       "kind": "brake_compare",
       "overlay": "brake_speeds",
       "brake_at": 0.45,
-      "seconds": 10,
+      "seconds": 7.474,
       "speeds": [
         50,
         60
@@ -764,7 +764,7 @@
       "overlay": "react",
       "brake_at": 0.4,
       "react_s": 1.5,
-      "seconds": 10,
+      "seconds": 9.63,
       "speeds": [
         50,
         60
@@ -783,8 +783,8 @@
       "overlay": "brake_result",
       "result_text": "STILL AT 33 km/h",
       "brake_at": 0.1,
-      "seconds": 9,
-      "source": "Kinematics v² = u² - 2as (idealised: same car, same braking from the same instant)",
+      "seconds": 7.461,
+      "source": "Kinematics v\u00b2 = u\u00b2 - 2as (idealised: same car, same braking from the same instant)",
       "speeds": [
         50,
         60
@@ -802,7 +802,7 @@
       "kind": "crash_compare",
       "overlay": "none",
       "hit_at": 0.4,
-      "seconds": 9
+      "seconds": 6.762
     }
   ]
 }
