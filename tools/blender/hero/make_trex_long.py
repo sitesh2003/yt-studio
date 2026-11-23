@@ -309,6 +309,7 @@ srcs = "; ".join(sorted({S_SELL, S_HG, S_FUN, S_WOOD, S_ERI, S_SUE, S_STE, S_GIG
 en = {"title_options": ["Was The Real T. rex As Terrifying As The Movies?"], "facts": facts, "sources": srcs,
       "description": "The real T. rex probably couldn't run. So how did it become the most famous predator that ever lived? "
                      "We follow one T. rex from the egg to the asteroid, in 3D, and test every part of the legend against published science.",
+      "share": {"myth": "T. rex could chase down a car, like in the movies.", "truth": "Computer models of its bones and muscles say running would have broken its legs; it walked fast, around 20 km/h.", "line": "The real T. rex could not outrun your car."},
       "tags": ["T. rex", "Tyrannosaurus rex", "dinosaurs", "paleontology", "science documentary", "3D animation", "Chicxulub"],
       "scenes": [{"narration": r[0]} for r in SC]}
 hi = dict(en, title_options=["क्या असली T. rex फ़िल्मों जितना ख़तरनाक था?"],

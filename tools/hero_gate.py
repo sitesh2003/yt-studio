@@ -2,6 +2,7 @@
 Owner, 21 Nov 2026: "every clip... check it, then fix it, then do more... no caption re-writing, no voice issues,
 no 3D issues... keep modifying yourself better and better". Lessons learned go to research/hero/LESSONS.md.
 
+    python tools/hero_gate.py <name> script     # before the voice: the share block (myth, truth, line)
     python tools/hero_gate.py <name> voice      # before rendering: speed, every word heard, per scene
     python tools/hero_gate.py <name> video      # after: cuts on the words, captions never doubled/overlapping
 
@@ -19,7 +20,7 @@ name, stage = sys.argv[1], sys.argv[2]
 d = ROOT / "research" / "hero" / name
 hindi = name.endswith("_hi")
 script = json.loads((d / "script.json").read_text(encoding="utf-8"))
-words = json.loads((d / "words.json").read_text(encoding="utf-8"))
+words = json.loads((d / "words.json").read_text(encoding="utf-8")) if (d / "words.json").exists() else []
 fails, notes = [], []
 
 # speed bands (owner: "not telling very fast"); Hindi carries more syllables per word, so fewer words a minute
@@ -49,7 +50,34 @@ def canon(t):
     return re.sub(r"\s+", " ", t).strip()
 
 
-if stage == "voice":
+# 24 Nov 2026, owner: "we should not go for likes... make them share it... make them feel we know more, and
+# they can show it to others and look more intelligent". Every script carries a SHARE block: the belief most
+# people hold (myth), what the evidence says (truth), and the ONE line a viewer can repeat to a friend (line).
+# The line must be short enough to say from memory and must actually be SPOKEN in the video. The viewer gets to
+# be the clever one; the other person is never mocked (no "you're wrong", no "most people are stupid").
+def share_check():
+    sh = script.get("share") or {}
+    for k in ("myth", "truth", "line"):
+        if not str(sh.get(k, "")).strip():
+            fails.append(f"share: '{k}' missing (myth / truth / the one line a viewer repeats to a friend)")
+    line = str(sh.get("line", ""))
+    if not line:
+        return
+    if not hindi and len(line.split()) > 22:
+        fails.append(f"share: line is {len(line.split())} words; a repeatable line is 22 or fewer")
+    lw = set(re.findall(r"\w+", line.lower()))
+    best = max((len(lw & set(re.findall(r"\w+", sc["narration"].lower()))) / max(1, len(lw))
+                for sc in script["scenes"]), default=0)
+    (notes if best >= 0.7 else fails).append(f"share: line spoken in the video ({best:.0%} of its words in one scene)")
+    if re.search(r"\b(stupid|dumb|idiot|wrong, you|you're wrong)\b", " ".join(sc["narration"] for sc in script["scenes"]).lower()):
+        fails.append("share: the script mocks the viewer or others; make the viewer clever, never the other person small")
+
+
+if stage in ("voice", "script"):
+    share_check()
+if stage == "script":
+    pass
+elif stage == "voice":
     dur = words[-1]["end"]
     wpm = len(words) / (dur / 60)
     (notes if BAND[0] <= wpm <= BAND[1] else fails).append(f"speed {wpm:.0f} words a minute (band {BAND[0]}-{BAND[1]})")

@@ -201,5 +201,10 @@
     {
       "narration": "So the real T. rex could not outrun your car. But it could judge exactly where you stood, and bite through bone. The movie monster, or the real animal: which one sounds more frightening to you?"
     }
-  ]
+  ],
+  "share": {
+    "myth": "T. rex could chase down a car, like in the movies.",
+    "truth": "Computer models of its bones and muscles say running would have broken its legs; it walked fast, around 20 km/h.",
+    "line": "The real T. rex could not outrun your car."
+  }
 }

@@ -89,3 +89,18 @@ Every lesson here came from a real mistake. The fix is in the code; the check is
 - **The picture must show the claim:** a "43 km/h with reaction time" line needs a scene that models reaction time
   (brake_compare react_s), not the same-instant scene with a different label.
 - Spot-render one frame of every NEW shot before an 8-hour render (Sue's skull was far away and not yet in x-ray).
+
+## 24 Nov 2026 — Aim for SHARES, not likes (owner rule)
+Owner: "we should not go for likes... make them share it... make them feel we know more, and they show it to
+others to look more intelligent." Baseline that day: ONE share across all main-channel videos in 90 days.
+- Every script carries `"share": {"myth", "truth", "line"}` — the belief most people hold, what the evidence
+  says, and ONE line (≤ 22 words) a viewer can repeat from memory to a friend. `hero_gate.py <name> script`
+  fails without it, and fails if the line is never actually spoken.
+- Build the video around the myth → truth turn: open on what everyone "knows", hand the viewer the proof
+  (a number, a model, a fossil) so they can defend it when challenged. Proof is what makes sharing safe.
+- Say the share line plainly near the end, then the one closing question. No "like and subscribe", no
+  begging for shares.
+- The viewer is made clever; the other person is never made small (no "you're wrong", "most people are
+  dumb"). The gate rejects mocking words.
+- Measure it: `channel_stats()` now returns `shares` and `shares_per_1k`. Judge topics by shares per 1,000
+  views, not likes.

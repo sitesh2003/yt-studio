@@ -141,5 +141,10 @@
     {
       "narration": "That's why ten kilometres an hour is never just ten. Which part of the physics surprised you most?"
     }
-  ]
+  ],
+  "share": {
+    "myth": "Going ten km/h faster is only a little more dangerous.",
+    "truth": "Moving energy grows with the square of speed, so 50 to 60 km/h carries 44% more energy and needs far more road to stop.",
+    "line": "Fifty to sixty is just twenty percent faster, but the energy goes up by forty-four percent."
+  }
 }

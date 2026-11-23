@@ -282,17 +282,20 @@ def channel_stats():
     start = (dt.date.today() - dt.timedelta(days=90)).isoformat()
     try:   # engagedViews = views that were not swiped away in the first seconds (the Shorts feed's own test)
         r = an.reports().query(ids="channel==MINE", startDate=start, endDate=end, dimensions="video",
-                               metrics="views,engagedViews,averageViewPercentage,averageViewDuration,likes,subscribersGained",
+                               metrics="views,engagedViews,averageViewPercentage,averageViewDuration,likes,subscribersGained,shares",
                                sort="-views", maxResults=200).execute()
     except Exception:
         r = an.reports().query(ids="channel==MINE", startDate=start, endDate=end, dimensions="video",
-                               metrics="views,averageViewPercentage,averageViewDuration,likes,subscribersGained",
+                               metrics="views,averageViewPercentage,averageViewDuration,likes,subscribersGained,shares",
                                sort="-views", maxResults=200).execute()
     cols = [c["name"] for c in r.get("columnHeaders", [])]
     rows = [dict(zip(cols, row)) for row in r.get("rows", [])]
     for x in rows:   # % of viewers who STAYED instead of swiping away: what decides if a Short is pushed further
         if x.get("engagedViews") is not None and x.get("views"):
             x["stayed_pct"] = round(100 * x["engagedViews"] / x["views"], 1)
+        # 24 Nov 2026, owner: aim for SHARES, not likes (a viewer passing the video on to look clever)
+        if x.get("shares") is not None and x.get("views"):
+            x["shares_per_1k"] = round(1000 * x["shares"] / x["views"], 2)
     return rows
 
 

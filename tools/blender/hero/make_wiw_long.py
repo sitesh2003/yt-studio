@@ -146,6 +146,7 @@ script = {"title_options": ["Why Just 10 km/h Can Turn a Stop Into a Crash"],
           "facts": [__doc__], "sources": srcs,
           "description": "Two identical cars brake at the same moment: one at 50 km/h, one at 60. One stops; the other is still doing 33 km/h at the same spot. "
                          "We freeze the crash and rewind five seconds to find out why, in 3D: energy, reaction time, braking, grip, crumple zones, belts and airbags.",
+          "share": {"myth": "Going ten km/h faster is only a little more dangerous.", "truth": "Moving energy grows with the square of speed, so 50 to 60 km/h carries 44% more energy and needs far more road to stop.", "line": "Fifty to sixty is just twenty percent faster, but the energy goes up by forty-four percent."},
           "tags": ["physics", "braking distance", "kinetic energy", "crumple zone", "seat belt", "car safety", "3D animation", "STEM"],
           "scenes": [{"narration": r[0]} for r in SC]}
 json.dump(script, open("research/hero/wiw_long/script.json", "w", encoding="utf-8"), ensure_ascii=False, indent=2)
