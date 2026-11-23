@@ -1,23 +1,23 @@
 {
   "lessons": [
-    "Lead immediately with a shocking fact or vivid contrast rather than asking rhetorical questions or stating what something is NOT (e.g., 'Shark older than US' achieved >100% end retention).",
-    "Avoid filler setup lines right after the hook; stating obvious observations like 'They are not just there to look cool' or 'They look like similar fruits' lost up to 31.5% of viewers instantly.",
-    "Do not repeat the video title or main question in the first sentence of the script; repeating the hook word-for-word caused immediate drops of 31.9%.",
-    "Never pause momentum for audience participation gimmicks like 'Pause and guess...'; these create sharp retention drops midway through.",
-    "Deliver immediate explanatory value—videos that delayed the core scientific mechanism with slow background preambles suffered massive early dropoffs."
+    "Keep the opening hook under 10 words and make it a surprising, vivid statement – videos like “This shark is older than the United States” and “A blue‑fin tuna looks like deep‑red beef” held >1.2 × viewers at 10 % and beat similar videos at start and end.",
+    "Avoid dense, multi‑clause explanations as the first line – the biggest early drops (0.13‑0.34 loss) occur when the hook is a long factual sentence such as the garlic or windshield explanations.",
+    "Use sensory or paradoxical imagery (e.g., “Fresh pineapple is literally eating you back”, “Gulping ice water after a hot pepper feels like relief”) – these videos kept >1.0 × at 10 % and had the smallest early loss fractions.",
+    "If you employ a countdown or pause, place it after the hook and keep it brief – videos with a later drop around 0.6 (the shark) showed viewers leaving when the pacing slowed after the hook.",
+    "Repeat key ideas only after the hook has secured attention – videos that repeated the same line in the second biggest drop (e.g., guardrail “instead of impaling your vehicle…”) lost ~0.12‑0.13 of the audience.",
+    "End with a teaser or unanswered question to sustain retention to the end – the highest kept_at_end ratios (e.g., James Webb, shark) all finished with a curiosity‑driving line."
   ],
   "worst_moment_types": [
-    "Empty fluff or filler lines following the hook (e.g., 'They are not just there to look cool', 'They look like similar fruits')",
-    "Literal repetition of the video title or question as the opening line",
-    "Mid-video pauses or callouts asking viewers to stop and guess",
-    "Slow background setups and preambles before introducing the core topic mechanism",
-    "Negative framing hooks focusing on debunking what something is NOT rather than revealing what it IS"
+    "Long, dense explanatory sentence as the first spoken line",
+    "Repeated phrasing of the same idea within the first 30 %",
+    "Late‑mid‑video pause or countdown that slows pacing",
+    "Overly technical detail without visual hook"
   ],
   "best_hook_types": [
-    "Bold historical or scale comparisons (e.g., 'This shark is older than the United States')",
-    "Direct visual and sensory contrasts between familiar items (e.g., 'Tuna steak looks like deep red beef while cod is bright white')",
-    "Counter-intuitive everyday physical paradoxes presented as direct statements (e.g., 'You can touch hot foil briefly just as it comes out of the oven')",
-    "Intriguing mystery claims about famous scientific topics (e.g., 'Most James Webb images hold secrets')"
+    "Short, surprising fact or paradox (e.g., “older than the United States”)",
+    "Vivid sensory description that creates a mental picture",
+    "Provocative question that promises a counter‑intuitive answer",
+    "Bold comparison that contrasts two familiar things (e.g., tuna vs. beef)"
   ],
   "studied": "2026-11-23",
   "videos": 19

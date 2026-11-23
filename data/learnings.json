@@ -1,14 +1,16 @@
 {
-  "summary": "High-stayed videos (47–52% stayed_pct) focus on immediate human body/everyday experiences rather than distant science or engineering topics. Winning hooks use immediate second-person statements ('Your eyes', 'Your leg') that instantly correct a common misconception or state a strange fact happening *right now*. Low-stayed videos (<31% stayed_pct) use slow narrative setups ('Your car swerves...'), vague generalizations ('Most James Webb images hold secrets'), or multi-clause passive introductory sentences. Titles for top performers are concise, direct 5-8 word question/fact statements without unnecessary emoji padding. Keep topic focus strictly anchored to personal, relatable body curiosity to consistently break the 1,200 view threshold.",
+  "summary": "- Open with a direct second‑person hook that reveals a hidden fact about the viewer’s own body or daily life.\n- Keep the title under 6 words, start with “Why” or “What”, and omit emojis.\n- Use present‑tense language and avoid countdown timers or on‑screen timers.\n- Limit video length to 20‑30 seconds to maintain high stayed_pct.\n- Focus on relatable, everyday topics rather than abstract science or niche phenomena.",
   "winning_hooks": [
     "Your eyes are leaking right now, and your brain is hiding it.",
-    "Your leg doesn't actually fall asleep because of blood loss. It's not blood.",
-    "You are not sad when you chop an onion."
+    "You’re crying right now even if you don’t feel it – here’s why onions do it.",
+    "Your leg isn’t asleep because of blood loss – it’s something else."
   ],
   "avoid": [
-    "Vague third-person generalizations about distant science (e.g., 'Most James Webb images hold secrets.')",
-    "Hypothetical story setups in place of direct facts (e.g., 'Your car swerves off the highway...')",
-    "Slow introductory exposition with multi-clause sentences (e.g., 'Fossilized bones can last millions of years, but sometimes...')"
+    "Emojis in titles or hooks",
+    "Long, multi‑clause titles",
+    "Countdown overlays or timers",
+    "Highly technical or distant topics (e.g., space, geology)",
+    "Hooks that don’t address the viewer directly"
   ],
-  "next_experiment": "A/B test a body-phenomenon topic using a direct misconception hook ('Your stomach isn't actually growling because it's empty') versus an abstract science topic ('Why your stomach acid is strong enough to melt metal') using identical 30-35s lengths and minimal titles."
+  "next_experiment": "A/B test two versions of a new video on a common bodily sensation: version A uses a 5‑word “Why…” title without emojis and a second‑person present‑tense hook; version B uses a longer title with emojis and a third‑person hook. Measure stayed_pct and view growth."
 }
