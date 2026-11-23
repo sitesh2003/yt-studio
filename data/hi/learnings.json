@@ -1,15 +1,13 @@
 {
-  "summary": "1. Lead hooks with extreme contrast or high-stakes survival (e.g., a thin sheet saving astronauts' lives reached 59.4% stayed) instead of academic curiosity. 2. Never reveal list items or answers in sentence one; listing the smoke detector and watch immediately dropped retention to 6.7%. 3. Replace passive rhetorical questions like 'Ever thought why...' with active mystery framing, as weak rhetorical intros bottomed out at 11.1% stayed. 4. Maintain a 42-45 second video length; cutting under 35 seconds correlated with lowest views (9) and instant swiping. 5. Write curiosity-gap titles ending with '🤯' and active problem-solving phrasing ('कैसे बचता है', 'Will Insulate') rather than flat descriptive labels.",
+  "summary": "1. Use vivid visual analogies in the very first sentence (e.g., '3 cars stacked on teeth') to boost retention (stayed_pct above 60%).\n2. Frame titles and hooks around recognizable pop-culture tropes or direct user context ('your car', 'movies') rather than academic descriptions.\n3. Write titles in Devanagari Hindi or conversational Hinglish with strong visual emojis rather than plain English news-style headlines.\n4. Directly challenge a common belief in sentence one ('Movies show X, but reality is Y') to trigger immediate curiosity before the user swipes.\n5. Keep dinosaur/prehistoric or extreme sensory comparisons as core topics while eliminating dry textbook language like 'hydroplaning' or 'microscopic structures'.",
   "winning_hooks": [
-    "High-stakes paradox: 'Space missions mein astronauts ke liye sirf ek thin plastic sheet jaan bacha sakti hai 🤯' (59.4% stayed)",
-    "High-velocity concrete dilemma: '250 km/h की speed से गीली runway पर plane hydroplaning से कैसे बचता है?' (Highest views: 72)",
-    "Bizarre physical discovery: 'डायनासोर के जीवाश्मों में वैज्ञानिकों को ऐसी सूक्ष्म आकृतियां क्यों मिली हैं...' (37.0% stayed)"
+    "Start with an immediate imagination prompt ('सोचो...') paired with extreme physical imagery ('3 cars on your teeth')",
+    "Debunk pop-culture myths immediately in sentence one ('Movies show T. rex chasing cars, but...')"
   ],
   "avoid": [
-    "Lazy rhetorical prompts like 'Ever thought why...' (produced lowest view count: 9 views, 11.1% stayed)",
-    "Immediate payoff spoilers that list the examples in the hook (e.g., naming smoke detectors and vintage watches upfront sank stayed rate to 6.7%)",
-    "Textbook encyclopedic titles without stakes (e.g., 'How Deep Ocean Snow Moves Carbon' or 'Common Household Items That Contain Radioactive Materials')",
-    "Sub-35 second durations that lack sufficient narrative build-up before the drop-off"
+    "English news-style title headlines ('Common Household Items That Contain...')",
+    "Jargon-heavy or academic Hindi openings ('वैज्ञानिकों को ऐसी सूक्ष्म आकृतियां क्यों मिली हैं...')",
+    "Weak passive openers without immediate personal framing or visual contrast"
   ],
-  "next_experiment": "A/B test the Radioactive Items video hook: Arm A tests the original spoiler hook ('Kuch everyday objects secretly radioactive hote hain jaise watch aur smoke detector'), Arm B tests a blind curiosity gap ('Aapke bedroom mein rakhi ek aam cheez subtle radiation emit kar rahi hai, aur aapko pata bhi nahi'). Measure if hiding the item name triples stayed_pct above 50%."
+  "next_experiment": "Test a direct visual-analogy hook vs. a myth-busting hook on the exact same topic, keeping both under 30 seconds and using identical Devanagari question titles."
 }

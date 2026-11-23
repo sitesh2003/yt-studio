@@ -1,1 +1,25 @@
-{}
+{
+  "wBAmoqMBEeg": {
+    "title": "क्या T. rex तुम्हारी Car से तेज़ दौड़ सकता था? 🦖",
+    "hook_line": "Movies में T.",
+    "kept_at_10pct": 1.0187,
+    "kept_at_50pct": 0.4928,
+    "kept_at_end": 0.2032,
+    "vs_similar_start": 0.32,
+    "vs_similar_end": 0.36,
+    "biggest_drops": [
+      {
+        "at": 0.1,
+        "lost": 0.176,
+        "line": "rex शायद दौड़ ही नहीं सकता था। उसका वज़न करीब 8 tonne था। मतलब 6 cars, सिर्फ दो पैरों पर। Scientists ने computer में उसे bone by bone, muscle by muscle दोबारा बनाया, और फिर उसे दौड़ाया। हर running speed पर उसकी leg bones पर इतना force पड़ा, कि वो शायद टूट जातीं। इतना बड़ा जानवर तेज़ दौड़े, तो उसकी body का 40% से ज़्यादा हिस्सा leg muscles होना चाहिए। T."
+      },
+      {
+        "at": 0.59,
+        "lost": 0.066,
+        "line": "rex शायद दौड़ ही नहीं सकता था। उसका वज़न करीब 8 tonne था। मतलब 6 cars, सिर्फ दो पैरों पर। Scientists ने computer में उसे bone by bone, muscle by muscle दोबारा बनाया, और फिर उसे दौड़ाया। हर running speed पर उसकी leg bones पर इतना force पड़ा, कि वो शायद टूट जातीं। इतना बड़ा जानवर तेज़ दौड़े, तो उसकी body का 40% से ज़्यादा हिस्सा leg muscles होना चाहिए। T."
+      }
+    ],
+    "countdown": false,
+    "checked": "2026-11-23"
+  }
+}
