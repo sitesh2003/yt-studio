@@ -103,7 +103,7 @@ SC = [
  ("Some rough numbers. Stop a family car from thirty-three kilometres an hour in a tenth of a second, and the average force is about one hundred and forty thousand newtons. Stop it five times faster, and the force is five times bigger.",
   {"kind": "crash_compare", "overlay": "bars", "title": "AVERAGE FORCE (illustrative)", "bars": [["STOPS IN 0.1 s", 138, "green"], ["STOPS IN 0.02 s", 690, "red"]],
    "unit": "kN", "hit_at": 0.3, "seconds": 12, "frame_lift": 4.0, "source": S_NEW}),
- ("That's the crumple zone, patented by engineer Béla Barényi in the early nineteen-fifties: soft ends that fold, around a strong cabin that doesn't.",
+ ("That's the crumple zone, patented by engineer Béla Barényi more than seventy years ago: soft ends that fold, around a strong cabin that doesn't.",
   {"kind": "crash_compare", "overlay": "history", "hit_at": 0.3, "seconds": 10, "frame_lift": 4.0, "source": S_BAR}),
 
  # 6 the second collision
@@ -125,11 +125,11 @@ SC = [
  # 7 replay
  ("Replay. Everything at once.", dict({"kind": "brake_compare", "overlay": "chapter", "chapter": ["REPLAY", "EVERYTHING AT ONCE"],
    "brake_at": 0.6, "seconds": 3.5}, **L50_60)),
- ("Same two cars. The faster one carries forty-four percent more energy, reacts further down the road, and needs more room to brake.",
+ ("Same two cars. The faster one carries almost half as much energy again, reacts further down the road, and needs more room to brake.",
   dict({"kind": "brake_compare", "overlay": "brake_speeds", "brake_at": 0.45, "seconds": 10}, **L50_60)),
- ("Go back through the evidence: forty-four percent more energy, about four more metres of thinking, about six more metres of braking. Every piece pushes the same way.",
+ ("Go back through the evidence: almost half as much energy again, about four more metres of thinking, about six more metres of braking. Every piece pushes the same way.",
   dict({"kind": "brake_compare", "overlay": "react", "brake_at": 0.4, "react_s": 1.5, "seconds": 10}, **L50_60)),
- ("So where the slower car stops, the faster one arrives with real speed left over. Add rain, and the gap gets wider still.",
+ ("Where the slower car stops, the faster one arrives with real speed left over. Add rain, and the gap gets wider still.",
   dict({"kind": "brake_compare", "overlay": "brake_result", "result_text": "STILL AT 33 km/h", "brake_at": 0.1, "seconds": 9, "source": S_PHYS}, **L50_60)),
  ("That's why ten kilometres an hour is never just ten. Which part of the physics surprised you most?",
   {"kind": "crash_compare", "overlay": "none", "hit_at": 0.4, "seconds": 9}),

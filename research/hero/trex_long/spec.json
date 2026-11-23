@@ -379,11 +379,16 @@
         "~1.4 m long"
       ],
       "anim": "idle",
+      "seconds": 8,
+      "source": "Field Museum, Chicago",
+      "xr_start": true,
+      "bone_groups": [
+        "SKULL",
+        "NECK"
+      ],
       "muscle_groups": [
         "JAW"
       ],
-      "seconds": 8,
-      "source": "Field Museum, Chicago",
       "cam": [
         [
           4.8,
@@ -408,12 +413,7 @@
           5.0
         ]
       ],
-      "lens": 35,
-      "xr_start": true,
-      "bone_groups": [
-        "SKULL",
-        "NECK"
-      ]
+      "lens": 35
     },
     {
       "kind": "size_tower",
