@@ -102,7 +102,7 @@
     {
       "kind": "brake_compare",
       "overlay": "none",
-      "brake_at": 0.9,
+      "brake_at": 0.35,
       "seconds": 7.836,
       "cam_h": 34,
       "speeds": [
@@ -310,7 +310,7 @@
     {
       "kind": "brake_compare",
       "overlay": "react",
-      "brake_at": 0.6,
+      "brake_at": 0.3,
       "react_s": 1.5,
       "seconds": 9.983,
       "source": "US Federal Highway Administration: perception-reaction time 0.75-1.5 s",
@@ -580,15 +580,13 @@
       "kind": "crash_compare",
       "overlay": "same_speed",
       "hit_at": 0.55,
-      "seconds": 8.435,
-      "frame_lift": 4.0
+      "seconds": 8.435
     },
     {
       "kind": "crash_compare",
       "overlay": "newton",
       "hit_at": 0.25,
       "seconds": 8.44,
-      "frame_lift": 4.0,
       "source": "Newton's second law: average force = change in momentum / time"
     },
     {
@@ -596,7 +594,6 @@
       "overlay": "force_graph_both",
       "hit_at": 0.25,
       "seconds": 7.86,
-      "frame_lift": 4.0,
       "source": "Newton's second law: average force = change in momentum / time"
     },
     {
@@ -618,7 +615,6 @@
       "unit": "kN",
       "hit_at": 0.3,
       "seconds": 12.313,
-      "frame_lift": 4.0,
       "source": "Newton's second law: average force = change in momentum / time"
     },
     {
@@ -626,7 +622,6 @@
       "overlay": "history",
       "hit_at": 0.3,
       "seconds": 8.141,
-      "frame_lift": 4.0,
       "source": "Barenyi patent DBP 854 157 (filed 1951, granted 1952); Mercedes-Benz W 111 (1959)"
     },
     {

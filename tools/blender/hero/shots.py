@@ -242,9 +242,11 @@ def ground(kind):
                 y = i * 9.0 + (i * 13 % 5)
                 bpy.ops.mesh.primitive_cylinder_add(vertices=6, radius=0.25, depth=2.4, location=(x, y, 1.2))
                 bpy.context.object.data.materials.append(trunk)
+                bpy.context.object["tree"] = 2.4     # tagged, so a shot can clear its path / sightline
                 bpy.ops.mesh.primitive_ico_sphere_add(subdivisions=1, radius=1.6 + (i % 3) * 0.3,
                                                       location=(x, y, 3.4))
                 bpy.context.object.data.materials.append(leaf)
+                bpy.context.object["tree"] = 2.4
     return g
 
 
@@ -696,13 +698,22 @@ def crumple_lattice(parts, front_axis_sign=1.0):
     bpy.context.collection.objects.link(lat)
     lat.location = (lo + hi) / 2
     lat.scale = (hi - lo) * 1.04
+    # 24 Nov 2026: the cage must RIDE WITH the car. It was left where the car stood when it was built (frame 1,
+    # 18 m back), so at the barrier every vertex was far outside it and Blender extrapolated the fold into a
+    # 3.7 m shove backwards: the folding car stopped short of its barrier and never touched it.
+    root = parts[0]
+    while root.parent is not None:
+        root = root.parent
+    lat.parent = root
+    lat.matrix_parent_inverse = root.matrix_world.inverted()
     for o in meshes:
         m = o.modifiers.new("Crumple", "LATTICE")
         m.object = lat
     lat.shape_key_add(name="Basis")
     sk = lat.shape_key_add(name="crushed")
     L = (hi - lo).x
-    push = 0.65 / L                          # front pushed back 0.65 m, in lattice units
+    push = 0.535 / L                         # nose ends 0.65 m back (measured: the cage is 4% oversize and the
+                                             # fold curve over-shoots, so 0.535 gives 0.65), touching the barrier
     for i, pt in enumerate(ld.points):
         u = pt.co[0] * front_axis_sign        # -0.5 (back) .. 0.5 (front)
         k = max(0.0, (u - 0.05) / 0.45)       # only the front ~45% folds
@@ -1232,8 +1243,14 @@ def build():
                 key_value(sk, [(1, 0.0), (hit, 0.0), (hit + stop_frames, 0.08)])
         # from nearly straight above: the folding car visibly gets shorter; cars sit low in the frame,
         # under the captions, so graphs and cards have the top
-        lift = SHOT.get("frame_lift", 3.0)
-        key_path(cam, [(1, Vector((-2.2, -3.5 + lift, 17.0))), (N, Vector((-1.8, -3.0 + lift, 15.5)))])
+        # landscape films keep their graphs in a side panel, not across the top, so the camera need not lift:
+        # -0.7 keeps BOTH lanes and barriers in frame and above the caption band (lift 4 lost the STIFF lane)
+        lift = SHOT.get("frame_lift", -0.7 if SPEC.get("aspect") == "landscape" else 3.0)
+        for o in [o for o in bpy.context.scene.objects if "tree" in o.keys()]:   # nothing in the cars' path:
+            if -26 < o.location.x < 3 and abs(o.location.y) < 6.5:                # a car drove THROUGH a tree
+                o.hide_render = o.hide_viewport = True
+        up_ = 1.2 if SPEC.get("aspect") == "landscape" else 0.0     # a little higher: margin above the top barrier
+        key_path(cam, [(1, Vector((-2.2, -3.5 + lift, 17.0 + up_))), (N, Vector((-1.8, -3.0 + lift, 15.5 + up_)))])
         key_path(tgt, [(1, Vector((-2.2, lift, 0))), (N, Vector((-1.8, lift, 0)))])
         smooth_keys(cam)
 
@@ -1286,9 +1303,11 @@ def build():
             bw.inputs["Base Color"].default_value = (0.015, 0.018, 0.025, 1)
             bw.inputs["Roughness"].default_value = 0.05
             box("WetLane", (4.0, 60, 0.02), (-2.2 + 4.4 * SHOT["wet_lane"], 12, 0.045), wm)
+        track_ = []                                       # each car's y per frame (for a following camera)
         for k, kmh in enumerate(speeds):
             x = -2.2 + 4.4 * k
             v = kmh / 3.6
+            track_.append([])
             decel = decels[k]
             car, parts = glb(SPEC["props"]["car"], 4.5, (x, 0, 0), 0.0)
             bpy.context.view_layer.update()
@@ -1306,6 +1325,7 @@ def build():
                     y = yb + v * v / (2 * decel)
                 car.location = (x, y - nose, 0)
                 car.keyframe_insert("location", frame=fr)
+                track_[-1].append(y)
             # skid marks grow behind the wheels while it brakes
             for wx in (-0.75, 0.75):
                 bpy.ops.mesh.primitive_cube_add(size=1)
@@ -1320,8 +1340,20 @@ def build():
                     sk.keyframe_insert("scale", frame=fr)
         hi_ = SHOT.get("cam_h", 25.0 if not react else 40.0)
         ty = SHOT.get("tgt_y", 9.0 if not react else 20.0)
-        key_path(cam, [(1, Vector((0.0, ty - 23.0, hi_))), (N, Vector((0.0, ty - 22.0, hi_ - 2)))])
-        key_path(tgt, [(1, Vector((0.0, ty, 0))), (N, Vector((0.0, ty + 1.0, 0)))])
+        if react and SPEC.get("aspect") == "landscape" and "tgt_y" not in SHOT:
+            # 24 Nov 2026: a wide frame cannot hold 45 m of road, and the fixed view (10-40 m) hid the hazard line
+            # and the whole thinking distance. The camera now FOLLOWS the cars: the line, the cars crossing it at
+            # full speed, the markers sliding past while nobody brakes, then the stop.
+            for fr in range(1, N + 1, 3):
+                ys_ = [t_[fr - 1] for t_ in track_]
+                c_ = max(4.0, (min(ys_) + max(ys_)) / 2 - 2.5)   # a little low: the trailing car clears the captions
+                cam.location = (0.0, c_ - 18.0, 36.0)
+                cam.keyframe_insert("location", frame=fr)
+                tgt.location = (0.0, c_, 0.0)
+                tgt.keyframe_insert("location", frame=fr)
+        else:
+            key_path(cam, [(1, Vector((0.0, ty - 23.0, hi_))), (N, Vector((0.0, ty - 22.0, hi_ - 2)))])
+            key_path(tgt, [(1, Vector((0.0, ty, 0))), (N, Vector((0.0, ty + 1.0, 0)))])
 
     elif kind == "vision_cone":
         # where both eyes overlap: a glowing cone forward from the eyes, SHOT['deg'] wide (binocular field)
