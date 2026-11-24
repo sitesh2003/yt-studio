@@ -1,13 +1,12 @@
 {
-  "summary": "1. Use vivid visual analogies in the very first sentence (e.g., '3 cars stacked on teeth') to boost retention (stayed_pct above 60%).\n2. Frame titles and hooks around recognizable pop-culture tropes or direct user context ('your car', 'movies') rather than academic descriptions.\n3. Write titles in Devanagari Hindi or conversational Hinglish with strong visual emojis rather than plain English news-style headlines.\n4. Directly challenge a common belief in sentence one ('Movies show X, but reality is Y') to trigger immediate curiosity before the user swipes.\n5. Keep dinosaur/prehistoric or extreme sensory comparisons as core topics while eliminating dry textbook language like 'hydroplaning' or 'microscopic structures'.",
+  "summary": "Hinglish titles with emojis that address the viewer directly (e.g., 'तुम्हारी Car') drastically outperform full English or overly formal Hindi titles in reach and retention. High-stayed hooks (>45%) open with an immediate visual scenario ('Socho...', 'Movies mein...') rather than passive commentary or technical setup. Concrete physical comparisons (comparing bite force to '3 stacked cars') retain viewers better than complex scientific questions. Dinosaur pop-culture topics heavily outperform abstract engineering or chemistry topics. Full English titles lead to immediate feed swiping, resulting in stayed rates as low as 6.7%.",
   "winning_hooks": [
-    "Start with an immediate imagination prompt ('सोचो...') paired with extreme physical imagery ('3 cars on your teeth')",
-    "Debunk pop-culture myths immediately in sentence one ('Movies show T. rex chasing cars, but...')"
+    "Start with an immediate imagination command or subversion of a known pop-culture trope (e.g., 'Socho, tumhare daanton par...', 'Movies mein T. rex...').",
+    "Use concrete, relatable everyday visuals (cars, teeth) in the very first sentence to ground the concept."
   ],
   "avoid": [
-    "English news-style title headlines ('Common Household Items That Contain...')",
-    "Jargon-heavy or academic Hindi openings ('वैज्ञानिकों को ऐसी सूक्ष्म आकृतियां क्यों मिली हैं...')",
-    "Weak passive openers without immediate personal framing or visual contrast"
+    "Vague introductory statements like 'Kuch everyday objects mein secretly...' or documentary-style passive questions.",
+    "Full English titles or pure formal Hindi titles without emojis or Hinglish casual framing."
   ],
-  "next_experiment": "Test a direct visual-analogy hook vs. a myth-busting hook on the exact same topic, keeping both under 30 seconds and using identical Devanagari question titles."
+  "next_experiment": "Test identical T. rex pop-science script content using a direct challenge hook ('Socho...') vs. a question hook ('Kya aapko pata hai...?') while keeping title format identical."
 }
