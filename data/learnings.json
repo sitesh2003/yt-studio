@@ -1,14 +1,14 @@
 {
-  "summary": "1. High-stayed videos (>50% stayed_pct) address immediate human experiences (eyes, onions) or famous pop-culture myths (T. rex), whereas low-stayed videos focus on complex astronomy or highway engineering. 2. Winning first sentences instantly make a provocative assertion directly addressing the viewer ('Your eyes are leaking right now') rather than building slow setup background ('Fossilized bones can last...'). 3. Top titles are short, question/curiosity-driven, and under 7 words ('Could A T. rex Outrun Your Car?'), while low-performing titles rely on abstract science phrasing. 4. Subverting expectations in the very first sentence ('Not even a jog', 'You are not sad') prevents early swiping far better than generic mystery hooks ('Most James Webb images hold secrets'). 5. Scriptwriters must cut all contextual preamble and state the shocking contradiction within the first 5 words.",
+  "summary": "1. High-stayed hooks (>50% stayed) use active, direct statements that call out the viewer or drop a bold counter-intuitive fact immediately within 10 words, skipping all context.\n2. Low-stayed hooks (<31% stayed) fail because they rely on slow story setups, hypothetical scenarios ('Your car swerves...'), or academic preambles before getting to the point.\n3. Winning titles are short (<7 words) and frame the topic around common, personal bodily experiences or popular pop-culture icons (T. rex, leaking eyes, crying onions).\n4. High AVP (>100%) requires high-information density in under 35 seconds, but stayed_pct determines initial reach, making sentence #1 the absolute bottleneck.\n5. Avoid engineering specs or abstract space facts in titles; frame topics as direct questions or intriguing personal secrets.",
   "winning_hooks": [
-    "Direct viewer subversion: 'Your eyes are leaking right now, and your brain is hiding it.'",
-    "Immediate myth-busting: 'The real T. rex probably couldn't run. Not even a jog.'",
-    "Bold short contradiction: 'You are not sad when you chop an onion.'"
+    "The real T. rex probably couldn't run. Not even a jog.",
+    "Your eyes are leaking right now, and your brain is hiding it.",
+    "You are not sad when you chop an onion."
   ],
   "avoid": [
-    "Slow background setups: 'Fossilized bones can last millions of years, but sometimes...'",
-    "Passive scenario building: 'Your car swerves off the highway right toward...'",
-    "Vague high-level claims: 'Most James Webb images hold secrets.'"
+    "Pluto seemed like our solar system's edge, yet astronomers are investigating evidence that the Kuiper Belt extends much further than we once thought.",
+    "Your car swerves off the highway right toward a steel guardrail.",
+    "Fossilized bones can last millions of years, but sometimes they hide more than just minerals."
   ],
-  "next_experiment": "Test Hook Type A (Direct bold contradiction: 'Your brain shuts off your vision 40 minutes a day') vs Hook Type B (Scenario setup: 'If you look in the mirror right now, something strange happens') using the exact same body video on body science topics."
+  "next_experiment": "Test Hook Wording Directness: Take one topic (e.g., Guardrails) and release two versions with identical visuals but different opening lines—Arm A (Hypothetical setup): 'Imagine driving down the highway at 70 mph...'; Arm B (Direct callout statement): 'Guardrails don't block your car, they shred it.' Measure the stayed_pct gap."
 }

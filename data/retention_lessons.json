@@ -1,19 +1,20 @@
 {
   "lessons": [
-    "Start with a vivid, surprising claim or question that creates immediate curiosity – videos whose hook lines were bold facts or sensory‑rich statements (e.g., “This shark is older than the United States”, “Pluto seemed like our solar system’s edge…”) kept >1.0 of viewers past 10 %",
-    "Avoid dense factual exposition in the first 10 % – the biggest audience drops (loss > 0.2) all occurred when the script jumped straight into detailed explanations or background info (e.g., maple‑sap fact, garlic‑chemical detail)",
-    "Use sensory or visual language that paints a picture – hooks that described a feeling or scene (“Gulping ice water after a hot pepper…”, “Fresh pineapple is literally eating you back”) correlated with the highest 10 % retention values",
-    "Do not repeat the same idea within the opening segment – videos that duplicated a line or re‑stated the same fact suffered a second large drop (e.g., guardrail and windshield duplicate lines)"
+    "Open with a concise, surprising fact or vivid contrast – videos with hooks like “older than the United States” or “red meat vs white” keep >1.0 of viewers past 10% and >0.5 past 50%.",
+    "Limit the first 10‑15 % to the hook; replace detailed explanations with visual cues – biggest drops cluster at 0.1‑0.15 and are all explanatory lines.",
+    "Use concrete, visual language (e.g., “shark roams Arctic depths”, “tuna looks like deep‑red beef”) – these correlate with kept_at_50pct > 0.6 and kept_at_end > 0.4.",
+    "Avoid generic or repetitive statements in the early segment – low‑retention videos repeat facts like “dead skin cells would swell” and fall to ≤0.2 by 50%.",
+    "A countdown flag does not improve retention; videos with countdown = true perform no better than those without."
   ],
   "worst_moment_types": [
-    "Early‑segment dense factual statements",
-    "Repeated or redundant explanations in the first half",
-    "Straight‑forward exposition without a curiosity hook"
+    "Early detailed scientific explanation without visual hook",
+    "Repetition of a known fact or definition",
+    "Generic “pause and guess” prompts lacking concrete imagery"
   ],
   "best_hook_types": [
-    "Surprising, bold claim (e.g., “This shark is older than the United States”)",
-    "Sensory‑rich description that evokes a vivid image or feeling",
-    "Rhetorical question or intriguing “Why …?” phrasing that promises an answer"
+    "Surprising quantitative or historical comparison",
+    "Vivid visual contrast between two familiar things",
+    "Short mystery/question that challenges a common belief"
   ],
   "studied": "2026-11-24",
   "videos": 21
