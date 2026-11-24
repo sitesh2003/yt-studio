@@ -1212,8 +1212,8 @@ def build():
             lbl.data.body = "STIFF" if mode == "rigid" else "FOLDS"
             lbl.data.size = 0.42
             lbl.data.extrude = 0.01
-            lbl.data.materials.append(mat("Lbl" + mode, (1, 1, 1), 0.5, emit=(1.0, 0.25, 0.2) if mode == "rigid"
-                                          else (0.3, 0.85, 1.0), emit_strength=2.5))
+            # dark ink: glowing white letters on light-grey concrete were barely readable (WIW long film, 24 Nov 2026)
+            lbl.data.materials.append(mat("Lbl" + mode, (0.55, 0.03, 0.02) if mode == "rigid" else (0.02, 0.10, 0.35), 0.6))
             car, parts = glb(SPEC["props"]["car"], 4.5, (0, y, 0), math.radians(-90))
             bpy.context.view_layer.update()
             front = max((o.matrix_world @ Vector(c_))[0] for o in parts if o.type == "MESH" for c_ in o.bound_box)

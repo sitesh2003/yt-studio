@@ -400,7 +400,7 @@ def g_force_graph_rigid(d, f, n, shot):
 
 
 def g_force_graph_both(d, f, n, shot):
-    _graph(d, f, n, [(0.08, (120, 60, 60), "STIFF"), (0.5, CYAN, "FOLDING")], int(n * shot.get("hit_at", 0.25)) - 30)
+    _graph(d, f, n, [(0.08, (235, 135, 125), "STIFF"), (0.5, CYAN, "FOLDING")], int(n * shot.get("hit_at", 0.25)) - 30)
 
 
 def g_newton(d, f, n, shot):
@@ -580,7 +580,7 @@ def g_bars(d, f, n, shot):
         if f < t0:
             continue
         grow = ease((f - t0) / (FPS * 0.9))
-        colr = {"cyan": CYAN, "red": RED, "yellow": YEL, "white": WHITE}[col]
+        colr = {"cyan": CYAN, "red": RED, "yellow": YEL, "white": WHITE, "green": GREEN}[col]
         text(d, (90, y), lbl, 52, colr, anchor="lm", stroke=8)
         d.rounded_rectangle([90, y + 40, 90 + int((W - 180) * v / top * grow), y + 115], 18, fill=colr)
         text(d, (W - 90, y + 78), f"~{v:g} {shot.get('unit', '')}", 56, WHITE, anchor="rm", stroke=8)
