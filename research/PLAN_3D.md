@@ -27,8 +27,11 @@ when a contact sheet of ours, side by side with the reference, does not lose (se
   into per-shot mp4s (tools: archive_frames) so the disk never fills (it was at 12.7 GB free on 24 Nov).
 
 ## 4. All local
-- English voice: Chatterbox on the laptop GPU (.venv-voice), Hindi: Edge Swara. GitHub only answers comments
-  and saves stats.
+- English voice: Chatterbox on the laptop GPU — `.venv-voice/Scripts/python.exe tools/hero_voice.py <name>`
+  (CUDA PyTorch 2.6, ~7 s a sentence; installed 24 Nov). Hindi: Edge Swara. GitHub only answers comments and
+  saves stats; the hero-voice workflow stays as a back-up.
+- Never run more than two heavy jobs at once (render + one more): three at once ran Windows out of process
+  slots on 24 Nov and every job died.
 
 ## 5. First Micro-world series (each fact checked before scripting)
 1. ATP synthase — the spinning motor that makes your energy.

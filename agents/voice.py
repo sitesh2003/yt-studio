@@ -309,6 +309,13 @@ def _align(text, heard, norm=None):
     return [{"start": s, "end": e, "text": w} for w, (s, e) in zip(said, times)]
 
 
+def _cb_device():
+    """24 Nov 2026: the laptop's RTX 4050 (.venv-voice, CUDA PyTorch) makes the English voice locally; GitHub's
+    runners have no GPU and stay on the CPU."""
+    import torch
+    return "cuda" if torch.cuda.is_available() else "cpu"
+
+
 def _chatterbox_speak(text, v, rate, path, tries=3):
     """Chatterbox (MIT, open source, CPU): the expressive narrator the owner picked on 16 Nov 2026 (lab option E2:
     emotion 0.7, cfg 0.5). It gives no word timings and can drop a word, so each sentence is listened to
@@ -330,12 +337,12 @@ def _chatterbox_speak(text, v, rate, path, tries=3):
     if lang == "en":
         if _CB is None:
             from chatterbox.tts import ChatterboxTTS
-            _CB = ChatterboxTTS.from_pretrained(device="cpu")
+            _CB = ChatterboxTTS.from_pretrained(device=_cb_device())
         model = _CB
     else:
         if _CBM is None:
             from chatterbox.mtl_tts import ChatterboxMultilingualTTS
-            _CBM = ChatterboxMultilingualTTS.from_pretrained(device="cpu")
+            _CBM = ChatterboxMultilingualTTS.from_pretrained(device=_cb_device())
         model = _CBM
     if lang not in _EARS:
         from faster_whisper import WhisperModel
