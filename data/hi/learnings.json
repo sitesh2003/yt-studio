@@ -1,12 +1,14 @@
 {
-  "summary": "Hinglish titles with emojis that address the viewer directly (e.g., 'तुम्हारी Car') drastically outperform full English or overly formal Hindi titles in reach and retention. High-stayed hooks (>45%) open with an immediate visual scenario ('Socho...', 'Movies mein...') rather than passive commentary or technical setup. Concrete physical comparisons (comparing bite force to '3 stacked cars') retain viewers better than complex scientific questions. Dinosaur pop-culture topics heavily outperform abstract engineering or chemistry topics. Full English titles lead to immediate feed swiping, resulting in stayed rates as low as 6.7%.",
+  "summary": "1. Script hooks must directly address the viewer using sensory imagination triggers (e.g., 'Socho...', 'Tumhari car') rather than passive passive-scientific statements. 2. Focus topics on high-curiosity pop culture myths (like T. rex/dinosaurs) rather than dry engineering/academic subjects (like hydroplaning or runway grooves). 3. First sentences of top-stayed shorts contrast a common movie belief/mental image with a surprising physical reality within the first 3 seconds. 4. Titles perform best when phrased as a short Hinglish question with a dinosaur/pop-culture anchor and visual emoji. 5. Avoid opening with academic jargon (e.g., 'radioactive materials' or complex biology terms) that causes immediate drop-off and swipe-away rates above 70%.",
   "winning_hooks": [
-    "Start with an immediate imagination command or subversion of a known pop-culture trope (e.g., 'Socho, tumhare daanton par...', 'Movies mein T. rex...').",
-    "Use concrete, relatable everyday visuals (cars, teeth) in the very first sentence to ground the concept."
+    "Start with an active imagination prompt framing extreme scale using common objects (e.g., 'Socho, tumhare daanton par 3 choti cars...').",
+    "Debunk a famous movie myth directly in line 1 (e.g., 'Movies mein T. rex gaadi ka peechha karta hai. Par...').",
+    "Keep title in snappy Hinglish addressing the viewer personally with relevant emojis."
   ],
   "avoid": [
-    "Vague introductory statements like 'Kuch everyday objects mein secretly...' or documentary-style passive questions.",
-    "Full English titles or pure formal Hindi titles without emojis or Hinglish casual framing."
+    "Generic English titles that read like encyclopedias (e.g., 'Common Household Items That Contain Radioactive Materials').",
+    "Hooks starting with passive scientific observations or complex vocabulary (e.g., 'sookshma aakritiyan', 'hydroplaning').",
+    "Dry engineering topics that lack immediate visual/emotional connection to everyday life."
   ],
-  "next_experiment": "Test identical T. rex pop-science script content using a direct challenge hook ('Socho...') vs. a question hook ('Kya aapko pata hai...?') while keeping title format identical."
+  "next_experiment": "A/B test two initial hook structures on the exact same T. rex topic: Arm A opens with a movie-myth contrast ('Movies mein T. rex aisa dikhate hain, lekin...'), while Arm B opens with a sensory imagination challenge ('Socho agar ek T. rex tumhari car ke samne aa jaye...'), keeping duration (~45s) and title structure identical to measure swipe-away rate (stayed_pct)."
 }
