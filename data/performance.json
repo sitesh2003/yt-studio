@@ -1,5 +1,24 @@
 [
   {
+    "topic": "Could a T. rex outrun a car?",
+    "title": "Could A T. rex Outrun Your Car? 🦖",
+    "hook": "The real T. rex probably couldn't run. Not even a jog.",
+    "countdown": false,
+    "length_arm": null,
+    "duration": null,
+    "publish_at": "2026-11-21T19:00:00-05:00",
+    "video": "fRhw3NBA-FY",
+    "views": 1700,
+    "engagedViews": 899,
+    "averageViewPercentage": 65.7,
+    "averageViewDuration": 25,
+    "likes": 23,
+    "subscribersGained": 1,
+    "shares": 0,
+    "stayed_pct": 52.9,
+    "shares_per_1k": 0.0
+  },
+  {
     "topic": "Why your eyes are constantly 'leaking' and you don't even realize it.",
     "title": "Why your eyes are secretly leaking",
     "hook": "Your eyes are leaking right now, and your brain is hiding it.",
@@ -14,7 +33,9 @@
     "averageViewDuration": 17,
     "likes": 23,
     "subscribersGained": 3,
-    "stayed_pct": 51.9
+    "shares": 0,
+    "stayed_pct": 51.9,
+    "shares_per_1k": 0.0
   },
   {
     "topic": "Why do onions make you cry when you cut them",
@@ -31,7 +52,9 @@
     "averageViewDuration": 18,
     "likes": 19,
     "subscribersGained": 1,
-    "stayed_pct": 47.3
+    "shares": 1,
+    "stayed_pct": 47.3,
+    "shares_per_1k": 0.83
   },
   {
     "topic": "Why Backyards Ponds Do Not Freeze Solid When It Is -15 °C Outside",
@@ -48,7 +71,28 @@
     "averageViewDuration": 15,
     "likes": 5,
     "subscribersGained": 0,
-    "stayed_pct": 24.0
+    "shares": 0,
+    "stayed_pct": 24.0,
+    "shares_per_1k": 0.0
+  },
+  {
+    "topic": "Why Does Your Leg Actually 'Fall Asleep' When You Sit On It?",
+    "title": "What Actually Happens When Your Leg Falls Asleep",
+    "hook": "Your leg doesn't actually fall asleep because of blood loss. It's not blood.",
+    "countdown": false,
+    "length_arm": "standard",
+    "duration": 36.56,
+    "publish_at": "2026-11-20T19:00:00-05:00",
+    "video": "omCteTHNw_Q",
+    "views": 403,
+    "engagedViews": 178,
+    "averageViewPercentage": 40.49,
+    "averageViewDuration": 14,
+    "likes": 5,
+    "subscribersGained": 0,
+    "shares": 0,
+    "stayed_pct": 44.2,
+    "shares_per_1k": 0.0
   },
   {
     "topic": "Why highway guardrail ends feature a heavy steel box designed to flatten and redirect guardrail beams during a crash.",
@@ -65,24 +109,28 @@
     "averageViewDuration": 14,
     "likes": 1,
     "subscribersGained": 0,
-    "stayed_pct": 30.2
+    "shares": 0,
+    "stayed_pct": 30.2,
+    "shares_per_1k": 0.0
   },
   {
-    "topic": "Why Does Your Leg Actually 'Fall Asleep' When You Sit On It?",
-    "title": "What Actually Happens When Your Leg Falls Asleep",
-    "hook": "Your leg doesn't actually fall asleep because of blood loss. It's not blood.",
+    "topic": "Scientists Just Found a Giant Hidden World Past Pluto",
+    "title": "Why Scientists Missed an Outer Kuiper Belt 🤯",
+    "hook": "Pluto seemed like our solar system's edge, yet astronomers are investigating evidence that the Kuiper Belt extends much further than we once thought.",
     "countdown": false,
     "length_arm": "standard",
-    "duration": 36.56,
-    "publish_at": "2026-11-20T19:00:00-05:00",
-    "video": "omCteTHNw_Q",
-    "views": 168,
-    "engagedViews": 83,
-    "averageViewPercentage": 45.41,
-    "averageViewDuration": 16,
-    "likes": 4,
+    "duration": 34.3,
+    "publish_at": "2026-11-21T12:00:00-05:00",
+    "video": "ZBu29NHzbYo",
+    "views": 258,
+    "engagedViews": 117,
+    "averageViewPercentage": 167.81,
+    "averageViewDuration": 58,
+    "likes": 7,
     "subscribersGained": 0,
-    "stayed_pct": 49.4
+    "shares": 0,
+    "stayed_pct": 45.3,
+    "shares_per_1k": 0.0
   },
   {
     "topic": "Scientists just found a hidden alien planet in James Webb images",
@@ -93,13 +141,15 @@
     "duration": 20.42,
     "publish_at": "2026-11-20T12:00:00-05:00",
     "video": "I9iv5BWMDLA",
-    "views": 128,
-    "engagedViews": 37,
-    "averageViewPercentage": 84.9,
+    "views": 189,
+    "engagedViews": 58,
+    "averageViewPercentage": 82.25,
     "averageViewDuration": 17,
     "likes": 3,
     "subscribersGained": 0,
-    "stayed_pct": 28.9
+    "shares": 0,
+    "stayed_pct": 30.7,
+    "shares_per_1k": 0.0
   },
   {
     "topic": "Scientists just found dinosaur blood that survived 115 million years inside fossilized bones",
@@ -116,24 +166,9 @@
     "averageViewDuration": 19,
     "likes": 1,
     "subscribersGained": 0,
-    "stayed_pct": 43.9
-  },
-  {
-    "topic": "Scientists Just Found a Giant Hidden World Past Pluto",
-    "title": "Why Scientists Missed an Outer Kuiper Belt 🤯",
-    "hook": "Pluto seemed like our solar system's edge, yet astronomers are investigating evidence that the Kuiper Belt extends much further than we once thought.",
-    "countdown": false,
-    "length_arm": "standard",
-    "duration": 34.3,
-    "publish_at": "2026-11-21T12:00:00-05:00",
-    "video": "ZBu29NHzbYo",
-    "views": 1,
-    "engagedViews": 0,
-    "averageViewPercentage": 0,
-    "averageViewDuration": 0,
-    "likes": 0,
-    "subscribersGained": 0,
-    "stayed_pct": 0.0
+    "shares": 0,
+    "stayed_pct": 43.9,
+    "shares_per_1k": 0.0
   },
   {
     "topic": "weekly: This Shark Can Live For Centuries! 🦈❄️, Why Garlic Doesn't Make You Cry Like Onions Do 🧄😭, Why Fruits Float In Water 🍎🍐,",
@@ -150,6 +185,8 @@
     "averageViewDuration": 32,
     "likes": 0,
     "subscribersGained": 0,
-    "stayed_pct": 100.0
+    "shares": 0,
+    "stayed_pct": 100.0,
+    "shares_per_1k": 0.0
   }
 ]

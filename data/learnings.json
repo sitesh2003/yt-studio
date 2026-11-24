@@ -1,12 +1,14 @@
 {
-  "summary": "- Use everyday, body‑related mysteries (eyes, onions, leg numbness) as topics because they consistently keep viewers past the first seconds. - Write hooks in second‑person, stating a surprising claim about the viewer’s own experience (e.g., “Your eyes are leaking right now…”). - Keep titles under eight words, start with “Why” or a direct question, and add a single emoji for visual punch. - Limit video length to 15‑20 seconds for optimal stay‑through; avoid exceeding 30 seconds unless the hook is exceptionally strong. - Drop generic countdown timers or overly technical intros that don’t immediately promise a personal revelation.",
+  "summary": "1. High-stayed hooks (51-53% stayed) state a bold, direct, second-person reality or myth-bust in under 12 words ('Your eyes are leaking right now...'). 2. Low-stayed hooks (24-30% stayed) fail by using slow narrative scenario setups ('Your car swerves off...') or generic vague statements ('Most James Webb images hold secrets.'). 3. High-view topics center on personal body phenomena and iconic pop-culture science (eyes, onions, T. rex) rather than niche civil engineering (guardrail boxes). 4. Short, punchy titles asking a relatable question outperform formal scientific explanation titles. 5. While deep astronomy topics achieve high rewatch rates (167% avg view percentage), weak opening lines drop stayed_pct below 45%, preventing initial feed distribution.",
   "winning_hooks": [
+    "The real T. rex probably couldn't run. Not even a jog.",
     "Your eyes are leaking right now, and your brain is hiding it.",
-    "You are not sad when you chop an onion – it’s something else.",
-    "Your leg doesn’t actually fall asleep because of blood loss."
+    "You are not sad when you chop an onion."
   ],
   "avoid": [
-    "Opening with a generic “Did you know…”, long pre‑amble before the hook, countdown timers that delay the core claim, titles longer than eight words without a clear curiosity trigger"
+    "Narrative scenario setups that delay the core topic ('Your car swerves off the highway right toward...')",
+    "Generic claims with zero immediate stakes ('Most James Webb images hold secrets.')",
+    "Passive background facts before the plot twist ('Fossilized bones can last millions of years...')"
   ],
-  "next_experiment": "Create two versions of the same video: Version A uses a second‑person hook (“Your X is doing Y”) and Version B uses a third‑person hook (“People think X does Y”). Keep title, length, and thumbnail identical, then compare stayed_pct to see which phrasing drives higher retention."
+  "next_experiment": "Test a 1-second visual text overlay and hook change on a niche engineering video: Compare an indirect scenario opening vs. a direct myth-bust statement ('This steel box is designed to destroy your car safely')."
 }

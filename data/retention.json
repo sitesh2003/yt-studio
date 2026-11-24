@@ -20,7 +20,7 @@
       }
     ],
     "countdown": null,
-    "checked": "2026-11-23"
+    "checked": "2026-11-24"
   },
   "a8Kooq5Sswk": {
     "title": "Why Onions Make You Cry",
@@ -43,7 +43,7 @@
       }
     ],
     "countdown": null,
-    "checked": "2026-11-23"
+    "checked": "2026-11-24"
   },
   "yF1Dj5F1icM": {
     "title": "Why Cold Water Fails Against Spicy Food 🌶️🥛",
@@ -319,7 +319,7 @@
       }
     ],
     "countdown": false,
-    "checked": "2026-11-23"
+    "checked": "2026-11-24"
   },
   "nnxCKv3odg4": {
     "title": "Why Car Windshields Have Black Dots 🤔",
@@ -365,7 +365,7 @@
       }
     ],
     "countdown": false,
-    "checked": "2026-11-23"
+    "checked": "2026-11-24"
   },
   "qAcYz-fodfU": {
     "title": "How 400 Degree Foil Stays Safe 🤔",
@@ -416,24 +416,70 @@
   "I9iv5BWMDLA": {
     "title": "How James Webb Spots Hidden Planets In Plain Sight",
     "hook_line": "Most James Webb images hold secrets.",
-    "kept_at_10pct": 1.4054,
-    "kept_at_50pct": 0.7837999999999999,
-    "kept_at_end": 0.4595,
-    "vs_similar_start": 0.55,
-    "vs_similar_end": 0.68,
+    "kept_at_10pct": 1.3621,
+    "kept_at_50pct": 0.7931,
+    "kept_at_end": 0.4138,
+    "vs_similar_start": 0.54,
+    "vs_similar_end": 0.66,
     "biggest_drops": [
       {
-        "at": 0.29,
-        "lost": 0.189,
+        "at": 0.2,
+        "lost": 0.155,
         "line": "Most exoplanets are found when they cross in front of their star and briefly block a tiny fraction of its light."
       },
       {
-        "at": 0.62,
-        "lost": 0.108,
+        "at": 0.73,
+        "lost": 0.086,
         "line": "By using infrared light to spot the faint heat glow of a young world."
       }
     ],
     "countdown": false,
-    "checked": "2026-11-23"
+    "checked": "2026-11-24"
+  },
+  "omCteTHNw_Q": {
+    "title": "What Actually Happens When Your Leg Falls Asleep",
+    "hook_line": "Your leg doesn't actually fall asleep because of blood loss. It's not blood.",
+    "kept_at_10pct": 1.0316,
+    "kept_at_50pct": 0.2316,
+    "kept_at_end": 0.0737,
+    "vs_similar_start": 0.22,
+    "vs_similar_end": 0.36,
+    "biggest_drops": [
+      {
+        "at": 0.12,
+        "lost": 0.337,
+        "line": "You feel that pins-and-needles sensation when you sit wrong for too long."
+      },
+      {
+        "at": 0.33,
+        "lost": 0.095,
+        "line": "Most people blame their circulation, but your heart is still pumping fine. While blood flow to the nerve itself is restricted by the pressure, your overall circulation is not actually stopped."
+      }
+    ],
+    "countdown": false,
+    "checked": "2026-11-24"
+  },
+  "ZBu29NHzbYo": {
+    "title": "Why Scientists Missed an Outer Kuiper Belt 🤯",
+    "hook_line": "Pluto seemed like our solar system's edge, yet astronomers are investigating evidence that the Kuiper Belt extends much further than we once thought.",
+    "kept_at_10pct": 2.3333,
+    "kept_at_50pct": 1.5983,
+    "kept_at_end": 1.4359,
+    "vs_similar_start": 0.55,
+    "vs_similar_end": 0.9,
+    "biggest_drops": [
+      {
+        "at": 0.12,
+        "lost": 0.179,
+        "line": "Pluto seemed like our solar system's edge, yet astronomers are investigating evidence that the Kuiper Belt extends much further than we once thought."
+      },
+      {
+        "at": 0.26,
+        "lost": 0.145,
+        "line": "We long believed the Kuiper Belt density dropped off significantly around fifty astronomical units away from the Sun."
+      }
+    ],
+    "countdown": false,
+    "checked": "2026-11-24"
   }
 }

@@ -1,24 +1,22 @@
 {
   "lessons": [
-    "Start with a vivid, surprising hook line – videos with non‑empty hook_line keep >1.0 of viewers at 10% while empty hooks drop below 0.5",
-    "Keep the hook concise; avoid long explanatory sentences in the first 10‑20% – biggest drops at 0.1‑0.2 are almost always plain facts",
-    "Use visual or sensory contrast (e.g., “older than the United States”, “looks like beef”) to sustain mid‑video retention – top videos with >0.6 at 50% use such hooks",
-    "Limit countdown or pause cues unless they build clear tension – the countdown flag shows mixed results and no consistent retention boost",
-    "Pose a curiosity‑driven question or paradox before the first factual block – high‑retention videos frame the hook as a question or mystery",
-    "Maintain a steady narrative pace after the hook; avoid inserting another dense fact block around 0.3‑0.4 where many drops occur"
+    "Never repeat the hook line or question in the first 10-15 seconds; restating the setup (e.g., Potato Sprouts, Guardrails, Funny Bone) caused massive immediate drops between 23% and 32%.",
+    "Eliminate filler teaser lines that delay information (e.g., 'They are not just there to look cool', 'They look like similar fruits'), which lost over 30% of remaining viewers.",
+    "Do not include interactive pauses or countdowns like 'Pause and guess...'; these created consistent mid-video drop-offs (e.g., 400 Degree Foil, Maple Syrup).",
+    "Hook viewers using extreme counter-intuitive claims or historic/scale comparisons (e.g., 'older than the United States', space mystery beyond Pluto) to achieve loop/rewatch rates above 100%.",
+    "Lead with direct visual contrasts or paradoxes (e.g., tuna vs. cod meat color) to sustain high retention from start to end (vs_similar_end of 0.86)."
   ],
   "worst_moment_types": [
-    "early straight factual explanation (0‑0.2)",
-    "repetition of the same idea without new visual",
-    "dense technical detail without visual cue",
-    "countdown or pause without added tension"
+    "Verbatim repetition of the hook line or title question",
+    "Interactive callouts or countdowns ('Pause and guess... three, two, one')",
+    "Vague transition/filler sentences that add no new facts",
+    "Stating obvious sensory setups instead of diving into the scientific cause"
   ],
   "best_hook_types": [
-    "surprising contrast or paradox (e.g., older than US, red‑meat fish)",
-    "vivid sensory image (e.g., ice water vs pepper fire)",
-    "question that challenges expectation (e.g., why do potatoes sprout in dents?)",
-    "short curiosity‑driven statement hinting at hidden mechanism"
+    "Extreme comparative scale or historical facts ('older than the United States')",
+    "Challenging established baseline knowledge ('Pluto seemed like our solar system's edge...')",
+    "Direct visual paradoxes comparing two common things ('bluefin tuna and a cod... meat looks like two completely different animals')"
   ],
-  "studied": "2026-11-23",
-  "videos": 19
+  "studied": "2026-11-24",
+  "videos": 21
 }
