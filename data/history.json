@@ -6317,7 +6317,7 @@
       "3D animation"
     ],
     "hook": "A car that folds up in a crash keeps you safer than one that doesn't.",
-    "status": "scheduled",
+    "status": "public",
     "narration": "A car that folds up in a crash keeps you safer than one that doesn't. Both of these cars hit the wall at the same speed, and both of them stop. The stiff car stops almost instantly, so the people inside get hit with a huge force. The folding front makes the stop last longer, so the force on the people inside drops. That's Newton's second law: the same change in speed, spread over more time, needs less force. The idea was patented in 1952, and Mercedes-Benz first built it into a production car in 1959. So why is the middle of the car built to be as strong as possible?",
     "voice_engine": "chatterbox",
     "countdown": false,
