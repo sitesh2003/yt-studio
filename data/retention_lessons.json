@@ -1,21 +1,19 @@
 {
   "lessons": [
-    "Never repeat the hook line or question in the first 10-15 seconds; restating the setup (e.g., Potato Sprouts, Guardrails, Funny Bone) caused massive immediate drops between 23% and 32%.",
-    "Eliminate filler teaser lines that delay information (e.g., 'They are not just there to look cool', 'They look like similar fruits'), which lost over 30% of remaining viewers.",
-    "Do not include interactive pauses or countdowns like 'Pause and guess...'; these created consistent mid-video drop-offs (e.g., 400 Degree Foil, Maple Syrup).",
-    "Hook viewers using extreme counter-intuitive claims or historic/scale comparisons (e.g., 'older than the United States', space mystery beyond Pluto) to achieve loop/rewatch rates above 100%.",
-    "Lead with direct visual contrasts or paradoxes (e.g., tuna vs. cod meat color) to sustain high retention from start to end (vs_similar_end of 0.86)."
+    "Start with a vivid, surprising claim or question that creates immediate curiosity – videos whose hook lines were bold facts or sensory‑rich statements (e.g., “This shark is older than the United States”, “Pluto seemed like our solar system’s edge…”) kept >1.0 of viewers past 10 %",
+    "Avoid dense factual exposition in the first 10 % – the biggest audience drops (loss > 0.2) all occurred when the script jumped straight into detailed explanations or background info (e.g., maple‑sap fact, garlic‑chemical detail)",
+    "Use sensory or visual language that paints a picture – hooks that described a feeling or scene (“Gulping ice water after a hot pepper…”, “Fresh pineapple is literally eating you back”) correlated with the highest 10 % retention values",
+    "Do not repeat the same idea within the opening segment – videos that duplicated a line or re‑stated the same fact suffered a second large drop (e.g., guardrail and windshield duplicate lines)"
   ],
   "worst_moment_types": [
-    "Verbatim repetition of the hook line or title question",
-    "Interactive callouts or countdowns ('Pause and guess... three, two, one')",
-    "Vague transition/filler sentences that add no new facts",
-    "Stating obvious sensory setups instead of diving into the scientific cause"
+    "Early‑segment dense factual statements",
+    "Repeated or redundant explanations in the first half",
+    "Straight‑forward exposition without a curiosity hook"
   ],
   "best_hook_types": [
-    "Extreme comparative scale or historical facts ('older than the United States')",
-    "Challenging established baseline knowledge ('Pluto seemed like our solar system's edge...')",
-    "Direct visual paradoxes comparing two common things ('bluefin tuna and a cod... meat looks like two completely different animals')"
+    "Surprising, bold claim (e.g., “This shark is older than the United States”)",
+    "Sensory‑rich description that evokes a vivid image or feeling",
+    "Rhetorical question or intriguing “Why …?” phrasing that promises an answer"
   ],
   "studied": "2026-11-24",
   "videos": 21

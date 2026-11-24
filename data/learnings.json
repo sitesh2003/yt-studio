@@ -1,14 +1,14 @@
 {
-  "summary": "1. High-stayed hooks (51-53% stayed) state a bold, direct, second-person reality or myth-bust in under 12 words ('Your eyes are leaking right now...'). 2. Low-stayed hooks (24-30% stayed) fail by using slow narrative scenario setups ('Your car swerves off...') or generic vague statements ('Most James Webb images hold secrets.'). 3. High-view topics center on personal body phenomena and iconic pop-culture science (eyes, onions, T. rex) rather than niche civil engineering (guardrail boxes). 4. Short, punchy titles asking a relatable question outperform formal scientific explanation titles. 5. While deep astronomy topics achieve high rewatch rates (167% avg view percentage), weak opening lines drop stayed_pct below 45%, preventing initial feed distribution.",
+  "summary": "1. High-stayed videos (>50% stayed_pct) address immediate human experiences (eyes, onions) or famous pop-culture myths (T. rex), whereas low-stayed videos focus on complex astronomy or highway engineering. 2. Winning first sentences instantly make a provocative assertion directly addressing the viewer ('Your eyes are leaking right now') rather than building slow setup background ('Fossilized bones can last...'). 3. Top titles are short, question/curiosity-driven, and under 7 words ('Could A T. rex Outrun Your Car?'), while low-performing titles rely on abstract science phrasing. 4. Subverting expectations in the very first sentence ('Not even a jog', 'You are not sad') prevents early swiping far better than generic mystery hooks ('Most James Webb images hold secrets'). 5. Scriptwriters must cut all contextual preamble and state the shocking contradiction within the first 5 words.",
   "winning_hooks": [
-    "The real T. rex probably couldn't run. Not even a jog.",
-    "Your eyes are leaking right now, and your brain is hiding it.",
-    "You are not sad when you chop an onion."
+    "Direct viewer subversion: 'Your eyes are leaking right now, and your brain is hiding it.'",
+    "Immediate myth-busting: 'The real T. rex probably couldn't run. Not even a jog.'",
+    "Bold short contradiction: 'You are not sad when you chop an onion.'"
   ],
   "avoid": [
-    "Narrative scenario setups that delay the core topic ('Your car swerves off the highway right toward...')",
-    "Generic claims with zero immediate stakes ('Most James Webb images hold secrets.')",
-    "Passive background facts before the plot twist ('Fossilized bones can last millions of years...')"
+    "Slow background setups: 'Fossilized bones can last millions of years, but sometimes...'",
+    "Passive scenario building: 'Your car swerves off the highway right toward...'",
+    "Vague high-level claims: 'Most James Webb images hold secrets.'"
   ],
-  "next_experiment": "Test a 1-second visual text overlay and hook change on a niche engineering video: Compare an indirect scenario opening vs. a direct myth-bust statement ('This steel box is designed to destroy your car safely')."
+  "next_experiment": "Test Hook Type A (Direct bold contradiction: 'Your brain shuts off your vision 40 minutes a day') vs Hook Type B (Scenario setup: 'If you look in the mirror right now, something strange happens') using the exact same body video on body science topics."
 }
