@@ -1,0 +1,32 @@
+{
+  "shots": [
+    {"kind": "wp_peck", "overlay": "label", "label": ["NOT A SHOCK ABSORBER", "despite what we were told"], "rate": 1.6},
+    {"kind": "wp_peck", "overlay": "label", "label": ["HIGH-SPEED FILM", "3 species, every hit tracked"], "markers": true, "rate": 1.2},
+    {"kind": "wp_xray", "overlay": "label", "label": ["TOP: A CUSHION", "BOTTOM: THE REAL BIRD"], "ghost": true, "rate": 1.0},
+    {"kind": "wp_xray", "overlay": "label", "label": ["A STIFF HAMMER", "beak and head stop together"], "rate": 1.2},
+    {"kind": "wp_brains", "overlay": "label", "label": ["SAME HIT", "woodpecker brain vs human brain"]},
+    {"kind": "wp_peck", "overlay": "label", "label": ["2x FASTER", "to get near concussion levels"], "rate": 3.0, "markers": true,
+     "source": "Van Wassenbergh et al. 2022, Current Biology 32:3189"},
+    {"kind": "wp_peck", "overlay": "label", "label": ["WOODPECKER HELMETS?", "the wrong lesson"], "wide": true, "rate": 1.6},
+    {"kind": "wp_xray", "overlay": "label", "label": ["NOT A CUSHION", "a stiff hammer"], "orbit": true, "rate": 1.2},
+    {"kind": "wp_peck", "overlay": "none", "wide": true, "rate": 1.6}
+  ],
+  "hi_labels": {
+    "NOT A SHOCK ABSORBER": "SHOCK ABSORBER नहीं",
+    "despite what we were told": "जैसा हमें बताया गया",
+    "HIGH-SPEED FILM": "HIGH-SPEED FILM",
+    "3 species, every hit tracked": "3 प्रजातियाँ, हर चोट नापी",
+    "TOP: A CUSHION": "ऊपर: गद्दा",
+    "BOTTOM: THE REAL BIRD": "नीचे: असली पक्षी",
+    "A STIFF HAMMER": "सख़्त हथौड़ा",
+    "beak and head stop together": "चोंच और सिर साथ रुकते हैं",
+    "SAME HIT": "वही चोट",
+    "woodpecker brain vs human brain": "कठफोड़वा का दिमाग़ बनाम इंसान का",
+    "2x FASTER": "दुगनी रफ़्तार",
+    "to get near concussion levels": "तब जाकर चोट का ख़तरा",
+    "WOODPECKER HELMETS?": "कठफोड़वा वाले HELMETS?",
+    "the wrong lesson": "ग़लत सबक़",
+    "NOT A CUSHION": "गद्दा नहीं",
+    "a stiff hammer": "सख़्त हथौड़ा"
+  }
+}

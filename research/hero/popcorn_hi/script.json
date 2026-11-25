@@ -1,0 +1,23 @@
+{
+  "title_options": ["Popcorn एक टाँग पर उछलता है 🍿"],
+  "share": {
+    "myth": "Popcorn बस फटता है, और पॉप की आवाज़ छिलका टूटने की होती है।",
+    "truth": "दाने लगभग 180 डिग्री Celsius पर फटते हैं; झाग बना starch एक टाँग बनकर कड़ाही पर दबता है और दाने को उछाल देता है; आवाज़ भाप निकलने से आती लगती है (Virot & Ponomarenko 2015)।",
+    "line": "Popcorn बस फटता नहीं। वह starch की टाँग बनाकर कड़ाही से उछलता है, और पॉप की आवाज़ निकलती भाप की है।"
+  },
+  "facts": ["Virot & Ponomarenko 2015, J R Soc Interface 12:20141247: 180 C critical temperature; starch leg compressed on the ground; pop sound from water vapour release."],
+  "description": "Slow motion में popcorn कुछ अजीब करता है: starch की टाँग बनाकर कड़ाही से उछलता है। #shorts #hindi #science #popcorn",
+  "sources": "Virot & Ponomarenko 2015, J R Soc Interface 12:20141247.",
+  "tags": ["popcorn hindi", "science hindi", "physics hindi", "kitchen science", "3D animation"],
+  "scenes": [
+    {"narration": "Popcorn बस फटता नहीं है। वह एक टाँग पर उछलता है।"},
+    {"narration": "हर दाने के अंदर थोड़ा पानी होता है, सख़्त छिलके में बंद।"},
+    {"narration": "गर्म करते ही वह पानी भाप बनता है, और अंदर का दबाव बढ़ता जाता है।"},
+    {"narration": "लगभग एक सौ अस्सी डिग्री Celsius पर, लगभग हर दाना फट जाता है।"},
+    {"narration": "दरार से starch झाग बनकर निकलता है, और उसका एक हिस्सा कड़ाही पर टाँग की तरह दबता है।"},
+    {"narration": "यह टाँग दबती है, फिर वापस धकेलती है, और दाना हवा में उछल जाता है।"},
+    {"narration": "और पॉप की आवाज़? video और आवाज़ साथ रिकॉर्ड करने पर लगता है, कि यह भाप निकलने की आवाज़ है, छिलका टूटने की नहीं।"},
+    {"narration": "Popcorn बस फटता नहीं। वह starch की टाँग बनाकर कड़ाही से उछलता है, और पॉप की आवाज़ निकलती भाप की है।"},
+    {"narration": "तो कुछ दाने कभी फटते ही क्यों नहीं?"}
+  ]
+}

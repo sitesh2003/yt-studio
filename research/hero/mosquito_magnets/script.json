@@ -1,0 +1,29 @@
+{
+  "title_options": ["Why Mosquitoes Bite You More Than Your Friends 🦟"],
+  "share": {
+    "myth": "Mosquitoes pick people with sweet blood (or a certain blood type).",
+    "truth": "In De Obaldia et al. 2022 (Cell), the people mosquitoes preferred had more carboxylic acids from skin oil on their skin, and the preference held for years; blood-type evidence is contradictory.",
+    "line": "Mosquitoes don't choose sweet blood. They follow the smell of acids made from the oil on your skin."
+  },
+  "facts": [
+    "De Obaldia ME et al. 2022, Cell 185:4099: volunteers wore nylon sleeves on their forearms for 6 hours; female Aedes aegypti chose between pairs of nylons.",
+    "Subject 33's attractiveness score was over 100 times that of the two least attractive subjects (19 and 28); differences were stable over several years (Subject 28 least attractive of all 64 subjects).",
+    "Highly attractive people had significantly more carboxylic acids in their skin emanations; human sebum is about 25% free fatty acids.",
+    "Mutant mosquitoes lacking the co-receptors Ir8a, Ir25a or Ir76b were severely impaired but still told highly and weakly attractive people apart.",
+    "The paper notes evidence on ABO blood type and mosquito attraction is contradictory. Only females bite: they need blood protein to make eggs."
+  ],
+  "description": "Some people really are mosquito magnets, and it's not sweet blood. A 2022 study traced it to acids made from the oil on their skin. #shorts #science #biology #mosquito",
+  "sources": "De Obaldia et al. 2022, Cell 185:4099-4116 (skin carboxylic acids and mosquito attraction), open access via Europe PMC PMC10069481.",
+  "tags": ["mosquito", "mosquito bites", "mosquito magnet", "biology", "science", "3D animation"],
+  "scenes": [
+    {"narration": "Some people really are mosquito magnets. And it has nothing to do with sweet blood."},
+    {"narration": "In one study, volunteers wore nylon sleeves on their arms for six hours."},
+    {"narration": "Then mosquitoes were given a choice between two people's sleeves."},
+    {"narration": "One volunteer scored over a hundred times more attractive than the least attractive ones. And for years, the same people kept winning."},
+    {"narration": "The difference was on their skin: more of the acids made from skin oil."},
+    {"narration": "Even mosquitoes bred without key smell sensors could still pick out the magnets."},
+    {"narration": "And blood type? The evidence for it is mixed."},
+    {"narration": "So mosquitoes don't choose sweet blood. They follow the smell of acids made from the oil on your skin."},
+    {"narration": "So who in your family gets bitten the most?"}
+  ]
+}

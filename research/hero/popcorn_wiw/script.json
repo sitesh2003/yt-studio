@@ -1,0 +1,25 @@
+{
+  "title_options": ["Popcorn Is A Pressure Vessel That Jumps (Physics) 🍿"],
+  "share": {
+    "myth": "A popcorn kernel just explodes; there's no real physics in the jump or the sound.",
+    "truth": "The kernel is a pressure vessel that fails at about 180 C; foaming starch forms a leg that is compressed on the pan like a spring and pushes the kernel off, and the pop is linked to escaping water vapour (Virot & Ponomarenko 2015).",
+    "line": "Popcorn is a pressure vessel that fails at 180 degrees, then jumps on a spring made of starch."
+  },
+  "facts": [
+    "Virot & Ponomarenko 2015, J R Soc Interface 12:20141247: critical temperature 180 C consistent with a pressure vessel; popcorn jumps with a leg of starch compressed on the ground; pop sound linked to water vapour release; all within some hundredths of a second."
+  ],
+  "description": "Popcorn is a lesson in pressure, stored energy and forces. The kernel is a pressure vessel, and it jumps on a leg of starch. #shorts #physics #science #popcorn",
+  "sources": "Virot & Ponomarenko 2015, Journal of the Royal Society Interface 12:20141247 (PMC4345489).",
+  "tags": ["popcorn physics", "pressure", "physics", "GCSE physics", "science", "3D animation"],
+  "scenes": [
+    {"narration": "A popcorn kernel is a tiny pressure vessel, and when it fails, it jumps."},
+    {"narration": "The hard hull traps a little water inside."},
+    {"narration": "Heating it turns that water into steam. Same space, more gas, hotter gas: the pressure rises."},
+    {"narration": "The hull holds until about one hundred eighty degrees Celsius. Then almost every kernel bursts."},
+    {"narration": "Starch foams out, and part of it lands on the pan as a leg."},
+    {"narration": "The leg squashes, storing energy like a spring, then pushes the pan and the pan pushes back."},
+    {"narration": "And the pop? Recordings link it to the steam escaping, all in a few hundredths of a second."},
+    {"narration": "Popcorn is a pressure vessel that fails at one hundred eighty degrees, then jumps on a spring made of starch."},
+    {"narration": "So what would happen to the pressure if the hull had a tiny hole?"}
+  ]
+}

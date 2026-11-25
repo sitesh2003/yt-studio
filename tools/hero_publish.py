@@ -77,8 +77,12 @@ if LONG:   # YouTube chapters: 0:00 first, then each chapter card's cut (voice t
             nm = sh["chapter"][1]
             rows.append((int(spans[i][0]), nm if hindi else nm.title().replace("T. Rex", "T. rex")))
     chapters = "\n\n" + "\n".join(f"{t // 60}:{t % 60:02d} {nm}" for t, nm in rows)
+credits = spec.get("credits") or (
+    "3D: every model built from scratch in Blender (procedural; no stock models or footage)."
+    if spec.get("renderer") == "micro" else
+    "3D models: Quaternius, Animated LowPoly Dinosaurs (CC0); Kenney, Car Kit (CC0). Animated in Blender.")
 desc = (script.get("description", "") + chapters + "\n\nSources: " + script.get("sources", "") + "\n" +
-        "3D models: Quaternius, Animated LowPoly Dinosaurs (CC0); Kenney, Car Kit (CC0). Animated in Blender.\n\n"
+        credits + "\n\n"
         "How this was made: the script is researched and fact-checked against published research (sources above), "
         "narrated by an AI voice, and animated and edited with open-source software.")
 meta = {"title": script["title_options"][0], "description": desc, "tags": script.get("tags", []),

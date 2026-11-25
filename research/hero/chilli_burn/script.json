@@ -1,0 +1,65 @@
+{
+  "title_options": [
+    "Chilli Never Actually Heats Your Mouth 🌶️"
+  ],
+  "share": {
+    "myth": "Chilli burns because it is hot or is actually damaging your mouth.",
+    "truth": "Capsaicin opens TRPV1, the nerve sensor that normally fires at about 43 degrees Celsius, so the brain reads burning heat with no real rise in temperature (Caterina et al. 1997).",
+    "line": "Chilli doesn't heat your mouth. It switches on the sensor that warns you about burning heat."
+  },
+  "facts": [
+    "Caterina MJ et al. 1997, Nature 389:816-824: the capsaicin receptor VR1 (now TRPV1) is an ion channel on pain nerves that is also opened by heat in the painful range; its threshold is about 43 C (Caterina 1999 Nature; reviews).",
+    "David Julius shared the 2021 Nobel Prize in Physiology or Medicine for discovering receptors for temperature and touch, starting with the capsaicin receptor TRPV1.",
+    "Nolden, Lenart & Hayes 2019, Physiology & Behavior: of the drinks tested, whole and skim milk reduced capsaicin burn the most; skim worked about as well as whole, pointing to protein, not only fat; carbonated drinks did least.",
+    "43 C = 109 F."
+  ],
+  "description": "Chilli never raises the temperature in your mouth. Its molecule, capsaicin, opens TRPV1, the nerve sensor that normally fires at about 43 °C, so your brain hears a heat alarm. #shorts #science #biology #chilli",
+  "sources": "Caterina et al. 1997, Nature 389:816 (the capsaicin receptor, a heat-activated ion channel); Nobel Prize in Physiology or Medicine 2021 (nobelprize.org); Nolden, Lenart & Hayes 2019, Physiology & Behavior (milk and oral burn).",
+  "tags": [
+    "chilli",
+    "capsaicin",
+    "TRPV1",
+    "spicy food",
+    "biology",
+    "science",
+    "3D animation"
+  ],
+  "scenes": [
+    {
+      "narration": "Chilli never actually heats your mouth. Your tongue just thinks it's on fire.",
+      "shot": "hook"
+    },
+    {
+      "narration": "The nerves in your tongue carry a tiny sensor called TRPV1. Its job is to warn you about burning heat.",
+      "shot": "membrane"
+    },
+    {
+      "narration": "At about forty-three degrees Celsius, around a hundred and nine Fahrenheit, it springs open, and your brain hears: hot!",
+      "shot": "heat_open"
+    },
+    {
+      "narration": "The molecule in chilli, called capsaicin, slots into the very same sensor and opens it, with no heat at all.",
+      "shot": "capsaicin_open"
+    },
+    {
+      "narration": "So your brain gets the same alarm, and you sweat and go red, as if you really were hot.",
+      "shot": "nerve"
+    },
+    {
+      "narration": "Finding this sensor won the Nobel Prize in Medicine.",
+      "shot": "nobel"
+    },
+    {
+      "narration": "And in a taste test, milk calmed the burn best. Even skim milk.",
+      "shot": "milk"
+    },
+    {
+      "narration": "So chilli doesn't heat your mouth. It switches on the sensor that warns you about burning heat.",
+      "shot": "share"
+    },
+    {
+      "narration": "So what do you think mint does to the sensor for cold?",
+      "shot": "end"
+    }
+  ]
+}

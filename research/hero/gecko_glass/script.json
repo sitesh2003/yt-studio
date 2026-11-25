@@ -1,0 +1,27 @@
+{
+  "title_options": ["How Geckos Walk Up Glass (No Suction, No Glue) 🦎"],
+  "share": {
+    "myth": "Geckos stick with suction cups or sticky glue on their feet.",
+    "truth": "Their toes carry millions of hairs splitting into about a billion tiny tips; each gets close enough for van der Waals attraction, which works on water-loving and water-repelling surfaces alike (Autumn et al. 2002, PNAS; Huber et al. 2005, PNAS).",
+    "line": "Geckos don't use suction or glue. A billion tiny tips get so close that molecules pull them onto the glass."
+  },
+  "facts": [
+    "Autumn K et al. 2002, PNAS 99:12252: first direct evidence of dry adhesion of gecko setae by van der Waals forces; capillary (wet) adhesion rejected; a single seta adhered equally to hydrophobic and hydrophilic surfaces; the effect depends on tip size and shape.",
+    "Huber G et al. 2005, PNAS 102:16293: about one billion spatulae on a Tokay gecko (Ruibal & Ernst 1965); humidity adds to adhesion at the nanoscale, so van der Waals is the main, not the only, force.",
+    "Each seta branches into hundreds of spatula tips; geckos detach by peeling their toes up from the tip (digital hyperextension; Autumn et al. 2000, Nature: setae release at about 30 degrees)."
+  ],
+  "description": "A gecko runs up glass with no suction cups and no glue. A billion tiny tips on its toes get so close that molecules pull them to the surface. #shorts #science #gecko #physics",
+  "sources": "Autumn et al. 2002, PNAS 99:12252 (van der Waals adhesion in gecko setae); Huber et al. 2005, PNAS 102:16293 (single spatula measurements); Autumn et al. 2000, Nature 405:681.",
+  "tags": ["gecko", "gecko feet", "van der Waals", "biology", "physics", "science", "3D animation"],
+  "scenes": [
+    {"narration": "A gecko can run straight up glass. No suction cups. No glue."},
+    {"narration": "Zoom into its toes, and they're covered in millions of tiny hairs."},
+    {"narration": "Each hair splits into hundreds of even tinier tips. About a billion on one gecko."},
+    {"narration": "Each tip gets so close to the glass that a weak pull between molecules, called van der Waals force, takes hold."},
+    {"narration": "One tip's pull is almost nothing. A billion of them together hold the whole gecko."},
+    {"narration": "Tests in two thousand and two showed a single hair sticks just as well to surfaces that love water and ones that repel it. So it's not wet glue."},
+    {"narration": "To let go, the gecko peels its toes up from the tip, like tape."},
+    {"narration": "Geckos don't use suction or glue. A billion tiny tips get so close that molecules pull them onto the glass."},
+    {"narration": "So what would you build if you had gecko feet?"}
+  ]
+}

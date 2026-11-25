@@ -1,0 +1,55 @@
+{
+  "title_options": [
+    "A Woodpecker's Skull Is NOT a Shock Absorber 🪶"
+  ],
+  "share": {
+    "myth": "A woodpecker's skull works like a built-in shock absorber that cushions its brain.",
+    "truth": "High-speed video of three species showed the head absorbs almost none of the impact; it works as a stiff hammer, and the small brain stays below known concussion levels (Van Wassenbergh et al. 2022, Current Biology).",
+    "line": "A woodpecker's skull isn't a cushion. It's a stiff hammer, and its tiny brain is what keeps it safe."
+  },
+  "facts": [
+    "Van Wassenbergh S et al. 2022, Current Biology 32:3189-3194: in vivo impact decelerations in three woodpecker species (black, pileated, great spotted; six birds) and models show the cranial skeleton is used as a stiff hammer, not a shock absorber.",
+    "Any shock absorption would weaken the peck (it wastes the head's energy), so it is unlikely to have evolved.",
+    "Simulated intracranial pressure: woodpecker brains stay below concussion thresholds known for primate brains, because the braincase is small; models suggest they would need to hit about twice as fast (or wood about four times stiffer) to reach that level."
+  ],
+  "description": "For decades we were told woodpecker skulls absorb shock. High-speed video says the opposite: the head is a stiff hammer, and a small brain keeps it safe. #shorts #science #birds #woodpecker",
+  "sources": "Van Wassenbergh et al. 2022, Current Biology 32:3189-3194, doi 10.1016/j.cub.2022.05.052 (woodpeckers minimize cranial absorption of shocks).",
+  "tags": [
+    "woodpecker",
+    "woodpecker skull",
+    "birds",
+    "biology",
+    "physics",
+    "science",
+    "3D animation"
+  ],
+  "scenes": [
+    {
+      "narration": "You've probably heard a woodpecker's skull is a shock absorber. It isn't."
+    },
+    {
+      "narration": "Scientists filmed three kinds of woodpecker with high-speed cameras, and tracked the beak and the head on every hit."
+    },
+    {
+      "narration": "If the skull cushioned the blow, the head would keep moving after the beak stopped. It doesn't. They stop together."
+    },
+    {
+      "narration": "That's a stiff hammer. A cushion would soak up the energy and make every peck weaker."
+    },
+    {
+      "narration": "So what protects the brain? Its size. A small brain feels far less pressure than a big one in the same hit."
+    },
+    {
+      "narration": "Their models show a woodpecker would need to hit about twice as fast before getting near concussion levels."
+    },
+    {
+      "narration": "So helmets inspired by the woodpecker cushion idea took the wrong lesson from them."
+    },
+    {
+      "narration": "A woodpecker's skull isn't a cushion. It's a stiff hammer, and its tiny brain is what keeps it safe."
+    },
+    {
+      "narration": "So which animal do you think hits even harder than a woodpecker?"
+    }
+  ]
+}

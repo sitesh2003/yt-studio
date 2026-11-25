@@ -1,0 +1,125 @@
+{
+  "shots": [
+    {
+      "kind": "pc_burst",
+      "overlay": "label",
+      "label": [
+        "IT JUMPS ON A LEG",
+        "popcorn in slow motion"
+      ]
+    },
+    {
+      "kind": "pc_cut",
+      "overlay": "label",
+      "label": [
+        "WATER INSIDE",
+        "sealed in a hard hull"
+      ]
+    },
+    {
+      "kind": "pc_cut",
+      "overlay": "label",
+      "label": [
+        "STEAM PRESSURE",
+        "climbing inside"
+      ]
+    },
+    {
+      "kind": "pc_cut",
+      "overlay": "label",
+      "label": [
+        "~180 °C",
+        "almost every kernel bursts"
+      ],
+      "burst": true,
+      "source": "Virot & Ponomarenko 2015, J R Soc Interface 12:20141247"
+    },
+    {
+      "kind": "pc_burst",
+      "overlay": "label",
+      "label": [
+        "STARCH FOAM",
+        "a leg presses on the pan"
+      ]
+    },
+    {
+      "kind": "pc_burst",
+      "overlay": "label",
+      "label": [
+        "SQUASH, PUSH, LAUNCH",
+        "like a spring"
+      ]
+    },
+    {
+      "kind": "pc_steam",
+      "overlay": "label",
+      "label": [
+        "THE POP = STEAM",
+        "not the hull cracking"
+      ]
+    },
+    {
+      "kind": "pc_pan",
+      "overlay": "label",
+      "label": [
+        "NOT JUST A BURST",
+        "a starch leg + escaping steam"
+      ],
+      "pops": 12
+    },
+    {
+      "kind": "pc_pan",
+      "overlay": "none",
+      "pops": 6
+    }
+  ],
+  "hi_labels": {
+    "IT JUMPS ON A LEG": "टाँग पर उछाल",
+    "popcorn in slow motion": "slow motion में popcorn",
+    "WATER INSIDE": "अंदर पानी",
+    "sealed in a hard hull": "सख़्त छिलके में बंद",
+    "STEAM PRESSURE": "भाप का दबाव",
+    "climbing inside": "बढ़ता जाता है",
+    "almost every kernel bursts": "लगभग हर दाना फटता है",
+    "STARCH FOAM": "STARCH का झाग",
+    "a leg presses on the pan": "टाँग कड़ाही पर दबती है",
+    "SQUASH, PUSH, LAUNCH": "दबना, धकेलना, उछलना",
+    "like a spring": "spring की तरह",
+    "THE POP = STEAM": "पॉप = भाप",
+    "not the hull cracking": "छिलका टूटना नहीं",
+    "NOT JUST A BURST": "सिर्फ़ फटना नहीं",
+    "a starch leg + escaping steam": "starch की टाँग + निकलती भाप"
+  },
+  "wiw_labels": [
+    [
+      "A PRESSURE VESSEL",
+      "that jumps"
+    ],
+    [
+      "TRAPPED WATER",
+      "inside a hard hull"
+    ],
+    [
+      "MORE GAS, HOTTER GAS",
+      "pressure rises"
+    ],
+    null,
+    [
+      "STARCH FOAM",
+      "forms a leg"
+    ],
+    [
+      "STORED ENERGY",
+      "the leg is a spring"
+    ],
+    [
+      "THE POP",
+      "escaping steam"
+    ],
+    [
+      "PRESSURE VESSEL + SPRING",
+      "that's popcorn"
+    ],
+    null
+  ]
+}

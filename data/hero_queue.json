@@ -257,17 +257,21 @@
       "name": "chilli_burn",
       "channel": "main",
       "title": "Chilli isn't hot: it switches on your heat sensor",
-      "status": "idea",
+      "status": "uploaded",
       "planned_at": "2026-12-02T19:00:00-05:00",
-      "topic": "chilli_burn"
+      "topic": "chilli_burn",
+      "video_id": "MI-uIWRwwqc",
+      "public_at": "2026-12-02T19:00:00-05:00"
     },
     {
       "name": "chilli_burn_hi",
       "channel": "hi",
       "title": "",
-      "status": "idea",
+      "status": "uploaded",
       "planned_at": "2026-12-01T02:30:00-05:00",
-      "topic": "chilli_burn"
+      "topic": "chilli_burn",
+      "video_id": "9uXPDRgAjq8",
+      "public_at": "2026-12-01T02:30:00-05:00"
     },
     {
       "name": "mosquito_magnets",

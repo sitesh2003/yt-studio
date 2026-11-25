@@ -18,7 +18,7 @@
       "sources": [
         {
           "cite": "Autumn et al. 2002, PNAS 99:12252-12256",
-          "checked": "citation agreed by both models with links; numbers to confirm against the paper at scripting"
+          "checked": true
         }
       ],
       "votes": {
@@ -27,7 +27,7 @@
         "claude": 1
       },
       "score": 3,
-      "status": "picked",
+      "status": "scripted",
       "added": "2026-11-22",
       "from": "council 22 Nov",
       "slot_main": "2026-12-05T19:00:00-05:00",
@@ -51,7 +51,7 @@
       "sources": [
         {
           "cite": "De Obaldia et al. 2022, Cell 185:4099-4116",
-          "checked": "citation agreed by both models with links; numbers to confirm against the paper at scripting"
+          "checked": true
         }
       ],
       "votes": {
@@ -60,7 +60,7 @@
         "claude": 1
       },
       "score": 3,
-      "status": "picked",
+      "status": "scripted",
       "added": "2026-11-22",
       "from": "council 22 Nov",
       "slot_main": "2026-12-03T19:00:00-05:00",
@@ -138,7 +138,7 @@
       "sources": [
         {
           "cite": "Van Wassenbergh et al. 2022, Current Biology 32:3189-3194",
-          "checked": "citation agreed by both models with links; numbers to confirm against the paper at scripting"
+          "checked": true
         }
       ],
       "votes": {
@@ -147,7 +147,7 @@
         "claude": 1
       },
       "score": 3,
-      "status": "picked",
+      "status": "scripted",
       "added": "2026-11-22",
       "from": "council 22 Nov said JEB 2022; check: Current Biology 2022",
       "slot_main": "2026-12-04T19:00:00-05:00",
@@ -325,7 +325,7 @@
       "sources": [
         {
           "cite": "Virot & Ponomarenko 2015, J R Soc Interface 12:20141247",
-          "checked": "citation agreed by both models with links; numbers to confirm against the paper at scripting"
+          "checked": true
         }
       ],
       "votes": {
@@ -334,7 +334,7 @@
         "claude": 1
       },
       "score": 3,
-      "status": "picked",
+      "status": "scripted",
       "added": "2026-11-22",
       "from": "council 22 Nov",
       "slot_main": "2026-12-06T19:00:00-05:00",
@@ -359,7 +359,7 @@
       "sources": [
         {
           "cite": "Caterina et al. 1997, Nature 389:816-824",
-          "checked": "citation agreed by both models with links; numbers to confirm against the paper at scripting"
+          "checked": true
         }
       ],
       "votes": {
@@ -368,12 +368,16 @@
         "claude": 1
       },
       "score": 3,
-      "status": "picked",
+      "status": "uploaded",
       "added": "2026-11-22",
       "from": "council 22 Nov",
       "slot_main": "2026-12-02T19:00:00-05:00",
       "slot_hi": "2026-12-01T02:30:00-05:00",
-      "council": "2026-11-25"
+      "council": "2026-11-25",
+      "videos": {
+        "main": "MI-uIWRwwqc",
+        "hi": "9uXPDRgAjq8"
+      }
     },
     {
       "id": "steel_spoon_cold",
@@ -418,7 +422,7 @@
       "sources": [
         {
           "cite": "Quéré 2013, Annual Review of Fluid Mechanics 45:197-215",
-          "checked": "citation agreed by both models with links; numbers to confirm against the paper at scripting"
+          "checked": true
         }
       ],
       "votes": {
@@ -427,7 +431,7 @@
         "claude": 1
       },
       "score": 2,
-      "status": "picked",
+      "status": "scripted",
       "added": "2026-11-22",
       "from": "council 22 Nov",
       "slot_main": "2026-12-07T19:00:00-05:00",

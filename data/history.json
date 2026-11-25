@@ -6451,5 +6451,30 @@
     "video_id": "m4nqMI5n2ZQ",
     "publish_at": "2026-12-01T19:00:00-05:00",
     "thumbnail_set": true
+  },
+  {
+    "job": "hero_chilli_burn",
+    "topic": "Chilli Never Actually Heats Your Mouth 🌶️",
+    "title": "Chilli Never Actually Heats Your Mouth 🌶️",
+    "description": "Chilli never raises the temperature in your mouth. Its molecule, capsaicin, opens TRPV1, the nerve sensor that normally fires at about 43 °C, so your brain hears a heat alarm. #shorts #science #biology #chilli\n\nSources: Caterina et al. 1997, Nature 389:816 (the capsaicin receptor, a heat-activated ion channel); Nobel Prize in Physiology or Medicine 2021 (nobelprize.org); Nolden, Lenart & Hayes 2019, Physiology & Behavior (milk and oral burn).\n3D: every model built from scratch in Blender (procedural; no stock models or footage).\n\nHow this was made: the script is researched and fact-checked against published research (sources above), narrated by an AI voice, and animated and edited with open-source software.",
+    "tags": [
+      "chilli",
+      "capsaicin",
+      "TRPV1",
+      "spicy food",
+      "biology",
+      "science",
+      "3D animation"
+    ],
+    "hook": "Chilli never actually heats your mouth. Your tongue just thinks it's on fire.",
+    "status": "scheduled",
+    "narration": "Chilli never actually heats your mouth. Your tongue just thinks it's on fire. The nerves in your tongue carry a tiny sensor called TRPV1. Its job is to warn you about burning heat. At about forty-three degrees Celsius, around a hundred and nine Fahrenheit, it springs open, and your brain hears: hot! The molecule in chilli, called capsaicin, slots into the very same sensor and opens it, with no heat at all. So your brain gets the same alarm, and you sweat and go red, as if you really were hot. Finding this sensor won the Nobel Prize in Medicine. And in a taste test, milk calmed the burn best. Even skim milk. So chilli doesn't heat your mouth. It switches on the sensor that warns you about burning heat. So what do you think mint does to the sensor for cold?",
+    "voice_engine": "chatterbox",
+    "countdown": false,
+    "hero_3d": true,
+    "question": "So what do you think mint does to the sensor for cold?",
+    "video_id": "MI-uIWRwwqc",
+    "publish_at": "2026-12-02T19:00:00-05:00",
+    "thumbnail_set": true
   }
 ]

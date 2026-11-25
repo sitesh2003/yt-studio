@@ -1,0 +1,53 @@
+{
+  "title_options": [
+    "मिर्च आपके मुँह को सच में गर्म नहीं करती 🌶️"
+  ],
+  "share": {
+    "myth": "मिर्च इसलिए जलाती है क्योंकि वह गर्म होती है या मुँह को नुकसान पहुँचाती है।",
+    "truth": "Capsaicin, TRPV1 नाम के उस sensor को खोल देता है जो आम तौर पर लगभग 43 डिग्री Celsius पर खुलता है (Caterina et al. 1997)।",
+    "line": "मिर्च मुँह को गर्म नहीं करती। वह उस sensor को चालू कर देती है, जो जलाने वाली गर्मी की चेतावनी देता है।"
+  },
+  "facts": [
+    "Caterina MJ et al. 1997, Nature 389:816-824: the capsaicin receptor VR1 (now TRPV1) is an ion channel on pain nerves also opened by heat in the painful range, threshold about 43 C.",
+    "David Julius shared the 2021 Nobel Prize in Physiology or Medicine for discovering receptors for temperature and touch.",
+    "Nolden, Lenart & Hayes 2019, Physiology & Behavior: whole and skim milk reduced capsaicin burn the most of the drinks tested."
+  ],
+  "description": "मिर्च मुँह का तापमान नहीं बढ़ाती। उसका अणु capsaicin, TRPV1 नाम के sensor को खोल देता है, जो आम तौर पर लगभग 43°C पर खुलता है। #shorts #hindi #science #biology",
+  "sources": "Caterina et al. 1997, Nature 389:816; Nobel Prize in Physiology or Medicine 2021 (nobelprize.org); Nolden, Lenart & Hayes 2019, Physiology & Behavior.",
+  "tags": [
+    "मिर्च",
+    "capsaicin",
+    "science hindi",
+    "biology hindi",
+    "3D animation"
+  ],
+  "scenes": [
+    {
+      "narration": "मिर्च आपके मुँह को कभी सच में गर्म नहीं करती। बस आपकी ज़ुबान को लगता है कि उसमें आग लगी है।"
+    },
+    {
+      "narration": "ज़ुबान की नसों पर एक छोटा सा sensor होता है, जिसका नाम है TRPV1. इसका काम है, जलाने वाली गर्मी की चेतावनी देना।"
+    },
+    {
+      "narration": "लगभग तैंतालीस डिग्री Celsius पर यह खुल जाता है, और दिमाग़ तक संदेश पहुँचता है: गर्म!"
+    },
+    {
+      "narration": "मिर्च का अणु, capsaicin, इसी sensor में फ़िट होकर इसे खोल देता है, बिना किसी गर्मी के।"
+    },
+    {
+      "narration": "इसलिए दिमाग़ को वही चेतावनी मिलती है, पसीना आता है और चेहरा लाल हो जाता है, जैसे सच में गर्मी हो।"
+    },
+    {
+      "narration": "इस sensor की खोज को Nobel Prize मिला।"
+    },
+    {
+      "narration": "और एक प्रयोग में, जलन सबसे अच्छी तरह दूध ने शांत की, बिना मलाई वाले दूध ने भी।"
+    },
+    {
+      "narration": "तो मिर्च मुँह को गर्म नहीं करती। वह उस sensor को चालू कर देती है, जो जलाने वाली गर्मी की चेतावनी देता है।"
+    },
+    {
+      "narration": "तो आपको क्या लगता है, पुदीना ठंड वाले sensor के साथ क्या करता है?"
+    }
+  ]
+}

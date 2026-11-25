@@ -1,0 +1,106 @@
+{
+  "assets_dir": "assets/3d",
+  "renderer": "micro",
+  "end_beat_s": 0.6,
+  "shots": [
+    {
+      "kind": "mosq_magnet",
+      "overlay": "label",
+      "label": [
+        "MOSQUITO MAGNETS",
+        "not sweet blood"
+      ],
+      "seconds": 4.187,
+      "render_seconds": 5.89,
+      "event_seconds": 4.187
+    },
+    {
+      "kind": "mosq_sleeve",
+      "overlay": "label",
+      "label": [
+        "NYLON SLEEVES",
+        "worn for 6 hours"
+      ],
+      "seconds": 3.863,
+      "render_seconds": 5.092,
+      "event_seconds": 3.863
+    },
+    {
+      "kind": "mosq_choice",
+      "overlay": "label",
+      "label": [
+        "THE CHOICE",
+        "one sleeve or the other"
+      ],
+      "skew": 0.8,
+      "seconds": 3.142,
+      "render_seconds": 3.929,
+      "event_seconds": 3.142
+    },
+    {
+      "kind": "mosq_choice",
+      "overlay": "label",
+      "label": [
+        "100x MORE ATTRACTIVE",
+        "the same people, for years"
+      ],
+      "skew": 0.95,
+      "source": "De Obaldia et al. 2022, Cell 185:4099",
+      "seconds": 6.097,
+      "render_seconds": 7.244,
+      "event_seconds": 6.097
+    },
+    {
+      "kind": "mosq_skin",
+      "overlay": "label",
+      "label": [
+        "SKIN-OIL ACIDS",
+        "carboxylic acids"
+      ],
+      "seconds": 3.042,
+      "render_seconds": 4.216,
+      "event_seconds": 3.042
+    },
+    {
+      "kind": "mosq_follow",
+      "overlay": "label",
+      "label": [
+        "KEY SMELL SENSORS OFF",
+        "still found the magnets"
+      ],
+      "seconds": 3.331,
+      "render_seconds": 4.74,
+      "event_seconds": 3.331
+    },
+    {
+      "kind": "mosq_land",
+      "overlay": "label",
+      "label": [
+        "BLOOD TYPE?",
+        "the evidence is mixed"
+      ],
+      "seconds": 3.334,
+      "render_seconds": 3.434,
+      "event_seconds": 3.026
+    },
+    {
+      "kind": "mosq_follow",
+      "overlay": "label",
+      "label": [
+        "NOT SWEET BLOOD",
+        "the smell of skin acids"
+      ],
+      "many": 8,
+      "seconds": 4.791,
+      "render_seconds": 6.54,
+      "event_seconds": 4.791
+    },
+    {
+      "kind": "mosq_magnet",
+      "overlay": "none",
+      "seconds": 3.14,
+      "render_seconds": 4.508,
+      "event_seconds": 3.14
+    }
+  ]
+}

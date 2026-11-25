@@ -1,0 +1,32 @@
+{
+  "shots": [
+    {"kind": "lf_pan", "overlay": "label", "label": ["WATER THAT DANCES", "on a very hot pan"], "hot": true},
+    {"kind": "lf_compare", "overlay": "label", "label": ["HOTTER = FASTER?", "front: warm pan  back: hot pan"]},
+    {"kind": "lf_cut", "overlay": "label", "label": ["ABOVE ~180 °C", "the bottom turns to steam"],
+     "source": "Quéré 2013, Annual Review of Fluid Mechanics 45:197"},
+    {"kind": "lf_cut", "overlay": "label", "label": ["A FILM OF STEAM", "about 50 micrometres thick"]},
+    {"kind": "lf_pan", "overlay": "label", "label": ["ALMOST NO FRICTION", "nothing touches the metal"], "hot": true},
+    {"kind": "lf_compare", "overlay": "label", "label": ["STEAM INSULATES", "the floating drop lasts longer"]},
+    {"kind": "lf_pan", "overlay": "label", "label": ["THE LEIDENFROST EFFECT", "still being studied"], "hot": true},
+    {"kind": "lf_cut", "overlay": "label", "label": ["NOT TOUCHING THE METAL", "floating on its own steam"]},
+    {"kind": "lf_pan", "overlay": "none", "hot": false}
+  ],
+  "hi_labels": {
+    "WATER THAT DANCES": "नाचता पानी",
+    "on a very hot pan": "बहुत गर्म तवे पर",
+    "HOTTER = FASTER?": "ज़्यादा गर्म = जल्दी?",
+    "front: warm pan  back: hot pan": "आगे: हल्का गर्म  पीछे: बहुत गर्म",
+    "ABOVE ~180 °C": "लगभग 180 °C से ऊपर",
+    "the bottom turns to steam": "नीचे का हिस्सा भाप बनता है",
+    "A FILM OF STEAM": "भाप की परत",
+    "about 50 micrometres thick": "लगभग 50 micrometre मोटी",
+    "ALMOST NO FRICTION": "लगभग कोई रगड़ नहीं",
+    "nothing touches the metal": "धातु को कुछ नहीं छूता",
+    "STEAM INSULATES": "भाप गर्मी रोकती है",
+    "the floating drop lasts longer": "तैरती बूँद देर तक टिकती है",
+    "THE LEIDENFROST EFFECT": "LEIDENFROST EFFECT",
+    "still being studied": "आज भी research जारी",
+    "NOT TOUCHING THE METAL": "धातु को छूता नहीं",
+    "floating on its own steam": "अपनी भाप पर तैरता है"
+  }
+}

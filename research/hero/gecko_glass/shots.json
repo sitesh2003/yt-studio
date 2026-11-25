@@ -1,0 +1,32 @@
+{
+  "shots": [
+    {"kind": "gk_climb", "overlay": "label", "label": ["NO SUCTION. NO GLUE.", "so how?"], "from_front": true},
+    {"kind": "gk_toe", "overlay": "label", "label": ["MILLIONS OF HAIRS", "on ridges under each toe"]},
+    {"kind": "gk_setae", "overlay": "label", "label": ["ABOUT 1 BILLION TIPS", "on one gecko"]},
+    {"kind": "gk_vdw", "overlay": "label", "label": ["VAN DER WAALS FORCE", "a pull between molecules"]},
+    {"kind": "gk_climb", "overlay": "label", "label": ["TINY PULL x 1 BILLION", "holds the whole gecko"]},
+    {"kind": "gk_setae", "overlay": "label", "label": ["NOT WET GLUE", "water-loving or water-repelling"],
+     "source": "Autumn et al. 2002, PNAS 99:12252"},
+    {"kind": "gk_peel", "overlay": "label", "label": ["PEELS LIKE TAPE", "tip first"]},
+    {"kind": "gk_climb", "overlay": "label", "label": ["NOT SUCTION, NOT GLUE", "molecules pulling"], "from_front": true},
+    {"kind": "gk_climb", "overlay": "none"}
+  ],
+  "hi_labels": {
+    "NO SUCTION. NO GLUE.": "न SUCTION, न गोंद",
+    "so how?": "तो कैसे?",
+    "MILLIONS OF HAIRS": "लाखों बाल",
+    "on ridges under each toe": "हर उंगली की धारियों पर",
+    "ABOUT 1 BILLION TIPS": "लगभग एक अरब सिरे",
+    "on one gecko": "एक छिपकली पर",
+    "VAN DER WAALS FORCE": "VAN DER WAALS FORCE",
+    "a pull between molecules": "अणुओं के बीच खिंचाव",
+    "TINY PULL x 1 BILLION": "छोटा खिंचाव x एक अरब",
+    "holds the whole gecko": "पूरी छिपकली थाम लेता है",
+    "NOT WET GLUE": "गीला गोंद नहीं",
+    "water-loving or water-repelling": "पानी पसंद या नापसंद, दोनों सतहें",
+    "PEELS LIKE TAPE": "TAPE की तरह उखड़ता है",
+    "tip first": "पहले सिरा",
+    "NOT SUCTION, NOT GLUE": "न SUCTION, न गोंद",
+    "molecules pulling": "अणुओं का खिंचाव"
+  }
+}

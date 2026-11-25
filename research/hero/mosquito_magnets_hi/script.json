@@ -1,0 +1,25 @@
+{
+  "title_options": ["मच्छर आपको दूसरों से ज़्यादा क्यों काटते हैं? 🦟"],
+  "share": {
+    "myth": "मच्छर मीठे ख़ून वाले लोगों को चुनते हैं।",
+    "truth": "De Obaldia et al. 2022 (Cell) में, जिन लोगों को मच्छर ज़्यादा पसंद करते थे, उनकी त्वचा पर तेल से बने acids ज़्यादा थे, और यह सालों तक वैसा ही रहा।",
+    "line": "मच्छर मीठा ख़ून नहीं चुनते। वे आपकी त्वचा के तेल से बने acids की गंध के पीछे आते हैं।"
+  },
+  "facts": [
+    "De Obaldia ME et al. 2022, Cell 185:4099: nylon sleeves worn on forearms for 6 hours; Subject 33 scored over 100 times the least attractive subjects; stable over several years; more skin carboxylic acids; blood-type evidence contradictory."
+  ],
+  "description": "कुछ लोग सच में मच्छरों को ज़्यादा खींचते हैं, और वजह मीठा ख़ून नहीं है। 2022 की एक research में वजह निकली: त्वचा के तेल से बने acids। #shorts #hindi #science #mosquito",
+  "sources": "De Obaldia et al. 2022, Cell 185:4099-4116 (PMC10069481).",
+  "tags": ["मच्छर", "mosquito hindi", "science hindi", "biology hindi", "3D animation"],
+  "scenes": [
+    {"narration": "कुछ लोग सच में मच्छरों को ज़्यादा खींचते हैं। और इसका मीठे ख़ून से कोई लेना-देना नहीं है।"},
+    {"narration": "एक research में, लोगों ने छह घंटे तक अपनी बाँहों पर nylon की आस्तीन पहनी।"},
+    {"narration": "फिर मच्छरों को दो लोगों की आस्तीनों में से एक चुनने दिया गया।"},
+    {"narration": "एक व्यक्ति, सबसे कम पसंद वालों से सौ गुना से भी ज़्यादा पसंद किया गया। और सालों तक, वही लोग जीतते रहे।"},
+    {"narration": "फ़र्क़ उनकी त्वचा पर था: त्वचा के तेल से बने acids ज़्यादा थे।"},
+    {"narration": "सूँघने के ख़ास sensor हटाए गए मच्छर भी, इन लोगों को पहचान लेते थे।"},
+    {"narration": "और blood group? उसके सबूत मिले-जुले हैं।"},
+    {"narration": "तो मच्छर मीठा ख़ून नहीं चुनते। वे आपकी त्वचा के तेल से बने acids की गंध के पीछे आते हैं।"},
+    {"narration": "तो आपके घर में सबसे ज़्यादा मच्छर किसे काटते हैं?"}
+  ]
+}

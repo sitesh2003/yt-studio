@@ -632,6 +632,7 @@ def main():
     d = ROOT / "research" / "hero" / name
     spec = json.loads((d / "spec.json").read_text(encoding="utf-8"))
     SPEC.update(spec)
+    HI_LABELS.update(spec.get("hi_labels", {}))     # each video can carry its own label translations
     HINDI["on"] = (config()["channel"].get("language") or "en")[:2] == "hi"
     global OW, OH
     if spec.get("aspect") == "landscape":
