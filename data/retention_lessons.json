@@ -1,21 +1,22 @@
 {
   "lessons": [
-    "Open with a concise, surprising fact or vivid contrast – videos with hooks like “older than the United States” or “red meat vs white” keep >1.0 of viewers past 10% and >0.5 past 50%.",
-    "Limit the first 10‑15 % to the hook; replace detailed explanations with visual cues – biggest drops cluster at 0.1‑0.15 and are all explanatory lines.",
-    "Use concrete, visual language (e.g., “shark roams Arctic depths”, “tuna looks like deep‑red beef”) – these correlate with kept_at_50pct > 0.6 and kept_at_end > 0.4.",
-    "Avoid generic or repetitive statements in the early segment – low‑retention videos repeat facts like “dead skin cells would swell” and fall to ≤0.2 by 50%.",
-    "A countdown flag does not improve retention; videos with countdown = true perform no better than those without."
+    "Never repeat the video title in the first line—doing so in the Potato video caused an immediate 31.9% drop at 0.09s.",
+    "Avoid interactive delays like 'Pause and guess' or countdowns, which lost 15.2% of viewers in the Foil video and 8.3% in the Maple Syrup video.",
+    "Cut filler transitions and obvious statements; saying 'They look like similar fruits' dropped retention by 30.0% in the Fruits video.",
+    "Lead hooks with mind-bending comparative facts or extreme scale contrasts, which pushed 10% retention above 1.85 (e.g., Greenland Shark and Kuiper Belt videos).",
+    "Deliver immediate answers instead of lengthy situational setups, as painting scenarios like 'You just smashed your elbow' lost 23.4% of viewers early on."
   ],
   "worst_moment_types": [
-    "Early detailed scientific explanation without visual hook",
-    "Repetition of a known fact or definition",
-    "Generic “pause and guess” prompts lacking concrete imagery"
+    "Verbatim title repetition at the start",
+    "Interactive pauses and guess countdowns",
+    "State-the-obvious filler sentences",
+    "Slow narrative setups before reaching the core scientific premise"
   ],
   "best_hook_types": [
-    "Surprising quantitative or historical comparison",
-    "Vivid visual contrast between two familiar things",
-    "Short mystery/question that challenges a common belief"
+    "Historical/scale benchmark comparisons ('older than the United States')",
+    "Direct biological contrast hooks ('meat looks like two completely different animals')",
+    "Challenging common scientific misconceptions ('Pluto seemed like our solar system's edge')"
   ],
-  "studied": "2026-11-24",
-  "videos": 21
+  "studied": "2026-11-25",
+  "videos": 22
 }

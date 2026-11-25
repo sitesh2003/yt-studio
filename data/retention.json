@@ -2,9 +2,9 @@
   "4LJjIxeP_dY": {
     "title": "Why your eyes are secretly leaking",
     "hook_line": "",
-    "kept_at_10pct": 1.0662,
-    "kept_at_50pct": 0.4489,
-    "kept_at_end": 0.2043,
+    "kept_at_10pct": 1.0661,
+    "kept_at_50pct": 0.4483,
+    "kept_at_end": 0.204,
     "vs_similar_start": 0.34,
     "vs_similar_end": 0.55,
     "biggest_drops": [
@@ -20,14 +20,14 @@
       }
     ],
     "countdown": null,
-    "checked": "2026-11-24"
+    "checked": "2026-11-25"
   },
   "a8Kooq5Sswk": {
     "title": "Why Onions Make You Cry",
     "hook_line": "",
-    "kept_at_10pct": 1.178,
-    "kept_at_50pct": 0.3615,
-    "kept_at_end": 0.21280000000000002,
+    "kept_at_10pct": 1.1777,
+    "kept_at_50pct": 0.3608,
+    "kept_at_end": 0.2125,
     "vs_similar_start": 0.46,
     "vs_similar_end": 0.64,
     "biggest_drops": [
@@ -38,12 +38,12 @@
       },
       {
         "at": 0.26,
-        "lost": 0.119,
+        "lost": 0.121,
         "line": ""
       }
     ],
     "countdown": null,
-    "checked": "2026-11-24"
+    "checked": "2026-11-25"
   },
   "yF1Dj5F1icM": {
     "title": "Why Cold Water Fails Against Spicy Food 🌶️🥛",
@@ -301,25 +301,25 @@
   "3HaBsuVSlmA": {
     "title": "Why Highway Guardrails Have Heavy End Boxes 🤯",
     "hook_line": "Your car swerves off the highway right toward a steel guardrail.",
-    "kept_at_10pct": 1.0278,
-    "kept_at_50pct": 0.2917,
-    "kept_at_end": 0.125,
+    "kept_at_10pct": 1.0273999999999999,
+    "kept_at_50pct": 0.3014,
+    "kept_at_end": 0.1233,
     "vs_similar_start": 0.31,
-    "vs_similar_end": 0.32,
+    "vs_similar_end": 0.3,
     "biggest_drops": [
       {
         "at": 0.14,
-        "lost": 0.292,
+        "lost": 0.288,
         "line": "Instead of impaling your vehicle, your car hits a heavy steel box on the end of the rail."
       },
       {
         "at": 0.28,
-        "lost": 0.125,
+        "lost": 0.123,
         "line": "Instead of impaling your vehicle, your car hits a heavy steel box on the end of the rail."
       }
     ],
     "countdown": false,
-    "checked": "2026-11-24"
+    "checked": "2026-11-25"
   },
   "nnxCKv3odg4": {
     "title": "Why Car Windshields Have Black Dots 🤔",
@@ -347,25 +347,25 @@
   "7CxPpDW31G0": {
     "title": "Why Ponds Don't Freeze Solid 🤔",
     "hook_line": "Your frozen pond is secretly keeping fish alive.",
-    "kept_at_10pct": 1.1028,
-    "kept_at_50pct": 0.3738,
-    "kept_at_end": 0.243,
-    "vs_similar_start": 0.44,
-    "vs_similar_end": 0.78,
+    "kept_at_10pct": 1.1111,
+    "kept_at_50pct": 0.3796,
+    "kept_at_end": 0.25,
+    "vs_similar_start": 0.45,
+    "vs_similar_end": 0.77,
     "biggest_drops": [
       {
         "at": 0.14,
-        "lost": 0.327,
+        "lost": 0.333,
         "line": "At negative fifteen degrees, why doesn't it freeze solid?"
       },
       {
         "at": 0.29,
-        "lost": 0.084,
+        "lost": 0.083,
         "line": "Many liquids shrink when cold, but water does something strange."
       }
     ],
     "countdown": false,
-    "checked": "2026-11-24"
+    "checked": "2026-11-25"
   },
   "qAcYz-fodfU": {
     "title": "How 400 Degree Foil Stays Safe 🤔",
@@ -416,70 +416,93 @@
   "I9iv5BWMDLA": {
     "title": "How James Webb Spots Hidden Planets In Plain Sight",
     "hook_line": "Most James Webb images hold secrets.",
-    "kept_at_10pct": 1.3621,
-    "kept_at_50pct": 0.7931,
-    "kept_at_end": 0.4138,
-    "vs_similar_start": 0.54,
-    "vs_similar_end": 0.66,
+    "kept_at_10pct": 1.3387,
+    "kept_at_50pct": 0.7581,
+    "kept_at_end": 0.3871,
+    "vs_similar_start": 0.53,
+    "vs_similar_end": 0.64,
     "biggest_drops": [
       {
-        "at": 0.2,
-        "lost": 0.155,
+        "at": 0.29,
+        "lost": 0.161,
         "line": "Most exoplanets are found when they cross in front of their star and briefly block a tiny fraction of its light."
       },
       {
         "at": 0.73,
-        "lost": 0.086,
+        "lost": 0.081,
         "line": "By using infrared light to spot the faint heat glow of a young world."
       }
     ],
     "countdown": false,
-    "checked": "2026-11-24"
+    "checked": "2026-11-25"
   },
   "omCteTHNw_Q": {
     "title": "What Actually Happens When Your Leg Falls Asleep",
     "hook_line": "Your leg doesn't actually fall asleep because of blood loss. It's not blood.",
-    "kept_at_10pct": 1.0316,
-    "kept_at_50pct": 0.2316,
-    "kept_at_end": 0.0737,
-    "vs_similar_start": 0.22,
-    "vs_similar_end": 0.36,
+    "kept_at_10pct": 1.0407,
+    "kept_at_50pct": 0.2764,
+    "kept_at_end": 0.08130000000000001,
+    "vs_similar_start": 0.24,
+    "vs_similar_end": 0.31,
     "biggest_drops": [
       {
         "at": 0.12,
-        "lost": 0.337,
+        "lost": 0.293,
         "line": "You feel that pins-and-needles sensation when you sit wrong for too long."
       },
       {
         "at": 0.33,
-        "lost": 0.095,
+        "lost": 0.106,
         "line": "Most people blame their circulation, but your heart is still pumping fine. While blood flow to the nerve itself is restricted by the pressure, your overall circulation is not actually stopped."
       }
     ],
     "countdown": false,
-    "checked": "2026-11-24"
+    "checked": "2026-11-25"
   },
   "ZBu29NHzbYo": {
     "title": "Why Scientists Missed an Outer Kuiper Belt 🤯",
     "hook_line": "Pluto seemed like our solar system's edge, yet astronomers are investigating evidence that the Kuiper Belt extends much further than we once thought.",
-    "kept_at_10pct": 2.3333,
-    "kept_at_50pct": 1.5983,
-    "kept_at_end": 1.4359,
+    "kept_at_10pct": 1.8578000000000001,
+    "kept_at_50pct": 1.1520000000000001,
+    "kept_at_end": 0.9656999999999999,
     "vs_similar_start": 0.55,
-    "vs_similar_end": 0.9,
+    "vs_similar_end": 0.87,
     "biggest_drops": [
       {
-        "at": 0.12,
-        "lost": 0.179,
+        "at": 0.14,
+        "lost": 0.181,
         "line": "Pluto seemed like our solar system's edge, yet astronomers are investigating evidence that the Kuiper Belt extends much further than we once thought."
       },
       {
-        "at": 0.26,
-        "lost": 0.145,
+        "at": 0.27,
+        "lost": 0.108,
         "line": "We long believed the Kuiper Belt density dropped off significantly around fifty astronomical units away from the Sun."
       }
     ],
     "countdown": false,
-    "checked": "2026-11-24"
+    "checked": "2026-11-25"
+  },
+  "fRhw3NBA-FY": {
+    "title": "Could A T. rex Outrun Your Car? 🦖",
+    "hook_line": "The real T.",
+    "kept_at_10pct": 1.1094,
+    "kept_at_50pct": 0.6132,
+    "kept_at_end": 0.4326,
+    "vs_similar_start": 0.49,
+    "vs_similar_end": 0.71,
+    "biggest_drops": [
+      {
+        "at": 0.11,
+        "lost": 0.181,
+        "line": "It weighed about eight tonnes."
+      },
+      {
+        "at": 0.23,
+        "lost": 0.071,
+        "line": "Scientists rebuilt it in a computer, bone by bone and muscle by muscle, then asked it to sprint."
+      }
+    ],
+    "countdown": false,
+    "checked": "2026-11-25"
   }
 }

@@ -1,14 +1,14 @@
 {
-  "summary": "1. High-stayed hooks (>50% stayed) use active, direct statements that call out the viewer or drop a bold counter-intuitive fact immediately within 10 words, skipping all context.\n2. Low-stayed hooks (<31% stayed) fail because they rely on slow story setups, hypothetical scenarios ('Your car swerves...'), or academic preambles before getting to the point.\n3. Winning titles are short (<7 words) and frame the topic around common, personal bodily experiences or popular pop-culture icons (T. rex, leaking eyes, crying onions).\n4. High AVP (>100%) requires high-information density in under 35 seconds, but stayed_pct determines initial reach, making sentence #1 the absolute bottleneck.\n5. Avoid engineering specs or abstract space facts in titles; frame topics as direct questions or intriguing personal secrets.",
+  "summary": "1. High-performing Shorts (51%+ stayed, 1,200+ views) open with a direct, counter-intuitive statement in under 12 words rather than setting up context. 2. Low-performing Shorts (24–36% stayed) suffer from wordy academic setups (e.g., 'astronomers are investigating...') or hypothetical scene-setting before making the point. 3. Top titles use high-curiosity pop culture or body-phenomena questions under 7 words (e.g., T. rex, leaking eyes, cutting onions) rather than niche engineering or astronomy topics. 4. Videos under 25 seconds with immediate punchy hooks achieve the highest retention-to-view conversion, whereas long-winded intro hooks drop audience retention under 30% in the first seconds. 5. Rewatchability (AVP > 100%) occurs on deep space/astronomy topics, but initial click/stay rates fail unless the hook is simplified and ultra-short.",
   "winning_hooks": [
-    "The real T. rex probably couldn't run. Not even a jog.",
-    "Your eyes are leaking right now, and your brain is hiding it.",
-    "You are not sad when you chop an onion."
+    "Ultra-short direct assertions under 12 words (e.g., 'Your eyes are leaking right now, and your brain is hiding it.')",
+    "Concrete physical visual metaphors in sentence one (e.g., 'pressed down like three small cars stacked on its teeth.')",
+    "Immediate myth-busting without setup (e.g., 'The real T. rex probably couldn't run. Not even a jog.')"
   ],
   "avoid": [
-    "Pluto seemed like our solar system's edge, yet astronomers are investigating evidence that the Kuiper Belt extends much further than we once thought.",
-    "Your car swerves off the highway right toward a steel guardrail.",
-    "Fossilized bones can last millions of years, but sometimes they hide more than just minerals."
+    "Long multi-clause setup sentences over 15 words before reaching the core point (e.g., 'Pluto seemed like our solar system's edge, yet astronomers are...')",
+    "Hypothetical roleplay setups (e.g., 'Your car swerves off the highway right toward...')",
+    "Niche engineering or obscure industry topics (e.g., guardrail end boxes, salmon color) as primary hook drivers"
   ],
-  "next_experiment": "Test Hook Wording Directness: Take one topic (e.g., Guardrails) and release two versions with identical visuals but different opening lines—Arm A (Hypothetical setup): 'Imagine driving down the highway at 70 mph...'; Arm B (Direct callout statement): 'Guardrails don't block your car, they shred it.' Measure the stayed_pct gap."
+  "next_experiment": "A/B test a high-AVP topic (space/astronomy) using a 8-word pop-science hook vs. a 20-word background setup hook (e.g., Title: 'Is There a 9th Planet Hidden Past Pluto?' Hook A: 'There is a massive invisible planet hiding behind Pluto.' vs. Hook B: 'For decades astronomers thought Neptune was the end, but new research suggests...')"
 }
