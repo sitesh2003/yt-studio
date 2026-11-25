@@ -317,17 +317,21 @@
       "name": "gecko_glass",
       "channel": "main",
       "title": "Geckos: no suction cups, no glue",
-      "status": "idea",
+      "status": "uploaded",
       "planned_at": "2026-12-05T19:00:00-05:00",
-      "topic": "gecko_glass"
+      "topic": "gecko_glass",
+      "video_id": "NT5rjhKuTGI",
+      "public_at": "2026-12-05T19:00:00-05:00"
     },
     {
       "name": "gecko_glass_hi",
       "channel": "hi",
       "title": "",
-      "status": "idea",
+      "status": "uploaded",
       "planned_at": "2026-12-04T02:30:00-05:00",
-      "topic": "gecko_glass"
+      "topic": "gecko_glass",
+      "video_id": "ll0Vt3Ytm2s",
+      "public_at": "2026-12-04T02:30:00-05:00"
     },
     {
       "name": "popcorn",

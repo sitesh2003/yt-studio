@@ -6525,5 +6525,30 @@
     "video_id": "qDNTbjoAdVo",
     "publish_at": "2026-12-04T19:00:00-05:00",
     "thumbnail_set": true
+  },
+  {
+    "job": "hero_gecko_glass",
+    "topic": "How Geckos Walk Up Glass (No Suction, No Glue) 🦎",
+    "title": "How Geckos Walk Up Glass (No Suction, No Glue) 🦎",
+    "description": "A gecko runs up glass with no suction cups and no glue. A billion tiny tips on its toes get so close that molecules pull them to the surface. #shorts #science #gecko #physics\n\nSources: Autumn et al. 2002, PNAS 99:12252 (van der Waals adhesion in gecko setae); Huber et al. 2005, PNAS 102:16293 (single spatula measurements); Autumn et al. 2000, Nature 405:681.\n3D: every model built from scratch in Blender (procedural; no stock models or footage).\n\nHow this was made: the script is researched and fact-checked against published research (sources above), narrated by an AI voice, and animated and edited with open-source software.",
+    "tags": [
+      "gecko",
+      "gecko feet",
+      "van der Waals",
+      "biology",
+      "physics",
+      "science",
+      "3D animation"
+    ],
+    "hook": "A gecko can run straight up glass. No suction cups. No glue.",
+    "status": "scheduled",
+    "narration": "A gecko can run straight up glass. No suction cups. No glue. Zoom into its toes, and they're covered in millions of tiny hairs. Each hair splits into hundreds of even tinier tips. About a billion on one gecko. Each tip gets so close to the glass that a weak pull between molecules, called van der Waals force, takes hold. One tip's pull is almost nothing. A billion of them together hold the whole gecko. Tests in two thousand and two showed a single hair sticks just as well to surfaces that love water and ones that repel it. So it's not wet glue. To let go, the gecko peels its toes up from the tip, like tape. Geckos don't use suction or glue. A billion tiny tips get so close that molecules pull them onto the glass. So what would you build if you had gecko feet?",
+    "voice_engine": "chatterbox",
+    "countdown": false,
+    "hero_3d": true,
+    "question": "So what would you build if you had gecko feet?",
+    "video_id": "NT5rjhKuTGI",
+    "publish_at": "2026-12-05T19:00:00-05:00",
+    "thumbnail_set": true
   }
 ]
