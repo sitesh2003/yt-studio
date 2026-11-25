@@ -1,22 +1,20 @@
 {
   "lessons": [
-    "Lead immediately with an extraordinary comparison or high-stakes historical/scale fact (e.g., 'older than the United States' yielded 1.85x retention at 10% and >1.0 at the end).",
-    "Never repeat the video title or basic premise as the opening line; verbatim title repetition caused immediate drops of 31.9% (Potatoes) and 34.0% (Garlic).",
-    "Avoid artificial 'pause and guess' prompts and interactive countdowns, which consistently triggered sharp viewer drop-offs (e.g., 15.2% loss on the foil video countdown line).",
-    "Establish clear visual or physical contrasts upfront (e.g., tuna vs. cod meat retained 65.8% at 50% mark) rather than starting with abstract definitions or setup statements.",
-    "Deliver the core scientific mechanism quickly; viewers abandon videos early when presented with verbose or multi-clause explanations in the first 15 seconds."
+    "Hook lines that pose a surprising question or vivid image (e.g., \"This shark is older than the United States\", \"Why Scientists Missed an Outer Kuiper Belt\") correspond to the highest 10% retention (>1.5).",
+    "Hooks that include a concrete sensory cue or unexpected comparison (e.g., \"Gulping ice water after a hot pepper feels like relief\") keep viewers above the average 10% retention (~1.2).",
+    "Lines that immediately launch into a detailed explanation or repeat the title tend to appear in the biggest drop points (e.g., dead‑skin swelling, node definition).",
+    "Videos that avoid a visible countdown timer generally have higher retention; the few videos with a countdown show mixed or lower end‑retention values.",
+    "Drop points frequently occur around 10‑15% of the video when the script shifts from the hook to a slower, fact‑heavy segment; keeping the narrative fast‑paced here improves hold."
   ],
   "worst_moment_types": [
-    "Verbatim restatement of the title or video topic at the start",
-    "Interactive pauses and countdown prompts ('Pause and guess...')",
-    "Dense, multi-clause explanatory setups right after the hook",
-    "Generic filler lines restating obvious observations ('They look like similar fruits')"
+    "Straight‑forward scientific explanation without a hook (e.g., definition of nodes, dead‑skin swelling).",
+    "Repeated phrasing of the title or question that adds no new information.",
+    "Long pause or “guess” prompts that stall the narrative."
   ],
   "best_hook_types": [
-    "Historical or temporal scale anchors ('older than the United States')",
-    "Challenging established boundaries or paradigms ('Pluto seemed like our solar system's edge...')",
-    "Direct visual paradoxes and strong sensory contrasts ('both fish, but their meat looks like two completely different animals')",
-    "Surprising mystery framing ('Most James Webb images hold secrets')"
+    "Unexpected, sensory‑rich statements that create a visual or feeling contrast.",
+    "Provocative questions that promise a surprising answer.",
+    "Brief, punchy fact that challenges common knowledge."
   ],
   "studied": "2026-11-25",
   "videos": 22
