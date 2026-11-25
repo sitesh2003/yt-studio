@@ -1,20 +1,22 @@
 {
   "lessons": [
-    "Start with a vivid, surprising claim or question that creates immediate curiosity – videos whose hook lines were bold facts or sensory‑rich statements (e.g., “This shark is older than the United States”, “Pluto seemed like our solar system’s edge…”) kept >1.0 of viewers past 10 %",
-    "Avoid dense factual exposition in the first 10 % – the biggest audience drops (loss > 0.2) all occurred when the script jumped straight into detailed explanations or background info (e.g., maple‑sap fact, garlic‑chemical detail)",
-    "Use sensory or visual language that paints a picture – hooks that described a feeling or scene (“Gulping ice water after a hot pepper…”, “Fresh pineapple is literally eating you back”) correlated with the highest 10 % retention values",
-    "Do not repeat the same idea within the opening segment – videos that duplicated a line or re‑stated the same fact suffered a second large drop (e.g., guardrail and windshield duplicate lines)"
+    "Never repeat the video title in the first line—doing so in the Potato video caused an immediate 31.9% drop at 0.09s.",
+    "Avoid interactive delays like 'Pause and guess' or countdowns, which lost 15.2% of viewers in the Foil video and 8.3% in the Maple Syrup video.",
+    "Cut filler transitions and obvious statements; saying 'They look like similar fruits' dropped retention by 30.0% in the Fruits video.",
+    "Lead hooks with mind-bending comparative facts or extreme scale contrasts, which pushed 10% retention above 1.85 (e.g., Greenland Shark and Kuiper Belt videos).",
+    "Deliver immediate answers instead of lengthy situational setups, as painting scenarios like 'You just smashed your elbow' lost 23.4% of viewers early on."
   ],
   "worst_moment_types": [
-    "Early‑segment dense factual statements",
-    "Repeated or redundant explanations in the first half",
-    "Straight‑forward exposition without a curiosity hook"
+    "Verbatim title repetition at the start",
+    "Interactive pauses and guess countdowns",
+    "State-the-obvious filler sentences",
+    "Slow narrative setups before reaching the core scientific premise"
   ],
   "best_hook_types": [
-    "Surprising, bold claim (e.g., “This shark is older than the United States”)",
-    "Sensory‑rich description that evokes a vivid image or feeling",
-    "Rhetorical question or intriguing “Why …?” phrasing that promises an answer"
+    "Historical/scale benchmark comparisons ('older than the United States')",
+    "Direct biological contrast hooks ('meat looks like two completely different animals')",
+    "Challenging common scientific misconceptions ('Pluto seemed like our solar system's edge')"
   ],
-  "studied": "2026-11-24",
-  "videos": 21
+  "studied": "2026-11-25",
+  "videos": 22
 }

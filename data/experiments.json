@@ -9,9 +9,9 @@
         "avg_views": null
       },
       "turn": {
-        "videos": 7,
-        "avg_view_pct": 71.7,
-        "avg_views": 485
+        "videos": 8,
+        "avg_view_pct": 63.7,
+        "avg_views": 730
       }
     }
   },
@@ -21,20 +21,20 @@
     "arms": {
       "short": {
         "videos": 1,
-        "avg_views": 446,
-        "avg_view_pct": 47.3,
+        "avg_views": 448,
+        "avg_view_pct": 47.9,
         "avg_seconds": 32.3
       },
       "standard": {
         "videos": 3,
-        "avg_views": 256,
-        "avg_view_pct": 86.9,
+        "avg_views": 347,
+        "avg_view_pct": 72.4,
         "avg_seconds": 35.8
       },
       "long": {
         "videos": 1,
-        "avg_views": 189,
-        "avg_view_pct": 82.2,
+        "avg_views": 203,
+        "avg_view_pct": 79.8,
         "avg_seconds": 20.4
       }
     }

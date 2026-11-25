@@ -1,14 +1,15 @@
 {
-  "summary": "1. Script hooks must directly address the viewer using sensory imagination triggers (e.g., 'Socho...', 'Tumhari car') rather than passive passive-scientific statements. 2. Focus topics on high-curiosity pop culture myths (like T. rex/dinosaurs) rather than dry engineering/academic subjects (like hydroplaning or runway grooves). 3. First sentences of top-stayed shorts contrast a common movie belief/mental image with a surprising physical reality within the first 3 seconds. 4. Titles perform best when phrased as a short Hinglish question with a dinosaur/pop-culture anchor and visual emoji. 5. Avoid opening with academic jargon (e.g., 'radioactive materials' or complex biology terms) that causes immediate drop-off and swipe-away rates above 70%.",
+  "summary": "1. Replace title questions with a bold sensory contrast or counter-intuitive claim in the first sentence instead of repeating the title. 2. Anchor hooks to hyper-relatable physical metaphors (e.g., '3 cars on your teeth') rather than abstract facts. 3. Write titles in conversational Devanagari-Hinglish paired with an emoji rather than formal academic Hindi or pure English. 4. Focus topics on visceral pop-science (predator mechanics, crash survival) over industrial engineering or niche chemistry. 5. Target sub-40-second pacing; high-retention shorts drop retention steeply when bloated past 45 seconds.",
   "winning_hooks": [
-    "Start with an active imagination prompt framing extreme scale using common objects (e.g., 'Socho, tumhare daanton par 3 choti cars...').",
-    "Debunk a famous movie myth directly in line 1 (e.g., 'Movies mein T. rex gaadi ka peechha karta hai. Par...').",
-    "Keep title in snappy Hinglish addressing the viewer personally with relevant emojis."
+    "सोचो, तुम्हारे दांतों पर 3 छोटी cars एक के ऊपर एक रख दी जाएं। इतने ज़ोर से T. rex काटता था। (Visceral second-person sensory anchor)",
+    "Movies में T. rex गाड़ी का पीछा करता है। पर असली T. rex शायद दौड़ ही नहीं सकता था। (Immediate pop-culture myth debunk)",
+    "जो car crash में पिचक जाती है, वो तुम्हें ज़्यादा बचाती है। (Counter-intuitive absolute claim in under 10 words)"
   ],
   "avoid": [
-    "Generic English titles that read like encyclopedias (e.g., 'Common Household Items That Contain Radioactive Materials').",
-    "Hooks starting with passive scientific observations or complex vocabulary (e.g., 'sookshma aakritiyan', 'hydroplaning').",
-    "Dry engineering topics that lack immediate visual/emotional connection to everyday life."
+    "Never repeat the exact title wording in the first spoken line (e.g., repeating the 250 km/h hydroplaning question tanked stayed rate to 30.6%).",
+    "Never use passive textbook phrasing or documentary-style introductions (e.g., 'Kuch everyday objects mein secretly...').",
+    "Never use academic, formal Hindi text walls in titles (e.g., 'जीवाश्मों में मिली रहस्यमयी आकृतियां...').",
+    "Never publish purely English titles on this channel (produced the worst drop-off at 6.7% stayed)."
   ],
-  "next_experiment": "A/B test two initial hook structures on the exact same T. rex topic: Arm A opens with a movie-myth contrast ('Movies mein T. rex aisa dikhate hain, lekin...'), while Arm B opens with a sensory imagination challenge ('Socho agar ek T. rex tumhari car ke samne aa jaye...'), keeping duration (~45s) and title structure identical to measure swipe-away rate (stayed_pct)."
+  "next_experiment": "A/B test Hook Structure on the same topic: Script A opens with a counter-intuitive assertion ('तुम्हारी कार का शीशा तुम्हें बचाने के लिए जानबूझकर तोड़ा जाता है'), Script B opens with a second-person sensory scenario ('सोचो अगर 100 की speed पर कार का शीशा चेहरे पर टूट पड़े'), holding title, length (under 35s), and thumbnail constant."
 }

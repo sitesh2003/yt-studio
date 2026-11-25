@@ -1,52 +1,62 @@
 {
   "rules": [
-    "Keep total word count strictly between 85 and 100 words to ensure a fast-paced, high-retention delivery.",
-    "Narrator 1 handles the curiosity-inducing hook and the final question; Narrator 2 handles the dense technical explanation.",
-    "Place the pause/prediction prompt precisely at the 20-second mark to maintain rhythm.",
-    "Limit titles to 50 characters or fewer, starting with 'Why' or a 'Hidden/Secret' reveal.",
-    "Use visual transitions between scenes at least every 4 seconds to maintain active viewer engagement.",
-    "Ensure all technical explanations are delivered in plain, accessible language without jargon."
+    "Keep total script length strictly between 70 and 85 words so spoken delivery lands under 40 seconds.",
+    "The host hook line must be a single declarative sentence under 12 words that directly contradicts common intuition.",
+    "Place the mid-video prediction prompt between second 18 and second 22 of the timeline.",
+    "Limit titles to under 55 characters and include one emoji at the end.",
+    "Focus visual notes on macro engineering mechanisms or micro biological processes that can be drawn as cross-section diagrams.",
+    "Explainer sections must use real-world scale comparisons (e.g., 'weight of three cars') rather than abstract metric units."
   ],
   "formats_now": [
-    "The Hidden Engineering Reveal: Explaining the function of unseen design features (e.g., road safety, architecture).",
-    "Biological 'Why' Myths: Correcting common misconceptions about body processes using real-world science.",
-    "Micro-Process Breakdowns: Showing how everyday, mass-produced objects are actually manufactured.",
-    "Surprising Animal Adaptations: Exploring specific, counter-intuitive traits in nature."
+    "Hidden Everyday Mechanism: Explaining structural design choices in physical infrastructure or vehicle engineering.",
+    "Counter-Intuitive Animal Biomechanics: Dissecting extreme physical forces or physiological limits of megafauna.",
+    "Subtle Body Glitches: Revealing silent physiological processes happening inside the viewer right now."
   ],
   "hook_shapes": [
-    "You think X does Y, but it is actually doing Z.",
-    "Ever wondered why X exists on Y? It is not for the reason you think.",
-    "This simple object X is actually a masterpiece of engineering, here is why.",
-    "Stop doing X; it is not actually helping, here is what is really happening."
+    "You think [X] happens because of [Y], but it is actually the exact opposite.",
+    "[X] is happening to your body right now, and your brain is completely hiding it.",
+    "[X] looks completely solid, but it is engineered to crumble when hit by [Y]."
   ],
   "title_shapes": [
-    "Why [Object] Actually [Action] 😳",
-    "The Secret Engineering Behind [Object] 🏗️",
-    "Why [Subject] Isn't What You Think 🧐"
+    "Why [Object/Animal] Is Secretly [Feature] 😳",
+    "How [Machine/Organism] Actually Survives [Extreme Condition] 🔬",
+    "The Secret Engineering Behind [Common Item] ⚙️"
   ],
   "topic_areas": [
-    "Infrastructure safety features",
-    "Biological evolution oddities",
-    "Material science in daily items",
-    "Atmospheric or physics-based phenomena",
-    "Industrial manufacturing secrets"
+    "Dinosaur & Prehistoric Biomechanics (bite forces, locomotion limits, fossil preservation)",
+    "Hidden Highway & Urban Engineering (guardrail mechanics, elevator braking systems, asphalt design)",
+    "Everyday Human Body Anomalies (tear film circulation, nerve compression sensations, involuntary reflexes)",
+    "Sub-zero Survival Science (how aquatic creatures survive ice-covered lakes, anti-freeze blood)",
+    "Food Industry Physical Chemistry (coloration mechanisms, factory preservation methods)"
   ],
   "stop_doing": [
-    "Avoid using any 'How-to' or instructional advice, as these perform significantly worse than 'Why' explainers in our data.",
-    "Do not exceed 50 seconds in length, as retention drops sharply after this threshold.",
-    "Stop using overly long, complex sentences in the explanation phase; split them into two distinct clips."
+    "Writing multi-clause, complex opening hooks longer than 15 words.",
+    "Focusing on abstract astrophysics topics that rely on deep space imaging without tangible physical mechanics.",
+    "Using technical jargon like 'Kuiper Belt' or 'astronomers investigate evidence' in the first 5 seconds."
   ],
-  "target_seconds": 42,
-  "experiment": "Introduce a 'visual cliffhanger' (a high-contrast, zoomed-in image) at the 18-second mark right before the pause; success will be measured by a higher 'stayed_pct' compared to videos without this visual cue.",
+  "target_seconds": 36,
+  "experiment": "Test starting the script with a immediate direct second-person observation ('Your eyes are...') versus a third-person fact ('A T. rex bite...'), tracking if stayed_pct at 5 seconds increases by at least 5% for second-person hooks.",
   "facts": {
-    "median_seconds_top20": 37.5,
-    "median_seconds_rest": 60,
-    "question_titles_top20": 4,
-    "why_how_what_titles_top20": 3,
-    "median_title_chars_top20": 51.5
+    "median_seconds_top20": 58.0,
+    "median_seconds_rest": 62,
+    "question_titles_top20": 2,
+    "why_how_what_titles_top20": 5,
+    "median_title_chars_top20": 56.0
   },
-  "studied": "2026-11-19T00:25:56",
+  "studied": "2026-11-25T04:41:23",
   "history": [
+    {
+      "studied": "2026-11-19T00:25:56",
+      "rules": [
+        "Keep total word count strictly between 85 and 100 words to ensure a fast-paced, high-retention delivery.",
+        "Narrator 1 handles the curiosity-inducing hook and the final question; Narrator 2 handles the dense technical explanation.",
+        "Place the pause/prediction prompt precisely at the 20-second mark to maintain rhythm.",
+        "Limit titles to 50 characters or fewer, starting with 'Why' or a 'Hidden/Secret' reveal.",
+        "Use visual transitions between scenes at least every 4 seconds to maintain active viewer engagement.",
+        "Ensure all technical explanations are delivered in plain, accessible language without jargon."
+      ],
+      "target_seconds": 42
+    },
     {
       "studied": "2026-11-12T19:53:34",
       "rules": [

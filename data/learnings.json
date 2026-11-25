@@ -1,14 +1,14 @@
 {
-  "summary": "1. High-stayed videos (>50% stayed_pct) address immediate human experiences (eyes, onions) or famous pop-culture myths (T. rex), whereas low-stayed videos focus on complex astronomy or highway engineering. 2. Winning first sentences instantly make a provocative assertion directly addressing the viewer ('Your eyes are leaking right now') rather than building slow setup background ('Fossilized bones can last...'). 3. Top titles are short, question/curiosity-driven, and under 7 words ('Could A T. rex Outrun Your Car?'), while low-performing titles rely on abstract science phrasing. 4. Subverting expectations in the very first sentence ('Not even a jog', 'You are not sad') prevents early swiping far better than generic mystery hooks ('Most James Webb images hold secrets'). 5. Scriptwriters must cut all contextual preamble and state the shocking contradiction within the first 5 words.",
+  "summary": "1. High-performing Shorts (51%+ stayed, 1,200+ views) open with a direct, counter-intuitive statement in under 12 words rather than setting up context. 2. Low-performing Shorts (24–36% stayed) suffer from wordy academic setups (e.g., 'astronomers are investigating...') or hypothetical scene-setting before making the point. 3. Top titles use high-curiosity pop culture or body-phenomena questions under 7 words (e.g., T. rex, leaking eyes, cutting onions) rather than niche engineering or astronomy topics. 4. Videos under 25 seconds with immediate punchy hooks achieve the highest retention-to-view conversion, whereas long-winded intro hooks drop audience retention under 30% in the first seconds. 5. Rewatchability (AVP > 100%) occurs on deep space/astronomy topics, but initial click/stay rates fail unless the hook is simplified and ultra-short.",
   "winning_hooks": [
-    "Direct viewer subversion: 'Your eyes are leaking right now, and your brain is hiding it.'",
-    "Immediate myth-busting: 'The real T. rex probably couldn't run. Not even a jog.'",
-    "Bold short contradiction: 'You are not sad when you chop an onion.'"
+    "Ultra-short direct assertions under 12 words (e.g., 'Your eyes are leaking right now, and your brain is hiding it.')",
+    "Concrete physical visual metaphors in sentence one (e.g., 'pressed down like three small cars stacked on its teeth.')",
+    "Immediate myth-busting without setup (e.g., 'The real T. rex probably couldn't run. Not even a jog.')"
   ],
   "avoid": [
-    "Slow background setups: 'Fossilized bones can last millions of years, but sometimes...'",
-    "Passive scenario building: 'Your car swerves off the highway right toward...'",
-    "Vague high-level claims: 'Most James Webb images hold secrets.'"
+    "Long multi-clause setup sentences over 15 words before reaching the core point (e.g., 'Pluto seemed like our solar system's edge, yet astronomers are...')",
+    "Hypothetical roleplay setups (e.g., 'Your car swerves off the highway right toward...')",
+    "Niche engineering or obscure industry topics (e.g., guardrail end boxes, salmon color) as primary hook drivers"
   ],
-  "next_experiment": "Test Hook Type A (Direct bold contradiction: 'Your brain shuts off your vision 40 minutes a day') vs Hook Type B (Scenario setup: 'If you look in the mirror right now, something strange happens') using the exact same body video on body science topics."
+  "next_experiment": "A/B test a high-AVP topic (space/astronomy) using a 8-word pop-science hook vs. a 20-word background setup hook (e.g., Title: 'Is There a 9th Planet Hidden Past Pluto?' Hook A: 'There is a massive invisible planet hiding behind Pluto.' vs. Hook B: 'For decades astronomers thought Neptune was the end, but new research suggests...')"
 }
