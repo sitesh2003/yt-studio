@@ -49,13 +49,38 @@ def pan(r=60, glow_k=1.0):
     nt = metal.node_tree
     b = nt.nodes["Principled BSDF"]
     b.inputs["Base Color"].default_value = (0.06, 0.06, 0.065, 1)
-    b.inputs["Metallic"].default_value = 1.0
-    b.inputs["Roughness"].default_value = 0.3
+    b.inputs["Metallic"].default_value = 0.0        # EEVEE metal mirrors only the dark world: lit dark steel instead
+    b.inputs["Roughness"].default_value = 0.38
+    if "Coat Weight" in b.inputs:
+        b.inputs["Coat Weight"].default_value = 0.6
     b.inputs["Emission Color"].default_value = (1.0, 0.28, 0.05, 1)
-    b.inputs["Emission Strength"].default_value = 0.02 * glow_k      # a faint red heat glow from the metal
+    b.inputs["Emission Strength"].default_value = 0.0 if glow_k < 1 else 0.01 * glow_k   # heat glow only on a hot pan
+    nt.nodes["Principled BSDF"].inputs["Base Color"].default_value = (0.16, 0.16, 0.17, 1)   # steel grey, not a brown floor
+    if "Anisotropic" in b.inputs:
+        b.inputs["Anisotropic"].default_value = 0.6                            # brushed
     bpy.ops.mesh.primitive_cylinder_add(vertices=128, radius=r, depth=2, location=(0, 0, -1))
     p = bpy.context.object
     p.data.materials.append(metal)
+    # a real skillet: a sloped rim wall and a long handle, so it reads as a pan at a glance
+    bpy.ops.mesh.primitive_cone_add(vertices=128, radius1=r, radius2=r * 1.12, depth=r * 0.22,
+                                    end_fill_type="NOTHING", location=(0, 0, r * 0.11 - 0.2))
+    rim = bpy.context.object
+    rim.modifiers.new("T", "SOLIDIFY").thickness = 0.8
+    rim.data.materials.append(metal)
+    rim.parent = p
+    rim.matrix_parent_inverse = p.matrix_world.inverted()
+    dark = bpy.data.materials.get("Handle") or bpy.data.materials.new("Handle")
+    dark.use_nodes = True
+    dark.node_tree.nodes["Principled BSDF"].inputs["Base Color"].default_value = (0.02, 0.02, 0.022, 1)
+    dark.node_tree.nodes["Principled BSDF"].inputs["Roughness"].default_value = 0.5
+    bpy.ops.mesh.primitive_cube_add(size=1, location=(r * 1.12 + r * 0.55, 0, r * 0.18))
+    h = bpy.context.object
+    h.scale = (r * 1.1, r * 0.11, r * 0.07)
+    h.rotation_euler = (0, -0.12, 0)
+    h.modifiers.new("B", "BEVEL").width = r * 0.03
+    h.data.materials.append(dark)
+    h.parent = p
+    h.matrix_parent_inverse = p.matrix_world.inverted()
     return p
 
 
@@ -66,9 +91,15 @@ def drop(name, at, r=1.6, flat=0.72):
 
 def stage(tint=(0.02, 0.012, 0.01)):
     world(tint)
-    area_light((30, -40, 50), (0, 0, 0), 1.5e3, (1.0, 0.92, 0.85), 30)
-    area_light((-40, 20, 20), (0, 0, 0), 600, (0.5, 0.7, 1.0), 30)
+    area_light((30, -40, 50), (0, 0, 0), 2.2e4, (1.0, 0.95, 0.9), 30)
+    area_light((-40, 20, 20), (0, 0, 0), 5e3, (0.5, 0.7, 1.0), 30)
     area_light((0, 0, -30), (0, 0, 0), 0, (1, 0.3, 0.05), 30)
+    # a big soft white panel overhead: something bright for the steel to reflect (metal shows its surroundings)
+    box = glow("Softbox", (1.0, 0.97, 0.92), 2.5)
+    bpy.ops.mesh.primitive_plane_add(size=90, location=(-10, 25, 70))
+    sbx = bpy.context.object
+    sbx.rotation_euler = (math.radians(-25), 0, 0)
+    sbx.data.materials.append(box)
     bloom(0.6, 0.85)
 
 
@@ -94,9 +125,9 @@ def skate(o, start, f0=1, speed=4.0, bounds=18):
     v = Vector((random.uniform(-1, 1), random.uniform(-1, 1), 0)).normalized() * speed / FPS
     for fr in range(f0, N + 1, 2):
         p += v * 2
-        if abs(p.x) > bounds:
+        if abs(p.x) > min(bounds, 16):
             v.x *= -1
-        if abs(p.y) > bounds:
+        if abs(p.y) > min(bounds, 16):
             v.y *= -1
         o.location = (p.x, p.y, o.location.z)
         o.keyframe_insert("location", frame=fr)
@@ -131,18 +162,18 @@ def sizzle(o, f0, f1, at):
 def shot_pan(cam, tgt):
     hot = bool(SHOT.get("hot", True))
     stage()
-    pan(glow_k=2.0 if hot else 0.6)
-    for i in range(9):
-        at = (random.uniform(-14, 14), random.uniform(-10, 14))
+    pan(22, glow_k=2.0 if hot else 0.6)
+    for i in range(9 if hot else 16):
+        at = (random.uniform(-14, 14), random.uniform(-12, 12))
         d = drop(f"D{i}", at, random.uniform(1.0, 2.0), 0.8 if hot else 0.55)
         if hot:
             skate(d, d.location, speed=random.uniform(2, 6))
             # a few steam wisps lift off the rim of each floating drop
             steam_puffs((at[0], at[1], 0.6), 1, N, 3, 4)
         else:
-            f0 = int(N * random.uniform(0.05, 0.4))
+            f0 = int(N * random.uniform(0.02, 0.72))      # sizzles spread over the whole shot
             sizzle(d, f0, f0 + int(FPS * random.uniform(0.6, 1.2)), (at[0], at[1], 0.5))
-    key_loc(cam, [(1, (0, -40, 24)), (N, (2, -32, 18))])
+    key_loc(cam, [(1, (-12, -58, 40)), (N, (-8, -50, 34))])
     key_loc(tgt, [(1, (0, 2, 0.5))])
     smooth(cam)
     cam.data.dof.aperture_fstop = 4.0

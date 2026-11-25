@@ -6575,5 +6575,29 @@
     "video_id": "_n7OhOvyAyc",
     "publish_at": "2026-12-06T19:00:00-05:00",
     "thumbnail_set": true
+  },
+  {
+    "job": "hero_leidenfrost",
+    "topic": "Why Water Dances On A Very Hot Pan 💧",
+    "title": "Why Water Dances On A Very Hot Pan 💧",
+    "description": "Flick water on a pan that's hot enough and it doesn't sizzle away. It skates around on a cushion of its own steam. #shorts #science #physics #kitchen\n\nSources: Quéré 2013, Annual Review of Fluid Mechanics 45:197 (Leidenfrost dynamics); Biance, Clanet & Quéré 2003, Physics of Fluids 15:1632; Lagubeau et al., APS Division of Fluid Dynamics 2008.\n3D: every model built from scratch in Blender (procedural; no stock models or footage).\n\nHow this was made: the script is researched and fact-checked against published research (sources above), narrated by an AI voice, and animated and edited with open-source software.",
+    "tags": [
+      "Leidenfrost effect",
+      "water on hot pan",
+      "physics",
+      "kitchen science",
+      "science",
+      "3D animation"
+    ],
+    "hook": "Flick water on a warm pan and it sizzles away. Make the pan much hotter, and the drops start to dance.",
+    "status": "scheduled",
+    "narration": "Flick water on a warm pan and it sizzles away. Make the pan much hotter, and the drops start to dance. You'd think a hotter pan would boil them away faster. It doesn't. Above about a hundred eighty degrees Celsius, the bottom of the drop turns to steam instantly. That steam lifts the drop off the metal, on a layer about as thin as a human hair. With nothing touching, the drop skates around almost without friction. And steam is bad at carrying heat, so the floating drop boils away much more slowly. It's called the Leidenfrost effect, and scientists still study how these drops move. On a hot enough pan, water doesn't touch the metal. It floats on its own steam, so it lasts longer. So why does a cooler pan make the water vanish faster?",
+    "voice_engine": "chatterbox",
+    "countdown": false,
+    "hero_3d": true,
+    "question": "So why does a cooler pan make the water vanish faster?",
+    "video_id": "Pds83Os6Lj8",
+    "publish_at": "2026-12-07T19:00:00-05:00",
+    "thumbnail_set": true
   }
 ]

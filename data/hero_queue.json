@@ -367,17 +367,21 @@
       "name": "leidenfrost",
       "channel": "main",
       "title": "Why water dances on a very hot pan",
-      "status": "idea",
+      "status": "uploaded",
       "planned_at": "2026-12-07T19:00:00-05:00",
-      "topic": "leidenfrost"
+      "topic": "leidenfrost",
+      "video_id": "Pds83Os6Lj8",
+      "public_at": "2026-12-07T19:00:00-05:00"
     },
     {
       "name": "leidenfrost_hi",
       "channel": "hi",
       "title": "",
-      "status": "idea",
+      "status": "uploaded",
       "planned_at": "2026-12-06T02:30:00-05:00",
-      "topic": "leidenfrost"
+      "topic": "leidenfrost",
+      "video_id": "K3t1ewVDp5M",
+      "public_at": "2026-12-06T02:30:00-05:00"
     },
     {
       "name": "leidenfrost_wiw",
