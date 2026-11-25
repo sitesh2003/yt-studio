@@ -26,12 +26,20 @@ def water_mat():
     m = bpy.data.materials.new("Water")
     m.use_nodes = True
     b = m.node_tree.nodes["Principled BSDF"]
-    b.inputs["Base Color"].default_value = (0.75, 0.9, 1.0, 1)
+    b.inputs["Base Color"].default_value = (0.02, 0.06, 0.10, 1)   # a glassy bead: dark core, bright rim
     b.inputs["Roughness"].default_value = 0.02
     b.inputs["IOR"].default_value = 1.33
-    b.inputs["Transmission Weight" if "Transmission Weight" in b.inputs else "Transmission"].default_value = 0.9
-    b.inputs["Emission Color"].default_value = (0.4, 0.75, 1.0, 1)
-    b.inputs["Emission Strength"].default_value = 0.35
+    if "Coat Weight" in b.inputs:
+        b.inputs["Coat Weight"].default_value = 1.0
+    nt = m.node_tree
+    lw = nt.nodes.new("ShaderNodeLayerWeight")
+    lw.inputs["Blend"].default_value = 0.3
+    mul = nt.nodes.new("ShaderNodeMath")
+    mul.operation = "MULTIPLY"
+    mul.inputs[1].default_value = 3.0
+    nt.links.new(lw.outputs["Facing"], mul.inputs[0])
+    b.inputs["Emission Color"].default_value = (0.45, 0.8, 1.0, 1)
+    nt.links.new(mul.outputs[0], b.inputs["Emission Strength"])
     return m
 
 
@@ -44,7 +52,7 @@ def pan(r=60, glow_k=1.0):
     b.inputs["Metallic"].default_value = 1.0
     b.inputs["Roughness"].default_value = 0.3
     b.inputs["Emission Color"].default_value = (1.0, 0.28, 0.05, 1)
-    b.inputs["Emission Strength"].default_value = 0.25 * glow_k      # a faint red heat glow from the metal
+    b.inputs["Emission Strength"].default_value = 0.02 * glow_k      # a faint red heat glow from the metal
     bpy.ops.mesh.primitive_cylinder_add(vertices=128, radius=r, depth=2, location=(0, 0, -1))
     p = bpy.context.object
     p.data.materials.append(metal)
@@ -58,8 +66,8 @@ def drop(name, at, r=1.6, flat=0.72):
 
 def stage(tint=(0.02, 0.012, 0.01)):
     world(tint)
-    area_light((30, -40, 50), (0, 0, 0), 4e3, (1.0, 0.92, 0.85), 30)
-    area_light((-40, 20, 20), (0, 0, 0), 1.5e3, (0.5, 0.7, 1.0), 30)
+    area_light((30, -40, 50), (0, 0, 0), 1.5e3, (1.0, 0.92, 0.85), 30)
+    area_light((-40, 20, 20), (0, 0, 0), 600, (0.5, 0.7, 1.0), 30)
     area_light((0, 0, -30), (0, 0, 0), 0, (1, 0.3, 0.05), 30)
     bloom(0.6, 0.85)
 
@@ -145,7 +153,7 @@ def shot_cut(cam, tgt):
     out at the edges, and heat arrows rising from the metal that fade at the film."""
     stage((0.01, 0.01, 0.02))
     pan(80, 2.5)
-    film_m = glow("Film", (0.85, 0.95, 1.0), 2.5)
+    film_m = glow("Film", (0.85, 0.95, 1.0), 1.2)
     bpy.ops.mesh.primitive_cylinder_add(vertices=96, radius=7.2, depth=0.6, location=(0, 0, 0.3))
     film = bpy.context.object
     film.data.materials.append(film_m)
@@ -178,8 +186,8 @@ def shot_cut(cam, tgt):
         key_loc(c, [(1 + i * 4, (x, -2, -1.5)), (31 + i * 4, (x, -2, 0.0))])
         for fc in _fcurves(c.animation_data.action):
             fc.modifiers.new("CYCLES")
-    key_loc(cam, [(1, (0, -30, 4)), (N, (0, -24, 3))])
-    key_loc(tgt, [(1, (0, 0, 2.2))])
+    key_loc(cam, [(1, (0, -62, 6)), (N, (0, -54, 5))])
+    key_loc(tgt, [(1, (0, 0, 3.5))])
     smooth(cam)
     cam.data.lens = 50
     cam.data.dof.aperture_fstop = 8.0

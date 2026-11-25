@@ -60,12 +60,16 @@
         "claude": 1
       },
       "score": 3,
-      "status": "scripted",
+      "status": "uploaded",
       "added": "2026-11-22",
       "from": "council 22 Nov",
       "slot_main": "2026-12-03T19:00:00-05:00",
       "slot_hi": "2026-12-02T02:30:00-05:00",
-      "council": "2026-11-25"
+      "council": "2026-11-25",
+      "videos": {
+        "main": "GBBGYhCOxVY",
+        "hi": "flsbFJ-Bf9I"
+      }
     },
     {
       "id": "mantis_shrimp",

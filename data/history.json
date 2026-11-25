@@ -6476,5 +6476,29 @@
     "video_id": "MI-uIWRwwqc",
     "publish_at": "2026-12-02T19:00:00-05:00",
     "thumbnail_set": true
+  },
+  {
+    "job": "hero_mosquito_magnets",
+    "topic": "Why Mosquitoes Bite You More Than Your Friends 🦟",
+    "title": "Why Mosquitoes Bite You More Than Your Friends 🦟",
+    "description": "Some people really are mosquito magnets, and it's not sweet blood. A 2022 study traced it to acids made from the oil on their skin. #shorts #science #biology #mosquito\n\nSources: De Obaldia et al. 2022, Cell 185:4099-4116 (skin carboxylic acids and mosquito attraction), open access via Europe PMC PMC10069481.\n3D: every model built from scratch in Blender (procedural; no stock models or footage).\n\nHow this was made: the script is researched and fact-checked against published research (sources above), narrated by an AI voice, and animated and edited with open-source software.",
+    "tags": [
+      "mosquito",
+      "mosquito bites",
+      "mosquito magnet",
+      "biology",
+      "science",
+      "3D animation"
+    ],
+    "hook": "Some people really are mosquito magnets. And it has nothing to do with sweet blood.",
+    "status": "scheduled",
+    "narration": "Some people really are mosquito magnets. And it has nothing to do with sweet blood. In one study, volunteers wore nylon sleeves on their arms for six hours. Then mosquitoes were given a choice between two people's sleeves. One volunteer scored over a hundred times more attractive than the least attractive ones. And for years, the same people kept winning. The difference was on their skin: more of the acids made from skin oil. Even mosquitoes bred without key smell sensors could still pick out the magnets. And blood type? The evidence for it is mixed. So mosquitoes don't choose sweet blood. They follow the smell of acids made from the oil on your skin. So who in your family gets bitten the most?",
+    "voice_engine": "chatterbox",
+    "countdown": false,
+    "hero_3d": true,
+    "question": "So who in your family gets bitten the most?",
+    "video_id": "GBBGYhCOxVY",
+    "publish_at": "2026-12-03T19:00:00-05:00",
+    "thumbnail_set": true
   }
 ]

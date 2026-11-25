@@ -277,17 +277,21 @@
       "name": "mosquito_magnets",
       "channel": "main",
       "title": "Mosquitoes follow your skin's smell, not sweet blood",
-      "status": "idea",
+      "status": "uploaded",
       "planned_at": "2026-12-03T19:00:00-05:00",
-      "topic": "mosquito_magnets"
+      "topic": "mosquito_magnets",
+      "video_id": "GBBGYhCOxVY",
+      "public_at": "2026-12-03T19:00:00-05:00"
     },
     {
       "name": "mosquito_magnets_hi",
       "channel": "hi",
       "title": "",
-      "status": "idea",
+      "status": "uploaded",
       "planned_at": "2026-12-02T02:30:00-05:00",
-      "topic": "mosquito_magnets"
+      "topic": "mosquito_magnets",
+      "video_id": "flsbFJ-Bf9I",
+      "public_at": "2026-12-02T02:30:00-05:00"
     },
     {
       "name": "woodpecker",

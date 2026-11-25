@@ -53,6 +53,10 @@ def kernel(name, loc, s=1.0):
     root = empty(name, loc)
     root.scale = (s, s, s)
     k = blob(name + "h", 0.3, (0, 0, 0.26), (1.0, 0.8, 1.15), hull, 0.02, 3, parent=root)
+    tp = k.modifiers.new("Tear", "SIMPLE_DEFORM")      # a teardrop: narrow at the tip, round at the crown
+    tp.deform_method = "TAPER"
+    tp.factor = 0.9
+    tp.deform_axis = "Z"
     blob(name + "t", 0.09, (0, 0, -0.06), (1, 0.8, 0.7), tip, 0, parent=root)
     return root, k
 
@@ -61,8 +65,8 @@ def flake(name, at, parent=None, n=9, r=0.75):
     """A popped flake: a fused cloud of foam lobes (metaballs). Returns the metaball object."""
     hull, foam, pan, tip = mats()
     mb = bpy.data.metaballs.new(name)
-    mb.resolution = 0.08
-    mb.render_resolution = 0.04
+    mb.resolution = 0.06
+    mb.render_resolution = 0.03
     mb.threshold = 0.6
     for i in range(n):
         e = mb.elements.new()
@@ -101,8 +105,11 @@ def pop(name, at, f_pop, hop=6.0, side=(0.0, 0.0)):
     for fr in range(1, f_pop, 2):                             # jiggles as the pressure builds
         root.rotation_euler = (random.uniform(-0.08, 0.08), random.uniform(-0.08, 0.08), random.uniform(0, 0.2))
         root.keyframe_insert("rotation_euler", frame=fr)
-    fl = flake(name + "F", (0, 0, 0.35), root, r=0.8)
-    leg = flake(name + "L", (0, 0, 0.05), root, n=3, r=0.4)
+    fl = flake(name + "F", (0, 0, 0.45), root, r=1.0)
+    leg = flake(name + "L", (0, 0, 0.0), root, n=4, r=0.32)
+    for i_, e in enumerate(leg.data.elements):        # the leg: a short column of foam from the crack down to the pan
+        e.co = (random.uniform(-0.05, 0.05), random.uniform(-0.05, 0.05), -0.12 - i_ * 0.16)
+        e.radius = 0.3
     for o, s0_, s1_ in ((fl, 0.01, 1.0), (leg, 0.01, 1.0)):
         o.scale = (s0_, s0_, s0_)
         o.keyframe_insert("scale", frame=f_pop)
@@ -117,10 +124,12 @@ def pop(name, at, f_pop, hop=6.0, side=(0.0, 0.0)):
     k.scale = (0.6, 0.5, 0.5)                                # the hull splits back behind the foam
     k.keyframe_insert("scale", frame=f_pop + 4)
     t0 = f_pop + 10
-    pts = [(f_, Vector(at) + Vector((side[0] * (f_ - t0) / 30, side[1] * (f_ - t0) / 30,
-                                      max(0.0, hop * 4 * ((f_ - t0) / 30) * (1 - (f_ - t0) / 30)))))
+    lift = Vector(at) + Vector((0, 0, 0.62))          # the growing leg lifts the kernel off the pan ...
+    pts = [(f_, lift + Vector((side[0] * (f_ - t0) / 30, side[1] * (f_ - t0) / 30,
+                               max(0.0, hop * 4 * ((f_ - t0) / 30) * (1 - (f_ - t0) / 30)))))
            for f_ in range(t0, t0 + 31, 2)]
-    key_loc(root, [(1, at), (t0, at)] + pts)
+    key_loc(root, [(1, at), (f_pop, at), (f_pop + 4, lift), (f_pop + 7, Vector(at) + Vector((0, 0, 0.34))),
+                   (t0, lift)] + pts)                 # ... squashes it down, then springs it up and away
     linear(root)
     spin = random.choice((-1, 1)) * random.uniform(4, 8)
     root.keyframe_insert("rotation_euler", frame=t0)
@@ -170,6 +179,7 @@ def shot_cut(cam, tgt):
     sol.thickness = 0.035
     bpy.ops.mesh.primitive_cube_add(size=1, location=(0, -0.5, 0.26))
     cutter = bpy.context.object
+    cutter.parent = root
     cutter.hide_render = True
     cutter.hide_viewport = True
     bo = sh.modifiers.new("Cut", "BOOLEAN")
@@ -224,14 +234,16 @@ def shot_cut(cam, tgt):
 
 def shot_burst(cam, tgt):
     kitchen(0.6)
-    pop("Hero", (0, 0, 0.05), F(0.18), 5.0, (1.2, 0.4))
+    hero = pop("Hero", (0, 0, 0.05), F(0.18), 5.0, (1.2, 0.4))
     for i in range(10):                                      # neighbours, out of focus
         p = Vector((random.uniform(-6, 6), random.uniform(2, 8), 0.05))
         kernel(f"N{i}", p)
-    key_loc(cam, [(1, (2.2, -4.2, 1.2)), (N, (3.0, -6.5, 2.6))])
-    key_loc(tgt, [(1, (0, 0, 0.4)), (F(0.4), (0.1, 0, 0.6)), (N, (0.8, 0.3, 2.2))])
+    key_loc(cam, [(1, (2.6, -6.0, 1.4)), (N, (4.0, -10.5, 3.6))])
+    key_loc(tgt, [(1, (0, 0, 0.0))])
+    c_ = tgt.constraints.new("COPY_LOCATION")       # the camera keeps the jumping kernel in frame
+    c_.target = hero
+    c_.influence = 0.8
     smooth(cam)
-    smooth(tgt)
     cam.data.lens = 60
     cam.data.dof.aperture_fstop = 2.0
 
@@ -244,9 +256,9 @@ def shot_steam(cam, tgt):
     steam.use_nodes = True
     sb = steam.node_tree.nodes["Principled BSDF"]
     sb.inputs["Base Color"].default_value = (0.95, 0.97, 1.0, 1)
-    sb.inputs["Alpha"].default_value = 0.4
+    sb.inputs["Alpha"].default_value = 0.12
     sb.inputs["Emission Color"].default_value = (1, 1, 1, 1)
-    sb.inputs["Emission Strength"].default_value = 1.5
+    sb.inputs["Emission Strength"].default_value = 0.5
     try:
         steam.surface_render_method = "BLENDED"
     except Exception:
@@ -261,9 +273,9 @@ def shot_steam(cam, tgt):
         o.scale = (2.5, 2.5, 2.5)
         o.keyframe_insert("scale", frame=f0 + 25)
         key_loc(o, [(f0, (0, 0, 0.4)), (f0 + 25, Vector((0, 0, 0.4)) + d * random.uniform(2, 4))])
-    ring = glow("Sound", (0.6, 0.85, 1.0), 4.0)
+    ring = glow("Sound", (0.6, 0.85, 1.0), 2.0)
     for k in range(3):                                       # sound rings spreading from the pop
-        bpy.ops.mesh.primitive_torus_add(major_radius=1.0, minor_radius=0.03, location=(0, 0, 0.5))
+        bpy.ops.mesh.primitive_torus_add(major_radius=1.0, minor_radius=0.012, location=(0, 0, 0.5))
         t = bpy.context.object
         t.rotation_euler = (math.pi / 2, 0, 0)
         t.data.materials.append(ring)

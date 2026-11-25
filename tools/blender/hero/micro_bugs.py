@@ -356,12 +356,12 @@ def shot_choice(cam, tgt):
         r, pv = mosquito(f"M{i}", 2.6)
         start = Vector((random.uniform(-6, 6), random.uniform(-6, 6), random.uniform(8, 20)))
         right = random.random() < skew
-        end = Vector(((24 if right else -24) + random.uniform(-2, 2), random.uniform(-4, 4), 14 + random.uniform(-4, 4)))
+        end = Vector(((15 if right else -15) + random.uniform(-2, 2), random.uniform(-4, 4), 14 + random.uniform(-4, 4)))
         f0 = int(N * random.uniform(0.05, 0.3))
         path = [(1, start)] + wander_path(start, end, f0, int(N * random.uniform(0.6, 0.95)), 3.0) + [(N, end)]
         fly(r, pv, path)
     key_loc(cam, [(1, (-22, -46, 27)), (N, (-16, -38, 22))])
-    key_loc(tgt, [(1, (3, 0, 13)), (N, (5, 0, 13))])
+    key_loc(tgt, [(1, (2, 0, 13)), (N, (3, 0, 13))])
     smooth(cam)
     cam.data.dof.aperture_fstop = 8.0
 
@@ -432,14 +432,13 @@ def shot_follow(cam, tgt):
         fly(r, pv, zig)
         if i == 0:
             hero = r
-    key_loc(cam, [(1, (10, -30, 16)), (N, (7, -12, 11))])
-    if many == 1:
-        c = tgt.constraints.new("COPY_LOCATION")
-        c.target = hero
-        c.influence = 0.7
-    key_loc(tgt, [(1, (0, -20, 12))])
+    # side-on to the plume: the arm low in frame, the scent trail rising across it, mosquitoes working down it
+    key_loc(cam, [(1, (34, -30, 16)), (N, (24, -12, 12))])
+    key_loc(tgt, [(1, (-2, -24, 15)), (N, (0, -6, 9))])
     smooth(cam)
-    cam.data.dof.aperture_fstop = 4.0
+    smooth(tgt)
+    cam.data.lens = 40
+    cam.data.dof.aperture_fstop = 5.6
 
 
 def shot_land(cam, tgt):
