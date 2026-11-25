@@ -297,17 +297,21 @@
       "name": "woodpecker",
       "channel": "main",
       "title": "A woodpecker's skull is NOT a shock absorber",
-      "status": "idea",
+      "status": "uploaded",
       "planned_at": "2026-12-04T19:00:00-05:00",
-      "topic": "woodpecker"
+      "topic": "woodpecker",
+      "video_id": "qDNTbjoAdVo",
+      "public_at": "2026-12-04T19:00:00-05:00"
     },
     {
       "name": "woodpecker_hi",
       "channel": "hi",
       "title": "",
-      "status": "idea",
+      "status": "uploaded",
       "planned_at": "2026-12-03T02:30:00-05:00",
-      "topic": "woodpecker"
+      "topic": "woodpecker",
+      "video_id": "86bmhY_rtj0",
+      "public_at": "2026-12-03T02:30:00-05:00"
     },
     {
       "name": "gecko_glass",

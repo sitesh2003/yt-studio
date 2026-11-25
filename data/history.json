@@ -6500,5 +6500,30 @@
     "video_id": "GBBGYhCOxVY",
     "publish_at": "2026-12-03T19:00:00-05:00",
     "thumbnail_set": true
+  },
+  {
+    "job": "hero_woodpecker",
+    "topic": "A Woodpecker's Skull Is NOT a Shock Absorber 🪶",
+    "title": "A Woodpecker's Skull Is NOT a Shock Absorber 🪶",
+    "description": "For decades we were told woodpecker skulls absorb shock. High-speed video says the opposite: the head is a stiff hammer, and a small brain keeps it safe. #shorts #science #birds #woodpecker\n\nSources: Van Wassenbergh et al. 2022, Current Biology 32:3189-3194, doi 10.1016/j.cub.2022.05.052 (woodpeckers minimize cranial absorption of shocks).\n3D: every model built from scratch in Blender (procedural; no stock models or footage).\n\nHow this was made: the script is researched and fact-checked against published research (sources above), narrated by an AI voice, and animated and edited with open-source software.",
+    "tags": [
+      "woodpecker",
+      "woodpecker skull",
+      "birds",
+      "biology",
+      "physics",
+      "science",
+      "3D animation"
+    ],
+    "hook": "You've probably heard a woodpecker's skull is a shock absorber. It isn't.",
+    "status": "scheduled",
+    "narration": "You've probably heard a woodpecker's skull is a shock absorber. It isn't. Scientists filmed three kinds of woodpecker with high-speed cameras, and tracked the beak and the head on every hit. If the skull cushioned the blow, the head would keep moving after the beak stopped. It doesn't. They stop together. That's a stiff hammer. A cushion would soak up the energy and make every peck weaker. So what protects the brain? Its size. A small brain feels far less pressure than a big one in the same hit. Their models show a woodpecker would need to hit about twice as fast before getting near concussion levels. So helmets inspired by the woodpecker cushion idea took the wrong lesson from them. A woodpecker's skull isn't a cushion. It's a stiff hammer, and its tiny brain is what keeps it safe. So which animal do you think hits even harder than a woodpecker?",
+    "voice_engine": "chatterbox",
+    "countdown": false,
+    "hero_3d": true,
+    "question": "So which animal do you think hits even harder than a woodpecker?",
+    "video_id": "qDNTbjoAdVo",
+    "publish_at": "2026-12-04T19:00:00-05:00",
+    "thumbnail_set": true
   }
 ]
