@@ -1,15 +1,13 @@
 {
-  "summary": "1. Use vivid visual analogies in the first 3 seconds (e.g., 'imagine 3 small cars on your teeth') instead of factual announcements to drive high stayed_pct (>65%). 2. Write titles and hooks in conversational Hinglish/Hindi with a direct question or counter-intuitive claim, avoiding formal English titles which correlate with bottom-tier stayed_pct (<35%). 3. Target high-curiosity pop-science topics (dinosaurs, car safety) anchored to real-world objects rather than abstract engineering or generic physics lessons. 4. Keep hook sentences under 15 words and deliver the core visual image immediately without introductory fluff or preamble. 5. Avoid long, slow-burn scripts (>50s duration with dry narrative) which suffer extreme swipe-away rates down to 6.7% despite high completion rate among remaining viewers.",
+  "summary": "1. High-stayed hooks start immediately with interactive mental imagery ('Socho...') or shocking counter-intuitive statements instead of background context. 2. Combining pop-science topics (dinosaurs, physics) with everyday familiar objects (cars, teeth) drastically improves retention and initial views. 3. Short, bold Hindi titles with prominent emojis perform significantly better than passive English or technical descriptive titles. 4. Videos with delayed hooks or generic informational setups fail the 3-second test and suffer drop-offs below 35% stayed_pct. 5. High average view duration requires concrete visual metaphors (e.g., '3 cars on your teeth') right in the first sentence to lock viewer attention.",
   "winning_hooks": [
-    "Vivid mental visualization: 'सोचो, तुम्हारे दांतों पर 3 छोटी cars एक के ऊपर एक रख दी जाएं...' (67.7% stayed)",
-    "Counter-intuitive direct claim: 'जो car crash में पिचक जाती है, वो तुम्हें ज़्यादा बचाती है।' (53.3% stayed)",
-    "Deconstructing popular media myths: 'Movies में T. rex गाड़ी का पीछा करता है। पर असली T. rex शायद...' (46.6% stayed, top view count 1,537)"
+    "Interactive mental visualization: Starting with 'Socho...' (Imagine...) and giving an extreme visual metaphor (e.g., '3 small cars stacked on your teeth').",
+    "Counter-intuitive bold claims: Stating a paradox upfront (e.g., 'A car that crumples in a crash is the one that saves your life')."
   ],
   "avoid": [
-    "Generic descriptive listing hooks: 'Kuch everyday objects mein secretly radioactive materials hote hain...' (6.7% stayed)",
-    "Formal English titles without Hinglish/Hindi punch: 'Common Household Items That Contain Radioactive Materials'",
-    "Academic or overly complex textbook questions: '250 km/h की speed से गीली runway पर plane hydroplaning से कैसे बचता है?' (30.6% stayed)",
-    "Long intro preambles before getting to the central visual anchor"
+    "Dry, descriptive English/Hinglish intro sentences that summarize the topic instead of creating a narrative gap.",
+    "Technical educational titles without high-stakes curiosity or emojis (e.g., 'Common Household Items That Contain Radioactive Materials').",
+    "Slow setup questions that explain context before reaching the core punchline."
   ],
-  "next_experiment": "A/B test the same topic (e.g., 'Why Planes Don't Crash in Lightning') using Format A: Direct visual counter-intuitive hook ('Airplane par bijli girte hi wo blast kyun nahi hota?') vs. Format B: Text-book question hook ('Plane lightning strikes se kaise bachata hai?'), keeping video length identical at ~20-25 seconds."
+  "next_experiment": "Test an A/B variation using the 'Socho...' (Imagine...) visual hook formula on a physics/tech topic versus a direct question hook, keeping video length under 45 seconds."
 }
