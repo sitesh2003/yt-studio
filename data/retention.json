@@ -416,20 +416,20 @@
   "I9iv5BWMDLA": {
     "title": "How James Webb Spots Hidden Planets In Plain Sight",
     "hook_line": "Most James Webb images hold secrets.",
-    "kept_at_10pct": 1.3387,
-    "kept_at_50pct": 0.7581,
-    "kept_at_end": 0.3871,
-    "vs_similar_start": 0.53,
-    "vs_similar_end": 0.64,
+    "kept_at_10pct": 1.3443,
+    "kept_at_50pct": 0.7541,
+    "kept_at_end": 0.3934,
+    "vs_similar_start": 0.54,
+    "vs_similar_end": 0.65,
     "biggest_drops": [
       {
         "at": 0.29,
-        "lost": 0.161,
+        "lost": 0.164,
         "line": "Most exoplanets are found when they cross in front of their star and briefly block a tiny fraction of its light."
       },
       {
         "at": 0.73,
-        "lost": 0.081,
+        "lost": 0.082,
         "line": "By using infrared light to spot the faint heat glow of a young world."
       }
     ],
