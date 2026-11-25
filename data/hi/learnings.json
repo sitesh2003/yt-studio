@@ -1,15 +1,15 @@
 {
-  "summary": "1. Replace title questions with a bold sensory contrast or counter-intuitive claim in the first sentence instead of repeating the title. 2. Anchor hooks to hyper-relatable physical metaphors (e.g., '3 cars on your teeth') rather than abstract facts. 3. Write titles in conversational Devanagari-Hinglish paired with an emoji rather than formal academic Hindi or pure English. 4. Focus topics on visceral pop-science (predator mechanics, crash survival) over industrial engineering or niche chemistry. 5. Target sub-40-second pacing; high-retention shorts drop retention steeply when bloated past 45 seconds.",
+  "summary": "1. Use vivid visual analogies in the first 3 seconds (e.g., 'imagine 3 small cars on your teeth') instead of factual announcements to drive high stayed_pct (>65%). 2. Write titles and hooks in conversational Hinglish/Hindi with a direct question or counter-intuitive claim, avoiding formal English titles which correlate with bottom-tier stayed_pct (<35%). 3. Target high-curiosity pop-science topics (dinosaurs, car safety) anchored to real-world objects rather than abstract engineering or generic physics lessons. 4. Keep hook sentences under 15 words and deliver the core visual image immediately without introductory fluff or preamble. 5. Avoid long, slow-burn scripts (>50s duration with dry narrative) which suffer extreme swipe-away rates down to 6.7% despite high completion rate among remaining viewers.",
   "winning_hooks": [
-    "सोचो, तुम्हारे दांतों पर 3 छोटी cars एक के ऊपर एक रख दी जाएं। इतने ज़ोर से T. rex काटता था। (Visceral second-person sensory anchor)",
-    "Movies में T. rex गाड़ी का पीछा करता है। पर असली T. rex शायद दौड़ ही नहीं सकता था। (Immediate pop-culture myth debunk)",
-    "जो car crash में पिचक जाती है, वो तुम्हें ज़्यादा बचाती है। (Counter-intuitive absolute claim in under 10 words)"
+    "Vivid mental visualization: 'सोचो, तुम्हारे दांतों पर 3 छोटी cars एक के ऊपर एक रख दी जाएं...' (67.7% stayed)",
+    "Counter-intuitive direct claim: 'जो car crash में पिचक जाती है, वो तुम्हें ज़्यादा बचाती है।' (53.3% stayed)",
+    "Deconstructing popular media myths: 'Movies में T. rex गाड़ी का पीछा करता है। पर असली T. rex शायद...' (46.6% stayed, top view count 1,537)"
   ],
   "avoid": [
-    "Never repeat the exact title wording in the first spoken line (e.g., repeating the 250 km/h hydroplaning question tanked stayed rate to 30.6%).",
-    "Never use passive textbook phrasing or documentary-style introductions (e.g., 'Kuch everyday objects mein secretly...').",
-    "Never use academic, formal Hindi text walls in titles (e.g., 'जीवाश्मों में मिली रहस्यमयी आकृतियां...').",
-    "Never publish purely English titles on this channel (produced the worst drop-off at 6.7% stayed)."
+    "Generic descriptive listing hooks: 'Kuch everyday objects mein secretly radioactive materials hote hain...' (6.7% stayed)",
+    "Formal English titles without Hinglish/Hindi punch: 'Common Household Items That Contain Radioactive Materials'",
+    "Academic or overly complex textbook questions: '250 km/h की speed से गीली runway पर plane hydroplaning से कैसे बचता है?' (30.6% stayed)",
+    "Long intro preambles before getting to the central visual anchor"
   ],
-  "next_experiment": "A/B test Hook Structure on the same topic: Script A opens with a counter-intuitive assertion ('तुम्हारी कार का शीशा तुम्हें बचाने के लिए जानबूझकर तोड़ा जाता है'), Script B opens with a second-person sensory scenario ('सोचो अगर 100 की speed पर कार का शीशा चेहरे पर टूट पड़े'), holding title, length (under 35s), and thumbnail constant."
+  "next_experiment": "A/B test the same topic (e.g., 'Why Planes Don't Crash in Lightning') using Format A: Direct visual counter-intuitive hook ('Airplane par bijli girte hi wo blast kyun nahi hota?') vs. Format B: Text-book question hook ('Plane lightning strikes se kaise bachata hai?'), keeping video length identical at ~20-25 seconds."
 }
