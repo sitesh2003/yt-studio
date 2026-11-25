@@ -252,6 +252,118 @@
       "status": "uploaded",
       "video_id": "7I5xy5vLGmM",
       "public_at": "2026-11-25T16:30:00-05:00"
+    },
+    {
+      "name": "chilli_burn",
+      "channel": "main",
+      "title": "Chilli isn't hot: it switches on your heat sensor",
+      "status": "idea",
+      "planned_at": "2026-12-02T19:00:00-05:00",
+      "topic": "chilli_burn"
+    },
+    {
+      "name": "chilli_burn_hi",
+      "channel": "hi",
+      "title": "",
+      "status": "idea",
+      "planned_at": "2026-12-01T02:30:00-05:00",
+      "topic": "chilli_burn"
+    },
+    {
+      "name": "mosquito_magnets",
+      "channel": "main",
+      "title": "Mosquitoes follow your skin's smell, not sweet blood",
+      "status": "idea",
+      "planned_at": "2026-12-03T19:00:00-05:00",
+      "topic": "mosquito_magnets"
+    },
+    {
+      "name": "mosquito_magnets_hi",
+      "channel": "hi",
+      "title": "",
+      "status": "idea",
+      "planned_at": "2026-12-02T02:30:00-05:00",
+      "topic": "mosquito_magnets"
+    },
+    {
+      "name": "woodpecker",
+      "channel": "main",
+      "title": "A woodpecker's skull is NOT a shock absorber",
+      "status": "idea",
+      "planned_at": "2026-12-04T19:00:00-05:00",
+      "topic": "woodpecker"
+    },
+    {
+      "name": "woodpecker_hi",
+      "channel": "hi",
+      "title": "",
+      "status": "idea",
+      "planned_at": "2026-12-03T02:30:00-05:00",
+      "topic": "woodpecker"
+    },
+    {
+      "name": "gecko_glass",
+      "channel": "main",
+      "title": "Geckos: no suction cups, no glue",
+      "status": "idea",
+      "planned_at": "2026-12-05T19:00:00-05:00",
+      "topic": "gecko_glass"
+    },
+    {
+      "name": "gecko_glass_hi",
+      "channel": "hi",
+      "title": "",
+      "status": "idea",
+      "planned_at": "2026-12-04T02:30:00-05:00",
+      "topic": "gecko_glass"
+    },
+    {
+      "name": "popcorn",
+      "channel": "main",
+      "title": "Popcorn jumps on a starch leg",
+      "status": "idea",
+      "planned_at": "2026-12-06T19:00:00-05:00",
+      "topic": "popcorn"
+    },
+    {
+      "name": "popcorn_hi",
+      "channel": "hi",
+      "title": "",
+      "status": "idea",
+      "planned_at": "2026-12-05T02:30:00-05:00",
+      "topic": "popcorn"
+    },
+    {
+      "name": "popcorn_wiw",
+      "channel": "wiw",
+      "title": "Popcorn jumps on a starch leg",
+      "status": "idea",
+      "planned_at": "2026-12-02T16:30:00-05:00",
+      "topic": "popcorn"
+    },
+    {
+      "name": "leidenfrost",
+      "channel": "main",
+      "title": "Why water dances on a very hot pan",
+      "status": "idea",
+      "planned_at": "2026-12-07T19:00:00-05:00",
+      "topic": "leidenfrost"
+    },
+    {
+      "name": "leidenfrost_hi",
+      "channel": "hi",
+      "title": "",
+      "status": "idea",
+      "planned_at": "2026-12-06T02:30:00-05:00",
+      "topic": "leidenfrost"
+    },
+    {
+      "name": "leidenfrost_wiw",
+      "channel": "wiw",
+      "title": "Why water dances on a very hot pan",
+      "status": "idea",
+      "planned_at": "2026-12-09T16:30:00-05:00",
+      "topic": "leidenfrost"
     }
   ]
 }

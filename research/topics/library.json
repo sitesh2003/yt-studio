@@ -1,0 +1,722 @@
+{
+  "_rule": "Owner, 25 Nov 2026: every work session starts with the council (Claude + ChatGPT + Gemini) on topics; Shorts are planned and scheduled 3 days ahead; long films are BOOKS (one big topic, connected chapters). A topic is made only after its fact is checked against the named source. Status: idea -> picked -> facts_checked -> scripted -> rendered -> uploaded -> published (or rejected, with why). score = council votes + shares evidence.",
+  "topics": [
+    {
+      "id": "gecko_glass",
+      "title": "Geckos: no suction cups, no glue",
+      "format": "short",
+      "channels": [
+        "main",
+        "hi"
+      ],
+      "series": "Nature's Engineering",
+      "look": "big",
+      "myth": "Geckos stick with suction cups or sticky glue.",
+      "truth": "Millions of microscopic setae split into billions of tips; van der Waals forces hold them dry.",
+      "line": "A gecko uses no glue and no suction: billions of tiny hairs touch the wall so closely that molecules hold on.",
+      "human_scale": "",
+      "sources": [
+        {
+          "cite": "Autumn et al. 2002, PNAS 99:12252-12256",
+          "checked": "citation agreed by both models with links; numbers to confirm against the paper at scripting"
+        }
+      ],
+      "votes": {
+        "chatgpt": 1,
+        "gemini": 1,
+        "claude": 1
+      },
+      "score": 3,
+      "status": "picked",
+      "added": "2026-11-22",
+      "from": "council 22 Nov",
+      "slot_main": "2026-12-05T19:00:00-05:00",
+      "slot_hi": "2026-12-04T02:30:00-05:00",
+      "council": "2026-11-25"
+    },
+    {
+      "id": "mosquito_magnets",
+      "title": "Mosquitoes follow your skin's smell, not sweet blood",
+      "format": "short",
+      "channels": [
+        "main",
+        "hi"
+      ],
+      "series": "Nature's Engineering",
+      "look": "big",
+      "myth": "Mosquitoes pick people with sweet blood or a certain blood group.",
+      "truth": "People who attract Aedes aegypti most carry more carboxylic acids on their skin; the preference held for years.",
+      "line": "Mosquitoes aren't choosing your blood; they're following the smell your skin makes.",
+      "human_scale": "An invisible scent trail around one person and not the next.",
+      "sources": [
+        {
+          "cite": "De Obaldia et al. 2022, Cell 185:4099-4116",
+          "checked": "citation agreed by both models with links; numbers to confirm against the paper at scripting"
+        }
+      ],
+      "votes": {
+        "chatgpt": 1,
+        "gemini": 1,
+        "claude": 1
+      },
+      "score": 3,
+      "status": "picked",
+      "added": "2026-11-22",
+      "from": "council 22 Nov",
+      "slot_main": "2026-12-03T19:00:00-05:00",
+      "slot_hi": "2026-12-02T02:30:00-05:00",
+      "council": "2026-11-25"
+    },
+    {
+      "id": "mantis_shrimp",
+      "title": "The mantis shrimp punch that boils water",
+      "format": "short",
+      "channels": [
+        "main",
+        "hi"
+      ],
+      "series": "Nature's Engineering",
+      "look": "big",
+      "myth": "",
+      "truth": "",
+      "line": "",
+      "human_scale": "",
+      "sources": [
+        {
+          "cite": "Patek, Korff & Caldwell 2004, Nature (cavitation)",
+          "checked": false
+        }
+      ],
+      "votes": {},
+      "score": 0,
+      "status": "postponed",
+      "added": "2026-11-22",
+      "from": "council 22 Nov",
+      "why": "overdone on YouTube, low share value (Gemini, agreed)"
+    },
+    {
+      "id": "elephant_run",
+      "title": "Can an elephant actually run?",
+      "format": "short",
+      "channels": [
+        "main",
+        "hi"
+      ],
+      "series": "Could It Actually Happen?",
+      "look": "big",
+      "myth": "",
+      "truth": "",
+      "line": "",
+      "human_scale": "",
+      "sources": [
+        {
+          "cite": "Hutchinson et al. 2003, Nature (elephants never get all feet off the ground)",
+          "checked": false
+        }
+      ],
+      "votes": {},
+      "score": 0,
+      "status": "postponed",
+      "added": "2026-11-22",
+      "from": "council 22 Nov",
+      "why": "pedantic share line, heavy rig (Gemini)"
+    },
+    {
+      "id": "woodpecker",
+      "title": "A woodpecker's skull is NOT a shock absorber",
+      "format": "short",
+      "channels": [
+        "main",
+        "hi"
+      ],
+      "series": "Nature's Engineering",
+      "look": "big",
+      "myth": "Woodpeckers have shock-absorbing skulls that cushion every hit.",
+      "truth": "High-speed video and models show the head acts as a stiff hammer; absorbing shock would weaken the peck, and the small brain stays below concussion loads.",
+      "line": "A woodpecker's head isn't a cushion; it's a stiff hammer, and its tiny brain is why it's safe.",
+      "human_scale": "A hammer with a soft head would barely drive a nail.",
+      "sources": [
+        {
+          "cite": "Van Wassenbergh et al. 2022, Current Biology 32:3189-3194",
+          "checked": "citation agreed by both models with links; numbers to confirm against the paper at scripting"
+        }
+      ],
+      "votes": {
+        "chatgpt": 1,
+        "gemini": 1,
+        "claude": 1
+      },
+      "score": 3,
+      "status": "picked",
+      "added": "2026-11-22",
+      "from": "council 22 Nov said JEB 2022; check: Current Biology 2022",
+      "slot_main": "2026-12-04T19:00:00-05:00",
+      "slot_hi": "2026-12-03T02:30:00-05:00",
+      "council": "2026-11-25"
+    },
+    {
+      "id": "knuckle_crack",
+      "title": "What is the crack when you crack your knuckles?",
+      "format": "short",
+      "channels": [
+        "main",
+        "hi"
+      ],
+      "series": "",
+      "look": "big",
+      "myth": "",
+      "truth": "",
+      "line": "",
+      "human_scale": "",
+      "sources": [
+        {
+          "cite": "Kawchuk et al. 2015, PLOS ONE (cavity formation, MRI)",
+          "checked": false
+        }
+      ],
+      "votes": {},
+      "score": 0,
+      "status": "idea",
+      "added": "2026-11-22",
+      "from": "council 22 Nov"
+    },
+    {
+      "id": "dog_drink",
+      "title": "How a dog really drinks water",
+      "format": "short",
+      "channels": [
+        "main",
+        "hi"
+      ],
+      "series": "Nature's Engineering",
+      "look": "big",
+      "myth": "",
+      "truth": "",
+      "line": "",
+      "human_scale": "",
+      "sources": [
+        {
+          "cite": "Gart et al. 2015, PNAS (ladle-shaped tongue, water column)",
+          "checked": false
+        }
+      ],
+      "votes": {},
+      "score": 0,
+      "status": "postponed",
+      "added": "2026-11-22",
+      "from": "council 22 Nov",
+      "why": "production: needs a dog rig and fluid sim (postponed, science fine: Gart 2015 PNAS)"
+    },
+    {
+      "id": "petrichor",
+      "title": "पहली बारिश की खुशबू कहाँ से आती है?",
+      "format": "short",
+      "channels": [
+        "hi",
+        "main"
+      ],
+      "series": "Ghar Ki Science",
+      "look": "big",
+      "myth": "",
+      "truth": "",
+      "line": "",
+      "human_scale": "",
+      "sources": [
+        {
+          "cite": "Joung & Buie 2015, Nature Communications (raindrop aerosols); geosmin from Streptomyces",
+          "checked": false
+        }
+      ],
+      "votes": {},
+      "score": 0,
+      "status": "idea",
+      "added": "2026-11-22",
+      "from": "council 22 Nov"
+    },
+    {
+      "id": "pressure_cooker",
+      "title": "प्रेशर कुकर में खाना जल्दी क्यों पकता है?",
+      "format": "short",
+      "channels": [
+        "hi"
+      ],
+      "series": "Ghar Ki Science",
+      "look": "big",
+      "myth": "",
+      "truth": "",
+      "line": "",
+      "human_scale": "",
+      "sources": [
+        {
+          "cite": "Boiling point vs pressure (OpenStax Chemistry 2e, Ch. 10)",
+          "checked": false
+        }
+      ],
+      "votes": {},
+      "score": 0,
+      "status": "idea",
+      "added": "2026-11-22",
+      "from": "council 22 Nov"
+    },
+    {
+      "id": "onion_tears",
+      "title": "प्याज़ काटने पर आँसू क्यों आते हैं?",
+      "format": "short",
+      "channels": [
+        "hi"
+      ],
+      "series": "Ghar Ki Science",
+      "look": "big",
+      "myth": "",
+      "truth": "",
+      "line": "",
+      "human_scale": "",
+      "sources": [
+        {
+          "cite": "Imai et al. 2002, Nature (lachrymatory-factor synthase)",
+          "checked": false
+        }
+      ],
+      "votes": {},
+      "score": 0,
+      "status": "idea",
+      "added": "2026-11-22",
+      "from": "main channel's onion Short has the best shares/1k (0.8)"
+    },
+    {
+      "id": "blue_tea",
+      "title": "नीली चाय नींबू डालते ही रंग क्यों बदलती है?",
+      "format": "short",
+      "channels": [
+        "hi"
+      ],
+      "series": "Ghar Ki Science",
+      "look": "big",
+      "myth": "",
+      "truth": "",
+      "line": "",
+      "human_scale": "",
+      "sources": [
+        {
+          "cite": "Anthocyanin pH indicator (butterfly-pea flower)",
+          "checked": false
+        }
+      ],
+      "votes": {},
+      "score": 0,
+      "status": "idea",
+      "added": "2026-11-22",
+      "from": "council 22 Nov"
+    },
+    {
+      "id": "popcorn",
+      "title": "Popcorn jumps on a starch leg",
+      "format": "short",
+      "channels": [
+        "hi",
+        "main"
+      ],
+      "series": "Ghar Ki Science",
+      "look": "big",
+      "myth": "Popcorn jumps because it explodes like a tiny bomb.",
+      "truth": "Near 180 °C the hull breaks; a starch 'leg' pushes on the pan and launches the kernel, and the pop is water vapour escaping.",
+      "line": "Popcorn doesn't jump from the bang; a leg of hot starch kicks the pan and launches it.",
+      "human_scale": "",
+      "sources": [
+        {
+          "cite": "Virot & Ponomarenko 2015, J R Soc Interface 12:20141247",
+          "checked": "citation agreed by both models with links; numbers to confirm against the paper at scripting"
+        }
+      ],
+      "votes": {
+        "chatgpt": 1,
+        "gemini": 1,
+        "claude": 1
+      },
+      "score": 3,
+      "status": "picked",
+      "added": "2026-11-22",
+      "from": "council 22 Nov",
+      "slot_main": "2026-12-06T19:00:00-05:00",
+      "slot_hi": "2026-12-05T02:30:00-05:00",
+      "slot_wiw": "2026-12-02T16:30:00-05:00",
+      "council": "2026-11-25"
+    },
+    {
+      "id": "chilli_burn",
+      "title": "Chilli isn't hot: it switches on your heat sensor",
+      "format": "short",
+      "channels": [
+        "hi",
+        "main"
+      ],
+      "series": "Ghar Ki Science",
+      "look": "micro",
+      "myth": "Chilli makes your mouth physically hotter.",
+      "truth": "Capsaicin opens TRPV1, the ion channel that also fires for dangerous heat above ~43 °C; the brain reads it as burning.",
+      "line": "Chilli doesn't heat your mouth; it switches on the same sensor that warns you about dangerous heat.",
+      "human_scale": "Like pressing a fire alarm without starting a fire.",
+      "sources": [
+        {
+          "cite": "Caterina et al. 1997, Nature 389:816-824",
+          "checked": "citation agreed by both models with links; numbers to confirm against the paper at scripting"
+        }
+      ],
+      "votes": {
+        "chatgpt": 1,
+        "gemini": 1,
+        "claude": 1
+      },
+      "score": 3,
+      "status": "picked",
+      "added": "2026-11-22",
+      "from": "council 22 Nov",
+      "slot_main": "2026-12-02T19:00:00-05:00",
+      "slot_hi": "2026-12-01T02:30:00-05:00",
+      "council": "2026-11-25"
+    },
+    {
+      "id": "steel_spoon_cold",
+      "title": "स्टील का चम्मच लकड़ी से ठंडा क्यों लगता है?",
+      "format": "short",
+      "channels": [
+        "hi",
+        "wiw"
+      ],
+      "series": "Ghar Ki Science",
+      "look": "big",
+      "myth": "",
+      "truth": "",
+      "line": "",
+      "human_scale": "",
+      "sources": [
+        {
+          "cite": "Thermal conductivity / effusivity (OpenStax Physics, heat transfer)",
+          "checked": false
+        }
+      ],
+      "votes": {},
+      "score": 0,
+      "status": "idea",
+      "added": "2026-11-22",
+      "from": "council 22 Nov"
+    },
+    {
+      "id": "leidenfrost",
+      "title": "Why water dances on a very hot pan",
+      "format": "short",
+      "channels": [
+        "wiw",
+        "main"
+      ],
+      "series": "One Law, One Experiment",
+      "look": "big",
+      "myth": "A hotter pan always boils a drop away faster.",
+      "truth": "Above the Leidenfrost point a vapour cushion lifts and insulates the drop, so it lasts longer and skates.",
+      "line": "On a hot enough pan, water lasts longer: it floats on a cushion of its own steam.",
+      "human_scale": "An air-hockey puck, but the air is steam.",
+      "sources": [
+        {
+          "cite": "Quéré 2013, Annual Review of Fluid Mechanics 45:197-215",
+          "checked": "citation agreed by both models with links; numbers to confirm against the paper at scripting"
+        }
+      ],
+      "votes": {
+        "chatgpt": 1,
+        "gemini": 0,
+        "claude": 1
+      },
+      "score": 2,
+      "status": "picked",
+      "added": "2026-11-22",
+      "from": "council 22 Nov",
+      "slot_main": "2026-12-07T19:00:00-05:00",
+      "slot_hi": "2026-12-06T02:30:00-05:00",
+      "slot_wiw": "2026-12-09T16:30:00-05:00",
+      "council": "2026-11-25"
+    },
+    {
+      "id": "magnet_copper",
+      "title": "Why a magnet falls slowly through a copper pipe",
+      "format": "short",
+      "channels": [
+        "wiw",
+        "main"
+      ],
+      "series": "The Invisible Machine",
+      "look": "big",
+      "myth": "",
+      "truth": "",
+      "line": "",
+      "human_scale": "",
+      "sources": [
+        {
+          "cite": "Lenz's law, eddy currents (OpenStax University Physics 2, Ch. 13); never say 'repelled'",
+          "checked": false
+        }
+      ],
+      "votes": {},
+      "score": 0,
+      "status": "idea",
+      "added": "2026-11-22",
+      "from": "council 22 Nov"
+    },
+    {
+      "id": "water_strider",
+      "title": "How a water strider walks on water",
+      "format": "short",
+      "channels": [
+        "wiw",
+        "main"
+      ],
+      "series": "Nature's Engineering",
+      "look": "big",
+      "myth": "",
+      "truth": "",
+      "line": "",
+      "human_scale": "",
+      "sources": [
+        {
+          "cite": "Hu, Chan & Bush 2003, Nature (hydrodynamics of water-strider locomotion)",
+          "checked": false
+        }
+      ],
+      "votes": {},
+      "score": 0,
+      "status": "idea",
+      "added": "2026-11-22",
+      "from": "council 22 Nov"
+    },
+    {
+      "id": "oobleck",
+      "title": "The liquid you can run across",
+      "format": "short",
+      "channels": [
+        "wiw",
+        "main"
+      ],
+      "series": "One Law, One Experiment",
+      "look": "big",
+      "myth": "",
+      "truth": "",
+      "line": "",
+      "human_scale": "",
+      "sources": [
+        {
+          "cite": "Waitukaitis & Jaeger 2012, Nature (impact-activated solidification)",
+          "checked": false
+        }
+      ],
+      "votes": {},
+      "score": 0,
+      "status": "idea",
+      "added": "2026-11-22",
+      "from": "council 22 Nov"
+    },
+    {
+      "id": "atp_synthase",
+      "title": "The spinning motor that makes your energy",
+      "format": "short",
+      "channels": [
+        "main",
+        "hi"
+      ],
+      "series": "Inside You",
+      "look": "micro",
+      "myth": "",
+      "truth": "",
+      "line": "",
+      "human_scale": "",
+      "sources": [
+        {
+          "cite": "Yoshida, Muneyuki & Hisabori 2001, Nat Rev Mol Cell Biol; Noji et al. 1997, Nature (direct observation of rotation)",
+          "checked": false
+        }
+      ],
+      "votes": {},
+      "score": 0,
+      "status": "idea",
+      "added": "2026-11-22",
+      "from": "PLAN_3D micro series"
+    },
+    {
+      "id": "rbc_trip",
+      "title": "A red blood cell's trip round your body",
+      "format": "short",
+      "channels": [
+        "main",
+        "hi"
+      ],
+      "series": "Inside You",
+      "look": "micro",
+      "myth": "",
+      "truth": "",
+      "line": "",
+      "human_scale": "",
+      "sources": [
+        {
+          "cite": "Physiology texts: circulation time ~1 min at rest (OpenStax Anatomy & Physiology, Ch. 20)",
+          "checked": false
+        }
+      ],
+      "votes": {},
+      "score": 0,
+      "status": "idea",
+      "added": "2026-11-22",
+      "from": "PLAN_3D micro series"
+    },
+    {
+      "id": "nerve_speed",
+      "title": "How fast does a nerve signal really travel?",
+      "format": "short",
+      "channels": [
+        "main",
+        "hi"
+      ],
+      "series": "Inside You",
+      "look": "micro",
+      "myth": "",
+      "truth": "",
+      "line": "",
+      "human_scale": "",
+      "sources": [
+        {
+          "cite": "Conduction velocity up to ~120 m/s in myelinated fibres (OpenStax A&P, Ch. 12)",
+          "checked": false
+        }
+      ],
+      "votes": {},
+      "score": 0,
+      "status": "idea",
+      "added": "2026-11-22",
+      "from": "PLAN_3D micro series"
+    },
+    {
+      "id": "wbc_chase",
+      "title": "A white blood cell chasing a bacterium",
+      "format": "short",
+      "channels": [
+        "main",
+        "hi"
+      ],
+      "series": "Inside You",
+      "look": "micro",
+      "myth": "",
+      "truth": "",
+      "line": "",
+      "human_scale": "",
+      "sources": [
+        {
+          "cite": "Neutrophil chemotaxis (classic Rogers film, 1950s; Alberts, Molecular Biology of the Cell)",
+          "checked": false
+        }
+      ],
+      "votes": {},
+      "score": 0,
+      "status": "idea",
+      "added": "2026-11-22",
+      "from": "PLAN_3D micro series"
+    },
+    {
+      "id": "dna_packing",
+      "title": "How 2 m of DNA fits in every cell",
+      "format": "short",
+      "channels": [
+        "main",
+        "hi"
+      ],
+      "series": "Inside You",
+      "look": "micro",
+      "myth": "",
+      "truth": "",
+      "line": "",
+      "human_scale": "",
+      "sources": [
+        {
+          "cite": "Alberts, Molecular Biology of the Cell, Ch. 4 (nucleosomes, chromatin)",
+          "checked": false
+        }
+      ],
+      "votes": {},
+      "score": 0,
+      "status": "idea",
+      "added": "2026-11-22",
+      "from": "PLAN_3D micro series",
+      "notes": "possible second book; never show the 30 nm fibre as universal"
+    },
+    {
+      "id": "book_atp",
+      "title": "The Tiny Turbine That Powers Your Body",
+      "format": "book",
+      "channels": [
+        "main",
+        "hi"
+      ],
+      "look": "micro",
+      "status": "picked",
+      "council": "2026-11-25",
+      "score": 3,
+      "votes": {
+        "chatgpt": 1,
+        "gemini": 1,
+        "claude": 1
+      },
+      "target_public": "mid-December 2026",
+      "myth": "Cells burn food for energy like a fire.",
+      "truth": "ATP synthase, a rotary machine turned by a proton gradient, makes most of your ATP.",
+      "line": "",
+      "sources": [
+        {
+          "cite": "Boyer 1997, Annu Rev Biochem 66:717",
+          "checked": false
+        },
+        {
+          "cite": "Noji et al. 1997, Nature 386:299",
+          "checked": false
+        },
+        {
+          "cite": "Zuhra et al. 2021, FEBS J (cyanide, Complex IV)",
+          "checked": false
+        }
+      ],
+      "chapters": [
+        {
+          "n": 1,
+          "q": "What actually powers your muscles?",
+          "short": true
+        },
+        {
+          "n": 2,
+          "q": "Where does the cell make most of its ATP?"
+        },
+        {
+          "n": 3,
+          "q": "How does the electron transport chain build a proton gradient?"
+        },
+        {
+          "n": 4,
+          "q": "How can a membrane store energy using protons?"
+        },
+        {
+          "n": 5,
+          "q": "How does proton flow rotate ATP synthase?",
+          "short": true
+        },
+        {
+          "n": 6,
+          "q": "How does rotation actually make ATP?",
+          "short": true
+        },
+        {
+          "n": 7,
+          "q": "Where does the ATP go? (you spend it even sitting still)",
+          "short": true
+        },
+        {
+          "n": 8,
+          "q": "What happens when cyanide blocks the chain? (Complex IV, not ATP synthase)"
+        }
+      ]
+    }
+  ]
+}
