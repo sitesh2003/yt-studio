@@ -6550,5 +6550,30 @@
     "video_id": "NT5rjhKuTGI",
     "publish_at": "2026-12-05T19:00:00-05:00",
     "thumbnail_set": true
+  },
+  {
+    "job": "hero_popcorn",
+    "topic": "Popcorn Jumps On A Leg (Slow Motion Science) 🍿",
+    "title": "Popcorn Jumps On A Leg (Slow Motion Science) 🍿",
+    "description": "Slow it down and popcorn does something strange: it grows a leg of starch and jumps off the pan. And the pop isn't the shell cracking. #shorts #science #physics #popcorn\n\nSources: Virot & Ponomarenko 2015, Journal of the Royal Society Interface 12:20141247 (Popcorn: critical temperature, jump and sound), PMC4345489.\n3D: every model built from scratch in Blender (procedural; no stock models or footage).\n\nHow this was made: the script is researched and fact-checked against published research (sources above), narrated by an AI voice, and animated and edited with open-source software.",
+    "tags": [
+      "popcorn",
+      "popcorn science",
+      "slow motion",
+      "physics",
+      "kitchen science",
+      "science",
+      "3D animation"
+    ],
+    "hook": "Popcorn doesn't just explode. It jumps, on a leg.",
+    "status": "scheduled",
+    "narration": "Popcorn doesn't just explode. It jumps, on a leg. Inside each kernel is a little water, sealed in a hard shell. Heat it, and that water turns to steam. The pressure inside keeps climbing. Once it reaches one hundred eighty degrees Celsius, three hundred fifty-six Fahrenheit, almost every kernel bursts. Starch foams out of the crack, and part of it presses on the pan, like a leg. The leg squashes, then pushes back, and launches the kernel into the air. And the pop you hear? Filming and recording it together suggests it's the steam escaping, not the shell cracking. Popcorn doesn't just burst. It grows a leg of starch, kicks off the pan, and the pop is escaping steam. So why do some kernels never pop at all?",
+    "voice_engine": "chatterbox",
+    "countdown": false,
+    "hero_3d": true,
+    "question": "So why do some kernels never pop at all?",
+    "video_id": "_n7OhOvyAyc",
+    "publish_at": "2026-12-06T19:00:00-05:00",
+    "thumbnail_set": true
   }
 ]

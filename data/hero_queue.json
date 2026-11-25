@@ -337,25 +337,31 @@
       "name": "popcorn",
       "channel": "main",
       "title": "Popcorn jumps on a starch leg",
-      "status": "idea",
+      "status": "uploaded",
       "planned_at": "2026-12-06T19:00:00-05:00",
-      "topic": "popcorn"
+      "topic": "popcorn",
+      "video_id": "_n7OhOvyAyc",
+      "public_at": "2026-12-06T19:00:00-05:00"
     },
     {
       "name": "popcorn_hi",
       "channel": "hi",
       "title": "",
-      "status": "idea",
+      "status": "uploaded",
       "planned_at": "2026-12-05T02:30:00-05:00",
-      "topic": "popcorn"
+      "topic": "popcorn",
+      "video_id": "_4C4k0JzGDk",
+      "public_at": "2026-12-05T02:30:00-05:00"
     },
     {
       "name": "popcorn_wiw",
       "channel": "wiw",
       "title": "Popcorn jumps on a starch leg",
-      "status": "idea",
+      "status": "uploaded",
       "planned_at": "2026-12-02T16:30:00-05:00",
-      "topic": "popcorn"
+      "topic": "popcorn",
+      "video_id": "mFvFYGI4Nbs",
+      "public_at": "2026-12-02T16:30:00-05:00"
     },
     {
       "name": "leidenfrost",

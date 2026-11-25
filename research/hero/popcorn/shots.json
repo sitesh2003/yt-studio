@@ -54,7 +54,7 @@
       "kind": "pc_steam",
       "overlay": "label",
       "label": [
-        "THE POP = STEAM",
+        "THE POP: LIKELY STEAM",
         "not the hull cracking"
       ]
     },
@@ -85,7 +85,7 @@
     "a leg presses on the pan": "टाँग कड़ाही पर दबती है",
     "SQUASH, PUSH, LAUNCH": "दबना, धकेलना, उछलना",
     "like a spring": "spring की तरह",
-    "THE POP = STEAM": "पॉप = भाप",
+    "THE POP: LIKELY STEAM": "पॉप: शायद भाप",
     "not the hull cracking": "छिलका टूटना नहीं",
     "NOT JUST A BURST": "सिर्फ़ फटना नहीं",
     "a starch leg + escaping steam": "starch की टाँग + निकलती भाप"
@@ -114,7 +114,7 @@
     ],
     [
       "THE POP",
-      "escaping steam"
+      "likely escaping steam"
     ],
     [
       "PRESSURE VESSEL + SPRING",
