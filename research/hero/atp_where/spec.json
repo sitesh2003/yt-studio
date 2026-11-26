@@ -6,7 +6,7 @@
     {
       "kind": "atp_molecule",
       "overlay": "label",
-      "lens": 28,
+      "lens": 20,
       "split": true,
       "label": [
         "EVEN SITTING STILL",
@@ -32,7 +32,7 @@
     {
       "kind": "atp_molecule",
       "overlay": "label",
-      "lens": 28,
+      "lens": 20,
       "label": [
         "NERVES",
         "pumps keep them ready to fire"
@@ -44,7 +44,7 @@
     {
       "kind": "atp_molecule",
       "overlay": "label",
-      "lens": 28,
+      "lens": 20,
       "split": true,
       "label": [
         "BUILDING",

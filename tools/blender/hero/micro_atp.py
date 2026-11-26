@@ -267,8 +267,8 @@ def shot_noji(cam, tgt):
     glass.use_nodes = True
     gb = glass.node_tree.nodes["Principled BSDF"]
     gb.inputs["Base Color"].default_value = (0.05, 0.08, 0.12, 1)
-    gb.inputs["Roughness"].default_value = 0.15
-    bpy.ops.mesh.primitive_plane_add(size=400, location=(0, 0, 0))
+    gb.inputs["Roughness"].default_value = float(SHOT.get("slide_rough", 0.15))   # glossy slide reflects the key light as a grey card
+    bpy.ops.mesh.primitive_plane_add(size=2000, location=(0, 0, 0))
     bpy.context.object.data.materials.append(glass)
     head = empty("NojiHead", (0, 0, 0))
     stator = organic("NojiS", (0.6, 0.6, 0.65), (0.6, 0.7, 0.9), 0.8, sss=0.6, noise=3)
@@ -280,7 +280,8 @@ def shot_noji(cam, tgt):
     gmat = organic("NojiG", (0.95, 0.75, 0.15), (1.0, 0.75, 0.1), 3.0, sss=0.8, noise=4)
     blob("ngam", 1.0, (0, 0, 7.5), (0.9, 0.9, 3.5), gmat, 0.1, 3, parent=rotor)
     fil = glow("Filament", (0.4, 1.0, 0.5), 8.0)                # the fluorescent actin filament (~1 um: drawn shorter)
-    bpy.ops.mesh.primitive_cylinder_add(vertices=16, radius=0.55, depth=60, location=(30, 0, 11))
+    fl = float(SHOT.get("fil", 60))                             # 9:16 Shorts use a shorter filament so it stays in frame
+    bpy.ops.mesh.primitive_cylinder_add(vertices=16, radius=0.55, depth=fl, location=(fl / 2, 0, 11))
     f = bpy.context.object
     f.rotation_euler = (0, math.pi / 2, 0)
     f.data.materials.append(fil)
@@ -289,7 +290,7 @@ def shot_noji(cam, tgt):
     lights(0.7)
     bloom(0.9, 0.5)
     key_loc(cam, [(1, (0, -48, 52)), (N, (0, -42, 46))])
-    key_loc(tgt, [(1, (10, 0, 6))])
+    key_loc(tgt, [(1, (float(SHOT.get("tgt_x", 10)), 0, 6))])
     smooth(cam)
     cam.data.lens = SHOT.get("lens", 30)
     cam.data.dof.aperture_fstop = 11

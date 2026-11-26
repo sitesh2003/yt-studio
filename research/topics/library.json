@@ -737,7 +737,25 @@
         "atp_turbine",
         "atp_three",
         "atp_where"
-      ]
+      ],
+      "chapter_shorts_uploaded": {
+        "atp_40kg": {
+          "main": "AivwpngF1Zo 2026-12-08",
+          "hi": "IFpN1QXw74I 2026-12-07"
+        },
+        "atp_turbine": {
+          "main": "NtCQ3PpWvv8 2026-12-09",
+          "hi": "NyN5VYu0AMU 2026-12-08"
+        },
+        "atp_three": {
+          "main": "qclvW6roFGw 2026-12-10",
+          "hi": "5JogwZcHWb4 2026-12-09"
+        },
+        "atp_where": {
+          "main": "n_t-pVOLSNQ 2026-12-11",
+          "hi": "IvZdWyvFHVI 2026-12-10"
+        }
+      }
     }
   ]
 }

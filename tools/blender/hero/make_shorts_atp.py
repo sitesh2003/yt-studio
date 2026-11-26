@@ -9,7 +9,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[3]
 WATT = "Watt et al. 2010, PNAS 107:16823"
 TYM = "Tymoczko, Berg & Stryer, Biochemistry: A Short Course"
-LENS = {"atp_mito": 25, "atp_chain": 22, "atp_dam": 28, "atp_muscle": 22, "atp_molecule": 28, "atp_noji": 26,
+LENS = {"atp_mito": 25, "atp_chain": 22, "atp_dam": 28, "atp_muscle": 22, "atp_molecule": 20, "atp_noji": 26,
         "atp_synthase": 35}                                     # 9:16 is narrow: wide subjects need a shorter lens
 
 
@@ -35,7 +35,7 @@ SHORTS = {
         S("atp_dam", label=["A PROTON DAM", "crowded on one side"]),
         S("atp_synthase", mode="protons", slow=0.35, label=["8 PIECES", "the ring, in animals"], source=WATT),
         S("atp_synthase", mode="protons", slow=0.35, label=["8 PROTONS = 1 TURN", "one proton, one step"]),
-        S("atp_noji", slow=0.5, label=["1997", "the spin, seen directly"], source="Noji et al. 1997, Nature 386:299"),
+        S("atp_noji", slow=0.5, fil=24, tgt_x=0, slide_rough=0.6, label=["1997", "the spin, seen directly"], source="Noji et al. 1997, Nature 386:299"),
         S("atp_synthase", mode="orbit", slow=0.4, label=["REAL TURBINES", "spun by protons"]),
         S("atp_muscle"),
     ],

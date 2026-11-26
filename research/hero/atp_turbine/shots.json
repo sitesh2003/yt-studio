@@ -59,6 +59,9 @@
       "overlay": "label",
       "lens": 26,
       "slow": 0.5,
+      "fil": 24,
+      "tgt_x": 0,
+      "slide_rough": 0.6,
       "label": [
         "1997",
         "the spin, seen directly"

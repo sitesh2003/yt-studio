@@ -19,7 +19,7 @@
     {
       "kind": "atp_molecule",
       "overlay": "label",
-      "lens": 28,
+      "lens": 20,
       "split": true,
       "label": [
         "ABOUT 100 g",
@@ -32,7 +32,7 @@
     {
       "kind": "atp_molecule",
       "overlay": "label",
-      "lens": 28,
+      "lens": 20,
       "label": [
         "ATP",
         "the energy coin cells spend"
@@ -44,7 +44,7 @@
     {
       "kind": "atp_molecule",
       "overlay": "label",
-      "lens": 28,
+      "lens": 20,
       "split": true,
       "label": [
         "SPENT ATP",
