@@ -1,21 +1,22 @@
 {
   "lessons": [
-    "Hook with an extreme comparative fact or paradigm shift rather than restating the title question (e.g., 'This shark is older than the United States' hit 1.85 retention at 10%, whereas repeating title questions like in the Potato video caused a 31.9% drop at 0.09s).",
-    "Never insert interactive pauses or countdowns like 'Pause and guess...', as they consistently trigger viewer drop-offs (e.g., drops occurred directly on 'Pause and guess...' in the Maple Syrup and 400 Degree Foil videos).",
-    "Cut redundant setup sentences immediately after the hook (e.g., stating 'They look like similar fruits' lost 30% of viewers at 0.13s; 'They are not just there to look cool' lost 31.5% at 0.11s).",
-    "Lead with tangible visual contrast over dense abstract mechanics (e.g., comparing red tuna to white cod held 86% vs. similar videos at the end, while abstract volume/nerve explanations in Fingers Prune and Leg Sleep collapsed below 10% final retention).",
-    "Avoid multi-clause defensive disclaimers mid-script (e.g., the long circulation/nerve disclaimer in the Leg Sleep video caused an immediate 29.3% drop)."
+    "Lead hooks with bold, concrete historical or scientific comparisons (e.g., 'older than the United States' achieved 1.85 retention at 10% and over 1.0 at the end).",
+    "Avoid verbatim repetition of the video title or hook in the first line; repeating the question causes massive immediate drop-offs (e.g., repeating the potato sprouting question caused a 31.9% drop at 9%).",
+    "Eliminate filler transition statements like 'They are not just there to look cool' or 'They look like similar fruits', which trigger 30%+ drop rates around 10-14% into the video.",
+    "Do not pause for audience countdowns or 'Pause and guess' prompts, as these directly cause steep mid-video viewer drops (e.g., up to 15.2% lost during countdowns in the foil and syrup videos).",
+    "Present active scientific comparisons and counter-intuitive facts (e.g., Red tuna vs White cod meat held 65.8% retention at 50%), rather than standard anatomical explanations which suffer heavy retention decay (e.g., leg asleep and funny bone dropped to under 10% at the end)."
   ],
   "worst_moment_types": [
-    "Interactive pauses and countdown prompts (e.g., 'Pause and guess... three, two, one')",
-    "State-the-obvious filler sentences following the hook (e.g., 'They look like similar fruits')",
-    "Abstract hypotheticals asking viewers to mentalize mechanics (e.g., 'Now think about what happens when...')",
-    "Dense, multi-clause technical explanations immediately following the hook"
+    "Verbatim repetition of the hook question immediately after the opening",
+    "Generic filler setup lines ('They look like similar fruits', 'They are not just there to look cool')",
+    "Interactive prompts and countdown pauses ('Pause and guess... three, two, one')",
+    "Stating obvious common knowledge before delivering the scientific cause"
   ],
   "best_hook_types": [
-    "Extreme scale or historical anchors (e.g., 'This shark is older than the United States')",
-    "Challenging established paradigms or edge-of-knowledge facts (e.g., Pluto/Kuiper Belt boundaries)",
-    "Direct visual paradoxes between two familiar items (e.g., Red tuna vs. white cod meat)"
+    "Surprising, concrete comparative statements ('older than the United States')",
+    "Challenging scientific consensus or major space discoveries ('Scientists missed an outer Kuiper belt')",
+    "Intriguing mystery claims about high-profile topics ('Most James Webb images hold secrets')",
+    "Direct side-by-side visual/physical contradictions ('tuna steak looks like deep red beef, while a cod fillet is bright white')"
   ],
   "studied": "2026-11-26",
   "videos": 23
