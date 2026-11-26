@@ -1,14 +1,20 @@
 {
-  "summary": "1. Top stayed videos (66.9% - 67.6%) use direct counter-intuitive statements or vivid physical analogies in the first sentence ('jo car crash me pichak jaati hai, wo tumhe zyaada bachati hai' or 'daanto par 3 chhoti cars') rather than explanatory questions. 2. The top-performing titles are punchy, short Devanagari Hindi questions under 9 words focused on visceral or tangible topics like car crashes and T-rex bite force, avoiding formal English phrasing. 3. Bottom third videos by both views (<35) and stayed percentage (<30%) rely on passive documentary setups, Romanized Hindi, or academic curiosity ('kyun mili hain', 'Common Household Items') that trigger immediate swipe-aways. 4. Videos with stayed_pct > 60% immediately cross 1,300+ views into algorithmic circulation, whereas videos below 40% stayed_pct stall under 100 views regardless of retention length. 5. Video duration target must stay ultra-lean (15–25 seconds total) because top videos achieve high engagement within 14–15 seconds average view duration, while 40-50+ second scripts fail to hold early interest.",
+  "summary": [
+    "High-stayed videos use a 'Counter-Intuitive Truth' hook that immediately challenges a common assumption (e.g., cars crushing is good).",
+    "High-stayed titles pose a direct question that creates a curiosity gap about the safety or capability of the viewer.",
+    "Avoid academic, observational, or 'Why/How' style hooks (e.g., 'Why some foods...'), which have lower retention compared to direct, personal-stakes narrative hooks.",
+    "The data shows a massive drop-off for 'household objects' or 'science discovery' topics; pivot toward high-stakes, relatable, or survival-based scenarios.",
+    "Maintain high-stayed performance by front-loading the 'reveal' of the concept within the first 3 seconds, rather than building up to it."
+  ],
   "winning_hooks": [
-    "जो car crash में पिचक जाती है, वो तुम्हें ज़्यादा बचाती है। (Direct paradox statement that immediately contradicts intuition)",
-    "सोचो, तुम्हारे दांतों पर 3 छोटी cars एक के ऊपर एक रख दी जाएं। इतने ज़ोर से T. rex काटता था। (Visceral physical scale comparison that creates instant imagery)"
+    "जो car crash में पिचक जाती है, वो तुम्हें ज़्यादा बचाती है।",
+    "सोचो, तुम्हारे दांतों पर 3 छोटी cars एक के ऊपर एक रख दी जाएं।",
+    "Movies में T. rex गाड़ी का पीछा करता है। पर असली T. rex शायद दौड़ ही नहीं सकता था।"
   ],
   "avoid": [
-    "Vague English titles and academic topic phrasings like 'Common Household Items That Contain Radioactive Materials' or 'The hidden engineering of...'",
-    "Opening hooks structured as academic or passive questions (e.g., '...kyun mili hain jo khoon ki koshikaon jaisi dikhti hain?' or '...swad kyun deta hai?')",
-    "Scripts extending beyond 40 seconds before mastering the initial 3-second hold rate",
-    "Mixing Romanized Hindi/Urdu script into titles and hooks instead of crisp Devanagari or clean Hinglish keywords"
+    "Starting with observational titles like 'Why Your Smoke Detector Is Radioactive'.",
+    "Over-explaining scientific phenomena in the first 5 seconds without a 'What if' or 'Imagine' scenario.",
+    "Using technical titles that feel like an educational lecture rather than a personal experience."
   ],
-  "next_experiment": "A/B test Hook Structure on the same topic: Script A opens with a direct counter-intuitive statement ('Airbag tumhe bachaane ke liye explode karta hai, soft pillow nahi hota'), versus Script B opening with an interrogative question ('Kya aapko pata hai airbag kaise bachta hai?'), keeping both under 20 seconds and tracking if Script A breaks the 65% stayed_pct threshold."
+  "next_experiment": "A/B test the same topic using a 'Survival/What-if' hook (e.g., 'What if you were in X scenario?') vs. a 'Fact-based' hook (e.g., 'The truth about X') to isolate if the 'you' focus is the primary driver of the 60%+ stayed_pct."
 }

@@ -1,20 +1,17 @@
 {
   "lessons": [
-    "Prioritize immediate, counter-intuitive visual metaphors: The T. rex car comparison held better than the abstract Newton's Law explanation.",
-    "Eliminate repetitive exposition: Videos suffered significant drops when repeating context or scientific setup in subsequent sentences.",
-    "Avoid descriptive pauses early in the hook: When the script describes the premise (like 'Imagine this...') instead of the conflict/consequence, retention drops sharply before 25%.",
-    "Match the pace of technical explanations to the content: Slow, multi-step scientific explanations lead to a 'cliff-edge' drop-off at the 50% mark.",
-    "Focus on immediate payoff: The video with the highest retention (T. rex speed) maintained interest longer by focusing on the 'could it run' question rather than explaining methodology."
+    "Keep hooks extremely punchy and under 10 words; the hook with 4 words ('Movies में T.') retained 1.022 at 10%, while longer multi-sentence hooks dropped viewers immediately with similar starts as low as 0.18.",
+    "Avoid starting with heavy hypothetical questions combined with immediate exposition, as demonstrated by the T. rex bite video losing 0.112 right at the start.",
+    "Do not enough data exists to definitively classify the exact types of lines causing mid-video drops since the dataset only includes three videos, though complex physical explanations correlate with drops around the 50% mark.",
+    "Ensure pacing remains tight after 50%; all videos experienced catastrophic drop-offs by the end (dropping to 0.20, 0.05, and 0.03 respectively), indicating that current middle-to-end structures lose audience momentum significantly."
   ],
   "worst_moment_types": [
-    "Over-explaining scientific methodology (e.g., 'Scientists built it bone by bone...')",
-    "Repetitive phrasing of the initial premise after the hook",
-    "Abstract scientific terminology that interrupts the immediate visual narrative"
+    "Long conceptual explanations involving multiple physics or anatomical steps",
+    "Dense foundational statements right after the hook"
   ],
   "best_hook_types": [
-    "High-stakes comparative analogies (e.g., car weight vs. T. rex weight)",
-    "Direct physical scenarios that create an immediate 'what if' question"
+    "Extremely short, curiosity-inducing fragment hooks (e.g., 'Movies में T.')"
   ],
-  "studied": "2026-11-25",
+  "studied": "2026-11-26",
   "videos": 3
 }
