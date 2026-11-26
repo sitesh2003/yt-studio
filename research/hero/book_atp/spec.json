@@ -1,0 +1,447 @@
+{
+  "assets_dir": "assets/3d",
+  "renderer": "micro",
+  "aspect": "landscape",
+  "long": true,
+  "caption_scale": 1.0,
+  "end_beat_s": 0.8,
+  "shots": [
+    {
+      "kind": "atp_synthase",
+      "overlay": "none",
+      "mode": "orbit",
+      "slow": 0.4,
+      "seconds": 4.91
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "mode": "spin",
+      "slow": 0.5,
+      "label": [
+        "~100 TURNS A SECOND",
+        "shown here slowed down"
+      ],
+      "seconds": 4.947
+    },
+    {
+      "kind": "atp_mito",
+      "overlay": "none",
+      "dive": true,
+      "seconds": 5.635
+    },
+    {
+      "kind": "atp_muscle",
+      "overlay": "none",
+      "chapter": [
+        "CHAPTER 1",
+        "What Powers Your Muscles?"
+      ],
+      "seconds": 3.899
+    },
+    {
+      "kind": "atp_molecule",
+      "overlay": "label",
+      "label": [
+        "ATP",
+        "the energy coin cells spend"
+      ],
+      "seconds": 6.155
+    },
+    {
+      "kind": "atp_molecule",
+      "overlay": "label",
+      "split": true,
+      "label": [
+        "ABOUT 100 g",
+        "in your whole body at once"
+      ],
+      "seconds": 6.015
+    },
+    {
+      "kind": "atp_muscle",
+      "overlay": "label",
+      "label": [
+        "ABOUT 40 kg A DAY",
+        "used even at rest"
+      ],
+      "source": "Tymoczko, Berg & Stryer, Biochemistry: A Short Course",
+      "seconds": 7.042
+    },
+    {
+      "kind": "atp_mito",
+      "overlay": "none",
+      "seconds": 4.796
+    },
+    {
+      "kind": "atp_mito",
+      "overlay": "none",
+      "dive": true,
+      "chapter": [
+        "CHAPTER 2",
+        "Where Is ATP Made?"
+      ],
+      "seconds": 3.849
+    },
+    {
+      "kind": "atp_mito",
+      "overlay": "label",
+      "label": [
+        "MITOCHONDRION",
+        "wrapped in two membranes"
+      ],
+      "seconds": 4.749
+    },
+    {
+      "kind": "atp_mito",
+      "overlay": "label",
+      "dive": true,
+      "label": [
+        "CRISTAE",
+        "the folded inner membrane"
+      ],
+      "seconds": 5.468
+    },
+    {
+      "kind": "atp_dam",
+      "overlay": "label",
+      "label": [
+        "PROTONS",
+        "the hidden power source"
+      ],
+      "seconds": 5.278
+    },
+    {
+      "kind": "atp_chain",
+      "overlay": "none",
+      "chapter": [
+        "CHAPTER 3",
+        "Building The Proton Gradient"
+      ],
+      "seconds": 4.034
+    },
+    {
+      "kind": "atp_chain",
+      "overlay": "label",
+      "label": [
+        "ELECTRONS",
+        "carry the energy from food"
+      ],
+      "seconds": 3.757
+    },
+    {
+      "kind": "atp_chain",
+      "overlay": "label",
+      "focus": "pumps",
+      "label": [
+        "A BUCKET BRIGADE",
+        "electrons passed along"
+      ],
+      "seconds": 5.311
+    },
+    {
+      "kind": "atp_chain",
+      "overlay": "label",
+      "focus": "pumps",
+      "label": [
+        "THREE PUMPS",
+        "Complexes I, III and IV"
+      ],
+      "seconds": 4.498
+    },
+    {
+      "kind": "atp_chain",
+      "overlay": "label",
+      "focus": "iv",
+      "label": [
+        "COMPLEX IV",
+        "electrons + oxygen make water"
+      ],
+      "seconds": 5.158
+    },
+    {
+      "kind": "atp_chain",
+      "overlay": "label",
+      "focus": "iv",
+      "label": [
+        "WHY YOU BREATHE",
+        "oxygen is the last stop"
+      ],
+      "seconds": 4.469
+    },
+    {
+      "kind": "atp_dam",
+      "overlay": "none",
+      "chapter": [
+        "CHAPTER 4",
+        "A Membrane That Stores Energy"
+      ],
+      "seconds": 3.428
+    },
+    {
+      "kind": "atp_dam",
+      "overlay": "label",
+      "label": [
+        "A PROTON DAM",
+        "crowded on one side"
+      ],
+      "seconds": 5.089
+    },
+    {
+      "kind": "atp_dam",
+      "overlay": "label",
+      "label": [
+        "ONE MAIN DOOR",
+        "back across the membrane"
+      ],
+      "seconds": 4.45
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "mode": "orbit",
+      "slow": 0.4,
+      "label": [
+        "ATP SYNTHASE",
+        "the turbine"
+      ],
+      "seconds": 3.984
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "none",
+      "mode": "spin",
+      "slow": 0.4,
+      "chapter": [
+        "CHAPTER 5",
+        "What Spins The Turbine?"
+      ],
+      "seconds": 4.511
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "mode": "protons",
+      "slow": 0.35,
+      "label": [
+        "8 PIECES",
+        "the ring, in animals"
+      ],
+      "source": "Watt et al. 2010, PNAS 107:16823",
+      "seconds": 5.521
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "mode": "protons",
+      "slow": 0.35,
+      "label": [
+        "ONE PROTON",
+        "one step of the ring"
+      ],
+      "seconds": 5.125
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "mode": "spin",
+      "slow": 0.5,
+      "label": [
+        "8 PROTONS = 1 TURN",
+        "about 100 turns a second"
+      ],
+      "source": "Watt et al. 2010, PNAS 107:16823",
+      "seconds": 5.164
+    },
+    {
+      "kind": "atp_noji",
+      "overlay": "label",
+      "slow": 0.5,
+      "label": [
+        "1997",
+        "the spin, seen directly"
+      ],
+      "source": "Noji et al. 1997, Nature 386:299",
+      "seconds": 6.612
+    },
+    {
+      "kind": "atp_noji",
+      "overlay": "label",
+      "slow": 0.5,
+      "label": [
+        "ABOUT 2 nm WIDE",
+        "the smallest rotary motor seen"
+      ],
+      "seconds": 6.375
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "none",
+      "mode": "beta",
+      "slow": 0.3,
+      "chapter": [
+        "CHAPTER 6",
+        "How Spinning Makes ATP"
+      ],
+      "seconds": 4.07
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "mode": "beta",
+      "slow": 0.3,
+      "label": [
+        "THE CROOKED SHAFT",
+        "turns inside the head"
+      ],
+      "seconds": 4.568
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "mode": "beta",
+      "slow": 0.3,
+      "label": [
+        "THREE WORKING PARTS",
+        "each changes shape"
+      ],
+      "seconds": 4.951
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "mode": "beta",
+      "slow": 0.3,
+      "label": [
+        "OPEN - LOOSE - TIGHT",
+        "the binding change"
+      ],
+      "source": "Boyer 1997, Annual Review of Biochemistry 66:717",
+      "seconds": 6.909
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "mode": "beta",
+      "slow": 0.3,
+      "label": [
+        "3 ATP PER TURN",
+        "one from each part"
+      ],
+      "source": "Watt et al. 2010, PNAS 107:16823",
+      "seconds": 6.674
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "mode": "orbit",
+      "slow": 0.4,
+      "label": [
+        "NOBEL PRIZE 1997",
+        "Paul Boyer and John Walker"
+      ],
+      "seconds": 4.0
+    },
+    {
+      "kind": "atp_muscle",
+      "overlay": "none",
+      "chapter": [
+        "CHAPTER 7",
+        "Where Does The ATP Go?"
+      ],
+      "seconds": 3.54
+    },
+    {
+      "kind": "atp_muscle",
+      "overlay": "label",
+      "label": [
+        "MUSCLES, NERVES, PROTEINS",
+        "all paid in ATP"
+      ],
+      "seconds": 6.203
+    },
+    {
+      "kind": "atp_mito",
+      "overlay": "label",
+      "label": [
+        "HEART AND BRAIN",
+        "never stop asking"
+      ],
+      "seconds": 4.113
+    },
+    {
+      "kind": "atp_molecule",
+      "overlay": "label",
+      "split": true,
+      "label": [
+        "EVEN SITTING STILL",
+        "about 40 kg a day"
+      ],
+      "seconds": 5.394
+    },
+    {
+      "kind": "atp_chain",
+      "overlay": "none",
+      "cyanide": true,
+      "focus": "iv",
+      "chapter": [
+        "CHAPTER 8",
+        "When Cyanide Blocks The Chain"
+      ],
+      "seconds": 3.972
+    },
+    {
+      "kind": "atp_chain",
+      "overlay": "label",
+      "cyanide": true,
+      "focus": "iv",
+      "label": [
+        "CYANIDE",
+        "jams Complex IV, not the turbine"
+      ],
+      "source": "Zuhra & Szabo 2022, FEBS Journal 289:2481",
+      "seconds": 5.818
+    },
+    {
+      "kind": "atp_chain",
+      "overlay": "label",
+      "cyanide": true,
+      "label": [
+        "THE DAM DRAINS",
+        "the turbines slow down"
+      ],
+      "seconds": 5.819
+    },
+    {
+      "kind": "atp_chain",
+      "overlay": "label",
+      "cyanide": true,
+      "label": [
+        "NO NEW ATP",
+        "heart and brain hit hardest"
+      ],
+      "seconds": 5.327
+    },
+    {
+      "kind": "atp_mito",
+      "overlay": "none",
+      "seconds": 2.54
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "mode": "orbit",
+      "slow": 0.4,
+      "label": [
+        "~100 TURNS A SECOND",
+        "3 ATP every turn"
+      ],
+      "seconds": 7.247
+    },
+    {
+      "kind": "atp_muscle",
+      "overlay": "none",
+      "seconds": 4.591
+    }
+  ]
+}

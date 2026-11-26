@@ -44,7 +44,7 @@ bpy.ops.wm.read_factory_settings(use_empty=True)
 SC = bpy.context.scene
 SC.render.fps = FPS
 SC.frame_start, SC.frame_end = 1, N
-SC.render.resolution_x, SC.render.resolution_y = 1080, 1920
+SC.render.resolution_x, SC.render.resolution_y = (1920, 1080) if SPEC.get("aspect") == "landscape" else (1080, 1920)
 SC.render.resolution_percentage = 50 if args.preview else 100
 ENG = [e.identifier for e in bpy.types.RenderSettings.bl_rna.properties["engine"].enum_items]
 SC.render.engine = "BLENDER_EEVEE_NEXT" if "BLENDER_EEVEE_NEXT" in ENG else "BLENDER_EEVEE"
@@ -813,7 +813,7 @@ def build():
         return shot_chilli_macro(cam, tgt)
     if KIND == "nerve_pulse":
         return shot_nerve_pulse(cam, tgt)
-    for prefix, mod in (("mosq_", "micro_bugs"), ("wp_", "micro_birds"), ("gk_", "micro_gecko"), ("pc_", "micro_pop"), ("lf_", "micro_leid")):   # topic modules, same helpers
+    for prefix, mod in (("mosq_", "micro_bugs"), ("wp_", "micro_birds"), ("gk_", "micro_gecko"), ("pc_", "micro_pop"), ("lf_", "micro_leid"), ("atp_", "micro_atp")):   # topic modules, same helpers
         if KIND.startswith(prefix):
             sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
             m_ = __import__(mod)

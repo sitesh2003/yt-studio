@@ -387,9 +387,11 @@
       "name": "leidenfrost_wiw",
       "channel": "wiw",
       "title": "Why water dances on a very hot pan",
-      "status": "idea",
+      "status": "uploaded",
       "planned_at": "2026-12-09T16:30:00-05:00",
-      "topic": "leidenfrost"
+      "topic": "leidenfrost",
+      "video_id": "QzFcyiIrlKk",
+      "public_at": "2026-12-09T16:30:00-05:00"
     }
   ]
 }

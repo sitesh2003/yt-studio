@@ -1,0 +1,168 @@
+{
+  "title_options": [
+    "The Tiny Turbine That Powers Your Body"
+  ],
+  "share": {
+    "myth": "Food energy just turns into body energy somehow; there is nothing mechanical about it.",
+    "truth": "Most of your ATP is made by ATP synthase, a rotary motor in your mitochondria turned by protons about a hundred times a second, making three ATP per turn (Noji et al. 1997; Watt et al. 2010).",
+    "line": "Right now, tiny turbines inside your cells are spinning about a hundred times a second, and every turn makes three ATP."
+  },
+  "facts": [
+    "Tymoczko, Berg & Stryer, Biochemistry: A Short Course (3rd ed.): a resting human uses about 40 kg of ATP in 24 hours while the body holds about 100 g, so ATP is recycled constantly.",
+    "Watt IN et al. 2010, PNAS 107:16823: the central stalk and c-ring rotate about 100 times per second; each 360 degree turn makes 3 ATP; the bovine (vertebrate) c-ring has 8 subunits, so about 2.7 protons per ATP; each c-subunit carries a glutamate that is protonated and deprotonated in turn.",
+    "Noji H et al. 1997, Nature 386:299: direct observation of rotation of F1-ATPase; the smallest known rotary motor; rotor radius about 1 nm inside a stator barrel of radius about 5 nm made of three alpha and three beta subunits.",
+    "Boyer PD 1997, Annu Rev Biochem 66:717 (binding change mechanism): each catalytic beta site cycles through open, loose and tight states as the stalk rotates. Nobel Prize in Chemistry 1997: Paul Boyer and John Walker (with Jens Skou).",
+    "Electron transport chain complexes pump protons across the inner mitochondrial membrane; Complex IV (cytochrome c oxidase) passes electrons to oxygen, making water (standard biochemistry textbooks).",
+    "Zuhra K & Szabo C 2022, FEBS J 289:2481: cyanide's toxicity comes mainly from inhibiting mitochondrial Complex IV (cytochrome c oxidase), not ATP synthase itself.",
+    "Complexes I, III and IV pump protons; Complex II does not (standard textbooks). Some protons also leak back across the membrane, so ATP synthase is the main, not the only, route."
+  ],
+  "description": "Inside your cells, a motor about ten billionths of a metre across spins around a hundred times a second, and every turn makes three molecules of ATP, the energy your body runs on. This is its story, from your muscles to the turbine and back, in eight chapters.",
+  "sources": "Watt et al. 2010, PNAS 107:16823 (c8 ring, ~100 rotations per second, 3 ATP per turn); Noji et al. 1997, Nature 386:299 (rotation seen directly); Boyer 1997, Annual Review of Biochemistry 66:717 (binding change); Tymoczko, Berg & Stryer, Biochemistry: A Short Course, 3rd ed. (ATP turnover); Zuhra & Szabo 2022, FEBS Journal 289:2481 (cyanide and Complex IV); Nobel Prize in Chemistry 1997.",
+  "tags": [
+    "ATP synthase",
+    "mitochondria",
+    "ATP",
+    "cell biology",
+    "biochemistry",
+    "molecular machine",
+    "3D animation",
+    "STEM"
+  ],
+  "scenes": [
+    {
+      "narration": "Right now, inside almost every cell of your body, there are tiny turbines spinning."
+    },
+    {
+      "narration": "Each one turns about a hundred times a second, and every single turn makes the fuel that keeps you alive."
+    },
+    {
+      "narration": "This is the story of that turbine. Where it is, what spins it, and what happens when it stops."
+    },
+    {
+      "narration": "Chapter one. What actually powers your muscles?"
+    },
+    {
+      "narration": "Every time a muscle pulls, its fibres burn a molecule called ATP. It's the energy coin your cells spend."
+    },
+    {
+      "narration": "Here's the strange part. Your whole body holds only about a hundred grams of ATP at any moment."
+    },
+    {
+      "narration": "But even resting, you use about forty kilograms of it in a day. So every molecule is rebuilt again and again."
+    },
+    {
+      "narration": "Something inside you is making ATP non-stop. To find it, we need to go smaller."
+    },
+    {
+      "narration": "Chapter two. Where does the cell make most of its ATP?"
+    },
+    {
+      "narration": "Inside the muscle cell are mitochondria: tiny capsules, each wrapped in two membranes."
+    },
+    {
+      "narration": "The inner membrane is folded again and again, like the pages of a book, to pack in as much surface as possible."
+    },
+    {
+      "narration": "That folded membrane is the factory floor. And it runs on something surprising: protons."
+    },
+    {
+      "narration": "Chapter three. How does the chain build a proton gradient?"
+    },
+    {
+      "narration": "The food you eat is broken down until its energy is carried by electrons."
+    },
+    {
+      "narration": "Those electrons are passed along a chain of protein complexes in the inner membrane, like a bucket brigade."
+    },
+    {
+      "narration": "At three of those stops, the energy is used to pump protons out across the membrane."
+    },
+    {
+      "narration": "At the very end, Complex Four hands the electrons to the oxygen you breathe, and they make water."
+    },
+    {
+      "narration": "That's why you need oxygen. It's the last stop for the electrons."
+    },
+    {
+      "narration": "Chapter four. How can a membrane store energy?"
+    },
+    {
+      "narration": "The pumps crowd protons on one side of the membrane. Think of water piling up behind a dam."
+    },
+    {
+      "narration": "The protons want to flow back. And the main way back in is through one kind of door."
+    },
+    {
+      "narration": "That door is the turbine. Its name is ATP synthase."
+    },
+    {
+      "narration": "Chapter five. How does proton flow spin ATP synthase?"
+    },
+    {
+      "narration": "The part buried in the membrane is a ring. In animals, it's made of eight identical pieces."
+    },
+    {
+      "narration": "A proton drops onto one piece, the ring turns a step, and the proton is let out on the other side."
+    },
+    {
+      "narration": "Eight protons, one full turn. And it turns about a hundred times every second."
+    },
+    {
+      "narration": "Nobody had seen it spin until nineteen ninety-seven, when scientists in Japan attached a glowing filament and watched it rotate."
+    },
+    {
+      "narration": "It was the smallest rotary motor ever seen. Its spinning shaft is only about two billionths of a metre across."
+    },
+    {
+      "narration": "Chapter six. How does spinning actually make ATP?"
+    },
+    {
+      "narration": "The ring turns a crooked shaft, and the shaft turns inside a head of three working parts."
+    },
+    {
+      "narration": "As the shaft rotates, it squeezes each part into three shapes, one after another."
+    },
+    {
+      "narration": "Open, to grab the pieces. Loose, to hold them. And tight, to press them together into ATP."
+    },
+    {
+      "narration": "Then it opens again and lets the new ATP go. Three working parts, so three ATP for every turn."
+    },
+    {
+      "narration": "That idea won the Nobel Prize in Chemistry in nineteen ninety-seven."
+    },
+    {
+      "narration": "Chapter seven. Where does all that ATP go?"
+    },
+    {
+      "narration": "Into your muscles, pulling. Into pumps that keep every nerve ready to fire. Into building new proteins."
+    },
+    {
+      "narration": "Your heart and brain never stop asking for it, even in your sleep."
+    },
+    {
+      "narration": "Your cells spend ATP even when you sit perfectly still. That's the forty kilograms a day."
+    },
+    {
+      "narration": "Chapter eight. What happens when cyanide blocks the chain?"
+    },
+    {
+      "narration": "Cyanide doesn't attack the turbine. It jams Complex Four, the last step of the chain."
+    },
+    {
+      "narration": "The electrons have nowhere to go, so the pumps stop. The proton dam drains, and the turbines slow down."
+    },
+    {
+      "narration": "With no new ATP, the organs that need the most energy, like the heart and brain, are hit hardest."
+    },
+    {
+      "narration": "That's how much depends on these tiny machines."
+    },
+    {
+      "narration": "Right now, tiny turbines inside your cells are spinning about a hundred times a second, and every turn makes three ATP."
+    },
+    {
+      "narration": "So what do you think happens to all those turbines when you start to run?"
+    }
+  ]
+}
