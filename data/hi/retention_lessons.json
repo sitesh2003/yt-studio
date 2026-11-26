@@ -1,16 +1,16 @@
 {
   "lessons": [
-    "Keep hooks extremely punchy and under 10 words; the hook with 4 words ('Movies में T.') retained 1.022 at 10%, while longer multi-sentence hooks dropped viewers immediately with similar starts as low as 0.18.",
-    "Avoid starting with heavy hypothetical questions combined with immediate exposition, as demonstrated by the T. rex bite video losing 0.112 right at the start.",
-    "Do not enough data exists to definitively classify the exact types of lines causing mid-video drops since the dataset only includes three videos, though complex physical explanations correlate with drops around the 50% mark.",
-    "Ensure pacing remains tight after 50%; all videos experienced catastrophic drop-offs by the end (dropping to 0.20, 0.05, and 0.03 respectively), indicating that current middle-to-end structures lose audience momentum significantly."
+    "Keep hooks extremely concise and direct; the hook with the fewest words ('Movies in T.') achieved the highest 10% retention (1.0223) and start performance compared to longer narrative setups.",
+    "Avoid starting with long, multi-clause hypothetical scenarios or dense explanations, as seen in the T. rex bite and car crash videos which suffered very poor start performance (0.18 vs similar).",
+    "Eliminate repetitive phrasing and dense structural breakdowns early in the video, as heavy descriptive blocks trigger immediate drop-offs around the 10% to 23% marks.",
+    "Not enough data to determine specific patterns for the end of the videos since all samples show significant drop-offs and similar low ending performance relative to benchmarks."
   ],
   "worst_moment_types": [
-    "Long conceptual explanations involving multiple physics or anatomical steps",
-    "Dense foundational statements right after the hook"
+    "Dense explanatory blocks detailing scientific processes or computer modeling (e.g., bone by bone, muscle by muscle breakdowns)",
+    "Long comparative descriptions involving heavy numbers and units of measurement without immediate visual payoff"
   ],
   "best_hook_types": [
-    "Extremely short, curiosity-inducing fragment hooks (e.g., 'Movies में T.')"
+    "Short, punchy introductory fragments that immediately set up a provocative premise without overloading the viewer with setup"
   ],
   "studied": "2026-11-26",
   "videos": 3
