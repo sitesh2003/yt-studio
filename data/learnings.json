@@ -1,14 +1,16 @@
 {
-  "summary": "- Open with a direct 2‑sentence hook that addresses the viewer (“Your …”) and adds a vivid, unexpected comparison or fact; - Phrase the title as a concise question that references the viewer’s experience or a surprising outcome; - Keep the video under 30 seconds and avoid countdown timers unless the hook needs a timed reveal; - Use a single, eye‑catching emoji that matches the core subject in the title; - Highlight a counter‑intuitive detail in the first line to trigger curiosity instantly",
+  "summary": "High-stayed videos (>50% stayed_pct) use active, direct 'you/your' claims in the first sentence that immediately subvert a common belief or highlight a personal physical sensory process (e.g., body function, T. rex vs car). Low-stayed videos (<35% stayed_pct) start with passive background exposition, generic storytelling setups ('Fossilized bones can last...'), or abstract space topics. Titles driving views perform best when phrased as direct question-confrontations ('Could A T. rex Outrun Your Car?') rather than passive explanations. Videos with concise, punchy first sentences (<12 words) retain viewers significantly better in the first 3 seconds than long-winded setup clauses. High views require both high initial stayed_pct (>50%) and focused pop-science/everyday topics over niche engineering mechanics.",
   "winning_hooks": [
-    "Your eyes are leaking right now, and your brain is hiding it.",
-    "The real T. rex probably couldn't run. Not even a jog.",
-    "One T. rex bite pressed down like three small cars stacked on its teeth."
+    "Direct personal/sensory disruption: 'Your eyes are leaking right now, and your brain is hiding it.'",
+    "Bold counter-intuitive debunking: 'The real T. rex probably couldn't run. Not even a jog.'",
+    "Extreme vivid physical comparison: 'One T. rex bite pressed down like three small cars stacked on its teeth.'",
+    "Immediate benefit counter-statement: 'A car that folds up in a crash keeps you safer than one that doesn't.'"
   ],
   "avoid": [
-    "Starting with vague statements like “Most X are …” without personal address",
-    "Using generic “Why” titles without implying a personal benefit or surprise",
-    "Long intros that exceed 5 seconds before the hook appears"
+    "Explanatory narrative setups that sound like documentary narrations ('Fossilized bones can last millions of years, but...').",
+    "Hypothetical scenario setting before the point ('Your car swerves off the highway right toward a steel guardrail...').",
+    "Passive astronomical context setting ('Pluto seemed like our solar system's edge, yet astronomers...').",
+    "Niche structural engineering topics (guardrail end boxes) which consistently drop stayed_pct below 35%."
   ],
-  "next_experiment": "Create two versions of a new Shorts: Version A uses a 2‑sentence hook that directly addresses the viewer and includes a vivid analogy (e.g., “Your smartphone battery dies faster than a cheetah sprint. Here’s why.”) with a question‑style title; Version B uses a generic hook and statement title. Run an A/B split test measuring stayed_pct to see which format boosts retention."
+  "next_experiment": "A/B test the exact same video topic using a Direct Personal Claim Hook ('Your salmon is dyed pink before you buy it') versus an Academic Narrative Hook ('Most people don't realize farmed salmon starts out gray') to measure the direct impact on 3-second stayed_pct."
 }
