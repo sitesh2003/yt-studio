@@ -1,16 +1,22 @@
 {
-  "summary": "Focus video titles on direct questions or shocking physical realities rather than abstract scientific phenomena to capture initial interest. Open the first sentence by directly challenging a common assumption or stating a counter-intuitive fact without a preamble. Keep the first sentence under 12 words to maintain high retention during the initial swipe-test window. Avoid passive background setups, multi-clause introductions, or dense introductory definitions in the first three seconds. Target high-curiosity physical anomalies like biology, vehicle safety, or prehistoric mechanics which consistently outperform broad astronomy topics.",
+  "summary": [
+    "High-performing videos (by views and stayed_pct) use a 'Myth-Busting' framework in the first sentence to immediately contradict a common belief.",
+    "Titles for high-stayed videos focus on 'Why' questions or 'Counter-intuitive' claims, whereas low-performers use generic descriptive titles.",
+    "The hook must be a short, punchy declarative statement (under 15 words) rather than a long, explanatory sentence.",
+    "Engagement drops significantly when the hook requires the viewer to process complex background information or scientific setup.",
+    "Directness wins: Start immediately with the surprising reveal (e.g., 'Your eyes are leaking right now') instead of setting the scene."
+  ],
   "winning_hooks": [
     "The real T. rex probably couldn't run. Not even a jog.",
-    "A car that folds up in a crash keeps you safer than one that doesn't.",
+    "One T. rex bite pressed down like three small cars stacked on its teeth.",
     "Your eyes are leaking right now, and your brain is hiding it.",
-    "You are not sad when you chop an onion."
+    "A car that folds up in a crash keeps you safer than one that doesn't."
   ],
   "avoid": [
-    "Pluto seemed like our solar system's edge, yet astronomers are investigating evidence that...",
-    "Fossilized bones can last millions of years, but sometimes they hide more than just minerals.",
-    "Long, multi-clause contextual background sentences at the start of the script",
-    "Abstract space or astronomy topics that lack a direct physical interaction with the viewer"
+    "Avoid long, multi-clause hooks that explain the 'astronomy' or 'scientific' context before the interesting part.",
+    "Avoid passive titles that don't imply a direct answer or a secret reveal.",
+    "Avoid starting with 'Why' or 'How' in the hook; use a statement of fact that sounds wrong instead.",
+    "Avoid titles that are just topics (e.g., 'Why Ponds Don't Freeze') without a curiosity gap or specific emotional trigger."
   ],
-  "next_experiment": "A/B test a T. rex physics video with a 3-word title and immediate negative hook ('T. rex couldn't run') against a standard descriptive title to see if the stayed_pct breaks past the 60% threshold."
+  "next_experiment": "A/B test the 'Myth-Buster' hook: Take a new topic and create two versions—Version A starts with a 'Why' question, Version B starts with a direct, controversial statement contradicting the audience's assumed knowledge."
 }

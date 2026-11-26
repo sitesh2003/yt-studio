@@ -1,22 +1,21 @@
 {
   "lessons": [
-    "Lead hooks with bold, concrete historical or scientific comparisons (e.g., 'older than the United States' achieved 1.85 retention at 10% and over 1.0 at the end).",
-    "Avoid verbatim repetition of the video title or hook in the first line; repeating the question causes massive immediate drop-offs (e.g., repeating the potato sprouting question caused a 31.9% drop at 9%).",
-    "Eliminate filler transition statements like 'They are not just there to look cool' or 'They look like similar fruits', which trigger 30%+ drop rates around 10-14% into the video.",
-    "Do not pause for audience countdowns or 'Pause and guess' prompts, as these directly cause steep mid-video viewer drops (e.g., up to 15.2% lost during countdowns in the foil and syrup videos).",
-    "Present active scientific comparisons and counter-intuitive facts (e.g., Red tuna vs White cod meat held 65.8% retention at 50%), rather than standard anatomical explanations which suffer heavy retention decay (e.g., leg asleep and funny bone dropped to under 10% at the end)."
+    "Lead hooks with bold, counter-intuitive facts or striking comparisons rather than restating the title or topic (e.g., Greenland shark video reached 1.85x retention at 10% with 'older than the United States').",
+    "Avoid repeating the video title or hook idea immediately after the start; repeating questions causes major drop-offs (e.g., Potato sprouted drop of 31.9% and Garlic drop of 34.0% right after the intro).",
+    "Eliminate generic filler and obvious observations; viewers leave when given redundant fluff (e.g., 'They look like similar fruits' lost 30.0%, 'They are not just there to look cool' lost 31.5%).",
+    "Do not pause narration for artificial engagement prompts like 'Pause and guess'; interactive pauses cause measurable audience drop (e.g., Foil video dropped 15.2% during 'Pause and guess... three, two, one').",
+    "Maintain continuous narrative momentum with high-density scientific detail to drive end-to-end retention above platform benchmarks (e.g., Tuna vs Cod achieved 0.86 vs_similar_end and Webb telescope achieved 0.65 vs_similar_end)."
   ],
   "worst_moment_types": [
-    "Verbatim repetition of the hook question immediately after the opening",
-    "Generic filler setup lines ('They look like similar fruits', 'They are not just there to look cool')",
-    "Interactive prompts and countdown pauses ('Pause and guess... three, two, one')",
-    "Stating obvious common knowledge before delivering the scientific cause"
+    "Immediate repetition of the title or initial hook concept in the following sentence.",
+    "Generic filler phrases and restatements of the obvious (e.g., 'They look like similar fruits').",
+    "Interactive callouts or artificial countdown pauses (e.g., 'Pause and guess... three, two, one').",
+    "Duplicate script audio lines played back-to-back."
   ],
   "best_hook_types": [
-    "Surprising, concrete comparative statements ('older than the United States')",
-    "Challenging scientific consensus or major space discoveries ('Scientists missed an outer Kuiper belt')",
-    "Intriguing mystery claims about high-profile topics ('Most James Webb images hold secrets')",
-    "Direct side-by-side visual/physical contradictions ('tuna steak looks like deep red beef, while a cod fillet is bright white')"
+    "Historical or scale-based provocative facts (e.g., 'This shark is older than the United States').",
+    "Direct sensory/visual contrast comparisons (e.g., 'Tuna steak looks like deep red beef, while a cod fillet is bright white').",
+    "Challenging established common knowledge directly in sentence one (e.g., 'Pluto seemed like our solar system's edge, yet astronomers...')."
   ],
   "studied": "2026-11-26",
   "videos": 23
