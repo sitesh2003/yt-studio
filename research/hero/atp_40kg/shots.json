@@ -1,0 +1,96 @@
+{
+  "shots": [
+    {
+      "kind": "atp_muscle",
+      "overlay": "label",
+      "lens": 22,
+      "label": [
+        "ABOUT 40 kg A DAY",
+        "used even at rest"
+      ],
+      "source": "Tymoczko, Berg & Stryer, Biochemistry: A Short Course"
+    },
+    {
+      "kind": "atp_molecule",
+      "overlay": "label",
+      "lens": 28,
+      "split": true,
+      "label": [
+        "ABOUT 100 g",
+        "in your body at once"
+      ]
+    },
+    {
+      "kind": "atp_molecule",
+      "overlay": "label",
+      "lens": 28,
+      "label": [
+        "ATP",
+        "the energy coin cells spend"
+      ]
+    },
+    {
+      "kind": "atp_molecule",
+      "overlay": "label",
+      "lens": 28,
+      "split": true,
+      "label": [
+        "SPENT ATP",
+        "loses a piece, becomes ADP"
+      ]
+    },
+    {
+      "kind": "atp_mito",
+      "overlay": "label",
+      "lens": 20,
+      "dive": true,
+      "label": [
+        "REBUILT AGAIN AND AGAIN",
+        "hundreds of times a day"
+      ]
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "lens": 35,
+      "mode": "orbit",
+      "slow": 0.4,
+      "label": [
+        "ATP SYNTHASE",
+        "a spinning turbine"
+      ]
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "lens": 35,
+      "mode": "spin",
+      "slow": 0.5,
+      "label": [
+        "100 g HELD, 40 kg USED",
+        "every single day"
+      ]
+    },
+    {
+      "kind": "atp_muscle",
+      "overlay": "none",
+      "lens": 22
+    }
+  ],
+  "hi_labels": {
+    "100 g HELD, 40 kg USED": "100 g पास, 40 kg खर्च",
+    "ABOUT 100 g": "लगभग 100 g",
+    "ABOUT 40 kg A DAY": "रोज़ लगभग 40 kg",
+    "ATP": "ATP",
+    "ATP SYNTHASE": "ATP SYNTHASE",
+    "REBUILT AGAIN AND AGAIN": "बार-बार फिर से बनता है",
+    "SPENT ATP": "खर्च हुआ ATP",
+    "a spinning turbine": "घूमता turbine",
+    "every single day": "हर एक दिन",
+    "hundreds of times a day": "दिन में सैकड़ों बार",
+    "in your body at once": "शरीर में एक समय पर",
+    "loses a piece, becomes ADP": "एक टुकड़ा खोकर ADP बनता है",
+    "the energy coin cells spend": "कोशिकाओं का ऊर्जा-सिक्का",
+    "used even at rest": "आराम में भी खर्च"
+  }
+}

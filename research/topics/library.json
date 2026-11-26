@@ -543,9 +543,10 @@
       ],
       "votes": {},
       "score": 0,
-      "status": "idea",
+      "status": "merged",
       "added": "2026-11-22",
-      "from": "PLAN_3D micro series"
+      "from": "PLAN_3D micro series",
+      "note": "made as the ATP book and its chapter Shorts (26 Nov 2026)"
     },
     {
       "id": "rbc_trip",
@@ -661,7 +662,7 @@
         "hi"
       ],
       "look": "micro",
-      "status": "picked",
+      "status": "uploaded",
       "council": "2026-11-25",
       "score": 3,
       "votes": {
@@ -724,6 +725,18 @@
           "n": 8,
           "q": "What happens when cyanide blocks the chain? (Complex IV, not ATP synthase)"
         }
+      ],
+      "uploaded": {
+        "main": {
+          "video": "YMdC5_OisnY",
+          "public": "2026-12-12T19:00:00-05:00"
+        }
+      },
+      "chapter_shorts": [
+        "atp_40kg",
+        "atp_turbine",
+        "atp_three",
+        "atp_where"
       ]
     }
   ]

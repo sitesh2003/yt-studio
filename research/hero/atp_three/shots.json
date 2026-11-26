@@ -1,0 +1,104 @@
+{
+  "shots": [
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "lens": 35,
+      "mode": "beta",
+      "slow": 0.3,
+      "label": [
+        "3 ATP PER TURN",
+        "one from each part"
+      ],
+      "source": "Watt et al. 2010, PNAS 107:16823"
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "lens": 35,
+      "mode": "beta",
+      "slow": 0.3,
+      "label": [
+        "THE CROOKED SHAFT",
+        "turns inside the head"
+      ]
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "lens": 35,
+      "mode": "beta",
+      "slow": 0.3,
+      "label": [
+        "THREE WORKING PARTS",
+        "each changes shape"
+      ]
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "lens": 35,
+      "mode": "beta",
+      "slow": 0.3,
+      "label": [
+        "OPEN - LOOSE",
+        "grab, then hold"
+      ],
+      "source": "Boyer 1997, Annual Review of Biochemistry 66:717"
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "lens": 35,
+      "mode": "beta",
+      "slow": 0.3,
+      "label": [
+        "TIGHT",
+        "pressed into ATP"
+      ]
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "lens": 35,
+      "mode": "orbit",
+      "slow": 0.4,
+      "label": [
+        "NOBEL PRIZE 1997",
+        "Paul Boyer and John Walker"
+      ]
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "lens": 35,
+      "mode": "spin",
+      "slow": 0.5,
+      "label": [
+        "3 ATP EVERY TURN",
+        "~100 turns a second"
+      ]
+    },
+    {
+      "kind": "atp_muscle",
+      "overlay": "none",
+      "lens": 22
+    }
+  ],
+  "hi_labels": {
+    "3 ATP EVERY TURN": "हर चक्कर 3 ATP",
+    "3 ATP PER TURN": "हर चक्कर में 3 ATP",
+    "NOBEL PRIZE 1997": "NOBEL PRIZE 1997",
+    "OPEN - LOOSE": "खुला - ढीला",
+    "Paul Boyer and John Walker": "Paul Boyer और John Walker",
+    "THE CROOKED SHAFT": "टेढ़ी धुरी",
+    "THREE WORKING PARTS": "तीन काम करने वाले हिस्से",
+    "TIGHT": "कसा हुआ",
+    "each changes shape": "हर एक आकार बदलता है",
+    "grab, then hold": "पकड़ो, फिर थामो",
+    "one from each part": "हर हिस्से से एक",
+    "pressed into ATP": "दबाकर ATP बनता है",
+    "turns inside the head": "सिर के अंदर घूमती है",
+    "~100 turns a second": "हर second ~100 चक्कर"
+  }
+}

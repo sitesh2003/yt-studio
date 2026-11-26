@@ -1,0 +1,26 @@
+{
+  "title_options": ["There Are Real Turbines Spinning Inside You 🌀"],
+  "share": {
+    "myth": "Nothing inside a living cell actually spins like a machine.",
+    "truth": "ATP synthase is a rotary motor: protons flowing through its ring of eight c-subunits (in animals) turn it about 100 times a second; its rotation was first seen directly in 1997 (Watt et al. 2010, PNAS; Noji et al. 1997, Nature).",
+    "line": "Your cells are full of real turbines, spun by protons about a hundred times every second."
+  },
+  "facts": [
+    "Watt IN et al. 2010, PNAS 107:16823: the central stalk and c-ring rotate about 100 times per second; the bovine c-ring has 8 subunits, so 8 protons drive one full turn.",
+    "Noji H et al. 1997, Nature 386:299: rotation of F1-ATPase seen directly by attaching a fluorescent actin filament to the rotor.",
+    "Respiratory chain complexes pump protons across the inner mitochondrial membrane, building the gradient that drives ATP synthase (standard textbooks)."
+  ],
+  "description": "Inside your mitochondria, a real rotary motor called ATP synthase is spun by protons about a hundred times a second. Chapter 5 of our book The Tiny Turbine That Powers Your Body. #shorts #biology #science #mitochondria",
+  "sources": "Watt et al. 2010, PNAS 107:16823 (c8 ring, ~100 rotations per second); Noji et al. 1997, Nature 386:299 (rotation seen directly).",
+  "tags": ["ATP synthase", "mitochondria", "molecular machine", "biology", "proton gradient", "science", "3D animation"],
+  "scenes": [
+    {"narration": "Inside your cells, a turbine is spinning about a hundred times a second."},
+    {"narration": "It's called ATP synthase, and it sits in the folded inner membrane of your mitochondria."},
+    {"narration": "Tiny pumps in that membrane push protons to one side, like water piling up behind a dam."},
+    {"narration": "The protons flow back through the turbine's ring. In animals, the ring has eight pieces."},
+    {"narration": "Each proton turns the ring one step. Eight protons, one full turn."},
+    {"narration": "In nineteen ninety-seven, scientists in Japan attached a glowing filament to it and watched it rotate."},
+    {"narration": "Your cells are full of real turbines, spun by protons about a hundred times every second."},
+    {"narration": "So what do you think happens to all those turbines when you start to run?"}
+  ]
+}

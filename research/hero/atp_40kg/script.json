@@ -1,0 +1,25 @@
+{
+  "title_options": ["You Use 40 kg Of This Molecule Every Day ⚡"],
+  "share": {
+    "myth": "Your body stores the energy it needs, like a battery that slowly runs down.",
+    "truth": "A resting person uses about 40 kg of ATP a day but holds only about 100 g at any moment, so every ATP molecule is rebuilt hundreds of times a day (Tymoczko, Berg & Stryer, Biochemistry: A Short Course).",
+    "line": "You hold only about a hundred grams of ATP, yet you burn through about forty kilograms of it every day."
+  },
+  "facts": [
+    "Tymoczko, Berg & Stryer, Biochemistry: A Short Course (3rd ed.): a resting human uses about 40 kg of ATP in 24 hours while the body holds about 100 g, so ATP is recycled constantly.",
+    "ATP is hydrolysed to ADP and phosphate when it is used, and ATP synthase in mitochondria makes most of it back (standard biochemistry textbooks; Watt et al. 2010, PNAS 107:16823)."
+  ],
+  "description": "Your whole body holds only about 100 grams of ATP, yet you use around 40 kilograms of it every day, even resting. Chapter 1 of our book The Tiny Turbine That Powers Your Body. #shorts #biology #science #ATP",
+  "sources": "Tymoczko, Berg & Stryer, Biochemistry: A Short Course, 3rd ed. (ATP turnover); Watt et al. 2010, PNAS 107:16823 (ATP synthase).",
+  "tags": ["ATP", "mitochondria", "biology", "cell biology", "ATP synthase", "science", "3D animation"],
+  "scenes": [
+    {"narration": "Even resting, you use about forty kilograms of a molecule called ATP every day."},
+    {"narration": "But your whole body holds only about a hundred grams of it at any moment."},
+    {"narration": "ATP is the energy coin your cells spend. Every muscle pull and every nerve signal is paid in ATP."},
+    {"narration": "When it's spent, it loses a piece and becomes ADP."},
+    {"narration": "So every molecule has to be rebuilt again and again, hundreds of times a day."},
+    {"narration": "The rebuilding happens in your mitochondria, on a machine that spins like a turbine."},
+    {"narration": "You hold only about a hundred grams of ATP, yet you burn through about forty kilograms of it every day."},
+    {"narration": "So what do you think happens to all those turbines when you start to run?"}
+  ]
+}

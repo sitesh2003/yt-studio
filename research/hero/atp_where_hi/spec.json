@@ -1,0 +1,123 @@
+{
+  "assets_dir": "assets/3d",
+  "renderer": "micro",
+  "end_beat_s": 0.6,
+  "shots": [
+    {
+      "kind": "atp_molecule",
+      "overlay": "label",
+      "lens": 28,
+      "split": true,
+      "label": [
+        "EVEN SITTING STILL",
+        "about 40 kg a day"
+      ],
+      "source": "Tymoczko, Berg & Stryer, Biochemistry: A Short Course",
+      "seconds": 6.098,
+      "render_seconds": 6.198,
+      "event_seconds": 4.182
+    },
+    {
+      "kind": "atp_muscle",
+      "overlay": "label",
+      "lens": 22,
+      "label": [
+        "MUSCLES",
+        "every pull spends ATP"
+      ],
+      "seconds": 6.481,
+      "render_seconds": 6.581,
+      "event_seconds": 4.549
+    },
+    {
+      "kind": "atp_molecule",
+      "overlay": "label",
+      "lens": 28,
+      "label": [
+        "NERVES",
+        "pumps keep them ready to fire"
+      ],
+      "seconds": 5.397,
+      "render_seconds": 5.497,
+      "event_seconds": 3.777
+    },
+    {
+      "kind": "atp_molecule",
+      "overlay": "label",
+      "lens": 28,
+      "split": true,
+      "label": [
+        "BUILDING",
+        "every new protein costs ATP"
+      ],
+      "seconds": 6.002,
+      "render_seconds": 6.102,
+      "event_seconds": 4.163
+    },
+    {
+      "kind": "atp_mito",
+      "overlay": "label",
+      "lens": 25,
+      "label": [
+        "HEART AND BRAIN",
+        "never stop asking"
+      ],
+      "seconds": 4.408,
+      "render_seconds": 4.508,
+      "event_seconds": 3.072
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "lens": 35,
+      "mode": "spin",
+      "slow": 0.5,
+      "label": [
+        "REBUILT BY TURBINES",
+        "~100 turns a second"
+      ],
+      "source": "Watt et al. 2010, PNAS 107:16823",
+      "seconds": 6.32,
+      "render_seconds": 6.42,
+      "event_seconds": 4.527
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "lens": 35,
+      "mode": "orbit",
+      "slow": 0.4,
+      "label": [
+        "40 kg A DAY",
+        "every bit rebuilt"
+      ],
+      "seconds": 7.33,
+      "render_seconds": 7.43,
+      "event_seconds": 6.011
+    },
+    {
+      "kind": "atp_muscle",
+      "overlay": "none",
+      "lens": 22,
+      "seconds": 5.157,
+      "render_seconds": 5.257,
+      "event_seconds": 3.86
+    }
+  ],
+  "hi_labels": {
+    "40 kg A DAY": "रोज़ 40 kg",
+    "BUILDING": "निर्माण",
+    "EVEN SITTING STILL": "चुपचाप बैठे हुए भी",
+    "HEART AND BRAIN": "दिल और दिमाग़",
+    "MUSCLES": "मांसपेशियाँ",
+    "NERVES": "नसें",
+    "REBUILT BY TURBINES": "turbine फिर से बनाते हैं",
+    "about 40 kg a day": "रोज़ लगभग 40 kg",
+    "every bit rebuilt": "हर अंश फिर से बनता है",
+    "every new protein costs ATP": "हर नया protein ATP माँगता है",
+    "every pull spends ATP": "हर खिंचाव ATP खर्च करता है",
+    "never stop asking": "कभी माँगना बंद नहीं करते",
+    "pumps keep them ready to fire": "pump उन्हें तैयार रखते हैं",
+    "~100 turns a second": "हर second ~100 चक्कर"
+  }
+}

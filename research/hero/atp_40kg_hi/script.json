@@ -1,0 +1,22 @@
+{
+  "title_options": ["आप रोज़ 40 kg ATP खर्च करते हैं ⚡"],
+  "share": {
+    "myth": "शरीर ऊर्जा को battery की तरह जमा रखता है, जो धीरे-धीरे खत्म होती है।",
+    "truth": "आराम करता इंसान रोज़ लगभग 40 kg ATP खर्च करता है, पर शरीर में एक समय पर सिर्फ़ लगभग 100 g होता है, इसलिए हर अणु दिन में सैकड़ों बार फिर से बनता है (Tymoczko, Berg & Stryer)।",
+    "line": "आपके शरीर में सिर्फ़ सौ ग्राम ATP है, फिर भी आप रोज़ लगभग चालीस किलो खर्च कर देते हैं।"
+  },
+  "facts": ["Tymoczko, Berg & Stryer, Biochemistry: A Short Course (3rd ed.): about 40 kg of ATP used per day at rest; about 100 g in the body at once."],
+  "description": "पूरे शरीर में सिर्फ़ लगभग 100 ग्राम ATP होता है, फिर भी आराम करते हुए भी हम रोज़ लगभग 40 किलो खर्च करते हैं। हमारी किताब 'आपके अंदर का नन्हा turbine' का पहला अध्याय। #shorts #hindi #science #biology",
+  "sources": "Tymoczko, Berg & Stryer, Biochemistry: A Short Course, 3rd ed.; Watt et al. 2010, PNAS 107:16823.",
+  "tags": ["ATP hindi", "biology hindi", "science hindi", "mitochondria hindi", "3D animation"],
+  "scenes": [
+    {"narration": "आराम करते हुए भी, आप रोज़ लगभग चालीस किलो ATP नाम का अणु खर्च करते हैं।"},
+    {"narration": "पर आपके पूरे शरीर में, किसी भी समय, सिर्फ़ लगभग सौ ग्राम ATP होता है।"},
+    {"narration": "ATP कोशिकाओं का ऊर्जा-सिक्का है। मांसपेशी का हर खिंचाव, नस का हर संदेश, ATP से चुकाया जाता है।"},
+    {"narration": "खर्च होने पर ATP एक टुकड़ा खो देता है और ADP बन जाता है।"},
+    {"narration": "इसलिए हर अणु को बार-बार फिर से बनाना पड़ता है, दिन में सैकड़ों बार।"},
+    {"narration": "यह काम माइटोकॉन्ड्रिया में होता है, एक ऐसी मशीन पर जो turbine की तरह घूमती है।"},
+    {"narration": "आपके शरीर में सिर्फ़ सौ ग्राम ATP है, फिर भी आप रोज़ लगभग चालीस किलो खर्च कर देते हैं।"},
+    {"narration": "तो जब आप दौड़ना शुरू करते हैं, तब इन turbines का क्या होता होगा?"}
+  ]
+}

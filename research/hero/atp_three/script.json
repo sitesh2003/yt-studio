@@ -1,0 +1,26 @@
+{
+  "title_options": ["How A Spinning Motor In You Makes Energy ⚙️"],
+  "share": {
+    "myth": "Cells make energy molecules by simple chemistry, with no moving parts.",
+    "truth": "In ATP synthase, a rotating shaft squeezes each of three catalytic sites through open, loose and tight shapes, so every full turn makes three ATP (Boyer 1997, Annual Review of Biochemistry; Watt et al. 2010, PNAS).",
+    "line": "Every turn of the tiny turbine in your cells squeezes out three ATP, about a hundred turns a second."
+  },
+  "facts": [
+    "Boyer PD 1997, Annu Rev Biochem 66:717: binding change mechanism; each catalytic beta site cycles through open, loose and tight states as the asymmetric central stalk rotates.",
+    "Watt IN et al. 2010, PNAS 107:16823: each 360 degree rotation makes 3 ATP; about 100 rotations per second.",
+    "Nobel Prize in Chemistry 1997: Paul D. Boyer and John E. Walker, for the enzymatic mechanism of ATP synthesis (shared with Jens C. Skou)."
+  ],
+  "description": "A crooked shaft turning inside ATP synthase squeezes three working parts into new shapes, and every turn makes three ATP. Chapter 6 of our book The Tiny Turbine That Powers Your Body. #shorts #biology #science #biochemistry",
+  "sources": "Boyer 1997, Annual Review of Biochemistry 66:717 (binding change); Watt et al. 2010, PNAS 107:16823 (3 ATP per turn); Nobel Prize in Chemistry 1997.",
+  "tags": ["ATP synthase", "binding change", "biochemistry", "mitochondria", "Nobel Prize", "science", "3D animation"],
+  "scenes": [
+    {"narration": "Every turn of this tiny turbine makes three molecules of ATP. Here's how."},
+    {"narration": "The spinning ring turns a crooked shaft, inside a head of three working parts."},
+    {"narration": "As the shaft turns, it squeezes each part into a new shape, one after another."},
+    {"narration": "Open, to grab the pieces. Loose, to hold them."},
+    {"narration": "Tight, to press them together into ATP. Then it opens and lets the ATP go."},
+    {"narration": "That idea won the Nobel Prize in Chemistry in nineteen ninety-seven."},
+    {"narration": "Every turn of the tiny turbine in your cells squeezes out three ATP, about a hundred turns a second."},
+    {"narration": "So what do you think happens to all those turbines when you start to run?"}
+  ]
+}

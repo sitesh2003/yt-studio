@@ -1,0 +1,107 @@
+{
+  "assets_dir": "assets/3d",
+  "renderer": "micro",
+  "end_beat_s": 0.6,
+  "shots": [
+    {
+      "kind": "atp_muscle",
+      "overlay": "label",
+      "lens": 22,
+      "label": [
+        "ABOUT 40 kg A DAY",
+        "used even at rest"
+      ],
+      "source": "Tymoczko, Berg & Stryer, Biochemistry: A Short Course",
+      "seconds": 4.069,
+      "render_seconds": 5.179,
+      "event_seconds": 4.069
+    },
+    {
+      "kind": "atp_molecule",
+      "overlay": "label",
+      "lens": 28,
+      "split": true,
+      "label": [
+        "ABOUT 100 g",
+        "in your body at once"
+      ],
+      "seconds": 3.165,
+      "render_seconds": 5.057,
+      "event_seconds": 3.165
+    },
+    {
+      "kind": "atp_molecule",
+      "overlay": "label",
+      "lens": 28,
+      "label": [
+        "ATP",
+        "the energy coin cells spend"
+      ],
+      "seconds": 5.311,
+      "render_seconds": 7.25,
+      "event_seconds": 5.311
+    },
+    {
+      "kind": "atp_molecule",
+      "overlay": "label",
+      "lens": 28,
+      "split": true,
+      "label": [
+        "SPENT ATP",
+        "loses a piece, becomes ADP"
+      ],
+      "seconds": 3.0,
+      "render_seconds": 4.419,
+      "event_seconds": 3.0
+    },
+    {
+      "kind": "atp_mito",
+      "overlay": "label",
+      "lens": 20,
+      "dive": true,
+      "label": [
+        "REBUILT AGAIN AND AGAIN",
+        "hundreds of times a day"
+      ],
+      "seconds": 4.484,
+      "render_seconds": 4.584,
+      "event_seconds": 4.336
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "lens": 35,
+      "mode": "orbit",
+      "slow": 0.4,
+      "label": [
+        "ATP SYNTHASE",
+        "a spinning turbine"
+      ],
+      "seconds": 4.044,
+      "render_seconds": 5.137,
+      "event_seconds": 4.044
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "lens": 35,
+      "mode": "spin",
+      "slow": 0.5,
+      "label": [
+        "100 g HELD, 40 kg USED",
+        "every single day"
+      ],
+      "seconds": 4.909,
+      "render_seconds": 5.979,
+      "event_seconds": 4.909
+    },
+    {
+      "kind": "atp_muscle",
+      "overlay": "none",
+      "lens": 22,
+      "seconds": 3.86,
+      "render_seconds": 5.257,
+      "event_seconds": 3.86
+    }
+  ]
+}

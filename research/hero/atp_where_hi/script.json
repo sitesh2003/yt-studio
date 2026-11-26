@@ -1,0 +1,22 @@
+{
+  "title_options": ["आपके शरीर की ऊर्जा आखिर जाती कहाँ है? 🔋"],
+  "share": {
+    "myth": "चुपचाप बैठने में लगभग कोई ऊर्जा खर्च नहीं होती।",
+    "truth": "आराम में भी इंसान रोज़ लगभग 40 kg ATP खर्च करता है: मांसपेशियों पर, नसों को तैयार रखने वाले pump पर, और protein बनाने पर; लगभग सारा ATP synthase फिर से बनाता है (Tymoczko, Berg & Stryer; Watt et al. 2010)।",
+    "line": "चुपचाप बैठे हुए भी आप रोज़ लगभग चालीस किलो ATP खर्च करते हैं, और नन्हे turbine उसका हर अंश फिर से बनाते हैं।"
+  },
+  "facts": ["Tymoczko, Berg & Stryer (3rd ed.): about 40 kg of ATP per day at rest; ATP powers muscle, the sodium-potassium pump and protein synthesis. Watt et al. 2010, PNAS 107:16823."],
+  "description": "चुपचाप बैठे हुए भी हम रोज़ लगभग 40 किलो ATP खर्च करते हैं, मांसपेशियों, नसों और protein बनाने पर, और नन्हे turbine यह सब फिर से बनाते हैं। हमारी किताब का सातवाँ अध्याय। #shorts #hindi #science #biology",
+  "sources": "Tymoczko, Berg & Stryer, Biochemistry: A Short Course, 3rd ed.; Watt et al. 2010, PNAS 107:16823.",
+  "tags": ["ATP hindi", "energy hindi", "biology hindi", "science hindi", "3D animation"],
+  "scenes": [
+    {"narration": "बिल्कुल चुपचाप बैठे हुए भी, आपकी कोशिकाएँ रोज़ लगभग चालीस किलो ATP खर्च कर देती हैं।"},
+    {"narration": "यह सब जाता कहाँ है? पहले, मांसपेशियों में। हर तंतु का हर खिंचाव ATP खर्च करता है।"},
+    {"narration": "फिर नसों में। pump ATP खर्च करके हर नस को संदेश भेजने के लिए तैयार रखते हैं।"},
+    {"narration": "फिर निर्माण। आपकी कोशिकाएँ जो भी नया protein बनाती हैं, उसकी कीमत ATP से चुकती है।"},
+    {"narration": "और आपका दिल और दिमाग़, नींद में भी, इसे माँगना कभी बंद नहीं करते।"},
+    {"narration": "यह सारा ATP माइटोकॉन्ड्रिया के turbine फिर से बनाते हैं, जो हर सेकंड लगभग सौ बार घूमते हैं।"},
+    {"narration": "चुपचाप बैठे हुए भी आप रोज़ लगभग चालीस किलो ATP खर्च करते हैं, और नन्हे turbine उसका हर अंश फिर से बनाते हैं।"},
+    {"narration": "तो जब आप दौड़ना शुरू करते हैं, तब इन turbines का क्या होता होगा?"}
+  ]
+}

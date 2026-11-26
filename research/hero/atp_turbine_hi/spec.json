@@ -1,0 +1,128 @@
+{
+  "assets_dir": "assets/3d",
+  "renderer": "micro",
+  "end_beat_s": 0.6,
+  "shots": [
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "lens": 35,
+      "mode": "spin",
+      "slow": 0.5,
+      "label": [
+        "~100 TURNS A SECOND",
+        "shown here slowed down"
+      ],
+      "source": "Watt et al. 2010, PNAS 107:16823",
+      "seconds": 4.744,
+      "render_seconds": 4.844,
+      "event_seconds": 3.498
+    },
+    {
+      "kind": "atp_mito",
+      "overlay": "label",
+      "lens": 20,
+      "dive": true,
+      "label": [
+        "MITOCHONDRIA",
+        "the folded inner membrane"
+      ],
+      "seconds": 5.597,
+      "render_seconds": 5.697,
+      "event_seconds": 4.159
+    },
+    {
+      "kind": "atp_dam",
+      "overlay": "label",
+      "lens": 28,
+      "label": [
+        "A PROTON DAM",
+        "crowded on one side"
+      ],
+      "seconds": 5.719,
+      "render_seconds": 5.819,
+      "event_seconds": 4.862
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "lens": 35,
+      "mode": "protons",
+      "slow": 0.35,
+      "label": [
+        "8 PIECES",
+        "the ring, in animals"
+      ],
+      "source": "Watt et al. 2010, PNAS 107:16823",
+      "seconds": 5.981,
+      "render_seconds": 6.081,
+      "event_seconds": 4.502
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "lens": 35,
+      "mode": "protons",
+      "slow": 0.35,
+      "label": [
+        "8 PROTONS = 1 TURN",
+        "one proton, one step"
+      ],
+      "seconds": 4.83,
+      "render_seconds": 4.93,
+      "event_seconds": 4.153
+    },
+    {
+      "kind": "atp_noji",
+      "overlay": "label",
+      "lens": 26,
+      "slow": 0.5,
+      "label": [
+        "1997",
+        "the spin, seen directly"
+      ],
+      "source": "Noji et al. 1997, Nature 386:299",
+      "seconds": 6.422,
+      "render_seconds": 6.522,
+      "event_seconds": 4.486
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "lens": 35,
+      "mode": "orbit",
+      "slow": 0.4,
+      "label": [
+        "REAL TURBINES",
+        "spun by protons"
+      ],
+      "seconds": 5.57,
+      "render_seconds": 5.67,
+      "event_seconds": 4.547
+    },
+    {
+      "kind": "atp_muscle",
+      "overlay": "none",
+      "lens": 22,
+      "seconds": 5.157,
+      "render_seconds": 5.257,
+      "event_seconds": 3.86
+    }
+  ],
+  "hi_labels": {
+    "1997": "1997",
+    "8 PIECES": "8 टुकड़े",
+    "8 PROTONS = 1 TURN": "8 प्रोटॉन = 1 चक्कर",
+    "A PROTON DAM": "प्रोटॉन का बाँध",
+    "MITOCHONDRIA": "माइटोकॉन्ड्रिया",
+    "REAL TURBINES": "असली turbine",
+    "crowded on one side": "एक तरफ़ भीड़",
+    "one proton, one step": "एक प्रोटॉन, एक कदम",
+    "shown here slowed down": "यहाँ धीमा दिखाया गया",
+    "spun by protons": "प्रोटॉन से घूमते",
+    "the folded inner membrane": "मुड़ी हुई भीतरी झिल्ली",
+    "the ring, in animals": "जानवरों में यह छल्ला",
+    "the spin, seen directly": "घूमना, सीधे देखा गया",
+    "~100 TURNS A SECOND": "हर second ~100 चक्कर"
+  }
+}

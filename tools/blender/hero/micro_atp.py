@@ -249,13 +249,13 @@ def shot_synthase(cam, tgt):
         key_loc(cam, [(1, (18, -26, -2)), (N, (13, -21, 0))])
         key_loc(tgt, [(1, (2, 0, -1))])
     elif mode == "orbit":
-        pts = [(F(t / 8), (34 * math.cos(-2.0 + 1.4 * t / 8), 34 * math.sin(-2.0 + 1.4 * t / 8), 10 + 4 * t / 8))
+        pts = [(F(t / 8), (44 * math.cos(-2.0 + 1.4 * t / 8), 44 * math.sin(-2.0 + 1.4 * t / 8), 12 + 4 * t / 8))
                for t in range(9)]
         key_loc(cam, pts)
-        key_loc(tgt, [(1, (0, 0, 7))])
+        key_loc(tgt, [(1, (0, 0, 8.5))])                        # far enough that the top cap never leaves frame
     else:
-        key_loc(cam, [(1, (24, -40, 14)), (N, (18, -32, 10))])
-        key_loc(tgt, [(1, (0, 0, 7))])
+        key_loc(cam, [(1, (24, -40, 14)), (N, (20, -35, 12))])
+        key_loc(tgt, [(1, (0, 0, 8.5))])
     smooth(cam)
     cam.data.dof.aperture_fstop = 2.8
 
@@ -291,7 +291,7 @@ def shot_noji(cam, tgt):
     key_loc(cam, [(1, (0, -48, 52)), (N, (0, -42, 46))])
     key_loc(tgt, [(1, (10, 0, 6))])
     smooth(cam)
-    cam.data.lens = 30
+    cam.data.lens = SHOT.get("lens", 30)
     cam.data.dof.aperture_fstop = 11
 
 

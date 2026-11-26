@@ -1,0 +1,26 @@
+{
+  "title_options": ["Where Your Body's Energy Actually Goes 🔋"],
+  "share": {
+    "myth": "Sitting still uses almost no energy.",
+    "truth": "Even at rest a person turns over about 40 kg of ATP a day, spent on muscles, ion pumps that keep nerves ready, and building proteins; nearly all of it is remade by ATP synthase (Tymoczko, Berg & Stryer; Watt et al. 2010, PNAS).",
+    "line": "Even sitting still, you spend about forty kilograms of ATP a day, and tiny turbines rebuild every bit of it."
+  },
+  "facts": [
+    "Tymoczko, Berg & Stryer, Biochemistry: A Short Course (3rd ed.): a resting human uses about 40 kg of ATP in 24 hours.",
+    "ATP powers muscle contraction, the sodium-potassium pump that keeps nerve cells ready to fire, and protein synthesis (standard biochemistry textbooks).",
+    "Watt IN et al. 2010, PNAS 107:16823: ATP synthase rotates about 100 times per second, making 3 ATP per turn."
+  ],
+  "description": "Even sitting still you spend about 40 kg of ATP a day, on muscles, nerves and building proteins, and tiny turbines rebuild all of it. Chapter 7 of our book The Tiny Turbine That Powers Your Body. #shorts #biology #science #ATP",
+  "sources": "Tymoczko, Berg & Stryer, Biochemistry: A Short Course, 3rd ed. (ATP turnover and uses); Watt et al. 2010, PNAS 107:16823 (ATP synthase).",
+  "tags": ["ATP", "energy", "metabolism", "biology", "mitochondria", "science", "3D animation"],
+  "scenes": [
+    {"narration": "Even sitting perfectly still, your cells burn through about forty kilograms of ATP a day."},
+    {"narration": "Where does it all go? First, your muscles. Every pull of every fibre spends ATP."},
+    {"narration": "Then your nerves. Pumps spend ATP to keep every nerve cell ready to fire."},
+    {"narration": "Then building. Every new protein your cells make is paid for in ATP."},
+    {"narration": "And your heart and brain never stop asking for it, even while you sleep."},
+    {"narration": "All of it is rebuilt by turbines in your mitochondria, spinning about a hundred times a second."},
+    {"narration": "Even sitting still, you spend about forty kilograms of ATP a day, and tiny turbines rebuild every bit of it."},
+    {"narration": "So what do you think happens to all those turbines when you start to run?"}
+  ]
+}

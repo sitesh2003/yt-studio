@@ -1,0 +1,22 @@
+{
+  "title_options": ["आपके अंदर की घूमती मोटर ऊर्जा कैसे बनाती है ⚙️"],
+  "share": {
+    "myth": "कोशिकाएँ ऊर्जा के अणु सीधी-सादी रसायन से बनाती हैं, कोई हिलता हिस्सा नहीं होता।",
+    "truth": "ATP synthase में घूमती धुरी तीनों काम करने वाले हिस्सों को खुला, ढीला और कसा आकार देती है, इसलिए हर पूरे चक्कर में तीन ATP बनते हैं (Boyer 1997; Watt et al. 2010)।",
+    "line": "आपकी कोशिकाओं का नन्हा turbine हर चक्कर में तीन ATP निचोड़ता है, और हर सेकंड लगभग सौ चक्कर लगाता है।"
+  },
+  "facts": ["Boyer 1997, Annu Rev Biochem 66:717: binding change. Watt et al. 2010, PNAS 107:16823: 3 ATP per turn, ~100 turns per second. Nobel Prize in Chemistry 1997: Boyer and Walker."],
+  "description": "ATP synthase के अंदर एक टेढ़ी धुरी घूमकर तीन हिस्सों का आकार बदलती है, और हर चक्कर में तीन ATP बनते हैं। हमारी किताब का छठा अध्याय। #shorts #hindi #science #biology",
+  "sources": "Boyer 1997, Annual Review of Biochemistry 66:717; Watt et al. 2010, PNAS 107:16823; Nobel Prize in Chemistry 1997.",
+  "tags": ["ATP synthase hindi", "biochemistry hindi", "science hindi", "Nobel Prize hindi", "3D animation"],
+  "scenes": [
+    {"narration": "इस नन्हे turbine का हर चक्कर, ATP के तीन अणु बनाता है। देखिए कैसे।"},
+    {"narration": "घूमता छल्ला एक टेढ़ी धुरी को घुमाता है, जो तीन काम करने वाले हिस्सों के सिर के अंदर है।"},
+    {"narration": "धुरी घूमते हुए हर हिस्से को एक-एक करके नए आकार में दबाती है।"},
+    {"narration": "खुला, टुकड़ों को पकड़ने के लिए। ढीला, उन्हें थामने के लिए।"},
+    {"narration": "कसा हुआ, उन्हें दबाकर ATP बनाने के लिए। फिर हिस्सा खुलता है और ATP को छोड़ देता है।"},
+    {"narration": "इसी विचार को उन्नीस सौ सत्तानवे में रसायन का Nobel Prize मिला।"},
+    {"narration": "आपकी कोशिकाओं का नन्हा turbine हर चक्कर में तीन ATP निचोड़ता है, और हर सेकंड लगभग सौ चक्कर लगाता है।"},
+    {"narration": "तो जब आप दौड़ना शुरू करते हैं, तब इन turbines का क्या होता होगा?"}
+  ]
+}

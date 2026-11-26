@@ -1,0 +1,96 @@
+{
+  "shots": [
+    {
+      "kind": "atp_molecule",
+      "overlay": "label",
+      "lens": 28,
+      "split": true,
+      "label": [
+        "EVEN SITTING STILL",
+        "about 40 kg a day"
+      ],
+      "source": "Tymoczko, Berg & Stryer, Biochemistry: A Short Course"
+    },
+    {
+      "kind": "atp_muscle",
+      "overlay": "label",
+      "lens": 22,
+      "label": [
+        "MUSCLES",
+        "every pull spends ATP"
+      ]
+    },
+    {
+      "kind": "atp_molecule",
+      "overlay": "label",
+      "lens": 28,
+      "label": [
+        "NERVES",
+        "pumps keep them ready to fire"
+      ]
+    },
+    {
+      "kind": "atp_molecule",
+      "overlay": "label",
+      "lens": 28,
+      "split": true,
+      "label": [
+        "BUILDING",
+        "every new protein costs ATP"
+      ]
+    },
+    {
+      "kind": "atp_mito",
+      "overlay": "label",
+      "lens": 25,
+      "label": [
+        "HEART AND BRAIN",
+        "never stop asking"
+      ]
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "lens": 35,
+      "mode": "spin",
+      "slow": 0.5,
+      "label": [
+        "REBUILT BY TURBINES",
+        "~100 turns a second"
+      ],
+      "source": "Watt et al. 2010, PNAS 107:16823"
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "lens": 35,
+      "mode": "orbit",
+      "slow": 0.4,
+      "label": [
+        "40 kg A DAY",
+        "every bit rebuilt"
+      ]
+    },
+    {
+      "kind": "atp_muscle",
+      "overlay": "none",
+      "lens": 22
+    }
+  ],
+  "hi_labels": {
+    "40 kg A DAY": "रोज़ 40 kg",
+    "BUILDING": "निर्माण",
+    "EVEN SITTING STILL": "चुपचाप बैठे हुए भी",
+    "HEART AND BRAIN": "दिल और दिमाग़",
+    "MUSCLES": "मांसपेशियाँ",
+    "NERVES": "नसें",
+    "REBUILT BY TURBINES": "turbine फिर से बनाते हैं",
+    "about 40 kg a day": "रोज़ लगभग 40 kg",
+    "every bit rebuilt": "हर अंश फिर से बनता है",
+    "every new protein costs ATP": "हर नया protein ATP माँगता है",
+    "every pull spends ATP": "हर खिंचाव ATP खर्च करता है",
+    "never stop asking": "कभी माँगना बंद नहीं करते",
+    "pumps keep them ready to fire": "pump उन्हें तैयार रखते हैं",
+    "~100 turns a second": "हर second ~100 चक्कर"
+  }
+}

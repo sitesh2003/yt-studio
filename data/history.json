@@ -6599,5 +6599,31 @@
     "video_id": "Pds83Os6Lj8",
     "publish_at": "2026-12-07T19:00:00-05:00",
     "thumbnail_set": true
+  },
+  {
+    "job": "hero_book_atp",
+    "topic": "The Tiny Turbine That Powers Your Body",
+    "title": "The Tiny Turbine That Powers Your Body",
+    "description": "Inside your cells, a motor about ten billionths of a metre across spins around a hundred times a second, and every turn makes three molecules of ATP, the energy your body runs on. This is its story, from your muscles to the turbine and back, in eight chapters.\n\n0:00 Intro\n0:15 What Powers Your Muscles?\n0:43 Where Is Atp Made?\n1:02 Building The Proton Gradient\n1:29 A Membrane That Stores Energy\n1:46 What Spins The Turbine?\n2:20 How Spinning Makes Atp\n2:51 Where Does The Atp Go?\n3:10 When Cyanide Blocks The Chain\n\nSources: Watt et al. 2010, PNAS 107:16823 (c8 ring, ~100 rotations per second, 3 ATP per turn); Noji et al. 1997, Nature 386:299 (rotation seen directly); Boyer 1997, Annual Review of Biochemistry 66:717 (binding change); Tymoczko, Berg & Stryer, Biochemistry: A Short Course, 3rd ed. (ATP turnover); Zuhra & Szabo 2022, FEBS Journal 289:2481 (cyanide and Complex IV); Nobel Prize in Chemistry 1997.\n3D: every model built from scratch in Blender (procedural; no stock models or footage).\n\nHow this was made: the script is researched and fact-checked against published research (sources above), narrated by an AI voice, and animated and edited with open-source software.",
+    "tags": [
+      "ATP synthase",
+      "mitochondria",
+      "ATP",
+      "cell biology",
+      "biochemistry",
+      "molecular machine",
+      "3D animation",
+      "STEM"
+    ],
+    "hook": "Right now, inside almost every cell of your body, there are tiny turbines spinning.",
+    "status": "scheduled",
+    "narration": "Right now, inside almost every cell of your body, there are tiny turbines spinning. Each one turns about a hundred times a second, and every single turn makes the fuel that keeps you alive. This is the story of that turbine. Where it is, what spins it, and what happens when it stops. Chapter one. What actually powers your muscles? Every time a muscle pulls, its fibres burn a molecule called ATP. It's the energy coin your cells spend. Here's the strange part. Your whole body holds only about a hundred grams of ATP at any moment. But even resting, you use about forty kilograms of it in a day. So every molecule is rebuilt again and again. Something inside you is making ATP non-stop. To find it, we need to go smaller. Chapter two. Where does the cell make most of its ATP? Inside the muscle cell are mitochondria: tiny capsules, each wrapped in two membranes. The inner membrane is folded again and again, like the pages of a book, to pack in as much surface as possible. That folded membrane is the factory floor. And it runs on something surprising: protons. Chapter three. How does the chain build a proton gradient? The food you eat is broken down until its energy is carried by electrons. Those electrons are passed along a chain of protein complexes in the inner membrane, like a bucket brigade. At three of those stops, the energy is used to pump protons out across the membrane. At the very end, Complex Four hands the electrons to the oxygen you breathe, and they make water. That's why you need oxygen. It's the last stop for the electrons. Chapter four. How can a membrane store energy? The pumps crowd protons on one side of the membrane. Think of water piling up behind a dam. The protons want to flow back. And the main way back in is through one kind of door. That door is the turbine. Its name is ATP synthase. Chapter five. How does proton flow spin ATP synthase? The part buried in the membrane is a ring. In animals, it's made of eight identical pieces. A proton drops onto one piece, the ring turns a step, and the proton is let out on the other side. Eight protons, one full turn. And it turns about a hundred times every second. Nobody had seen it spin until nineteen ninety-seven, when scientists in Japan attached a glowing filament and watched it rotate. It was the smallest rotary motor ever seen. Its spinning shaft is only about two billionths of a metre across. Chapter six. How does spinning actually make ATP? The ring turns a crooked shaft, and the shaft turns inside a head of three working parts. As the shaft rotates, it squeezes each part into three shapes, one after another. Open, to grab the pieces. Loose, to hold them. And tight, to press them together into ATP. Then it opens again and lets the new ATP go. Three working parts, so three ATP for every turn. That idea won the Nobel Prize in Chemistry in nineteen ninety-seven. Chapter seven. Where does all that ATP go? Into your muscles, pulling. Into pumps that keep every nerve ready to fire. Into building new proteins. Your heart and brain never stop asking for it, even in your sleep. Your cells spend ATP even when you sit perfectly still. That's the forty kilograms a day. Chapter eight. What happens when cyanide blocks the chain? Cyanide doesn't attack the turbine. It jams Complex Four, the last step of the chain. The electrons have nowhere to go, so the pumps stop. The proton dam drains, and the turbines slow down. With no new ATP, the organs that need the most energy, like the heart and brain, are hit hardest. That's how much depends on these tiny machines. Right now, tiny turbines inside your cells are spinning about a hundred times a second, and every turn makes three ATP. So what do you think happens to all those turbines when you start to run?",
+    "voice_engine": "chatterbox",
+    "countdown": false,
+    "hero_3d": true,
+    "question": "So what do you think happens to all those turbines when you start to run?",
+    "video_id": "YMdC5_OisnY",
+    "publish_at": "2026-12-12T19:00:00-05:00",
+    "thumbnail_set": true
   }
 ]
