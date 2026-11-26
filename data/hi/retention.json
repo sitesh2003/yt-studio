@@ -2,9 +2,9 @@
   "wBAmoqMBEeg": {
     "title": "क्या T. rex तुम्हारी Car से तेज़ दौड़ सकता था? 🦖",
     "hook_line": "Movies में T.",
-    "kept_at_10pct": 1.0223,
-    "kept_at_50pct": 0.4924,
-    "kept_at_end": 0.20579999999999998,
+    "kept_at_10pct": 1.0222,
+    "kept_at_50pct": 0.49310000000000004,
+    "kept_at_end": 0.2069,
     "vs_similar_start": 0.33,
     "vs_similar_end": 0.38,
     "biggest_drops": [
@@ -63,6 +63,29 @@
         "at": 0.53,
         "lost": 0.125,
         "line": "जो car crash में पिचक जाती है, वो तुम्हें ज़्यादा बचाती है। ये दोनों cars एक ही speed से दीवार से टकराती हैं, और दोनों रुक जाती हैं। सख़्त car लगभग एक पल में रुक जाती है, तो अंदर बैठे लोगों पर बहुत बड़ी force पड़ती है। पिचकने वाला front रुकने का time बढ़ा देता है, तो अंदर वालों पर force कम हो जाती है। यही है Newton का second law."
+      }
+    ],
+    "countdown": false,
+    "checked": "2026-11-26"
+  },
+  "R2EPkrApYDI": {
+    "title": "तुम एक Baby T. rex हो, कैसे बचोगे? 🦖",
+    "hook_line": "सोचो, तुम एक baby tyrannosaur हो, बस एक छोटे कुत्ते जितने। तो तुम लड़ते नहीं, भागते हो। छोटे T.",
+    "kept_at_10pct": 1.0488,
+    "kept_at_50pct": 0.2988,
+    "kept_at_end": 0.1094,
+    "vs_similar_start": 0.26,
+    "vs_similar_end": 0.49,
+    "biggest_drops": [
+      {
+        "at": 0.25,
+        "lost": 0.139,
+        "line": "rex की टांगें लंबी और पतली थीं, speed के लिए बनी। पर तुम्हारा bite अभी बड़ों की तरह bone नहीं तोड़ सकता। तो तुम छोटे, तेज़ जानवरों का शिकार करते हो, जिन्हें बड़े T."
+      },
+      {
+        "at": 0.12,
+        "lost": 0.137,
+        "line": "सोचो, तुम एक baby tyrannosaur हो, बस एक छोटे कुत्ते जितने। तो तुम लड़ते नहीं, भागते हो। छोटे T."
       }
     ],
     "countdown": false,

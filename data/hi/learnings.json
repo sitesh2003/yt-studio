@@ -1,15 +1,12 @@
 {
-  "summary": "Focus heavily on immediate counter-intuitive statements or shocking safety claims in the first sentence to pass the critical swipe-away threshold. Keep topics grounded in physical, relatable objects like cars, teeth, and animals rather than abstract engineering or historical trivia. Eliminate English-Hindi hybrid or purely English titles in favor of clear, high-curiosity Hindi phrasing that builds an instant mental picture. Design hooks that directly confront common assumptions or movie myths rather than asking passive scientific questions. Maintain concise structural framing in titles to secure higher initial stay percentages before diving into details.",
+  "summary": "Focus heavily on dinosaur and automobile safety topics as they consistently outperform other categories in both raw views and retention. Craft first sentences as direct, counter-intuitive assertions or relatable second-person challenges rather than academic questions. Maintain titles that directly match the core curiosity gap in the hook without over-explaining the science upfront. Avoid using mixed-script Hinglish or purely English technical titles for this audience since local-language curiosity performs better. Keep video concepts focused on tangible, physical objects that viewers encounter or can easily visualize.",
   "winning_hooks": [
     "जो car crash में पिचक जाती है, वो तुम्हें ज़्यादा बचाती है।",
-    "सोचो, तुम्हारे दांतों पर 3 छोटी cars एक के ऊपर एक रख दी जाएं। इतने ज़ोर से T. rex काटता था।",
-    "Movies में T. rex गाड़ी का पीछा करता है। पर असली T. rex शायद दौड़ ही नहीं सकता था।"
+    "सोचो, तुम्हारे दांतों पर 3 छोटी cars एक के ऊपर एक रख दी जाएं। इतने ज़ोर से T. rex काटता था।"
   ],
   "avoid": [
-    "Using technical or academic phrasing like 'hydroplaning' or 'microscopic structures' in the opening sentence without immediate translation or simplification",
-    "Writing titles or hooks entirely or partially in English script ('Why Your Smoke Detector Is Radioactive 😱')",
-    "Asking passive, open-ended scientific questions that lack a high-stakes visual or personal threat",
-    "Creating multi-part complex setups that take more than 3 seconds to reveal the core premise"
+    "Academic or passive scientific framing like 'डायनासोर के जीवाश्मों में वैज्ञानिकों को...' that delays the core point.",
+    "English technical titles like 'Why Your Smoke Detector Is Radioactive 😱' which result in low stayed_pct."
   ],
-  "next_experiment": "Test two distinct hooks for the exact same dinosaur topic: Hook A uses a direct physical comparison to everyday cars ('T. rex का वजन कितनी कारों के बराबर था?'), while Hook B uses a survival-based second-person scenario ('अगर एक T. rex आपके सामने आ जाए, तो आप कितने सेकंड बचेंगे?'). Measure which one achieves a higher stayed_pct above 60%."
+  "next_experiment": "Test a dinosaur-related topic using a pure Hindi/Hinglish title combined with a second-person conversational hook ('सोचो अगर तुम...') to verify if it replicates the high stayed_pct of the top car and T. rex videos."
 }

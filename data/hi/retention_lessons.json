@@ -1,17 +1,19 @@
 {
   "lessons": [
-    "Keep hooks extremely concise and direct; the hook with the fewest words ('Movies in T.') achieved the highest 10% retention (1.0223) and start performance compared to longer narrative setups.",
-    "Avoid starting with long, multi-clause hypothetical scenarios or dense explanations, as seen in the T. rex bite and car crash videos which suffered very poor start performance (0.18 vs similar).",
-    "Eliminate repetitive phrasing and dense structural breakdowns early in the video, as heavy descriptive blocks trigger immediate drop-offs around the 10% to 23% marks.",
-    "Not enough data to determine specific patterns for the end of the videos since all samples show significant drop-offs and similar low ending performance relative to benchmarks."
+    "Start with curiosity-driven paradoxes or counter-intuitive statements (e.g., cars crushing to save lives, T. rex inability to run), as all videos maintain over 1.0 retention at 10% regardless of initial comparative performance.",
+    "Avoid dry physics definitions or multi-sentence premise setups early on, as drops occur heavily between 11% and 25% when explanations become overly technical.",
+    "Keep comparisons relatable and fast-paced; physical analogies like car weights and tooth pressure hold audience attention better than abstract metrics.",
+    "Not enough data to definitively link countdown formats to retention patterns, as all evaluated videos have countdown set to false.",
+    "Maintain high narrative momentum past the 50% mark; videos with sharper mid-point drop-offs struggle to retain audiences through the ending."
   ],
   "worst_moment_types": [
-    "Dense explanatory blocks detailing scientific processes or computer modeling (e.g., bone by bone, muscle by muscle breakdowns)",
-    "Long comparative descriptions involving heavy numbers and units of measurement without immediate visual payoff"
+    "Technical weight and muscle mechanics explanations that slow down the narrative pace",
+    "Multi-step scientific extrapolations involving complex bone and force calculations without immediate visual payoffs"
   ],
   "best_hook_types": [
-    "Short, punchy introductory fragments that immediately set up a provocative premise without overloading the viewer with setup"
+    "Immediate size or speed comparisons involving everyday objects like cars",
+    "Hypothetical survival scenarios placing the viewer directly in the shoes of the subject (e.g., imagining being a baby T. rex)"
   ],
   "studied": "2026-11-26",
-  "videos": 3
+  "videos": 4
 }
