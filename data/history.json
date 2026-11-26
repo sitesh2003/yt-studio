@@ -6342,7 +6342,7 @@
       "3D animation"
     ],
     "hook": "Drive twice as fast, and your car needs four times as far to stop.",
-    "status": "scheduled",
+    "status": "public",
     "narration": "Drive twice as fast, and your car needs four times as far to stop. Both of these cars brake hard at the same line. One is doing thirty kilometres an hour, the other sixty. On a dry road, the slow car stops in about five metres. The fast one needs about twenty. That's because the brakes have to get rid of the car's moving energy, and that energy grows with speed squared. Double the speed, and there's four times the energy to burn off as heat. And that's before you add the moment it takes you to react. So how much farther would a car doing ninety need to stop?",
     "voice_engine": "chatterbox",
     "countdown": false,
