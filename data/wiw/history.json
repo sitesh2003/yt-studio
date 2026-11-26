@@ -4024,5 +4024,29 @@
     "video_id": "7I5xy5vLGmM",
     "publish_at": "2026-11-25T16:30:00-05:00",
     "thumbnail_set": true
+  },
+  {
+    "job": "hero_popcorn_wiw",
+    "topic": "Popcorn Is A Pressure Vessel That Jumps (Physics) 🍿",
+    "title": "Popcorn Is A Pressure Vessel That Jumps (Physics) 🍿",
+    "description": "Popcorn is a lesson in pressure, stored energy and forces. The kernel is a pressure vessel, and it jumps on a leg of starch. #shorts #physics #science #popcorn\n\nSources: Virot & Ponomarenko 2015, Journal of the Royal Society Interface 12:20141247 (PMC4345489).\n3D: every model built from scratch in Blender (procedural; no stock models or footage).\n\nHow this was made: the script is researched and fact-checked against published research (sources above), narrated by an AI voice, and animated and edited with open-source software.",
+    "tags": [
+      "popcorn physics",
+      "pressure",
+      "physics",
+      "GCSE physics",
+      "science",
+      "3D animation"
+    ],
+    "hook": "A popcorn kernel is a tiny pressure vessel, and when it fails, it jumps.",
+    "status": "scheduled",
+    "narration": "A popcorn kernel is a tiny pressure vessel, and when it fails, it jumps. The hard hull traps a little water inside. Heating it turns that water into steam. Same space, more gas, hotter gas: the pressure rises. The hull holds until about one hundred eighty degrees Celsius. Then almost every kernel bursts. Starch foams out, and part of it lands on the pan as a leg. The leg squashes, storing energy like a spring, then pushes the pan and the pan pushes back. And the pop? Recordings link it to the steam escaping, all in a few hundredths of a second. Popcorn is a pressure vessel that fails at one hundred eighty degrees, then jumps on a spring made of starch. So what would happen to the pressure if the hull had a tiny hole?",
+    "voice_engine": "chatterbox",
+    "countdown": false,
+    "hero_3d": true,
+    "question": "So what would happen to the pressure if the hull had a tiny hole?",
+    "video_id": "mFvFYGI4Nbs",
+    "publish_at": "2026-12-02T16:30:00-05:00",
+    "thumbnail_set": true
   }
 ]
