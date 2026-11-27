@@ -1,22 +1,22 @@
 {
   "summary": [
-    "High-performing videos (by views and stayed_pct) use a 'Myth-Busting' framework in the first sentence to immediately contradict a common belief.",
-    "Titles for high-stayed videos focus on 'Why' questions or 'Counter-intuitive' claims, whereas low-performers use generic descriptive titles.",
-    "The hook must be a short, punchy declarative statement (under 15 words) rather than a long, explanatory sentence.",
-    "Engagement drops significantly when the hook requires the viewer to process complex background information or scientific setup.",
-    "Directness wins: Start immediately with the surprising reveal (e.g., 'Your eyes are leaking right now') instead of setting the scene."
+    "Prioritize dinosaur and everyday-physics topics like T. rex and car crumple zones, as they consistently drive the highest view counts and audience retention.",
+    "Draft titles that use direct, curiosity-inducing questions paired with relevant emojis (like 🦖 or 🚗) to boost initial click-through and engagement.",
+    "Formulate first-sentence hooks that make immediate, counter-intuitive claims or set up high-stakes scenarios rather than slow, generic introductions.",
+    "Keep video durations concise and punchy to maintain higher average view percentages and prevent audience drop-off in the middle seconds.",
+    "Avoid dry, overly academic phrasing in both titles and hooks in favor of direct second-person address ('You', 'Your') to capture viewer attention instantly."
   ],
   "winning_hooks": [
     "The real T. rex probably couldn't run. Not even a jog.",
     "One T. rex bite pressed down like three small cars stacked on its teeth.",
     "Your eyes are leaking right now, and your brain is hiding it.",
+    "You're a baby tyrannosaur, no bigger than a small dog.",
     "A car that folds up in a crash keeps you safer than one that doesn't."
   ],
   "avoid": [
-    "Avoid long, multi-clause hooks that explain the 'astronomy' or 'scientific' context before the interesting part.",
-    "Avoid passive titles that don't imply a direct answer or a secret reveal.",
-    "Avoid starting with 'Why' or 'How' in the hook; use a statement of fact that sounds wrong instead.",
-    "Avoid titles that are just topics (e.g., 'Why Ponds Don't Freeze') without a curiosity gap or specific emotional trigger."
+    "Slow, descriptive background introductions that take more than one sentence to get to the core point.",
+    "Niche or overly complex scientific topics without a relatable real-world comparison object like cars or animals.",
+    "Passive, low-energy statements in the opening hook that fail to challenge common assumptions."
   ],
-  "next_experiment": "A/B test the 'Myth-Buster' hook: Take a new topic and create two versions—Version A starts with a 'Why' question, Version B starts with a direct, controversial statement contradicting the audience's assumed knowledge."
+  "next_experiment": "A/B test two dinosaur-themed videos of identical length: one starting with a direct myth-busting statement as the hook, and the other starting with a direct question hook, while keeping titles and visual formatting constant."
 }

@@ -9,9 +9,9 @@
         "avg_views": null
       },
       "turn": {
-        "videos": 9,
-        "avg_view_pct": 60.8,
-        "avg_views": 812
+        "videos": 10,
+        "avg_view_pct": 61.8,
+        "avg_views": 891
       }
     }
   },
@@ -21,8 +21,8 @@
     "arms": {
       "short": {
         "videos": 1,
-        "avg_views": 450,
-        "avg_view_pct": 47.9,
+        "avg_views": 454,
+        "avg_view_pct": 48.9,
         "avg_seconds": 32.3
       },
       "standard": {
