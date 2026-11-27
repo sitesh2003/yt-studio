@@ -1,0 +1,746 @@
+{
+  "assets_dir": "assets/3d",
+  "renderer": "micro",
+  "aspect": "landscape",
+  "long": true,
+  "caption_scale": 1.0,
+  "end_beat_s": 0.8,
+  "shots": [
+    {
+      "kind": "atp_synthase",
+      "overlay": "none",
+      "mode": "orbit",
+      "slow": 0.4,
+      "seconds": 4.91,
+      "src": 0
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "mode": "spin",
+      "slow": 0.5,
+      "label": [
+        "~100 TURNS A SECOND",
+        "shown here slowed down"
+      ],
+      "seconds": 4.947,
+      "src": 1
+    },
+    {
+      "kind": "atp_mito",
+      "overlay": "none",
+      "dive": true,
+      "seconds": 5.635,
+      "src": 2
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "mode": "orbit",
+      "slow": 0.4,
+      "label": [
+        "ATP SYNTHASE",
+        "a rotary motor"
+      ],
+      "seconds": 3.984,
+      "src": 21
+    },
+    {
+      "kind": "atp_muscle",
+      "overlay": "chapter",
+      "chapter": [
+        "CHAPTER 1",
+        "HOW MUCH POWER?"
+      ],
+      "seconds": 3.899,
+      "src": 3
+    },
+    {
+      "kind": "atp_molecule",
+      "overlay": "label",
+      "label": [
+        "80 TO 100 WATTS",
+        "your body at rest"
+      ],
+      "seconds": 6.155,
+      "source": "Typical resting metabolic rate ~1,700 kcal/day = ~80 W",
+      "src": 4
+    },
+    {
+      "kind": "atp_molecule",
+      "overlay": "label",
+      "split": true,
+      "label": [
+        "ATP",
+        "the energy currency"
+      ],
+      "seconds": 6.015,
+      "src": 5
+    },
+    {
+      "kind": "atp_muscle",
+      "overlay": "label",
+      "label": [
+        "ABOUT 40 kg A DAY",
+        "used even at rest"
+      ],
+      "source": "Tymoczko, Berg & Stryer, Biochemistry: A Short Course",
+      "seconds": 7.042,
+      "src": 6
+    },
+    {
+      "kind": "atp_molecule",
+      "overlay": "label",
+      "split": true,
+      "label": [
+        "ABOUT 400 TIMES",
+        "every molecule, every day"
+      ],
+      "seconds": 5.394,
+      "src": 37
+    },
+    {
+      "kind": "atp_mito",
+      "overlay": "none",
+      "seconds": 4.796,
+      "src": 7
+    },
+    {
+      "kind": "atp_mito",
+      "overlay": "chapter",
+      "dive": true,
+      "chapter": [
+        "CHAPTER 2",
+        "A BATTERY IN A MEMBRANE"
+      ],
+      "seconds": 3.849,
+      "src": 8
+    },
+    {
+      "kind": "atp_mito",
+      "overlay": "label",
+      "label": [
+        "MITOCHONDRION",
+        "wrapped in two membranes"
+      ],
+      "seconds": 4.749,
+      "src": 9
+    },
+    {
+      "kind": "atp_mito",
+      "overlay": "label",
+      "dive": true,
+      "label": [
+        "CRISTAE",
+        "the folded inner membrane"
+      ],
+      "seconds": 5.468,
+      "src": 10
+    },
+    {
+      "kind": "atp_chain",
+      "overlay": "label",
+      "label": [
+        "ELECTRONS",
+        "carry the energy from food"
+      ],
+      "seconds": 3.757,
+      "src": 13
+    },
+    {
+      "kind": "atp_chain",
+      "overlay": "label",
+      "focus": "pumps",
+      "label": [
+        "A CURRENT",
+        "electrons down a chain"
+      ],
+      "seconds": 5.311,
+      "src": 14
+    },
+    {
+      "kind": "atp_chain",
+      "overlay": "label",
+      "focus": "pumps",
+      "label": [
+        "THREE PUMPS",
+        "Complexes I, III and IV"
+      ],
+      "seconds": 4.498,
+      "src": 15
+    },
+    {
+      "kind": "atp_chain",
+      "overlay": "label",
+      "focus": "iv",
+      "label": [
+        "COMPLEX IV",
+        "electrons + oxygen make water"
+      ],
+      "seconds": 5.158,
+      "src": 16
+    },
+    {
+      "kind": "atp_dam",
+      "overlay": "label",
+      "label": [
+        "150 TO 180 mV",
+        "across the membrane"
+      ],
+      "seconds": 5.089,
+      "source": "Perry et al. 2011, BioTechniques 50:98",
+      "src": 19
+    },
+    {
+      "kind": "atp_dam",
+      "overlay": "label",
+      "label": [
+        "30 MILLION V/m",
+        "voltage / thickness"
+      ],
+      "seconds": 4.45,
+      "source": "Lane & Martin 2010, Nature 467:929",
+      "src": 20
+    },
+    {
+      "kind": "atp_mito",
+      "overlay": "label",
+      "label": [
+        "LIKE LIGHTNING",
+        "the field strength"
+      ],
+      "seconds": 4.113,
+      "source": "Lane & Martin 2010, Nature 467:929",
+      "src": 36
+    },
+    {
+      "kind": "atp_dam",
+      "overlay": "chapter",
+      "chapter": [
+        "CHAPTER 3",
+        "ENERGY STORED UPHILL"
+      ],
+      "seconds": 3.428,
+      "src": 18
+    },
+    {
+      "kind": "atp_dam",
+      "overlay": "label",
+      "label": [
+        "TWO PUSHES",
+        "charge and crowding"
+      ],
+      "seconds": 5.278,
+      "src": 11
+    },
+    {
+      "kind": "atp_dam",
+      "overlay": "label",
+      "leak": true,
+      "seconds": 3.487,
+      "label": [
+        "PROTON-MOTIVE FORCE",
+        "stored energy"
+      ],
+      "src": 72
+    },
+    {
+      "kind": "atp_chain",
+      "overlay": "label",
+      "cyanide": true,
+      "label": [
+        "ONE WAY BACK",
+        "through the motor"
+      ],
+      "seconds": 6.572,
+      "src": 64
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "chapter",
+      "mode": "spin",
+      "slow": 0.4,
+      "chapter": [
+        "CHAPTER 4",
+        "THE ROTOR"
+      ],
+      "seconds": 4.511,
+      "src": 22
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "mode": "protons",
+      "slow": 0.35,
+      "label": [
+        "8 PIECES",
+        "the ring, in animals"
+      ],
+      "source": "Watt et al. 2010, PNAS 107:16823",
+      "seconds": 5.521,
+      "src": 23
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "mode": "protons",
+      "slow": 0.35,
+      "label": [
+        "ONE PROTON",
+        "one step of the ring"
+      ],
+      "seconds": 5.125,
+      "src": 24
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "mode": "spin",
+      "slow": 0.5,
+      "label": [
+        "8 PROTONS = 1 TURN",
+        "about 100 turns a second"
+      ],
+      "source": "Watt et al. 2010, PNAS 107:16823",
+      "seconds": 5.164,
+      "src": 25
+    },
+    {
+      "kind": "atp_noji",
+      "overlay": "label",
+      "slow": 0.5,
+      "label": [
+        "1997",
+        "the spin, seen directly"
+      ],
+      "source": "Noji et al. 1997, Nature 386:299",
+      "seconds": 6.612,
+      "src": 26
+    },
+    {
+      "kind": "atp_noji",
+      "overlay": "label",
+      "slow": 0.5,
+      "label": [
+        "ABOUT 2 nm WIDE",
+        "the smallest rotary motor seen"
+      ],
+      "seconds": 6.375,
+      "src": 27
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "chapter",
+      "mode": "beta",
+      "slow": 0.3,
+      "chapter": [
+        "CHAPTER 5",
+        "TORQUE AND EFFICIENCY"
+      ],
+      "seconds": 4.07,
+      "src": 28
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "mode": "beta",
+      "slow": 0.3,
+      "label": [
+        "THE CROOKED SHAFT",
+        "turns inside the head"
+      ],
+      "seconds": 4.568,
+      "src": 29
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "mode": "beta",
+      "slow": 0.3,
+      "label": [
+        "THREE WORKING PARTS",
+        "each changes shape"
+      ],
+      "seconds": 4.951,
+      "src": 30
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "mode": "beta",
+      "slow": 0.3,
+      "label": [
+        "3 ATP PER TURN",
+        "one from each part"
+      ],
+      "source": "Watt et al. 2010, PNAS 107:16823",
+      "seconds": 6.674,
+      "src": 32
+    },
+    {
+      "kind": "atp_noji",
+      "overlay": "label",
+      "slow": 0.5,
+      "label": [
+        "120 DEGREE STEPS",
+        "one ATP each"
+      ],
+      "source": "Yasuda, Noji, Kinosita & Yoshida 1998, Cell 93:1117",
+      "seconds": 5.27,
+      "src": 61
+    },
+    {
+      "kind": "atp_noji",
+      "overlay": "label",
+      "slow": 0.5,
+      "label": [
+        "TORQUE ~40 pN nm",
+        "measured in 1998"
+      ],
+      "seconds": 6.475,
+      "source": "Yasuda, Noji, Kinosita & Yoshida 1998, Cell 93:1117",
+      "src": 62
+    },
+    {
+      "kind": "atp_noji",
+      "overlay": "label",
+      "slow": 0.5,
+      "seconds": 5.078,
+      "label": [
+        "WORK = TORQUE x ANGLE",
+        "for each step"
+      ],
+      "source": "Yasuda, Noji, Kinosita & Yoshida 1998, Cell 93:1117",
+      "src": 60
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "mode": "orbit",
+      "slow": 0.4,
+      "label": [
+        "CLOSE TO 100%",
+        "a car engine: 25 to 35%"
+      ],
+      "seconds": 4.0,
+      "source": "Yasuda, Noji, Kinosita & Yoshida 1998, Cell 93:1117",
+      "src": 33
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "none",
+      "mode": "orbit",
+      "slow": 0.4,
+      "source": "Watt et al. 2010, PNAS 107:16823",
+      "seconds": 7.247,
+      "src": 93
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "mode": "orbit",
+      "slow": 0.4,
+      "seconds": 9.341,
+      "label": [
+        "THERMAL NOISE",
+        "one ATP = ~20 x kT"
+      ],
+      "source": "Thermal energy kT = Boltzmann constant x temperature",
+      "src": 91
+    },
+    {
+      "kind": "atp_muscle",
+      "overlay": "chapter",
+      "chapter": [
+        "CHAPTER 6",
+        "THE POWER OF ONE MOTOR"
+      ],
+      "seconds": 3.54,
+      "src": 34
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "mode": "spin",
+      "slow": 0.8,
+      "label": [
+        "POWER = TORQUE x SPEED",
+        "one motor"
+      ],
+      "source": "Power = torque x angular speed (from Yasuda et al. 1998 and Watt et al. 2010)",
+      "seconds": 6.69,
+      "src": 52
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "mode": "orbit",
+      "slow": 0.4,
+      "seconds": 4.91,
+      "label": [
+        "~2.5 x 10^-17 W",
+        "one motor"
+      ],
+      "source": "Power = torque x angular speed (from Yasuda et al. 1998 and Watt et al. 2010)",
+      "src": 0
+    },
+    {
+      "kind": "atp_mito",
+      "overlay": "label",
+      "label": [
+        "4 BILLION BILLION",
+        "to light one bulb"
+      ],
+      "seconds": 4.567,
+      "source": "Power = torque x angular speed (from Yasuda et al. 1998 and Watt et al. 2010)",
+      "src": 50
+    },
+    {
+      "kind": "atp_muscle",
+      "overlay": "none",
+      "seconds": 6.203,
+      "src": 35
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "chapter",
+      "mode": "reverse",
+      "slow": 0.4,
+      "chapter": [
+        "CHAPTER 7",
+        "MOTOR OR GENERATOR?"
+      ],
+      "seconds": 2.995,
+      "src": 57
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "mode": "reverse",
+      "slow": 0.4,
+      "label": [
+        "RUNNING BACKWARDS",
+        "fed ATP, it splits it"
+      ],
+      "seconds": 5.239,
+      "src": 58
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "mode": "reverse",
+      "slow": 0.4,
+      "label": [
+        "PUMP MODE",
+        "ATP in, protons out"
+      ],
+      "seconds": 5.043,
+      "src": 59
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "mode": "reverse",
+      "slow": 0.3,
+      "label": [
+        "E. COLI",
+        "without oxygen"
+      ],
+      "source": "Nakamoto et al. 2008, Arch Biochem Biophys 476:43",
+      "seconds": 7.989,
+      "src": 63
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "mode": "orbit",
+      "slow": 0.2,
+      "label": [
+        "IF1",
+        "the brake"
+      ],
+      "seconds": 4.141,
+      "src": 65
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "mode": "spin",
+      "slow": 0.12,
+      "label": [
+        "ATP SAVED",
+        "when the dam drains"
+      ],
+      "source": "Campanella et al. 2008, Cell Metab 8:13",
+      "seconds": 5.84,
+      "src": 66
+    },
+    {
+      "kind": "atp_dam",
+      "overlay": "chapter",
+      "leak": true,
+      "chapter": [
+        "CHAPTER 8",
+        "A SHORT CIRCUIT"
+      ],
+      "seconds": 3.339,
+      "src": 67
+    },
+    {
+      "kind": "atp_cell",
+      "overlay": "label",
+      "count": 300,
+      "label": [
+        "BROWN FAT",
+        "packed with mitochondria"
+      ],
+      "source": "Lidell et al. 2013, Nat Med 19:631",
+      "seconds": 4.808,
+      "src": 68
+    },
+    {
+      "kind": "atp_dam",
+      "overlay": "label",
+      "leak": true,
+      "label": [
+        "UCP1",
+        "a gap in the dam"
+      ],
+      "seconds": 5.377,
+      "src": 69
+    },
+    {
+      "kind": "atp_dam",
+      "overlay": "label",
+      "leak": true,
+      "label": [
+        "A SHORT CIRCUIT",
+        "current, but no work"
+      ],
+      "source": "Fedorenko, Lishko & Kirichok 2012, Cell 151:400",
+      "seconds": 5.416,
+      "src": 70
+    },
+    {
+      "kind": "atp_dam",
+      "overlay": "label",
+      "leak": true,
+      "label": [
+        "HEAT",
+        "instead of ATP"
+      ],
+      "seconds": 4.764,
+      "src": 71
+    },
+    {
+      "kind": "atp_cell",
+      "overlay": "label",
+      "count": 220,
+      "label": [
+        "ADULTS TOO",
+        "neck and collarbones"
+      ],
+      "source": "Cypess et al. 2009, NEJM 360:1509",
+      "seconds": 4.865,
+      "src": 73
+    },
+    {
+      "kind": "atp_muscle",
+      "overlay": "chapter",
+      "pace": 2.2,
+      "chapter": [
+        "CHAPTER 9",
+        "SPEED CONTROL"
+      ],
+      "seconds": 5.135,
+      "src": 42
+    },
+    {
+      "kind": "atp_muscle",
+      "overlay": "label",
+      "pace": 2.2,
+      "label": [
+        "START TO SPRINT",
+        "demand jumps"
+      ],
+      "source": "Baker, McCormick & Robergs 2010, J Nutr Metab 905612",
+      "seconds": 5.351,
+      "src": 43
+    },
+    {
+      "kind": "atp_molecule",
+      "overlay": "label",
+      "split": true,
+      "label": [
+        "ADP + PHOSPHATE",
+        "what spent ATP leaves"
+      ],
+      "seconds": 5.075,
+      "src": 51
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "mode": "spin",
+      "slow": 0.8,
+      "label": [
+        "MORE ADP = FASTER",
+        "respiratory control"
+      ],
+      "source": "Brand & Nicholls 2011, Biochem J 435:297",
+      "seconds": 6.69,
+      "src": 52
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "none",
+      "mode": "orbit",
+      "slow": 0.6,
+      "seconds": 4.962,
+      "src": 53
+    },
+    {
+      "kind": "atp_chain",
+      "overlay": "label",
+      "focus": "iv",
+      "label": [
+        "NEGATIVE FEEDBACK",
+        "demand sets the speed"
+      ],
+      "seconds": 6.037,
+      "src": 54
+    },
+    {
+      "kind": "atp_muscle",
+      "overlay": "label",
+      "pace": 2.2,
+      "label": [
+        "ABOUT 10x THE OXYGEN",
+        "at full effort"
+      ],
+      "source": "Kaminsky, Arena & Myers 2015, Mayo Clin Proc 90:1515",
+      "seconds": 5.443,
+      "src": 55
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "none",
+      "mode": "orbit",
+      "slow": 0.4,
+      "seconds": 9.341,
+      "src": 91
+    },
+    {
+      "kind": "atp_mito",
+      "overlay": "none",
+      "seconds": 2.54,
+      "src": 92
+    },
+    {
+      "kind": "atp_muscle",
+      "overlay": "none",
+      "seconds": 6.951,
+      "src": 94
+    }
+  ]
+}

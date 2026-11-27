@@ -1,0 +1,318 @@
+{
+  "title_options": [
+    "The Tiny Turbine That Powers Your Body"
+  ],
+  "share": {
+    "myth": "Food energy just turns into body energy somehow; there is nothing mechanical about it.",
+    "truth": "Most of your ATP is made by ATP synthase, a rotary motor in your mitochondria turned by protons about a hundred times a second, making three ATP per turn (Noji et al. 1997; Watt et al. 2010).",
+    "line": "Right now, tiny turbines inside your cells are spinning about a hundred times a second, and every turn makes three ATP."
+  },
+  "facts": [
+    "Tymoczko, Berg & Stryer, Biochemistry: A Short Course (3rd ed.): a resting human uses about 40 kg of ATP in 24 hours while the body holds about 100 g, so ATP is recycled constantly.",
+    "Watt IN et al. 2010, PNAS 107:16823: the central stalk and c-ring rotate about 100 times per second; each 360 degree turn makes 3 ATP; the bovine (vertebrate) c-ring has 8 subunits, so about 2.7 protons per ATP; each c-subunit carries a glutamate that is protonated and deprotonated in turn.",
+    "Noji H et al. 1997, Nature 386:299: direct observation of rotation of F1-ATPase; the smallest known rotary motor; rotor radius about 1 nm inside a stator barrel of radius about 5 nm made of three alpha and three beta subunits.",
+    "Boyer PD 1997, Annu Rev Biochem 66:717 (binding change mechanism): each catalytic beta site cycles through open, loose and tight states as the stalk rotates. Nobel Prize in Chemistry 1997: Paul Boyer and John Walker (with Jens Skou).",
+    "Electron transport chain complexes pump protons across the inner mitochondrial membrane; Complex IV (cytochrome c oxidase) passes electrons to oxygen, making water (standard biochemistry textbooks).",
+    "Zuhra K & Szabo C 2022, FEBS J 289:2481: cyanide's toxicity comes mainly from inhibiting mitochondrial Complex IV (cytochrome c oxidase), not ATP synthase itself.",
+    "Complexes I, III and IV pump protons; Complex II does not (standard textbooks). Some protons also leak back across the membrane, so ATP synthase is the main, not the only, route."
+  ],
+  "description": "Inside your cells, a motor about ten billionths of a metre across spins around a hundred times a second, and every turn makes three molecules of ATP. Its whole story in thirteen chapters: how it works, what happens when you run, how it can run backwards, how brown fat turns it into heat, and why your mitochondria were once bacteria and come from your mother.",
+  "sources": "Watt et al. 2010, PNAS 107:16823 (c8 ring, ~100 rotations per second, 3 ATP per turn); Noji et al. 1997, Nature 386:299 (rotation seen directly); Boyer 1997, Annual Review of Biochemistry 66:717 (binding change); Tymoczko, Berg & Stryer, Biochemistry: A Short Course, 3rd ed. (ATP turnover); Zuhra & Szabo 2022, FEBS Journal 289:2481 (cyanide and Complex IV); Nobel Prize in Chemistry 1997; Baker, McCormick & Robergs 2010, J Nutr Metab 905612 (sprint energy systems); Brand & Nicholls 2011, Biochem J 435:297 (respiratory control); Kaminsky et al. 2015, Mayo Clin Proc 90:1515 (VO2max); Sulkin et al. 2014, J Struct Biol 188:55 (heart mitochondria); Nakamoto et al. 2008, Arch Biochem Biophys 476:43 (reverse running in bacteria); Campanella et al. 2008, Cell Metab 8:13 (IF1); Fedorenko et al. 2012, Cell 151:400 (UCP1); Lidell et al. 2013, Nat Med 19:631 and Cypess et al. 2009, NEJM 360:1509 (brown fat); Parfrey et al. 2011, PNAS 108:13624 and Roger et al. 2017, Curr Biol 27:R1177 (origin of mitochondria); Anderson et al. 1981, Nature 290:457 (human mtDNA); Robin & Wong 1988, J Cell Physiol 136:507; Reynier et al. 2001, Mol Hum Reprod 7:425 (egg mtDNA); Sutovsky et al. 1999, Nature 402:371 and Luo et al. 2018, PNAS 115:13039 (maternal inheritance).",
+  "tags": [
+    "ATP synthase",
+    "mitochondria",
+    "ATP",
+    "cell biology",
+    "biochemistry",
+    "molecular machine",
+    "3D animation",
+    "STEM"
+  ],
+  "scenes": [
+    {
+      "narration": "Right now, inside almost every cell of your body, there are tiny turbines spinning."
+    },
+    {
+      "narration": "Each one turns about a hundred times a second, and every single turn makes the fuel that keeps you alive."
+    },
+    {
+      "narration": "This is the story of that turbine. Where it is, what spins it, and what happens when it stops."
+    },
+    {
+      "narration": "Chapter one. What actually powers your muscles?"
+    },
+    {
+      "narration": "Every time a muscle pulls, its fibres burn a molecule called ATP. It's the energy coin your cells spend."
+    },
+    {
+      "narration": "Here's the strange part. Your whole body holds only about a hundred grams of ATP at any moment."
+    },
+    {
+      "narration": "But even resting, you use about forty kilograms of it in a day. So every molecule is rebuilt again and again."
+    },
+    {
+      "narration": "Something inside you is making ATP non-stop. To find it, we need to go smaller."
+    },
+    {
+      "narration": "Chapter two. Where does the cell make most of its ATP?"
+    },
+    {
+      "narration": "Inside the muscle cell are mitochondria: tiny capsules, each wrapped in two membranes."
+    },
+    {
+      "narration": "The inner membrane is folded again and again, like the pages of a book, to pack in as much surface as possible."
+    },
+    {
+      "narration": "That folded membrane is the factory floor. And it runs on something surprising: protons."
+    },
+    {
+      "narration": "Chapter three. How does the chain build a proton gradient?"
+    },
+    {
+      "narration": "The food you eat is broken down until its energy is carried by electrons."
+    },
+    {
+      "narration": "Those electrons are passed along a chain of protein complexes in the inner membrane, like a bucket brigade."
+    },
+    {
+      "narration": "At three of those stops, the energy is used to pump protons out across the membrane."
+    },
+    {
+      "narration": "At the very end, Complex Four hands the electrons to the oxygen you breathe, and they make water."
+    },
+    {
+      "narration": "That's why you need oxygen. It's the last stop for the electrons."
+    },
+    {
+      "narration": "Chapter four. How can a membrane store energy?"
+    },
+    {
+      "narration": "The pumps crowd protons on one side of the membrane. Think of water piling up behind a dam."
+    },
+    {
+      "narration": "The protons want to flow back. And the main way back in is through one kind of door."
+    },
+    {
+      "narration": "That door is the turbine. Its name is ATP synthase."
+    },
+    {
+      "narration": "Chapter five. How does proton flow spin ATP synthase?"
+    },
+    {
+      "narration": "The part buried in the membrane is a ring. In animals, it's made of eight identical pieces."
+    },
+    {
+      "narration": "A proton drops onto one piece, the ring turns a step, and the proton is let out on the other side."
+    },
+    {
+      "narration": "Eight protons, one full turn. And it turns about a hundred times every second."
+    },
+    {
+      "narration": "Nobody had seen it spin until nineteen ninety-seven, when scientists in Japan attached a glowing filament and watched it rotate."
+    },
+    {
+      "narration": "It was the smallest rotary motor ever seen. Its spinning shaft is only about two billionths of a metre across."
+    },
+    {
+      "narration": "Chapter six. How does spinning actually make ATP?"
+    },
+    {
+      "narration": "The ring turns a crooked shaft, and the shaft turns inside a head of three working parts."
+    },
+    {
+      "narration": "As the shaft rotates, it squeezes each part into three shapes, one after another."
+    },
+    {
+      "narration": "Open, to grab the pieces. Loose, to hold them. And tight, to press them together into ATP."
+    },
+    {
+      "narration": "Then it opens again and lets the new ATP go. Three working parts, so three ATP for every turn."
+    },
+    {
+      "narration": "That idea won the Nobel Prize in Chemistry in nineteen ninety-seven."
+    },
+    {
+      "narration": "Chapter seven. Where does all that ATP go?"
+    },
+    {
+      "narration": "Into your muscles, pulling. Into pumps that keep every nerve ready to fire. Into building new proteins."
+    },
+    {
+      "narration": "Your heart and brain never stop asking for it, even in your sleep."
+    },
+    {
+      "narration": "Your cells spend ATP even when you sit perfectly still. That's the forty kilograms a day."
+    },
+    {
+      "narration": "Chapter eight. What happens when cyanide blocks the chain?"
+    },
+    {
+      "narration": "Cyanide doesn't attack the turbine. It jams Complex Four, the last step of the chain."
+    },
+    {
+      "narration": "The electrons have nowhere to go, so the pumps stop. The proton dam drains, and the turbines slow down."
+    },
+    {
+      "narration": "With no new ATP, the organs that need the most energy, like the heart and brain, are hit hardest."
+    },
+    {
+      "narration": "Chapter nine. So what happens to all those turbines when you start to run?"
+    },
+    {
+      "narration": "In the first few seconds of a flat-out sprint, your muscles run mostly on the ATP they already hold."
+    },
+    {
+      "narration": "A backup called phosphocreatine rebuilds that ATP almost instantly, but there is only a little of it."
+    },
+    {
+      "narration": "Within about ten seconds of all-out effort, most of that phosphocreatine is used up."
+    },
+    {
+      "narration": "Within seconds, glycolysis joins in. It splits sugar fast, without needing oxygen."
+    },
+    {
+      "narration": "In a ten second sprint, only a few percent of the energy comes from your mitochondria."
+    },
+    {
+      "narration": "Stretch it to thirty seconds, and they already supply more than a quarter."
+    },
+    {
+      "narration": "By about a minute and a quarter of hard effort, the oxygen-using supply roughly matches all the rest."
+    },
+    {
+      "narration": "The longer you keep going, the more of the work passes to them. All three systems overlap."
+    },
+    {
+      "narration": "And here's the clever part. Every ATP you spend leaves behind ADP and phosphate."
+    },
+    {
+      "narration": "Those are exactly what the turbine needs. So as they build up, the turbines and the whole chain run faster."
+    },
+    {
+      "narration": "Nobody has to flip a switch. Spending energy is itself the signal to make more."
+    },
+    {
+      "narration": "That's why you breathe hard. Oxygen is the last stop for the electrons, and the chain needs far more of it."
+    },
+    {
+      "narration": "At full effort, a healthy young adult can use roughly ten times as much oxygen as at rest, or more."
+    },
+    {
+      "narration": "And your heart never gets a rest. In the muscle of the heart, mitochondria fill more than a quarter of each cell."
+    },
+    {
+      "narration": "Chapter ten. Can the turbine run backwards?"
+    },
+    {
+      "narration": "It can. Feed ATP synthase a supply of ATP, and it spins the other way."
+    },
+    {
+      "narration": "Now splitting ATP turns the rotor, and the whole machine pumps protons back across the membrane."
+    },
+    {
+      "narration": "Remember the glowing filament from nineteen ninety-seven? That spin was driven this way."
+    },
+    {
+      "narration": "The scientists fed the turbine's head ATP, and as it split the ATP, it turned."
+    },
+    {
+      "narration": "They used only the head and shaft, from a heat-loving bacterium. It spun, but on its own it couldn't pump."
+    },
+    {
+      "narration": "Some bacteria do this on purpose. Without oxygen, E. coli uses up ATP to run its turbines backwards and keep its membrane charged."
+    },
+    {
+      "narration": "In your cells, that could be a disaster. If the dam ever drained, the turbines could burn through your ATP."
+    },
+    {
+      "narration": "So your mitochondria carry a brake, a small protein called IF1."
+    },
+    {
+      "narration": "If the proton gradient collapses, IF1 largely stops the turbines running backwards and draining the cell."
+    },
+    {
+      "narration": "Chapter eleven. How does brown fat make heat?"
+    },
+    {
+      "narration": "A newborn baby carries a pad of brown fat, including between its shoulder blades, to keep warm."
+    },
+    {
+      "narration": "Brown fat cells are packed with mitochondria. And their inner membranes have a gap in the dam."
+    },
+    {
+      "narration": "A protein called UCP1 lets protons leak straight back, without passing through the turbine."
+    },
+    {
+      "narration": "So the energy stored in the dam doesn't make ATP. It comes out as heat."
+    },
+    {
+      "narration": "It's a power station that burns its fuel just to keep you warm."
+    },
+    {
+      "narration": "Adults keep smaller amounts, mainly around the neck and collarbones, and it switches on in the cold."
+    },
+    {
+      "narration": "Chapter twelve. Where did mitochondria come from?"
+    },
+    {
+      "narration": "Here's the strangest part of the whole story. Mitochondria were once bacteria."
+    },
+    {
+      "narration": "More than one and a half billion years ago, a free-living bacterium ended up living inside another cell."
+    },
+    {
+      "narration": "Instead of being digested, it stayed. The host gave it shelter and food, and it gave the host energy."
+    },
+    {
+      "narration": "The host was related to a group of microbes called Asgard archaea. Together they became the first complex cell."
+    },
+    {
+      "narration": "The mitochondria in every plant, animal and fungus trace back to that one partnership."
+    },
+    {
+      "narration": "And they still carry a trace of their past: their own DNA."
+    },
+    {
+      "narration": "Human mitochondrial DNA is a tiny loop of sixteen thousand, five hundred and sixty-nine base pairs, carrying just thirty-seven genes."
+    },
+    {
+      "narration": "Two pieces of the turbine itself are written in that little loop."
+    },
+    {
+      "narration": "A typical cell holds hundreds of mitochondria, and each one keeps its own copies."
+    },
+    {
+      "narration": "Chapter thirteen. Why do your mitochondria come from your mother?"
+    },
+    {
+      "narration": "A human egg is huge for a cell. It carries a huge stock of mitochondrial DNA, on average around two hundred thousand copies."
+    },
+    {
+      "narration": "It varies a lot from egg to egg, from about twenty thousand to about six hundred thousand."
+    },
+    {
+      "narration": "A sperm brings only a few mitochondria, packed in its middle to power its tail."
+    },
+    {
+      "narration": "After fertilisation, the sperm's mitochondria are tagged and destroyed."
+    },
+    {
+      "narration": "So you get your mitochondria almost entirely from your mother. Very rare exceptions have been reported."
+    },
+    {
+      "narration": "She got hers from her mother, and she from hers, in a line running back through every generation."
+    },
+    {
+      "narration": "So that's the turbine's story. Protons spin it. Spending speeds it up. It can run backwards, it can become a heater, and it came from a bacterium your mother passed down."
+    },
+    {
+      "narration": "That's how much depends on these tiny machines."
+    },
+    {
+      "narration": "Right now, tiny turbines inside your cells are spinning about a hundred times a second, and every turn makes three ATP."
+    },
+    {
+      "narration": "So if your mitochondria came from your mother, and hers from her mother, how far back do you think that line goes?"
+    }
+  ]
+}

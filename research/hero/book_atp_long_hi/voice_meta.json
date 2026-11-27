@@ -1,0 +1,10 @@
+{
+  "engine": "edge-tts",
+  "heard": 0.714,
+  "issues": [],
+  "merged_from": [
+    "book_atp_hi",
+    "book_atp_ext_hi"
+  ],
+  "cut_s": 243.00508333333332
+}

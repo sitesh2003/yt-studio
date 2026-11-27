@@ -842,6 +842,12 @@ def render():
 
 
 build()
+# 27 Nov 2026: a scene composed for a vertical Short, rendered landscape for a book, keeps its VERTICAL field of view
+# (Blender's auto fit would keep the width and crop the top and bottom off the subject).
+if SPEC.get("keep_vertical_fov") and SPEC.get("aspect") == "landscape":
+    for cd in bpy.data.cameras:
+        cd.sensor_fit = "VERTICAL"
+        cd.sensor_height = cd.sensor_width
 if os.environ.get("HERO_SAVE_BLEND"):
     bpy.ops.wm.save_as_mainfile(filepath=os.environ["HERO_SAVE_BLEND"])
 render()

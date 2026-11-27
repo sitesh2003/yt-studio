@@ -1,0 +1,1214 @@
+{
+  "assets_dir": "assets/3d",
+  "renderer": "micro",
+  "aspect": "landscape",
+  "long": true,
+  "caption_scale": 1.0,
+  "end_beat_s": 0.8,
+  "shots": [
+    {
+      "kind": "atp_synthase",
+      "overlay": "none",
+      "mode": "orbit",
+      "slow": 0.4,
+      "seconds": 5.218
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "mode": "spin",
+      "slow": 0.5,
+      "label": [
+        "~100 TURNS A SECOND",
+        "shown here slowed down"
+      ],
+      "seconds": 6.524
+    },
+    {
+      "kind": "atp_mito",
+      "overlay": "none",
+      "dive": true,
+      "seconds": 6.017
+    },
+    {
+      "kind": "atp_muscle",
+      "overlay": "none",
+      "chapter": [
+        "अध्याय एक",
+        "मांसपेशियों को ताकत कहाँ से?"
+      ],
+      "seconds": 4.531
+    },
+    {
+      "kind": "atp_molecule",
+      "overlay": "label",
+      "label": [
+        "ATP",
+        "the energy coin cells spend"
+      ],
+      "seconds": 7.393
+    },
+    {
+      "kind": "atp_molecule",
+      "overlay": "label",
+      "split": true,
+      "label": [
+        "ABOUT 100 g",
+        "in your whole body at once"
+      ],
+      "seconds": 5.83
+    },
+    {
+      "kind": "atp_muscle",
+      "overlay": "label",
+      "label": [
+        "ABOUT 40 kg A DAY",
+        "used even at rest"
+      ],
+      "source": "Tymoczko, Berg & Stryer, Biochemistry: A Short Course",
+      "seconds": 7.119
+    },
+    {
+      "kind": "atp_mito",
+      "overlay": "none",
+      "seconds": 6.116
+    },
+    {
+      "kind": "atp_mito",
+      "overlay": "none",
+      "dive": true,
+      "chapter": [
+        "अध्याय दो",
+        "ATP कहाँ बनता है?"
+      ],
+      "seconds": 4.237
+    },
+    {
+      "kind": "atp_mito",
+      "overlay": "label",
+      "label": [
+        "MITOCHONDRION",
+        "wrapped in two membranes"
+      ],
+      "seconds": 5.756
+    },
+    {
+      "kind": "atp_mito",
+      "overlay": "label",
+      "dive": true,
+      "label": [
+        "CRISTAE",
+        "the folded inner membrane"
+      ],
+      "seconds": 6.282
+    },
+    {
+      "kind": "atp_dam",
+      "overlay": "label",
+      "label": [
+        "PROTONS",
+        "the hidden power source"
+      ],
+      "seconds": 6.239
+    },
+    {
+      "kind": "atp_chain",
+      "overlay": "none",
+      "chapter": [
+        "अध्याय तीन",
+        "प्रोटॉन का अंतर कैसे बनता है"
+      ],
+      "seconds": 4.077
+    },
+    {
+      "kind": "atp_chain",
+      "overlay": "label",
+      "label": [
+        "ELECTRONS",
+        "carry the energy from food"
+      ],
+      "seconds": 5.318
+    },
+    {
+      "kind": "atp_chain",
+      "overlay": "label",
+      "focus": "pumps",
+      "label": [
+        "A BUCKET BRIGADE",
+        "electrons passed along"
+      ],
+      "seconds": 7.516
+    },
+    {
+      "kind": "atp_chain",
+      "overlay": "label",
+      "focus": "pumps",
+      "label": [
+        "THREE PUMPS",
+        "Complexes I, III and IV"
+      ],
+      "seconds": 5.296
+    },
+    {
+      "kind": "atp_chain",
+      "overlay": "label",
+      "focus": "iv",
+      "label": [
+        "COMPLEX IV",
+        "electrons + oxygen make water"
+      ],
+      "seconds": 6.256
+    },
+    {
+      "kind": "atp_chain",
+      "overlay": "label",
+      "focus": "iv",
+      "label": [
+        "WHY YOU BREATHE",
+        "oxygen is the last stop"
+      ],
+      "seconds": 4.56
+    },
+    {
+      "kind": "atp_dam",
+      "overlay": "none",
+      "chapter": [
+        "अध्याय चार",
+        "ऊर्जा जमा करने वाली झिल्ली"
+      ],
+      "seconds": 3.938
+    },
+    {
+      "kind": "atp_dam",
+      "overlay": "label",
+      "label": [
+        "A PROTON DAM",
+        "crowded on one side"
+      ],
+      "seconds": 6.829
+    },
+    {
+      "kind": "atp_dam",
+      "overlay": "label",
+      "label": [
+        "ONE MAIN DOOR",
+        "back across the membrane"
+      ],
+      "seconds": 5.615
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "mode": "orbit",
+      "slow": 0.4,
+      "label": [
+        "ATP SYNTHASE",
+        "the turbine"
+      ],
+      "seconds": 4.092
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "none",
+      "mode": "spin",
+      "slow": 0.4,
+      "chapter": [
+        "अध्याय पाँच",
+        "turbine को कौन घुमाता है?"
+      ],
+      "seconds": 4.737
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "mode": "protons",
+      "slow": 0.35,
+      "label": [
+        "8 PIECES",
+        "the ring, in animals"
+      ],
+      "source": "Watt et al. 2010, PNAS 107:16823",
+      "seconds": 5.673
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "mode": "protons",
+      "slow": 0.35,
+      "label": [
+        "ONE PROTON",
+        "one step of the ring"
+      ],
+      "seconds": 6.185
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "mode": "spin",
+      "slow": 0.5,
+      "label": [
+        "8 PROTONS = 1 TURN",
+        "about 100 turns a second"
+      ],
+      "source": "Watt et al. 2010, PNAS 107:16823",
+      "seconds": 5.041
+    },
+    {
+      "kind": "atp_noji",
+      "overlay": "label",
+      "slow": 0.5,
+      "label": [
+        "1997",
+        "the spin, seen directly"
+      ],
+      "source": "Noji et al. 1997, Nature 386:299",
+      "seconds": 8.729
+    },
+    {
+      "kind": "atp_noji",
+      "overlay": "label",
+      "slow": 0.5,
+      "label": [
+        "ABOUT 2 nm WIDE",
+        "the smallest rotary motor seen"
+      ],
+      "seconds": 8.579
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "none",
+      "mode": "beta",
+      "slow": 0.3,
+      "chapter": [
+        "अध्याय छह",
+        "घूमने से ATP कैसे बनता है"
+      ],
+      "seconds": 4.1
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "mode": "beta",
+      "slow": 0.3,
+      "label": [
+        "THE CROOKED SHAFT",
+        "turns inside the head"
+      ],
+      "seconds": 5.888
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "mode": "beta",
+      "slow": 0.3,
+      "label": [
+        "THREE WORKING PARTS",
+        "each changes shape"
+      ],
+      "seconds": 4.431
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "mode": "beta",
+      "slow": 0.3,
+      "label": [
+        "OPEN - LOOSE - TIGHT",
+        "the binding change"
+      ],
+      "source": "Boyer 1997, Annual Review of Biochemistry 66:717",
+      "seconds": 7.066
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "mode": "beta",
+      "slow": 0.3,
+      "label": [
+        "3 ATP PER TURN",
+        "one from each part"
+      ],
+      "source": "Watt et al. 2010, PNAS 107:16823",
+      "seconds": 6.285
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "mode": "orbit",
+      "slow": 0.4,
+      "label": [
+        "NOBEL PRIZE 1997",
+        "Paul Boyer and John Walker"
+      ],
+      "seconds": 4.266
+    },
+    {
+      "kind": "atp_muscle",
+      "overlay": "none",
+      "chapter": [
+        "अध्याय सात",
+        "ATP जाता कहाँ है?"
+      ],
+      "seconds": 3.498
+    },
+    {
+      "kind": "atp_muscle",
+      "overlay": "label",
+      "label": [
+        "MUSCLES, NERVES, PROTEINS",
+        "all paid in ATP"
+      ],
+      "seconds": 7.41
+    },
+    {
+      "kind": "atp_mito",
+      "overlay": "label",
+      "label": [
+        "HEART AND BRAIN",
+        "never stop asking"
+      ],
+      "seconds": 4.168
+    },
+    {
+      "kind": "atp_molecule",
+      "overlay": "label",
+      "split": true,
+      "label": [
+        "EVEN SITTING STILL",
+        "about 40 kg a day"
+      ],
+      "seconds": 6.351
+    },
+    {
+      "kind": "atp_chain",
+      "overlay": "none",
+      "cyanide": true,
+      "focus": "iv",
+      "chapter": [
+        "अध्याय आठ",
+        "जब cyanide chain रोक दे"
+      ],
+      "seconds": 4.509
+    },
+    {
+      "kind": "atp_chain",
+      "overlay": "label",
+      "cyanide": true,
+      "focus": "iv",
+      "label": [
+        "CYANIDE",
+        "jams Complex IV, not the turbine"
+      ],
+      "source": "Zuhra & Szabo 2022, FEBS Journal 289:2481",
+      "seconds": 6.321
+    },
+    {
+      "kind": "atp_chain",
+      "overlay": "label",
+      "cyanide": true,
+      "label": [
+        "THE DAM DRAINS",
+        "the turbines slow down"
+      ],
+      "seconds": 7.627
+    },
+    {
+      "kind": "atp_chain",
+      "overlay": "label",
+      "cyanide": true,
+      "label": [
+        "NO NEW ATP",
+        "heart and brain hit hardest"
+      ],
+      "seconds": 7.43
+    },
+    {
+      "kind": "atp_muscle",
+      "overlay": "none",
+      "pace": 2.2,
+      "chapter": [
+        "अध्याय नौ",
+        "दौड़ने पर क्या होता है?"
+      ],
+      "seconds": 5.509,
+      "render_seconds": 5.609,
+      "event_seconds": 5.135
+    },
+    {
+      "kind": "atp_muscle",
+      "overlay": "label",
+      "pace": 2.2,
+      "label": [
+        "THE FIRST SECONDS",
+        "the ATP already there"
+      ],
+      "source": "Baker, McCormick & Robergs 2010, J Nutr Metab 905612",
+      "seconds": 7.661,
+      "render_seconds": 7.761,
+      "event_seconds": 5.351
+    },
+    {
+      "kind": "atp_molecule",
+      "overlay": "label",
+      "label": [
+        "PHOSPHOCREATINE",
+        "an instant backup"
+      ],
+      "seconds": 6.62,
+      "render_seconds": 6.72,
+      "event_seconds": 5.415
+    },
+    {
+      "kind": "atp_molecule",
+      "overlay": "label",
+      "split": true,
+      "label": [
+        "ABOUT 10 SECONDS",
+        "then the backup runs low"
+      ],
+      "source": "Baker, McCormick & Robergs 2010, J Nutr Metab 905612",
+      "seconds": 5.424,
+      "render_seconds": 5.524,
+      "event_seconds": 4.641
+    },
+    {
+      "kind": "atp_molecule",
+      "overlay": "label",
+      "split": true,
+      "label": [
+        "GLYCOLYSIS",
+        "sugar split, no oxygen"
+      ],
+      "seconds": 6.271,
+      "render_seconds": 6.371,
+      "event_seconds": 5.743
+    },
+    {
+      "kind": "atp_mito",
+      "overlay": "label",
+      "label": [
+        "10 SECOND SPRINT",
+        "~3% from mitochondria"
+      ],
+      "source": "Baker, McCormick & Robergs 2010, J Nutr Metab 905612",
+      "seconds": 5.238,
+      "render_seconds": 5.338,
+      "event_seconds": 4.476
+    },
+    {
+      "kind": "atp_mito",
+      "overlay": "label",
+      "dive": true,
+      "label": [
+        "30 SECOND SPRINT",
+        "over a quarter"
+      ],
+      "seconds": 5.03,
+      "render_seconds": 5.13,
+      "event_seconds": 3.631
+    },
+    {
+      "kind": "atp_mito",
+      "overlay": "label",
+      "label": [
+        "ABOUT 75 SECONDS",
+        "half from mitochondria"
+      ],
+      "source": "Baker, McCormick & Robergs 2010, J Nutr Metab 905612",
+      "seconds": 6.021,
+      "render_seconds": 6.121,
+      "event_seconds": 5.186
+    },
+    {
+      "kind": "atp_mito",
+      "overlay": "label",
+      "label": [
+        "THE LONG RUN",
+        "mitochondria take over"
+      ],
+      "seconds": 6.186,
+      "render_seconds": 6.286,
+      "event_seconds": 4.567
+    },
+    {
+      "kind": "atp_molecule",
+      "overlay": "label",
+      "split": true,
+      "label": [
+        "ADP + PHOSPHATE",
+        "what spent ATP leaves"
+      ],
+      "seconds": 6.183,
+      "render_seconds": 6.283,
+      "event_seconds": 5.075
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "mode": "spin",
+      "slow": 0.8,
+      "label": [
+        "MORE ADP = FASTER",
+        "respiratory control"
+      ],
+      "source": "Brand & Nicholls 2011, Biochem J 435:297",
+      "seconds": 6.699,
+      "render_seconds": 6.799,
+      "event_seconds": 6.69
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "none",
+      "mode": "orbit",
+      "slow": 0.6,
+      "seconds": 5.077,
+      "render_seconds": 5.177,
+      "event_seconds": 4.962
+    },
+    {
+      "kind": "atp_chain",
+      "overlay": "label",
+      "focus": "iv",
+      "label": [
+        "BREATHING HARD",
+        "more oxygen for the chain"
+      ],
+      "seconds": 7.339,
+      "render_seconds": 7.439,
+      "event_seconds": 6.037
+    },
+    {
+      "kind": "atp_muscle",
+      "overlay": "label",
+      "pace": 2.2,
+      "label": [
+        "ABOUT 10x THE OXYGEN",
+        "at full effort"
+      ],
+      "source": "Kaminsky, Arena & Myers 2015, Mayo Clin Proc 90:1515",
+      "seconds": 7.409,
+      "render_seconds": 7.509,
+      "event_seconds": 5.443
+    },
+    {
+      "kind": "atp_cell",
+      "overlay": "label",
+      "count": 330,
+      "label": [
+        "HEART MUSCLE",
+        "over a quarter is mitochondria"
+      ],
+      "source": "Sulkin et al. 2014, J Struct Biol 188:55",
+      "seconds": 8.031,
+      "render_seconds": 8.131,
+      "event_seconds": 6.439
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "none",
+      "mode": "reverse",
+      "slow": 0.4,
+      "chapter": [
+        "अध्याय दस",
+        "क्या turbine उल्टा चल सकता है?"
+      ],
+      "seconds": 2.43,
+      "render_seconds": 3.095,
+      "event_seconds": 2.43
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "mode": "reverse",
+      "slow": 0.4,
+      "label": [
+        "RUNNING BACKWARDS",
+        "fed ATP, it splits it"
+      ],
+      "seconds": 6.679,
+      "render_seconds": 6.779,
+      "event_seconds": 5.239
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "mode": "reverse",
+      "slow": 0.4,
+      "label": [
+        "PUMP MODE",
+        "ATP in, protons out"
+      ],
+      "seconds": 6.266,
+      "render_seconds": 6.366,
+      "event_seconds": 5.043
+    },
+    {
+      "kind": "atp_noji",
+      "overlay": "none",
+      "slow": 0.5,
+      "seconds": 5.859,
+      "render_seconds": 5.959,
+      "event_seconds": 5.078
+    },
+    {
+      "kind": "atp_noji",
+      "overlay": "label",
+      "slow": 0.5,
+      "label": [
+        "FED ATP",
+        "the head turned"
+      ],
+      "source": "Noji et al. 1997, Nature 386:299",
+      "seconds": 6.339,
+      "render_seconds": 6.439,
+      "event_seconds": 5.27
+    },
+    {
+      "kind": "atp_noji",
+      "overlay": "label",
+      "slow": 0.5,
+      "label": [
+        "HEAD AND SHAFT ONLY",
+        "from a heat-loving bacterium"
+      ],
+      "seconds": 6.759,
+      "render_seconds": 6.859,
+      "event_seconds": 6.475
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "mode": "reverse",
+      "slow": 0.3,
+      "label": [
+        "E. COLI",
+        "without oxygen"
+      ],
+      "source": "Nakamoto et al. 2008, Arch Biochem Biophys 476:43",
+      "seconds": 8.889,
+      "render_seconds": 8.989,
+      "event_seconds": 7.989
+    },
+    {
+      "kind": "atp_chain",
+      "overlay": "label",
+      "cyanide": true,
+      "label": [
+        "A DRAINED DAM",
+        "turbines could burn ATP"
+      ],
+      "seconds": 7.421,
+      "render_seconds": 7.521,
+      "event_seconds": 6.572
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "mode": "orbit",
+      "slow": 0.2,
+      "label": [
+        "IF1",
+        "the brake"
+      ],
+      "seconds": 5.017,
+      "render_seconds": 5.117,
+      "event_seconds": 4.141
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "mode": "spin",
+      "slow": 0.12,
+      "label": [
+        "ATP SAVED",
+        "when the dam drains"
+      ],
+      "source": "Campanella et al. 2008, Cell Metab 8:13",
+      "seconds": 7.331,
+      "render_seconds": 7.431,
+      "event_seconds": 5.84
+    },
+    {
+      "kind": "atp_dam",
+      "overlay": "none",
+      "leak": true,
+      "chapter": [
+        "अध्याय ग्यारह",
+        "ब्राउन फ़ैट गर्मी कैसे बनाता है?"
+      ],
+      "seconds": 3.739,
+      "render_seconds": 3.839,
+      "event_seconds": 3.339
+    },
+    {
+      "kind": "atp_cell",
+      "overlay": "label",
+      "count": 300,
+      "label": [
+        "BROWN FAT",
+        "packed with mitochondria"
+      ],
+      "source": "Lidell et al. 2013, Nat Med 19:631",
+      "seconds": 2.404,
+      "render_seconds": 4.908,
+      "event_seconds": 2.404
+    },
+    {
+      "kind": "atp_dam",
+      "overlay": "label",
+      "leak": true,
+      "label": [
+        "UCP1",
+        "a gap in the dam"
+      ],
+      "seconds": 9.99,
+      "render_seconds": 10.09,
+      "event_seconds": 5.377
+    },
+    {
+      "kind": "atp_dam",
+      "overlay": "label",
+      "leak": true,
+      "label": [
+        "NO TURBINE",
+        "protons leak back"
+      ],
+      "source": "Fedorenko, Lishko & Kirichok 2012, Cell 151:400",
+      "seconds": 5.811,
+      "render_seconds": 5.911,
+      "event_seconds": 5.416
+    },
+    {
+      "kind": "atp_dam",
+      "overlay": "label",
+      "leak": true,
+      "label": [
+        "HEAT",
+        "instead of ATP"
+      ],
+      "seconds": 4.9,
+      "render_seconds": 5.0,
+      "event_seconds": 4.764
+    },
+    {
+      "kind": "atp_dam",
+      "overlay": "none",
+      "leak": true,
+      "seconds": 5.18,
+      "render_seconds": 5.28,
+      "event_seconds": 3.487
+    },
+    {
+      "kind": "atp_cell",
+      "overlay": "label",
+      "count": 220,
+      "label": [
+        "ADULTS TOO",
+        "neck and collarbones"
+      ],
+      "source": "Cypess et al. 2009, NEJM 360:1509",
+      "seconds": 6.462,
+      "render_seconds": 6.562,
+      "event_seconds": 4.865
+    },
+    {
+      "kind": "atp_cell",
+      "overlay": "none",
+      "mode": "engulf",
+      "chapter": [
+        "अध्याय बारह",
+        "माइटोकॉन्ड्रिया कहाँ से आए?"
+      ],
+      "seconds": 3.34,
+      "render_seconds": 3.613,
+      "event_seconds": 3.34
+    },
+    {
+      "kind": "atp_cell",
+      "overlay": "label",
+      "mode": "engulf",
+      "label": [
+        "ONCE BACTERIA",
+        "free-living cells"
+      ],
+      "seconds": 5.151,
+      "render_seconds": 5.251,
+      "event_seconds": 4.684
+    },
+    {
+      "kind": "atp_cell",
+      "overlay": "label",
+      "mode": "engulf",
+      "label": [
+        "OVER 1.5 BILLION YEARS AGO",
+        "one cell inside another"
+      ],
+      "source": "Parfrey et al. 2011, PNAS 108:13624",
+      "seconds": 5.564,
+      "render_seconds": 5.664,
+      "event_seconds": 5.138
+    },
+    {
+      "kind": "atp_cell",
+      "overlay": "label",
+      "mode": "engulf",
+      "label": [
+        "A PARTNERSHIP",
+        "shelter for energy"
+      ],
+      "seconds": 6.489,
+      "render_seconds": 6.589,
+      "event_seconds": 5.769
+    },
+    {
+      "kind": "atp_cell",
+      "overlay": "label",
+      "mode": "engulf",
+      "label": [
+        "ASGARD ARCHAEA",
+        "the host's relatives"
+      ],
+      "source": "Roger, Munoz-Gomez & Kamikawa 2017, Curr Biol 27:R1177",
+      "seconds": 6.283,
+      "render_seconds": 6.476,
+      "event_seconds": 6.283
+    },
+    {
+      "kind": "atp_cell",
+      "overlay": "label",
+      "label": [
+        "ONE ANCESTOR",
+        "for all mitochondria"
+      ],
+      "source": "Roger, Munoz-Gomez & Kamikawa 2017, Curr Biol 27:R1177",
+      "seconds": 5.118,
+      "render_seconds": 5.218,
+      "event_seconds": 5.056
+    },
+    {
+      "kind": "atp_mito",
+      "overlay": "label",
+      "label": [
+        "THEIR OWN DNA",
+        "left from the bacterium"
+      ],
+      "seconds": 4.194,
+      "render_seconds": 4.294,
+      "event_seconds": 3.212
+    },
+    {
+      "kind": "atp_mito",
+      "overlay": "label",
+      "dive": true,
+      "label": [
+        "16,569 BASE PAIRS",
+        "37 genes"
+      ],
+      "source": "Anderson et al. 1981, Nature 290:457",
+      "seconds": 7.99,
+      "render_seconds": 8.09,
+      "event_seconds": 7.053
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "mode": "protons",
+      "slow": 0.35,
+      "label": [
+        "TWO TURBINE PARTS",
+        "written in mitochondrial DNA"
+      ],
+      "source": "Anderson et al. 1981, Nature 290:457",
+      "seconds": 3.692,
+      "render_seconds": 3.792,
+      "event_seconds": 2.987
+    },
+    {
+      "kind": "atp_cell",
+      "overlay": "label",
+      "label": [
+        "HUNDREDS PER CELL",
+        "each with its own DNA"
+      ],
+      "source": "Robin & Wong 1988, J Cell Physiol 136:507",
+      "seconds": 4.943,
+      "render_seconds": 5.043,
+      "event_seconds": 4.104
+    },
+    {
+      "kind": "atp_cell",
+      "overlay": "none",
+      "mode": "egg",
+      "chapter": [
+        "अध्याय तेरह",
+        "सिर्फ़ माँ से ही क्यों?"
+      ],
+      "seconds": 4.592,
+      "render_seconds": 4.692,
+      "event_seconds": 4.136
+    },
+    {
+      "kind": "atp_cell",
+      "overlay": "label",
+      "mode": "egg",
+      "label": [
+        "ABOUT 200,000 COPIES",
+        "of mitochondrial DNA"
+      ],
+      "source": "Reynier et al. 2001, Mol Hum Reprod 7:425",
+      "seconds": 8.648,
+      "render_seconds": 8.748,
+      "event_seconds": 8.213
+    },
+    {
+      "kind": "atp_cell",
+      "overlay": "label",
+      "mode": "egg",
+      "label": [
+        "20,000 TO 600,000",
+        "it varies a lot"
+      ],
+      "source": "Reynier et al. 2001, Mol Hum Reprod 7:425",
+      "seconds": 5.021,
+      "render_seconds": 5.121,
+      "event_seconds": 4.923
+    },
+    {
+      "kind": "atp_cell",
+      "overlay": "label",
+      "mode": "egg",
+      "label": [
+        "A FEW IN THE SPERM",
+        "to power the tail"
+      ],
+      "seconds": 5.727,
+      "render_seconds": 5.827,
+      "event_seconds": 4.43
+    },
+    {
+      "kind": "atp_cell",
+      "overlay": "label",
+      "mode": "egg",
+      "label": [
+        "TAGGED AND DESTROYED",
+        "soon after fertilisation"
+      ],
+      "source": "Sutovsky et al. 1999, Nature 402:371",
+      "seconds": 5.21,
+      "render_seconds": 5.31,
+      "event_seconds": 3.994
+    },
+    {
+      "kind": "atp_cell",
+      "overlay": "label",
+      "label": [
+        "FROM YOUR MOTHER",
+        "almost always"
+      ],
+      "source": "Luo et al. 2018, PNAS 115:13039",
+      "seconds": 5.979,
+      "render_seconds": 6.079,
+      "event_seconds": 5.672
+    },
+    {
+      "kind": "atp_cell",
+      "overlay": "none",
+      "mode": "egg",
+      "seconds": 6.382,
+      "render_seconds": 6.482,
+      "event_seconds": 5.206
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "none",
+      "mode": "orbit",
+      "slow": 0.4,
+      "seconds": 12.155,
+      "render_seconds": 12.255,
+      "event_seconds": 9.341
+    },
+    {
+      "kind": "atp_mito",
+      "overlay": "none",
+      "seconds": 2.493,
+      "render_seconds": 2.64,
+      "event_seconds": 2.493
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "mode": "orbit",
+      "slow": 0.4,
+      "label": [
+        "~100 TURNS A SECOND",
+        "3 ATP every turn"
+      ],
+      "source": "Watt et al. 2010, PNAS 107:16823",
+      "seconds": 7.362,
+      "render_seconds": 7.462,
+      "event_seconds": 7.247
+    },
+    {
+      "kind": "atp_muscle",
+      "overlay": "none",
+      "seconds": 9.484,
+      "render_seconds": 9.584,
+      "event_seconds": 6.951
+    }
+  ],
+  "hi_labels": {
+    "1997": "1997",
+    "3 ATP PER TURN": "हर चक्कर में 3 ATP",
+    "3 ATP every turn": "हर चक्कर 3 ATP",
+    "8 PIECES": "8 टुकड़े",
+    "8 PROTONS = 1 TURN": "8 प्रोटॉन = 1 चक्कर",
+    "A BUCKET BRIGADE": "हाथों-हाथ बाल्टी",
+    "A PROTON DAM": "प्रोटॉन का बाँध",
+    "ABOUT 100 g": "लगभग 100 g",
+    "ABOUT 2 nm WIDE": "लगभग 2 nm चौड़ी",
+    "ABOUT 40 kg A DAY": "रोज़ लगभग 40 kg",
+    "ATP": "ATP",
+    "ATP SYNTHASE": "ATP SYNTHASE",
+    "COMPLEX IV": "कॉम्प्लेक्स IV",
+    "CRISTAE": "CRISTAE",
+    "CYANIDE": "CYANIDE",
+    "Complexes I, III and IV": "कॉम्प्लेक्स I, III और IV",
+    "ELECTRONS": "इलेक्ट्रॉन",
+    "EVEN SITTING STILL": "चुपचाप बैठे हुए भी",
+    "HEART AND BRAIN": "दिल और दिमाग़",
+    "MITOCHONDRION": "माइटोकॉन्ड्रिया",
+    "MUSCLES, NERVES, PROTEINS": "मांसपेशी, नस, protein",
+    "NO NEW ATP": "नया ATP नहीं",
+    "NOBEL PRIZE 1997": "NOBEL PRIZE 1997",
+    "ONE MAIN DOOR": "एक मुख्य दरवाज़ा",
+    "ONE PROTON": "एक प्रोटॉन",
+    "OPEN - LOOSE - TIGHT": "खुला - ढीला - कसा",
+    "PROTONS": "प्रोटॉन",
+    "Paul Boyer and John Walker": "Paul Boyer और John Walker",
+    "THE CROOKED SHAFT": "टेढ़ी धुरी",
+    "THE DAM DRAINS": "बाँध खाली होता है",
+    "THREE PUMPS": "तीन pump",
+    "THREE WORKING PARTS": "तीन काम करने वाले हिस्से",
+    "WHY YOU BREATHE": "हम साँस क्यों लेते हैं",
+    "about 100 turns a second": "हर सेकंड लगभग 100 चक्कर",
+    "about 40 kg a day": "रोज़ लगभग 40 kg",
+    "all paid in ATP": "सबका भुगतान ATP से",
+    "back across the membrane": "झिल्ली के पार वापस",
+    "carry the energy from food": "खाने की ऊर्जा ढोते हैं",
+    "crowded on one side": "एक तरफ़ भीड़",
+    "each changes shape": "हर एक आकार बदलता है",
+    "electrons + oxygen make water": "इलेक्ट्रॉन + ऑक्सीजन = पानी",
+    "electrons passed along": "इलेक्ट्रॉन आगे बढ़ते हैं",
+    "heart and brain hit hardest": "दिल और दिमाग़ पर सबसे ज़्यादा असर",
+    "in your whole body at once": "पूरे शरीर में एक समय पर",
+    "jams Complex IV, not the turbine": "कॉम्प्लेक्स IV जाम, turbine नहीं",
+    "never stop asking": "कभी माँगना बंद नहीं करते",
+    "one from each part": "हर हिस्से से एक",
+    "one step of the ring": "छल्ले का एक कदम",
+    "oxygen is the last stop": "ऑक्सीजन आख़िरी पड़ाव",
+    "shown here slowed down": "यहाँ धीमा दिखाया गया",
+    "the binding change": "आकार का बदलना",
+    "the energy coin cells spend": "कोशिकाओं का ऊर्जा-सिक्का",
+    "the folded inner membrane": "मुड़ी हुई भीतरी झिल्ली",
+    "the hidden power source": "छिपा हुआ ताकत का स्रोत",
+    "the ring, in animals": "जानवरों में यह छल्ला",
+    "the smallest rotary motor seen": "सबसे छोटी घूमती मोटर",
+    "the spin, seen directly": "घूमना, सीधे देखा गया",
+    "the turbine": "यही turbine",
+    "the turbines slow down": "turbine धीमे पड़ते हैं",
+    "turns inside the head": "सिर के अंदर घूमती है",
+    "used even at rest": "आराम में भी खर्च",
+    "wrapped in two membranes": "दो झिल्लियों में लिपटा",
+    "~100 TURNS A SECOND": "हर सेकंड ~100 चक्कर",
+    "10 SECOND SPRINT": "10 सेकंड की दौड़",
+    "16,569 BASE PAIRS": "16,569 base pairs",
+    "20,000 TO 600,000": "20,000 से 6 लाख",
+    "30 SECOND SPRINT": "30 सेकंड की दौड़",
+    "37 genes": "37 genes",
+    "A DRAINED DAM": "खाली बाँध",
+    "A FEW IN THE SPERM": "शुक्राणु में कुछ ही",
+    "A PARTNERSHIP": "एक साझेदारी",
+    "ABOUT 10 SECONDS": "लगभग 10 सेकंड",
+    "ABOUT 10x THE OXYGEN": "लगभग 10 गुना ऑक्सीजन",
+    "ABOUT 200,000 COPIES": "लगभग 2 लाख प्रतियाँ",
+    "ABOUT 75 SECONDS": "लगभग 75 सेकंड",
+    "ADP + PHOSPHATE": "ADP + फ़ॉस्फ़ेट",
+    "ADULTS TOO": "बड़ों में भी",
+    "ASGARD ARCHAEA": "ASGARD ARCHAEA",
+    "ATP SAVED": "ATP बचा",
+    "ATP in, protons out": "ATP अंदर, प्रोटॉन बाहर",
+    "BREATHING HARD": "तेज़ साँस",
+    "BROWN FAT": "ब्राउन फ़ैट",
+    "CHAPTER 10": "अध्याय दस",
+    "CHAPTER 11": "अध्याय ग्यारह",
+    "CHAPTER 12": "अध्याय बारह",
+    "CHAPTER 13": "अध्याय तेरह",
+    "CHAPTER 9": "अध्याय नौ",
+    "Can The Turbine Run Backwards?": "क्या turbine उल्टा चल सकता है?",
+    "E. COLI": "E. COLI",
+    "FED ATP": "ATP खिलाया",
+    "FROM YOUR MOTHER": "आपकी माँ से",
+    "GLYCOLYSIS": "ग्लाइकोलिसिस",
+    "HEAD AND SHAFT ONLY": "सिर्फ़ सिर और धुरी",
+    "HEART MUSCLE": "दिल की मांसपेशी",
+    "HEAT": "गर्मी",
+    "HUNDREDS PER CELL": "हर कोशिका में सैकड़ों",
+    "How Does Brown Fat Make Heat?": "ब्राउन फ़ैट गर्मी कैसे बनाता है?",
+    "IF1": "IF1",
+    "MORE ADP = FASTER": "ज़्यादा ADP = तेज़",
+    "NO TURBINE": "turbine नहीं",
+    "ONCE BACTERIA": "कभी बैक्टीरिया थे",
+    "ONE ANCESTOR": "एक ही पूर्वज",
+    "OVER 1.5 BILLION YEARS AGO": "डेढ़ अरब साल से भी पहले",
+    "PHOSPHOCREATINE": "फ़ॉस्फ़ोक्रिएटिन",
+    "PUMP MODE": "pump मोड",
+    "RUNNING BACKWARDS": "उल्टा चलना",
+    "TAGGED AND DESTROYED": "निशान लगाकर नष्ट",
+    "THE FIRST SECONDS": "पहले कुछ सेकंड",
+    "THE LONG RUN": "लंबी दौड़",
+    "THEIR OWN DNA": "उनका अपना DNA",
+    "TWO TURBINE PARTS": "turbine के दो टुकड़े",
+    "UCP1": "UCP1",
+    "What Happens When You Run?": "दौड़ने पर क्या होता है?",
+    "Where Did Mitochondria Come From?": "माइटोकॉन्ड्रिया कहाँ से आए?",
+    "Why Only From Your Mother?": "सिर्फ़ माँ से ही क्यों?",
+    "a gap in the dam": "बाँध में दरार",
+    "almost always": "लगभग हमेशा",
+    "an instant backup": "तुरंत बैकअप",
+    "at full effort": "पूरी ताकत पर",
+    "each with its own DNA": "हर एक का अपना DNA",
+    "fed ATP, it splits it": "ATP खिलाओ, वह तोड़ता है",
+    "for all mitochondria": "सारे माइटोकॉन्ड्रिया का",
+    "free-living cells": "आज़ाद कोशिकाएँ",
+    "from a heat-loving bacterium": "गर्मी पसंद बैक्टीरिया से",
+    "half from mitochondria": "आधा माइटोकॉन्ड्रिया से",
+    "instead of ATP": "ATP की जगह",
+    "it varies a lot": "बहुत अलग-अलग",
+    "left from the bacterium": "बैक्टीरिया की निशानी",
+    "mitochondria take over": "माइटोकॉन्ड्रिया संभालते हैं",
+    "more oxygen for the chain": "chain के लिए ज़्यादा ऑक्सीजन",
+    "neck and collarbones": "गर्दन और कॉलरबोन",
+    "of mitochondrial DNA": "माइटोकॉन्ड्रियल DNA की",
+    "one cell inside another": "एक कोशिका दूसरी के अंदर",
+    "over a quarter": "एक चौथाई से ज़्यादा",
+    "over a quarter is mitochondria": "एक चौथाई से ज़्यादा माइटोकॉन्ड्रिया",
+    "packed with mitochondria": "माइटोकॉन्ड्रिया से भरा",
+    "protons leak back": "प्रोटॉन वापस रिसते हैं",
+    "respiratory control": "रेस्पिरेटरी कंट्रोल",
+    "shelter for energy": "घर के बदले ऊर्जा",
+    "soon after fertilisation": "निषेचन के जल्दी बाद",
+    "sugar split, no oxygen": "बिना ऑक्सीजन शक्कर टूटती है",
+    "the ATP already there": "पहले से मौजूद ATP",
+    "the brake": "ब्रेक",
+    "the head turned": "सिर घूमा",
+    "the host's relatives": "मेज़बान के रिश्तेदार",
+    "then the backup runs low": "फिर बैकअप घटता है",
+    "to power the tail": "पूँछ चलाने के लिए",
+    "turbines could burn ATP": "turbine ATP जला सकते हैं",
+    "what spent ATP leaves": "खर्च हुए ATP का बचा",
+    "when the dam drains": "जब बाँध खाली हो",
+    "without oxygen": "बिना ऑक्सीजन",
+    "written in mitochondrial DNA": "माइटोकॉन्ड्रियल DNA में लिखे",
+    "~3% from mitochondria": "~3% माइटोकॉन्ड्रिया से"
+  }
+}

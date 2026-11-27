@@ -648,10 +648,22 @@ def main():
     for i, shot in enumerate(spec["shots"]):
         n = int(round(shot["seconds"] * FPS))
         src = frames / f"s{i}"
-        have = len(list(src.glob("*.png")))
-        if have < n:
-            raise SystemExit(f"shot {i}: {have} of {n} frames rendered")
-        run(["ffmpeg", "-y", "-loglevel", "error", "-framerate", str(FPS), "-i", str(src / "%05d.png"),
+        clip = frames / f"s{i}.mp4"
+        # 27 Nov 2026: a shot may be a packed clip (archive_frames.sh) or a clip reused from another film
+        # (render once, publish many). A clip up to 15 frames short holds its last frame.
+        if not (src.is_dir() and any(src.glob("*.png"))) and clip.exists():
+            have = int(subprocess.run(["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries",
+                                       "stream=nb_frames", "-of", "csv=p=0", str(clip)],
+                                      capture_output=True, text=True).stdout.strip() or 0)
+            if have + 15 < n:
+                raise SystemExit(f"shot {i}: clip has {have} of {n} frames")
+            inp = ["-i", str(clip), "-vf", "tpad=stop_mode=clone:stop=15"]
+        else:
+            have = len(list(src.glob("*.png")))
+            if have < n:
+                raise SystemExit(f"shot {i}: {have} of {n} frames rendered")
+            inp = ["-framerate", str(FPS), "-i", str(src / "%05d.png")]
+        run(["ffmpeg", "-y", "-loglevel", "error", *inp,
              "-frames:v", str(n), "-c:v", "libx264", "-crf", "12", "-preset", "medium", "-pix_fmt", "yuv420p",
              f"shot{i}.mp4"], job)
         segs.append(f"shot{i}.mp4")

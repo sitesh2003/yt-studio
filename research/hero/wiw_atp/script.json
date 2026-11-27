@@ -1,0 +1,227 @@
+{
+  "title_options": [
+    "The Physics Of The Smallest Motor Inside You ⚡"
+  ],
+  "facts": [
+    "Numbers and sources in tools/blender/hero/make_wiw_atp.py docstring; biology as fact-checked in the ATP book (research/hero/book_atp_ext/facts_checked.md)."
+  ],
+  "sources": "Yasuda, Noji, Kinosita & Yoshida 1998, Cell 93:1117; Lane & Martin 2010, Nature 467:929; Perry et al. 2011, BioTechniques 50:98; Watt et al. 2010, PNAS 107:16823; Noji et al. 1997, Nature 386:299; Campanella et al. 2008, Cell Metab 8:13; Fedorenko, Lishko & Kirichok 2012, Cell 151:400; Brand & Nicholls 2011, Biochem J 435:297; Kaminsky, Arena & Myers 2015, Mayo Clin Proc 90:1515",
+  "description": "Inside your cells, a rotary motor about ten billionths of a metre across turns about a hundred times a second, powered by a membrane charged like a battery. We work through its physics: voltage and field strength, torque, efficiency, thermal noise, power, generators, short circuits and feedback. In 3D, from published measurements.",
+  "share": {
+    "myth": "Machines inside living cells are sloppy compared with human-made engines.",
+    "truth": "ATP synthase turns in 120-degree steps with a torque of about 40 pN nm, and its work per step nearly matches the energy in one ATP, close to 100% efficient (Yasuda et al. 1998, Cell).",
+    "line": "The motor inside your cells is close to one hundred percent efficient. A car engine manages about a quarter to a third."
+  },
+  "tags": [
+    "physics",
+    "ATP synthase",
+    "molecular motor",
+    "biophysics",
+    "why it works",
+    "science explained",
+    "3D animation"
+  ],
+  "scenes": [
+    {
+      "narration": "Inside you right now are motors so small that tens of thousands, side by side, would fit across the full stop at the end of a sentence."
+    },
+    {
+      "narration": "Each one spins about a hundred times a second. And it's a real rotary motor, with a rotor, a shaft and a stator, like the motor in a drill."
+    },
+    {
+      "narration": "It runs on electricity. Not from a socket, but from protons, pushed across a membrane."
+    },
+    {
+      "narration": "Its name is ATP synthase. And this is the physics of how it works."
+    },
+    {
+      "narration": "Chapter one. How much power do you need?"
+    },
+    {
+      "narration": "Even resting, your body uses energy at roughly eighty to a hundred watts. About as much as an old, bright light bulb."
+    },
+    {
+      "narration": "Almost all of that is paid out in one molecule, ATP, the energy currency of your cells."
+    },
+    {
+      "narration": "You hold only about a hundred grams of it at once. Yet you use about forty kilograms a day."
+    },
+    {
+      "narration": "So every molecule is rebuilt about four hundred times a day."
+    },
+    {
+      "narration": "The machine that rebuilds it is the motor. But first, it needs a power supply."
+    },
+    {
+      "narration": "Chapter two. A battery in a membrane."
+    },
+    {
+      "narration": "The motors sit in the inner membrane of mitochondria, the power stations of the cell."
+    },
+    {
+      "narration": "That membrane is folded again and again, to pack in as many motors as possible."
+    },
+    {
+      "narration": "Food is broken down until its energy is carried by electrons."
+    },
+    {
+      "narration": "Those electrons flow down a chain of proteins, a little like a current through a circuit."
+    },
+    {
+      "narration": "Their energy drives pumps that push protons, which are positive charges, to one side of the membrane."
+    },
+    {
+      "narration": "At the end of the chain, the electrons are handed to oxygen, and make water."
+    },
+    {
+      "narration": "Pile up positive charge on one side, and you get a voltage. Across this membrane, it's about a hundred and fifty to a hundred and eighty millivolts."
+    },
+    {
+      "narration": "That sounds tiny. But the membrane is only about five billionths of a metre thick. Divide the voltage by that distance, and the electric field is about thirty million volts per metre."
+    },
+    {
+      "narration": "Scientists have compared that to the field in a lightning bolt, across every one of your mitochondria."
+    },
+    {
+      "narration": "Chapter three. Energy stored uphill."
+    },
+    {
+      "narration": "The protons are pushed back by two things at once: the voltage, and the crowding, because there are far more of them on one side."
+    },
+    {
+      "narration": "Together, they're called the proton-motive force. Like water held behind a dam, it's stored energy, waiting to flow downhill."
+    },
+    {
+      "narration": "And the main way back through the membrane is through the motor."
+    },
+    {
+      "narration": "Chapter four. The rotor."
+    },
+    {
+      "narration": "In the membrane sits a ring. In animals, it's made of eight identical pieces."
+    },
+    {
+      "narration": "A proton drops onto one piece, rides the ring around, and is let out on the other side."
+    },
+    {
+      "narration": "Eight protons, one full turn. About a hundred turns every second."
+    },
+    {
+      "narration": "In 1997, scientists in Japan attached a glowing filament to the shaft, and filmed it turning."
+    },
+    {
+      "narration": "The shaft is only about two billionths of a metre across. The smallest rotary motor anyone had ever seen."
+    },
+    {
+      "narration": "Chapter five. Torque and efficiency."
+    },
+    {
+      "narration": "The spinning shaft turns inside a head with three working parts."
+    },
+    {
+      "narration": "Each turn squeezes every part through three shapes, and each squeeze presses together one ATP."
+    },
+    {
+      "narration": "Three parts, three ATP a turn. That's one every hundred and twenty degrees."
+    },
+    {
+      "narration": "In 1998, the same team filmed the shaft clicking round in steps of exactly that size: a hundred and twenty degrees, one ATP each."
+    },
+    {
+      "narration": "From how hard the filament was dragged through the water, they worked out the motor's torque, its turning force: about forty piconewton-nanometres."
+    },
+    {
+      "narration": "Multiply that torque by the angle of one step, and you get the work the motor does for every ATP."
+    },
+    {
+      "narration": "And that work almost exactly matches the energy one ATP carries inside a cell. The motor inside your cells is close to one hundred percent efficient. A car engine manages about a quarter to a third."
+    },
+    {
+      "narration": "How can anything work that well? Part of the answer: it's tiny. At this size, water molecules are constantly battering it from every side."
+    },
+    {
+      "narration": "The energy of that random jostling, at body temperature, is about four piconewton-nanometres. One ATP carries about twenty times more. Enough to beat the noise."
+    },
+    {
+      "narration": "Chapter six. The power of one motor."
+    },
+    {
+      "narration": "Power is torque times how fast something turns. Put in forty piconewton-nanometres, and a hundred turns a second."
+    },
+    {
+      "narration": "One motor makes about twenty-five billion-billionths of a watt."
+    },
+    {
+      "narration": "To run a hundred-watt light bulb, you'd need about four billion billion of them, all spinning flat out."
+    },
+    {
+      "narration": "That's roughly the job your mitochondria do for you, every moment, without a sound."
+    },
+    {
+      "narration": "Chapter seven. Motor, or generator?"
+    },
+    {
+      "narration": "Run an electric motor backwards and it becomes a generator. ATP synthase works both ways too."
+    },
+    {
+      "narration": "Feed it ATP, and it spins the other way, splitting ATP and pumping protons back uphill."
+    },
+    {
+      "narration": "Without oxygen, the bacterium E. coli does exactly this, spending ATP to keep its membrane charged."
+    },
+    {
+      "narration": "Your mitochondria carry a brake, a small protein called IF1."
+    },
+    {
+      "narration": "If the voltage collapses, IF1 largely stops the motors running backwards and wasting ATP."
+    },
+    {
+      "narration": "Chapter eight. A short circuit."
+    },
+    {
+      "narration": "Brown fat cells are packed with mitochondria."
+    },
+    {
+      "narration": "Their membranes hold a protein called UCP1, a gap in the dam. Protons rush straight back through it, without passing through the motor."
+    },
+    {
+      "narration": "In electrical terms, it's a short circuit. Current flows, but no useful work gets done."
+    },
+    {
+      "narration": "So the energy comes out as heat, just as a short-circuited wire gets hot."
+    },
+    {
+      "narration": "Newborn babies rely on it to keep warm. Adults keep smaller amounts, switched on by cold."
+    },
+    {
+      "narration": "Chapter nine. Speed control."
+    },
+    {
+      "narration": "Start to sprint, and your muscles burn through ATP far faster."
+    },
+    {
+      "narration": "Every ATP spent leaves behind ADP and phosphate."
+    },
+    {
+      "narration": "Those are exactly what the motor needs. As they build up, it spins faster, and the chain pumps harder."
+    },
+    {
+      "narration": "Nobody flips a switch. Spending energy is itself the signal to make more."
+    },
+    {
+      "narration": "Engineers call that negative feedback. And it's why you breathe harder: the chain needs more oxygen."
+    },
+    {
+      "narration": "At full effort, a fit young adult can use roughly ten times as much oxygen as at rest."
+    },
+    {
+      "narration": "So that's the physics of the motor inside you. A membrane charged like a battery. A field like lightning. A rotor turned by protons, stepping a hundred and twenty degrees at a time, close to perfectly efficient."
+    },
+    {
+      "narration": "All of it, smaller than a virus."
+    },
+    {
+      "narration": "Run an electric motor backwards and it becomes a generator, and this one does the same. So if a motor this small can be this efficient, what would you build if you could copy it?"
+    }
+  ]
+}

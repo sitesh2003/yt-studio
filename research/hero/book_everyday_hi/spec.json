@@ -1,0 +1,1045 @@
+{
+  "assets_dir": "assets/3d",
+  "renderer": "micro",
+  "end_beat_s": 0.6,
+  "aspect": "landscape",
+  "long": true,
+  "keep_vertical_fov": true,
+  "caption_scale": 1.0,
+  "shots": [
+    {
+      "kind": "chilli_macro",
+      "overlay": "label",
+      "label": [
+        "SIX THINGS",
+        "almost everyone gets wrong"
+      ],
+      "fstop": 4.0,
+      "seconds": 3.423,
+      "src": [
+        "chilli_burn",
+        0
+      ]
+    },
+    {
+      "kind": "gk_climb",
+      "overlay": "label",
+      "label": [
+        "NO SUCTION. NO GLUE.",
+        "so how?"
+      ],
+      "from_front": true,
+      "seconds": 4.34,
+      "src": [
+        "gecko_glass",
+        0
+      ]
+    },
+    {
+      "kind": "pc_pan",
+      "overlay": "none",
+      "pops": 6,
+      "seconds": 3.14,
+      "src": [
+        "popcorn",
+        8
+      ]
+    },
+    {
+      "kind": "chilli_macro",
+      "overlay": "chapter",
+      "label": [
+        "NO REAL HEAT",
+        "your mouth stays about 37 °C"
+      ],
+      "fstop": 4.0,
+      "seconds": 3.423,
+      "chapter": [
+        "CHAPTER 1",
+        "Why Does Chilli Burn?"
+      ],
+      "src": [
+        "chilli_burn",
+        0
+      ]
+    },
+    {
+      "kind": "chilli_macro",
+      "overlay": "label",
+      "label": [
+        "NO REAL HEAT",
+        "your mouth stays about 37 °C"
+      ],
+      "fstop": 4.0,
+      "seconds": 3.423,
+      "src": [
+        "chilli_burn",
+        0
+      ]
+    },
+    {
+      "kind": "membrane_dive",
+      "overlay": "label",
+      "label": [
+        "TRPV1",
+        "a heat alarm on your nerves"
+      ],
+      "seconds": 5.791,
+      "src": [
+        "chilli_burn",
+        1
+      ]
+    },
+    {
+      "kind": "heat_open",
+      "overlay": "label",
+      "label": [
+        "OPENS AT ~43 °C",
+        "about 109 °F"
+      ],
+      "source": "Caterina et al. 1997, Nature 389:816",
+      "seconds": 5.9,
+      "src": [
+        "chilli_burn",
+        2
+      ]
+    },
+    {
+      "kind": "capsaicin_open",
+      "overlay": "label",
+      "label": [
+        "CAPSAICIN",
+        "opens it with NO heat"
+      ],
+      "seconds": 5.527,
+      "src": [
+        "chilli_burn",
+        3
+      ]
+    },
+    {
+      "kind": "nerve_pulse",
+      "overlay": "label",
+      "label": [
+        "SAME ALARM",
+        "your brain hears HOT"
+      ],
+      "seconds": 3.639,
+      "src": [
+        "chilli_burn",
+        4
+      ]
+    },
+    {
+      "kind": "channel_orbit",
+      "overlay": "label",
+      "label": [
+        "NOBEL PRIZE 2021",
+        "for finding this sensor"
+      ],
+      "gold": true,
+      "source": "Nobel Prize in Physiology or Medicine 2021",
+      "seconds": 2.684,
+      "src": [
+        "chilli_burn",
+        5
+      ]
+    },
+    {
+      "kind": "pull_back",
+      "overlay": "label",
+      "label": [
+        "MINT",
+        "switches on a cold sensor"
+      ],
+      "seconds": 4.794,
+      "source": "McKemy, Neuhausser & Julius 2002, Nature 416:52; Peier et al. 2002, Cell 108:705",
+      "src": [
+        "chilli_burn",
+        7
+      ]
+    },
+    {
+      "kind": "membrane_dive",
+      "overlay": "label",
+      "label": [
+        "BIRDS FEEL NOTHING",
+        "their sensor ignores capsaicin"
+      ],
+      "seconds": 5.791,
+      "source": "Jordt & Julius 2002, Cell 108:421; Tewksbury & Nabhan 2001, Nature 412:403",
+      "src": [
+        "chilli_burn",
+        1
+      ]
+    },
+    {
+      "kind": "capsaicin_leave",
+      "overlay": "label",
+      "label": [
+        "MILK WORKS BEST",
+        "even skim milk"
+      ],
+      "source": "Nolden, Lenart & Hayes 2019, Physiology & Behavior 208:112557",
+      "seconds": 3.973,
+      "src": [
+        "chilli_burn",
+        6
+      ]
+    },
+    {
+      "kind": "cold_tease",
+      "overlay": "none",
+      "seconds": 3.72,
+      "src": [
+        "chilli_burn",
+        8
+      ]
+    },
+    {
+      "kind": "mosq_magnet",
+      "overlay": "chapter",
+      "label": [
+        "MOSQUITO MAGNETS",
+        "not sweet blood"
+      ],
+      "seconds": 4.187,
+      "chapter": [
+        "CHAPTER 2",
+        "Why Do Mosquitoes Pick You?"
+      ],
+      "src": [
+        "mosquito_magnets",
+        0
+      ]
+    },
+    {
+      "kind": "mosq_magnet",
+      "overlay": "label",
+      "seconds": 3.14,
+      "label": [
+        "ONLY FEMALES BITE",
+        "blood protein for eggs"
+      ],
+      "source": "CDC: mosquito life cycle",
+      "src": [
+        "mosquito_magnets",
+        8
+      ]
+    },
+    {
+      "kind": "mosq_follow",
+      "overlay": "label",
+      "label": [
+        "BREATH, SIGHT, HEAT",
+        "how it closes in"
+      ],
+      "many": 8,
+      "seconds": 4.791,
+      "source": "van Breugel et al. 2015, Current Biology 25:2123",
+      "src": [
+        "mosquito_magnets",
+        7
+      ]
+    },
+    {
+      "kind": "mosq_magnet",
+      "overlay": "label",
+      "label": [
+        "MOSQUITO MAGNETS",
+        "not sweet blood"
+      ],
+      "seconds": 4.187,
+      "src": [
+        "mosquito_magnets",
+        0
+      ]
+    },
+    {
+      "kind": "mosq_sleeve",
+      "overlay": "label",
+      "label": [
+        "NYLON SLEEVES",
+        "worn for 6 hours"
+      ],
+      "seconds": 3.863,
+      "src": [
+        "mosquito_magnets",
+        1
+      ]
+    },
+    {
+      "kind": "mosq_choice",
+      "overlay": "label",
+      "label": [
+        "THE CHOICE",
+        "one sleeve or the other"
+      ],
+      "skew": 0.8,
+      "seconds": 3.142,
+      "src": [
+        "mosquito_magnets",
+        2
+      ]
+    },
+    {
+      "kind": "mosq_choice",
+      "overlay": "label",
+      "label": [
+        "100x MORE ATTRACTIVE",
+        "the same people, for years"
+      ],
+      "skew": 0.95,
+      "source": "De Obaldia et al. 2022, Cell 185:4099",
+      "seconds": 6.097,
+      "src": [
+        "mosquito_magnets",
+        3
+      ]
+    },
+    {
+      "kind": "mosq_skin",
+      "overlay": "label",
+      "label": [
+        "SKIN-OIL ACIDS",
+        "carboxylic acids"
+      ],
+      "seconds": 3.042,
+      "src": [
+        "mosquito_magnets",
+        4
+      ]
+    },
+    {
+      "kind": "mosq_follow",
+      "overlay": "label",
+      "label": [
+        "KEY SMELL SENSORS OFF",
+        "still found the magnets"
+      ],
+      "seconds": 3.331,
+      "src": [
+        "mosquito_magnets",
+        5
+      ]
+    },
+    {
+      "kind": "mosq_land",
+      "overlay": "label",
+      "label": [
+        "BLOOD TYPE?",
+        "the evidence is mixed"
+      ],
+      "seconds": 3.334,
+      "src": [
+        "mosquito_magnets",
+        6
+      ]
+    },
+    {
+      "kind": "gk_climb",
+      "overlay": "none",
+      "seconds": 2.86,
+      "src": [
+        "gecko_glass",
+        8
+      ]
+    },
+    {
+      "kind": "gk_climb",
+      "overlay": "chapter",
+      "label": [
+        "NOT SUCTION, NOT GLUE",
+        "molecules pulling"
+      ],
+      "from_front": true,
+      "seconds": 6.117,
+      "chapter": [
+        "CHAPTER 3",
+        "How Do Geckos Climb Glass?"
+      ],
+      "src": [
+        "gecko_glass",
+        7
+      ]
+    },
+    {
+      "kind": "gk_climb",
+      "overlay": "label",
+      "label": [
+        "NO SUCTION. NO GLUE.",
+        "so how?"
+      ],
+      "from_front": true,
+      "seconds": 4.34,
+      "src": [
+        "gecko_glass",
+        0
+      ]
+    },
+    {
+      "kind": "gk_toe",
+      "overlay": "label",
+      "label": [
+        "NEARLY 500,000 HAIRS",
+        "on each foot"
+      ],
+      "seconds": 3.425,
+      "source": "Autumn et al. 2000, Nature 405:681",
+      "src": [
+        "gecko_glass",
+        1
+      ]
+    },
+    {
+      "kind": "gk_setae",
+      "overlay": "label",
+      "label": [
+        "HUNDREDS OF TIPS",
+        "each ~0.2 micrometres"
+      ],
+      "seconds": 4.821,
+      "source": "Autumn et al. 2000, Nature 405:681",
+      "src": [
+        "gecko_glass",
+        2
+      ]
+    },
+    {
+      "kind": "gk_vdw",
+      "overlay": "label",
+      "label": [
+        "VAN DER WAALS FORCE",
+        "a pull between molecules"
+      ],
+      "seconds": 5.047,
+      "src": [
+        "gecko_glass",
+        3
+      ]
+    },
+    {
+      "kind": "gk_climb",
+      "overlay": "label",
+      "label": [
+        "TINY PULL x 1 BILLION",
+        "holds the whole gecko"
+      ],
+      "seconds": 4.404,
+      "src": [
+        "gecko_glass",
+        4
+      ]
+    },
+    {
+      "kind": "gk_setae",
+      "overlay": "label",
+      "label": [
+        "NOT WET GLUE",
+        "water-loving or water-repelling"
+      ],
+      "source": "Autumn et al. 2002, PNAS 99:12252",
+      "seconds": 6.457,
+      "src": [
+        "gecko_glass",
+        5
+      ]
+    },
+    {
+      "kind": "gk_climb",
+      "overlay": "label",
+      "label": [
+        "IN THEORY: 130 kg",
+        "if every hair gripped at once"
+      ],
+      "from_front": true,
+      "seconds": 6.117,
+      "source": "Autumn & Peattie 2002, Integrative and Comparative Biology 42:1081",
+      "src": [
+        "gecko_glass",
+        7
+      ]
+    },
+    {
+      "kind": "gk_peel",
+      "overlay": "label",
+      "label": [
+        "PAST ABOUT 30 DEGREES",
+        "the hairs let go"
+      ],
+      "seconds": 3.271,
+      "source": "Autumn & Peattie 2002, Integrative and Comparative Biology 42:1081",
+      "src": [
+        "gecko_glass",
+        6
+      ]
+    },
+    {
+      "kind": "gk_setae",
+      "overlay": "label",
+      "label": [
+        "SELF-CLEANING",
+        "sticky again in a few steps"
+      ],
+      "seconds": 4.821,
+      "source": "Hansen & Autumn 2005, PNAS 102:385",
+      "src": [
+        "gecko_glass",
+        2
+      ]
+    },
+    {
+      "kind": "pc_pan",
+      "overlay": "none",
+      "pops": 12,
+      "seconds": 5.243,
+      "src": [
+        "popcorn",
+        7
+      ]
+    },
+    {
+      "kind": "pc_burst",
+      "overlay": "chapter",
+      "label": [
+        "IT JUMPS ON A LEG",
+        "popcorn in slow motion"
+      ],
+      "seconds": 3.157,
+      "chapter": [
+        "CHAPTER 4",
+        "How Does Popcorn Really Pop?"
+      ],
+      "src": [
+        "popcorn",
+        0
+      ]
+    },
+    {
+      "kind": "pc_cut",
+      "overlay": "label",
+      "label": [
+        "WATER INSIDE",
+        "sealed in a hard hull"
+      ],
+      "seconds": 3.14,
+      "source": "Gökmen 2004, Journal of Food Engineering 65:357",
+      "src": [
+        "popcorn",
+        1
+      ]
+    },
+    {
+      "kind": "pc_cut",
+      "overlay": "label",
+      "label": [
+        "ABOUT 10 TIMES",
+        "normal air pressure"
+      ],
+      "seconds": 4.068,
+      "source": "Virot & Ponomarenko 2015, J R Soc Interface 12:20141247",
+      "src": [
+        "popcorn",
+        2
+      ]
+    },
+    {
+      "kind": "pc_cut",
+      "overlay": "label",
+      "label": [
+        "~180 °C",
+        "almost every kernel bursts"
+      ],
+      "burst": true,
+      "source": "Virot & Ponomarenko 2015, J R Soc Interface 12:20141247",
+      "seconds": 5.222,
+      "src": [
+        "popcorn",
+        3
+      ]
+    },
+    {
+      "kind": "pc_burst",
+      "overlay": "label",
+      "label": [
+        "STARCH FOAM",
+        "a leg presses on the pan"
+      ],
+      "seconds": 3.539,
+      "src": [
+        "popcorn",
+        4
+      ]
+    },
+    {
+      "kind": "pc_burst",
+      "overlay": "label",
+      "label": [
+        "SQUASH, PUSH, LAUNCH",
+        "about 20 milliseconds"
+      ],
+      "seconds": 3.961,
+      "source": "Virot & Ponomarenko 2015, J R Soc Interface 12:20141247",
+      "src": [
+        "popcorn",
+        5
+      ]
+    },
+    {
+      "kind": "pc_steam",
+      "overlay": "label",
+      "label": [
+        "THE POP: LIKELY STEAM",
+        "not the hull cracking"
+      ],
+      "seconds": 5.389,
+      "src": [
+        "popcorn",
+        6
+      ]
+    },
+    {
+      "kind": "pc_pan",
+      "overlay": "label",
+      "label": [
+        "NOT JUST A BURST",
+        "a starch leg + escaping steam"
+      ],
+      "pops": 12,
+      "seconds": 5.243,
+      "src": [
+        "popcorn",
+        7
+      ]
+    },
+    {
+      "kind": "lf_pan",
+      "overlay": "none",
+      "hot": false,
+      "seconds": 4.14,
+      "src": [
+        "leidenfrost",
+        8
+      ]
+    },
+    {
+      "kind": "lf_pan",
+      "overlay": "chapter",
+      "label": [
+        "WATER THAT DANCES",
+        "on a very hot pan"
+      ],
+      "hot": true,
+      "seconds": 5.727,
+      "chapter": [
+        "CHAPTER 5",
+        "Why Does Water Dance On A Hot Pan?"
+      ],
+      "src": [
+        "leidenfrost",
+        0
+      ]
+    },
+    {
+      "kind": "lf_compare",
+      "overlay": "label",
+      "label": [
+        "HOTTER = FASTER?",
+        "front: warm pan  back: hot pan"
+      ],
+      "seconds": 3.432,
+      "src": [
+        "leidenfrost",
+        1
+      ]
+    },
+    {
+      "kind": "lf_cut",
+      "overlay": "label",
+      "label": [
+        "ABOVE ~180 °C",
+        "the bottom turns to steam"
+      ],
+      "source": "Quéré 2013, Annual Review of Fluid Mechanics 45:197",
+      "seconds": 4.252,
+      "src": [
+        "leidenfrost",
+        2
+      ]
+    },
+    {
+      "kind": "lf_cut",
+      "overlay": "label",
+      "label": [
+        "5 TO 100 MICROMETRES",
+        "a cushion of steam"
+      ],
+      "seconds": 4.217,
+      "source": "Burton et al. 2012, Physical Review Letters 109:074301",
+      "src": [
+        "leidenfrost",
+        3
+      ]
+    },
+    {
+      "kind": "lf_pan",
+      "overlay": "label",
+      "label": [
+        "ALMOST NO FRICTION",
+        "nothing touches the metal"
+      ],
+      "hot": true,
+      "seconds": 3.379,
+      "src": [
+        "leidenfrost",
+        4
+      ]
+    },
+    {
+      "kind": "lf_compare",
+      "overlay": "label",
+      "label": [
+        "STEAM INSULATES",
+        "the floating drop lasts longer"
+      ],
+      "seconds": 3.922,
+      "src": [
+        "leidenfrost",
+        5
+      ]
+    },
+    {
+      "kind": "lf_pan",
+      "overlay": "label",
+      "label": [
+        "THE LEIDENFROST EFFECT",
+        "described in 1756"
+      ],
+      "hot": true,
+      "seconds": 3.854,
+      "source": "Burton et al. 2012, Physical Review Letters 109:074301",
+      "src": [
+        "leidenfrost",
+        6
+      ]
+    },
+    {
+      "kind": "lf_cut",
+      "overlay": "label",
+      "label": [
+        "THEY CAN CLIMB",
+        "on a saw-tooth surface"
+      ],
+      "seconds": 4.927,
+      "source": "Linke et al. 2006, Physical Review Letters 96:154502",
+      "src": [
+        "leidenfrost",
+        7
+      ]
+    },
+    {
+      "kind": "wp_peck",
+      "overlay": "none",
+      "wide": true,
+      "rate": 1.6,
+      "seconds": 3.8,
+      "src": [
+        "woodpecker",
+        8
+      ]
+    },
+    {
+      "kind": "wp_peck",
+      "overlay": "chapter",
+      "label": [
+        "NOT A SHOCK ABSORBER",
+        "despite what we were told"
+      ],
+      "rate": 1.6,
+      "seconds": 3.791,
+      "chapter": [
+        "CHAPTER 6",
+        "Why Don't Woodpeckers Get Hurt?"
+      ],
+      "src": [
+        "woodpecker",
+        0
+      ]
+    },
+    {
+      "kind": "wp_peck",
+      "overlay": "label",
+      "label": [
+        "NOT A SHOCK ABSORBER",
+        "despite what we were told"
+      ],
+      "rate": 1.6,
+      "seconds": 3.791,
+      "src": [
+        "woodpecker",
+        0
+      ]
+    },
+    {
+      "kind": "wp_peck",
+      "overlay": "label",
+      "label": [
+        "HIGH-SPEED FILM",
+        "3 species, every hit tracked"
+      ],
+      "markers": true,
+      "rate": 1.2,
+      "seconds": 5.234,
+      "src": [
+        "woodpecker",
+        1
+      ]
+    },
+    {
+      "kind": "wp_peck",
+      "overlay": "label",
+      "label": [
+        "UP TO ~400 g",
+        "on every strike"
+      ],
+      "wide": true,
+      "rate": 1.6,
+      "seconds": 4.041,
+      "source": "Van Wassenbergh et al. 2022, Current Biology 32:3189",
+      "src": [
+        "woodpecker",
+        6
+      ]
+    },
+    {
+      "kind": "wp_xray",
+      "overlay": "label",
+      "label": [
+        "TOP: A CUSHION",
+        "BOTTOM: THE REAL BIRD"
+      ],
+      "ghost": true,
+      "rate": 1.0,
+      "seconds": 5.32,
+      "src": [
+        "woodpecker",
+        2
+      ]
+    },
+    {
+      "kind": "wp_xray",
+      "overlay": "label",
+      "label": [
+        "A STIFF HAMMER",
+        "beak and head stop together"
+      ],
+      "rate": 1.2,
+      "seconds": 4.185,
+      "src": [
+        "woodpecker",
+        3
+      ]
+    },
+    {
+      "kind": "wp_brains",
+      "overlay": "label",
+      "label": [
+        "SAME HIT",
+        "woodpecker brain vs human brain"
+      ],
+      "seconds": 5.763,
+      "src": [
+        "woodpecker",
+        4
+      ]
+    },
+    {
+      "kind": "wp_peck",
+      "overlay": "label",
+      "label": [
+        "2x FASTER",
+        "to get near concussion levels"
+      ],
+      "rate": 3.0,
+      "markers": true,
+      "source": "Van Wassenbergh et al. 2022, Current Biology 32:3189",
+      "seconds": 4.48,
+      "src": [
+        "woodpecker",
+        5
+      ]
+    },
+    {
+      "kind": "wp_xray",
+      "overlay": "label",
+      "label": [
+        "NOT A CUSHION",
+        "a stiff hammer"
+      ],
+      "orbit": true,
+      "rate": 1.2,
+      "seconds": 4.826,
+      "src": [
+        "woodpecker",
+        7
+      ]
+    },
+    {
+      "kind": "pull_back",
+      "overlay": "none",
+      "seconds": 4.794,
+      "src": [
+        "chilli_burn",
+        7
+      ]
+    },
+    {
+      "kind": "lf_pan",
+      "overlay": "none",
+      "hot": true,
+      "seconds": 5.727,
+      "src": [
+        "leidenfrost",
+        0
+      ]
+    }
+  ],
+  "hi_labels": {
+    "NO REAL HEAT": "असली गर्मी नहीं",
+    "your mouth stays about 37 °C": "मुँह लगभग 37 °C ही रहता है",
+    "a heat alarm on your nerves": "नसों पर गर्मी का अलार्म",
+    "OPENS AT ~43 °C": "लगभग 43 °C पर खुलता है",
+    "about 109 °F": "जलाने वाली गर्मी",
+    "CAPSAICIN": "CAPSAICIN",
+    "opens it with NO heat": "बिना गर्मी के खोल देता है",
+    "SAME ALARM": "वही अलार्म",
+    "your brain hears HOT": "दिमाग़ सुनता है: गर्म!",
+    "NOBEL PRIZE 2021": "NOBEL PRIZE 2021",
+    "for finding this sensor": "इस sensor की खोज के लिए",
+    "MILK WORKS BEST": "दूध सबसे अच्छा",
+    "even skim milk": "बिना मलाई वाला भी",
+    "NOT HEAT": "गर्मी नहीं",
+    "a heat ALARM": "गर्मी का अलार्म",
+    "MOSQUITO MAGNETS": "मच्छरों के चुंबक",
+    "not sweet blood": "मीठा ख़ून नहीं",
+    "NYLON SLEEVES": "NYLON की आस्तीन",
+    "worn for 6 hours": "छह घंटे पहनी",
+    "THE CHOICE": "चुनाव",
+    "one sleeve or the other": "यह आस्तीन या वह",
+    "100x MORE ATTRACTIVE": "सौ गुना ज़्यादा पसंद",
+    "the same people, for years": "सालों तक वही लोग",
+    "SKIN-OIL ACIDS": "त्वचा के तेल से बने acids",
+    "carboxylic acids": "carboxylic acids",
+    "KEY SMELL SENSORS OFF": "सूँघने के sensor बंद",
+    "still found the magnets": "फिर भी पहचान लिया",
+    "BLOOD TYPE?": "BLOOD GROUP?",
+    "the evidence is mixed": "सबूत मिले-जुले",
+    "NOT SWEET BLOOD": "मीठा ख़ून नहीं",
+    "the smell of skin acids": "त्वचा के acids की गंध",
+    "NO SUCTION. NO GLUE.": "न SUCTION, न गोंद",
+    "so how?": "तो कैसे?",
+    "MILLIONS OF HAIRS": "लाखों बाल",
+    "on ridges under each toe": "हर उंगली की धारियों पर",
+    "ABOUT 1 BILLION TIPS": "लगभग एक अरब सिरे",
+    "on one gecko": "एक छिपकली पर",
+    "VAN DER WAALS FORCE": "VAN DER WAALS FORCE",
+    "a pull between molecules": "अणुओं के बीच खिंचाव",
+    "TINY PULL x 1 BILLION": "छोटा खिंचाव x एक अरब",
+    "holds the whole gecko": "पूरी छिपकली थाम लेता है",
+    "NOT WET GLUE": "गीला गोंद नहीं",
+    "water-loving or water-repelling": "पानी पसंद या नापसंद, दोनों सतहें",
+    "PEELS LIKE TAPE": "TAPE की तरह उखड़ता है",
+    "tip first": "पहले सिरा",
+    "NOT SUCTION, NOT GLUE": "न SUCTION, न गोंद",
+    "molecules pulling": "अणुओं का खिंचाव",
+    "IT JUMPS ON A LEG": "टाँग पर उछाल",
+    "popcorn in slow motion": "slow motion में popcorn",
+    "WATER INSIDE": "अंदर पानी",
+    "sealed in a hard hull": "सख़्त छिलके में बंद",
+    "STEAM PRESSURE": "भाप का दबाव",
+    "climbing inside": "बढ़ता जाता है",
+    "almost every kernel bursts": "लगभग हर दाना फटता है",
+    "STARCH FOAM": "STARCH का झाग",
+    "a leg presses on the pan": "टाँग कड़ाही पर दबती है",
+    "SQUASH, PUSH, LAUNCH": "दबना, धक्का, उछाल",
+    "like a spring": "spring की तरह",
+    "THE POP: LIKELY STEAM": "पॉप: शायद भाप",
+    "not the hull cracking": "छिलका टूटना नहीं",
+    "NOT JUST A BURST": "सिर्फ़ फटना नहीं",
+    "a starch leg + escaping steam": "starch की टाँग + निकलती भाप",
+    "WATER THAT DANCES": "नाचता पानी",
+    "on a very hot pan": "बहुत गर्म तवे पर",
+    "HOTTER = FASTER?": "ज़्यादा गर्म = जल्दी?",
+    "front: warm pan  back: hot pan": "आगे: हल्का गर्म  पीछे: बहुत गर्म",
+    "ABOVE ~180 °C": "लगभग 180 °C से ऊपर",
+    "the bottom turns to steam": "नीचे का हिस्सा भाप बनता है",
+    "A FILM OF STEAM": "भाप की परत",
+    "about 50 micrometres thick": "लगभग 50 micrometre मोटी",
+    "ALMOST NO FRICTION": "लगभग कोई रगड़ नहीं",
+    "nothing touches the metal": "धातु को कुछ नहीं छूता",
+    "STEAM INSULATES": "भाप गर्मी रोकती है",
+    "the floating drop lasts longer": "तैरती बूँद देर तक टिकती है",
+    "THE LEIDENFROST EFFECT": "LEIDENFROST EFFECT",
+    "still being studied": "आज भी research जारी",
+    "NOT TOUCHING THE METAL": "धातु को छूता नहीं",
+    "floating on its own steam": "अपनी भाप पर तैरता है",
+    "NOT A SHOCK ABSORBER": "SHOCK ABSORBER नहीं",
+    "despite what we were told": "जैसा हमें बताया गया",
+    "HIGH-SPEED FILM": "HIGH-SPEED FILM",
+    "3 species, every hit tracked": "3 प्रजातियाँ, हर चोट नापी",
+    "TOP: A CUSHION": "ऊपर: गद्दा",
+    "BOTTOM: THE REAL BIRD": "नीचे: असली पक्षी",
+    "A STIFF HAMMER": "सख़्त हथौड़ा",
+    "beak and head stop together": "चोंच और सिर साथ रुकते हैं",
+    "SAME HIT": "वही चोट",
+    "woodpecker brain vs human brain": "कठफोड़वा का दिमाग़ बनाम इंसान का",
+    "2x FASTER": "दुगनी रफ़्तार",
+    "to get near concussion levels": "तब जाकर चोट का ख़तरा",
+    "WOODPECKER HELMETS?": "कठफोड़वा वाले HELMETS?",
+    "the wrong lesson": "ग़लत सबक़",
+    "NOT A CUSHION": "गद्दा नहीं",
+    "a stiff hammer": "सख़्त हथौड़ा",
+    "SIX THINGS": "छह बातें",
+    "almost everyone gets wrong": "जो लगभग सब गलत समझते हैं",
+    "CHAPTER 1": "अध्याय एक",
+    "CHAPTER 2": "अध्याय दो",
+    "CHAPTER 3": "अध्याय तीन",
+    "CHAPTER 4": "अध्याय चार",
+    "CHAPTER 5": "अध्याय पाँच",
+    "CHAPTER 6": "अध्याय छह",
+    "Why Does Chilli Burn?": "मिर्च जलन क्यों देती है?",
+    "Why Do Mosquitoes Pick You?": "मच्छर आपको ही क्यों चुनते हैं?",
+    "How Do Geckos Climb Glass?": "Gecko काँच पर कैसे चढ़ता है?",
+    "How Does Popcorn Really Pop?": "Popcorn असल में कैसे फूटता है?",
+    "Why Does Water Dance On A Hot Pan?": "गरम तवे पर पानी क्यों नाचता है?",
+    "Why Don't Woodpeckers Get Hurt?": "कठफोड़वे को चोट क्यों नहीं लगती?",
+    "MINT": "पुदीना",
+    "switches on a cold sensor": "ठंडे वाला sensor चालू करता है",
+    "BIRDS FEEL NOTHING": "पक्षियों को जलन नहीं",
+    "their sensor ignores capsaicin": "उनका sensor capsaicin को नहीं पहचानता",
+    "ONLY FEMALES BITE": "सिर्फ़ मादा काटती है",
+    "blood protein for eggs": "अंडों के लिए ख़ून का protein",
+    "BREATH, SIGHT, HEAT": "साँस, नज़र, गर्मी",
+    "how it closes in": "ऐसे पास आता है",
+    "NEARLY 500,000 HAIRS": "लगभग पाँच लाख बाल",
+    "on each foot": "हर पैर पर",
+    "HUNDREDS OF TIPS": "सैकड़ों सिरे",
+    "each ~0.2 micrometres": "हर एक ~0.2 micrometre",
+    "IN THEORY: 130 kg": "सिद्धांत में: 130 kg",
+    "if every hair gripped at once": "अगर हर बाल एक साथ पकड़े",
+    "PAST ABOUT 30 DEGREES": "लगभग 30 डिग्री के बाद",
+    "the hairs let go": "बाल छूट जाते हैं",
+    "SELF-CLEANING": "ख़ुद साफ़",
+    "sticky again in a few steps": "कुछ कदमों में फिर चिपकू",
+    "ABOUT 10 TIMES": "लगभग दस गुना",
+    "normal air pressure": "हवा का सामान्य दबाव",
+    "about 20 milliseconds": "लगभग 20 millisecond",
+    "5 TO 100 MICROMETRES": "5 से 100 micrometre",
+    "a cushion of steam": "भाप की गद्दी",
+    "described in 1756": "1756 में वर्णन",
+    "THEY CAN CLIMB": "चढ़ भी सकती हैं",
+    "on a saw-tooth surface": "आरी जैसी सतह पर",
+    "UP TO ~400 g": "~400 g तक",
+    "on every strike": "हर चोट पर"
+  }
+}

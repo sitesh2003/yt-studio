@@ -397,9 +397,10 @@
       "name": "book_atp",
       "channel": "main",
       "title": "The Tiny Turbine That Powers Your Body",
-      "status": "uploaded",
+      "status": "replaced",
       "video_id": "YMdC5_OisnY",
-      "public_at": "2026-12-12T19:00:00-05:00"
+      "public_at": "2026-12-12T19:00:00-05:00",
+      "note": "superseded 27 Nov by book_atp_long (10-min); YMdC5_OisnY private"
     },
     {
       "name": "atp_three",
@@ -464,6 +465,52 @@
       "status": "uploaded",
       "video_id": "IvZdWyvFHVI",
       "public_at": "2026-12-10T02:30:00-05:00"
+    },
+    {
+      "name": "book_atp_long",
+      "channel": "main",
+      "title": "The Tiny Turbine That Powers Your Body",
+      "status": "uploaded",
+      "video_id": "TAU2i58CarM",
+      "public_at": "2026-12-03T11:00:00-05:00",
+      "format": "book"
+    },
+    {
+      "name": "book_atp_long_hi",
+      "channel": "hi",
+      "title": "आपके अंदर का नन्हा turbine: आपकी ऊर्जा की पूरी कहानी",
+      "status": "uploaded",
+      "video_id": "hCeIgu7sH5I",
+      "public_at": "2026-12-03T08:30:00-05:00",
+      "format": "book"
+    },
+    {
+      "name": "wiw_trex",
+      "channel": "wiw",
+      "title": "The Physics Of T. rex: Why Giants Can't Sprint",
+      "status": "making",
+      "format": "book"
+    },
+    {
+      "name": "wiw_atp",
+      "channel": "wiw",
+      "title": "The Physics Of The Smallest Motor Inside You ⚡",
+      "status": "making",
+      "format": "book"
+    },
+    {
+      "name": "book_everyday",
+      "channel": "main",
+      "title": "6 Everyday Things Everyone Gets Wrong (Science In 3D)",
+      "status": "making",
+      "format": "book"
+    },
+    {
+      "name": "book_everyday_hi",
+      "channel": "hi",
+      "title": "6 रोज़मर्रा की बातें, जो लगभग सब गलत समझते हैं",
+      "status": "making",
+      "format": "book"
     }
   ]
 }

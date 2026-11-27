@@ -1,0 +1,1059 @@
+{
+  "assets_dir": "assets/3d",
+  "renderer": "micro",
+  "aspect": "landscape",
+  "long": true,
+  "caption_scale": 1.0,
+  "end_beat_s": 0.8,
+  "shots": [
+    {
+      "kind": "atp_synthase",
+      "overlay": "none",
+      "mode": "orbit",
+      "slow": 0.4,
+      "seconds": 4.91
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "mode": "spin",
+      "slow": 0.5,
+      "label": [
+        "~100 TURNS A SECOND",
+        "shown here slowed down"
+      ],
+      "seconds": 4.947
+    },
+    {
+      "kind": "atp_mito",
+      "overlay": "none",
+      "dive": true,
+      "seconds": 5.635
+    },
+    {
+      "kind": "atp_muscle",
+      "overlay": "none",
+      "chapter": [
+        "CHAPTER 1",
+        "What Powers Your Muscles?"
+      ],
+      "seconds": 3.899
+    },
+    {
+      "kind": "atp_molecule",
+      "overlay": "label",
+      "label": [
+        "ATP",
+        "the energy coin cells spend"
+      ],
+      "seconds": 6.155
+    },
+    {
+      "kind": "atp_molecule",
+      "overlay": "label",
+      "split": true,
+      "label": [
+        "ABOUT 100 g",
+        "in your whole body at once"
+      ],
+      "seconds": 6.015
+    },
+    {
+      "kind": "atp_muscle",
+      "overlay": "label",
+      "label": [
+        "ABOUT 40 kg A DAY",
+        "used even at rest"
+      ],
+      "source": "Tymoczko, Berg & Stryer, Biochemistry: A Short Course",
+      "seconds": 7.042
+    },
+    {
+      "kind": "atp_mito",
+      "overlay": "none",
+      "seconds": 4.796
+    },
+    {
+      "kind": "atp_mito",
+      "overlay": "none",
+      "dive": true,
+      "chapter": [
+        "CHAPTER 2",
+        "Where Is ATP Made?"
+      ],
+      "seconds": 3.849
+    },
+    {
+      "kind": "atp_mito",
+      "overlay": "label",
+      "label": [
+        "MITOCHONDRION",
+        "wrapped in two membranes"
+      ],
+      "seconds": 4.749
+    },
+    {
+      "kind": "atp_mito",
+      "overlay": "label",
+      "dive": true,
+      "label": [
+        "CRISTAE",
+        "the folded inner membrane"
+      ],
+      "seconds": 5.468
+    },
+    {
+      "kind": "atp_dam",
+      "overlay": "label",
+      "label": [
+        "PROTONS",
+        "the hidden power source"
+      ],
+      "seconds": 5.278
+    },
+    {
+      "kind": "atp_chain",
+      "overlay": "none",
+      "chapter": [
+        "CHAPTER 3",
+        "Building The Proton Gradient"
+      ],
+      "seconds": 4.034
+    },
+    {
+      "kind": "atp_chain",
+      "overlay": "label",
+      "label": [
+        "ELECTRONS",
+        "carry the energy from food"
+      ],
+      "seconds": 3.757
+    },
+    {
+      "kind": "atp_chain",
+      "overlay": "label",
+      "focus": "pumps",
+      "label": [
+        "A BUCKET BRIGADE",
+        "electrons passed along"
+      ],
+      "seconds": 5.311
+    },
+    {
+      "kind": "atp_chain",
+      "overlay": "label",
+      "focus": "pumps",
+      "label": [
+        "THREE PUMPS",
+        "Complexes I, III and IV"
+      ],
+      "seconds": 4.498
+    },
+    {
+      "kind": "atp_chain",
+      "overlay": "label",
+      "focus": "iv",
+      "label": [
+        "COMPLEX IV",
+        "electrons + oxygen make water"
+      ],
+      "seconds": 5.158
+    },
+    {
+      "kind": "atp_chain",
+      "overlay": "label",
+      "focus": "iv",
+      "label": [
+        "WHY YOU BREATHE",
+        "oxygen is the last stop"
+      ],
+      "seconds": 4.469
+    },
+    {
+      "kind": "atp_dam",
+      "overlay": "none",
+      "chapter": [
+        "CHAPTER 4",
+        "A Membrane That Stores Energy"
+      ],
+      "seconds": 3.428
+    },
+    {
+      "kind": "atp_dam",
+      "overlay": "label",
+      "label": [
+        "A PROTON DAM",
+        "crowded on one side"
+      ],
+      "seconds": 5.089
+    },
+    {
+      "kind": "atp_dam",
+      "overlay": "label",
+      "label": [
+        "ONE MAIN DOOR",
+        "back across the membrane"
+      ],
+      "seconds": 4.45
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "mode": "orbit",
+      "slow": 0.4,
+      "label": [
+        "ATP SYNTHASE",
+        "the turbine"
+      ],
+      "seconds": 3.984
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "none",
+      "mode": "spin",
+      "slow": 0.4,
+      "chapter": [
+        "CHAPTER 5",
+        "What Spins The Turbine?"
+      ],
+      "seconds": 4.511
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "mode": "protons",
+      "slow": 0.35,
+      "label": [
+        "8 PIECES",
+        "the ring, in animals"
+      ],
+      "source": "Watt et al. 2010, PNAS 107:16823",
+      "seconds": 5.521
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "mode": "protons",
+      "slow": 0.35,
+      "label": [
+        "ONE PROTON",
+        "one step of the ring"
+      ],
+      "seconds": 5.125
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "mode": "spin",
+      "slow": 0.5,
+      "label": [
+        "8 PROTONS = 1 TURN",
+        "about 100 turns a second"
+      ],
+      "source": "Watt et al. 2010, PNAS 107:16823",
+      "seconds": 5.164
+    },
+    {
+      "kind": "atp_noji",
+      "overlay": "label",
+      "slow": 0.5,
+      "label": [
+        "1997",
+        "the spin, seen directly"
+      ],
+      "source": "Noji et al. 1997, Nature 386:299",
+      "seconds": 6.612
+    },
+    {
+      "kind": "atp_noji",
+      "overlay": "label",
+      "slow": 0.5,
+      "label": [
+        "ABOUT 2 nm WIDE",
+        "the smallest rotary motor seen"
+      ],
+      "seconds": 6.375
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "none",
+      "mode": "beta",
+      "slow": 0.3,
+      "chapter": [
+        "CHAPTER 6",
+        "How Spinning Makes ATP"
+      ],
+      "seconds": 4.07
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "mode": "beta",
+      "slow": 0.3,
+      "label": [
+        "THE CROOKED SHAFT",
+        "turns inside the head"
+      ],
+      "seconds": 4.568
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "mode": "beta",
+      "slow": 0.3,
+      "label": [
+        "THREE WORKING PARTS",
+        "each changes shape"
+      ],
+      "seconds": 4.951
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "mode": "beta",
+      "slow": 0.3,
+      "label": [
+        "OPEN - LOOSE - TIGHT",
+        "the binding change"
+      ],
+      "source": "Boyer 1997, Annual Review of Biochemistry 66:717",
+      "seconds": 6.909
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "mode": "beta",
+      "slow": 0.3,
+      "label": [
+        "3 ATP PER TURN",
+        "one from each part"
+      ],
+      "source": "Watt et al. 2010, PNAS 107:16823",
+      "seconds": 6.674
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "mode": "orbit",
+      "slow": 0.4,
+      "label": [
+        "NOBEL PRIZE 1997",
+        "Paul Boyer and John Walker"
+      ],
+      "seconds": 4.0
+    },
+    {
+      "kind": "atp_muscle",
+      "overlay": "none",
+      "chapter": [
+        "CHAPTER 7",
+        "Where Does The ATP Go?"
+      ],
+      "seconds": 3.54
+    },
+    {
+      "kind": "atp_muscle",
+      "overlay": "label",
+      "label": [
+        "MUSCLES, NERVES, PROTEINS",
+        "all paid in ATP"
+      ],
+      "seconds": 6.203
+    },
+    {
+      "kind": "atp_mito",
+      "overlay": "label",
+      "label": [
+        "HEART AND BRAIN",
+        "never stop asking"
+      ],
+      "seconds": 4.113
+    },
+    {
+      "kind": "atp_molecule",
+      "overlay": "label",
+      "split": true,
+      "label": [
+        "EVEN SITTING STILL",
+        "about 40 kg a day"
+      ],
+      "seconds": 5.394
+    },
+    {
+      "kind": "atp_chain",
+      "overlay": "none",
+      "cyanide": true,
+      "focus": "iv",
+      "chapter": [
+        "CHAPTER 8",
+        "When Cyanide Blocks The Chain"
+      ],
+      "seconds": 3.972
+    },
+    {
+      "kind": "atp_chain",
+      "overlay": "label",
+      "cyanide": true,
+      "focus": "iv",
+      "label": [
+        "CYANIDE",
+        "jams Complex IV, not the turbine"
+      ],
+      "source": "Zuhra & Szabo 2022, FEBS Journal 289:2481",
+      "seconds": 5.818
+    },
+    {
+      "kind": "atp_chain",
+      "overlay": "label",
+      "cyanide": true,
+      "label": [
+        "THE DAM DRAINS",
+        "the turbines slow down"
+      ],
+      "seconds": 5.819
+    },
+    {
+      "kind": "atp_chain",
+      "overlay": "label",
+      "cyanide": true,
+      "label": [
+        "NO NEW ATP",
+        "heart and brain hit hardest"
+      ],
+      "seconds": 5.327
+    },
+    {
+      "kind": "atp_muscle",
+      "overlay": "none",
+      "pace": 2.2,
+      "chapter": [
+        "CHAPTER 9",
+        "What Happens When You Run?"
+      ],
+      "seconds": 5.135,
+      "render_seconds": 5.609,
+      "event_seconds": 5.135
+    },
+    {
+      "kind": "atp_muscle",
+      "overlay": "label",
+      "pace": 2.2,
+      "label": [
+        "THE FIRST SECONDS",
+        "the ATP already there"
+      ],
+      "source": "Baker, McCormick & Robergs 2010, J Nutr Metab 905612",
+      "seconds": 5.351,
+      "render_seconds": 7.761,
+      "event_seconds": 5.351
+    },
+    {
+      "kind": "atp_molecule",
+      "overlay": "label",
+      "label": [
+        "PHOSPHOCREATINE",
+        "an instant backup"
+      ],
+      "seconds": 5.415,
+      "render_seconds": 6.72,
+      "event_seconds": 5.415
+    },
+    {
+      "kind": "atp_molecule",
+      "overlay": "label",
+      "split": true,
+      "label": [
+        "ABOUT 10 SECONDS",
+        "then the backup runs low"
+      ],
+      "source": "Baker, McCormick & Robergs 2010, J Nutr Metab 905612",
+      "seconds": 4.641,
+      "render_seconds": 5.524,
+      "event_seconds": 4.641
+    },
+    {
+      "kind": "atp_molecule",
+      "overlay": "label",
+      "split": true,
+      "label": [
+        "GLYCOLYSIS",
+        "sugar split, no oxygen"
+      ],
+      "seconds": 5.743,
+      "render_seconds": 6.371,
+      "event_seconds": 5.743
+    },
+    {
+      "kind": "atp_mito",
+      "overlay": "label",
+      "label": [
+        "10 SECOND SPRINT",
+        "~3% from mitochondria"
+      ],
+      "source": "Baker, McCormick & Robergs 2010, J Nutr Metab 905612",
+      "seconds": 4.476,
+      "render_seconds": 5.338,
+      "event_seconds": 4.476
+    },
+    {
+      "kind": "atp_mito",
+      "overlay": "label",
+      "dive": true,
+      "label": [
+        "30 SECOND SPRINT",
+        "over a quarter"
+      ],
+      "seconds": 3.631,
+      "render_seconds": 5.13,
+      "event_seconds": 3.631
+    },
+    {
+      "kind": "atp_mito",
+      "overlay": "label",
+      "label": [
+        "ABOUT 75 SECONDS",
+        "half from mitochondria"
+      ],
+      "source": "Baker, McCormick & Robergs 2010, J Nutr Metab 905612",
+      "seconds": 5.186,
+      "render_seconds": 6.121,
+      "event_seconds": 5.186
+    },
+    {
+      "kind": "atp_mito",
+      "overlay": "label",
+      "label": [
+        "THE LONG RUN",
+        "mitochondria take over"
+      ],
+      "seconds": 4.567,
+      "render_seconds": 6.286,
+      "event_seconds": 4.567
+    },
+    {
+      "kind": "atp_molecule",
+      "overlay": "label",
+      "split": true,
+      "label": [
+        "ADP + PHOSPHATE",
+        "what spent ATP leaves"
+      ],
+      "seconds": 5.075,
+      "render_seconds": 6.283,
+      "event_seconds": 5.075
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "mode": "spin",
+      "slow": 0.8,
+      "label": [
+        "MORE ADP = FASTER",
+        "respiratory control"
+      ],
+      "source": "Brand & Nicholls 2011, Biochem J 435:297",
+      "seconds": 6.69,
+      "render_seconds": 6.799,
+      "event_seconds": 6.69
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "none",
+      "mode": "orbit",
+      "slow": 0.6,
+      "seconds": 4.962,
+      "render_seconds": 5.177,
+      "event_seconds": 4.962
+    },
+    {
+      "kind": "atp_chain",
+      "overlay": "label",
+      "focus": "iv",
+      "label": [
+        "BREATHING HARD",
+        "more oxygen for the chain"
+      ],
+      "seconds": 6.037,
+      "render_seconds": 7.439,
+      "event_seconds": 6.037
+    },
+    {
+      "kind": "atp_muscle",
+      "overlay": "label",
+      "pace": 2.2,
+      "label": [
+        "ABOUT 10x THE OXYGEN",
+        "at full effort"
+      ],
+      "source": "Kaminsky, Arena & Myers 2015, Mayo Clin Proc 90:1515",
+      "seconds": 5.443,
+      "render_seconds": 7.509,
+      "event_seconds": 5.443
+    },
+    {
+      "kind": "atp_cell",
+      "overlay": "label",
+      "count": 330,
+      "label": [
+        "HEART MUSCLE",
+        "over a quarter is mitochondria"
+      ],
+      "source": "Sulkin et al. 2014, J Struct Biol 188:55",
+      "seconds": 6.439,
+      "render_seconds": 8.131,
+      "event_seconds": 6.439
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "none",
+      "mode": "reverse",
+      "slow": 0.4,
+      "chapter": [
+        "CHAPTER 10",
+        "Can The Turbine Run Backwards?"
+      ],
+      "seconds": 2.995,
+      "render_seconds": 3.095,
+      "event_seconds": 2.43
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "mode": "reverse",
+      "slow": 0.4,
+      "label": [
+        "RUNNING BACKWARDS",
+        "fed ATP, it splits it"
+      ],
+      "seconds": 5.239,
+      "render_seconds": 6.779,
+      "event_seconds": 5.239
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "mode": "reverse",
+      "slow": 0.4,
+      "label": [
+        "PUMP MODE",
+        "ATP in, protons out"
+      ],
+      "seconds": 5.043,
+      "render_seconds": 6.366,
+      "event_seconds": 5.043
+    },
+    {
+      "kind": "atp_noji",
+      "overlay": "none",
+      "slow": 0.5,
+      "seconds": 5.078,
+      "render_seconds": 5.959,
+      "event_seconds": 5.078
+    },
+    {
+      "kind": "atp_noji",
+      "overlay": "label",
+      "slow": 0.5,
+      "label": [
+        "FED ATP",
+        "the head turned"
+      ],
+      "source": "Noji et al. 1997, Nature 386:299",
+      "seconds": 5.27,
+      "render_seconds": 6.439,
+      "event_seconds": 5.27
+    },
+    {
+      "kind": "atp_noji",
+      "overlay": "label",
+      "slow": 0.5,
+      "label": [
+        "HEAD AND SHAFT ONLY",
+        "from a heat-loving bacterium"
+      ],
+      "seconds": 6.475,
+      "render_seconds": 6.859,
+      "event_seconds": 6.475
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "mode": "reverse",
+      "slow": 0.3,
+      "label": [
+        "E. COLI",
+        "without oxygen"
+      ],
+      "source": "Nakamoto et al. 2008, Arch Biochem Biophys 476:43",
+      "seconds": 7.989,
+      "render_seconds": 8.989,
+      "event_seconds": 7.989
+    },
+    {
+      "kind": "atp_chain",
+      "overlay": "label",
+      "cyanide": true,
+      "label": [
+        "A DRAINED DAM",
+        "turbines could burn ATP"
+      ],
+      "seconds": 6.572,
+      "render_seconds": 7.521,
+      "event_seconds": 6.572
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "mode": "orbit",
+      "slow": 0.2,
+      "label": [
+        "IF1",
+        "the brake"
+      ],
+      "seconds": 4.141,
+      "render_seconds": 5.117,
+      "event_seconds": 4.141
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "mode": "spin",
+      "slow": 0.12,
+      "label": [
+        "ATP SAVED",
+        "when the dam drains"
+      ],
+      "source": "Campanella et al. 2008, Cell Metab 8:13",
+      "seconds": 5.84,
+      "render_seconds": 7.431,
+      "event_seconds": 5.84
+    },
+    {
+      "kind": "atp_dam",
+      "overlay": "none",
+      "leak": true,
+      "chapter": [
+        "CHAPTER 11",
+        "How Does Brown Fat Make Heat?"
+      ],
+      "seconds": 3.339,
+      "render_seconds": 3.839,
+      "event_seconds": 3.339
+    },
+    {
+      "kind": "atp_cell",
+      "overlay": "label",
+      "count": 300,
+      "label": [
+        "BROWN FAT",
+        "packed with mitochondria"
+      ],
+      "source": "Lidell et al. 2013, Nat Med 19:631",
+      "seconds": 4.808,
+      "render_seconds": 4.908,
+      "event_seconds": 2.404
+    },
+    {
+      "kind": "atp_dam",
+      "overlay": "label",
+      "leak": true,
+      "label": [
+        "UCP1",
+        "a gap in the dam"
+      ],
+      "seconds": 5.377,
+      "render_seconds": 10.09,
+      "event_seconds": 5.377
+    },
+    {
+      "kind": "atp_dam",
+      "overlay": "label",
+      "leak": true,
+      "label": [
+        "NO TURBINE",
+        "protons leak back"
+      ],
+      "source": "Fedorenko, Lishko & Kirichok 2012, Cell 151:400",
+      "seconds": 5.416,
+      "render_seconds": 5.911,
+      "event_seconds": 5.416
+    },
+    {
+      "kind": "atp_dam",
+      "overlay": "label",
+      "leak": true,
+      "label": [
+        "HEAT",
+        "instead of ATP"
+      ],
+      "seconds": 4.764,
+      "render_seconds": 5.0,
+      "event_seconds": 4.764
+    },
+    {
+      "kind": "atp_dam",
+      "overlay": "none",
+      "leak": true,
+      "seconds": 3.487,
+      "render_seconds": 5.28,
+      "event_seconds": 3.487
+    },
+    {
+      "kind": "atp_cell",
+      "overlay": "label",
+      "count": 220,
+      "label": [
+        "ADULTS TOO",
+        "neck and collarbones"
+      ],
+      "source": "Cypess et al. 2009, NEJM 360:1509",
+      "seconds": 4.865,
+      "render_seconds": 6.562,
+      "event_seconds": 4.865
+    },
+    {
+      "kind": "atp_cell",
+      "overlay": "none",
+      "mode": "engulf",
+      "chapter": [
+        "CHAPTER 12",
+        "Where Did Mitochondria Come From?"
+      ],
+      "seconds": 3.513,
+      "render_seconds": 3.613,
+      "event_seconds": 3.34
+    },
+    {
+      "kind": "atp_cell",
+      "overlay": "label",
+      "mode": "engulf",
+      "label": [
+        "ONCE BACTERIA",
+        "free-living cells"
+      ],
+      "seconds": 4.684,
+      "render_seconds": 5.251,
+      "event_seconds": 4.684
+    },
+    {
+      "kind": "atp_cell",
+      "overlay": "label",
+      "mode": "engulf",
+      "label": [
+        "OVER 1.5 BILLION YEARS AGO",
+        "one cell inside another"
+      ],
+      "source": "Parfrey et al. 2011, PNAS 108:13624",
+      "seconds": 5.138,
+      "render_seconds": 5.664,
+      "event_seconds": 5.138
+    },
+    {
+      "kind": "atp_cell",
+      "overlay": "label",
+      "mode": "engulf",
+      "label": [
+        "A PARTNERSHIP",
+        "shelter for energy"
+      ],
+      "seconds": 5.769,
+      "render_seconds": 6.589,
+      "event_seconds": 5.769
+    },
+    {
+      "kind": "atp_cell",
+      "overlay": "label",
+      "mode": "engulf",
+      "label": [
+        "ASGARD ARCHAEA",
+        "the host's relatives"
+      ],
+      "source": "Roger, Munoz-Gomez & Kamikawa 2017, Curr Biol 27:R1177",
+      "seconds": 6.376,
+      "render_seconds": 6.476,
+      "event_seconds": 6.283
+    },
+    {
+      "kind": "atp_cell",
+      "overlay": "label",
+      "label": [
+        "ONE ANCESTOR",
+        "for all mitochondria"
+      ],
+      "source": "Roger, Munoz-Gomez & Kamikawa 2017, Curr Biol 27:R1177",
+      "seconds": 5.056,
+      "render_seconds": 5.218,
+      "event_seconds": 5.056
+    },
+    {
+      "kind": "atp_mito",
+      "overlay": "label",
+      "label": [
+        "THEIR OWN DNA",
+        "left from the bacterium"
+      ],
+      "seconds": 3.212,
+      "render_seconds": 4.294,
+      "event_seconds": 3.212
+    },
+    {
+      "kind": "atp_mito",
+      "overlay": "label",
+      "dive": true,
+      "label": [
+        "16,569 BASE PAIRS",
+        "37 genes"
+      ],
+      "source": "Anderson et al. 1981, Nature 290:457",
+      "seconds": 7.053,
+      "render_seconds": 8.09,
+      "event_seconds": 7.053
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "mode": "protons",
+      "slow": 0.35,
+      "label": [
+        "TWO TURBINE PARTS",
+        "written in mitochondrial DNA"
+      ],
+      "source": "Anderson et al. 1981, Nature 290:457",
+      "seconds": 2.987,
+      "render_seconds": 3.792,
+      "event_seconds": 2.987
+    },
+    {
+      "kind": "atp_cell",
+      "overlay": "label",
+      "label": [
+        "HUNDREDS PER CELL",
+        "each with its own DNA"
+      ],
+      "source": "Robin & Wong 1988, J Cell Physiol 136:507",
+      "seconds": 4.104,
+      "render_seconds": 5.043,
+      "event_seconds": 4.104
+    },
+    {
+      "kind": "atp_cell",
+      "overlay": "none",
+      "mode": "egg",
+      "chapter": [
+        "CHAPTER 13",
+        "Why Only From Your Mother?"
+      ],
+      "seconds": 4.136,
+      "render_seconds": 4.692,
+      "event_seconds": 4.136
+    },
+    {
+      "kind": "atp_cell",
+      "overlay": "label",
+      "mode": "egg",
+      "label": [
+        "ABOUT 200,000 COPIES",
+        "of mitochondrial DNA"
+      ],
+      "source": "Reynier et al. 2001, Mol Hum Reprod 7:425",
+      "seconds": 8.213,
+      "render_seconds": 8.748,
+      "event_seconds": 8.213
+    },
+    {
+      "kind": "atp_cell",
+      "overlay": "label",
+      "mode": "egg",
+      "label": [
+        "20,000 TO 600,000",
+        "it varies a lot"
+      ],
+      "source": "Reynier et al. 2001, Mol Hum Reprod 7:425",
+      "seconds": 4.923,
+      "render_seconds": 5.121,
+      "event_seconds": 4.923
+    },
+    {
+      "kind": "atp_cell",
+      "overlay": "label",
+      "mode": "egg",
+      "label": [
+        "A FEW IN THE SPERM",
+        "to power the tail"
+      ],
+      "seconds": 4.43,
+      "render_seconds": 5.827,
+      "event_seconds": 4.43
+    },
+    {
+      "kind": "atp_cell",
+      "overlay": "label",
+      "mode": "egg",
+      "label": [
+        "TAGGED AND DESTROYED",
+        "soon after fertilisation"
+      ],
+      "source": "Sutovsky et al. 1999, Nature 402:371",
+      "seconds": 3.994,
+      "render_seconds": 5.31,
+      "event_seconds": 3.994
+    },
+    {
+      "kind": "atp_cell",
+      "overlay": "label",
+      "label": [
+        "FROM YOUR MOTHER",
+        "almost always"
+      ],
+      "source": "Luo et al. 2018, PNAS 115:13039",
+      "seconds": 5.672,
+      "render_seconds": 6.079,
+      "event_seconds": 5.672
+    },
+    {
+      "kind": "atp_cell",
+      "overlay": "none",
+      "mode": "egg",
+      "seconds": 5.206,
+      "render_seconds": 6.482,
+      "event_seconds": 5.206
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "none",
+      "mode": "orbit",
+      "slow": 0.4,
+      "seconds": 9.341,
+      "render_seconds": 12.255,
+      "event_seconds": 9.341
+    },
+    {
+      "kind": "atp_mito",
+      "overlay": "none",
+      "seconds": 2.54,
+      "render_seconds": 2.64,
+      "event_seconds": 2.493
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "mode": "orbit",
+      "slow": 0.4,
+      "label": [
+        "~100 TURNS A SECOND",
+        "3 ATP every turn"
+      ],
+      "source": "Watt et al. 2010, PNAS 107:16823",
+      "seconds": 7.247,
+      "render_seconds": 7.462,
+      "event_seconds": 7.247
+    },
+    {
+      "kind": "atp_muscle",
+      "overlay": "none",
+      "seconds": 6.951,
+      "render_seconds": 9.584,
+      "event_seconds": 6.951
+    }
+  ]
+}

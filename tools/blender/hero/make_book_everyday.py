@@ -1,0 +1,261 @@
+"""Book (27 Nov 2026): "6 Everyday Things Everyone Gets Wrong" – main (EN) + hi, one landscape render.
+The six Shorts that run 2–7 Dec (chilli, mosquito, gecko, popcorn, Leidenfrost, woodpecker) become six connected
+chapters, each leading into the next. Shots are the Shorts' own micro-world scenes, re-rendered LANDSCAPE with the
+vertical field of view kept (micro.py keep_vertical_fov), so nothing is cropped.
+New facts: research/hero/book_everyday/facts_checked.md (checked 27 Nov 2026, sources opened).
+"""
+import copy, json, os, sys
+R = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+os.chdir(R); sys.path.insert(0, R)
+
+SHORTS = {"ch": "chilli_burn", "mq": "mosquito_magnets", "gk": "gecko_glass", "pc": "popcorn", "lf": "leidenfrost", "wp": "woodpecker"}
+SPECS = {k: json.load(open(f"research/hero/{v}/spec.json", encoding="utf-8")) for k, v in SHORTS.items()}
+HI_SPECS = {k: json.load(open(f"research/hero/{v}_hi/spec.json", encoding="utf-8")) for k, v in SHORTS.items()}
+
+def L(a, b, src=None):
+    d = {"overlay": "label", "label": [a, b]}
+    if src:
+        d["source"] = src
+    return d
+
+def C(n, t):
+    return {"overlay": "chapter", "chapter": [f"CHAPTER {n}", t]}
+
+NONE = {"overlay": "none"}
+S_TRPM8 = "McKemy, Neuhausser & Julius 2002, Nature 416:52; Peier et al. 2002, Cell 108:705"
+S_BIRD = "Jordt & Julius 2002, Cell 108:421; Tewksbury & Nabhan 2001, Nature 412:403"
+S_MILK = "Nolden, Lenart & Hayes 2019, Physiology & Behavior 208:112557"
+S_CDC = "CDC: mosquito life cycle"
+S_VB = "van Breugel et al. 2015, Current Biology 25:2123"
+S_DEO = "De Obaldia et al. 2022, Cell 185:4099"
+S_AUT = "Autumn et al. 2000, Nature 405:681"
+S_AP = "Autumn & Peattie 2002, Integrative and Comparative Biology 42:1081"
+S_HA = "Hansen & Autumn 2005, PNAS 102:385"
+S_GOK = "Gökmen 2004, Journal of Food Engineering 65:357"
+S_VP = "Virot & Ponomarenko 2015, J R Soc Interface 12:20141247"
+S_BUR = "Burton et al. 2012, Physical Review Letters 109:074301"
+S_LIN = "Linke et al. 2006, Physical Review Letters 96:154502"
+S_VW = "Van Wassenbergh et al. 2022, Current Biology 32:3189"
+
+# (EN, HI, (short, shot), overrides)
+SC = [
+ ("Chilli doesn't heat your mouth. Mosquitoes don't care about sweet blood. And a woodpecker's skull is not a shock absorber.",
+  "मिर्च आपके मुँह को गरम नहीं करती। मच्छरों को मीठे ख़ून से कोई मतलब नहीं। और कठफोड़वे की खोपड़ी कोई shock absorber नहीं है।",
+  ("ch", 0), L("SIX THINGS", "almost everyone gets wrong")),
+ ("Geckos don't use suction cups. Popcorn doesn't just explode. And a hotter pan can make water last longer.",
+  "Gecko suction cups इस्तेमाल नहीं करते। Popcorn सिर्फ़ फटता नहीं है। और ज़्यादा गरम तवे पर पानी ज़्यादा देर टिक सकता है।",
+  ("gk", 0), {}),
+ ("Six everyday things almost everyone gets wrong. Let's look inside each one, in 3D, and see what the science actually shows.",
+  "छह रोज़मर्रा की चीज़ें, जिनके बारे में लगभग सब गलत सोचते हैं। चलिए हर एक के अंदर झाँकते हैं, 3D में, और देखते हैं कि विज्ञान असल में क्या कहता है।",
+  ("pc", 8), NONE),
+
+ ("Chapter one. Why does chilli burn?", "अध्याय एक। मिर्च जलन क्यों देती है?", ("ch", 0), C(1, "Why Does Chilli Burn?")),
+ ("Bite a hot chilli, and your mouth feels on fire. But measure it, and your mouth stays at body temperature.",
+  "तीखी मिर्च खाइए, तो मुँह में आग सी लगती है। लेकिन तापमान नापिए, तो मुँह शरीर जितना ही गरम रहता है।", ("ch", 0), {}),
+ ("The nerves in your tongue carry a tiny sensor called TRPV1. Its job is to warn you about burning heat.",
+  "आपकी जीभ की नसों पर एक नन्हा sensor होता है, जिसका नाम है TRPV1। इसका काम है जलाने वाली गर्मी से आपको सावधान करना।", ("ch", 1), {}),
+ ("At about forty-three degrees Celsius, it springs open, and a signal races to your brain: hot!",
+  "लगभग तैंतालीस डिग्री सेल्सियस पर यह खुल जाता है, और दिमाग़ तक संदेश दौड़ता है: गरम!", ("ch", 2), {}),
+ ("The molecule in chilli, capsaicin, slots into the very same sensor and opens it, with no heat at all.",
+  "मिर्च का अणु, capsaicin, ठीक इसी sensor में फ़िट होकर उसे खोल देता है, बिना किसी गर्मी के।", ("ch", 3), {}),
+ ("So your brain gets the same alarm. You sweat, and you go red, as if you really were hot.",
+  "तो दिमाग़ को वही चेतावनी मिलती है। पसीना आता है, चेहरा लाल होता है, जैसे सच में गर्मी हो।", ("ch", 4), {}),
+ ("Finding this sensor was part of the work that won the Nobel Prize in Medicine in 2021.",
+  "इस sensor की खोज उस काम का हिस्सा थी, जिसे दो हज़ार इक्कीस में चिकित्सा का नोबेल पुरस्कार मिला।", ("ch", 5), {}),
+ ("Mint plays the same trick in reverse. Menthol switches on a different sensor, TRPM8, which normally fires when things cool below about twenty-five degrees.",
+  "पुदीना यही खेल उल्टा खेलता है। Menthol एक दूसरा sensor चालू करता है, TRPM8, जो आम तौर पर तब जागता है जब चीज़ें लगभग पच्चीस डिग्री से ठंडी हों।",
+  ("ch", 7), L("MINT", "switches on a cold sensor", S_TRPM8)),
+ ("And birds don't feel the burn at all. Their version of the heat sensor ignores capsaicin. So birds happily eat chillies, and spread the seeds.",
+  "और पक्षियों को यह जलन बिल्कुल महसूस नहीं होती। उनका heat sensor capsaicin को अनदेखा करता है। इसलिए पक्षी मज़े से मिर्च खाते हैं, और उसके बीज दूर तक फैलाते हैं।",
+  ("ch", 1), L("BIRDS FEEL NOTHING", "their sensor ignores capsaicin", S_BIRD)),
+ ("Capsaicin is oily, and it doesn't mix well with water. In a taste test, water helped only a little. Milk calmed the burn best, even skim milk.",
+  "Capsaicin तैलीय होता है, और पानी में ठीक से नहीं घुलता। एक taste test में पानी से थोड़ी ही राहत मिली। दूध ने जलन सबसे अच्छी शांत की, skim milk ने भी।",
+  ("ch", 6), {"source": S_MILK}),
+ ("Your senses can be fooled. But other animals read you too. So why do mosquitoes pick some people over others?",
+  "आपकी इंद्रियों को धोखा दिया जा सकता है। लेकिन दूसरे जीव भी आपको पढ़ते हैं। तो मच्छर कुछ लोगों को ही क्यों चुनते हैं?", ("ch", 8), NONE),
+
+ ("Chapter two. Why do mosquitoes pick you?", "अध्याय दो। मच्छर आपको ही क्यों चुनते हैं?", ("mq", 0), C(2, "Why Do Mosquitoes Pick You?")),
+ ("First, only female mosquitoes bite. They usually need the protein in blood to make their eggs. Males live on nectar and sugar.",
+  "पहली बात, सिर्फ़ मादा मच्छर काटती हैं। अंडे बनाने के लिए उन्हें आम तौर पर ख़ून के protein की ज़रूरत होती है। नर मच्छर फूलों का रस और शक्कर पीकर जीते हैं।",
+  ("mq", 8), L("ONLY FEMALES BITE", "blood protein for eggs", S_CDC)),
+ ("The breath you breathe out puts a mosquito on alert. The carbon dioxide makes it fly toward anything it can see. Up close, it picks up your body heat.",
+  "आपकी छोड़ी हुई साँस मच्छर को चौकन्ना कर देती है। Carbon dioxide उसे हर दिखने वाली चीज़ की ओर उड़ाती है। और पास आकर वह आपके शरीर की गर्मी पकड़ लेता है।",
+  ("mq", 7), L("BREATH, SIGHT, HEAT", "how it closes in", S_VB)),
+ ("But some people really are mosquito magnets. And it has nothing to do with sweet blood.",
+  "लेकिन कुछ लोग सच में मच्छरों के चुंबक होते हैं। और इसका मीठे ख़ून से कोई लेना-देना नहीं।", ("mq", 0), {}),
+ ("In one study, volunteers wore nylon sleeves on their arms for six hours.",
+  "एक study में volunteers ने छह घंटे तक बाँहों पर nylon की आस्तीन पहनी।", ("mq", 1), {}),
+ ("Then mosquitoes were given a choice between two people's sleeves.",
+  "फिर मच्छरों को दो लोगों की आस्तीनों में से एक चुनने दिया गया।", ("mq", 2), {}),
+ ("The most attractive person drew over a hundred times more mosquitoes than the least attractive. And for three years, the same people kept winning.",
+  "सबसे आकर्षक व्यक्ति ने सबसे कम आकर्षक लोगों से सौ गुना से भी ज़्यादा मच्छर खींचे। और तीन साल तक, वही लोग जीतते रहे।", ("mq", 3), {"source": S_DEO}),
+ ("The difference was on their skin: more of the acids made from skin oil.",
+  "फ़र्क उनकी त्वचा पर था: त्वचा के तेल से बनने वाले acids ज़्यादा थे।", ("mq", 4), {}),
+ ("Even mosquitoes bred without key smell sensors could still pick out the magnets.",
+  "यहाँ तक कि जिन मच्छरों में सूँघने के मुख्य sensors नहीं थे, वे भी इन चुंबकों को पहचान गए।", ("mq", 5), {}),
+ ("And blood type? The evidence for that is mixed.", "और ख़ून का group? उसके सबूत मिले-जुले हैं।", ("mq", 6), {}),
+ ("When a mosquito lands, it has to hold on. But one animal can hold on to almost anything, even glass. So how does a gecko climb a window?",
+  "जब मच्छर बैठता है, उसे पकड़ बनानी पड़ती है। लेकिन एक जीव लगभग किसी भी चीज़ पर टिक सकता है, काँच पर भी। तो gecko खिड़की पर कैसे चढ़ता है?", ("gk", 8), NONE),
+
+ ("Chapter three. How do geckos climb glass?", "अध्याय तीन। Gecko काँच पर कैसे चढ़ता है?", ("gk", 7), C(3, "How Do Geckos Climb Glass?")),
+ ("A gecko can run straight up glass. No suction cups. No glue.", "Gecko सीधे काँच पर दौड़ सकता है। न suction cups, न गोंद।", ("gk", 0), {}),
+ ("Zoom into its toes, and each foot carries nearly half a million tiny hairs, called setae.",
+  "उसकी उँगलियों को पास से देखिए। हर पैर पर लगभग पाँच लाख नन्हे बाल हैं, जिन्हें setae कहते हैं।", ("gk", 1), L("NEARLY 500,000 HAIRS", "on each foot", S_AUT)),
+ ("Each hair splits into hundreds of even tinier tips, each only about a fifth of a micrometre across.",
+  "हर बाल सैकड़ों और भी बारीक सिरों में बँट जाता है, हर सिरा एक micrometre के पाँचवें हिस्से जितना।", ("gk", 2), L("HUNDREDS OF TIPS", "each ~0.2 micrometres", S_AUT)),
+ ("Each tip gets so close to the glass that a weak pull between molecules, called the van der Waals force, takes hold.",
+  "हर सिरा काँच के इतने करीब पहुँचता है कि अणुओं के बीच का एक कमज़ोर खिंचाव, जिसे वान डर वाल्स बल कहते हैं, पकड़ बना लेता है।", ("gk", 3), {}),
+ ("One tip's pull is almost nothing. But all the tips together hold the whole gecko.",
+  "एक सिरे का खिंचाव लगभग कुछ भी नहीं। लेकिन सारे सिरे मिलकर पूरे gecko को थाम लेते हैं।", ("gk", 4), {}),
+ ("Tests in 2002 showed a single hair sticks just as well to surfaces that love water, and ones that repel it. So it isn't wet glue.",
+  "दो हज़ार दो के प्रयोगों में एक अकेला बाल पानी पसंद करने वाली और पानी दूर करने वाली, दोनों सतहों पर बराबर चिपका। तो यह गीला गोंद नहीं है।", ("gk", 5), {}),
+ ("In theory, if all six and a half million hairs on one big gecko gripped at once, they could hold about a hundred and thirty kilograms. A real gecko uses only a tiny share of that.",
+  "सिद्धांत में, अगर एक बड़े gecko के सारे पैंसठ लाख बाल एक साथ पकड़ बनाएँ, तो वे लगभग एक सौ तीस किलो थाम सकते हैं। असली gecko उसका बहुत छोटा हिस्सा ही इस्तेमाल करता है।",
+  ("gk", 7), L("IN THEORY: 130 kg", "if every hair gripped at once", S_AP)),
+ ("So how does it ever let go? Tilt a hair past about thirty degrees, and it releases. The gecko peels its toes up from the tip, like tape.",
+  "तो वह छूटता कैसे है? किसी बाल को लगभग तीस डिग्री से ज़्यादा झुकाइए, और वह छूट जाता है। Gecko अपनी उँगलियाँ सिरे से, tape की तरह उठाता है।",
+  ("gk", 6), L("PAST ABOUT 30 DEGREES", "the hairs let go", S_AP)),
+ ("And its feet clean themselves. A gecko with dirty feet sticks again after just a few steps.",
+  "और उसके पैर ख़ुद साफ़ हो जाते हैं। गंदे पैरों वाला gecko कुछ ही कदमों में फिर से चिपकने लगता है।", ("gk", 2), L("SELF-CLEANING", "sticky again in a few steps", S_HA)),
+ ("Gecko feet work by getting molecules close together. Now give water molecules enough heat, and they can do something wilder: launch a kernel into the air.",
+  "Gecko के पैर अणुओं को पास लाकर काम करते हैं। अब पानी के अणुओं को काफ़ी गर्मी दीजिए, तो वे इससे भी कमाल की चीज़ कर सकते हैं: एक दाने को हवा में उछाल सकते हैं।", ("pc", 7), NONE),
+
+ ("Chapter four. How does popcorn really pop?", "अध्याय चार। Popcorn असल में कैसे फूटता है?", ("pc", 0), C(4, "How Does Popcorn Really Pop?")),
+ ("Inside each kernel is a little water, sealed in a hard shell. Kernels pop best at about fourteen percent water.",
+  "हर दाने के अंदर थोड़ा पानी है, एक सख़्त छिलके में बंद। दाने लगभग चौदह प्रतिशत नमी पर सबसे अच्छे फूटते हैं।", ("pc", 1), {"source": S_GOK}),
+ ("Heat it, and that water turns to steam. Just before it bursts, the pressure inside reaches about ten times normal air pressure.",
+  "उसे गरम कीजिए, तो वह पानी भाप बन जाता है। फटने से ठीक पहले अंदर का दबाव हवा के सामान्य दबाव का लगभग दस गुना हो जाता है।",
+  ("pc", 2), L("ABOUT 10 TIMES", "normal air pressure", S_VP)),
+ ("At a hundred and seventy degrees Celsius, only about a third of the kernels popped. At a hundred and eighty, almost all of them did.",
+  "एक सौ सत्तर डिग्री सेल्सियस पर सिर्फ़ लगभग एक तिहाई दाने फूटे। एक सौ अस्सी पर, लगभग सारे।", ("pc", 3), {}),
+ ("Starch foams out of the crack, and part of it presses down on the pan, like a leg.",
+  "दरार से starch झाग बनकर निकलता है, और उसका एक हिस्सा तवे पर टिकता है, एक टाँग की तरह।", ("pc", 4), {}),
+ ("The leg squashes, pushes back, and launches the kernel. The jump begins about twenty milliseconds after the shell cracks.",
+  "टाँग दबती है, फिर धक्का देती है, और दाना उछल जाता है। छिलका चटकने के लगभग बीस millisecond बाद यह छलाँग शुरू होती है।",
+  ("pc", 5), L("SQUASH, PUSH, LAUNCH", "about 20 milliseconds", S_VP)),
+ ("And the pop you hear? Filming and recording it together suggests it's the steam escaping, not the shell cracking.",
+  "और जो पॉप आप सुनते हैं? उसे एक साथ film और record करने से लगता है कि वह भाप के निकलने की आवाज़ है, छिलके के चटकने की नहीं।", ("pc", 6), {}),
+ ("Bursting, jumping and popping, all in a few hundredths of a second.",
+  "फटना, उछलना और आवाज़, सब कुछ एक सेकंड के कुछ सौवें हिस्सों में।", ("pc", 7), {}),
+ ("Steam lifted the popcorn. But steam can also lift water itself. So why does a hotter pan make water last longer?",
+  "भाप ने popcorn को उछाला। लेकिन भाप ख़ुद पानी को भी उठा सकती है। तो ज़्यादा गरम तवे पर पानी ज़्यादा देर क्यों टिकता है?", ("lf", 8), NONE),
+
+ ("Chapter five. Why does water dance on a hot pan?", "अध्याय पाँच। गरम तवे पर पानी क्यों नाचता है?", ("lf", 0), C(5, "Why Does Water Dance On A Hot Pan?")),
+ ("Flick water on a warm pan, and it sizzles away. Make the pan much hotter, and the drops start to dance.",
+  "गुनगुने तवे पर पानी छिड़किए, तो वह छनछनाकर उड़ जाता है। तवे को बहुत ज़्यादा गरम कीजिए, तो बूँदें नाचने लगती हैं।", ("lf", 1), {}),
+ ("Above about a hundred and eighty degrees, the bottom of the drop turns to steam instantly.",
+  "लगभग एक सौ अस्सी डिग्री से ऊपर, बूँद का निचला हिस्सा तुरंत भाप बन जाता है।", ("lf", 2), {}),
+ ("That steam lifts the drop off the metal, on a cushion between five and a hundred micrometres thick. About a hair's width, or less.",
+  "वह भाप बूँद को धातु से ऊपर उठा देती है, पाँच से सौ micrometre मोटी एक गद्दी पर। लगभग एक बाल जितनी, या उससे भी पतली।",
+  ("lf", 3), L("5 TO 100 MICROMETRES", "a cushion of steam", S_BUR)),
+ ("With nothing touching, the drop skates around almost without friction.",
+  "कुछ भी न छूने से, बूँद लगभग बिना घर्षण के फिसलती रहती है।", ("lf", 4), {}),
+ ("And steam is bad at carrying heat. So the floating drop boils away much more slowly than one on a cooler pan.",
+  "और भाप गर्मी को ठीक से नहीं पहुँचाती। इसलिए तैरती बूँद, कम गरम तवे वाली बूँद से कहीं धीरे उड़ती है।", ("lf", 5), {}),
+ ("It's called the Leidenfrost effect, after Johann Gottlob Leidenfrost, who described it in 1756.",
+  "इसे Leidenfrost effect कहते हैं, Johann Gottlob Leidenfrost के नाम पर, जिन्होंने सत्रह सौ छप्पन में इसका वर्णन किया।",
+  ("lf", 6), L("THE LEIDENFROST EFFECT", "described in 1756", S_BUR)),
+ ("On a hot surface cut like saw teeth, the drops even push themselves along, at about five centimetres a second, and can climb a slope.",
+  "आरी के दाँतों जैसी कटी गरम सतह पर, बूँदें ख़ुद को आगे धकेलती हैं, लगभग पाँच centimetre प्रति सेकंड, और ढलान पर ऊपर भी चढ़ सकती हैं।",
+  ("lf", 7), L("THEY CAN CLIMB", "on a saw-tooth surface", S_LIN)),
+ ("The floating drop avoids every impact. But one bird hits a tree on purpose, again and again. So why doesn't a woodpecker hurt its brain?",
+  "तैरती बूँद हर टक्कर से बचती है। लेकिन एक पक्षी जानबूझकर पेड़ पर बार-बार चोट करता है। तो कठफोड़वे के दिमाग़ को चोट क्यों नहीं लगती?", ("wp", 8), NONE),
+
+ ("Chapter six. Why don't woodpeckers get hurt?", "अध्याय छह। कठफोड़वे को चोट क्यों नहीं लगती?", ("wp", 0), C(6, "Why Don't Woodpeckers Get Hurt?")),
+ ("You've probably heard that a woodpecker's skull is a shock absorber. It isn't.",
+  "आपने शायद सुना होगा कि कठफोड़वे की खोपड़ी shock absorber होती है। ऐसा नहीं है।", ("wp", 0), {}),
+ ("Scientists filmed three kinds of woodpecker with high-speed cameras, and tracked the beak and the head on every hit.",
+  "वैज्ञानिकों ने तीन तरह के कठफोड़वों को high-speed cameras से film किया, और हर चोट पर चोंच और सिर को track किया।", ("wp", 1), {}),
+ ("Each strike stops the head hard: hundreds of g, up to about four hundred times the pull of gravity.",
+  "हर चोट पर सिर ज़ोर से रुकता है: सैकड़ों g, गुरुत्वाकर्षण के लगभग चार सौ गुना तक।", ("wp", 6), L("UP TO ~400 g", "on every strike", S_VW)),
+ ("If the skull cushioned the blow, the head would keep moving after the beak stopped.",
+  "अगर खोपड़ी झटके को सोखती, तो चोंच रुकने के बाद भी सिर आगे बढ़ता रहता।", ("wp", 2), {}),
+ ("It doesn't. They stop together. That's a stiff hammer. A cushion would soak up the energy and make every peck weaker.",
+  "ऐसा नहीं होता। दोनों एक साथ रुकते हैं। यह एक सख़्त हथौड़ा है। गद्दी ऊर्जा सोख लेती, और हर चोट कमज़ोर कर देती।", ("wp", 3), {}),
+ ("So what protects the brain? Its size. A small brain feels far less pressure than a big one in the same hit.",
+  "तो दिमाग़ को कौन बचाता है? उसका आकार। एक ही चोट में छोटा दिमाग़ बड़े दिमाग़ से कहीं कम दबाव महसूस करता है।", ("wp", 4), {}),
+ ("The models show woodpeckers would need to hit about twice as fast as they do before getting near concussion levels.",
+  "Models बताते हैं कि concussion के स्तर तक पहुँचने के लिए कठफोड़वों को अभी से लगभग दोगुनी रफ़्तार से चोट करनी होगी।", ("wp", 5), {}),
+ ("So helmets inspired by the cushion idea took the wrong lesson. A woodpecker's skull isn't a cushion. It's a stiff hammer, and its tiny brain is what keeps it safe.",
+  "तो cushion वाले विचार से बने helmets ने गलत सबक लिया। कठफोड़वे की खोपड़ी गद्दी नहीं है। वह सख़्त हथौड़ा है, और उसका नन्हा दिमाग़ ही उसे सुरक्षित रखता है।", ("wp", 7), {}),
+
+ ("Six things, six surprises. Chilli doesn't heat your mouth: it flips the same switch real heat does. Mosquitoes follow skin acids. Geckos hold on with molecules. Popcorn kicks off on a leg. Water floats on its own steam. And woodpeckers are hammers, not cushions.",
+  "छह चीज़ें, छह हैरानियाँ। मिर्च मुँह को गरम नहीं करती: वह वही switch दबाती है जो असली गर्मी दबाती है। मच्छर त्वचा के acids के पीछे जाते हैं। Gecko अणुओं से पकड़ बनाते हैं। Popcorn एक टाँग पर उछलता है। पानी अपनी ही भाप पर तैरता है। और कठफोड़वे हथौड़े हैं, गद्दी नहीं।",
+  ("ch", 7), NONE),
+ ("So if chilli tricks your heat sensor, and mint tricks your cold sensor, what do you think happens when you eat both at once?",
+  "तो अगर मिर्च आपके गर्मी वाले sensor को धोखा देती है, और पुदीना ठंडे वाले sensor को, तो दोनों एक साथ खाने पर क्या होता होगा?",
+  ("lf", 0), NONE),
+]
+
+HI_NEW = {
+    "SIX THINGS": "छह बातें", "almost everyone gets wrong": "जो लगभग सब गलत समझते हैं",
+    "CHAPTER 1": "अध्याय एक", "CHAPTER 2": "अध्याय दो", "CHAPTER 3": "अध्याय तीन", "CHAPTER 4": "अध्याय चार",
+    "CHAPTER 5": "अध्याय पाँच", "CHAPTER 6": "अध्याय छह",
+    "Why Does Chilli Burn?": "मिर्च जलन क्यों देती है?", "Why Do Mosquitoes Pick You?": "मच्छर आपको ही क्यों चुनते हैं?",
+    "How Do Geckos Climb Glass?": "Gecko काँच पर कैसे चढ़ता है?", "How Does Popcorn Really Pop?": "Popcorn असल में कैसे फूटता है?",
+    "Why Does Water Dance On A Hot Pan?": "गरम तवे पर पानी क्यों नाचता है?", "Why Don't Woodpeckers Get Hurt?": "कठफोड़वे को चोट क्यों नहीं लगती?",
+    "MINT": "पुदीना", "switches on a cold sensor": "ठंडे वाला sensor चालू करता है",
+    "BIRDS FEEL NOTHING": "पक्षियों को जलन नहीं", "their sensor ignores capsaicin": "उनका sensor capsaicin को नहीं पहचानता",
+    "ONLY FEMALES BITE": "सिर्फ़ मादा काटती है", "blood protein for eggs": "अंडों के लिए ख़ून का protein",
+    "BREATH, SIGHT, HEAT": "साँस, नज़र, गर्मी", "how it closes in": "ऐसे पास आता है",
+    "NEARLY 500,000 HAIRS": "लगभग पाँच लाख बाल", "on each foot": "हर पैर पर",
+    "HUNDREDS OF TIPS": "सैकड़ों सिरे", "each ~0.2 micrometres": "हर एक ~0.2 micrometre",
+    "IN THEORY: 130 kg": "सिद्धांत में: 130 kg", "if every hair gripped at once": "अगर हर बाल एक साथ पकड़े",
+    "PAST ABOUT 30 DEGREES": "लगभग 30 डिग्री के बाद", "the hairs let go": "बाल छूट जाते हैं",
+    "SELF-CLEANING": "ख़ुद साफ़", "sticky again in a few steps": "कुछ कदमों में फिर चिपकू",
+    "ABOUT 10 TIMES": "लगभग दस गुना", "normal air pressure": "हवा का सामान्य दबाव",
+    "SQUASH, PUSH, LAUNCH": "दबना, धक्का, उछाल", "about 20 milliseconds": "लगभग 20 millisecond",
+    "5 TO 100 MICROMETRES": "5 से 100 micrometre", "a cushion of steam": "भाप की गद्दी",
+    "THE LEIDENFROST EFFECT": "LEIDENFROST EFFECT", "described in 1756": "1756 में वर्णन",
+    "THEY CAN CLIMB": "चढ़ भी सकती हैं", "on a saw-tooth surface": "आरी जैसी सतह पर",
+    "UP TO ~400 g": "~400 g तक", "on every strike": "हर चोट पर",
+}
+
+def build(lang):
+    shots, hi_labels = [], {}
+    for k in SHORTS:
+        hi_labels.update(HI_SPECS[k].get("hi_labels", {}))
+    hi_labels.update(HI_NEW)
+    for en, hi, (k, i), ov in SC:
+        sh = copy.deepcopy(SPECS[k]["shots"][i])
+        for x in ("render_seconds", "event_seconds"):
+            sh.pop(x, None)
+        sh.update(ov)
+        if sh.get("overlay") == "none":
+            sh.pop("label", None)
+        sh["src"] = [SHORTS[k], i]
+        shots.append(sh)
+    spec = {"assets_dir": "assets/3d", "renderer": "micro", "end_beat_s": 0.6, "aspect": "landscape", "long": True,
+            "keep_vertical_fov": True, "caption_scale": 1.0, "shots": shots}
+    if lang == "hi":
+        spec["hi_labels"] = hi_labels
+    return spec
+
+srcs = "; ".join(["Caterina et al. 1997, Nature 389:816", "Nobel Prize in Physiology or Medicine 2021", S_TRPM8, S_BIRD, S_MILK,
+                  S_CDC, S_VB, S_DEO, S_AUT, S_AP, S_HA, "Autumn et al. 2002, PNAS 99:12252", S_GOK, S_VP, S_BUR, S_LIN,
+                  "Quéré 2013, Annual Review of Fluid Mechanics 45:197", S_VW])
+share = {"myth": "Chilli heats up your mouth.",
+         "truth": "Capsaicin opens TRPV1, the nerve sensor that normally opens at about 43 °C, so the brain gets a heat alarm with no heat (Caterina et al. 1997, Nature).",
+         "line": "Chilli doesn't heat your mouth: it flips the same switch real heat does."}
+en = {"title_options": ["6 Everyday Things Everyone Gets Wrong (Science In 3D)"],
+      "facts": ["New facts checked 27 Nov 2026: research/hero/book_everyday/facts_checked.md; the rest as in the six Shorts."],
+      "sources": srcs,
+      "description": "Chilli doesn't heat your mouth. Mosquitoes don't want sweet blood. Geckos don't use suction, popcorn jumps on a leg, "
+                     "a hotter pan makes water last longer, and a woodpecker's skull is no shock absorber. Six everyday myths, "
+                     "six connected chapters, all in 3D and all from published science.",
+      "share": share,
+      "tags": ["science", "myths", "chilli", "mosquitoes", "gecko", "popcorn", "Leidenfrost effect", "woodpecker", "3D animation"],
+      "scenes": [{"narration": r[0]} for r in SC]}
+hi = dict(en, title_options=["6 रोज़मर्रा की बातें, जो लगभग सब गलत समझते हैं"],
+          description="मिर्च मुँह को गरम नहीं करती। मच्छरों को मीठा ख़ून नहीं चाहिए। Gecko suction इस्तेमाल नहीं करते, popcorn एक टाँग पर उछलता है, "
+                      "ज़्यादा गरम तवे पर पानी ज़्यादा टिकता है, और कठफोड़वे की खोपड़ी shock absorber नहीं है। छह मिथक, छह जुड़े हुए अध्याय, 3D में, विज्ञान के साथ।",
+          tags=["science hindi", "विज्ञान", "मिर्च", "मच्छर", "gecko", "popcorn", "कठफोड़वा", "3D animation"],
+          share=dict(share, line="मिर्च मुँह को गरम नहीं करती: वह वही switch दबाती है जो असली गर्मी दबाती है।"),
+          scenes=[{"narration": r[1]} for r in SC])
+for name, lang, sc in (("book_everyday", "en", en), ("book_everyday_hi", "hi", hi)):
+    os.makedirs(f"research/hero/{name}", exist_ok=True)
+    json.dump(build(lang), open(f"research/hero/{name}/spec.json", "w", encoding="utf-8"), ensure_ascii=False, indent=2)
+    json.dump(sc, open(f"research/hero/{name}/script.json", "w", encoding="utf-8"), ensure_ascii=False, indent=2)
+from agents import writer
+print("scenes", len(SC), "EN words", sum(len(r[0].split()) for r in SC), "HI words", sum(len(r[1].split()) for r in SC))
+print("hindi issues:", writer.hindi_script_issues(hi["scenes"]))
