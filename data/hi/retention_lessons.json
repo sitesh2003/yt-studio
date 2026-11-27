@@ -1,17 +1,18 @@
 {
   "lessons": [
-    "Start with high-stakes comparisons or physical thought experiments (e.g., cars vs dinosaurs, car crashes), as all videos successfully retained over 1.0 at 10% regardless of low relative start benchmarks.",
-    "Avoid overly dense technical explanations early on, as sudden drops occur around 11% to 25% when specific heavy metrics or secondary clauses are introduced.",
-    "Do not rely on countdowns since all analyzed videos had countdown=False, meaning retention relies entirely on pacing and narrative stakes rather than timer gimmicks.",
-    "Keep initial hooks punchy and tightly bounded, as longer introductory lines correlate with immediate viewer drop-off within the first 10-25% of the runtime."
+    "Use second-person immersive roleplay in hooks ('तुम एक...') to maximize early retention (achieved highest 10% retention at 1.0488).",
+    "Avoid dumping heavy technical terms or precise numerical forces (e.g., '34,500 Newton') early, as it caused the largest single drop in the dataset (-23% at 23% mark).",
+    "Anchor science concepts around clear visual comparisons (e.g., T. rex vs car speed) to sustain strong mid-video retention (49.3% kept at 50%).",
+    "Ensure the post-hook transition (11-12% mark) is seamless, as every video suffered a significant drop-off (11% to 19%) right after the hook."
   ],
   "worst_moment_types": [
-    "Heavy technical specifications or definitions introduced too early (e.g., specific bone stress physics or jaw force numbers between 11% and 25%)",
-    "Mid-video pacing stalls where the explanation repeats or lingers on the mechanics rather than driving the narrative forward"
+    "Dense numerical or technical estimation explanations early in the video (e.g., jaw muscle Newton calculations).",
+    "Abstract physics law drops without immediate narrative momentum (e.g., referencing Newton's second law).",
+    "Transitions immediately following the main hook line at the 11-12% mark."
   ],
   "best_hook_types": [
-    "Counterintuitive physical questions (e.g., comparing dinosaur speed to cars, or why a crushing car saves lives)",
-    "Immersive identity-based scenarios ('Imagine you are a baby tyrannosaur')"
+    "Second-person immersive scenarios ('सोचो, तुम एक baby tyrannosaur हो...').",
+    "High-stakes comparison questions ('क्या T. rex तुम्हारी Car से तेज़ दौड़ सकता था?')."
   ],
   "studied": "2026-11-27",
   "videos": 4
