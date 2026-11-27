@@ -1,21 +1,21 @@
 {
   "lessons": [
-    "Never repeat the video title or headline in the opening line; repeating the prompt (e.g., Potato Sprout video) caused immediate viewer drops of up to 31.9%.",
-    "Anchor hooks in concrete, extreme comparisons or mind-boggling statements (e.g., 'older than the United States', tuna vs. cod color contrast) which consistently yield high 10% retention (>1.2) and end retention (>0.85 vs. similar).",
-    "Avoid artificial delays like 'Pause and guess' or countdowns; these moments trigger immediate drop-offs at mid-video (e.g., Maple Syrup at 52% and Foil at 37%).",
-    "Skip stating the obvious physical setup or relatable feeling (e.g., 'You feel that pins-and-needles sensation') and jump directly into the unexpected counter-intuitive scientific cause.",
-    "Sustain retention toward the end by introducing deeper scale or secondary mysteries (e.g., Greenland Shark cold metabolism, Webb infrared heat glow) rather than relying on rapid loops."
+    "Hook with a bold historical or scale anchor (e.g., 'older than the United States') to achieve rewatches near 180%+ at 10%.",
+    "Never repeat the video title or hook question right after the start; repeating the premise causes immediate drop-offs of over 30% (e.g., Potato and Pond videos).",
+    "Avoid explicit countdowns or 'pause and guess' prompts mid-video, as they consistently trigger viewer drop-off (e.g., Foil and Maple Syrup videos).",
+    "Avoid immediate generic filler phrases like 'They are not just there to look cool' or repeated script lines, which lose 28-31% of viewers instantly.",
+    "Use high-contrast comparisons between two familiar objects (e.g., Red Tuna vs. White Cod) to sustain high retention into the end (0.86 vs similar)."
   ],
   "worst_moment_types": [
-    "Verbatim repetition of the video title/question in the first 10 seconds",
-    "Interactive pauses and countdown prompts ('Pause and guess...')",
-    "Slow, obvious setup lines describing relatable everyday sensations before giving new information",
-    "Repeated or duplicate script lines"
+    "Word-for-word repetition of the main question/hook immediately after the start",
+    "Explicit pause prompts and countdowns ('pause and guess... three, two, one')",
+    "Low-information filler setup lines ('They are not just there to look cool')",
+    "Accidental duplicate narration lines in the script edit"
   ],
   "best_hook_types": [
-    "Extreme chronological or historical anchor facts ('older than the United States')",
-    "Direct sensory/visual paradoxes ('slice a tuna steak... deep red beef, while a cod fillet is bright white')",
-    "Challenging established foundational knowledge ('Pluto seemed like our solar system's edge, yet...')"
+    "Historical or extreme scale anchors that reframe common perception ('older than the United States')",
+    "Challenging established boundaries or paradigms ('Pluto seemed like our solar system's edge')",
+    "Direct visual/sensory contrast setups ('bluefin tuna vs cod meat looking like different animals')"
   ],
   "studied": "2026-11-27",
   "videos": 24

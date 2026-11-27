@@ -1,14 +1,16 @@
 {
-  "summary": "1. Script hooks must be under 15 words and deliver a single, provocative statement in sentence one without setup context.\n2. Address the viewer directly ('You', 'Your') or state a jarring subversion of popular belief ('The real T. rex couldn't run. Not even a jog.').\n3. Ground abstract topics in vivid, tangible physical comparisons (e.g., 'three small cars stacked on its teeth', 'no bigger than a small dog').\n4. Focus topics on dinosaurs, bodily functions, and everyday mechanical safety, avoiding broad astronomy/space news which suffers low stay rates.\n5. Keep titles short, question- or paradox-driven, ending with a single clear emoji ('Could A T. rex Outrun Your Car? 🦖').",
+  "summary": "Focus video topics on high-appeal subjects like prehistoric animals and everyday hidden mechanics, as they consistently capture and retain initial viewer interest. Craft titles using direct, curiosity-inducing statements or questions rather than dry technical summaries. Write first sentences that immediately challenge an assumption, state an alarming fact, or use direct address (\"You're a...\") to prevent swiping. Keep overall video lengths concise and tightly edited to maximize the percentage of viewers who stay past the crucial opening seconds. Avoid lengthy preamble, academic phrasing, or abstract scientific context in the hook, as these heavily increase drop-off rates.",
   "winning_hooks": [
-    "Use direct second-person presence or immediate paradoxes: 'Your eyes are leaking right now, and your brain is hiding it.'",
-    "Use instant visual scale comparisons: 'One T. rex bite pressed down like three small cars stacked on its teeth.'",
-    "State short, punchy contrarian facts directly: 'A car that folds up in a crash keeps you safer than one that doesn't.'"
+    "A car that folds up in a crash keeps you safer than one that doesn't.",
+    "The real T. rex probably couldn't run. Not even a jog.",
+    "Your eyes are leaking right now, and your brain is hiding it.",
+    "You're a baby tyrannosaur, no bigger than a small dog."
   ],
   "avoid": [
-    "Multi-clause, academic intro sentences over 15 words (e.g., 'Pluto seemed like our solar system's edge, yet astronomers are investigating...').",
-    "Abstract or generic opening statements that lack immediate stakes (e.g., 'Most James Webb images hold secrets.').",
-    "Narrative scenario setups that delay the core hook (e.g., 'Your car swerves off the highway right toward...')."
+    "Pluto seemed like our solar system's edge, yet astronomers are investigating evidence that...",
+    "Fossilized bones can last millions of years, but sometimes they hide more than just minerals.",
+    "That fresh farm salmon you bought is actually completely gray under its skin.",
+    "Long explanatory introductions about background history or technical definitions."
   ],
-  "next_experiment": "A/B test the first sentence structure on the exact same topic: Test 'Direct Paradox' (10 words max: 'Your bone strength drops by half when you sit down.') vs 'Second-Person Narrative Setup' (18 words) to see if keeping the first sentence under 12 words lifts stayed_pct above 55%."
+  "next_experiment": "A/B test two distinct hooks for a new T. rex video: Hook A starts with a direct myth-busting statement (\"T. rex couldn't even manage a fast walk\"), while Hook B starts with a direct second-person question (\"Could you outrun a baby T. rex?\"), tracking stayed_pct and views for both variations."
 }
