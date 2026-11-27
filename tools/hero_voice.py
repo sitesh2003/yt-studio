@@ -14,9 +14,18 @@ name = sys.argv[1] if len(sys.argv) > 1 else "trex"
 d = ROOT / "research" / "hero" / name
 script = json.loads((d / "script.json").read_text(encoding="utf-8"))
 job = ROOT / "jobs" / f"_hero_{name}"
-shutil.rmtree(job, ignore_errors=True)
-job.mkdir(parents=True)
-words = voice.narrate(script, job)
+import os   # noqa: E402
+# HERO_REUSE_JOB=1 (27 Nov 2026): keep the take already in jobs/_hero_<name> (the one a person or the larger
+# listener checked) instead of recording a new one - Chatterbox never says a script the same way twice.
+if os.environ.get("HERO_REUSE_JOB") and (job / "words.json").exists():
+    words = json.loads((job / "words.json").read_text(encoding="utf-8"))
+    voice.last_engine = json.loads((job / "engine.json").read_text())["engine"]
+else:
+    shutil.rmtree(job, ignore_errors=True)
+    job.mkdir(parents=True)
+    words = voice.narrate(script, job)
+    (job / "words.json").write_text(json.dumps(words, indent=2, ensure_ascii=False), encoding="utf-8")
+    (job / "engine.json").write_text(json.dumps({"engine": voice.last_engine}))
 print(f"engine {voice.last_engine}; {len(words)} words; {words[-1]['end']:.1f}s")
 text = " ".join(s["narration"] for s in script["scenes"])
 issues, notes, ratio = listen.compare(text, listen.transcribe(job / "voice.mp3"))

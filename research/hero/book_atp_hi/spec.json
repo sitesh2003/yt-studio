@@ -1,0 +1,512 @@
+{
+  "assets_dir": "assets/3d",
+  "renderer": "micro",
+  "aspect": "landscape",
+  "long": true,
+  "caption_scale": 1.0,
+  "end_beat_s": 0.8,
+  "shots": [
+    {
+      "kind": "atp_synthase",
+      "overlay": "none",
+      "mode": "orbit",
+      "slow": 0.4,
+      "seconds": 5.218
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "mode": "spin",
+      "slow": 0.5,
+      "label": [
+        "~100 TURNS A SECOND",
+        "shown here slowed down"
+      ],
+      "seconds": 6.524
+    },
+    {
+      "kind": "atp_mito",
+      "overlay": "none",
+      "dive": true,
+      "seconds": 6.017
+    },
+    {
+      "kind": "atp_muscle",
+      "overlay": "none",
+      "chapter": [
+        "\u0905\u0927\u094d\u092f\u093e\u092f \u090f\u0915",
+        "\u092e\u093e\u0902\u0938\u092a\u0947\u0936\u093f\u092f\u094b\u0902 \u0915\u094b \u0924\u093e\u0915\u0924 \u0915\u0939\u093e\u0901 \u0938\u0947?"
+      ],
+      "seconds": 4.531
+    },
+    {
+      "kind": "atp_molecule",
+      "overlay": "label",
+      "label": [
+        "ATP",
+        "the energy coin cells spend"
+      ],
+      "seconds": 7.393
+    },
+    {
+      "kind": "atp_molecule",
+      "overlay": "label",
+      "split": true,
+      "label": [
+        "ABOUT 100 g",
+        "in your whole body at once"
+      ],
+      "seconds": 5.83
+    },
+    {
+      "kind": "atp_muscle",
+      "overlay": "label",
+      "label": [
+        "ABOUT 40 kg A DAY",
+        "used even at rest"
+      ],
+      "source": "Tymoczko, Berg & Stryer, Biochemistry: A Short Course",
+      "seconds": 7.119
+    },
+    {
+      "kind": "atp_mito",
+      "overlay": "none",
+      "seconds": 6.116
+    },
+    {
+      "kind": "atp_mito",
+      "overlay": "none",
+      "dive": true,
+      "chapter": [
+        "\u0905\u0927\u094d\u092f\u093e\u092f \u0926\u094b",
+        "ATP \u0915\u0939\u093e\u0901 \u092c\u0928\u0924\u093e \u0939\u0948?"
+      ],
+      "seconds": 4.237
+    },
+    {
+      "kind": "atp_mito",
+      "overlay": "label",
+      "label": [
+        "MITOCHONDRION",
+        "wrapped in two membranes"
+      ],
+      "seconds": 5.756
+    },
+    {
+      "kind": "atp_mito",
+      "overlay": "label",
+      "dive": true,
+      "label": [
+        "CRISTAE",
+        "the folded inner membrane"
+      ],
+      "seconds": 6.282
+    },
+    {
+      "kind": "atp_dam",
+      "overlay": "label",
+      "label": [
+        "PROTONS",
+        "the hidden power source"
+      ],
+      "seconds": 6.239
+    },
+    {
+      "kind": "atp_chain",
+      "overlay": "none",
+      "chapter": [
+        "\u0905\u0927\u094d\u092f\u093e\u092f \u0924\u0940\u0928",
+        "\u092a\u094d\u0930\u094b\u091f\u0949\u0928 \u0915\u093e \u0905\u0902\u0924\u0930 \u0915\u0948\u0938\u0947 \u092c\u0928\u0924\u093e \u0939\u0948"
+      ],
+      "seconds": 4.077
+    },
+    {
+      "kind": "atp_chain",
+      "overlay": "label",
+      "label": [
+        "ELECTRONS",
+        "carry the energy from food"
+      ],
+      "seconds": 5.318
+    },
+    {
+      "kind": "atp_chain",
+      "overlay": "label",
+      "focus": "pumps",
+      "label": [
+        "A BUCKET BRIGADE",
+        "electrons passed along"
+      ],
+      "seconds": 7.516
+    },
+    {
+      "kind": "atp_chain",
+      "overlay": "label",
+      "focus": "pumps",
+      "label": [
+        "THREE PUMPS",
+        "Complexes I, III and IV"
+      ],
+      "seconds": 5.296
+    },
+    {
+      "kind": "atp_chain",
+      "overlay": "label",
+      "focus": "iv",
+      "label": [
+        "COMPLEX IV",
+        "electrons + oxygen make water"
+      ],
+      "seconds": 6.256
+    },
+    {
+      "kind": "atp_chain",
+      "overlay": "label",
+      "focus": "iv",
+      "label": [
+        "WHY YOU BREATHE",
+        "oxygen is the last stop"
+      ],
+      "seconds": 4.56
+    },
+    {
+      "kind": "atp_dam",
+      "overlay": "none",
+      "chapter": [
+        "\u0905\u0927\u094d\u092f\u093e\u092f \u091a\u093e\u0930",
+        "\u090a\u0930\u094d\u091c\u093e \u091c\u092e\u093e \u0915\u0930\u0928\u0947 \u0935\u093e\u0932\u0940 \u091d\u093f\u0932\u094d\u0932\u0940"
+      ],
+      "seconds": 3.938
+    },
+    {
+      "kind": "atp_dam",
+      "overlay": "label",
+      "label": [
+        "A PROTON DAM",
+        "crowded on one side"
+      ],
+      "seconds": 6.829
+    },
+    {
+      "kind": "atp_dam",
+      "overlay": "label",
+      "label": [
+        "ONE MAIN DOOR",
+        "back across the membrane"
+      ],
+      "seconds": 5.615
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "mode": "orbit",
+      "slow": 0.4,
+      "label": [
+        "ATP SYNTHASE",
+        "the turbine"
+      ],
+      "seconds": 4.092
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "none",
+      "mode": "spin",
+      "slow": 0.4,
+      "chapter": [
+        "\u0905\u0927\u094d\u092f\u093e\u092f \u092a\u093e\u0901\u091a",
+        "turbine \u0915\u094b \u0915\u094c\u0928 \u0918\u0941\u092e\u093e\u0924\u093e \u0939\u0948?"
+      ],
+      "seconds": 4.737
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "mode": "protons",
+      "slow": 0.35,
+      "label": [
+        "8 PIECES",
+        "the ring, in animals"
+      ],
+      "source": "Watt et al. 2010, PNAS 107:16823",
+      "seconds": 5.673
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "mode": "protons",
+      "slow": 0.35,
+      "label": [
+        "ONE PROTON",
+        "one step of the ring"
+      ],
+      "seconds": 6.185
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "mode": "spin",
+      "slow": 0.5,
+      "label": [
+        "8 PROTONS = 1 TURN",
+        "about 100 turns a second"
+      ],
+      "source": "Watt et al. 2010, PNAS 107:16823",
+      "seconds": 5.041
+    },
+    {
+      "kind": "atp_noji",
+      "overlay": "label",
+      "slow": 0.5,
+      "label": [
+        "1997",
+        "the spin, seen directly"
+      ],
+      "source": "Noji et al. 1997, Nature 386:299",
+      "seconds": 8.729
+    },
+    {
+      "kind": "atp_noji",
+      "overlay": "label",
+      "slow": 0.5,
+      "label": [
+        "ABOUT 2 nm WIDE",
+        "the smallest rotary motor seen"
+      ],
+      "seconds": 8.579
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "none",
+      "mode": "beta",
+      "slow": 0.3,
+      "chapter": [
+        "\u0905\u0927\u094d\u092f\u093e\u092f \u091b\u0939",
+        "\u0918\u0942\u092e\u0928\u0947 \u0938\u0947 ATP \u0915\u0948\u0938\u0947 \u092c\u0928\u0924\u093e \u0939\u0948"
+      ],
+      "seconds": 4.1
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "mode": "beta",
+      "slow": 0.3,
+      "label": [
+        "THE CROOKED SHAFT",
+        "turns inside the head"
+      ],
+      "seconds": 5.888
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "mode": "beta",
+      "slow": 0.3,
+      "label": [
+        "THREE WORKING PARTS",
+        "each changes shape"
+      ],
+      "seconds": 4.431
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "mode": "beta",
+      "slow": 0.3,
+      "label": [
+        "OPEN - LOOSE - TIGHT",
+        "the binding change"
+      ],
+      "source": "Boyer 1997, Annual Review of Biochemistry 66:717",
+      "seconds": 7.066
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "mode": "beta",
+      "slow": 0.3,
+      "label": [
+        "3 ATP PER TURN",
+        "one from each part"
+      ],
+      "source": "Watt et al. 2010, PNAS 107:16823",
+      "seconds": 6.285
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "mode": "orbit",
+      "slow": 0.4,
+      "label": [
+        "NOBEL PRIZE 1997",
+        "Paul Boyer and John Walker"
+      ],
+      "seconds": 4.266
+    },
+    {
+      "kind": "atp_muscle",
+      "overlay": "none",
+      "chapter": [
+        "\u0905\u0927\u094d\u092f\u093e\u092f \u0938\u093e\u0924",
+        "ATP \u091c\u093e\u0924\u093e \u0915\u0939\u093e\u0901 \u0939\u0948?"
+      ],
+      "seconds": 3.498
+    },
+    {
+      "kind": "atp_muscle",
+      "overlay": "label",
+      "label": [
+        "MUSCLES, NERVES, PROTEINS",
+        "all paid in ATP"
+      ],
+      "seconds": 7.41
+    },
+    {
+      "kind": "atp_mito",
+      "overlay": "label",
+      "label": [
+        "HEART AND BRAIN",
+        "never stop asking"
+      ],
+      "seconds": 4.168
+    },
+    {
+      "kind": "atp_molecule",
+      "overlay": "label",
+      "split": true,
+      "label": [
+        "EVEN SITTING STILL",
+        "about 40 kg a day"
+      ],
+      "seconds": 6.351
+    },
+    {
+      "kind": "atp_chain",
+      "overlay": "none",
+      "cyanide": true,
+      "focus": "iv",
+      "chapter": [
+        "\u0905\u0927\u094d\u092f\u093e\u092f \u0906\u0920",
+        "\u091c\u092c cyanide chain \u0930\u094b\u0915 \u0926\u0947"
+      ],
+      "seconds": 4.509
+    },
+    {
+      "kind": "atp_chain",
+      "overlay": "label",
+      "cyanide": true,
+      "focus": "iv",
+      "label": [
+        "CYANIDE",
+        "jams Complex IV, not the turbine"
+      ],
+      "source": "Zuhra & Szabo 2022, FEBS Journal 289:2481",
+      "seconds": 6.321
+    },
+    {
+      "kind": "atp_chain",
+      "overlay": "label",
+      "cyanide": true,
+      "label": [
+        "THE DAM DRAINS",
+        "the turbines slow down"
+      ],
+      "seconds": 7.627
+    },
+    {
+      "kind": "atp_chain",
+      "overlay": "label",
+      "cyanide": true,
+      "label": [
+        "NO NEW ATP",
+        "heart and brain hit hardest"
+      ],
+      "seconds": 7.38
+    },
+    {
+      "kind": "atp_mito",
+      "overlay": "none",
+      "seconds": 2.493
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "mode": "orbit",
+      "slow": 0.4,
+      "label": [
+        "~100 TURNS A SECOND",
+        "3 ATP every turn"
+      ],
+      "seconds": 7.362
+    },
+    {
+      "kind": "atp_muscle",
+      "overlay": "none",
+      "seconds": 5.357
+    }
+  ],
+  "hi_labels": {
+    "1997": "1997",
+    "3 ATP PER TURN": "\u0939\u0930 \u091a\u0915\u094d\u0915\u0930 \u092e\u0947\u0902 3 ATP",
+    "3 ATP every turn": "\u0939\u0930 \u091a\u0915\u094d\u0915\u0930 3 ATP",
+    "8 PIECES": "8 \u091f\u0941\u0915\u0921\u093c\u0947",
+    "8 PROTONS = 1 TURN": "8 \u092a\u094d\u0930\u094b\u091f\u0949\u0928 = 1 \u091a\u0915\u094d\u0915\u0930",
+    "A BUCKET BRIGADE": "\u0939\u093e\u0925\u094b\u0902-\u0939\u093e\u0925 \u092c\u093e\u0932\u094d\u091f\u0940",
+    "A PROTON DAM": "\u092a\u094d\u0930\u094b\u091f\u0949\u0928 \u0915\u093e \u092c\u093e\u0901\u0927",
+    "ABOUT 100 g": "\u0932\u0917\u092d\u0917 100 g",
+    "ABOUT 2 nm WIDE": "\u0932\u0917\u092d\u0917 2 nm \u091a\u094c\u0921\u093c\u0940",
+    "ABOUT 40 kg A DAY": "\u0930\u094b\u091c\u093c \u0932\u0917\u092d\u0917 40 kg",
+    "ATP": "ATP",
+    "ATP SYNTHASE": "ATP SYNTHASE",
+    "COMPLEX IV": "\u0915\u0949\u092e\u094d\u092a\u094d\u0932\u0947\u0915\u094d\u0938 IV",
+    "CRISTAE": "CRISTAE",
+    "CYANIDE": "CYANIDE",
+    "Complexes I, III and IV": "\u0915\u0949\u092e\u094d\u092a\u094d\u0932\u0947\u0915\u094d\u0938 I, III \u0914\u0930 IV",
+    "ELECTRONS": "\u0907\u0932\u0947\u0915\u094d\u091f\u094d\u0930\u0949\u0928",
+    "EVEN SITTING STILL": "\u091a\u0941\u092a\u091a\u093e\u092a \u092c\u0948\u0920\u0947 \u0939\u0941\u090f \u092d\u0940",
+    "HEART AND BRAIN": "\u0926\u093f\u0932 \u0914\u0930 \u0926\u093f\u092e\u093e\u0917\u093c",
+    "MITOCHONDRION": "\u092e\u093e\u0907\u091f\u094b\u0915\u0949\u0928\u094d\u0921\u094d\u0930\u093f\u092f\u093e",
+    "MUSCLES, NERVES, PROTEINS": "\u092e\u093e\u0902\u0938\u092a\u0947\u0936\u0940, \u0928\u0938, protein",
+    "NO NEW ATP": "\u0928\u092f\u093e ATP \u0928\u0939\u0940\u0902",
+    "NOBEL PRIZE 1997": "NOBEL PRIZE 1997",
+    "ONE MAIN DOOR": "\u090f\u0915 \u092e\u0941\u0916\u094d\u092f \u0926\u0930\u0935\u093e\u091c\u093c\u093e",
+    "ONE PROTON": "\u090f\u0915 \u092a\u094d\u0930\u094b\u091f\u0949\u0928",
+    "OPEN - LOOSE - TIGHT": "\u0916\u0941\u0932\u093e - \u0922\u0940\u0932\u093e - \u0915\u0938\u093e",
+    "PROTONS": "\u092a\u094d\u0930\u094b\u091f\u0949\u0928",
+    "Paul Boyer and John Walker": "Paul Boyer \u0914\u0930 John Walker",
+    "THE CROOKED SHAFT": "\u091f\u0947\u0922\u093c\u0940 \u0927\u0941\u0930\u0940",
+    "THE DAM DRAINS": "\u092c\u093e\u0901\u0927 \u0916\u093e\u0932\u0940 \u0939\u094b\u0924\u093e \u0939\u0948",
+    "THREE PUMPS": "\u0924\u0940\u0928 pump",
+    "THREE WORKING PARTS": "\u0924\u0940\u0928 \u0915\u093e\u092e \u0915\u0930\u0928\u0947 \u0935\u093e\u0932\u0947 \u0939\u093f\u0938\u094d\u0938\u0947",
+    "WHY YOU BREATHE": "\u0939\u092e \u0938\u093e\u0901\u0938 \u0915\u094d\u092f\u094b\u0902 \u0932\u0947\u0924\u0947 \u0939\u0948\u0902",
+    "about 100 turns a second": "\u0939\u0930 \u0938\u0947\u0915\u0902\u0921 \u0932\u0917\u092d\u0917 100 \u091a\u0915\u094d\u0915\u0930",
+    "about 40 kg a day": "\u0930\u094b\u091c\u093c \u0932\u0917\u092d\u0917 40 kg",
+    "all paid in ATP": "\u0938\u092c\u0915\u093e \u092d\u0941\u0917\u0924\u093e\u0928 ATP \u0938\u0947",
+    "back across the membrane": "\u091d\u093f\u0932\u094d\u0932\u0940 \u0915\u0947 \u092a\u093e\u0930 \u0935\u093e\u092a\u0938",
+    "carry the energy from food": "\u0916\u093e\u0928\u0947 \u0915\u0940 \u090a\u0930\u094d\u091c\u093e \u0922\u094b\u0924\u0947 \u0939\u0948\u0902",
+    "crowded on one side": "\u090f\u0915 \u0924\u0930\u092b\u093c \u092d\u0940\u0921\u093c",
+    "each changes shape": "\u0939\u0930 \u090f\u0915 \u0906\u0915\u093e\u0930 \u092c\u0926\u0932\u0924\u093e \u0939\u0948",
+    "electrons + oxygen make water": "\u0907\u0932\u0947\u0915\u094d\u091f\u094d\u0930\u0949\u0928 + \u0911\u0915\u094d\u0938\u0940\u091c\u0928 = \u092a\u093e\u0928\u0940",
+    "electrons passed along": "\u0907\u0932\u0947\u0915\u094d\u091f\u094d\u0930\u0949\u0928 \u0906\u0917\u0947 \u092c\u0922\u093c\u0924\u0947 \u0939\u0948\u0902",
+    "heart and brain hit hardest": "\u0926\u093f\u0932 \u0914\u0930 \u0926\u093f\u092e\u093e\u0917\u093c \u092a\u0930 \u0938\u092c\u0938\u0947 \u091c\u093c\u094d\u092f\u093e\u0926\u093e \u0905\u0938\u0930",
+    "in your whole body at once": "\u092a\u0942\u0930\u0947 \u0936\u0930\u0940\u0930 \u092e\u0947\u0902 \u090f\u0915 \u0938\u092e\u092f \u092a\u0930",
+    "jams Complex IV, not the turbine": "\u0915\u0949\u092e\u094d\u092a\u094d\u0932\u0947\u0915\u094d\u0938 IV \u091c\u093e\u092e, turbine \u0928\u0939\u0940\u0902",
+    "never stop asking": "\u0915\u092d\u0940 \u092e\u093e\u0901\u0917\u0928\u093e \u092c\u0902\u0926 \u0928\u0939\u0940\u0902 \u0915\u0930\u0924\u0947",
+    "one from each part": "\u0939\u0930 \u0939\u093f\u0938\u094d\u0938\u0947 \u0938\u0947 \u090f\u0915",
+    "one step of the ring": "\u091b\u0932\u094d\u0932\u0947 \u0915\u093e \u090f\u0915 \u0915\u0926\u092e",
+    "oxygen is the last stop": "\u0911\u0915\u094d\u0938\u0940\u091c\u0928 \u0906\u0916\u093c\u093f\u0930\u0940 \u092a\u0921\u093c\u093e\u0935",
+    "shown here slowed down": "\u092f\u0939\u093e\u0901 \u0927\u0940\u092e\u093e \u0926\u093f\u0916\u093e\u092f\u093e \u0917\u092f\u093e",
+    "the binding change": "\u0906\u0915\u093e\u0930 \u0915\u093e \u092c\u0926\u0932\u0928\u093e",
+    "the energy coin cells spend": "\u0915\u094b\u0936\u093f\u0915\u093e\u0913\u0902 \u0915\u093e \u090a\u0930\u094d\u091c\u093e-\u0938\u093f\u0915\u094d\u0915\u093e",
+    "the folded inner membrane": "\u092e\u0941\u0921\u093c\u0940 \u0939\u0941\u0908 \u092d\u0940\u0924\u0930\u0940 \u091d\u093f\u0932\u094d\u0932\u0940",
+    "the hidden power source": "\u091b\u093f\u092a\u093e \u0939\u0941\u0906 \u0924\u093e\u0915\u0924 \u0915\u093e \u0938\u094d\u0930\u094b\u0924",
+    "the ring, in animals": "\u091c\u093e\u0928\u0935\u0930\u094b\u0902 \u092e\u0947\u0902 \u092f\u0939 \u091b\u0932\u094d\u0932\u093e",
+    "the smallest rotary motor seen": "\u0938\u092c\u0938\u0947 \u091b\u094b\u091f\u0940 \u0918\u0942\u092e\u0924\u0940 \u092e\u094b\u091f\u0930",
+    "the spin, seen directly": "\u0918\u0942\u092e\u0928\u093e, \u0938\u0940\u0927\u0947 \u0926\u0947\u0916\u093e \u0917\u092f\u093e",
+    "the turbine": "\u092f\u0939\u0940 turbine",
+    "the turbines slow down": "turbine \u0927\u0940\u092e\u0947 \u092a\u0921\u093c\u0924\u0947 \u0939\u0948\u0902",
+    "turns inside the head": "\u0938\u093f\u0930 \u0915\u0947 \u0905\u0902\u0926\u0930 \u0918\u0942\u092e\u0924\u0940 \u0939\u0948",
+    "used even at rest": "\u0906\u0930\u093e\u092e \u092e\u0947\u0902 \u092d\u0940 \u0916\u0930\u094d\u091a",
+    "wrapped in two membranes": "\u0926\u094b \u091d\u093f\u0932\u094d\u0932\u093f\u092f\u094b\u0902 \u092e\u0947\u0902 \u0932\u093f\u092a\u091f\u093e",
+    "~100 TURNS A SECOND": "\u0939\u0930 \u0938\u0947\u0915\u0902\u0921 ~100 \u091a\u0915\u094d\u0915\u0930"
+  }
+}

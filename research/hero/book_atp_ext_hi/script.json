@@ -1,0 +1,190 @@
+{
+  "title_options": [
+    "आपके अंदर का नन्हा turbine: जो आपके शरीर को ऊर्जा देता है"
+  ],
+  "share": {
+    "myth": "खाने की ऊर्जा किसी तरह शरीर की ऊर्जा बन जाती है; इसमें कुछ भी मशीन जैसा नहीं होता।",
+    "truth": "आपका ज़्यादातर ATP, ATP synthase बनाता है: माइटोकॉन्ड्रिया की एक घूमने वाली मोटर, जिसे प्रोटॉन हर सेकंड लगभग सौ बार घुमाते हैं, और हर चक्कर में तीन ATP बनते हैं (Noji et al. 1997; Watt et al. 2010)।",
+    "line": "इसी पल, आपकी कोशिकाओं में नन्हे turbine हर सेकंड लगभग सौ बार घूम रहे हैं, और हर चक्कर तीन ATP बनाता है।"
+  },
+  "facts": [
+    "Tymoczko, Berg & Stryer, Biochemistry: A Short Course (3rd ed.): a resting human uses about 40 kg of ATP in 24 hours while the body holds about 100 g, so ATP is recycled constantly.",
+    "Watt IN et al. 2010, PNAS 107:16823: the central stalk and c-ring rotate about 100 times per second; each 360 degree turn makes 3 ATP; the bovine (vertebrate) c-ring has 8 subunits, so about 2.7 protons per ATP; each c-subunit carries a glutamate that is protonated and deprotonated in turn.",
+    "Noji H et al. 1997, Nature 386:299: direct observation of rotation of F1-ATPase; the smallest known rotary motor; rotor radius about 1 nm inside a stator barrel of radius about 5 nm made of three alpha and three beta subunits.",
+    "Boyer PD 1997, Annu Rev Biochem 66:717 (binding change mechanism): each catalytic beta site cycles through open, loose and tight states as the stalk rotates. Nobel Prize in Chemistry 1997: Paul Boyer and John Walker (with Jens Skou).",
+    "Electron transport chain complexes pump protons across the inner mitochondrial membrane; Complex IV (cytochrome c oxidase) passes electrons to oxygen, making water (standard biochemistry textbooks).",
+    "Zuhra K & Szabo C 2022, FEBS J 289:2481: cyanide's toxicity comes mainly from inhibiting mitochondrial Complex IV (cytochrome c oxidase), not ATP synthase itself.",
+    "Complexes I, III and IV pump protons; Complex II does not (standard textbooks). Some protons also leak back across the membrane, so ATP synthase is the main, not the only, route."
+  ],
+  "description": "आपकी कोशिकाओं के अंदर, एक मीटर के लगभग दस अरबवें हिस्से जितनी मोटर हर सेकंड लगभग सौ बार घूमती है, और हर चक्कर में ATP के तीन अणु बनाती है, वही ऊर्जा जिस पर आपका शरीर चलता है। यह उसकी कहानी है, आपकी मांसपेशियों से turbine तक और वापस, आठ अध्यायों में। #hindi #science #biology",
+  "sources": "Watt et al. 2010, PNAS 107:16823 (c8 ring, ~100 rotations per second, 3 ATP per turn); Noji et al. 1997, Nature 386:299 (rotation seen directly); Boyer 1997, Annual Review of Biochemistry 66:717 (binding change); Tymoczko, Berg & Stryer, Biochemistry: A Short Course, 3rd ed. (ATP turnover); Zuhra & Szabo 2022, FEBS Journal 289:2481 (cyanide and Complex IV); Nobel Prize in Chemistry 1997.",
+  "tags": [
+    "ATP hindi",
+    "माइटोकॉन्ड्रिया",
+    "ATP synthase",
+    "biology hindi",
+    "science hindi",
+    "3D animation"
+  ],
+  "scenes": [
+    {
+      "narration": "अध्याय नौ। तो जब आप दौड़ना शुरू करते हैं, तब इन सारे turbines का क्या होता है?"
+    },
+    {
+      "narration": "पूरी ताकत की दौड़ के पहले कुछ सेकंड, आपकी मांसपेशियाँ ज़्यादातर उसी ATP से चलती हैं जो उनके पास पहले से है।"
+    },
+    {
+      "narration": "फ़ॉस्फ़ोक्रिएटिन नाम का एक बैकअप उस ATP को लगभग तुरंत फिर से बना देता है, पर उसका भंडार छोटा है।"
+    },
+    {
+      "narration": "पूरी ताकत की कोशिश के लगभग दस सेकंड में, ज़्यादातर फ़ॉस्फ़ोक्रिएटिन ख़त्म हो जाता है।"
+    },
+    {
+      "narration": "कुछ ही सेकंड में ग्लाइकोलिसिस भी जुड़ जाता है। यह बिना ऑक्सीजन के, तेज़ी से शक्कर को तोड़ता है।"
+    },
+    {
+      "narration": "दस सेकंड की दौड़ में, ऊर्जा का सिर्फ़ कुछ प्रतिशत आपके माइटोकॉन्ड्रिया से आता है।"
+    },
+    {
+      "narration": "इसे तीस सेकंड तक खींचिए, और वे पहले ही एक चौथाई से ज़्यादा देने लगते हैं।"
+    },
+    {
+      "narration": "लगभग सवा मिनट की कड़ी मेहनत तक, ऑक्सीजन वाली सप्लाई बाकी सब के लगभग बराबर हो जाती है।"
+    },
+    {
+      "narration": "आप जितनी देर चलते रहें, उतना ज़्यादा काम उनके पास जाता है। तीनों तरीके साथ-साथ चलते हैं।"
+    },
+    {
+      "narration": "और यहाँ एक कमाल की बात है। आपका खर्च किया हर ATP पीछे ADP और फ़ॉस्फ़ेट छोड़ता है।"
+    },
+    {
+      "narration": "turbine को ठीक इन्हीं की ज़रूरत है। तो जैसे-जैसे ये जमा होते हैं, turbine और पूरी chain तेज़ चलने लगते हैं।"
+    },
+    {
+      "narration": "किसी को कोई बटन नहीं दबाना पड़ता। ऊर्जा खर्च करना ही और बनाने का संकेत है।"
+    },
+    {
+      "narration": "इसीलिए आप तेज़ साँस लेते हैं। ऑक्सीजन इलेक्ट्रॉन का आख़िरी पड़ाव है, और chain को इसकी कहीं ज़्यादा ज़रूरत होती है।"
+    },
+    {
+      "narration": "पूरी ताकत लगाने पर, एक स्वस्थ युवा आराम की तुलना में लगभग दस गुना या उससे भी ज़्यादा ऑक्सीजन इस्तेमाल कर सकता है।"
+    },
+    {
+      "narration": "और आपके दिल को कभी आराम नहीं मिलता। दिल की मांसपेशी में, माइटोकॉन्ड्रिया हर कोशिका का एक चौथाई से ज़्यादा हिस्सा भरते हैं।"
+    },
+    {
+      "narration": "अध्याय दस। क्या यह turbine उल्टा चल सकता है?"
+    },
+    {
+      "narration": "चल सकता है। ATP synthase को ATP खिलाइए, और यह दूसरी दिशा में घूमने लगता है।"
+    },
+    {
+      "narration": "अब ATP का टूटना रोटर को घुमाता है, और पूरी मशीन प्रोटॉन को झिल्ली के पार वापस pump करती है।"
+    },
+    {
+      "narration": "उन्नीस सौ सत्तानवे का वह चमकता धागा याद है? वह घूमना इसी तरह चलाया गया था।"
+    },
+    {
+      "narration": "वैज्ञानिकों ने turbine के सिर को ATP खिलाया, और जैसे-जैसे वह ATP तोड़ता गया, वह घूमता गया।"
+    },
+    {
+      "narration": "उन्होंने गर्मी पसंद बैक्टीरिया से सिर्फ़ सिर और धुरी ली थी। वह घूमा, पर अकेले वह pump नहीं कर सकता था।"
+    },
+    {
+      "narration": "कुछ बैक्टीरिया ऐसा जानबूझकर करते हैं। ऑक्सीजन न होने पर, E. coli अपनी झिल्ली को चार्ज रखने के लिए ATP खर्च करके turbine उल्टे चलाता है।"
+    },
+    {
+      "narration": "आपकी कोशिकाओं में यह मुसीबत बन सकता है। अगर बाँध कभी खाली हो जाए, तो turbine आपका ATP जला सकते हैं।"
+    },
+    {
+      "narration": "इसलिए आपके माइटोकॉन्ड्रिया में एक ब्रेक होता है, IF1 नाम का एक छोटा protein।"
+    },
+    {
+      "narration": "अगर प्रोटॉन का अंतर ख़त्म हो जाए, तो IF1 turbines को उल्टा चलकर कोशिका को खाली करने से काफ़ी हद तक रोक देता है।"
+    },
+    {
+      "narration": "अध्याय ग्यारह। ब्राउन फ़ैट गर्मी कैसे बनाता है?"
+    },
+    {
+      "narration": "नवजात बच्चे के शरीर में गर्म रहने के लिए ब्राउन फ़ैट की एक परत होती है, कंधों के बीच भी।"
+    },
+    {
+      "narration": "ब्राउन फ़ैट की कोशिकाएँ माइटोकॉन्ड्रिया से भरी होती हैं। और उनकी भीतरी झिल्ली के बाँध में एक दरार होती है।"
+    },
+    {
+      "narration": "UCP1 नाम का एक protein प्रोटॉन को turbine से गुज़रे बिना, सीधे वापस रिसने देता है।"
+    },
+    {
+      "narration": "तो बाँध में जमा ऊर्जा ATP नहीं बनाती। वह गर्मी बनकर निकलती है।"
+    },
+    {
+      "narration": "यह एक ऐसा बिजलीघर है जो अपना ईंधन सिर्फ़ आपको गर्म रखने के लिए जलाता है।"
+    },
+    {
+      "narration": "बड़ों में यह कम होता है, ज़्यादातर गर्दन और कॉलरबोन के आसपास, और ठंड में यह चालू हो जाता है।"
+    },
+    {
+      "narration": "अध्याय बारह। माइटोकॉन्ड्रिया आए कहाँ से?"
+    },
+    {
+      "narration": "पूरी कहानी का सबसे अजीब हिस्सा यह है। माइटोकॉन्ड्रिया कभी बैक्टीरिया थे।"
+    },
+    {
+      "narration": "डेढ़ अरब साल से भी पहले, एक आज़ाद बैक्टीरिया किसी दूसरी कोशिका के अंदर रहने लगा।"
+    },
+    {
+      "narration": "वह पचाया नहीं गया, वहीं रह गया। मेज़बान ने उसे घर और खाना दिया, और उसने मेज़बान को ऊर्जा दी।"
+    },
+    {
+      "narration": "वह मेज़बान Asgard archaea नाम के सूक्ष्मजीवों से जुड़ा था। दोनों मिलकर पहली जटिल कोशिका बने।"
+    },
+    {
+      "narration": "हर पौधे, जानवर और फफूँद के माइटोकॉन्ड्रिया उसी एक साझेदारी से निकले हैं।"
+    },
+    {
+      "narration": "और उनमें आज भी अपने अतीत की निशानी है: उनका अपना DNA।"
+    },
+    {
+      "narration": "इंसान का माइटोकॉन्ड्रियल DNA सोलह हज़ार पाँच सौ उनहत्तर base pairs का एक छोटा सा छल्ला है, जिसमें सिर्फ़ सैंतीस genes हैं।"
+    },
+    {
+      "narration": "turbine के खुद के दो टुकड़े उसी छोटे छल्ले में लिखे हैं।"
+    },
+    {
+      "narration": "एक आम कोशिका में सैकड़ों माइटोकॉन्ड्रिया होते हैं, और हर एक अपनी प्रतियाँ रखता है।"
+    },
+    {
+      "narration": "अध्याय तेरह। आपके माइटोकॉन्ड्रिया आपकी माँ से ही क्यों आते हैं?"
+    },
+    {
+      "narration": "इंसान का अंडाणु एक कोशिका के हिसाब से बहुत बड़ा है। इसमें माइटोकॉन्ड्रियल DNA का बड़ा भंडार होता है, औसतन लगभग दो लाख प्रतियाँ।"
+    },
+    {
+      "narration": "यह हर अंडाणु में बहुत अलग होता है, लगभग बीस हज़ार से लगभग छह लाख तक।"
+    },
+    {
+      "narration": "शुक्राणु सिर्फ़ कुछ माइटोकॉन्ड्रिया लाता है, जो उसकी पूँछ को चलाने के लिए बीच में भरे होते हैं।"
+    },
+    {
+      "narration": "निषेचन के बाद, शुक्राणु के माइटोकॉन्ड्रिया पर निशान लगाकर उन्हें नष्ट कर दिया जाता है।"
+    },
+    {
+      "narration": "तो आपके माइटोकॉन्ड्रिया लगभग पूरी तरह आपकी माँ से आते हैं। बहुत ही कम अपवाद दर्ज हुए हैं।"
+    },
+    {
+      "narration": "उन्हें अपने माइटोकॉन्ड्रिया अपनी माँ से मिले, और उन्हें अपनी माँ से, हर पीढ़ी से पीछे जाती एक कतार में।"
+    },
+    {
+      "narration": "तो यह है turbine की कहानी। प्रोटॉन इसे घुमाते हैं। खर्च करने से यह तेज़ होता है। यह उल्टा चल सकता है, हीटर बन सकता है, और यह एक बैक्टीरिया से आया जिसे आपकी माँ ने आगे बढ़ाया।"
+    },
+    {
+      "narration": "इतना कुछ इन नन्ही मशीनों पर टिका है।"
+    },
+    {
+      "narration": "इसी पल, आपकी कोशिकाओं में नन्हे turbine हर सेकंड लगभग सौ बार घूम रहे हैं, और हर चक्कर तीन ATP बनाता है।"
+    },
+    {
+      "narration": "तो अगर आपके माइटोकॉन्ड्रिया आपकी माँ से आए, और उनके उनकी माँ से, तो आपको क्या लगता है यह कतार कितनी पीछे तक जाती है?"
+    }
+  ]
+}

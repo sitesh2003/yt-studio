@@ -1,0 +1,572 @@
+{
+  "shots": [
+    {
+      "kind": "atp_muscle",
+      "overlay": "none",
+      "pace": 2.2,
+      "chapter": [
+        "CHAPTER 9",
+        "What Happens When You Run?"
+      ]
+    },
+    {
+      "kind": "atp_muscle",
+      "overlay": "label",
+      "pace": 2.2,
+      "label": [
+        "THE FIRST SECONDS",
+        "the ATP already there"
+      ],
+      "source": "Baker, McCormick & Robergs 2010, J Nutr Metab 905612"
+    },
+    {
+      "kind": "atp_molecule",
+      "overlay": "label",
+      "label": [
+        "PHOSPHOCREATINE",
+        "an instant backup"
+      ]
+    },
+    {
+      "kind": "atp_molecule",
+      "overlay": "label",
+      "split": true,
+      "label": [
+        "ABOUT 10 SECONDS",
+        "then the backup runs low"
+      ],
+      "source": "Baker, McCormick & Robergs 2010, J Nutr Metab 905612"
+    },
+    {
+      "kind": "atp_molecule",
+      "overlay": "label",
+      "split": true,
+      "label": [
+        "GLYCOLYSIS",
+        "sugar split, no oxygen"
+      ]
+    },
+    {
+      "kind": "atp_mito",
+      "overlay": "label",
+      "label": [
+        "10 SECOND SPRINT",
+        "~3% from mitochondria"
+      ],
+      "source": "Baker, McCormick & Robergs 2010, J Nutr Metab 905612"
+    },
+    {
+      "kind": "atp_mito",
+      "overlay": "label",
+      "dive": true,
+      "label": [
+        "30 SECOND SPRINT",
+        "over a quarter"
+      ]
+    },
+    {
+      "kind": "atp_mito",
+      "overlay": "label",
+      "label": [
+        "ABOUT 75 SECONDS",
+        "half from mitochondria"
+      ],
+      "source": "Baker, McCormick & Robergs 2010, J Nutr Metab 905612"
+    },
+    {
+      "kind": "atp_mito",
+      "overlay": "label",
+      "label": [
+        "THE LONG RUN",
+        "mitochondria take over"
+      ]
+    },
+    {
+      "kind": "atp_molecule",
+      "overlay": "label",
+      "split": true,
+      "label": [
+        "ADP + PHOSPHATE",
+        "what spent ATP leaves"
+      ]
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "mode": "spin",
+      "slow": 0.8,
+      "label": [
+        "MORE ADP = FASTER",
+        "respiratory control"
+      ],
+      "source": "Brand & Nicholls 2011, Biochem J 435:297"
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "none",
+      "mode": "orbit",
+      "slow": 0.6
+    },
+    {
+      "kind": "atp_chain",
+      "overlay": "label",
+      "focus": "iv",
+      "label": [
+        "BREATHING HARD",
+        "more oxygen for the chain"
+      ]
+    },
+    {
+      "kind": "atp_muscle",
+      "overlay": "label",
+      "pace": 2.2,
+      "label": [
+        "ABOUT 10x THE OXYGEN",
+        "at full effort"
+      ],
+      "source": "Kaminsky, Arena & Myers 2015, Mayo Clin Proc 90:1515"
+    },
+    {
+      "kind": "atp_cell",
+      "overlay": "label",
+      "count": 330,
+      "label": [
+        "HEART MUSCLE",
+        "over a quarter is mitochondria"
+      ],
+      "source": "Sulkin et al. 2014, J Struct Biol 188:55"
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "none",
+      "mode": "reverse",
+      "slow": 0.4,
+      "chapter": [
+        "CHAPTER 10",
+        "Can The Turbine Run Backwards?"
+      ]
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "mode": "reverse",
+      "slow": 0.4,
+      "label": [
+        "RUNNING BACKWARDS",
+        "fed ATP, it splits it"
+      ]
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "mode": "reverse",
+      "slow": 0.4,
+      "label": [
+        "PUMP MODE",
+        "ATP in, protons out"
+      ]
+    },
+    {
+      "kind": "atp_noji",
+      "overlay": "none",
+      "slow": 0.5
+    },
+    {
+      "kind": "atp_noji",
+      "overlay": "label",
+      "slow": 0.5,
+      "label": [
+        "FED ATP",
+        "the head turned"
+      ],
+      "source": "Noji et al. 1997, Nature 386:299"
+    },
+    {
+      "kind": "atp_noji",
+      "overlay": "label",
+      "slow": 0.5,
+      "label": [
+        "HEAD AND SHAFT ONLY",
+        "from a heat-loving bacterium"
+      ]
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "mode": "reverse",
+      "slow": 0.3,
+      "label": [
+        "E. COLI",
+        "without oxygen"
+      ],
+      "source": "Nakamoto et al. 2008, Arch Biochem Biophys 476:43"
+    },
+    {
+      "kind": "atp_chain",
+      "overlay": "label",
+      "cyanide": true,
+      "label": [
+        "A DRAINED DAM",
+        "turbines could burn ATP"
+      ]
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "mode": "orbit",
+      "slow": 0.2,
+      "label": [
+        "IF1",
+        "the brake"
+      ]
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "mode": "spin",
+      "slow": 0.12,
+      "label": [
+        "ATP SAVED",
+        "when the dam drains"
+      ],
+      "source": "Campanella et al. 2008, Cell Metab 8:13"
+    },
+    {
+      "kind": "atp_dam",
+      "overlay": "none",
+      "leak": true,
+      "chapter": [
+        "CHAPTER 11",
+        "How Does Brown Fat Make Heat?"
+      ]
+    },
+    {
+      "kind": "atp_cell",
+      "overlay": "label",
+      "count": 300,
+      "label": [
+        "BROWN FAT",
+        "packed with mitochondria"
+      ],
+      "source": "Lidell et al. 2013, Nat Med 19:631"
+    },
+    {
+      "kind": "atp_dam",
+      "overlay": "label",
+      "leak": true,
+      "label": [
+        "UCP1",
+        "a gap in the dam"
+      ]
+    },
+    {
+      "kind": "atp_dam",
+      "overlay": "label",
+      "leak": true,
+      "label": [
+        "NO TURBINE",
+        "protons leak back"
+      ],
+      "source": "Fedorenko, Lishko & Kirichok 2012, Cell 151:400"
+    },
+    {
+      "kind": "atp_dam",
+      "overlay": "label",
+      "leak": true,
+      "label": [
+        "HEAT",
+        "instead of ATP"
+      ]
+    },
+    {
+      "kind": "atp_dam",
+      "overlay": "none",
+      "leak": true
+    },
+    {
+      "kind": "atp_cell",
+      "overlay": "label",
+      "count": 220,
+      "label": [
+        "ADULTS TOO",
+        "neck and collarbones"
+      ],
+      "source": "Cypess et al. 2009, NEJM 360:1509"
+    },
+    {
+      "kind": "atp_cell",
+      "overlay": "none",
+      "mode": "engulf",
+      "chapter": [
+        "CHAPTER 12",
+        "Where Did Mitochondria Come From?"
+      ]
+    },
+    {
+      "kind": "atp_cell",
+      "overlay": "label",
+      "mode": "engulf",
+      "label": [
+        "ONCE BACTERIA",
+        "free-living cells"
+      ]
+    },
+    {
+      "kind": "atp_cell",
+      "overlay": "label",
+      "mode": "engulf",
+      "label": [
+        "OVER 1.5 BILLION YEARS AGO",
+        "one cell inside another"
+      ],
+      "source": "Parfrey et al. 2011, PNAS 108:13624"
+    },
+    {
+      "kind": "atp_cell",
+      "overlay": "label",
+      "mode": "engulf",
+      "label": [
+        "A PARTNERSHIP",
+        "shelter for energy"
+      ]
+    },
+    {
+      "kind": "atp_cell",
+      "overlay": "label",
+      "mode": "engulf",
+      "label": [
+        "ASGARD ARCHAEA",
+        "the host's relatives"
+      ],
+      "source": "Roger, Munoz-Gomez & Kamikawa 2017, Curr Biol 27:R1177"
+    },
+    {
+      "kind": "atp_cell",
+      "overlay": "label",
+      "label": [
+        "ONE ANCESTOR",
+        "for all mitochondria"
+      ],
+      "source": "Roger, Munoz-Gomez & Kamikawa 2017, Curr Biol 27:R1177"
+    },
+    {
+      "kind": "atp_mito",
+      "overlay": "label",
+      "label": [
+        "THEIR OWN DNA",
+        "left from the bacterium"
+      ]
+    },
+    {
+      "kind": "atp_mito",
+      "overlay": "label",
+      "dive": true,
+      "label": [
+        "16,569 BASE PAIRS",
+        "37 genes"
+      ],
+      "source": "Anderson et al. 1981, Nature 290:457"
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "mode": "protons",
+      "slow": 0.35,
+      "label": [
+        "TWO TURBINE PARTS",
+        "written in mitochondrial DNA"
+      ],
+      "source": "Anderson et al. 1981, Nature 290:457"
+    },
+    {
+      "kind": "atp_cell",
+      "overlay": "label",
+      "label": [
+        "HUNDREDS PER CELL",
+        "each with its own DNA"
+      ],
+      "source": "Robin & Wong 1988, J Cell Physiol 136:507"
+    },
+    {
+      "kind": "atp_cell",
+      "overlay": "none",
+      "mode": "egg",
+      "chapter": [
+        "CHAPTER 13",
+        "Why Only From Your Mother?"
+      ]
+    },
+    {
+      "kind": "atp_cell",
+      "overlay": "label",
+      "mode": "egg",
+      "label": [
+        "ABOUT 200,000 COPIES",
+        "of mitochondrial DNA"
+      ],
+      "source": "Reynier et al. 2001, Mol Hum Reprod 7:425"
+    },
+    {
+      "kind": "atp_cell",
+      "overlay": "label",
+      "mode": "egg",
+      "label": [
+        "20,000 TO 600,000",
+        "it varies a lot"
+      ],
+      "source": "Reynier et al. 2001, Mol Hum Reprod 7:425"
+    },
+    {
+      "kind": "atp_cell",
+      "overlay": "label",
+      "mode": "egg",
+      "label": [
+        "A FEW IN THE SPERM",
+        "to power the tail"
+      ]
+    },
+    {
+      "kind": "atp_cell",
+      "overlay": "label",
+      "mode": "egg",
+      "label": [
+        "TAGGED AND DESTROYED",
+        "soon after fertilisation"
+      ],
+      "source": "Sutovsky et al. 1999, Nature 402:371"
+    },
+    {
+      "kind": "atp_cell",
+      "overlay": "label",
+      "label": [
+        "FROM YOUR MOTHER",
+        "almost always"
+      ],
+      "source": "Luo et al. 2018, PNAS 115:13039"
+    },
+    {
+      "kind": "atp_cell",
+      "overlay": "none",
+      "mode": "egg"
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "none",
+      "mode": "orbit",
+      "slow": 0.4
+    },
+    {
+      "kind": "atp_mito",
+      "overlay": "none"
+    },
+    {
+      "kind": "atp_synthase",
+      "overlay": "label",
+      "mode": "orbit",
+      "slow": 0.4,
+      "label": [
+        "~100 TURNS A SECOND",
+        "3 ATP every turn"
+      ],
+      "source": "Watt et al. 2010, PNAS 107:16823"
+    },
+    {
+      "kind": "atp_muscle",
+      "overlay": "none"
+    }
+  ],
+  "hi_labels": {
+    "10 SECOND SPRINT": "10 सेकंड की दौड़",
+    "16,569 BASE PAIRS": "16,569 base pairs",
+    "20,000 TO 600,000": "20,000 से 6 लाख",
+    "3 ATP every turn": "हर चक्कर 3 ATP",
+    "30 SECOND SPRINT": "30 सेकंड की दौड़",
+    "37 genes": "37 genes",
+    "A DRAINED DAM": "खाली बाँध",
+    "A FEW IN THE SPERM": "शुक्राणु में कुछ ही",
+    "A PARTNERSHIP": "एक साझेदारी",
+    "ABOUT 10 SECONDS": "लगभग 10 सेकंड",
+    "ABOUT 10x THE OXYGEN": "लगभग 10 गुना ऑक्सीजन",
+    "ABOUT 200,000 COPIES": "लगभग 2 लाख प्रतियाँ",
+    "ABOUT 75 SECONDS": "लगभग 75 सेकंड",
+    "ADP + PHOSPHATE": "ADP + फ़ॉस्फ़ेट",
+    "ADULTS TOO": "बड़ों में भी",
+    "ASGARD ARCHAEA": "ASGARD ARCHAEA",
+    "ATP SAVED": "ATP बचा",
+    "ATP in, protons out": "ATP अंदर, प्रोटॉन बाहर",
+    "BREATHING HARD": "तेज़ साँस",
+    "BROWN FAT": "ब्राउन फ़ैट",
+    "CHAPTER 10": "अध्याय दस",
+    "CHAPTER 11": "अध्याय ग्यारह",
+    "CHAPTER 12": "अध्याय बारह",
+    "CHAPTER 13": "अध्याय तेरह",
+    "CHAPTER 9": "अध्याय नौ",
+    "Can The Turbine Run Backwards?": "क्या turbine उल्टा चल सकता है?",
+    "E. COLI": "E. COLI",
+    "FED ATP": "ATP खिलाया",
+    "FROM YOUR MOTHER": "आपकी माँ से",
+    "GLYCOLYSIS": "ग्लाइकोलिसिस",
+    "HEAD AND SHAFT ONLY": "सिर्फ़ सिर और धुरी",
+    "HEART MUSCLE": "दिल की मांसपेशी",
+    "HEAT": "गर्मी",
+    "HUNDREDS PER CELL": "हर कोशिका में सैकड़ों",
+    "How Does Brown Fat Make Heat?": "ब्राउन फ़ैट गर्मी कैसे बनाता है?",
+    "IF1": "IF1",
+    "MORE ADP = FASTER": "ज़्यादा ADP = तेज़",
+    "NO TURBINE": "turbine नहीं",
+    "ONCE BACTERIA": "कभी बैक्टीरिया थे",
+    "ONE ANCESTOR": "एक ही पूर्वज",
+    "OVER 1.5 BILLION YEARS AGO": "डेढ़ अरब साल से भी पहले",
+    "PHOSPHOCREATINE": "फ़ॉस्फ़ोक्रिएटिन",
+    "PUMP MODE": "pump मोड",
+    "RUNNING BACKWARDS": "उल्टा चलना",
+    "TAGGED AND DESTROYED": "निशान लगाकर नष्ट",
+    "THE FIRST SECONDS": "पहले कुछ सेकंड",
+    "THE LONG RUN": "लंबी दौड़",
+    "THEIR OWN DNA": "उनका अपना DNA",
+    "TWO TURBINE PARTS": "turbine के दो टुकड़े",
+    "UCP1": "UCP1",
+    "What Happens When You Run?": "दौड़ने पर क्या होता है?",
+    "Where Did Mitochondria Come From?": "माइटोकॉन्ड्रिया कहाँ से आए?",
+    "Why Only From Your Mother?": "सिर्फ़ माँ से ही क्यों?",
+    "a gap in the dam": "बाँध में दरार",
+    "almost always": "लगभग हमेशा",
+    "an instant backup": "तुरंत बैकअप",
+    "at full effort": "पूरी ताकत पर",
+    "each with its own DNA": "हर एक का अपना DNA",
+    "fed ATP, it splits it": "ATP खिलाओ, वह तोड़ता है",
+    "for all mitochondria": "सारे माइटोकॉन्ड्रिया का",
+    "free-living cells": "आज़ाद कोशिकाएँ",
+    "from a heat-loving bacterium": "गर्मी पसंद बैक्टीरिया से",
+    "half from mitochondria": "आधा माइटोकॉन्ड्रिया से",
+    "instead of ATP": "ATP की जगह",
+    "it varies a lot": "बहुत अलग-अलग",
+    "left from the bacterium": "बैक्टीरिया की निशानी",
+    "mitochondria take over": "माइटोकॉन्ड्रिया संभालते हैं",
+    "more oxygen for the chain": "chain के लिए ज़्यादा ऑक्सीजन",
+    "neck and collarbones": "गर्दन और कॉलरबोन",
+    "of mitochondrial DNA": "माइटोकॉन्ड्रियल DNA की",
+    "one cell inside another": "एक कोशिका दूसरी के अंदर",
+    "over a quarter": "एक चौथाई से ज़्यादा",
+    "over a quarter is mitochondria": "एक चौथाई से ज़्यादा माइटोकॉन्ड्रिया",
+    "packed with mitochondria": "माइटोकॉन्ड्रिया से भरा",
+    "protons leak back": "प्रोटॉन वापस रिसते हैं",
+    "respiratory control": "रेस्पिरेटरी कंट्रोल",
+    "shelter for energy": "घर के बदले ऊर्जा",
+    "soon after fertilisation": "निषेचन के जल्दी बाद",
+    "sugar split, no oxygen": "बिना ऑक्सीजन शक्कर टूटती है",
+    "the ATP already there": "पहले से मौजूद ATP",
+    "the brake": "ब्रेक",
+    "the head turned": "सिर घूमा",
+    "the host's relatives": "मेज़बान के रिश्तेदार",
+    "then the backup runs low": "फिर बैकअप घटता है",
+    "to power the tail": "पूँछ चलाने के लिए",
+    "turbines could burn ATP": "turbine ATP जला सकते हैं",
+    "what spent ATP leaves": "खर्च हुए ATP का बचा",
+    "when the dam drains": "जब बाँध खाली हो",
+    "without oxygen": "बिना ऑक्सीजन",
+    "written in mitochondrial DNA": "माइटोकॉन्ड्रियल DNA में लिखे",
+    "~100 TURNS A SECOND": "हर सेकंड ~100 चक्कर",
+    "~3% from mitochondria": "~3% माइटोकॉन्ड्रिया से"
+  }
+}

@@ -1,0 +1,166 @@
+{
+  "title_options": [
+    "आपके अंदर का नन्हा turbine: जो आपके शरीर को ऊर्जा देता है"
+  ],
+  "share": {
+    "myth": "खाने की ऊर्जा किसी तरह शरीर की ऊर्जा बन जाती है; इसमें कुछ भी मशीन जैसा नहीं होता।",
+    "truth": "आपका ज़्यादातर ATP, ATP synthase बनाता है: माइटोकॉन्ड्रिया की एक घूमने वाली मोटर, जिसे प्रोटॉन हर सेकंड लगभग सौ बार घुमाते हैं, और हर चक्कर में तीन ATP बनते हैं (Noji et al. 1997; Watt et al. 2010)।",
+    "line": "इसी पल, आपकी कोशिकाओं में नन्हे turbine हर सेकंड लगभग सौ बार घूम रहे हैं, और हर चक्कर तीन ATP बनाता है।"
+  },
+  "facts": [
+    "Tymoczko, Berg & Stryer, Biochemistry: A Short Course (3rd ed.): a resting human uses about 40 kg of ATP in 24 hours while the body holds about 100 g, so ATP is recycled constantly.",
+    "Watt IN et al. 2010, PNAS 107:16823: the central stalk and c-ring rotate about 100 times per second; each 360 degree turn makes 3 ATP; the bovine (vertebrate) c-ring has 8 subunits, so about 2.7 protons per ATP; each c-subunit carries a glutamate that is protonated and deprotonated in turn.",
+    "Noji H et al. 1997, Nature 386:299: direct observation of rotation of F1-ATPase; the smallest known rotary motor; rotor radius about 1 nm inside a stator barrel of radius about 5 nm made of three alpha and three beta subunits.",
+    "Boyer PD 1997, Annu Rev Biochem 66:717 (binding change mechanism): each catalytic beta site cycles through open, loose and tight states as the stalk rotates. Nobel Prize in Chemistry 1997: Paul Boyer and John Walker (with Jens Skou).",
+    "Electron transport chain complexes pump protons across the inner mitochondrial membrane; Complex IV (cytochrome c oxidase) passes electrons to oxygen, making water (standard biochemistry textbooks).",
+    "Zuhra K & Szabo C 2022, FEBS J 289:2481: cyanide's toxicity comes mainly from inhibiting mitochondrial Complex IV (cytochrome c oxidase), not ATP synthase itself.",
+    "Complexes I, III and IV pump protons; Complex II does not (standard textbooks). Some protons also leak back across the membrane, so ATP synthase is the main, not the only, route."
+  ],
+  "description": "आपकी कोशिकाओं के अंदर, एक मीटर के लगभग दस अरबवें हिस्से जितनी मोटर हर सेकंड लगभग सौ बार घूमती है, और हर चक्कर में ATP के तीन अणु बनाती है, वही ऊर्जा जिस पर आपका शरीर चलता है। यह उसकी कहानी है, आपकी मांसपेशियों से turbine तक और वापस, आठ अध्यायों में। #hindi #science #biology",
+  "sources": "Watt et al. 2010, PNAS 107:16823 (c8 ring, ~100 rotations per second, 3 ATP per turn); Noji et al. 1997, Nature 386:299 (rotation seen directly); Boyer 1997, Annual Review of Biochemistry 66:717 (binding change); Tymoczko, Berg & Stryer, Biochemistry: A Short Course, 3rd ed. (ATP turnover); Zuhra & Szabo 2022, FEBS Journal 289:2481 (cyanide and Complex IV); Nobel Prize in Chemistry 1997.",
+  "tags": [
+    "ATP hindi",
+    "माइटोकॉन्ड्रिया",
+    "ATP synthase",
+    "biology hindi",
+    "science hindi",
+    "3D animation"
+  ],
+  "scenes": [
+    {
+      "narration": "इसी पल, आपके शरीर की लगभग हर कोशिका के अंदर, नन्हे turbine घूम रहे हैं।"
+    },
+    {
+      "narration": "हर एक turbine हर सेकंड लगभग सौ बार घूमता है, और हर चक्कर वह ईंधन बनाता है जिससे आप ज़िंदा हैं।"
+    },
+    {
+      "narration": "यह उसी turbine की कहानी है। वह कहाँ है, उसे कौन घुमाता है, और वह रुक जाए तो क्या होता है।"
+    },
+    {
+      "narration": "अध्याय एक। आपकी मांसपेशियों को ताकत असल में कहाँ से मिलती है?"
+    },
+    {
+      "narration": "हर बार जब कोई मांसपेशी खिंचती है, उसके तंतु ATP नाम का अणु खर्च करते हैं। यह कोशिकाओं का ऊर्जा-सिक्का है।"
+    },
+    {
+      "narration": "अजीब बात यह है कि आपके पूरे शरीर में किसी भी पल सिर्फ़ लगभग सौ ग्राम ATP होता है।"
+    },
+    {
+      "narration": "पर आराम करते हुए भी, आप दिन में लगभग चालीस किलो ATP खर्च करते हैं। इसलिए हर अणु बार-बार फिर से बनता है।"
+    },
+    {
+      "narration": "आपके अंदर कोई चीज़ लगातार ATP बना रही है। उसे ढूँढने के लिए हमें और छोटा होना होगा।"
+    },
+    {
+      "narration": "अध्याय दो। कोशिका अपना ज़्यादातर ATP कहाँ बनाती है?"
+    },
+    {
+      "narration": "मांसपेशी की कोशिका के अंदर माइटोकॉन्ड्रिया हैं: नन्हे कैप्सूल, हर एक दो झिल्लियों में लिपटा।"
+    },
+    {
+      "narration": "भीतरी झिल्ली किताब के पन्नों की तरह बार-बार मुड़ी हुई है, ताकि उसमें ज़्यादा से ज़्यादा जगह समा सके।"
+    },
+    {
+      "narration": "यही मुड़ी हुई झिल्ली कारखाने का फ़र्श है। और यह एक हैरान करने वाली चीज़ से चलती है: प्रोटॉन।"
+    },
+    {
+      "narration": "अध्याय तीन। यह chain प्रोटॉन का अंतर कैसे बनाती है?"
+    },
+    {
+      "narration": "आपका खाना टूटते-टूटते उस हालत में पहुँचता है जहाँ उसकी ऊर्जा इलेक्ट्रॉन ढोते हैं।"
+    },
+    {
+      "narration": "ये इलेक्ट्रॉन भीतरी झिल्ली में प्रोटीन के एक chain से आगे बढ़ाए जाते हैं, जैसे लोग हाथों-हाथ बाल्टी आगे बढ़ाते हैं।"
+    },
+    {
+      "narration": "इनमें से तीन पड़ावों पर, इस ऊर्जा से प्रोटॉन झिल्ली के पार बाहर pump किए जाते हैं।"
+    },
+    {
+      "narration": "आख़िर में, कॉम्प्लेक्स चार इलेक्ट्रॉन को आपकी साँस की ऑक्सीजन को सौंप देता है, और पानी बनता है।"
+    },
+    {
+      "narration": "इसीलिए आपको ऑक्सीजन चाहिए। इलेक्ट्रॉन का आख़िरी पड़ाव वही है।"
+    },
+    {
+      "narration": "अध्याय चार। एक झिल्ली ऊर्जा कैसे जमा कर सकती है?"
+    },
+    {
+      "narration": "pump झिल्ली की एक तरफ़ प्रोटॉन की भीड़ लगा देते हैं। सोचिए, जैसे बाँध के पीछे पानी जमा होता है।"
+    },
+    {
+      "narration": "प्रोटॉन वापस बहना चाहते हैं। और वापस आने का मुख्य रास्ता एक ही तरह का दरवाज़ा है।"
+    },
+    {
+      "narration": "वह दरवाज़ा ही turbine है। उसका नाम है ATP synthase।"
+    },
+    {
+      "narration": "अध्याय पाँच। प्रोटॉन का बहाव ATP synthase को कैसे घुमाता है?"
+    },
+    {
+      "narration": "झिल्ली में धँसा हिस्सा एक छल्ला है। जानवरों में यह आठ एक जैसे टुकड़ों से बना होता है।"
+    },
+    {
+      "narration": "एक प्रोटॉन एक टुकड़े पर बैठता है, छल्ला एक कदम घूमता है, और प्रोटॉन दूसरी तरफ़ निकल जाता है।"
+    },
+    {
+      "narration": "आठ प्रोटॉन, एक पूरा चक्कर। और यह हर सेकंड लगभग सौ चक्कर लगाता है।"
+    },
+    {
+      "narration": "उन्नीस सौ सत्तानवे तक किसी ने इसे घूमते नहीं देखा था। तब जापान के वैज्ञानिकों ने इस पर एक चमकता धागा जोड़ा और इसे घूमते देखा।"
+    },
+    {
+      "narration": "यह अब तक देखी गई सबसे छोटी घूमने वाली मोटर थी। इसकी घूमती धुरी एक मीटर के सिर्फ़ लगभग दो अरबवें हिस्से जितनी चौड़ी है।"
+    },
+    {
+      "narration": "अध्याय छह। घूमने से ATP आख़िर बनता कैसे है?"
+    },
+    {
+      "narration": "छल्ला एक टेढ़ी धुरी को घुमाता है, और धुरी तीन काम करने वाले हिस्सों के सिर के अंदर घूमती है।"
+    },
+    {
+      "narration": "धुरी घूमते हुए हर हिस्से को एक के बाद एक तीन आकारों में दबाती है।"
+    },
+    {
+      "narration": "खुला, टुकड़ों को पकड़ने के लिए। ढीला, उन्हें थामने के लिए। और कसा हुआ, उन्हें दबाकर ATP बनाने के लिए।"
+    },
+    {
+      "narration": "फिर हिस्सा खुलता है और नया ATP छोड़ देता है। तीन हिस्से, इसलिए हर चक्कर में तीन ATP।"
+    },
+    {
+      "narration": "इसी विचार को उन्नीस सौ सत्तानवे में रसायन का Nobel Prize मिला।"
+    },
+    {
+      "narration": "अध्याय सात। इतना सारा ATP जाता कहाँ है?"
+    },
+    {
+      "narration": "मांसपेशियों में, खिंचाव के लिए। उन pump में, जो हर नस को संदेश के लिए तैयार रखते हैं। और नए protein बनाने में।"
+    },
+    {
+      "narration": "आपका दिल और दिमाग़, नींद में भी, इसे माँगना कभी बंद नहीं करते।"
+    },
+    {
+      "narration": "बिल्कुल चुपचाप बैठे हुए भी आपकी कोशिकाएँ ATP खर्च करती हैं। यही है दिन का चालीस किलो।"
+    },
+    {
+      "narration": "अध्याय आठ। जब cyanide इस chain को रोक दे, तब क्या होता है?"
+    },
+    {
+      "narration": "cyanide turbine पर हमला नहीं करता। वह chain का आख़िरी पड़ाव, कॉम्प्लेक्स चार, जाम कर देता है।"
+    },
+    {
+      "narration": "इलेक्ट्रॉन को जाने की जगह नहीं मिलती, तो pump रुक जाते हैं। प्रोटॉन का बाँध खाली होता है, और turbine धीमे पड़ जाते हैं।"
+    },
+    {
+      "narration": "नया ATP न बनने पर, सबसे ज़्यादा ऊर्जा माँगने वाले अंग, जैसे दिल और दिमाग़, सबसे ज़्यादा प्रभावित होते हैं।"
+    },
+    {
+      "narration": "इतना कुछ इन नन्ही मशीनों पर टिका है।"
+    },
+    {
+      "narration": "इसी पल, आपकी कोशिकाओं में नन्हे turbine हर सेकंड लगभग सौ बार घूम रहे हैं, और हर चक्कर तीन ATP बनाता है।"
+    },
+    {
+      "narration": "तो जब आप दौड़ना शुरू करते हैं, तब इन turbines का क्या होता होगा?"
+    }
+  ]
+}

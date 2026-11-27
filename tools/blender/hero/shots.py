@@ -367,6 +367,8 @@ def key_prop(frames_vals, prop):
 
 
 def glb(file, length_m=None, loc=(0, 0, 0), rot_z=0.0):
+    # 27 Nov 2026: the Kenney sedan's NOSE points to -y at rot_z=0 (front wheels at y<0). Every moving car
+    # had been turned the wrong way and drove in reverse; rot_z = atan2(-dx, dy) faces the nose along (dx, dy).
     before = set(bpy.context.scene.objects)
     bpy.ops.import_scene.gltf(filepath=os.path.join(ASSETS, file))
     new = [o for o in bpy.context.scene.objects if o not in before]
@@ -1214,7 +1216,7 @@ def build():
             lbl.data.extrude = 0.01
             # dark ink: glowing white letters on light-grey concrete were barely readable (WIW long film, 24 Nov 2026)
             lbl.data.materials.append(mat("Lbl" + mode, (0.55, 0.03, 0.02) if mode == "rigid" else (0.02, 0.10, 0.35), 0.6))
-            car, parts = glb(SPEC["props"]["car"], 4.5, (0, y, 0), math.radians(-90))
+            car, parts = glb(SPEC["props"]["car"], 4.5, (0, y, 0), math.radians(90))   # nose to +x, into the barrier
             bpy.context.view_layer.update()
             front = max((o.matrix_world @ Vector(c_))[0] for o in parts if o.type == "MESH" for c_ in o.bound_box)
             gap = -front                                  # car origin x so its nose touches x=0
@@ -1309,7 +1311,7 @@ def build():
             v = kmh / 3.6
             track_.append([])
             decel = decels[k]
-            car, parts = glb(SPEC["props"]["car"], 4.5, (x, 0, 0), 0.0)
+            car, parts = glb(SPEC["props"]["car"], 4.5, (x, 0, 0), math.radians(180))   # nose to +y, the way it drives
             bpy.context.view_layer.update()
             front = max((o.matrix_world @ Vector(c_))[1] for o in parts if o.type == "MESH" for c_ in o.bound_box)
             nose = front                                  # car origin to nose
@@ -1416,7 +1418,7 @@ def build():
         dt, dc = v_t * T, v_c * T
         x = -2.6
         key_path(arm, [(1, Vector((x, 0, 0))), (N, Vector((x, -dt, 0)))])
-        car, parts = glb(SPEC["props"]["car"], 4.5, (2.6, 0, 0), math.radians(180))
+        car, parts = glb(SPEC["props"]["car"], 4.5, (2.6, 0, 0), 0.0)   # nose to -y, the way it drives
         start = SHOT.get("car_behind_m", 22)
         key_path(car, [(1, Vector((2.6, start, 0))), (N, Vector((2.6, start - dc, 0)))])
         for p in parts:                 # spin the wheels at road speed
@@ -1425,7 +1427,7 @@ def build():
                 p.rotation_mode = "XYZ"
                 ax = 0
                 p.keyframe_insert("rotation_euler", index=ax, frame=1)
-                p.rotation_euler[ax] -= dc / r
+                p.rotation_euler[ax] += dc / r      # forward roll about +x (nose is -y)
                 p.keyframe_insert("rotation_euler", index=ax, frame=N)
                 for fc in _fcurves(p.animation_data.action):
                     for k in fc.keyframe_points:
@@ -1471,7 +1473,7 @@ def build():
         print(f"tail tip peak {v:.1f} m/s ({v * 3.6:.0f} km/h) at frame {fr_}, swing {amp:.0f} deg")
         if SHOT.get("car_kmh"):
             v_c = SHOT["car_kmh"] / 3.6
-            car, parts = glb(SPEC["props"]["car"], 4.5, (4.0, 0, 0), math.radians(180))
+            car, parts = glb(SPEC["props"]["car"], 4.5, (4.0, 0, 0), 0.0)   # nose to -y, the way it drives
             meet = fr_ / FPS                      # the car passes the tail tip at the moment of peak speed
             sc_ = bpy.context.scene
             sc_.frame_set(fr_)
@@ -1483,7 +1485,7 @@ def build():
                 if "wheel" in p.name.lower():
                     p.rotation_mode = "XYZ"
                     p.keyframe_insert("rotation_euler", index=0, frame=1)
-                    p.rotation_euler[0] -= v_c * T / 0.35
+                    p.rotation_euler[0] += v_c * T / 0.35   # forward roll (nose is -y)
                     p.keyframe_insert("rotation_euler", index=0, frame=N)
                     for fc in _fcurves(p.animation_data.action):
                         for k in fc.keyframe_points:

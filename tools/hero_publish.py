@@ -81,6 +81,8 @@ credits = spec.get("credits") or (
     "3D: every model built from scratch in Blender (procedural; no stock models or footage)."
     if spec.get("renderer") == "micro" else
     "3D models: Quaternius, Animated LowPoly Dinosaurs (CC0); Kenney, Car Kit (CC0). Animated in Blender.")
+if isinstance(credits, list):   # older specs keep credits as a list of lines
+    credits = "3D credits: " + "; ".join(credits) + ". Animated in Blender."
 desc = (script.get("description", "") + chapters + "\n\nSources: " + script.get("sources", "") + "\n" +
         credits + "\n\n"
         "How this was made: the script is researched and fact-checked against published research (sources above), "

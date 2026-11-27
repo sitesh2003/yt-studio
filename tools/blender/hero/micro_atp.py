@@ -15,7 +15,7 @@ import random
 
 from mathutils import Vector
 
-KINDS = ("atp_muscle", "atp_molecule", "atp_mito", "atp_chain", "atp_dam", "atp_synthase", "atp_noji")
+KINDS = ("atp_cell", "atp_muscle", "atp_molecule", "atp_mito", "atp_chain", "atp_dam", "atp_synthase", "atp_noji")
 G = {}
 
 PROTON = (1.0, 0.42, 0.12)
@@ -180,6 +180,57 @@ def protons_through(at, tps, f0, f1, n_per_turn=8, mat=None):
         i += 1
 
 
+def protons_back(at, tps, f0, f1, n_per_turn=8, mat=None):
+    """The reverse of protons_through: protons come DOWN from the matrix side, ride the ring backwards, leave below."""
+    mat = mat or proton_mat()
+    at = Vector(at)
+    period = FPS / max(tps, 1e-3)
+    step = period / n_per_turn
+    t = f0
+    while t < f1:
+        o = blob(f"hb{len(bpy.data.objects)}", 0.32, at + Vector((5, 0, 9)), (1, 1, 1), mat, 0, subdiv=2)
+        keys = [(1, at + Vector((5 + random.uniform(-2, 2), random.uniform(-3, 3), 9))),
+                (int(t) - 10, at + Vector((4.2, 0.0, 3.5))), (int(t), at + Vector((3.2, 0.0, 0.8)))]
+        for j in range(1, 15):
+            fr = int(t + period * 0.875 * j / 14)
+            ang = -2 * math.pi * 0.875 * j / 14
+            keys.append((fr, at + Vector((3.2 * math.cos(ang), 3.2 * math.sin(ang), 0.8 - 1.6 * j / 14))))
+        fe = int(t + period * 0.875)
+        keys.append((fe + 8, at + Vector((5.0, 0.0, -4.5))))
+        keys.append((fe + 30, at + Vector((5.5 + random.uniform(-1, 1), random.uniform(-2, 2), -10))))
+        key_loc(o, keys)
+        linear(o)
+        t += step
+
+
+def atp_in(betas, tps, f0=1, f1=None):
+    """Running backwards: whole ATP flies IN to each beta part and is split; a small ADP drifts back out."""
+    f1 = f1 or N
+    third = FPS / max(tps, 1e-3) / 3
+    for bi, pv in enumerate(betas):
+        a = pv["a"]
+        out = Vector((math.cos(a), math.sin(a), 0))
+        c = Vector(pv["w"])
+        fr = f0 + bi * third
+        while fr + third * 2 < f1:
+            m = atp_molecule(f"atpi{len(bpy.data.objects)}", c + out * 10 + Vector((0, 0, 3)), 0.32, 1.6)
+            key_loc(m, [(1, c + out * 12 + Vector((0, 0, 4))), (int(fr), c + out * 10 + Vector((0, 0, 3))),
+                        (int(fr + third), c + out * 1.2)])
+            m.scale = (0.32, 0.32, 0.32)
+            m.keyframe_insert("scale", frame=int(fr + third))
+            m.scale = (0.001, 0.001, 0.001)
+            m.keyframe_insert("scale", frame=int(fr + third) + 4)
+            adp = blob(f"adpo{len(bpy.data.objects)}", 0.5, c, (1, 1, 1),
+                       bpy.data.materials.get("AdpM") or glow("AdpM", (0.6, 0.8, 1.0), 4.0), 0, subdiv=2)
+            adp.scale = (0.001, 0.001, 0.001)
+            adp.keyframe_insert("scale", frame=1)
+            adp.keyframe_insert("scale", frame=int(fr + third) + 2)
+            adp.scale = (1, 1, 1)
+            adp.keyframe_insert("scale", frame=int(fr + third) + 6)
+            key_loc(adp, [(int(fr + third) + 2, c + out * 1.2), (int(fr + third * 2.6), c + out * 9 - Vector((0, 0, 2)))])
+            fr += FPS / max(tps, 1e-3)
+
+
 def beta_cycle(betas, tps, f0=1, f1=None, loads=True, at=(0, 0, 0)):
     """Binding change: each beta goes open -> loose -> tight a third of a turn apart; ADP + P go in, ATP comes out."""
     f1 = f1 or N
@@ -229,7 +280,15 @@ def shot_synthase(cam, tgt):
     root, rotor, betas, csubs = synthase()
     mode = SHOT.get("mode", "spin")
     tps = float(SHOT.get("slow", 0.4))
-    spin(rotor, tps)
+    spin(rotor, -tps if mode == "reverse" else tps)
+    if mode == "reverse":                                       # fed ATP, it turns the other way and PUMPS protons down
+        protons_back((0, 0, 0), tps, 1, N)
+        atp_in(betas, tps, 1, N)
+        for i in range(25):                                     # a thin crowd above, waiting to be pumped
+            p = Vector((random.uniform(-14, 14), random.uniform(-10, 4), random.uniform(4, 14)))
+            o = blob(f"crowd{i}", 0.32, p, (1, 1, 1), proton_mat(), 0, subdiv=2)
+            wander(o, p, 0.6, 8)
+            linear(o)
     if mode in ("protons", "spin", "orbit"):
         protons_through((0, 0, 0), tps, 1, N)
         for i in range(60):                                     # the crowd waiting below (intermembrane space)
@@ -242,7 +301,10 @@ def shot_synthase(cam, tgt):
     soup()
     lights()
     bloom(0.8, 0.6)
-    if mode == "beta":
+    if mode == "reverse":
+        key_loc(cam, [(1, (36, -50, 12)), (N, (30, -44, 10))])
+        key_loc(tgt, [(1, (0, 0, 6))])
+    elif mode == "beta":
         key_loc(cam, [(1, (14, -26, 18)), (N, (10, -22, 15))])
         key_loc(tgt, [(1, (0, 0, 10.5))])
     elif mode == "protons":
@@ -398,11 +460,32 @@ def shot_dam(cam, tgt):
     """Protons crowded below like water behind a dam; the turbine is the one way back."""
     world((0.004, 0.008, 0.02))
     _membrane([(0, 0)])
+    leak = bool(SHOT.get("leak"))
+    if leak:                                                    # brown fat: UCP1, a plain pore beside the turbine
+        G["CHANNELS"] = [(0, 0), (-16, 0)]
     root, rotor, betas, csubs = synthase()
-    tps = 0.3
+    tps = 0.12 if leak else 0.3
     spin(rotor, tps)
     protons_through((0, 0, 0), tps, F(0.4), N)
     pm = proton_mat()
+    if leak:
+        umat = organic("UCP1", (0.25, 0.85, 0.75), (0.3, 1.0, 0.8), 1.4, sss=0.8, noise=3)
+        for k in range(6):                                      # six-helix pore, open in the middle
+            a_ = k * math.pi / 3
+            blob(f"ucp{k}", 1.0, (-16 + 1.9 * math.cos(a_), 1.9 * math.sin(a_), 0), (0.9, 0.9, 3.6), umat, 0.12, 3)
+        heat = glow("Heat", (1.0, 0.45, 0.12), 0.0)
+        for i in range(70):                                     # protons rush straight up through it: no turbine
+            fr0 = random.randint(1, max(2, N - 25))
+            o = blob(f"lk{i}", 0.34, (-16, 0, -8), (1, 1, 1), pm, 0, subdiv=2)
+            key_loc(o, [(1, (-16 + random.uniform(-6, 6), random.uniform(-4, 4), -9)), (fr0, (-16, 0, -4)),
+                        (fr0 + 6, (-16, 0, 2)), (fr0 + 22, (-16 + random.uniform(-7, 7), random.uniform(-6, 6), 10))])
+            linear(o)
+        for i in range(36):                                     # the energy comes out as heat: warm shimmer
+            p = Vector((-16 + random.uniform(-9, 9), random.uniform(-6, 6), random.uniform(3, 14)))
+            o = blob(f"ht{i}", random.uniform(0.3, 0.6), p, (1, 1, 1), heat, 0, subdiv=2)
+            wander(o, p, 1.4, 4)
+            linear(o)
+        key_input(emis_input(heat), [(1, 0.3), (F(0.3), 2.5), (N, 3)])
     for i in range(260):
         p = Vector((random.uniform(-40, 40), random.uniform(-12, 10), random.uniform(-18, -3.2)))
         o = blob(f"crowd{i}", 0.34, p, (1, 1, 1), pm, 0, subdiv=2)
@@ -414,8 +497,12 @@ def shot_dam(cam, tgt):
     soup(100, 70)
     lights()
     bloom(0.8, 0.6)
-    key_loc(cam, [(1, (0, -80, 4)), (N, (4, -60, 3))])
-    key_loc(tgt, [(1, (0, 0, -2))])
+    if leak:
+        key_loc(cam, [(1, (-8, -66, 8)), (N, (-8, -56, 6))])
+        key_loc(tgt, [(1, (-8, 0, 2))])
+    else:
+        key_loc(cam, [(1, (0, -80, 4)), (N, (4, -60, 3))])
+        key_loc(tgt, [(1, (0, 0, -2))])
     smooth(cam)
     cam.data.dof.aperture_fstop = 5.6
 
@@ -516,13 +603,14 @@ def shot_muscle(cam, tgt):
         for p in f.data.polygons:
             p.use_smooth = True
         fibres.append(f)
-    for fr in range(1, N + 1, 6):                               # contract and relax
-        s = 1.0 - 0.06 * (0.5 + 0.5 * math.sin(fr / FPS * 2 * math.pi * 0.8))
+    pace = float(SHOT.get("pace", 0.8))                          # contractions a second (running: faster)
+    for fr in range(1, N + 1, 3 if pace > 1 else 6):            # contract and relax
+        s = 1.0 - 0.06 * (0.5 + 0.5 * math.sin(fr / FPS * 2 * math.pi * pace))
         for f in fibres:
             f.scale = (1 + (1 - s) * 0.8, 1 + (1 - s) * 0.8, s)
             f.keyframe_insert("scale", frame=fr)
     spark = glow("Spark", (1.0, 0.85, 0.3), 10.0)
-    for i in range(160):                                        # ATP being spent: sparks flare and fade
+    for i in range(int(160 * max(1.0, pace))):                  # ATP being spent: sparks flare and fade
         p = Vector((random.uniform(-40, 40), random.uniform(-15, 15), random.uniform(-10, 10)))
         o = blob(f"sp{i}", 0.8, p, (1, 1, 1), spark, 0, subdiv=2)
         f0 = random.randint(1, max(2, N - 10))
@@ -569,6 +657,97 @@ def shot_molecule(cam, tgt):
     cam.data.dof.aperture_fstop = 4.0
 
 
+def _mito_capsule(name, loc, s, mat, parent=None, rot=None):
+    o = blob(name, 1.0, loc, (2.6 * s, 1.0 * s, 1.0 * s), mat, 0.1, 3, parent=parent)
+    o.rotation_euler = rot or (random.uniform(0, 3), random.uniform(0, 3), random.uniform(0, 3))
+    return o
+
+
+def shot_cell(cam, tgt):
+    """A whole cell, see-through: nucleus and hundreds of mitochondria.
+    mode: "many" (default) | "engulf" (a bacterium is taken in and stays: endosymbiosis) |
+          "egg" (an egg packed with mitochondria; a sperm arrives, its few mitochondria fade out)."""
+    world((0.004, 0.006, 0.014))
+    mode = SHOT.get("mode", "many")
+    skin = bpy.data.materials.new("CellSkin")
+    skin.use_nodes = True
+    sb = skin.node_tree.nodes["Principled BSDF"]
+    sb.inputs["Base Color"].default_value = (0.55, 0.75, 0.95, 1)
+    sb.inputs["Alpha"].default_value = 0.18
+    sb.inputs["Emission Color"].default_value = (0.4, 0.7, 1.0, 1)
+    sb.inputs["Emission Strength"].default_value = 0.12
+    sb.inputs["Roughness"].default_value = 0.85                   # no mirror-like highlight of the key light
+    if "Specular IOR Level" in sb.inputs:
+        sb.inputs["Specular IOR Level"].default_value = 0.05
+    try:
+        skin.surface_render_method = "BLENDED"
+    except Exception:
+        pass
+    mm = organic("MitoC", (1.0, 0.5, 0.35), (1.0, 0.45, 0.3), 3.2, sss=0.8, noise=3)
+    R = 40.0 if mode != "egg" else 46.0
+    bpy.ops.mesh.primitive_uv_sphere_add(segments=96, ring_count=48, radius=R)
+    cell = bpy.context.object
+    cell.data.materials.append(skin)
+    for p_ in cell.data.polygons:
+        p_.use_smooth = True
+    if mode != "egg":
+        nuc = organic("Nucleus", (0.35, 0.3, 0.75), (0.45, 0.35, 1.0), 1.2, sss=0.8, noise=3)
+        blob("nucleus", 11.0, (-6, 4, 0), (1, 1, 1), nuc, 0.12, 3)
+    n = int(SHOT.get("count", 260 if mode == "egg" else 180))
+    for i in range(n):                                          # mitochondria spread through the cytoplasm
+        while True:
+            p = Vector((random.uniform(-R, R), random.uniform(-R, R), random.uniform(-R, R))) * 0.85
+            if p.length < R * 0.85 and (mode == "egg" or (p - Vector((-6, 4, 0))).length > 14):
+                break
+        o = _mito_capsule(f"m{i}", p, random.uniform(0.9, 1.4) * (0.75 if mode == "egg" else 1.0), mm)
+        wander(o, p, 0.8, 12)
+        smooth(o)
+    if mode == "engulf":                                        # a bacterium drifts in through the skin and stays
+        bm = organic("Bact", (0.35, 0.85, 0.45), (0.4, 1.0, 0.5), 2.0, sss=0.8, noise=3)
+        b = _mito_capsule("bact", (R + 26, -6, 4), 2.2, bm, rot=(0, 0, 0.3))
+        key_loc(b, [(1, (R + 26, -6, 4)), (F(0.35), (R + 3, -4, 3)), (F(0.7), (R * 0.55, -3, 2)), (N, (R * 0.5, -3, 2))])
+        smooth(b)
+        cell.scale = (1, 1, 1)
+        cell.keyframe_insert("scale", frame=1)
+        cell.scale = (1.04, 0.98, 1.0)
+        cell.keyframe_insert("scale", frame=F(0.45))
+        cell.scale = (1, 1, 1)
+        cell.keyframe_insert("scale", frame=F(0.75))
+        key_input(emis_input(bm), [(1, 2.0), (F(0.7), 2.0), (N, 0.6)])
+    if mode == "egg":                                           # a sperm arrives; its mitochondria are tagged and go dark
+        sm = organic("Sperm", (0.8, 0.85, 0.95), (0.7, 0.8, 1.0), 1.0, sss=0.8, noise=2)
+        sp_ = empty("sperm", (R + 30, -10, 6))
+        blob("shead", 1.0, (0, 0, 0), (2.4, 1.5, 1.5), sm, 0.05, 3, parent=sp_)
+        pm_ = organic("SpMito", (1.0, 0.5, 0.35), (1.0, 0.5, 0.35), 2.5, sss=0.8, noise=2)
+        for k in range(4):
+            blob(f"smid{k}", 0.55, (2.6 + k * 0.9, 0, 0), (1, 1, 1), pm_, 0, subdiv=2, parent=sp_)
+        for k in range(14):                                     # the tail: a wiggling chain
+            t_ = blob(f"stail{k}", 0.28, (6 + k * 1.1, 0, 0), (1, 1, 1), sm, 0, subdiv=2, parent=sp_)
+            for fr in range(1, N + 1, 3):
+                t_.location = (6 + k * 1.1, 0.9 * math.sin(fr * 0.6 - k * 0.7) * (k / 14) * 2, 0)
+                t_.keyframe_insert("location", frame=fr)
+        key_loc(sp_, [(1, (R + 30, -10, 6)), (F(0.45), (R - 1, -8, 5)), (N, (R - 3, -8, 5))])
+        smooth(sp_)
+        key_input(emis_input(pm_), [(1, 2.5), (F(0.5), 2.5), (F(0.85), 0.0)])
+    soup(140, 90, (-50, 50))
+    # the shared lights() sit ~40 units out: ON the cell's skin they paint a white patch, so light from far away
+    area_light((40, -120, 110), (0, 0, 0), 9e4, (1.0, 0.85, 0.7), 40)
+    area_light((-130, -40, 30), (0, 0, 0), 3e4, (0.35, 0.7, 1.0), 40)
+    area_light((0, 120, -60), (0, 0, 0), 2e4, (0.3, 1.0, 0.8), 40)
+    bloom(0.7, 0.6)
+    if mode == "engulf":
+        key_loc(cam, [(1, (70, -110, 30)), (N, (55, -95, 24))])
+        key_loc(tgt, [(1, (R * 0.6, 0, 2))])
+    elif mode == "egg":
+        key_loc(cam, [(1, (60, -120, 34)), (N, (52, -104, 28))])
+        key_loc(tgt, [(1, (R * 0.5, 0, 2))])
+    else:
+        key_loc(cam, [(1, (30, -130, 40)), (N, (14, -70, 18))])
+        key_loc(tgt, [(1, (0, 0, 0))])
+    smooth(cam)
+    cam.data.dof.aperture_fstop = 8
+
+
 def build(cam, tgt):
-    {"atp_muscle": shot_muscle, "atp_molecule": shot_molecule, "atp_mito": shot_mito, "atp_chain": shot_chain,
+    {"atp_cell": shot_cell, "atp_muscle": shot_muscle, "atp_molecule": shot_molecule, "atp_mito": shot_mito, "atp_chain": shot_chain,
      "atp_dam": shot_dam, "atp_synthase": shot_synthase, "atp_noji": shot_noji}[KIND](cam, tgt)
