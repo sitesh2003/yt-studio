@@ -1,19 +1,19 @@
 {
   "lessons": [
-    "Use second-person immersive roleplay in hooks ('तुम एक...') to maximize early retention (achieved highest 10% retention at 1.0488).",
-    "Avoid dumping heavy technical terms or precise numerical forces (e.g., '34,500 Newton') early, as it caused the largest single drop in the dataset (-23% at 23% mark).",
-    "Anchor science concepts around clear visual comparisons (e.g., T. rex vs car speed) to sustain strong mid-video retention (49.3% kept at 50%).",
-    "Ensure the post-hook transition (11-12% mark) is seamless, as every video suffered a significant drop-off (11% to 19%) right after the hook."
+    "Start with immersive hypothetical scenarios ('सोचो, तुम...') to consistently achieve high early retention (>1.0 at 10%).",
+    "Avoid immediate exposition heavy drops: lines explaining complex mechanical processes or heavy data early cause the steepest drop-offs (e.g., 22.5% loss at 13%).",
+    "Maintain strong comparative performance by avoiding excessive technical jargon or dense anatomical metrics mid-video, as seen in the sharp 50% retention drop for dense T. rex bite-force explanations (down to 0.16).",
+    "Keep pacing brisk past the 50% mark; videos that maintain better relative performance at the end (e.g., 0.49 vs_similar_end) avoid slow narrative plateaus.",
+    "Not enough data to confirm if countdown elements affect retention negatively, as all analyzed videos have 'countdown': false."
   ],
   "worst_moment_types": [
-    "Dense numerical or technical estimation explanations early in the video (e.g., jaw muscle Newton calculations).",
-    "Abstract physics law drops without immediate narrative momentum (e.g., referencing Newton's second law).",
-    "Transitions immediately following the main hook line at the 11-12% mark."
+    "Heavy technical explanation and data dumps right after the hook",
+    "Complex structural or anatomical breakdowns (e.g., bone-by-bone computer simulation details)"
   ],
   "best_hook_types": [
-    "Second-person immersive scenarios ('सोचो, तुम एक baby tyrannosaur हो...').",
-    "High-stakes comparison questions ('क्या T. rex तुम्हारी Car से तेज़ दौड़ सकता था?')."
+    "Imaginative, high-stakes hypothetical scenarios involving the viewer ('सोचो, तुम...')",
+    "Challenging common pop-culture assumptions immediately in the opening line"
   ],
   "studied": "2026-11-27",
-  "videos": 4
+  "videos": 5
 }

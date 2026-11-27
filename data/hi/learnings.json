@@ -1,15 +1,13 @@
 {
-  "summary": "1. Open instantly with second-person sensory immersion ('सोचो, तुम्हारे...' or 'तुम...') rather than passive introductory statements. 2. Lead the very first sentence with a visceral paradox or mind-bending physical comparison (e.g., '3 cars stacked on teeth', 'crumpling protects you') within 5 words. 3. Eliminate technical jargon and academic framing like 'hydroplaning' or 'वैज्ञानिकों को ऐसी सूक्ष्म आकृतियां मिली' from titles and opening lines. 4. Keep titles written in conversational Devanagari mixed with common English nouns plus a single contextual emoji (e.g., 🦖 or 🚗), avoiding full English or textbook Hindi phrasing. 5. Cap target duration near 25–35 seconds; all 40s+ videos suffered sub-38% stayed rates due to slow setups.",
+  "summary": "1. Write titles and first lines in Devanagari Hindi script; native script videos average 60%+ stayed rates while English/Romanized titles drop below 38%. 2. Begin immediately with vivid, physical visual metaphors (e.g., '3 cars stacked on your teeth') rather than dry academic questions. 3. Frame hooks around immediate viewer perspective using direct triggers like 'सोचो...' (Imagine...) or bold paradoxical statements. 4. Keep content tightly trimmed under 25 seconds; longer videos (40s+) suffer severe drop-offs and low stayed percentages. 5. Focus topics on pop-culture physics comparisons (T. Rex vs Cars, Crash dynamics) instead of obscure chemistry or engineering facts.",
   "winning_hooks": [
-    "Direct Physical Paradox: 'जो car crash में पिचक जाती है, वो तुम्हें ज़्यादा बचाती है।' (66.8% stayed - presents a counter-intuitive survival truth immediately)",
-    "Extreme Physical Scale Hook: 'सोचो, तुम्हारे दांतों पर 3 छोटी cars एक के ऊपर एक रख दी जाएं...' (67.7% stayed - anchors abstract force to a bizarre, tangible image)",
-    "Identity Shift / Roleplay Hook: 'सोचो, तुम एक baby tyrannosaur हो, बस एक छोटे कुत्ते जितने।' (49.1% stayed - forces viewer self-insertion immediately)"
+    "Direct viewer imagination triggers using 'सोचो...' (Imagine...) paired with everyday object comparisons",
+    "Immediate counter-intuitive facts stated as baseline truths (e.g., 'जो car crash में पिचक जाती है, वो तुम्हें ज़्यादा बचाती है')"
   ],
   "avoid": [
-    "Full-English textbook titles (e.g., 'Common Household Items That Contain Radioactive Materials' - 6.7% stayed).",
-    "Third-person scientific reporting openings ('डायनासोर के जीवाश्मों में वैज्ञानिकों को ऐसी सूक्ष्म आकृतियां...' - 37.0% stayed).",
-    "Academic or mechanical jargon in the hook before explaining stakes ('hydroplaning' - 30.6% stayed).",
-    "Mundane domestic routine questions lacking high danger or stakes ('राजमा रात भर फ्रिज में रखने के बाद...' - 25.0% stayed)."
+    "English and Romanized Hinglish script in titles and hooks",
+    "Academic and multi-clause question hooks like 'वैज्ञानिकों को ऐसी सूक्ष्म आकृतियां क्यों मिली हैं...'",
+    "Videos with durations over 40 seconds before fixing initial retention"
   ],
-  "next_experiment": "A/B test a single topic with: (A) Visceral 'सोचो, तुम...' roleplay hook under 30 seconds vs (B) Direct paradox claim hook ('जो चीज तुम्हें मार सकती है...') under 30 seconds, measuring whether roleplay beats paradox on stayed_pct beyond 65%."
+  "next_experiment": "A/B test a 20-second Devanagari video: Version A starts with a 'सोचो...' imagination hook vs Version B starting with a 3-second paradoxical fact hook on the exact same T. Rex topic."
 }
