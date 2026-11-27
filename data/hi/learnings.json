@@ -1,12 +1,14 @@
 {
-  "summary": "Focus heavily on dinosaur and automobile safety topics as they consistently outperform other categories in both raw views and retention. Craft first sentences as direct, counter-intuitive assertions or relatable second-person challenges rather than academic questions. Maintain titles that directly match the core curiosity gap in the hook without over-explaining the science upfront. Avoid using mixed-script Hinglish or purely English technical titles for this audience since local-language curiosity performs better. Keep video concepts focused on tangible, physical objects that viewers encounter or can easily visualize.",
+  "summary": "High-stayed videos (66%+ stayed) use short Hinglish question titles ending with relevant emojis rather than long, academic English/Hindi titles. Winning hooks immediately start with an active counter-intuitive claim or a vivid personal visualization ('सोचो... / तुम्हें...'). High-performing topics combine extreme comparisons (e.g., T. rex vs. cars, car crash physics) with everyday relatable objects. Longer, textbook-style scripts (>40s with academic language) drop retention below 37% stayed and under 100 views. Structuring hooks around physical, tangible metaphors ('3 cars on your teeth') drives initial retention past the critical 60% threshold.",
   "winning_hooks": [
-    "जो car crash में पिचक जाती है, वो तुम्हें ज़्यादा बचाती है।",
-    "सोचो, तुम्हारे दांतों पर 3 छोटी cars एक के ऊपर एक रख दी जाएं। इतने ज़ोर से T. rex काटता था।"
+    "Start immediately with direct second-person framing ('तुम / तुम्हें / तुम्हारे') paired with extreme visual imagery.",
+    "Present a bold counter-intuitive fact in sentence one ('जो car crash में पिचक जाती है, वो तुम्हें ज़्यादा बचाती है').",
+    "Use everyday objects for scale comparison in the first 3 seconds (e.g., comparing bite force to stacking 3 cars on teeth)."
   ],
   "avoid": [
-    "Academic or passive scientific framing like 'डायनासोर के जीवाश्मों में वैज्ञानिकों को...' that delays the core point.",
-    "English technical titles like 'Why Your Smoke Detector Is Radioactive 😱' which result in low stayed_pct."
+    "Avoid formal/documentary Hindi or English sentence structures (e.g., 'जीवाश्मों में वैज्ञानिकों को ऐसी सूक्ष्म आकृतियां...').",
+    "Avoid descriptive title-style opening statements that state facts without personal stakes or curiosity gaps.",
+    "Avoid standard-length (>40s) explanatory scripts that lack mid-video visual/narrative pivots."
   ],
-  "next_experiment": "Test a dinosaur-related topic using a pure Hindi/Hinglish title combined with a second-person conversational hook ('सोचो अगर तुम...') to verify if it replicates the high stayed_pct of the top car and T. rex videos."
+  "next_experiment": "A/B test a single topic ('Why airplane windows are round') with two different hook styles: Option A using direct personal scale ('सोचो, अगर प्लेन की खिड़कियां चौकोर होतीं तो उड़ते ही फट जातीं...') vs Option B using standard documentary narration ('विमानों की खिड़कियां गोल क्यों बनाई जाती हैं?'). Measure difference in stayed_pct."
 }

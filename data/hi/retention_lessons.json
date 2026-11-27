@@ -1,19 +1,18 @@
 {
   "lessons": [
-    "Start with curiosity-driven paradoxes or counter-intuitive statements (e.g., cars crushing to save lives, T. rex inability to run), as all videos maintain over 1.0 retention at 10% regardless of initial comparative performance.",
-    "Avoid dry physics definitions or multi-sentence premise setups early on, as drops occur heavily between 11% and 25% when explanations become overly technical.",
-    "Keep comparisons relatable and fast-paced; physical analogies like car weights and tooth pressure hold audience attention better than abstract metrics.",
-    "Not enough data to definitively link countdown formats to retention patterns, as all evaluated videos have countdown set to false.",
-    "Maintain high narrative momentum past the 50% mark; videos with sharper mid-point drop-offs struggle to retain audiences through the ending."
+    "Start with high-stakes comparisons or physical thought experiments (e.g., cars vs dinosaurs, car crashes), as all videos successfully retained over 1.0 at 10% regardless of low relative start benchmarks.",
+    "Avoid overly dense technical explanations early on, as sudden drops occur around 11% to 25% when specific heavy metrics or secondary clauses are introduced.",
+    "Do not rely on countdowns since all analyzed videos had countdown=False, meaning retention relies entirely on pacing and narrative stakes rather than timer gimmicks.",
+    "Keep initial hooks punchy and tightly bounded, as longer introductory lines correlate with immediate viewer drop-off within the first 10-25% of the runtime."
   ],
   "worst_moment_types": [
-    "Technical weight and muscle mechanics explanations that slow down the narrative pace",
-    "Multi-step scientific extrapolations involving complex bone and force calculations without immediate visual payoffs"
+    "Heavy technical specifications or definitions introduced too early (e.g., specific bone stress physics or jaw force numbers between 11% and 25%)",
+    "Mid-video pacing stalls where the explanation repeats or lingers on the mechanics rather than driving the narrative forward"
   ],
   "best_hook_types": [
-    "Immediate size or speed comparisons involving everyday objects like cars",
-    "Hypothetical survival scenarios placing the viewer directly in the shoes of the subject (e.g., imagining being a baby T. rex)"
+    "Counterintuitive physical questions (e.g., comparing dinosaur speed to cars, or why a crushing car saves lives)",
+    "Immersive identity-based scenarios ('Imagine you are a baby tyrannosaur')"
   ],
-  "studied": "2026-11-26",
+  "studied": "2026-11-27",
   "videos": 4
 }
