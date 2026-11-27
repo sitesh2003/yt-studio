@@ -1,22 +1,14 @@
 {
-  "summary": [
-    "Prioritize dinosaur and everyday-physics topics like T. rex and car crumple zones, as they consistently drive the highest view counts and audience retention.",
-    "Draft titles that use direct, curiosity-inducing questions paired with relevant emojis (like 🦖 or 🚗) to boost initial click-through and engagement.",
-    "Formulate first-sentence hooks that make immediate, counter-intuitive claims or set up high-stakes scenarios rather than slow, generic introductions.",
-    "Keep video durations concise and punchy to maintain higher average view percentages and prevent audience drop-off in the middle seconds.",
-    "Avoid dry, overly academic phrasing in both titles and hooks in favor of direct second-person address ('You', 'Your') to capture viewer attention instantly."
-  ],
+  "summary": "1. Script hooks must be under 15 words and deliver a single, provocative statement in sentence one without setup context.\n2. Address the viewer directly ('You', 'Your') or state a jarring subversion of popular belief ('The real T. rex couldn't run. Not even a jog.').\n3. Ground abstract topics in vivid, tangible physical comparisons (e.g., 'three small cars stacked on its teeth', 'no bigger than a small dog').\n4. Focus topics on dinosaurs, bodily functions, and everyday mechanical safety, avoiding broad astronomy/space news which suffers low stay rates.\n5. Keep titles short, question- or paradox-driven, ending with a single clear emoji ('Could A T. rex Outrun Your Car? 🦖').",
   "winning_hooks": [
-    "The real T. rex probably couldn't run. Not even a jog.",
-    "One T. rex bite pressed down like three small cars stacked on its teeth.",
-    "Your eyes are leaking right now, and your brain is hiding it.",
-    "You're a baby tyrannosaur, no bigger than a small dog.",
-    "A car that folds up in a crash keeps you safer than one that doesn't."
+    "Use direct second-person presence or immediate paradoxes: 'Your eyes are leaking right now, and your brain is hiding it.'",
+    "Use instant visual scale comparisons: 'One T. rex bite pressed down like three small cars stacked on its teeth.'",
+    "State short, punchy contrarian facts directly: 'A car that folds up in a crash keeps you safer than one that doesn't.'"
   ],
   "avoid": [
-    "Slow, descriptive background introductions that take more than one sentence to get to the core point.",
-    "Niche or overly complex scientific topics without a relatable real-world comparison object like cars or animals.",
-    "Passive, low-energy statements in the opening hook that fail to challenge common assumptions."
+    "Multi-clause, academic intro sentences over 15 words (e.g., 'Pluto seemed like our solar system's edge, yet astronomers are investigating...').",
+    "Abstract or generic opening statements that lack immediate stakes (e.g., 'Most James Webb images hold secrets.').",
+    "Narrative scenario setups that delay the core hook (e.g., 'Your car swerves off the highway right toward...')."
   ],
-  "next_experiment": "A/B test two dinosaur-themed videos of identical length: one starting with a direct myth-busting statement as the hook, and the other starting with a direct question hook, while keeping titles and visual formatting constant."
+  "next_experiment": "A/B test the first sentence structure on the exact same topic: Test 'Direct Paradox' (10 words max: 'Your bone strength drops by half when you sit down.') vs 'Second-Person Narrative Setup' (18 words) to see if keeping the first sentence under 12 words lifts stayed_pct above 55%."
 }

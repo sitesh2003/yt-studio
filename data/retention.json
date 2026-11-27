@@ -462,15 +462,15 @@
   "ZBu29NHzbYo": {
     "title": "Why Scientists Missed an Outer Kuiper Belt 🤯",
     "hook_line": "Pluto seemed like our solar system's edge, yet astronomers are investigating evidence that the Kuiper Belt extends much further than we once thought.",
-    "kept_at_10pct": 1.7706,
-    "kept_at_50pct": 1.0779,
-    "kept_at_end": 0.8874,
+    "kept_at_10pct": 1.7738999999999998,
+    "kept_at_50pct": 1.0783,
+    "kept_at_end": 0.8913,
     "vs_similar_start": 0.55,
     "vs_similar_end": 0.87,
     "biggest_drops": [
       {
         "at": 0.14,
-        "lost": 0.186,
+        "lost": 0.187,
         "line": "Pluto seemed like our solar system's edge, yet astronomers are investigating evidence that the Kuiper Belt extends much further than we once thought."
       },
       {
