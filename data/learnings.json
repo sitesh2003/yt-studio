@@ -1,16 +1,22 @@
 {
-  "summary": "High-stayed videos (>50% stayed_pct) use active, direct 'you/your' claims in the first sentence that immediately subvert a common belief or highlight a personal physical sensory process (e.g., body function, T. rex vs car). Low-stayed videos (<35% stayed_pct) start with passive background exposition, generic storytelling setups ('Fossilized bones can last...'), or abstract space topics. Titles driving views perform best when phrased as direct question-confrontations ('Could A T. rex Outrun Your Car?') rather than passive explanations. Videos with concise, punchy first sentences (<12 words) retain viewers significantly better in the first 3 seconds than long-winded setup clauses. High views require both high initial stayed_pct (>50%) and focused pop-science/everyday topics over niche engineering mechanics.",
+  "summary": [
+    "Prioritize dinosaur and everyday-physics topics like T. rex and car crumple zones, as they consistently drive the highest view counts and audience retention.",
+    "Draft titles that use direct, curiosity-inducing questions paired with relevant emojis (like 🦖 or 🚗) to boost initial click-through and engagement.",
+    "Formulate first-sentence hooks that make immediate, counter-intuitive claims or set up high-stakes scenarios rather than slow, generic introductions.",
+    "Keep video durations concise and punchy to maintain higher average view percentages and prevent audience drop-off in the middle seconds.",
+    "Avoid dry, overly academic phrasing in both titles and hooks in favor of direct second-person address ('You', 'Your') to capture viewer attention instantly."
+  ],
   "winning_hooks": [
-    "Direct personal/sensory disruption: 'Your eyes are leaking right now, and your brain is hiding it.'",
-    "Bold counter-intuitive debunking: 'The real T. rex probably couldn't run. Not even a jog.'",
-    "Extreme vivid physical comparison: 'One T. rex bite pressed down like three small cars stacked on its teeth.'",
-    "Immediate benefit counter-statement: 'A car that folds up in a crash keeps you safer than one that doesn't.'"
+    "The real T. rex probably couldn't run. Not even a jog.",
+    "One T. rex bite pressed down like three small cars stacked on its teeth.",
+    "Your eyes are leaking right now, and your brain is hiding it.",
+    "You're a baby tyrannosaur, no bigger than a small dog.",
+    "A car that folds up in a crash keeps you safer than one that doesn't."
   ],
   "avoid": [
-    "Explanatory narrative setups that sound like documentary narrations ('Fossilized bones can last millions of years, but...').",
-    "Hypothetical scenario setting before the point ('Your car swerves off the highway right toward a steel guardrail...').",
-    "Passive astronomical context setting ('Pluto seemed like our solar system's edge, yet astronomers...').",
-    "Niche structural engineering topics (guardrail end boxes) which consistently drop stayed_pct below 35%."
+    "Slow, descriptive background introductions that take more than one sentence to get to the core point.",
+    "Niche or overly complex scientific topics without a relatable real-world comparison object like cars or animals.",
+    "Passive, low-energy statements in the opening hook that fail to challenge common assumptions."
   ],
-  "next_experiment": "A/B test the exact same video topic using a Direct Personal Claim Hook ('Your salmon is dyed pink before you buy it') versus an Academic Narrative Hook ('Most people don't realize farmed salmon starts out gray') to measure the direct impact on 3-second stayed_pct."
+  "next_experiment": "A/B test two dinosaur-themed videos of identical length: one starting with a direct myth-busting statement as the hook, and the other starting with a direct question hook, while keeping titles and visual formatting constant."
 }

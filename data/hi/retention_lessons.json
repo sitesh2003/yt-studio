@@ -1,20 +1,19 @@
 {
   "lessons": [
-    "Prioritize immediate, counter-intuitive visual metaphors: The T. rex car comparison held better than the abstract Newton's Law explanation.",
-    "Eliminate repetitive exposition: Videos suffered significant drops when repeating context or scientific setup in subsequent sentences.",
-    "Avoid descriptive pauses early in the hook: When the script describes the premise (like 'Imagine this...') instead of the conflict/consequence, retention drops sharply before 25%.",
-    "Match the pace of technical explanations to the content: Slow, multi-step scientific explanations lead to a 'cliff-edge' drop-off at the 50% mark.",
-    "Focus on immediate payoff: The video with the highest retention (T. rex speed) maintained interest longer by focusing on the 'could it run' question rather than explaining methodology."
+    "Start with curiosity-driven paradoxes or counter-intuitive statements (e.g., cars crushing to save lives, T. rex inability to run), as all videos maintain over 1.0 retention at 10% regardless of initial comparative performance.",
+    "Avoid dry physics definitions or multi-sentence premise setups early on, as drops occur heavily between 11% and 25% when explanations become overly technical.",
+    "Keep comparisons relatable and fast-paced; physical analogies like car weights and tooth pressure hold audience attention better than abstract metrics.",
+    "Not enough data to definitively link countdown formats to retention patterns, as all evaluated videos have countdown set to false.",
+    "Maintain high narrative momentum past the 50% mark; videos with sharper mid-point drop-offs struggle to retain audiences through the ending."
   ],
   "worst_moment_types": [
-    "Over-explaining scientific methodology (e.g., 'Scientists built it bone by bone...')",
-    "Repetitive phrasing of the initial premise after the hook",
-    "Abstract scientific terminology that interrupts the immediate visual narrative"
+    "Technical weight and muscle mechanics explanations that slow down the narrative pace",
+    "Multi-step scientific extrapolations involving complex bone and force calculations without immediate visual payoffs"
   ],
   "best_hook_types": [
-    "High-stakes comparative analogies (e.g., car weight vs. T. rex weight)",
-    "Direct physical scenarios that create an immediate 'what if' question"
+    "Immediate size or speed comparisons involving everyday objects like cars",
+    "Hypothetical survival scenarios placing the viewer directly in the shoes of the subject (e.g., imagining being a baby T. rex)"
   ],
-  "studied": "2026-11-25",
-  "videos": 3
+  "studied": "2026-11-26",
+  "videos": 4
 }

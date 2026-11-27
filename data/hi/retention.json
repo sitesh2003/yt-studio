@@ -2,9 +2,9 @@
   "wBAmoqMBEeg": {
     "title": "क्या T. rex तुम्हारी Car से तेज़ दौड़ सकता था? 🦖",
     "hook_line": "Movies में T.",
-    "kept_at_10pct": 1.0223,
-    "kept_at_50pct": 0.4924,
-    "kept_at_end": 0.20579999999999998,
+    "kept_at_10pct": 1.0222,
+    "kept_at_50pct": 0.49310000000000004,
+    "kept_at_end": 0.2069,
     "vs_similar_start": 0.33,
     "vs_similar_end": 0.38,
     "biggest_drops": [
@@ -20,7 +20,7 @@
       }
     ],
     "countdown": false,
-    "checked": "2026-11-25"
+    "checked": "2026-11-26"
   },
   "WxMPmmfvdrk": {
     "title": "T. rex का Bite कितना ताकतवर था? 🦖",
@@ -43,7 +43,7 @@
       }
     ],
     "countdown": false,
-    "checked": "2026-11-25"
+    "checked": "2026-11-26"
   },
   "RpDhP4OX8P0": {
     "title": "Crash में Car का पिचकना क्यों ज़रूरी है? 🚗",
@@ -66,6 +66,29 @@
       }
     ],
     "countdown": false,
-    "checked": "2026-11-25"
+    "checked": "2026-11-26"
+  },
+  "R2EPkrApYDI": {
+    "title": "तुम एक Baby T. rex हो, कैसे बचोगे? 🦖",
+    "hook_line": "सोचो, तुम एक baby tyrannosaur हो, बस एक छोटे कुत्ते जितने। तो तुम लड़ते नहीं, भागते हो। छोटे T.",
+    "kept_at_10pct": 1.0488,
+    "kept_at_50pct": 0.2988,
+    "kept_at_end": 0.1094,
+    "vs_similar_start": 0.26,
+    "vs_similar_end": 0.49,
+    "biggest_drops": [
+      {
+        "at": 0.25,
+        "lost": 0.139,
+        "line": "rex की टांगें लंबी और पतली थीं, speed के लिए बनी। पर तुम्हारा bite अभी बड़ों की तरह bone नहीं तोड़ सकता। तो तुम छोटे, तेज़ जानवरों का शिकार करते हो, जिन्हें बड़े T."
+      },
+      {
+        "at": 0.12,
+        "lost": 0.137,
+        "line": "सोचो, तुम एक baby tyrannosaur हो, बस एक छोटे कुत्ते जितने। तो तुम लड़ते नहीं, भागते हो। छोटे T."
+      }
+    ],
+    "countdown": false,
+    "checked": "2026-11-26"
   }
 }
