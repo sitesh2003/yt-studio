@@ -6485,7 +6485,7 @@
     "old_publish_at": "2026-12-03T00:00:00Z"
   },
   {
-    "job": "hero_mosquito_magnets",
+    "job": "hero_mosquito_magnets_replaced",
     "topic": "Why Mosquitoes Bite You More Than Your Friends 🦟",
     "title": "Why Mosquitoes Bite You More Than Your Friends 🦟",
     "description": "Some people really are mosquito magnets, and it's not sweet blood. A 2022 study traced it to acids made from the oil on their skin. #shorts #science #biology #mosquito\n\nSources: De Obaldia et al. 2022, Cell 185:4099-4116 (skin carboxylic acids and mosquito attraction), open access via Europe PMC PMC10069481.\n3D: every model built from scratch in Blender (procedural; no stock models or footage).\n\nHow this was made: the script is researched and fact-checked against published research (sources above), narrated by an AI voice, and animated and edited with open-source software.",
@@ -6498,7 +6498,7 @@
       "3D animation"
     ],
     "hook": "Some people really are mosquito magnets. And it has nothing to do with sweet blood.",
-    "status": "scheduled",
+    "status": "replaced",
     "narration": "Some people really are mosquito magnets. And it has nothing to do with sweet blood. In one study, volunteers wore nylon sleeves on their arms for six hours. Then mosquitoes were given a choice between two people's sleeves. One volunteer scored over a hundred times more attractive than the least attractive ones. And for years, the same people kept winning. The difference was on their skin: more of the acids made from skin oil. Even mosquitoes bred without key smell sensors could still pick out the magnets. And blood type? The evidence for it is mixed. So mosquitoes don't choose sweet blood. They follow the smell of acids made from the oil on your skin. So who in your family gets bitten the most?",
     "voice_engine": "chatterbox",
     "countdown": false,
@@ -6506,10 +6506,12 @@
     "question": "So who in your family gets bitten the most?",
     "video_id": "GBBGYhCOxVY",
     "publish_at": "2026-12-03T19:00:00-05:00",
-    "thumbnail_set": true
+    "thumbnail_set": true,
+    "replaced_reason": "new cold-open hook (council 28 Nov)",
+    "old_publish_at": "2026-12-04T00:00:00Z"
   },
   {
-    "job": "hero_woodpecker",
+    "job": "hero_woodpecker_replaced",
     "topic": "A Woodpecker's Skull Is NOT a Shock Absorber 🪶",
     "title": "A Woodpecker's Skull Is NOT a Shock Absorber 🪶",
     "description": "For decades we were told woodpecker skulls absorb shock. High-speed video says the opposite: the head is a stiff hammer, and a small brain keeps it safe. #shorts #science #birds #woodpecker\n\nSources: Van Wassenbergh et al. 2022, Current Biology 32:3189-3194, doi 10.1016/j.cub.2022.05.052 (woodpeckers minimize cranial absorption of shocks).\n3D: every model built from scratch in Blender (procedural; no stock models or footage).\n\nHow this was made: the script is researched and fact-checked against published research (sources above), narrated by an AI voice, and animated and edited with open-source software.",
@@ -6523,7 +6525,7 @@
       "3D animation"
     ],
     "hook": "You've probably heard a woodpecker's skull is a shock absorber. It isn't.",
-    "status": "scheduled",
+    "status": "replaced",
     "narration": "You've probably heard a woodpecker's skull is a shock absorber. It isn't. Scientists filmed three kinds of woodpecker with high-speed cameras, and tracked the beak and the head on every hit. If the skull cushioned the blow, the head would keep moving after the beak stopped. It doesn't. They stop together. That's a stiff hammer. A cushion would soak up the energy and make every peck weaker. So what protects the brain? Its size. A small brain feels far less pressure than a big one in the same hit. Their models show a woodpecker would need to hit about twice as fast before getting near concussion levels. So helmets inspired by the woodpecker cushion idea took the wrong lesson from them. A woodpecker's skull isn't a cushion. It's a stiff hammer, and its tiny brain is what keeps it safe. So which animal do you think hits even harder than a woodpecker?",
     "voice_engine": "chatterbox",
     "countdown": false,
@@ -6531,7 +6533,9 @@
     "question": "So which animal do you think hits even harder than a woodpecker?",
     "video_id": "qDNTbjoAdVo",
     "publish_at": "2026-12-04T19:00:00-05:00",
-    "thumbnail_set": true
+    "thumbnail_set": true,
+    "replaced_reason": "new hook line (council 28 Nov)",
+    "old_publish_at": "2026-12-05T00:00:00Z"
   },
   {
     "job": "hero_gecko_glass",
@@ -6586,7 +6590,7 @@
     "old_publish_at": "2026-12-07T00:00:00Z"
   },
   {
-    "job": "hero_leidenfrost",
+    "job": "hero_leidenfrost_replaced",
     "topic": "Why Water Dances On A Very Hot Pan 💧",
     "title": "Why Water Dances On A Very Hot Pan 💧",
     "description": "Flick water on a pan that's hot enough and it doesn't sizzle away. It skates around on a cushion of its own steam. #shorts #science #physics #kitchen\n\nSources: Quéré 2013, Annual Review of Fluid Mechanics 45:197 (Leidenfrost dynamics); Biance, Clanet & Quéré 2003, Physics of Fluids 15:1632; Lagubeau et al., APS Division of Fluid Dynamics 2008.\n3D: every model built from scratch in Blender (procedural; no stock models or footage).\n\nHow this was made: the script is researched and fact-checked against published research (sources above), narrated by an AI voice, and animated and edited with open-source software.",
@@ -6599,7 +6603,7 @@
       "3D animation"
     ],
     "hook": "Flick water on a warm pan and it sizzles away. Make the pan much hotter, and the drops start to dance.",
-    "status": "scheduled",
+    "status": "replaced",
     "narration": "Flick water on a warm pan and it sizzles away. Make the pan much hotter, and the drops start to dance. You'd think a hotter pan would boil them away faster. It doesn't. Above about a hundred eighty degrees Celsius, the bottom of the drop turns to steam instantly. That steam lifts the drop off the metal, on a layer about as thin as a human hair. With nothing touching, the drop skates around almost without friction. And steam is bad at carrying heat, so the floating drop boils away much more slowly. It's called the Leidenfrost effect, and scientists still study how these drops move. On a hot enough pan, water doesn't touch the metal. It floats on its own steam, so it lasts longer. So why does a cooler pan make the water vanish faster?",
     "voice_engine": "chatterbox",
     "countdown": false,
@@ -6607,7 +6611,9 @@
     "question": "So why does a cooler pan make the water vanish faster?",
     "video_id": "Pds83Os6Lj8",
     "publish_at": "2026-12-07T19:00:00-05:00",
-    "thumbnail_set": true
+    "thumbnail_set": true,
+    "replaced_reason": "new hook line + cold open (council 28 Nov)",
+    "old_publish_at": "2026-12-08T00:00:00Z"
   },
   {
     "job": "hero_book_atp_replaced",
@@ -6886,6 +6892,79 @@
     "question": "So why do some kernels never pop at all?",
     "video_id": "P8LJAJk5v2w",
     "publish_at": "2026-12-06T19:00:00-05:00",
+    "thumbnail_set": true
+  },
+  {
+    "job": "hero_mosquito_magnets",
+    "topic": "Why Mosquitoes Bite You More Than Your Friends 🦟",
+    "title": "Why Mosquitoes Bite You More Than Your Friends 🦟",
+    "description": "Some people really are mosquito magnets, and it's not sweet blood. A 2022 study traced it to acids made from the oil on their skin. #shorts #science #biology #mosquito\n\nSources: De Obaldia et al. 2022, Cell 185:4099-4116 (skin carboxylic acids and mosquito attraction), open access via Europe PMC PMC10069481.\n3D: every model built from scratch in Blender (procedural; no stock models or footage).\n\nHow this was made: the script is researched and fact-checked against published research (sources above), narrated by an AI voice, and animated and edited with open-source software.",
+    "tags": [
+      "mosquito",
+      "mosquito bites",
+      "mosquito magnet",
+      "biology",
+      "science",
+      "3D animation"
+    ],
+    "hook": "Some people really are mosquito magnets. And it has nothing to do with sweet blood.",
+    "status": "scheduled",
+    "narration": "Some people really are mosquito magnets. And it has nothing to do with sweet blood. In one study, volunteers wore nylon sleeves on their arms for six hours. Then mosquitoes were given a choice between two people's sleeves. One volunteer scored over a hundred times more attractive than the least attractive ones. And for years, the same people kept winning. The difference was on their skin: more of the acids made from skin oil. Even mosquitoes bred without key smell sensors could still pick out the magnets. And blood type? The evidence for it is mixed. So mosquitoes don't choose sweet blood. They follow the smell of acids made from the oil on your skin. So who in your family gets bitten the most?",
+    "voice_engine": "chatterbox",
+    "countdown": false,
+    "hero_3d": true,
+    "question": "So who in your family gets bitten the most?",
+    "video_id": "JdyaALqatdA",
+    "publish_at": "2026-12-03T19:00:00-05:00",
+    "thumbnail_set": true
+  },
+  {
+    "job": "hero_leidenfrost",
+    "topic": "Why Water Dances On A Very Hot Pan 💧",
+    "title": "Why Water Dances On A Very Hot Pan 💧",
+    "description": "Flick water on a pan that's hot enough and it doesn't sizzle away. It skates around on a cushion of its own steam. #shorts #science #physics #kitchen\n\nSources: Quéré 2013, Annual Review of Fluid Mechanics 45:197 (Leidenfrost dynamics); Biance, Clanet & Quéré 2003, Physics of Fluids 15:1632; Lagubeau et al., APS Division of Fluid Dynamics 2008.\n3D: every model built from scratch in Blender (procedural; no stock models or footage).\n\nHow this was made: the script is researched and fact-checked against published research (sources above), narrated by an AI voice, and animated and edited with open-source software.",
+    "tags": [
+      "Leidenfrost effect",
+      "water on hot pan",
+      "physics",
+      "kitchen science",
+      "science",
+      "3D animation"
+    ],
+    "hook": "A hotter pan makes water drops last longer. They float on their own steam.",
+    "status": "scheduled",
+    "narration": "A hotter pan makes water drops last longer. They float on their own steam. You'd think a hotter pan would boil them away faster. It doesn't. Above about a hundred eighty degrees Celsius, the bottom of the drop turns to steam instantly. That steam lifts the drop off the metal, on a layer about as thin as a human hair. With nothing touching, the drop skates around almost without friction. And steam is bad at carrying heat, so the floating drop boils away much more slowly. It's called the Leidenfrost effect, and scientists still study how these drops move. On a hot enough pan, water doesn't touch the metal. It floats on its own steam, so it lasts longer. So why does a cooler pan make the water vanish faster?",
+    "voice_engine": "chatterbox",
+    "countdown": false,
+    "hero_3d": true,
+    "question": "So why does a cooler pan make the water vanish faster?",
+    "video_id": "0vj3HkmzJdU",
+    "publish_at": "2026-12-07T19:00:00-05:00",
+    "thumbnail_set": true
+  },
+  {
+    "job": "hero_woodpecker",
+    "topic": "A Woodpecker's Skull Is NOT a Shock Absorber 🪶",
+    "title": "A Woodpecker's Skull Is NOT a Shock Absorber 🪶",
+    "description": "For decades we were told woodpecker skulls absorb shock. High-speed video says the opposite: the head is a stiff hammer, and a small brain keeps it safe. #shorts #science #birds #woodpecker\n\nSources: Van Wassenbergh et al. 2022, Current Biology 32:3189-3194, doi 10.1016/j.cub.2022.05.052 (woodpeckers minimize cranial absorption of shocks).\n3D: every model built from scratch in Blender (procedural; no stock models or footage).\n\nHow this was made: the script is researched and fact-checked against published research (sources above), narrated by an AI voice, and animated and edited with open-source software.",
+    "tags": [
+      "woodpecker",
+      "woodpecker skull",
+      "birds",
+      "biology",
+      "physics",
+      "science",
+      "3D animation"
+    ],
+    "hook": "A woodpecker's skull isn't a crash helmet. It's a stiff hammer.",
+    "status": "scheduled",
+    "narration": "A woodpecker's skull isn't a crash helmet. It's a stiff hammer. Scientists filmed three kinds of woodpecker with high-speed cameras, and tracked the beak and the head on every hit. If the skull cushioned the blow, the head would keep moving after the beak stopped. It doesn't. They stop together. That's a stiff hammer. A cushion would soak up the energy and make every peck weaker. So what protects the brain? Its size. A small brain feels far less pressure than a big one in the same hit. Their models show a woodpecker would need to hit about twice as fast before getting near concussion levels. So helmets inspired by the woodpecker cushion idea took the wrong lesson from them. A woodpecker's skull isn't a cushion. It's a stiff hammer, and its tiny brain is what keeps it safe. So which animal do you think hits even harder than a woodpecker?",
+    "voice_engine": "chatterbox",
+    "countdown": false,
+    "hero_3d": true,
+    "question": "So which animal do you think hits even harder than a woodpecker?",
+    "video_id": "9KtJpLjn02A",
+    "publish_at": "2026-12-04T19:00:00-05:00",
     "thumbnail_set": true
   }
 ]

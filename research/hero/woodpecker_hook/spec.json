@@ -1,0 +1,125 @@
+{
+  "assets_dir": "assets/3d",
+  "renderer": "micro",
+  "end_beat_s": 0.6,
+  "shots": [
+    {
+      "kind": "wp_peck",
+      "overlay": "label",
+      "label": [
+        "NOT A SHOCK ABSORBER",
+        "despite what we were told"
+      ],
+      "rate": 1.6,
+      "seconds": 3.212,
+      "render_seconds": 5.354,
+      "event_seconds": 3.212
+    },
+    {
+      "kind": "wp_peck",
+      "overlay": "label",
+      "label": [
+        "HIGH-SPEED FILM",
+        "3 species, every hit tracked"
+      ],
+      "markers": true,
+      "rate": 1.2,
+      "seconds": 5.234,
+      "render_seconds": 6.84,
+      "event_seconds": 5.234,
+      "src": 1
+    },
+    {
+      "kind": "wp_xray",
+      "overlay": "label",
+      "label": [
+        "TOP: A CUSHION",
+        "BOTTOM: THE REAL BIRD"
+      ],
+      "ghost": true,
+      "rate": 1.0,
+      "seconds": 5.32,
+      "render_seconds": 7.507,
+      "event_seconds": 5.32,
+      "src": 2
+    },
+    {
+      "kind": "wp_xray",
+      "overlay": "label",
+      "label": [
+        "A STIFF HAMMER",
+        "beak and head stop together"
+      ],
+      "rate": 1.2,
+      "seconds": 4.185,
+      "render_seconds": 5.504,
+      "event_seconds": 4.185,
+      "src": 3
+    },
+    {
+      "kind": "wp_brains",
+      "overlay": "label",
+      "label": [
+        "SAME HIT",
+        "woodpecker brain vs human brain"
+      ],
+      "seconds": 5.763,
+      "render_seconds": 7.051,
+      "event_seconds": 5.763,
+      "src": 4
+    },
+    {
+      "kind": "wp_peck",
+      "overlay": "label",
+      "label": [
+        "2x FASTER",
+        "to get near concussion levels"
+      ],
+      "rate": 3.0,
+      "markers": true,
+      "source": "Van Wassenbergh et al. 2022, Current Biology 32:3189",
+      "seconds": 4.48,
+      "render_seconds": 6.777,
+      "event_seconds": 4.48,
+      "src": 5
+    },
+    {
+      "kind": "wp_peck",
+      "overlay": "label",
+      "label": [
+        "WOODPECKER HELMETS?",
+        "the wrong lesson"
+      ],
+      "wide": true,
+      "rate": 1.6,
+      "seconds": 4.041,
+      "render_seconds": 5.245,
+      "event_seconds": 4.041,
+      "src": 6
+    },
+    {
+      "kind": "wp_xray",
+      "overlay": "label",
+      "label": [
+        "NOT A CUSHION",
+        "a stiff hammer"
+      ],
+      "orbit": true,
+      "rate": 1.2,
+      "seconds": 4.826,
+      "render_seconds": 6.79,
+      "event_seconds": 4.826,
+      "src": 7
+    },
+    {
+      "kind": "wp_peck",
+      "overlay": "none",
+      "wide": true,
+      "rate": 1.6,
+      "seconds": 3.8,
+      "render_seconds": 5.749,
+      "event_seconds": 3.8,
+      "src": 8
+    }
+  ]
+}

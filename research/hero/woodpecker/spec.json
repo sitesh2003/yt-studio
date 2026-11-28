@@ -11,9 +11,9 @@
         "despite what we were told"
       ],
       "rate": 1.6,
-      "seconds": 3.791,
-      "render_seconds": 5.132,
-      "event_seconds": 3.791
+      "seconds": 3.212,
+      "render_seconds": 5.354,
+      "event_seconds": 3.212
     },
     {
       "kind": "wp_peck",
@@ -88,7 +88,7 @@
       "wide": true,
       "rate": 1.6,
       "seconds": 4.041,
-      "render_seconds": 5.246,
+      "render_seconds": 5.245,
       "event_seconds": 4.041
     },
     {

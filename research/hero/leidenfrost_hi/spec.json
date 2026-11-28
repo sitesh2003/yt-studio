@@ -4,16 +4,16 @@
   "end_beat_s": 0.6,
   "shots": [
     {
-      "kind": "lf_pan",
+      "kind": "lf_cut",
       "overlay": "label",
       "label": [
         "WATER THAT DANCES",
         "on a very hot pan"
       ],
-      "hot": true,
-      "seconds": 6.812,
-      "render_seconds": 6.912,
-      "event_seconds": 5.727
+      "seconds": 5.482,
+      "render_seconds": 5.582,
+      "event_seconds": 2.195,
+      "hook_of": 2
     },
     {
       "kind": "lf_compare",
@@ -24,7 +24,7 @@
       ],
       "seconds": 5.223,
       "render_seconds": 5.323,
-      "event_seconds": 3.432
+      "event_seconds": 3.023
     },
     {
       "kind": "lf_cut",
@@ -47,7 +47,7 @@
       ],
       "seconds": 4.59,
       "render_seconds": 4.69,
-      "event_seconds": 4.217
+      "event_seconds": 3.861
     },
     {
       "kind": "lf_pan",
@@ -70,7 +70,7 @@
       ],
       "seconds": 4.937,
       "render_seconds": 5.037,
-      "event_seconds": 3.922
+      "event_seconds": 3.857
     },
     {
       "kind": "lf_pan",
@@ -100,7 +100,7 @@
       "overlay": "none",
       "hot": false,
       "seconds": 4.098,
-      "render_seconds": 4.24,
+      "render_seconds": 4.3,
       "event_seconds": 4.098
     }
   ],

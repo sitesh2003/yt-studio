@@ -1,0 +1,115 @@
+{
+  "assets_dir": "assets/3d",
+  "renderer": "micro",
+  "end_beat_s": 0.6,
+  "shots": [
+    {
+      "kind": "lf_cut",
+      "overlay": "label",
+      "label": [
+        "WATER THAT DANCES",
+        "on a very hot pan"
+      ],
+      "seconds": 3.66,
+      "render_seconds": 5.582,
+      "event_seconds": 2.195,
+      "hook_of": 2
+    },
+    {
+      "kind": "lf_compare",
+      "overlay": "label",
+      "label": [
+        "HOTTER = FASTER?",
+        "front: warm pan  back: hot pan"
+      ],
+      "seconds": 3.432,
+      "render_seconds": 5.323,
+      "event_seconds": 3.023,
+      "src": 1
+    },
+    {
+      "kind": "lf_cut",
+      "overlay": "label",
+      "label": [
+        "ABOVE ~180 °C",
+        "the bottom turns to steam"
+      ],
+      "source": "Quéré 2013, Annual Review of Fluid Mechanics 45:197",
+      "seconds": 4.252,
+      "render_seconds": 5.898,
+      "event_seconds": 4.252,
+      "src": 2
+    },
+    {
+      "kind": "lf_cut",
+      "overlay": "label",
+      "label": [
+        "A FILM OF STEAM",
+        "about 50 micrometres thick"
+      ],
+      "seconds": 4.217,
+      "render_seconds": 4.69,
+      "event_seconds": 3.861,
+      "src": 3
+    },
+    {
+      "kind": "lf_pan",
+      "overlay": "label",
+      "label": [
+        "ALMOST NO FRICTION",
+        "nothing touches the metal"
+      ],
+      "hot": true,
+      "seconds": 3.379,
+      "render_seconds": 4.17,
+      "event_seconds": 3.379,
+      "src": 4
+    },
+    {
+      "kind": "lf_compare",
+      "overlay": "label",
+      "label": [
+        "STEAM INSULATES",
+        "the floating drop lasts longer"
+      ],
+      "seconds": 3.922,
+      "render_seconds": 5.037,
+      "event_seconds": 3.857,
+      "src": 5
+    },
+    {
+      "kind": "lf_pan",
+      "overlay": "label",
+      "label": [
+        "THE LEIDENFROST EFFECT",
+        "still being studied"
+      ],
+      "hot": true,
+      "seconds": 3.854,
+      "render_seconds": 5.539,
+      "event_seconds": 3.854,
+      "src": 6
+    },
+    {
+      "kind": "lf_cut",
+      "overlay": "label",
+      "label": [
+        "NOT TOUCHING THE METAL",
+        "floating on its own steam"
+      ],
+      "seconds": 4.927,
+      "render_seconds": 6.721,
+      "event_seconds": 4.927,
+      "src": 7
+    },
+    {
+      "kind": "lf_pan",
+      "overlay": "none",
+      "hot": false,
+      "seconds": 4.14,
+      "render_seconds": 4.3,
+      "event_seconds": 4.098,
+      "src": 8
+    }
+  ]
+}

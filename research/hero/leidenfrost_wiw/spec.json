@@ -4,16 +4,16 @@
   "end_beat_s": 0.6,
   "shots": [
     {
-      "kind": "lf_pan",
+      "kind": "lf_cut",
       "overlay": "label",
       "label": [
         "HOTTER PAN, LONGER DROP",
         "sounds backwards"
       ],
-      "hot": true,
-      "seconds": 5.464,
-      "render_seconds": 6.912,
-      "event_seconds": 5.727
+      "seconds": 2.195,
+      "render_seconds": 5.582,
+      "event_seconds": 2.195,
+      "hook_of": 2
     },
     {
       "kind": "lf_compare",
@@ -24,16 +24,16 @@
       ],
       "seconds": 3.023,
       "render_seconds": 5.323,
-      "event_seconds": 3.432
+      "event_seconds": 3.023
     },
     {
       "kind": "lf_cut",
       "overlay": "label",
       "label": [
-        "ABOVE ~180 \u00b0C",
+        "ABOVE ~180 °C",
         "instant vaporisation"
       ],
-      "source": "Qu\u00e9r\u00e9 2013, Annual Review of Fluid Mechanics 45:197",
+      "source": "Quéré 2013, Annual Review of Fluid Mechanics 45:197",
       "seconds": 4.477,
       "render_seconds": 5.898,
       "event_seconds": 4.252
@@ -47,7 +47,7 @@
       ],
       "seconds": 3.861,
       "render_seconds": 4.69,
-      "event_seconds": 4.217
+      "event_seconds": 3.861
     },
     {
       "kind": "lf_pan",
@@ -70,7 +70,7 @@
       ],
       "seconds": 3.857,
       "render_seconds": 5.037,
-      "event_seconds": 3.922
+      "event_seconds": 3.857
     },
     {
       "kind": "lf_pan",
@@ -80,7 +80,7 @@
         "slower evaporation"
       ],
       "hot": true,
-      "seconds": 5.679,
+      "seconds": 5.313,
       "render_seconds": 5.539,
       "event_seconds": 3.854
     },
@@ -100,7 +100,7 @@
       "overlay": "none",
       "hot": false,
       "seconds": 4.2,
-      "render_seconds": 4.24,
+      "render_seconds": 4.3,
       "event_seconds": 4.098
     }
   ]

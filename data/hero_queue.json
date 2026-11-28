@@ -280,7 +280,7 @@
       "status": "uploaded",
       "planned_at": "2026-12-03T19:00:00-05:00",
       "topic": "mosquito_magnets",
-      "video_id": "GBBGYhCOxVY",
+      "video_id": "JdyaALqatdA",
       "public_at": "2026-12-03T19:00:00-05:00"
     },
     {
@@ -290,7 +290,7 @@
       "status": "uploaded",
       "planned_at": "2026-12-02T02:30:00-05:00",
       "topic": "mosquito_magnets",
-      "video_id": "flsbFJ-Bf9I",
+      "video_id": "fRAb53Ui1ZE",
       "public_at": "2026-12-02T02:30:00-05:00"
     },
     {
@@ -300,7 +300,7 @@
       "status": "uploaded",
       "planned_at": "2026-12-04T19:00:00-05:00",
       "topic": "woodpecker",
-      "video_id": "qDNTbjoAdVo",
+      "video_id": "9KtJpLjn02A",
       "public_at": "2026-12-04T19:00:00-05:00"
     },
     {
@@ -310,7 +310,7 @@
       "status": "uploaded",
       "planned_at": "2026-12-03T02:30:00-05:00",
       "topic": "woodpecker",
-      "video_id": "86bmhY_rtj0",
+      "video_id": "91JakAmVm_g",
       "public_at": "2026-12-03T02:30:00-05:00"
     },
     {
@@ -370,7 +370,7 @@
       "status": "uploaded",
       "planned_at": "2026-12-07T19:00:00-05:00",
       "topic": "leidenfrost",
-      "video_id": "Pds83Os6Lj8",
+      "video_id": "0vj3HkmzJdU",
       "public_at": "2026-12-07T19:00:00-05:00"
     },
     {
@@ -380,7 +380,7 @@
       "status": "uploaded",
       "planned_at": "2026-12-06T02:30:00-05:00",
       "topic": "leidenfrost",
-      "video_id": "K3t1ewVDp5M",
+      "video_id": "AicrRep2WS4",
       "public_at": "2026-12-06T02:30:00-05:00"
     },
     {
@@ -390,7 +390,7 @@
       "status": "uploaded",
       "planned_at": "2026-12-09T16:30:00-05:00",
       "topic": "leidenfrost",
-      "video_id": "QzFcyiIrlKk",
+      "video_id": "yjMxV2QaWac",
       "public_at": "2026-12-09T16:30:00-05:00"
     },
     {
@@ -497,8 +497,10 @@
       "name": "wiw_atp",
       "channel": "wiw",
       "title": "The Physics Of The Smallest Motor Inside You ⚡",
-      "status": "making",
-      "format": "book"
+      "status": "uploaded",
+      "format": "book",
+      "video_id": "qfNSmjoUJyc",
+      "public_at": "2026-12-04T16:30:00-05:00"
     },
     {
       "name": "book_everyday",
@@ -513,6 +515,11 @@
       "title": "6 रोज़मर्रा की बातें, जो लगभग सब गलत समझते हैं",
       "status": "making",
       "format": "book"
+    },
+    {
+      "name": "hooks_28nov",
+      "status": "done",
+      "note": "cold-open hooks re-uploaded in the same slots: chilli, mosquito, woodpecker (new line), popcorn (+wiw), leidenfrost (new line, +wiw); gecko kept"
     }
   ]
 }
