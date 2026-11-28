@@ -1,21 +1,18 @@
 {
   "lessons": [
-    "Start with vivid, relatable visual comparisons (e.g., cars stacked on teeth or baby size like a small dog) to secure high 10% retention (1.02 to 1.05+).",
-    "Avoid immediate repetition or redundant restatements of the hook within the primary drop windows (around 10-25% progress), as this triggers high drop-off rates.",
-    "Do not include countdowns or slow, overly complex theoretical explanations mid-video, as data shows significant viewer loss during dense exposition phases.",
-    "Keep early exposition concise and grounded in direct narrative progression; prolonged setup around 12% to 25% consistently results in double-digit audience loss.",
-    "Sustain high comparative performance at the end by delivering high-stakes reveals or payoff questions before the 50% mark, driving better relative retention versus benchmark videos."
+    "Keep hooks under 15 words and present a surprising, counter-intuitive premise immediately to secure 1.0+ retention at 10%",
+    "Avoid starting with direct repetition of video titles or excessively long introductory context, which causes early drop-offs around the 11-13% mark",
+    "Eliminate mid-video narrative stagnation and redundant descriptive padding; data shows sharpest viewer drop-offs occur at points of dense, repetitive explanatory lines",
+    "Structure scripts to maintain high pacing through the 50% mark, as videos with stronger mid-point retention (like the T. rex running and vision tests at 0.49 and 0.41) perform better overall"
   ],
   "worst_moment_types": [
-    "Dense scientific explanations or heavy technical detailing (e.g., bone-by-bone computer reconstructions, exact newton force metrics) without immediate payoff",
-    "Repeated phrasing or cyclical explanations that re-state the hook premise instead of advancing the narrative",
-    "Mid-video transition zones (12% to 30% mark) where pacing slows down before delivering the core conflict or answer"
+    "Dense, repetitive explanatory text blocks that slow down the narrative flow",
+    "Over-explaining basic mechanics immediately after the hook instead of moving to the core revelation"
   ],
   "best_hook_types": [
-    "Extreme hypothetical scenarios involving everyday objects (e.g., T. rex speed compared to a car, car crash physics)",
-    "Direct personal framing ('Imagine you are a baby T. rex...') that instantly places the viewer in the narrative",
-    "Challenging common pop-culture myths right at the opening sentence"
+    "Direct comparative thought experiments featuring relatable objects (cars, body parts)",
+    "Challenging deeply ingrained pop-culture assumptions right at the start"
   ],
   "studied": "2026-11-28",
-  "videos": 5
+  "videos": 6
 }

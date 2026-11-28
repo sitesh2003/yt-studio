@@ -1,14 +1,14 @@
 {
-  "summary": "1. Prioritize high-retention physics, automotive crash safety, and dinosaur mechanics topics over abstract historical or academic science.\n2. Ensure the hook starts immediately with a counter-intuitive statement or vivid imagery (e.g., comparing a car crash to survival or putting cars on teeth) rather than a descriptive question.\n3. Design titles and hooks using direct, conversational Hinglish or Hindi that challenge common movie myths or everyday assumptions.\n4. Maintain high initial engagement by avoiding overly technical jargon or dry scientific framing in the first three seconds.\n5. Keep video structures optimized for the feed test by ensuring the first sentence commands immediate visual and mental validation.",
+  "summary": "1. Prioritize Hindi scripts and native Devanagari titles as they consistently dominate both view counts (1,300+ views) and retention (66%+ stayed_pct). \n2. Open with the exact word 'सोचो' (Imagine) or pose a direct, counter-intuitive premise in the first sentence to bypass the initial swipe filter. \n3. Frame hooks around relatable physical comparisons (cars, dogs, everyday objects) rather than abstract scientific descriptions. \n4. Maintain concise narrative setups; avoid long explanatory preamble that drops stayed_pct below 40%. \n5. Target everyday curiosity traps like car mechanics, rain physics, and popular dinosaur misconceptions.",
   "winning_hooks": [
     "जो car crash में पिचक जाती है, वो तुम्हें ज़्यादा बचाती है।",
     "सोचो, तुम्हारे दांतों पर 3 छोटी cars एक के ऊपर एक रख दी जाएं। इतने ज़ोर से T. rex काटता था।",
-    "Movies में T. rex गाड़ी का पीछा करता है। पर असली T. rex शायद दौड़ ही नहीं सकता था।"
+    "बारिश में गीली सड़क पर, तुम्हारी गाड़ी को रुकने के लिए कम से कम दोगुनी दूरी चाहिए।"
   ],
   "avoid": [
-    "Starting hooks with dry scientific definitions or long-winded setup questions like 'डायनासोर के जीवाश्मों में वैज्ञानिकों को...'.",
-    "Using English-heavy Latin script transliteration mixed awkwardly with Hindi that dampens natural spoken flow.",
-    "Framing topics around vague or low-stakes everyday curiosities (like leftover food or standard runway physics) that fail the initial swipe test."
+    "English language titles and Hinglish transliterated hooks for mass-reach topics, as they suffer from terrible initial retention (dropping as low as 6.7% stayed_pct).",
+    "Academic or descriptive opening sentences like 'वैज्ञानिकों को ऐसी सूक्ष्म आकृतियां क्यों मिली हैं' which immediately trigger viewer swipe fatigue.",
+    "Complex multi-clause introductions that delay the core conflict or value proposition past the 2-second mark."
   ],
-  "next_experiment": "Test an A/B split on a new car safety topic: Video A starts with a bold counter-intuitive hook ('Slow speed car crashes are more dangerous than you think'), and Video B starts with a direct question ('क्या धीमी गति का कार क्रश जानलेवा हो सकता है?'), measuring which achieves a higher stayed_pct past the 60% threshold."
+  "next_experiment": "A/B test a newly formatted dinosaur topic: Video A uses the proven 'सोचो [Scenario]' hook structure in pure Hindi, while Video B uses a direct question hook ('क्या आप जानते हैं...') to see which format pushes stayed_pct above the 67% ceiling."
 }
