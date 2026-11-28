@@ -1,14 +1,22 @@
 {
-  "summary": "1. High-stayed hooks (52–60%) jump straight into an immediate counter-intuitive statement or a second-person scenario in the first sentence without introductory fluff. 2. Low-stayed hooks (24–36%) fail by using passive background context or broad multi-clause setups before getting to the main point. 3. Top-performing titles pair recognizable real-world objects (cars, T. rex, eyes) with concrete numbers or questions rather than generic scientific discoveries. 4. Visual scale and immediate real-world comparisons (e.g., 'stacked like three small cars', 'no bigger than a small dog') drive view retention over abstract descriptions. 5. Shorter, punchier opening sentences under 12 words correlate directly with stayed_pct above 50%.",
+  "summary": [
+    "High-stayed hooks (>50% stayed_pct) deliver a sharp, counter-intuitive fact or second-person premise within the first 10 words (e.g., 'A car that folds up... keeps you safer').",
+    "Low-stayed videos (<40% stayed_pct) fail early because hooks use slow background setup or vague intro statements ('Pluto seemed like...', 'Most images hold secrets...').",
+    "Winning topics focus on visceral car physics, extreme T. rex mechanics, or hidden body quirks, whereas niche engineering details (guardrail boxes) and abstract astronomy stall early.",
+    "High-stayed titles frame direct visual comparisons or clear cause-and-effect questions with relevant emojis ('Why Double Speed Means 4x Braking Distance 🚗').",
+    "To break the 1,200-view ceiling, videos must achieve >50% stayed_pct by replacing scenario-building text with immediate, high-contrast visual statements."
+  ],
   "winning_hooks": [
-    "State an immediate counter-intuitive safety/physics rule in sentence one (e.g., 'A car that folds up in a crash keeps you safer than one that doesn't.').",
-    "Use second-person present tense with direct sensory stakes (e.g., 'Your eyes are leaking right now, and your brain is hiding it.').",
-    "Bust a popular myth in under ten words (e.g., 'The real T. rex probably couldn't run. Not even a jog.')."
+    "Direct second-person callouts: 'Your eyes are leaking right now, and your brain is hiding it.' (52.0% stayed)",
+    "Immediate counter-intuitive rule: 'A car that folds up in a crash keeps you safer than one that doesn't.' (59.6% stayed)",
+    "Instant myth-busting statement: 'The real T. rex probably couldn't run. Not even a jog.' (52.4% stayed)",
+    "Extreme scale comparison: 'Drive twice as fast, and your car needs four times as far to stop.' (55.4% stayed)"
   ],
   "avoid": [
-    "Contextual preamble and setup sentences before reaching the payload (e.g., 'Pluto seemed like our solar system's edge, yet astronomers...').",
-    "Generic introductory clauses that waste the first 2 seconds (e.g., 'Fossilized bones can last millions of years, but sometimes...').",
-    "Abstract institutional title framing like 'Why Scientists Missed...' instead of direct topic action."
+    "Vague context-setting statements: 'Most James Webb images hold secrets.' (30.2% stayed)",
+    "Hypotheticals that set up a scenario before reaching the point: 'Your car swerves off the highway right toward...' (30.4% stayed)",
+    "Textbook background preamble: 'Pluto seemed like our solar system's edge, yet astronomers are investigating...' (44.3% stayed)",
+    "Passive observation statements: 'Your frozen pond is secretly keeping fish alive.' (24.2% stayed)"
   ],
-  "next_experiment": "Test direct second-person roleplay hook vs third-person statement hook on identical script topics (e.g., 'You are swallowing a cup of seawater every time you swim' vs 'Swimmers swallow an average of one cup of seawater per hour')."
+  "next_experiment": "A/B test the same topic (e.g., 'Why airplane windows have tiny holes') using Hook A (Scenario Setup: 'Imagine flying at 30,000 feet and looking at a tiny hole in your window') vs Hook B (Immediate Contrast Statement: 'That tiny hole in your airplane window is the only thing keeping the glass from shattering'). Measure stayed_pct baseline against the 50% feed threshold."
 }

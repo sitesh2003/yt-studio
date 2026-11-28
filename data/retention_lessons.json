@@ -1,22 +1,19 @@
 {
   "lessons": [
-    "Never repeat the hook or title question in the first sentence: repeating the prompt in videos like 'Potatoes Sprout' and 'Garlic' caused immediate drops of 31.9% and 34.0% at the 10% mark.",
-    "Cut filler transition lines that state the obvious: generic setup sentences like 'They look like similar fruits' ('Fruits Float') and 'They are not just there to look cool' ('Car Windshields') lost over 30% of viewers in the first seconds.",
-    "Avoid pause-and-guess prompts or countdowns: interrupting the narrative flow with 'Pause and guess... three, two, one' led to significant drop-offs (e.g., 15.2% drop at 37% in the Foil video).",
-    "Anchor hooks in extreme scale or surprising contrasts: videos comparing unexpected facts ('older than the United States', 'tuna is red meat, cod is white') achieved the highest end retention (45% to 108%).",
-    "Use direct second-person roleplay to frame explanations: immersive scenarios ('You're a baby tyrannosaur') held viewer retention well above channel average throughout the video."
+    "Start with striking comparative anchors or bold historic/scale facts ('older than the United States', 'tuna vs cod look like different animals') to push initial retention above 1.2-1.8.",
+    "Eliminate filler setup lines and stating the obvious (e.g., 'They look like similar fruits' or 'They are not just there to look cool'); these cause massive immediate drops between 28% and 33%.",
+    "Avoid middle-of-video pauses and explicit countdown prompts (e.g., 'Pause and guess... three, two, one'), as they create predictable drop-offs rather than engagement.",
+    "Frame scientific explanations around active visual contrast rather than abstract mental exercises ('think about what happens when...'), which severely hurt mid-to-end retention."
   ],
   "worst_moment_types": [
-    "Immediate repetition or rephrasing of the video's hook line",
-    "Generic filler lines stating common knowledge or obvious facts",
-    "Interactive friction points like 'Pause and guess' prompts or countdowns",
-    "Dense technical jargon introduced before establishing the main payoff"
+    "Obvious statements and filler commentary ('They are not just there to look cool', 'They look like similar fruits').",
+    "Mid-script interactive pauses and countdowns ('Pause and guess... three, two, one').",
+    "Abstract thought prompts and passive rhetorical setups ('Now think about what happens when...')."
   ],
   "best_hook_types": [
-    "Bold comparison anchored in historical or physical scale ('older than the United States')",
-    "Striking visual paradox or contrast ('tuna meat is red, cod is white')",
-    "Intriguing secret or paradigm shift ('Most James Webb images hold secrets', solar system edge extension)",
-    "Direct second-person scenario framing ('You're a baby tyrannosaur...')"
+    "Extreme comparative anchors comparing subject to surprising benchmarks ('older than the United States').",
+    "Direct sensory/visual paradoxes between two familiar objects ('bluefin tuna and cod look like two completely different animals').",
+    "Subversion of widespread scientific assumptions ('Pluto seemed like our edge, yet Kuiper Belt extends much further')."
   ],
   "studied": "2026-11-28",
   "videos": 25

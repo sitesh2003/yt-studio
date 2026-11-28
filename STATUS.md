@@ -1,9 +1,9 @@
 # Ever Thought Why? - status
 
-Updated Sat 28 Nov, 07:38 PM IST by the health agent (every 2 hours, and after every production run).
+Updated Sat 28 Nov, 09:42 PM IST by the health agent (every 2 hours, and after every production run).
 
-- Video bank: 25 of 14 videos ready (10 waiting in the bank, 15 scheduled on YouTube); YouTube schedule covers until Sat 12 Dec, 05:30 AM IST.
-- Next production run: Sun 29 Nov, 03:13 AM IST.
+- Video bank: 26 of 14 videos ready (10 waiting in the bank, 16 scheduled on YouTube); YouTube schedule covers until Sat 12 Dec, 05:30 AM IST.
+- Next production run: Sun 29 Nov, 03:13 AM IST (one is running now).
 
 ## Videos waiting to go public
 
@@ -22,6 +22,7 @@ Updated Sat 28 Nov, 07:38 PM IST by the health agent (every 2 hours, and after e
 | Tue 08 Dec, 05:30 AM IST | Mon 07:00 PM ET |
 | Wed 09 Dec, 05:30 AM IST | Tue 07:00 PM ET |
 | Thu 10 Dec, 05:30 AM IST | Wed 07:00 PM ET |
+| Thu 10 Dec, 09:30 PM IST | Thu 11:00 AM ET |
 | Fri 11 Dec, 05:30 AM IST | Thu 07:00 PM ET |
 | Sat 12 Dec, 05:30 AM IST | Fri 07:00 PM ET |
 
