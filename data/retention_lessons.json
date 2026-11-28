@@ -1,20 +1,22 @@
 {
   "lessons": [
-    "Ground the premise in an extreme contrast, paradox, or massive scale immediately (e.g. 'older than the United States', 'meat looks like two completely different animals', 'Kuiper belt extends much further'); videos with these conceptual extremes achieved the highest retention at 10% (>1.21) and vs_similar_start (>0.53).",
-    "Avoid immediate generic or mechanical explanations right after the hook; 20 out of 25 videos experience their largest drop between 8% and 19% when transitioning into dense exposition (e.g. sap water percentages, plant defense chemistry, cell nodes), losing 20-34% of viewers.",
-    "Do not insert interactive prompts or countdown pauses ('Pause and guess...', 'three, two, one'); countdown and guess lines trigger severe drops (e.g. 8.3% lost at 52% in Maple Syrup, 15.2% lost at 37% in Foil) and countdown videos show no consistent retention advantage over concise continuous narratives.",
-    "Eliminate redundant rephrasing and restatements of the premise; repetitive lines (e.g. Guardrails repeating identical phrasing losing 12.3% at 28%, or Asleep Leg over-explaining circulation losing 9.8% at 26%) cause heavy drop-offs in the 20-35% duration mark.",
-    "Do not save the central visual or dramatic experiment for the end; top-retaining videos like 'Could A T. rex Outrun Your Car?' (kept_at_end: 0.507) and 'James Webb' (kept_at_50pct: 0.754) frame a clear comparative scenario right away rather than generic factual trivia."
+    "Never repeat the hook or title question in the first sentence: repeating the prompt in videos like 'Potatoes Sprout' and 'Garlic' caused immediate drops of 31.9% and 34.0% at the 10% mark.",
+    "Cut filler transition lines that state the obvious: generic setup sentences like 'They look like similar fruits' ('Fruits Float') and 'They are not just there to look cool' ('Car Windshields') lost over 30% of viewers in the first seconds.",
+    "Avoid pause-and-guess prompts or countdowns: interrupting the narrative flow with 'Pause and guess... three, two, one' led to significant drop-offs (e.g., 15.2% drop at 37% in the Foil video).",
+    "Anchor hooks in extreme scale or surprising contrasts: videos comparing unexpected facts ('older than the United States', 'tuna is red meat, cod is white') achieved the highest end retention (45% to 108%).",
+    "Use direct second-person roleplay to frame explanations: immersive scenarios ('You're a baby tyrannosaur') held viewer retention well above channel average throughout the video."
   ],
   "worst_moment_types": [
-    "Immediate technical/chemical exposition lines directly following the hook (e.g., sap water percentage, bromelain enzyme, intracellular gas spaces, node structures).",
-    "Interactive guessing interruptions and countdowns ('Pause and guess...', 'three, two, one').",
-    "Redundant restatements of the opening premise or over-qualifying statements (e.g., repeated vehicle impact lines, dense circulation caveats)."
+    "Immediate repetition or rephrasing of the video's hook line",
+    "Generic filler lines stating common knowledge or obvious facts",
+    "Interactive friction points like 'Pause and guess' prompts or countdowns",
+    "Dense technical jargon introduced before establishing the main payoff"
   ],
   "best_hook_types": [
-    "High-contrast paradoxical comparisons (e.g., 'A bluefin tuna and a cod are both fish, but their meat looks like two completely different animals').",
-    "Extreme historical or scale anchors (e.g., 'This shark is older than the United States').",
-    "Challenging established astronomical or scientific boundaries (e.g., 'Pluto seemed like our solar system's edge, yet astronomers are investigating...')."
+    "Bold comparison anchored in historical or physical scale ('older than the United States')",
+    "Striking visual paradox or contrast ('tuna meat is red, cod is white')",
+    "Intriguing secret or paradigm shift ('Most James Webb images hold secrets', solar system edge extension)",
+    "Direct second-person scenario framing ('You're a baby tyrannosaur...')"
   ],
   "studied": "2026-11-28",
   "videos": 25

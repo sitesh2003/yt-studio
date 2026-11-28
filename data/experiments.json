@@ -10,7 +10,7 @@
       },
       "turn": {
         "videos": 11,
-        "avg_view_pct": 60.9,
+        "avg_view_pct": 61.0,
         "avg_views": 954
       }
     }
@@ -28,7 +28,7 @@
       "standard": {
         "videos": 3,
         "avg_views": 367,
-        "avg_view_pct": 69.9,
+        "avg_view_pct": 70.0,
         "avg_seconds": 35.8
       },
       "long": {

@@ -508,20 +508,20 @@
   "DZJ8Lw4NZhc": {
     "title": "How Hard Could A T. rex Bite? 🦖",
     "hook_line": "One T.",
-    "kept_at_10pct": 1.0759,
-    "kept_at_50pct": 0.33759999999999996,
-    "kept_at_end": 0.1561,
+    "kept_at_10pct": 1.0766,
+    "kept_at_50pct": 0.3404,
+    "kept_at_end": 0.1574,
     "vs_similar_start": 0.36,
     "vs_similar_end": 0.67,
     "biggest_drops": [
       {
         "at": 0.18,
-        "lost": 0.232,
+        "lost": 0.23,
         "line": "Scientists rebuilt its jaw muscles from its closest living relatives, crocodiles and birds."
       },
       {
-        "at": 0.37,
-        "lost": 0.08,
+        "at": 0.36,
+        "lost": 0.081,
         "line": "Their estimate: up to thirty-four thousand five hundred newtons at the back teeth."
       }
     ],

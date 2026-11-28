@@ -1,16 +1,14 @@
 {
-  "summary": "1. Replace academic discovery premises ('Scientists found...') with immediate, concrete paradoxes or counter-intuitive assertions ('A car that folds keeps you safer', 'T. rex couldn't run'). 2. Kill all preamble and subordinate clauses: keep hook sentence 1 under 14 words and deliver the core conflict before second 2. 3. Target visceral, high-affinity topics that pit physical intuition against reality (cars, crashes, T. rex, immediate bodily sensations) rather than passive observational science (astronomy, ponds, infrastructure). 4. Format titles around high-contrast mechanical questions or counter-intuitive rules ('Why Double Speed Means 4x Braking Distance') rather than sensational discovery hype with emojis. 5. Keep target video length strictly between 15–25 seconds; all videos with stayed_pct > 50% peaked within this duration band, while 30+ second scripts suffered swiping drop-off.",
+  "summary": "1. High-stayed hooks (52–60%) jump straight into an immediate counter-intuitive statement or a second-person scenario in the first sentence without introductory fluff. 2. Low-stayed hooks (24–36%) fail by using passive background context or broad multi-clause setups before getting to the main point. 3. Top-performing titles pair recognizable real-world objects (cars, T. rex, eyes) with concrete numbers or questions rather than generic scientific discoveries. 4. Visual scale and immediate real-world comparisons (e.g., 'stacked like three small cars', 'no bigger than a small dog') drive view retention over abstract descriptions. 5. Shorter, punchier opening sentences under 12 words correlate directly with stayed_pct above 50%.",
   "winning_hooks": [
-    "The real T. rex probably couldn't run. Not even a jog. (Immediate myth-busting with an emphatic, short cadence)",
-    "A car that folds up in a crash keeps you safer than one that doesn't. (Instant paradox challenging visual intuition)",
-    "Your eyes are leaking right now, and your brain is hiding it. (Direct 'you' framing tied to an active bodily sensation)",
-    "Drive twice as fast, and your car needs four times as far to stop. (High-contrast, concrete numerical rule delivered in 13 words)"
+    "State an immediate counter-intuitive safety/physics rule in sentence one (e.g., 'A car that folds up in a crash keeps you safer than one that doesn't.').",
+    "Use second-person present tense with direct sensory stakes (e.g., 'Your eyes are leaking right now, and your brain is hiding it.').",
+    "Bust a popular myth in under ten words (e.g., 'The real T. rex probably couldn't run. Not even a jog.')."
   ],
   "avoid": [
-    "Slow narrative preambles and multi-clause setups (e.g., 'Pluto seemed like our solar system's edge, yet astronomers are investigating...')",
-    "Vague, low-stakes claims that state the obvious (e.g., 'Most James Webb images hold secrets')",
-    "Abstract science history or passive research framing ('Scientists just found...', 'Did Scientists Find Real Dinosaur Blood?')",
-    "Niche industrial/infrastructure explainers that lack immediate human stakes (e.g., 'Why Highway Guardrails Have Heavy End Boxes')"
+    "Contextual preamble and setup sentences before reaching the payload (e.g., 'Pluto seemed like our solar system's edge, yet astronomers...').",
+    "Generic introductory clauses that waste the first 2 seconds (e.g., 'Fossilized bones can last millions of years, but sometimes...').",
+    "Abstract institutional title framing like 'Why Scientists Missed...' instead of direct topic action."
   ],
-  "next_experiment": "Test Hook Syntax on the same topic: Take a physics/car topic and A/B test Hook A (Myth-Busting Assertion: 'Braking hard in the rain doesn't stop you faster—it locks your tires.') vs. Hook B (Hypothetical Narrative: 'Imagine you are driving 60 mph on wet asphalt when a deer jumps out.') while holding the script under 20 seconds and tracking stayed_pct differences."
+  "next_experiment": "Test direct second-person roleplay hook vs third-person statement hook on identical script topics (e.g., 'You are swallowing a cup of seawater every time you swim' vs 'Swimmers swallow an average of one cup of seawater per hour')."
 }
