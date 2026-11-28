@@ -1,13 +1,14 @@
 {
-  "summary": "1. Write titles and first lines in Devanagari Hindi script; native script videos average 60%+ stayed rates while English/Romanized titles drop below 38%. 2. Begin immediately with vivid, physical visual metaphors (e.g., '3 cars stacked on your teeth') rather than dry academic questions. 3. Frame hooks around immediate viewer perspective using direct triggers like 'सोचो...' (Imagine...) or bold paradoxical statements. 4. Keep content tightly trimmed under 25 seconds; longer videos (40s+) suffer severe drop-offs and low stayed percentages. 5. Focus topics on pop-culture physics comparisons (T. Rex vs Cars, Crash dynamics) instead of obscure chemistry or engineering facts.",
+  "summary": "1. High-stayed videos (>65% stayed_pct) use Devanagari Hindi text with direct, counter-intuitive statements or vivid visual metaphors (e.g., 'car crash में पिचक जाती है', '3 छोटी cars दांतों पर'). 2. Top-performing hooks directly address the viewer using 'सोचो' (Imagine) or 'तुम' (You) within the first 3 words to instantly anchor attention. 3. Short, tight duration videos (14–17 second average view duration) dramatically outperform 40–50+ second standard-arm videos in reach and stayed percentage. 4. English and Hinglish titling/hooks (e.g., 'Common Household Items...') severely underperform compared to Hindi-script titles containing emojis and clear question/curiosity framing. 5. Videos that stall under 100 views suffer from passive, formal, or textbook-like opening sentences ('डायनासोर के जीवाश्मों में वैज्ञानिकों को...') instead of immediate punchy action.",
   "winning_hooks": [
-    "Direct viewer imagination triggers using 'सोचो...' (Imagine...) paired with everyday object comparisons",
-    "Immediate counter-intuitive facts stated as baseline truths (e.g., 'जो car crash में पिचक जाती है, वो तुम्हें ज़्यादा बचाती है')"
+    "Start with vivid physical visualizer + 'सोचो'/'तुम' (e.g., 'सोचो, तुम्हारे दांतों पर 3 छोटी cars...').",
+    "Use counter-intuitive fact as statement #1 (e.g., 'जो car crash में पिचक जाती है, वो तुम्हें ज़्यादा बचाती है।').",
+    "Keep first sentence under 12 words with zero preamble or channel introductions."
   ],
   "avoid": [
-    "English and Romanized Hinglish script in titles and hooks",
-    "Academic and multi-clause question hooks like 'वैज्ञानिकों को ऐसी सूक्ष्म आकृतियां क्यों मिली हैं...'",
-    "Videos with durations over 40 seconds before fixing initial retention"
+    "Abstract or passive academic phrasing (e.g., 'वैज्ञानिकों को ऐसी सूक्ष्म आकृतियां क्यों मिली हैं...').",
+    "Pure English titles and Hinglish script hooks for technical topics (e.g., 'Common Household Items That Contain...').",
+    "Standard long-form script structures (>40s duration) before mastering initial 15-second retention."
   ],
-  "next_experiment": "A/B test a 20-second Devanagari video: Version A starts with a 'सोचो...' imagination hook vs Version B starting with a 3-second paradoxical fact hook on the exact same T. Rex topic."
+  "next_experiment": "Test Devanagari Hindi titles + 'सोचो' (Imagine) visual hooks vs direct counter-intuitive fact hooks across 5 videos capped under 20 seconds duration."
 }

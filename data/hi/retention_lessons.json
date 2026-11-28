@@ -1,19 +1,18 @@
 {
   "lessons": [
-    "Start with immersive hypothetical scenarios ('सोचो, तुम...') to consistently achieve high early retention (>1.0 at 10%).",
-    "Avoid immediate exposition heavy drops: lines explaining complex mechanical processes or heavy data early cause the steepest drop-offs (e.g., 22.5% loss at 13%).",
-    "Maintain strong comparative performance by avoiding excessive technical jargon or dense anatomical metrics mid-video, as seen in the sharp 50% retention drop for dense T. rex bite-force explanations (down to 0.16).",
-    "Keep pacing brisk past the 50% mark; videos that maintain better relative performance at the end (e.g., 0.49 vs_similar_end) avoid slow narrative plateaus.",
-    "Not enough data to confirm if countdown elements affect retention negatively, as all analyzed videos have 'countdown': false."
+    "Use direct second-person 'Imagine you are...' roleplay hooks (e.g. 'सोचो, तुम...') to maximize initial 10% retention (up to 1.055).",
+    "Avoid dumping heavy scientific stats and technical numbers (e.g., '34,500 newton', detailed anatomy) too early; Video 2 lost 23% at once during dense technical specs.",
+    "Frame science concepts around relatable everyday comparisons (e.g., comparing T. rex weight to 6 cars) to maintain strong 50% retention (49.17% in Video 1).",
+    "Keep hooks concise and scenario-driven rather than trying to explain the core law/mechanism immediately; Video 3 had a 19.1% early drop due to a dense, explanatory hook."
   ],
   "worst_moment_types": [
-    "Heavy technical explanation and data dumps right after the hook",
-    "Complex structural or anatomical breakdowns (e.g., bone-by-bone computer simulation details)"
+    "Dense technical measurements and jargon-heavy scientific lists (e.g. Newton forces, jaw specs).",
+    "Overly explanatory initial hook lines that try to summarize the whole concept upfront instead of building curiosity."
   ],
   "best_hook_types": [
-    "Imaginative, high-stakes hypothetical scenarios involving the viewer ('सोचो, तुम...')",
-    "Challenging common pop-culture assumptions immediately in the opening line"
+    "Second-person roleplay/hypothetical scenarios ('Imagine you are... / सोचो, तुम...')",
+    "Myth-busting question hooks that challenge popular media tropes (e.g., standing still in front of a T. rex)."
   ],
-  "studied": "2026-11-27",
+  "studied": "2026-11-28",
   "videos": 5
 }
