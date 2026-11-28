@@ -1,14 +1,14 @@
 {
-  "summary": "1. High-stayed videos (>65% stayed_pct) use Devanagari Hindi text with direct, counter-intuitive statements or vivid visual metaphors (e.g., 'car crash में पिचक जाती है', '3 छोटी cars दांतों पर'). 2. Top-performing hooks directly address the viewer using 'सोचो' (Imagine) or 'तुम' (You) within the first 3 words to instantly anchor attention. 3. Short, tight duration videos (14–17 second average view duration) dramatically outperform 40–50+ second standard-arm videos in reach and stayed percentage. 4. English and Hinglish titling/hooks (e.g., 'Common Household Items...') severely underperform compared to Hindi-script titles containing emojis and clear question/curiosity framing. 5. Videos that stall under 100 views suffer from passive, formal, or textbook-like opening sentences ('डायनासोर के जीवाश्मों में वैज्ञानिकों को...') instead of immediate punchy action.",
+  "summary": "1. Prioritize high-retention physics, automotive crash safety, and dinosaur mechanics topics over abstract historical or academic science.\n2. Ensure the hook starts immediately with a counter-intuitive statement or vivid imagery (e.g., comparing a car crash to survival or putting cars on teeth) rather than a descriptive question.\n3. Design titles and hooks using direct, conversational Hinglish or Hindi that challenge common movie myths or everyday assumptions.\n4. Maintain high initial engagement by avoiding overly technical jargon or dry scientific framing in the first three seconds.\n5. Keep video structures optimized for the feed test by ensuring the first sentence commands immediate visual and mental validation.",
   "winning_hooks": [
-    "Start with vivid physical visualizer + 'सोचो'/'तुम' (e.g., 'सोचो, तुम्हारे दांतों पर 3 छोटी cars...').",
-    "Use counter-intuitive fact as statement #1 (e.g., 'जो car crash में पिचक जाती है, वो तुम्हें ज़्यादा बचाती है।').",
-    "Keep first sentence under 12 words with zero preamble or channel introductions."
+    "जो car crash में पिचक जाती है, वो तुम्हें ज़्यादा बचाती है।",
+    "सोचो, तुम्हारे दांतों पर 3 छोटी cars एक के ऊपर एक रख दी जाएं। इतने ज़ोर से T. rex काटता था।",
+    "Movies में T. rex गाड़ी का पीछा करता है। पर असली T. rex शायद दौड़ ही नहीं सकता था।"
   ],
   "avoid": [
-    "Abstract or passive academic phrasing (e.g., 'वैज्ञानिकों को ऐसी सूक्ष्म आकृतियां क्यों मिली हैं...').",
-    "Pure English titles and Hinglish script hooks for technical topics (e.g., 'Common Household Items That Contain...').",
-    "Standard long-form script structures (>40s duration) before mastering initial 15-second retention."
+    "Starting hooks with dry scientific definitions or long-winded setup questions like 'डायनासोर के जीवाश्मों में वैज्ञानिकों को...'.",
+    "Using English-heavy Latin script transliteration mixed awkwardly with Hindi that dampens natural spoken flow.",
+    "Framing topics around vague or low-stakes everyday curiosities (like leftover food or standard runway physics) that fail the initial swipe test."
   ],
-  "next_experiment": "Test Devanagari Hindi titles + 'सोचो' (Imagine) visual hooks vs direct counter-intuitive fact hooks across 5 videos capped under 20 seconds duration."
+  "next_experiment": "Test an A/B split on a new car safety topic: Video A starts with a bold counter-intuitive hook ('Slow speed car crashes are more dangerous than you think'), and Video B starts with a direct question ('क्या धीमी गति का कार क्रश जानलेवा हो सकता है?'), measuring which achieves a higher stayed_pct past the 60% threshold."
 }

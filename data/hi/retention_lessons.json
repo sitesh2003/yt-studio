@@ -1,17 +1,20 @@
 {
   "lessons": [
-    "Use direct second-person 'Imagine you are...' roleplay hooks (e.g. 'सोचो, तुम...') to maximize initial 10% retention (up to 1.055).",
-    "Avoid dumping heavy scientific stats and technical numbers (e.g., '34,500 newton', detailed anatomy) too early; Video 2 lost 23% at once during dense technical specs.",
-    "Frame science concepts around relatable everyday comparisons (e.g., comparing T. rex weight to 6 cars) to maintain strong 50% retention (49.17% in Video 1).",
-    "Keep hooks concise and scenario-driven rather than trying to explain the core law/mechanism immediately; Video 3 had a 19.1% early drop due to a dense, explanatory hook."
+    "Start with vivid, relatable visual comparisons (e.g., cars stacked on teeth or baby size like a small dog) to secure high 10% retention (1.02 to 1.05+).",
+    "Avoid immediate repetition or redundant restatements of the hook within the primary drop windows (around 10-25% progress), as this triggers high drop-off rates.",
+    "Do not include countdowns or slow, overly complex theoretical explanations mid-video, as data shows significant viewer loss during dense exposition phases.",
+    "Keep early exposition concise and grounded in direct narrative progression; prolonged setup around 12% to 25% consistently results in double-digit audience loss.",
+    "Sustain high comparative performance at the end by delivering high-stakes reveals or payoff questions before the 50% mark, driving better relative retention versus benchmark videos."
   ],
   "worst_moment_types": [
-    "Dense technical measurements and jargon-heavy scientific lists (e.g. Newton forces, jaw specs).",
-    "Overly explanatory initial hook lines that try to summarize the whole concept upfront instead of building curiosity."
+    "Dense scientific explanations or heavy technical detailing (e.g., bone-by-bone computer reconstructions, exact newton force metrics) without immediate payoff",
+    "Repeated phrasing or cyclical explanations that re-state the hook premise instead of advancing the narrative",
+    "Mid-video transition zones (12% to 30% mark) where pacing slows down before delivering the core conflict or answer"
   ],
   "best_hook_types": [
-    "Second-person roleplay/hypothetical scenarios ('Imagine you are... / सोचो, तुम...')",
-    "Myth-busting question hooks that challenge popular media tropes (e.g., standing still in front of a T. rex)."
+    "Extreme hypothetical scenarios involving everyday objects (e.g., T. rex speed compared to a car, car crash physics)",
+    "Direct personal framing ('Imagine you are a baby T. rex...') that instantly places the viewer in the narrative",
+    "Challenging common pop-culture myths right at the opening sentence"
   ],
   "studied": "2026-11-28",
   "videos": 5

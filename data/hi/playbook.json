@@ -3,41 +3,36 @@
     "Keep total video duration strictly between 40 and 48 seconds to balance platform pacing with our required enquiry arc.",
     "Ensure both narrators maintain a sharp conversational cadence with no dead air between speaker handoffs.",
     "Use real-world archival footage or clear 2D animated diagrams exclusively; never use photo-real AI generation.",
-    "Never include calls to action like subscribing or liking, allowing the natural loop ending to drive retention.",
     "Open every video with a bold, high-contrast on-screen hook title in the first 3 seconds.",
     "Formulate every script around an accurate, surprising physical or biological mechanism rather than generic trivia."
   ],
   "formats_now": [
-    "Hidden infrastructure engineering breakdowns: revealing the invisible design choices behind everyday public structures like tunnels, runways, or tracks.",
-    "Counter-intuitive everyday physics: explaining why common household or travel situations behave completely opposite to what people expect.",
-    "Material science micro-mysteries: exploring how specific chemical reactions or material compositions alter physical properties overnight.",
-    "Extreme environment survival mechanics: analyzing exact physical forces at play during high-stress scenarios like rapid pressure changes or structural impacts."
+    "Engineering hidden inside everyday objects: Explains the non-obvious physics behind items viewers interact with daily, driving high watch time.",
+    "Extreme physics survival counter-intuitively: Tests counter-intuitive physical limits (like vehicle crashes or material strains) using comparative scale.",
+    "Biological mechanisms behind everyday sensations: Unpacks biological processes like why certain foods taste better later or how the body reacts to hidden elements."
   ],
   "hook_shapes": [
-    "Why does X happen every time Y occurs under specific conditions?",
-    "What would actually happen to your body if X occurred inside Y?",
-    "Why is it physically dangerous to do X inside a seemingly safe environment like Y?",
-    "How does X prevent Y from failing catastrophically at high speeds?"
+    "X seems impossible, but Y is the exact physical reason why.",
+    "If you think X is safe or normal, Y is what is actually happening.",
+    "Why does X happen to Y when you do Z?"
   ],
   "title_shapes": [
-    "The Secret Engineering Behind X 😳🏺 #shorts",
-    "Why You Should Never Do X Inside Y 😱 #shorts",
-    "What Happens When X Meets Y? 🤯 #shorts"
+    "Why Your [Object] Does This 😱",
+    "The Hidden Science Behind [Phenomenon] 🤯",
+    "What Actually Happens When [Action] 🚗"
   ],
   "topic_areas": [
-    "Transportation infrastructure engineering (runways, tracks, tunnels, and specialized vehicles)",
-    "Everyday chemical and biological paradoxes (food preservation, material aging, and everyday reactions)",
-    "Extreme industrial manufacturing processes (precision engineering, massive scale assembly)",
-    "Unusual physical phenomena in built environments (acoustics, airflow, and thermal distribution)",
-    "Historical engineering failures and how modern physics solved them"
+    "Transportation and vehicle engineering physics",
+    "Hidden everyday radioactive or chemical materials",
+    "Biological and chemical processes in food and cooking",
+    "Extreme mechanical stress and material science",
+    "Aviation and fluid dynamics phenomena"
   ],
   "stop_doing": [
-    "Using foreign-language primary hook text on a channel designed for US viewers.",
-    "Creating scripts shorter than 40 seconds which truncate the mandatory pause-and-predict enquiry arc.",
-    "Relying on sensationalist medical claims or personal health advice."
+    "Using non-English primary language phrasing in titles for US audience targeting"
   ],
   "target_seconds": 45,
-  "experiment": "Test starting the hook directly with a moving physical object or action on screen in the first 1 second rather than a static text card, and we will know it worked if the 30-second retention percentage increases by at least 4% compared to baseline.",
+  "experiment": "Test starting the hook directly with a first-person hypothetical scenario ('Imagine you are inside...') instead of a direct statement; we will know it worked if the 5-second retention rate increases by at least 5% compared to our baseline.",
   "facts": {
     "median_seconds_top20": 74.0,
     "median_seconds_rest": 57.0,
@@ -45,8 +40,20 @@
     "why_how_what_titles_top20": 5,
     "median_title_chars_top20": 67.0
   },
-  "studied": "2026-11-22T09:46:30",
+  "studied": "2026-11-28T17:33:30",
   "history": [
+    {
+      "studied": "2026-11-22T09:46:30",
+      "rules": [
+        "Keep total video duration strictly between 40 and 48 seconds to balance platform pacing with our required enquiry arc.",
+        "Ensure both narrators maintain a sharp conversational cadence with no dead air between speaker handoffs.",
+        "Use real-world archival footage or clear 2D animated diagrams exclusively; never use photo-real AI generation.",
+        "Never include calls to action like subscribing or liking, allowing the natural loop ending to drive retention.",
+        "Open every video with a bold, high-contrast on-screen hook title in the first 3 seconds.",
+        "Formulate every script around an accurate, surprising physical or biological mechanism rather than generic trivia."
+      ],
+      "target_seconds": 45
+    },
     {
       "studied": "2026-11-16T04:19:51",
       "rules": [
