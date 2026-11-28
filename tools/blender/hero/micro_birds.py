@@ -99,6 +99,11 @@ def woodpecker(name, holo=True):
     """Facing +Y toward the trunk; the neck pivot (returned) swings the head and beak in a peck.
     One smooth metaball body (head fused on), stiff tail on the bark, chisel beak; holo = the x-ray scan look
     with the braincase and the small brain visible inside the head."""
+    if LOOK == "v2" and not holo and SHOT.get("bird_v2"):   # 28 Nov 2026: WORK IN PROGRESS (micro_woodpecker.py) -
+        # marks and feathers placed, but the body still reads as a smooth toy until it gets a contour-feather coat;
+        # so it is used only when a shot asks for it explicitly
+        import micro_woodpecker
+        return micro_woodpecker.woodpecker2(name)
     if holo:
         plum = xray("WpPlumX", (0.35, 0.75, 1.0), 1.2, 0.14)
         red = glow("WpRedX", (1.0, 0.25, 0.2), 1.6)
@@ -221,7 +226,10 @@ def shot_peck(cam, tgt):
     trunk()
     forest_world()
     SC.world.node_tree.nodes["Background"].inputs["Color"].default_value = (0.01, 0.015, 0.03, 1)
-    bird, neck = woodpecker("W")
+    real = LOOK == "v2" and bool(SHOT.get("bird_v2"))
+    bird, neck = woodpecker("W", holo=not real)          # the feathered bird only when asked; else the scan look
+    if real:
+        SC.view_settings.exposure = float(SHOT.get("exposure", 1.3))   # black plumage: open up a stop and a bit
     bird.location = (0, -1.6, 0)          # tail and feet on the bark, leaning back; the beak reaches the bark
     bird.rotation_euler = (0.2, 0, 0)
     rate = float(SHOT.get("rate", 2.0))
@@ -244,6 +252,9 @@ def shot_peck(cam, tgt):
 
 
 def _xray_head(name, col_skull, col_brain, at):
+    if LOOK == "v2":                      # a real skull with the hyoid horns (micro_woodpecker.xray_skull)
+        import micro_woodpecker
+        return micro_woodpecker.xray_skull(name, col_skull, col_brain, at, xray, organic, glow, blob)
     root = empty(name, at)
     skull = blob(name + "skull", 1.0, (0, 0, 0), (2.6, 2.9, 2.7), xray(name + "sk", col_skull, 1.2, 0.18), 0, parent=root)
     brain = blob(name + "brain", 1.0, (0, -0.3, 0.3), (1.6, 1.9, 1.5), organic(name + "br", col_brain, col_brain, 2.0, sss=0.8, noise=6), 0.08, 4, parent=root)

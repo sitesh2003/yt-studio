@@ -31,7 +31,7 @@ def _empty(name, loc=(0, 0, 0), parent=None):
     return e
 
 
-def _tubes(name, strands, mat, parent, res=6):
+def _tubes(name, strands, mat, parent, res=6, smooth=False):
     """One curve object; strands = [[(point, radius), ...], ...], each a straight-segment tube."""
     cu = bpy.data.curves.new(name, "CURVE")
     cu.dimensions = "3D"
@@ -39,11 +39,15 @@ def _tubes(name, strands, mat, parent, res=6):
     cu.bevel_resolution = max(1, res // 2)
     cu.use_fill_caps = True
     for pts in strands:
-        sp = cu.splines.new("POLY")
+        sp = cu.splines.new("NURBS" if smooth else "POLY")
         sp.points.add(len(pts) - 1)
         for p, (co, r) in zip(sp.points, pts):
             p.co = (*co, 1.0)
             p.radius = r
+        if smooth:
+            sp.order_u = min(4, len(pts))
+            sp.use_endpoint_u = True
+            sp.resolution_u = 12
     o = bpy.data.objects.new(name, cu)
     bpy.context.scene.collection.objects.link(o)
     o.data.materials.append(mat)
