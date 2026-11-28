@@ -1,0 +1,125 @@
+{
+  "assets_dir": "assets/3d",
+  "renderer": "micro",
+  "end_beat_s": 0.6,
+  "shots": [
+    {
+      "kind": "lf_pan",
+      "overlay": "label",
+      "label": [
+        "WATER THAT DANCES",
+        "on a very hot pan"
+      ],
+      "hot": true,
+      "seconds": 6.812,
+      "render_seconds": 6.912,
+      "event_seconds": 5.727
+    },
+    {
+      "kind": "lf_compare",
+      "overlay": "label",
+      "label": [
+        "HOTTER = FASTER?",
+        "front: warm pan  back: hot pan"
+      ],
+      "seconds": 5.223,
+      "render_seconds": 5.323,
+      "event_seconds": 3.432
+    },
+    {
+      "kind": "lf_cut",
+      "overlay": "label",
+      "label": [
+        "ABOVE ~180 °C",
+        "the bottom turns to steam"
+      ],
+      "source": "Quéré 2013, Annual Review of Fluid Mechanics 45:197",
+      "seconds": 5.798,
+      "render_seconds": 5.898,
+      "event_seconds": 4.252
+    },
+    {
+      "kind": "lf_cut",
+      "overlay": "label",
+      "label": [
+        "A FILM OF STEAM",
+        "about 50 micrometres thick"
+      ],
+      "seconds": 4.59,
+      "render_seconds": 4.69,
+      "event_seconds": 4.217
+    },
+    {
+      "kind": "lf_pan",
+      "overlay": "label",
+      "label": [
+        "ALMOST NO FRICTION",
+        "nothing touches the metal"
+      ],
+      "hot": true,
+      "seconds": 4.07,
+      "render_seconds": 4.17,
+      "event_seconds": 3.379
+    },
+    {
+      "kind": "lf_compare",
+      "overlay": "label",
+      "label": [
+        "STEAM INSULATES",
+        "the floating drop lasts longer"
+      ],
+      "seconds": 4.937,
+      "render_seconds": 5.037,
+      "event_seconds": 3.922
+    },
+    {
+      "kind": "lf_pan",
+      "overlay": "label",
+      "label": [
+        "THE LEIDENFROST EFFECT",
+        "still being studied"
+      ],
+      "hot": true,
+      "seconds": 5.439,
+      "render_seconds": 5.539,
+      "event_seconds": 3.854
+    },
+    {
+      "kind": "lf_cut",
+      "overlay": "label",
+      "label": [
+        "NOT TOUCHING THE METAL",
+        "floating on its own steam"
+      ],
+      "seconds": 6.621,
+      "render_seconds": 6.721,
+      "event_seconds": 4.927
+    },
+    {
+      "kind": "lf_pan",
+      "overlay": "none",
+      "hot": false,
+      "seconds": 4.098,
+      "render_seconds": 4.24,
+      "event_seconds": 4.098
+    }
+  ],
+  "hi_labels": {
+    "WATER THAT DANCES": "नाचता पानी",
+    "on a very hot pan": "बहुत गर्म तवे पर",
+    "HOTTER = FASTER?": "ज़्यादा गर्म = जल्दी?",
+    "front: warm pan  back: hot pan": "आगे: हल्का गर्म  पीछे: बहुत गर्म",
+    "ABOVE ~180 °C": "लगभग 180 °C से ऊपर",
+    "the bottom turns to steam": "नीचे का हिस्सा भाप बनता है",
+    "A FILM OF STEAM": "भाप की परत",
+    "about 50 micrometres thick": "लगभग 50 micrometre मोटी",
+    "ALMOST NO FRICTION": "लगभग कोई रगड़ नहीं",
+    "nothing touches the metal": "धातु को कुछ नहीं छूता",
+    "STEAM INSULATES": "भाप गर्मी रोकती है",
+    "the floating drop lasts longer": "तैरती बूँद देर तक टिकती है",
+    "THE LEIDENFROST EFFECT": "LEIDENFROST EFFECT",
+    "still being studied": "आज भी research जारी",
+    "NOT TOUCHING THE METAL": "धातु को छूता नहीं",
+    "floating on its own steam": "अपनी भाप पर तैरता है"
+  }
+}

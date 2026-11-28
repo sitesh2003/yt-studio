@@ -47,6 +47,8 @@ def card_events(shot, t0, t1):
     out = []
     if shot.get("chapter"):
         small, title = shot["chapter"]
+        if HINDI["on"]:                    # 28 Nov 2026: the Hindi film had English chapter cards
+            small, title = _hindi_of(small) or small, _hindi_of(title) or title
         end = min(t1, t0 + float(shot.get("card_s", 3.2)))
         out.append((t0, end, f"{{\\an5\\pos({fw // 2},{int(fh * 0.13)})\\fn{font_}\\fs{int(46 * big)}\\c&H0000E5FF&"
                              f"\\bord5\\shad0\\fad(350,350)}}{small}"))

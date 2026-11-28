@@ -1,0 +1,107 @@
+{
+  "assets_dir": "assets/3d",
+  "renderer": "micro",
+  "end_beat_s": 0.6,
+  "shots": [
+    {
+      "kind": "lf_pan",
+      "overlay": "label",
+      "label": [
+        "HOTTER PAN, LONGER DROP",
+        "sounds backwards"
+      ],
+      "hot": true,
+      "seconds": 5.464,
+      "render_seconds": 6.912,
+      "event_seconds": 5.727
+    },
+    {
+      "kind": "lf_compare",
+      "overlay": "label",
+      "label": [
+        "MORE HEAT = FASTER?",
+        "not always"
+      ],
+      "seconds": 3.023,
+      "render_seconds": 5.323,
+      "event_seconds": 3.432
+    },
+    {
+      "kind": "lf_cut",
+      "overlay": "label",
+      "label": [
+        "ABOVE ~180 \u00b0C",
+        "instant vaporisation"
+      ],
+      "source": "Qu\u00e9r\u00e9 2013, Annual Review of Fluid Mechanics 45:197",
+      "seconds": 4.477,
+      "render_seconds": 5.898,
+      "event_seconds": 4.252
+    },
+    {
+      "kind": "lf_cut",
+      "overlay": "label",
+      "label": [
+        "A VAPOUR FILM",
+        "about 50 micrometres thick"
+      ],
+      "seconds": 3.861,
+      "render_seconds": 4.69,
+      "event_seconds": 4.217
+    },
+    {
+      "kind": "lf_pan",
+      "overlay": "label",
+      "label": [
+        "ALMOST NO FRICTION",
+        "no solid contact"
+      ],
+      "hot": true,
+      "seconds": 4.052,
+      "render_seconds": 4.17,
+      "event_seconds": 3.379
+    },
+    {
+      "kind": "lf_compare",
+      "overlay": "label",
+      "label": [
+        "GAS = POOR CONDUCTOR",
+        "the film insulates"
+      ],
+      "seconds": 3.857,
+      "render_seconds": 5.037,
+      "event_seconds": 3.922
+    },
+    {
+      "kind": "lf_pan",
+      "overlay": "label",
+      "label": [
+        "THE LEIDENFROST EFFECT",
+        "slower evaporation"
+      ],
+      "hot": true,
+      "seconds": 5.679,
+      "render_seconds": 5.539,
+      "event_seconds": 3.854
+    },
+    {
+      "kind": "lf_cut",
+      "overlay": "label",
+      "label": [
+        "STEAM AS INSULATION",
+        "hotter pan, longer drop"
+      ],
+      "seconds": 5.387,
+      "render_seconds": 6.721,
+      "event_seconds": 4.927
+    },
+    {
+      "kind": "lf_pan",
+      "overlay": "none",
+      "hot": false,
+      "seconds": 4.2,
+      "render_seconds": 4.24,
+      "event_seconds": 4.098
+    }
+  ]
+}

@@ -506,15 +506,19 @@
       "name": "book_everyday",
       "channel": "main",
       "title": "6 Everyday Things Everyone Gets Wrong (Science In 3D)",
-      "status": "making",
-      "format": "book"
+      "status": "uploaded",
+      "format": "book",
+      "video_id": "aNYVSX5a_Zk",
+      "public_at": "2026-12-10T11:00:00-05:00"
     },
     {
       "name": "book_everyday_hi",
       "channel": "hi",
       "title": "6 रोज़मर्रा की बातें, जो लगभग सब गलत समझते हैं",
-      "status": "making",
-      "format": "book"
+      "status": "uploaded",
+      "format": "book",
+      "video_id": "f2dtDCO7R54",
+      "public_at": "2026-12-10T08:30:00-05:00"
     },
     {
       "name": "hooks_28nov",
