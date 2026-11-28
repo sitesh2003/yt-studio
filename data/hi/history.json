@@ -8897,7 +8897,7 @@
     "old_publish_at": "2026-11-30T07:30:00Z"
   },
   {
-    "job": "hero_chilli_burn_hi",
+    "job": "hero_chilli_burn_hi_replaced",
     "topic": "मिर्च आपके मुँह को सच में गर्म नहीं करती 🌶️",
     "title": "मिर्च आपके मुँह को सच में गर्म नहीं करती 🌶️",
     "description": "मिर्च मुँह का तापमान नहीं बढ़ाती। उसका अणु capsaicin, TRPV1 नाम के sensor को खोल देता है, जो आम तौर पर लगभग 43°C पर खुलता है। #shorts #hindi #science #biology\n\nSources: Caterina et al. 1997, Nature 389:816; Nobel Prize in Physiology or Medicine 2021 (nobelprize.org); Nolden, Lenart & Hayes 2019, Physiology & Behavior.\n3D: every model built from scratch in Blender (procedural; no stock models or footage).\n\nHow this was made: the script is researched and fact-checked against published research (sources above), narrated by an AI voice, and animated and edited with open-source software.",
@@ -8909,7 +8909,7 @@
       "3D animation"
     ],
     "hook": "मिर्च आपके मुँह को कभी सच में गर्म नहीं करती। बस आपकी ज़ुबान को लगता है कि उसमें आग लगी है।",
-    "status": "scheduled",
+    "status": "replaced",
     "narration": "मिर्च आपके मुँह को कभी सच में गर्म नहीं करती। बस आपकी ज़ुबान को लगता है कि उसमें आग लगी है। ज़ुबान की नसों पर एक छोटा सा sensor होता है, जिसका नाम है TRPV1. इसका काम है, जलाने वाली गर्मी की चेतावनी देना। लगभग तैंतालीस डिग्री Celsius पर यह खुल जाता है, और दिमाग़ तक संदेश पहुँचता है: गर्म! मिर्च का अणु, capsaicin, इसी sensor में फ़िट होकर इसे खोल देता है, बिना किसी गर्मी के। इसलिए दिमाग़ को वही चेतावनी मिलती है, पसीना आता है और चेहरा लाल हो जाता है, जैसे सच में गर्मी हो। इस sensor की खोज को Nobel Prize मिला। और एक प्रयोग में, जलन सबसे अच्छी तरह दूध ने शांत की, बिना मलाई वाले दूध ने भी। तो मिर्च मुँह को गर्म नहीं करती। वह उस sensor को चालू कर देती है, जो जलाने वाली गर्मी की चेतावनी देता है। तो आपको क्या लगता है, पुदीना ठंड वाले sensor के साथ क्या करता है?",
     "voice_engine": "edge-tts",
     "countdown": false,
@@ -8917,7 +8917,9 @@
     "question": "तो आपको क्या लगता है, पुदीना ठंड वाले sensor के साथ क्या करता है?",
     "video_id": "9uXPDRgAjq8",
     "publish_at": "2026-12-01T02:30:00-05:00",
-    "thumbnail_set": true
+    "thumbnail_set": true,
+    "replaced_reason": "new cold-open hook (council 28 Nov)",
+    "old_publish_at": "2026-12-01T07:30:00Z"
   },
   {
     "job": "hero_mosquito_magnets_hi",
@@ -8989,7 +8991,7 @@
     "thumbnail_set": true
   },
   {
-    "job": "hero_popcorn_hi",
+    "job": "hero_popcorn_hi_replaced",
     "topic": "Popcorn एक टाँग पर उछलता है 🍿",
     "title": "Popcorn एक टाँग पर उछलता है 🍿",
     "description": "Slow motion में popcorn कुछ अजीब करता है: starch की टाँग बनाकर कड़ाही से उछलता है। #shorts #hindi #science #popcorn\n\nSources: Virot & Ponomarenko 2015, J R Soc Interface 12:20141247.\n3D: every model built from scratch in Blender (procedural; no stock models or footage).\n\nHow this was made: the script is researched and fact-checked against published research (sources above), narrated by an AI voice, and animated and edited with open-source software.",
@@ -9001,7 +9003,7 @@
       "3D animation"
     ],
     "hook": "Popcorn बस फटता नहीं है। वह एक टाँग पर उछलता है।",
-    "status": "scheduled",
+    "status": "replaced",
     "narration": "Popcorn बस फटता नहीं है। वह एक टाँग पर उछलता है। हर दाने के अंदर थोड़ा पानी होता है, सख़्त छिलके में बंद। गर्म करते ही वह पानी भाप बनता है, और अंदर का दबाव बढ़ता जाता है। लगभग एक सौ अस्सी डिग्री Celsius पर, लगभग हर दाना फट जाता है। दरार से starch झाग बनकर निकलता है, और उसका एक हिस्सा कड़ाही पर टाँग की तरह दबता है। यह टाँग दबती है, फिर वापस धकेलती है, और दाना हवा में उछल जाता है। और पॉप की आवाज़? video और आवाज़ साथ रिकॉर्ड करने पर लगता है, कि यह भाप निकलने की आवाज़ है, छिलका टूटने की नहीं। Popcorn बस फटता नहीं। वह starch की टाँग बनाकर कड़ाही से उछलता है, और पॉप की आवाज़ निकलती भाप की है। तो कुछ दाने कभी फटते ही क्यों नहीं?",
     "voice_engine": "edge-tts",
     "countdown": false,
@@ -9009,7 +9011,9 @@
     "question": "तो कुछ दाने कभी फटते ही क्यों नहीं?",
     "video_id": "_4C4k0JzGDk",
     "publish_at": "2026-12-05T02:30:00-05:00",
-    "thumbnail_set": true
+    "thumbnail_set": true,
+    "replaced_reason": "new cold-open hook (council 28 Nov)",
+    "old_publish_at": "2026-12-05T07:30:00Z"
   },
   {
     "job": "hero_leidenfrost_hi",
@@ -9194,6 +9198,52 @@
     "question": "तो अगर आपके माइटोकॉन्ड्रिया आपकी माँ से आए, और उनके उनकी माँ से, तो आपको क्या लगता है यह कतार कितनी पीछे तक जाती है?",
     "video_id": "hCeIgu7sH5I",
     "publish_at": "2026-12-03T08:30:00-05:00",
+    "thumbnail_set": true
+  },
+  {
+    "job": "hero_chilli_burn_hi",
+    "topic": "मिर्च आपके मुँह को सच में गर्म नहीं करती 🌶️",
+    "title": "मिर्च आपके मुँह को सच में गर्म नहीं करती 🌶️",
+    "description": "मिर्च मुँह का तापमान नहीं बढ़ाती। उसका अणु capsaicin, TRPV1 नाम के sensor को खोल देता है, जो आम तौर पर लगभग 43°C पर खुलता है। #shorts #hindi #science #biology\n\nSources: Caterina et al. 1997, Nature 389:816; Nobel Prize in Physiology or Medicine 2021 (nobelprize.org); Nolden, Lenart & Hayes 2019, Physiology & Behavior.\n3D: every model built from scratch in Blender (procedural; no stock models or footage).\n\nHow this was made: the script is researched and fact-checked against published research (sources above), narrated by an AI voice, and animated and edited with open-source software.",
+    "tags": [
+      "मिर्च",
+      "capsaicin",
+      "science hindi",
+      "biology hindi",
+      "3D animation"
+    ],
+    "hook": "मिर्च आपके मुँह को कभी सच में गर्म नहीं करती। बस आपकी ज़ुबान को लगता है कि उसमें आग लगी है।",
+    "status": "scheduled",
+    "narration": "मिर्च आपके मुँह को कभी सच में गर्म नहीं करती। बस आपकी ज़ुबान को लगता है कि उसमें आग लगी है। ज़ुबान की नसों पर एक छोटा सा sensor होता है, जिसका नाम है TRPV1. इसका काम है, जलाने वाली गर्मी की चेतावनी देना। लगभग तैंतालीस डिग्री Celsius पर यह खुल जाता है, और दिमाग़ तक संदेश पहुँचता है: गर्म! मिर्च का अणु, capsaicin, इसी sensor में फ़िट होकर इसे खोल देता है, बिना किसी गर्मी के। इसलिए दिमाग़ को वही चेतावनी मिलती है, पसीना आता है और चेहरा लाल हो जाता है, जैसे सच में गर्मी हो। इस sensor की खोज को Nobel Prize मिला। और एक प्रयोग में, जलन सबसे अच्छी तरह दूध ने शांत की, बिना मलाई वाले दूध ने भी। तो मिर्च मुँह को गर्म नहीं करती। वह उस sensor को चालू कर देती है, जो जलाने वाली गर्मी की चेतावनी देता है। तो आपको क्या लगता है, पुदीना ठंड वाले sensor के साथ क्या करता है?",
+    "voice_engine": "edge-tts",
+    "countdown": false,
+    "hero_3d": true,
+    "question": "तो आपको क्या लगता है, पुदीना ठंड वाले sensor के साथ क्या करता है?",
+    "video_id": "cEoJF98x1S8",
+    "publish_at": "2026-12-01T02:30:00-05:00",
+    "thumbnail_set": true
+  },
+  {
+    "job": "hero_popcorn_hi",
+    "topic": "Popcorn एक टाँग पर उछलता है 🍿",
+    "title": "Popcorn एक टाँग पर उछलता है 🍿",
+    "description": "Slow motion में popcorn कुछ अजीब करता है: starch की टाँग बनाकर कड़ाही से उछलता है। #shorts #hindi #science #popcorn\n\nSources: Virot & Ponomarenko 2015, J R Soc Interface 12:20141247.\n3D: every model built from scratch in Blender (procedural; no stock models or footage).\n\nHow this was made: the script is researched and fact-checked against published research (sources above), narrated by an AI voice, and animated and edited with open-source software.",
+    "tags": [
+      "popcorn hindi",
+      "science hindi",
+      "physics hindi",
+      "kitchen science",
+      "3D animation"
+    ],
+    "hook": "Popcorn बस फटता नहीं है। वह एक टाँग पर उछलता है।",
+    "status": "scheduled",
+    "narration": "Popcorn बस फटता नहीं है। वह एक टाँग पर उछलता है। हर दाने के अंदर थोड़ा पानी होता है, सख़्त छिलके में बंद। गर्म करते ही वह पानी भाप बनता है, और अंदर का दबाव बढ़ता जाता है। लगभग एक सौ अस्सी डिग्री Celsius पर, लगभग हर दाना फट जाता है। दरार से starch झाग बनकर निकलता है, और उसका एक हिस्सा कड़ाही पर टाँग की तरह दबता है। यह टाँग दबती है, फिर वापस धकेलती है, और दाना हवा में उछल जाता है। और पॉप की आवाज़? video और आवाज़ साथ रिकॉर्ड करने पर लगता है, कि यह भाप निकलने की आवाज़ है, छिलका टूटने की नहीं। Popcorn बस फटता नहीं। वह starch की टाँग बनाकर कड़ाही से उछलता है, और पॉप की आवाज़ निकलती भाप की है। तो कुछ दाने कभी फटते ही क्यों नहीं?",
+    "voice_engine": "edge-tts",
+    "countdown": false,
+    "hero_3d": true,
+    "question": "तो कुछ दाने कभी फटते ही क्यों नहीं?",
+    "video_id": "3Tb9rII9hlg",
+    "publish_at": "2026-12-05T02:30:00-05:00",
     "thumbnail_set": true
   }
 ]

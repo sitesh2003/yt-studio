@@ -1,0 +1,123 @@
+{
+  "assets_dir": "assets/3d",
+  "renderer": "micro",
+  "end_beat_s": 0.6,
+  "shots": [
+    {
+      "kind": "pc_burst",
+      "overlay": "label",
+      "label": [
+        "IT JUMPS ON A LEG",
+        "popcorn in slow motion"
+      ],
+      "seconds": 3.81,
+      "render_seconds": 3.91,
+      "event_seconds": 3.157
+    },
+    {
+      "kind": "pc_cut",
+      "overlay": "label",
+      "label": [
+        "WATER INSIDE",
+        "sealed in a hard hull"
+      ],
+      "seconds": 3.759,
+      "render_seconds": 3.859,
+      "event_seconds": 2.273
+    },
+    {
+      "kind": "pc_cut",
+      "overlay": "label",
+      "label": [
+        "STEAM PRESSURE",
+        "climbing inside"
+      ],
+      "seconds": 4.245,
+      "render_seconds": 5.642,
+      "event_seconds": 4.068
+    },
+    {
+      "kind": "pc_cut",
+      "overlay": "label",
+      "label": [
+        "~180 °C",
+        "almost every kernel bursts"
+      ],
+      "burst": true,
+      "source": "Virot & Ponomarenko 2015, J R Soc Interface 12:20141247",
+      "seconds": 4.628,
+      "render_seconds": 5.322,
+      "event_seconds": 4.628
+    },
+    {
+      "kind": "pc_burst",
+      "overlay": "label",
+      "label": [
+        "STARCH FOAM",
+        "a leg presses on the pan"
+      ],
+      "seconds": 5.631,
+      "render_seconds": 5.731,
+      "event_seconds": 3.204
+    },
+    {
+      "kind": "pc_burst",
+      "overlay": "label",
+      "label": [
+        "SQUASH, PUSH, LAUNCH",
+        "like a spring"
+      ],
+      "seconds": 4.629,
+      "render_seconds": 4.729,
+      "event_seconds": 3.961
+    },
+    {
+      "kind": "pc_steam",
+      "overlay": "label",
+      "label": [
+        "THE POP: LIKELY STEAM",
+        "not the hull cracking"
+      ],
+      "seconds": 7.902,
+      "render_seconds": 8.002,
+      "event_seconds": 4.609
+    },
+    {
+      "kind": "pc_pan",
+      "overlay": "label",
+      "label": [
+        "NOT JUST A BURST",
+        "a starch leg + escaping steam"
+      ],
+      "pops": 12,
+      "seconds": 7.171,
+      "render_seconds": 7.271,
+      "event_seconds": 4.449
+    },
+    {
+      "kind": "pc_pan",
+      "overlay": "none",
+      "pops": 6,
+      "seconds": 3.401,
+      "render_seconds": 3.92,
+      "event_seconds": 3.14
+    }
+  ],
+  "hi_labels": {
+    "IT JUMPS ON A LEG": "टाँग पर उछाल",
+    "popcorn in slow motion": "slow motion में popcorn",
+    "WATER INSIDE": "अंदर पानी",
+    "sealed in a hard hull": "सख़्त छिलके में बंद",
+    "STEAM PRESSURE": "भाप का दबाव",
+    "climbing inside": "बढ़ता जाता है",
+    "almost every kernel bursts": "लगभग हर दाना फटता है",
+    "STARCH FOAM": "STARCH का झाग",
+    "a leg presses on the pan": "टाँग कड़ाही पर दबती है",
+    "SQUASH, PUSH, LAUNCH": "दबना, धकेलना, उछलना",
+    "like a spring": "spring की तरह",
+    "THE POP: LIKELY STEAM": "पॉप: शायद भाप",
+    "not the hull cracking": "छिलका टूटना नहीं",
+    "NOT JUST A BURST": "सिर्फ़ फटना नहीं",
+    "a starch leg + escaping steam": "starch की टाँग + निकलती भाप"
+  }
+}

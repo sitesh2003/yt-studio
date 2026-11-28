@@ -15,11 +15,13 @@
         "almost everyone gets wrong"
       ],
       "fstop": 4.0,
-      "seconds": 3.423,
+      "seconds": 6.546,
       "src": [
         "chilli_burn",
         0
-      ]
+      ],
+      "render_seconds": 8.536,
+      "event_seconds": 6.546
     },
     {
       "kind": "gk_climb",
@@ -29,21 +31,25 @@
         "so how?"
       ],
       "from_front": true,
-      "seconds": 4.34,
+      "seconds": 6.998,
       "src": [
         "gecko_glass",
         0
-      ]
+      ],
+      "render_seconds": 7.856,
+      "event_seconds": 6.998
     },
     {
       "kind": "pc_pan",
       "overlay": "none",
       "pops": 6,
-      "seconds": 3.14,
+      "seconds": 8.317,
       "src": [
         "popcorn",
         8
-      ]
+      ],
+      "render_seconds": 10.182,
+      "event_seconds": 8.317
     },
     {
       "kind": "chilli_macro",
@@ -53,7 +59,7 @@
         "your mouth stays about 37 °C"
       ],
       "fstop": 4.0,
-      "seconds": 3.423,
+      "seconds": 3.146,
       "chapter": [
         "CHAPTER 1",
         "Why Does Chilli Burn?"
@@ -61,7 +67,9 @@
       "src": [
         "chilli_burn",
         0
-      ]
+      ],
+      "render_seconds": 3.246,
+      "event_seconds": 2.96
     },
     {
       "kind": "chilli_macro",
@@ -71,11 +79,13 @@
         "your mouth stays about 37 °C"
       ],
       "fstop": 4.0,
-      "seconds": 3.423,
+      "seconds": 6.333,
       "src": [
         "chilli_burn",
         0
-      ]
+      ],
+      "render_seconds": 6.826,
+      "event_seconds": 6.333
     },
     {
       "kind": "membrane_dive",
@@ -84,11 +94,13 @@
         "TRPV1",
         "a heat alarm on your nerves"
       ],
-      "seconds": 5.791,
+      "seconds": 7.239,
       "src": [
         "chilli_burn",
         1
-      ]
+      ],
+      "render_seconds": 8.759,
+      "event_seconds": 7.239
     },
     {
       "kind": "heat_open",
@@ -98,11 +110,13 @@
         "about 109 °F"
       ],
       "source": "Caterina et al. 1997, Nature 389:816",
-      "seconds": 5.9,
+      "seconds": 6.477,
       "src": [
         "chilli_burn",
         2
-      ]
+      ],
+      "render_seconds": 6.577,
+      "event_seconds": 5.777
     },
     {
       "kind": "capsaicin_open",
@@ -111,11 +125,13 @@
         "CAPSAICIN",
         "opens it with NO heat"
       ],
-      "seconds": 5.527,
+      "seconds": 7.114,
       "src": [
         "chilli_burn",
         3
-      ]
+      ],
+      "render_seconds": 7.214,
+      "event_seconds": 5.988
     },
     {
       "kind": "nerve_pulse",
@@ -124,11 +140,13 @@
         "SAME ALARM",
         "your brain hears HOT"
       ],
-      "seconds": 3.639,
+      "seconds": 5.692,
       "src": [
         "chilli_burn",
         4
-      ]
+      ],
+      "render_seconds": 6.419,
+      "event_seconds": 5.692
     },
     {
       "kind": "channel_orbit",
@@ -139,11 +157,13 @@
       ],
       "gold": true,
       "source": "Nobel Prize in Physiology or Medicine 2021",
-      "seconds": 2.684,
+      "seconds": 5.677,
       "src": [
         "chilli_burn",
         5
-      ]
+      ],
+      "render_seconds": 6.208,
+      "event_seconds": 5.677
     },
     {
       "kind": "pull_back",
@@ -152,12 +172,14 @@
         "MINT",
         "switches on a cold sensor"
       ],
-      "seconds": 4.794,
+      "seconds": 9.777,
       "source": "McKemy, Neuhausser & Julius 2002, Nature 416:52; Peier et al. 2002, Cell 108:705",
       "src": [
         "chilli_burn",
         7
-      ]
+      ],
+      "render_seconds": 10.796,
+      "event_seconds": 9.777
     },
     {
       "kind": "membrane_dive",
@@ -166,12 +188,14 @@
         "BIRDS FEEL NOTHING",
         "their sensor ignores capsaicin"
       ],
-      "seconds": 5.791,
+      "seconds": 8.931,
       "source": "Jordt & Julius 2002, Cell 108:421; Tewksbury & Nabhan 2001, Nature 412:403",
       "src": [
         "chilli_burn",
         1
-      ]
+      ],
+      "render_seconds": 10.821,
+      "event_seconds": 8.931
     },
     {
       "kind": "capsaicin_leave",
@@ -181,20 +205,24 @@
         "even skim milk"
       ],
       "source": "Nolden, Lenart & Hayes 2019, Physiology & Behavior 208:112557",
-      "seconds": 3.973,
+      "seconds": 9.126,
       "src": [
         "chilli_burn",
         6
-      ]
+      ],
+      "render_seconds": 10.236,
+      "event_seconds": 9.126
     },
     {
       "kind": "cold_tease",
       "overlay": "none",
-      "seconds": 3.72,
+      "seconds": 7.543,
       "src": [
         "chilli_burn",
         8
-      ]
+      ],
+      "render_seconds": 7.842,
+      "event_seconds": 7.543
     },
     {
       "kind": "mosq_magnet",
@@ -203,7 +231,7 @@
         "MOSQUITO MAGNETS",
         "not sweet blood"
       ],
-      "seconds": 4.187,
+      "seconds": 3.514,
       "chapter": [
         "CHAPTER 2",
         "Why Do Mosquitoes Pick You?"
@@ -211,12 +239,14 @@
       "src": [
         "mosquito_magnets",
         0
-      ]
+      ],
+      "render_seconds": 3.614,
+      "event_seconds": 3.306
     },
     {
       "kind": "mosq_magnet",
       "overlay": "label",
-      "seconds": 3.14,
+      "seconds": 8.166,
       "label": [
         "ONLY FEMALES BITE",
         "blood protein for eggs"
@@ -225,7 +255,9 @@
       "src": [
         "mosquito_magnets",
         8
-      ]
+      ],
+      "render_seconds": 10.083,
+      "event_seconds": 8.166
     },
     {
       "kind": "mosq_follow",
@@ -235,12 +267,14 @@
         "how it closes in"
       ],
       "many": 8,
-      "seconds": 4.791,
+      "seconds": 9.066,
       "source": "van Breugel et al. 2015, Current Biology 25:2123",
       "src": [
         "mosquito_magnets",
         7
-      ]
+      ],
+      "render_seconds": 10.742,
+      "event_seconds": 9.066
     },
     {
       "kind": "mosq_magnet",
@@ -249,11 +283,13 @@
         "MOSQUITO MAGNETS",
         "not sweet blood"
       ],
-      "seconds": 4.187,
+      "seconds": 5.567,
       "src": [
         "mosquito_magnets",
         0
-      ]
+      ],
+      "render_seconds": 6.049,
+      "event_seconds": 5.567
     },
     {
       "kind": "mosq_sleeve",
@@ -262,11 +298,13 @@
         "NYLON SLEEVES",
         "worn for 6 hours"
       ],
-      "seconds": 3.863,
+      "seconds": 4.828,
       "src": [
         "mosquito_magnets",
         1
-      ]
+      ],
+      "render_seconds": 4.928,
+      "event_seconds": 4.636
     },
     {
       "kind": "mosq_choice",
@@ -276,11 +314,13 @@
         "one sleeve or the other"
       ],
       "skew": 0.8,
-      "seconds": 3.142,
+      "seconds": 3.928,
       "src": [
         "mosquito_magnets",
         2
-      ]
+      ],
+      "render_seconds": 4.028,
+      "event_seconds": 3.829
     },
     {
       "kind": "mosq_choice",
@@ -291,11 +331,13 @@
       ],
       "skew": 0.95,
       "source": "De Obaldia et al. 2022, Cell 185:4099",
-      "seconds": 6.097,
+      "seconds": 7.84,
       "src": [
         "mosquito_magnets",
         3
-      ]
+      ],
+      "render_seconds": 8.469,
+      "event_seconds": 7.84
     },
     {
       "kind": "mosq_skin",
@@ -304,11 +346,13 @@
         "SKIN-OIL ACIDS",
         "carboxylic acids"
       ],
-      "seconds": 3.042,
+      "seconds": 3.802,
       "src": [
         "mosquito_magnets",
         4
-      ]
+      ],
+      "render_seconds": 4.654,
+      "event_seconds": 3.802
     },
     {
       "kind": "mosq_follow",
@@ -317,11 +361,13 @@
         "KEY SMELL SENSORS OFF",
         "still found the magnets"
       ],
-      "seconds": 3.331,
+      "seconds": 4.163,
       "src": [
         "mosquito_magnets",
         5
-      ]
+      ],
+      "render_seconds": 5.963,
+      "event_seconds": 4.163
     },
     {
       "kind": "mosq_land",
@@ -330,20 +376,24 @@
         "BLOOD TYPE?",
         "the evidence is mixed"
       ],
-      "seconds": 3.334,
+      "seconds": 4.149,
       "src": [
         "mosquito_magnets",
         6
-      ]
+      ],
+      "render_seconds": 4.249,
+      "event_seconds": 3.247
     },
     {
       "kind": "gk_climb",
       "overlay": "none",
-      "seconds": 2.86,
+      "seconds": 9.473,
       "src": [
         "gecko_glass",
         8
-      ]
+      ],
+      "render_seconds": 9.68,
+      "event_seconds": 9.473
     },
     {
       "kind": "gk_climb",
@@ -353,7 +403,7 @@
         "molecules pulling"
       ],
       "from_front": true,
-      "seconds": 6.117,
+      "seconds": 3.552,
       "chapter": [
         "CHAPTER 3",
         "How Do Geckos Climb Glass?"
@@ -361,7 +411,9 @@
       "src": [
         "gecko_glass",
         7
-      ]
+      ],
+      "render_seconds": 3.652,
+      "event_seconds": 3.425
     },
     {
       "kind": "gk_climb",
@@ -371,11 +423,13 @@
         "so how?"
       ],
       "from_front": true,
-      "seconds": 4.34,
+      "seconds": 5.425,
       "src": [
         "gecko_glass",
         0
-      ]
+      ],
+      "render_seconds": 5.525,
+      "event_seconds": 4.382
     },
     {
       "kind": "gk_toe",
@@ -384,12 +438,14 @@
         "NEARLY 500,000 HAIRS",
         "on each foot"
       ],
-      "seconds": 3.425,
+      "seconds": 6.287,
       "source": "Autumn et al. 2000, Nature 405:681",
       "src": [
         "gecko_glass",
         1
-      ]
+      ],
+      "render_seconds": 6.414,
+      "event_seconds": 6.287
     },
     {
       "kind": "gk_setae",
@@ -398,12 +454,14 @@
         "HUNDREDS OF TIPS",
         "each ~0.2 micrometres"
       ],
-      "seconds": 4.821,
+      "seconds": 6.45,
       "source": "Autumn et al. 2000, Nature 405:681",
       "src": [
         "gecko_glass",
         2
-      ]
+      ],
+      "render_seconds": 6.55,
+      "event_seconds": 6.202
     },
     {
       "kind": "gk_vdw",
@@ -412,11 +470,13 @@
         "VAN DER WAALS FORCE",
         "a pull between molecules"
       ],
-      "seconds": 5.047,
+      "seconds": 6.449,
       "src": [
         "gecko_glass",
         3
-      ]
+      ],
+      "render_seconds": 8.013,
+      "event_seconds": 6.449
     },
     {
       "kind": "gk_climb",
@@ -425,11 +485,13 @@
         "TINY PULL x 1 BILLION",
         "holds the whole gecko"
       ],
-      "seconds": 4.404,
+      "seconds": 5.391,
       "src": [
         "gecko_glass",
         4
-      ]
+      ],
+      "render_seconds": 6.009,
+      "event_seconds": 5.391
     },
     {
       "kind": "gk_setae",
@@ -439,11 +501,13 @@
         "water-loving or water-repelling"
       ],
       "source": "Autumn et al. 2002, PNAS 99:12252",
-      "seconds": 6.457,
+      "seconds": 8.48,
       "src": [
         "gecko_glass",
         5
-      ]
+      ],
+      "render_seconds": 9.115,
+      "event_seconds": 8.48
     },
     {
       "kind": "gk_climb",
@@ -453,12 +517,14 @@
         "if every hair gripped at once"
       ],
       "from_front": true,
-      "seconds": 6.117,
+      "seconds": 10.15,
       "source": "Autumn & Peattie 2002, Integrative and Comparative Biology 42:1081",
       "src": [
         "gecko_glass",
         7
-      ]
+      ],
+      "render_seconds": 11.393,
+      "event_seconds": 10.15
     },
     {
       "kind": "gk_peel",
@@ -467,12 +533,14 @@
         "PAST ABOUT 30 DEGREES",
         "the hairs let go"
       ],
-      "seconds": 3.271,
+      "seconds": 9.452,
       "source": "Autumn & Peattie 2002, Integrative and Comparative Biology 42:1081",
       "src": [
         "gecko_glass",
         6
-      ]
+      ],
+      "render_seconds": 9.833,
+      "event_seconds": 9.452
     },
     {
       "kind": "gk_setae",
@@ -481,22 +549,26 @@
         "SELF-CLEANING",
         "sticky again in a few steps"
       ],
-      "seconds": 4.821,
+      "seconds": 6.211,
       "source": "Hansen & Autumn 2005, PNAS 102:385",
       "src": [
         "gecko_glass",
         2
-      ]
+      ],
+      "render_seconds": 6.311,
+      "event_seconds": 6.176
     },
     {
       "kind": "pc_pan",
       "overlay": "none",
       "pops": 12,
-      "seconds": 5.243,
+      "seconds": 9.039,
       "src": [
         "popcorn",
         7
-      ]
+      ],
+      "render_seconds": 10.18,
+      "event_seconds": 9.039
     },
     {
       "kind": "pc_burst",
@@ -505,7 +577,7 @@
         "IT JUMPS ON A LEG",
         "popcorn in slow motion"
       ],
-      "seconds": 3.157,
+      "seconds": 3.406,
       "chapter": [
         "CHAPTER 4",
         "How Does Popcorn Really Pop?"
@@ -513,7 +585,9 @@
       "src": [
         "popcorn",
         0
-      ]
+      ],
+      "render_seconds": 3.674,
+      "event_seconds": 3.406
     },
     {
       "kind": "pc_cut",
@@ -522,12 +596,14 @@
         "WATER INSIDE",
         "sealed in a hard hull"
       ],
-      "seconds": 3.14,
+      "seconds": 6.243,
       "source": "Gökmen 2004, Journal of Food Engineering 65:357",
       "src": [
         "popcorn",
         1
-      ]
+      ],
+      "render_seconds": 7.614,
+      "event_seconds": 6.243
     },
     {
       "kind": "pc_cut",
@@ -536,12 +612,14 @@
         "ABOUT 10 TIMES",
         "normal air pressure"
       ],
-      "seconds": 4.068,
+      "seconds": 8.07,
       "source": "Virot & Ponomarenko 2015, J R Soc Interface 12:20141247",
       "src": [
         "popcorn",
         2
-      ]
+      ],
+      "render_seconds": 8.9,
+      "event_seconds": 8.07
     },
     {
       "kind": "pc_cut",
@@ -552,11 +630,13 @@
       ],
       "burst": true,
       "source": "Virot & Ponomarenko 2015, J R Soc Interface 12:20141247",
-      "seconds": 5.222,
+      "seconds": 7.074,
       "src": [
         "popcorn",
         3
-      ]
+      ],
+      "render_seconds": 7.174,
+      "event_seconds": 6.712
     },
     {
       "kind": "pc_burst",
@@ -565,11 +645,13 @@
         "STARCH FOAM",
         "a leg presses on the pan"
       ],
-      "seconds": 3.539,
+      "seconds": 4.612,
       "src": [
         "popcorn",
         4
-      ]
+      ],
+      "render_seconds": 5.87,
+      "event_seconds": 4.612
     },
     {
       "kind": "pc_burst",
@@ -578,12 +660,14 @@
         "SQUASH, PUSH, LAUNCH",
         "about 20 milliseconds"
       ],
-      "seconds": 3.961,
+      "seconds": 7.249,
       "source": "Virot & Ponomarenko 2015, J R Soc Interface 12:20141247",
       "src": [
         "popcorn",
         5
-      ]
+      ],
+      "render_seconds": 8.339,
+      "event_seconds": 7.249
     },
     {
       "kind": "pc_steam",
@@ -592,11 +676,13 @@
         "THE POP: LIKELY STEAM",
         "not the hull cracking"
       ],
-      "seconds": 5.389,
+      "seconds": 6.732,
       "src": [
         "popcorn",
         6
-      ]
+      ],
+      "render_seconds": 8.549,
+      "event_seconds": 6.732
     },
     {
       "kind": "pc_pan",
@@ -606,21 +692,25 @@
         "a starch leg + escaping steam"
       ],
       "pops": 12,
-      "seconds": 5.243,
+      "seconds": 4.752,
       "src": [
         "popcorn",
         7
-      ]
+      ],
+      "render_seconds": 4.852,
+      "event_seconds": 4.62
     },
     {
       "kind": "lf_pan",
       "overlay": "none",
       "hot": false,
-      "seconds": 4.14,
+      "seconds": 8.246,
       "src": [
         "leidenfrost",
         8
-      ]
+      ],
+      "render_seconds": 8.346,
+      "event_seconds": 8.184
     },
     {
       "kind": "lf_pan",
@@ -630,7 +720,7 @@
         "on a very hot pan"
       ],
       "hot": true,
-      "seconds": 5.727,
+      "seconds": 3.962,
       "chapter": [
         "CHAPTER 5",
         "Why Does Water Dance On A Hot Pan?"
@@ -638,7 +728,9 @@
       "src": [
         "leidenfrost",
         0
-      ]
+      ],
+      "render_seconds": 4.062,
+      "event_seconds": 3.667
     },
     {
       "kind": "lf_compare",
@@ -647,11 +739,13 @@
         "HOTTER = FASTER?",
         "front: warm pan  back: hot pan"
       ],
-      "seconds": 3.432,
+      "seconds": 7.23,
       "src": [
         "leidenfrost",
         1
-      ]
+      ],
+      "render_seconds": 7.627,
+      "event_seconds": 7.23
     },
     {
       "kind": "lf_cut",
@@ -661,11 +755,13 @@
         "the bottom turns to steam"
       ],
       "source": "Quéré 2013, Annual Review of Fluid Mechanics 45:197",
-      "seconds": 4.252,
+      "seconds": 4.613,
       "src": [
         "leidenfrost",
         2
-      ]
+      ],
+      "render_seconds": 5.422,
+      "event_seconds": 4.613
     },
     {
       "kind": "lf_cut",
@@ -674,12 +770,14 @@
         "5 TO 100 MICROMETRES",
         "a cushion of steam"
       ],
-      "seconds": 4.217,
+      "seconds": 7.749,
       "source": "Burton et al. 2012, Physical Review Letters 109:074301",
       "src": [
         "leidenfrost",
         3
-      ]
+      ],
+      "render_seconds": 8.694,
+      "event_seconds": 7.749
     },
     {
       "kind": "lf_pan",
@@ -689,11 +787,13 @@
         "nothing touches the metal"
       ],
       "hot": true,
-      "seconds": 3.379,
+      "seconds": 4.223,
       "src": [
         "leidenfrost",
         4
-      ]
+      ],
+      "render_seconds": 4.323,
+      "event_seconds": 4.197
     },
     {
       "kind": "lf_compare",
@@ -702,11 +802,13 @@
         "STEAM INSULATES",
         "the floating drop lasts longer"
       ],
-      "seconds": 3.922,
+      "seconds": 6.429,
       "src": [
         "leidenfrost",
         5
-      ]
+      ],
+      "render_seconds": 7.052,
+      "event_seconds": 6.429
     },
     {
       "kind": "lf_pan",
@@ -716,12 +818,14 @@
         "described in 1756"
       ],
       "hot": true,
-      "seconds": 3.854,
+      "seconds": 6.684,
       "source": "Burton et al. 2012, Physical Review Letters 109:074301",
       "src": [
         "leidenfrost",
         6
-      ]
+      ],
+      "render_seconds": 7.333,
+      "event_seconds": 6.684
     },
     {
       "kind": "lf_cut",
@@ -730,23 +834,27 @@
         "THEY CAN CLIMB",
         "on a saw-tooth surface"
       ],
-      "seconds": 4.927,
+      "seconds": 7.094,
       "source": "Linke et al. 2006, Physical Review Letters 96:154502",
       "src": [
         "leidenfrost",
         7
-      ]
+      ],
+      "render_seconds": 8.921,
+      "event_seconds": 7.094
     },
     {
       "kind": "wp_peck",
       "overlay": "none",
       "wide": true,
       "rate": 1.6,
-      "seconds": 3.8,
+      "seconds": 8.86,
       "src": [
         "woodpecker",
         8
-      ]
+      ],
+      "render_seconds": 9.168,
+      "event_seconds": 8.86
     },
     {
       "kind": "wp_peck",
@@ -756,7 +864,7 @@
         "despite what we were told"
       ],
       "rate": 1.6,
-      "seconds": 3.791,
+      "seconds": 3.661,
       "chapter": [
         "CHAPTER 6",
         "Why Don't Woodpeckers Get Hurt?"
@@ -764,7 +872,9 @@
       "src": [
         "woodpecker",
         0
-      ]
+      ],
+      "render_seconds": 3.761,
+      "event_seconds": 3.521
     },
     {
       "kind": "wp_peck",
@@ -774,11 +884,13 @@
         "despite what we were told"
       ],
       "rate": 1.6,
-      "seconds": 3.791,
+      "seconds": 4.852,
       "src": [
         "woodpecker",
         0
-      ]
+      ],
+      "render_seconds": 5.71,
+      "event_seconds": 4.852
     },
     {
       "kind": "wp_peck",
@@ -789,11 +901,13 @@
       ],
       "markers": true,
       "rate": 1.2,
-      "seconds": 5.234,
+      "seconds": 6.543,
       "src": [
         "woodpecker",
         1
-      ]
+      ],
+      "render_seconds": 6.643,
+      "event_seconds": 4.327
     },
     {
       "kind": "wp_peck",
@@ -804,12 +918,14 @@
       ],
       "wide": true,
       "rate": 1.6,
-      "seconds": 4.041,
+      "seconds": 5.657,
       "source": "Van Wassenbergh et al. 2022, Current Biology 32:3189",
       "src": [
         "woodpecker",
         6
-      ]
+      ],
+      "render_seconds": 8.358,
+      "event_seconds": 5.657
     },
     {
       "kind": "wp_xray",
@@ -820,11 +936,13 @@
       ],
       "ghost": true,
       "rate": 1.0,
-      "seconds": 5.32,
+      "seconds": 4.117,
       "src": [
         "woodpecker",
         2
-      ]
+      ],
+      "render_seconds": 4.954,
+      "event_seconds": 4.117
     },
     {
       "kind": "wp_xray",
@@ -834,11 +952,13 @@
         "beak and head stop together"
       ],
       "rate": 1.2,
-      "seconds": 4.185,
+      "seconds": 7.765,
       "src": [
         "woodpecker",
         3
-      ]
+      ],
+      "render_seconds": 8.522,
+      "event_seconds": 7.765
     },
     {
       "kind": "wp_brains",
@@ -847,11 +967,13 @@
         "SAME HIT",
         "woodpecker brain vs human brain"
       ],
-      "seconds": 5.763,
+      "seconds": 7.204,
       "src": [
         "woodpecker",
         4
-      ]
+      ],
+      "render_seconds": 7.817,
+      "event_seconds": 7.204
     },
     {
       "kind": "wp_peck",
@@ -863,11 +985,13 @@
       "rate": 3.0,
       "markers": true,
       "source": "Van Wassenbergh et al. 2022, Current Biology 32:3189",
-      "seconds": 4.48,
+      "seconds": 5.765,
       "src": [
         "woodpecker",
         5
-      ]
+      ],
+      "render_seconds": 7.387,
+      "event_seconds": 5.765
     },
     {
       "kind": "wp_xray",
@@ -878,30 +1002,36 @@
       ],
       "orbit": true,
       "rate": 1.2,
-      "seconds": 4.826,
+      "seconds": 9.504,
       "src": [
         "woodpecker",
         7
-      ]
+      ],
+      "render_seconds": 10.205,
+      "event_seconds": 9.504
     },
     {
       "kind": "pull_back",
       "overlay": "none",
-      "seconds": 4.794,
+      "seconds": 17.749,
       "src": [
         "chilli_burn",
         7
-      ]
+      ],
+      "render_seconds": 18.573,
+      "event_seconds": 17.749
     },
     {
       "kind": "lf_pan",
       "overlay": "none",
       "hot": true,
-      "seconds": 5.727,
+      "seconds": 7.075,
       "src": [
         "leidenfrost",
         0
-      ]
+      ],
+      "render_seconds": 9.464,
+      "event_seconds": 7.075
     }
   ]
 }

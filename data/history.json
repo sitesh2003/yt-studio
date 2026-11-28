@@ -6458,7 +6458,7 @@
     "note": "not on YouTube 27 Nov 2026; replaced by the car-fixed upload"
   },
   {
-    "job": "hero_chilli_burn",
+    "job": "hero_chilli_burn_replaced",
     "topic": "Chilli Never Actually Heats Your Mouth 🌶️",
     "title": "Chilli Never Actually Heats Your Mouth 🌶️",
     "description": "Chilli never raises the temperature in your mouth. Its molecule, capsaicin, opens TRPV1, the nerve sensor that normally fires at about 43 °C, so your brain hears a heat alarm. #shorts #science #biology #chilli\n\nSources: Caterina et al. 1997, Nature 389:816 (the capsaicin receptor, a heat-activated ion channel); Nobel Prize in Physiology or Medicine 2021 (nobelprize.org); Nolden, Lenart & Hayes 2019, Physiology & Behavior (milk and oral burn).\n3D: every model built from scratch in Blender (procedural; no stock models or footage).\n\nHow this was made: the script is researched and fact-checked against published research (sources above), narrated by an AI voice, and animated and edited with open-source software.",
@@ -6472,7 +6472,7 @@
       "3D animation"
     ],
     "hook": "Chilli never actually heats your mouth. Your tongue just thinks it's on fire.",
-    "status": "scheduled",
+    "status": "replaced",
     "narration": "Chilli never actually heats your mouth. Your tongue just thinks it's on fire. The nerves in your tongue carry a tiny sensor called TRPV1. Its job is to warn you about burning heat. At about forty-three degrees Celsius, around a hundred and nine Fahrenheit, it springs open, and your brain hears: hot! The molecule in chilli, called capsaicin, slots into the very same sensor and opens it, with no heat at all. So your brain gets the same alarm, and you sweat and go red, as if you really were hot. Finding this sensor won the Nobel Prize in Medicine. And in a taste test, milk calmed the burn best. Even skim milk. So chilli doesn't heat your mouth. It switches on the sensor that warns you about burning heat. So what do you think mint does to the sensor for cold?",
     "voice_engine": "chatterbox",
     "countdown": false,
@@ -6480,7 +6480,9 @@
     "question": "So what do you think mint does to the sensor for cold?",
     "video_id": "MI-uIWRwwqc",
     "publish_at": "2026-12-02T19:00:00-05:00",
-    "thumbnail_set": true
+    "thumbnail_set": true,
+    "replaced_reason": "new cold-open hook (council 28 Nov)",
+    "old_publish_at": "2026-12-03T00:00:00Z"
   },
   {
     "job": "hero_mosquito_magnets",
@@ -6557,7 +6559,7 @@
     "thumbnail_set": true
   },
   {
-    "job": "hero_popcorn",
+    "job": "hero_popcorn_replaced",
     "topic": "Popcorn Jumps On A Leg (Slow Motion Science) 🍿",
     "title": "Popcorn Jumps On A Leg (Slow Motion Science) 🍿",
     "description": "Slow it down and popcorn does something strange: it grows a leg of starch and jumps off the pan. And the pop isn't the shell cracking. #shorts #science #physics #popcorn\n\nSources: Virot & Ponomarenko 2015, Journal of the Royal Society Interface 12:20141247 (Popcorn: critical temperature, jump and sound), PMC4345489.\n3D: every model built from scratch in Blender (procedural; no stock models or footage).\n\nHow this was made: the script is researched and fact-checked against published research (sources above), narrated by an AI voice, and animated and edited with open-source software.",
@@ -6571,7 +6573,7 @@
       "3D animation"
     ],
     "hook": "Popcorn doesn't just explode. It jumps, on a leg.",
-    "status": "scheduled",
+    "status": "replaced",
     "narration": "Popcorn doesn't just explode. It jumps, on a leg. Inside each kernel is a little water, sealed in a hard shell. Heat it, and that water turns to steam. The pressure inside keeps climbing. Once it reaches one hundred eighty degrees Celsius, three hundred fifty-six Fahrenheit, almost every kernel bursts. Starch foams out of the crack, and part of it presses on the pan, like a leg. The leg squashes, then pushes back, and launches the kernel into the air. And the pop you hear? Filming and recording it together suggests it's the steam escaping, not the shell cracking. Popcorn doesn't just burst. It grows a leg of starch, kicks off the pan, and the pop is escaping steam. So why do some kernels never pop at all?",
     "voice_engine": "chatterbox",
     "countdown": false,
@@ -6579,7 +6581,9 @@
     "question": "So why do some kernels never pop at all?",
     "video_id": "_n7OhOvyAyc",
     "publish_at": "2026-12-06T19:00:00-05:00",
-    "thumbnail_set": true
+    "thumbnail_set": true,
+    "replaced_reason": "new cold-open hook (council 28 Nov)",
+    "old_publish_at": "2026-12-07T00:00:00Z"
   },
   {
     "job": "hero_leidenfrost",
@@ -6832,6 +6836,56 @@
     "question": "So if your mitochondria came from your mother, and hers from her mother, how far back do you think that line goes?",
     "video_id": "TAU2i58CarM",
     "publish_at": "2026-12-03T11:00:00-05:00",
+    "thumbnail_set": true
+  },
+  {
+    "job": "hero_chilli_burn",
+    "topic": "Chilli Never Actually Heats Your Mouth 🌶️",
+    "title": "Chilli Never Actually Heats Your Mouth 🌶️",
+    "description": "Chilli never raises the temperature in your mouth. Its molecule, capsaicin, opens TRPV1, the nerve sensor that normally fires at about 43 °C, so your brain hears a heat alarm. #shorts #science #biology #chilli\n\nSources: Caterina et al. 1997, Nature 389:816 (the capsaicin receptor, a heat-activated ion channel); Nobel Prize in Physiology or Medicine 2021 (nobelprize.org); Nolden, Lenart & Hayes 2019, Physiology & Behavior (milk and oral burn).\n3D: every model built from scratch in Blender (procedural; no stock models or footage).\n\nHow this was made: the script is researched and fact-checked against published research (sources above), narrated by an AI voice, and animated and edited with open-source software.",
+    "tags": [
+      "chilli",
+      "capsaicin",
+      "TRPV1",
+      "spicy food",
+      "biology",
+      "science",
+      "3D animation"
+    ],
+    "hook": "Chilli never actually heats your mouth. Your tongue just thinks it's on fire.",
+    "status": "scheduled",
+    "narration": "Chilli never actually heats your mouth. Your tongue just thinks it's on fire. The nerves in your tongue carry a tiny sensor called TRPV1. Its job is to warn you about burning heat. At about forty-three degrees Celsius, around a hundred and nine Fahrenheit, it springs open, and your brain hears: hot! The molecule in chilli, called capsaicin, slots into the very same sensor and opens it, with no heat at all. So your brain gets the same alarm, and you sweat and go red, as if you really were hot. Finding this sensor won the Nobel Prize in Medicine. And in a taste test, milk calmed the burn best. Even skim milk. So chilli doesn't heat your mouth. It switches on the sensor that warns you about burning heat. So what do you think mint does to the sensor for cold?",
+    "voice_engine": "chatterbox",
+    "countdown": false,
+    "hero_3d": true,
+    "question": "So what do you think mint does to the sensor for cold?",
+    "video_id": "WrvR9alRTcU",
+    "publish_at": "2026-12-02T19:00:00-05:00",
+    "thumbnail_set": true
+  },
+  {
+    "job": "hero_popcorn",
+    "topic": "Popcorn Jumps On A Leg (Slow Motion Science) 🍿",
+    "title": "Popcorn Jumps On A Leg (Slow Motion Science) 🍿",
+    "description": "Slow it down and popcorn does something strange: it grows a leg of starch and jumps off the pan. And the pop isn't the shell cracking. #shorts #science #physics #popcorn\n\nSources: Virot & Ponomarenko 2015, Journal of the Royal Society Interface 12:20141247 (Popcorn: critical temperature, jump and sound), PMC4345489.\n3D: every model built from scratch in Blender (procedural; no stock models or footage).\n\nHow this was made: the script is researched and fact-checked against published research (sources above), narrated by an AI voice, and animated and edited with open-source software.",
+    "tags": [
+      "popcorn",
+      "popcorn science",
+      "slow motion",
+      "physics",
+      "kitchen science",
+      "science",
+      "3D animation"
+    ],
+    "hook": "Popcorn doesn't just explode. It jumps, on a leg.",
+    "status": "scheduled",
+    "narration": "Popcorn doesn't just explode. It jumps, on a leg. Inside each kernel is a little water, sealed in a hard shell. Heat it, and that water turns to steam. The pressure inside keeps climbing. Once it reaches one hundred eighty degrees Celsius, three hundred fifty-six Fahrenheit, almost every kernel bursts. Starch foams out of the crack, and part of it presses on the pan, like a leg. The leg squashes, then pushes back, and launches the kernel into the air. And the pop you hear? Filming and recording it together suggests it's the steam escaping, not the shell cracking. Popcorn doesn't just burst. It grows a leg of starch, kicks off the pan, and the pop is escaping steam. So why do some kernels never pop at all?",
+    "voice_engine": "chatterbox",
+    "countdown": false,
+    "hero_3d": true,
+    "question": "So why do some kernels never pop at all?",
+    "video_id": "P8LJAJk5v2w",
+    "publish_at": "2026-12-06T19:00:00-05:00",
     "thumbnail_set": true
   }
 ]

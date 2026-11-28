@@ -1,0 +1,124 @@
+{
+  "assets_dir": "assets/3d",
+  "renderer": "micro",
+  "end_beat_s": 0.6,
+  "shots": [
+    {
+      "kind": "chilli_macro",
+      "overlay": "label",
+      "label": [
+        "NO REAL HEAT",
+        "your mouth stays about 37 °C"
+      ],
+      "fstop": 4.0,
+      "seconds": 6.129,
+      "render_seconds": 6.229,
+      "event_seconds": 3.423
+    },
+    {
+      "kind": "membrane_dive",
+      "overlay": "label",
+      "label": [
+        "TRPV1",
+        "a heat alarm on your nerves"
+      ],
+      "seconds": 8.333,
+      "render_seconds": 8.433,
+      "event_seconds": 5.791
+    },
+    {
+      "kind": "heat_open",
+      "overlay": "label",
+      "label": [
+        "OPENS AT ~43 °C",
+        "about 109 °F"
+      ],
+      "source": "Caterina et al. 1997, Nature 389:816",
+      "seconds": 5.722,
+      "render_seconds": 6.0,
+      "event_seconds": 5.722
+    },
+    {
+      "kind": "capsaicin_open",
+      "overlay": "label",
+      "label": [
+        "CAPSAICIN",
+        "opens it with NO heat"
+      ],
+      "seconds": 5.711,
+      "render_seconds": 5.811,
+      "event_seconds": 5.527
+    },
+    {
+      "kind": "nerve_pulse",
+      "overlay": "label",
+      "label": [
+        "SAME ALARM",
+        "your brain hears HOT"
+      ],
+      "seconds": 6.65,
+      "render_seconds": 6.75,
+      "event_seconds": 3.639
+    },
+    {
+      "kind": "channel_orbit",
+      "overlay": "label",
+      "label": [
+        "NOBEL PRIZE 2021",
+        "for finding this sensor"
+      ],
+      "gold": true,
+      "source": "Nobel Prize in Physiology or Medicine 2021",
+      "seconds": 2.635,
+      "render_seconds": 2.784,
+      "event_seconds": 2.635
+    },
+    {
+      "kind": "capsaicin_leave",
+      "overlay": "label",
+      "label": [
+        "MILK WORKS BEST",
+        "even skim milk"
+      ],
+      "source": "Nolden, Lenart & Hayes 2019, Physiology & Behavior",
+      "seconds": 5.691,
+      "render_seconds": 5.791,
+      "event_seconds": 3.973
+    },
+    {
+      "kind": "pull_back",
+      "overlay": "label",
+      "label": [
+        "NOT HEAT",
+        "a heat ALARM"
+      ],
+      "seconds": 6.62,
+      "render_seconds": 6.72,
+      "event_seconds": 4.794
+    },
+    {
+      "kind": "cold_tease",
+      "overlay": "none",
+      "seconds": 5.347,
+      "render_seconds": 5.447,
+      "event_seconds": 3.72
+    }
+  ],
+  "hi_labels": {
+    "NO REAL HEAT": "असली गर्मी नहीं",
+    "your mouth stays about 37 °C": "मुँह लगभग 37 °C ही रहता है",
+    "a heat alarm on your nerves": "नसों पर गर्मी का अलार्म",
+    "OPENS AT ~43 °C": "लगभग 43 °C पर खुलता है",
+    "about 109 °F": "जलाने वाली गर्मी",
+    "CAPSAICIN": "CAPSAICIN",
+    "opens it with NO heat": "बिना गर्मी के खोल देता है",
+    "SAME ALARM": "वही अलार्म",
+    "your brain hears HOT": "दिमाग़ सुनता है: गर्म!",
+    "NOBEL PRIZE 2021": "NOBEL PRIZE 2021",
+    "for finding this sensor": "इस sensor की खोज के लिए",
+    "MILK WORKS BEST": "दूध सबसे अच्छा",
+    "even skim milk": "बिना मलाई वाला भी",
+    "NOT HEAT": "गर्मी नहीं",
+    "a heat ALARM": "गर्मी का अलार्म"
+  }
+}

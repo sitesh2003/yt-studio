@@ -1,0 +1,5387 @@
+[
+  {
+    "start": 0.0,
+    "end": 0.366,
+    "text": "Inside"
+  },
+  {
+    "start": 0.366,
+    "end": 0.634,
+    "text": "you"
+  },
+  {
+    "start": 0.634,
+    "end": 0.805,
+    "text": "right"
+  },
+  {
+    "start": 0.805,
+    "end": 1.024,
+    "text": "now"
+  },
+  {
+    "start": 1.024,
+    "end": 1.244,
+    "text": "are"
+  },
+  {
+    "start": 1.244,
+    "end": 1.512,
+    "text": "motors"
+  },
+  {
+    "start": 1.512,
+    "end": 1.902,
+    "text": "so"
+  },
+  {
+    "start": 1.902,
+    "end": 2.317,
+    "text": "small"
+  },
+  {
+    "start": 2.317,
+    "end": 2.756,
+    "text": "that"
+  },
+  {
+    "start": 2.756,
+    "end": 2.976,
+    "text": "tens"
+  },
+  {
+    "start": 2.976,
+    "end": 3.268,
+    "text": "of"
+  },
+  {
+    "start": 3.268,
+    "end": 3.512,
+    "text": "thousands,"
+  },
+  {
+    "start": 4.049,
+    "end": 4.122,
+    "text": "side"
+  },
+  {
+    "start": 4.122,
+    "end": 4.366,
+    "text": "by"
+  },
+  {
+    "start": 4.366,
+    "end": 4.756,
+    "text": "side,"
+  },
+  {
+    "start": 4.976,
+    "end": 5.146,
+    "text": "would"
+  },
+  {
+    "start": 5.146,
+    "end": 5.317,
+    "text": "fit"
+  },
+  {
+    "start": 5.317,
+    "end": 5.61,
+    "text": "across"
+  },
+  {
+    "start": 5.61,
+    "end": 5.805,
+    "text": "the"
+  },
+  {
+    "start": 5.805,
+    "end": 5.951,
+    "text": "full"
+  },
+  {
+    "start": 5.951,
+    "end": 6.22,
+    "text": "stop"
+  },
+  {
+    "start": 6.22,
+    "end": 6.463,
+    "text": "at"
+  },
+  {
+    "start": 6.463,
+    "end": 6.561,
+    "text": "the"
+  },
+  {
+    "start": 6.561,
+    "end": 6.732,
+    "text": "end"
+  },
+  {
+    "start": 6.732,
+    "end": 6.854,
+    "text": "of"
+  },
+  {
+    "start": 6.854,
+    "end": 6.927,
+    "text": "a"
+  },
+  {
+    "start": 6.927,
+    "end": 7.22,
+    "text": "sentence."
+  },
+  {
+    "start": 7.819,
+    "end": 8.209,
+    "text": "Each"
+  },
+  {
+    "start": 8.209,
+    "end": 8.477,
+    "text": "one"
+  },
+  {
+    "start": 8.477,
+    "end": 8.697,
+    "text": "spins"
+  },
+  {
+    "start": 8.697,
+    "end": 9.062,
+    "text": "about"
+  },
+  {
+    "start": 9.062,
+    "end": 9.209,
+    "text": "a"
+  },
+  {
+    "start": 9.209,
+    "end": 9.355,
+    "text": "hundred"
+  },
+  {
+    "start": 9.355,
+    "end": 9.77,
+    "text": "times"
+  },
+  {
+    "start": 9.77,
+    "end": 9.965,
+    "text": "a"
+  },
+  {
+    "start": 9.965,
+    "end": 10.258,
+    "text": "second."
+  },
+  {
+    "start": 10.725,
+    "end": 10.921,
+    "text": "And"
+  },
+  {
+    "start": 10.921,
+    "end": 11.116,
+    "text": "it's"
+  },
+  {
+    "start": 11.116,
+    "end": 11.189,
+    "text": "a"
+  },
+  {
+    "start": 11.189,
+    "end": 11.36,
+    "text": "real"
+  },
+  {
+    "start": 11.36,
+    "end": 11.774,
+    "text": "rotary"
+  },
+  {
+    "start": 11.774,
+    "end": 11.994,
+    "text": "motor,"
+  },
+  {
+    "start": 11.994,
+    "end": 12.36,
+    "text": "with"
+  },
+  {
+    "start": 12.36,
+    "end": 12.433,
+    "text": "a"
+  },
+  {
+    "start": 12.433,
+    "end": 12.677,
+    "text": "rotor,"
+  },
+  {
+    "start": 12.969,
+    "end": 12.969,
+    "text": "a"
+  },
+  {
+    "start": 12.969,
+    "end": 13.238,
+    "text": "shaft"
+  },
+  {
+    "start": 13.482,
+    "end": 13.579,
+    "text": "and"
+  },
+  {
+    "start": 13.579,
+    "end": 13.652,
+    "text": "a"
+  },
+  {
+    "start": 13.652,
+    "end": 14.043,
+    "text": "stator,"
+  },
+  {
+    "start": 14.213,
+    "end": 14.335,
+    "text": "like"
+  },
+  {
+    "start": 14.335,
+    "end": 14.53,
+    "text": "the"
+  },
+  {
+    "start": 14.53,
+    "end": 14.701,
+    "text": "motor"
+  },
+  {
+    "start": 14.701,
+    "end": 14.945,
+    "text": "in"
+  },
+  {
+    "start": 14.945,
+    "end": 15.018,
+    "text": "a"
+  },
+  {
+    "start": 15.018,
+    "end": 15.213,
+    "text": "drill."
+  },
+  {
+    "start": 15.761,
+    "end": 16.151,
+    "text": "It"
+  },
+  {
+    "start": 16.151,
+    "end": 16.322,
+    "text": "runs"
+  },
+  {
+    "start": 16.322,
+    "end": 16.492,
+    "text": "on"
+  },
+  {
+    "start": 16.492,
+    "end": 16.858,
+    "text": "electricity."
+  },
+  {
+    "start": 17.493,
+    "end": 17.664,
+    "text": "Not"
+  },
+  {
+    "start": 17.664,
+    "end": 17.834,
+    "text": "from"
+  },
+  {
+    "start": 17.834,
+    "end": 17.956,
+    "text": "a"
+  },
+  {
+    "start": 17.956,
+    "end": 18.249,
+    "text": "socket,"
+  },
+  {
+    "start": 18.542,
+    "end": 18.591,
+    "text": "but"
+  },
+  {
+    "start": 18.591,
+    "end": 18.737,
+    "text": "from"
+  },
+  {
+    "start": 18.737,
+    "end": 19.225,
+    "text": "protons,"
+  },
+  {
+    "start": 19.493,
+    "end": 19.615,
+    "text": "pushed"
+  },
+  {
+    "start": 19.615,
+    "end": 19.981,
+    "text": "across"
+  },
+  {
+    "start": 19.981,
+    "end": 20.2,
+    "text": "a"
+  },
+  {
+    "start": 20.2,
+    "end": 20.444,
+    "text": "membrane."
+  },
+  {
+    "start": 21.052,
+    "end": 21.272,
+    "text": "Its"
+  },
+  {
+    "start": 21.272,
+    "end": 21.491,
+    "text": "name"
+  },
+  {
+    "start": 21.491,
+    "end": 21.686,
+    "text": "is"
+  },
+  {
+    "start": 21.686,
+    "end": 22.077,
+    "text": "ATP"
+  },
+  {
+    "start": 22.077,
+    "end": 22.808,
+    "text": "synthase."
+  },
+  {
+    "start": 23.242,
+    "end": 23.534,
+    "text": "And"
+  },
+  {
+    "start": 23.534,
+    "end": 23.949,
+    "text": "this"
+  },
+  {
+    "start": 23.949,
+    "end": 24.217,
+    "text": "is"
+  },
+  {
+    "start": 24.217,
+    "end": 24.388,
+    "text": "the"
+  },
+  {
+    "start": 24.388,
+    "end": 24.583,
+    "text": "physics"
+  },
+  {
+    "start": 24.583,
+    "end": 24.925,
+    "text": "of"
+  },
+  {
+    "start": 24.925,
+    "end": 25.047,
+    "text": "how"
+  },
+  {
+    "start": 25.047,
+    "end": 25.168,
+    "text": "it"
+  },
+  {
+    "start": 25.168,
+    "end": 25.412,
+    "text": "works."
+  },
+  {
+    "start": 26.035,
+    "end": 26.669,
+    "text": "Chapter"
+  },
+  {
+    "start": 26.669,
+    "end": 26.962,
+    "text": "one."
+  },
+  {
+    "start": 27.455,
+    "end": 27.772,
+    "text": "How"
+  },
+  {
+    "start": 27.772,
+    "end": 27.919,
+    "text": "much"
+  },
+  {
+    "start": 27.919,
+    "end": 28.211,
+    "text": "power"
+  },
+  {
+    "start": 28.211,
+    "end": 28.553,
+    "text": "do"
+  },
+  {
+    "start": 28.553,
+    "end": 28.651,
+    "text": "you"
+  },
+  {
+    "start": 28.651,
+    "end": 28.894,
+    "text": "need?"
+  },
+  {
+    "start": 29.597,
+    "end": 29.89,
+    "text": "Even"
+  },
+  {
+    "start": 29.89,
+    "end": 30.231,
+    "text": "resting,"
+  },
+  {
+    "start": 30.695,
+    "end": 30.841,
+    "text": "your"
+  },
+  {
+    "start": 30.841,
+    "end": 31.085,
+    "text": "body"
+  },
+  {
+    "start": 31.085,
+    "end": 31.426,
+    "text": "uses"
+  },
+  {
+    "start": 31.426,
+    "end": 31.914,
+    "text": "energy"
+  },
+  {
+    "start": 31.914,
+    "end": 32.256,
+    "text": "at"
+  },
+  {
+    "start": 32.256,
+    "end": 32.524,
+    "text": "roughly"
+  },
+  {
+    "start": 32.524,
+    "end": 32.939,
+    "text": "eighty"
+  },
+  {
+    "start": 32.939,
+    "end": 33.158,
+    "text": "to"
+  },
+  {
+    "start": 33.158,
+    "end": 33.378,
+    "text": "a"
+  },
+  {
+    "start": 33.378,
+    "end": 33.597,
+    "text": "hundred"
+  },
+  {
+    "start": 33.597,
+    "end": 33.841,
+    "text": "watts."
+  },
+  {
+    "start": 34.469,
+    "end": 34.811,
+    "text": "About"
+  },
+  {
+    "start": 34.811,
+    "end": 34.981,
+    "text": "as"
+  },
+  {
+    "start": 34.981,
+    "end": 35.152,
+    "text": "much"
+  },
+  {
+    "start": 35.152,
+    "end": 35.323,
+    "text": "as"
+  },
+  {
+    "start": 35.323,
+    "end": 35.445,
+    "text": "an"
+  },
+  {
+    "start": 35.445,
+    "end": 35.64,
+    "text": "old,"
+  },
+  {
+    "start": 35.64,
+    "end": 36.03,
+    "text": "bright"
+  },
+  {
+    "start": 36.03,
+    "end": 36.347,
+    "text": "light"
+  },
+  {
+    "start": 36.347,
+    "end": 36.591,
+    "text": "bulb."
+  },
+  {
+    "start": 37.118,
+    "end": 37.459,
+    "text": "Almost"
+  },
+  {
+    "start": 37.459,
+    "end": 37.727,
+    "text": "all"
+  },
+  {
+    "start": 37.727,
+    "end": 37.898,
+    "text": "of"
+  },
+  {
+    "start": 37.898,
+    "end": 38.069,
+    "text": "that"
+  },
+  {
+    "start": 38.069,
+    "end": 38.264,
+    "text": "is"
+  },
+  {
+    "start": 38.264,
+    "end": 38.435,
+    "text": "paid"
+  },
+  {
+    "start": 38.435,
+    "end": 38.679,
+    "text": "out"
+  },
+  {
+    "start": 38.679,
+    "end": 38.849,
+    "text": "in"
+  },
+  {
+    "start": 38.849,
+    "end": 39.044,
+    "text": "one"
+  },
+  {
+    "start": 39.044,
+    "end": 39.508,
+    "text": "molecule,"
+  },
+  {
+    "start": 39.947,
+    "end": 40.361,
+    "text": "ATP,"
+  },
+  {
+    "start": 41.02,
+    "end": 41.118,
+    "text": "the"
+  },
+  {
+    "start": 41.118,
+    "end": 41.313,
+    "text": "energy"
+  },
+  {
+    "start": 41.313,
+    "end": 41.825,
+    "text": "currency"
+  },
+  {
+    "start": 41.825,
+    "end": 42.142,
+    "text": "of"
+  },
+  {
+    "start": 42.142,
+    "end": 42.288,
+    "text": "your"
+  },
+  {
+    "start": 42.288,
+    "end": 42.532,
+    "text": "cells."
+  },
+  {
+    "start": 43.216,
+    "end": 43.606,
+    "text": "You"
+  },
+  {
+    "start": 43.606,
+    "end": 43.948,
+    "text": "hold"
+  },
+  {
+    "start": 43.948,
+    "end": 44.411,
+    "text": "only"
+  },
+  {
+    "start": 44.411,
+    "end": 44.631,
+    "text": "about"
+  },
+  {
+    "start": 44.631,
+    "end": 44.765,
+    "text": "a"
+  },
+  {
+    "start": 44.765,
+    "end": 44.899,
+    "text": "hundred"
+  },
+  {
+    "start": 44.899,
+    "end": 45.314,
+    "text": "grams"
+  },
+  {
+    "start": 45.314,
+    "end": 45.582,
+    "text": "of"
+  },
+  {
+    "start": 45.582,
+    "end": 45.704,
+    "text": "it"
+  },
+  {
+    "start": 45.704,
+    "end": 45.826,
+    "text": "at"
+  },
+  {
+    "start": 45.826,
+    "end": 46.094,
+    "text": "once."
+  },
+  {
+    "start": 46.695,
+    "end": 47.012,
+    "text": "Yet"
+  },
+  {
+    "start": 47.012,
+    "end": 47.207,
+    "text": "you"
+  },
+  {
+    "start": 47.207,
+    "end": 47.427,
+    "text": "use"
+  },
+  {
+    "start": 47.427,
+    "end": 47.671,
+    "text": "about"
+  },
+  {
+    "start": 47.671,
+    "end": 47.963,
+    "text": "forty"
+  },
+  {
+    "start": 47.963,
+    "end": 48.232,
+    "text": "kilograms"
+  },
+  {
+    "start": 48.232,
+    "end": 48.646,
+    "text": "a"
+  },
+  {
+    "start": 48.646,
+    "end": 48.817,
+    "text": "day."
+  },
+  {
+    "start": 49.45,
+    "end": 49.694,
+    "text": "So"
+  },
+  {
+    "start": 49.987,
+    "end": 50.158,
+    "text": "every"
+  },
+  {
+    "start": 50.158,
+    "end": 50.645,
+    "text": "molecule"
+  },
+  {
+    "start": 50.645,
+    "end": 51.011,
+    "text": "is"
+  },
+  {
+    "start": 51.011,
+    "end": 51.304,
+    "text": "rebuilt"
+  },
+  {
+    "start": 51.304,
+    "end": 51.719,
+    "text": "about"
+  },
+  {
+    "start": 51.719,
+    "end": 51.902,
+    "text": "four"
+  },
+  {
+    "start": 51.902,
+    "end": 52.084,
+    "text": "hundred"
+  },
+  {
+    "start": 52.084,
+    "end": 52.548,
+    "text": "times"
+  },
+  {
+    "start": 52.548,
+    "end": 52.767,
+    "text": "a"
+  },
+  {
+    "start": 52.767,
+    "end": 52.938,
+    "text": "day."
+  },
+  {
+    "start": 53.451,
+    "end": 53.598,
+    "text": "The"
+  },
+  {
+    "start": 53.598,
+    "end": 53.817,
+    "text": "machine"
+  },
+  {
+    "start": 53.817,
+    "end": 54.037,
+    "text": "that"
+  },
+  {
+    "start": 54.037,
+    "end": 54.549,
+    "text": "rebuilds"
+  },
+  {
+    "start": 54.549,
+    "end": 54.622,
+    "text": "it"
+  },
+  {
+    "start": 54.622,
+    "end": 54.866,
+    "text": "is"
+  },
+  {
+    "start": 54.866,
+    "end": 55.085,
+    "text": "the"
+  },
+  {
+    "start": 55.085,
+    "end": 55.427,
+    "text": "motor."
+  },
+  {
+    "start": 56.046,
+    "end": 56.217,
+    "text": "But"
+  },
+  {
+    "start": 56.217,
+    "end": 56.534,
+    "text": "first,"
+  },
+  {
+    "start": 56.9,
+    "end": 56.997,
+    "text": "it"
+  },
+  {
+    "start": 56.997,
+    "end": 57.168,
+    "text": "needs"
+  },
+  {
+    "start": 57.168,
+    "end": 57.363,
+    "text": "a"
+  },
+  {
+    "start": 57.363,
+    "end": 57.558,
+    "text": "power"
+  },
+  {
+    "start": 57.558,
+    "end": 57.949,
+    "text": "supply."
+  },
+  {
+    "start": 58.589,
+    "end": 59.199,
+    "text": "Chapter"
+  },
+  {
+    "start": 59.199,
+    "end": 59.516,
+    "text": "two."
+  },
+  {
+    "start": 59.964,
+    "end": 60.086,
+    "text": "A"
+  },
+  {
+    "start": 60.086,
+    "end": 60.403,
+    "text": "battery"
+  },
+  {
+    "start": 60.403,
+    "end": 60.72,
+    "text": "in"
+  },
+  {
+    "start": 60.72,
+    "end": 60.793,
+    "text": "a"
+  },
+  {
+    "start": 60.793,
+    "end": 61.135,
+    "text": "membrane."
+  },
+  {
+    "start": 61.769,
+    "end": 61.916,
+    "text": "The"
+  },
+  {
+    "start": 61.916,
+    "end": 62.135,
+    "text": "motors"
+  },
+  {
+    "start": 62.135,
+    "end": 62.452,
+    "text": "sit"
+  },
+  {
+    "start": 62.452,
+    "end": 62.599,
+    "text": "in"
+  },
+  {
+    "start": 62.599,
+    "end": 62.696,
+    "text": "the"
+  },
+  {
+    "start": 62.696,
+    "end": 62.867,
+    "text": "inner"
+  },
+  {
+    "start": 62.867,
+    "end": 63.282,
+    "text": "membrane"
+  },
+  {
+    "start": 63.282,
+    "end": 63.477,
+    "text": "of"
+  },
+  {
+    "start": 63.477,
+    "end": 64.16,
+    "text": "mitochondria,"
+  },
+  {
+    "start": 64.404,
+    "end": 64.428,
+    "text": "the"
+  },
+  {
+    "start": 64.428,
+    "end": 64.623,
+    "text": "power"
+  },
+  {
+    "start": 64.623,
+    "end": 64.916,
+    "text": "stations"
+  },
+  {
+    "start": 64.916,
+    "end": 65.208,
+    "text": "of"
+  },
+  {
+    "start": 65.208,
+    "end": 65.306,
+    "text": "the"
+  },
+  {
+    "start": 65.306,
+    "end": 65.526,
+    "text": "cell."
+  },
+  {
+    "start": 65.968,
+    "end": 66.065,
+    "text": "That"
+  },
+  {
+    "start": 66.065,
+    "end": 66.333,
+    "text": "membrane"
+  },
+  {
+    "start": 66.333,
+    "end": 66.626,
+    "text": "is"
+  },
+  {
+    "start": 66.626,
+    "end": 66.797,
+    "text": "folded"
+  },
+  {
+    "start": 66.797,
+    "end": 67.236,
+    "text": "again"
+  },
+  {
+    "start": 67.236,
+    "end": 67.48,
+    "text": "and"
+  },
+  {
+    "start": 67.48,
+    "end": 67.773,
+    "text": "again,"
+  },
+  {
+    "start": 67.773,
+    "end": 68.163,
+    "text": "to"
+  },
+  {
+    "start": 68.163,
+    "end": 68.333,
+    "text": "pack"
+  },
+  {
+    "start": 68.333,
+    "end": 68.529,
+    "text": "in"
+  },
+  {
+    "start": 68.529,
+    "end": 68.626,
+    "text": "as"
+  },
+  {
+    "start": 68.626,
+    "end": 68.797,
+    "text": "many"
+  },
+  {
+    "start": 68.797,
+    "end": 69.114,
+    "text": "motors"
+  },
+  {
+    "start": 69.114,
+    "end": 69.309,
+    "text": "as"
+  },
+  {
+    "start": 69.309,
+    "end": 69.626,
+    "text": "possible."
+  },
+  {
+    "start": 70.183,
+    "end": 70.403,
+    "text": "Food"
+  },
+  {
+    "start": 70.403,
+    "end": 70.549,
+    "text": "is"
+  },
+  {
+    "start": 70.549,
+    "end": 70.72,
+    "text": "broken"
+  },
+  {
+    "start": 70.72,
+    "end": 71.11,
+    "text": "down"
+  },
+  {
+    "start": 71.11,
+    "end": 71.451,
+    "text": "until"
+  },
+  {
+    "start": 71.451,
+    "end": 71.622,
+    "text": "its"
+  },
+  {
+    "start": 71.622,
+    "end": 71.964,
+    "text": "energy"
+  },
+  {
+    "start": 71.964,
+    "end": 72.207,
+    "text": "is"
+  },
+  {
+    "start": 72.207,
+    "end": 72.427,
+    "text": "carried"
+  },
+  {
+    "start": 72.427,
+    "end": 72.671,
+    "text": "by"
+  },
+  {
+    "start": 72.671,
+    "end": 73.085,
+    "text": "electrons."
+  },
+  {
+    "start": 73.784,
+    "end": 74.003,
+    "text": "Those"
+  },
+  {
+    "start": 74.003,
+    "end": 74.296,
+    "text": "electrons"
+  },
+  {
+    "start": 74.296,
+    "end": 74.759,
+    "text": "flow"
+  },
+  {
+    "start": 74.759,
+    "end": 75.003,
+    "text": "down"
+  },
+  {
+    "start": 75.003,
+    "end": 75.125,
+    "text": "a"
+  },
+  {
+    "start": 75.125,
+    "end": 75.32,
+    "text": "chain"
+  },
+  {
+    "start": 75.32,
+    "end": 75.467,
+    "text": "of"
+  },
+  {
+    "start": 75.467,
+    "end": 75.857,
+    "text": "proteins,"
+  },
+  {
+    "start": 76.223,
+    "end": 76.272,
+    "text": "a"
+  },
+  {
+    "start": 76.272,
+    "end": 76.442,
+    "text": "little"
+  },
+  {
+    "start": 76.442,
+    "end": 76.662,
+    "text": "like"
+  },
+  {
+    "start": 76.662,
+    "end": 76.784,
+    "text": "a"
+  },
+  {
+    "start": 76.784,
+    "end": 77.052,
+    "text": "current"
+  },
+  {
+    "start": 77.052,
+    "end": 77.32,
+    "text": "through"
+  },
+  {
+    "start": 77.32,
+    "end": 77.418,
+    "text": "a"
+  },
+  {
+    "start": 77.418,
+    "end": 77.735,
+    "text": "circuit."
+  },
+  {
+    "start": 78.172,
+    "end": 78.294,
+    "text": "Their"
+  },
+  {
+    "start": 78.294,
+    "end": 78.685,
+    "text": "energy"
+  },
+  {
+    "start": 78.685,
+    "end": 79.002,
+    "text": "drives"
+  },
+  {
+    "start": 79.002,
+    "end": 79.343,
+    "text": "pumps"
+  },
+  {
+    "start": 79.343,
+    "end": 79.733,
+    "text": "that"
+  },
+  {
+    "start": 79.733,
+    "end": 80.002,
+    "text": "push"
+  },
+  {
+    "start": 80.002,
+    "end": 80.563,
+    "text": "protons,"
+  },
+  {
+    "start": 80.928,
+    "end": 80.953,
+    "text": "which"
+  },
+  {
+    "start": 80.953,
+    "end": 81.075,
+    "text": "are"
+  },
+  {
+    "start": 81.075,
+    "end": 81.441,
+    "text": "positive"
+  },
+  {
+    "start": 81.441,
+    "end": 81.904,
+    "text": "charges,"
+  },
+  {
+    "start": 82.319,
+    "end": 82.441,
+    "text": "to"
+  },
+  {
+    "start": 82.441,
+    "end": 82.587,
+    "text": "one"
+  },
+  {
+    "start": 82.587,
+    "end": 82.928,
+    "text": "side"
+  },
+  {
+    "start": 82.928,
+    "end": 83.026,
+    "text": "of"
+  },
+  {
+    "start": 83.026,
+    "end": 83.124,
+    "text": "the"
+  },
+  {
+    "start": 83.124,
+    "end": 83.343,
+    "text": "membrane."
+  },
+  {
+    "start": 84.133,
+    "end": 84.231,
+    "text": "At"
+  },
+  {
+    "start": 84.231,
+    "end": 84.329,
+    "text": "the"
+  },
+  {
+    "start": 84.329,
+    "end": 84.451,
+    "text": "end"
+  },
+  {
+    "start": 84.451,
+    "end": 84.597,
+    "text": "of"
+  },
+  {
+    "start": 84.597,
+    "end": 84.694,
+    "text": "the"
+  },
+  {
+    "start": 84.694,
+    "end": 84.963,
+    "text": "chain,"
+  },
+  {
+    "start": 85.255,
+    "end": 85.353,
+    "text": "the"
+  },
+  {
+    "start": 85.353,
+    "end": 85.646,
+    "text": "electrons"
+  },
+  {
+    "start": 85.646,
+    "end": 86.011,
+    "text": "are"
+  },
+  {
+    "start": 86.011,
+    "end": 86.182,
+    "text": "handed"
+  },
+  {
+    "start": 86.182,
+    "end": 86.402,
+    "text": "to"
+  },
+  {
+    "start": 86.402,
+    "end": 86.743,
+    "text": "oxygen,"
+  },
+  {
+    "start": 86.743,
+    "end": 87.231,
+    "text": "and"
+  },
+  {
+    "start": 87.231,
+    "end": 87.426,
+    "text": "make"
+  },
+  {
+    "start": 87.426,
+    "end": 87.768,
+    "text": "water."
+  },
+  {
+    "start": 88.328,
+    "end": 88.548,
+    "text": "Pile"
+  },
+  {
+    "start": 88.548,
+    "end": 88.67,
+    "text": "up"
+  },
+  {
+    "start": 88.67,
+    "end": 88.962,
+    "text": "positive"
+  },
+  {
+    "start": 88.962,
+    "end": 89.255,
+    "text": "charge"
+  },
+  {
+    "start": 89.255,
+    "end": 89.548,
+    "text": "on"
+  },
+  {
+    "start": 89.548,
+    "end": 89.718,
+    "text": "one"
+  },
+  {
+    "start": 89.718,
+    "end": 90.084,
+    "text": "side,"
+  },
+  {
+    "start": 90.45,
+    "end": 90.572,
+    "text": "and"
+  },
+  {
+    "start": 90.572,
+    "end": 90.67,
+    "text": "you"
+  },
+  {
+    "start": 90.67,
+    "end": 90.816,
+    "text": "get"
+  },
+  {
+    "start": 90.816,
+    "end": 90.913,
+    "text": "a"
+  },
+  {
+    "start": 90.913,
+    "end": 91.206,
+    "text": "voltage."
+  },
+  {
+    "start": 91.67,
+    "end": 91.913,
+    "text": "Across"
+  },
+  {
+    "start": 91.913,
+    "end": 92.182,
+    "text": "this"
+  },
+  {
+    "start": 92.182,
+    "end": 92.548,
+    "text": "membrane,"
+  },
+  {
+    "start": 92.865,
+    "end": 92.962,
+    "text": "it's"
+  },
+  {
+    "start": 92.962,
+    "end": 93.109,
+    "text": "about"
+  },
+  {
+    "start": 93.109,
+    "end": 93.194,
+    "text": "a"
+  },
+  {
+    "start": 93.194,
+    "end": 93.279,
+    "text": "hundred"
+  },
+  {
+    "start": 93.279,
+    "end": 93.365,
+    "text": "and"
+  },
+  {
+    "start": 93.365,
+    "end": 93.45,
+    "text": "fifty"
+  },
+  {
+    "start": 93.45,
+    "end": 94.109,
+    "text": "to"
+  },
+  {
+    "start": 94.109,
+    "end": 94.212,
+    "text": "a"
+  },
+  {
+    "start": 94.212,
+    "end": 94.316,
+    "text": "hundred"
+  },
+  {
+    "start": 94.316,
+    "end": 94.42,
+    "text": "and"
+  },
+  {
+    "start": 94.42,
+    "end": 94.523,
+    "text": "eighty"
+  },
+  {
+    "start": 94.523,
+    "end": 95.401,
+    "text": "millivolts."
+  },
+  {
+    "start": 95.83,
+    "end": 95.903,
+    "text": "That"
+  },
+  {
+    "start": 95.903,
+    "end": 96.05,
+    "text": "sounds"
+  },
+  {
+    "start": 96.05,
+    "end": 96.44,
+    "text": "tiny."
+  },
+  {
+    "start": 97.149,
+    "end": 97.246,
+    "text": "But"
+  },
+  {
+    "start": 97.246,
+    "end": 97.344,
+    "text": "the"
+  },
+  {
+    "start": 97.344,
+    "end": 97.612,
+    "text": "membrane"
+  },
+  {
+    "start": 97.612,
+    "end": 97.954,
+    "text": "is"
+  },
+  {
+    "start": 97.954,
+    "end": 98.173,
+    "text": "only"
+  },
+  {
+    "start": 98.173,
+    "end": 98.466,
+    "text": "about"
+  },
+  {
+    "start": 98.466,
+    "end": 98.759,
+    "text": "five"
+  },
+  {
+    "start": 98.759,
+    "end": 99.32,
+    "text": "billionths"
+  },
+  {
+    "start": 99.32,
+    "end": 99.368,
+    "text": "of"
+  },
+  {
+    "start": 99.368,
+    "end": 99.466,
+    "text": "a"
+  },
+  {
+    "start": 99.466,
+    "end": 99.637,
+    "text": "metre"
+  },
+  {
+    "start": 99.637,
+    "end": 99.881,
+    "text": "thick."
+  },
+  {
+    "start": 100.323,
+    "end": 100.494,
+    "text": "Divide"
+  },
+  {
+    "start": 100.494,
+    "end": 100.689,
+    "text": "the"
+  },
+  {
+    "start": 100.689,
+    "end": 100.884,
+    "text": "voltage"
+  },
+  {
+    "start": 100.884,
+    "end": 101.128,
+    "text": "by"
+  },
+  {
+    "start": 101.128,
+    "end": 101.274,
+    "text": "that"
+  },
+  {
+    "start": 101.274,
+    "end": 101.64,
+    "text": "distance,"
+  },
+  {
+    "start": 102.006,
+    "end": 102.104,
+    "text": "and"
+  },
+  {
+    "start": 102.104,
+    "end": 102.177,
+    "text": "the"
+  },
+  {
+    "start": 102.177,
+    "end": 102.372,
+    "text": "electric"
+  },
+  {
+    "start": 102.372,
+    "end": 102.713,
+    "text": "field"
+  },
+  {
+    "start": 102.713,
+    "end": 102.957,
+    "text": "is"
+  },
+  {
+    "start": 102.957,
+    "end": 103.128,
+    "text": "about"
+  },
+  {
+    "start": 103.128,
+    "end": 103.494,
+    "text": "thirty"
+  },
+  {
+    "start": 103.494,
+    "end": 103.957,
+    "text": "million"
+  },
+  {
+    "start": 103.957,
+    "end": 104.372,
+    "text": "volts"
+  },
+  {
+    "start": 104.372,
+    "end": 104.664,
+    "text": "per"
+  },
+  {
+    "start": 104.664,
+    "end": 104.835,
+    "text": "metre."
+  },
+  {
+    "start": 105.415,
+    "end": 105.733,
+    "text": "Scientists"
+  },
+  {
+    "start": 105.733,
+    "end": 106.05,
+    "text": "have"
+  },
+  {
+    "start": 106.05,
+    "end": 106.391,
+    "text": "compared"
+  },
+  {
+    "start": 106.391,
+    "end": 107.001,
+    "text": "that"
+  },
+  {
+    "start": 107.001,
+    "end": 107.123,
+    "text": "to"
+  },
+  {
+    "start": 107.123,
+    "end": 107.22,
+    "text": "the"
+  },
+  {
+    "start": 107.22,
+    "end": 107.44,
+    "text": "field"
+  },
+  {
+    "start": 107.44,
+    "end": 107.659,
+    "text": "in"
+  },
+  {
+    "start": 107.659,
+    "end": 107.733,
+    "text": "a"
+  },
+  {
+    "start": 107.733,
+    "end": 107.952,
+    "text": "lightning"
+  },
+  {
+    "start": 107.952,
+    "end": 108.293,
+    "text": "bolt,"
+  },
+  {
+    "start": 108.293,
+    "end": 108.757,
+    "text": "across"
+  },
+  {
+    "start": 108.757,
+    "end": 109.098,
+    "text": "every"
+  },
+  {
+    "start": 109.098,
+    "end": 109.367,
+    "text": "one"
+  },
+  {
+    "start": 109.367,
+    "end": 109.489,
+    "text": "of"
+  },
+  {
+    "start": 109.489,
+    "end": 109.586,
+    "text": "your"
+  },
+  {
+    "start": 109.586,
+    "end": 110.245,
+    "text": "mitochondria."
+  },
+  {
+    "start": 110.757,
+    "end": 111.221,
+    "text": "Chapter"
+  },
+  {
+    "start": 111.221,
+    "end": 111.562,
+    "text": "three."
+  },
+  {
+    "start": 111.955,
+    "end": 112.369,
+    "text": "Energy"
+  },
+  {
+    "start": 112.369,
+    "end": 112.662,
+    "text": "stored"
+  },
+  {
+    "start": 112.662,
+    "end": 113.126,
+    "text": "uphill."
+  },
+  {
+    "start": 113.684,
+    "end": 113.782,
+    "text": "The"
+  },
+  {
+    "start": 113.782,
+    "end": 114.221,
+    "text": "protons"
+  },
+  {
+    "start": 114.221,
+    "end": 114.392,
+    "text": "are"
+  },
+  {
+    "start": 114.392,
+    "end": 114.562,
+    "text": "pushed"
+  },
+  {
+    "start": 114.562,
+    "end": 114.855,
+    "text": "back"
+  },
+  {
+    "start": 114.855,
+    "end": 115.099,
+    "text": "by"
+  },
+  {
+    "start": 115.099,
+    "end": 115.27,
+    "text": "two"
+  },
+  {
+    "start": 115.27,
+    "end": 115.538,
+    "text": "things"
+  },
+  {
+    "start": 115.538,
+    "end": 115.709,
+    "text": "at"
+  },
+  {
+    "start": 115.709,
+    "end": 115.928,
+    "text": "once,"
+  },
+  {
+    "start": 116.245,
+    "end": 116.319,
+    "text": "the"
+  },
+  {
+    "start": 116.319,
+    "end": 116.587,
+    "text": "voltage,"
+  },
+  {
+    "start": 116.587,
+    "end": 116.953,
+    "text": "and"
+  },
+  {
+    "start": 116.953,
+    "end": 117.05,
+    "text": "the"
+  },
+  {
+    "start": 117.05,
+    "end": 117.465,
+    "text": "crowding,"
+  },
+  {
+    "start": 117.636,
+    "end": 117.831,
+    "text": "because"
+  },
+  {
+    "start": 117.831,
+    "end": 118.002,
+    "text": "there"
+  },
+  {
+    "start": 118.002,
+    "end": 118.123,
+    "text": "are"
+  },
+  {
+    "start": 118.123,
+    "end": 118.319,
+    "text": "far"
+  },
+  {
+    "start": 118.319,
+    "end": 118.514,
+    "text": "more"
+  },
+  {
+    "start": 118.514,
+    "end": 118.733,
+    "text": "of"
+  },
+  {
+    "start": 118.733,
+    "end": 118.855,
+    "text": "them"
+  },
+  {
+    "start": 118.855,
+    "end": 119.026,
+    "text": "on"
+  },
+  {
+    "start": 119.026,
+    "end": 119.172,
+    "text": "one"
+  },
+  {
+    "start": 119.172,
+    "end": 119.514,
+    "text": "side."
+  },
+  {
+    "start": 120.071,
+    "end": 120.413,
+    "text": "Together,"
+  },
+  {
+    "start": 120.876,
+    "end": 121.047,
+    "text": "they're"
+  },
+  {
+    "start": 121.047,
+    "end": 121.291,
+    "text": "called"
+  },
+  {
+    "start": 121.291,
+    "end": 121.437,
+    "text": "the"
+  },
+  {
+    "start": 121.437,
+    "end": 122.315,
+    "text": "proton-motive"
+  },
+  {
+    "start": 122.315,
+    "end": 122.583,
+    "text": "force."
+  },
+  {
+    "start": 123.185,
+    "end": 123.453,
+    "text": "Like"
+  },
+  {
+    "start": 123.453,
+    "end": 123.746,
+    "text": "water"
+  },
+  {
+    "start": 123.746,
+    "end": 124.088,
+    "text": "held"
+  },
+  {
+    "start": 124.088,
+    "end": 124.429,
+    "text": "behind"
+  },
+  {
+    "start": 124.429,
+    "end": 124.502,
+    "text": "a"
+  },
+  {
+    "start": 124.502,
+    "end": 124.77,
+    "text": "dam,"
+  },
+  {
+    "start": 124.77,
+    "end": 125.331,
+    "text": "it's"
+  },
+  {
+    "start": 125.331,
+    "end": 125.551,
+    "text": "stored"
+  },
+  {
+    "start": 125.551,
+    "end": 126.039,
+    "text": "energy,"
+  },
+  {
+    "start": 126.502,
+    "end": 126.636,
+    "text": "waiting"
+  },
+  {
+    "start": 126.636,
+    "end": 126.905,
+    "text": "to"
+  },
+  {
+    "start": 126.905,
+    "end": 127.075,
+    "text": "flow"
+  },
+  {
+    "start": 127.075,
+    "end": 127.734,
+    "text": "downhill."
+  },
+  {
+    "start": 128.316,
+    "end": 128.389,
+    "text": "And"
+  },
+  {
+    "start": 128.389,
+    "end": 128.438,
+    "text": "the"
+  },
+  {
+    "start": 128.438,
+    "end": 128.584,
+    "text": "main"
+  },
+  {
+    "start": 128.584,
+    "end": 128.779,
+    "text": "way"
+  },
+  {
+    "start": 128.779,
+    "end": 129.023,
+    "text": "back"
+  },
+  {
+    "start": 129.023,
+    "end": 129.218,
+    "text": "through"
+  },
+  {
+    "start": 129.218,
+    "end": 129.364,
+    "text": "the"
+  },
+  {
+    "start": 129.364,
+    "end": 129.657,
+    "text": "membrane"
+  },
+  {
+    "start": 129.657,
+    "end": 129.999,
+    "text": "is"
+  },
+  {
+    "start": 129.999,
+    "end": 130.194,
+    "text": "through"
+  },
+  {
+    "start": 130.194,
+    "end": 130.316,
+    "text": "the"
+  },
+  {
+    "start": 130.316,
+    "end": 130.56,
+    "text": "motor."
+  },
+  {
+    "start": 131.051,
+    "end": 131.368,
+    "text": "Chapter"
+  },
+  {
+    "start": 131.368,
+    "end": 131.783,
+    "text": "four."
+  },
+  {
+    "start": 132.183,
+    "end": 132.329,
+    "text": "The"
+  },
+  {
+    "start": 132.329,
+    "end": 132.524,
+    "text": "rotor."
+  },
+  {
+    "start": 133.101,
+    "end": 133.321,
+    "text": "In"
+  },
+  {
+    "start": 133.321,
+    "end": 133.443,
+    "text": "the"
+  },
+  {
+    "start": 133.443,
+    "end": 133.882,
+    "text": "membrane"
+  },
+  {
+    "start": 133.882,
+    "end": 134.321,
+    "text": "sits"
+  },
+  {
+    "start": 134.321,
+    "end": 134.394,
+    "text": "a"
+  },
+  {
+    "start": 134.394,
+    "end": 134.589,
+    "text": "ring."
+  },
+  {
+    "start": 135.041,
+    "end": 135.26,
+    "text": "In"
+  },
+  {
+    "start": 135.26,
+    "end": 135.626,
+    "text": "animals,"
+  },
+  {
+    "start": 136.09,
+    "end": 136.187,
+    "text": "it's"
+  },
+  {
+    "start": 136.187,
+    "end": 136.358,
+    "text": "made"
+  },
+  {
+    "start": 136.358,
+    "end": 136.48,
+    "text": "of"
+  },
+  {
+    "start": 136.48,
+    "end": 136.724,
+    "text": "eight"
+  },
+  {
+    "start": 136.724,
+    "end": 137.285,
+    "text": "identical"
+  },
+  {
+    "start": 137.285,
+    "end": 137.602,
+    "text": "pieces."
+  },
+  {
+    "start": 138.354,
+    "end": 138.427,
+    "text": "A"
+  },
+  {
+    "start": 138.427,
+    "end": 138.842,
+    "text": "proton"
+  },
+  {
+    "start": 138.842,
+    "end": 139.134,
+    "text": "drops"
+  },
+  {
+    "start": 139.134,
+    "end": 139.378,
+    "text": "onto"
+  },
+  {
+    "start": 139.378,
+    "end": 139.647,
+    "text": "one"
+  },
+  {
+    "start": 139.647,
+    "end": 139.964,
+    "text": "piece,"
+  },
+  {
+    "start": 139.964,
+    "end": 140.5,
+    "text": "rides"
+  },
+  {
+    "start": 140.5,
+    "end": 140.72,
+    "text": "the"
+  },
+  {
+    "start": 140.72,
+    "end": 140.866,
+    "text": "ring"
+  },
+  {
+    "start": 140.866,
+    "end": 141.159,
+    "text": "around,"
+  },
+  {
+    "start": 141.525,
+    "end": 141.598,
+    "text": "and"
+  },
+  {
+    "start": 141.598,
+    "end": 141.695,
+    "text": "is"
+  },
+  {
+    "start": 141.695,
+    "end": 141.866,
+    "text": "let"
+  },
+  {
+    "start": 141.866,
+    "end": 142.086,
+    "text": "out"
+  },
+  {
+    "start": 142.086,
+    "end": 142.256,
+    "text": "on"
+  },
+  {
+    "start": 142.256,
+    "end": 142.354,
+    "text": "the"
+  },
+  {
+    "start": 142.354,
+    "end": 142.5,
+    "text": "other"
+  },
+  {
+    "start": 142.5,
+    "end": 142.842,
+    "text": "side."
+  },
+  {
+    "start": 143.389,
+    "end": 143.632,
+    "text": "Eight"
+  },
+  {
+    "start": 143.632,
+    "end": 144.267,
+    "text": "protons,"
+  },
+  {
+    "start": 144.535,
+    "end": 144.657,
+    "text": "one"
+  },
+  {
+    "start": 144.657,
+    "end": 144.876,
+    "text": "full"
+  },
+  {
+    "start": 144.876,
+    "end": 145.193,
+    "text": "turn."
+  },
+  {
+    "start": 145.6,
+    "end": 145.941,
+    "text": "About"
+  },
+  {
+    "start": 145.941,
+    "end": 146.014,
+    "text": "a"
+  },
+  {
+    "start": 146.014,
+    "end": 146.283,
+    "text": "hundred"
+  },
+  {
+    "start": 146.283,
+    "end": 146.575,
+    "text": "turns"
+  },
+  {
+    "start": 146.575,
+    "end": 146.892,
+    "text": "every"
+  },
+  {
+    "start": 146.892,
+    "end": 147.234,
+    "text": "second."
+  },
+  {
+    "start": 147.722,
+    "end": 147.844,
+    "text": "In"
+  },
+  {
+    "start": 147.844,
+    "end": 148.747,
+    "text": "1997,"
+  },
+  {
+    "start": 149.161,
+    "end": 149.478,
+    "text": "scientists"
+  },
+  {
+    "start": 149.478,
+    "end": 149.82,
+    "text": "in"
+  },
+  {
+    "start": 149.82,
+    "end": 150.088,
+    "text": "Japan"
+  },
+  {
+    "start": 150.088,
+    "end": 150.478,
+    "text": "attached"
+  },
+  {
+    "start": 150.478,
+    "end": 150.795,
+    "text": "a"
+  },
+  {
+    "start": 150.795,
+    "end": 151.064,
+    "text": "glowing"
+  },
+  {
+    "start": 151.064,
+    "end": 151.478,
+    "text": "filament"
+  },
+  {
+    "start": 151.478,
+    "end": 151.82,
+    "text": "to"
+  },
+  {
+    "start": 151.82,
+    "end": 151.917,
+    "text": "the"
+  },
+  {
+    "start": 151.917,
+    "end": 152.137,
+    "text": "shaft,"
+  },
+  {
+    "start": 152.137,
+    "end": 152.503,
+    "text": "and"
+  },
+  {
+    "start": 152.503,
+    "end": 152.747,
+    "text": "filmed"
+  },
+  {
+    "start": 152.747,
+    "end": 152.966,
+    "text": "it"
+  },
+  {
+    "start": 152.966,
+    "end": 153.259,
+    "text": "turning."
+  },
+  {
+    "start": 153.823,
+    "end": 153.969,
+    "text": "The"
+  },
+  {
+    "start": 153.969,
+    "end": 154.164,
+    "text": "shaft"
+  },
+  {
+    "start": 154.164,
+    "end": 154.384,
+    "text": "is"
+  },
+  {
+    "start": 154.384,
+    "end": 154.554,
+    "text": "only"
+  },
+  {
+    "start": 154.554,
+    "end": 154.749,
+    "text": "about"
+  },
+  {
+    "start": 154.749,
+    "end": 155.018,
+    "text": "two"
+  },
+  {
+    "start": 155.018,
+    "end": 155.31,
+    "text": "billionths"
+  },
+  {
+    "start": 155.31,
+    "end": 155.652,
+    "text": "of"
+  },
+  {
+    "start": 155.652,
+    "end": 155.749,
+    "text": "a"
+  },
+  {
+    "start": 155.749,
+    "end": 155.945,
+    "text": "metre"
+  },
+  {
+    "start": 155.945,
+    "end": 156.335,
+    "text": "across."
+  },
+  {
+    "start": 156.961,
+    "end": 157.107,
+    "text": "The"
+  },
+  {
+    "start": 157.107,
+    "end": 157.424,
+    "text": "smallest"
+  },
+  {
+    "start": 157.424,
+    "end": 157.961,
+    "text": "rotary"
+  },
+  {
+    "start": 157.961,
+    "end": 158.18,
+    "text": "motor"
+  },
+  {
+    "start": 158.18,
+    "end": 158.717,
+    "text": "anyone"
+  },
+  {
+    "start": 158.717,
+    "end": 159.01,
+    "text": "had"
+  },
+  {
+    "start": 159.01,
+    "end": 159.278,
+    "text": "ever"
+  },
+  {
+    "start": 159.278,
+    "end": 159.619,
+    "text": "seen."
+  },
+  {
+    "start": 160.149,
+    "end": 160.539,
+    "text": "Chapter"
+  },
+  {
+    "start": 160.539,
+    "end": 160.905,
+    "text": "five."
+  },
+  {
+    "start": 161.32,
+    "end": 161.93,
+    "text": "Torque"
+  },
+  {
+    "start": 161.93,
+    "end": 162.247,
+    "text": "and"
+  },
+  {
+    "start": 162.247,
+    "end": 162.76,
+    "text": "efficiency."
+  },
+  {
+    "start": 163.63,
+    "end": 163.801,
+    "text": "The"
+  },
+  {
+    "start": 163.801,
+    "end": 164.045,
+    "text": "spinning"
+  },
+  {
+    "start": 164.045,
+    "end": 164.411,
+    "text": "shaft"
+  },
+  {
+    "start": 164.411,
+    "end": 164.825,
+    "text": "turns"
+  },
+  {
+    "start": 164.825,
+    "end": 165.191,
+    "text": "inside"
+  },
+  {
+    "start": 165.191,
+    "end": 165.484,
+    "text": "a"
+  },
+  {
+    "start": 165.484,
+    "end": 165.703,
+    "text": "head"
+  },
+  {
+    "start": 165.703,
+    "end": 165.947,
+    "text": "with"
+  },
+  {
+    "start": 165.947,
+    "end": 166.264,
+    "text": "three"
+  },
+  {
+    "start": 166.264,
+    "end": 166.728,
+    "text": "working"
+  },
+  {
+    "start": 166.728,
+    "end": 167.069,
+    "text": "parts."
+  },
+  {
+    "start": 167.683,
+    "end": 167.903,
+    "text": "Each"
+  },
+  {
+    "start": 167.903,
+    "end": 168.22,
+    "text": "turn"
+  },
+  {
+    "start": 168.22,
+    "end": 168.781,
+    "text": "squeezes"
+  },
+  {
+    "start": 168.781,
+    "end": 169.049,
+    "text": "every"
+  },
+  {
+    "start": 169.049,
+    "end": 169.415,
+    "text": "part"
+  },
+  {
+    "start": 169.415,
+    "end": 169.659,
+    "text": "through"
+  },
+  {
+    "start": 169.659,
+    "end": 169.903,
+    "text": "three"
+  },
+  {
+    "start": 169.903,
+    "end": 170.244,
+    "text": "shapes,"
+  },
+  {
+    "start": 170.562,
+    "end": 170.635,
+    "text": "and"
+  },
+  {
+    "start": 170.635,
+    "end": 170.805,
+    "text": "each"
+  },
+  {
+    "start": 170.805,
+    "end": 171.098,
+    "text": "squeeze"
+  },
+  {
+    "start": 171.098,
+    "end": 171.44,
+    "text": "presses"
+  },
+  {
+    "start": 171.44,
+    "end": 171.879,
+    "text": "together"
+  },
+  {
+    "start": 171.879,
+    "end": 172.244,
+    "text": "one"
+  },
+  {
+    "start": 172.244,
+    "end": 172.708,
+    "text": "ATP."
+  },
+  {
+    "start": 173.412,
+    "end": 173.631,
+    "text": "Three"
+  },
+  {
+    "start": 173.631,
+    "end": 173.948,
+    "text": "parts,"
+  },
+  {
+    "start": 173.948,
+    "end": 174.509,
+    "text": "three"
+  },
+  {
+    "start": 174.509,
+    "end": 174.875,
+    "text": "ATP"
+  },
+  {
+    "start": 174.875,
+    "end": 175.143,
+    "text": "a"
+  },
+  {
+    "start": 175.143,
+    "end": 175.387,
+    "text": "turn."
+  },
+  {
+    "start": 175.801,
+    "end": 176.24,
+    "text": "That's"
+  },
+  {
+    "start": 176.24,
+    "end": 176.362,
+    "text": "one"
+  },
+  {
+    "start": 176.362,
+    "end": 176.606,
+    "text": "every"
+  },
+  {
+    "start": 176.606,
+    "end": 176.777,
+    "text": "hundred"
+  },
+  {
+    "start": 176.777,
+    "end": 176.947,
+    "text": "and"
+  },
+  {
+    "start": 176.947,
+    "end": 177.118,
+    "text": "twenty"
+  },
+  {
+    "start": 177.118,
+    "end": 177.46,
+    "text": "degrees."
+  },
+  {
+    "start": 178.319,
+    "end": 178.49,
+    "text": "In"
+  },
+  {
+    "start": 178.49,
+    "end": 179.124,
+    "text": "1998,"
+  },
+  {
+    "start": 179.734,
+    "end": 179.782,
+    "text": "the"
+  },
+  {
+    "start": 179.782,
+    "end": 179.953,
+    "text": "same"
+  },
+  {
+    "start": 179.953,
+    "end": 180.295,
+    "text": "team"
+  },
+  {
+    "start": 180.295,
+    "end": 180.587,
+    "text": "filmed"
+  },
+  {
+    "start": 180.587,
+    "end": 180.831,
+    "text": "the"
+  },
+  {
+    "start": 180.831,
+    "end": 181.051,
+    "text": "shaft"
+  },
+  {
+    "start": 181.051,
+    "end": 181.368,
+    "text": "clicking"
+  },
+  {
+    "start": 181.368,
+    "end": 181.734,
+    "text": "round"
+  },
+  {
+    "start": 181.734,
+    "end": 181.929,
+    "text": "in"
+  },
+  {
+    "start": 181.929,
+    "end": 182.173,
+    "text": "steps"
+  },
+  {
+    "start": 182.173,
+    "end": 182.416,
+    "text": "of"
+  },
+  {
+    "start": 182.416,
+    "end": 182.709,
+    "text": "exactly"
+  },
+  {
+    "start": 182.709,
+    "end": 183.124,
+    "text": "that"
+  },
+  {
+    "start": 183.124,
+    "end": 183.612,
+    "text": "size,"
+  },
+  {
+    "start": 183.612,
+    "end": 183.758,
+    "text": "a"
+  },
+  {
+    "start": 183.758,
+    "end": 183.904,
+    "text": "hundred"
+  },
+  {
+    "start": 183.904,
+    "end": 184.051,
+    "text": "and"
+  },
+  {
+    "start": 184.051,
+    "end": 184.197,
+    "text": "twenty"
+  },
+  {
+    "start": 184.197,
+    "end": 184.977,
+    "text": "degrees,"
+  },
+  {
+    "start": 184.977,
+    "end": 185.538,
+    "text": "one"
+  },
+  {
+    "start": 185.538,
+    "end": 186.099,
+    "text": "ATP"
+  },
+  {
+    "start": 186.099,
+    "end": 186.587,
+    "text": "each."
+  },
+  {
+    "start": 187.037,
+    "end": 187.159,
+    "text": "From"
+  },
+  {
+    "start": 187.159,
+    "end": 187.305,
+    "text": "how"
+  },
+  {
+    "start": 187.305,
+    "end": 187.646,
+    "text": "hard"
+  },
+  {
+    "start": 187.646,
+    "end": 187.768,
+    "text": "the"
+  },
+  {
+    "start": 187.768,
+    "end": 188.012,
+    "text": "filament"
+  },
+  {
+    "start": 188.012,
+    "end": 188.305,
+    "text": "was"
+  },
+  {
+    "start": 188.305,
+    "end": 188.573,
+    "text": "dragged"
+  },
+  {
+    "start": 188.573,
+    "end": 188.939,
+    "text": "through"
+  },
+  {
+    "start": 188.939,
+    "end": 189.086,
+    "text": "the"
+  },
+  {
+    "start": 189.086,
+    "end": 189.354,
+    "text": "water,"
+  },
+  {
+    "start": 189.695,
+    "end": 189.817,
+    "text": "they"
+  },
+  {
+    "start": 189.817,
+    "end": 190.012,
+    "text": "worked"
+  },
+  {
+    "start": 190.012,
+    "end": 190.232,
+    "text": "out"
+  },
+  {
+    "start": 190.232,
+    "end": 190.427,
+    "text": "the"
+  },
+  {
+    "start": 190.427,
+    "end": 190.817,
+    "text": "motor's"
+  },
+  {
+    "start": 190.817,
+    "end": 191.012,
+    "text": "torque,"
+  },
+  {
+    "start": 191.427,
+    "end": 191.598,
+    "text": "its"
+  },
+  {
+    "start": 191.598,
+    "end": 191.793,
+    "text": "turning"
+  },
+  {
+    "start": 191.793,
+    "end": 192.134,
+    "text": "force,"
+  },
+  {
+    "start": 192.134,
+    "end": 192.525,
+    "text": "about"
+  },
+  {
+    "start": 192.525,
+    "end": 193.244,
+    "text": "forty"
+  },
+  {
+    "start": 193.244,
+    "end": 193.964,
+    "text": "piconewton-nanometres."
+  },
+  {
+    "start": 194.645,
+    "end": 195.206,
+    "text": "Multiply"
+  },
+  {
+    "start": 195.206,
+    "end": 195.401,
+    "text": "that"
+  },
+  {
+    "start": 195.401,
+    "end": 195.596,
+    "text": "torque"
+  },
+  {
+    "start": 195.596,
+    "end": 195.913,
+    "text": "by"
+  },
+  {
+    "start": 195.913,
+    "end": 196.011,
+    "text": "the"
+  },
+  {
+    "start": 196.011,
+    "end": 196.255,
+    "text": "angle"
+  },
+  {
+    "start": 196.255,
+    "end": 196.45,
+    "text": "of"
+  },
+  {
+    "start": 196.45,
+    "end": 196.621,
+    "text": "one"
+  },
+  {
+    "start": 196.621,
+    "end": 196.938,
+    "text": "step,"
+  },
+  {
+    "start": 197.243,
+    "end": 197.364,
+    "text": "and"
+  },
+  {
+    "start": 197.364,
+    "end": 197.486,
+    "text": "you"
+  },
+  {
+    "start": 197.486,
+    "end": 197.657,
+    "text": "get"
+  },
+  {
+    "start": 197.657,
+    "end": 197.779,
+    "text": "the"
+  },
+  {
+    "start": 197.779,
+    "end": 197.974,
+    "text": "work"
+  },
+  {
+    "start": 197.974,
+    "end": 198.145,
+    "text": "the"
+  },
+  {
+    "start": 198.145,
+    "end": 198.267,
+    "text": "motor"
+  },
+  {
+    "start": 198.267,
+    "end": 198.706,
+    "text": "does"
+  },
+  {
+    "start": 198.706,
+    "end": 198.877,
+    "text": "for"
+  },
+  {
+    "start": 198.877,
+    "end": 199.316,
+    "text": "every"
+  },
+  {
+    "start": 199.316,
+    "end": 199.657,
+    "text": "ATP."
+  },
+  {
+    "start": 200.612,
+    "end": 200.831,
+    "text": "And"
+  },
+  {
+    "start": 200.831,
+    "end": 200.978,
+    "text": "that"
+  },
+  {
+    "start": 200.978,
+    "end": 201.222,
+    "text": "work"
+  },
+  {
+    "start": 201.222,
+    "end": 201.49,
+    "text": "almost"
+  },
+  {
+    "start": 201.49,
+    "end": 201.856,
+    "text": "exactly"
+  },
+  {
+    "start": 201.856,
+    "end": 202.514,
+    "text": "matches"
+  },
+  {
+    "start": 202.514,
+    "end": 202.709,
+    "text": "the"
+  },
+  {
+    "start": 202.709,
+    "end": 202.978,
+    "text": "energy"
+  },
+  {
+    "start": 202.978,
+    "end": 203.344,
+    "text": "one"
+  },
+  {
+    "start": 203.344,
+    "end": 203.661,
+    "text": "ATP"
+  },
+  {
+    "start": 203.661,
+    "end": 204.197,
+    "text": "carries"
+  },
+  {
+    "start": 204.197,
+    "end": 204.539,
+    "text": "inside"
+  },
+  {
+    "start": 204.539,
+    "end": 204.88,
+    "text": "a"
+  },
+  {
+    "start": 204.88,
+    "end": 205.1,
+    "text": "cell."
+  },
+  {
+    "start": 205.597,
+    "end": 205.743,
+    "text": "The"
+  },
+  {
+    "start": 205.743,
+    "end": 205.938,
+    "text": "motor"
+  },
+  {
+    "start": 205.938,
+    "end": 206.207,
+    "text": "inside"
+  },
+  {
+    "start": 206.207,
+    "end": 206.524,
+    "text": "your"
+  },
+  {
+    "start": 206.524,
+    "end": 206.743,
+    "text": "cells"
+  },
+  {
+    "start": 206.743,
+    "end": 206.963,
+    "text": "is"
+  },
+  {
+    "start": 206.963,
+    "end": 207.158,
+    "text": "close"
+  },
+  {
+    "start": 207.158,
+    "end": 207.353,
+    "text": "to"
+  },
+  {
+    "start": 207.353,
+    "end": 207.621,
+    "text": "one"
+  },
+  {
+    "start": 207.621,
+    "end": 207.889,
+    "text": "hundred"
+  },
+  {
+    "start": 207.889,
+    "end": 208.158,
+    "text": "percent"
+  },
+  {
+    "start": 208.158,
+    "end": 208.524,
+    "text": "efficient."
+  },
+  {
+    "start": 209.067,
+    "end": 209.189,
+    "text": "A"
+  },
+  {
+    "start": 209.189,
+    "end": 209.36,
+    "text": "car"
+  },
+  {
+    "start": 209.36,
+    "end": 209.652,
+    "text": "engine"
+  },
+  {
+    "start": 209.652,
+    "end": 210.189,
+    "text": "manages"
+  },
+  {
+    "start": 210.189,
+    "end": 210.506,
+    "text": "about"
+  },
+  {
+    "start": 210.506,
+    "end": 210.579,
+    "text": "a"
+  },
+  {
+    "start": 210.579,
+    "end": 210.823,
+    "text": "quarter"
+  },
+  {
+    "start": 210.823,
+    "end": 211.091,
+    "text": "to"
+  },
+  {
+    "start": 211.091,
+    "end": 211.213,
+    "text": "a"
+  },
+  {
+    "start": 211.213,
+    "end": 211.433,
+    "text": "third."
+  },
+  {
+    "start": 211.91,
+    "end": 212.129,
+    "text": "How"
+  },
+  {
+    "start": 212.129,
+    "end": 212.3,
+    "text": "can"
+  },
+  {
+    "start": 212.3,
+    "end": 212.544,
+    "text": "anything"
+  },
+  {
+    "start": 212.544,
+    "end": 212.959,
+    "text": "work"
+  },
+  {
+    "start": 212.959,
+    "end": 213.178,
+    "text": "that"
+  },
+  {
+    "start": 213.178,
+    "end": 213.471,
+    "text": "well?"
+  },
+  {
+    "start": 214.125,
+    "end": 214.54,
+    "text": "Part"
+  },
+  {
+    "start": 214.54,
+    "end": 214.662,
+    "text": "of"
+  },
+  {
+    "start": 214.662,
+    "end": 214.759,
+    "text": "the"
+  },
+  {
+    "start": 214.759,
+    "end": 215.052,
+    "text": "answer,"
+  },
+  {
+    "start": 215.491,
+    "end": 215.686,
+    "text": "it's"
+  },
+  {
+    "start": 215.686,
+    "end": 215.979,
+    "text": "tiny."
+  },
+  {
+    "start": 216.574,
+    "end": 216.672,
+    "text": "At"
+  },
+  {
+    "start": 216.672,
+    "end": 216.891,
+    "text": "this"
+  },
+  {
+    "start": 216.891,
+    "end": 217.257,
+    "text": "size,"
+  },
+  {
+    "start": 217.525,
+    "end": 217.72,
+    "text": "water"
+  },
+  {
+    "start": 217.72,
+    "end": 218.184,
+    "text": "molecules"
+  },
+  {
+    "start": 218.184,
+    "end": 218.55,
+    "text": "are"
+  },
+  {
+    "start": 218.55,
+    "end": 219.184,
+    "text": "constantly"
+  },
+  {
+    "start": 219.184,
+    "end": 219.916,
+    "text": "battering"
+  },
+  {
+    "start": 219.916,
+    "end": 220.013,
+    "text": "it"
+  },
+  {
+    "start": 220.013,
+    "end": 220.184,
+    "text": "from"
+  },
+  {
+    "start": 220.184,
+    "end": 220.525,
+    "text": "every"
+  },
+  {
+    "start": 220.525,
+    "end": 220.989,
+    "text": "side."
+  },
+  {
+    "start": 221.558,
+    "end": 221.729,
+    "text": "The"
+  },
+  {
+    "start": 221.729,
+    "end": 222.046,
+    "text": "energy"
+  },
+  {
+    "start": 222.046,
+    "end": 222.29,
+    "text": "of"
+  },
+  {
+    "start": 222.29,
+    "end": 222.461,
+    "text": "that"
+  },
+  {
+    "start": 222.461,
+    "end": 222.827,
+    "text": "random"
+  },
+  {
+    "start": 222.827,
+    "end": 223.51,
+    "text": "jostling,"
+  },
+  {
+    "start": 223.51,
+    "end": 223.827,
+    "text": "at"
+  },
+  {
+    "start": 223.827,
+    "end": 224.022,
+    "text": "body"
+  },
+  {
+    "start": 224.022,
+    "end": 224.461,
+    "text": "temperature,"
+  },
+  {
+    "start": 224.461,
+    "end": 224.936,
+    "text": "is"
+  },
+  {
+    "start": 224.936,
+    "end": 225.132,
+    "text": "about"
+  },
+  {
+    "start": 225.132,
+    "end": 225.522,
+    "text": "four"
+  },
+  {
+    "start": 225.522,
+    "end": 226.815,
+    "text": "piconewton-nanometres."
+  },
+  {
+    "start": 227.502,
+    "end": 227.746,
+    "text": "One"
+  },
+  {
+    "start": 227.746,
+    "end": 228.014,
+    "text": "ATP"
+  },
+  {
+    "start": 228.014,
+    "end": 228.6,
+    "text": "carries"
+  },
+  {
+    "start": 228.6,
+    "end": 228.868,
+    "text": "about"
+  },
+  {
+    "start": 228.868,
+    "end": 229.161,
+    "text": "twenty"
+  },
+  {
+    "start": 229.161,
+    "end": 229.478,
+    "text": "times"
+  },
+  {
+    "start": 229.478,
+    "end": 229.844,
+    "text": "more."
+  },
+  {
+    "start": 230.296,
+    "end": 230.687,
+    "text": "Enough"
+  },
+  {
+    "start": 230.687,
+    "end": 230.882,
+    "text": "to"
+  },
+  {
+    "start": 230.882,
+    "end": 231.052,
+    "text": "beat"
+  },
+  {
+    "start": 231.052,
+    "end": 231.272,
+    "text": "the"
+  },
+  {
+    "start": 231.272,
+    "end": 231.54,
+    "text": "noise."
+  },
+  {
+    "start": 232.155,
+    "end": 232.716,
+    "text": "Chapter"
+  },
+  {
+    "start": 232.716,
+    "end": 233.106,
+    "text": "six."
+  },
+  {
+    "start": 233.677,
+    "end": 233.799,
+    "text": "The"
+  },
+  {
+    "start": 233.799,
+    "end": 234.14,
+    "text": "power"
+  },
+  {
+    "start": 234.14,
+    "end": 234.408,
+    "text": "of"
+  },
+  {
+    "start": 234.408,
+    "end": 234.604,
+    "text": "one"
+  },
+  {
+    "start": 234.604,
+    "end": 234.921,
+    "text": "motor."
+  },
+  {
+    "start": 235.435,
+    "end": 235.923,
+    "text": "Power"
+  },
+  {
+    "start": 235.923,
+    "end": 236.24,
+    "text": "is"
+  },
+  {
+    "start": 236.24,
+    "end": 236.582,
+    "text": "torque"
+  },
+  {
+    "start": 236.582,
+    "end": 236.972,
+    "text": "times"
+  },
+  {
+    "start": 236.972,
+    "end": 237.216,
+    "text": "how"
+  },
+  {
+    "start": 237.216,
+    "end": 237.386,
+    "text": "fast"
+  },
+  {
+    "start": 237.386,
+    "end": 237.801,
+    "text": "something"
+  },
+  {
+    "start": 237.801,
+    "end": 238.191,
+    "text": "turns."
+  },
+  {
+    "start": 238.754,
+    "end": 238.949,
+    "text": "Put"
+  },
+  {
+    "start": 238.949,
+    "end": 239.12,
+    "text": "in"
+  },
+  {
+    "start": 239.12,
+    "end": 239.937,
+    "text": "forty"
+  },
+  {
+    "start": 239.937,
+    "end": 240.754,
+    "text": "piconewton-nanometres,"
+  },
+  {
+    "start": 240.754,
+    "end": 241.242,
+    "text": "and"
+  },
+  {
+    "start": 241.242,
+    "end": 241.364,
+    "text": "a"
+  },
+  {
+    "start": 241.364,
+    "end": 241.73,
+    "text": "hundred"
+  },
+  {
+    "start": 241.73,
+    "end": 241.998,
+    "text": "turns"
+  },
+  {
+    "start": 241.998,
+    "end": 242.193,
+    "text": "a"
+  },
+  {
+    "start": 242.193,
+    "end": 242.486,
+    "text": "second."
+  },
+  {
+    "start": 243.011,
+    "end": 243.328,
+    "text": "One"
+  },
+  {
+    "start": 243.328,
+    "end": 243.548,
+    "text": "motor"
+  },
+  {
+    "start": 243.548,
+    "end": 243.792,
+    "text": "makes"
+  },
+  {
+    "start": 243.792,
+    "end": 244.06,
+    "text": "about"
+  },
+  {
+    "start": 244.06,
+    "end": 244.755,
+    "text": "twenty-five"
+  },
+  {
+    "start": 244.755,
+    "end": 245.45,
+    "text": "billion-billionths"
+  },
+  {
+    "start": 245.45,
+    "end": 245.914,
+    "text": "of"
+  },
+  {
+    "start": 245.914,
+    "end": 246.011,
+    "text": "a"
+  },
+  {
+    "start": 246.011,
+    "end": 246.28,
+    "text": "watt."
+  },
+  {
+    "start": 246.775,
+    "end": 246.873,
+    "text": "To"
+  },
+  {
+    "start": 246.873,
+    "end": 247.019,
+    "text": "run"
+  },
+  {
+    "start": 247.019,
+    "end": 247.141,
+    "text": "a"
+  },
+  {
+    "start": 247.141,
+    "end": 247.702,
+    "text": "hundred-watt"
+  },
+  {
+    "start": 247.702,
+    "end": 247.873,
+    "text": "light"
+  },
+  {
+    "start": 247.873,
+    "end": 248.165,
+    "text": "bulb,"
+  },
+  {
+    "start": 248.531,
+    "end": 248.653,
+    "text": "you'd"
+  },
+  {
+    "start": 248.653,
+    "end": 248.751,
+    "text": "need"
+  },
+  {
+    "start": 248.751,
+    "end": 248.97,
+    "text": "about"
+  },
+  {
+    "start": 248.97,
+    "end": 249.312,
+    "text": "four"
+  },
+  {
+    "start": 249.312,
+    "end": 249.775,
+    "text": "billion"
+  },
+  {
+    "start": 249.775,
+    "end": 250.238,
+    "text": "billion"
+  },
+  {
+    "start": 250.238,
+    "end": 250.555,
+    "text": "of"
+  },
+  {
+    "start": 250.555,
+    "end": 250.702,
+    "text": "them,"
+  },
+  {
+    "start": 250.702,
+    "end": 250.97,
+    "text": "all"
+  },
+  {
+    "start": 250.97,
+    "end": 251.336,
+    "text": "spinning"
+  },
+  {
+    "start": 251.336,
+    "end": 251.677,
+    "text": "flat"
+  },
+  {
+    "start": 251.677,
+    "end": 251.946,
+    "text": "out."
+  },
+  {
+    "start": 252.515,
+    "end": 252.783,
+    "text": "That's"
+  },
+  {
+    "start": 252.783,
+    "end": 253.002,
+    "text": "roughly"
+  },
+  {
+    "start": 253.002,
+    "end": 253.246,
+    "text": "the"
+  },
+  {
+    "start": 253.246,
+    "end": 253.466,
+    "text": "job"
+  },
+  {
+    "start": 253.466,
+    "end": 253.637,
+    "text": "your"
+  },
+  {
+    "start": 253.637,
+    "end": 254.417,
+    "text": "mitochondria"
+  },
+  {
+    "start": 254.417,
+    "end": 254.612,
+    "text": "do"
+  },
+  {
+    "start": 254.612,
+    "end": 254.832,
+    "text": "for"
+  },
+  {
+    "start": 254.832,
+    "end": 255.027,
+    "text": "you,"
+  },
+  {
+    "start": 255.027,
+    "end": 255.32,
+    "text": "every"
+  },
+  {
+    "start": 255.32,
+    "end": 255.759,
+    "text": "moment,"
+  },
+  {
+    "start": 255.759,
+    "end": 256.173,
+    "text": "without"
+  },
+  {
+    "start": 256.173,
+    "end": 256.368,
+    "text": "a"
+  },
+  {
+    "start": 256.368,
+    "end": 256.685,
+    "text": "sound."
+  },
+  {
+    "start": 257.285,
+    "end": 257.846,
+    "text": "Chapter"
+  },
+  {
+    "start": 257.846,
+    "end": 258.236,
+    "text": "seven."
+  },
+  {
+    "start": 258.64,
+    "end": 259.006,
+    "text": "Motor,"
+  },
+  {
+    "start": 259.006,
+    "end": 259.371,
+    "text": "or"
+  },
+  {
+    "start": 259.371,
+    "end": 259.688,
+    "text": "generator?"
+  },
+  {
+    "start": 260.482,
+    "end": 260.775,
+    "text": "Run"
+  },
+  {
+    "start": 260.775,
+    "end": 260.896,
+    "text": "an"
+  },
+  {
+    "start": 260.896,
+    "end": 261.165,
+    "text": "electric"
+  },
+  {
+    "start": 261.165,
+    "end": 261.457,
+    "text": "motor"
+  },
+  {
+    "start": 261.457,
+    "end": 261.97,
+    "text": "backwards"
+  },
+  {
+    "start": 261.97,
+    "end": 262.311,
+    "text": "and"
+  },
+  {
+    "start": 262.311,
+    "end": 262.409,
+    "text": "it"
+  },
+  {
+    "start": 262.409,
+    "end": 262.628,
+    "text": "becomes"
+  },
+  {
+    "start": 262.628,
+    "end": 262.799,
+    "text": "a"
+  },
+  {
+    "start": 262.799,
+    "end": 263.116,
+    "text": "generator."
+  },
+  {
+    "start": 263.668,
+    "end": 264.034,
+    "text": "ATP"
+  },
+  {
+    "start": 264.034,
+    "end": 264.79,
+    "text": "synthase"
+  },
+  {
+    "start": 264.79,
+    "end": 265.034,
+    "text": "works"
+  },
+  {
+    "start": 265.034,
+    "end": 265.278,
+    "text": "both"
+  },
+  {
+    "start": 265.278,
+    "end": 265.521,
+    "text": "ways"
+  },
+  {
+    "start": 265.521,
+    "end": 265.79,
+    "text": "too."
+  },
+  {
+    "start": 266.284,
+    "end": 266.479,
+    "text": "Feed"
+  },
+  {
+    "start": 266.479,
+    "end": 266.626,
+    "text": "it"
+  },
+  {
+    "start": 266.626,
+    "end": 266.967,
+    "text": "ATP,"
+  },
+  {
+    "start": 266.967,
+    "end": 267.528,
+    "text": "and"
+  },
+  {
+    "start": 267.528,
+    "end": 267.65,
+    "text": "it"
+  },
+  {
+    "start": 267.65,
+    "end": 267.821,
+    "text": "spins"
+  },
+  {
+    "start": 267.821,
+    "end": 268.065,
+    "text": "the"
+  },
+  {
+    "start": 268.065,
+    "end": 268.211,
+    "text": "other"
+  },
+  {
+    "start": 268.211,
+    "end": 268.479,
+    "text": "way,"
+  },
+  {
+    "start": 268.845,
+    "end": 268.845,
+    "text": "splitting"
+  },
+  {
+    "start": 268.845,
+    "end": 269.333,
+    "text": "ATP"
+  },
+  {
+    "start": 269.333,
+    "end": 269.796,
+    "text": "and"
+  },
+  {
+    "start": 269.796,
+    "end": 269.992,
+    "text": "pumping"
+  },
+  {
+    "start": 269.992,
+    "end": 270.528,
+    "text": "protons"
+  },
+  {
+    "start": 270.528,
+    "end": 270.748,
+    "text": "back"
+  },
+  {
+    "start": 270.748,
+    "end": 271.016,
+    "text": "uphill."
+  },
+  {
+    "start": 271.677,
+    "end": 271.945,
+    "text": "Without"
+  },
+  {
+    "start": 271.945,
+    "end": 272.311,
+    "text": "oxygen,"
+  },
+  {
+    "start": 272.701,
+    "end": 272.725,
+    "text": "the"
+  },
+  {
+    "start": 272.725,
+    "end": 273.311,
+    "text": "bacterium"
+  },
+  {
+    "start": 273.311,
+    "end": 273.75,
+    "text": "E-coli"
+  },
+  {
+    "start": 273.75,
+    "end": 273.994,
+    "text": "does"
+  },
+  {
+    "start": 273.994,
+    "end": 274.36,
+    "text": "exactly"
+  },
+  {
+    "start": 274.36,
+    "end": 274.823,
+    "text": "this,"
+  },
+  {
+    "start": 275.043,
+    "end": 275.238,
+    "text": "spending"
+  },
+  {
+    "start": 275.238,
+    "end": 275.725,
+    "text": "ATP"
+  },
+  {
+    "start": 275.725,
+    "end": 276.116,
+    "text": "to"
+  },
+  {
+    "start": 276.116,
+    "end": 276.262,
+    "text": "keep"
+  },
+  {
+    "start": 276.262,
+    "end": 276.408,
+    "text": "its"
+  },
+  {
+    "start": 276.408,
+    "end": 276.604,
+    "text": "membrane"
+  },
+  {
+    "start": 276.604,
+    "end": 277.213,
+    "text": "charged."
+  },
+  {
+    "start": 277.855,
+    "end": 278.026,
+    "text": "Your"
+  },
+  {
+    "start": 278.026,
+    "end": 278.758,
+    "text": "mitochondria"
+  },
+  {
+    "start": 278.758,
+    "end": 279.002,
+    "text": "carry"
+  },
+  {
+    "start": 279.002,
+    "end": 279.197,
+    "text": "a"
+  },
+  {
+    "start": 279.197,
+    "end": 279.66,
+    "text": "brake,"
+  },
+  {
+    "start": 279.66,
+    "end": 279.733,
+    "text": "a"
+  },
+  {
+    "start": 279.733,
+    "end": 279.953,
+    "text": "small"
+  },
+  {
+    "start": 279.953,
+    "end": 280.319,
+    "text": "protein"
+  },
+  {
+    "start": 280.319,
+    "end": 280.66,
+    "text": "called"
+  },
+  {
+    "start": 280.66,
+    "end": 281.319,
+    "text": "IF1."
+  },
+  {
+    "start": 281.804,
+    "end": 281.999,
+    "text": "If"
+  },
+  {
+    "start": 281.999,
+    "end": 282.096,
+    "text": "the"
+  },
+  {
+    "start": 282.096,
+    "end": 282.316,
+    "text": "voltage"
+  },
+  {
+    "start": 282.316,
+    "end": 282.877,
+    "text": "collapses,"
+  },
+  {
+    "start": 283.243,
+    "end": 283.706,
+    "text": "IF1"
+  },
+  {
+    "start": 283.706,
+    "end": 284.023,
+    "text": "largely"
+  },
+  {
+    "start": 284.023,
+    "end": 284.438,
+    "text": "stops"
+  },
+  {
+    "start": 284.438,
+    "end": 284.706,
+    "text": "the"
+  },
+  {
+    "start": 284.706,
+    "end": 284.877,
+    "text": "motors"
+  },
+  {
+    "start": 284.877,
+    "end": 285.121,
+    "text": "running"
+  },
+  {
+    "start": 285.121,
+    "end": 285.511,
+    "text": "backwards"
+  },
+  {
+    "start": 285.511,
+    "end": 285.828,
+    "text": "and"
+  },
+  {
+    "start": 285.828,
+    "end": 285.999,
+    "text": "wasting"
+  },
+  {
+    "start": 285.999,
+    "end": 286.486,
+    "text": "ATP."
+  },
+  {
+    "start": 287.125,
+    "end": 287.613,
+    "text": "Chapter"
+  },
+  {
+    "start": 287.613,
+    "end": 287.906,
+    "text": "eight."
+  },
+  {
+    "start": 288.316,
+    "end": 288.535,
+    "text": "A"
+  },
+  {
+    "start": 288.535,
+    "end": 288.706,
+    "text": "short"
+  },
+  {
+    "start": 288.706,
+    "end": 289.072,
+    "text": "circuit."
+  },
+  {
+    "start": 289.606,
+    "end": 289.777,
+    "text": "Brown"
+  },
+  {
+    "start": 289.777,
+    "end": 290.021,
+    "text": "fat"
+  },
+  {
+    "start": 290.021,
+    "end": 290.313,
+    "text": "cells"
+  },
+  {
+    "start": 290.313,
+    "end": 290.63,
+    "text": "are"
+  },
+  {
+    "start": 290.63,
+    "end": 290.947,
+    "text": "packed"
+  },
+  {
+    "start": 290.947,
+    "end": 291.313,
+    "text": "with"
+  },
+  {
+    "start": 291.313,
+    "end": 292.069,
+    "text": "mitochondria."
+  },
+  {
+    "start": 292.525,
+    "end": 292.671,
+    "text": "Their"
+  },
+  {
+    "start": 292.671,
+    "end": 292.988,
+    "text": "membranes"
+  },
+  {
+    "start": 292.988,
+    "end": 293.452,
+    "text": "hold"
+  },
+  {
+    "start": 293.452,
+    "end": 293.573,
+    "text": "a"
+  },
+  {
+    "start": 293.573,
+    "end": 293.964,
+    "text": "protein"
+  },
+  {
+    "start": 293.964,
+    "end": 294.378,
+    "text": "called"
+  },
+  {
+    "start": 294.378,
+    "end": 295.695,
+    "text": "UCP1,"
+  },
+  {
+    "start": 296.013,
+    "end": 296.159,
+    "text": "a"
+  },
+  {
+    "start": 296.159,
+    "end": 296.403,
+    "text": "gap"
+  },
+  {
+    "start": 296.403,
+    "end": 296.647,
+    "text": "in"
+  },
+  {
+    "start": 296.647,
+    "end": 296.744,
+    "text": "the"
+  },
+  {
+    "start": 296.744,
+    "end": 296.988,
+    "text": "dam."
+  },
+  {
+    "start": 297.558,
+    "end": 297.899,
+    "text": "Protons"
+  },
+  {
+    "start": 297.899,
+    "end": 298.216,
+    "text": "rush"
+  },
+  {
+    "start": 298.216,
+    "end": 298.582,
+    "text": "straight"
+  },
+  {
+    "start": 298.582,
+    "end": 298.85,
+    "text": "back"
+  },
+  {
+    "start": 298.85,
+    "end": 299.119,
+    "text": "through"
+  },
+  {
+    "start": 299.119,
+    "end": 299.289,
+    "text": "it,"
+  },
+  {
+    "start": 299.289,
+    "end": 299.46,
+    "text": "without"
+  },
+  {
+    "start": 299.46,
+    "end": 299.875,
+    "text": "passing"
+  },
+  {
+    "start": 299.875,
+    "end": 300.192,
+    "text": "through"
+  },
+  {
+    "start": 300.192,
+    "end": 300.314,
+    "text": "the"
+  },
+  {
+    "start": 300.314,
+    "end": 300.485,
+    "text": "motor."
+  },
+  {
+    "start": 301.051,
+    "end": 301.198,
+    "text": "In"
+  },
+  {
+    "start": 301.198,
+    "end": 301.466,
+    "text": "electrical"
+  },
+  {
+    "start": 301.466,
+    "end": 302.002,
+    "text": "terms,"
+  },
+  {
+    "start": 302.295,
+    "end": 302.466,
+    "text": "it's"
+  },
+  {
+    "start": 302.466,
+    "end": 302.466,
+    "text": "a"
+  },
+  {
+    "start": 302.466,
+    "end": 302.637,
+    "text": "short"
+  },
+  {
+    "start": 302.637,
+    "end": 302.978,
+    "text": "circuit."
+  },
+  {
+    "start": 303.383,
+    "end": 303.7,
+    "text": "Current"
+  },
+  {
+    "start": 303.7,
+    "end": 304.017,
+    "text": "flows,"
+  },
+  {
+    "start": 304.334,
+    "end": 304.505,
+    "text": "but"
+  },
+  {
+    "start": 304.505,
+    "end": 304.725,
+    "text": "no"
+  },
+  {
+    "start": 304.725,
+    "end": 305.042,
+    "text": "useful"
+  },
+  {
+    "start": 305.042,
+    "end": 305.359,
+    "text": "work"
+  },
+  {
+    "start": 305.359,
+    "end": 305.554,
+    "text": "gets"
+  },
+  {
+    "start": 305.554,
+    "end": 305.846,
+    "text": "done."
+  },
+  {
+    "start": 306.396,
+    "end": 306.664,
+    "text": "So"
+  },
+  {
+    "start": 306.664,
+    "end": 306.786,
+    "text": "the"
+  },
+  {
+    "start": 306.786,
+    "end": 307.006,
+    "text": "energy"
+  },
+  {
+    "start": 307.006,
+    "end": 307.298,
+    "text": "comes"
+  },
+  {
+    "start": 307.298,
+    "end": 307.542,
+    "text": "out"
+  },
+  {
+    "start": 307.542,
+    "end": 307.689,
+    "text": "as"
+  },
+  {
+    "start": 307.689,
+    "end": 307.908,
+    "text": "heat,"
+  },
+  {
+    "start": 308.201,
+    "end": 308.347,
+    "text": "just"
+  },
+  {
+    "start": 308.347,
+    "end": 308.493,
+    "text": "as"
+  },
+  {
+    "start": 308.493,
+    "end": 308.591,
+    "text": "a"
+  },
+  {
+    "start": 308.591,
+    "end": 309.298,
+    "text": "short-circuited"
+  },
+  {
+    "start": 309.298,
+    "end": 309.493,
+    "text": "wire"
+  },
+  {
+    "start": 309.493,
+    "end": 309.786,
+    "text": "gets"
+  },
+  {
+    "start": 309.786,
+    "end": 310.079,
+    "text": "hot."
+  },
+  {
+    "start": 310.571,
+    "end": 310.986,
+    "text": "Newborn"
+  },
+  {
+    "start": 310.986,
+    "end": 311.254,
+    "text": "babies"
+  },
+  {
+    "start": 311.254,
+    "end": 311.645,
+    "text": "rely"
+  },
+  {
+    "start": 311.645,
+    "end": 311.986,
+    "text": "on"
+  },
+  {
+    "start": 311.986,
+    "end": 312.084,
+    "text": "it"
+  },
+  {
+    "start": 312.084,
+    "end": 312.23,
+    "text": "to"
+  },
+  {
+    "start": 312.23,
+    "end": 312.401,
+    "text": "keep"
+  },
+  {
+    "start": 312.401,
+    "end": 312.742,
+    "text": "warm."
+  },
+  {
+    "start": 313.279,
+    "end": 313.669,
+    "text": "Adults"
+  },
+  {
+    "start": 313.669,
+    "end": 313.937,
+    "text": "keep"
+  },
+  {
+    "start": 313.937,
+    "end": 314.303,
+    "text": "smaller"
+  },
+  {
+    "start": 314.303,
+    "end": 314.767,
+    "text": "amounts,"
+  },
+  {
+    "start": 314.767,
+    "end": 315.303,
+    "text": "switched"
+  },
+  {
+    "start": 315.303,
+    "end": 315.62,
+    "text": "on"
+  },
+  {
+    "start": 315.62,
+    "end": 315.791,
+    "text": "by"
+  },
+  {
+    "start": 315.791,
+    "end": 316.108,
+    "text": "cold."
+  },
+  {
+    "start": 316.661,
+    "end": 317.149,
+    "text": "Chapter"
+  },
+  {
+    "start": 317.149,
+    "end": 317.564,
+    "text": "nine."
+  },
+  {
+    "start": 318.02,
+    "end": 318.459,
+    "text": "Speed"
+  },
+  {
+    "start": 318.459,
+    "end": 318.971,
+    "text": "control."
+  },
+  {
+    "start": 319.655,
+    "end": 319.947,
+    "text": "Start"
+  },
+  {
+    "start": 319.947,
+    "end": 320.142,
+    "text": "to"
+  },
+  {
+    "start": 320.142,
+    "end": 320.411,
+    "text": "sprint,"
+  },
+  {
+    "start": 320.411,
+    "end": 320.972,
+    "text": "and"
+  },
+  {
+    "start": 320.972,
+    "end": 321.094,
+    "text": "your"
+  },
+  {
+    "start": 321.094,
+    "end": 321.411,
+    "text": "muscles"
+  },
+  {
+    "start": 321.411,
+    "end": 321.801,
+    "text": "burn"
+  },
+  {
+    "start": 321.801,
+    "end": 322.045,
+    "text": "through"
+  },
+  {
+    "start": 322.045,
+    "end": 322.386,
+    "text": "ATP"
+  },
+  {
+    "start": 322.386,
+    "end": 323.069,
+    "text": "far"
+  },
+  {
+    "start": 323.069,
+    "end": 323.484,
+    "text": "faster."
+  },
+  {
+    "start": 324.081,
+    "end": 324.251,
+    "text": "Every"
+  },
+  {
+    "start": 324.251,
+    "end": 324.568,
+    "text": "ATP"
+  },
+  {
+    "start": 324.568,
+    "end": 325.056,
+    "text": "spent"
+  },
+  {
+    "start": 325.056,
+    "end": 325.349,
+    "text": "leaves"
+  },
+  {
+    "start": 325.349,
+    "end": 325.885,
+    "text": "behind"
+  },
+  {
+    "start": 325.885,
+    "end": 326.568,
+    "text": "ADP"
+  },
+  {
+    "start": 326.568,
+    "end": 326.861,
+    "text": "and"
+  },
+  {
+    "start": 326.861,
+    "end": 327.129,
+    "text": "phosphate."
+  },
+  {
+    "start": 327.846,
+    "end": 328.115,
+    "text": "Those"
+  },
+  {
+    "start": 328.115,
+    "end": 328.358,
+    "text": "are"
+  },
+  {
+    "start": 328.358,
+    "end": 328.676,
+    "text": "exactly"
+  },
+  {
+    "start": 328.676,
+    "end": 329.212,
+    "text": "what"
+  },
+  {
+    "start": 329.212,
+    "end": 329.334,
+    "text": "the"
+  },
+  {
+    "start": 329.334,
+    "end": 329.529,
+    "text": "motor"
+  },
+  {
+    "start": 329.529,
+    "end": 329.895,
+    "text": "needs."
+  },
+  {
+    "start": 330.403,
+    "end": 330.55,
+    "text": "As"
+  },
+  {
+    "start": 330.55,
+    "end": 330.672,
+    "text": "they"
+  },
+  {
+    "start": 330.672,
+    "end": 330.842,
+    "text": "build"
+  },
+  {
+    "start": 330.842,
+    "end": 331.135,
+    "text": "up,"
+  },
+  {
+    "start": 331.403,
+    "end": 331.477,
+    "text": "it"
+  },
+  {
+    "start": 331.477,
+    "end": 331.672,
+    "text": "spins"
+  },
+  {
+    "start": 331.672,
+    "end": 332.159,
+    "text": "faster,"
+  },
+  {
+    "start": 332.159,
+    "end": 332.696,
+    "text": "and"
+  },
+  {
+    "start": 332.696,
+    "end": 332.818,
+    "text": "the"
+  },
+  {
+    "start": 332.818,
+    "end": 333.038,
+    "text": "chain"
+  },
+  {
+    "start": 333.038,
+    "end": 333.403,
+    "text": "pumps"
+  },
+  {
+    "start": 333.403,
+    "end": 333.769,
+    "text": "harder."
+  },
+  {
+    "start": 334.313,
+    "end": 334.849,
+    "text": "Nobody"
+  },
+  {
+    "start": 334.849,
+    "end": 335.191,
+    "text": "flips"
+  },
+  {
+    "start": 335.191,
+    "end": 335.41,
+    "text": "a"
+  },
+  {
+    "start": 335.41,
+    "end": 335.678,
+    "text": "switch."
+  },
+  {
+    "start": 336.248,
+    "end": 336.613,
+    "text": "Spending"
+  },
+  {
+    "start": 336.613,
+    "end": 337.004,
+    "text": "energy"
+  },
+  {
+    "start": 337.004,
+    "end": 337.321,
+    "text": "is"
+  },
+  {
+    "start": 337.321,
+    "end": 337.638,
+    "text": "itself"
+  },
+  {
+    "start": 337.638,
+    "end": 337.931,
+    "text": "the"
+  },
+  {
+    "start": 337.931,
+    "end": 338.174,
+    "text": "signal"
+  },
+  {
+    "start": 338.174,
+    "end": 338.443,
+    "text": "to"
+  },
+  {
+    "start": 338.443,
+    "end": 338.638,
+    "text": "make"
+  },
+  {
+    "start": 338.638,
+    "end": 338.931,
+    "text": "more."
+  },
+  {
+    "start": 339.461,
+    "end": 339.9,
+    "text": "Engineers"
+  },
+  {
+    "start": 339.9,
+    "end": 340.315,
+    "text": "call"
+  },
+  {
+    "start": 340.315,
+    "end": 340.485,
+    "text": "that"
+  },
+  {
+    "start": 340.485,
+    "end": 340.949,
+    "text": "negative"
+  },
+  {
+    "start": 340.949,
+    "end": 341.412,
+    "text": "feedback."
+  },
+  {
+    "start": 342.019,
+    "end": 342.117,
+    "text": "And"
+  },
+  {
+    "start": 342.117,
+    "end": 342.239,
+    "text": "it's"
+  },
+  {
+    "start": 342.239,
+    "end": 342.409,
+    "text": "why"
+  },
+  {
+    "start": 342.409,
+    "end": 342.58,
+    "text": "you"
+  },
+  {
+    "start": 342.58,
+    "end": 342.775,
+    "text": "breathe"
+  },
+  {
+    "start": 342.775,
+    "end": 343.141,
+    "text": "harder,"
+  },
+  {
+    "start": 343.507,
+    "end": 343.58,
+    "text": "the"
+  },
+  {
+    "start": 343.58,
+    "end": 343.751,
+    "text": "chain"
+  },
+  {
+    "start": 343.751,
+    "end": 344.019,
+    "text": "needs"
+  },
+  {
+    "start": 344.019,
+    "end": 344.214,
+    "text": "more"
+  },
+  {
+    "start": 344.214,
+    "end": 344.58,
+    "text": "oxygen."
+  },
+  {
+    "start": 345.204,
+    "end": 345.301,
+    "text": "At"
+  },
+  {
+    "start": 345.301,
+    "end": 345.496,
+    "text": "full"
+  },
+  {
+    "start": 345.496,
+    "end": 345.838,
+    "text": "effort,"
+  },
+  {
+    "start": 346.204,
+    "end": 346.228,
+    "text": "a"
+  },
+  {
+    "start": 346.228,
+    "end": 346.448,
+    "text": "fit"
+  },
+  {
+    "start": 346.448,
+    "end": 346.667,
+    "text": "young"
+  },
+  {
+    "start": 346.667,
+    "end": 347.033,
+    "text": "adult"
+  },
+  {
+    "start": 347.033,
+    "end": 347.252,
+    "text": "can"
+  },
+  {
+    "start": 347.252,
+    "end": 347.448,
+    "text": "use"
+  },
+  {
+    "start": 347.448,
+    "end": 347.74,
+    "text": "roughly"
+  },
+  {
+    "start": 347.74,
+    "end": 348.228,
+    "text": "ten"
+  },
+  {
+    "start": 348.228,
+    "end": 348.594,
+    "text": "times"
+  },
+  {
+    "start": 348.594,
+    "end": 348.789,
+    "text": "as"
+  },
+  {
+    "start": 348.789,
+    "end": 348.935,
+    "text": "much"
+  },
+  {
+    "start": 348.935,
+    "end": 349.35,
+    "text": "oxygen"
+  },
+  {
+    "start": 349.35,
+    "end": 349.74,
+    "text": "as"
+  },
+  {
+    "start": 349.74,
+    "end": 349.911,
+    "text": "at"
+  },
+  {
+    "start": 349.911,
+    "end": 350.179,
+    "text": "rest."
+  },
+  {
+    "start": 350.882,
+    "end": 351.15,
+    "text": "So"
+  },
+  {
+    "start": 351.516,
+    "end": 351.833,
+    "text": "that's"
+  },
+  {
+    "start": 351.833,
+    "end": 351.93,
+    "text": "the"
+  },
+  {
+    "start": 351.93,
+    "end": 352.174,
+    "text": "physics"
+  },
+  {
+    "start": 352.174,
+    "end": 352.443,
+    "text": "of"
+  },
+  {
+    "start": 352.443,
+    "end": 352.565,
+    "text": "the"
+  },
+  {
+    "start": 352.565,
+    "end": 352.784,
+    "text": "motor"
+  },
+  {
+    "start": 352.784,
+    "end": 353.15,
+    "text": "inside"
+  },
+  {
+    "start": 353.15,
+    "end": 353.54,
+    "text": "you."
+  },
+  {
+    "start": 353.986,
+    "end": 354.181,
+    "text": "A"
+  },
+  {
+    "start": 354.181,
+    "end": 354.45,
+    "text": "membrane"
+  },
+  {
+    "start": 354.45,
+    "end": 355.011,
+    "text": "charged"
+  },
+  {
+    "start": 355.011,
+    "end": 355.328,
+    "text": "like"
+  },
+  {
+    "start": 355.328,
+    "end": 355.45,
+    "text": "a"
+  },
+  {
+    "start": 355.45,
+    "end": 355.791,
+    "text": "battery."
+  },
+  {
+    "start": 356.361,
+    "end": 356.605,
+    "text": "A"
+  },
+  {
+    "start": 356.605,
+    "end": 356.775,
+    "text": "field"
+  },
+  {
+    "start": 356.775,
+    "end": 357.019,
+    "text": "like"
+  },
+  {
+    "start": 357.019,
+    "end": 357.361,
+    "text": "lightning."
+  },
+  {
+    "start": 357.85,
+    "end": 357.924,
+    "text": "A"
+  },
+  {
+    "start": 357.924,
+    "end": 358.119,
+    "text": "rotor"
+  },
+  {
+    "start": 358.119,
+    "end": 358.509,
+    "text": "turned"
+  },
+  {
+    "start": 358.509,
+    "end": 358.728,
+    "text": "by"
+  },
+  {
+    "start": 358.728,
+    "end": 359.192,
+    "text": "protons,"
+  },
+  {
+    "start": 359.485,
+    "end": 359.704,
+    "text": "stepping"
+  },
+  {
+    "start": 359.704,
+    "end": 359.814,
+    "text": "a"
+  },
+  {
+    "start": 359.814,
+    "end": 359.924,
+    "text": "hundred"
+  },
+  {
+    "start": 359.924,
+    "end": 360.033,
+    "text": "and"
+  },
+  {
+    "start": 360.033,
+    "end": 360.143,
+    "text": "twenty"
+  },
+  {
+    "start": 360.143,
+    "end": 360.777,
+    "text": "degrees"
+  },
+  {
+    "start": 360.777,
+    "end": 361.119,
+    "text": "at"
+  },
+  {
+    "start": 361.119,
+    "end": 361.192,
+    "text": "a"
+  },
+  {
+    "start": 361.192,
+    "end": 361.558,
+    "text": "time,"
+  },
+  {
+    "start": 361.777,
+    "end": 361.997,
+    "text": "close"
+  },
+  {
+    "start": 361.997,
+    "end": 362.192,
+    "text": "to"
+  },
+  {
+    "start": 362.192,
+    "end": 362.46,
+    "text": "perfectly"
+  },
+  {
+    "start": 362.46,
+    "end": 362.875,
+    "text": "efficient."
+  },
+  {
+    "start": 363.542,
+    "end": 363.786,
+    "text": "All"
+  },
+  {
+    "start": 363.786,
+    "end": 363.908,
+    "text": "of"
+  },
+  {
+    "start": 363.908,
+    "end": 364.03,
+    "text": "it,"
+  },
+  {
+    "start": 364.298,
+    "end": 364.591,
+    "text": "smaller"
+  },
+  {
+    "start": 364.591,
+    "end": 364.933,
+    "text": "than"
+  },
+  {
+    "start": 364.933,
+    "end": 365.006,
+    "text": "a"
+  },
+  {
+    "start": 365.006,
+    "end": 365.298,
+    "text": "virus."
+  },
+  {
+    "start": 365.919,
+    "end": 366.261,
+    "text": "Run"
+  },
+  {
+    "start": 366.261,
+    "end": 366.383,
+    "text": "an"
+  },
+  {
+    "start": 366.383,
+    "end": 366.651,
+    "text": "electric"
+  },
+  {
+    "start": 366.651,
+    "end": 366.968,
+    "text": "motor"
+  },
+  {
+    "start": 366.968,
+    "end": 367.407,
+    "text": "backwards"
+  },
+  {
+    "start": 367.407,
+    "end": 367.749,
+    "text": "and"
+  },
+  {
+    "start": 367.749,
+    "end": 367.846,
+    "text": "it"
+  },
+  {
+    "start": 367.846,
+    "end": 368.09,
+    "text": "becomes"
+  },
+  {
+    "start": 368.09,
+    "end": 368.261,
+    "text": "a"
+  },
+  {
+    "start": 368.261,
+    "end": 368.578,
+    "text": "generator,"
+  },
+  {
+    "start": 368.944,
+    "end": 369.017,
+    "text": "and"
+  },
+  {
+    "start": 369.017,
+    "end": 369.188,
+    "text": "this"
+  },
+  {
+    "start": 369.188,
+    "end": 369.358,
+    "text": "one"
+  },
+  {
+    "start": 369.358,
+    "end": 369.554,
+    "text": "does"
+  },
+  {
+    "start": 369.554,
+    "end": 369.749,
+    "text": "the"
+  },
+  {
+    "start": 369.749,
+    "end": 369.993,
+    "text": "same."
+  },
+  {
+    "start": 370.627,
+    "end": 370.847,
+    "text": "So"
+  },
+  {
+    "start": 370.993,
+    "end": 371.14,
+    "text": "if"
+  },
+  {
+    "start": 371.14,
+    "end": 371.213,
+    "text": "a"
+  },
+  {
+    "start": 371.213,
+    "end": 371.432,
+    "text": "motor"
+  },
+  {
+    "start": 371.432,
+    "end": 371.701,
+    "text": "this"
+  },
+  {
+    "start": 371.701,
+    "end": 371.993,
+    "text": "small"
+  },
+  {
+    "start": 371.993,
+    "end": 372.262,
+    "text": "can"
+  },
+  {
+    "start": 372.262,
+    "end": 372.384,
+    "text": "be"
+  },
+  {
+    "start": 372.384,
+    "end": 372.579,
+    "text": "this"
+  },
+  {
+    "start": 372.579,
+    "end": 372.993,
+    "text": "efficient,"
+  },
+  {
+    "start": 373.323,
+    "end": 373.445,
+    "text": "what"
+  },
+  {
+    "start": 373.445,
+    "end": 373.566,
+    "text": "would"
+  },
+  {
+    "start": 373.566,
+    "end": 373.688,
+    "text": "you"
+  },
+  {
+    "start": 373.688,
+    "end": 373.884,
+    "text": "build"
+  },
+  {
+    "start": 373.884,
+    "end": 374.103,
+    "text": "if"
+  },
+  {
+    "start": 374.103,
+    "end": 374.201,
+    "text": "you"
+  },
+  {
+    "start": 374.201,
+    "end": 374.323,
+    "text": "could"
+  },
+  {
+    "start": 374.323,
+    "end": 374.64,
+    "text": "copy"
+  },
+  {
+    "start": 374.64,
+    "end": 374.835,
+    "text": "it?"
+  }
+]

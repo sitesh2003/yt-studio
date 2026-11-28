@@ -11,7 +11,7 @@
       "overlay": "none",
       "mode": "orbit",
       "slow": 0.4,
-      "seconds": 4.91,
+      "seconds": 7.819,
       "src": 0
     },
     {
@@ -23,14 +23,14 @@
         "~100 TURNS A SECOND",
         "shown here slowed down"
       ],
-      "seconds": 4.947,
+      "seconds": 7.942,
       "src": 1
     },
     {
       "kind": "atp_mito",
       "overlay": "none",
       "dive": true,
-      "seconds": 5.635,
+      "seconds": 5.291,
       "src": 2
     },
     {
@@ -42,7 +42,7 @@
         "ATP SYNTHASE",
         "a rotary motor"
       ],
-      "seconds": 3.984,
+      "seconds": 4.983,
       "src": 21
     },
     {
@@ -52,7 +52,7 @@
         "CHAPTER 1",
         "HOW MUCH POWER?"
       ],
-      "seconds": 3.899,
+      "seconds": 3.562,
       "src": 3
     },
     {
@@ -62,7 +62,7 @@
         "80 TO 100 WATTS",
         "your body at rest"
       ],
-      "seconds": 6.155,
+      "seconds": 7.521,
       "source": "Typical resting metabolic rate ~1,700 kcal/day = ~80 W",
       "src": 4
     },
@@ -74,7 +74,7 @@
         "ATP",
         "the energy currency"
       ],
-      "seconds": 6.015,
+      "seconds": 6.098,
       "src": 5
     },
     {
@@ -85,7 +85,7 @@
         "used even at rest"
       ],
       "source": "Tymoczko, Berg & Stryer, Biochemistry: A Short Course",
-      "seconds": 7.042,
+      "seconds": 6.234,
       "src": 6
     },
     {
@@ -96,13 +96,13 @@
         "ABOUT 400 TIMES",
         "every molecule, every day"
       ],
-      "seconds": 5.394,
+      "seconds": 4.001,
       "src": 37
     },
     {
       "kind": "atp_mito",
       "overlay": "none",
-      "seconds": 4.796,
+      "seconds": 5.138,
       "src": 7
     },
     {
@@ -113,7 +113,7 @@
         "CHAPTER 2",
         "A BATTERY IN A MEMBRANE"
       ],
-      "seconds": 3.849,
+      "seconds": 3.18,
       "src": 8
     },
     {
@@ -123,7 +123,7 @@
         "MITOCHONDRION",
         "wrapped in two membranes"
       ],
-      "seconds": 4.749,
+      "seconds": 4.199,
       "src": 9
     },
     {
@@ -134,7 +134,7 @@
         "CRISTAE",
         "the folded inner membrane"
       ],
-      "seconds": 5.468,
+      "seconds": 4.215,
       "src": 10
     },
     {
@@ -144,7 +144,7 @@
         "ELECTRONS",
         "carry the energy from food"
       ],
-      "seconds": 3.757,
+      "seconds": 3.601,
       "src": 13
     },
     {
@@ -155,7 +155,7 @@
         "A CURRENT",
         "electrons down a chain"
       ],
-      "seconds": 5.311,
+      "seconds": 4.388,
       "src": 14
     },
     {
@@ -166,7 +166,7 @@
         "THREE PUMPS",
         "Complexes I, III and IV"
       ],
-      "seconds": 4.498,
+      "seconds": 5.961,
       "src": 15
     },
     {
@@ -177,7 +177,7 @@
         "COMPLEX IV",
         "electrons + oxygen make water"
       ],
-      "seconds": 5.158,
+      "seconds": 4.195,
       "src": 16
     },
     {
@@ -187,7 +187,7 @@
         "150 TO 180 mV",
         "across the membrane"
       ],
-      "seconds": 5.089,
+      "seconds": 7.502,
       "source": "Perry et al. 2011, BioTechniques 50:98",
       "src": 19
     },
@@ -198,7 +198,7 @@
         "30 MILLION V/m",
         "voltage / thickness"
       ],
-      "seconds": 4.45,
+      "seconds": 9.585,
       "source": "Lane & Martin 2010, Nature 467:929",
       "src": 20
     },
@@ -209,7 +209,7 @@
         "LIKE LIGHTNING",
         "the field strength"
       ],
-      "seconds": 4.113,
+      "seconds": 5.342,
       "source": "Lane & Martin 2010, Nature 467:929",
       "src": 36
     },
@@ -220,7 +220,7 @@
         "CHAPTER 3",
         "ENERGY STORED UPHILL"
       ],
-      "seconds": 3.428,
+      "seconds": 2.927,
       "src": 18
     },
     {
@@ -230,14 +230,14 @@
         "TWO PUSHES",
         "charge and crowding"
       ],
-      "seconds": 5.278,
+      "seconds": 6.387,
       "src": 11
     },
     {
       "kind": "atp_dam",
       "overlay": "label",
       "leak": true,
-      "seconds": 3.487,
+      "seconds": 8.245,
       "label": [
         "PROTON-MOTIVE FORCE",
         "stored energy"
@@ -252,7 +252,7 @@
         "ONE WAY BACK",
         "through the motor"
       ],
-      "seconds": 6.572,
+      "seconds": 2.735,
       "src": 64
     },
     {
@@ -264,7 +264,7 @@
         "CHAPTER 4",
         "THE ROTOR"
       ],
-      "seconds": 4.511,
+      "seconds": 2.05,
       "src": 22
     },
     {
@@ -277,7 +277,7 @@
         "the ring, in animals"
       ],
       "source": "Watt et al. 2010, PNAS 107:16823",
-      "seconds": 5.521,
+      "seconds": 5.253,
       "src": 23
     },
     {
@@ -289,7 +289,7 @@
         "ONE PROTON",
         "one step of the ring"
       ],
-      "seconds": 5.125,
+      "seconds": 5.035,
       "src": 24
     },
     {
@@ -302,7 +302,7 @@
         "about 100 turns a second"
       ],
       "source": "Watt et al. 2010, PNAS 107:16823",
-      "seconds": 5.164,
+      "seconds": 4.333,
       "src": 25
     },
     {
@@ -314,7 +314,7 @@
         "the spin, seen directly"
       ],
       "source": "Noji et al. 1997, Nature 386:299",
-      "seconds": 6.612,
+      "seconds": 6.101,
       "src": 26
     },
     {
@@ -325,7 +325,7 @@
         "ABOUT 2 nm WIDE",
         "the smallest rotary motor seen"
       ],
-      "seconds": 6.375,
+      "seconds": 6.326,
       "src": 27
     },
     {
@@ -337,7 +337,7 @@
         "CHAPTER 5",
         "TORQUE AND EFFICIENCY"
       ],
-      "seconds": 4.07,
+      "seconds": 3.481,
       "src": 28
     },
     {
@@ -349,7 +349,7 @@
         "THE CROOKED SHAFT",
         "turns inside the head"
       ],
-      "seconds": 4.568,
+      "seconds": 4.053,
       "src": 29
     },
     {
@@ -361,7 +361,7 @@
         "THREE WORKING PARTS",
         "each changes shape"
       ],
-      "seconds": 4.951,
+      "seconds": 5.729,
       "src": 30
     },
     {
@@ -374,7 +374,7 @@
         "one from each part"
       ],
       "source": "Watt et al. 2010, PNAS 107:16823",
-      "seconds": 6.674,
+      "seconds": 4.907,
       "src": 32
     },
     {
@@ -386,7 +386,7 @@
         "one ATP each"
       ],
       "source": "Yasuda, Noji, Kinosita & Yoshida 1998, Cell 93:1117",
-      "seconds": 5.27,
+      "seconds": 8.718,
       "src": 61
     },
     {
@@ -397,7 +397,7 @@
         "TORQUE ~40 pN nm",
         "measured in 1998"
       ],
-      "seconds": 6.475,
+      "seconds": 7.608,
       "source": "Yasuda, Noji, Kinosita & Yoshida 1998, Cell 93:1117",
       "src": 62
     },
@@ -405,7 +405,7 @@
       "kind": "atp_noji",
       "overlay": "label",
       "slow": 0.5,
-      "seconds": 5.078,
+      "seconds": 5.967,
       "label": [
         "WORK = TORQUE x ANGLE",
         "for each step"
@@ -422,7 +422,7 @@
         "CLOSE TO 100%",
         "a car engine: 25 to 35%"
       ],
-      "seconds": 4.0,
+      "seconds": 11.298,
       "source": "Yasuda, Noji, Kinosita & Yoshida 1998, Cell 93:1117",
       "src": 33
     },
@@ -432,7 +432,7 @@
       "mode": "orbit",
       "slow": 0.4,
       "source": "Watt et al. 2010, PNAS 107:16823",
-      "seconds": 7.247,
+      "seconds": 9.648,
       "src": 93
     },
     {
@@ -440,7 +440,7 @@
       "overlay": "label",
       "mode": "orbit",
       "slow": 0.4,
-      "seconds": 9.341,
+      "seconds": 10.597,
       "label": [
         "THERMAL NOISE",
         "one ATP = ~20 x kT"
@@ -455,7 +455,7 @@
         "CHAPTER 6",
         "THE POWER OF ONE MOTOR"
       ],
-      "seconds": 3.54,
+      "seconds": 3.28,
       "src": 34
     },
     {
@@ -468,7 +468,7 @@
         "one motor"
       ],
       "source": "Power = torque x angular speed (from Yasuda et al. 1998 and Watt et al. 2010)",
-      "seconds": 6.69,
+      "seconds": 7.576,
       "src": 52
     },
     {
@@ -476,7 +476,7 @@
       "overlay": "label",
       "mode": "orbit",
       "slow": 0.4,
-      "seconds": 4.91,
+      "seconds": 3.764,
       "label": [
         "~2.5 x 10^-17 W",
         "one motor"
@@ -491,14 +491,14 @@
         "4 BILLION BILLION",
         "to light one bulb"
       ],
-      "seconds": 4.567,
+      "seconds": 5.74,
       "source": "Power = torque x angular speed (from Yasuda et al. 1998 and Watt et al. 2010)",
       "src": 50
     },
     {
       "kind": "atp_muscle",
       "overlay": "none",
-      "seconds": 6.203,
+      "seconds": 4.77,
       "src": 35
     },
     {
@@ -510,7 +510,7 @@
         "CHAPTER 7",
         "MOTOR OR GENERATOR?"
       ],
-      "seconds": 2.995,
+      "seconds": 3.197,
       "src": 57
     },
     {
@@ -522,7 +522,7 @@
         "RUNNING BACKWARDS",
         "fed ATP, it splits it"
       ],
-      "seconds": 5.239,
+      "seconds": 5.802,
       "src": 58
     },
     {
@@ -534,7 +534,7 @@
         "PUMP MODE",
         "ATP in, protons out"
       ],
-      "seconds": 5.043,
+      "seconds": 5.393,
       "src": 59
     },
     {
@@ -547,7 +547,7 @@
         "without oxygen"
       ],
       "source": "Nakamoto et al. 2008, Arch Biochem Biophys 476:43",
-      "seconds": 7.989,
+      "seconds": 6.178,
       "src": 63
     },
     {
@@ -559,7 +559,7 @@
         "IF1",
         "the brake"
       ],
-      "seconds": 4.141,
+      "seconds": 3.949,
       "src": 65
     },
     {
@@ -572,7 +572,7 @@
         "when the dam drains"
       ],
       "source": "Campanella et al. 2008, Cell Metab 8:13",
-      "seconds": 5.84,
+      "seconds": 5.321,
       "src": 66
     },
     {
@@ -583,7 +583,7 @@
         "CHAPTER 8",
         "A SHORT CIRCUIT"
       ],
-      "seconds": 3.339,
+      "seconds": 2.481,
       "src": 67
     },
     {
@@ -595,7 +595,7 @@
         "packed with mitochondria"
       ],
       "source": "Lidell et al. 2013, Nat Med 19:631",
-      "seconds": 4.808,
+      "seconds": 2.919,
       "src": 68
     },
     {
@@ -606,7 +606,7 @@
         "UCP1",
         "a gap in the dam"
       ],
-      "seconds": 5.377,
+      "seconds": 8.526,
       "src": 69
     },
     {
@@ -618,7 +618,7 @@
         "current, but no work"
       ],
       "source": "Fedorenko, Lishko & Kirichok 2012, Cell 151:400",
-      "seconds": 5.416,
+      "seconds": 5.345,
       "src": 70
     },
     {
@@ -629,7 +629,7 @@
         "HEAT",
         "instead of ATP"
       ],
-      "seconds": 4.764,
+      "seconds": 4.175,
       "src": 71
     },
     {
@@ -641,7 +641,7 @@
         "neck and collarbones"
       ],
       "source": "Cypess et al. 2009, NEJM 360:1509",
-      "seconds": 4.865,
+      "seconds": 6.09,
       "src": 73
     },
     {
@@ -652,7 +652,7 @@
         "CHAPTER 9",
         "SPEED CONTROL"
       ],
-      "seconds": 5.135,
+      "seconds": 2.994,
       "src": 42
     },
     {
@@ -664,7 +664,7 @@
         "demand jumps"
       ],
       "source": "Baker, McCormick & Robergs 2010, J Nutr Metab 905612",
-      "seconds": 5.351,
+      "seconds": 4.426,
       "src": 43
     },
     {
@@ -675,7 +675,7 @@
         "ADP + PHOSPHATE",
         "what spent ATP leaves"
       ],
-      "seconds": 5.075,
+      "seconds": 3.765,
       "src": 51
     },
     {
@@ -688,7 +688,7 @@
         "respiratory control"
       ],
       "source": "Brand & Nicholls 2011, Biochem J 435:297",
-      "seconds": 6.69,
+      "seconds": 6.467,
       "src": 52
     },
     {
@@ -696,7 +696,7 @@
       "overlay": "none",
       "mode": "orbit",
       "slow": 0.6,
-      "seconds": 4.962,
+      "seconds": 5.148,
       "src": 53
     },
     {
@@ -707,7 +707,7 @@
         "NEGATIVE FEEDBACK",
         "demand sets the speed"
       ],
-      "seconds": 6.037,
+      "seconds": 5.743,
       "src": 54
     },
     {
@@ -719,7 +719,7 @@
         "at full effort"
       ],
       "source": "Kaminsky, Arena & Myers 2015, Mayo Clin Proc 90:1515",
-      "seconds": 5.443,
+      "seconds": 5.678,
       "src": 55
     },
     {
@@ -727,19 +727,19 @@
       "overlay": "none",
       "mode": "orbit",
       "slow": 0.4,
-      "seconds": 9.341,
+      "seconds": 12.66,
       "src": 91
     },
     {
       "kind": "atp_mito",
       "overlay": "none",
-      "seconds": 2.54,
+      "seconds": 2.377,
       "src": 92
     },
     {
       "kind": "atp_muscle",
       "overlay": "none",
-      "seconds": 6.951,
+      "seconds": 10.447,
       "src": 94
     }
   ]

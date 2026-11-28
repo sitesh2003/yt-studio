@@ -1,5 +1,7 @@
 {
-  "title_options": ["Why Water Dances On A Very Hot Pan 💧"],
+  "title_options": [
+    "Why Water Dances On A Very Hot Pan 💧"
+  ],
   "share": {
     "myth": "The hotter the pan, the faster a water drop boils away.",
     "truth": "Above roughly 180 C, the drop's underside turns to vapour so fast that it floats on a film about 50 micrometres thick; the vapour insulates it, so it skates and lasts longer (Leidenfrost effect; Quéré 2013; Biance, Clanet & Quéré 2003).",
@@ -12,16 +14,41 @@
   ],
   "description": "Flick water on a pan that's hot enough and it doesn't sizzle away. It skates around on a cushion of its own steam. #shorts #science #physics #kitchen",
   "sources": "Quéré 2013, Annual Review of Fluid Mechanics 45:197 (Leidenfrost dynamics); Biance, Clanet & Quéré 2003, Physics of Fluids 15:1632; Lagubeau et al., APS Division of Fluid Dynamics 2008.",
-  "tags": ["Leidenfrost effect", "water on hot pan", "physics", "kitchen science", "science", "3D animation"],
+  "tags": [
+    "Leidenfrost effect",
+    "water on hot pan",
+    "physics",
+    "kitchen science",
+    "science",
+    "3D animation"
+  ],
   "scenes": [
-    {"narration": "Flick water on a warm pan and it sizzles away. Make the pan much hotter, and the drops start to dance."},
-    {"narration": "You'd think a hotter pan would boil them away faster. It doesn't."},
-    {"narration": "Above about a hundred eighty degrees Celsius, the bottom of the drop turns to steam instantly."},
-    {"narration": "That steam lifts the drop off the metal, on a layer about as thin as a human hair."},
-    {"narration": "With nothing touching, the drop skates around almost without friction."},
-    {"narration": "And steam is bad at carrying heat, so the floating drop boils away much more slowly."},
-    {"narration": "It's called the Leidenfrost effect, and scientists still study how these drops move."},
-    {"narration": "On a hot enough pan, water doesn't touch the metal. It floats on its own steam, so it lasts longer."},
-    {"narration": "So why does a cooler pan make the water vanish faster?"}
+    {
+      "narration": "A hotter pan makes water drops last longer. They float on their own steam."
+    },
+    {
+      "narration": "You'd think a hotter pan would boil them away faster. It doesn't."
+    },
+    {
+      "narration": "Above about a hundred eighty degrees Celsius, the bottom of the drop turns to steam instantly."
+    },
+    {
+      "narration": "That steam lifts the drop off the metal, on a layer about as thin as a human hair."
+    },
+    {
+      "narration": "With nothing touching, the drop skates around almost without friction."
+    },
+    {
+      "narration": "And steam is bad at carrying heat, so the floating drop boils away much more slowly."
+    },
+    {
+      "narration": "It's called the Leidenfrost effect, and scientists still study how these drops move."
+    },
+    {
+      "narration": "On a hot enough pan, water doesn't touch the metal. It floats on its own steam, so it lasts longer."
+    },
+    {
+      "narration": "So why does a cooler pan make the water vanish faster?"
+    }
   ]
 }

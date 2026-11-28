@@ -260,7 +260,7 @@
       "status": "uploaded",
       "planned_at": "2026-12-02T19:00:00-05:00",
       "topic": "chilli_burn",
-      "video_id": "MI-uIWRwwqc",
+      "video_id": "WrvR9alRTcU",
       "public_at": "2026-12-02T19:00:00-05:00"
     },
     {
@@ -270,7 +270,7 @@
       "status": "uploaded",
       "planned_at": "2026-12-01T02:30:00-05:00",
       "topic": "chilli_burn",
-      "video_id": "9uXPDRgAjq8",
+      "video_id": "cEoJF98x1S8",
       "public_at": "2026-12-01T02:30:00-05:00"
     },
     {
@@ -340,7 +340,7 @@
       "status": "uploaded",
       "planned_at": "2026-12-06T19:00:00-05:00",
       "topic": "popcorn",
-      "video_id": "_n7OhOvyAyc",
+      "video_id": "P8LJAJk5v2w",
       "public_at": "2026-12-06T19:00:00-05:00"
     },
     {
@@ -350,7 +350,7 @@
       "status": "uploaded",
       "planned_at": "2026-12-05T02:30:00-05:00",
       "topic": "popcorn",
-      "video_id": "_4C4k0JzGDk",
+      "video_id": "3Tb9rII9hlg",
       "public_at": "2026-12-05T02:30:00-05:00"
     },
     {
@@ -360,7 +360,7 @@
       "status": "uploaded",
       "planned_at": "2026-12-02T16:30:00-05:00",
       "topic": "popcorn",
-      "video_id": "mFvFYGI4Nbs",
+      "video_id": "3qlFUMf_aBc",
       "public_at": "2026-12-02T16:30:00-05:00"
     },
     {
@@ -488,8 +488,10 @@
       "name": "wiw_trex",
       "channel": "wiw",
       "title": "The Physics Of T. rex: Why Giants Can't Sprint",
-      "status": "making",
-      "format": "book"
+      "status": "uploaded",
+      "format": "book",
+      "video_id": "tRClW4VFlKk",
+      "public_at": "2026-11-30T16:30:00-05:00"
     },
     {
       "name": "wiw_atp",

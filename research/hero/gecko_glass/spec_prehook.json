@@ -1,0 +1,105 @@
+{
+  "assets_dir": "assets/3d",
+  "renderer": "micro",
+  "end_beat_s": 0.6,
+  "shots": [
+    {
+      "kind": "gk_climb",
+      "overlay": "label",
+      "label": [
+        "NO SUCTION. NO GLUE.",
+        "so how?"
+      ],
+      "from_front": true,
+      "seconds": 4.34,
+      "render_seconds": 5.018,
+      "event_seconds": 4.34
+    },
+    {
+      "kind": "gk_toe",
+      "overlay": "label",
+      "label": [
+        "MILLIONS OF HAIRS",
+        "on ridges under each toe"
+      ],
+      "seconds": 3.425,
+      "render_seconds": 4.087,
+      "event_seconds": 3.425
+    },
+    {
+      "kind": "gk_setae",
+      "overlay": "label",
+      "label": [
+        "ABOUT 1 BILLION TIPS",
+        "on one gecko"
+      ],
+      "seconds": 4.821,
+      "render_seconds": 5.43,
+      "event_seconds": 4.821
+    },
+    {
+      "kind": "gk_vdw",
+      "overlay": "label",
+      "label": [
+        "VAN DER WAALS FORCE",
+        "a pull between molecules"
+      ],
+      "seconds": 5.047,
+      "render_seconds": 7.894,
+      "event_seconds": 5.047
+    },
+    {
+      "kind": "gk_climb",
+      "overlay": "label",
+      "label": [
+        "TINY PULL x 1 BILLION",
+        "holds the whole gecko"
+      ],
+      "seconds": 4.404,
+      "render_seconds": 5.975,
+      "event_seconds": 4.404
+    },
+    {
+      "kind": "gk_setae",
+      "overlay": "label",
+      "label": [
+        "NOT WET GLUE",
+        "water-loving or water-repelling"
+      ],
+      "source": "Autumn et al. 2002, PNAS 99:12252",
+      "seconds": 6.457,
+      "render_seconds": 9.187,
+      "event_seconds": 6.457
+    },
+    {
+      "kind": "gk_peel",
+      "overlay": "label",
+      "label": [
+        "PEELS LIKE TAPE",
+        "tip first"
+      ],
+      "seconds": 3.271,
+      "render_seconds": 4.853,
+      "event_seconds": 3.271
+    },
+    {
+      "kind": "gk_climb",
+      "overlay": "label",
+      "label": [
+        "NOT SUCTION, NOT GLUE",
+        "molecules pulling"
+      ],
+      "from_front": true,
+      "seconds": 6.117,
+      "render_seconds": 7.782,
+      "event_seconds": 6.117
+    },
+    {
+      "kind": "gk_climb",
+      "overlay": "none",
+      "seconds": 2.86,
+      "render_seconds": 5.052,
+      "event_seconds": 2.86
+    }
+  ]
+}

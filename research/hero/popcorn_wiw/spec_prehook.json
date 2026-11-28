@@ -1,0 +1,106 @@
+{
+  "assets_dir": "assets/3d",
+  "renderer": "micro",
+  "end_beat_s": 0.6,
+  "shots": [
+    {
+      "kind": "pc_burst",
+      "overlay": "label",
+      "label": [
+        "A PRESSURE VESSEL",
+        "that jumps"
+      ],
+      "seconds": 3.757,
+      "render_seconds": 3.91,
+      "event_seconds": 3.157
+    },
+    {
+      "kind": "pc_cut",
+      "overlay": "label",
+      "label": [
+        "TRAPPED WATER",
+        "inside a hard hull"
+      ],
+      "seconds": 2.273,
+      "render_seconds": 3.859,
+      "event_seconds": 2.273
+    },
+    {
+      "kind": "pc_cut",
+      "overlay": "label",
+      "label": [
+        "MORE GAS, HOTTER GAS",
+        "pressure rises"
+      ],
+      "seconds": 5.542,
+      "render_seconds": 5.642,
+      "event_seconds": 4.068
+    },
+    {
+      "kind": "pc_cut",
+      "overlay": "label",
+      "label": [
+        "~180 °C",
+        "almost every kernel bursts"
+      ],
+      "burst": true,
+      "source": "Virot & Ponomarenko 2015, J R Soc Interface 12:20141247",
+      "seconds": 4.819,
+      "render_seconds": 5.322,
+      "event_seconds": 4.628
+    },
+    {
+      "kind": "pc_burst",
+      "overlay": "label",
+      "label": [
+        "STARCH FOAM",
+        "forms a leg"
+      ],
+      "seconds": 3.204,
+      "render_seconds": 5.731,
+      "event_seconds": 3.204
+    },
+    {
+      "kind": "pc_burst",
+      "overlay": "label",
+      "label": [
+        "STORED ENERGY",
+        "the leg is a spring"
+      ],
+      "seconds": 4.364,
+      "render_seconds": 4.729,
+      "event_seconds": 3.961
+    },
+    {
+      "kind": "pc_steam",
+      "overlay": "label",
+      "label": [
+        "THE POP",
+        "likely escaping steam"
+      ],
+      "seconds": 4.609,
+      "render_seconds": 8.002,
+      "event_seconds": 4.609
+    },
+    {
+      "kind": "pc_pan",
+      "overlay": "label",
+      "label": [
+        "PRESSURE VESSEL + SPRING",
+        "that's popcorn"
+      ],
+      "pops": 12,
+      "seconds": 4.449,
+      "render_seconds": 7.271,
+      "event_seconds": 4.449
+    },
+    {
+      "kind": "pc_pan",
+      "overlay": "none",
+      "pops": 6,
+      "seconds": 3.82,
+      "render_seconds": 3.92,
+      "event_seconds": 3.14
+    }
+  ]
+}

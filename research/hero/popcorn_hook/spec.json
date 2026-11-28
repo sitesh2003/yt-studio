@@ -1,0 +1,107 @@
+{
+  "assets_dir": "assets/3d",
+  "renderer": "micro",
+  "end_beat_s": 0.6,
+  "shots": [
+    {
+      "kind": "pc_burst",
+      "overlay": "label",
+      "label": [
+        "IT JUMPS ON A LEG",
+        "popcorn in slow motion"
+      ],
+      "seconds": 3.157,
+      "render_seconds": 3.91,
+      "event_seconds": 3.157,
+      "hook_of": 5
+    },
+    {
+      "kind": "pc_cut",
+      "overlay": "label",
+      "label": [
+        "WATER INSIDE",
+        "sealed in a hard hull"
+      ],
+      "seconds": 3.14,
+      "render_seconds": 3.859,
+      "event_seconds": 2.273
+    },
+    {
+      "kind": "pc_cut",
+      "overlay": "label",
+      "label": [
+        "STEAM PRESSURE",
+        "climbing inside"
+      ],
+      "seconds": 4.068,
+      "render_seconds": 5.642,
+      "event_seconds": 4.068
+    },
+    {
+      "kind": "pc_cut",
+      "overlay": "label",
+      "label": [
+        "~180 °C",
+        "almost every kernel bursts"
+      ],
+      "burst": true,
+      "source": "Virot & Ponomarenko 2015, J R Soc Interface 12:20141247",
+      "seconds": 5.222,
+      "render_seconds": 5.322,
+      "event_seconds": 4.628
+    },
+    {
+      "kind": "pc_burst",
+      "overlay": "label",
+      "label": [
+        "STARCH FOAM",
+        "a leg presses on the pan"
+      ],
+      "seconds": 3.539,
+      "render_seconds": 5.731,
+      "event_seconds": 3.204
+    },
+    {
+      "kind": "pc_burst",
+      "overlay": "label",
+      "label": [
+        "SQUASH, PUSH, LAUNCH",
+        "like a spring"
+      ],
+      "seconds": 3.961,
+      "render_seconds": 4.729,
+      "event_seconds": 3.961
+    },
+    {
+      "kind": "pc_steam",
+      "overlay": "label",
+      "label": [
+        "THE POP: LIKELY STEAM",
+        "not the hull cracking"
+      ],
+      "seconds": 5.389,
+      "render_seconds": 8.002,
+      "event_seconds": 4.609
+    },
+    {
+      "kind": "pc_pan",
+      "overlay": "label",
+      "label": [
+        "NOT JUST A BURST",
+        "a starch leg + escaping steam"
+      ],
+      "pops": 12,
+      "seconds": 5.243,
+      "render_seconds": 7.271,
+      "event_seconds": 4.449
+    },
+    {
+      "kind": "pc_pan",
+      "overlay": "none",
+      "pops": 6,
+      "seconds": 3.14,
+      "render_seconds": 3.92,
+      "event_seconds": 3.14
+    }
+  ]
+}

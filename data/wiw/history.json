@@ -4026,7 +4026,7 @@
     "thumbnail_set": true
   },
   {
-    "job": "hero_popcorn_wiw",
+    "job": "hero_popcorn_wiw_replaced",
     "topic": "Popcorn Is A Pressure Vessel That Jumps (Physics) 🍿",
     "title": "Popcorn Is A Pressure Vessel That Jumps (Physics) 🍿",
     "description": "Popcorn is a lesson in pressure, stored energy and forces. The kernel is a pressure vessel, and it jumps on a leg of starch. #shorts #physics #science #popcorn\n\nSources: Virot & Ponomarenko 2015, Journal of the Royal Society Interface 12:20141247 (PMC4345489).\n3D: every model built from scratch in Blender (procedural; no stock models or footage).\n\nHow this was made: the script is researched and fact-checked against published research (sources above), narrated by an AI voice, and animated and edited with open-source software.",
@@ -4039,7 +4039,7 @@
       "3D animation"
     ],
     "hook": "A popcorn kernel is a tiny pressure vessel, and when it fails, it jumps.",
-    "status": "scheduled",
+    "status": "replaced",
     "narration": "A popcorn kernel is a tiny pressure vessel, and when it fails, it jumps. The hard hull traps a little water inside. Heating it turns that water into steam. Same space, more gas, hotter gas: the pressure rises. The hull holds until about one hundred eighty degrees Celsius. Then almost every kernel bursts. Starch foams out, and part of it lands on the pan as a leg. The leg squashes, storing energy like a spring, then pushes the pan and the pan pushes back. And the pop? Recordings link it to the steam escaping, all in a few hundredths of a second. Popcorn is a pressure vessel that fails at one hundred eighty degrees, then jumps on a spring made of starch. So what would happen to the pressure if the hull had a tiny hole?",
     "voice_engine": "chatterbox",
     "countdown": false,
@@ -4047,7 +4047,9 @@
     "question": "So what would happen to the pressure if the hull had a tiny hole?",
     "video_id": "mFvFYGI4Nbs",
     "publish_at": "2026-12-02T16:30:00-05:00",
-    "thumbnail_set": true
+    "thumbnail_set": true,
+    "replaced_reason": "new cold-open hook (council 28 Nov)",
+    "old_publish_at": "2026-12-02T21:30:00Z"
   },
   {
     "job": "hero_leidenfrost_wiw",
@@ -4072,6 +4074,55 @@
     "question": "So why does a drop touching a cooler pan get heat so much faster?",
     "video_id": "QzFcyiIrlKk",
     "publish_at": "2026-12-09T16:30:00-05:00",
+    "thumbnail_set": true
+  },
+  {
+    "job": "hero_wiw_trex",
+    "topic": "The Physics Of T. rex: Why Giants Can't Sprint",
+    "title": "The Physics Of T. rex: Why Giants Can't Sprint",
+    "description": "Why couldn't an eight-tonne T. rex run? Not because of weak muscles, but because of geometry. We take the movie monster apart with physics: the square-cube law, torque, triangulation, pressure, levers and the energy of the asteroid that ended its world. In 3D, with every claim from published science.\n\n0:00 Intro\n0:37 The Cube Rule\n1:23 Growing Fast\n2:10 A Balancing Act\n2:59 Why It Couldn'T Run\n4:11 Eyes That Measure\n5:04 Force And Pressure\n6:02 Short Levers\n6:34 Energy From The Sky\n\nSources: Carpenter & Smith 2001, Mesozoic Vertebrate Life; Chin et al. 1998, Nature; Erickson et al. 2004, Nature; Field Museum (FMNH PR 2081); Hutchinson et al. 2011, PLoS ONE; Funston et al. 2021, Canadian Journal of Earth Sciences; Gignac & Erickson 2017, Scientific Reports; Erickson et al. 2012, PLoS ONE; Hutchinson & Garcia 2002, Nature; Padian 2022, Acta Palaeontologica Polonica; Schulte et al. 2010, Science; Renne et al. 2013, Science; Sellers et al. 2017, PeerJ; Stevens 2006, Journal of Vertebrate Paleontology; Woodward et al. 2020, Science Advances; Schroeder et al. 2021, Science; Galileo 1638, Two New Sciences; Haldane 1926, On Being the Right Size\n3D credits: T. rex model: Quaternius, Animated LowPoly Dinosaurs (CC0); Car model: Kenney, Car Kit (CC0). Animated in Blender.\n\nHow this was made: the script is researched and fact-checked against published research (sources above), narrated by an AI voice, and animated and edited with open-source software.",
+    "tags": [
+      "physics",
+      "square-cube law",
+      "T. rex",
+      "dinosaurs",
+      "why it works",
+      "science explained",
+      "3D animation"
+    ],
+    "hook": "A Tyrannosaurus rex weighed about as much as six small cars. So why couldn't something that powerful run? The answer isn't about muscle. It's about a simple rule of geometry.",
+    "status": "scheduled",
+    "narration": "A Tyrannosaurus rex weighed about as much as six small cars. So why couldn't something that powerful run? The answer isn't about muscle. It's about a simple rule of geometry. Make any animal bigger, and its weight grows much faster than the strength of its bones. At T. rex size, a full sprint would likely have put more stress on its legs than they could take. That's why, in the best computer model we have, a car at city speed simply drives away from it. In this film we'll take the movie monster apart with physics: geometry, balance, pressure, levers and energy. One question at a time. And we'll start with the rule that shaped everything. Chapter one. The cube rule. Tyrannosaurs began small. Fossil embryos from close relatives suggest a hatchling about ninety centimetres long, roughly the size of a small dog. An adult like Sue was about twelve metres long. That's about thirteen times longer. But its weight didn't grow thirteen times. Weight depends on volume: length, times width, times height. Make an animal thirteen times bigger in every direction, and it becomes thirteen, times thirteen, times thirteen. That's more than two thousand times heavier, if it kept the same shape. But the strength of a bone depends on its cross-section, the area you'd see if you cut straight across it. That only grows with the square: about a hundred and seventy times. Weight wins, by a long way. It's called the square-cube law, and Galileo worked it out almost four hundred years ago. Chapter two. Growing fast. Young T. rex were small enough to beat the rule. Long, slender legs and a light body made them quick on their feet. Scientists think they hunted smaller, faster animals that the giant adults couldn't catch. Then came the growth spurt. Growth rings inside the bones, a little like the rings in a tree trunk, show how fast each animal grew. Thin slices cut from the leg bones of two young T. rex, nicknamed Jane and Petey, showed they were about thirteen and fifteen years old, and still growing fast. At its peak, a teenage T. rex added roughly two kilograms of body every single day, for about four years. That's nearly three tonnes of new animal. And every kilogram it added made the cube rule bite harder. The bigger it got, the more carefully it had to move. Chapter three. A balancing act. Sue, the most complete T. rex skeleton ever found, measured about twelve metres from nose to tail. Estimates vary, but an adult like Sue weighed roughly eight tonnes. On a giant see-saw, you'd need about six small cars to balance it. Its skull alone was about one point four metres long. And all of that weight sat far out in front of the hips. Think of the hips as the pivot of a see-saw. A heavy head out in front tries to tip the whole body forward. Physicists call that turning effect torque: the weight, times its distance from the pivot. The answer was the tail. A long, heavy tail stretched out behind, pulling the other way. Head and tail balanced, and the centre of mass ended up close to the hips, over the feet. Balanced, yes. But could all eight tonnes of it actually run? Chapter four. Why it couldn't run. In 2017, a team in Britain built a T. rex inside a computer, with every bone, and every muscle that pulled on them. Then they let the computer try thousands of ways to fire those muscles, searching for the fastest way to move. Running means landing hard on one leg at a time, and each landing pushes on the bone far harder than standing still. At every running speed, the stress in its leg bones climbed so high that they would likely have broken. That's the cube rule again. Make an animal twice as big and it gets eight times heavier, but its bones get only four times stronger. Double the stress. An earlier study reached the same wall from another side. To sprint fast, an animal this heavy would need about forty percent of its whole body in the muscles of each leg. Nothing alive carries that much. So its top speed was probably a brisk walk. In the 2017 model, that was about twenty kilometres an hour, or twelve miles an hour. Elephants follow the same physics. Even at top speed, they never get all four feet off the ground at once. A car on a city street would leave it behind. So would a fit cyclist. So how did a slow giant become a top predator? Part of the answer is in how it saw the world. Chapter five. Eyes that measure distance. In 2006, a scientist rebuilt the heads of meat-eating dinosaurs and traced where each eye could look. T. rex's eyes faced forward, and their views overlapped across about fifty-five degrees. That's wider than in a modern hawk. Overlap means each eye sees the same object from a slightly different place. The brain uses that difference to work out distance. It's the same geometry surveyors use to measure a far-off mountain. It's called triangulation. Based on living birds and reptiles, its sharpest vision may have picked out objects several kilometres away. It's only an estimate. But it means a slow hunter could still see you coming. Its brain also had huge smell lobes, among the biggest of any meat-eating dinosaur. And its inner ear was tuned to low, deep sounds. Low sounds have long wavelengths, and they travel further across open ground before they fade. Chapter six. Force and pressure. To estimate its bite, scientists rebuilt the jaw muscles using its closest living relatives, crocodiles and birds. Their estimate: up to about thirty-five thousand newtons at the back teeth. That's like the weight of three and a half tonnes pressing down, more than twice the strongest bite ever measured in a living animal, the saltwater crocodile. But force is only half the story. Pressure is force divided by area. Squeeze that force onto the small tip of a tooth, and the pressure becomes enormous, enough to crack bone. Its biggest teeth, root and all, were about thirty centimetres long. And they were thick, so they wouldn't snap under that load. Fossil bones of its prey, like a Triceratops hip, carry deep T. rex bite marks, some punched right into the bone. And a giant fossil dropping, most likely from a T. rex, is up to half crushed bone. A slow walker that can judge distance and bite through bone doesn't need to be fast. But then, what were those tiny arms for? Chapter seven. Short levers. In 2001, two scientists measured the arm bones and the scars where the muscles attached. Each arm was about a metre long, ending in just two clawed fingers. Short, but built from thick bone. Their calculation: the biceps alone could curl about two hundred kilograms. Small arms, but not weak ones. So why so short? One idea, from 2022: when several adults fed on the same carcass, long arms would have been in the way of all those jaws. It's still debated. Nobody knows for sure. Chapter eight. Energy from the sky. Sixty-six million years ago, T. rex was still at the top of its world. Then a rock about ten kilometres across came out of the sky. And the cube rule works here too. A rock that big holds an enormous mass. Moving energy is half the mass, times the speed squared. At the kind of speed asteroids hit the Earth, around twenty kilometres a second, a rough estimate gives billions of times the energy of the Hiroshima bomb. It blasted a crater about one hundred and eighty kilometres wide, in what is now Mexico. Within hours, shock waves, wildfires and giant waves spread out from the impact. Dust and soot spread around the planet. Sunlight dimmed, plants struggled, and food chains collapsed. About three quarters of all species died out. Every T. rex was gone. But one group of dinosaurs survived: the birds. So that's the physics of T. rex. The cube rule made it heavy and slow. Torque explains its tail. Triangulation helped it judge distance. Pressure made its bite crack bone. And energy, half m v squared, ended its world. The same rule explains why an ant can fall off a table and walk away, while an elephant can't even jump. So if you were scaled up to the size of a T. rex, what do you think would break first?",
+    "voice_engine": "chatterbox",
+    "countdown": false,
+    "hero_3d": true,
+    "question": "The same rule explains why an ant can fall off a table and walk away, while an elephant can't even jump. So if you were scaled up to the size of a T. rex, what do you think would break first?",
+    "video_id": "tRClW4VFlKk",
+    "publish_at": "2026-11-30T16:30:00-05:00",
+    "thumbnail_set": true
+  },
+  {
+    "job": "hero_popcorn_wiw",
+    "topic": "Popcorn Is A Pressure Vessel That Jumps (Physics) 🍿",
+    "title": "Popcorn Is A Pressure Vessel That Jumps (Physics) 🍿",
+    "description": "Popcorn is a lesson in pressure, stored energy and forces. The kernel is a pressure vessel, and it jumps on a leg of starch. #shorts #physics #science #popcorn\n\nSources: Virot & Ponomarenko 2015, Journal of the Royal Society Interface 12:20141247 (PMC4345489).\n3D: every model built from scratch in Blender (procedural; no stock models or footage).\n\nHow this was made: the script is researched and fact-checked against published research (sources above), narrated by an AI voice, and animated and edited with open-source software.",
+    "tags": [
+      "popcorn physics",
+      "pressure",
+      "physics",
+      "GCSE physics",
+      "science",
+      "3D animation"
+    ],
+    "hook": "A popcorn kernel is a tiny pressure vessel, and when it fails, it jumps.",
+    "status": "scheduled",
+    "narration": "A popcorn kernel is a tiny pressure vessel, and when it fails, it jumps. The hard hull traps a little water inside. Heating it turns that water into steam. Same space, more gas, hotter gas: the pressure rises. The hull holds until about one hundred eighty degrees Celsius. Then almost every kernel bursts. Starch foams out, and part of it lands on the pan as a leg. The leg squashes, storing energy like a spring, then pushes the pan and the pan pushes back. And the pop? Recordings link it to the steam escaping, all in a few hundredths of a second. Popcorn is a pressure vessel that fails at one hundred eighty degrees, then jumps on a spring made of starch. So what would happen to the pressure if the hull had a tiny hole?",
+    "voice_engine": "chatterbox",
+    "countdown": false,
+    "hero_3d": true,
+    "question": "So what would happen to the pressure if the hull had a tiny hole?",
+    "video_id": "3qlFUMf_aBc",
+    "publish_at": "2026-12-02T16:30:00-05:00",
     "thumbnail_set": true
   }
 ]

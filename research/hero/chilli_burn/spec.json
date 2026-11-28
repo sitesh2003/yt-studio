@@ -4,16 +4,16 @@
   "end_beat_s": 0.6,
   "shots": [
     {
-      "kind": "chilli_macro",
+      "kind": "capsaicin_open",
       "overlay": "label",
       "label": [
         "NO REAL HEAT",
         "your mouth stays about 37 °C"
       ],
-      "fstop": 4.0,
       "seconds": 3.423,
       "render_seconds": 6.229,
-      "event_seconds": 3.423
+      "event_seconds": 3.423,
+      "hook_of": 3
     },
     {
       "kind": "membrane_dive",

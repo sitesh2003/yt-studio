@@ -1,5 +1,7 @@
 {
-  "title_options": ["Why A Hotter Pan Makes Water Last Longer (Leidenfrost Effect) 💧"],
+  "title_options": [
+    "Why A Hotter Pan Makes Water Last Longer (Leidenfrost Effect) 💧"
+  ],
   "share": {
     "myth": "A hotter surface always makes water boil away faster.",
     "truth": "Above about 180 C, the bottom of a water drop vaporises so fast that it floats on a vapour film about 50 micrometres thick; vapour conducts heat poorly, so the drop evaporates more slowly and slides with almost no friction (Quéré 2013; Biance, Clanet & Quéré 2003).",
@@ -12,16 +14,42 @@
   ],
   "description": "Heat transfer, insulation and friction in one drop of water: why water skates on a very hot pan and lasts longer than on a warm one. #shorts #physics #science #heattransfer",
   "sources": "Quéré 2013, Annual Review of Fluid Mechanics 45:197; Biance, Clanet & Quéré 2003, Physics of Fluids 15:1632; Lagubeau et al., APS Division of Fluid Dynamics 2008.",
-  "tags": ["Leidenfrost effect", "heat transfer", "physics", "insulation", "friction", "science", "3D animation"],
+  "tags": [
+    "Leidenfrost effect",
+    "heat transfer",
+    "physics",
+    "insulation",
+    "friction",
+    "science",
+    "3D animation"
+  ],
   "scenes": [
-    {"narration": "On a warm pan, water sizzles away. On a much hotter pan, it skates around and lasts longer."},
-    {"narration": "That sounds backwards. More heat should mean faster boiling."},
-    {"narration": "But above about one hundred eighty degrees Celsius, the bottom of the drop vaporises instantly."},
-    {"narration": "That vapour forms a film about fifty micrometres thick, roughly the width of a hair."},
-    {"narration": "With a gas film underneath, there's almost no contact, so almost no friction."},
-    {"narration": "And gases are poor conductors of heat, so the film insulates the drop from the pan."},
-    {"narration": "Heat has to cross that insulating layer, so the drop evaporates more slowly. That's the Leidenfrost effect."},
-    {"narration": "Past about one hundred eighty degrees, steam becomes an insulator under the drop, so a hotter pan makes water last longer."},
-    {"narration": "So why does a drop touching a cooler pan get heat so much faster?"}
+    {
+      "narration": "A hotter pan can make water last longer."
+    },
+    {
+      "narration": "That sounds backwards. More heat should mean faster boiling."
+    },
+    {
+      "narration": "But above about one hundred eighty degrees Celsius, the bottom of the drop vaporises instantly."
+    },
+    {
+      "narration": "That vapour forms a film about fifty micrometres thick, roughly the width of a hair."
+    },
+    {
+      "narration": "With a gas film underneath, there's almost no contact, so almost no friction."
+    },
+    {
+      "narration": "And gases are poor conductors of heat, so the film insulates the drop from the pan."
+    },
+    {
+      "narration": "Heat has to cross that insulating layer, so the drop evaporates more slowly. That's the Leidenfrost effect."
+    },
+    {
+      "narration": "Past about one hundred eighty degrees, steam becomes an insulator under the drop, so a hotter pan makes water last longer."
+    },
+    {
+      "narration": "So why does a drop touching a cooler pan get heat so much faster?"
+    }
   ]
 }

@@ -49,7 +49,7 @@ SC = [
  ("Sue, the most complete T. rex skeleton ever found, measured about twelve metres from nose to tail.", 17, {}),
  ("Estimates vary, but an adult like Sue weighed roughly eight tonnes. On a giant see-saw, you'd need about six small cars to balance it.", 18, {}),
  ("Its skull alone was about one point four metres long. And all of that weight sat far out in front of the hips.", 19, {}),
- ("Think of the hips as the pivot of a see-saw. A heavy head out in front tries to tip the whole body forward. Physicists call that turning effect torque: the weight, times its distance from the pivot.", 20,
+ ("Think of the hips as the pivot of a see-saw. A heavy head out in front tries to tip the whole body forward. Physicists call that turning effect torque: the weight, times its distance from the pivot.", 18,
   {"overlay": "label", "label": ["TORQUE", "weight x distance from the pivot"], "source": "Torque = force x lever arm"}),
  ("The answer was the tail. A long, heavy tail stretched out behind, pulling the other way. Head and tail balanced, and the centre of mass ended up close to the hips, over the feet.", 21,
   {"label": ["THE TAIL", "a counterweight"], "source": S_COM}),

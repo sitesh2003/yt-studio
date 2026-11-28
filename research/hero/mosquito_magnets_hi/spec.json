@@ -4,7 +4,7 @@
   "end_beat_s": 0.6,
   "shots": [
     {
-      "kind": "mosq_magnet",
+      "kind": "mosq_skin",
       "overlay": "label",
       "label": [
         "MOSQUITO MAGNETS",
@@ -12,7 +12,8 @@
       ],
       "seconds": 5.79,
       "render_seconds": 5.89,
-      "event_seconds": 4.187
+      "event_seconds": 4.187,
+      "hook_of": 4
     },
     {
       "kind": "mosq_sleeve",
