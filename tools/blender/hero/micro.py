@@ -39,6 +39,8 @@ N = int(round(SHOT.get("render_seconds", SHOT["seconds"]) * FPS))
 KIND = SHOT["kind"]
 NE = min(N, int(round(SHOT.get("event_seconds", SHOT["seconds"]) * FPS)))   # timed events use this length
 random.seed(7 + args.shot)
+LOOK = os.environ.get("HERO_LOOK") or SHOT.get("look") or SPEC.get("look") or "v1"
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 bpy.ops.wm.read_factory_settings(use_empty=True)
 SC = bpy.context.scene
@@ -842,6 +844,11 @@ def render():
 
 
 build()
+# 28 Nov 2026: look v2 (look.py) - ray-traced contact light, key/rim/bounce rig, world gradient, micro detail on
+# every surface, AgX tone mapping. Opt-in so every older spec renders exactly as it did.
+if LOOK == "v2":
+    import look
+    look.apply(SC, args.preview, SHOT)
 # 27 Nov 2026: a scene composed for a vertical Short, rendered landscape for a book, keeps its VERTICAL field of view
 # (Blender's auto fit would keep the width and crop the top and bottom off the subject).
 if SPEC.get("keep_vertical_fov") and SPEC.get("aspect") == "landscape":

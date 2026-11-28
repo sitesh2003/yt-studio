@@ -69,6 +69,9 @@ def _stick(name, a, b, r, m, parent):
 
 def mosquito(name, size=1.2):
     """A female Aedes aegypti facing +Y, about `size` cm long. Returns (root, [wing pivots])."""
+    if LOOK == "v2":                      # 28 Nov 2026: the anatomy-first model (micro_anatomy.py)
+        import micro_anatomy
+        return micro_anatomy.mosquito2(name, size)
     body, white, eye, wing = _mats()
     root = empty(name)
     s = size / 0.62                       # the build below is ~0.62 units long
@@ -161,6 +164,9 @@ def wander_path(start, end, f0, f1, wobble=1.5, every=3):
 def skin_mat():
     if "Skin" in bpy.data.materials:
         return bpy.data.materials["Skin"]
+    if LOOK == "v2":                      # real subsurface scattering, pores and creases
+        import look
+        return look.skin("Skin", (0.6, 0.34, 0.22))
     m = organic("Skin", (0.55, 0.33, 0.24), (0.6, 0.25, 0.15), 0.05, sss=0.5, noise=40, rough=0.62)
     b = m.node_tree.nodes["Principled BSDF"]
     if "Coat Weight" in b.inputs:
@@ -445,7 +451,7 @@ def shot_land(cam, tgt):
     table_world()
     forearm("Arm", 0)
     r, pv = mosquito("M0", 1.4)
-    end = Vector((0.5, -4, 3.4 + 3.28 + 0.8))
+    end = Vector((0.5, -4, 3.4 + 3.28 + r.get("stand_off", 0.8)))
     path = wander_path((-8, -16, 14), end + Vector((0, 0, 1.2)), 1, int(N * 0.55), 1.2) + [(int(N * 0.7), end), (N, end)]
     fly(r, pv, path)
     key_loc(cam, [(1, (9, -16, 11)), (N, (6, -12, 8.5))])
