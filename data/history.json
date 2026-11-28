@@ -6748,7 +6748,7 @@
       "3D animation"
     ],
     "hook": "On a wet road, your car can need at least twice as far to stop.",
-    "status": "scheduled",
+    "status": "public",
     "narration": "On a wet road, your car can need at least twice as far to stop. Both of these cars brake at fifty kilometres an hour. One on a dry road, one on a wet road. The dry car stops in about fourteen metres. The wet one slides on to about twenty-eight. Braking works by grip between the tyre and the road, and water gets in between and cuts that grip. Half the grip means half the braking force, so the same speed takes twice the distance. Worn tyres make it worse, because their grooves can't push the water away. So how much farther do you think a car needs on ice?",
     "voice_engine": "chatterbox",
     "countdown": false,
