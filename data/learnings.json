@@ -1,16 +1,16 @@
 {
-  "summary": "Focus video topics on high-appeal subjects like prehistoric animals and everyday hidden mechanics, as they consistently capture and retain initial viewer interest. Craft titles using direct, curiosity-inducing statements or questions rather than dry technical summaries. Write first sentences that immediately challenge an assumption, state an alarming fact, or use direct address (\"You're a...\") to prevent swiping. Keep overall video lengths concise and tightly edited to maximize the percentage of viewers who stay past the crucial opening seconds. Avoid lengthy preamble, academic phrasing, or abstract scientific context in the hook, as these heavily increase drop-off rates.",
+  "summary": "1. Replace academic discovery premises ('Scientists found...') with immediate, concrete paradoxes or counter-intuitive assertions ('A car that folds keeps you safer', 'T. rex couldn't run'). 2. Kill all preamble and subordinate clauses: keep hook sentence 1 under 14 words and deliver the core conflict before second 2. 3. Target visceral, high-affinity topics that pit physical intuition against reality (cars, crashes, T. rex, immediate bodily sensations) rather than passive observational science (astronomy, ponds, infrastructure). 4. Format titles around high-contrast mechanical questions or counter-intuitive rules ('Why Double Speed Means 4x Braking Distance') rather than sensational discovery hype with emojis. 5. Keep target video length strictly between 15–25 seconds; all videos with stayed_pct > 50% peaked within this duration band, while 30+ second scripts suffered swiping drop-off.",
   "winning_hooks": [
-    "A car that folds up in a crash keeps you safer than one that doesn't.",
-    "The real T. rex probably couldn't run. Not even a jog.",
-    "Your eyes are leaking right now, and your brain is hiding it.",
-    "You're a baby tyrannosaur, no bigger than a small dog."
+    "The real T. rex probably couldn't run. Not even a jog. (Immediate myth-busting with an emphatic, short cadence)",
+    "A car that folds up in a crash keeps you safer than one that doesn't. (Instant paradox challenging visual intuition)",
+    "Your eyes are leaking right now, and your brain is hiding it. (Direct 'you' framing tied to an active bodily sensation)",
+    "Drive twice as fast, and your car needs four times as far to stop. (High-contrast, concrete numerical rule delivered in 13 words)"
   ],
   "avoid": [
-    "Pluto seemed like our solar system's edge, yet astronomers are investigating evidence that...",
-    "Fossilized bones can last millions of years, but sometimes they hide more than just minerals.",
-    "That fresh farm salmon you bought is actually completely gray under its skin.",
-    "Long explanatory introductions about background history or technical definitions."
+    "Slow narrative preambles and multi-clause setups (e.g., 'Pluto seemed like our solar system's edge, yet astronomers are investigating...')",
+    "Vague, low-stakes claims that state the obvious (e.g., 'Most James Webb images hold secrets')",
+    "Abstract science history or passive research framing ('Scientists just found...', 'Did Scientists Find Real Dinosaur Blood?')",
+    "Niche industrial/infrastructure explainers that lack immediate human stakes (e.g., 'Why Highway Guardrails Have Heavy End Boxes')"
   ],
-  "next_experiment": "A/B test two distinct hooks for a new T. rex video: Hook A starts with a direct myth-busting statement (\"T. rex couldn't even manage a fast walk\"), while Hook B starts with a direct second-person question (\"Could you outrun a baby T. rex?\"), tracking stayed_pct and views for both variations."
+  "next_experiment": "Test Hook Syntax on the same topic: Take a physics/car topic and A/B test Hook A (Myth-Busting Assertion: 'Braking hard in the rain doesn't stop you faster—it locks your tires.') vs. Hook B (Hypothetical Narrative: 'Imagine you are driving 60 mph on wet asphalt when a deer jumps out.') while holding the script under 20 seconds and tracking stayed_pct differences."
 }

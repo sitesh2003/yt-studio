@@ -20,7 +20,7 @@
       }
     ],
     "countdown": null,
-    "checked": "2026-11-27"
+    "checked": "2026-11-28"
   },
   "a8Kooq5Sswk": {
     "title": "Why Onions Make You Cry",
@@ -43,7 +43,7 @@
       }
     ],
     "countdown": null,
-    "checked": "2026-11-27"
+    "checked": "2026-11-28"
   },
   "yF1Dj5F1icM": {
     "title": "Why Cold Water Fails Against Spicy Food 🌶️🥛",
@@ -319,7 +319,7 @@
       }
     ],
     "countdown": false,
-    "checked": "2026-11-27"
+    "checked": "2026-11-28"
   },
   "nnxCKv3odg4": {
     "title": "Why Car Windshields Have Black Dots 🤔",
@@ -365,7 +365,7 @@
       }
     ],
     "countdown": false,
-    "checked": "2026-11-27"
+    "checked": "2026-11-28"
   },
   "qAcYz-fodfU": {
     "title": "How 400 Degree Foil Stays Safe 🤔",
@@ -434,7 +434,7 @@
       }
     ],
     "countdown": false,
-    "checked": "2026-11-27"
+    "checked": "2026-11-28"
   },
   "omCteTHNw_Q": {
     "title": "What Actually Happens When Your Leg Falls Asleep",
@@ -457,7 +457,7 @@
       }
     ],
     "countdown": false,
-    "checked": "2026-11-27"
+    "checked": "2026-11-28"
   },
   "ZBu29NHzbYo": {
     "title": "Why Scientists Missed an Outer Kuiper Belt 🤯",
@@ -480,20 +480,20 @@
       }
     ],
     "countdown": false,
-    "checked": "2026-11-27"
+    "checked": "2026-11-28"
   },
   "fRhw3NBA-FY": {
     "title": "Could A T. rex Outrun Your Car? 🦖",
     "hook_line": "The real T.",
-    "kept_at_10pct": 1.1018000000000001,
-    "kept_at_50pct": 0.6069,
-    "kept_at_end": 0.4318,
-    "vs_similar_start": 0.49,
-    "vs_similar_end": 0.68,
+    "kept_at_10pct": 1.1822,
+    "kept_at_50pct": 0.685,
+    "kept_at_end": 0.5065999999999999,
+    "vs_similar_start": 0.53,
+    "vs_similar_end": 0.87,
     "biggest_drops": [
       {
         "at": 0.11,
-        "lost": 0.196,
+        "lost": 0.199,
         "line": "It weighed about eight tonnes."
       },
       {
@@ -503,30 +503,30 @@
       }
     ],
     "countdown": false,
-    "checked": "2026-11-27"
+    "checked": "2026-11-28"
   },
   "DZJ8Lw4NZhc": {
     "title": "How Hard Could A T. rex Bite? 🦖",
     "hook_line": "One T.",
-    "kept_at_10pct": 1.0585,
-    "kept_at_50pct": 0.345,
-    "kept_at_end": 0.1462,
-    "vs_similar_start": 0.33,
-    "vs_similar_end": 0.64,
+    "kept_at_10pct": 1.0759,
+    "kept_at_50pct": 0.33759999999999996,
+    "kept_at_end": 0.1561,
+    "vs_similar_start": 0.36,
+    "vs_similar_end": 0.67,
     "biggest_drops": [
       {
         "at": 0.18,
-        "lost": 0.205,
+        "lost": 0.232,
         "line": "Scientists rebuilt its jaw muscles from its closest living relatives, crocodiles and birds."
       },
       {
-        "at": 0.35,
-        "lost": 0.105,
+        "at": 0.37,
+        "lost": 0.08,
         "line": "Their estimate: up to thirty-four thousand five hundred newtons at the back teeth."
       }
     ],
     "countdown": false,
-    "checked": "2026-11-27"
+    "checked": "2026-11-28"
   },
   "vfAuBGc5cVA": {
     "title": "Why Cars Are Built To Crumple 🚗",
@@ -549,6 +549,29 @@
       }
     ],
     "countdown": false,
-    "checked": "2026-11-27"
+    "checked": "2026-11-28"
+  },
+  "z0CKlJTp69A": {
+    "title": "You're A Baby T. rex. How Do You Survive? 🦖",
+    "hook_line": "You're a baby tyrannosaur, no bigger than a small dog.",
+    "kept_at_10pct": 1.1233,
+    "kept_at_50pct": 0.5205,
+    "kept_at_end": 0.35619999999999996,
+    "vs_similar_start": 0.44,
+    "vs_similar_end": 0.6,
+    "biggest_drops": [
+      {
+        "at": 0.14,
+        "lost": 0.178,
+        "line": "So you don't fight."
+      },
+      {
+        "at": 0.9,
+        "lost": 0.096,
+        "line": "So would you rather be the fast teenager, or the giant adult?"
+      }
+    ],
+    "countdown": false,
+    "checked": "2026-11-28"
   }
 }
